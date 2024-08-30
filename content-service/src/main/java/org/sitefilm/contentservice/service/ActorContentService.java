@@ -2,8 +2,6 @@ package org.sitefilm.contentservice.service;
 
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.contentservice.dto.actordto.ActorDto;
-import org.sitefilm.contentservice.dto.actordto.NewActorDto;
-import org.sitefilm.contentservice.dto.actordto.UpdatedActorDto;
 import org.sitefilm.contentservice.entity.Actor;
 import org.sitefilm.contentservice.mapper.ActorMapper;
 import org.sitefilm.contentservice.repository.ActorRepository;
@@ -38,28 +36,28 @@ public class ActorContentService {
         return actorMapper.actorToActorDto(actor.get());
     }
 
-    public ActorDto createActor(NewActorDto newActorDto) {
-        if (newActorDto == null) {
+    public ActorDto createActor(ActorDto ActorDto) {
+        if (ActorDto == null) {
             throw new RuntimeException();
         }
         return actorMapper.actorToActorDto(
                 actorRepository.save(
-                        actorMapper.newActorToActorEntity(newActorDto)));
+                        actorMapper.actorDtoToActor(ActorDto)));
     }
 
-    public UpdatedActorDto updateActor(UpdatedActorDto updatedActorDto) {
-        if (updatedActorDto == null) {
+    public ActorDto updateActor(ActorDto ActorDto) {
+        if (ActorDto == null) {
             throw new RuntimeException();
         }
-        actorRepository.findById(updatedActorDto.id())
+        actorRepository.findById(ActorDto.id())
                 .ifPresentOrElse(actor -> {
-                    actor.setAge(updatedActorDto.age());
-                    actor.setFirstName(updatedActorDto.firstName());
-                    actor.setLastName(updatedActorDto.lastName());
+                    actor.setAge(ActorDto.age());
+                    actor.setFirstName(ActorDto.firstName());
+                    actor.setLastName(ActorDto.lastName());
                 }, () -> {
                     throw new RuntimeException();
                 });
-        return updatedActorDto;
+        return ActorDto;
     }
 
     public void deleteActor(Long id) {

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Список фильмов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h1>Список фильмов</h1>
+    <div class="btn-group mb-3" role="group">
+        <button type="button" class="btn btn-primary" onclick="location.href='/admin/movies/create'">Создать фильм</button>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Жанры</th>
+            <th>Актеры</th>
+            <th>Дата создания</th>
+            <th>Дата обновления</th>
+            <th>Действия</th>
+        </tr>
+        </thead>
+        <tbody id="movies-table">
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('/admin/movies')
+            .then(response => response.json())
+            .then(movies => {
+                const moviesTable = document.getElementById('movies-table');
+                movies.forEach(movie => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${movie.id}</td>
+                        <td>${movie.title}</td>
+                        <td>${movie.description}</td>
+                        <td>
+                            <button type="button" class="btn btn-primary" onclick="location.href='/admin/movies/update/${movie.id}'">Редактировать</button>
+                            <button type="button" class="btn btn-danger" onclick="deleteMovie(${movie.id})">Удалить</button>
+                        </td>
+                    `;
+                    moviesTable.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Ошибка:', error));
+    });
+
+    function deleteMovie(movieId) {
+        fetch(`/admin/movies/delete/${movieId}`, {
+            method: 'DELETE',
+        })
+            .then(response => {
+                if (response.redirected) {
+                    window.location.href = response.url;
+                } else {
+                    window.location.reload();
+                }
+            })
+            .catch(error => console.error('Ошибка:', error));
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

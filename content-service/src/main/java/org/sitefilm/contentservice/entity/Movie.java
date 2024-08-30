@@ -14,7 +14,6 @@ import java.util.Set;
 @Table(name = "movies")
 @Setter
 @Getter
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Movie {

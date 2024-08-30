@@ -2,8 +2,6 @@ package org.sitefilm.contentservice.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.contentservice.dto.actordto.ActorDto;
-import org.sitefilm.contentservice.dto.actordto.NewActorDto;
-import org.sitefilm.contentservice.dto.actordto.UpdatedActorDto;
 import org.sitefilm.contentservice.service.ActorContentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +33,7 @@ public class ContentServiceActorController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<ActorDto> createActor(@RequestBody NewActorDto newActorDto, UriComponentsBuilder uriComponentsBuilder) {
+    public ResponseEntity<ActorDto> createActor(@RequestBody ActorDto newActorDto, UriComponentsBuilder uriComponentsBuilder) {
         ActorDto createdActor = service.createActor(newActorDto);
         URI location = uriComponentsBuilder.path("/{id}")
                 .buildAndExpand(createdActor.id())
@@ -44,7 +42,7 @@ public class ContentServiceActorController {
     }
 
     @PostMapping("/update")
-    public ResponseEntity<UpdatedActorDto> updateActor(@RequestBody UpdatedActorDto updatedActorDto) {
+    public ResponseEntity<ActorDto> updateActor(@RequestBody ActorDto updatedActorDto) {
         return ResponseEntity.ok(service.updateActor(updatedActorDto));
     }
 

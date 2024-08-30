@@ -2,8 +2,6 @@ package org.sitefilm.contentservice.service;
 
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.contentservice.dto.moviedto.MovieDto;
-import org.sitefilm.contentservice.dto.moviedto.NewMovieDto;
-import org.sitefilm.contentservice.dto.moviedto.UpdateMovieDto;
 import org.sitefilm.contentservice.entity.Movie;
 import org.sitefilm.contentservice.mapper.MovieMapper;
 import org.sitefilm.contentservice.repository.MovieRepository;
@@ -15,7 +13,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-@Transactional
 @RequiredArgsConstructor
 public class MovieContentService {
     private final MovieRepository repository;
@@ -40,14 +37,15 @@ public class MovieContentService {
         repository.deleteById(id);
     }
 
-    public MovieDto createMovie(NewMovieDto newMovieDto) {
-        if (newMovieDto == null) {
+    @Transactional()
+    public MovieDto createMovie(MovieDto movieDto) {
+        if (movieDto == null) {
             throw new RuntimeException();
         }
-        return movieMapper.movieToMovieDto(repository.save(movieMapper.newMovieToMovieEntity(newMovieDto)));
+        return movieMapper.movieToMovieDto(repository.save(movieMapper.movieDtoToMovie(movieDto)));
     }
 
-    public UpdateMovieDto updateMovie(UpdateMovieDto updateMovieDto) {
+    public MovieDto updateMovie(MovieDto updateMovieDto) {
         repository.findById(updateMovieDto.id())
                 .ifPresentOrElse(movie -> {
                     movie.setTitle(updateMovieDto.title());
@@ -60,5 +58,23 @@ public class MovieContentService {
                     throw new RuntimeException();
                 });
         return updateMovieDto;
+    }
+
+    public List<MovieDto> topRecommendedMovies() {
+        return repository.getTopRecommendedMovies()
+                .stream()
+                .map(movieMapper::movieToMovieDto)
+                .collect(Collectors.toList());
+    }
+
+    public MovieDto getMovieByTitle(String title) {
+        return movieMapper.movieToMovieDto(repository.findMovieByTitle(title));
+    }
+
+    public List<MovieDto> getMoviesByIds(List<Long> ids) {
+        return repository.findAllById(ids)
+                .stream()
+                .map(movieMapper::movieToMovieDto)
+                .toList();
     }
 }

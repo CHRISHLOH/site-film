@@ -2,8 +2,6 @@ package org.sitefilm.contentservice.service;
 
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.contentservice.dto.genredto.GenreDto;
-import org.sitefilm.contentservice.dto.genredto.NewGenreDto;
-import org.sitefilm.contentservice.dto.genredto.UpdatedGenreDto;
 import org.sitefilm.contentservice.entity.Genre;
 import org.sitefilm.contentservice.mapper.GenreMapper;
 import org.sitefilm.contentservice.repository.GenreRepository;
@@ -36,16 +34,16 @@ public class GenreContentService {
         return genreMapper.genreToGenreDto(optionalGenre.get());
     }
 
-    public GenreDto createGenre(NewGenreDto newGenreDto) {
+    public GenreDto createGenre(GenreDto newGenreDto) {
         if (newGenreDto == null) {
             throw new RuntimeException();
         }
         return genreMapper.genreToGenreDto(
                 genreRepository.save(
-                        genreMapper.newGenreToGenreEntity(newGenreDto)));
+                        genreMapper.genreDtoToGenre(newGenreDto)));
     }
 
-    public UpdatedGenreDto updateGenre(UpdatedGenreDto updatedGenreDto) {
+    public GenreDto updateGenre(GenreDto updatedGenreDto) {
         genreRepository.findById(updatedGenreDto.id())
                 .ifPresentOrElse(
                         genre ->

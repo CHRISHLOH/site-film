@@ -2,8 +2,6 @@ package org.sitefilm.contentservice.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.contentservice.dto.moviedto.MovieDto;
-import org.sitefilm.contentservice.dto.moviedto.NewMovieDto;
-import org.sitefilm.contentservice.dto.moviedto.UpdateMovieDto;
 import org.sitefilm.contentservice.service.MovieContentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +9,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
+import java.util.stream.Stream;
 
 @RestController
 @RequiredArgsConstructor
@@ -35,7 +34,7 @@ public class ContentServiceMovieController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<MovieDto> createMovie(@RequestBody NewMovieDto newMovieDto, UriComponentsBuilder uriComponentsBuilder) {
+    public ResponseEntity<MovieDto> createMovie(@RequestBody MovieDto newMovieDto, UriComponentsBuilder uriComponentsBuilder) {
         MovieDto createdMovie = service.createMovie(newMovieDto);
         URI location = uriComponentsBuilder.path("/{id}")
                 .buildAndExpand(createdMovie.id())
@@ -44,7 +43,7 @@ public class ContentServiceMovieController {
     }
 
     @PostMapping("/update")
-    public ResponseEntity<UpdateMovieDto> updateMovie(@RequestBody UpdateMovieDto updateMovieDto) {
+    public ResponseEntity<MovieDto> updateMovie(@RequestBody MovieDto updateMovieDto) {
         return ResponseEntity.ok(service.updateMovie(updateMovieDto));
     }
 
@@ -56,5 +55,20 @@ public class ContentServiceMovieController {
         } catch (RuntimeException e) {
             return ResponseEntity.notFound().build();
         }
+    }
+
+    @GetMapping("/top")
+    public ResponseEntity<List<MovieDto>> getTopRecommendedMovies(){
+        return ResponseEntity.ok(service.topRecommendedMovies());
+    }
+
+    @GetMapping("find/{title}")
+    public ResponseEntity<MovieDto> getMovieByTitle(@PathVariable String title) {
+        return ResponseEntity.ok(service.getMovieByTitle(title));
+    }
+
+    @GetMapping("find-list")
+    public ResponseEntity<List<MovieDto>> getMoviesByIds(@RequestParam List<Long> ids) {
+        return ResponseEntity.ok(service.getMoviesByIds(ids));
     }
 }

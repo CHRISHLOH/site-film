@@ -1,6 +1,6 @@
-package org.sitefilm.contentservice.dto.actordto;
+package org.sitefilm.userservice.dto;
 
-public record UpdatedActorDto(
+public record ActorDto(
         Long id,
         Byte age,
         String firstName,

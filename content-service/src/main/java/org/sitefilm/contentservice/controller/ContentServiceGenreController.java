@@ -2,8 +2,6 @@ package org.sitefilm.contentservice.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.contentservice.dto.genredto.GenreDto;
-import org.sitefilm.contentservice.dto.genredto.NewGenreDto;
-import org.sitefilm.contentservice.dto.genredto.UpdatedGenreDto;
 import org.sitefilm.contentservice.service.GenreContentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -36,7 +34,7 @@ public class ContentServiceGenreController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<GenreDto> createGenre(@RequestBody NewGenreDto newGenreDto, UriComponentsBuilder uriComponentsBuilder) {
+    public ResponseEntity<GenreDto> createGenre(@RequestBody GenreDto newGenreDto, UriComponentsBuilder uriComponentsBuilder) {
         GenreDto createdActor = service.createGenre(newGenreDto);
         URI location = uriComponentsBuilder.path("/{id}")
                 .buildAndExpand(createdActor.id())
@@ -45,7 +43,7 @@ public class ContentServiceGenreController {
     }
 
     @PostMapping("/update")
-    public ResponseEntity<UpdatedGenreDto> updateActor(@RequestBody UpdatedGenreDto updatedGenreDto) {
+    public ResponseEntity<GenreDto> updateActor(@RequestBody GenreDto updatedGenreDto) {
         return ResponseEntity.ok(service.updateGenre(updatedGenreDto));
     }
 
