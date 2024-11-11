@@ -14,5 +14,4 @@ public class AdminServiceConfiguration {
                 .baseUrl("http://localhost:8080")
                 .build());
     }
-
 }

@@ -1,4 +1,4 @@
-package org.sitefilm.contentservice.dto.genredto;
+package org.sitefilm.contentservice.dto;
 
 public record GenreDto(
         Long id,

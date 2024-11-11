@@ -1,9 +1,6 @@
 package org.sitefilm.contentservice.repository;
 
-import org.hibernate.annotations.HQLSelect;
-import org.hibernate.annotations.processing.SQL;
-import org.sitefilm.contentservice.dto.moviedto.MovieDto;
-import org.sitefilm.contentservice.entity.Movie;
+import org.sitefilm.contentservice.entity.main.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

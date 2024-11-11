@@ -1,7 +1,7 @@
 package org.sitefilm.contentservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.contentservice.dto.genredto.GenreDto;
+import org.sitefilm.contentservice.dto.GenreDto;
 import org.sitefilm.contentservice.service.GenreContentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

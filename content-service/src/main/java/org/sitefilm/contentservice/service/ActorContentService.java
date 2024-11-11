@@ -1,9 +1,12 @@
 package org.sitefilm.contentservice.service;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.contentservice.dto.actordto.ActorDto;
-import org.sitefilm.contentservice.entity.Actor;
+import org.sitefilm.contentservice.dto.main.ActorDto;
+import org.sitefilm.contentservice.entity.main.Actor;
 import org.sitefilm.contentservice.mapper.ActorMapper;
+import org.sitefilm.contentservice.mapper.CareerMapper;
+import org.sitefilm.contentservice.mapper.CountryMapper;
+import org.sitefilm.contentservice.mapper.GenreMapper;
 import org.sitefilm.contentservice.repository.ActorRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,6 +24,12 @@ public class ActorContentService {
 
     private final ActorMapper actorMapper;
 
+    private final GenreMapper genreMapper;
+
+    private final CareerMapper careerMapper;
+
+    private final CountryMapper countryMapper;
+
     public List<ActorDto> getAllActors() {
         return actorRepository.findAll().stream().map(actorMapper::actorToActorDto).collect(Collectors.toList());
     }
@@ -36,28 +45,32 @@ public class ActorContentService {
         return actorMapper.actorToActorDto(actor.get());
     }
 
-    public ActorDto createActor(ActorDto ActorDto) {
-        if (ActorDto == null) {
+    public ActorDto createActor(ActorDto actorDto) {
+        if (actorDto == null) {
             throw new RuntimeException();
         }
         return actorMapper.actorToActorDto(
                 actorRepository.save(
-                        actorMapper.actorDtoToActor(ActorDto)));
+                        actorMapper.actorDtoToActor(actorDto)));
     }
 
-    public ActorDto updateActor(ActorDto ActorDto) {
-        if (ActorDto == null) {
+    public ActorDto updateActor(ActorDto actorDto) {
+        if (actorDto == null) {
             throw new RuntimeException();
         }
-        actorRepository.findById(ActorDto.id())
+        actorRepository.findById(actorDto.id())
                 .ifPresentOrElse(actor -> {
-                    actor.setAge(ActorDto.age());
-                    actor.setFirstName(ActorDto.firstName());
-                    actor.setLastName(ActorDto.lastName());
+                    actor.setFirstName(actorDto.firstName());
+                    actor.setLastName(actorDto.lastName());
+                    actor.setBirth_date(actorDto.birth_date());
+                    actor.setGender(actorDto.gender());
+                    actor.setCountry(countryMapper.countryDtoToCountry(actorDto.country()));
+                    actor.setCareers(actorDto.careers().stream().map(careerMapper::careerDtoToCareer).collect(Collectors.toSet()));
+                    actor.setGenres(actorDto.genres().stream().map(genreMapper::genreDtoToGenre).collect(Collectors.toSet()));
                 }, () -> {
                     throw new RuntimeException();
                 });
-        return ActorDto;
+        return actorDto;
     }
 
     public void deleteActor(Long id) {

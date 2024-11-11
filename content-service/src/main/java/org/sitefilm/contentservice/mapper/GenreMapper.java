@@ -1,9 +1,8 @@
 package org.sitefilm.contentservice.mapper;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
-import org.sitefilm.contentservice.dto.genredto.GenreDto;
+import org.sitefilm.contentservice.dto.GenreDto;
 import org.sitefilm.contentservice.entity.Genre;
 
 @Mapper(componentModel = "spring")

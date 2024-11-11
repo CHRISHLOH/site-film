@@ -1,7 +1,7 @@
 package org.sitefilm.contentservice.service;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.contentservice.dto.genredto.GenreDto;
+import org.sitefilm.contentservice.dto.GenreDto;
 import org.sitefilm.contentservice.entity.Genre;
 import org.sitefilm.contentservice.mapper.GenreMapper;
 import org.sitefilm.contentservice.repository.GenreRepository;

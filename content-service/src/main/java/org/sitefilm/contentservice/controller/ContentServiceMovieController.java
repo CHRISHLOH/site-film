@@ -1,7 +1,7 @@
 package org.sitefilm.contentservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.contentservice.dto.moviedto.MovieDto;
+import org.sitefilm.contentservice.dto.main.MovieDto;
 import org.sitefilm.contentservice.service.MovieContentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +9,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
-import java.util.stream.Stream;
 
 @RestController
 @RequiredArgsConstructor
@@ -42,10 +41,10 @@ public class ContentServiceMovieController {
         return ResponseEntity.created(location).body(createdMovie);
     }
 
-    @PostMapping("/update")
-    public ResponseEntity<MovieDto> updateMovie(@RequestBody MovieDto updateMovieDto) {
-        return ResponseEntity.ok(service.updateMovie(updateMovieDto));
-    }
+//    @PostMapping("/update")
+//    public ResponseEntity<MovieDto> updateMovie(@RequestBody MovieDto updateMovieDto) {
+//        return ResponseEntity.ok(service.updateMovie(updateMovieDto));
+//    }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteMovie(@PathVariable Long id) {

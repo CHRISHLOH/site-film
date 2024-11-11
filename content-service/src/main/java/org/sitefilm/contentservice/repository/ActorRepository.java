@@ -1,6 +1,6 @@
 package org.sitefilm.contentservice.repository;
 
-import org.sitefilm.contentservice.entity.Actor;
+import org.sitefilm.contentservice.entity.main.Actor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

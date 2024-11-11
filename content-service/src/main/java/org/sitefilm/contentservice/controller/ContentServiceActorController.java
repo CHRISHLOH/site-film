@@ -1,7 +1,7 @@
 package org.sitefilm.contentservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.contentservice.dto.actordto.ActorDto;
+import org.sitefilm.contentservice.dto.main.ActorDto;
 import org.sitefilm.contentservice.service.ActorContentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

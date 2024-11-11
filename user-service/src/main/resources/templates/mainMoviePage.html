@@ -25,30 +25,31 @@
             height: 500px;
             object-fit: cover;
         }
-        
+
         .movie-item {
-            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
             overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .movie-item img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
+            text-align: center;
+            transition: transform 0.3s;
         }
         .movie-item:hover {
             transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .movie-item img {
+            max-height: 350px;
+            object-fit: cover;
+            width: 100%;
         }
         .movie-title {
-            text-align: center;
-            margin-top: 10px;
             font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 8px;
         }
         .movie-genre {
-            text-align: center;
-            font-size: 14px;
-            color: #aaa;
+            color: gray;
+            font-size: 0.9em;
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -115,12 +116,6 @@
     <button class="btn btn-secondary">Фильмы</button>
     <button class="btn btn-secondary">Сериалы</button>
     <button class="btn btn-secondary">Мультфильмы</button>
-    <button class="btn btn-secondary">Спорт</button>
-    <button class="btn btn-secondary">Фитнес</button>
-    <button class="btn btn-secondary">Природа</button>
-    <button class="btn btn-secondary">Лекции</button>
-    <button class="btn btn-secondary">Кулинария</button>
-    <button class="btn btn-secondary">Программы</button>
 </div>
 
 <div class="container movie-section mt-4">

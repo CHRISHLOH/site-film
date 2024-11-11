@@ -1,8 +1,8 @@
 package org.sitefilm.contentservice.service;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.contentservice.dto.moviedto.MovieDto;
-import org.sitefilm.contentservice.entity.Movie;
+import org.sitefilm.contentservice.dto.main.MovieDto;
+import org.sitefilm.contentservice.entity.main.Movie;
 import org.sitefilm.contentservice.mapper.MovieMapper;
 import org.sitefilm.contentservice.repository.MovieRepository;
 import org.springframework.stereotype.Service;
@@ -45,20 +45,20 @@ public class MovieContentService {
         return movieMapper.movieToMovieDto(repository.save(movieMapper.movieDtoToMovie(movieDto)));
     }
 
-    public MovieDto updateMovie(MovieDto updateMovieDto) {
-        repository.findById(updateMovieDto.id())
-                .ifPresentOrElse(movie -> {
-                    movie.setTitle(updateMovieDto.title());
-                    movie.setDescription(updateMovieDto.description());
-                    movie.setActors(updateMovieDto.actors());
-                    movie.setGenres(updateMovieDto.genres());
-                    movie.setCreatedAt(updateMovieDto.createdAt());
-                    movie.setUpdatedAt(updateMovieDto.updatedAt());
-                }, () -> {
-                    throw new RuntimeException();
-                });
-        return updateMovieDto;
-    }
+//    public MovieDto updateMovie(MovieDto updateMovieDto) {
+//        repository.findById(updateMovieDto.id())
+//                .ifPresentOrElse(movie -> {
+//                    movie.setTitle(updateMovieDto.title());
+//                    movie.setDescription(updateMovieDto.description());
+//                    movie.setActors(updateMovieDto.actors());
+//                    movie.setGenres(updateMovieDto.genres());
+//                    movie.setCreatedAt(updateMovieDto.createdAt());
+//                    movie.setUpdatedAt(updateMovieDto.updatedAt());
+//                }, () -> {
+//                    throw new RuntimeException();
+//                });
+//        return updateMovieDto;
+//    }
 
     public List<MovieDto> topRecommendedMovies() {
         return repository.getTopRecommendedMovies()
