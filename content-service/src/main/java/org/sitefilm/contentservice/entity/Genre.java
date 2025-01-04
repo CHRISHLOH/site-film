@@ -5,7 +5,7 @@ import lombok.*;
 
 
 @Entity
-@Table(name = "genres")
+@Table(name = "genres", schema = "content_service")
 @Setter
 @Getter
 @Builder

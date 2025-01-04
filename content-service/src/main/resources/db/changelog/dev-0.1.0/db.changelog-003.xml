@@ -72,7 +72,7 @@
     <changeSet id="2" author="galion">
         <insert tableName="careers" schemaName="content_service">
             <column name="id" value="1"/>
-            <column name="career" value="Actor"/>
+            <column name="career" value="Person"/>
         </insert>
         <insert tableName="careers" schemaName="content_service">
             <column name="id" value="2"/>
@@ -175,60 +175,90 @@
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="Iron Man"/>
             <column name="description" value="A billionaire industrialist and genius inventor, Tony Stark, creates a high-tech suit of armor to become Iron Man."/>
+            <column name="release_date" valueDate="2008-05-02"/>
+            <column name="country_id" valueNumeric="1"/>
+            <column name="duration" value="2 hours 6 minutes"/> <!-- 2 часа 6 минут -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="Forrest Gump"/>
             <column name="description" value="The life journey of Forrest Gump, a man with a kind heart and a simple mind, who experiences some of the most defining events in American history."/>
+            <column name="release_date" valueDate="1994-07-06"/>
+            <column name="country_id" valueNumeric="2"/>
+            <column name="duration" value="2 hours 22 minutes"/> <!-- 2 часа 22 минуты -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="Training Day"/>
             <column name="description" value="A rookie cop spends his first day with a rogue detective in the LAPD narcotics division, who isn't what he seems."/>
+            <column name="release_date" valueDate="2001-10-05"/>
+            <column name="country_id" valueNumeric="3"/>
+            <column name="duration" value="2 hours 2 minutes"/> <!-- 2 часа 2 минуты -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="Inception"/>
             <column name="description" value="A thief who steals corporate secrets through dream-sharing technology is given the chance to have his past erased if he can plant an idea into a CEO's mind."/>
+            <column name="release_date" valueDate="2010-07-16"/>
+            <column name="country_id" valueNumeric="4"/>
+            <column name="duration" value="2 hours 28 minutes"/> <!-- 2 часа 28 минут -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="The Pursuit of Happyness"/>
             <column name="description" value="A struggling salesman takes custody of his son as he’s poised to begin a life-changing professional career."/>
+            <column name="release_date" valueDate="2006-12-15"/>
+            <column name="country_id" valueNumeric="5"/>
+            <column name="duration" value="1 hours 57 minutes"/> <!-- 1 час 57 минут -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="Pirates of the Caribbean: The Curse of the Black Pearl"/>
             <column name="description" value="A blacksmith teams up with a rogue pirate to rescue a governor’s daughter from the crew of a cursed ship."/>
+            <column name="release_date" valueDate="2003-07-09"/>
+            <column name="country_id" valueNumeric="6"/>
+            <column name="duration" value="1 hours 57 minutes"/> <!-- 2 часа 23 минуты -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="The Matrix"/>
             <column name="description" value="A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."/>
+            <column name="release_date" valueDate="1999-03-31"/>
+            <column name="country_id" valueNumeric="7"/>
+            <column name="duration" value="1 hours 57 minutes"/> <!-- 2 часа 16 минут -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="Thor"/>
             <column name="description" value="The Norse god of thunder, Thor, is cast out of Asgard to live amongst humans on Earth, where he soon becomes one of their defenders."/>
+            <column name="release_date" valueDate="2011-05-06"/>
+            <column name="country_id" valueNumeric="8"/>
+            <column name="duration" value="1 hours 57 minutes"/> <!-- 1 час 55 минут -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="Good Will Hunting"/>
             <column name="description" value="A young janitor at MIT has a gift for mathematics but needs help from a psychologist to find direction in his life."/>
+            <column name="release_date" valueDate="1997-12-05"/>
+            <column name="country_id" valueNumeric="9"/>
+            <column name="duration" value="1 hours 57 minutes"/> <!-- 2 часа 6 минут -->
         </insert>
 
         <insert tableName="movies" schemaName="content_service">
             <column name="title" value="Fight Club"/>
             <column name="description" value="An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more."/>
+            <column name="release_date" valueDate="1999-10-15"/>
+            <column name="country_id" valueNumeric="10"/>
+            <column name="duration" value="1 hours 57 minutes"/> <!-- 2 часа 19 минут -->
         </insert>
     </changeSet>
 
     <changeSet id="5" author="galion">
         <preConditions onFail="MARK_RAN">
-            <tableExists tableName="actors" schemaName="content_service"/>
+            <tableExists tableName="persons" schemaName="content_service"/>
         </preConditions>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Robert"/>
             <column name="last_name" value="Downey Jr."/>
             <column name="birth_date" valueDate="1965-04-04"/>
@@ -236,7 +266,7 @@
             <column name="country_id" value="1"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Tom"/>
             <column name="last_name" value="Hanks"/>
             <column name="birth_date" valueDate="1956-07-09"/>
@@ -244,7 +274,7 @@
             <column name="country_id" value="2"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Denzel"/>
             <column name="last_name" value="Washington"/>
             <column name="birth_date" valueDate="1954-12-28"/>
@@ -252,7 +282,7 @@
             <column name="country_id" value="3"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Leonardo"/>
             <column name="last_name" value="DiCaprio"/>
             <column name="birth_date" valueDate="1974-11-11"/>
@@ -260,7 +290,7 @@
             <column name="country_id" value="4"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Will"/>
             <column name="last_name" value="Smith"/>
             <column name="birth_date" valueDate="1968-09-25"/>
@@ -268,7 +298,7 @@
             <column name="country_id" value="5"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Johnny"/>
             <column name="last_name" value="Depp"/>
             <column name="birth_date" valueDate="1963-06-09"/>
@@ -276,7 +306,7 @@
             <column name="country_id" value="6"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Keanu"/>
             <column name="last_name" value="Reeves"/>
             <column name="birth_date" valueDate="1964-09-02"/>
@@ -284,7 +314,7 @@
             <column name="country_id" value="7"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Chris"/>
             <column name="last_name" value="Hemsworth"/>
             <column name="birth_date" valueDate="1983-08-11"/>
@@ -292,7 +322,7 @@
             <column name="country_id" value="8"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Ben"/>
             <column name="last_name" value="Affleck"/>
             <column name="birth_date" valueDate="1972-08-15"/>
@@ -300,7 +330,7 @@
             <column name="country_id" value="9"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Matt"/>
             <column name="last_name" value="Damon"/>
             <column name="birth_date" valueDate="1970-10-08"/>
@@ -308,7 +338,7 @@
             <column name="country_id" value="10"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Brad"/>
             <column name="last_name" value="Pitt"/>
             <column name="birth_date" valueDate="1963-12-18"/>
@@ -316,7 +346,7 @@
             <column name="country_id" value="11"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Scarlett"/>
             <column name="last_name" value="Johansson"/>
             <column name="birth_date" valueDate="1984-11-22"/>
@@ -324,7 +354,7 @@
             <column name="country_id" value="12"/>
         </insert>
 
-        <insert tableName="actors" schemaName="content_service">
+        <insert tableName="persons" schemaName="content_service">
             <column name="first_name" value="Jennifer"/>
             <column name="last_name" value="Lawrence"/>
             <column name="birth_date" valueDate="1990-08-15"/>
@@ -340,15 +370,15 @@
 
         <!-- Примеры связи фильмов с жанрами -->
         <insert tableName="movie_genres" schemaName="content_service">
-            <column name="movie_id" value="1"/> <!-- Iron Man -->
+            <column name="movie_id" value="2"/> <!-- Iron Man -->
             <column name="genre_id" value="1"/> <!-- Action -->
         </insert>
         <insert tableName="movie_genres" schemaName="content_service">
-            <column name="movie_id" value="2"/> <!-- Forrest Gump -->
+            <column name="movie_id" value="3"/> <!-- Forrest Gump -->
             <column name="genre_id" value="2"/> <!-- Drama -->
         </insert>
         <insert tableName="movie_genres" schemaName="content_service">
-            <column name="movie_id" value="3"/> <!-- Training Day -->
+            <column name="movie_id" value="4"/> <!-- Training Day -->
             <column name="genre_id" value="3"/> <!-- Thriller -->
         </insert>
         <!-- Добавьте еще данные по аналогии -->
@@ -356,41 +386,53 @@
 
     <changeSet id="7" author="galion">
         <preConditions onFail="MARK_RAN">
-            <tableExists tableName="movie_actors" schemaName="content_service"/>
+            <tableExists tableName="movie_persons" schemaName="content_service"/>
         </preConditions>
 
-        <!-- Примеры связи фильмов с актёрами -->
-        <insert tableName="movie_actors" schemaName="content_service">
-            <column name="movie_id" value="1"/> <!-- Iron Man -->
-            <column name="actor_id" value="1"/> <!-- Robert Downey Jr. -->
+        <!-- Примеры связи фильмов с актёрами, включая роли и приоритеты -->
+        <insert tableName="movie_persons" schemaName="content_service">
+            <column name="movie_id" value="2"/> <!-- Iron Man -->
+            <column name="person_id" value="2"/> <!-- Robert Downey Jr. -->
+            <column name="career_id" value="2"/> <!-- Actor -->
+            <column name="persons_priority" value="1"/> <!-- PriorityLevel.LOW -->
+            <column name="movie_priority" value="1"/> <!-- PriorityLevel.HIGH -->
         </insert>
-        <insert tableName="movie_actors" schemaName="content_service">
-            <column name="movie_id" value="2"/> <!-- Forrest Gump -->
-            <column name="actor_id" value="2"/> <!-- Tom Hanks -->
+
+        <insert tableName="movie_persons" schemaName="content_service">
+            <column name="movie_id" value="3"/> <!-- Forrest Gump -->
+            <column name="person_id" value="3"/> <!-- Tom Hanks -->
+            <column name="career_id" value="1"/> <!-- Actor -->
+            <column name="persons_priority" value="2"/> <!-- PriorityLevel.HIGH -->
+            <column name="movie_priority" value="2"/> <!-- PriorityLevel.LOW -->
         </insert>
-        <insert tableName="movie_actors" schemaName="content_service">
-            <column name="movie_id" value="3"/> <!-- Training Day -->
-            <column name="actor_id" value="3"/> <!-- Denzel Washington -->
+
+        <insert tableName="movie_persons" schemaName="content_service">
+            <column name="movie_id" value="4"/> <!-- Training Day -->
+            <column name="person_id" value="4"/> <!-- Denzel Washington -->
+            <column name="career_id" value="1"/> <!-- Actor -->
+            <column name="persons_priority" value="3"/> <!-- PriorityLevel.LOW -->
+            <column name="movie_priority" value="3"/> <!-- PriorityLevel.LOW -->
         </insert>
-        <!-- Добавьте еще данные по аналогии -->
+
+        <!-- Добавьте другие примеры связей фильмов с людьми -->
     </changeSet>
 
     <changeSet id="8" author="galion">
         <preConditions onFail="MARK_RAN">
-            <tableExists tableName="actor_genres" schemaName="content_service"/>
+            <tableExists tableName="person_genres" schemaName="content_service"/>
         </preConditions>
 
         <!-- Примеры связи актёров с жанрами -->
-        <insert tableName="actor_genres" schemaName="content_service">
-            <column name="actor_id" value="1"/> <!-- Robert Downey Jr. -->
+        <insert tableName="person_genres" schemaName="content_service">
+            <column name="person_id" value="1"/> <!-- Robert Downey Jr. -->
             <column name="genre_id" value="1"/> <!-- Action -->
         </insert>
-        <insert tableName="actor_genres" schemaName="content_service">
-            <column name="actor_id" value="2"/> <!-- Tom Hanks -->
+        <insert tableName="person_genres" schemaName="content_service">
+            <column name="person_id" value="2"/> <!-- Tom Hanks -->
             <column name="genre_id" value="2"/> <!-- Drama -->
         </insert>
-        <insert tableName="actor_genres" schemaName="content_service">
-            <column name="actor_id" value="3"/> <!-- Denzel Washington -->
+        <insert tableName="person_genres" schemaName="content_service">
+            <column name="person_id" value="3"/> <!-- Denzel Washington -->
             <column name="genre_id" value="3"/> <!-- Thriller -->
         </insert>
         <!-- Добавьте еще данные по аналогии -->
@@ -398,108 +440,22 @@
 
     <changeSet id="9" author="galion">
         <preConditions onFail="MARK_RAN">
-            <tableExists tableName="actor_careers" schemaName="content_service"/>
+            <tableExists tableName="person_careers" schemaName="content_service"/>
         </preConditions>
 
         <!-- Примеры связи актёров с карьерами -->
-        <insert tableName="actor_careers" schemaName="content_service">
-            <column name="actor_id" value="1"/> <!-- Robert Downey Jr. -->
-            <column name="career_id" value="1"/> <!-- Actor -->
+        <insert tableName="person_careers" schemaName="content_service">
+            <column name="person_id" value="1"/> <!-- Robert Downey Jr. -->
+            <column name="career_id" value="1"/> <!-- Person -->
         </insert>
-        <insert tableName="actor_careers" schemaName="content_service">
-            <column name="actor_id" value="2"/> <!-- Tom Hanks -->
-            <column name="career_id" value="1"/> <!-- Actor -->
+        <insert tableName="person_careers" schemaName="content_service">
+            <column name="person_id" value="2"/> <!-- Tom Hanks -->
+            <column name="career_id" value="1"/> <!-- Person -->
         </insert>
-        <insert tableName="actor_careers" schemaName="content_service">
-            <column name="actor_id" value="3"/> <!-- Denzel Washington -->
-            <column name="career_id" value="1"/> <!-- Actor -->
+        <insert tableName="person_careers" schemaName="content_service">
+            <column name="person_id" value="3"/> <!-- Denzel Washington -->
+            <column name="career_id" value="1"/> <!-- Person -->
         </insert>
         <!-- Добавьте еще данные по аналогии -->
     </changeSet>
-
-    <changeSet id="10" author="galion">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="movie_genres" schemaName="content_service"/>
-        </preConditions>
-
-        <!-- Вставка данных в таблицу movie_genres -->
-        <insert tableName="movie_genres" schemaName="content_service">
-            <column name="movie_id" value="1"/> <!-- Iron Man -->
-            <column name="genre_id" value="1"/> <!-- Action -->
-        </insert>
-        <insert tableName="movie_genres" schemaName="content_service">
-            <column name="movie_id" value="2"/> <!-- Forrest Gump -->
-            <column name="genre_id" value="2"/> <!-- Drama -->
-        </insert>
-        <insert tableName="movie_genres" schemaName="content_service">
-            <column name="movie_id" value="3"/> <!-- Training Day -->
-            <column name="genre_id" value="3"/> <!-- Thriller -->
-        </insert>
-        <!-- Добавьте дополнительные записи по мере необходимости -->
-    </changeSet>
-
-    <changeSet id="11" author="galion">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="movie_actors" schemaName="content_service"/>
-        </preConditions>
-
-        <!-- Вставка данных в таблицу movie_actors -->
-        <insert tableName="movie_actors" schemaName="content_service">
-            <column name="movie_id" value="1"/> <!-- Iron Man -->
-            <column name="actor_id" value="1"/> <!-- Robert Downey Jr. -->
-        </insert>
-        <insert tableName="movie_actors" schemaName="content_service">
-            <column name="movie_id" value="2"/> <!-- Forrest Gump -->
-            <column name="actor_id" value="2"/> <!-- Tom Hanks -->
-        </insert>
-        <insert tableName="movie_actors" schemaName="content_service">
-            <column name="movie_id" value="3"/> <!-- Training Day -->
-            <column name="actor_id" value="3"/> <!-- Denzel Washington -->
-        </insert>
-        <!-- Добавьте дополнительные записи по мере необходимости -->
-    </changeSet>
-
-    <changeSet id="12" author="galion">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="actor_genres" schemaName="content_service"/>
-        </preConditions>
-
-        <!-- Вставка данных в таблицу actor_genres -->
-        <insert tableName="actor_genres" schemaName="content_service">
-            <column name="actor_id" value="1"/> <!-- Robert Downey Jr. -->
-            <column name="genre_id" value="1"/> <!-- Action -->
-        </insert>
-        <insert tableName="actor_genres" schemaName="content_service">
-            <column name="actor_id" value="2"/> <!-- Tom Hanks -->
-            <column name="genre_id" value="2"/> <!-- Drama -->
-        </insert>
-        <insert tableName="actor_genres" schemaName="content_service">
-            <column name="actor_id" value="3"/> <!-- Denzel Washington -->
-            <column name="genre_id" value="3"/> <!-- Thriller -->
-        </insert>
-        <!-- Добавьте дополнительные записи по мере необходимости -->
-    </changeSet>
-
-    <changeSet id="13" author="galion">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="actor_careers" schemaName="content_service"/>
-        </preConditions>
-
-        <!-- Вставка данных в таблицу actor_careers -->
-        <insert tableName="actor_careers" schemaName="content_service">
-            <column name="actor_id" value="1"/> <!-- Robert Downey Jr. -->
-            <column name="career_id" value="1"/> <!-- Actor -->
-        </insert>
-        <insert tableName="actor_careers" schemaName="content_service">
-            <column name="actor_id" value="2"/> <!-- Tom Hanks -->
-            <column name="career_id" value="1"/> <!-- Actor -->
-        </insert>
-        <insert tableName="actor_careers" schemaName="content_service">
-            <column name="actor_id" value="3"/> <!-- Denzel Washington -->
-            <column name="career_id" value="1"/> <!-- Actor -->
-        </insert>
-        <!-- Добавьте дополнительные записи по мере необходимости -->
-    </changeSet>
-
-
 </databaseChangeLog>

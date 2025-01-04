@@ -1,8 +1,9 @@
 package org.sitefilm.userservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.userservice.dto.MovieDto;
+import org.sitefilm.userservice.dto.FullMovieDto;
 import org.sitefilm.userservice.service.UserRestClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,8 +15,13 @@ public class UserRestController {
 
     private final UserRestClient userRestClient;
 
-    @GetMapping("/movies")
-    public List<MovieDto> getMovies() {
-        return userRestClient.getAllMovies();
+    @GetMapping("/movie/{id}")
+    public ResponseEntity<FullMovieDto> getMovieById(@PathVariable Long id) {
+        FullMovieDto fullMovieDto = userRestClient.getMovieById(id);
+        if (fullMovieDto != null) {
+            return ResponseEntity.ok(fullMovieDto);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

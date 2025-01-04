@@ -1,80 +1,107 @@
 package org.sitefilm.contentservice.service;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.contentservice.dto.main.MovieDto;
-import org.sitefilm.contentservice.entity.main.Movie;
+import org.sitefilm.contentservice.dto.NamePeopleDto;
+import org.sitefilm.contentservice.dto.main.movie.FullMovieDto;
+import org.sitefilm.contentservice.dto.main.movie.MinimalMovieForListDto;
+import org.sitefilm.contentservice.dto.main.person.MinimalPersonDto;
+import org.sitefilm.contentservice.entity.projection.MinimalMovieProjection;
+import org.sitefilm.contentservice.entity.projection.PersonProjection;
 import org.sitefilm.contentservice.mapper.MovieMapper;
+import org.sitefilm.contentservice.mapper.PersonMapper;
 import org.sitefilm.contentservice.repository.MovieRepository;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
 public class MovieContentService {
-    private final MovieRepository repository;
+
     private final MovieMapper movieMapper;
+    private final PersonContentService personContentService;
+    private final MovieRepository movieRepository;
 
-    public List<MovieDto> getAllMovies() {
-        return repository.findAll().stream().map(movieMapper::movieToMovieDto).collect(Collectors.toList());
+    public MovieContentService(MovieMapper movieMapper, @Lazy PersonContentService personContentService, MovieRepository movieRepository) {
+        this.movieMapper = movieMapper;
+        this.personContentService = personContentService;
+        this.movieRepository = movieRepository;
     }
 
-    public MovieDto getMovieById(Long id) throws RuntimeException {
-        Optional<Movie> movie = repository.findById(id);
-        if (movie.isEmpty()) {
-            throw new RuntimeException("null id");
-        }
-        return movieMapper.movieToMovieDto(movie.get());
+    @Transactional(readOnly = true)
+    public FullMovieDto getMovieById(Long id) throws RuntimeException {
+        FullMovieDto fullMovieDto = movieMapper.movieToFullMovieDto(
+                movieRepository.findMovieWithDetailsById(id)
+                        .orElseThrow(() -> new RuntimeException("Movie not found")));
+        Set<MinimalPersonDto> minimalPersonDtoSet = personContentService.getAllMinimalPersons(id);
+        fullMovieDto.setPeople(minimalPersonDtoSet);
+        return fullMovieDto;
     }
 
-    public void deleteMovie(Long id) {
-        if (id == null) {
-            throw new RuntimeException("null id");
-        }
-        repository.deleteById(id);
+    @Transactional(readOnly = true)
+    public List<MinimalMovieForListDto> getListOfMinimalMovie(Pageable pageable) {
+        return fetchMinimalMovies(
+                () -> movieRepository.findListMinimalMovies(pageable).getContent()
+        );
     }
 
-    @Transactional()
-    public MovieDto createMovie(MovieDto movieDto) {
-        if (movieDto == null) {
-            throw new RuntimeException();
-        }
-        return movieMapper.movieToMovieDto(repository.save(movieMapper.movieDtoToMovie(movieDto)));
+    @Transactional(readOnly = true)
+    public List<MinimalMovieForListDto> getListOfMinimalMovieForPerson(Long personId) {
+        return fetchMinimalMovies(
+                () -> movieRepository.findMoviesByPersonId(personId)
+        );
     }
 
-//    public MovieDto updateMovie(MovieDto updateMovieDto) {
-//        repository.findById(updateMovieDto.id())
-//                .ifPresentOrElse(movie -> {
-//                    movie.setTitle(updateMovieDto.title());
-//                    movie.setDescription(updateMovieDto.description());
-//                    movie.setActors(updateMovieDto.actors());
-//                    movie.setGenres(updateMovieDto.genres());
-//                    movie.setCreatedAt(updateMovieDto.createdAt());
-//                    movie.setUpdatedAt(updateMovieDto.updatedAt());
-//                }, () -> {
-//                    throw new RuntimeException();
-//                });
-//        return updateMovieDto;
-//    }
-
-    public List<MovieDto> topRecommendedMovies() {
-        return repository.getTopRecommendedMovies()
-                .stream()
-                .map(movieMapper::movieToMovieDto)
-                .collect(Collectors.toList());
-    }
-
-    public MovieDto getMovieByTitle(String title) {
-        return movieMapper.movieToMovieDto(repository.findMovieByTitle(title));
-    }
-
-    public List<MovieDto> getMoviesByIds(List<Long> ids) {
-        return repository.findAllById(ids)
-                .stream()
-                .map(movieMapper::movieToMovieDto)
+    private List<MinimalMovieForListDto> fetchMinimalMovies(Supplier<List<MinimalMovieProjection>> movieFetcher) {
+        // Получаем минимальные данные о фильмах
+        List<MinimalMovieForListDto> minimalMovieForListDtoList = movieFetcher.get().stream()
+                .map(minimalMovieProjection -> MinimalMovieForListDto.builder()
+                        .id(minimalMovieProjection.getId())
+                        .title(minimalMovieProjection.getTitle())
+                        .originalTitle(minimalMovieProjection.getOriginalTitle())
+                        .description(minimalMovieProjection.getDescription())
+                        .releaseDate(minimalMovieProjection.getReleaseDate())
+                        .build())
                 .toList();
+
+        // Получаем ID фильмов
+        List<Long> movieIds = minimalMovieForListDtoList.stream()
+                .map(MinimalMovieForListDto::getId)
+                .toList();
+
+        // Достаем всех персон для этих фильмов
+        List<PersonProjection> people = personContentService.findPeopleByMovies(movieIds);
+
+        // Группируем персон по фильмам и ролям
+        Map<Long, List<NamePeopleDto>> actorsMap = groupPeopleByRole(people, 2); // 2 - Актеры
+        Map<Long, List<NamePeopleDto>> directorsMap = groupPeopleByRole(people, 3); // 3 - Режиссеры
+
+        // Добавляем актеров и режиссеров в фильмы
+        minimalMovieForListDtoList.forEach(movie -> {
+            movie.setMinimalActorsPersons(actorsMap.getOrDefault(movie.getId(), new ArrayList<>()));
+            movie.setMinimalDirectorsPersons(directorsMap.getOrDefault(movie.getId(), new ArrayList<>()));
+        });
+
+        return minimalMovieForListDtoList;
+    }
+
+    private Map<Long, List<NamePeopleDto>> groupPeopleByRole(List<PersonProjection> people, int careerId) {
+        return people.stream()
+                .filter(person -> person.getCareerId() == careerId)
+                .collect(Collectors.groupingBy(
+                        PersonProjection::getMovieId,
+                        Collectors.mapping(person -> NamePeopleDto.builder()
+                                .id(person.getId())
+                                .name(person.getName())
+                                .lastName(person.getLastName())
+                                .build(), Collectors.toList())
+                ));
     }
 }

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доработанная карусель</title>
+    <style>
+        body {
+            margin: 0; /* Убираем отступы по умолчанию для body */
+            font-family: Arial, sans-serif; /* Устанавливаем основной шрифт */
+            background-color: #000; /* Фон страницы черный */
+            color: #fff; /* Цвет текста белый */
+        }
+
+        h2 {
+            margin: 20px; /* Отступы вокруг заголовка */
+            font-size: 24px; /* Размер шрифта заголовка */
+        }
+
+        .carousel-container {
+            position: relative; /* Устанавливаем относительно родителя для кнопок управления */
+            width: 100%; /* Ширина контейнера 100% */
+            overflow: hidden; /* Скрываем содержимое, выходящее за границы */
+            padding: 20px 0; /* Отступ сверху и снизу */
+        }
+
+        .carousel-track {
+            display: flex; /* Делаем элементы внутри контейнера горизонтальными */
+            gap: 25px; /* Расстояние между элементами */
+            overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+            scroll-behavior: smooth; /* Анимация при прокрутке (плавная) */
+            padding: 10px; /* Внутренние отступы контейнера */
+        }
+
+        .carousel-track::-webkit-scrollbar {
+            display: none; /* Скрываем горизонтальный скроллбар */
+        }
+
+        .carousel-item-actor {
+            flex: 0 0 200px; /* Фиксированная ширина карточек */
+            height: 300px; /* Фиксированная высота карточек */
+            background-color: #333; /* Фон карточки темно-серый */
+            border-radius: 15px; /* Скругленные углы карточки */
+            display: flex; /* Включаем flexbox для центровки содержимого */
+            justify-content: center; /* Горизонтальная центровка текста */
+            align-items: center; /* Вертикальная центровка текста */
+            color: #fff; /* Цвет текста белый */
+            font-size: 16px; /* Размер шрифта */
+            text-align: center; /* Выравнивание текста по центру */
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Анимация при наведении */
+            cursor: pointer; /* Указываем, что элемент кликабельный */
+        }
+
+        .carousel-item-actor:hover {
+            transform: scale(1.05); /* Увеличение карточки при наведении */
+            box-shadow: 0 0 30px rgba(128, 0, 190, 0.8); /* Добавление тени */
+            background-color: #444; /* Изменение фона карточки */
+        }
+
+        .carousel-button {
+            position: absolute; /* Абсолютное позиционирование для расположения кнопок */
+            top: 50%; /* Центрируем по вертикали относительно контейнера */
+            transform: translateY(-50%); /* Сдвиг для идеального центрирования */
+            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон кнопок */
+            border: none; /* Убираем границы */
+            color: #fff; /* Белый цвет текста */
+            font-size: 24px; /* Размер текста */
+            cursor: pointer; /* Указываем, что кнопка кликабельная */
+            z-index: 10; /* Располагаем кнопку поверх остальных элементов */
+            padding: 10px; /* Внутренний отступ кнопки */
+            border-radius: 50%; /* Круглая форма кнопки */
+        }
+
+        .carousel-button.left {
+            left: 10px; /* Расположение кнопки "влево" относительно левого края */
+        }
+
+        .carousel-button.right {
+            right: 10px; /* Расположение кнопки "вправо" относительно правого края */
+        }
+
+        .carousel-button.disabled {
+            opacity: 0.5; /* Уменьшаем прозрачность для неактивной кнопки */
+            cursor: not-allowed; /* Указываем, что кнопка недоступна для взаимодействия */
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item-actor {
+                flex: 0 0 150px; /* Уменьшение ширины карточек на мобильных устройствах */
+                height: 200px; /* Уменьшение высоты карточек */
+            }
+
+            .carousel-button {
+                font-size: 18px; /* Уменьшение размера кнопок на мобильных устройствах */
+                padding: 8px; /* Уменьшение внутренних отступов кнопок */
+            }
+        }
+
+        .actor-card {
+            display: flex; /* Делаем карточки с актерами flex-контейнерами */
+            flex-direction: column; /* Располагаем содержимое по вертикали */
+            align-items: center; /* Центрируем содержимое по горизонтали */
+            gap: 10px; /* Расстояние между элементами внутри карточки */
+        }
+
+        .actor-photo {
+            width: 120px; /* Фиксированная ширина фото */
+            height: 120px; /* Фиксированная высота фото */
+            border-radius: 50%; /* Делает фото круглым */
+            background-color: #333; /* Фон темно-серый */
+            background-size: cover; /* Масштабирование фото под размер контейнера */
+            background-position: center; /* Центровка фото внутри контейнера */
+            border: 3px solid #444; /* Серый контур фото */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Легкая белая тень */
+            transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+        }
+
+        .actor-photo:hover {
+            transform: scale(1.3); /* Увеличение фото при наведении */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Увеличение тени */
+        }
+
+        .actor-name {
+            font-size: 16px; /* Размер текста имени актера */
+            font-weight: bold; /* Жирное начертание текста */
+        }
+
+        .actor-role {
+            font-size: 14px; /* Размер текста роли актера */
+            color: #aaa; /* Светло-серый цвет текста */
+        }
+
+    </style>
+</head>
+<body>
+<h2>Похожие фильмы</h2>
+<div class="carousel-container">
+    <button class="carousel-button left" onclick="scrollCarousel(-1, 'movieCarousel')" id="leftMovieButton">&#10094;</button>
+    <div class="carousel-track" id="movieCarousel">
+        <!-- Примерные элементы -->
+        <div class="carousel-item">Фильм 1</div>
+        <div class="carousel-item">Фильм 2</div>
+        <div class="carousel-item">Фильм 3</div>
+        <div class="carousel-item">Фильм 4</div>
+        <div class="carousel-item">Фильм 5</div>
+        <div class="carousel-item">Фильм 6</div>
+        <div class="carousel-item">Фильм 7</div>
+        <div class="carousel-item">Фильм 8</div>
+        <div class="carousel-item">Фильм 1</div>
+        <div class="carousel-item">Фильм 2</div>
+        <div class="carousel-item">Фильм 3</div>
+        <div class="carousel-item">Фильм 4</div>
+        <div class="carousel-item">Фильм 5</div>
+        <div class="carousel-item">Фильм 6</div>
+        <div class="carousel-item">Фильм 7</div>
+        <div class="carousel-item">Фильм 8</div>
+    </div>
+    <button class="carousel-button right" onclick="scrollCarousel(1, 'movieCarousel')" id="rightMovieButton">&#10095;</button>
+</div>
+
+<h2>Режиссёры и актёры</h2>
+<div class="carousel-container">
+    <button class="carousel-button left" onclick="scrollCarousel(-1, 'actorCarousel')" id="leftActorButton">&#10094;</button>
+    <div class="carousel-track" id="actorCarousel">
+        <!-- Примерные карточки актеров -->
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Ханс Петтер Муланд</div>
+                <div class="actor-role">Режиссёр, актёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 2</div>
+                <div class="actor-role">Актёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="actor-card">
+                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                <div class="actor-name">Актёр 3</div>
+                <div class="actor-role">Режиссёр</div>
+            </div>
+        </div>
+
+        <!-- Добавьте больше карточек по необходимости -->
+    </div>
+    <button class="carousel-button right" onclick="scrollCarousel(1, 'actorCarousel')" id="rightActorButton">&#10095;</button>
+</div>
+
+<script>
+    function scrollCarousel(direction, carouselId) {
+        const carousel = document.getElementById(carouselId);
+        const scrollAmount = carousel.clientWidth; // Прокручиваем на ширину видимой области
+        carousel.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth',
+        });
+
+        // После прокрутки проверяем, можно ли ещё скроллить
+        setTimeout(() => updateButtons(carousel, carouselId), 300);
+    }
+
+    function updateButtons(carousel, carouselId) {
+        const leftButton = document.getElementById(`left${carouselId.charAt(0).toUpperCase() + carouselId.slice(1)}Button`);
+        const rightButton = document.getElementById(`right${carouselId.charAt(0).toUpperCase() + carouselId.slice(1)}Button`);
+
+        if (carousel.scrollLeft === 0) {
+            leftButton.classList.add('disabled');
+        } else {
+            leftButton.classList.remove('disabled');
+        }
+
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+            rightButton.classList.add('disabled');
+        } else {
+            rightButton.classList.remove('disabled');
+        }
+    }
+
+    // Инициализация состояния кнопок при загрузке
+    window.onload = () => {
+        updateButtons(document.getElementById('movieCarousel'), 'movieCarousel');
+        updateButtons(document.getElementById('actorCarousel'), 'actorCarousel');
+    };
+</script>
+</body>
+</html>
+
+
+
+

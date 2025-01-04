@@ -5,3 +5,11 @@ databaseChangeLog:
       file: db/changelog/dev-0.1.0/db.changelog-002.xml
   - include:
       file: db/changelog/dev-0.1.0/db.changelog-003.xml
+  - include:
+      file: db/changelog/dev-0.1.0/db.changelog-004.xml
+  - include:
+      file: db/changelog/dev-0.1.0/db.changelog-005.xml
+  - include:
+      file: db/changelog/dev-0.1.0/db.changelog-006.xml
+  - include:
+      file: db/changelog/dev-0.1.0/db.changelog-007.xml
