@@ -1,6 +1,7 @@
-package org.sitefilm.userservice.dto;
+package org.sitefilm.userservice.dto.main.movie;
 
 import lombok.*;
+import org.sitefilm.userservice.dto.NamePeopleDto;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class MinimalMovieDto {
+public class MinimalMovieForListDto {
     private Long id;
     private String title;
     private String originalTitle;

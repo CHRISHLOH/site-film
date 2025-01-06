@@ -1,9 +1,11 @@
-package org.sitefilm.userservice.dto;
+package org.sitefilm.userservice.dto.main.person;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import org.sitefilm.userservice.dto.CareerDto;
+
 
 import java.util.Set;
 

@@ -1,8 +1,12 @@
 package org.sitefilm.userservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.userservice.dto.FullMovieDto;
+import org.sitefilm.userservice.dto.main.movie.FullMovieDto;
+import org.sitefilm.userservice.dto.main.movie.MinimalMovieForListDto;
+import org.sitefilm.userservice.dto.main.person.FullPersonDto;
 import org.sitefilm.userservice.service.UserRestClient;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,5 +27,18 @@ public class UserRestController {
         } else {
             return ResponseEntity.notFound().build();
         }
+    }
+
+    @GetMapping("/movies")
+    public ResponseEntity<List<MinimalMovieForListDto>> getMinimalMovies(
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "10") int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        return ResponseEntity.ok(userRestClient.getListOfMovieInTheMainPage(pageable));
+    }
+
+    @GetMapping("/person/{id}")
+    public FullPersonDto findPersonById(@PathVariable Long id) {
+        return userRestClient.getFullPersonById(id);
     }
 }

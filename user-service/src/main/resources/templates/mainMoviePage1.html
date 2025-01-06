@@ -325,21 +325,14 @@
 <main>
     <div class="movie-poster">
         <div class="poster-content">
-            <h2 class="movie-title">
-                <span th:text="${movie.title}"></span>
-            </h2>
-            <p class="movie-details">
-                <span th:each="genre, iterStat : ${movie.genres}"
-                    th:text="${genre.genre + (iterStat.last ? '' : ', ')}"></span> |
-                <span th:text="${movie.getDuration}"></span> |
-                <span th:text="${movie.getCountry().getCountry()}"></span>
-            </p>
+            <h2 class="movie-title" id="movie-title"></h2>
+            <p class="movie-details" id="movie-details"></p>
         </div>
     </div>
     <div class="movie-info">
         <div class="description">
             <h3>Описание:</h3>
-            <span th:text="${movie.getDescription()}"></span>
+            <span id="movie-description"></span>
         </div>
         <div class="ratings">
             <h3>Рейтинг сайта</h3>
@@ -353,30 +346,14 @@
 <div class="carousel-container">
     <button class="carousel-button left" onclick="scrollCarousel(-1, 'actorCarousel')" id="leftActorButton">&#10094;</button>
     <div class="carousel-track" id="actorCarousel">
-        <!-- Примерные карточки актеров -->
-        <div class="carousel-item-actor" th:each="person : ${movie.people}">
-            <div class="actor-card">
-                <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
-                <div class="actor-name">
-                    <span th:text="${person.firstName + ' ' + person.lastName}"></span>
-                </div>
-                <div class="actor-role">
-                    <span class="actor-role">
-                        <span th:each="career : ${person.careers}" th:text="${career.getCareer()}" th:if="${not #lists.isEmpty(person.careers)}"></span>
-                        <span th:if="${#lists.size(person.careers) > 1}" th:remove="tag">, </span>
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Добавьте больше карточек по необходимости -->
+        <!-- Карточки добавляются динамически -->
     </div>
     <button class="carousel-button right" onclick="scrollCarousel(1, 'actorCarousel')" id="rightActorButton">&#10095;</button>
 </div>
 
 <div class="player-container">
     <h2 class="player-title">
-        <span th:text="${movie.getTitle()}"></span>
+        <span></span>
     </h2>
     <div class="player-placeholder">
         Видео плеер (заглушка)
@@ -407,15 +384,11 @@
         <p><strong>Страна:</strong> США</p>
         <p><strong>Жанр:</strong> Боевики, Триллеры, Криминальное, Детективы</p>
         <p><strong>Оригинальное название:</strong> Thug</p>
-        <p><strong>Премьера в России:</strong> 7 ноября 2024 г.</p>
-        <p><strong>Премьера в мире:</strong> 31 октября 2024 г.</p>
     </div>
     <div class="description">
         <h3>Съёмочная группа</h3>
         <p><strong>Режиссёр:</strong> Ханс Петтер Муланд</p>
         <p><strong>Актёры:</strong> Лиам Нисон, Рон Перлман, Фрэнки Шоу, Дэниэл Димер, Ханс Петтер Муланд, Йолонда Росс, Дина Тарраза, Джимми Гонсалес, Левон Панек, Райан Хомчик, Мэттью Деламейтер, Хавьер Молина, Джош Дреннен, Том Кемп, Брюс Соскья, Уильям Ксифарас, Кейт Аваллоне, Николас Дилэйни, Майкл Джианнон, Омар Мустафа Гоним, Кэлли Мэрайя Табор, Роуз Маллик, Брайан Уайт, Райан Карауэй, Терренс Пуллиам, Джон Дадди, Крис Эйверс, Розарио Вилламан, Элайджа Акиндоли, Жермен Браун, Шанель Роуз Коннор, Пол Корвин мл., Джо Кертин, Эмилия Камилль Хэрвуд, Кейси МакНил, Йен Дилан Хант, Роберт Лофтус, Уэс Месерв, Крис Палермо, Кайла Кола, Келлен Раффаэло, Тайлер М. Рейни, Брайан Сэвидж, Джеймс Солопулос, Мэрилин Суик, Гиа Трусдейл, Илья Цымбал</p>
-        <p><strong>Продюсеры:</strong> Майкл Бесман, Роджер Бирнбаум, Эрик Голд, Уоррен Т. Гоз, Алекс Агинян, Джэми Бакнер, Сэмюэл Холл, Марк Кимси, Джеймс Машелло, Кейси Грейс Мурта, Тревор Осмонд, Майкл Ротштейн, Мэтью Сидари, Марлена Томас, Тина Ван, Митчелл Чжан</p>
-        <p><strong>Сценарист:</strong> Тони Гэйтон</p>
     </div>
     <div class="ratings">
         <h3>Звук и субтитры</h3>
@@ -425,6 +398,56 @@
 </div>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const currentUrl = new URL(window.location.href);
+        const movieId = currentUrl.pathname.split('/').pop(); // Получаем ID фильма из URL
+        const movieApiUrl = `/user/movie/${movieId}`;
+
+        fetch(movieApiUrl)
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error('Ошибка загрузки данных о фильме');
+                }
+            })
+            .then(movie => {
+                // Заполняем основную информацию о фильме
+                document.getElementById('movie-title').textContent = movie.title;
+
+                const genres = movie.genres.map(genre => genre.genre).join(', ') || 'Жанры не указаны';
+                const details = `${genres} | ${movie.duration} | ${movie.country.country}`;
+                document.getElementById('movie-details').textContent = details;
+
+                document.getElementById('movie-description').textContent = movie.description;
+
+                // Заполняем карусель режиссёров и актёров
+                const actorCarousel = document.getElementById('actorCarousel');
+                actorCarousel.innerHTML = ''; // Очищаем карусель перед добавлением
+
+                movie.people.forEach(person => {
+                    const actorCard = document.createElement('div');
+                    actorCard.className = 'carousel-item-actor';
+
+                    actorCard.innerHTML = `
+                        <div class="actor-card">
+                            <div class="actor-photo" style="background-image: url('https://via.placeholder.com/120');"></div>
+                            <div class="actor-name">${person.firstName} ${person.lastName}</div>
+                            <div class="actor-role">${person.careers.map(career => career.career).join(', ')}</div>
+                        </div>
+                    `;
+
+                    actorCarousel.appendChild(actorCard);
+                });
+
+                // Обновляем состояние кнопок карусели
+                updateButtons(actorCarousel, 'actorCarousel');
+            })
+            .catch(error => {
+                console.error('Ошибка:', error);
+            });
+    });
+
     function scrollCarousel(direction, carouselId) {
         const carousel = document.getElementById(carouselId);
         const scrollAmount = carousel.clientWidth; // Прокручиваем на ширину видимой области
@@ -456,7 +479,6 @@
 
     // Инициализация состояния кнопок при загрузке
     window.onload = () => {
-        updateButtons(document.getElementById('movieCarousel'), 'movieCarousel');
         updateButtons(document.getElementById('actorCarousel'), 'actorCarousel');
     };
 </script>

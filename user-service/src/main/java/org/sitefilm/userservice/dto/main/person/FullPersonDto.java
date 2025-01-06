@@ -1,12 +1,12 @@
-package org.sitefilm.contentservice.dto.main.person;
+package org.sitefilm.userservice.dto.main.person;
 
 import lombok.*;
-import org.sitefilm.contentservice.dto.CareerDto;
-import org.sitefilm.contentservice.dto.CityDto;
-import org.sitefilm.contentservice.dto.CountryDto;
-import org.sitefilm.contentservice.dto.GenreDto;
-import org.sitefilm.contentservice.dto.main.movie.MinimalMovieForListDto;
-import org.sitefilm.contentservice.enums.GenderEnum;
+import org.sitefilm.userservice.dto.CareerDto;
+import org.sitefilm.userservice.dto.CityDto;
+import org.sitefilm.userservice.dto.CountryDto;
+import org.sitefilm.userservice.dto.GenreDto;
+import org.sitefilm.userservice.dto.main.movie.MinimalMovieForListDto;
+import org.sitefilm.userservice.enums.GenderEnum;
 
 import java.time.LocalDate;
 import java.util.List;

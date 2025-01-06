@@ -30,7 +30,7 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
     @Query("SELECT p.id AS id, " +
             "p.firstName AS name, " +
             "p.lastName AS lastName, " +
-            "p.careers AS careers " +
+            "mp.career AS careers " +
             "FROM Person p " +
             "JOIN MoviePerson mp ON p.id = mp.person.id " +
             "WHERE mp.movie.id = :movieId " +

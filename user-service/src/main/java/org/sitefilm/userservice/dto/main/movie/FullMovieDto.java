@@ -1,11 +1,15 @@
-package org.sitefilm.userservice.dto;
+package org.sitefilm.userservice.dto.main.movie;
 
 import lombok.*;
+import org.sitefilm.userservice.dto.CountryDto;
+import org.sitefilm.userservice.dto.GenreDto;
+import org.sitefilm.userservice.dto.MovieAudioLanguageDto;
+import org.sitefilm.userservice.dto.main.VideoQualityDto;
+import org.sitefilm.userservice.dto.main.person.MinimalPersonDto;
 
-import java.time.Duration;
+
 import java.time.LocalDate;
 import java.util.Set;
-
 
 @Getter
 @Setter

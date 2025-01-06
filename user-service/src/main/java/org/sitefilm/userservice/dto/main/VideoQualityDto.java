@@ -1,4 +1,4 @@
-package org.sitefilm.userservice.dto;
+package org.sitefilm.userservice.dto.main;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,3 +13,4 @@ public class VideoQualityDto {
     private Long id;
     private String videoQuality;
 }
+
