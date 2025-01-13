@@ -2,11 +2,33 @@ spring:
   application:
     name: user-service
   datasource:
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/user_service
-
+    username: user
+    password: user
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/site_film
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8088/realms/site-film
+            user-name-attribute: email
+        registration:
+          keycloak:
+            client-id: user-service
+            client-secret: CImq67l5j8m360ws0EcHYbKYa0jOZZxy
+            scope:
+              - edit-content
+              - view_content
+              - microprofile-jwt
+              - openid
 server:
   port: 8082
 

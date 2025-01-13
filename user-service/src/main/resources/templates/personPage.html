@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шапка сайта</title>
+    <title>Страница актера</title>
     <style>
         body {
             margin: 0;
@@ -60,6 +60,100 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
+
+        .actor-section {
+            padding: 20px;
+        }
+
+        .actor-card {
+            display: flex;
+            gap: 20px;
+            background-color: #111;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.7);
+        }
+
+        .actor-photo {
+            width: 150px;
+            height: 200px;
+            background-color: #333;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .actor-info {
+            flex-grow: 1;
+        }
+
+        .actor-info h1 {
+            font-size: 28px;
+            color: #fff;
+        }
+
+        .actor-info p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        .actor-movies {
+            margin-top: 20px;
+        }
+
+        .movies-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+        .movie-card {
+            background-color: #222;
+            border-radius: 5px;
+            padding: 10px;
+            min-width: 150px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(138, 43, 226, 0.7);
+        }
+
+        .movie-poster {
+            width: 100%;
+            height: 150px;
+            background-color: #333;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .movie-title {
+            font-size: 14px;
+            color: #8a2be2;
+            margin: 5px 0;
+        }
+
+        .movie-release-date {
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .movie-card:hover .movie-title {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -75,10 +169,67 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="#" class="login">Войти</a>
-            <a href="#" class="register">Регистрация</a>
+            <a href="/login" class="login">Войти</a>
+            <a href="/login" class="register">Регистрация</a>
         </div>
     </div>
 </header>
+<main>
+    <section class="actor-section">
+        <div class="actor-card" id="actor-card">
+            <!-- Карточка актера будет заполняться динамически -->
+            <div class="actor-photo">Фото</div>
+            <div class="actor-info"></div>
+        </div>
+        <div class="actor-movies">
+            <h2>Фильмы</h2>
+            <div class="movies-container" id="movies-container">
+                <!-- Карточки фильмов будут заполняться динамически -->
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const actorCard = document.querySelector('.actor-info');
+        const moviesContainer = document.getElementById('movies-container');
+        const actorId = window.location.pathname.split('/').pop();
+
+        function loadActor(id) {
+            const apiUrl = `/user/person/${id}`;
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(actor => {
+                    const genres = actor.genres.map(genre => genre.genre).join(', ') || 'Не указаны';
+                    const careers = actor.careers.map(career => career.career).join(', ') || 'Не указаны';
+
+                    actorCard.innerHTML = `
+                        <h1>${actor.firstName} ${actor.lastName}</h1>
+                        <p><strong>Дата рождения:</strong> ${actor.birth_date || 'Не указана'}</p>
+                        <p><strong>Пол:</strong> ${actor.gender === 'MALE' ? 'Мужской' : 'Женский'}</p>
+                        <p><strong>Страна:</strong> ${actor.country ? actor.country.country : 'Не указана'}</p>
+                        <p><strong>Жанры:</strong> ${genres}</p>
+                        <p><strong>Карьеры:</strong> ${careers}</p>
+                    `;
+
+                    moviesContainer.innerHTML = actor.movies.map(movie => `
+                        <div class="movie-card" onclick="window.location.href='/movie/${movie.id}'">
+                            <div class="movie-poster">Постер</div>
+                            <h3 class="movie-title">${movie.title}</h3>
+                            <p class="movie-release-date">${movie.releaseDate || 'Не указана'}</p>
+                        </div>
+                    `).join('');
+                })
+                .catch(error => {
+                    console.error('Ошибка при загрузке данных актёра:', error);
+                    actorCard.innerHTML = `<p>Ошибка загрузки данных актёра.</p>`;
+                });
+        }
+
+        loadActor(actorId);
+    });
+</script>
 </body>
 </html>
+
+

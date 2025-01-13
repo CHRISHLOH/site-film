@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Создание схемы -->
+    <changeSet id="create-user-management-schema" author="galion">
+        <sql>
+            CREATE SCHEMA IF NOT EXISTS user_service;
+        </sql>
+    </changeSet>
+
+    <!-- Создание таблицы t_user -->
+    <changeSet id="create_table_user" author="galion">
+        <createTable tableName="user" schemaName="user_service">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="username" type="varchar">
+                <constraints nullable="false" unique="true" />
+            </column>
+            <column name="email" type="varchar">
+                <constraints nullable="false" unique="true" />
+            </column>
+            <column name="password" type="varchar" />
+            <column name="created_at" type="DATE" defaultValueComputed="CURRENT_DATE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="DATE"/>
+        </createTable>
+        <sql>
+            ALTER TABLE user_service.user
+                ADD CONSTRAINT chk_username_length CHECK (length(trim(username)) > 0);
+        </sql>
+    </changeSet>
+
+    <!-- Создание таблицы t_authority -->
+    <changeSet id="create_table_authority" author="galion">
+        <createTable tableName="authority" schemaName="user_service">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="authority" type="varchar">
+                <constraints nullable="false" unique="true" />
+            </column>
+        </createTable>
+        <sql>
+            ALTER TABLE user_service.authority
+                ADD CONSTRAINT chk_authority_length CHECK (length(trim(authority)) > 0);
+        </sql>
+    </changeSet>
+
+    <!-- Создание таблицы t_user_authority -->
+    <changeSet id="create_table_user_authority" author="galion">
+        <createTable tableName="user_authority" schemaName="user_service">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="user_id" type="int">
+                <constraints nullable="false" foreignKeyName="fk_user" references="user_service.user(id)" />
+            </column>
+            <column name="authority_id" type="int">
+                <constraints nullable="false" foreignKeyName="fk_authority" references="user_service.authority(id)" />
+            </column>
+        </createTable>
+        <addUniqueConstraint tableName="user_authority" schemaName="user_service"
+                             columnNames="user_id, authority_id"
+                             constraintName="uk_user_authority" />
+    </changeSet>
+</databaseChangeLog>

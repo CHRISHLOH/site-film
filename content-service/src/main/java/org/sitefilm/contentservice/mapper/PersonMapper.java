@@ -12,9 +12,4 @@ import org.sitefilm.contentservice.entity.main.Person;
 public interface PersonMapper {
     PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);
 
-    Person fullPersonDtoToPerson (FullPersonDto fullPersonDto);
-    FullPersonDto personToFullPersonDto (Person person);
-
-    Person minimalPersonDtoToPerson (MinimalPersonDto minimalPersonDto);
-    MinimalPersonDto personToMinimalPersonDto (Person person);
 }

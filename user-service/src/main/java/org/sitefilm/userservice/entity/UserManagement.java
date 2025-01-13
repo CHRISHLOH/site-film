@@ -12,21 +12,21 @@ import java.util.*;
 
 
 @Entity
-@Table(name = "users", schema = "user_service")
+@Table(name = "user", schema = "user_service")
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class User{
+public class UserManagement {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-    @Column(nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
 
     @Column(name = "created_at", nullable = false, updatable = false)
@@ -41,10 +41,10 @@ public class User{
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
-            name = "users_roles",
+            name = "user_authority",
             schema = "user_service",
             joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id")
+            inverseJoinColumns = @JoinColumn(name = "authority_id")
     )
-    private Set <Role> roles = new HashSet<>();
+    private List <Authority> authorities;
 }
