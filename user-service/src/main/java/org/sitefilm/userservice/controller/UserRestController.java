@@ -5,11 +5,13 @@ import org.sitefilm.userservice.dto.main.movie.FullMovieDto;
 import org.sitefilm.userservice.dto.main.movie.MinimalMovieForListDto;
 import org.sitefilm.userservice.dto.main.person.FullPersonDto;
 import org.sitefilm.userservice.service.UserRestClient;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 
 @RestController

@@ -1,6 +1,5 @@
 package org.sitefilm.contentservice.service;
 
-import lombok.RequiredArgsConstructor;
 import org.sitefilm.contentservice.dto.NamePeopleDto;
 import org.sitefilm.contentservice.dto.main.movie.FullMovieDto;
 import org.sitefilm.contentservice.dto.main.movie.MinimalMovieForListDto;
@@ -8,7 +7,6 @@ import org.sitefilm.contentservice.dto.main.person.MinimalPersonDto;
 import org.sitefilm.contentservice.entity.projection.MinimalMovieProjection;
 import org.sitefilm.contentservice.entity.projection.PersonProjection;
 import org.sitefilm.contentservice.mapper.MovieMapper;
-import org.sitefilm.contentservice.mapper.PersonMapper;
 import org.sitefilm.contentservice.repository.MovieRepository;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Pageable;
@@ -92,7 +90,7 @@ public class MovieContentService {
         return minimalMovieForListDtoList;
     }
 
-    private Map<Long, List<NamePeopleDto>> groupPeopleByRole(List<PersonProjection> people, int careerId) {
+    Map<Long, List<NamePeopleDto>> groupPeopleByRole(List<PersonProjection> people, int careerId) {
         return people.stream()
                 .filter(person -> person.getCareerId() == careerId)
                 .collect(Collectors.groupingBy(

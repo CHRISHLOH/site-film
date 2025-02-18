@@ -1,15 +1,19 @@
 package org.sitefilm.contentservice.controller;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.sitefilm.contentservice.dto.GenreDto;
 import org.sitefilm.contentservice.service.GenreContentService;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
+import java.security.Principal;
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("content-api/genres")
@@ -18,7 +22,8 @@ public class ContentServiceGenreController {
     private final GenreContentService service;
 
     @GetMapping()
-    public ResponseEntity<List<GenreDto>> getAllGenres() {
+    public ResponseEntity<List<GenreDto>> getAllGenres(Principal principal) {
+        log.info(principal.toString());
         List<GenreDto> actors = service.getAllGenres();
         return ResponseEntity.ok(actors);
     }

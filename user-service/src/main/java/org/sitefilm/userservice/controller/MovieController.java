@@ -16,5 +16,4 @@ public class MovieController {
     public String getMovies() {
         return "ListMainPage";
     }
-
 }
