@@ -1,10 +1,8 @@
 package org.sitefilm.contentservice.entity.main;
 
-import com.vladmihalcea.hibernate.type.interval.PostgreSQLIntervalType;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.Type;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.sitefilm.contentservice.configutation.DurationConverter;
 import org.sitefilm.contentservice.entity.Country;
@@ -43,7 +41,6 @@ public class Movie {
     private LocalDate releaseDate;
 
     @Column(name = "duration")
-    @Type(PostgreSQLIntervalType.class)
     @Convert(converter = DurationConverter.class)
     private Duration duration;
 

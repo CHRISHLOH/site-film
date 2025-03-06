@@ -26,18 +26,7 @@ public class ContentServiceMovieController {
 
     @GetMapping("/{id}")
     public ResponseEntity<FullMovieDto> getMovieById(@PathVariable Long id, @AuthenticationPrincipal Jwt jwt) {
-        // Извлечение информации из токена
-        String username = jwt.getClaimAsString("preferred_username");
-        // Можно также получить другие claims, например sub (идентификатор пользователя)
         String userId = jwt.getClaimAsString("sub");
-
-        // Если нужно получить authorities, можно воспользоваться SecurityContextHolder
-        Collection<? extends GrantedAuthority> authorities =
-                SecurityContextHolder.getContext().getAuthentication().getAuthorities();
-        authorities.forEach(System.out::println);
-        System.out.println(username);
-        System.out.println(userId);
-        System.out.println(authorities);
         FullMovieDto fullMovieDto = service.getMovieById(id);
         if (fullMovieDto != null) {
             return ResponseEntity.ok(fullMovieDto);

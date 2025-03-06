@@ -1,6 +1,7 @@
 package org.sitefilm.userservice.service;
 
 import lombok.RequiredArgsConstructor;
+import org.sitefilm.userservice.dto.main.UserProfileDto;
 import org.sitefilm.userservice.dto.main.movie.FullMovieDto;
 import org.sitefilm.userservice.dto.main.movie.MinimalMovieForListDto;
 import org.sitefilm.userservice.dto.main.person.FullPersonDto;
@@ -43,5 +44,12 @@ public class UserRestClient {
                 .uri("content-api/persons/{id}", id)
                 .retrieve()
                 .body(FullPersonDto.class);
+    }
+
+    public UserProfileDto getUserProfileInfo() {
+        return restClient.get()
+                .uri("content-api/user")
+                .retrieve()
+                .body(UserProfileDto.class);
     }
 }

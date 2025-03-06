@@ -4,310 +4,719 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фильмы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        :root {
+            --primary-color: #8a2be2;
+            --secondary-color: #6a0dad;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #f5f5f5;
+            --text-secondary: #b3b3b3;
+            --gradient-start: rgba(18, 18, 18, 0.9);
+            --gradient-end: rgba(18, 18, 18, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
         }
 
         header {
-            background-color: #111;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 10px 30px;
         }
 
         .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        .site-logo {
+            display: flex;
+            align-items: center;
+        }
+
         .site-title {
-            font-size: 40px;
-            color: #fff;
+            font-size: 28px;
+            color: var(--text-color);
             margin: 0;
+            font-weight: 800;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #8a2be2, #9370db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             text-transform: uppercase;
         }
 
         .menu {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 30px;
             margin: 0;
             padding: 0;
         }
 
         .menu a {
-            color: #fff;
+            color: var(--text-color);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            position: relative;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+        }
+
+        .menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
         }
 
         .menu a:hover {
-            color: #8a2be2;
+            color: var(--primary-color);
+        }
+
+        .menu a:hover:after {
+            width: 100%;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
         }
 
         .auth-buttons .login, .auth-buttons .register {
-            color: #fff;
+            color: var(--text-color);
             margin-left: 20px;
             text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .auth-buttons .login {
+            position: relative;
+            padding: 8px 15px;
+        }
+
+        .auth-buttons .login:hover {
+            color: var(--primary-color);
         }
 
         .auth-buttons .register {
-            border: 2px solid #8a2be2;
-            padding: 5px 10px;
-            border-radius: 5px;
+            border: 2px solid var(--primary-color);
+            padding: 8px 20px;
+            border-radius: 50px;
+            background: transparent;
+            transition: all 0.3s ease;
         }
 
-        .movie-poster {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/800x800');
+        .auth-buttons .register:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+        }
+
+        .movie-hero {
+            position: relative;
+            height: 70vh;
+            min-height: 500px;
             background-size: cover;
-            height: 500px;
+            background-position: center;
             display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.6);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.4) 100%),
+            linear-gradient(0deg, var(--dark-bg) 0%, rgba(18,18,18,0) 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 30px;
+            z-index: 1;
+        }
+
+        .hero-details {
+            max-width: 600px;
+        }
+
+        .movie-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie-details {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        .details-divider {
+            width: 4px;
+            height: 4px;
+            background-color: var(--text-secondary);
+            border-radius: 50%;
+        }
+
+        .movie-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .section {
+            margin: 60px 0;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 80%;
+            width: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .movie-info {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .info-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-card h3 {
+            color: var(--primary-color);
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .info-card p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .ratings {
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
 
-        .poster-content {
-            text-align: center;
-        }
-
-        .movie-title {
-            font-size: 36px;
-            color: #fff;
-            text-shadow: 2px 2px 10px #000;
-        }
-
-        .movie-details {
-            font-size: 18px;
-            color: #ccc;
-        }
-
-        .movie-info {
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .description, .additional-info, .ratings {
-            flex: 1;
-            background-color: #111;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-        }
-
-        h3 {
-            color: #8a2be2;
-        }
-
-        .ratings .rating-value {
-            font-size: 48px;
-            color: #8a2be2;
-            font-weight: bold;
+        .rating-value {
+            font-size: 72px;
+            color: var(--primary-color);
+            font-weight: 800;
+            line-height: 1;
             margin: 10px 0;
         }
 
-        .detailed-info {
-            padding: 20px;
-            background-color: #111;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        .rating-stars {
+            color: gold;
+            font-size: 24px;
+            margin-bottom: 15px;
         }
 
-        .detailed-info h3 {
-            margin-bottom: 10px;
+        .external-ratings {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .info-group {
-            margin-bottom: 20px;
+        .external-rating {
+            text-align: center;
         }
 
-        .info-group p {
-            margin: 5px 0;
-            line-height: 1.5;
+        .external-rating-logo {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 5px;
         }
 
-        h2 {
-            margin: 20px; /* Отступы вокруг заголовка */
-            font-size: 24px; /* Размер шрифта заголовка */
+        .external-rating-value {
+            font-size: 18px;
+            font-weight: 600;
         }
 
         .carousel-container {
-            position: relative; /* Устанавливаем относительно родителя для кнопок управления */
-            width: 100%; /* Ширина контейнера 100% */
-            overflow: hidden; /* Скрываем содержимое, выходящее за границы */
-            padding: 20px 0; /* Отступ сверху и снизу */
+            position: relative;
+            width: 100%;
+            margin: 30px 0;
         }
 
         .carousel-track {
-            display: flex; /* Делаем элементы внутри контейнера горизонтальными */
-            gap: 25px; /* Расстояние между элементами */
-            overflow-x: auto; /* Добавляем горизонтальную прокрутку */
-            scroll-behavior: smooth; /* Анимация при прокрутке (плавная) */
-            padding: 10px; /* Внутренние отступы контейнера */
+            display: flex;
+            gap: 20px;
+            padding: 15px 5px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
         }
 
         .carousel-track::-webkit-scrollbar {
-            display: none; /* Скрываем горизонтальный скроллбар */
+            display: none;
         }
 
         .carousel-item-movie {
-            flex: 0 0 300px; /* Фиксированная ширина карточек */
-            height: 200px; /* Фиксированная высота карточек */
-            background-color: #333; /* Фон карточки темно-серый */
-            border-radius: 15px; /* Скругленные углы карточки */
-            display: flex; /* Включаем flexbox для центровки содержимого */
-            justify-content: center; /* Горизонтальная центровка текста */
-            align-items: center; /* Вертикальная центровка текста */
-            color: #fff; /* Цвет текста белый */
-            font-size: 16px; /* Размер шрифта */
-            text-align: center; /* Выравнивание текста по центру */
-            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Анимация при наведении */
-            cursor: pointer; /* Указываем, что элемент кликабельный */
+            flex: 0 0 230px;
+            height: 340px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .carousel-item-movie:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(138, 43, 226, 0.3);
+        }
+
+        .movie-item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+            transition: all 0.3s ease;
+        }
+
+        .movie-item-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .movie-item-info {
+            font-size: 14px;
+            color: var(--text-secondary);
         }
 
         .carousel-item-actor {
-            flex: 0 0 200px; /* Фиксированная ширина карточек */
-            height: 300px; /* Фиксированная высота карточек */
-            background-color: #333; /* Фон карточки темно-серый */
-            border-radius: 15px; /* Скругленные углы карточки */
-            display: flex; /* Включаем flexbox для центровки содержимого */
-            justify-content: center; /* Горизонтальная центровка текста */
-            align-items: center; /* Вертикальная центровка текста */
-            color: #fff; /* Цвет текста белый */
-            font-size: 16px; /* Размер шрифта */
-            text-align: center; /* Выравнивание текста по центру */
-            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Анимация при наведении */
-            cursor: pointer; /* Указываем, что элемент кликабельный */
-        }
-
-        .carousel-item-actor:hover {
-            transform: scale(1.05); /* Увеличение карточки при наведении */
-            box-shadow: 0 0 30px rgba(128, 0, 190, 0.8); /* Добавление тени */
-            background-color: #444; /* Изменение фона карточки */
-        }
-
-        .carousel-button {
-            position: absolute; /* Абсолютное позиционирование для расположения кнопок */
-            top: 50%; /* Центрируем по вертикали относительно контейнера */
-            transform: translateY(-50%); /* Сдвиг для идеального центрирования */
-            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон кнопок */
-            border: none; /* Убираем границы */
-            color: #fff; /* Белый цвет текста */
-            font-size: 24px; /* Размер текста */
-            cursor: pointer; /* Указываем, что кнопка кликабельная */
-            z-index: 10; /* Располагаем кнопку поверх остальных элементов */
-            padding: 10px; /* Внутренний отступ кнопки */
-            border-radius: 50%; /* Круглая форма кнопки */
-        }
-
-        .carousel-button.left {
-            left: 10px; /* Расположение кнопки "влево" относительно левого края */
-        }
-
-        .carousel-button.right {
-            right: 10px; /* Расположение кнопки "вправо" относительно правого края */
-        }
-
-        .carousel-button.disabled {
-            opacity: 0.5; /* Уменьшаем прозрачность для неактивной кнопки */
-            cursor: not-allowed; /* Указываем, что кнопка недоступна для взаимодействия */
-        }
-
-        @media (max-width: 768px) {
-            .carousel-item-actor {
-                flex: 0 0 150px; /* Уменьшение ширины карточек на мобильных устройствах */
-                height: 200px; /* Уменьшение высоты карточек */
-            }
-
-            .carousel-button {
-                font-size: 18px; /* Уменьшение размера кнопок на мобильных устройствах */
-                padding: 8px; /* Уменьшение внутренних отступов кнопок */
-            }
+            flex: 0 0 180px;
+            position: relative;
+            transition: all 0.3s ease;
         }
 
         .actor-card {
-            display: flex; /* Делаем карточки с актерами flex-контейнерами */
-            flex-direction: column; /* Располагаем содержимое по вертикали */
-            align-items: center; /* Центрируем содержимое по горизонтали */
-            gap: 10px; /* Расстояние между элементами внутри карточки */
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .carousel-item-actor:hover .actor-card {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(138, 43, 226, 0.3);
         }
 
         .actor-photo {
-            width: 120px; /* Фиксированная ширина фото */
-            height: 120px; /* Фиксированная высота фото */
-            border-radius: 50%; /* Делает фото круглым */
-            background-color: #333; /* Фон темно-серый */
-            background-size: cover; /* Масштабирование фото под размер контейнера */
-            background-position: center; /* Центровка фото внутри контейнера */
-            border: 3px solid #444; /* Серый контур фото */
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Легкая белая тень */
-            transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center top;
         }
 
-        .actor-photo:hover {
-            transform: scale(1.1); /* Увеличение фото при наведении */
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Увеличение тени */
+        .actor-info {
+            padding: 15px;
+            text-align: center;
         }
 
         .actor-name {
-            font-size: 16px; /* Размер текста имени актера */
-            font-weight: bold; /* Жирное начертание текста */
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .actor-role {
-            font-size: 14px; /* Размер текста роли актера */
-            color: #aaa; /* Светло-серый цвет текста */
+            font-size: 14px;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(18, 18, 18, 0.7);
+            backdrop-filter: blur(5px);
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .carousel-button:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-button.left {
+            left: -15px;
+        }
+
+        .carousel-button.right {
+            right: -15px;
+        }
+
+        .carousel-button.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background-color: rgba(18, 18, 18, 0.7);
+            transform: translateY(-50%) scale(1);
         }
 
         .player-container {
-            display: flex;
-            flex-direction: column; /* Элементы располагаются вертикально */
-            align-items: center; /* Выравнивание по центру */
-            margin: 20px 0; /* Отступ сверху и снизу */
+            margin: 60px 0;
+            text-align: center;
         }
 
         .player-title {
-            font-size: 24px; /* Размер текста названия */
-            font-weight: bold; /* Жирное начертание */
-            margin-bottom: 10px; /* Отступ снизу */
-            color: #fff; /* Белый цвет текста */
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .player-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
         }
 
         .player-placeholder {
-            width: 640px; /* Ширина заглушки */
-            height: 360px; /* Высота заглушки (16:9 пропорция) */
-            background-color: #333; /* Темно-серый фон */
-            border-radius: 10px; /* Скругленные углы */
-            display: flex; /* Flex-контейнер для центровки текста */
-            justify-content: center; /* Горизонтальная центровка */
-            align-items: center; /* Вертикальная центровка */
-            color: #aaa; /* Светло-серый цвет текста */
-            font-size: 16px; /* Размер текста */
-            text-align: center; /* Выравнивание текста */
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Легкая тень вокруг заглушки */
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: var(--card-bg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-secondary);
+        }
+
+        .play-icon {
+            font-size: 72px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            opacity: 0.8;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .play-icon:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .additional-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .info-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .info-list li {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .info-list strong {
+            min-width: 120px;
+            font-weight: 600;
+        }
+
+        .footer {
+            background-color: #0a0a0a;
+            padding: 50px 0;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .footer-column h4 {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 1200px) {
+            .movie-info {
+                grid-template-columns: 1fr;
+            }
+
+            .additional-info {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .movie-title {
+                font-size: 36px;
+            }
+
+            .movie-hero {
+                height: auto;
+                padding: 100px 0 50px;
+            }
         }
 
         @media (max-width: 768px) {
-            .player-placeholder {
-                width: 100%; /* Заглушка адаптируется к ширине экрана */
-                height: auto; /* Автоматическая высота с сохранением пропорций */
-                aspect-ratio: 16 / 9; /* Пропорция 16:9 */
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
             }
 
-            .player-title {
-                font-size: 20px; /* Уменьшение размера названия на мобильных устройствах */
+            .menu {
+                order: 3;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .site-logo {
+                order: 1;
+            }
+
+            .auth-buttons {
+                order: 2;
+            }
+
+            .carousel-item-actor {
+                flex: 0 0 150px;
+            }
+
+            .actor-card {
+                height: 250px;
+            }
+
+            .actor-photo {
+                height: 170px;
+            }
+
+            .carousel-item-movie {
+                flex: 0 0 180px;
+                height: 270px;
+            }
+
+            .carousel-button {
+                width: 40px;
+                height: 40px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
             }
         }
     </style>
 </head>
 <body>
-<header>
+<header id="header">
     <div class="header-container">
-        <h1 class="site-title">Название сайта</h1>
+        <div class="site-logo">
+            <h1 class="site-title">КиноПульс</h1>
+        </div>
         <nav>
             <ul class="menu">
                 <li><a href="#">Фильмы</a></li>
@@ -322,81 +731,187 @@
         </div>
     </div>
 </header>
+
 <main>
-    <div class="movie-poster">
-        <div class="poster-content">
-            <h2 class="movie-title" id="movie-title"></h2>
-            <p class="movie-details" id="movie-details"></p>
+    <section class="movie-hero">
+        <div class="hero-background" id="movie-backdrop"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-details">
+                <h1 class="movie-title" id="movie-title"></h1>
+                <div class="movie-details" id="movie-details"></div>
+                <p id="movie-description"></p>
+                <div class="movie-actions">
+                    <button class="btn btn-primary"><i class="fas fa-play"></i> Смотреть</button>
+                    <button class="btn btn-secondary"><i class="fas fa-bookmark"></i> В избранное</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="movie-info">
-        <div class="description">
-            <h3>Описание:</h3>
-            <span id="movie-description"></span>
-        </div>
-        <div class="ratings">
-            <h3>Рейтинг сайта</h3>
-            <p class="rating-value">8.9</p>
-            <p>Рейтинг Кинопоиск/IMDB: 7.0/99</p>
-        </div>
+    </section>
+
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title">Рейтинг и информация</h2>
+            <div class="movie-info">
+                <div class="info-card">
+                    <h3>Описание</h3>
+                    <p id="movie-full-description"></p>
+                </div>
+                <div class="info-card ratings">
+                    <h3>Рейтинг КиноПульс</h3>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="rating-value">8.9</div>
+                    <div class="external-ratings">
+                        <div class="external-rating">
+                            <div class="external-rating-logo">Кинопоиск</div>
+                            <div class="external-rating-value">7.0</div>
+                        </div>
+                        <div class="external-rating">
+                            <div class="external-rating-logo">IMDb</div>
+                            <div class="external-rating-value">7.5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Режиссёры и актёры</h2>
+            <div class="carousel-container">
+                <button class="carousel-button left" onclick="scrollCarousel(-1, 'actorCarousel')" id="leftActorButton">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-track" id="actorCarousel">
+                    <!-- Карточки добавляются динамически -->
+                </div>
+                <button class="carousel-button right" onclick="scrollCarousel(1, 'actorCarousel')" id="rightActorButton">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="player-container">
+            <h2 class="player-title">Смотреть трейлер</h2>
+            <div class="player-wrapper">
+                <div class="player-placeholder">
+                    <i class="fas fa-play-circle play-icon"></i>
+                    <span>Нажмите, чтобы воспроизвести</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Похожие фильмы</h2>
+            <div class="carousel-container">
+                <button class="carousel-button left" onclick="scrollCarousel(-1, 'movieCarousel')" id="leftMovieButton">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-track" id="movieCarousel">
+                    <!-- Демо-элементы -->
+                    <div class="carousel-item-movie" style="background-image: url('https://via.placeholder.com/230x340')">
+                        <div class="movie-item-overlay">
+                            <div class="movie-item-title">Фильм 1</div>
+                            <div class="movie-item-info">2023 • Боевик</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item-movie" style="background-image: url('https://via.placeholder.com/230x340')">
+                        <div class="movie-item-overlay">
+                            <div class="movie-item-title">Фильм 2</div>
+                            <div class="movie-item-info">2023 • Драма</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item-movie" style="background-image: url('https://via.placeholder.com/230x340')">
+                        <div class="movie-item-overlay">
+                            <div class="movie-item-title">Фильм 3</div>
+                            <div class="movie-item-info">2022 • Комедия</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item-movie" style="background-image: url('https://via.placeholder.com/230x340')">
+                        <div class="movie-item-overlay">
+                            <div class="movie-item-title">Фильм 4</div>
+                            <div class="movie-item-info">2021 • Триллер</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item-movie" style="background-image: url('https://via.placeholder.com/230x340')">
+                        <div class="movie-item-overlay">
+                            <div class="movie-item-title">Фильм 5</div>
+                            <div class="movie-item-info">2023 • Фантастика</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item-movie" style="background-image: url('https://via.placeholder.com/230x340')">
+                        <div class="movie-item-overlay">
+                            <div class="movie-item-title">Фильм 6</div>
+                            <div class="movie-item-info">2022 • Боевик</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button right" onclick="scrollCarousel(1, 'movieCarousel')" id="rightMovieButton">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Дополнительная информация</h2>
+            <div class="additional-info">
+                <div class="info-card">
+                    <h3>Информация</h3>
+                    <ul class="info-list">
+                        <li><strong>Страна:</strong> <span id="movie-country">США</span></li>
+                        <li><strong>Жанр:</strong> <span id="movie-genres">Боевики, Триллеры, Криминальное, Детективы</span></li>
+                        <li><strong>Год:</strong> <span id="movie-year">2023</span></li>
+                        <li><strong>Длительность:</strong> <span id="movie-duration">120 мин.</span></li>
+                        <li><strong>Оригинальное название:</strong> <span id="movie-original-title">Thug</span></li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Съёмочная группа</h3>
+                    <ul class="info-list">
+                        <li><strong>Режиссёр:</strong> <span id="movie-director">Ханс Петтер Муланд</span></li>
+                        <li><strong>Сценарист:</strong> <span id="movie-writer">Фрэнк Болдуин</span></li>
+                        <li><strong>Продюсер:</strong> <span id="movie-producer">Майкл Шамберг</span></li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Звук и качество</h3>
+                    <ul class="info-list">
+                        <li><strong>Аудиодорожки:</strong> <span id="movie-audio">Русский</span></li>
+                        <li><strong>Субтитры:</strong> <span id="movie-subtitles">Отсутствуют</span></li>
+                        <li><strong>Качество:</strong> <span id="movie-quality">SD, HD, Full HD</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 </main>
 
-<h2>Режиссёры и актёры</h2>
-<div class="carousel-container">
-    <button class="carousel-button left" onclick="scrollCarousel(-1, 'actorCarousel')" id="leftActorButton">&#10094;</button>
-    <div class="carousel-track" id="actorCarousel">
-        <!-- Карточки добавляются динамически -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h4>КиноПульс</h4>
+            <ul class="footer-links">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Помощь</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Разделы</h4>
+            <ul class="footer-links">
+                <li><a href="#">Фильмы</a></li>
+                <li><a href="#">Сериалв</a></li>
+                <li><a href="#">ОНИМЕ</a></li>
+            </ul>
+        </div>
     </div>
-    <button class="carousel-button right" onclick="scrollCarousel(1, 'actorCarousel')" id="rightActorButton">&#10095;</button>
-</div>
-
-<div class="player-container">
-    <h2 class="player-title">
-        <span></span>
-    </h2>
-    <div class="player-placeholder">
-        Видео плеер (заглушка)
-    </div>
-</div>
-
-<h2>Похожие фильмы</h2>
-<div class="carousel-container">
-    <button class="carousel-button left" onclick="scrollCarousel(-1, 'movieCarousel')" id="leftMovieButton">&#10094;</button>
-    <div class="carousel-track" id="movieCarousel">
-        <!-- Примерные элементы -->
-        <div class="carousel-item-movie">Фильм 1</div>
-        <div class="carousel-item-movie">Фильм 2</div>
-        <div class="carousel-item-movie">Фильм 3</div>
-        <div class="carousel-item-movie">Фильм 4</div>
-        <div class="carousel-item-movie">Фильм 5</div>
-        <div class="carousel-item-movie">Фильм 6</div>
-        <div class="carousel-item-movie">Фильм 7</div>
-        <div class="carousel-item-movie">Фильм 8</div>
-        <div class="carousel-item-movie">Фильм 1</div>
-        <div class="carousel-item-movie">Фильм 2</div>
-    </div>
-    <button class="carousel-button right" onclick="scrollCarousel(1, 'movieCarousel')" id="rightMovieButton">&#10095;</button>
-</div>
-<div class="movie-info">
-    <div class="description">
-        <h3>Информация</h3>
-        <p><strong>Страна:</strong> США</p>
-        <p><strong>Жанр:</strong> Боевики, Триллеры, Криминальное, Детективы</p>
-        <p><strong>Оригинальное название:</strong> Thug</p>
-    </div>
-    <div class="description">
-        <h3>Съёмочная группа</h3>
-        <p><strong>Режиссёр:</strong> Ханс Петтер Муланд</p>
-        <p><strong>Актёры:</strong> Лиам Нисон, Рон Перлман, Фрэнки Шоу, Дэниэл Димер, Ханс Петтер Муланд, Йолонда Росс, Дина Тарраза, Джимми Гонсалес, Левон Панек, Райан Хомчик, Мэттью Деламейтер, Хавьер Молина, Джош Дреннен, Том Кемп, Брюс Соскья, Уильям Ксифарас, Кейт Аваллоне, Николас Дилэйни, Майкл Джианнон, Омар Мустафа Гоним, Кэлли Мэрайя Табор, Роуз Маллик, Брайан Уайт, Райан Карауэй, Терренс Пуллиам, Джон Дадди, Крис Эйверс, Розарио Вилламан, Элайджа Акиндоли, Жермен Браун, Шанель Роуз Коннор, Пол Корвин мл., Джо Кертин, Эмилия Камилль Хэрвуд, Кейси МакНил, Йен Дилан Хант, Роберт Лофтус, Уэс Месерв, Крис Палермо, Кайла Кола, Келлен Раффаэло, Тайлер М. Рейни, Брайан Сэвидж, Джеймс Солопулос, Мэрилин Суик, Гиа Трусдейл, Илья Цымбал</p>
-    </div>
-    <div class="ratings">
-        <h3>Звук и субтитры</h3>
-        <p><strong>Аудиодорожки:</strong> Русский</p>
-        <p><strong>Качество:</strong> SD, HD, Full HD</p>
-    </div>
-</div>
-
+</footer>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const currentUrl = new URL(window.location.href);

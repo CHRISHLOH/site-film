@@ -1,17 +1,16 @@
-package org.sitefilm.userservice.controller;
+package org.sitefilm.userservice.controller.rest;
 
 import lombok.RequiredArgsConstructor;
+import org.sitefilm.userservice.dto.main.UserProfileDto;
 import org.sitefilm.userservice.dto.main.movie.FullMovieDto;
 import org.sitefilm.userservice.dto.main.movie.MinimalMovieForListDto;
 import org.sitefilm.userservice.dto.main.person.FullPersonDto;
 import org.sitefilm.userservice.service.UserRestClient;
-import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -42,5 +41,10 @@ public class UserRestController {
     @GetMapping("/person/{id}")
     public FullPersonDto findPersonById(@PathVariable Long id) {
         return userRestClient.getFullPersonById(id);
+    }
+
+    @GetMapping("/personal/info")
+    public ResponseEntity<UserProfileDto> findPersonInfo() {
+        return ResponseEntity.ok(userRestClient.getUserProfileInfo());
     }
 }

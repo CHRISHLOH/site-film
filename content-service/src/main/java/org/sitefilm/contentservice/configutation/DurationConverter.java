@@ -1,6 +1,5 @@
 package org.sitefilm.contentservice.configutation;
 
-
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 import java.time.Duration;
@@ -15,12 +14,12 @@ public class DurationConverter implements AttributeConverter<Duration, String> {
         }
         long seconds = duration.getSeconds();
         long absSeconds = Math.abs(seconds);
-        String positive = String.format(
-                "%d:%02d",
+        return String.format(
+                "%02d:%02d:%02d",
                 absSeconds / 3600,
-                (absSeconds % 3600) / 60
+                (absSeconds % 3600) / 60,
+                absSeconds % 60
         );
-        return (seconds < 0 ? "-" : "") + positive;
     }
 
     @Override
@@ -29,20 +28,27 @@ public class DurationConverter implements AttributeConverter<Duration, String> {
             return null;
         }
 
+        // Убираем возможный знак минус для отрицательных значений
         boolean negative = dbData.startsWith("-");
         String data = negative ? dbData.substring(1) : dbData;
 
+        // Разделяем строку по двоеточию
         String[] parts = data.split(":");
-        if (parts.length != 2) {
+        if (parts.length != 3) {
             throw new IllegalArgumentException("Invalid duration format: " + dbData);
         }
 
-        long hours = Long.parseLong(parts[0]);
-        long minutes = Long.parseLong(parts[1]);
+        try {
+            // Парсим часы, минуты и секунды
+            long hours = Long.parseLong(parts[0]);
+            long minutes = Long.parseLong(parts[1]);
+            long seconds = Long.parseLong(parts[2]);
 
-        long totalSeconds = hours * 3600 + minutes * 60;
-
-        return Duration.ofSeconds(negative ? -totalSeconds : totalSeconds);
+            // Вычисляем общее количество секунд
+            long totalSeconds = hours * 3600 + minutes * 60 + seconds;
+            return Duration.ofSeconds(negative ? -totalSeconds : totalSeconds);
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Invalid duration format: " + dbData, e);
+        }
     }
 }
-

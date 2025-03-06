@@ -6,7 +6,7 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <changeSet id="1" author="galion">
-        <createTable tableName="user_profile">
+        <createTable tableName="user_profile" schemaName="content_service">
             <column name="id" type="UUID">
                 <constraints primaryKey="true" nullable="false"/>
             </column>

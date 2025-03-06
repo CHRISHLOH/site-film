@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000, #2a004d);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Контейнер профиля */
+        .profile-container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Градиентная подложка */
+        .profile-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.5), rgba(0, 0, 0, 0.5));
+            z-index: -1;
+            opacity: 0.8;
+            border-radius: 15px;
+        }
+
+        /* Заголовок */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ba68c8;
+        }
+
+        /* Аватар */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #9c27b0;
+            margin-bottom: 20px;
+        }
+
+        /* Поле информации */
+        .info-item {
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .info-item label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ba68c8;
+            font-weight: bold;
+        }
+
+        .info-item span {
+            display: block;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        /* Кнопка обновления */
+        button {
+            background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
+        }
+    </style>
+</head>
+<body>
+<div class="profile-container">
+    <h1>Profile Information</h1>
+
+    <!-- Аватар -->
+    <img src="https://via.placeholder.com/100" alt="User Avatar" class="avatar" id="avatar">
+
+    <!-- Информация о пользователе -->
+    <div class="info-item">
+        <label>Username</label>
+        <span id="username">Loading...</span>
+    </div>
+    <div class="info-item">
+        <label>Email</label>
+        <span id="email">Loading...</span>
+    </div>
+    <div class="info-item">
+        <label>Full Name</label>
+        <span id="fullName">Loading...</span>
+    </div>
+    <div class="info-item">
+        <label>Created At</label>
+        <span id="createdAt">Loading...</span>
+    </div>
+    <div class="info-item">
+        <label>Updated At</label>
+        <span id="updatedAt">Loading...</span>
+    </div>
+
+    <!-- Кнопка обновления -->
+    <button id="refreshButton">Refresh</button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const apiUrl = '/user/personal/info';
+
+        // Функция для загрузки данных профиля
+        async function loadProfileInfo() {
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const profileData = await response.json();
+
+                // Заполнение полей данными
+                document.getElementById('avatar').src = profileData.avatar || 'https://via.placeholder.com/100';
+                document.getElementById('username').textContent = profileData.username || 'N/A';
+                document.getElementById('email').textContent = profileData.email || 'N/A';
+                document.getElementById('fullName').textContent = profileData.fullName || 'N/A';
+                document.getElementById('createdAt').textContent = profileData.createdAt || 'N/A';
+                document.getElementById('updatedAt').textContent = profileData.updatedAt || 'N/A';
+            } catch (error) {
+                console.error('Error loading profile info:', error);
+                alert('Failed to load profile information.');
+            }
+        }
+
+        // Загрузка данных при загрузке страницы
+        loadProfileInfo();
+
+        // Обработчик кнопки "Refresh"
+        document.getElementById('refreshButton').addEventListener('click', loadProfileInfo);
+    });
+</script>
+</body>
+</html>
