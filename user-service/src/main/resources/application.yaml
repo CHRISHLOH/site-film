@@ -23,7 +23,7 @@ spring:
         registration:
           keycloak:
             client-id: user-service
-            client-secret: hziqdy8Pjpa1kdcLYFdzn6PICsy7U6kV
+            client-secret: R6wJRDdSitRYeTng89eEKT3aJtekNzJr
             scope:
               - view_content
               - microprofile-jwt

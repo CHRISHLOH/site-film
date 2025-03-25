@@ -4,86 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница актера</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
+        /* Основные стили и сброс */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        * {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
+            padding: 0;
+            box-sizing: border-box;
         }
 
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+            line-height: 1.6;
+            background-image: radial-gradient(circle at 50% 50%, #141414 0%, #0a0a0a 100%);
+        }
+
+        /* Заголовок сайта */
         header {
-            background-color: #111;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            background-color: rgba(17, 17, 17, 0.97);
+            padding: 18px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
+            border-bottom: 1px solid rgba(138, 43, 226, 0.2);
         }
 
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         .site-title {
-            font-size: 32px;
+            font-size: 28px;
             color: #fff;
             margin: 0;
             text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            background: linear-gradient(45deg, #8a2be2, #9370db, #8a2be2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 4s ease infinite;
+            background-size: 200% 200%;
         }
 
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Навигационное меню */
         .menu {
             list-style: none;
             display: flex;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
+            gap: 30px;
         }
 
         .menu a {
-            color: #fff;
+            color: #eee;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            font-size: 16px;
+            position: relative;
+            transition: color 0.3s;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .menu a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, #8a2be2, #9370db);
+            transition: width 0.3s ease;
+            border-radius: 2px;
         }
 
         .menu a:hover {
-            color: #8a2be2;
+            color: #fff;
         }
 
-        .auth-buttons .login, .auth-buttons .register {
-            color: #fff;
-            margin-left: 20px;
+        .menu a:hover::after {
+            width: 100%;
+        }
+
+        /* Кнопки авторизации */
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-buttons .login {
+            color: #eee;
+            margin-right: 20px;
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .auth-buttons .register {
-            border: 2px solid #8a2be2;
-            padding: 5px 10px;
-            border-radius: 5px;
+            background: linear-gradient(45deg, #8a2be2, #9370db);
+            padding: 10px 22px;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
+        .auth-buttons .login:hover {
+            color: #8a2be2;
+        }
+
+        .auth-buttons .register:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(138, 43, 226, 0.6);
+        }
+
+        /* Основной контент */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Карточка актера */
         .actor-section {
-            padding: 20px;
+            margin-bottom: 60px;
         }
 
         .actor-card {
             display: flex;
-            gap: 20px;
-            background-color: #111;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.7);
+            gap: 40px;
+            background: linear-gradient(145deg, #111111, #1a1a1a);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(138, 43, 226, 0.1);
+        }
+
+        .actor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 20%, rgba(138, 43, 226, 0.08), transparent 60%);
+            pointer-events: none;
+        }
+
+        .actor-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #8a2be2, transparent);
         }
 
         .actor-photo {
-            width: 150px;
-            height: 200px;
-            background-color: #333;
-            border-radius: 10px;
+            min-width: 240px;
+            height: 340px;
+            background-color: #222;
+            border-radius: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 14px;
+            font-size: 16px;
             color: #999;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .actor-photo:hover {
+            transform: scale(1.02);
+        }
+
+        .actor-photo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(10, 10, 10, 0.8), transparent);
+            opacity: 0.6;
         }
 
         .actor-info {
@@ -91,104 +231,698 @@
         }
 
         .actor-info h1 {
-            font-size: 28px;
+            font-size: 38px;
             color: #fff;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+            padding-bottom: 15px;
+            position: relative;
+            text-shadow: 0 0 15px rgba(147, 112, 219, 0.2);
+        }
+
+        .actor-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
 
         .actor-info p {
-            margin: 5px 0;
+            margin: 14px 0;
             font-size: 16px;
-            color: #ccc;
+            color: #ddd;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
         }
 
+        .actor-info p:hover {
+            transform: translateX(5px);
+        }
+
+        .actor-info p i {
+            color: #8a2be2;
+            margin-right: 12px;
+            font-size: 18px;
+            min-width: 24px;
+            text-align: center;
+        }
+
+        .actor-info p strong {
+            color: #9370db;
+            width: 150px;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .actor-badge {
+            display: inline-block;
+            background: rgba(138, 43, 226, 0.15);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            color: #bf9aff;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            transition: all 0.3s;
+        }
+
+        .actor-badge:hover {
+            background: rgba(138, 43, 226, 0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Дополнительная информация */
+        .actor-bio {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(138, 43, 226, 0.2);
+        }
+
+        .actor-bio h3 {
+            font-size: 20px;
+            color: #9370db;
+            margin-bottom: 15px;
+        }
+
+        .actor-bio p {
+            color: #bbb;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .actor-stats-extra {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            background: rgba(17, 17, 17, 0.5);
+            padding: 15px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(138, 43, 226, 0.1);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #9370db;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        /* Секция фильмов */
         .actor-movies {
-            margin-top: 20px;
+            margin-top: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .actor-movies h2 {
+            font-size: 28px;
+            color: #eee;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .actor-movies h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 28px;
+            background: linear-gradient(to bottom, #8a2be2, #9370db);
+            border-radius: 3px;
+        }
+
+        .view-all {
+            color: #9370db;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s;
+        }
+
+        .view-all:hover {
+            color: #bf9aff;
+            transform: translateX(5px);
         }
 
         .movies-container {
-            display: flex;
-            overflow-x: auto;
-            gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
             padding: 10px 0;
         }
 
+        /* Карточка фильма */
         .movie-card {
-            background-color: #222;
-            border-radius: 5px;
-            padding: 10px;
-            min-width: 150px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(145deg, #1a1a1a, #222);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             cursor: pointer;
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(138, 43, 226, 0.1);
+        }
+
+        .movie-card::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #8a2be2, transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
         }
 
         .movie-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(138, 43, 226, 0.7);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(138, 43, 226, 0.4);
+        }
+
+        .movie-card:hover::after {
+            opacity: 1;
         }
 
         .movie-poster {
             width: 100%;
-            height: 150px;
-            background-color: #333;
-            border-radius: 5px;
+            height: 260px;
+            background-color: #242424;
+            border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: #999;
-            font-size: 12px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .movie-poster::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .movie-card:hover .movie-poster {
+            transform: scale(1.05);
+        }
+
+        .movie-card:hover .movie-poster::before {
+            opacity: 1;
+        }
+
+        .movie-rating {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(138, 43, 226, 0.8);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .movie-title {
-            font-size: 14px;
-            color: #8a2be2;
-            margin: 5px 0;
+            font-size: 18px;
+            color: #fff;
+            margin: 12px 0 8px;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: color 0.3s;
+        }
+
+        .movie-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
         }
 
         .movie-release-date {
-            font-size: 12px;
-            color: #ccc;
+            font-size: 14px;
+            color: #aaa;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .movie-genre {
+            font-size: 13px;
+            background: rgba(138, 43, 226, 0.2);
+            padding: 3px 10px;
+            border-radius: 20px;
+            color: #bf9aff;
         }
 
         .movie-card:hover .movie-title {
+            color: #9370db;
+        }
+
+        .movie-card:hover .movie-release-date {
+            color: #ddd;
+        }
+
+        /* Похожие актеры */
+        .similar-actors {
+            margin-top: 60px;
+        }
+
+        .actors-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 25px;
+            padding: 10px 0;
+        }
+
+        .actor-item {
+            background: linear-gradient(145deg, #1a1a1a, #222);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(138, 43, 226, 0.1);
+        }
+
+        .actor-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #8a2be2, transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .actor-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(138, 43, 226, 0.4);
+        }
+
+        .actor-item:hover::after {
+            opacity: 1;
+        }
+
+        .actor-item-photo {
+            width: 100%;
+            height: 180px;
+            background-color: #242424;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .actor-item-photo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .actor-item:hover .actor-item-photo {
+            transform: scale(1.05);
+        }
+
+        .actor-item:hover .actor-item-photo::before {
+            opacity: 1;
+        }
+
+        .actor-item-name {
+            font-size: 16px;
             color: #fff;
+            margin: 10px 0 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: color 0.3s;
+        }
+
+        .actor-item-role {
+            font-size: 13px;
+            color: #aaa;
+            transition: color 0.3s;
+        }
+
+        .actor-item:hover .actor-item-name {
+            color: #9370db;
+        }
+
+        .actor-item:hover .actor-item-role {
+            color: #ddd;
+        }
+
+        /* Кнопка возврата наверх */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #8a2be2, #9370db);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.5);
+            z-index: 99;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.7);
+        }
+
+        @media (max-width: 1024px) {
+            .actor-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 960px) {
+            .actor-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .actor-photo {
+                margin-bottom: 25px;
+            }
+
+            .actor-info p {
+                justify-content: center;
+            }
+
+            .actor-info p i {
+                margin-right: 8px;
+            }
+
+            .actor-info p strong {
+                width: auto;
+                margin-right: 10px;
+            }
+
+            .actor-stats-extra {
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+            }
+
+            .stat-item {
+                flex: 0 0 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                margin: 15px 0;
+            }
+
+            .actor-info h1 {
+                font-size: 30px;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .movies-container {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            }
+
+            .actors-container {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            }
+        }
+
+        @media (max-width: 576px) {
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .auth-buttons {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
+
+            .auth-buttons .login, .auth-buttons .register {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                margin: 0;
+            }
+
+            .actor-info p {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .actor-info p strong {
+                margin-bottom: 5px;
+            }
+
+            .actor-card {
+                padding: 20px;
+            }
+
+            .actor-photo {
+                min-width: 200px;
+                height: 280px;
+            }
+
+            .movies-container {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            }
+
+            .movie-poster {
+                height: 200px;
+            }
+
+            .actor-item-photo {
+                height: 160px;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
         }
     </style>
 </head>
 <body>
 <header>
     <div class="header-container">
-        <h1 class="site-title">Название сайта</h1>
+        <h1 class="site-title">КиноПоиск</h1>
         <nav>
             <ul class="menu">
-                <li><a href="#">Фильмы</a></li>
-                <li><a href="#">Сериалы</a></li>
-                <li><a href="#">Аниме</a></li>
-                <li><a href="#">Мультфильмы</a></li>
+                <li><a href="#"><i class="fas fa-film"></i> Фильмы</a></li>
+                <li><a href="#"><i class="fas fa-tv"></i> Сериалы</a></li>
+                <li><a href="#"><i class="fas fa-dragon"></i> Аниме</a></li>
+                <li><a href="#"><i class="fas fa-baby"></i> Мультфильмы</a></li>
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="/login" class="login">Войти</a>
-            <a href="/login" class="register">Регистрация</a>
+            <a href="/login" class="login"><i class="fas fa-sign-in-alt"></i> Войти</a>
+            <a href="/register" class="register"><i class="fas fa-user-plus"></i> Регистрация</a>
         </div>
     </div>
 </header>
 <main>
     <section class="actor-section">
         <div class="actor-card" id="actor-card">
-            <!-- Карточка актера будет заполняться динамически -->
-            <div class="actor-photo">Фото</div>
-            <div class="actor-info"></div>
+            <div class="actor-photo">
+                <img src="/api/placeholder/240/340" alt="Фото актера">
+            </div>
+            <div class="actor-info">
+                <!-- Информация об актере будет заполнена динамически -->
+                <div class="actor-stats-extra">
+                    <div class="stat-item">
+                        <div class="stat-value">42</div>
+                        <div class="stat-label">Фильмов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">8.4</div>
+                        <div class="stat-label">Рейтинг</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">15</div>
+                        <div class="stat-label">Наград</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">23</div>
+                        <div class="stat-label">Года в кино</div>
+                    </div>
+                </div>
+                <div class="actor-bio">
+                    <h3>Биография</h3>
+                    <p>Биография актера будет загружена динамически при помощи JavaScript.</p>
+                </div>
+                <div>
+                    <h3>Основные жанры</h3>
+                    <span class="actor-badge">Драма</span>
+                    <span class="actor-badge">Комедия</span>
+                    <span class="actor-badge">Боевик</span>
+                    <span class="actor-badge">Триллер</span>
+                </div>
+            </div>
         </div>
         <div class="actor-movies">
-            <h2>Фильмы</h2>
+            <div class="section-header">
+                <h2>Фильмы</h2>
+                <a href="#" class="view-all">Смотреть все <i class="fas fa-arrow-right"></i></a>
+            </div>
             <div class="movies-container" id="movies-container">
-                <!-- Карточки фильмов будут заполняться динамически -->
+                <!-- Примеры карточек фильмов (будут заменены на динамические данные) -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/200/260" alt="Постер фильма">
+                        <div class="movie-rating">8.7</div>
+                    </div>
+                    <h3 class="movie-title">Название фильма</h3>
+                    <div class="movie-info">
+                        <span class="movie-release-date"><i class="far fa-calendar-alt"></i> 2023</span>
+                        <span class="movie-genre">Драма</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/200/260" alt="Постер фильма">
+                        <div class="movie-rating">7.9</div>
+                    </div>
+                    <h3 class="movie-title">Другой фильм</h3>
+                    <div class="movie-info">
+                        <span class="movie-release-date"><i class="far fa-calendar-alt"></i> 2022</span>
+                        <span class="movie-genre">Комедия</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="similar-actors">
+            <div class="section-header">
+                <h2>Похожие актеры</h2>
+                <a href="#" class="view-all">Смотреть все <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="actors-container" id="similar-actors-container">
+                <!-- Примеры карточек похожих актеров (будут заменены на динамические данные) -->
+                <div class="actor-item">
+                    <div class="actor-item-photo">
+                        <img src="/api/placeholder/150/180" alt="Фото актера">
+                    </div>
+                    <h3 class="actor-item-name">Имя Актера</h3>
+                    <p class="actor-item-role">Актер</p>
+                </div>
+                <div class="actor-item">
+                    <div class="actor-item-photo">
+                        <img src="/api/placeholder/150/180" alt="Фото актера">
+                    </div>
+                    <h3 class="actor-item-name">Другой Актер</h3>
+                    <p class="actor-item-role">Актер, Режиссер</p>
+                </div>
+                <div class="actor-item">
+                    <div class="actor-item-photo">
+                        <img src="/api/placeholder/150/180" alt="Фото актера">
+                    </div>
+                    <h3 class="actor-item-name">Третий Актер</h3>
+                    <p class="actor-item-role">Актер</p>
+                </div>
+                <div class="actor-item">
+                    <div class="actor-item-photo">
+                        <img src="/api/placeholder/150/180" alt="Фото актера">
+                    </div>
+                    <h3 class="actor-item-name">Четвертый Актер</h3>
+                    <p class="actor-item-role">Актер</p>
+                </div>
             </div>
         </div>
     </section>
 </main>
+<div class="back-to-top" id="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+</div>
+</body>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const actorCard = document.querySelector('.actor-info');

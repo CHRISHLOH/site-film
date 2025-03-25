@@ -3,68 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+    <title>CinemaProfile</title>
     <style>
-        /* Общие стили */
+        /* Основные стили */
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #000, #2a004d);
+            font-family: 'Montserrat', sans-serif;
+            background: #0a0a0f url('https://via.placeholder.com/1920x1080/0a0a0f/0a0a0f') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        /* Контейнер профиля */
-        .profile-container {
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            padding: 20px;
-            width: 400px;
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
-            text-align: center;
+            min-height: 100vh;
             position: relative;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
-        /* Градиентная подложка */
-        .profile-container::before {
+        body::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(138, 43, 226, 0.5), rgba(0, 0, 0, 0.5));
+            background: radial-gradient(circle at center, rgba(28, 5, 51, 0.8) 0%, rgba(5, 5, 20, 0.95) 100%);
             z-index: -1;
-            opacity: 0.8;
-            border-radius: 15px;
         }
 
-        /* Заголовок */
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #ba68c8;
+        /* Контейнер профиля */
+        .profile-container {
+            background: rgba(16, 16, 28, 0.85);
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(138, 43, 226, 0.4), 0 0 100px rgba(76, 0, 130, 0.2);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        /* Верхняя часть профиля */
+        .profile-header {
+            position: relative;
+            height: 180px;
+            background: linear-gradient(135deg, #3d1472, #12062a);
+            border-bottom: 2px solid rgba(186, 104, 200, 0.3);
+            overflow: hidden;
+        }
+
+        .profile-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://via.placeholder.com/1000x300/3d1472/12062a') center center;
+            background-size: cover;
+            opacity: 0.4;
+            z-index: 0;
+        }
+
+        .profile-header-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+            padding: 0 30px;
         }
 
         /* Аватар */
+        .avatar-container {
+            position: relative;
+            margin-bottom: -60px;
+        }
+
         .avatar {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #9c27b0;
-            margin-bottom: 20px;
+            border: 4px solid #9c27b0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(138, 43, 226, 0.7);
+        }
+
+        .avatar-status {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #4CAF50;
+            border: 3px solid #1a1a2e;
+        }
+
+        /* Информация о пользователе */
+        .profile-body {
+            padding: 70px 30px 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .profile-main {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 30px;
+        }
+
+        .profile-stats {
+            flex: 1;
+            min-width: 300px;
+            border-left: 1px solid rgba(186, 104, 200, 0.2);
+            padding-left: 30px;
+        }
+
+        /* Основная информация */
+        .username {
+            font-size: 28px;
+            margin: 0 0 5px 0;
+            color: #ba68c8;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .username .verified {
+            margin-left: 10px;
+            color: #03a9f4;
+            font-size: 18px;
+        }
+
+        .user-headline {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin: 0 0 20px 0;
+            font-style: italic;
         }
 
         /* Поле информации */
+        .info-section {
+            margin-bottom: 30px;
+        }
+
+        .info-section h3 {
+            font-size: 18px;
+            color: #ba68c8;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .info-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #9c27b0, transparent);
+        }
+
         .info-item {
-            margin-bottom: 10px;
-            text-align: left;
+            margin-bottom: 15px;
             font-size: 14px;
         }
 
@@ -72,68 +185,288 @@
             display: block;
             margin-bottom: 5px;
             color: #ba68c8;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .info-item span {
             display: block;
             color: #fff;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 8px;
-            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.07);
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
 
-        /* Кнопка обновления */
+        .info-item span:hover {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 0 8px rgba(138, 43, 226, 0.3);
+        }
+
+        /* Статистика */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ba68c8;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #ccc;
+            text-transform: uppercase;
+        }
+
+        /* Избранные фильмы */
+        .favorite-movies {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .movie-poster {
+            width: 100%;
+            aspect-ratio: 2/3;
+            border-radius: 6px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .movie-poster:hover {
+            transform: scale(1.05);
+            border-color: #9c27b0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Кнопки */
+        .buttons-container {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
         button {
             background: linear-gradient(135deg, #9c27b0, #7b1fa2);
             color: #fff;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.5);
+        }
+
+        button.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(186, 104, 200, 0.3);
+        }
+
+        button.secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Анимации */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(138, 43, 226, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(138, 43, 226, 0); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .profile-body {
+                flex-direction: column;
+            }
+
+            .profile-main {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+
+            .profile-stats {
+                border-left: none;
+                padding-left: 0;
+                border-top: 1px solid rgba(186, 104, 200, 0.2);
+                padding-top: 30px;
+            }
+        }
+
+        /* Иконки */
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: currentColor;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
 <div class="profile-container">
-    <h1>Profile Information</h1>
-
-    <!-- Аватар -->
-    <img src="https://via.placeholder.com/100" alt="User Avatar" class="avatar" id="avatar">
-
-    <!-- Информация о пользователе -->
-    <div class="info-item">
-        <label>Username</label>
-        <span id="username">Loading...</span>
-    </div>
-    <div class="info-item">
-        <label>Email</label>
-        <span id="email">Loading...</span>
-    </div>
-    <div class="info-item">
-        <label>Full Name</label>
-        <span id="fullName">Loading...</span>
-    </div>
-    <div class="info-item">
-        <label>Created At</label>
-        <span id="createdAt">Loading...</span>
-    </div>
-    <div class="info-item">
-        <label>Updated At</label>
-        <span id="updatedAt">Loading...</span>
+    <!-- Верхняя часть профиля -->
+    <div class="profile-header">
+        <div class="profile-header-content">
+            <div class="avatar-container">
+                <img src="https://via.placeholder.com/150" alt="User Avatar" class="avatar" id="avatar">
+                <div class="avatar-status"></div>
+            </div>
+        </div>
     </div>
 
-    <!-- Кнопка обновления -->
-    <button id="refreshButton">Refresh</button>
+    <!-- Основная часть профиля -->
+    <div class="profile-body">
+        <!-- Основная информация -->
+        <div class="profile-main">
+            <h1 class="username">
+                <span id="username">Loading...</span>
+                <span class="verified">✓</span>
+            </h1>
+            <p class="user-headline">Passionate movie enthusiast and cinema lover</p>
+
+            <div class="info-section">
+                <h3>Personal Info</h3>
+                <div class="info-item">
+                    <label>Full Name</label>
+                    <span id="fullName">Loading...</span>
+                </div>
+                <div class="info-item">
+                    <label>Email</label>
+                    <span id="email">Loading...</span>
+                </div>
+                <div class="info-item">
+                    <label>Member Since</label>
+                    <span id="createdAt">Loading...</span>
+                </div>
+                <div class="info-item">
+                    <label>Last Updated</label>
+                    <span id="updatedAt">Loading...</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>About Me</h3>
+                <div class="info-item">
+                    <span>Hi there! I'm a huge fan of sci-fi and fantasy movies. Christopher Nolan is my favorite director, and I could watch Interstellar on repeat. Always up for movie discussions!</span>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <button id="refreshButton">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+                    </svg>
+                    Refresh
+                </button>
+                <button class="secondary">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                    Edit Profile
+                </button>
+            </div>
+        </div>
+
+        <!-- Статистика и дополнительная информация -->
+        <div class="profile-stats">
+            <div class="info-section">
+                <h3>Stats</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">237</div>
+                        <div class="stat-label">Films Watched</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">42</div>
+                        <div class="stat-label">Reviews</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">156</div>
+                        <div class="stat-label">Ratings</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">68</div>
+                        <div class="stat-label">Lists</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>Favorite Genres</h3>
+                <div class="info-item">
+                    <span>Sci-Fi, Fantasy, Thriller, Noir, Animation</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>Favorite Movies</h3>
+                <div class="favorite-movies">
+                    <img src="https://via.placeholder.com/150x225" alt="Movie Poster" class="movie-poster">
+                    <img src="https://via.placeholder.com/150x225" alt="Movie Poster" class="movie-poster">
+                    <img src="https://via.placeholder.com/150x225" alt="Movie Poster" class="movie-poster">
+                    <img src="https://via.placeholder.com/150x225" alt="Movie Poster" class="movie-poster">
+                    <img src="https://via.placeholder.com/150x225" alt="Movie Poster" class="movie-poster">
+                    <img src="https://via.placeholder.com/150x225" alt="Movie Poster" class="movie-poster">
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>Recent Activity</h3>
+                <div class="info-item">
+                    <label>Watched</label>
+                    <span>Dune: Part Two - 2 days ago</span>
+                </div>
+                <div class="info-item">
+                    <label>Reviewed</label>
+                    <span>The Batman - 1 week ago</span>
+                </div>
+                <div class="info-item">
+                    <label>Added to Watchlist</label>
+                    <span>Everything Everywhere All at Once - 3 days ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const apiUrl = '/user/personal/info';
