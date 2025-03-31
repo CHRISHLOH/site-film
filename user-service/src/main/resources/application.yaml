@@ -28,6 +28,7 @@ spring:
               - view_content
               - microprofile-jwt
               - openid
+
 server:
   port: 8082
 

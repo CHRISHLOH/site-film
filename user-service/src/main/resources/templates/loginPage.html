@@ -4,164 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вход / Регистрация</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-
-        header {
-            background-color: #111;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        :root {
+            --primary-color: #6a5acd;
+            --secondary-color: #4b0082;
+            --background-dark: #121212;
+            --background-light: #1e1e1e;
+            --text-color: #e0e0e0;
         }
-
+        * {
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+        body {
+            margin: 0;
+            font-family: 'Inter', 'Arial', sans-serif;
+            background: linear-gradient(135deg, var(--background-dark) 0%, var(--background-light) 100%);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(17, 17, 17, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-
         .site-title {
-            font-size: 32px;
-            color: #fff;
+            font-size: 28px;
+            color: var(--primary-color);
             margin: 0;
-            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: -1px;
         }
-
         .menu {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 25px;
             margin: 0;
             padding: 0;
         }
-
         .menu a {
-            color: #fff;
+            color: var(--text-color);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 5px;
         }
-
-        .menu a:hover {
-            color: #8a2be2;
+        .menu a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: var(--primary-color);
+            transition: width 0.3s, left 0.3s;
         }
-
+        .menu a:hover::after {
+            width: 100%;
+            left: 0;
+        }
         .auth-buttons .login, .auth-buttons .register {
-            color: #fff;
-            margin-left: 20px;
+            color: var(--text-color);
             text-decoration: none;
+            margin-left: 15px;
+            font-weight: 500;
         }
-
         .auth-buttons .register {
-            border: 2px solid #8a2be2;
-            padding: 5px 10px;
-            border-radius: 5px;
+            border: 2px solid var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 25px;
+            transition: background-color 0.3s, color 0.3s;
         }
-
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
+        .auth-buttons .register:hover {
+            background-color: var(--primary-color);
+            color: white;
         }
-
-        header {
-            background-color: #111;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .site-title {
-            font-size: 32px;
-            color: #fff;
-            margin: 0;
-            text-transform: uppercase;
-        }
-
         main {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: calc(100vh - 60px);
+            min-height: calc(100vh - 80px);
             padding: 20px;
         }
-
         .form-container {
-            background-color: #111;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.7);
+            background-color: rgba(25, 25, 25, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(106, 90, 205, 0.2);
             width: 100%;
-            max-width: 400px;
+            max-width: 450px;
             text-align: center;
+            backdrop-filter: blur(15px);
+            position: relative;
+            overflow: hidden;
         }
-
+        .form-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+            opacity: 0.1;
+            z-index: -1;
+        }
         .form-container h1 {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             font-size: 24px;
+            color: var(--primary-color);
         }
-
         .form-container label {
             display: block;
             text-align: left;
             font-size: 14px;
-            margin-bottom: 5px;
-            color: #ccc;
+            margin-bottom: 8px;
+            color: var(--text-color);
+            opacity: 0.8;
         }
-
         .form-container input {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #333;
-            border-radius: 5px;
-            background-color: #222;
-            color: #fff;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            background-color: rgba(35, 35, 35, 0.5);
+            color: var(--text-color);
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
-
         .form-container input:focus {
             outline: none;
-            border-color: #8a2be2;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 10px rgba(106, 90, 205, 0.3);
         }
-
         .form-container button {
             width: 100%;
-            padding: 10px;
-            background-color: #8a2be2;
+            padding: 12px;
+            background-color: var(--primary-color);
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             font-size: 16px;
-            color: #fff;
+            color: white;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
         }
-
         .form-container button:hover {
-            background-color: #6a1bbd;
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
         }
-
         .form-container .toggle-link {
-            margin-top: 15px;
+            margin-top: 20px;
             display: block;
             font-size: 14px;
-            color: #8a2be2;
+            color: var(--primary-color);
             text-decoration: none;
             cursor: pointer;
         }
-
         .form-container .toggle-link:hover {
-            color: #fff;
+            color: var(--text-color);
+            text-decoration: underline;
         }
-
     </style>
 </head>
 <body>
 <header>
     <div class="header-container">
-        <h1 class="site-title">Название сайта</h1>
+        <h1 class="site-title">Кинотека</h1>
         <nav>
             <ul class="menu">
                 <li><a href="#">Фильмы</a></li>
@@ -172,7 +192,8 @@
         </nav>
         <div class="auth-buttons">
             <a href="/login" class="login">Войти</a>
-            <a href="/login" class="register">Регистрация</a>
+            <!-- Если на этой странице и логин, и регистрация, можно убрать или изменить ссылку -->
+            <a href="/register" class="register">Регистрация</a>
         </div>
     </div>
 </header>
@@ -190,7 +211,7 @@
         </div>
 
         <!-- Форма регистрации -->
-        <div id="registerForm" style="display: none;">
+        <form id="registerForm" style="display: none;">
             <h1>Регистрация</h1>
             <label for="registerEmail">Email</label>
             <input type="email" id="registerEmail" name="email" placeholder="Введите ваш email" required>
@@ -200,7 +221,7 @@
             <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль" required>
             <button type="submit">Зарегистрироваться</button>
             <a class="toggle-link" onclick="toggleForm()">Войти</a>
-        </div>
+        </form>
     </div>
 </main>
 <script>
@@ -215,6 +236,51 @@
             registerForm.style.display = 'block';
         }
     }
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const registerForm = document.getElementById('registerForm');
+
+        registerForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert('Пароли не совпадают');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/auth/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username: email.split('@')[0], // Используем часть email до @
+                        email: email,
+                        password: password,
+                        fullName: email.split('@')[0]
+                    })
+                });
+
+                const responseData = await response.json();
+
+                if (response.ok) {
+                    alert('Регистрация успешна: ' + responseData.message);
+                    // Можно перенаправить на страницу входа
+                } else {
+                    alert('Ошибка: ' + responseData.error);
+                }
+            } catch (error) {
+                console.error('Полная ошибка:', error);
+                alert('Ошибка: ' + error.message);
+            }
+        });
+    });
 </script>
 </body>
 </html>

@@ -8,9 +8,7 @@ import org.sitefilm.userservice.dto.main.person.FullPersonDto;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.client.RestClient;
-import org.springframework.web.util.UriComponentsBuilder;
 
-import java.net.URI;
 import java.util.List;
 
 @RequiredArgsConstructor

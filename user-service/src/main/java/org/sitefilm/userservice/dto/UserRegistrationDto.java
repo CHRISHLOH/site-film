@@ -2,6 +2,7 @@ package org.sitefilm.userservice.dto;
 
 import lombok.*;
 
+@ToString
 @Getter
 @Setter
 @Builder

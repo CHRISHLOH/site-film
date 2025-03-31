@@ -1,7 +1,5 @@
 package org.sitefilm.userservice.configuration;
 
-import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
-import org.apache.hc.client5.http.impl.classic.HttpClients;
 import org.keycloak.OAuth2Constants;
 import org.keycloak.admin.client.Keycloak;
 import org.keycloak.admin.client.KeycloakBuilder;
@@ -39,7 +37,7 @@ public class KeycloakConfig {
 
         return KeycloakBuilder.builder()
                 .serverUrl(getServerUrl())
-                .realm("master") // Используем realm master
+                .realm("site-film") // Используем realm master
                 .username(adminUsername)
                 .password(adminPassword)
                 .clientId(clientId)

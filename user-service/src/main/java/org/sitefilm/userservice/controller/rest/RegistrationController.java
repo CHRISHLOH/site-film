@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/auth")
 public class RegistrationController {
@@ -20,13 +22,22 @@ public class RegistrationController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody UserRegistrationDto dto) {
+    public ResponseEntity<?> register(@RequestBody UserRegistrationDto dto) {
         try {
+            System.out.println(dto.toString());
             String userId = registrationService.registerUser(dto);
-            return ResponseEntity.ok("Пользователь успешно зарегистрирован, id: " + userId);
+            return ResponseEntity.ok(Map.of(
+                    "message", "Пользователь успешно зарегистрирован",
+                    "userId", userId
+            ));
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", e.getMessage()
+            ));
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("Ошибка регистрации: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of(
+                    "error", "Внутренняя ошибка сервера"
+            ));
         }
     }
 }
