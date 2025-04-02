@@ -12,7 +12,7 @@
             <column name="c_keep_until" type="TIMESTAMP" />
         </createTable>
         <sql>
-            ALTER TABLE management_system.t_deactivated_token
+            ALTER TABLE user_service.t_deactivated_token
                 ADD CONSTRAINT chk_c_keep_until CHECK (c_keep_until > now());
         </sql>
     </changeSet>

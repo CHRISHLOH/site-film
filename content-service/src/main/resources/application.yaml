@@ -1,4 +1,6 @@
 spring:
+  liquibase:
+    clear-checksums: true
   application:
     name: content-service
   datasource:
