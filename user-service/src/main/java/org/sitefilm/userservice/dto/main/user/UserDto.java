@@ -1,15 +1,14 @@
-package org.sitefilm.userservice.dto;
+package org.sitefilm.userservice.dto.main.user;
 
 import lombok.*;
 
-@ToString
 @Getter
 @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserRegistrationDto {
-    private String username;
+public class UserDto {
+    private Long id;
     private String email;
     private String password;
 }

@@ -1,47 +1,38 @@
 package org.sitefilm.userservice.service;
 
-
-import jakarta.ws.rs.core.Response;
-import org.keycloak.admin.client.Keycloak;
-import org.keycloak.representations.idm.CredentialRepresentation;
-import org.keycloak.representations.idm.UserRepresentation;
-import org.keycloak.admin.client.resource.UsersResource;
-import org.keycloak.admin.client.CreatedResponseUtil;
-
-import org.sitefilm.userservice.dto.UserRegistrationDto;
+import lombok.RequiredArgsConstructor;
+import org.sitefilm.userservice.dto.main.user.UserDto;
+import org.sitefilm.userservice.entity.Role;
+import org.sitefilm.userservice.entity.User;
+import org.sitefilm.userservice.repository.UserRepository;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 @Service
+@RequiredArgsConstructor
 public class UserRegistrationService {
 
-    private final Keycloak keycloak;
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    public UserRegistrationService(Keycloak keycloak) {
-        this.keycloak = keycloak;
-    }
+    public void register(UserDto user) {
+        String password = passwordEncoder.encode(user.getPassword());
 
-    public String registerUser(UserRegistrationDto dto) {
-        System.out.println(dto);
-        UserRepresentation user = new UserRepresentation();
-        user.setUsername(dto.getUsername());
-        user.setEmail(dto.getEmail());
-        user.setEnabled(true);
-        user.setFirstName(dto.getFullName());
+        Role role = new Role();
+        role.setId(2L);
+        role.setName("USER");
+        Set<Role> roles = new HashSet<>();
+        roles.add(role);
 
-        UsersResource usersResource = keycloak.realm("site-film").users();
-        Response response = usersResource.create(user);
+        User userEntity = User.builder()
+                .email(user.getEmail())
+                .password(password)
+                .roles(roles)
+                .build();
 
-        String userId = CreatedResponseUtil.getCreatedId(response);
-
-        CredentialRepresentation credential = new CredentialRepresentation();
-        credential.setTemporary(false);
-        credential.setType(CredentialRepresentation.PASSWORD);
-        credential.setValue(dto.getPassword());
-        keycloak.realm("site-film").users().get(userId).resetPassword(credential);
-
-        return userId;
+        userRepository.save(userEntity);
     }
 }
-

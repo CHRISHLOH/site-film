@@ -14,15 +14,9 @@ public class UserRestClientConfiguration {
 
     @Bean
     public UserRestClient userRestClient(
-            ClientRegistrationRepository clientRegistrationRepository,
-            OAuth2AuthorizedClientRepository authorizedClientRepository
     ) {
         return new UserRestClient(RestClient.builder()
                 .baseUrl("http://localhost:8080")
-                .requestInterceptor(
-                        new OAuthClientRequestInterceptor(
-                            new DefaultOAuth2AuthorizedClientManager(clientRegistrationRepository,
-                                authorizedClientRepository), "keycloak"))
                 .build());
     }
 }

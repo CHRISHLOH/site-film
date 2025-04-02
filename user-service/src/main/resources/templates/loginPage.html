@@ -260,10 +260,9 @@
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        username: email.split('@')[0], // Используем часть email до @
+                        id: null,
                         email: email,
                         password: password,
-                        fullName: email.split('@')[0]
                     })
                 });
 
