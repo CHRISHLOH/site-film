@@ -1,9 +1,10 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.jwt;
 
 import com.nimbusds.jose.*;
 import com.nimbusds.jwt.EncryptedJWT;
 import com.nimbusds.jwt.JWTClaimsSet;
 import lombok.Setter;
+import org.sitefilm.userservice.configuration.security.jwt.model.Token;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

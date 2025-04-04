@@ -1,4 +1,4 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.jwt.model;
 
 import java.time.Instant;
 import java.util.List;

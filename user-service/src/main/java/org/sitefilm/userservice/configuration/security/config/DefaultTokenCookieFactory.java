@@ -1,6 +1,7 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.config;
 
 import lombok.Setter;
+import org.sitefilm.userservice.configuration.security.jwt.model.Token;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 
@@ -22,5 +23,4 @@ public class DefaultTokenCookieFactory implements Function<Authentication, Token
                         .map(GrantedAuthority::getAuthority).toList(),
                 now, now.plus(this.tokenTtl));
     }
-
 }

@@ -24,4 +24,6 @@ public class RegistrationController {
         registrationService.register(dto);
         return ResponseEntity.ok("Сохранен");
     }
+
+
 }

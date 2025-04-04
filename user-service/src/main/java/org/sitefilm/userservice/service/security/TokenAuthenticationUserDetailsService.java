@@ -1,7 +1,7 @@
 package org.sitefilm.userservice.service.security;
 
-import org.sitefilm.userservice.configuration.security.Token;
-import org.sitefilm.userservice.configuration.security.TokenUser;
+import org.sitefilm.userservice.configuration.security.jwt.model.Token;
+import org.sitefilm.userservice.configuration.security.auth.TokenUser;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.AuthenticationUserDetailsService;

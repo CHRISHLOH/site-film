@@ -1,9 +1,11 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.auth;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.Setter;
+import org.sitefilm.userservice.configuration.security.config.DefaultTokenCookieFactory;
+import org.sitefilm.userservice.configuration.security.jwt.model.Token;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.session.SessionAuthenticationException;

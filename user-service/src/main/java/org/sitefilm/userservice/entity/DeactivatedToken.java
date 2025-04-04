@@ -13,7 +13,7 @@ import java.time.Instant;
 import java.util.UUID;
 
 @Entity
-@Table(name = "t_deactivated_token", schema = "management_system")
+@Table(name = "t_deactivated_token", schema = "user_service")
 @Getter
 @Setter
 @AllArgsConstructor

@@ -1,4 +1,4 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.csrf;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.FilterChain;

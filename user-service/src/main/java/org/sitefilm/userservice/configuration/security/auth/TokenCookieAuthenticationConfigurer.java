@@ -1,6 +1,7 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.auth;
 
 import jakarta.servlet.http.HttpServletResponse;
+import org.sitefilm.userservice.configuration.security.jwt.model.Token;
 import org.sitefilm.userservice.entity.DeactivatedToken;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
 import org.sitefilm.userservice.service.security.TokenAuthenticationUserDetailsService;

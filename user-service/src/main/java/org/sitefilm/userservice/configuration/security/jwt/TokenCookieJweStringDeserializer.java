@@ -1,8 +1,9 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.jwt;
 
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.JWEDecrypter;
 import com.nimbusds.jwt.EncryptedJWT;
+import org.sitefilm.userservice.configuration.security.jwt.model.Token;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

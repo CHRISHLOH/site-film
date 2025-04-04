@@ -1,9 +1,14 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.config;
 
 import com.nimbusds.jose.crypto.DirectDecrypter;
 import com.nimbusds.jose.crypto.DirectEncrypter;
 import com.nimbusds.jose.jwk.OctetSequenceKey;
 import lombok.RequiredArgsConstructor;
+import org.sitefilm.userservice.configuration.security.auth.TokenCookieAuthenticationConfigurer;
+import org.sitefilm.userservice.configuration.security.auth.TokenCookieSessionAuthenticationStrategy;
+import org.sitefilm.userservice.configuration.security.csrf.GetCsrfTokenFilter;
+import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJweStringDeserializer;
+import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJweStringSerializer;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -67,7 +72,7 @@ public class SecurityConfiguration {
                         sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
                         .requestMatchers(HttpMethod.POST, "/api/auth/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/login/page").permitAll()
+                        .anyRequest().authenticated()
                 )
                 .sessionManagement(sessionManagement -> sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)

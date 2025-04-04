@@ -1,6 +1,7 @@
-package org.sitefilm.userservice.configuration.security;
+package org.sitefilm.userservice.configuration.security.auth;
 
 import lombok.Getter;
+import org.sitefilm.userservice.configuration.security.jwt.model.Token;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
