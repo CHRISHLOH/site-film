@@ -22,10 +22,3 @@ spring:
           issuer-uri: http://localhost:8088/realms/site-film
 server:
   port: 8080
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    prefer-ip-address: true

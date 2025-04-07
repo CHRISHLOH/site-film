@@ -6,8 +6,10 @@ import org.sitefilm.userservice.entity.DeactivatedToken;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
 import org.sitefilm.userservice.service.security.TokenAuthenticationUserDetailsService;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.SecurityConfigurer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.web.DefaultSecurityFilterChain;
 import org.springframework.security.web.authentication.AuthenticationEntryPointFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationFilter;
 import org.springframework.security.web.authentication.Http403ForbiddenEntryPoint;
@@ -18,7 +20,7 @@ import org.springframework.security.web.csrf.CsrfFilter;
 import java.util.function.Function;
 
 public class TokenCookieAuthenticationConfigurer
-        extends AbstractHttpConfigurer<TokenCookieAuthenticationConfigurer, HttpSecurity> {
+        implements SecurityConfigurer<DefaultSecurityFilterChain, HttpSecurity> {
 
     private Function<String, Token> tokenCookieStringDeserializer;
 

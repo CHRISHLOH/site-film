@@ -59,28 +59,28 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
             TokenCookieAuthenticationConfigurer tokenCookieAuthenticationConfigurer,
-            TokenCookieJweStringSerializer tokenCookieJweStringSerializer
-    ) throws Exception {
-        http.with(tokenCookieAuthenticationConfigurer, configurer -> {});
+            TokenCookieJweStringSerializer tokenCookieJweStringSerializer) throws Exception {
         var tokenCookieSessionAuthenticationStrategy = new TokenCookieSessionAuthenticationStrategy();
         tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJweStringSerializer);
-        return http
-                .httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults())
-                .addFilterAfter(new GetCsrfTokenFilter(), ExceptionTranslationFilter.class)
-                .sessionManagement(sessionManagement ->
-                        sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
-                        .requestMatchers(HttpMethod.POST, "/api/auth/**").permitAll()
-                        .anyRequest().authenticated()
+
+        http.httpBasic(Customizer.withDefaults())
+                .formLogin(form ->
+                        form.loginPage("/login/page")
                 )
+                .addFilterAfter(new GetCsrfTokenFilter(), ExceptionTranslationFilter.class)
+                .authorizeHttpRequests(authorizeHttpRequests ->
+                        authorizeHttpRequests
+                                .requestMatchers(HttpMethod.GET, "login/*").permitAll()
+                                .anyRequest().authenticated())
                 .sessionManagement(sessionManagement -> sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                         .sessionAuthenticationStrategy(tokenCookieSessionAuthenticationStrategy))
                 .csrf(csrf -> csrf.csrfTokenRepository(new CookieCsrfTokenRepository())
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
-                        .sessionAuthenticationStrategy((authentication, request, response) -> {}))
-                .build();
+                        .sessionAuthenticationStrategy((authentication, request, response) -> {}));
+
+        http.apply(tokenCookieAuthenticationConfigurer);
+        return http.build();
     }
 
 

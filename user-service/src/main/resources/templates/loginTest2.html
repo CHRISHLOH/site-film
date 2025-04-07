@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Простая форма логина</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2>Форма логина</h2>
+
+<div id="csrf-token"></div>
+
+<form id="loginForm" method="post" action="/login">
+    <div>
+        <label for="username">Email:</label>
+        <input type="text" id="username" name="username">
+    </div>
+    <br>
+    <div>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <br>
+    <input type="hidden" id="csrf" name="_csrf">
+    <button type="submit">Войти</button>
+</form>
+
+<div id="message"></div>
+
+<script>
+    // Получение CSRF токена при загрузке страницы
+    window.onload = function() {
+        fetch('/csrf', {
+            method: 'GET',
+            credentials: 'include'
+        })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('csrf').value = data.token;
+                document.getElementById('csrf-token').innerHTML =
+                    '<p>CSRF Token: ' + data.token + '</p>';
+            })
+            .catch(error => {
+                document.getElementById('message').innerHTML =
+                    '<p style="color: red;">Ошибка при получении CSRF токена: ' + error + '</p>';
+            });
+    };
+
+    // Обработка отправки формы
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const csrfToken = document.getElementById('csrf').value;
+
+        const formData = new FormData();
+        formData.append('username', username);
+        formData.append('password', password);
+
+        fetch('/login', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRF-TOKEN': csrfToken
+            },
+            credentials: 'include',
+            redirect: 'follow'
+        })
+            .then(response => {
+                if (response.redirected) {
+                    window.location.href = response.url;
+                } else if (response.ok) {
+                    document.getElementById('message').innerHTML =
+                        '<p style="color: green;">Успешная авторизация!</p>';
+                    // Попробуем получить доступ к защищенному ресурсу
+                    testProtectedResource();
+                } else {
+                    document.getElementById('message').innerHTML =
+                        '<p style="color: red;">Ошибка авторизации. Статус: ' + response.status + '</p>';
+                }
+            })
+            .catch(error => {
+                document.getElementById('message').innerHTML =
+                    '<p style="color: red;">Ошибка: ' + error + '</p>';
+            });
+    });
+
+    // Проверка доступа к защищенному ресурсу
+    function testProtectedResource() {
+        fetch('/test', {
+            method: 'GET',
+            credentials: 'include'
+        })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('message').innerHTML +=
+                    '<p>Ответ от защищенного ресурса: ' + data + '</p>';
+            })
+            .catch(error => {
+                document.getElementById('message').innerHTML +=
+                    '<p style="color: red;">Ошибка при доступе к защищенному ресурсу: ' + error + '</p>';
+            });
+    }
+</script>
+</body>
+</html>
