@@ -35,6 +35,10 @@ public class TokenCookieJweStringSerializer implements Function<Token, String> {
 
     @Override
     public String apply(Token token) {
+        System.out.println("--------------------------" +
+                "----------------------" +
+                "------------------------" +
+                "SERIALIZER");
         var jwsHeader = new JWEHeader.Builder(this.jweAlgorithm, this.encryptionMethod)
                 .keyID(token.id().toString())
                 .build();
@@ -56,5 +60,4 @@ public class TokenCookieJweStringSerializer implements Function<Token, String> {
 
         return null;
     }
-
 }

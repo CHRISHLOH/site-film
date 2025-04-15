@@ -7,9 +7,11 @@ import org.sitefilm.userservice.dto.main.movie.MinimalMovieForListDto;
 import org.sitefilm.userservice.dto.main.person.FullPersonDto;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.data.domain.Pageable;
+
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
+
 
 @RequiredArgsConstructor
 public class UserRestClient {

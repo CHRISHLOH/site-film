@@ -16,12 +16,11 @@ public class UserManagementService implements UserDetailsService {
     @Override
 
     public UserDetails loadUserByUsername(String email) throws EntityNotFoundException {
+        System.out.println("LOAD USER FROM DB SERVICE");
         User user = userRepository.findUserWithRolesByEmail(email);
         if (user == null) {
             throw new EntityNotFoundException("Пользователь не найден с email: " + email);
         }
         return user;
     }
-
-
 }

@@ -20,7 +20,7 @@ import org.springframework.security.web.csrf.CsrfFilter;
 import java.util.function.Function;
 
 public class TokenCookieAuthenticationConfigurer
-        implements SecurityConfigurer<DefaultSecurityFilterChain, HttpSecurity> {
+        extends AbstractHttpConfigurer<TokenCookieAuthenticationConfigurer, HttpSecurity> {
 
     private Function<String, Token> tokenCookieStringDeserializer;
 
@@ -30,7 +30,7 @@ public class TokenCookieAuthenticationConfigurer
     @Override
     public void init(HttpSecurity builder) throws Exception {
         builder.logout(logout -> logout.addLogoutHandler(
-                        new CookieClearingLogoutHandler("__Host-auth-token"))
+                        new CookieClearingLogoutHandler("auth-token"))
                 .addLogoutHandler((request, response, authentication) -> {
                     if (authentication != null &&
                             authentication.getPrincipal() instanceof TokenUser user) {
@@ -46,6 +46,9 @@ public class TokenCookieAuthenticationConfigurer
 
     @Override
     public void configure(HttpSecurity builder) throws Exception {
+        System.out.println("-----------------------------" +
+                "----------------------------------" +
+                "Configurer");
         var cookieAuthenticationFilter = new AuthenticationFilter(
                 builder.getSharedObject(AuthenticationManager.class),
                 new TokenCookieAuthenticationConverter(this.tokenCookieStringDeserializer));

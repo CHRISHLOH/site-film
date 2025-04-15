@@ -26,19 +26,26 @@ public class TokenCookieSessionAuthenticationStrategy implements SessionAuthenti
     @Override
     public void onAuthentication(Authentication authentication, HttpServletRequest request,
                                  HttpServletResponse response) throws SessionAuthenticationException {
+        System.out.println("---------------------------------------------------------------------------------------------------------------" +
+                "STRATRGY");
         if (authentication instanceof UsernamePasswordAuthenticationToken) {
+
+            System.out.println("STRaTEGI DELAET TOKEN");
             var token = this.tokenCookieFactory.apply(authentication);
             var tokenString = this.tokenStringSerializer.apply(token);
 
-            var cookie = new Cookie("__Host-auth-token", tokenString);
+            var cookie = new Cookie("auth-token", tokenString);
             cookie.setPath("/");
             cookie.setDomain(null);
-            cookie.setSecure(true);
+            cookie.setSecure(false);
             cookie.setHttpOnly(true);
             cookie.setMaxAge((int) ChronoUnit.SECONDS.between(Instant.now(), token.expiresAt()));
 
+            System.out.println(cookie.getName());
+
             response.addCookie(cookie);
+
+            System.out.println(cookie + " DOBAVILAS");
         }
     }
-
 }

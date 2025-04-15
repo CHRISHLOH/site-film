@@ -1,106 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Простая форма логина</title>
     <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-<h2>Форма логина</h2>
-
-<div id="csrf-token"></div>
-
-<form id="loginForm" method="post" action="/login">
-    <div>
-        <label for="username">Email:</label>
-        <input type="text" id="username" name="username">
-    </div>
-    <br>
-    <div>
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password">
-    </div>
-    <br>
-    <input type="hidden" id="csrf" name="_csrf">
+<!-- ВХОД -->
+<h1>Вход</h1>
+<form id="login-form">
+    <label>
+        Имя пользователя:<br>
+        <input type="text" id="input-username">
+    </label><br>
+    <label>
+        Пароль:<br>
+        <input type="password" id="input-password">
+    </label><br>
     <button type="submit">Войти</button>
 </form>
+<hr>
+<!-- CSRF -->
+<h1>CSRF</h1>
+<button id="get-csrf">Получить CSRF</button>
+<pre id="csrf"></pre>
+<hr>
+<!-- API -->
+<h1>Вызов API</h1>
+<button id="hello">Привет!</button>
+<br>
+<pre id="greeting"></pre>
+<hr>
+<!-- ВЫХОД -->
+<h1>Выход</h1>
+<button id="logout">Выйти</button>
 
-<div id="message"></div>
 
 <script>
-    // Получение CSRF токена при загрузке страницы
-    window.onload = function() {
-        fetch('/csrf', {
-            method: 'GET',
-            credentials: 'include'
-        })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('csrf').value = data.token;
-                document.getElementById('csrf-token').innerHTML =
-                    '<p>CSRF Token: ' + data.token + '</p>';
-            })
-            .catch(error => {
-                document.getElementById('message').innerHTML =
-                    '<p style="color: red;">Ошибка при получении CSRF токена: ' + error + '</p>';
-            });
-    };
+    (() => {
+        document.querySelector("form#login-form").onsubmit = e => {
+            e.preventDefault();
 
-    // Обработка отправки формы
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+            const username = document.querySelector("input#input-username").value;
+            const password = document.querySelector("input#input-password").value;
 
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-        const csrfToken = document.getElementById('csrf').value;
-
-        const formData = new FormData();
-        formData.append('username', username);
-        formData.append('password', password);
-
-        fetch('/login', {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'X-CSRF-TOKEN': csrfToken
-            },
-            credentials: 'include',
-            redirect: 'follow'
-        })
-            .then(response => {
-                if (response.redirected) {
-                    window.location.href = response.url;
-                } else if (response.ok) {
-                    document.getElementById('message').innerHTML =
-                        '<p style="color: green;">Успешная авторизация!</p>';
-                    // Попробуем получить доступ к защищенному ресурсу
-                    testProtectedResource();
-                } else {
-                    document.getElementById('message').innerHTML =
-                        '<p style="color: red;">Ошибка авторизации. Статус: ' + response.status + '</p>';
+            fetch("/csrf", {
+                headers: {
+                    "Authorization": `Basic ${btoa(username + ":" + password)}`
                 }
+            }).then(response => {
+                if (response.status !== 200) {
+                    throw new Error(`Unexpected status: ${response.status}`)
+                }
+                return response.text();
+            }).then(text => {
+                document.querySelector("pre#csrf").innerText = text
             })
-            .catch(error => {
-                document.getElementById('message').innerHTML =
-                    '<p style="color: red;">Ошибка: ' + error + '</p>';
-            });
-    });
+        }
 
-    // Проверка доступа к защищенному ресурсу
-    function testProtectedResource() {
-        fetch('/test', {
-            method: 'GET',
-            credentials: 'include'
-        })
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('message').innerHTML +=
-                    '<p>Ответ от защищенного ресурса: ' + data + '</p>';
+        document.querySelector("button#get-csrf").onclick = _ => {
+            fetch("/csrf").then(response => {
+                if (response.status !== 200) {
+                    throw new Error(`Unexpected status: ${response.status}`)
+                }
+                return response.text();
+            }).then(text => {
+                document.querySelector("pre#csrf").innerText = text
             })
-            .catch(error => {
-                document.getElementById('message').innerHTML +=
-                    '<p style="color: red;">Ошибка при доступе к защищенному ресурсу: ' + error + '</p>';
-            });
-    }
+        }
+
+        document.querySelector("button#hello").onclick = _ => {
+            fetch("/test").then(response => {
+                if (response.status !== 200) {
+                    throw new Error(`Unexpected status: ${response.status}`)
+                }
+                return response.text();
+            }).then(text => {
+                document.querySelector("pre#greeting").innerText = text
+            })
+        };
+
+        document.querySelector("button#logout").onclick = _ => {
+            const jwt = JSON.parse(document.querySelector("pre#csrf").innerText);
+            fetch(`/logout?${jwt.parameterName}=${jwt.token}`, {
+                method: "POST"
+            }).then(_ => {
+                document.querySelector("pre#csrf").innerText = '';
+                document.querySelector("pre#greeting").innerText = '';
+            })
+        }
+    })();
 </script>
 </body>
 </html>

@@ -26,6 +26,10 @@ public class TokenAuthenticationUserDetailsService
     @Override
     public UserDetails loadUserDetails(PreAuthenticatedAuthenticationToken authenticationToken)
             throws UsernameNotFoundException {
+        System.out.println("---------------------" +
+                "------------------------" +
+                "loadUSERDETAILs" +
+                "----------------------");
         if (authenticationToken.getPrincipal() instanceof Token token) {
             boolean isTokenActive = !deactivatedTokenRepository.existsById(token.id()) &&
                     token.expiresAt().isAfter(Instant.now());

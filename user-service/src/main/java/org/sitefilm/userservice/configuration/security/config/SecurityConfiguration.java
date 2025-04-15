@@ -64,9 +64,7 @@ public class SecurityConfiguration {
         tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJweStringSerializer);
 
         http.httpBasic(Customizer.withDefaults())
-                .formLogin(form ->
-                        form.loginPage("/login/page")
-                )
+                .formLogin(Customizer.withDefaults())
                 .addFilterAfter(new GetCsrfTokenFilter(), ExceptionTranslationFilter.class)
                 .authorizeHttpRequests(authorizeHttpRequests ->
                         authorizeHttpRequests
@@ -79,7 +77,7 @@ public class SecurityConfiguration {
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
                         .sessionAuthenticationStrategy((authentication, request, response) -> {}));
 
-        http.apply(tokenCookieAuthenticationConfigurer);
+        http.with(tokenCookieAuthenticationConfigurer, configurer -> {});
         return http.build();
     }
 

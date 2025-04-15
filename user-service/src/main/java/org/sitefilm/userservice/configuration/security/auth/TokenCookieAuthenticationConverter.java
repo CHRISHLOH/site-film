@@ -19,9 +19,12 @@ public class TokenCookieAuthenticationConverter implements AuthenticationConvert
 
     @Override
     public Authentication convert(HttpServletRequest request) {
+        System.out.println("------------------------------------" +
+                "--------------------------------------------" +
+                "CONVERTER");
         if (request.getCookies() != null) {
             return Stream.of(request.getCookies())
-                    .filter(cookie -> cookie.getName().equals("__Host-auth-token"))
+                    .filter(cookie -> cookie.getName().equals("auth-token"))
                     .findFirst()
                     .map(cookie -> {
                         var token = this.tokenCookieStringDeserializer.apply(cookie.getValue());
@@ -29,7 +32,6 @@ public class TokenCookieAuthenticationConverter implements AuthenticationConvert
                     })
                     .orElse(null);
         }
-
         return null;
     }
 }
