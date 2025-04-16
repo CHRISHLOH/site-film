@@ -25,6 +25,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.ExceptionTranslationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.csrf.CsrfTokenRequestAttributeHandler;
+import org.springframework.security.web.savedrequest.CookieRequestCache;
 
 @Configuration
 @EnableWebSecurity
@@ -75,7 +76,9 @@ public class SecurityConfiguration {
                         .sessionAuthenticationStrategy(tokenCookieSessionAuthenticationStrategy))
                 .csrf(csrf -> csrf.csrfTokenRepository(new CookieCsrfTokenRepository())
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
-                        .sessionAuthenticationStrategy((authentication, request, response) -> {}));
+                        .sessionAuthenticationStrategy((authentication, request, response) -> {}))
+                        .requestCache(httpSecurityRequestCacheConfigurer ->
+                                httpSecurityRequestCacheConfigurer.requestCache(new CookieRequestCache()));
 
         http.with(tokenCookieAuthenticationConfigurer, configurer -> {});
         return http.build();
