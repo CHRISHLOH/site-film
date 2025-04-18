@@ -1,16 +1,12 @@
 package org.sitefilm.userservice.configuration.security.config;
 
-import com.nimbusds.jose.crypto.DirectDecrypter;
-import com.nimbusds.jose.crypto.DirectEncrypter;
-import com.nimbusds.jose.jwk.OctetSequenceKey;
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.userservice.configuration.security.auth.TokenCookieAuthenticationConfigurer;
 import org.sitefilm.userservice.configuration.security.auth.TokenCookieSessionAuthenticationStrategy;
 import org.sitefilm.userservice.configuration.security.csrf.GetCsrfTokenFilter;
-import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJweStringDeserializer;
-import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJweStringSerializer;
+import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJwtStringDeserializer;
+import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJwtStringSerializer;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -33,26 +29,22 @@ import org.springframework.security.web.savedrequest.CookieRequestCache;
 @RequiredArgsConstructor
 public class SecurityConfiguration {
 
+    private final RsaKeyProperties rsaKeyProperties;
+
     @Bean
-    public TokenCookieJweStringSerializer tokenCookieJweStringSerializer(
-            @Value("${jwt.cookie-token-key}") String cookieTokenKey
+    public TokenCookieJwtStringSerializer tokenCookieJweStringSerializer(
     ) throws Exception {
-        return new TokenCookieJweStringSerializer(new DirectEncrypter(
-                OctetSequenceKey.parse(cookieTokenKey)
-        ));
+        return new TokenCookieJwtStringSerializer(rsaKeyProperties.getPrivateKey());
     }
 
     @Bean
     public TokenCookieAuthenticationConfigurer tokenCookieAuthenticationConfigurer(
-            @Value("${jwt.cookie-token-key}") String cookieTokenKey,
             DeactivatedTokenRepository deactivatedTokenRepository
     ) throws Exception {
         return new TokenCookieAuthenticationConfigurer()
-                .tokenCookieStringDeserializer(new TokenCookieJweStringDeserializer(
-                        new DirectDecrypter(
-                                OctetSequenceKey.parse(cookieTokenKey)
-                        )
-                ))
+                .tokenCookieStringDeserializer(
+                        new TokenCookieJwtStringDeserializer(
+                            rsaKeyProperties.getPublicKey()))
                 .deactivatedTokenRepository(deactivatedTokenRepository);
     }
 
@@ -60,9 +52,10 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
             TokenCookieAuthenticationConfigurer tokenCookieAuthenticationConfigurer,
-            TokenCookieJweStringSerializer tokenCookieJweStringSerializer) throws Exception {
-        var tokenCookieSessionAuthenticationStrategy = new TokenCookieSessionAuthenticationStrategy();
-        tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJweStringSerializer);
+            TokenCookieJwtStringSerializer tokenCookieJwtStringSerializer) throws Exception {
+
+        TokenCookieSessionAuthenticationStrategy tokenCookieSessionAuthenticationStrategy = new TokenCookieSessionAuthenticationStrategy();
+        tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJwtStringSerializer);
 
         http.httpBasic(Customizer.withDefaults())
                 .formLogin(Customizer.withDefaults())
@@ -77,13 +70,12 @@ public class SecurityConfiguration {
                 .csrf(csrf -> csrf.csrfTokenRepository(new CookieCsrfTokenRepository())
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
                         .sessionAuthenticationStrategy((authentication, request, response) -> {}))
-                        .requestCache(httpSecurityRequestCacheConfigurer ->
-                                httpSecurityRequestCacheConfigurer.requestCache(new CookieRequestCache()));
+                .requestCache(httpSecurityRequestCacheConfigurer ->
+                        httpSecurityRequestCacheConfigurer.requestCache(new CookieRequestCache()));
 
         http.with(tokenCookieAuthenticationConfigurer, configurer -> {});
         return http.build();
     }
-
 
     @Bean
     public PasswordEncoder passwordEncoder() {
