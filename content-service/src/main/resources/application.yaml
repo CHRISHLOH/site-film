@@ -15,10 +15,23 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8088/realms/site-film
+jwt:
+  rsa:
+    public-key-pem: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtnrMN9NJOxtpec6KmulI
+      UkQj/mUtgsXQ//29s5/68RESlesvnDb3LUmbV5mbQt7LTA9x7b2FeqfPvB3NQlIO
+      BkMeU3Jz4xjSonJYBA6GIJ6F3sNnAiaUXjXG/LHHgX7RTX83+c26k9tXkCIv+zWd
+      ux48KkY6kb4YYikNfp0RzVZ07YWzenNra+ec4Lk6RSMMaOVzn7k20XtnWNZaV+KT
+      Wbm4KqccLRBD4uDJxzcqI6da+liCT4/qLpav02tgnzHJiGhd7SjHSi4BcVsIMyI+
+      EL/SIecJIv3azxWw0T7fkfxj/snCVaJ9vQEL4ccOwtVvRscUKX6zvFoNp13P7KGd
+      ohLPPec0w1PeMCYdLUNGydhzNBITb7zcaZJNv23N7JHTYqTW4501Tysc/BBHHMwY
+      ljJMfYDLp33ed9muzEVolo85UvjYlbqe1Q0mnRzk4DJuwPelZOBQo1B1BU9PaL/s
+      BGriNsU5OHUotxGCGKH+l/zmKI1Jp+8DFynZLM/u5t0lP6gXXNSGib56dt9fGNv1
+      JhLD31O3Ti7kVMYtWbGwXgGtrtw5geNMh1cMKoDpnzTHQ8nOGUbE+xrbT3nJow/U
+      rPrpRpDlO4yrwOxwD6gKyuH4GpSfSGiDVMbCPzSnhuCIPreCq77ig8FXo+Nn7DWJ
+      7yh5PN+5TQvzMdIKhLTESGMCAwEAAQ==
+      -----END PUBLIC KEY----- 
+
 server:
   port: 8080

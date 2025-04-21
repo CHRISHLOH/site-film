@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
 
-    <changeSet id="create-t_deactivated_token" author="galion">
+    <changeSet id="user_service_7" author="galion">
         <createTable tableName="t_deactivated_token" schemaName="user_service">
             <column name="id" type="UUID">
                 <constraints primaryKey="true"/>

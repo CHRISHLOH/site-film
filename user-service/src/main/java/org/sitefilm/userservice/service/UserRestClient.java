@@ -1,5 +1,7 @@
 package org.sitefilm.userservice.service;
 
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.userservice.dto.main.UserProfileDto;
 import org.sitefilm.userservice.dto.main.movie.FullMovieDto;

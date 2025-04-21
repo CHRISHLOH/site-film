@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="1" author="galion">
+    <changeSet id="user_service_4" author="galion">
         <insert tableName="users" schemaName="user_service">
             <column name="email" value="admin@example.com"/>
             <column name="password" value="$2a$12$njI8qDEdpbwWBKjM7N8b1ebLu79m4fd5XhzHintijxucyvMN0SE8O"/>
@@ -16,7 +16,7 @@
         </insert>
     </changeSet>
 
-    <changeSet id="2" author="galion">
+    <changeSet id="user_service_5" author="galion">
         <insert tableName="roles" schemaName="user_service">
             <column name="name" value="ADMIN"/>
         </insert>
@@ -25,7 +25,7 @@
         </insert>
     </changeSet>
 
-    <changeSet id="3" author="galion">
+    <changeSet id="user_service_6" author="galion">
         <insert tableName="user_roles" schemaName="user_service">
             <column name="user_id" value="1"/>
             <column name="role_id" value="1"/>
