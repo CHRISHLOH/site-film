@@ -31,12 +31,14 @@ public class GetCsrfTokenFilter extends OncePerRequestFilter {
                 "-----------------------------------" +
                 "------------------- Filter");
         if (this.requestMatcher.matches(request)) {
+            System.out.println("Прошло");
             response.setStatus(HttpServletResponse.SC_OK);
             response.setContentType(MediaType.APPLICATION_JSON_VALUE);
             this.objectMapper.writeValue(response.getWriter(), this.csrfTokenRepository.loadDeferredToken(request, response).get());
+            System.out.println("дальше");
             return;
         }
-
+        System.out.println("Скип ифа");
         filterChain.doFilter(request, response);
     }
 }

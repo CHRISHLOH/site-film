@@ -1,5 +1,10 @@
 package org.sitefilm.userservice.configuration.security.config;
 
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.userservice.configuration.security.auth.TokenCookieAuthenticationConfigurer;
 import org.sitefilm.userservice.configuration.security.auth.TokenCookieSessionAuthenticationStrategy;
@@ -7,8 +12,10 @@ import org.sitefilm.userservice.configuration.security.csrf.GetCsrfTokenFilter;
 import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJwtStringDeserializer;
 import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJwtStringSerializer;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -22,6 +29,13 @@ import org.springframework.security.web.access.ExceptionTranslationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.csrf.CsrfTokenRequestAttributeHandler;
 import org.springframework.security.web.savedrequest.CookieRequestCache;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.OncePerRequestFilter;
+
+import java.io.IOException;
+import java.util.List;
 
 @Configuration
 @EnableWebSecurity
@@ -49,6 +63,21 @@ public class SecurityConfiguration {
     }
 
     @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.setAllowedOrigins(List.of("http://127.0.0.1:5500"));
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        configuration.setAllowedHeaders(List.of("*"));
+        configuration.setAllowCredentials(true);
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
+    }
+
+
+
+    @Bean
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
             TokenCookieAuthenticationConfigurer tokenCookieAuthenticationConfigurer,
@@ -58,11 +87,10 @@ public class SecurityConfiguration {
         tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJwtStringSerializer);
 
         http.httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults())
                 .addFilterAfter(new GetCsrfTokenFilter(), ExceptionTranslationFilter.class)
                 .authorizeHttpRequests(authorizeHttpRequests ->
                         authorizeHttpRequests
-                                .requestMatchers(HttpMethod.GET, "login/*").permitAll()
+                                .requestMatchers(HttpMethod.GET, "login/**").permitAll()
                                 .anyRequest().authenticated())
                 .sessionManagement(sessionManagement -> sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -71,7 +99,9 @@ public class SecurityConfiguration {
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
                         .sessionAuthenticationStrategy((authentication, request, response) -> {}))
                 .requestCache(httpSecurityRequestCacheConfigurer ->
-                        httpSecurityRequestCacheConfigurer.requestCache(new CookieRequestCache()));
+                        httpSecurityRequestCacheConfigurer.requestCache(new CookieRequestCache()))
+                .cors(cors -> cors.configurationSource(corsConfigurationSource()));
+
 
         http.with(tokenCookieAuthenticationConfigurer, configurer -> {});
         return http.build();
@@ -80,5 +110,21 @@ public class SecurityConfiguration {
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public FilterRegistrationBean<Filter> requestLoggingFilter() {
+        FilterRegistrationBean<Filter> registrationBean = new FilterRegistrationBean<>();
+        registrationBean.setFilter(new OncePerRequestFilter() {
+            @Override
+            protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+                    throws ServletException, IOException {
+                System.out.println("Request URL: " + request.getRequestURL() + ", Method: " + request.getMethod());
+                filterChain.doFilter(request, response);
+                System.out.println("Response Status: " + response.getStatus());
+            }
+        });
+        registrationBean.setOrder(Ordered.HIGHEST_PRECEDENCE);
+        return registrationBean;
     }
 }

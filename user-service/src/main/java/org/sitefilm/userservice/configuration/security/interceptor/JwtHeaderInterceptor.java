@@ -20,8 +20,9 @@ public class JwtHeaderInterceptor implements ClientHttpRequestInterceptor {
             throws IOException {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         if (auth != null && auth.getCredentials() instanceof String jwt) {
-            request.getHeaders()
-                    .add(HttpHeaders.AUTHORIZATION, "Bearer " + jwt);
+            request.getHeaders().add(HttpHeaders.AUTHORIZATION, "Bearer " + jwt);
+        } else {
+            System.out.println("Токен отсутствует или невалиден");
         }
         return exec.execute(request, body);
     }
