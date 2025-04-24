@@ -40,10 +40,15 @@ public class TokenCookieSessionAuthenticationStrategy implements SessionAuthenti
             var cookie = new Cookie("auth-token", tokenString);
             cookie.setPath("/");
             cookie.setDomain(null);
-            cookie.setSecure(false);
+            cookie.setSecure(true);
             cookie.setHttpOnly(true);
             cookie.setMaxAge((int) ChronoUnit.SECONDS.between(Instant.now(), token.expiresAt()));
-            response.setHeader("Set-Cookie", response.getHeader("Set-Cookie") + "; SameSite=None");
+            response.addHeader("Set-Cookie", cookie.getName() + "=" + cookie.getValue() +
+                    "; Path=" + cookie.getPath() +
+                    "; HttpOnly=" + cookie.isHttpOnly() +
+                    "; Secure=true" +
+                    "; SameSite=None" +
+                    "; Max-Age=" + cookie.getMaxAge());
 
             System.out.println("Настройки куки:");
             System.out.println("  - Имя: " + cookie.getName());
