@@ -43,6 +43,7 @@ public class TokenCookieSessionAuthenticationStrategy implements SessionAuthenti
             cookie.setSecure(false);
             cookie.setHttpOnly(true);
             cookie.setMaxAge((int) ChronoUnit.SECONDS.between(Instant.now(), token.expiresAt()));
+            response.setHeader("Set-Cookie", response.getHeader("Set-Cookie") + "; SameSite=None");
 
             System.out.println("Настройки куки:");
             System.out.println("  - Имя: " + cookie.getName());
