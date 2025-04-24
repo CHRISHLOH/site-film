@@ -89,3 +89,7 @@ jwt:
 
 server:
   port: 8082
+logging:
+  level:
+    org.springframework.security: DEBUG    # логирование Spring Security на уровне DEBUG
+    org.springframework.web.cors: DEBUG     # логирование CORS-механизма на уровне DEBUG

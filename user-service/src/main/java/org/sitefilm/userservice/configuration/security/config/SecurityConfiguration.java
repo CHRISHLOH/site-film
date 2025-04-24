@@ -3,8 +3,10 @@ package org.sitefilm.userservice.configuration.security.config;
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponseWrapper;
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.userservice.configuration.security.auth.TokenCookieAuthenticationConfigurer;
 import org.sitefilm.userservice.configuration.security.auth.TokenCookieSessionAuthenticationStrategy;
@@ -35,6 +37,8 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Configuration
@@ -87,6 +91,7 @@ public class SecurityConfiguration {
         tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJwtStringSerializer);
 
         http.httpBasic(Customizer.withDefaults())
+                .formLogin(Customizer.withDefaults())
                 .addFilterAfter(new GetCsrfTokenFilter(), ExceptionTranslationFilter.class)
                 .authorizeHttpRequests(authorizeHttpRequests ->
                         authorizeHttpRequests
@@ -119,9 +124,51 @@ public class SecurityConfiguration {
             @Override
             protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
                     throws ServletException, IOException {
-                System.out.println("Request URL: " + request.getRequestURL() + ", Method: " + request.getMethod());
-                filterChain.doFilter(request, response);
-                System.out.println("Response Status: " + response.getStatus());
+                System.out.println("=== НАЧАЛО ЗАПРОСА ===");
+                System.out.println("URL: " + request.getRequestURL() + ", Метод: " + request.getMethod());
+
+                // Оборачиваем ответ, чтобы перехватить заголовки
+                HttpServletResponseWrapper responseWrapper = new HttpServletResponseWrapper(response) {
+                    private final List<String> cookieHeaders = new ArrayList<>();
+
+                    @Override
+                    public void addCookie(Cookie cookie) {
+                        super.addCookie(cookie);
+                        cookieHeaders.add("Set-Cookie: " + cookie.getName() + "=" + cookie.getValue() +
+                                " Path=" + cookie.getPath() +
+                                " HttpOnly=" + cookie.isHttpOnly() +
+                                " Secure=" + cookie.getSecure() +
+                                " MaxAge=" + cookie.getMaxAge());
+                    }
+
+                    @Override
+                    public void addHeader(String name, String value) {
+                        super.addHeader(name, value);
+                        if ("Set-Cookie".equalsIgnoreCase(name)) {
+                            cookieHeaders.add("Set-Cookie header: " + value);
+                        }
+                    }
+
+                    public List<String> getCookieHeaders() {
+                        return cookieHeaders;
+                    }
+                };
+
+                filterChain.doFilter(request, responseWrapper);
+
+                System.out.println("Статус ответа: " + response.getStatus());
+
+                // Вывод заголовков Set-Cookie после выполнения цепочки фильтров
+                System.out.println("Заголовки Set-Cookie в ответе:");
+                if (responseWrapper instanceof HttpServletResponseWrapper) {
+                    ((HttpServletResponseWrapper) responseWrapper).getHeaderNames()
+                            .stream()
+                            .filter(name -> "Set-Cookie".equalsIgnoreCase(name))
+                            .forEach(name -> System.out.println("  - " + name + ": " +
+                                    ((HttpServletResponseWrapper) responseWrapper).getHeader(name)));
+                }
+
+                System.out.println("=== КОНЕЦ ЗАПРОСА ===");
             }
         });
         registrationBean.setOrder(Ordered.HIGHEST_PRECEDENCE);
