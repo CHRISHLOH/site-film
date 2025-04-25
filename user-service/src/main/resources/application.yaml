@@ -86,9 +86,17 @@ jwt:
       7yh5PN+5TQvzMdIKhLTESGMCAwEAAQ==
       -----END PUBLIC KEY-----
 
-
 server:
-  port: 8082
+  port: 8443
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: mypass
+    key-store-type: PKCS12
+    key-alias: localhost-cert
+    enabled-protocols: TLSv1.2,TLSv1.3
+    protocol: TLS
+
 logging:
   level:
     org.springframework.security: DEBUG    # логирование Spring Security на уровне DEBUG

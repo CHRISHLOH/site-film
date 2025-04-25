@@ -30,7 +30,7 @@ public class TokenCookieAuthenticationConfigurer
     @Override
     public void init(HttpSecurity builder) throws Exception {
         builder.logout(logout -> logout.addLogoutHandler(
-                        new CookieClearingLogoutHandler("auth-token"))
+                        new CookieClearingLogoutHandler("__Host-auth-token"))
                 .addLogoutHandler((request, response, authentication) -> {
                     if (authentication != null &&
                             authentication.getPrincipal() instanceof TokenUser user) {

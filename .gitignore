@@ -2,3 +2,4 @@
 /admin-service/target/
 /content-service/target/
 /user-service/target/
+/user-service/src/main/resources/keystore.p12

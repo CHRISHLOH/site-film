@@ -26,11 +26,11 @@ public class TokenCookieAuthenticationConverter implements AuthenticationConvert
         if (request.getCookies() != null) {
             System.out.println("Найдены куки в запросе:");
             for (Cookie cookie : request.getCookies()) {
-                System.out.println("  - " + cookie.getName() + ": " + (cookie.getName().equals("auth-token") ? "[ЗНАЧЕНИЕ СКРЫТО]" : cookie.getValue()));
+                System.out.println("  - " + cookie.getName() + ": " + (cookie.getName().equals("__Host-auth-token") ? "[ЗНАЧЕНИЕ СКРЫТО]" : cookie.getValue()));
             }
 
             var authCookie = Stream.of(request.getCookies())
-                    .filter(cookie -> cookie.getName().equals("auth-token"))
+                    .filter(cookie -> cookie.getName().equals("__Host-auth-token"))
                     .findFirst();
 
             if (authCookie.isPresent()) {
@@ -44,7 +44,7 @@ public class TokenCookieAuthenticationConverter implements AuthenticationConvert
                     System.out.println("Ошибка при десериализации токена: " + e.getMessage());
                 }
             } else {
-                System.out.println("Кука auth-token не найдена в запросе");
+                System.out.println("Кука __Host-auth-token не найдена в запросе");
             }
         } else {
             System.out.println("В запросе нет кук");

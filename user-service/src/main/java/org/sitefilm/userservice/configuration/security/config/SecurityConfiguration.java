@@ -93,7 +93,6 @@ public class SecurityConfiguration {
         tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJwtStringSerializer);
 
         http.httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults())
                 .addFilterAfter(new GetCsrfTokenFilter(), ExceptionTranslationFilter.class)
                 .authorizeHttpRequests(authorizeHttpRequests ->
                         authorizeHttpRequests
@@ -105,8 +104,6 @@ public class SecurityConfiguration {
                 .csrf(csrf -> csrf.csrfTokenRepository(new CookieCsrfTokenRepository())
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
                         .sessionAuthenticationStrategy((authentication, request, response) -> {}))
-                .requestCache(httpSecurityRequestCacheConfigurer ->
-                        httpSecurityRequestCacheConfigurer.requestCache(new CookieRequestCache()))
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()));
 
 
@@ -126,51 +123,9 @@ public class SecurityConfiguration {
             @Override
             protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
                     throws ServletException, IOException {
-                System.out.println("=== НАЧАЛО ЗАПРОСА ===");
-                System.out.println("URL: " + request.getRequestURL() + ", Метод: " + request.getMethod());
-
-                // Оборачиваем ответ, чтобы перехватить заголовки
-                HttpServletResponseWrapper responseWrapper = new HttpServletResponseWrapper(response) {
-                    private final List<String> cookieHeaders = new ArrayList<>();
-
-                    @Override
-                    public void addCookie(Cookie cookie) {
-                        super.addCookie(cookie);
-                        cookieHeaders.add("Set-Cookie: " + cookie.getName() + "=" + cookie.getValue() +
-                                " Path=" + cookie.getPath() +
-                                " HttpOnly=" + cookie.isHttpOnly() +
-                                " Secure=" + cookie.getSecure() +
-                                " MaxAge=" + cookie.getMaxAge());
-                    }
-
-                    @Override
-                    public void addHeader(String name, String value) {
-                        super.addHeader(name, value);
-                        if ("Set-Cookie".equalsIgnoreCase(name)) {
-                            cookieHeaders.add("Set-Cookie header: " + value);
-                        }
-                    }
-
-                    public List<String> getCookieHeaders() {
-                        return cookieHeaders;
-                    }
-                };
-
-                filterChain.doFilter(request, responseWrapper);
-
-                System.out.println("Статус ответа: " + response.getStatus());
-
-                // Вывод заголовков Set-Cookie после выполнения цепочки фильтров
-                System.out.println("Заголовки Set-Cookie в ответе:");
-                if (responseWrapper instanceof HttpServletResponseWrapper) {
-                    ((HttpServletResponseWrapper) responseWrapper).getHeaderNames()
-                            .stream()
-                            .filter(name -> "Set-Cookie".equalsIgnoreCase(name))
-                            .forEach(name -> System.out.println("  - " + name + ": " +
-                                    ((HttpServletResponseWrapper) responseWrapper).getHeader(name)));
-                }
-
-                System.out.println("=== КОНЕЦ ЗАПРОСА ===");
+                System.out.println("Request URL: " + request.getRequestURL() + ", Method: " + request.getMethod());
+                filterChain.doFilter(request, response);
+                System.out.println("Response Status: " + response.getStatus());
             }
         });
         registrationBean.setOrder(Ordered.HIGHEST_PRECEDENCE);
