@@ -87,7 +87,8 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
             TokenCookieAuthenticationConfigurer tokenCookieAuthenticationConfigurer,
-            TokenCookieJwtStringSerializer tokenCookieJwtStringSerializer) throws Exception {
+            TokenCookieJwtStringSerializer tokenCookieJwtStringSerializer,
+            CookieCsrfTokenRepository csrfTokenRepository) throws Exception {
 
         TokenCookieSessionAuthenticationStrategy tokenCookieSessionAuthenticationStrategy = new TokenCookieSessionAuthenticationStrategy();
         tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJwtStringSerializer);
@@ -102,7 +103,7 @@ public class SecurityConfiguration {
                 .sessionManagement(sessionManagement -> sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                         .sessionAuthenticationStrategy(tokenCookieSessionAuthenticationStrategy))
-                .csrf(csrf -> csrf.csrfTokenRepository(new CookieCsrfTokenRepository())
+                .csrf(csrf -> csrf.csrfTokenRepository(csrfTokenRepository)
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
                         .sessionAuthenticationStrategy((authentication, request, response) -> {}))
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()));
@@ -131,5 +132,19 @@ public class SecurityConfiguration {
         });
         registrationBean.setOrder(Ordered.HIGHEST_PRECEDENCE);
         return registrationBean;
+    }
+
+    @Bean
+    public CookieCsrfTokenRepository cookieCsrfTokenRepository() {
+        CookieCsrfTokenRepository repo = CookieCsrfTokenRepository.withHttpOnlyFalse();
+        // Настроим SameSite и Secure через кастомизатор
+        repo.setCookieName("XSRF-TOKEN");
+        repo.setCookiePath("/");
+        repo.setCookieCustomizer(builder -> {
+            builder.sameSite("None");
+            builder.secure(true);
+            builder.httpOnly(false); // JS может читать
+        });
+        return repo;
     }
 }

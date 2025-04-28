@@ -31,13 +31,13 @@ public class TokenCookieSessionAuthenticationStrategy implements SessionAuthenti
 
         if (authentication instanceof UsernamePasswordAuthenticationToken) {
             System.out.println("Создаем токен и куку");
-            var token = this.tokenCookieFactory.apply(authentication);
-            var tokenString = this.tokenStringSerializer.apply(token);
+            Token token = this.tokenCookieFactory.apply(authentication);
+            String tokenString = this.tokenStringSerializer.apply(token);
 
             System.out.println("Токен создан: " + token.id());
             System.out.println("Срок действия до: " + token.expiresAt());
 
-            var cookie = new Cookie("__Host-auth-token", tokenString);
+            Cookie cookie = new Cookie("__Host-auth-token", tokenString);
             cookie.setPath("/");
             cookie.setDomain(null);
             cookie.setSecure(true);
