@@ -30,44 +30,12 @@ public class GetCsrfTokenFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        System.out.println("=== НАЧАЛО CSRF ФИЛЬТРА ===");
-        System.out.println("URL запроса: " + request.getRequestURL());
-        System.out.println("Метод запроса: " + request.getMethod());
-
-        // Логирование заголовков
-        System.out.println("Заголовки запроса:");
-        Collections.list(request.getHeaderNames()).forEach(header ->
-                System.out.println("  - " + header + ": " + request.getHeader(header)));
-
-        // Логирование кук
-        System.out.println("Куки запроса:");
-        if (request.getCookies() != null) {
-            for (Cookie cookie : request.getCookies()) {
-                System.out.println("  - " + cookie.getName() + ": " + cookie.getValue());
-            }
-        } else {
-            System.out.println("  Куки отсутствуют");
-        }
-
         if (this.requestMatcher.matches(request)) {
-            System.out.println("Запрос соответствует CSRF маршруту, формируем токен");
             response.setStatus(HttpServletResponse.SC_OK);
             response.setContentType(MediaType.APPLICATION_JSON_VALUE);
-
-            CsrfToken token = this.csrfTokenRepository.loadDeferredToken(request, response).get();
-            this.objectMapper.writeValue(response.getWriter(), token);
-
-            System.out.println("CSRF токен создан и отправлен: " + token.getToken());
-            System.out.println("Заголовки ответа:");
-            response.getHeaderNames().forEach(header ->
-                    System.out.println("  - " + header + ": " + response.getHeader(header)));
-
-            System.out.println("=== КОНЕЦ CSRF ФИЛЬТРА ===");
+            this.objectMapper.writeValue(response.getWriter(), this.csrfTokenRepository.loadDeferredToken(request, response).get());
             return;
         }
-
-        System.out.println("Запрос не соответствует CSRF маршруту, продолжаем цепочку фильтров");
-        System.out.println("=== КОНЕЦ CSRF ФИЛЬТРА ===");
         filterChain.doFilter(request, response);
     }
 }

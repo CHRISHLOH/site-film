@@ -46,9 +46,6 @@ public class TokenCookieAuthenticationConfigurer
 
     @Override
     public void configure(HttpSecurity builder) throws Exception {
-        System.out.println("-----------------------------" +
-                "----------------------------------" +
-                "Configurer");
         var cookieAuthenticationFilter = new AuthenticationFilter(
                 builder.getSharedObject(AuthenticationManager.class),
                 new TokenCookieAuthenticationConverter(this.tokenCookieStringDeserializer));
