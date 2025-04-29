@@ -37,9 +37,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+
 import java.util.List;
 
 @Configuration
@@ -70,7 +68,7 @@ public class SecurityConfiguration {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://127.0.0.1:5500"));
+        configuration.setAllowedOrigins(List.of("https://localhost:8444"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setExposedHeaders(List.of("Set-Cookie", "Authorization"));
@@ -87,8 +85,8 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
             TokenCookieAuthenticationConfigurer tokenCookieAuthenticationConfigurer,
-            TokenCookieJwtStringSerializer tokenCookieJwtStringSerializer,
-            CookieCsrfTokenRepository csrfTokenRepository) throws Exception {
+            TokenCookieJwtStringSerializer tokenCookieJwtStringSerializer) throws Exception {
+
 
         TokenCookieSessionAuthenticationStrategy tokenCookieSessionAuthenticationStrategy = new TokenCookieSessionAuthenticationStrategy();
         tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJwtStringSerializer);
@@ -103,7 +101,7 @@ public class SecurityConfiguration {
                 .sessionManagement(sessionManagement -> sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                         .sessionAuthenticationStrategy(tokenCookieSessionAuthenticationStrategy))
-                .csrf(csrf -> csrf.csrfTokenRepository(csrfTokenRepository)
+                .csrf(csrf -> csrf.csrfTokenRepository(new CookieCsrfTokenRepository())
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
                         .sessionAuthenticationStrategy((authentication, request, response) -> {}))
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()));
@@ -134,17 +132,4 @@ public class SecurityConfiguration {
         return registrationBean;
     }
 
-    @Bean
-    public CookieCsrfTokenRepository cookieCsrfTokenRepository() {
-        CookieCsrfTokenRepository repo = CookieCsrfTokenRepository.withHttpOnlyFalse();
-        // Настроим SameSite и Secure через кастомизатор
-        repo.setCookieName("XSRF-TOKEN");
-        repo.setCookiePath("/");
-        repo.setCookieCustomizer(builder -> {
-            builder.sameSite("None");
-            builder.secure(true);
-            builder.httpOnly(false); // JS может читать
-        });
-        return repo;
-    }
 }
