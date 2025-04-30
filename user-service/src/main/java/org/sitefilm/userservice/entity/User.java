@@ -39,6 +39,12 @@ public class User implements UserDetails {
     )
     private Set<Role> roles = new HashSet<>();
 
+    @Column
+    private boolean isEnabled;
+
+    @Column
+    private boolean isVerified;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return this.roles;

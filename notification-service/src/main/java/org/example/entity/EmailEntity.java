@@ -17,10 +17,10 @@ public class EmailEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column(name = "sender",  nullable = false)
+    @Column(name = "from",  nullable = false)
     String from;
 
-    @Column(name = "recipient",  nullable = false)
+    @Column(name = "to",  nullable = false)
     String to;
 
     @Column(name = "subject",  nullable = false)

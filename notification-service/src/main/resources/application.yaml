@@ -8,10 +8,10 @@ spring:
       client-id: email-consumer
 
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/site_film
-    username: ${DB_USER:root}
-    password: ${DB_PASSWORD:root}
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: user
+    password: user
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/site_film
 
   jpa:
     hibernate:
@@ -22,4 +22,4 @@ spring:
         format_sql: true
 
 server:
-  port: ${SERVER_PORT:8085}
+  port: 8085
