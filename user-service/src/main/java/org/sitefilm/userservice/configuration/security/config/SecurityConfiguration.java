@@ -97,6 +97,7 @@ public class SecurityConfiguration {
                         authorizeHttpRequests
                                 .requestMatchers(HttpMethod.POST, "/login/**").permitAll()
                                 .requestMatchers(HttpMethod.GET, "/csrf").permitAll()
+                                .requestMatchers(HttpMethod.POST, "/api/auth/register").permitAll()
                                 .anyRequest().authenticated())
                 .sessionManagement(sessionManagement -> sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
