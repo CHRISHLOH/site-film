@@ -5,8 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.sitefilm.userservice.dto.VerificationCodeDto;
-import org.sitefilm.userservice.entity.VerificationCode;
-import org.sitefilm.userservice.service.factory.GetVerificationEmailCodeFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 

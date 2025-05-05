@@ -14,16 +14,14 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class EmailConsumer {
 
-    private static final String orderTopic = "verification-email";
+    private static final String verification_topic = "verification-email";
 
     private final ObjectMapper objectMapper;
 
 
 
-    @KafkaListener(topics = orderTopic)
-    public void consumeMessage(String message) throws JsonProcessingException {
-        log.info("message consumed {}", message);
-        VerificationCodeDto verificationCode = objectMapper.readValue(message, VerificationCodeDto.class);
+    @KafkaListener(topics = verification_topic)
+    public void consumeMessage(VerificationCodeDto verificationCode) throws JsonProcessingException {
         System.out.println(verificationCode);
     }
 }
