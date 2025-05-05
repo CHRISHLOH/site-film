@@ -15,7 +15,7 @@ public interface VerificationCodeRepository extends JpaRepository<VerificationCo
         FROM VerificationCode vc
         WHERE vc.code = :code
           AND vc.email = :email
-          AND vc.isUsed = false
+          AND vc.used = false
           AND vc.expiresAt > :now
     """)
     boolean compareUserCodeWithDB(

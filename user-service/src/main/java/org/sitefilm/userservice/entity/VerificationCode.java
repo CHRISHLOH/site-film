@@ -31,5 +31,5 @@ public class VerificationCode {
     private Instant expiresAt;
 
     @Column(name = "is_used", nullable = false)
-    private boolean isUsed = false;
+    private boolean used;
 }
