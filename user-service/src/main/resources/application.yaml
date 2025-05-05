@@ -15,6 +15,10 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+      client-id: email-producer
 jwt:
   rsa:
     private-key-pem: |

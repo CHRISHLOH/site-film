@@ -1,12 +1,10 @@
 package org.example.configuration;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import org.example.dto.EmailDto;
+import org.example.dto.VerificationCodeDto;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
@@ -23,14 +21,14 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class EmailConfiguration {
 
-    @Value("${spring.kafka.bootstrap-servers}")
+    @Value("${spring.kafka.consumer.bootstrap-servers}")
     private String bootstrapServers;
 
-    @Value("${spring.kafka.consumer.group-id}")
+    @Value("${spring.kafka.consumer.client-id}")
     private String groupId;
 
     @Bean
-    public ConsumerFactory<String, EmailDto> consumerFactory() {
+    public ConsumerFactory<String, VerificationCodeDto> consumerFactory() {
         Map<String, Object> props = new HashMap<>();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         props.put(ConsumerConfig.GROUP_ID_CONFIG, groupId);
@@ -41,13 +39,13 @@ public class EmailConfiguration {
         return new DefaultKafkaConsumerFactory<>(
                 props,
                 new StringDeserializer(),
-                new JsonDeserializer<>(EmailDto.class, false)
+                new JsonDeserializer<>(VerificationCodeDto.class, false)
         );
     }
 
     @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, EmailDto> kafkaListenerContainerFactory() {
-        ConcurrentKafkaListenerContainerFactory<String, EmailDto> factory =
+    public ConcurrentKafkaListenerContainerFactory<String, VerificationCodeDto> kafkaListenerContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, VerificationCodeDto> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
         return factory;

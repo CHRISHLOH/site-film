@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "email_message")
+@Table(name = "email_message", schema = "notification_service")
 @Setter
 @Getter
 @Builder

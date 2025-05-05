@@ -1,13 +1,12 @@
 package org.sitefilm.userservice.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.Instant;
+
 @Entity
-@Table(name = "users", schema = "user_service")
+@Table(name = "verification_codes", schema = "user_service")
 @Setter
 @Getter
 @Builder
@@ -16,10 +15,21 @@ import lombok.*;
 public class VerificationCode {
 
     @Id
-    @Column(name = "code_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "code")
+    @Column(nullable = false)
     private String code;
 
+    @Column(nullable = false)
+    private String email;
+
+    @Column(name = "created_at", nullable = false)
+    private Instant createdAt;
+
+    @Column(name = "expires_at", nullable = false)
+    private Instant expiresAt;
+
+    @Column(name = "is_used", nullable = false)
+    private boolean isUsed = false;
 }
