@@ -30,12 +30,34 @@ public class GetCsrfTokenFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        System.out.println("[CSRF-ФИЛЬТР] Проверка запроса на соответствие CSRF эндпоинту: " + request.getRequestURI());
+        
         if (this.requestMatcher.matches(request)) {
+            System.out.println("[CSRF-ФИЛЬТР] Запрос совпадает с эндпоинтом CSRF токена");
+            
+            CsrfToken csrfToken = this.csrfTokenRepository.loadDeferredToken(request, response).get();
+            System.out.println("[CSRF-ФИЛЬТР] Сгенерирован CSRF токен: " + csrfToken.getToken());
+            System.out.println("[CSRF-ФИЛЬТР] Имя параметра CSRF: " + csrfToken.getParameterName());
+            System.out.println("[CSRF-ФИЛЬТР] Имя заголовка CSRF: " + csrfToken.getHeaderName());
+            
             response.setStatus(HttpServletResponse.SC_OK);
             response.setContentType(MediaType.APPLICATION_JSON_VALUE);
-            this.objectMapper.writeValue(response.getWriter(), this.csrfTokenRepository.loadDeferredToken(request, response).get());
+            
+            this.objectMapper.writeValue(response.getWriter(), csrfToken);
+            System.out.println("[CSRF-ФИЛЬТР] CSRF токен записан в тело ответа");
+            
+            // Логирование всех куки в ответе
+            if (response.getHeaderNames().contains("Set-Cookie")) {
+                System.out.println("[CSRF-ФИЛЬТР] Куки в ответе:");
+                for (String cookie : response.getHeaders("Set-Cookie")) {
+                    System.out.println("[CSRF-ФИЛЬТР]   " + cookie);
+                }
+            }
+            
             return;
         }
+        
+        System.out.println("[CSRF-ФИЛЬТР] Запрос не совпадает с эндпоинтом CSRF токена, продолжение цепочки фильтров");
         filterChain.doFilter(request, response);
     }
 }

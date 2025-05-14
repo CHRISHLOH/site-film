@@ -20,25 +20,55 @@ public class TokenAuthenticationUserDetailsService
     private final DeactivatedTokenRepository deactivatedTokenRepository;
 
     public TokenAuthenticationUserDetailsService(DeactivatedTokenRepository deactivatedTokenRepository) {
+        System.out.println("[ТОКЕН-СЕРВИС] Инициализация TokenAuthenticationUserDetailsService");
         this.deactivatedTokenRepository = deactivatedTokenRepository;
     }
 
     @Override
     public UserDetails loadUserDetails(PreAuthenticatedAuthenticationToken authenticationToken)
             throws UsernameNotFoundException {
-        System.out.println("---------------------" +
-                "------------------------" +
-                "loadUSERDETAILs" +
-                "----------------------");
+        System.out.println("[ТОКЕН-СЕРВИС] ========================================");
+        System.out.println("[ТОКЕН-СЕРВИС] Загрузка деталей пользователя из токена");
+        System.out.println("[ТОКЕН-СЕРВИС] Тип Principal: " + 
+                (authenticationToken.getPrincipal() != null ? 
+                authenticationToken.getPrincipal().getClass().getName() : "null"));
+        
         if (authenticationToken.getPrincipal() instanceof Token token) {
-            boolean isTokenActive = !deactivatedTokenRepository.existsById(token.id()) &&
-                    token.expiresAt().isAfter(Instant.now());
-            return new TokenUser(token.subject(), "nopassword", true, true,
+            System.out.println("[ТОКЕН-СЕРВИС] Получен валидный токен с ID: " + token.id());
+            
+            // Проверяем, есть ли токен в списке деактивированных
+            boolean isDeactivated = deactivatedTokenRepository.existsById(token.id());
+            System.out.println("[ТОКЕН-СЕРВИС] Токен присутствует в списке деактивированных: " + isDeactivated);
+            
+            // Проверяем, не истек ли срок действия токена
+            boolean isExpired = token.expiresAt().isBefore(Instant.now());
+            System.out.println("[ТОКЕН-СЕРВИС] Токен истек: " + isExpired);
+            
+            boolean isTokenActive = !isDeactivated && !isExpired;
+            
+            System.out.println("[ТОКЕН-СЕРВИС] Пользователь: " + token.subject());
+            System.out.println("[ТОКЕН-СЕРВИС] Активность токена: " + isTokenActive);
+            System.out.println("[ТОКЕН-СЕРВИС] Срок действия токена до: " + token.expiresAt());
+            System.out.println("[ТОКЕН-СЕРВИС] Роли пользователя: " + String.join(", ", token.authorities()));
+            
+            TokenUser user = new TokenUser(token.subject(), "nopassword", true, true,
                     isTokenActive, true,
                     token.authorities().stream()
                             .map(SimpleGrantedAuthority::new)
                             .collect(Collectors.toList()), token);
+            
+            if (isTokenActive) {
+                System.out.println("[ТОКЕН-СЕРВИС] Пользователь успешно аутентифицирован");
+            } else {
+                System.out.println("[ТОКЕН-СЕРВИС] Токен недействителен, но пользователь создан с флагом isCredentialsNonExpired=false");
+            }
+            
+            System.out.println("[ТОКЕН-СЕРВИС] ========================================");
+            return user;
         }
+        
+        System.out.println("[ТОКЕН-СЕРВИС] ОШИБКА: Principal не является токеном");
+        System.out.println("[ТОКЕН-СЕРВИС] ========================================");
         throw new UsernameNotFoundException("Principal must be of type Token");
     }
 }

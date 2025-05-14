@@ -20,25 +20,48 @@ public class TokenCookieJwtStringSerializer implements Function<Token, String> {
     private final PrivateKey privateKey;
 
     public TokenCookieJwtStringSerializer(PrivateKey privateKey) {
+        System.out.println("[JWT-СЕРИАЛИЗАТОР] Инициализация сериализатора JWT с приватным ключом");
         this.privateKey = privateKey;
     }
 
     @Override
     public String apply(Token token) {
-        JWSHeader header = new JWSHeader.Builder(JWSAlgorithm.RS256).build();
-        JWTClaimsSet claimsSet = new JWTClaimsSet.Builder()
-                .subject(token.subject())
-                .issueTime(Date.from(token.createdAt()))
-                .expirationTime(Date.from(token.expiresAt()))
-                .claim("authorities", token.authorities())
-                .jwtID(token.id().toString())
-                .build();
-        SignedJWT signedJWT = new SignedJWT(header, claimsSet);
+        System.out.println("[JWT-СЕРИАЛИЗАТОР] Начало сериализации токена в JWT");
+        System.out.println("[JWT-СЕРИАЛИЗАТОР] Токен ID: " + token.id());
+        System.out.println("[JWT-СЕРИАЛИЗАТОР] Субъект: " + token.subject());
+        System.out.println("[JWT-СЕРИАЛИЗАТОР] Дата создания: " + token.createdAt());
+        System.out.println("[JWT-СЕРИАЛИЗАТОР] Дата истечения: " + token.expiresAt());
+        System.out.println("[JWT-СЕРИАЛИЗАТОР] Роли: " + String.join(", ", token.authorities()));
+        
         try {
+            System.out.println("[JWT-СЕРИАЛИЗАТОР] Создание заголовка JWT с алгоритмом RS256");
+            JWSHeader header = new JWSHeader.Builder(JWSAlgorithm.RS256).build();
+            
+            System.out.println("[JWT-СЕРИАЛИЗАТОР] Формирование набора утверждений JWT");
+            JWTClaimsSet claimsSet = new JWTClaimsSet.Builder()
+                    .subject(token.subject())
+                    .issueTime(Date.from(token.createdAt()))
+                    .expirationTime(Date.from(token.expiresAt()))
+                    .claim("authorities", token.authorities())
+                    .jwtID(token.id().toString())
+                    .build();
+                    
+            System.out.println("[JWT-СЕРИАЛИЗАТОР] Создание подписанного JWT");
+            SignedJWT signedJWT = new SignedJWT(header, claimsSet);
+            
+            System.out.println("[JWT-СЕРИАЛИЗАТОР] Инициализация подписывающего с использованием приватного ключа");
             JWSSigner signer = new RSASSASigner(privateKey);
+            
+            System.out.println("[JWT-СЕРИАЛИЗАТОР] Подписание JWT");
             signedJWT.sign(signer);
-            return signedJWT.serialize();
+            
+            String serialized = signedJWT.serialize();
+            System.out.println("[JWT-СЕРИАЛИЗАТОР] JWT успешно сериализован");
+            
+            return serialized;
         } catch (JOSEException e) {
+            System.out.println("[JWT-СЕРИАЛИЗАТОР] ОШИБКА при подписании JWT: " + e.getMessage());
+            e.printStackTrace();
             throw new RuntimeException("Failed to sign JWT", e);
         }
     }

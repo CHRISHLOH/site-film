@@ -16,21 +16,38 @@ public class TokenCookieAuthenticationConverter implements AuthenticationConvert
     private final Function<String, Token> tokenCookieStringDeserializer;
 
     public TokenCookieAuthenticationConverter(Function<String, Token> tokenCookieStringDeserializer) {
+        System.out.println("[ТОКЕН-КОНВЕРТЕР] Создание TokenCookieAuthenticationConverter");
         this.tokenCookieStringDeserializer = tokenCookieStringDeserializer;
     }
 
     @Override
     public Authentication convert(HttpServletRequest request) {
+        System.out.println("[ТОКЕН-КОНВЕРТЕР] Попытка получить токен из куки запроса: " + request.getRequestURI());
+        
         if (request.getCookies() != null) {
+            System.out.println("[ТОКЕН-КОНВЕРТЕР] Найдено " + request.getCookies().length + " куки в запросе");
+            
             return Stream.of(request.getCookies())
                     .filter(cookie -> cookie.getName().equals("__Host-auth-token"))
                     .findFirst()
                     .map(cookie -> {
-                        Token token = this.tokenCookieStringDeserializer.apply(cookie.getValue());
-                        return new PreAuthenticatedAuthenticationToken(token, cookie.getValue());
+                        System.out.println("[ТОКЕН-КОНВЕРТЕР] Найдена кука с аутентификационным токеном");
+                        try {
+                            Token token = this.tokenCookieStringDeserializer.apply(cookie.getValue());
+                            System.out.println("[ТОКЕН-КОНВЕРТЕР] Токен успешно десериализован, пользователь: " + token.subject());
+                            return new PreAuthenticatedAuthenticationToken(token, cookie.getValue());
+                        } catch (Exception e) {
+                            System.out.println("[ТОКЕН-КОНВЕРТЕР] ОШИБКА при десериализации токена: " + e.getMessage());
+                            return null;
+                        }
                     })
-                    .orElse(null);
+                    .orElseGet(() -> {
+                        System.out.println("[ТОКЕН-КОНВЕРТЕР] Кука '__Host-auth-token' не найдена");
+                        return null;
+                    });
         }
+        
+        System.out.println("[ТОКЕН-КОНВЕРТЕР] В запросе отсутствуют куки");
         return null;
     }
 }

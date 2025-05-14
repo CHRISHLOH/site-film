@@ -6,10 +6,8 @@ import org.sitefilm.userservice.entity.DeactivatedToken;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
 import org.sitefilm.userservice.service.security.TokenAuthenticationUserDetailsService;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.SecurityConfigurer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
-import org.springframework.security.web.DefaultSecurityFilterChain;
 import org.springframework.security.web.authentication.AuthenticationEntryPointFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationFilter;
 import org.springframework.security.web.authentication.Http403ForbiddenEntryPoint;
@@ -46,7 +44,7 @@ public class TokenCookieAuthenticationConfigurer
 
     @Override
     public void configure(HttpSecurity builder) throws Exception {
-        var cookieAuthenticationFilter = new AuthenticationFilter(
+        AuthenticationFilter cookieAuthenticationFilter = new AuthenticationFilter(
                 builder.getSharedObject(AuthenticationManager.class),
                 new TokenCookieAuthenticationConverter(this.tokenCookieStringDeserializer));
         cookieAuthenticationFilter.setSuccessHandler((request, response, authentication) -> {});
@@ -56,7 +54,7 @@ public class TokenCookieAuthenticationConfigurer
                 )
         );
 
-        var authenticationProvider = new PreAuthenticatedAuthenticationProvider();
+        PreAuthenticatedAuthenticationProvider authenticationProvider = new PreAuthenticatedAuthenticationProvider();
         authenticationProvider.setPreAuthenticatedUserDetailsService(
                 new TokenAuthenticationUserDetailsService(tokenRepository));
 
