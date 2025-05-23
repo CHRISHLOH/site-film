@@ -1,33 +1,34 @@
 package org.sitefilm.userservice.configuration.security.auth;
 
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.RequiredArgsConstructor;
 import org.sitefilm.userservice.configuration.security.jwt.model.AuthToken;
+import org.sitefilm.userservice.configuration.security.jwt.model.VerificationToken;
+import org.sitefilm.userservice.configuration.security.jwt.verification.VerificationTokenCookieJwtStringDeserializer;
 import org.springframework.security.authentication.ott.OneTimeTokenAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationConverter;
 import org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken;
+import org.springframework.stereotype.Component;
 
-import java.util.function.Function;
 import java.util.stream.Stream;
 
-public class TokenCookieAuthenticationConverter implements AuthenticationConverter {
+@Component
+@RequiredArgsConstructor
+public class TokenCookieVerificationConverter implements AuthenticationConverter {
 
-    private final Function<String, AuthToken> tokenCookieStringDeserializer;
-
-    public TokenCookieAuthenticationConverter(Function<String, AuthToken> tokenCookieStringDeserializer) {
-        this.tokenCookieStringDeserializer = tokenCookieStringDeserializer;
-    }
+    private final VerificationTokenCookieJwtStringDeserializer verificationTokenCookieJwtStringDeserializer;
 
     @Override
     public Authentication convert(HttpServletRequest request) {
         if (request.getCookies() != null) {
             return Stream.of(request.getCookies())
-                    .filter(cookie -> "__Host-auth-token".equals(cookie.getName()))
+                    .filter(cookie -> "__Host-verification-token".equals(cookie.getName()))
                     .findFirst()
                     .map(cookie -> {
                         try {
-                            AuthToken authToken = this.tokenCookieStringDeserializer.apply(cookie.getValue());
-                            return new PreAuthenticatedAuthenticationToken(authToken, cookie.getValue());
+                            VerificationToken verificationToken = this.verificationTokenCookieJwtStringDeserializer.apply(cookie.getValue());
+                            return new OneTimeTokenAuthenticationToken(verificationToken, cookie.getValue());
                         } catch (Exception e) {
                             System.out.println("[ТОКЕН-КОНВЕРТЕР] ОШИБКА при десериализации токена: " + e.getMessage());
                             return null;
@@ -42,3 +43,4 @@ public class TokenCookieAuthenticationConverter implements AuthenticationConvert
         return null;
     }
 }
+

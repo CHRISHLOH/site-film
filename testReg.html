@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация и подтверждение по OTT</title>
+  <style>
+    form { margin-bottom: 20px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Регистрация и одноразовый код</h1>
+
+  <!-- Форма регистрации -->
+  <form id="registerForm">
+    <label>Email: <input type="email" id="email" required></label><br>
+    <label>Пароль: <input type="password" id="password" required></label><br>
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+
+  <!-- Форма ввода одноразового кода (OTT) -->
+  <form id="verifyForm" class="hidden">
+    <label>Код подтверждения: <input type="text" id="otpCode" required></label><br>
+    <button type="submit">Подтвердить код</button>
+  </form>
+
+  <pre id="output"></pre>
+
+  <script>
+    const output = document.getElementById('output');
+    let csrfToken, csrfHeaderName, registeredEmail;
+
+    // 1) Получаем CSRF‑токен
+    window.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const resp = await fetch('https://localhost:8443/csrf', {
+          method: 'GET',
+          credentials: 'include'
+        });
+        const data = await resp.json();
+        csrfToken      = data.token;
+        csrfHeaderName = data.headerName;
+        output.textContent = 'CSRF‑токен получен.';
+      } catch (e) {
+        output.textContent = 'Ошибка при запросе /csrf: ' + e;
+      }
+    });
+
+    // 2) Регистрация
+    document.getElementById('registerForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const email    = e.target.email.value;
+      const password = e.target.password.value;
+      output.textContent = 'Регистрируем…';
+
+      try {
+        const resp = await fetch('https://localhost:8443/api/auth/register', {
+          method: 'POST',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+            [csrfHeaderName]: csrfToken
+          },
+          body: JSON.stringify({ email, password })
+        });
+        if (!resp.ok) throw new Error(resp.status);
+        registeredEmail = await resp.text();
+        output.textContent = `Пользователь ${registeredEmail} зарегистрирован.\nЗапрос одноразового кода…`;
+
+        // 3) Генерируем OTT — отправляем URL‑encoded
+        const paramsGen = new URLSearchParams();
+        paramsGen.append('username', registeredEmail);
+
+        const respGen = await fetch('https://localhost:8443/ott/generate', {
+          method: 'POST',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            [csrfHeaderName]: csrfToken
+          },
+          body: paramsGen.toString()
+        });
+        if (!respGen.ok) throw new Error(respGen.status);
+        const result = await respGen.json();
+        output.textContent = `Код отправлен на почту ${registeredEmail}.\n${result.message}`;
+
+        document.getElementById('registerForm').classList.add('hidden');
+        document.getElementById('verifyForm').classList.remove('hidden');
+      } catch (err) {
+        output.textContent = 'Ошибка регистрации/генерации кода: ' + err;
+      }
+    });
+
+    // 4) Подтверждаем OTT — **URL‑encoded**, а не JSON
+    document.getElementById('verifyForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const code = e.target.otpCode.value;
+      output.textContent = 'Подтверждаем код…';
+
+      try {
+        const paramsAuth = new URLSearchParams();
+        paramsAuth.append('token', code);
+
+        const respAuth = await fetch('https://localhost:8443/login/ott', {
+          method: 'POST',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            [csrfHeaderName]: csrfToken
+          },
+          body: paramsAuth.toString()
+        });
+        if (!respAuth.ok) throw new Error(respAuth.status);
+        output.textContent = 'Код подтверждён — вы успешно аутентифицированы!';
+      } catch (err) {
+        output.textContent = 'Ошибка подтверждения кода: ' + err;
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+

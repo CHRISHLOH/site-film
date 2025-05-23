@@ -1,7 +1,7 @@
 package org.sitefilm.userservice.configuration.security.auth;
 
 import jakarta.servlet.http.HttpServletResponse;
-import org.sitefilm.userservice.configuration.security.jwt.model.Token;
+import org.sitefilm.userservice.configuration.security.jwt.model.AuthToken;
 import org.sitefilm.userservice.entity.DeactivatedToken;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
 import org.sitefilm.userservice.service.security.TokenAuthenticationUserDetailsService;
@@ -20,7 +20,7 @@ import java.util.function.Function;
 public class TokenCookieAuthenticationConfigurer
         extends AbstractHttpConfigurer<TokenCookieAuthenticationConfigurer, HttpSecurity> {
 
-    private Function<String, Token> tokenCookieStringDeserializer;
+    private Function<String, AuthToken> tokenCookieStringDeserializer;
 
     private DeactivatedTokenRepository tokenRepository;
 
@@ -33,8 +33,8 @@ public class TokenCookieAuthenticationConfigurer
                     if (authentication != null &&
                             authentication.getPrincipal() instanceof TokenUser user) {
                         DeactivatedToken deactivatedToken = new DeactivatedToken();
-                        deactivatedToken.setId(user.getToken().id());
-                        deactivatedToken.setKeepUntil(user.getToken().expiresAt());
+                        deactivatedToken.setId(user.getAuthToken().id());
+                        deactivatedToken.setKeepUntil(user.getAuthToken().expiresAt());
                         this.tokenRepository.save(deactivatedToken);
 
                         response.setStatus(HttpServletResponse.SC_NO_CONTENT);
@@ -44,6 +44,7 @@ public class TokenCookieAuthenticationConfigurer
 
     @Override
     public void configure(HttpSecurity builder) throws Exception {
+        System.out.println("Начало метода configure класса TokenCookieAuthenticationConfigurer");
         AuthenticationFilter cookieAuthenticationFilter = new AuthenticationFilter(
                 builder.getSharedObject(AuthenticationManager.class),
                 new TokenCookieAuthenticationConverter(this.tokenCookieStringDeserializer));
@@ -63,7 +64,7 @@ public class TokenCookieAuthenticationConfigurer
     }
 
     public TokenCookieAuthenticationConfigurer tokenCookieStringDeserializer(
-            Function<String, Token> tokenCookieStringDeserializer) {
+            Function<String, AuthToken> tokenCookieStringDeserializer) {
         this.tokenCookieStringDeserializer = tokenCookieStringDeserializer;
         return this;
     }

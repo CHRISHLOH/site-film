@@ -17,10 +17,10 @@ public class RsaKeyProvider {
                 .replace("-----BEGIN PRIVATE KEY-----", "")
                 .replace("-----END PRIVATE KEY-----", "")
                 .replaceAll("\\s+", "");
-        byte[] decoded = Base64.getDecoder().decode(base64);                    // X.509/PKCS8 байты&#8203;:contentReference[oaicite:5]{index=5}
+        byte[] decoded = Base64.getDecoder().decode(base64);
         PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(decoded);
         KeyFactory kf = KeyFactory.getInstance("RSA");
-        return (RSAPrivateKey) kf.generatePrivate(spec);                       // Чистые JCA‑классы&#8203;:contentReference[oaicite:6]{index=6}
+        return (RSAPrivateKey) kf.generatePrivate(spec);
     }
 
     public static RSAPublicKey parsePkcs8PublicKey(String pem) throws Exception {

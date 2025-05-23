@@ -1,34 +1,37 @@
 package org.sitefilm.userservice.controller.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
+import org.sitefilm.userservice.configuration.security.jwt.auth.AuthTokenCookieJwtStringSerializer;
+import org.sitefilm.userservice.configuration.security.jwt.model.AuthToken;
 import org.sitefilm.userservice.dto.main.user.UserDto;
 import org.sitefilm.userservice.service.UserRegistrationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
-
+import java.time.Instant;
+import java.time.temporal.ChronoUnit;
+import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/auth")
 public class RegistrationController {
 
+    private final AuthTokenCookieJwtStringSerializer authTokenCookieJwtStringSerializer;
     private final UserRegistrationService registrationService;
 
-    public RegistrationController(UserRegistrationService registrationService) {
+    public RegistrationController(AuthTokenCookieJwtStringSerializer authTokenCookieJwtStringSerializer, UserRegistrationService registrationService) {
+        this.authTokenCookieJwtStringSerializer = authTokenCookieJwtStringSerializer;
         this.registrationService = registrationService;
     }
 
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody UserDto dto) {
-        registrationService.register(dto);
-        return ResponseEntity.ok("Сохранен");
-    }
-
-    @PutMapping("/verify")
-    public ResponseEntity<String> verify(String codeFromEmail, Principal principal) {
-        registrationService.verify(codeFromEmail, principal.getName());
-        return ResponseEntity.ok("Верифицирован");
+    public ResponseEntity<String> register(@RequestBody UserDto dto, HttpServletResponse response) {
+        String email = registrationService.register(dto);
+        return ResponseEntity.ok(email);
     }
 
     @GetMapping("/resend-verification")

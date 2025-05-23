@@ -3,16 +3,20 @@ package org.sitefilm.userservice.configuration.security.config;
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpServletResponseWrapper;
 import lombok.RequiredArgsConstructor;
 import org.sitefilm.userservice.configuration.security.auth.TokenCookieAuthenticationConfigurer;
+import org.sitefilm.userservice.configuration.security.auth.TokenCookieAuthenticationConverter;
 import org.sitefilm.userservice.configuration.security.auth.TokenCookieSessionAuthenticationStrategy;
+import org.sitefilm.userservice.configuration.security.auth.TokenCookieVerificationConverter;
 import org.sitefilm.userservice.configuration.security.csrf.GetCsrfTokenFilter;
-import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJwtStringDeserializer;
-import org.sitefilm.userservice.configuration.security.jwt.TokenCookieJwtStringSerializer;
+import org.sitefilm.userservice.configuration.security.jwt.auth.AuthTokenCookieJwtStringDeserializer;
+import org.sitefilm.userservice.configuration.security.jwt.auth.AuthTokenCookieJwtStringSerializer;
+import org.sitefilm.userservice.configuration.security.jwt.verification.VerificationTokenCookieJwtStringDeserializer;
+import org.sitefilm.userservice.configuration.security.jwt.verification.VerificationTokenCookieJwtStringSerializer;
+import org.sitefilm.userservice.configuration.security.ott.handler.TokenCookieGenerationSuccessHandler;
+import org.sitefilm.userservice.configuration.security.ott.service.OneTimeTokenLoginService;
 import org.sitefilm.userservice.repository.DeactivatedTokenRepository;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -30,18 +34,18 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.ExceptionTranslationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.csrf.CsrfTokenRequestAttributeHandler;
-import org.springframework.security.web.savedrequest.CookieRequestCache;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.OncePerRequestFilter;
+import org.springframework.web.util.ContentCachingRequestWrapper;
 
 import java.io.IOException;
 
 import java.util.List;
 
 @Configuration
-@EnableWebSecurity
+@EnableWebSecurity()
 @EnableMethodSecurity
 @RequiredArgsConstructor
 public class SecurityConfiguration {
@@ -49,9 +53,26 @@ public class SecurityConfiguration {
     private final RsaKeyProperties rsaKeyProperties;
 
     @Bean
-    public TokenCookieJwtStringSerializer tokenCookieJweStringSerializer(
+    public AuthTokenCookieJwtStringSerializer tokenCookieJweStringSerializer(
     ) throws Exception {
-        return new TokenCookieJwtStringSerializer(rsaKeyProperties.getPrivateKey());
+        return new AuthTokenCookieJwtStringSerializer(rsaKeyProperties.getPrivateKey());
+    }
+
+    @Bean
+    public AuthTokenCookieJwtStringDeserializer tokenCookieJweStringDeserializer(
+    ) throws Exception {
+        return new AuthTokenCookieJwtStringDeserializer(rsaKeyProperties.getPublicKey());
+    }
+
+    @Bean
+    public VerificationTokenCookieJwtStringSerializer verificationTokenCookieJwtStringSerializer()
+            throws Exception {
+        return new VerificationTokenCookieJwtStringSerializer(rsaKeyProperties.getPrivateKey());
+    }
+
+    @Bean
+    VerificationTokenCookieJwtStringDeserializer verificationTokenCookieJwtStringDeserializer() throws Exception {
+        return new VerificationTokenCookieJwtStringDeserializer(rsaKeyProperties.getPublicKey());
     }
 
     @Bean
@@ -60,7 +81,7 @@ public class SecurityConfiguration {
     ) throws Exception {
         return new TokenCookieAuthenticationConfigurer()
                 .tokenCookieStringDeserializer(
-                        new TokenCookieJwtStringDeserializer(
+                        new AuthTokenCookieJwtStringDeserializer(
                             rsaKeyProperties.getPublicKey()))
                 .deactivatedTokenRepository(deactivatedTokenRepository);
     }
@@ -79,17 +100,18 @@ public class SecurityConfiguration {
         return source;
     }
 
-
-
     @Bean
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
             TokenCookieAuthenticationConfigurer tokenCookieAuthenticationConfigurer,
-            TokenCookieJwtStringSerializer tokenCookieJwtStringSerializer) throws Exception {
+            AuthTokenCookieJwtStringDeserializer authTokenCookieJwtStringDeserializer,
+            OneTimeTokenLoginService oneTimeTokenLoginService,
+            TokenCookieGenerationSuccessHandler tokenCookieGenerationSuccessHandler,
+            TokenCookieSessionAuthenticationStrategy tokenCookieSessionAuthenticationStrategy,
+            TokenCookieVerificationConverter tokenCookieVerificationConverter
+            ) throws Exception {
 
-
-        TokenCookieSessionAuthenticationStrategy tokenCookieSessionAuthenticationStrategy = new TokenCookieSessionAuthenticationStrategy();
-        tokenCookieSessionAuthenticationStrategy.setTokenStringSerializer(tokenCookieJwtStringSerializer);
+        TokenCookieAuthenticationConverter converter = new TokenCookieAuthenticationConverter(authTokenCookieJwtStringDeserializer);
 
         http.httpBasic(Customizer.withDefaults())
                 .addFilterAfter(new GetCsrfTokenFilter(), ExceptionTranslationFilter.class)
@@ -98,6 +120,7 @@ public class SecurityConfiguration {
                                 .requestMatchers(HttpMethod.POST, "/login/**").permitAll()
                                 .requestMatchers(HttpMethod.GET, "/csrf").permitAll()
                                 .requestMatchers(HttpMethod.POST, "/api/auth/register").permitAll()
+                                .requestMatchers(HttpMethod.POST, "/ott/generate").permitAll()
                                 .anyRequest().authenticated())
                 .sessionManagement(sessionManagement -> sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -105,9 +128,14 @@ public class SecurityConfiguration {
                 .csrf(csrf -> csrf.csrfTokenRepository(new CookieCsrfTokenRepository())
                         .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
                         .sessionAuthenticationStrategy((authentication, request, response) -> {}))
-                .cors(cors -> cors.configurationSource(corsConfigurationSource()));
-
-
+                .cors(cors -> cors.configurationSource(corsConfigurationSource()))
+                .oneTimeTokenLogin(ott -> ott
+                        .tokenGeneratingUrl("/ott/generate")
+                        .loginProcessingUrl("/login/ott")
+                        .tokenService(oneTimeTokenLoginService)
+                        .authenticationConverter(tokenCookieVerificationConverter)
+                        .tokenGenerationSuccessHandler(tokenCookieGenerationSuccessHandler)
+                        .showDefaultSubmitPage(false));
         http.with(tokenCookieAuthenticationConfigurer, configurer -> {});
         return http.build();
     }
@@ -124,13 +152,18 @@ public class SecurityConfiguration {
             @Override
             protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
                     throws ServletException, IOException {
+                ContentCachingRequestWrapper wrappedRequest = new ContentCachingRequestWrapper(request);
+                filterChain.doFilter(wrappedRequest, response);
+                byte[] buf = wrappedRequest.getContentAsByteArray();
+                if (buf.length > 0) {
+                    String payload = new String(buf, 0, buf.length, wrappedRequest.getCharacterEncoding());
+                    System.out.println("Request Body: " + payload);
+                }
                 System.out.println("Request URL: " + request.getRequestURL() + ", Method: " + request.getMethod());
-                filterChain.doFilter(request, response);
                 System.out.println("Response Status: " + response.getStatus());
             }
         });
         registrationBean.setOrder(Ordered.HIGHEST_PRECEDENCE);
         return registrationBean;
     }
-
 }

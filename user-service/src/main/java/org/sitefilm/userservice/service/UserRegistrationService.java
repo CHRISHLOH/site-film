@@ -26,8 +26,9 @@ public class UserRegistrationService {
     private final VerificationCodeRepository verificationCodeRepository;
     private final EmailVerificationProducer emailVerificationProducer;
 
-    public void register(UserDto user) {
+    public String register(UserDto user) {
         userRepository.save(creatNewUser(user));
+        return user.getEmail();
     }
 
     public void verify(String codeFromEmail, String userEmail) {
@@ -60,6 +61,8 @@ public class UserRegistrationService {
                 .email(user.getEmail())
                 .password(password)
                 .roles(createUserRole())
+                .isEnabled(true)
+                .isVerified(false)
                 .build();
     }
 }

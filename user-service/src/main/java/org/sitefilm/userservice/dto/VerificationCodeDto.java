@@ -14,5 +14,5 @@ public class VerificationCodeDto {
     private String email;
     private Instant createdAt;
     private Instant expiresAt;
-    private boolean isUsed;
+    private boolean used;
 }

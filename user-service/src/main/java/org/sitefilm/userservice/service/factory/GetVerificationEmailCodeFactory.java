@@ -22,7 +22,7 @@ public class GetVerificationEmailCodeFactory implements Supplier<VerificationCod
         return VerificationCodeDto.builder()
                 .email(email)
                 .code(getCode())
-                .isUsed(false)
+                .used(false)
                 .createdAt(Instant.now())
                 .expiresAt(Instant.now().plus(15, ChronoUnit.MINUTES))
                 .build();
