@@ -50,4 +50,13 @@ public class GenerateCookie {
         return cookie;
     }
 
+    public Cookie nullVerificationCookie() {
+        Cookie cookie = new Cookie("__Host-verification-token", null);
+        cookie.setPath("/");
+        cookie.setDomain(null);
+        cookie.setSecure(true);
+        cookie.setHttpOnly(true);
+        cookie.setMaxAge(0);
+        return cookie;
+    }
 }

@@ -2,13 +2,11 @@ package org.sitefilm.userservice.configuration.security.auth;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.userservice.configuration.security.jwt.model.AuthToken;
 import org.sitefilm.userservice.configuration.security.jwt.model.VerificationToken;
 import org.sitefilm.userservice.configuration.security.jwt.verification.VerificationTokenCookieJwtStringDeserializer;
 import org.springframework.security.authentication.ott.OneTimeTokenAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationConverter;
-import org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken;
 import org.springframework.stereotype.Component;
 
 import java.util.stream.Stream;
@@ -28,7 +26,7 @@ public class TokenCookieVerificationConverter implements AuthenticationConverter
                     .map(cookie -> {
                         try {
                             VerificationToken verificationToken = this.verificationTokenCookieJwtStringDeserializer.apply(cookie.getValue());
-                            return new OneTimeTokenAuthenticationToken(verificationToken, cookie.getValue());
+                            return new OneTimeTokenAuthenticationToken(verificationToken, request.getParameter("token"));
                         } catch (Exception e) {
                             System.out.println("[ТОКЕН-КОНВЕРТЕР] ОШИБКА при десериализации токена: " + e.getMessage());
                             return null;

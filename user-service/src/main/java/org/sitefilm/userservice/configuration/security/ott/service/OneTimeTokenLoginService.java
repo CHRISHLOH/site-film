@@ -21,7 +21,6 @@ import java.time.Instant;
 public class OneTimeTokenLoginService implements OneTimeTokenService {
     
     private final SecureEmailCodeGenerator secureEmailCodeGenerator;
-    private final EmailVerificationProducer emailVerificationProducer;
     private final VerificationCodeRepository verificationCodeRepository;
 
     @Override
@@ -49,6 +48,11 @@ public class OneTimeTokenLoginService implements OneTimeTokenService {
     public OneTimeToken consume(OneTimeTokenAuthenticationToken authenticationToken) {
         VerificationToken verificationToken = (VerificationToken) authenticationToken.getPrincipal();
 
+        System.out.println("NACHALO PROVERKI");
+        if(!verificationCodeRepository.compareUserCodeWithDB(authenticationToken.getTokenValue(), verificationToken.email(), Instant.now()))
+        {
+            throw new RuntimeException("OSHIBKA");
+        }
         return TokenOTT.builder()
                 .token(authenticationToken.getTokenValue())
                 .username(verificationToken.email())

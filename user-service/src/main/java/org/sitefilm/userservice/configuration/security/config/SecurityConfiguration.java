@@ -6,10 +6,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
-import org.sitefilm.userservice.configuration.security.auth.TokenCookieAuthenticationConfigurer;
-import org.sitefilm.userservice.configuration.security.auth.TokenCookieAuthenticationConverter;
-import org.sitefilm.userservice.configuration.security.auth.TokenCookieSessionAuthenticationStrategy;
-import org.sitefilm.userservice.configuration.security.auth.TokenCookieVerificationConverter;
+import org.sitefilm.userservice.configuration.security.auth.*;
 import org.sitefilm.userservice.configuration.security.csrf.GetCsrfTokenFilter;
 import org.sitefilm.userservice.configuration.security.jwt.auth.AuthTokenCookieJwtStringDeserializer;
 import org.sitefilm.userservice.configuration.security.jwt.auth.AuthTokenCookieJwtStringSerializer;
@@ -45,7 +42,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Configuration
-@EnableWebSecurity()
+@EnableWebSecurity
 @EnableMethodSecurity
 @RequiredArgsConstructor
 public class SecurityConfiguration {
@@ -104,15 +101,12 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
             TokenCookieAuthenticationConfigurer tokenCookieAuthenticationConfigurer,
-            AuthTokenCookieJwtStringDeserializer authTokenCookieJwtStringDeserializer,
             OneTimeTokenLoginService oneTimeTokenLoginService,
             TokenCookieGenerationSuccessHandler tokenCookieGenerationSuccessHandler,
             TokenCookieSessionAuthenticationStrategy tokenCookieSessionAuthenticationStrategy,
-            TokenCookieVerificationConverter tokenCookieVerificationConverter
+            TokenCookieVerificationConverter tokenCookieVerificationConverter,
+            TokenOttAuthenticationSuccessHandler successHandler
             ) throws Exception {
-
-        TokenCookieAuthenticationConverter converter = new TokenCookieAuthenticationConverter(authTokenCookieJwtStringDeserializer);
-
         http.httpBasic(Customizer.withDefaults())
                 .addFilterAfter(new GetCsrfTokenFilter(), ExceptionTranslationFilter.class)
                 .authorizeHttpRequests(authorizeHttpRequests ->
@@ -130,11 +124,10 @@ public class SecurityConfiguration {
                         .sessionAuthenticationStrategy((authentication, request, response) -> {}))
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .oneTimeTokenLogin(ott -> ott
-                        .tokenGeneratingUrl("/ott/generate")
-                        .loginProcessingUrl("/login/ott")
                         .tokenService(oneTimeTokenLoginService)
                         .authenticationConverter(tokenCookieVerificationConverter)
                         .tokenGenerationSuccessHandler(tokenCookieGenerationSuccessHandler)
+                        .authenticationSuccessHandler(successHandler)
                         .showDefaultSubmitPage(false));
         http.with(tokenCookieAuthenticationConfigurer, configurer -> {});
         return http.build();
