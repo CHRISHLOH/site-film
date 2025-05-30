@@ -47,8 +47,6 @@ public class OneTimeTokenLoginService implements OneTimeTokenService {
     @Override
     public OneTimeToken consume(OneTimeTokenAuthenticationToken authenticationToken) {
         VerificationToken verificationToken = (VerificationToken) authenticationToken.getPrincipal();
-
-        System.out.println("NACHALO PROVERKI");
         if(!verificationCodeRepository.compareUserCodeWithDB(authenticationToken.getTokenValue(), verificationToken.email(), Instant.now()))
         {
             throw new RuntimeException("OSHIBKA");

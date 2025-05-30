@@ -15,16 +15,6 @@ public class TokenOttAuthenticationSuccessHandler implements AuthenticationSucce
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
-        System.out.println("Success Heandleere" +
-                "------------------------" +
-                "----------------------" +
-                "---------------------------" +
-                "---------------------------" +
-                "-----------------------------" +
-                "--------------------------------" +
-                "---------------------------------" +
-                "---------------------------------");
-
         response.setStatus(HttpServletResponse.SC_OK);
         response.setContentType("application/json");
         response.getWriter().write("{\"message\": \"Authentication successful\"}");

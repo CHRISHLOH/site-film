@@ -34,4 +34,9 @@ public class RegistrationController {
         registrationService.sendVerificationEmail(principal.getName());
         return ResponseEntity.ok("Отправлен");
     }
+
+    @PostMapping("/login/ott")
+    private ResponseEntity<String> verified() {
+        return ResponseEntity.ok("REGISTRIROVAN");
+    }
 }

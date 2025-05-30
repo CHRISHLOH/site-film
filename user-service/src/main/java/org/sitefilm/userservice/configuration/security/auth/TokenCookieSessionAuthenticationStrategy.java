@@ -27,7 +27,6 @@ public class TokenCookieSessionAuthenticationStrategy implements SessionAuthenti
                                  HttpServletResponse response) throws SessionAuthenticationException {
 
         if (authentication instanceof UsernamePasswordAuthenticationToken) {
-            System.out.println("Strategy");
             try {
                 Cookie authentificationCookiecookie = generateCookie.generateAuthentificationCookie(authentication);
                 response.addCookie(authentificationCookiecookie);
@@ -35,13 +34,12 @@ public class TokenCookieSessionAuthenticationStrategy implements SessionAuthenti
                 throw new SessionAuthenticationException("Не удалось создать токен: " + e.getMessage());
             }
         } else if (authentication instanceof OneTimeTokenAuthenticationToken && authentication.isAuthenticated()) {
-            System.out.println("Strategy");
             Cookie authentificationCookiecookie = generateCookie.generateAuthentificationCookie(authentication);
             Cookie deleteVerificationCookie = generateCookie.nullVerificationCookie();
             response.addCookie(deleteVerificationCookie);
             response.addCookie(authentificationCookiecookie);
             try {
-                response.flushBuffer();
+                response.getWriter().flush();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
