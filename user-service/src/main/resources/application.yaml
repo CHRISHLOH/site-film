@@ -103,5 +103,5 @@ server:
 
 logging:
   level:
-    org.springframework.security: DEBUG    # логирование Spring Security на уровне DEBUG
-    org.springframework.web.cors: DEBUG     # логирование CORS-механизма на уровне DEBUG
+    org.springframework.security: trace    # логирование Spring Security на уровне DEBUG
+    org.springframework.web.cors: trace     # логирование CORS-механизма на уровне DEBUG

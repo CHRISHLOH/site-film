@@ -86,7 +86,7 @@ public class SecurityConfiguration {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("https://localhost:8444"));
+        configuration.setAllowedOrigins(List.of("https://localhost:3000"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setExposedHeaders(List.of("Set-Cookie", "Authorization"));
@@ -113,6 +113,7 @@ public class SecurityConfiguration {
                         authorizeHttpRequests
                                 .requestMatchers(HttpMethod.POST, "/login/**").permitAll()
                                 .requestMatchers(HttpMethod.GET, "/csrf").permitAll()
+                                .requestMatchers(HttpMethod.POST, "/csrf").permitAll()
                                 .requestMatchers(HttpMethod.POST, "/api/auth/register").permitAll()
                                 .requestMatchers(HttpMethod.POST, "/ott/generate").permitAll()
                                 .anyRequest().authenticated())

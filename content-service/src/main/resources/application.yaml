@@ -34,4 +34,11 @@ jwt:
       -----END PUBLIC KEY----- 
 
 server:
-  port: 8080
+  port: 8080  # уникальный порт для каждого сервиса
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: mypass
+    key-store-type: PKCS12
+    key-alias: localhost-cert
+    enabled-protocols: TLSv1.2,TLSv1.3

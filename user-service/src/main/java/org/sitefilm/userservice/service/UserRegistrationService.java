@@ -27,6 +27,7 @@ public class UserRegistrationService {
     private final EmailVerificationProducer emailVerificationProducer;
 
     public String register(UserDto user) {
+
         userRepository.save(creatNewUser(user));
         return user.getEmail();
     }

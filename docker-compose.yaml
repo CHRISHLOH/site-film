@@ -1,23 +1,14 @@
-version: "3.7"
-
 networks:
   kafka-net:
     name: kafka-net
     driver: bridge
 
 services:
-  keycloak:
-    image: quay.io/keycloak/keycloak:23.0.7
-    environment:
-      KEYCLOAK_ADMIN: admin
-      KEYCLOAK_ADMIN_PASSWORD: admin
-    ports:
-      - '8088:8080'
-    command: start-dev --import-realm
+
   zookeeper:
     image: zookeeper:3.7.0
     container_name: zookeeper
-    restart: "no"
+    restart: always
     networks:
       - kafka-net
     ports:
@@ -26,7 +17,7 @@ services:
   kafka:
     image: obsidiandynamics/kafka
     container_name: kafka
-    restart: "no"
+    restart: always
     networks:
       - kafka-net
     ports:
@@ -45,7 +36,7 @@ services:
   kafdrop:
     image: obsidiandynamics/kafdrop
     container_name: kafdrop
-    restart: "no"
+    restart: always
     networks:
       - kafka-net
     ports:
@@ -53,46 +44,21 @@ services:
     environment:
       KAFKA_BROKERCONNECT: "kafka:29092"
     depends_on:
-      - "kafka"
+      - kafka
 
-  postgres:
-    container_name: my_postgres
-    image: postgres:17.1
-    command:
-      - "postgres"
-      - "-c"
-      - "max_connections=50"
-      - "-c"
-      - "shared_buffers=512MB"
-      - "-c"
-      - "effective_cache_size=2GB"
-      - "-c"
-      - "work_mem=8MB"
-      - "-c"
-      - "maintenance_work_mem=256MB"
-      - "-c"
-      - "random_page_cost=1.1"
-      - "-c"
-      - "temp_file_limit=5GB"
-      - "-c"
-      - "log_min_duration_statement=300ms"
-      - "-c"
-      - "idle_in_transaction_session_timeout=15s"
-      - "-c"
-      - "lock_timeout=2s"
-      - "-c"
-      - "statement_timeout=30s"
-    environment:
-      POSTGRES_DB: "site_film"
-      POSTGRES_USER: "user"
-      POSTGRES_PASSWORD: "user"
-      PGDATA: "/var/lib/postgresql/data/pgdata"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+  pgvector:
+    image: ankane/pgvector:latest
+    container_name: pgvector
     ports:
       - "5432:5432"
+    environment:
+      POSTGRES_DB: site_film
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+    restart: always
 
-  # pgAdmin сервис
   pgadmin:
     container_name: my_pgadmin
     image: dpage/pgadmin4:7.2
@@ -104,7 +70,22 @@ services:
       - pgadmin_data:/var/lib/pgadmin
     ports:
       - "8089:80"
+    restart: always
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+      - OLLAMA_ORIGINS=*
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    entrypoint: [ "ollama", "serve" ]
 
 volumes:
   postgres_data:
   pgadmin_data:
+  ollama_data:
+  pgvector_data:

@@ -26,7 +26,6 @@ public class ContentServiceMovieController {
 
     @GetMapping("/{id}")
     public ResponseEntity<FullMovieDto> getMovieById(@PathVariable Long id, @AuthenticationPrincipal Jwt jwt) {
-        String userId = jwt.getClaimAsString("sub");
         FullMovieDto fullMovieDto = service.getMovieById(id);
         if (fullMovieDto != null) {
             return ResponseEntity.ok(fullMovieDto);
