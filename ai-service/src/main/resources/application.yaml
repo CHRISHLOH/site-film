@@ -1,6 +1,8 @@
 spring:
+  liquibase:
+    clear-checksums: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/site_film
+    url: jdbc:postgresql://localhost:5432/site_film?currentSchema=ai_service
     username: user
     password: user
   ai:
@@ -18,6 +20,7 @@ spring:
           jdbc:
             initialize-schema: never
             schema: ai_service
+
 
     vectorstore:
       pgvector:

@@ -8,12 +8,15 @@ import org.sitefilm.contentservice.dto.main.movie.MinimalMovieForListDto;
 import org.sitefilm.contentservice.entity.main.Movie;
 
 import java.time.Duration;
+import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface MovieMapper {
     MovieMapper INSTANCE = Mappers.getMapper(MovieMapper.class);
 
     Movie fullMovieDtoToMovie(FullMovieDto movieDto);
+
+    List<FullMovieDto> fullMovieDtoToMovieList(List<Movie> movieDtoList);
 
     @Mapping(target = "duration", expression = "java(mapDuration(movie.getDuration()))")
     FullMovieDto movieToFullMovieDto(Movie movie);

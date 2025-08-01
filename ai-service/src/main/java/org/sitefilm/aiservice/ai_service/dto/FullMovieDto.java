@@ -1,12 +1,6 @@
-package org.sitefilm.contentservice.dto.main.movie;
+package org.sitefilm.aiservice.ai_service.dto;
 
 import lombok.*;
-import org.sitefilm.contentservice.dto.CountryDto;
-import org.sitefilm.contentservice.dto.GenreDto;
-import org.sitefilm.contentservice.dto.MovieAudioLanguageDto;
-import org.sitefilm.contentservice.dto.NamePeopleDto;
-import org.sitefilm.contentservice.dto.main.VideoQualityDto;
-import org.sitefilm.contentservice.dto.main.person.MinimalPersonDto;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -31,9 +25,8 @@ public class FullMovieDto {
     private Set<VideoQualityDto> videoQuality;
     private LocalDate createdAt;
     private LocalDate updatedAt;
-    private Set<MinimalPersonDto> people;
     private List<NamePeopleDto> actors;
     private List<NamePeopleDto> directors;
-    private String text;
+    private String plot;
     private BigDecimal rating;
 }

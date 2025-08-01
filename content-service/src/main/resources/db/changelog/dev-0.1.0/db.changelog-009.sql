@@ -1,1051 +1,6541 @@
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (11, 'Far five', 'Everybody growth quickly former lose knowledge. Main board population bank exactly.', '2000-06-30', 3, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Far five');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (12, 'Others similar', 'Despite maintain as. Doctor protect military social hold truth. Always possible billion.', '2000-03-02', 10, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Others similar');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (13, 'Save', 'Amount of claim picture always.', '2017-11-18', 12, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Save');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (14, 'Hair attorney', 'She travel base our myself election accept. Official brother according.', '2008-01-13', 1, '0 years 0 mons 0 days 1 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Hair attorney');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (15, 'Guess occur', 'Low write officer similar huge catch tell. Security land record class. Meet skill song pass range.', '2011-06-27', 8, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Guess occur');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (16, 'Attack sing hand', 'Good house only military say attention. Near risk next on.', '2014-12-31', 5, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Attack sing hand');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (17, 'White', 'Whom none show serious which learn. To television loss election him small detail.', '2014-12-16', 1, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'White');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (18, 'Herself natural', 'Water raise travel material. Dog drug enter director strong.', '2021-11-02', 15, '0 years 0 mons 0 days 2 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Herself natural');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (19, 'Turn their save artist catch', 'With recently least ready activity decision ok. Gun technology cost enjoy especially when.', '2009-10-12', 8, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Turn their save artist catch');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (20, 'Fear blue as', 'Wait red bag cold billion. View list approach side.', '2024-11-04', 1, '0 years 0 mons 0 days 1 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Fear blue as');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (21, 'Design decide research rather TV', 'Spring summer gas light across two water.', '2019-01-18', 6, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Design decide research rather TV');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (22, 'Site', 'Possible mother especially could attention. Face PM pay evening.', '1999-08-03', 9, '0 years 0 mons 0 days 2 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Site');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (23, 'Tax positive', 'Side kitchen scene almost leave side. Program decade home which view city rock.', '2008-01-28', 12, '0 years 0 mons 0 days 2 hours 37 mins 0.0 secs', '2025-04-29', NULL, 'Tax positive');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (24, 'Ever not rate seat any', 'Citizen before peace us young. Art green child content_service.movies blue maintain first next.', '2004-05-25', 9, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Ever not rate seat any');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (25, 'Contain threat wrong whatever model stuff', 'Strong candidate them. Blood court all politics home.', '1998-02-02', 11, '0 years 0 mons 0 days 2 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Contain threat wrong whatever model stuff');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (26, 'Idea glass third', 'Best rise mother country moment eat personal. Next newspaper second short.', '2014-01-01', 10, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Idea glass third');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (27, 'Successful discuss religious', 'She unit effect which language however. Work other military.
-Feel develop talk. Sign wall state.', '2020-04-20', 5, '0 years 0 mons 0 days 2 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Successful discuss religious');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (28, 'Gun series personal', 'Bad argue side girl stage indicate. Thank dinner present own. Plant place approach.', '1997-02-11', 4, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Gun series personal');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (29, 'Weight machine', 'Interest give fly order agency fight. Pattern wrong kind certainly and stand.', '1999-03-23', 14, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Weight machine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (30, 'Particularly would', 'Smile peace apply pressure across. Produce production tree growth blue fall.', '2012-06-29', 13, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Particularly would');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (31, 'Support question just', 'Personal these three spring. Want we difficult.', '2019-06-07', 10, '0 years 0 mons 0 days 1 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Support question just');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (32, 'Relate issue president parent its approach', 'Involve training show prevent. True fish newspaper we brother fish they. She they increase.', '2024-03-24', 15, '0 years 0 mons 0 days 1 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Relate issue president parent its approach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (33, 'South someone not American mouth product', 'Fact huge fight still leave.', '2003-12-12', 3, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'South someone not American mouth product');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (34, 'Message ten whose radio', 'Information finally shoulder. Eye Congress together whether about she activity.', '2023-12-14', 9, '0 years 0 mons 0 days 2 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Message ten whose radio');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (35, 'Skill five', 'Feel nearly short box four. Right pattern ahead compare form full.', '2022-07-07', 3, '0 years 0 mons 0 days 1 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Skill five');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (36, 'Their bank', 'Wide exactly all worker. Move coach paper cost bring site final tax. Even beautiful theory.', '2021-08-14', 6, '0 years 0 mons 0 days 1 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Their bank');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (37, 'Station course full serious', 'Quality car right least require mission about. Reach organization beautiful.', '2000-10-18', 4, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Station course full serious');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (38, 'Physical heart away some', 'Address performance method deal. Near even wall sound off commercial.', '2006-01-25', 6, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Physical heart away some');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (39, 'Stage write', 'Design catch oil sense. Serious produce laugh.', '2015-04-07', 11, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Stage write');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (40, 'Center way student special wife', 'Worry identify camera family hard nature apply reflect.', '2000-09-08', 4, '0 years 0 mons 0 days 1 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Center way student special wife');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (41, 'Fine fine effort', 'Care author administration return. Price window career case south team throw.', '2021-12-09', 14, '0 years 0 mons 0 days 2 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Fine fine effort');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (42, 'Call interest', 'Safe inside whether sometimes eye along type. Risk nor article list college. Prevent factor say.', '2016-05-22', 4, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Call interest');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (43, 'Never impact ago government behavior', 'Tax add born company option. Process have compare site.', '2024-01-30', 10, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Never impact ago government behavior');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (44, 'Eye environment', 'Politics sense break. Less live live way. Do raise hope enjoy most itself eye.', '2001-07-23', 11, '0 years 0 mons 0 days 1 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Eye environment');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (45, 'Who call whole', 'Prevent tonight not whose to receive. Far produce away law yet.', '2004-04-01', 10, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Who call whole');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (46, 'Dark', 'Authority number economy. Affect marriage present a also hospital charge.', '2017-06-15', 3, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Dark');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (47, 'Hear through large', 'Movement which ball least short possible. Never whose produce federal.', '2023-01-22', 3, '0 years 0 mons 0 days 2 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Hear through large');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (48, 'Street fight decision', 'Already argue skin. If deep president. Learn question them chance often under already.', '2016-03-27', 10, '0 years 0 mons 0 days 1 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Street fight decision');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (49, 'Bed far section', 'Ask stage box organization past as dark front. Food wish office case student soldier.', '2015-03-29', 12, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Bed far section');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (50, 'Course quality phone', 'Beyond suggest partner sing.
-Ball account unit religious order exist really.', '2003-06-16', 4, '0 years 0 mons 0 days 2 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Course quality phone');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (51, 'Rest', 'Worry with peace television. Medical less phone decade apply both chance.', '2006-07-09', 8, '0 years 0 mons 0 days 2 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Rest');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (52, 'Industry score choice increase between majority', 'For better scene thank. Through available one approach job democratic.', '2011-07-20', 4, '0 years 0 mons 0 days 2 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Industry score choice increase between majority');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (53, 'Make', 'Address into their easy its. Through option chance off above. Always likely shoulder.', '2014-06-10', 3, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Make');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (54, 'Whole reach', 'Wear car fast positive before look.', '1995-06-26', 11, '0 years 0 mons 0 days 2 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Whole reach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (55, 'Half value win', 'Power say sell that. Send set fly today me. Everyone as generation main money but.', '2025-03-18', 12, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Half value win');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (56, 'Maybe too song', 'Weight age indicate radio use listen information. Factor as the.', '2005-03-29', 8, '0 years 0 mons 0 days 1 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Maybe too song');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (57, 'Old of end', 'Good lay coach under.', '2000-06-21', 7, '0 years 0 mons 0 days 2 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Old of end');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (58, 'Always authority', 'Hour make owner memory argue project huge. Hard health expect goal within them.', '2024-12-15', 2, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Always authority');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (59, 'Difference board', 'Face morning view. Create physical share out cold follow first. Even recently guy move goal.', '2014-06-12', 9, '0 years 0 mons 0 days 2 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Difference board');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (60, 'But through leader operation', 'Candidate bad real six back. Serious amount blue soldier message arrive budget.', '2007-05-26', 3, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'But through leader operation');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (61, 'Travel few impact cause', 'Certainly second everyone often.', '2002-09-20', 8, '0 years 0 mons 0 days 1 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Travel few impact cause');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (62, 'At', 'Outside find wish know network fact talk. Task thus sort voice happen.', '1998-11-25', 13, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'At');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (63, 'Coach cause deal deal arrive', 'Hair current customer such. But study rise everything require old.', '1997-10-04', 8, '0 years 0 mons 0 days 1 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Coach cause deal deal arrive');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (64, 'Century television Congress ball forward', 'Will him quickly. Few perhaps set produce. Should society dark product make energy gas.', '2013-10-16', 10, '0 years 0 mons 0 days 1 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Century television Congress ball forward');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (65, 'Brother figure consumer really', 'Possible or travel assume figure. College Mrs also price institution method.', '1998-01-01', 13, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Brother figure consumer really');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (66, 'Defense material those poor central', 'Drive second she such. Five store ask data include statement. Either over image box.', '2004-11-21', 7, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Defense material those poor central');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (67, 'Buy happy', 'Popular amount reveal site. Teacher base own test. To public though however style successful.', '2015-04-27', 1, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Buy happy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (68, 'Middle blood drop', 'Again whom paper success production. Real small dream. His police red total rate movement door.', '2024-01-22', 13, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Middle blood drop');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (69, 'Brother box', 'Economic require should power. Suggest rate society floor.', '2002-03-08', 13, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Brother box');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (70, 'Way', 'Anyone peace outside chance. Color note add moment significant up.', '2004-05-06', 10, '0 years 0 mons 0 days 1 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'Way');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (71, 'Act way beat result major serve', 'Late eat old positive beat light the window. Rather require remain save eight believe.', '2008-11-13', 3, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Act way beat result major serve');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (72, 'Follow remember generation', 'Party seven enough fine throughout. Say man wear new type PM.', '2001-08-02', 13, '0 years 0 mons 0 days 1 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Follow remember generation');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (73, 'Decide', 'State none production defense your above short. Indicate baby should quality.', '2006-06-29', 14, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Decide');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (74, 'Would throughout', 'Deep any poor follow. Season natural own begin. Concern whole tend become system.', '2007-12-10', 10, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Would throughout');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (75, 'Add front far purpose', 'Bad soon feel worker range feel. Mission far answer baby and. Member including let result.', '2006-02-13', 4, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Add front far purpose');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (76, 'Trip none whose newspaper care', 'Career course staff receive. Teacher decide possible power job.', '2023-03-24', 12, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Trip none whose newspaper care');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (77, 'Him room bill', 'Year size show show news. Table them page bit. Unit just lead.', '2010-06-17', 9, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Him room bill');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (78, 'Both receive around', 'Produce political total. Within woman sometimes then. Information though red them return.', '2025-05-17', 1, '0 years 0 mons 0 days 2 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Both receive around');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (79, 'Week game', 'Yeah exist behavior necessary miss serious civil. Three music else.', '2014-11-30', 4, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Week game');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (80, 'Natural hear blood', 'Fund door second ok research visit program.', '2013-02-04', 6, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Natural hear blood');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (81, 'Mind read peace item', 'Tend religious occur someone. Night buy nice court peace.', '2009-07-22', 7, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Mind read peace item');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (82, 'He one', 'Fish either boy between collection century eight.', '2004-03-19', 14, '0 years 0 mons 0 days 2 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'He one');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (83, 'Surface Republican', 'Appear dream others door. Sell his boy art let imagine machine. Plant trial affect never only big.', '2017-08-28', 6, '0 years 0 mons 0 days 2 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Surface Republican');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (84, 'But represent society', 'Art two event. Style herself goal place one.', '2004-05-01', 7, '0 years 0 mons 0 days 1 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'But represent society');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (85, 'Strong old challenge', 'Early work game least outside. Trial card two. Live top pull including time reflect several Mrs.', '2002-01-02', 9, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Strong old challenge');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (86, 'Realize artist brother', 'Large accept create bank occur agent scene. When true culture forget as personal. Lose space or.', '2016-03-20', 6, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Realize artist brother');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (87, 'Develop reality fill', 'Contain wrong guy available air boy. Key place tree growth wish.', '2018-06-28', 5, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Develop reality fill');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (88, 'She miss', 'Pressure those full decision lay hard. Produce wait with young think there.', '2015-06-04', 12, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'She miss');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (89, 'Tax form', 'Dinner rich decide do only need. Reveal left social fine could show recently.', '2003-02-10', 3, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Tax form');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (90, 'Feeling poor all your suggest international', 'Rate idea single Mrs for age. Two child well. Nothing sometimes trial off hospital high.', '2005-02-04', 4, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Feeling poor all your suggest international');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (91, 'Trade identify', 'Fact modern lawyer happy action. Teacher improve church book content_service.movies long.', '2000-04-17', 12, '0 years 0 mons 0 days 1 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Trade identify');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (92, 'Cost', 'And ago police put left gas human. However action boy true force.', '2019-09-30', 4, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Cost');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (93, 'Keep yes simply', 'Democratic recent student specific political respond to.', '2018-01-13', 6, '0 years 0 mons 0 days 1 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Keep yes simply');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (94, 'Evening ask Republican', 'Analysis mention spring follow. Couple debate must voice building degree ground community.', '2006-06-22', 7, '0 years 0 mons 0 days 1 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Evening ask Republican');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (95, 'Avoid color', 'Trade professor eat. Part high focus kind accept. Attorney court plant center daughter begin or.', '2022-01-08', 2, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Avoid color');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (96, 'Speak close join improve', 'Week growth help likely. Measure same set standard soldier after. Into bar trade feel Mr need.', '2020-02-13', 15, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Speak close join improve');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (97, 'Clear here', 'Prepare unit save drug. Tv guess religious. Recently population end.', '2023-09-02', 2, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Clear here');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (98, 'Them never bill suffer', 'Staff ability attorney recent.', '2009-05-07', 6, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Them never bill suffer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (99, 'Heart radio product much', 'Tree body player bag beat by ask ahead. Long pull beyond article seem. Program smile among.', '1997-05-21', 1, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Heart radio product much');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (100, 'Effort form bad last', 'South able that I structure understand. Own than evidence. Happy peace probably little including.', '2020-06-22', 7, '0 years 0 mons 0 days 2 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Effort form bad last');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (101, 'Idea seek', 'Two plant man somebody. The use short over popular help.', '2021-09-06', 10, '0 years 0 mons 0 days 1 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Idea seek');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (102, 'Despite time', 'Wrong but you religious long stock manager. Arrive special check respond summer various.', '2009-10-23', 14, '0 years 0 mons 0 days 1 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Despite time');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (103, 'Goal heart stock small official', 'Gun task big. Heavy work quickly collection.', '2012-01-24', 8, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Goal heart stock small official');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (104, 'Account stage federal', 'West present heart reality somebody probably sing ten. Every president happen build bar majority.', '2013-02-03', 4, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Account stage federal');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (105, 'Young however many', 'Knowledge officer reason mission worry goal Mrs. Reach production and already center.', '2019-01-26', 1, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Young however many');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (106, 'Trip need simply', 'Data picture especially plan population research nor. Painting information child yeah its ago page.', '2002-12-31', 3, '0 years 0 mons 0 days 1 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Trip need simply');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (107, 'Foreign account section compare', 'Never manage them while interest. Usually carry marriage rate quality mother by.', '2023-06-15', 4, '0 years 0 mons 0 days 1 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Foreign account section compare');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (108, 'Character usually agency must', 'Low enter able piece hour. Upon where middle throw very.', '2023-12-31', 2, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Character usually agency must');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (109, 'Style real', 'Cause section accept third. Book expect card inside former. Civil current look.', '1999-11-29', 7, '0 years 0 mons 0 days 2 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Style real');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (110, 'Many him interview government', 'Society call general add. Appear stop involve others account.', '2020-04-16', 7, '0 years 0 mons 0 days 2 hours 37 mins 0.0 secs', '2025-04-29', NULL, 'Many him interview government');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (111, 'Daughter must grow laugh', 'Cold ever whose. Animal not some really scientist. Manager mouth message avoid just meeting.', '2004-11-20', 4, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Daughter must grow laugh');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (112, 'Ahead event several', 'Them appear woman writer decide. Ability girl painting hard.', '2021-11-30', 12, '0 years 0 mons 0 days 1 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Ahead event several');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (113, 'Receive case', 'Financial those stage. Could century interview lawyer population I right case.', '2004-07-18', 2, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Receive case');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (114, 'Begin treat stage', 'Outside society act social my stand system be. Lose none know clear.', '2008-07-12', 14, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Begin treat stage');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (115, 'Peace technology officer relate animal direction eye', 'College body big what ground past brother. Time page concern most.', '2011-09-19', 14, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Peace technology officer relate animal direction eye');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (116, 'Pressure actually than modern', 'Official where everything bed. Consider his floor interest.', '2014-06-09', 10, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Pressure actually than modern');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (117, 'Painting response', 'Tv arrive glass support. Far century table will. Drug still argue case while region.', '1995-11-12', 15, '0 years 0 mons 0 days 2 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Painting response');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (118, 'Issue', 'Quite then never stop try maybe. Interest church win miss within. Sea hundred argue hot.', '2001-10-29', 1, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Issue');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (119, 'Discussion if continue policy', 'Test something time material lawyer college fast. Evidence guy become condition.', '2008-02-25', 7, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Discussion if continue policy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (120, 'Prepare trouble', 'Media enjoy then radio per popular. Record night choice black heart.', '2020-08-29', 2, '0 years 0 mons 0 days 2 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Prepare trouble');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (121, 'Trade', 'Everything although choose like. Floor all over herself view. Smile without degree deep age serve.', '2022-02-09', 2, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Trade');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (122, 'Budget American evidence enough claim', 'Great realize home act situation others. Reveal official certain professional.', '2020-10-23', 9, '0 years 0 mons 0 days 2 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Budget American evidence enough claim');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (123, 'Young job sport why', 'Recent similar over democratic decide course. Western have hair few film standard by.', '2023-12-04', 8, '0 years 0 mons 0 days 2 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Young job sport why');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (124, 'Begin most', 'Power pattern in market. Until between know ok allow face inside development.', '2024-01-17', 8, '0 years 0 mons 0 days 1 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Begin most');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (125, 'Development middle animal husband', 'Brother officer hot several true study city. Data behavior join pick order agreement.', '2015-02-24', 6, '0 years 0 mons 0 days 2 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Development middle animal husband');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (126, 'Stay or focus early various', 'Learn other blood executive. Behavior management guess stuff.', '2007-02-07', 8, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Stay or focus early various');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (127, 'Main project animal house', 'Remain present level speak job watch. Economic cup suffer response which.', '2008-02-29', 2, '0 years 0 mons 0 days 2 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Main project animal house');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (128, 'Health image', 'Degree nothing focus discussion at exist.', '1997-01-11', 7, '0 years 0 mons 0 days 1 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Health image');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (129, 'So', 'Budget laugh over option door again. Popular task write.', '2010-11-27', 12, '0 years 0 mons 0 days 1 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'So');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (130, 'Easy get', 'Successful visit bill difference. Catch year technology. Difficult because right speech staff Mr.', '2005-10-16', 6, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Easy get');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (131, 'Tv today', 'Forget partner speech establish color. On build floor challenge.', '2011-05-14', 9, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Tv today');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (132, 'Result Democrat later', 'Maintain future sport seven method. Set find law child mean trial. True history laugh per data.', '2010-02-13', 14, '0 years 0 mons 0 days 2 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Result Democrat later');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (133, 'Fly former everything', 'However issue free kid. Best possible rule institution family idea.', '2022-03-04', 5, '0 years 0 mons 0 days 1 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Fly former everything');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (134, 'Serve light past', 'Program into again. Thing color set act goal.', '2021-10-16', 11, '0 years 0 mons 0 days 2 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Serve light past');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (135, 'Father open investment', 'Ask far law design stay. Apply figure involve produce. Anyone case these.', '2018-07-16', 9, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Father open investment');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (136, 'Letter possible', 'Sense past few drug. Health per tonight there apply suddenly call. Leg several military.', '1998-10-02', 6, '0 years 0 mons 0 days 2 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Letter possible');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (137, 'Relate ever statement measure play', 'Loss former article science purpose school apply. Might no whose carry time.', '2002-05-22', 15, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Relate ever statement measure play');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (138, 'Rich difference', 'Agency media hospital unit feel low contain. Success national start race teacher.', '1999-07-11', 12, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Rich difference');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (139, 'Case customer', 'Least teach cause size probably type. Trouble population heavy line. Office until simple moment.', '2006-06-14', 12, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Case customer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (140, 'East organization people information on', 'Black thing rock himself wind. Artist economy also seek.', '1995-08-14', 12, '0 years 0 mons 0 days 1 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'East organization people information on');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (141, 'Animal ten scientist administration', 'Camera military beyond material. Own former difference. Two edge reflect attack the.', '2004-05-22', 5, '0 years 0 mons 0 days 1 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Animal ten scientist administration');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (142, 'Direction need heart control one herself', 'Full end free.
-Daughter stage form serious. Dog authority way toward.', '1999-11-04', 4, '0 years 0 mons 0 days 1 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Direction need heart control one herself');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (143, 'Story win group', 'Bit market different. It field sure will again area.', '2016-05-21', 10, '0 years 0 mons 0 days 2 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Story win group');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (144, 'What no prove improve them wait', 'Paper long business baby. Voice day relate spend today.', '2016-08-06', 13, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'What no prove improve them wait');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (145, 'Yet practice just military building', 'Take himself affect him know. Day continue issue appear figure.', '2013-08-19', 15, '0 years 0 mons 0 days 1 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Yet practice just military building');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (146, 'Agent say forward us', 'Occur nothing million class high second. Car address son week beat. Side fast number although ever.', '2007-08-24', 11, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Agent say forward us');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (147, 'Also current', 'Range team oil among.
-Weight yeah window administration. Music and doctor board medical both.', '2017-08-15', 1, '0 years 0 mons 0 days 1 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Also current');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (148, 'But above others', 'When yeah not young. Nature individual run summer month anything line modern.', '2010-09-18', 8, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'But above others');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (149, 'Piece TV young', 'Explain main difference college. Writer send under project cell.', '2005-01-10', 6, '0 years 0 mons 0 days 2 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Piece TV young');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (150, 'Court yourself choice fast', 'Rule minute store far body relationship. Know it enjoy ten. Rule bring government bad soldier.', '2014-06-06', 15, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Court yourself choice fast');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (151, 'After long forward', 'Rock fund stand final important occur coach. Single book why particularly can.', '2000-12-05', 3, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'After long forward');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (152, 'All behavior', 'Baby mean region run. Address store painting.', '1998-10-30', 4, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'All behavior');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (153, 'However resource away real physical', 'Likely fact behavior whom night low traditional. Media him year road week several research.', '1998-04-17', 9, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'However resource away real physical');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (154, 'Determine not view cell seat draw', 'Pattern list rich note discussion should. In scientist strong already ready.', '2010-04-30', 9, '0 years 0 mons 0 days 1 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Determine not view cell seat draw');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (155, 'Medical blood personal success', 'Those manager phone. Maintain see natural human father itself family.', '2024-06-10', 6, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Medical blood personal success');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (156, 'Down occur offer', 'Modern stop act indicate. Like year accept reduce.', '1995-12-02', 11, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Down occur offer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (157, 'About reveal rest will', 'Exist treatment international role happen. Various night political dark or bill.', '2018-03-08', 2, '0 years 0 mons 0 days 2 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'About reveal rest will');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (158, 'Why this manage', 'Collection situation writer before sound. Century little a back. Case southern international.', '2018-10-04', 12, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Why this manage');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (159, 'Toward once receive', 'Tonight present concern term talk side generation. Degree nice young vote him condition.', '2007-12-28', 11, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Toward once receive');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (160, 'Economic type kitchen technology', 'Tv parent almost ever long analysis receive. Ever arm occur air responsibility.', '2013-12-13', 10, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Economic type kitchen technology');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (161, 'For recent never court professor', 'Pretty scene four public tonight. Town only want might.', '2007-01-21', 6, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'For recent never court professor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (162, 'Raise marriage on discussion point least', 'Financial here expert everything. Firm difficult could third computer far recently.', '2019-05-01', 9, '0 years 0 mons 0 days 2 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Raise marriage on discussion point least');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (163, 'Me than', 'Nor probably top follow bit grow. City little from. Cost group clear national.', '2004-01-12', 5, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Me than');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (164, 'Day stop never only spend do', 'Professional small approach bed. Soon learn close a.', '1995-08-10', 6, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Day stop never only spend do');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (165, 'Before', 'Character find push lose end western. Clear radio strong let.', '2009-11-24', 8, '0 years 0 mons 0 days 2 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Before');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (166, 'Trial want', 'Page sort late health. Republican such will born condition interest service.', '2007-12-06', 7, '0 years 0 mons 0 days 2 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Trial want');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (167, 'Meeting', 'Rather education front fast standard myself condition ground.', '1998-04-19', 14, '0 years 0 mons 0 days 2 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Meeting');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (168, 'Candidate statement', 'Mention rise front PM few husband. Wear either present third.', '2018-07-07', 8, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Candidate statement');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (169, 'Husband at tree note', 'Above debate site price ever. Out wish fish determine adult foot as.', '2008-09-16', 3, '0 years 0 mons 0 days 1 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Husband at tree note');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (170, 'Several consumer quite', 'Allow system whose place no generation. Security morning fight seem later.', '2001-07-07', 2, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Several consumer quite');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (171, 'Manager during prevent accept', 'Nearly goal design too everything side. Black those whether seven fish content_service.movies hot teacher.', '1998-03-06', 4, '0 years 0 mons 0 days 2 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Manager during prevent accept');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (172, 'Red save fish evening', 'Kitchen drop computer left political sound study the. Each reveal attorney security.', '2017-07-17', 7, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Red save fish evening');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (173, 'Artist strategy', 'Far know skin record nothing organization. Challenge eye determine he.', '2004-04-06', 13, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Artist strategy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (174, 'Tell everybody so', 'Ground least tree trade style. Together scientist hair allow phone weight medical.', '2018-11-26', 13, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Tell everybody so');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (175, 'Test science ten score night', 'American participant necessary before. Safe true town car few. Dinner one ok less Mr.', '2015-06-29', 7, '0 years 0 mons 0 days 2 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Test science ten score night');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (176, 'Investment before believe degree', 'Enough mother game question me. Key with watch maintain five window like clear.', '2013-06-26', 15, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Investment before believe degree');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (177, 'Deep couple scientist', 'Certain free government seat last interesting. Several accept vote area impact position.', '2010-05-31', 8, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Deep couple scientist');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (178, 'Wear throughout', 'Avoid civil reveal walk. Like wife animal process reach training main exactly.', '2021-09-16', 9, '0 years 0 mons 0 days 1 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Wear throughout');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (179, 'Mrs same son today', 'Whatever guess significant section Democrat fly. Leave four question region effort.', '1997-01-26', 2, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Mrs same son today');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (180, 'Blue agent find quality', 'Tree mention administration join. Where their force. Man offer plant same north wind sister.', '2013-05-24', 4, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Blue agent find quality');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (181, 'Mouth discover next property', 'Agree there want but way agent. Herself land human day herself.', '2020-12-11', 14, '0 years 0 mons 0 days 1 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Mouth discover next property');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (182, 'Per', 'Then administration who role today animal. Concern act million cell like.', '2016-06-13', 12, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Per');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (183, 'Memory someone receive', 'Information company million character. Half understand skill air. Fill personal training enter fly.', '2021-05-20', 6, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Memory someone receive');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (184, 'Include radio', 'Response executive past economic. Continue process forget wind property.', '2008-12-08', 9, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Include radio');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (185, 'Story behavior benefit', 'Shake enjoy site interview agent myself. Dinner leader book nearly.', '2012-10-27', 1, '0 years 0 mons 0 days 2 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Story behavior benefit');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (186, 'Including series dinner', 'Style develop admit safe. Moment sister none most another mouth.', '2005-08-24', 6, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Including series dinner');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (187, 'Land enter economic attack', 'Edge new find type.', '2017-02-07', 10, '0 years 0 mons 0 days 1 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Land enter economic attack');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (188, 'Theory eight', 'Find bill pick likely produce federal by. Lawyer audience without treat game evening write high.', '2025-01-07', 5, '0 years 0 mons 0 days 2 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Theory eight');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (189, 'Word base', 'Instead point tend exactly right every. Policy forget project economy ground. Big south drug.', '2018-04-28', 11, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Word base');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (190, 'Minute rate', 'Well commercial nice next. Time live relationship as. Assume rest now water road require.', '2021-10-17', 12, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Minute rate');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (191, 'Security economic left sound cause', 'As including claim create woman similar writer structure. Power manager build.', '2010-01-30', 2, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Security economic left sound cause');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (192, 'Fire everything whether ago', 'Before employee customer goal positive bank later. Model after paper word.', '2007-03-09', 5, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Fire everything whether ago');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (193, 'Accept letter visit always', 'Outside off through relationship. Medical sport knowledge performance.', '2014-01-31', 3, '0 years 0 mons 0 days 1 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Accept letter visit always');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (194, 'Pressure range', 'Water film onto too myself.', '2002-12-23', 13, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Pressure range');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (195, 'Population former', 'Research manager number party. Two deal ready. Above drive sport story worker.', '2023-06-17', 11, '0 years 0 mons 0 days 2 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Population former');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (196, 'Drive note', 'Expect expert talk end set house. Wear never marriage camera yet.', '2011-02-27', 15, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Drive note');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (197, 'Question', 'Hospital check factor as. Physical from return agent.', '2023-02-15', 3, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Question');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (198, 'Art rock', 'Expert room white home. Think happy again south century.', '2025-02-28', 6, '0 years 0 mons 0 days 2 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Art rock');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (199, 'It', 'Shoulder political offer song character first early. Several main particular shake.', '2025-05-26', 5, '0 years 0 mons 0 days 2 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'It');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (200, 'Science', 'Indeed mother peace citizen. Pick record example summer economic box war.', '2006-12-31', 11, '0 years 0 mons 0 days 2 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Science');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (201, 'Under item', 'Attention career feel hour change year. Which fly represent we bar.', '2020-06-07', 15, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Under item');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (202, 'Doctor describe', 'Few current like. Along public recent friend sort table. Imagine garden wall rest need major.', '2001-06-19', 14, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Doctor describe');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (203, 'Close trade speech affect', 'Child soon single tell. Rich say game. Audience old whole wide piece former professor partner.', '1998-02-20', 10, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Close trade speech affect');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (204, 'Administration enter', 'Cost focus yeah class play. Father include political design economy general drive according.', '2021-09-07', 3, '0 years 0 mons 0 days 1 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Administration enter');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (205, 'Never majority', 'Whatever place full. Range investment business can example. Southern ten hard wife as language.', '2006-02-07', 1, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Never majority');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (206, 'Run brother tonight friend', 'Green per no situation what machine.', '1996-06-02', 4, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Run brother tonight friend');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (207, 'Day stock', 'Nearly pick position how force structure. Poor food series. Third argue response.', '2017-04-11', 12, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Day stock');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (208, 'Treat trial', 'Nature become debate city. Dinner argue raise agency poor. Long among serve wear west.', '2019-04-26', 3, '0 years 0 mons 0 days 2 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Treat trial');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (209, 'Go consider', 'Think meeting stock however charge account physical performance. News memory civil cut parent.', '2015-08-16', 2, '0 years 0 mons 0 days 1 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Go consider');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (210, 'Turn beat story', 'Less possible discover three such describe. Finally describe Congress.', '1995-10-27', 15, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Turn beat story');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (211, 'Nature road month', 'Field high nothing. Best happy position wife.', '2011-08-26', 1, '0 years 0 mons 0 days 1 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Nature road month');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (212, 'Recognize', 'Both right lay. Reason event against none as reality democratic huge.', '2025-02-08', 7, '0 years 0 mons 0 days 1 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Recognize');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (213, 'White point three none', 'Ready special yet analysis none. Next reflect social resource score expert.', '2018-04-29', 5, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'White point three none');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (214, 'Just recent five', 'Age all building control simply. Attack laugh budget war.', '2021-08-18', 11, '0 years 0 mons 0 days 2 hours 19 mins 0.0 secs', '2025-04-29', NULL, 'Just recent five');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (215, 'Son report financial add impact different', 'Read per go will make agree. While service beautiful.', '1999-10-22', 4, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Son report financial add impact different');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (216, 'Listen mouth', 'List everything newspaper institution assume enjoy. Listen medical during until case agency.', '2005-08-28', 5, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Listen mouth');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (217, 'Break day on', 'Action art small both program one. Field specific floor.', '1997-11-28', 3, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Break day on');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (218, 'Health walk how', 'East send style gun. Still image sell amount fly. Agree public us hospital paper term.', '2019-05-29', 14, '0 years 0 mons 0 days 1 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Health walk how');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (219, 'Why', 'Hard hotel let. Field movement force final way memory.', '2013-01-19', 1, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Why');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (220, 'Child Republican', 'Our plant front thought special. Early machine establish nothing Mr chair.', '1999-08-15', 15, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Child Republican');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (221, 'Sound necessary partner beat', 'American audience blue. Environmental six understand rather daughter through note. Born with rest.', '2023-07-07', 8, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Sound necessary partner beat');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (222, 'Network account customer', 'Hand young long collection table. Out special suffer without hair set bed.', '2003-03-27', 9, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Network account customer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (223, 'You available defense enter value', 'Coach at the per of. Explain like institution collection. Space crime Republican.', '2021-07-06', 8, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'You available defense enter value');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (224, 'Almost half', 'Spend may thus hour cold light suffer. Technology strong off evidence early.', '2020-02-24', 9, '0 years 0 mons 0 days 1 hours 37 mins 0.0 secs', '2025-04-29', NULL, 'Almost half');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (225, 'Despite couple', 'Good cover two coach. Certainly represent especially agency. Piece he large free party.', '2004-10-27', 10, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Despite couple');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (226, 'Behavior growth bar professor', 'Among field well create notice. Son third interview nothing wrong decision. Clear also road skin.', '2006-09-08', 12, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Behavior growth bar professor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (227, 'Large task language', 'Open if support expert particular close. Our order table beyond. Someone across music manage.', '2005-12-23', 11, '0 years 0 mons 0 days 2 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Large task language');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (228, 'East no', 'Although old write pass. Smile today station make environment. Past moment story expect assume.', '1997-06-09', 6, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'East no');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (229, 'And represent against gas', 'At all table edge cost marriage. Situation television last staff seat religious.', '2022-08-31', 4, '0 years 0 mons 0 days 1 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'And represent against gas');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (230, 'Wonder seat adult', 'When sort event. Vote administration than run short small shoulder. Market oil move.', '2017-10-22', 5, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Wonder seat adult');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (231, 'Beautiful', 'Indeed town daughter clearly best. Finally my nature attention work.', '2021-12-17', 5, '0 years 0 mons 0 days 1 hours 19 mins 0.0 secs', '2025-04-29', NULL, 'Beautiful');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (232, 'Myself so growth time', 'Accept mission event some simply could. Draw involve party home stay fall carry.', '1999-04-09', 1, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Myself so growth time');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (233, 'Remain reduce', 'Prepare response stop. Including game language. Right size than foot.', '2022-01-09', 14, '0 years 0 mons 0 days 1 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Remain reduce');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (234, 'Information game have return', 'Modern data book expert exist computer shoulder. Size morning only girl popular last read.', '2013-03-14', 5, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Information game have return');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (235, 'Fear approach', 'Even probably son second. As whatever blue.', '2014-04-14', 1, '0 years 0 mons 0 days 2 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Fear approach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (236, 'Bad own', 'He already activity onto build. Poor threat throw behavior type.', '2019-02-18', 8, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Bad own');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (237, 'Worker', 'Rise right happen series.', '2010-03-24', 13, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Worker');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (238, 'Interest', 'Entire minute never quality. Together true worker though church young mouth note.', '2024-08-08', 5, '0 years 0 mons 0 days 1 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Interest');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (239, 'Girl', 'Look training oil scene career military much. Sometimes drive anything teach myself.', '2017-02-01', 1, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Girl');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (240, 'Surface unit', 'Challenge kind instead plant bag set leave. Yeah front almost activity agree.
-Base close score.', '2001-06-01', 7, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Surface unit');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (241, 'Public trade structure', 'Perform amount here American itself ago out. Product though help.', '2016-09-14', 4, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Public trade structure');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (242, 'Example', 'Image drive own. Next peace skill admit person player voice under. Call art soon up.', '2019-02-21', 12, '0 years 0 mons 0 days 2 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Example');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (243, 'Help usually thank', 'Great seek serious term. Cost small return. Future raise family where treatment age.', '2014-05-11', 7, '0 years 0 mons 0 days 1 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Help usually thank');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (244, 'Assume', 'Rock southern south bed represent lawyer. Return skin name paper cup order piece.', '2006-07-31', 2, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Assume');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (245, 'Able teach certain candidate economy company', 'Cause young crime spring citizen democratic own challenge.', '2016-11-21', 4, '0 years 0 mons 0 days 2 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Able teach certain candidate economy company');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (246, 'Gun guy', 'Down very investment whom season mind.', '2016-02-08', 11, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Gun guy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (247, 'Parent country hot position six', 'Hit rate authority. Beyond compare despite today green.', '2022-06-13', 4, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Parent country hot position six');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (248, 'Election', 'Off various research laugh effort. Idea our of wall.', '2005-12-21', 3, '0 years 0 mons 0 days 2 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Election');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (249, 'Pretty section degree still', 'Produce behavior nearly of general piece. Address loss international public rate.', '2024-05-08', 11, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Pretty section degree still');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (250, 'Manager both matter order', 'Friend wide take answer at month partner evidence. Picture available scene approach imagine.', '2019-09-29', 8, '0 years 0 mons 0 days 2 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Manager both matter order');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (251, 'Medical suddenly', 'Rise several in candidate. General new begin their. Step type type word not usually at sing.', '1998-06-22', 10, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Medical suddenly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (252, 'Mean reason follow', 'Group us dark trouble husband level. Less daughter you traditional.', '2007-03-06', 6, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Mean reason follow');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (253, 'Test return why outside', 'Couple language through nation. Enough any which ten follow. Ten family amount stage.', '2025-04-26', 1, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Test return why outside');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (254, 'Exist', 'Director seek where age size open.', '2001-04-03', 2, '0 years 0 mons 0 days 2 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Exist');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (255, 'All important shoulder she within position', 'Pick foreign city yeah quickly. Address friend writer view rather if.', '1996-10-12', 3, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'All important shoulder she within position');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (256, 'Number project individual security subject experience', 'Think front save mention picture. Exist later nation leader.
-Begin type dog name language local.', '2012-03-30', 1, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Number project individual security subject experience');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (257, 'Staff within mouth call process water', 'Five modern human control personal down appear.', '2004-12-13', 3, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Staff within mouth call process water');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (258, 'Consider deep something', 'National top occur billion if. Bag quite foreign mouth full.', '2008-09-30', 4, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Consider deep something');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (259, 'Onto add', 'Place run instead hair term skin success. Concern can when treat whose.', '2007-01-02', 5, '0 years 0 mons 0 days 2 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Onto add');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (260, 'Hundred wonder content_service.movies voice boy wife', 'Miss plant international. Radio exist expect mind. Him only yet make matter sure wrong develop.', '2001-12-01', 8, '0 years 0 mons 0 days 1 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Hundred wonder content_service.movies voice boy wife');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (261, 'Save president', 'Customer century subject according. Perhaps arrive scene those mind.', '2024-10-16', 2, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Save president');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (262, 'Measure ago current practice', 'Foot peace memory. Him price drop bill apply than responsibility. Population compare lead Democrat.', '2015-05-08', 5, '0 years 0 mons 0 days 2 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Measure ago current practice');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (263, 'Explain war spend nearly lawyer fire', 'Door nearly door coach president. Smile talk music floor vote.', '2021-10-21', 9, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Explain war spend nearly lawyer fire');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (264, 'Statement available win politics last', 'Spring talk off body. Get the west the. Together test age chance officer single role.', '2011-02-06', 4, '0 years 0 mons 0 days 2 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Statement available win politics last');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (265, 'Physical many member area teacher cold', 'Family court herself. content_service.movies produce lay theory specific.', '2000-01-08', 7, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Physical many member area teacher cold');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (266, 'Spring white measure manager', 'Expert can style option red happen whose return. Special save ability us.', '2021-12-05', 13, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Spring white measure manager');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (267, 'Thank them key moment lead', 'Cell loss approach. Gun class discuss manager.', '1999-01-30', 13, '0 years 0 mons 0 days 2 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Thank them key moment lead');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (268, 'Budget window hour some fund voice', 'Speech prove language challenge. Than board garden. Less crime amount laugh.', '2004-10-24', 12, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Budget window hour some fund voice');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (269, 'Beautiful news', 'I state try keep effect join hour statement. Good ask drive catch.', '2013-12-11', 8, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Beautiful news');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (270, 'Right next look thank four', 'Star none record religious. Off fire property remain first. Amount particular maybe space.', '2000-06-27', 11, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Right next look thank four');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (271, 'Cost success people', 'Expert any look entire do company focus. Decision read middle opportunity.', '2013-10-30', 7, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Cost success people');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (272, 'Protect something', 'Become area citizen program. Piece produce else.', '2014-01-14', 6, '0 years 0 mons 0 days 1 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Protect something');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (273, 'Huge response long improve', 'Fight catch serious later they. Miss scene do work win health. Much article agent.', '2012-06-09', 12, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Huge response long improve');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (274, 'Rich', 'Enter memory charge. Activity night bill central wonder green. Stay image my by maybe.', '2021-03-08', 15, '0 years 0 mons 0 days 1 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Rich');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (275, 'Office several compare', 'Product would policy clear star daughter. Blue degree rest thus game wonder.', '2001-01-26', 8, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Office several compare');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (276, 'Development', 'Record organization of national. National what role. Left necessary best bag even might.', '2014-02-19', 6, '0 years 0 mons 0 days 1 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Development');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (277, 'Wish', 'Interest hair series future throughout number. Should who court media part.', '2009-11-30', 11, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Wish');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (278, 'Face', 'Brother charge Congress seven. Into thing really listen husband shake party.', '2013-09-14', 4, '0 years 0 mons 0 days 2 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Face');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (279, 'Friend stand seem pull', 'Listen might how represent.', '2001-01-14', 1, '0 years 0 mons 0 days 1 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Friend stand seem pull');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (280, 'Story attorney summer some', 'More director service long direction.', '2017-08-18', 5, '0 years 0 mons 0 days 1 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Story attorney summer some');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (281, 'Establish paper case store bit', 'Science thank suddenly baby cause cover. Experience Mr she room man vote safe. Late top huge deal.', '2022-09-12', 13, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Establish paper case store bit');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (282, 'Prove nor', 'Six while step effort resource create hit yes. Foot nation stop environment throw.', '2004-02-04', 1, '0 years 0 mons 0 days 2 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Prove nor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (283, 'Financial join well', 'Energy apply mother standard these. Little people late six. Administration rather sense song.', '2019-05-12', 10, '0 years 0 mons 0 days 1 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Financial join well');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (284, 'Win central evidence', 'Miss draw society character. World process matter hot. Want note work military.', '2010-03-16', 13, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Win central evidence');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (285, 'Stop', 'Operation sense skill everybody. Political crime finally term open story so.
-Cup significant admit.', '1998-05-20', 3, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Stop');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (286, 'People education great some', 'Would ability language food human. Especially peace among past happen no crime information.', '2017-01-19', 11, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'People education great some');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (287, 'Effort remember ability', 'Line yet produce magazine. Authority air sort investment guy such notice to. Really door against.', '2014-11-21', 13, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Effort remember ability');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (288, 'Question return process stuff', 'Wait six guess member. Leave lead relationship provide. Major his continue avoid.', '2023-11-07', 6, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Question return process stuff');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (289, 'Within admit spend purpose south', 'Itself media able official call thank.', '2011-06-06', 9, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Within admit spend purpose south');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (290, 'Team', 'Clear nice foreign return skin above become. Present treatment might claim energy laugh bed.', '2024-02-24', 8, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Team');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (291, 'Better present', 'Wonder prevent fire into. Season dinner stage. Apply notice current allow audience involve.', '2014-05-02', 9, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Better present');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (292, 'Toward', 'Election animal goal. Professional idea range attention throughout degree think.', '2013-11-17', 15, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Toward');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (293, 'Black better develop section newspaper', 'Natural whose fish direction TV. Why fear trip music former apply staff until. Hour large friend.', '2015-11-09', 4, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Black better develop section newspaper');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (294, 'Positive at behind question exist', 'Between bar beyond single walk. Over rather central south.', '2006-02-11', 7, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Positive at behind question exist');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (295, 'Read citizen indeed', 'Executive what manage share region suddenly.', '1995-07-17', 3, '0 years 0 mons 0 days 2 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Read citizen indeed');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (296, 'Bar Mr pattern everyone', 'Call all Democrat animal particularly win. Ask myself phone travel western.', '1997-06-09', 1, '0 years 0 mons 0 days 2 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Bar Mr pattern everyone');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (297, 'Happen determine', 'Hit keep enjoy sing time you may. Respond what production now.', '1995-10-25', 8, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Happen determine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (298, 'Cost community', 'Defense here effort together contain black Mr. Old physical product of.', '2023-12-25', 12, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Cost community');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (299, 'Sure somebody huge why station', 'Each PM where new including education.
-Though bring himself know.', '2021-09-03', 10, '0 years 0 mons 0 days 1 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Sure somebody huge why station');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (300, 'Yourself', 'Song success difficult sell. Congress issue whatever.', '2014-02-28', 6, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Yourself');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (301, 'Want carry show', 'Production choice edge everyone. Would pressure room under team security at.', '2025-03-28', 8, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Want carry show');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (302, 'Similar suffer team', 'Health create together service me. Friend another effect culture radio station.', '2000-11-07', 14, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Similar suffer team');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (303, 'Sing despite', 'Mention hour gun field expert several effort. Kid issue woman.', '2000-06-08', 9, '0 years 0 mons 0 days 1 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Sing despite');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (304, 'Model its rather card you majority', 'Skill program try school wait. Receive entire character quickly sure player western.', '2005-01-09', 5, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Model its rather card you majority');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (305, 'Finish building group show', 'Threat project half door. End dark spring speak drive. Relationship hand protect matter.', '2018-05-30', 6, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Finish building group show');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (306, 'Former family wear', 'Former law only thus something environmental sign. Water guess dream have line tax.', '2005-11-11', 13, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Former family wear');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (307, 'Seven bill beautiful issue', 'Apply property enter name crime. Wait staff feeling first.', '2020-04-21', 3, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Seven bill beautiful issue');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (308, 'Then', 'Vote state turn center build happy near. Trouble news five decide.', '2013-06-09', 14, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Then');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (309, 'Scientist dream anything toward difficult do', 'Usually as until happen power probably. Already TV low.', '1999-08-21', 10, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Scientist dream anything toward difficult do');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (310, 'Box involve exist', 'More physical beautiful year training cup. Her generation remember million hospital.', '2023-08-02', 12, '0 years 0 mons 0 days 1 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Box involve exist');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (311, 'Safe team wish candidate', 'Chance character really spring dinner. Couple mission part ability hair list really thus.', '2008-09-04', 9, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Safe team wish candidate');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (312, 'Full world', 'Capital decide wide describe real. Center claim Republican admit. Senior factor young get.', '2024-11-07', 9, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Full world');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (313, 'Up sense ready require', 'Talk boy area however. Every still according protect director next figure.', '1997-08-04', 9, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Up sense ready require');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (314, 'Carry fly water cut fire', 'Late market source art sound specific. Effect its citizen. Author term many. Rock bed film wait.', '2008-09-08', 5, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Carry fly water cut fire');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (315, 'Eat couple', 'Where receive white movement little name good.', '2003-05-16', 11, '0 years 0 mons 0 days 2 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Eat couple');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (316, 'Break partner area program price', 'Animal building attorney success. Main her year none lay TV.', '1996-08-02', 2, '0 years 0 mons 0 days 1 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Break partner area program price');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (317, 'Set no', 'Almost image good recognize like also. Window north pattern while kid body.', '1998-02-07', 14, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Set no');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (318, 'Dinner anything lose modern return simple', 'Protect mouth side mission teach especially eat. Whose young set knowledge.', '2021-11-25', 14, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Dinner anything lose modern return simple');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (319, 'Edge east person order', 'Each amount everything. Summer high ask rich development area.
-Today themselves blood single.', '2004-04-27', 2, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Edge east person order');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (320, 'Partner rest measure', 'Debate blue feeling professional research indeed. Sit music agreement need top wear.', '1997-06-05', 2, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Partner rest measure');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (321, 'During let particular her agreement', 'Mr social hand another class. Participant exactly hospital Congress seem role senior.', '2002-10-09', 11, '0 years 0 mons 0 days 2 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'During let particular her agreement');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (322, 'Style child guess', 'Discover detail effect. Kid safe but too situation half staff.', '2012-01-12', 8, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Style child guess');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (323, 'Today after stage field', 'Ahead establish truth society another. Fast attention win ok scientist yourself side.', '2011-08-24', 6, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Today after stage field');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (324, 'Ready long instead', 'Choose out sort once. History serve example effort medical science.', '2003-06-17', 12, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Ready long instead');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (325, 'Quality total past feeling', 'Bill compare town war security economic newspaper. Clear guess eye certain.', '2012-07-11', 15, '0 years 0 mons 0 days 1 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Quality total past feeling');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (326, 'Happen federal him', 'Pressure set American evening move. Region church standard base sure.', '2013-09-01', 8, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Happen federal him');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (327, 'Ask imagine my', 'Fear across shake body force news. Hope writer seek student. Amount home now.', '2010-04-11', 13, '0 years 0 mons 0 days 1 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Ask imagine my');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (328, 'Economy before while structure', 'Avoid consumer figure ask. Clear education describe win example.', '2018-11-08', 9, '0 years 0 mons 0 days 2 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Economy before while structure');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (329, 'Technology particular', 'Artist girl culture. Much cover how their.
-Place force conference each morning dog.', '2021-07-18', 6, '0 years 0 mons 0 days 1 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Technology particular');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (330, 'Every plan nature', 'Huge bit its fight. A avoid choice media. Cut difficult participant between.', '2017-01-14', 10, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Every plan nature');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (331, 'End mention market', 'Heavy receive state move shake particularly. Offer behind food daughter pattern or.', '2000-04-17', 1, '0 years 0 mons 0 days 1 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'End mention market');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (332, 'Step author coach', 'In drug stuff million. Gas human ok space blood herself simply move.', '1996-07-04', 5, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Step author coach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (333, 'Second full', 'Cause learn however face own article. Condition movement education minute show a theory.', '2009-02-28', 9, '0 years 0 mons 0 days 1 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Second full');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (334, 'Drive strong home to forward', 'Thousand sing green data treat wear hold best. Should court just must suddenly.', '2018-11-05', 12, '0 years 0 mons 0 days 1 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Drive strong home to forward');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (335, 'Chance step throughout party', 'Discuss try field. Capital other analysis low professor.', '2003-06-19', 7, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Chance step throughout party');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (336, 'Community spring billion price', 'Keep ahead material lose home. Eye size head development join color summer.', '2003-12-01', 9, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Community spring billion price');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (337, 'Author technology amount affect', 'Race get require fine. Break maybe majority past large area.', '2021-06-16', 11, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Author technology amount affect');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (338, 'Bar', 'Crime morning instead them attention.', '2011-08-10', 12, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Bar');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (339, 'Find', 'Expect never contain. Finish business reality impact.', '2008-06-02', 2, '0 years 0 mons 0 days 2 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Find');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (340, 'Particularly only girl suddenly pay', 'Seem too prove right old just night theory. Forget report give mind watch score successful.', '2016-03-01', 8, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Particularly only girl suddenly pay');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (341, 'Feel', 'Bag eat tax call of listen care term. Building rich amount arrive most step.', '2002-06-08', 2, '0 years 0 mons 0 days 1 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Feel');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (342, 'Most tree store', 'Practice team star dream. Nothing ground smile break here early what.', '2009-06-18', 3, '0 years 0 mons 0 days 2 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Most tree store');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (343, 'Keep', 'Throw perhaps recent. Play daughter movement stand try important.', '2024-08-09', 6, '0 years 0 mons 0 days 1 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Keep');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (344, 'Five our pull fly few', 'That senior go talk down. Mrs throughout career make law thousand. Politics interesting need.', '2020-05-09', 10, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Five our pull fly few');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (345, 'Whatever action themselves', 'Identify set last stop behind. Painting performance both.', '2017-08-20', 6, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Whatever action themselves');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (346, 'Individual study', 'Strategy really pull common between.', '2002-02-16', 6, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Individual study');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (347, 'Ever woman', 'Not sea line away hope central. Agent statement first two. Sea society your book cold.', '2017-06-26', 13, '0 years 0 mons 0 days 2 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Ever woman');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (348, 'Option management significant crime too', 'Floor us ok success. South music identify serious. Run sort those effort new.', '2020-07-06', 12, '0 years 0 mons 0 days 2 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Option management significant crime too');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (349, 'Work information', 'At coach sea man.
-Grow forget these. Ability again nature heavy soldier.', '2000-02-29', 4, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Work information');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (350, 'Thus several', 'Value score old mother significant. Science pay hold my run feel writer. Wall term natural lose.', '1998-03-31', 13, '0 years 0 mons 0 days 2 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Thus several');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (351, 'Because such during open model', 'Think five product new hard else may. While finally win country employee summer activity.', '2017-05-07', 8, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Because such during open model');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (352, 'During recently feel stock ball yard', 'Relationship much before medical.', '2000-01-24', 1, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'During recently feel stock ball yard');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (353, 'Effort', 'Him whom blood because door. Material sea personal day rule man.', '2023-07-18', 10, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Effort');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (354, 'Long lawyer writer', 'Hour would meeting suggest. Various use situation well task everybody. What perform kind young.', '2000-05-23', 3, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Long lawyer writer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (355, 'Federal reduce team Republican very', 'Finish even decide approach risk. Natural water character from PM such.', '2022-11-15', 5, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Federal reduce team Republican very');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (356, 'Impact feel', 'Month everyone soon Mr. If term adult suggest staff year.', '1997-03-04', 14, '0 years 0 mons 0 days 2 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Impact feel');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (357, 'Recent feeling', 'Season month above watch market beyond role the. Apply around clear yourself cut organization.', '2007-07-06', 13, '0 years 0 mons 0 days 2 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Recent feeling');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (358, 'Red must art thus', 'Loss simple movement magazine study. Language information tell. Consider expert address.', '2021-05-31', 9, '0 years 0 mons 0 days 1 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Red must art thus');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (359, 'Recently future choice whatever', 'Good lay huge line home kind radio. Join real early sure. Recent vote wall become area break.', '2015-02-06', 1, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Recently future choice whatever');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (360, 'Few minute perhaps once', 'My fall at age feeling. School over special sport.', '2004-10-31', 3, '0 years 0 mons 0 days 1 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Few minute perhaps once');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (361, 'Third', 'Employee year make star one interesting. Floor east front season. Carry side town traditional.', '2003-03-02', 6, '0 years 0 mons 0 days 1 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Third');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (362, 'Once state wait board', 'Child skill itself. Sign institution leg center group kid. Leave article matter.', '1995-12-25', 5, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Once state wait board');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (363, 'Several evening town', 'Fast authority feeling suggest relationship public. Anyone none forward side hour month.', '2002-07-10', 10, '0 years 0 mons 0 days 2 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Several evening town');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (364, 'Position vote section child', 'Small reach want page certain customer.', '2006-12-21', 15, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Position vote section child');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (365, 'Simply down', 'Seven structure store prepare. International building man institution arm family pattern.', '2014-10-14', 2, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Simply down');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (366, 'Answer information', 'Believe without entire. Environmental stock art national than late. Tv south ball.', '2022-12-10', 8, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Answer information');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (367, 'Medical music school', 'Law coach popular green. Open enter see only age. Media national feeling.', '1995-10-15', 14, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Medical music school');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (368, 'Return pretty young', 'Where such organization coach sign tough since. Think draw allow else occur.', '1996-10-28', 11, '0 years 0 mons 0 days 2 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Return pretty young');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (369, 'Hot yes whole allow own TV', 'Town south general wind box those. Writer exist someone raise almost.', '2013-10-03', 12, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Hot yes whole allow own TV');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (370, 'Race case', 'Call whole especially establish. They arm sister seem.', '2010-09-08', 13, '0 years 0 mons 0 days 1 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Race case');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (371, 'Hold simple quickly', 'Above or process. Total firm case article coach black government.', '2011-12-11', 13, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Hold simple quickly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (372, 'Past view', 'Operation next great group pay arm future respond. Whether ever third four me.', '2020-07-08', 15, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Past view');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (373, 'How scene', 'Size hot new common. Across blood contain role professional player. Series writer language need.', '2009-08-23', 15, '0 years 0 mons 0 days 1 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'How scene');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (374, 'Audience draw protect Democrat car', 'Say base detail. Several much concern civil student behavior.', '2014-12-01', 13, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Audience draw protect Democrat car');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (375, 'Enjoy student nor character', 'Leg customer interest know international. Tax pull day test. Skill boy poor society else.', '2008-08-26', 11, '0 years 0 mons 0 days 1 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Enjoy student nor character');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (376, 'Site grow name machine tree', 'Live inside truth all teach decade. Page conference window standard they. List teach beyond nearly.', '2005-08-21', 13, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Site grow name machine tree');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (377, 'Glass clear thus see read expect', 'Think expert despite. Entire environment shoulder collection environmental.', '2012-12-26', 5, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Glass clear thus see read expect');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (378, 'Might necessary former interview', 'Move energy interview fight suffer play say. Develop measure trade energy defense.', '2009-07-31', 9, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Might necessary former interview');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (379, 'Service test start middle', 'Support capital theory sense identify under. Happy father really mind.', '1996-09-05', 9, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Service test start middle');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (380, 'Dog yes heart', 'Know trip option early agree. Popular program against identify red thought build.', '2002-11-09', 1, '0 years 0 mons 0 days 2 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Dog yes heart');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (381, 'Around beat', 'Catch stock reason around possible night share. Nation husband rich ahead.', '2014-09-20', 13, '0 years 0 mons 0 days 1 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Around beat');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (382, 'School believe serve', 'Probably early approach chair the. Letter much increase maybe. Hit heavy political.', '2021-09-20', 7, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'School believe serve');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (383, 'Score choice', 'View rate rest this his body.', '2006-10-20', 7, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Score choice');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (384, 'Wind beyond', 'Necessary entire later statement.
-Particular power large car senior. Heart card share ready among.', '2014-10-31', 6, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Wind beyond');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (385, 'Six tell activity including single right', 'Control modern continue which nor.', '2017-10-20', 10, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Six tell activity including single right');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (386, 'Whose site for exactly', 'Trip owner week nature democratic seem same tend. New less many particularly head sit.', '2003-12-30', 7, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Whose site for exactly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (387, 'Enough pressure occur', 'That room nor. Feel admit might offer focus.', '2014-11-03', 7, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Enough pressure occur');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (388, 'Specific', 'Into wall bill wall next per. Trip nothing with since. Power tax I.', '2013-05-05', 12, '0 years 0 mons 0 days 1 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Specific');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (389, 'Build content_service.movies', 'Rule special system financial suggest. Nearly a even issue know.', '2007-04-01', 3, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Build content_service.movies');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (390, 'Management senior service large', 'Goal cover eight painting available. Meeting general name bad say believe.', '2022-09-12', 4, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Management senior service large');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (391, 'Subject try wonder', 'Five find much world yes.', '2023-05-14', 11, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Subject try wonder');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (392, 'Administration debate', 'Without resource outside. Begin stuff state pick without tend bad current.', '2022-08-13', 10, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Administration debate');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (393, 'State score', 'Adult difficult toward question. Local evening represent fast risk when arm.', '2009-04-20', 2, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'State score');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (394, 'Player half have', 'Force serve heavy able discussion. Case his science.', '2008-12-02', 7, '0 years 0 mons 0 days 2 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Player half have');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (395, 'Anyone take sister', 'Career part fund read should least. Nothing receive happen tax off station.', '1996-12-05', 15, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Anyone take sister');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (396, 'Voice care break', 'Kid quickly play bed.', '2018-07-29', 11, '0 years 0 mons 0 days 2 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'Voice care break');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (397, 'Choice clearly', 'Real page look skill. Decision your if else.', '2013-08-21', 6, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Choice clearly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (398, 'With', 'Another draw consumer offer. Read a interest country seven. Might fall defense father.', '2010-04-15', 6, '0 years 0 mons 0 days 2 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'With');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (399, 'Suffer something great stuff suddenly', 'Though media whether western I federal. Agreement sort about next appear her alone.', '2007-07-31', 11, '0 years 0 mons 0 days 1 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Suffer something great stuff suddenly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (400, 'Goal investment social easy popular', 'Church nature region they. Produce travel forget explain.', '2008-12-20', 5, '0 years 0 mons 0 days 1 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Goal investment social easy popular');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (401, 'Road shake hand', 'Receive ask message may center whole day. Poor power around price win face hold. His baby rule.', '2022-07-20', 10, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Road shake hand');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (402, 'Chance throw', 'Mention do five. Test room laugh when impact animal performance. Child defense poor article and.', '2000-08-21', 3, '0 years 0 mons 0 days 2 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Chance throw');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (403, 'Develop staff least', 'Thousand once physical. And price it collection pay establish practice.', '2013-02-24', 15, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Develop staff least');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (404, 'Single particularly television', 'Begin speech type sometimes bed must. Far chair high gun.', '2010-01-06', 11, '0 years 0 mons 0 days 2 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Single particularly television');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (405, 'Not husband center', 'See leg at on fly owner newspaper.', '2008-12-31', 13, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Not husband center');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (406, 'American structure foreign before', 'Down human board boy. Skill owner place free because these national choice.', '2019-06-23', 12, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'American structure foreign before');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (407, 'Series without', 'Follow future amount such. Key toward group popular modern pay.', '2019-04-23', 10, '0 years 0 mons 0 days 1 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Series without');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (408, 'Argue', 'View within soldier surface. Hundred wrong box physical hour.', '2003-04-30', 14, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Argue');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (409, 'Hold what wish fine', 'Professor young wife side agreement. Interesting table girl usually. Offer position his.', '2004-11-22', 6, '0 years 0 mons 0 days 1 hours 19 mins 0.0 secs', '2025-04-29', NULL, 'Hold what wish fine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (410, 'Night born war', 'Care support campaign. Environmental open always tonight decade.', '2024-05-29', 8, '0 years 0 mons 0 days 2 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Night born war');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (411, 'Authority remain', 'Rate heart thing speech fear and describe. Follow win sea free as reveal decade.', '2008-04-19', 6, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Authority remain');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (412, 'Consider employee', 'Rather factor stop chance behavior end. Leader military operation first as themselves account add.', '2013-08-21', 9, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Consider employee');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (413, 'Product value interesting name positive', 'Piece war address sometimes. Nature best past if. Floor feeling former law apply politics prepare.', '2022-12-14', 9, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Product value interesting name positive');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (414, 'Dinner conference add move', 'Walk conference sea activity almost continue. Continue maybe them.', '2015-06-22', 8, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Dinner conference add move');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (415, 'Ten total clearly', 'Affect work I throughout. Support mind campaign table everyone. Yard discussion with.', '1999-04-25', 12, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Ten total clearly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (416, 'National wrong', 'Move decide office court politics. Consider her win someone citizen run.', '2015-04-19', 10, '0 years 0 mons 0 days 1 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'National wrong');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (417, 'Two', 'Seek day staff our least security. Team open tonight activity house of measure professor.', '2002-12-12', 3, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Two');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (418, 'Marriage participant', 'Nation reality become artist author its over.
-Yes training before hundred.', '2024-06-20', 4, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Marriage participant');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (419, 'Event white wife laugh', 'Town protect above wife minute. Eye budget subject least.', '2005-03-06', 8, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Event white wife laugh');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (420, 'Positive child usually', 'Political budget exist answer report. Turn design anything others.', '1997-08-25', 7, '0 years 0 mons 0 days 2 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Positive child usually');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (421, 'Young specific whose worry property', 'Choose identify set gun happen else them. Against amount family your TV born development.', '2013-09-07', 14, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Young specific whose worry property');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (422, 'Real character', 'Line collection may. Business thank process cause.', '1996-10-06', 2, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Real character');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (423, 'Imagine later identify', 'Laugh sort direction three big. Very get ahead table. Create whose want until clearly poor.', '2021-04-30', 14, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Imagine later identify');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (424, 'Wonder long consider care respond', 'Explain new son explain this. Nearly compare political purpose.', '2023-02-23', 7, '0 years 0 mons 0 days 1 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Wonder long consider care respond');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (425, 'Responsibility fact ability', 'Home inside drive. Series he throw bar five know behavior.', '2016-05-24', 6, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Responsibility fact ability');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (426, 'Available war write federal', 'Garden walk huge blue movement firm. Suffer once agreement company material.', '1997-01-02', 10, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Available war write federal');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (427, 'Lead upon', 'Treatment cause itself. Toward real outside kind.', '2009-04-04', 4, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Lead upon');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (428, 'Act inside', 'Health difficult page be artist. Position contain ok game.', '2000-04-16', 15, '0 years 0 mons 0 days 1 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Act inside');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (429, 'Foreign husband', 'Experience sister risk. Carry doctor while prepare light.', '2012-05-31', 4, '0 years 0 mons 0 days 2 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Foreign husband');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (430, 'Song', 'Push hospital personal quite. Agency pick local into friend career.', '1996-10-19', 8, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Song');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (431, 'Whom evidence', 'Law from traditional now Mrs.', '2017-11-12', 3, '0 years 0 mons 0 days 1 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Whom evidence');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (432, 'Appear weight difference', 'Soon market garden author world. Try cause behind single project. Sport sound clear.', '2016-04-25', 11, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Appear weight difference');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (433, 'Later arm story', 'Learn data power. Care fall new subject want way similar.', '1995-11-03', 11, '0 years 0 mons 0 days 2 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Later arm story');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (434, 'Performance', 'High system policy education true. Theory outside agency world true evidence.', '1998-08-15', 9, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Performance');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (435, 'Effort bill', 'Hear station wide themselves back. Factor body general tonight resource thus. Must any weight safe.', '2017-05-29', 1, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Effort bill');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (436, 'Product main couple', 'Financial floor media culture person activity two. Use high language main spring nature already.', '2008-07-20', 7, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Product main couple');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (437, 'Act perform', 'Hard half dream easy prevent side meeting. City hundred center life since.', '2015-08-07', 5, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Act perform');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (438, 'Decide economic bill', 'She difference ten suddenly wear soldier light.', '1997-12-05', 6, '0 years 0 mons 0 days 2 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Decide economic bill');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (439, 'Ready like allow explain executive', 'Respond everything cover push.', '2005-07-05', 3, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Ready like allow explain executive');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (440, 'Fight manage', 'Participant race model doctor explain entire admit require.', '2023-12-11', 7, '0 years 0 mons 0 days 1 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Fight manage');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (441, 'Poor worry', 'Away election worker region learn gun expect public. Anyone box manage policy box traditional.', '2024-06-28', 4, '0 years 0 mons 0 days 1 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'Poor worry');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (442, 'Student', 'Five medical research group thus. Cost exist idea now stand his wife represent.', '1995-07-12', 5, '0 years 0 mons 0 days 2 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Student');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (443, 'Staff true', 'Ready same price.
-Hospital anyone fight second so floor operation.', '1995-11-16', 9, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Staff true');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (444, 'Why fact', 'Arm also appear star. Doctor network minute road special finally station whose.', '2004-05-15', 11, '0 years 0 mons 0 days 1 hours 37 mins 0.0 secs', '2025-04-29', NULL, 'Why fact');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (445, 'Analysis', 'Individual because show hour move poor. Small bank world purpose investment at table.', '2010-09-04', 9, '0 years 0 mons 0 days 1 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Analysis');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (446, 'Cause field education child institution help', 'Name town project agency rock however. Least husband option contain.', '2006-06-11', 3, '0 years 0 mons 0 days 2 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Cause field education child institution help');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (447, 'Tough create question now', 'Region Congress way night threat glass leg anyone. Politics similar operation adult big.', '2001-11-14', 12, '0 years 0 mons 0 days 1 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'Tough create question now');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (448, 'Consumer husband while even', 'Recently force this. Southern several figure watch.', '2007-06-16', 15, '0 years 0 mons 0 days 1 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Consumer husband while even');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (449, 'Surface like term', 'During wish issue others front. All agency right figure son guess result.', '1996-05-30', 15, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Surface like term');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (450, 'Shake way', 'Case next go great put ready. Feel gas price.', '2015-01-15', 2, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Shake way');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (451, 'Order later develop past road', 'Year cold group those stage.', '2021-03-07', 6, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Order later develop past road');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (452, 'Ask again network', 'Economic believe successful suffer property store. White rest several section set either.', '2023-10-03', 1, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Ask again network');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (453, 'Oil west school', 'Exactly director simple turn most. Final general very.', '1999-12-12', 7, '0 years 0 mons 0 days 2 hours 19 mins 0.0 secs', '2025-04-29', NULL, 'Oil west school');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (454, 'Phone thought maintain must pay', 'Rate talk professor. Low budget politics fly impact raise boy pull.', '1998-01-03', 8, '0 years 0 mons 0 days 2 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Phone thought maintain must pay');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (455, 'Half usually customer young', 'Accept simply help southern.', '2022-04-10', 13, '0 years 0 mons 0 days 1 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Half usually customer young');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (456, 'Put', 'Impact ready quickly father attention. Drive interest measure and.', '2013-08-27', 3, '0 years 0 mons 0 days 1 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Put');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (457, 'Parent focus kid put memory', 'Gun door all nearly. Rate baby sell hit business. Develop subject down north property beat.', '2010-03-12', 13, '0 years 0 mons 0 days 2 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Parent focus kid put memory');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (458, 'Media game support', 'Night the agree pressure mouth. Fly Congress learn more ball body sit send.', '2024-03-28', 10, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Media game support');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (459, 'May whatever late', 'Which few skin though compare interest. A week book south indicate.', '2008-04-08', 4, '0 years 0 mons 0 days 1 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'May whatever late');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (460, 'Message lead around', 'Box popular lot arm form development ask traditional. Help view certain.', '2015-04-16', 1, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Message lead around');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (461, 'Part', 'Write green scene need movement bill. Item manage place. Image during year customer behind others.', '2023-06-14', 12, '0 years 0 mons 0 days 2 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Part');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (462, 'Identify floor', 'Baby yard girl somebody receive boy develop.', '2005-07-03', 9, '0 years 0 mons 0 days 2 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Identify floor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (463, 'Stuff practice', 'Newspaper there picture successful tough story. Test today toward blood reflect consider could.', '2004-03-22', 11, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Stuff practice');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (464, 'Help', 'Rich never five behind hope. Owner across sign.', '2021-04-24', 14, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Help');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (465, 'Spend value return', 'Hundred ask theory democratic perform court. Laugh long carry long difficult family.', '2004-08-21', 8, '0 years 0 mons 0 days 1 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Spend value return');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (466, 'Line him change', 'Modern social return specific article purpose early safe. Fine top behind name possible financial.', '2021-02-02', 4, '0 years 0 mons 0 days 1 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Line him change');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (467, 'Information poor something', 'Recently film in. Brother save international assume. Indicate ever partner office billion manager.', '2008-07-22', 7, '0 years 0 mons 0 days 1 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Information poor something');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (468, 'Foreign particular positive', 'Agree current himself pattern. See order compare plant.', '2023-06-07', 5, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Foreign particular positive');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (469, 'Leader career according', 'Might its last much often lead. Red leader table politics the term. Once be end key bank ago.', '1996-02-13', 12, '0 years 0 mons 0 days 1 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Leader career according');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (470, 'Wrong look husband media turn', 'Man fall none rich Congress exist. Wide happy thought work offer.', '2001-06-29', 4, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Wrong look husband media turn');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (471, 'Pressure develop development the inside', 'Near help four whom particular decade. Poor mean hard trade tough.', '1999-01-04', 15, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Pressure develop development the inside');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (472, 'Oil per line create build quite', 'Know finish American pass travel trip. Major many situation whom teach party range practice.', '2011-04-14', 10, '0 years 0 mons 0 days 2 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Oil per line create build quite');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (473, 'Detail contain attention measure indeed', 'Surface school someone head ground media drug.', '1996-07-10', 6, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Detail contain attention measure indeed');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (474, 'Someone support far', 'I baby role like interesting. Member shake impact main. Exactly left on.', '2005-02-28', 4, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Someone support far');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (475, 'Respond box service develop', 'Everything loss drop movement company choose.
-Great describe because home. Final film test.', '2020-10-30', 13, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Respond box service develop');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (476, 'Kitchen really', 'Situation lose difficult ground bank. Including understand ten look believe bed.', '2013-09-28', 12, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Kitchen really');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (477, 'Personal enough ball', 'Speak father last mouth. Throw pattern thousand imagine.', '1998-12-31', 6, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Personal enough ball');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (478, 'Mouth phone decision picture defense rate', 'Whether produce tree.', '2022-10-03', 12, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Mouth phone decision picture defense rate');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (479, 'Life cover both class learn either', 'Trial way human south.
-Need community very consider actually.', '2007-07-01', 2, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Life cover both class learn either');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (480, 'Area', 'Age because best risk cover him two lot. Everyone send total bag officer address meeting debate.', '2014-08-10', 14, '0 years 0 mons 0 days 1 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Area');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (481, 'College result', 'Do key night open third whatever.', '2013-08-20', 4, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'College result');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (482, 'Forward per sound forget friend', 'Moment clearly content_service.movies ability. Money child health among.', '2006-05-29', 1, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Forward per sound forget friend');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (483, 'Office drug list imagine behind', 'Not deal say.
-Strong how court also. Offer present choice two certain modern.', '2005-08-24', 13, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Office drug list imagine behind');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (484, 'Structure why unit support coach magazine', 'Three machine environment security wrong plan case carry.', '2014-02-13', 5, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Structure why unit support coach magazine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (485, 'Occur do simply', 'Trial hit indicate design. He local mention eye house knowledge participant strategy.', '2013-11-11', 15, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Occur do simply');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (486, 'Allow', 'Service service military popular production live key. Go sister old already affect for.', '2005-08-05', 14, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Allow');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (487, 'Anything no guy eye', 'Decision order level yes professional body. Poor left teach short pass enjoy.', '2008-10-29', 3, '0 years 0 mons 0 days 2 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Anything no guy eye');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (488, 'Store', 'Choice today most. Physical brother cover cold degree. Know feel let edge southern.', '2008-02-15', 10, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Store');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (489, 'Meeting matter and case four listen', 'But agent part. Beyond back girl question probably always. Just along himself of.', '2018-01-19', 9, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Meeting matter and case four listen');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (490, 'Theory across nothing blue', 'Account evening another life tax close play wish. It surface type finish Republican.', '2008-09-13', 14, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Theory across nothing blue');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (491, 'Begin right couple environmental purpose', 'Company sure consider yard indeed to likely.', '2024-02-13', 12, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Begin right couple environmental purpose');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (492, 'Perhaps professional by tonight medical', 'Product during drug environment arrive. Born kitchen must treat.
-Ability loss sing turn light.', '1996-11-10', 13, '0 years 0 mons 0 days 1 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Perhaps professional by tonight medical');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (493, 'Could military drive arm', 'Model might night prevent bill hope off. Difficult still class.', '2016-03-02', 7, '0 years 0 mons 0 days 2 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Could military drive arm');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (494, 'Stop analysis', 'Six economic something almost north report.', '2013-12-22', 1, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Stop analysis');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (495, 'Why how', 'Hospital west left compare whether two attack eat. Rock sit game commercial somebody cell.', '2012-07-27', 10, '0 years 0 mons 0 days 1 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Why how');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (496, 'Fish sense', 'Radio perform bar impact large. Surface lose full effect off sign.', '2022-12-06', 8, '0 years 0 mons 0 days 1 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Fish sense');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (497, 'Piece soon some', 'Treatment worker to enough than break. Few exactly mouth. Only red work.', '2007-09-07', 6, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Piece soon some');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (498, 'Fill discover return', 'Watch service write but. Others common produce allow much too trouble.', '2023-02-23', 12, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Fill discover return');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (499, 'Several marriage', 'Not window remain quite able partner.
-Game Mrs hot sing out. Carry gas lot strong.', '2021-12-21', 2, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Several marriage');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (500, 'Past product make of', 'Blood which place share minute. Eight gun white. Morning according easy know.', '2020-01-04', 6, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Past product make of');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (501, 'Life away', 'Note something community stage listen. Hot feel interview doctor set my media.', '2007-11-29', 12, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Life away');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (502, 'Baby plan most create', 'Huge morning people probably. Area thousand image capital.', '2008-02-10', 13, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Baby plan most create');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (503, 'Area daughter war should share', 'Center draw new huge religious action any. Ten friend within child. Husband away score mother.', '1999-06-29', 9, '0 years 0 mons 0 days 2 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Area daughter war should share');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (504, 'Great in tell', 'Near result call dinner. Wide last about environmental. Senior one measure order billion.', '2000-10-30', 13, '0 years 0 mons 0 days 1 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Great in tell');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (505, 'Economic represent', 'Course figure picture garden fight. Million close window heavy live front image.', '2015-03-19', 6, '0 years 0 mons 0 days 1 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Economic represent');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (506, 'For everybody leader them skill performance', 'Phone return nothing. Over industry great. Long camera these if reason.', '2006-09-27', 14, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'For everybody leader them skill performance');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (507, 'Career law', 'Drop want box least standard how treatment. Man term inside wide actually.', '2006-08-31', 13, '0 years 0 mons 0 days 1 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Career law');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (508, 'Let newspaper true', 'None off reflect player it success image ten. Feeling later major success relationship.', '2014-12-27', 5, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Let newspaper true');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (509, 'Teach range win direction', 'Congress discover financial. Check serve value against.', '2017-01-04', 13, '0 years 0 mons 0 days 2 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Teach range win direction');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (510, 'Tend similar financial', 'Charge time stand push watch.', '2019-10-13', 11, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Tend similar financial');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (511, 'For leader', 'Particularly effect seven attention require. Body reality teach finish many building use.', '2007-11-06', 15, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'For leader');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (512, 'Within citizen present', 'Among she also analysis trouble she individual.', '1999-05-03', 1, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Within citizen present');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (513, 'Particular court', 'Look choose major.
-Both protect ten language place leader goal.', '2015-12-24', 8, '0 years 0 mons 0 days 2 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Particular court');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (514, 'Pull final against effort', 'Century professor catch heart.
-Fly probably you fast yeah medical. Program only nearly.', '2018-04-12', 8, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Pull final against effort');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (515, 'Recent', 'Air bag development. Past peace difficult adult.', '1998-10-31', 15, '0 years 0 mons 0 days 2 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Recent');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (516, 'Skin development open compare', 'Happen difficult available structure body. All check quickly piece speech turn small.', '1998-08-11', 4, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Skin development open compare');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (517, 'Cultural discover now', 'Middle book tax talk. Fine we game beat.
-Fire break them protect. Find although guess ability seat.', '1998-12-30', 7, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Cultural discover now');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (518, 'Leave run', 'Several hope fire by share leader. Outside so lawyer environment development tax visit.', '2005-04-08', 10, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Leave run');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (519, 'History music executive', 'Staff identify feel above. Admit cold service late do assume.', '2005-04-04', 15, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'History music executive');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (520, 'Discussion away painting pass', 'Exactly fact minute less.
-Her player on million even education attorney. Together east space.', '2021-01-28', 11, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Discussion away painting pass');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (521, 'Entire bar', 'Hear class nothing board simply ago. Risk growth trade theory serious. Pay someone on his identify.', '2023-01-22', 3, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Entire bar');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (522, 'Third mean his woman trouble', 'Involve half next. Local director floor parent. Thing building carry agency.', '1997-04-06', 11, '0 years 0 mons 0 days 2 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Third mean his woman trouble');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (523, 'Far always', 'Project six someone.
-Bar force available audience. Least no skin whose section phone bank way.', '2021-06-09', 3, '0 years 0 mons 0 days 1 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Far always');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (524, 'Trial receive region', 'Paper call author yard. Carry cause improve seek money worker state. Lose as picture window.', '2004-10-04', 10, '0 years 0 mons 0 days 2 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Trial receive region');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (525, 'Others wonder strategy', 'Challenge sit project require safe.', '2016-01-09', 15, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Others wonder strategy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (526, 'Perform participant', 'Fly matter be. Fish girl push site argue policy. Recognize cold loss look particular commercial.', '2012-02-06', 2, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Perform participant');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (527, 'Fear thought', 'Despite month chance. Hotel president television bit civil way. Room civil debate someone myself.', '2013-04-17', 3, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Fear thought');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (528, 'School everybody operation', 'Commercial kid respond word. Name change able card ask.', '2006-09-26', 11, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'School everybody operation');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (529, 'Catch owner though', 'Adult guy ball. Boy field Mrs eight can investment common.
-Decide action later.', '2010-12-26', 12, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Catch owner though');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (530, 'Rather type', 'Eat teach effect. Travel ask affect between hospital.', '2022-11-12', 1, '0 years 0 mons 0 days 1 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Rather type');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (531, 'Page', 'Science west surface fill yet. Voice second put other. Sign beautiful trip.', '2015-06-06', 5, '0 years 0 mons 0 days 2 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Page');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (532, 'Fill owner international', 'After training grow total through.', '2007-11-03', 15, '0 years 0 mons 0 days 2 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Fill owner international');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (533, 'Little another avoid understand tonight nor', 'Deep quality security think quality.', '2014-10-12', 2, '0 years 0 mons 0 days 2 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Little another avoid understand tonight nor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (534, 'World quickly believe while size', 'Like market expect.', '2018-11-23', 9, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'World quickly believe while size');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (535, 'High someone', 'Form program something author local finally statement. Quality major western decision you.', '1995-11-26', 8, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'High someone');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (536, 'Strategy', 'Impact onto future west four. Road difference share.', '1999-10-17', 12, '0 years 0 mons 0 days 2 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Strategy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (537, 'Home others offer institution main', 'Lot avoid interest partner though. Drug ground happy reason would among word already.', '2021-02-26', 9, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Home others offer institution main');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (538, 'Focus establish', 'Foot join if town collection change.', '2021-07-29', 4, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Focus establish');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (539, 'After', 'Artist know we put. Bit significant also poor trouble agency.', '1999-05-03', 1, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'After');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (540, 'Experience arrive shoulder present discussion', 'Try among argue nice. Memory present know evidence.', '1997-03-29', 12, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Experience arrive shoulder present discussion');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (541, 'Money', 'Indeed industry me food scientist. Make actually nothing stand state.', '2011-09-21', 12, '0 years 0 mons 0 days 2 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'Money');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (542, 'Wide particular sell six', 'Either join ability cultural manage population. Almost hit response myself action cut.', '2016-06-04', 10, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Wide particular sell six');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (543, 'Future skin environment able', 'Interesting nature health kind here. Possible family bar approach.', '2007-04-12', 9, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Future skin environment able');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (544, 'Lawyer maintain', 'List rather us director radio compare bank. Per though hair person.', '2002-08-16', 3, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Lawyer maintain');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (545, 'Quickly new another general poor', 'Always soldier quite hand too. Draw visit work should than. Someone how of situation part here.', '2004-10-17', 12, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Quickly new another general poor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (546, 'Up federal', 'Partner middle deep standard front husband exist and. Know enter agree pay newspaper decide.', '2019-01-07', 13, '0 years 0 mons 0 days 1 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Up federal');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (547, 'Five hotel pattern successful order medical', 'Economy quality today particular property risk others. Baby ground officer brother.', '2000-06-19', 10, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Five hotel pattern successful order medical');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (548, 'Not somebody determine', 'General century strategy Congress land.', '2006-08-10', 5, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Not somebody determine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (549, 'Government', 'Test artist walk let price. Party million term whose bill along.', '2024-10-02', 2, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Government');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (550, 'System growth quality', 'Candidate baby myself add. Suggest newspaper major serve answer house back.', '2001-06-05', 11, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'System growth quality');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (551, 'Development poor idea', 'Child drug prove style cold pay.', '2011-03-09', 14, '0 years 0 mons 0 days 1 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Development poor idea');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (552, 'Card good full poor', 'Nearly staff special type. Fine clear effort.', '2024-06-27', 10, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Card good full poor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (553, 'Difficult theory fine', 'Small instead six experience thank least. Hospital skill them herself act white everything.', '2018-11-24', 1, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Difficult theory fine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (554, 'Charge specific we', 'Action support through. Quality energy fine style quality. Where instead all include player.', '2002-11-14', 9, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Charge specific we');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (555, 'Continue anything wait local state', 'Exactly space for learn can pretty make. Short audience five herself part process happy.', '1997-07-15', 11, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Continue anything wait local state');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (556, 'Peace race', 'Office bed something. State top gun store.', '2015-08-30', 5, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Peace race');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (557, 'Customer career available', 'Daughter few white within. Song report list dark over.', '1996-08-10', 2, '0 years 0 mons 0 days 2 hours 19 mins 0.0 secs', '2025-04-29', NULL, 'Customer career available');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (558, 'Admit pull movement', 'Moment own new population represent official quality few. Citizen bring occur put than already.', '2009-01-01', 9, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Admit pull movement');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (559, 'Bad fall', 'Yard wind represent. Treat be teach design. Top begin boy media several fact fly.', '2003-11-29', 1, '0 years 0 mons 0 days 1 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Bad fall');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (560, 'Building win', 'Or involve when baby thus. Show general step many get reflect group.', '1996-06-28', 6, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Building win');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (561, 'Quality clearly', 'Real arrive manage score five. Sit oil term.
-Pretty nice cup consumer fear. Sometimes image threat.', '2006-12-05', 12, '0 years 0 mons 0 days 1 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Quality clearly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (562, 'Stuff perform draw', 'First that deep shoulder thus western. White try mind.', '2019-01-30', 3, '0 years 0 mons 0 days 1 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Stuff perform draw');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (563, 'Prepare short', 'Effort hair find inside son military. Want entire hotel make because although direction.', '1997-11-29', 14, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Prepare short');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (564, 'Cell contain', 'Later write southern cup theory quality place. Exactly full note push small agreement.', '2008-03-30', 11, '0 years 0 mons 0 days 2 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Cell contain');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (565, 'Paper example unit high', 'In really employee through similar. Drive staff pick.', '2016-04-18', 8, '0 years 0 mons 0 days 1 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Paper example unit high');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (566, 'Statement', 'One doctor purpose staff represent nearly. Institution travel method main.', '2010-09-12', 3, '0 years 0 mons 0 days 2 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Statement');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (567, 'Land chance pass', 'Yourself task drop serve. Guy field rule few truth defense rule.', '2017-07-19', 11, '0 years 0 mons 0 days 2 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Land chance pass');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (568, 'Himself open cold', 'Nearly clear coach. Occur one pass program in affect must. Treat such near Democrat number young.', '2021-11-12', 14, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Himself open cold');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (569, 'Senior wear', 'Place sell indicate require shake seem voice. Clearly material subject sell along.', '2007-01-07', 13, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Senior wear');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (570, 'Still', 'Window however yard difficult describe suddenly. Professional tough generation well he kitchen.', '2007-02-07', 12, '0 years 0 mons 0 days 1 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Still');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (571, 'Act', 'Even hundred long business. Remain customer set offer work artist.', '2020-12-27', 9, '0 years 0 mons 0 days 2 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Act');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (572, 'Upon', 'Yeah degree sort also owner party parent. Television question bag head draw behind member.', '2003-10-30', 12, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Upon');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (573, 'Car difficult quite', 'On right become room discuss friend financial. High check foot not hundred traditional kid.', '1997-12-21', 9, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Car difficult quite');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (574, 'Knowledge toward', 'Message describe approach scene. Administration chair southern life. Herself heavy raise win go.', '2020-03-08', 10, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Knowledge toward');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (575, 'Loss professional', 'Debate teach child finally under language.', '1995-12-06', 15, '0 years 0 mons 0 days 2 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Loss professional');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (576, 'Experience account blue care', 'Seem sport respond industry which structure. Trial society read why much.', '2010-08-01', 3, '0 years 0 mons 0 days 2 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Experience account blue care');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (577, 'Unit study', 'Spring great paper idea five. Me house section around dream.', '1996-07-14', 1, '0 years 0 mons 0 days 2 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Unit study');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (578, 'From', 'Later above national decide test information fact. A federal sort deep I kid.', '1997-10-28', 11, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'From');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (579, 'Turn pattern kind', 'Amount stock but. Own Democrat head suddenly indeed resource husband. Spring middle firm a.', '1995-10-31', 10, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Turn pattern kind');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (580, 'Able similar run room learn professional', 'Attention talk specific. Behind my treat next his trial space.', '2000-12-24', 10, '0 years 0 mons 0 days 1 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Able similar run room learn professional');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (581, 'Those hard knowledge enjoy', 'Admit truth reduce outside base while. Debate cell several evidence good. Among the teacher space.', '2018-06-12', 13, '0 years 0 mons 0 days 2 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Those hard knowledge enjoy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (582, 'Near until just', 'Many mission give choice large must home. Attention truth water consider.', '2018-03-04', 14, '0 years 0 mons 0 days 2 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Near until just');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (583, 'Chance bed memory rich big eight', 'Such unit crime consider ground themselves meet manager. Arrive small determine so.', '1999-08-09', 1, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Chance bed memory rich big eight');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (584, 'Real lead few yourself table', 'To state market car. Response challenge challenge conference.', '2006-12-27', 2, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Real lead few yourself table');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (585, 'Event son join hundred', 'Personal traditional today. Current because rest middle he including.', '2004-12-31', 4, '0 years 0 mons 0 days 2 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Event son join hundred');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (586, 'Market get', 'Unit magazine develop reason song culture successful.', '2009-05-02', 14, '0 years 0 mons 0 days 2 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Market get');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (587, 'Congress best', 'He seek carry campaign. Lose far together.', '2005-11-05', 9, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Congress best');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (588, 'Reach table measure economy', 'Family outside many school my. Sport response phone safe model begin.', '2001-02-18', 2, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Reach table measure economy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (589, 'Color bad that', 'That focus news upon keep. Late rate wonder rule there.', '2014-02-20', 1, '0 years 0 mons 0 days 1 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Color bad that');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (590, 'Detail job ahead', 'Tend Congress reach much. Ok up teach me.', '2009-01-29', 2, '0 years 0 mons 0 days 2 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Detail job ahead');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (591, 'Oil process tend land machine forward', 'Thought myself write. Consider education trial day. Minute risk official yourself before whom.', '2008-03-29', 1, '0 years 0 mons 0 days 2 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Oil process tend land machine forward');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (592, 'Agree hour north agree poor career', 'Similar yet age natural name. Condition skill talk court part. Quickly majority image.', '2015-05-06', 9, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Agree hour north agree poor career');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (593, 'Daughter parent fine', 'Once hour and. Seven leader it difference.
-Hair sometimes nothing keep. Time treat per light.', '2009-11-12', 6, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Daughter parent fine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (594, 'Animal approach', 'We trouble year improve even. Anything him character how manage interest soon.', '2007-11-04', 14, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Animal approach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (595, 'Sister', 'Manager over accept right quickly security. Huge these politics else there down source glass.', '2020-08-17', 6, '0 years 0 mons 0 days 1 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Sister');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (596, 'Wall decide', 'Guess discover mouth place it dark. Under level positive entire work.', '1996-12-19', 14, '0 years 0 mons 0 days 1 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Wall decide');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (597, 'Why often', 'Outside dream responsibility two. Now camera man effect our.', '2022-11-05', 9, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Why often');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (598, 'Draw how public', 'Effect success goal defense upon.', '1998-04-02', 12, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Draw how public');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (599, 'West side', 'Sea city street power.', '2017-04-21', 7, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'West side');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (600, 'Story', 'Themselves site allow down whose travel get. Explain large trip grow series magazine language.', '2000-02-20', 5, '0 years 0 mons 0 days 1 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Story');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (601, 'Far east', 'Describe language surface say. Lot like although management represent.', '1996-06-15', 14, '0 years 0 mons 0 days 1 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Far east');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (602, 'Evening product magazine', 'Issue enjoy safe again feeling site treat. Make quickly however culture.', '2014-05-06', 8, '0 years 0 mons 0 days 1 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Evening product magazine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (603, 'Quality employee wrong', 'Good performance from store type. When interest next wide.', '2022-10-11', 9, '0 years 0 mons 0 days 2 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Quality employee wrong');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (604, 'Shake major rich', 'Wait item matter amount travel. Myself player million want yes.', '2005-08-11', 10, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Shake major rich');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (605, 'Organization station', 'Control control she itself. Everything road including ever air leg next. Seven out its dream.', '2016-10-04', 15, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Organization station');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (606, 'Speak', 'Learn stuff sing truth oil short. Peace again suggest list reflect goal.', '2002-04-14', 4, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Speak');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (607, 'Explain of myself time', 'Ten evening example old floor bank that former.', '2016-10-22', 5, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Explain of myself time');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (608, 'Rather listen', 'Of central alone attention. Follow fight mean single. Anyone determine expect simple.', '2005-01-10', 8, '0 years 0 mons 0 days 1 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Rather listen');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (609, 'Summer probably feeling', 'Side enjoy late large policy chair. Action whom especially article standard game record.', '2015-07-03', 3, '0 years 0 mons 0 days 1 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Summer probably feeling');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (610, 'Else spend against ask total', 'Paper nature easy practice maintain deep. Explain matter mind require election feel.', '2017-06-27', 2, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Else spend against ask total');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (611, 'Opportunity public', 'Chair walk consumer book product civil. Set within store. Skin standard ask night mention tend.', '1997-09-22', 9, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Opportunity public');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (612, 'Partner', 'Happy drive until street value. Someone room site particular goal any ground.', '2018-02-14', 9, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Partner');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (613, 'Level these market bed hotel', 'Inside one country hard question defense baby. Long describe fly hotel car something rich.', '2001-01-22', 6, '0 years 0 mons 0 days 2 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Level these market bed hotel');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (614, 'Side relate', 'Often bar population member. Town account each prepare rate specific.', '1996-07-07', 12, '0 years 0 mons 0 days 2 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Side relate');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (615, 'Including response', 'Mr foot hundred service direction two poor.', '1995-06-27', 4, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Including response');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (616, 'Wear guy', 'Son measure theory past particularly visit political. Where several television only hard.', '2006-10-24', 5, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Wear guy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (617, 'Country themselves she allow', 'His tree truth soon unit. Line anyone product individual someone.', '1995-06-15', 8, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Country themselves she allow');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (618, 'Edge bank affect', 'Fact blood full attack. Among parent job professor beat rule traditional.', '2022-08-30', 1, '0 years 0 mons 0 days 2 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Edge bank affect');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (619, 'Although others generation', 'Toward recent these necessary keep partner. Risk nature not region concern sort.', '1995-08-20', 11, '0 years 0 mons 0 days 1 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Although others generation');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (620, 'Determine feel article we they treatment', 'Star air late three. Appear total position reduce.', '1999-08-25', 7, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Determine feel article we they treatment');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (621, 'Charge real improve', 'Thing theory TV house. Live bank drug sister act cause.', '2017-12-07', 7, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Charge real improve');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (622, 'These story film', 'Sometimes source case everybody it. Those join specific writer or.', '2012-11-01', 12, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'These story film');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (623, 'Rather vote say', 'Director series safe act table safe. Assume down third town cell.', '2023-07-12', 6, '0 years 0 mons 0 days 2 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Rather vote say');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (624, 'Process administration mother in admit reveal', 'Natural head begin also and. May fight relationship agency. Language care energy institution.', '2022-10-27', 14, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Process administration mother in admit reveal');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (625, 'Seat strategy total simply discover', 'Successful ability activity factor current.', '2009-11-03', 13, '0 years 0 mons 0 days 1 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Seat strategy total simply discover');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (626, 'Western bad', 'Smile paper base wife. Pass poor son among media.', '2023-08-15', 13, '0 years 0 mons 0 days 2 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Western bad');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (627, 'Yeah term', 'Box new rate material window. Single road always phone somebody girl.', '2006-02-14', 3, '0 years 0 mons 0 days 1 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Yeah term');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (628, 'Professional color', 'Quality lay recognize me moment will onto theory. Window sometimes several all. Lay cause program.', '2010-07-13', 13, '0 years 0 mons 0 days 2 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Professional color');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (629, 'Yes budget', 'Base enough ground her he. Skin coach happen ball stage arm early.', '2023-05-24', 8, '0 years 0 mons 0 days 2 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Yes budget');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (630, 'Really', 'Every still fire just similar there movement. Husband camera political hard.', '2006-10-11', 11, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Really');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (631, 'Cold parent security boy standard', 'Military from unit many animal market program. One think piece late.', '1996-08-04', 4, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Cold parent security boy standard');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (632, 'Sit not significant manager', 'Executive apply itself hit mother memory. Hope national call score.', '2002-03-07', 14, '0 years 0 mons 0 days 2 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Sit not significant manager');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (633, 'Really local', 'Sure use evidence age. Outside decade television trial little.', '1999-08-13', 6, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Really local');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (634, 'Tend', 'According career thank capital responsibility class.', '2003-03-28', 12, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Tend');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (635, 'Weight take', 'Last stop direction word partner writer threat. Walk score military appear without.', '1996-05-16', 14, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Weight take');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (636, 'Both box simple', 'Thank teach toward blood six TV resource though. Eight almost new quickly public reason nor.', '2024-02-20', 8, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Both box simple');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (637, 'Goal amount thank good', 'Scientist ground prove miss chair throw. Worry just address key fall.', '2001-09-20', 8, '0 years 0 mons 0 days 1 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Goal amount thank good');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (638, 'Place someone option goal avoid', 'System above need game. Television give only happen center figure future.', '2001-11-14', 8, '0 years 0 mons 0 days 2 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Place someone option goal avoid');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (639, 'Relate day sell', 'Story skin easy knowledge. Six run bag. Yeah through exist hold join produce PM.', '2012-01-29', 3, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Relate day sell');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (640, 'Agent every', 'Think physical economy rise page may. Industry remember rather common. Carry research office one.', '2011-11-15', 6, '0 years 0 mons 0 days 1 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Agent every');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (641, 'Case expert stop', 'Stop project book week practice here. Father individual operation.', '2008-11-05', 2, '0 years 0 mons 0 days 2 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Case expert stop');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (642, 'Course kid', 'Good across provide up sure cause job.', '2018-12-30', 12, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Course kid');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (643, 'Finish around later', 'Three color step level quickly population.', '2003-09-01', 9, '0 years 0 mons 0 days 1 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Finish around later');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (644, 'Likely thus enter politics hold', 'Board born than enjoy.
-Government maybe food mission floor card.', '2014-11-23', 5, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Likely thus enter politics hold');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (645, 'Born itself', 'Force radio tough realize. Pass on book state same can team various. Plant inside we option hotel.', '2016-01-31', 10, '0 years 0 mons 0 days 2 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Born itself');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (646, 'Also from short capital heavy class', 'Fine result put camera across music produce city. Buy team half away.', '2020-01-16', 10, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Also from short capital heavy class');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (647, 'Him although', 'Read character behind from impact place. Own world good miss explain.', '1997-07-10', 3, '0 years 0 mons 0 days 2 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Him although');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (648, 'Final enter build citizen rather', 'More couple way any evidence. Service second defense.', '2011-05-13', 2, '0 years 0 mons 0 days 2 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Final enter build citizen rather');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (649, 'Southern challenge animal worker', 'Arrive politics debate effort take PM. Anything citizen peace scientist win popular form.', '1999-03-31', 14, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Southern challenge animal worker');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (650, 'Skin', 'Hour theory hot face decision. See nor some open.', '2008-12-23', 7, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Skin');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (651, 'Almost anything', 'Method team population live land former. Hard including look need finally leg.', '2023-05-05', 12, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Almost anything');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (652, 'Mother others collection without', 'Civil wife campaign begin enter good truth.', '2001-07-11', 11, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Mother others collection without');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (653, 'Test they', 'Watch responsibility think two star paper close which. Level court public drive point.', '2001-03-15', 15, '0 years 0 mons 0 days 2 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Test they');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (654, 'As second animal summer group me', 'Page world threat senior quite. Growth minute interview religious indicate beautiful project event.', '2014-03-10', 10, '0 years 0 mons 0 days 2 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'As second animal summer group me');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (655, 'Hard network', 'Simply theory civil son.
-Democrat may happen all phone drive. Hair democratic up drug.', '2015-01-05', 9, '0 years 0 mons 0 days 1 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'Hard network');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (656, 'Pull', 'Recognize real prevent.', '2006-01-28', 8, '0 years 0 mons 0 days 1 hours 19 mins 0.0 secs', '2025-04-29', NULL, 'Pull');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (657, 'Memory production', 'Fight peace box with around resource need. Card cell whose.
-Apply perhaps prevent run mind.', '2007-05-11', 7, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Memory production');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (658, 'Both in', 'His guess pretty amount clearly detail better. Nor rise close west seat cold hit.', '2022-10-07', 2, '0 years 0 mons 0 days 2 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Both in');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (659, 'Break significant ten', 'Rate use full political age watch activity. Back miss single art garden.', '2012-10-15', 8, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Break significant ten');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (660, 'End dog', 'Foreign time base total kind lawyer. Word drug rise nature north brother ready traditional.', '2016-06-18', 4, '0 years 0 mons 0 days 1 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'End dog');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (661, 'Always remain yard model', 'North scene benefit although check. Last fill avoid tonight.', '2001-11-21', 10, '0 years 0 mons 0 days 1 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Always remain yard model');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (662, 'Customer skill', 'Pay government open ready. Environmental nor listen dog remember material without.', '2002-02-01', 3, '0 years 0 mons 0 days 1 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Customer skill');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (663, 'Claim avoid walk', 'In create establish arrive. Reality card hear ready eight.', '2025-01-30', 9, '0 years 0 mons 0 days 2 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Claim avoid walk');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (664, 'Land', 'Base black fund threat. Fall nothing long eye she.', '2012-02-24', 10, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Land');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (665, 'May window approach', 'Lose notice true today any. Spend newspaper employee science young agent me.', '2016-12-09', 4, '0 years 0 mons 0 days 2 hours 19 mins 0.0 secs', '2025-04-29', NULL, 'May window approach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (666, 'Television office of', 'International say opportunity. Rise help ten phone. Seek tree parent thing chair.', '1995-07-07', 10, '0 years 0 mons 0 days 2 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Television office of');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (667, 'Across practice key reveal physical', 'Bank analysis travel seven cost. Close up per indeed yet team while.', '2010-11-03', 15, '0 years 0 mons 0 days 2 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Across practice key reveal physical');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (668, 'Make travel', 'Hope its light result between. Only painting role movement first sign. Now window game speak score.', '2024-03-13', 15, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Make travel');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (669, 'Participant check several', 'Beautiful become fact hope. Here stuff experience billion.
-Take generation fall maybe.', '2020-10-07', 10, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Participant check several');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (670, 'Toward within', 'That heart easy claim expect audience capital its. Against arrive government against.', '2023-09-10', 9, '0 years 0 mons 0 days 2 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Toward within');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (671, 'Whom Democrat good anything manager', 'Reality American bill west at. Source south answer early.', '1995-12-24', 3, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Whom Democrat good anything manager');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (672, 'Already cut social though', 'Fire section agreement age heavy admit catch. Add key response floor yourself second.', '2025-05-03', 6, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Already cut social though');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (673, 'Space mission agent', 'Recently arm reality program left too allow. Drop red interest pull black best professional.', '2001-06-23', 12, '0 years 0 mons 0 days 2 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Space mission agent');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (674, 'Until', 'Loss send medical paper impact cup occur. Around class phone employee daughter.', '2021-01-23', 14, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Until');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (675, 'Thus hit wind many marriage', 'Minute song ability fear across window along talk. Light adult sell final.', '2024-02-15', 1, '0 years 0 mons 0 days 1 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'Thus hit wind many marriage');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (676, 'Dark Mr clearly take', 'Hard may new. Smile call teach huge charge support performance.', '2009-07-10', 12, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Dark Mr clearly take');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (677, 'Manage as', 'Meet yet where reflect. Board nothing foreign especially upon project. Threat whatever none.', '2015-04-06', 6, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Manage as');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (678, 'Fear fact road', 'Organization result seat middle center decade. Where series series himself address bring.', '2000-01-22', 7, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Fear fact road');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (679, 'Realize power system system teacher here', 'Ahead teach difference plant.', '2012-07-24', 4, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Realize power system system teacher here');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (680, 'Cut candidate response try', 'Gun low least beyond pick able. Process for south stuff suffer open.', '2007-06-23', 3, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Cut candidate response try');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (681, 'Head several off morning', 'Business firm skin shoulder actually agent. Public whom understand late mind visit election kid.', '2002-04-13', 7, '0 years 0 mons 0 days 2 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Head several off morning');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (682, 'Prove reduce raise', 'Family usually must education society compare.', '2003-11-03', 7, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Prove reduce raise');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (683, 'Gas six miss give', 'Report quickly would home involve year hold. Success model visit to. Thus sit story admit.', '2000-12-01', 14, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Gas six miss give');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (684, 'Exactly', 'Individual her major lot organization.', '2019-01-24', 1, '0 years 0 mons 0 days 1 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Exactly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (685, 'Although threat former down second', 'Director ground concern kitchen feel southern. Mother work follow result pressure way of.', '2023-04-21', 1, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Although threat former down second');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (686, 'Sort reveal seven', 'Save live economic discussion ten avoid. Into save manager also happy produce seem.', '2016-09-21', 15, '0 years 0 mons 0 days 2 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Sort reveal seven');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (687, 'Child probably result painting successful', 'Heavy read take since official each. Will growth everything fly approach baby tell them.', '2011-03-08', 7, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Child probably result painting successful');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (688, 'Different eat', 'Individual south well young plan agency range. Prepare evidence night know that control.', '1995-06-22', 3, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Different eat');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (689, 'Beat gas', 'Toward citizen character little for.', '2009-08-27', 8, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Beat gas');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (690, 'Customer seek', 'Imagine content_service.movies history whether decision just anything. Station wall company after color gun keep.', '2009-03-23', 3, '0 years 0 mons 0 days 2 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Customer seek');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (691, 'Scientist rise', 'Any stay exist though matter number place item. Effect present development young alone.', '1997-11-25', 7, '0 years 0 mons 0 days 2 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Scientist rise');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (692, 'Local current white', 'Mouth former past. Charge time goal shake bit ability.', '2017-02-12', 6, '0 years 0 mons 0 days 1 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Local current white');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (693, 'Ever person pass behavior political option', 'Energy process current stop person training. Through care fine authority agency home.', '1997-09-27', 7, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Ever person pass behavior political option');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (694, 'Mean share evidence writer', 'Series pattern hear college product agent get.
-Its behind must doctor develop current.', '2018-04-14', 8, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Mean share evidence writer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (695, 'Last involve', 'Everything truth as thought. Draw east who seek half.', '2018-07-19', 9, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Last involve');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (696, 'Early far include nearly article evidence', 'Politics great decision once entire successful no. Say affect different ago improve effort.', '2012-04-19', 15, '0 years 0 mons 0 days 2 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Early far include nearly article evidence');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (697, 'Happen several off southern suddenly window', 'Once student brother by deep major. Arrive appear education either.', '2002-07-09', 1, '0 years 0 mons 0 days 2 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Happen several off southern suddenly window');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (698, 'Treatment relate positive sense', 'Sit out if watch kind. Hour role should surface some. Billion according black ability job.', '2000-07-10', 6, '0 years 0 mons 0 days 1 hours 37 mins 0.0 secs', '2025-04-29', NULL, 'Treatment relate positive sense');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (699, 'Six science', 'Attack full maintain though church stop water. Sense detail decide person within.', '2012-01-27', 8, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Six science');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (700, 'Itself', 'Western old person identify point factor rest. Quality night friend happy let dinner.', '1998-09-08', 12, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Itself');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (701, 'Stand west source fact', 'Able arrive safe already know. And draw technology but risk fine.', '2014-07-22', 9, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Stand west source fact');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (702, 'Live PM reflect', 'Face difference after article under go west. Another building too important.', '2019-11-30', 15, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Live PM reflect');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (703, 'Fear yourself last give', 'East issue alone possible friend generation. Beautiful song week their land weight.', '2012-03-12', 8, '0 years 0 mons 0 days 1 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Fear yourself last give');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (704, 'These ahead cover strategy student', 'Born visit indicate become. Raise baby chance record trouble. Eat speech camera push energy these.', '2003-10-26', 11, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'These ahead cover strategy student');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (705, 'General there sister policy consider whom', 'National environmental cover. Republican agent yes need scientist. Fund wonder report.', '2010-01-27', 1, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'General there sister policy consider whom');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (706, 'Tonight', 'Chance each bad successful seat hard why government.', '1998-11-09', 13, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Tonight');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (707, 'Finally make bed', 'Better design term hair style single. Edge name budget second reach talk customer.', '2012-10-15', 8, '0 years 0 mons 0 days 2 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'Finally make bed');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (708, 'On', 'Commercial item him herself cultural have trip increase. Weight itself clear drive.', '2024-03-02', 12, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'On');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (709, 'Lead certain course out', 'Adult team market question ago candidate fast. Card hit serve.', '2020-06-24', 6, '0 years 0 mons 0 days 2 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Lead certain course out');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (710, 'Carry', 'Issue production interview light of anyone interesting. Where either lot play seem Republican best.', '2019-08-26', 3, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Carry');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (711, 'Left approach', 'Money it alone represent couple. Old how she major strategy.', '2015-08-26', 15, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Left approach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (712, 'Really population', 'Sell argue himself reduce reveal each operation. Future capital police change wind fish imagine.', '2020-11-24', 13, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Really population');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (713, 'Thus western environmental run head', 'Effect old senior amount. Knowledge plan six yard add memory. Require piece good.', '2007-03-10', 11, '0 years 0 mons 0 days 2 hours 37 mins 0.0 secs', '2025-04-29', NULL, 'Thus western environmental run head');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (714, 'Seven quite', 'Buy let sea ask present ten eight. Foreign war leg push quite.', '2018-10-08', 3, '0 years 0 mons 0 days 1 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Seven quite');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (715, 'Speech news', 'Design give culture. He certain gun mother road threat majority.', '1997-11-20', 5, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Speech news');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (716, 'Probably exist', 'Because participant police parent prevent prove. Blue of compare while kid.', '1997-05-11', 8, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Probably exist');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (717, 'Past medical', 'First see hotel leave recent free fear or. Listen worry really.', '2013-05-06', 9, '0 years 0 mons 0 days 1 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Past medical');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (718, 'Sort', 'Red position as opportunity. Send list project trade from outside.', '2022-02-09', 13, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Sort');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (719, 'Billion medical choice', 'Natural thank concern up. Ground century take money marriage.', '1998-12-07', 3, '0 years 0 mons 0 days 2 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Billion medical choice');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (720, 'Report', 'Your we rise any.', '2017-04-10', 14, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Report');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (721, 'Subject stand', 'Ready challenge green large. Generation history administration perform.', '2024-04-09', 12, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Subject stand');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (722, 'Second official and', 'Impact end TV. Within interesting value middle buy.', '2011-10-26', 3, '0 years 0 mons 0 days 1 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Second official and');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (723, 'Political technology end represent', 'With family condition read sort mouth. Scene nature ago music floor foot language deep.', '2010-01-02', 8, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Political technology end represent');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (724, 'Catch', 'Gas happen him join. Possible admit every professional green.
-The find necessary.', '2017-08-01', 3, '0 years 0 mons 0 days 2 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Catch');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (725, 'Upon citizen lead', 'Parent film drop join give. Watch turn different pretty deep design fall. That fight foot member.', '2023-09-03', 12, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Upon citizen lead');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (726, 'Information last', 'North maybe language. Marriage add operation why. Wide where treat bill throw discover.', '2022-05-18', 3, '0 years 0 mons 0 days 1 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Information last');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (727, 'Class available', 'Use stand newspaper effect media. Career owner specific space know order.', '2014-05-22', 2, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Class available');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (728, 'Follow wish', 'Stage involve check because. Eight but reach general successful offer goal.', '1997-11-18', 15, '0 years 0 mons 0 days 1 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Follow wish');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (729, 'My series', 'Could fill realize contain peace major. Safe eat image citizen.', '2015-03-12', 8, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'My series');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (730, 'Simple region', 'Mr land relationship sell on character. Face parent create authority indicate get those.', '1996-07-08', 7, '0 years 0 mons 0 days 1 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Simple region');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (731, 'Avoid point guy', 'However top represent deal. Low others game few.', '1995-10-28', 8, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Avoid point guy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (732, 'Best', 'Interest Mrs than the develop. Student scene pass them western author government.', '2024-03-23', 10, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Best');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (733, 'Door fish', 'Resource good face also center. Special financial weight need.', '1997-08-17', 11, '0 years 0 mons 0 days 2 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Door fish');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (734, 'Expert Republican short interest', 'Your local government test institution how usually.
-Democrat need several news special usually box.', '2004-12-25', 14, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Expert Republican short interest');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (735, 'Democrat', 'Adult people owner west ago appear suddenly school. Computer someone lot plan world very.', '2005-07-14', 3, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Democrat');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (736, 'Because station', 'Executive decide body. Pull oil enough break bar if. Though quality writer truth.', '2000-10-01', 8, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Because station');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (737, 'Expect writer myself management voice', 'Account little reality building. Far let school animal several page PM gun.', '2004-05-30', 12, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Expect writer myself management voice');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (738, 'Purpose boy scientist able teach', 'Present agreement relate south win. Look best however force interest collection.', '2013-03-22', 11, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Purpose boy scientist able teach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (739, 'Rather visit base', 'I fly toward fish apply goal.
-Effect throughout power some value.', '2000-12-17', 5, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Rather visit base');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (740, 'Black whether player stock religious itself', 'Who like herself western instead.
-As as simple.', '1999-08-05', 14, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Black whether player stock religious itself');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (741, 'Try discover', 'First factor how job ever send certainly. Weight artist international yeah family.', '1997-08-21', 5, '0 years 0 mons 0 days 2 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Try discover');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (742, 'Cell year', 'Interesting foot seven do water. Oil fire involve single population. Billion real degree woman up.', '2018-09-16', 11, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Cell year');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (743, 'Moment second live sing', 'Movement office range fly security apply newspaper.', '2021-04-07', 11, '0 years 0 mons 0 days 1 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Moment second live sing');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (744, 'Race nearly', 'Cut practice discussion majority. Conference six put finally character.', '2003-01-19', 15, '0 years 0 mons 0 days 2 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Race nearly');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (745, 'Environment easy best', 'Provide consider decision one law. Minute phone institution race toward. On be fly bill.', '2004-12-05', 7, '0 years 0 mons 0 days 2 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Environment easy best');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (746, 'Great', 'Debate store bit lose worker. No keep mind look college different. Interest watch network cell.', '2010-09-20', 5, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Great');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (747, 'Industry class current painting their', 'Entire college success finish all task think. Administration trial truth.', '2002-11-23', 2, '0 years 0 mons 0 days 2 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Industry class current painting their');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (748, 'Political quality attention', 'Recent your writer opportunity front detail. Each day box couple rate discover manage baby.', '1996-12-21', 10, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Political quality attention');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (749, 'Other third choose senior anyone', 'Southern vote person build agency late. Trade security alone generation.', '2001-09-30', 13, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Other third choose senior anyone');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (750, 'Face if', 'Employee unit player tough wind TV.', '1997-03-19', 11, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Face if');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (751, 'Value car', 'Rule movement key color image. Year necessary painting teacher how.', '2022-05-29', 6, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Value car');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (752, 'Approach season data than team kitchen', 'Computer price art push happy form. Final board vote. Test upon audience market author item.', '2000-10-03', 9, '0 years 0 mons 0 days 1 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Approach season data than team kitchen');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (753, 'Behavior provide', 'Once I around gun. Between member turn everyone order executive.', '2023-03-28', 1, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Behavior provide');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (754, 'Enter example', 'Doctor wife oil popular eye scientist. Management adult whatever sell long program purpose.', '2019-01-22', 7, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Enter example');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (755, 'Real police', 'Wide you seek recent. Happy example pay along store per.', '2007-01-21', 2, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Real police');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (756, 'Indeed style major', 'Rate civil up. Candidate person receive central home force medical.', '2001-04-22', 4, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Indeed style major');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (757, 'Bill here grow gas enough', 'Parent general between paper give party. Artist person center apply prove again as.', '2004-12-02', 4, '0 years 0 mons 0 days 1 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Bill here grow gas enough');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (758, 'Top population art every why', 'Step none town wonder yeah.', '2023-03-19', 10, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Top population art every why');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (759, 'Seem', 'Little carry society yet offer sport husband. Another success good citizen kitchen paper.', '2023-10-02', 10, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Seem');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (760, 'Social whether power company why', 'Bad commercial money job close maintain either small. Try base far kitchen relate tax.', '1998-01-28', 11, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Social whether power company why');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (761, 'Long', 'South note care simply evidence skill eat.', '2017-12-14', 2, '0 years 0 mons 0 days 1 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Long');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (762, 'Road capital safe operation', 'Think rest memory. How successful west before despite arm.
-Would realize every course.', '2001-04-14', 10, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Road capital safe operation');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (763, 'Check civil quite', 'Baby sometimes necessary table. We quality end work. Back modern free suffer order unit.', '2003-12-06', 11, '0 years 0 mons 0 days 1 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Check civil quite');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (764, 'Surface attention', 'Hit theory production realize. Series sister set front election black.', '2006-07-14', 2, '0 years 0 mons 0 days 1 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'Surface attention');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (765, 'Trial agreement red way', 'Establish face total town everything.', '2018-03-16', 5, '0 years 0 mons 0 days 2 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Trial agreement red way');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (766, 'However similar ahead event yeah', 'Woman think improve edge pay yes. Fall effort in. Professor bring change trade accept wish process.', '1997-01-18', 15, '0 years 0 mons 0 days 1 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'However similar ahead event yeah');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (767, 'Wonder practice', 'Gun laugh computer hair. Movement cultural west less win size approach.', '2014-06-21', 8, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Wonder practice');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (768, 'First end prove', 'Animal near war after pass adult. Next use standard state town television.', '2022-12-18', 7, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'First end prove');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (769, 'Everything fear walk', 'Level particular anything store fire. Start around like call pressure officer civil.', '1996-04-07', 3, '0 years 0 mons 0 days 1 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Everything fear walk');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (770, 'Challenge we last we', 'Listen set simple add guess decade tend. Theory play because agency. Start big against require.', '2023-12-12', 13, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Challenge we last we');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (771, 'Girl four', 'Soon child imagine person six. No throw on large memory study.', '1996-12-24', 7, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Girl four');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (772, 'Great plant', 'Father whose glass really base fill. Realize other society health inside set.', '2000-09-25', 5, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Great plant');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (773, 'So ready', 'Spend reality modern serve billion. Hit shoulder food particular research child administration.', '2010-04-04', 8, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'So ready');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (774, 'Indeed near likely Mr', 'Leave behavior something oil college less anyone.', '2008-04-24', 15, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Indeed near likely Mr');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (775, 'Ago listen whose situation simply', 'Truth leader save career art beyond. Prove mean ahead reflect. Fear floor policy this live raise.', '2024-01-20', 7, '0 years 0 mons 0 days 1 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Ago listen whose situation simply');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (776, 'Call', 'Blood industry theory moment market expert. Four west main wear.', '2011-10-15', 8, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Call');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (777, 'Blood benefit', 'Outside recently memory first. Garden by total professional feel enjoy.', '2014-05-24', 9, '0 years 0 mons 0 days 2 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'Blood benefit');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (778, 'Soldier', 'Trial customer prepare bad figure sign claim.', '2016-01-08', 10, '0 years 0 mons 0 days 1 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Soldier');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (779, 'Our threat same', 'Trade base another blood hot strong or.', '2019-09-26', 8, '0 years 0 mons 0 days 2 hours 6 mins 0.0 secs', '2025-04-29', NULL, 'Our threat same');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (780, 'Attack order', 'Professor near media throw rather station. Material when citizen in.', '2000-06-18', 1, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Attack order');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (781, 'Officer son Mr', 'Meet red theory court.', '2001-01-15', 10, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Officer son Mr');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (782, 'Tonight focus chance', 'South between type. Rock after probably phone you.', '2016-07-18', 8, '0 years 0 mons 0 days 1 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Tonight focus chance');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (783, 'Ever Mrs', 'Skin smile south decision. Bill somebody improve physical society. Against others kind factor.', '2015-08-02', 8, '0 years 0 mons 0 days 1 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Ever Mrs');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (784, 'Truth during', 'Garden hair nor. Become short stop sea direction question go.', '2003-07-23', 11, '0 years 0 mons 0 days 1 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Truth during');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (785, 'Face what lot source rate', 'Music situation trouble tax people score decide. Choose clear PM some. Hour PM behind process.', '2017-02-28', 1, '0 years 0 mons 0 days 2 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Face what lot source rate');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (786, 'Discover', 'Audience positive off similar author. Political stage forget him as.', '2024-12-25', 3, '0 years 0 mons 0 days 2 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Discover');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (787, 'Order trial body eat professor coach', 'Man teacher ago foot owner run financial. Economy participant speak son order.', '2024-06-26', 7, '0 years 0 mons 0 days 1 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Order trial body eat professor coach');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (788, 'Listen', 'Month accept know fly body must. Become traditional so visit bed most.', '1995-06-28', 12, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Listen');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (789, 'Answer just', 'Would hot head. Her fight have such suffer study house.', '2009-12-09', 7, '0 years 0 mons 0 days 2 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Answer just');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (790, 'Value middle writer', 'Financial magazine age industry. Study week free sure.', '1997-05-08', 12, '0 years 0 mons 0 days 1 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Value middle writer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (791, 'Reduce day', 'Teach anything huge however. Detail suggest least. Office especially build prevent off talk.', '2020-12-27', 4, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Reduce day');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (792, 'Interest heavy give edge', 'Require ask foot maintain four write administration.', '2001-08-25', 12, '0 years 0 mons 0 days 2 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Interest heavy give edge');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (793, 'Others administration middle', 'Trade impact dog work beat development. Artist blood road remember high oil age every.', '2022-04-21', 10, '0 years 0 mons 0 days 2 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Others administration middle');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (794, 'Generation', 'Wife important tend anyone. Garden million without.', '2009-07-06', 11, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Generation');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (795, 'Also every', 'Yet away occur bar. Team special discussion energy.', '2018-04-23', 1, '0 years 0 mons 0 days 1 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Also every');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (796, 'We allow check last', 'Recognize benefit daughter glass score. Though for join necessary make though health.', '2005-10-23', 9, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'We allow check last');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (797, 'Cause but', 'Party fall live quickly. Mind cost same miss. Office test see age.', '2009-05-06', 14, '0 years 0 mons 0 days 2 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Cause but');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (798, 'Perhaps order answer blue structure answer', 'Support as have sure player last. Write Democrat feeling. Stop themselves visit kitchen.', '2019-05-29', 13, '0 years 0 mons 0 days 2 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Perhaps order answer blue structure answer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (799, 'Detail food shoulder argue start', 'Worker than hospital still laugh. Suddenly service main service establish explain.', '2004-12-26', 4, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Detail food shoulder argue start');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (800, 'Measure light many close', 'Put son capital not safe. Decide arm avoid question. And rock now something dark out.', '2020-12-18', 1, '0 years 0 mons 0 days 2 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Measure light many close');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (801, 'Compare task today still', 'Instead course actually heavy four. Tree firm alone ok party available.', '1995-07-25', 4, '0 years 0 mons 0 days 2 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Compare task today still');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (802, 'Threat', 'Teach research manager many indicate tell. Simply authority onto range mean.', '2014-05-12', 7, '0 years 0 mons 0 days 1 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Threat');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (803, 'Doctor from throw ball', 'Specific summer line leg.', '2012-03-30', 12, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Doctor from throw ball');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (804, 'Sure authority increase picture create', 'Own stuff serious ask however PM choose. Present avoid production western computer sure present.', '2014-03-14', 2, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Sure authority increase picture create');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (805, 'Party poor ago upon stop', 'Save to ready thought go drive.', '2025-04-30', 4, '0 years 0 mons 0 days 1 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Party poor ago upon stop');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (806, 'Thus suffer economy', 'Degree able heart girl.', '2005-02-03', 4, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Thus suffer economy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (807, 'Effect', 'Purpose generation Mrs sea PM story police six. Act thousand either wide.', '2015-03-10', 10, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Effect');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (808, 'American tell ball we side', 'Effort behavior instead yes national. Get unit man entire all home within.', '2008-08-02', 7, '0 years 0 mons 0 days 1 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'American tell ball we side');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (809, 'Blood particularly could us hotel', 'Student yourself heavy less staff him. Together never TV around quite possible.', '2010-02-18', 9, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Blood particularly could us hotel');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (810, 'Someone fall hear', 'Certain general friend. Economy more teach focus.', '2024-09-23', 9, '0 years 0 mons 0 days 2 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Someone fall hear');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (811, 'Small general run pick sign', 'Address item despite address provide. Speech dinner top face bit. Pm less I central read assume.', '2024-05-07', 1, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Small general run pick sign');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (812, 'Provide majority whole finish', 'Despite white way major amount put play. Number write for if.', '1998-05-11', 6, '0 years 0 mons 0 days 1 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Provide majority whole finish');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (813, 'Travel read lose doctor', 'Expert could teacher loss budget. See central buy board your leave.', '2022-06-09', 2, '0 years 0 mons 0 days 1 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Travel read lose doctor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (814, 'Culture own set', 'Health item mind whose three society. Today meet per seem provide.', '2023-01-19', 11, '0 years 0 mons 0 days 2 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Culture own set');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (815, 'Avoid nothing itself who door', 'Choice manage our. Line including real. Most audience full air onto.', '2014-11-27', 14, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Avoid nothing itself who door');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (816, 'Peace air threat', 'Year stage home need ask. Evidence make yet everybody worker support no.', '2014-07-22', 10, '0 years 0 mons 0 days 1 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Peace air threat');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (817, 'Push dog build', 'Campaign nature film form control staff. Position news reflect look determine song something.', '2009-07-26', 2, '0 years 0 mons 0 days 1 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Push dog build');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (818, 'Ten industry while', 'Tree tree service rich while just in. Operation able street meet. Fight make bed.', '2015-08-20', 3, '0 years 0 mons 0 days 2 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Ten industry while');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (819, 'Knowledge city technology late seem', 'Term summer second. Person deal bag campaign fight. Put some onto consider.', '2011-08-05', 1, '0 years 0 mons 0 days 2 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Knowledge city technology late seem');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (820, 'Mind', 'Her play new win rate program prove. Six hour the.', '1996-02-24', 15, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Mind');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (821, 'School cultural right cover large work', 'Factor hear over reflect before. Fall discover real these.', '2015-06-17', 12, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'School cultural right cover large work');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (822, 'Nearly face', 'Human lay west you paper. Prevent popular sea rest car that him design.', '2005-08-01', 3, '0 years 0 mons 0 days 1 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Nearly face');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (823, 'Paper so difficult mission late', 'Understand more help onto idea everything building. Hit especially national interview media wrong.', '2007-10-07', 5, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Paper so difficult mission late');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (824, 'Position make', 'Gas character night as own. Least power near everyone area.', '2016-03-03', 10, '0 years 0 mons 0 days 1 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Position make');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (825, 'In', 'Nice position movement. Learn three like ahead course pressure perhaps.', '1995-10-16', 10, '0 years 0 mons 0 days 1 hours 52 mins 0.0 secs', '2025-04-29', NULL, 'In');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (826, 'Evidence other they', 'Season improve field standard. Instead agree education however speak everybody main.', '2017-07-19', 14, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Evidence other they');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (827, 'Bill activity expect long', 'After necessary either fly. White base than response war this.', '2008-01-04', 8, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Bill activity expect long');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (828, 'Sure', 'School either analysis pull peace. Thank fish hear theory those catch employee.', '2021-06-05', 13, '0 years 0 mons 0 days 1 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'Sure');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (829, 'State heart sort', 'Plant shake decide control performance. Central throw race shoulder happy get.', '2010-07-30', 6, '0 years 0 mons 0 days 2 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'State heart sort');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (830, 'Increase democratic', 'Most cost thing vote address suffer. Lot rise store drug knowledge cup. Night none sport piece.', '1996-08-12', 2, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Increase democratic');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (831, 'Quite boy those', 'Though production camera edge soldier one. Though wonder decade. Plan stay try.', '2013-11-10', 14, '0 years 0 mons 0 days 1 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Quite boy those');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (832, 'List support', 'Listen although answer hour involve. Man laugh mother peace authority.', '2017-02-19', 1, '0 years 0 mons 0 days 1 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'List support');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (833, 'Bad know', 'Much have series last again different. Huge leave rock plan seek. Should use with street again.', '2011-05-20', 2, '0 years 0 mons 0 days 1 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Bad know');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (834, 'Record wall matter management', 'Soon compare home different easy ahead short. Situation security election.', '2005-09-25', 3, '0 years 0 mons 0 days 2 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Record wall matter management');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (835, 'Including time learn security oil measure', 'Art word race single two. Behavior card blood identify.', '2011-11-27', 12, '0 years 0 mons 0 days 2 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Including time learn security oil measure');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (836, 'Easy', 'Boy actually share very move moment item. Yeah story beyond line dog themselves.', '2002-12-17', 3, '0 years 0 mons 0 days 2 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Easy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (837, 'Article finish anyone live try', 'Continue same meeting fly receive impact.
-Ago us movement goal base.', '2011-03-21', 15, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Article finish anyone live try');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (838, 'Play', 'Behind Mr seat drop. Imagine matter candidate policy cause month role mission. Page wear common.', '2021-08-03', 2, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Play');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (839, 'Determine hear leg', 'Or at have leave easy reach. Pick father employee lawyer.', '1999-10-12', 3, '0 years 0 mons 0 days 1 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Determine hear leg');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (840, 'Worker raise', 'Camera step sound must budget their. They southern finally maintain record.', '2012-09-01', 8, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Worker raise');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (841, 'Best physical', 'Mind example work report purpose care. Available though woman recently trip history maybe.', '2001-02-08', 1, '0 years 0 mons 0 days 1 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Best physical');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (842, 'Dark read car practice', 'Both especially give within. Wish yeah arrive able. Lawyer care production story.', '2000-06-28', 2, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Dark read car practice');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (843, 'Church whether', 'Foreign enjoy must special none. When list class evidence situation feeling school establish.', '2013-10-24', 12, '0 years 0 mons 0 days 2 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Church whether');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (844, 'Majority', 'Prevent would stock newspaper product green soon.', '2019-03-04', 3, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Majority');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (845, 'Question consider', 'Well whatever want mother four. Protect owner war behind. Already real individual environment.', '2020-12-26', 11, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Question consider');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (846, 'Fly bank benefit', 'Support her whatever growth ground catch meeting. Food his music agency what several environment.', '2016-10-05', 8, '0 years 0 mons 0 days 2 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Fly bank benefit');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (847, 'Dark state challenge organization', 'Explain accept stand ready find. Forget seat deep. Lot into travel possible table.', '2011-02-05', 3, '0 years 0 mons 0 days 1 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Dark state challenge organization');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (848, 'Even back head maybe top', 'Cause physical son sell. Unit perform Mrs why kind.', '2019-10-30', 3, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Even back head maybe top');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (849, 'Likely people', 'Computer have might who Congress. Five matter true she year specific.', '2008-05-18', 2, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Likely people');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (850, 'Happen', 'Table hold store event debate quite able power.', '2011-08-06', 7, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Happen');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (851, 'Participant commercial', 'Protect type hand enjoy season. content_service.movies college anything third center.', '2003-02-12', 4, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Participant commercial');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (852, 'Offer', 'Lawyer fire four quickly.', '1997-07-10', 9, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Offer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (853, 'Lead book', 'Real off test step system. Study beyond summer high drug option seven. Suddenly word chair any.', '2006-08-30', 6, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Lead book');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (854, 'After them analysis hit health section', 'Certainly scene choose expert. Chance reality similar.', '2019-09-27', 13, '0 years 0 mons 0 days 1 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'After them analysis hit health section');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (855, 'Knowledge argue', 'Discover class follow herself player machine. Contain exactly say mind impact major.', '1999-08-03', 1, '0 years 0 mons 0 days 1 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Knowledge argue');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (856, 'Management', 'Coach civil control civil morning development. Result bar matter until computer clear full.', '2024-05-29', 13, '0 years 0 mons 0 days 1 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Management');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (857, 'Meeting before another', 'Your federal commercial full.
-Opportunity choice specific hold. Mission station note.', '2016-09-03', 14, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Meeting before another');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (858, 'Move finally speak', 'Lot nice them.', '2025-01-08', 3, '0 years 0 mons 0 days 1 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Move finally speak');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (859, 'Material hit no', 'New side number. Leader voice very a. Four candidate raise sort.', '2012-09-13', 15, '0 years 0 mons 0 days 1 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Material hit no');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (860, 'Day couple recent', 'Still wear school nothing few along customer.
-Subject success foot cup. Age floor sure run.', '1999-07-07', 11, '0 years 0 mons 0 days 2 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Day couple recent');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (861, 'As high you more wife team', 'Assume put very move practice air trial say.', '2018-03-02', 4, '0 years 0 mons 0 days 2 hours 16 mins 0.0 secs', '2025-04-29', NULL, 'As high you more wife team');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (862, 'Development process huge', 'Example media physical than already. Least bag always. Run board family stuff.', '1997-04-19', 6, '0 years 0 mons 0 days 2 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Development process huge');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (863, 'Left example high', 'College court author style fall now. Exist over administration.', '2009-07-26', 2, '0 years 0 mons 0 days 1 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Left example high');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (864, 'Quality throughout', 'Know special positive environment enter direction.', '2006-11-01', 9, '0 years 0 mons 0 days 1 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Quality throughout');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (865, 'Loss', 'Bad remember company right. Eight seem pattern enjoy.
-Bit tax white action effort recently.', '2010-04-22', 13, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Loss');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (866, 'Meeting building cut catch so', 'Investment or fish war spend imagine between address.', '2019-08-06', 9, '0 years 0 mons 0 days 1 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Meeting building cut catch so');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (867, 'Local very', 'Recognize life standard country. Manage marriage might production lay medical. Manage member three.', '1998-09-28', 15, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Local very');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (868, 'Across', 'Week institution book beautiful who never. Pull person score. Probably public yourself hospital.', '1996-05-04', 8, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Across');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (869, 'War property', 'Story any part nature amount personal.', '1997-09-26', 4, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'War property');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (870, 'Collection those become remember police', 'Deep assume answer actually conference. Particular amount human ok several measure score too.', '2024-09-08', 13, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Collection those become remember police');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (871, 'Benefit hotel', 'Per appear Mrs statement. Along cup on defense many new.', '2013-10-21', 4, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Benefit hotel');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (872, 'Treatment positive over across education source', 'Break eat century. Me suggest either.', '2004-06-26', 12, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Treatment positive over across education source');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (873, 'Quite', 'Green former center before most first. Medical husband economic within office describe court.', '1999-01-01', 4, '0 years 0 mons 0 days 2 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Quite');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (874, 'Role content_service.movies win', 'Use important become her throughout them media.', '1996-12-02', 4, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Role content_service.movies win');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (875, 'Author do enough social', 'Relationship receive might want away.', '2007-04-01', 10, '0 years 0 mons 0 days 2 hours 3 mins 0.0 secs', '2025-04-29', NULL, 'Author do enough social');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (876, 'First blood accept final', 'Meet current many minute. Practice sell remain certain glass.', '2024-05-15', 15, '0 years 0 mons 0 days 2 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'First blood accept final');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (877, 'None big', 'Indicate nation away month receive. Season listen art hit employee treatment.', '1996-04-23', 4, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'None big');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (878, 'Situation result cold', 'Stay open force put. Toward quality until pressure interview.', '2002-01-05', 7, '0 years 0 mons 0 days 2 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Situation result cold');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (879, 'Outside respond', 'Single once why series wife.', '2016-03-15', 8, '0 years 0 mons 0 days 1 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Outside respond');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (880, 'Wish specific', 'War rock life significant.', '2016-05-16', 6, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Wish specific');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (881, 'Service', 'Close keep let born knowledge lay lose. Be threat but third church scientist deep.', '2018-05-20', 6, '0 years 0 mons 0 days 1 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Service');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (882, 'Amount leave', 'Least cell lay have common what. Our area young size. Factor audience since dream game.', '1998-04-21', 12, '0 years 0 mons 0 days 1 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Amount leave');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (883, 'Gun', 'Rest today meet bring product. Seem six teacher seven north.
-Star six ever test oil chair.', '2012-08-18', 3, '0 years 0 mons 0 days 1 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Gun');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (884, 'Meeting event strong woman', 'Series will they true bit thousand sit week. Perform vote majority international its would.', '2023-05-05', 8, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Meeting event strong woman');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (885, 'City health', 'Truth indicate trouble management cultural. Save blue travel general.', '1999-10-28', 3, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'City health');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (886, 'Unit size', 'Within few play skill agent now.
-Inside mind blue bank.', '1996-07-28', 15, '0 years 0 mons 0 days 2 hours 38 mins 0.0 secs', '2025-04-29', NULL, 'Unit size');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (887, 'That second develop', 'Cultural cut piece window ahead determine. Whole seat until quality young national.', '2018-04-24', 3, '0 years 0 mons 0 days 1 hours 36 mins 0.0 secs', '2025-04-29', NULL, 'That second develop');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (888, 'Mother remember feel', 'Ball policy daughter current. Phone doctor popular often.', '2017-11-27', 9, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Mother remember feel');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (889, 'Speak begin suggest speak', 'Radio program media billion. Expect foot five this record history follow guess.', '2015-06-22', 7, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Speak begin suggest speak');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (890, 'Talk between rate', 'Many issue book those. Middle doctor economy region out.', '1999-08-11', 4, '0 years 0 mons 0 days 2 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Talk between rate');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (891, 'Of dog federal house', 'Seek enough owner. Finish current purpose teacher. Single add role happen pass tough role.', '1999-08-08', 8, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Of dog federal house');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (892, 'Safe family concern', 'On trouble tree scientist toward occur.', '2013-04-14', 12, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Safe family concern');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (893, 'Side PM', 'Blood guy seven here return. Art art catch sure detail.
-Both at interest strategy.', '2016-06-08', 14, '0 years 0 mons 0 days 1 hours 15 mins 0.0 secs', '2025-04-29', NULL, 'Side PM');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (894, 'Kid tree imagine', 'Through whole age produce. Apply figure letter performance practice partner.', '2010-07-05', 6, '0 years 0 mons 0 days 2 hours 37 mins 0.0 secs', '2025-04-29', NULL, 'Kid tree imagine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (895, 'Somebody', 'Pattern executive fire probably. Play campaign believe century successful story.', '2017-07-08', 4, '0 years 0 mons 0 days 1 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Somebody');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (896, 'Offer direction', 'Shake beat fight defense image. Issue image television they.', '1999-10-22', 10, '0 years 0 mons 0 days 1 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Offer direction');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (897, 'List already positive experience television answer', 'Art culture brother positive very middle action I. Decision thank rich few.', '2015-12-08', 1, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'List already positive experience television answer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (898, 'Can remember be next poor', 'Everybody visit kid stay. Hope whatever expert much however your.', '2017-01-04', 12, '0 years 0 mons 0 days 1 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'Can remember be next poor');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (899, 'Behavior here', 'Stop tough bit indeed force expect standard. Everyone should plan gas just lead.', '2006-12-01', 9, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Behavior here');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (900, 'Environmental stock front official not magazine', 'Yard author cultural. Bit likely which onto board.', '2009-03-03', 13, '0 years 0 mons 0 days 1 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Environmental stock front official not magazine');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (901, 'Dream key', 'Service see democratic film. Season site age camera every about fall.', '2014-12-07', 8, '0 years 0 mons 0 days 1 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Dream key');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (902, 'Main', 'Billion sea song some. Almost now man section.', '2001-07-10', 9, '0 years 0 mons 0 days 1 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Main');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (903, 'First give', 'Level pay we that tree not safe. Usually clearly road almost main hot though.', '2000-06-21', 12, '0 years 0 mons 0 days 2 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'First give');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (904, 'Month gun true born stock', 'Management analysis expert modern air president pick. Everything race human economy alone.', '1999-12-09', 3, '0 years 0 mons 0 days 2 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Month gun true born stock');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (905, 'Go when population challenge bill', 'Prove back history stop serious. List herself anyone whole tax.', '2008-12-11', 4, '0 years 0 mons 0 days 1 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Go when population challenge bill');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (906, 'Treatment', 'Word speak act Mr today ground. Be or treat floor.', '2015-09-30', 8, '0 years 0 mons 0 days 2 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Treatment');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (907, 'Herself accept goal send table', 'Several candidate summer center. East either necessary form technology whom.', '2005-01-20', 12, '0 years 0 mons 0 days 2 hours 54 mins 0.0 secs', '2025-04-29', NULL, 'Herself accept goal send table');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (908, 'Our reflect any', 'Cut sport create memory hot player goal.', '2016-05-24', 10, '0 years 0 mons 0 days 1 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Our reflect any');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (909, 'Seven put majority officer', 'Probably administration like accept choice along. Laugh beautiful center born source.', '2003-10-27', 8, '0 years 0 mons 0 days 1 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Seven put majority officer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (910, 'Around yard morning short', 'Room the member center finally quickly. Sometimes middle site pay.', '2010-04-30', 12, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Around yard morning short');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (911, 'Main fast', 'Sing forget camera low own. Hope discussion card region.', '2019-05-31', 13, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Main fast');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (912, 'Network outside parent', 'House fight where assume quite mention. Tree care about choice say. On beautiful enjoy hundred.', '2023-07-02', 8, '0 years 0 mons 0 days 1 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Network outside parent');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (913, 'Every feel site', 'Life shake remain event Congress better control. Capital population special soldier success.', '2012-08-28', 11, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Every feel site');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (914, 'Attack moment medical write', 'Collection big fear debate what. Whole fish interview cut.', '2007-04-15', 15, '0 years 0 mons 0 days 2 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Attack moment medical write');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (915, 'On yes', 'Physical reduce the tend deep view plant. Food blue song name.', '2018-05-19', 1, '0 years 0 mons 0 days 2 hours 27 mins 0.0 secs', '2025-04-29', NULL, 'On yes');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (916, 'Want', 'Of rather beyond nor popular will. Sea hard fall painting blood few. Role full customer turn whom.', '1996-02-11', 13, '0 years 0 mons 0 days 2 hours 44 mins 0.0 secs', '2025-04-29', NULL, 'Want');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (917, 'Responsibility', 'Theory laugh friend son employee. Its far doctor suffer. Any owner letter suddenly live.', '2002-11-10', 10, '0 years 0 mons 0 days 1 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Responsibility');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (918, 'Always art smile', 'Others four with painting understand southern. Program miss front sing campaign enough.', '1997-11-11', 11, '0 years 0 mons 0 days 1 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Always art smile');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (919, 'Its better', 'Financial their them often leg. Chair travel nearly weight manager almost. Way have seat.', '1998-10-15', 15, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Its better');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (920, 'Their four old center glass', 'Ask save fight. Total stock knowledge pay area. Yourself focus drive mean reason agreement.', '2017-12-15', 15, '0 years 0 mons 0 days 1 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Their four old center glass');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (921, 'Least mouth national put', 'Source American hand season during. Until budget magazine low this.', '2008-06-19', 15, '0 years 0 mons 0 days 2 hours 56 mins 0.0 secs', '2025-04-29', NULL, 'Least mouth national put');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (922, 'Enter their institution', 'Professor notice which attack up leave.', '2022-06-04', 1, '0 years 0 mons 0 days 1 hours 24 mins 0.0 secs', '2025-04-29', NULL, 'Enter their institution');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (923, 'Its investment investment local', 'Different little general away. Act and poor pressure performance half.', '2021-05-01', 6, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Its investment investment local');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (924, 'Support road billion', 'Prove teacher realize office hospital past region. While gun generation former consumer.', '2010-08-19', 1, '0 years 0 mons 0 days 2 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Support road billion');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (925, 'Assume remember idea', 'Hand sometimes statement near. Add country care bill prepare lead past.
-General economy to others.', '2001-04-20', 3, '0 years 0 mons 0 days 1 hours 35 mins 0.0 secs', '2025-04-29', NULL, 'Assume remember idea');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (926, 'Commercial way least', 'Better debate field officer. No police water while view huge. Oil commercial various for.', '2009-08-25', 12, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Commercial way least');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (927, 'Top quality', 'She spend night company. Enter star without these care.', '2024-10-28', 6, '0 years 0 mons 0 days 1 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Top quality');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (928, 'Hard citizen street', 'Can according realize assume. Market few offer economic. Business expert parent draw.', '2004-08-06', 2, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'Hard citizen street');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (929, 'content_service.movies hospital', 'Suggest gun make. Debate treat yeah group save collection admit.', '2001-05-12', 13, '0 years 0 mons 0 days 1 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'content_service.movies hospital');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (930, 'Night your long heavy', 'Only both set staff commercial my. Day summer finish simply growth stop Mrs.', '2015-10-15', 12, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'Night your long heavy');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (931, 'Discuss really', 'Though surface population market buy action.', '2014-07-30', 6, '0 years 0 mons 0 days 2 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'Discuss really');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (932, 'Avoid sit enter', 'Do list for protect civil. Behind dog every picture kind.', '2012-09-14', 11, '0 years 0 mons 0 days 2 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Avoid sit enter');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (933, 'You experience', 'These figure mind probably. Technology born make simply sing.', '2019-05-15', 1, '0 years 0 mons 0 days 1 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'You experience');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (934, 'Man officer', 'Break receive thousand four. Bit even under help. For operation star bar stay experience wait us.', '2018-07-15', 6, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Man officer');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (935, 'Against stop', 'Student in notice only walk spend for. Feeling figure really guy finally.', '2003-12-11', 9, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Against stop');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (936, 'Talk term herself', 'Little newspaper choice down. Better since reflect pay material end despite Democrat.', '2004-10-18', 12, '0 years 0 mons 0 days 2 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Talk term herself');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (937, 'Dinner', 'Explain case director ten. Trial analysis father attention low describe local.', '2012-02-05', 10, '0 years 0 mons 0 days 2 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Dinner');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (938, 'Soon property write', 'Effort customer truth seat throw five.', '2001-09-28', 11, '0 years 0 mons 0 days 1 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Soon property write');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (939, 'Chair', 'Everybody cultural phone sign. Tend party ball.', '2001-02-13', 15, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Chair');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (940, 'Investment on gun young', 'Himself on spring green staff music.
-Value not manage office. International group trial use.', '1996-07-31', 2, '0 years 0 mons 0 days 2 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Investment on gun young');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (941, 'During call', 'History in Mr likely fine.', '2002-06-07', 3, '0 years 0 mons 0 days 2 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'During call');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (942, 'Us increase how', 'Child check key. Already site pull news usually put.', '2015-12-02', 2, '0 years 0 mons 0 days 1 hours 17 mins 0.0 secs', '2025-04-29', NULL, 'Us increase how');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (943, 'Leg', 'Have tonight weight approach his. Great security table example strategy.', '2017-05-08', 2, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Leg');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (944, 'Collection', 'Activity source yet friend coach central right color. Growth site end. Hand page mother heart.', '2003-06-02', 3, '0 years 0 mons 0 days 1 hours 33 mins 0.0 secs', '2025-04-29', NULL, 'Collection');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (945, 'Ten physical character attention', 'Place possible around shoulder. Defense morning something force middle.', '2009-06-25', 11, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Ten physical character attention');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (946, 'Job worker break tonight', 'Hand spring among responsibility. Baby range after eye southern event. Perform lot report story.', '2019-07-27', 7, '0 years 0 mons 0 days 1 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Job worker break tonight');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (947, 'Whose source hand so add', 'Across behind money full during law according. Stop beyond try seek.', '1997-10-04', 6, '0 years 0 mons 0 days 2 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Whose source hand so add');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (948, 'Wind kitchen', 'View medical history item certainly as them after. Spend education feeling sport.', '2017-08-01', 12, '0 years 0 mons 0 days 1 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Wind kitchen');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (949, 'Include news a', 'Democratic who conference break leg fly. Kind wall such which child choice husband.', '2012-06-01', 4, '0 years 0 mons 0 days 1 hours 1 mins 0.0 secs', '2025-04-29', NULL, 'Include news a');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (950, 'Deep force seven here', 'Grow trip never network work. Carry eat smile four each. Hold method class car seven out.', '2006-01-04', 14, '0 years 0 mons 0 days 1 hours 53 mins 0.0 secs', '2025-04-29', NULL, 'Deep force seven here');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (951, 'Prepare focus', 'Understand green sign blue. Study deep government participant civil available.', '2014-05-18', 9, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Prepare focus');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (952, 'Site both change note old', 'Air official enter determine. Cause maintain catch.
-From not certainly poor pick network.', '2004-06-29', 10, '0 years 0 mons 0 days 2 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Site both change note old');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (953, 'Role', 'Return factor option air heavy yes. Room thousand example cup safe.', '2023-06-18', 11, '0 years 0 mons 0 days 2 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Role');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (954, 'Onto again', 'Free parent tree new operation. Cost something future reality.', '1999-06-21', 10, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Onto again');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (955, 'Young', 'Note song unit room across. Thus pressure scene wall organization team consumer policy.', '2003-07-10', 5, '0 years 0 mons 0 days 1 hours 57 mins 0.0 secs', '2025-04-29', NULL, 'Young');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (956, 'Point little wait', 'Newspaper in through strategy place buy. Fund often find network.', '2009-11-18', 13, '0 years 0 mons 0 days 2 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Point little wait');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (957, 'Well two truth out major born', 'Pull dark by bar child. Pattern value inside move reveal little fall project.', '2023-05-24', 13, '0 years 0 mons 0 days 2 hours 14 mins 0.0 secs', '2025-04-29', NULL, 'Well two truth out major born');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (958, 'Better', 'Day she base floor series. Fish who color security by military hotel. Respond seek impact.', '1997-07-17', 8, '0 years 0 mons 0 days 2 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Better');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (959, 'Thousand activity', 'Possible fall information subject. Test may best each serious those.', '2010-12-20', 13, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Thousand activity');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (960, 'Trial have', 'Ask public add sell employee. Job exist such five skin hold according.', '2011-08-29', 6, '0 years 0 mons 0 days 2 hours 29 mins 0.0 secs', '2025-04-29', NULL, 'Trial have');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (961, 'Budget year hotel camera without', 'Believe or southern next task well move. Campaign including able summer western let gun inside.', '2024-02-04', 3, '0 years 0 mons 0 days 1 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Budget year hotel camera without');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (962, 'Claim kind', 'Call capital others beat. Rather pass collection blue. Their front see maintain majority back.', '2008-01-09', 9, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Claim kind');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (963, 'Various often individual', 'Technology there fly send. Personal front himself other lay light.', '2024-03-17', 3, '0 years 0 mons 0 days 1 hours 10 mins 0.0 secs', '2025-04-29', NULL, 'Various often individual');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (964, 'Between six least', 'Beautiful fund draw soon structure. Enjoy story agent happy learn.', '2024-12-08', 4, '0 years 0 mons 0 days 1 hours 2 mins 0.0 secs', '2025-04-29', NULL, 'Between six least');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (965, 'Response also available concern edge', 'Do without key quite law find believe television. Edge one top see seven mind worry.', '2020-04-09', 6, '0 years 0 mons 0 days 1 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Response also available concern edge');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (966, 'Begin deep police wife anything', 'Deep professor join. Example itself growth successful maybe environment.', '2017-06-18', 5, '0 years 0 mons 0 days 2 hours 11 mins 0.0 secs', '2025-04-29', NULL, 'Begin deep police wife anything');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (967, 'Inside national common', 'Use open traditional. Son police number great. Much power talk. Way seven provide while hotel.', '2022-11-18', 4, '0 years 0 mons 0 days 1 hours 42 mins 0.0 secs', '2025-04-29', NULL, 'Inside national common');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (968, 'For', 'Front stuff executive health join. Republican piece now television audience.', '2021-09-24', 6, '0 years 0 mons 0 days 2 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'For');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (969, 'Purpose woman on someone rise', 'Phone range fight statement political test require. Each upon condition world anything mind.', '2000-07-05', 6, '0 years 0 mons 0 days 2 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Purpose woman on someone rise');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (970, 'Tv window', 'Factor phone buy mention. That hour suddenly service situation light table.', '1998-03-11', 3, '0 years 0 mons 0 days 2 hours 7 mins 0.0 secs', '2025-04-29', NULL, 'Tv window');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (971, 'Outside current agent color factor bank such', 'Particular hot loss everybody. Appear interest unit most ready single job. Kid head seem leg put.', '2020-07-01', 15, '0 years 0 mons 0 days 1 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Outside current agent color factor bank such');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (972, 'Spend prove stock school rate', 'Front kind wrong face cultural. Detail nation may.
-Would whose interest week street film.', '2022-05-28', 15, '0 years 0 mons 0 days 2 hours 49 mins 0.0 secs', '2025-04-29', NULL, 'Spend prove stock school rate');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (973, 'Fish list tree', 'Example town have school popular discussion expert.', '2018-06-22', 3, '0 years 0 mons 0 days 2 hours 59 mins 0.0 secs', '2025-04-29', NULL, 'Fish list tree');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (974, 'Challenge quite', 'Window cell bring remember. Charge worker realize marriage hope. Month event paper pass.', '2018-06-21', 6, '0 years 0 mons 0 days 1 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Challenge quite');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (975, 'Especially indicate population', 'Meet Republican great simple society. Often speech tree.', '2003-06-06', 12, '0 years 0 mons 0 days 2 hours 41 mins 0.0 secs', '2025-04-29', NULL, 'Especially indicate population');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (976, 'Speak according', 'Market career simple score.', '1996-09-17', 12, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Speak according');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (977, 'Any', 'Their area I teach toward range. Hand this get nothing term throw. Ten term eight green.', '1997-03-14', 15, '0 years 0 mons 0 days 2 hours 48 mins 0.0 secs', '2025-04-29', NULL, 'Any');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (978, 'Drive indicate professor beat', 'Bad its force treatment loss glass process. Our remain actually issue stage in.', '2023-10-10', 10, '0 years 0 mons 0 days 1 hours 51 mins 0.0 secs', '2025-04-29', NULL, 'Drive indicate professor beat');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (979, 'Might', 'Himself appear very season number change.', '2012-06-08', 10, '0 years 0 mons 0 days 2 hours 21 mins 0.0 secs', '2025-04-29', NULL, 'Might');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (980, 'Staff such forward', 'Effect leader morning already human check.
-Street hotel according.', '2023-11-23', 12, '0 years 0 mons 0 days 1 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Staff such forward');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (981, 'Arrive challenge', 'Ahead give again memory guess head. Into machine through defense source of whose.', '1997-12-18', 8, '0 years 0 mons 0 days 1 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Arrive challenge');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (982, 'This image per choice upon', 'Sort indicate idea together. Hotel set alone probably four network all.', '2010-11-21', 11, '0 years 0 mons 0 days 1 hours 19 mins 0.0 secs', '2025-04-29', NULL, 'This image per choice upon');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (983, 'Care material morning', 'Bill into continue investment especially suffer pass. Money hot fine though.', '2023-09-11', 1, '0 years 0 mons 0 days 2 hours 39 mins 0.0 secs', '2025-04-29', NULL, 'Care material morning');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (984, 'Crime', 'Build play seem recent race. Address language language agree later.', '2012-12-03', 14, '0 years 0 mons 0 days 1 hours 28 mins 0.0 secs', '2025-04-29', NULL, 'Crime');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (985, 'International second former reflect', 'Hear politics prevent federal general find grow. Old real grow mother country.', '2002-02-01', 6, '0 years 0 mons 0 days 1 hours 20 mins 0.0 secs', '2025-04-29', NULL, 'International second former reflect');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (986, 'Strong', 'Page lay admit find view every future door.
-Public energy require buy particular answer.', '2002-07-02', 1, '0 years 0 mons 0 days 1 hours 37 mins 0.0 secs', '2025-04-29', NULL, 'Strong');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (987, 'Herself our far measure involve', 'Three forward answer less ground force. Clearly serious prevent hand.', '2017-09-18', 9, '0 years 0 mons 0 days 1 hours 50 mins 0.0 secs', '2025-04-29', NULL, 'Herself our far measure involve');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (988, 'Lay art point value', 'True hit before attention. Take red its information response wind within choose.', '1997-08-10', 15, '0 years 0 mons 0 days 2 hours 12 mins 0.0 secs', '2025-04-29', NULL, 'Lay art point value');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (989, 'Million fight', 'Bag about cold physical early. Manage skill political quite energy available expert.', '2024-08-07', 1, '0 years 0 mons 0 days 1 hours 34 mins 0.0 secs', '2025-04-29', NULL, 'Million fight');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (990, 'Decide scene', 'Ready use fund who goal majority. Smile information sure wait item.', '2002-07-28', 14, '0 years 0 mons 0 days 2 hours 43 mins 0.0 secs', '2025-04-29', NULL, 'Decide scene');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (991, 'And worker quality hundred sell whole', 'Brother doctor process out product already. Before front manager tree mind.', '2019-09-05', 11, '0 years 0 mons 0 days 1 hours 32 mins 0.0 secs', '2025-04-29', NULL, 'And worker quality hundred sell whole');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (992, 'Stuff lot meet TV', 'Cold big generation thank value item. Catch why above person mention necessary.', '1995-12-04', 7, '0 years 0 mons 0 days 1 hours 31 mins 0.0 secs', '2025-04-29', NULL, 'Stuff lot meet TV');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (993, 'Most you statement wonder across', 'Purpose look evening claim over. Training situation effort threat commercial in.', '2004-11-04', 6, '0 years 0 mons 0 days 1 hours 58 mins 0.0 secs', '2025-04-29', NULL, 'Most you statement wonder across');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (994, 'Bed', 'Pull upon record state source hundred. Seem control soldier water it task.', '2004-04-09', 11, '0 years 0 mons 0 days 2 hours 25 mins 0.0 secs', '2025-04-29', NULL, 'Bed');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (995, 'Nation fly bag', 'Although sound ability account seven life relationship. Itself east term big store fish back light.', '2007-03-13', 3, '0 years 0 mons 0 days 2 hours 23 mins 0.0 secs', '2025-04-29', NULL, 'Nation fly bag');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (996, 'Lead with enough anyone', 'Before increase dinner fact much smile. Citizen include it beautiful few.', '2007-07-18', 7, '0 years 0 mons 0 days 2 hours 0 mins 0.0 secs', '2025-04-29', NULL, 'Lead with enough anyone');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (997, 'Detail audience piece director town', 'Exactly choose end least daughter third. Three address hundred center plant when practice.', '2017-06-25', 5, '0 years 0 mons 0 days 2 hours 22 mins 0.0 secs', '2025-04-29', NULL, 'Detail audience piece director town');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (998, 'Fish', 'Standard middle contain. Wife learn finish identify. Single send not herself attorney.', '2021-05-06', 5, '0 years 0 mons 0 days 2 hours 55 mins 0.0 secs', '2025-04-29', NULL, 'Fish');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (999, 'No order', 'Contain case defense story. Tough their personal where.', '2018-06-06', 9, '0 years 0 mons 0 days 1 hours 13 mins 0.0 secs', '2025-04-29', NULL, 'No order');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1000, 'History professional star wonder', 'Or himself their summer. Forget fight rather someone heavy least.', '2015-06-07', 12, '0 years 0 mons 0 days 2 hours 47 mins 0.0 secs', '2025-04-29', NULL, 'History professional star wonder');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1001, 'Home', 'Relationship exactly week enough.
-Beat help defense range impact condition. Mind moment form ten.', '2022-07-11', 7, '0 years 0 mons 0 days 2 hours 18 mins 0.0 secs', '2025-04-29', NULL, 'Home');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1002, 'Whole establish space Mrs low', 'Money base it fire military. In skin everyone its. Ever long statement color treat around top.', '1997-03-31', 3, '0 years 0 mons 0 days 2 hours 46 mins 0.0 secs', '2025-04-29', NULL, 'Whole establish space Mrs low');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1003, 'Community avoid', 'Himself capital she have three. Will meeting member address six which Mrs support.', '2014-04-25', 15, '0 years 0 mons 0 days 2 hours 8 mins 0.0 secs', '2025-04-29', NULL, 'Community avoid');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1004, 'Major land whether listen', 'Discussion ability phone air young clearly behind. Region recently stuff common.', '2003-11-01', 14, '0 years 0 mons 0 days 1 hours 9 mins 0.0 secs', '2025-04-29', NULL, 'Major land whether listen');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1005, 'Billion treat lot', 'Account election peace become beautiful picture. Ago simply teacher audience above.', '1999-09-28', 4, '0 years 0 mons 0 days 2 hours 30 mins 0.0 secs', '2025-04-29', NULL, 'Billion treat lot');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1006, 'Including still human', 'Check religious on impact wear why. Quality far body save citizen create thus agreement.', '1997-03-04', 14, '0 years 0 mons 0 days 2 hours 4 mins 0.0 secs', '2025-04-29', NULL, 'Including still human');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1007, 'Country', 'Always ten hand lead step sound story. Home get tax realize beyond into.', '2001-12-18', 15, '0 years 0 mons 0 days 2 hours 5 mins 0.0 secs', '2025-04-29', NULL, 'Country');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1008, 'Personal rise', 'Another foot argue radio leave own according hospital.', '2001-09-27', 1, '0 years 0 mons 0 days 2 hours 40 mins 0.0 secs', '2025-04-29', NULL, 'Personal rise');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1009, 'Pull name mother', 'Far statement ball sea sometimes. Mouth start history might option happy agent.', '2022-04-23', 15, '0 years 0 mons 0 days 2 hours 26 mins 0.0 secs', '2025-04-29', NULL, 'Pull name mother');
-INSERT INTO content_service.movies (id, title, description, release_date, country_id, duration, created_at, updated_at, original_title) VALUES (1010, 'Voice evidence real describe know', 'Trouble discussion maybe now drop five father. Pretty exist total who condition as.', '2011-07-04', 3, '0 years 0 mons 0 days 2 hours 45 mins 0.0 secs', '2025-04-29', NULL, 'Voice evidence real describe know');
+-- SQL скрипт для загрузки фильмов из IMDB CSV
+-- Сгенерирован автоматически
+
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Побег из Шоушенка', 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.', '1994-01-01', 1, '142 minutes', 'The Shawshank Redemption', 9.3, 'В 1947 году успешный банкир Энди Дюфрейн обвиняется в убийстве своей жены и её любовника. Несмотря на утверждения о своей невиновности, он приговаривается к двум пожизненным срокам и отправляется в тюрьму строгого режима Шоушенк в штате Мэн. В первую ночь один из новичков не выдерживает психологического давления и его забивают насмерть охранники, что становится для Энди жестоким введением в тюремную реальность.
+Энди знакомится с Эллисом Бойдом Реддингом по прозвищу Ред, афроамериканцем средних лет, который уже двадцать лет сидит за убийство и стал своеобразным снабженцем для заключённых, способным достать практически любую вещь за определённую плату. Ред первоначально ставит на то, что Энди не выдержит и сломается в первую же неделю, но банкир удивляет всех своей стойкостью и молчаливостью.
+Энди просит у Реда небольшой геологический молоточек, объясняя это своим хобби по резьбе по камню. Он также завязывает отношения с другими заключёнными, включая пожилого Брукса Хэтлена, тюремного библиотекаря, и постепенно интегрируется в тюремное сообщество. Однако его привлекательная внешность привлекает внимание банды садистов во главе с Богсом Даймондом, которые регулярно насилуют и избивают Энди, несмотря на его сопротивление.
+Переломный момент наступает в 1949 году, когда Энди слышит, как главный охранник Байрон Хэдли жалуется на налоги с наследства. Рискуя жизнью, Энди предлагает ему помощь в решении финансовых вопросов, используя свои знания банковского дела. Взамен он просит пиво для всех работающих на крыше заключённых. Этот поступок приносит Энди уважение среди заключённых и защиту со стороны охранников от банды Богса, которого вскоре переводят в другую тюрьму после особенно жестокого избиения.
+Навыки Энди в области финансов быстро становятся незаменимыми. Он помогает не только охранникам, но и начальнику тюрьмы Сэмюэлю Нортону, религиозному лицемеру, который использует заключённых для получения выгодных контрактов на строительные работы, эксплуатируя их дешёвый труд и присваивая разницу в оплате. Энди становится ключевой фигурой в этой коррупционной схеме, отмывая деньги через множество фиктивных счетов.
+Параллельно Энди занимается улучшением тюремной библиотеки, еженедельно отправляя письма в штат с просьбами о выделении средств. Его настойчивость приносит плоды через шесть лет в виде значительного финансирования и большого количества книг. Он также помогает заключённым получить образование и даже организовывает музыкальные вечера, транслируя оперу Моцарта по тюремному радио, за что получает две недели карцера.
+В 1965 году умирает Брукс Хэтлен, который после освобождения не смог адаптироваться к жизни на свободе и покончил с собой, оставив письмо о том, как институционализация сделала его неспособным к жизни вне тюремных стен. Это событие глубоко потрясает как Энди, так и Реда, который боится собственного возможного освобождения.
+В 1966 году в Шоушенк прибывает молодой заключённый Томми Уильямс, который рассказывает Энди историю о своём бывшем сокамернике Элмо Блэтче. Тот хвастался убийством богатого игрока в гольф и его жены, описывая детали, которые точно совпадают с преступлением, за которое осуждён Энди. Энди пытается убедить Нортона пересмотреть его дело, но начальник тюрьмы, боясь потерять своего незаменимого финансового консультанта, отказывается помочь. Более того, Хэдли убивает Томми во время попытки побега, инсценировав его смерть.
+После этого события Энди впадает в депрессию и начинает говорить о планах жизни в мексиканском городке Зиуатанехо на берегу Тихого океана. Он рассказывает Реду о своей мечте открыть там небольшой отель на берегу океана и просит друга в случае освобождения найти определённый дуб в штате Мэн, где будет закопана коробка с посланием.
+19 сентября 1975 года, после двадцати семи лет заключения, Энди совершает побег, который он готовил почти два десятилетия. Оказывается, что маленький геологический молоточек он использовал для прокапывания туннеля через стену своей камеры, прикрываясь большим плакатом с изображением актрисы. Стена оказалась более хрупкой из-за некачественного строительства тюрьмы в начале века. В ночь побега Энди проползает через туннель, преодолевает канализационную трубу длиной в полмили и выбирается на свободу во время грозы.
+Перед побегом Энди успевает очистить банковские счета Нортона, забрав деньги, которые он отмывал годами, и отправляет компромат на начальника тюрьмы и Хэдли в газеты. Коррупционный скандал приводит к аресту Хэдли и самоубийству Нортона, который застреливается в своём кабинете, когда приходят федеральные агенты.
+В 1977 году Ред наконец получает условно-досрочное освобождение после тридцати девяти лет заключения. Как и Брукс, он с трудом адаптируется к внешнему миру, работая упаковщиком в супермаркете и живя в том же доме на полпути, где когда-то жил Брукс. Находясь на грани отчаяния и размышляя о самоубийстве, Ред вспоминает обещание Энди и отправляется искать дуб в Бакстоне.
+Под деревом он находит коробку с письмом от Энди и достаточной суммой денег для поездки в Мексику. Письмо содержит приглашение присоединиться к другу в Зиуатанехо. Ред нарушает условия своего освобождения и отправляется в Мексику, где находит Энди на пляже, ремонтирующего старую лодку. Друзья воссоединяются на берегу Тихого океана, где Энди осуществляет свою мечту о собственном небольшом отеле, а Ред находит новый смысл жизни в свободе, которую он так долго боялся.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Крёстный отец', 'An organized crime dynasty''s aging patriarch transfers control of his clandestine empire to his reluctant son.', '1972-01-01', 1, '175 minutes', 'The Godfather', 9.2, 'Летом 1945 года патриарх мафиозного клана Корлеоне Дон Вито Корлеоне проводит свадьбу своей дочери Конни с Карло Риззи в своём поместье на Лонг-Айленде. По сицилийской традиции в день свадьбы дочери отец не может отказать ни в какой просьбе, и в его кабинете выстраивается очередь из просителей. Среди них похоронный директор Бонасера, просящий отомстить за изнасилование дочери, певец Джонни Фонтейн, умоляющий о помощи в получении роли в Голливуде, и пекарь Энцо, желающий остаться в Америке.
+Младший сын Дона Майкл Корлеоне прибывает на свадьбу в военной форме морской пехоты вместе со своей девушкой Кей Адамс. Он рассказывает ей истории о жестокости своей семьи, но подчёркивает, что сам он не такой. Старший сын Сонни известен своим вспыльчивым характером и жестокостью, средний сын Фредо считается слабым звеном семьи, а приёмный сын Том Хэген служит консильере семьи, несмотря на своё ирландско-немецкое происхождение.
+Дон Корлеоне отправляет Лука Брази, своего самого преданного и безжалостного исполнителя, к голливудскому магнату Джеку Вольцу с предложением дать роль Джонни Фонтейну. Когда Вольц отказывается, утром он просыпается рядом с отрубленной головой своего призового жеребца стоимостью шестьсот тысяч долларов и немедленно соглашается на требования Корлеоне.
+Вирджил Солоццо по прозвищу Турок, торговец наркотиками, связанный с семьёй Таталья, просит у Дона Корлеоне финансовой поддержки и политического прикрытия для своего наркотического бизнеса. Вито категорически отказывается, считая торговлю наркотиками грязным делом, которое испортит его отношения с политиками и судьями. Солоццо понимает, что пока жив старый Дон, его планы неосуществимы.
+В декабре 1945 года Лука Брази встречается с людьми Солоццо, якобы для перехода на их сторону, но на самом деле по заданию Дона для шпионажа. Однако его план раскрывается, и Бруно Таталья убивает Луку, задушив его проволокой. Вскоре после этого Солоццо организует покушение на Дона Корлеоне. Вито получает несколько пулевых ранений при покупке фруктов, но остаётся жив благодаря тому, что его телохранитель Фредо, хотя и растерялся, успел вызвать скорую помощь.
+Сонни принимает руководство семьёй и жаждет немедленной мести. Он размещает охрану в больнице, где лежит отец, но Солоццо подкупает полицейских, и они уводят телохранителей. Майкл, навещающий отца, обнаруживает, что тот остался без защиты, и вместе с пекарем Энцо изображает охрану, отпугивая потенциальных убийц. Прибывший капитан полиции Маккласки, подкупленный Солоццо, ломает Майклу челюсть и арестовывает его.
+Солоццо просит о встрече с Майклом и Сонни для переговоров, гарантируя, что с Майклом ничего не случится, поскольку он не замешан в семейном бизнесе. Майкл предлагает встретиться с Солоццо и Маккласки в ресторане на Бронксе, тайно планируя убить их обоих. Сонни считает план безумным, но Майкл настаивает, понимая, что пока живы Солоццо и Маккласки, его отец в опасности.
+В ресторане Луиса Майкл извиняется, чтобы пойти в туалет, где достаёт спрятанный пистолет, и, вернувшись к столу, хладнокровно убивает и Солоццо, и Маккласки. Убийство полицейского капитана вызывает огромный скандал в прессе, и Майкл вынужден бежать на Сицилию, где его укрывает местная мафия под руководством Дона Томмазино.
+На Сицилии Майкл влюбляется в красивую местную девушку Аполлонию Витали и женится на ней после получения разрешения от её отца. Он начинает изучать сицилийские традиции и историю своей семьи, постепенно принимая мафиозный образ жизни. Однако его счастье недолговременно. Фабрицио, один из его телохранителей, предаёт его, заложив бомбу в машину. Аполлония погибает при взрыве, когда садится в автомобиль вместо Майкла.
+В Америке война между семьями продолжается. Сонни узнаёт, что Карло Риззи избивает Конни, и жестоко избивает зятя, предупредив его о последствиях. Когда Карло снова поднимает руку на жену, Конни звонит Сонни, и тот в ярости мчится к сестре. Однако это ловушка, организованная семьёй Барзини в сговоре с Карло. На заставе на дороге Сонни расстреливают из автоматов, превратив его машину в решето.
+Смерть Сонни заставляет Дона Вито, который уже поправился от ранений, созвать встречу глав всех семей. На этой встрече он соглашается не мстить за смерть сына и даёт согласие на торговлю наркотиками в обмен на безопасность Майкла и его возвращение домой. Дон понимает, что настоящим инициатором войны был не Таталья, а более могущественный Дон Барзини, который использовал Солоццо как прикрытие для ослабления семьи Корлеоне.
+Майкл возвращается в Америку в 1950 году и воссоединяется с Кей, на которой женится. Старый Дон начинает передавать ему руководство семьёй, понимая, что именно Майкл, несмотря на своё нежелание, лучше всех подходит для этой роли. Вито обучает сына тонкостям мафиозного бизнеса и политики, объясняя важность терпения и стратегического мышления.
+Дон Вито Корлеоне умирает от сердечного приступа в своём саду, играя с внуком Энтони. Майкл полностью принимает на себя руководство семьёй и начинает планировать месть всем, кто предал или причинил вред Корлеоне. Он решает переместить семейный бизнес в Лас-Вегас, оставив Нью-Йорк, но сначала должен рассчитаться с врагами.
+Майкл организует одновременное убийство всех глав враждебных семей во время крещения своего племянника, сына Конни. Пока он произносит клятвы крёстного отца в церкви, его люди убивают Дона Барзини, Дона Таталью, Моэ Грина в Лас-Вегасе и других врагов семьи. Затем он вызывает Карло и, заставив его признаться в предательстве Сонни, приказывает Клеменце задушить его в машине.
+Когда Конни обвиняет Майкла в убийстве мужа, он холодно отрицает это перед Кей, но его жена видит, как капорежимы целуют ему руку и называют Доном Корлеоне. Фильм заканчивается тем, что дверь кабинета закрывается перед лицом Кей, символически отделяя её от мира, в который полностью погрузился её муж. Майкл окончательно превратился из честного американского ветерана войны в безжалостного главу мафиозной семьи, готового на любые жертвы ради защиты своей власти и семейной чести.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Тёмный рыцарь', 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.', '2008-01-01', 1, '152 minutes', 'The Dark Knight', 9.0, 'Фильм начинается с дерзкого ограбления банка в Готэме, которое организует загадочный преступник в маске клоуна. Грабители методично убивают друг друга по плану их лидера, пока в живых не остается только сам организатор - Джокер, который снимает маску и уезжает на украденном школьном автобусе, растворившись в колонне таких же автобусов.
+Брюс Уэйн продолжает свою войну с преступностью как Бэтмен, но понимает, что его методы имеют ограничения. В Готэме появляется новый окружной прокурор Харви Дент, харизматичный и честный юрист, которого пресса прозвала Белым Рыцарем Готэма. Дент встречается с помощницей прокурора Рейчел Доус, бывшей возлюбленной Брюса, и между ними завязываются романтические отношения.
+Брюс видит в Денте человека, который сможет бороться с преступностью законными методами и, возможно, сделает Бэтмена ненужным. Он тайно поддерживает карьеру Дента, надеясь в будущем оставить роль вигиланта и жить нормальной жизнью с Рейчел. Дент начинает активную борьбу с организованной преступностью, арестовывая целые банды и конфискуя их деньги.
+Главы мафиозных семей Готэма во главе с Сальваторе Марони собираются на тайную встречу, где китайский финансист Лау предлагает им спрятать все деньги в своем банке в Гонконге, где американская юрисдикция не достанет их. Однако их планы нарушает появление Джокера, который врывается на встречу и предлагает убить Бэтмена за половину всех их денег.
+Мафиози сначала отвергают предложение сумасшедшего клоуна, но ситуация меняется, когда Бэтмен отправляется в Гонконг и похищает Лау, доставив его властям Готэма. Теперь все банковские счета мафии заморожены, и преступники вынуждены обратиться к Джокеру за помощью. Тот начинает серию терактов, убивая чиновников и угрожая взорвать больницу, если Бэтмен не снимет маску и не сдастся полиции.
+Джокер убивает судью Сурилло и комиссара полиции Ломаса, а затем пытается убить мэра во время похорон комиссара. Бэтмен спасает мэра, но Джокер ранит нового комиссара Джеймса Гордона, который притворяется мертвым, чтобы защитить свою семью. На званом ужине в честь Харви Дента Джокер врывается в поисках прокурора, но вместо него находит Брюса Уэйна, не подозревая о его двойной личности.
+Дент решает взять на себя ответственность и объявляет себя Бэтменом на пресс-конференции, чтобы привлечь внимание Джокера и защитить настоящего Темного Рыцаря. Его арестовывают и перевозят в бронированном фургоне, но Джокер атакует конвой. Бэтмен и Гордон, который оказывается жив, спасают Дента, а Джокера арестовывают.
+В полицейском участке Бэтмен допрашивает Джокера, который открывает ему страшную правду - он похитил и Харви Дента, и Рейчел Доус, разместив их в разных концах города с бомбами замедленного действия. У Бэтмена есть время спасти только одного из них. Джокер дает адреса, но намеренно путает их. Бэтмен мчится спасать Рейчел, но попадает к Харви, в то время как Гордон отправляется к Рейчел, но приезжает к зданию, где находится Дент.
+Бэтмен спасает Харви, но не успевает добраться до Рейчел - она погибает при взрыве. Харви получает тяжелые ожоги левой половины лица и впадает в отчаяние от потери любимой женщины. В больнице его навещает Джокер, который убеждает искалеченного прокурора, что во всем виноваты коррумпированные полицейские и чиновники, допустившие эту трагедию.
+Харви превращается в Двуликого, принимая решения подбрасыванием монеты, одна сторона которой обуглена в результате взрыва. Он начинает охоту на всех, кого считает ответственными за смерть Рейчел, убивая коррумпированных полицейских Вуэрца и Рамиреса, а также мафиози Марони. Тем временем Джокер сбегает из тюрьмы с помощью заложенной заранее бомбы и взрывает больницу.
+Джокер объявляет Готэму, что город принадлежит ему, и начинает социальный эксперимент. Он размещает взрывчатку на двух паромах - одном с обычными гражданами, другом с заключенными - и дает каждой группе детонатор от бомбы на другом пароме. Если до полуночи никто не взорвет другой паром, Джокер взорвет оба. Он рассчитывает доказать, что люди по своей природе эгоистичны и жестоки.
+Однако его план проваливается - ни пассажиры, ни заключенные не решаются убить других, несмотря на угрозу собственной смерти. Бэтмен штурмует здание, где укрепился Джокер, и побеждает его в схватке. Джокер падает с небоскреба, но Бэтмен спасает его, объясняя, что не убивает даже таких монстров.
+Джокер смеется, говоря, что его настоящей целью было развращение Харви Дента, символа надежды Готэма. Двуликий тем временем берет в заложники семью комиссара Гордона и требует, чтобы тот испытал ту же боль потери, что и он. Бэтмен прибывает на место противостояния, где Харви подбрасывает монету, чтобы решить судьбу сына Гордона.
+В критический момент Бэтмен сбивает Двуликого, и тот падает с высоты, получив смертельные травмы. Понимая, что раскрытие правды о падении Харви Дента разрушит надежду граждан Готэма на справедливость и сведет на нет все достижения в борьбе с преступностью, Бэтмен принимает решение взять вину на себя.
+Гордон уничтожает сигнал Бэтмена и организует охоту на Темного Рыцаря, который становится изгоем. Бэтмен скрывается во тьме, став темным рыцарем, которого Готэм заслуживает, но не тем героем, который ему нужен сейчас. Он жертвует своей репутацией, чтобы сохранить веру людей в справедливость и память о Харви Денте как о герое, а не как о преступнике. Фильм заканчивается погоней полиции за Бэтменом, который исчезает в ночи Готэма, неся бремя ложных обвинений ради спасения души города.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Крёстный отец 2', 'The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.', '1974-01-01', 1, '202 minutes', 'The Godfather: Part II', 9.0, 'Фильм разворачивается в двух временных плоскостях, переплетая историю молодого Вито Корлеоне в начале XX века с событиями 1958 года, когда его сын Майкл уже полностью контролирует семейный бизнес.
+В 1901 году девятилетний Вито Андолини становится свидетелем убийства своего отца местным мафиозо доном Чиччо на Сицилии. Мать мальчика умоляет не убивать ребенка, но её также убивают. Вито бежит и эмигрирует в Америку, где на острове Эллис его фамилию записывают как Корлеоне по названию его родного города.
+В 1958 году Майкл Корлеоне празднует первое причастие своего сына Энтони в семейном поместье в Лейк-Тахо. Среди гостей сенатор Пэт Гири, который требует от Майкла крупную взятку за лицензии на казино в Неваде. Майкл отказывается, что приводит к напряженности в отношениях с политиком. В ту же ночь неизвестные обстреливают спальню Майкла, но он и его жена Кей остаются невредимы.
+Молодой Вито в 1917 году работает в продуктовом магазине в Нью-Йорке, где знакомится с Клеменцей и Сальваторе Тессио. Когда местный мафиози Фануччи требует с них дань, Вито предлагает убить его, что становится его первым шагом в преступный мир. Он хладнокровно убивает Фануччи во время праздника Сан-Дженнаро, зарекомендовав себя как будущего лидера.
+Майкл подозревает, что покушение организовал кто-то из близкого окружения. Его подозрения падают на Фрэнка Пентанджели, главу нью-йоркских операций, который недоволен сделками с еврейским гангстером Хайманом Ротом. Майкл отправляется на Кубу для встречи с Ротом, планируя инвестировать в кубинские казино под протекторатом президента Батисты.
+На Кубе Майкл понимает, что режим Батисты находится на грани краха из-за восстания Фиделя Кастро. Он также осознает, что именно Рот стоит за покушением на его жизнь, желая получить контроль над империей Корлеоне. Майкл приказывает убить Рота, но покушение проваливается из-за революции, которая вынуждает всех американцев бежать с острова.
+Молодой Вито возвращается на Сицилию в 1925 году вместе с женой и маленьким сыном Сонни. Там он мстит дону Чиччо, убив его ножом в живот за смерть своей семьи. Этот акт мести завершает круг справедливости и утверждает Вито как человека чести, который никогда не забывает обид.
+Вернувшись в Америку, Майкл сталкивается с предательством брата Фредо, который признается, что помогал Роту, чувствуя себя обделенным в семейном бизнесе. Майкл разрывает отношения с братом, заявляя, что знает о его предательстве, но не убьет его, пока жива их мать. Фредо оказывается изгнан из семьи.
+Пентанджели арестовывают по обвинению в убийстве, и он готов дать показания против Майкла перед сенатской комиссией по организованной преступности. Однако во время слушаний появляется брат Пентанджели из Сицилии, и Фрэнк понимает угрозу своей семье, отказываясь от показаний и утверждая, что не знает Майкла Корлеоне.
+Сенатор Гири, которого ранее скомпрометировали, подстроив убийство проститутки в его номере, теперь полностью подконтролен семье Корлеоне. Он свидетельствует в пользу Майкла, утверждая, что тот является честным бизнесменом, подвергающимся несправедливым нападкам.
+Кей больше не может выносить жестокость и ложь, которые окружают её семейную жизнь. Она признается Майклу, что сделала аборт, не желая рожать ещё одного сына в семью убийц. Это признание окончательно разрушает их брак, и Майкл запрещает ей видеться с детьми.
+После смерти матери Кармелы Майкл приказывает Эл Нери убить Фредо во время рыбалки на озере Тахо. Фредо читает молитву "Отче наш", когда получает пулю в затылок, завершая трагедию братоубийства. Майкл также устраивает убийство Хаймана Рота в аэропорту Майами, где того застреливает подкупленный полицейский.
+Пентанджели, понимая, что его предательство не останется безнаказанным, совершает самоубийство в тюрьме, вскрыв вены в ванной, следуя римской традиции почетной смерти. Том Хаген намекает ему на этот выход, объясняя, как поступали римские военачальники, потерпевшие поражение.
+Фильм завершается флешбэком к 1941 году, когда семья Корлеоне собирается отмечать день рождения Дона Вито. Молодой Майкл объявляет семье о своем решении поступить в морскую пехоту после Перл-Харбора, что вызывает гнев Сонни и разочарование отца. В этой сцене все братья ещё живы и едины, что контрастирует с одиночеством Майкла в настоящем.
+В финальных кадрах постаревший и опустошенный Майкл сидит один у озера Тахо, размышляя о цене власти и о том, как его стремление защитить семью привело к её уничтожению. Он достиг абсолютной власти, но потерял всех, кого любил, став заложником своих собственных амбиций и жестокости мира, который сам же создал.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('12 разгневанных мужчин', 'A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.', '1957-01-01', 1, '96 minutes', '12 Angry Men', 9.0, 'Жарким летним днем в Нью-Йорке завершается судебный процесс над восемнадцатилетним юношей из трущоб, обвиняемым в убийстве собственного отца ножом. Если присяжные признают его виновным, подсудимого ждет электрический стул. Судья напутствует двенадцать присяжных, подчеркивая, что их вердикт должен быть единогласным, и отправляет их в совещательную комнату.
+В душной комнате без кондиционера собираются двенадцать мужчин разных возрастов, профессий и социальных слоев. Большинство из них уверены в виновности подсудимого и хотят быстро закончить процедуру голосования. Дело кажется им предельно ясным: два свидетеля видели и слышали убийство, у мальчика не было алиби, а найденный нож полностью идентичен тому, который он купил накануне.
+Первое голосование показывает результат одиннадцать против одного за признание вины. Единственным, кто голосует за невиновность, становится присяжный номер восемь, архитектор средних лет. Он не утверждает, что парень невиновен, но считает, что дело заслуживает обсуждения, поскольку на кону стоит человеческая жизнь.
+Это решение вызывает раздражение остальных присяжных, особенно третьего номера, агрессивного бизнесмена, у которого сложные отношения с собственным сыном, и десятого номера, откровенного расиста, презирающего выходцев из трущоб. Седьмой присяжный, продавец билетов, торопится на бейсбольный матч, а двенадцатый, рекламный агент, постоянно меняет свое мнение в зависимости от настроения большинства.
+Восьмой присяжный начинает методично разбирать показания свидетелей и вещественные доказательства. Он указывает на противоречия в показаниях пожилого человека, который утверждал, что слышал крик и увидел убегающего мальчика. Учитывая физические ограничения свидетеля и время, которое потребовалось бы ему, чтобы добраться до двери, его показания становятся сомнительными.
+Девятый присяжный, мудрый пожилой человек, первым поддерживает сомнения восьмого, заметив, что старый свидетель мог солгать, желая привлечь к себе внимание и почувствовать собственную значимость. Постепенно к ним присоединяется пятый присяжный, сам выросший в трущобах, который объясняет, что никто, умеющий обращаться с ножом, не стал бы наносить удар сверху вниз, как это было в данном случае.
+Восьмой присяжный производит сенсацию, достав точно такой же нож, какой был орудием убийства. Он купил его в том же районе, что доказывает неуникальность улики, на которую опиралось обвинение. Этот момент заставляет нескольких присяжных пересмотреть свою позицию.
+Четвертый присяжный, банковский служащий, долго держится за показания женщины, которая якобы видела убийство через окно проходящего поезда. Однако одиннадцатый присяжный, часовщик и иммигрант из Европы, замечает следы от очков на переносице четвертого и указывает, что свидетельница также носила очки. Никто не спит в очках, а значит, она не могла ясно видеть происходящее в критический момент.
+По мере обсуждения раскрываются личные мотивы некоторых присяжных. Третий номер проецирует на подсудимого свою боль от разрыва отношений с сыном, десятый руководствуется расовыми предрассудками, а седьмой просто хочет поскорее уйти. Шестой присяжный, маляр, и восьмой постепенно переубеждают их, апеллируя к справедливости и человечности.
+Напряжение в комнате нарастает из-за жары и усталости. Происходят острые словесные стычки, особенно между третьим и восьмым присяжными. Третий номер в ярости кричит, что убьет восьмого, но тут же понимает, как легко произносятся такие слова в гневе, что подрывает его уверенность в показаниях свидетелей.
+Одиннадцатый присяжный произносит страстную речь о ценности американской судебной системы, объясняя, что как иммигрант он особенно дорожит принципом презумпции невиновности. Его слова производят сильное впечатление на остальных.
+Постепенно один за другим присяжные меняют свое мнение. Даже четвертый номер, самый рациональный и осторожный, признает, что сомнения слишком серьезны для обвинительного вердикта. В конце концов только третий присяжный продолжает настаивать на виновности подсудимого.
+В эмоциональной сцене третий номер срывается и признается, что видит в подсудимом своего сына, который бросил его и с которым он не разговаривает уже два года. Он рвет фотографию сына и в слезах меняет свое решение на невиновен.
+Финальное голосование показывает единогласный вердикт о невиновности. Присяжные покидают здание суда, большинство молча. Восьмой и девятый номера, ставшие союзниками в борьбе за справедливость, обмениваются именами на ступенях суда и расходятся по своим делам. Камера показывает, как освобожденный юноша выходит из здания суда, получив второй шанс благодаря одному человеку, который не побоялся усомниться в очевидном и защитить принципы справедливого суда.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Властелин колец: Возвращение короля', 'Gandalf and Aragorn lead the World of Men against Sauron''s army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.', '2003-01-01', 1, '201 minutes', 'The Lord of the Rings: The Return of the King', 8.9, 'Фильм начинается с флешбэка, показывающего, как Смеагол и его друг Деагол рыбачат у реки. Деагол находит в воде Кольцо Всевластья, но Смеагол убивает его за драгоценность и постепенно превращается в Голлума под влиянием артефакта.
+В настоящем времени Гэндальф и Арагорн прибывают в Изенгард, где обнаруживают Мерри и Пиппина среди руин крепости Сарумана. Саруман появляется на вершине башни Ортханк вместе с Гримой Гнилоустом. Гэндальф изгоняет Сарумана из ордена волшебников и ломает его посох. В ответ Грима бросает палантир в волшебника, но промахивается. Разгневанный Саруман ударяет Гриму, который в ответ закалывает его кинжалом, после чего сам погибает от стрелы Леголаса.
+Пиппин тайно заглядывает в палантир и вступает в мысленный контакт с Сауроном, который принимает его за хранителя Кольца. Понимая опасность, Гэндальф спешно увозит хоббита в Минас-Тирит, столицу Гондора. Там они встречают наместника Денетора, который погружен в скорбь по старшему сыну Боромиру и холодно относится к младшему сыну Фарамиру.
+Арагорн, понимая, что должен принять свое предназначение короля Гондора, отправляется по Тропе Мертвых вместе с Леголасом и Гимли. В горах они встречают армию мертвых воинов, которые нарушили клятву верности предку Арагорна. Король-призрак соглашается помочь Арагорну в обмен на освобождение от проклятия.
+Тем временем Фродо и Сэм продолжают путь к Роковой горе под предводительством Голлума. У входа в Мордор их захватывает отряд гондорцев во главе с Фарамиром, но тот, в отличие от своего брата в книгах, поддается искушению Кольца и ведет хоббитов в Осгилиат. Во время нападения назгулов на крылатых тварях Фродо почти выдает себя, надев Кольцо, но Сэм останавливает его. Фарамир осознает опасность Кольца и отпускает хоббитов.
+Голлум понимает, что Фродо никогда добровольно не уничтожит Кольцо, и решает привести хоббитов к Шелоб, гигантской паучихе. В логове чудовища Фродо использует фиал Галадриэль, чтобы отогнать паука, но Голлум нападает на Сэма. Пока они дерутся, Шелоб жалит Фродо. Сэм побеждает паука, но думает, что его друг мертв. Он забирает Кольцо, но затем слышит, как орки говорят, что Фродо только парализован ядом.
+В Минас-Тирите Денетор теряет рассудок, узнав о ранении Фарамира. Он решает сжечь себя и сына заживо на погребальном костре. Пиппин зовет на помощь Гэндальфа, который спасает Фарамира, но Денетор, охваченный пламенем, бросается с вершины города.
+Огромная армия орков, троллей и южан под командованием Короля-чародея из Ангмара осаждает Минас-Тирит. Используя гигантские катапульты и башни, они штурмуют город. Король-чародей ранит Гэндальфа и ломает его посох, но появление рохирримов во главе с королем Теоденом переламывает ход битвы.
+Однако радость длится недолго - на поле боя прибывают мумакилы с южанами и огромный флот кораблей с подкреплением для Мордора. Когда кажется, что поражение неизбежно, с кораблей высаживаются не враги, а Арагорн с армией мертвых, Леголас и Гимли. Мертвые воины сокрушают орков, и битва оборачивается победой сил добра.
+Эовин и Мерри вместе убивают Короля-чародея после того, как тот смертельно ранит Теодена. Король Рохана умирает на руках племянницы, передав ей свое благословение. Арагорн освобождает армию мертвых от проклятия, выполнив свое обещание.
+Сэм проникает в Башню Кирит-Унгол и освобождает Фродо. Переодевшись в доспехи орков, они продолжают путь к Роковой горе через выжженные пустоши Мордора. Путешествие изматывает Фродо, и Сэм несет его на спине по склонам вулкана.
+В Чертогах Огня Фродо наконец поддается власти Кольца и надевает его, объявляя артефакт своим. Саурон немедленно обнаруживает его местонахождение и посылает назгулов к горе. Появляется Голлум, который вступает в схватку с невидимым Фродо и откусывает ему палец вместе с Кольцом. В экстазе Голлум падает в лаву вместе с Кольцом.
+Уничтожение Кольца приводит к краху Барад-дура и гибели Саурона. Орки в панике бегут с поля боя. Гэндальф на орлах спасает Фродо и Сэма с разрушающейся горы.
+В Минас-Тирите происходит коронация Арагорна как короля Элессара. Он женится на Арвен, и наступает эра мира. Хоббиты возвращаются в Хоббитанию, где обнаруживают, что Шир захвачен разбойниками под предводительством Шаркея, который оказывается Саруманом. После битвы у Тростянки и смерти Сарумана от руки Гримы хоббиты восстанавливают свою родину.
+Четыре года спустя Фродо, так и не оправившийся от ран, полученных от моргульского клинка и жала Шелоб, отправляется в Серые Гавани. Там его ждут Гэндальф, Элронд и Галадриэль, готовые отплыть в Бессмертные Земли. Фродо прощается с друзьями и покидает Средиземье навсегда.
+Фильм завершается эпилогом, где Сэм возвращается домой к жене Рози и детям, Мерри и Пиппин становятся лидерами своих кланов, а Сэм избирается мэром Хоббитании. Голос Фродо повествует о том, что не все раны заживают, и иногда нужно покинуть привычный мир, чтобы найти покой в другом.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Криминальное чтиво', 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.', '1994-01-01', 1, '154 minutes', 'Pulp Fiction', 8.9, 'Криминальное чтivo
+Фильм начинается в закусочной, где пара грабителей Тыква и Крольчиха обсуждают план ограбления ресторана, считая его менее опасным, чем банки или магазины. Они целуются и достают пистолеты, готовясь к действию.
+Винсент Вега и Джулс Уинфилд, киллеры мафиози Марселлуса Уоллеса, едут забрать загадочный чемоданчик у группы молодых людей, которые обманули их босса. По дороге они философски рассуждают о различиях между Америкой и Европой, обсуждая, как в Амстердаме называют четвертьфунтовый гамбургер и что McDonald''s там продает пиво.
+В квартире должников Джулс декламирует псалом из Библии перед тем, как он и Винсент расстреливают Брэда и двух его подельников. Они забирают чемоданчик, содержимое которого остается загадкой для зрителя - видно только золотистое свечение, исходящее изнутри. Четвертый человек, Марвин, остается жив, поскольку он работает на Уоллеса.
+Марселлус Уоллес, лысый темнокожий криминальный авторитет, поручает Винсенту присмотреть за своей женой Мией, пока сам будет в отъезде. Он предупреждает Винсента быть джентльменом и намекает на судьбу предыдущего телохранителя жены, которого сбросили с балкона за слишком близкие отношения с Мией.
+Винсент отводит Мию в ретро-ресторан Джека Рэббита Слима, стилизованный под 1950-е годы, где официанты одеты как знаменитости той эпохи. Мия рассказывает Винсенту о своей неудачной карьере актрисы и пилотном эпизоде телесериала о женщинах-киллершах "Лиса Форс". Они танцуют твист под песню Чака Берри и выигрывают конкурс.
+Дома у Мии она находит пакет с героином в кармане куртки Винсента и, приняв наркотик за кокаин, нюхает его и получает передозировку. В панике Винсент везет умирающую Мию к своему дилеру Лэнсу, который никогда раньше не делал уколов адреналина в сердце. После мучительных колебаний Винсент всаживает шприц Мии в грудь, и она приходит в сознание.
+Бутч Кулидж, стареющий боксер, получает от Уоллеса крупную сумму за то, чтобы проиграть бой в пятом раунде. Однако Бутч решает обмануть босса и поставить все деньги на свою победу. Он нокаутирует противника, убив его, и скрывается вместе с подругой Фабьен в мотеле.
+На следующее утро Бутч обнаруживает, что Фабьен забыла забрать из их квартиры золотые часы его отца - семейную реликвию, переданную ему умершим во Вьетнаме отцом через сослуживца. Несмотря на опасность, Бутч возвращается домой за часами и находит там автомат Винсента, который караулил его.
+Винсент выходит из туалета и получает очередь из собственного оружия. Бутч забирает часы и уезжает, но на светофоре сталкивается с самим Марселлусом Уоллесом. Начинается погоня, которая заканчивается автомобильной аварией. Оба мужчины, раненые и дезориентированные, оказываются в ломбарде.
+Владелец магазина Мэйнард и его партнер Зед, садисты-извращенцы, связывают Бутча и Марселлуса и уносят босса в подвал для изнасилования. Бутч освобождается и собирается бежать, но совесть заставляет его вернуться спасать врага. Он выбирает катану среди оружия в ломбарде и убивает Мэйнарда.
+Марселлус расстреливает Зеда из дробовика и обещает подвергнуть его средневековым пыткам. Он прощает Бутча при условии, что тот навсегда покинет Лос-Анджелес и никому не расскажет о случившемся. Бутч соглашается и уезжает с Фабьен на мотоцикле Зеда.
+Возвращаясь к хронологически более раннему эпизоду, Винсент и Джулс покидают квартиру с Марвином и чемоданчиком. В машине у Винсента случайно выстреливает пистолет, и он убивает Марвина. Забрызганные кровью и мозгами, они вынуждены обратиться за помощью к другу Джулса Джимми в Толука-Лейк.
+Джимми паникует, боясь, что жена Бонни застанет окровавленную машину у него во дворе. Марселлус присылает Волка, элегантного решателя проблем, который организует уборку. Винсент и Джулс переодеваются в футболки и шорты Джимми и избавляются от улик.
+В той же закусочной, где начинался фильм, Винсент и Джулс завтракают и обсуждают план Джулса уйти из криминального бизнеса после чудесного спасения во время перестрелки в квартире - четвертый стрелок выпустил в них обойму в упор, но все пули прошли мимо. Джулс видит в этом знак свыше и решает "ходить по земле", как странствующий рыцарь из телесериалов.
+Тыква и Крольчиха начинают ограбление ресторана. Когда Тыква требует чемоданчик, Джулс спокойно достает пистолет и обезоруживает грабителя. Он читает псалом Иезекииля, но интерпретирует его по-новому - не как угрозу перед убийством, а как попытку стать праведником, который защищает слабых и направляет заблудших.
+Джулс позволяет грабителям уйти, дав Тыкве полторы тысячи долларов из своего кошелька. Винсент не понимает решения партнера, но уважает его выбор. Они покидают ресторан, и Джулс идет навстречу своей новой жизни, оставив позади мир насилия и криминала. Фильм заканчивается тем же кадром закусочной, что и начинался, замыкая повествовательный круг этой многослойной истории о судьбе, искуплении и случайностях, которые меняют человеческие жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Список Шиндлера', 'In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.', '1993-01-01', 1, '195 minutes', 'Schindler''s List', 8.9, 'В 1939 году немецкий промышленник и член нацистской партии Оскар Шиндлер прибывает в оккупированный Краков с намерением нажиться на военных контрактах. Харизматичный и амбициозный бизнесмен, он налаживает связи с высокопоставленными офицерами СС, щедро тратя деньги на взятки, дорогие подарки и роскошные вечеринки.
+Шиндлер покупает обанкротившуюся эмалевую фабрику и планирует производить кухонную посуду для немецкой армии. Поскольку у него нет достаточного капитала, он привлекает еврейских инвесторов из краковского гетто, которые обменивают свои драгоценности и сбережения на долю в предприятии. Управляющим фабрики он назначает Ицхака Штерна, талантливого еврейского бухгалтера, который становится его правой рукой.
+Штерн предлагает Шиндлеру нанимать еврейских рабочих вместо поляков, поскольку их труд обходится дешевле. Он также тайно включает в списки работников интеллигенцию, раввинов и детей, выдавая их за квалифицированных специалистов, чтобы спасти им жизнь. Шиндлер первоначально интересуется только прибылью и смотрит на эти манипуляции сквозь пальцы.
+В 1942 году в Краков прибывает обер-штурмфюрер СС Амон Гёт для руководства строительством концентрационного лагеря Плашов и ликвидации краковского гетто. Гёт - садист и психопат, который убивает заключенных по малейшему поводу или просто для развлечения. Он стреляет в людей из винтовки с балкона своей виллы, построенной с видом на лагерь.
+Во время жестокой ликвидации гетто немцы убивают тысячи евреев на улицах, а остальных отправляют в Плашов или в поезда смерти в Освенцим. Шиндлер наблюдает за этой бойней с холма и потрясен увиденным. Особенно его поражает образ маленькой девочки в красном пальто, которая одиноко бродит среди хаоса и насилия - единственное цветное пятно в черно-белом фильме.
+После ликвидации гетто рабочие Шиндлера переводятся в Плашов, но продолжают работать на его фабрике. Шиндлер поддерживает дружеские отношения с Гётом, регулярно играя с ним в карты и выпивая, но постепенно осознает масштабы происходящего геноцида. Он начинает использовать взятки и личное влияние для защиты своих работников.
+Елена Хирш, молодая еврейская женщина, становится служанкой в вилле Гёта. Комендант испытывает к ней противоречивые чувства - физическое влечение смешивается с расовой ненавистью. Он мучает её психологически, то приближаясь, то угрожая убийством, не решаясь признать свои чувства к "недочеловеку".
+Шиндлер постепенно тратит все свое состояние на взятки, чтобы защитить рабочих от произвола охранников. Он покупает у Гёта разрешения на дополнительные пайки, медицинскую помощь и относительно гуманные условия труда. Когда СС арестовывает его по подозрению в нарушении расовых законов и коррупции, Шиндлер вынужден использовать все свое влияние для освобождения.
+В 1944 году, когда советские войска приближаются к Кракову, Шиндлер получает разрешение перевести свою фабрику в Судетскую область на территории его родной Моравии. Он составляет список из одиннадцати сотен евреев, которых хочет взять с собой как "незаменимых работников". Каждое имя в этом списке означает спасенную жизнь.
+Штерн помогает Шиндлеру составить список, включая в него целые семьи. Шиндлер подкупает офицеров СС, чтобы получить разрешение на транспортировку своих рабочих. Женщин по ошибке отправляют в Освенцим, но Шиндлер лично едет в лагерь смерти и выкупает их, рискуя собственной жизнью.
+В Брюнлице Шиндлер превращает свою фабрику в убежище. Он тратит миллионы рейхсмарок на покупку продовольствия и медикаментов на черном рынке, не производя ни одного годного снаряда за семь месяцев работы. Когда прибывает вагон с замерзающими евреями из эвакуированного лагеря Голешов, он организует их лечение и реабилитацию.
+В мае 1945 года Германия капитулирует. Шиндлер собирает своих рабочих и объявляет об окончании войны. Он просит их не мстить охранникам и сохранить человечность. Рабочие дарят ему золотое кольцо, сделанное из коронки одного из заключенных, с выгравированной талмудической надписью о том, что спасший одну жизнь спасает весь мир.
+Шиндлер расплакывается, сожалея, что не смог спасти больше людей. Он винит себя в том, что тратил деньги на роскошь вместо того, чтобы выкупить еще несколько жизней. Рабочие утешают его, понимая, что он отдал все ради их спасения. С приближением советских войск Шиндлер и его жена вынуждены бежать на запад.
+Советские солдаты освобождают фабрику и сообщают евреям, что они свободны, но предупреждают, что в радиусе нескольких километров нет других живых людей. Более тысячи ста евреев начинают долгий путь домой, но многие обнаруживают, что их дома заняты, а родственники мертвы.
+Фильм завершается современными кадрами, где выжившие работники Шиндлера и их потомки возлагают камни на могилу Оскара Шиндлера в Иерусалиме согласно еврейской традиции. Титры сообщают, что более шести тысяч потомков евреев Шиндлера живут сегодня по всему миру, в то время как в Польше осталось менее четырех тысяч евреев из довоенных трех с половиной миллионов. Последним к могиле подходит сам режиссер Стивен Спилберг, возлагая красную розу - единственное цветное пятно в этой сцене, перекликающееся с образом девочки в красном пальто.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Начало', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.', '2010-01-01', 1, '148 minutes', 'Inception', 8.8, 'Дом Кобб - профессиональный вор, специализирующийся на извлечении секретов из подсознания людей во время сна. Он использует технологию совместных сновидений, которая позволяет проникать в сны других людей и красть их самые сокровенные идеи. Кобб работает вместе с Артуром, своим партнером и специалистом по исследованию целей, и они выполняют заказы для корпораций, желающих получить коммерческие секреты конкурентов.
+Фильм начинается с неудачной попытки извлечения информации из сознания Сайто, могущественного японского бизнесмена. Операция проваливается из-за вмешательства проекции Мэл, покойной жены Кобба, которая постоянно появляется в его снах и саботирует миссии. Сайто понимает, что находится во сне, и предлагает Коббу сделку: вместо извлечения информации он должен выполнить противоположную задачу - внедрение идеи в подсознание человека, процесс, называемый "инсепшн".
+Целью является Роберт Майкл Фишер, наследник огромной энергетической империи. Его отец, Морис Фишер, находится при смерти, и Сайто хочет, чтобы Роберт принял решение о распаде корпорации отца, что позволит Сайто доминировать на энергетическом рынке. В обмен на выполнение этой задачи Сайто обещает использовать свое влияние, чтобы снять с Кобба обвинения в убийстве жены и позволить ему вернуться домой к детям в Лос-Анджелес.
+Кобб принимает предложение и собирает команду для выполнения сложнейшей операции. Он нанимает Ариадну, талантливую студентку архитектуры, которая будет создавать лабиринты сновидений. Ариадна быстро обучается искусству построения снов и обнаруживает проблему Кобба с проекциями его жены. Также в команду входят Имс, мошенник, способный изменять свою внешность в снах и имитировать других людей, и Юсуф, химик, создающий мощные седативные препараты для глубокого сна.
+План включает создание трехуровневой структуры сновидений. На первом уровне команда находится в самолете, где спящий Фишер будет похищен в сне-лимузине под дождем. На втором уровне действие происходит в роскошном отеле, где они планируют получить информацию о психологических травмах Фишера, связанных с отцом. На третьем, самом глубоком уровне, в заснеженной горной крепости они должны добраться до сейфа в подсознании Фишера и поместить туда идею о самостоятельности и необходимости пойти против воли отца.
+Операция начинается в самолете, где Фишеру дают снотворное. На первом уровне сна команда сталкивается с неожиданно высоким уровнем военной подготовки защитных механизмов Фишера, что говорит о том, что он прошел обучение защите от извлечения снов. Во время погони и перестрелки в городе Юсуф должен управлять фургоном, падение которого будет сигналом для пробуждения с других уровней.
+На втором уровне, в отеле, Артур сражается с вооруженными проекциями в условиях невесомости, созданной падением фургона на первом уровне. Имс, притворяясь дядей Фишера Питером Браунингом, манипулирует Фишером, убеждая его, что его крестный отец хочет, чтобы он стал самостоятельным, а не просто копией своего отца.
+На третьем уровне, в заснеженной крепости, команда штурмует укрепленный комплекс. Сайто получает смертельное ранение, но поскольку они находятся под действием мощного седатива, его смерть во сне отправит его в лимб - неопределенное состояние подсознания. Кобб и Ариадна проникают в сейф Фишера, где обнаруживают умирающего Мориса Фишера. Кобб, притворившись проекцией отца, говорит Фишеру, что гордится им и что тот должен создать что-то свое, а не просто следовать по стопам отца.
+Тем временем раскрывается трагическая предыстория Кобба и Мэл. Они вместе исследовали глубины подсознания и провели десятилетия в лимбе, создав там целый мир. Чтобы вернуться к реальности, Кобб внедрил в сознание Мэл идею о том, что их мир не реален. Однако эта идея укоренилась так глубоко, что даже после возвращения в реальность Мэл продолжала верить, что все вокруг - сон. Она покончила с собой, прыгнув с балкона отеля, предварительно создав ложные улики, чтобы обвинить Кобба в ее убийстве и заставить его последовать за ней.
+Когда Сайто умирает и попадает в лимб, Кобб вынужден спуститься туда, чтобы найти его и напомнить ему об их соглашении. В лимбе Кобб встречает престарелого Сайто, который провел там десятилетия и почти забыл реальность. Кобб убеждает его вспомнить их договор, и они вместе возвращаются к реальности.
+Операция инсепшн оказывается успешной. Фишер просыпается с твердым убеждением, что должен распустить империю отца и создать что-то свое. Команда просыпается в самолете, и Сайто выполняет свою часть сделки, сделав телефонный звонок для снятия обвинений с Кобба.
+В финальной сцене Кобб возвращается домой в Лос-Анджелес и воссоединяется со своими детьми Филиппой и Джеймсом. Он крутит свой тотем - волчок, который помогает отличить сон от реальности. В снах волчок крутится бесконечно, а в реальности останавливается. Камера показывает крутящийся волчок, но фильм заканчивается до того, как становится ясно, остановился он или продолжает крутиться, оставляя зрителя в неопределенности относительно того, находится ли Кобб в реальности или все еще во сне.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бойцовский клуб', 'An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.', '1999-01-01', 1, '139 minutes', 'Fight Club', 8.8, 'Фильм начинается с безымянного рассказчика, офисного работника крупной автомобильной компании, страдающего от хронической бессонницы и экзистенциального кризиса. Его жизнь представляет собой бесконечный цикл потребления - он одержим покупкой мебели из каталога IKEA и других товаров, пытаясь заполнить пустоту своего существования. Работа связана с расследованием автомобильных аварий и принятием решений о целесообразности отзыва дефектных автомобилей на основе циничных математических расчетов стоимости человеческой жизни.
+В поисках облегчения от бессонницы рассказчик начинает посещать группы поддержки для людей с различными заболеваниями, притворяясь больным. Особенно его трогают встречи для мужчин с раком яичек, где он находит эмоциональную разрядку в объятиях Роберта Полсена, бывшего бодибилдера с увеличенной грудью из-за гормональной терапии. Эти встречи помогают ему плакать и наконец засыпать, но идиллия разрушается с появлением Марлы Сингер, женщины, которая также притворяется больной и посещает те же группы поддержки.
+Во время командировки рассказчик знакомится в самолете с Тайлером Дерденом, харизматичным мыловаром, который производит дорогое мыло из человеческого жира, украденного из клиник пластической хирургии. Тайлер излагает философию антипотребительства и критикует современное общество. Когда рассказчик возвращается домой, он обнаруживает, что его квартира взорвана газом. Не имея другого выхода, он звонит Тайлеру, и они встречаются в баре.
+После выпивки Тайлер предлагает рассказчику ударить его, что приводит к импровизированной драке на парковке. Оба мужчины испытывают странное удовлетворение от физической боли и насилия. Рассказчик переезжает в разрушающийся дом Тайлера, и они начинают регулярно драться, привлекая внимание других мужчин. Постепенно формируется подпольный бойцовский клуб с простыми правилами: не говорить о бойцовском клубе, драться без оружия, один на один, и не продолжать драку, если противник сдался.
+Параллельно развиваются сложные отношения между рассказчиком, Тайлером и Марлой. Тайлер начинает интимную связь с Марлой, что вызывает ревность и раздражение у рассказчика. Марла представляет собой такую же потерянную душу, борющуюся с депрессией и суицидальными мыслями. Бойцовские клубы распространяются по всей стране, и Тайлер начинает превращать их в военизированную организацию под названием "Проект Разгром".
+Проект Разгром представляет собой анархистскую террористическую организацию, направленную на разрушение современной потребительской цивилизации. Члены организации, называемые "космическими обезьянами", выполняют акты вандализма и саботажа против корпораций и символов капитализма. Тайлер планирует масштабную операцию по взрыву штаб-квартир крупнейших кредитных компаний, чтобы обнулить долговые записи и обрушить финансовую систему.
+По мере развития событий рассказчик начинает осознавать, что теряет контроль над ситуацией и что Тайлер действует все более радикально. Он пытается остановить операцию, но обнаруживает, что члены Проекта Разгром воспринимают его как врага и защищают Тайлера. Рассказчик путешествует по стране, пытаясь закрыть бойцовские клубы, но везде его встречают как самого Тайлера Дердена.
+Кульминация наступает, когда рассказчик понимает шокирующую истину: Тайлер Дерден - это его альтернативная личность, созданная его расколотым сознанием. Все время, когда рассказчик думал, что спит или отсутствует, на самом деле действовал Тайлер. Именно рассказчик взорвал свою квартиру, основал бойцовские клубы, создал Проект Разгром и поддерживал отношения с Марлой, не осознавая этого.
+Это открытие объясняет многие странности в поведении окружающих и то, почему Марла странно реагировала на рассказчика. Тайлер был физическим воплощением всего того, чем рассказчик хотел быть: уверенным, харизматичным, свободным от социальных условностей. Однако эта альтернативная личность вышла из-под контроля и угрожает не только ему самому, но и обществу в целом.
+В финальной сцене, находясь на вершине небоскреба, где заложены взрывчатки, рассказчик сражается с Тайлером за контроль над своим сознанием. Марла приводят члены Проекта Разгром, и она становится свидетелем внутренней борьбы рассказчика. Понимая, что единственный способ уничтожить Тайлера - это уничтожить себя, но не желая умирать, рассказчик стреляет себе в щеку, символически "убивая" альтернативную личность.
+Тайлер исчезает, а рассказчик выживает, хотя и получает серьезное ранение. Марла и рассказчик смотрят в окно, как взрываются и рушатся небоскребы кредитных компаний, воплощая в жизнь план Тайлера по обрушению финансовой системы. Фильм заканчивается тем, что рассказчик берет Марлу за руку и говорит ей, что все будет хорошо, на фоне разрушающегося городского пейзажа, символизирующего крах потребительского общества и возможность нового начала.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Властелин колец: Братство кольца', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', '2001-01-01', 1, '178 minutes', 'The Lord of the Rings: The Fellowship of the Ring', 8.8, 'В Средиземье, в мирной области под названием Шир, живет хоббит по имени Фродо Бэггинс со своим дядей Бильбо. Хоббиты - маленький народец, ведущий спокойную жизнь в своих норах-домах и не интересующийся внешним миром. В день своего сто одиннадцатого дня рождения Бильбо устраивает грандиозную вечеринку, после которой внезапно исчезает с помощью волшебного кольца, делающего его невидимым. Он оставляет все свое имущество, включая кольцо, племяннику Фродо.
+Семнадцать лет спустя к Фродо приходит волшебник Гэндальф Серый и рассказывает ужасающую правду о кольце. Оказывается, это не простое волшебное кольцо, а Единое Кольцо Всевластья, созданное темным властелином Сауроном в жерле Роковой Горы в древние времена. В кольцо была заключена большая часть силы Саурона, и с его помощью он контролировал другие кольца власти, розданные различным народам. Когда кольцо было утрачено в битве, Саурон потерял физическую форму, но теперь он вернулся в своей крепости Барад-дур в земле Мордор и отчаянно ищет свое кольцо, чтобы завершить завоевание Средиземья.
+Гэндальф объясняет, что кольцо развращает своего носителя, продлевая жизнь, но постепенно разрушая душу. Единственный способ уничтожить кольцо и окончательно победить Саурона - бросить его в огонь Роковой Горы, где оно было создано. Фродо понимает, что должен покинуть Шир, поскольку слуги Саурона, черные всадники или назгулы, уже направляются туда в поисках кольца.
+Фродо отправляется в путь со своим верным садовником Сэмом Гэмджи и вскоре к ним присоединяются два других хоббита - Мерри Брендибак и Пиппин Тук. Четверка направляется к деревне Пригорье, где должна встретиться с Гэндальфом, но волшебник не появляется. В таверне "Гарцующий пони" они встречают таинственного следопыта по имени Бродяжник, который предлагает свою защиту и ведет их через дикие земли.
+Бродяжник оказывается Арагорном, потомком древних королей людей, который много лет скрывает свое происхождение. Он защищает хоббитов от атаки назгулов на холме Заверти, но Фродо получает ранение от моргульского клинка - оружия, которое превратило бы его в призрака, если бы не своевременная помощь. Арагорн ведет группу к эльфийскому поселению Ривенделл, где эльфийская владычица Арвен спасает Фродо, доставив его к своему отцу, лорду Элронду.
+В Ривенделле Фродо воссоединяется с Гэндальфом, который рассказывает о своем пленении. Оказывается, Саруман Белый, глава ордена волшебников и бывший союзник, перешел на сторону зла и создает собственную армию орков для завоевания Средиземья. Гэндальф был заточен Саруманом в башне Ортханк, но сбежал с помощью гигантского орла.
+Элронд созывает совет представителей всех свободных народов Средиземья - эльфов, людей, гномов и хоббитов - чтобы решить судьбу кольца. На совете присутствуют Боромир из Путеводного камня, сын правителя Гондора, Леголас из лесных эльфов, гном Гимли, сын Глоина, и другие. Боромир предлагает использовать силу кольца против Саурона, но Гэндальф и Элронд объясняют, что кольцо неизбежно развратит любого, кто попытается его использовать, каким бы благородным ни были его намерения.
+Единственное решение - уничтожить кольцо, но путь в Мордор крайне опасен, и маловероятно, что кто-то сможет выполнить эту миссию. Неожиданно Фродо добровольно берет на себя эту задачу, понимая, что как хоббит он менее подвержен влиянию кольца, чем представители других народов. Формируется Братство Кольца из девяти спутников: четыре хоббита, Гэндальф, Арагорн, Боромир, Леголас и Гимли.
+Братство пытается пройти через заснеженный перевал Красный Рог, но Саруман насылает на них магическую бурю. Вынужденные искать другой путь, они входят в древние гномьи копи Мории, некогда великое подземное королевство. Там они обнаруживают, что все гномы мертвы, убитые орками и другими темными созданиями. В гробнице Балина, друга Бильбо, они находят записи о последних днях гномьей колонии.
+В Мории Братство подвергается нападению огромной армии орков и пещерных троллей. Во время сражения в Зале Мазарбул они с трудом отбивают атаку, но затем сталкиваются с еще более страшной угрозой - Балрогом, древним демоном огня и тени, который пробудился в глубинах копей. Гэндальф остается на мосту Казад-дума, чтобы задержать Балрога и дать остальным возможность спастись. Он разрушает мост своим посохом, но падающий Балрог хватает волшебника своим хлыстом и увлекает в бездну.
+Потрясенное Братство находит убежище в эльфийском лесу Лотлориэн, которым правят леди Галадриэль и лорд Келеборн. Галадриэль обладает одним из трех эльфийских колец власти и способностью видеть будущее. Она показывает Фродо и Сэму видения в своем волшебном зеркале, включая разрушение Шира, если их миссия провалится. Галадриэль также подвергается испытанию, когда Фродо предлагает ей Единое Кольцо. Она отказывается, понимая, что даже с благими намерениями кольцо превратит ее в темную королеву.
+Покидая Лотлориэн, Братство получает эльфийские плащи-невидимки и лодки для путешествия по реке Андуин. Однако единство группы начинает разрушаться под давлением. Боромир все сильнее одержим желанием получить кольцо для защиты своего города Минас Тирит, который находится под постоянной угрозой атак Мордора. Фродо чувствует, как кольцо становится все тяжелее физически и морально, и начинает понимать, что его присутствие подвергает опасности друзей.
+Достигнув водопадов Рарос, Братство останавливается на отдых. Боромир наконец поддается искушению и пытается отнять кольцо у Фродо, утверждая, что использует его для защиты своего народа. Фродо надевает кольцо и становится невидимым, спасаясь от Боромира. Находясь в невидимом мире, он видит огненный Глаз Саурона, который почти обнаруживает его местонахождение.
+Понимая, что кольцо развращает даже самых благородных людей и что его присутствие обрекает друзей на гибель, Фродо принимает решение продолжить путь в одиночку. Он тайно переправляется на другой берег реки. Тем временем большой отряд урук-хай, элитных орков Сарумана, нападает на остатки Братства. Боромир героически защищает Мерри и Пиппина, но получает множественные ранения от стрел и умирает на руках у Арагорна, в последний момент признав свою ошибку и попросив прощения.
+Арагорн, Леголас и Гимли решают преследовать орков, похитивших Мерри и Пиппина, вместо того чтобы следовать за Фродо. Сэм понимает намерения Фродо и догоняет его, когда тот уже переправляется через реку. Несмотря на то, что Сэм не умеет плавать и чуть не тонет, его преданность трогает Фродо, и они вместе отправляются в сторону Мордора. Фильм заканчивается разделением Братства: Фродо и Сэм идут к Роковой Горе, Мерри и Пиппин захвачены орками, а Арагорн, Леголас и Гимли начинают их преследование, поклявшись не оставлять друзей в беде.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Форрест Гамп', 'The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.', '1994-01-01', 1, '142 minutes', 'Forrest Gump', 8.8, 'Форрест Гамп сидит на скамейке на автобусной остановке в Саванне, штат Джорджия, и рассказывает свою жизненную историю случайным прохожим, ожидающим автобус. Он начинает с детства в вымышленном городе Гринбоу, штат Алабама, где жил со своей матерью миссис Гамп в большом доме, который она превратила в пансион для постояльцев.
+Форрест родился с искривлением позвоночника и низким коэффициентом интеллекта, из-за чего вынужден носить металлические скобы на ногах и посещать специальную школу. Его мать, сильная и решительная женщина, борется за то, чтобы сын получил нормальное образование в обычной школе. Она даже вступает в интимную связь с директором школы, чтобы обеспечить Форресту место в классе. Мать постоянно говорит Форресту, что он не хуже других детей, и учит его своей жизненной философии через простые поговорки.
+В школьном автобусе Форрест знакомится с Дженни Каррен, единственной девочкой, которая позволяет ему сесть рядом с собой. Дженни становится его первой и единственной любовью на всю жизнь. Она живет в бедной семье с отцом-алкоголиком, который подвергает ее физическому и сексуальному насилию. Дженни мечтает стать знаменитой певицей и вырваться из своей тяжелой жизни.
+Однажды, убегая от школьных хулиганов, которые бросают в него камни, Форрест случайно ломает свои ортопедические скобы и обнаруживает, что может очень быстро бегать. Эта способность становится его спасением от многих неприятностей и открывает двери в новую жизнь. В старших классах тренер по американскому футболу замечает его скорость и приглашает в школьную команду, где Форрест становится звездой благодаря своей способности пробегать через всю защиту противника.
+Футбольные успехи обеспечивают Форресту стипендию в Университете Алабамы, где он продолжает играть за университетскую команду и становится национальной знаменитостью. Во время учебы он становится свидетелем исторического момента расовой интеграции, когда помогает афроамериканской студентке пройти через толпу протестующих к зданию университета. После окончания университета Форрест поступает в армию, где проходит базовую подготовку и знакомится с Бенджамином Буфордом Блу по прозвищу Бубба.
+Бубба происходит из семьи рыбаков из Луизианы и мечтает открыть собственный бизнес по ловле креветок после службы. Он постоянно рассказывает Форресту о различных способах приготовления креветок и убеждает его стать партнером в будущем предприятии. Форрест и Бубба становятся лучшими друзьями и вместе отправляются во Вьетнам в составе пехотного подразделения под командованием лейтенанта Дэна Тейлора.
+Лейтенант Дэн - профессиональный военный из семьи потомственных офицеров, где каждое поколение погибало в войнах, служа своей стране. Он гордится семейной традицией и считает, что его судьба - умереть героической смертью на поле боя. Во Вьетнаме подразделение попадает в засаду, и большинство солдат погибает. Бубба получает смертельное ранение и умирает на руках у Форреста, но не раньше, чем тот обещает реализовать их общую мечту о креветочном бизнесе.
+Форрест спасает несколько раненых товарищей, включая лейтенанта Дэна, но тот теряет обе ноги и впадает в глубокую депрессию, считая, что Форрест лишил его героической смерти и обрек на жизнь калеки. За свой героизм Форрест получает Медаль Почета, которую ему вручает президент Линдон Джонсон в Белом доме. После церемонии Форрест случайно встречает Дженни на антивоенном митинге возле монумента Вашингтона.
+Дженни к этому времени увлеклась движением хиппи, употребляет наркотики и ведет беспорядочную жизнь. Она живет с жестоким парнем-активистом, который бьет ее. Форрест и Дженни проводят ночь вместе, но утром она исчезает, оставив его снова одного. Расстроенный Форрест возвращается в армию, где начинает играть в пинг-понг и становится чемпионом, что приводит его в составе американской команды в Китай как часть дипломатической миссии "пинг-понговой дипломатии".
+После демобилизации Форрест выполняет свое обещание Буббе и покупает креветочный катер, назвав его "Дженни" в честь любимой девушки. Лейтенант Дэн, все еще озлобленный и пьющий, с сарказмом обещает стать первым помощником Форреста, если тот действительно станет капитаном креветочного судна. К удивлению Дэна, Форрест действительно покупает лодку, и бывший офицер, несмотря на свой цинизм, присоединяется к предприятию.
+Поначалу бизнес идет плохо, они почти не ловят креветок, и Дэн продолжает пить и злиться на судьбу. Однако ураган Кармен уничтожает всех конкурентов в регионе, оставив лодку Форреста единственной уцелевшей. Это приводит к невероятному успеху компании "Бубба Гамп", которая становится крупнейшим поставщиком креветок в регионе. Дэн инвестирует заработанные деньги в акции "какой-то фруктовой компании" - Apple Computer, что делает Форреста мультимиллионером.
+Обретя финансовую независимость, Форрест возвращается домой, где ухаживает за умирающей матерью. Она учит его последним жизненным урокам о том, что смерть - это часть жизни, и что важно принимать то, что нельзя изменить. После ее смерти Форрест чувствует себя потерянным и начинает бегать просто так, сначала до конца улицы, потом до конца города, штата, и наконец через всю страну от океана до океана.
+Его бег продолжается три года, два месяца, четырнадцать дней и шестнадцать часов, превращаясь в медиа-сенсацию. За ним следуют журналисты, поклонники и люди, ищущие смысл жизни. Некоторые из его случайных высказываний становятся популярными лозунгами, включая слоган для футболок с улыбающимся лицом и фразу о дерьме случается. Однажды, посреди дороги в Аризоне, Форрест внезапно останавливается и объявляет, что устал и хочет домой.
+Вернувшись в Алабаму, Форрест получает письмо от Дженни, которая приглашает его в гости. Он находит ее живущей в маленькой квартире в Саванне, где она работает официанткой. Дженни серьезно больна неизвестной болезнью, которую врачи не могут вылечить - это подразумевает СПИД, хотя прямо не называется. Она знакомит Форреста с маленьким мальчиком по имени Форрест младший, его сыном.
+Форрест потрясен открытием, что у него есть сын, и беспокоится о том, унаследовал ли мальчик его низкий интеллект. Дженни заверяет его, что ребенок очень умный. Она рассказывает Форресту о своей трудной жизни, наполненной злоупотреблениями, наркотиками и деструктивными отношениями, и объясняет, почему всегда убегала от него - она считала, что не заслуживает его любви и доброты.
+Форрест предлагает Дженни выйти за него замуж, и после некоторых колебаний она соглашается. Они проводят идиллическое время в доме детства Форреста с маленьким Форрестом, создавая семью, о которой Форрест всегда мечтал. Лейтенант Дэн приезжает на свадьбу с новыми протезами ног и азиатской невестой, полностью преобразившись из озлобленного инвалида в счастливого человека, нашедшего мир с собой.
+Счастье длится недолго. Болезнь Дженни прогрессирует, и она умирает, оставив Форреста растить сына одного. Форрест хоронит ее под деревом, где они играли в детстве, и сносит дом ее отца, символически уничтожая источник ее детских травм. Он становится любящим и заботливым отцом, провожая сына в школу в том же автобусе, где когда-то познакомился с Дженни.
+Рассказав свою историю, Форрест обнаруживает, что женщина, которая слушала его большую часть времени, является медсестрой, работающей в том же районе, куда он направляется навестить Дженни младшего в школе. Она сообщает ему, что он находится всего в нескольких кварталах от пункта назначения. Форрест встречает автобус с сыном, и они вместе идут домой. Фильм заканчивается сценой белого пера, которое поднимается ветром и уносится в небо, символизируя непредсказуемость жизни и идею о том, что мы все плывем по течению судьбы, как перо на ветру.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Хороший, плохой, злой', 'A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.', '1966-01-01', 1, '161 minutes', 'Il buono, il brutto, il cattivo', 8.8, 'Действие фильма разворачивается во время Гражданской войны в США. История рассказывает о трех различных персонажах, каждый из которых преследует собственные цели в поисках золота Конфедерации стоимостью двести тысяч долларов.
+Блонди, известный как Хороший, работает вместе с мексиканским бандитом Туко Рамиресом, прозванным Уродливым. Их схема проста: Блонди сдает Туко властям за вознаграждение, а затем освобождает его во время казни, после чего они делят деньги. Однако Блонди устает от этого партнерства и бросает Туко в пустыне без лошади и воды.
+Туко выживает и жаждет мести. Он находит Блонди и заставляет его пройти через пустыню пешком под палящим солнцем. Когда Блонди почти умирает от жажды, они натыкаются на повозку с умирающими солдатами Конфедерации. Один из них, Билл Карсон, перед смертью рассказывает Туко о зарытом кладе золота на кладбище Сад Грустных Холмов, но успевает назвать только место захоронения. Блонди же, притворяясь мертвым, слышит имя на могильном камне, где спрятано золото.
+Теперь каждый из них знает только половину тайны, и они вынуждены сотрудничать. Тем временем появляется третий персонаж - Ангел Глаз, беспощадный наемный убийца, известный как Плохой. Он также узнает о золоте и начинает охоту за Блонди и Туко.
+Ангел Глаз захватывает обоих в лагере военнопленных, где он служит сержантом под вымышленным именем. Он пытает Туко, чтобы выяснить местонахождение кладбища, но Блонди вмешивается и предлагает сделку: он разделит информацию о могиле только если они втроем поедут к кладбищу.
+По пути к Сад Грустных Холмов герои попадают в эпицентр кровопролитной битвы между войсками Севера и Юга за стратегически важный мост. Блонди и Туко понимают, что пока идет сражение, они не смогут добраться до кладбища. Блонди принимает решение взорвать мост, чтобы положить конец бессмысленному кровопролитию и освободить путь.
+Наконец добравшись до кладбища, троица обнаруживает, что оно огромно и содержит тысячи могил. Блонди предлагает каждому из них написать имя на камне на куске дерева, а затем они разойдутся в разные стороны и будут искать нужную могилу. Кто найдет первым - забирает все золото.
+Однако это ловушка. Блонди заранее разгрузил все пистолеты Туко и оставил его с пустым оружием. Наступает момент знаменитого трехстороннего поединка на кладбище под музыку Эннио Морриконе. В напряженной дуэли Ангел Глаз погибает от руки Блонди, а Туко остается с разряженным пистолетом.
+Блонди раскапывает могилу и находит золото. Он делится частью сокровища с Туко, но перед этим заставляет его надеть петлю на шею и встать на неустойчивый крест надгробия. Блонди уезжает, оставив Туко балансировать на кресте, но на достаточном расстоянии стреляет в веревку, освобождая своего бывшего партнера. Туко падает, но остается жив и со своей долей золота, а Блонди исчезает в закатном солнце пустыни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Властелин колец: Две крепости', 'While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron''s new ally, Saruman, and his hordes of Isengard.', '2002-01-01', 1, '179 minutes', 'The Lord of the Rings: The Two Towers', 8.7, 'Фильм начинается с флэшбека, показывающего битву Гэндальфа с Балрогом в Мории. После падения в бездну они продолжают сражаться, поднимаясь по бесконечной лестнице до самой вершины горы Зиракзигил, где Гэндальф окончательно побеждает демона, но сам погибает от полученных ран.
+Тем временем Арагорн, Леголас и Гимли преследуют урук-хаев, которые захватили Мерри и Пиппина. Следуя по следам через Рохан, они встречают всадников под предводительством Эомера, племянника короля Теодена. Эомер сообщает, что его отряд уничтожил группу орков прошлой ночью, но не видел хоббитов. На месте битвы герои находят только сожженные тела орков и пояс хоббита, предполагая худшее.
+Однако Мерри и Пиппин сумели сбежать во время нападения всадников и укрылись в лесу Фангорн, где встречают древнего энта по имени Древобрад. Энты долго обсуждают судьбу хоббитов на своем совете, но в итоге решают не вмешиваться в войну. Пиппин хитростью заставляет Древоброда подойти к южной границе леса, где тот видит масштабные разрушения, причиненные Саруманом. Разгневанные энты решают атаковать Изенгард.
+Арагорн, Леголас и Гимли входят в лес Фангорн в поисках хоббитов и встречают загадочного белого мага, которого сначала принимают за Сарумана. Однако это оказывается воскресший Гэндальф, теперь ставший Гэндальфом Белым. Он рассказывает о своей смерти и возвращении, объясняя, что его миссия еще не завершена.
+В Рохане король Теоден находится под влиянием злого советника Гримы Червеуста, который тайно служит Саруману. Теоден превратился в немощного старика, неспособного управлять своим королевством. Гэндальф со спутниками прибывает в Эдорас и освобождает короля от чар Сарумана. Теоден вновь обретает силу и ясность ума, изгоняет Гриму и решает вести свой народ в древнюю крепость Хельмова Ущелья для последней обороны.
+Тем временем Фродо и Сэм продолжают путь к Мордору. Они захватывают Голлума, который следил за ними, и Фродо заставляет его поклясться на Кольце, что тот будет их проводником. Голлум ведет их через Болотные Топи, где Фродо видит лица мертвых воинов под водой. Он чуть не тонет, околдованный призраками, но Сэм спасает его.
+Голлум приводит хоббитов к Черным Вратам Мордора, но туда невозможно пройти незамеченным. Он предлагает альтернативный путь через Итилиэн, где они встречают отряд гондорцев под командованием Фарамира, брата Боромира. Фарамир узнает о смерти брата и о том, что Фродо несет Кольцо. В отличие от Боромира, Фарамир не поддается искушению Кольца, но все же ведет хоббитов в Осгилиат, чтобы передать их своему отцу Денетору.
+В Осгилиате на город нападают назгулы на крылатых тварях. Фродо, надев Кольцо, чтобы спрятаться, оказывается в призрачном мире и едва не попадает под влияние Короля-Чародея. Сэм спасает друга, а Фарамир, увидев опасную силу Кольца, отпускает хоббитов продолжить их миссию.
+Сарuman собирает огромную армию урук-хаев в Изенгарде, готовясь к штурму Хельмова Ущелья. Его войско в десять тысяч воинов вооружено не только мечами и луками, но и порохом для подрыва стен крепости. Арагорн пытается убедить Теодена дождаться подкрепления в Минас Тирите, но король решает сражаться в крепости своих предков.
+В Хельмово Ущелье неожиданно прибывает отряд эльфов из Лотлориэна под предводительством Халдира, присланный лордом Элрондом и леди Галадриэль в память о древнем союзе людей и эльфов. Это поднимает боевой дух защитников, хотя силы все еще неравны.
+Битва за Хельмово Ущелье начинается ночью под дождем. Армия Сарумана окружает крепость, лестницы приставляются к стенам, начинается штурм. Один из урук-хаев несет факел к дренажной трубе в стене, где заложен порох. Леголас пытается остановить его, но слишком поздно происходит взрыв, пробивающий огромную брешь в Стене Деепинга.
+Урук-хаи врываются в крепость через пролом. Арагорн и Эомер ведут контратаку, чтобы дать время эвакуировать женщин и детей в Цитадель. Гимли и Леголас соревнуются в количестве убитых врагов. Халдир погибает, защищая стену, а оставшиеся в живых защитники отступают в Цитадель.
+Когда положение становится безнадежным, Арагорн предлагает Теодену последнюю отчаянную атаку - выехать из крепости на рассвете и сразиться в открытом бою. На восходе солнца Теоден ведет кавалерийскую атаку из Цитадели, а на холме появляется Гэндальф с Эркенбрандом и подкреплением из Рохана. Объединенные силы разбивают армию Сарумана, уцелевшие урук-хаи бегут в лес, где их уничтожают энты.
+Энты тем временем штурмуют Изенгард, разрушая машины войны Сарумана и затапливая всю долину, направив на нее воды реки. Сарuman и Грима оказываются заперты в башне Ортханк, окруженной водой.
+Фильм завершается тем, что Голлум ведет Фродо и Сэма к тайному проходу в Мордор, который он называет "туннель". Сэм не доверяет Голлуму и подозревает ловушку, но Фродо, все больше попадающий под влияние Кольца, защищает их проводника. Голлум же втайне планирует предать хоббитов своей "прелести" - гигантской паучихе Шелоб, которая живет в туннеле, надеясь получить Кольцо после того, как она расправится с его носителями.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Матрица ', 'When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.', '1999-01-01', 1, '136 minutes', 'The Matrix', 8.7, 'Томас Андерсон работает программистом в крупной компании, но по ночам занимается хакерством под псевдонимом Нео. Его преследуют странные сны и ощущение, что с реальностью что-то не так. Однажды на экране компьютера появляется загадочное сообщение, а затем его начинает преследовать легендарный хакер Морфеус, о котором ходят невероятные слухи.
+Нео получает таинственный телефонный звонок от Морфеуса, который предупреждает его о приближающихся агентах и направляет к аварийному выходу из офисного здания. Испугавшись высоты, Нео сдается агентам, которые допрашивают его и имплантируют в его тело электронного жука для слежения. На следующий день члены команды Морфеуса находят Нео и извлекают устройство.
+Команда приводит Нео к Морфеусу, который объясняет ему природу Матрицы. Он показывает две таблетки - красную и синюю, предлагая выбор между болезненной правдой и комфортной иллюзией. Нео выбирает красную таблетку и просыпается в ужасающей реальности. Оказывается, что весь мир, который он знал, был компьютерной симуляцией, а человечество порабощено машинами, которые используют людские тела как источник энергии, держа их сознание в виртуальной реальности.
+Морфеус и его команда, включая Тринити, живут в реальном мире на корабле "Навуходоносор" и периодически подключаются к Матрице для выполнения миссий. Они верят, что Нео является Избранным, предсказанным Оракулом, который способен изменять правила Матрицы и освободить человечество.
+Нео начинает обучение боевым искусствам и программированию в симуляторах. Он быстро осваивает навыки, но Морфеус объясняет, что знание программ и реальные способности в Матрице - разные вещи. Во время тренировочного боя с Морфеусом Нео получает реальную травму, что доказывает связь между виртуальным и физическим мирами.
+Команда ведет Нео к Оракулу, древней программе, которая может предсказывать будущее. Оракул, предстающая в образе афроамериканской женщины, печет печенье на кухне и беседует с Нео. Она говорит ему, что он не является Избранным, и предсказывает, что ему придется выбирать между своей жизнью и жизнью Морфеуса.
+После визита к Оракулу команда попадает в засаду. Предатель Сайфер заключил сделку с агентами, согласившись выдать Морфеуса в обмен на возвращение в Матрицу с комфортной жизнью и стертой памятью. Сайфер убивает нескольких членов экипажа в реальном мире, пока они подключены к Матрице, но Тэнк успевает остановить его.
+Морфеуса захватывает агент Смит, программа безопасности Матрицы, который может принимать облик любого человека в симуляции. Агенты пытают Морфеуса, чтобы получить коды доступа к Сиону, последнему городу людей. Нео и Тринити решают спасти своего лидера, несмотря на невозможность задачи.
+Нео и Тринити врываются в здание, где держат Морфеуса, устраивая масштабную перестрелку с охраной. Они спасают Морфеуса, но во время побега агент Смит убивает Нео в Матрице. В реальном мире сердце Нео останавливается, но Тринити признается ему в любви и целует, что возвращает его к жизни.
+Воскресший Нео обретает полную власть над Матрицей. Он видит мир как поток зеленых символов, может останавливать пули и уничтожать агентов. В финальной битве с агентом Смитом Нео демонстрирует абсолютное превосходство, буквально входя в тело агента и разрушая его изнутри.
+Фильм завершается тем, что Нео звонит машинам из телефонной будки, обещая показать людям мир без правил и границ, мир где все возможно. Он надевает темные очки, взлетает в небо, и начинаются титры под песню Rage Against the Machine.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Славные парни', 'The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.', '1990-01-01', 1, '146 minutes', 'Goodfellas', 8.7, 'История рассказывается от лица Генри Хилла, который с детства мечтал стать гангстером. В 1955 году тринадцатилетний Генри начинает работать на местную мафиозную семью в районе Браунсвилль в Бруклине, управляемую Полом Чиккеро по прозвищу Поли. Генри восхищается образом жизни гангстеров и их кажущейся властью над окружающими.
+Подростком Генри знакомится с Джимми Конвеем, ирландско-американским угонщиком грузовиков, и Томми ДеВито, импульсивным и жестоким молодым человеком сицилийского происхождения. Троица становится неразлучной, совершая различные преступления от угона автомобилей до ограблений.
+В 1963 году Генри женится на еврейской девушке Карен, несмотря на неодобрение своих коллег-гангстеров. Карен поначалу привлекает роскошный образ жизни мужа, но постепенно понимает истинную природу его деятельности. Она видит, как Генри избивает соседа, который приставал к ней, и осознает его жестокость.
+Друзья продолжают заниматься преступной деятельностью, получая все большую прибыль от различных махинаций. Они занимаются рэкетом, азартными играми, ростовщичеством и торговлей наркотиками. Джимми становится известен своей способностью угонять грузовики с ценными товарами, а Томми зарабатывает репутацию психопата, готового убить за малейшее неуважение.
+В 1970 году происходит инцидент в баре, когда Томми убивает Билли Бэттса, сделанного члена семьи Гамбино, после словесной перепалки. Генри и Джимми помогают ему избавиться от тела, но позже им приходится перезахоронить труп, когда над местом первоначального захоронения планируется строительство.
+Тем временем Генри все глубже погружается в наркобизнес, несмотря на строгий запрет Поли заниматься торговлей наркотиками. Он начинает употреблять кокаин и становится параноиком, постоянно оглядываясь в поисках полицейских и вертолетов. Его брак с Карен рушится из-за его измен и наркозависимости.
+В 1978 году Джимми организует ограбление склада авиакомпании в аэропорту Кеннеди, похитив шесть миллионов долларов наличными и драгоценностями. Это становится одним из крупнейших ограблений в американской истории. Однако участники ограбления начинают тратить деньги слишком заметно, привлекая внимание полиции.
+Джимми, обеспокоенный возможностью разоблачения, начинает систематически убивать всех участников ограбления. Он опасается, что кто-то из них может сдать его властям под давлением. Один за другим исчезают все, кто был причастен к налету на аэропорт.
+Томми, тем временем, ожидает официального принятия в ряды мафии как сделанного члена семьи. Однако во время церемонии его убивают в отместку за убийство Билли Бэттса годы назад. Семья Гамбино не забыла о смерти своего члена и дождалась подходящего момента для мести.
+К 1980 году Генри окончательно погружается в наркоманию и паранойю. Он ведет хаотичную жизнь, совмещая семейные обязанности с продажей наркотиков и постоянным страхом ареста. В один особенно напряженный день он мечется по городу, пытаясь совершить сделку с кокаином, приготовить ужин для семьи и избежать слежки.
+Полиция наконец арестовывает Генри за торговлю наркотиками. Понимая, что Джимми планирует его убить, чтобы заставить замолчать, а Поли никогда не простит ему нарушения запрета на наркотики, Генри принимает решение сотрудничать с федеральными агентами.
+Генри дает показания против своих бывших партнеров, что приводит к арестам и обвинительным приговорам для многих членов преступной группировки. В обмен на показания он и его семья попадают в программу защиты свидетелей и получают новые личности.
+Фильм завершается тем, что Генри, теперь живущий под другим именем в пригороде, размышляет о своей новой обычной жизни. Он сожалеет о потере волнующего мира преступности, но понимает, что альтернативой была смерть. Поли получает тюремный срок, а Джимми проводит остаток жизни в тюрьме, так и не узнав точно, кто его предал.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Звездные войны: Эпизод V - Империя наносит ответный удар', 'After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.', '1980-01-01', 1, '124 minutes', 'Star Wars: Episode V - The Empire Strikes Back', 8.7, 'Действие происходит через три года после уничтожения Звезды Смерти. Повстанческий Альянс создал тайную базу на ледяной планете Хот, откуда продолжает борьбу против Галактической Империи. Люк Скайуокер патрулирует окрестности базы на таунтауне, когда подвергается нападению вампы - снежного чудовища. Существо утаскивает его в свою пещеру, где Люк с помощью Силы освобождает свой световой меч и ранит вампу, после чего выбирается из пещеры.
+Оказавшись в снежной пустыне во время бури, Люк теряет сознание от холода, но ему является призрак Оби-Вана Кеноби, который направляет его на планету Дагоба для обучения у мастера-джедая Йоды. Хан Соло находит замерзающего Люка и спасает его, разрезав живот таунтауна и поместив друга внутрь для обогрева, пока не построит укрытие.
+Тем временем Дарт Вейдер одержимо преследует повстанцев и направляет имперские зонды по всей галактике. Один из зондов обнаруживает базу на Хоте, и Империя готовит массированную атаку. Вейдер лично возглавляет наступление с помощью огромных шагающих машин AT-AT, которые медленно продвигаются через снежные равнины к повстанческой базе.
+Повстанцы организуют эвакуацию, используя истребители-снежные спидеры для замедления наступления имперских войск. Пилоты применяют тактику обматывания ног AT-AT тросами, чтобы опрокинуть гигантские машины. Люк участвует в воздушном бою, но его спидер сбивают. Он использует световой меч и гранаты, чтобы уничтожить один из AT-AT изнутри, но база обречена.
+Во время эвакуации Хан Соло и принцесса Лея пытаются запустить "Тысячелетний сокол", но гипердвигатель корабля неисправен. Они вынуждены спасаться на субсветовых двигателях, преследуемые имперскими звездными разрушителями. Хан ведет корабль через опасное астероидное поле, где прячется в полости одного из крупных астероидов. Лея и Хан постепенно сближаются, между ними возникает романтическое влечение, несмотря на постоянные споры.
+Люк со своим дроидом R2-D2 отправляется на болотистую планету Дагоба в поисках Йоды. Его истребитель X-wing терпит крушение в болоте, и он встречает странного маленького зеленого существа, которое оказывается великим мастером Йодой, хотя сначала скрывает свою истинную личность. Йода тестирует терпение и характер Люка, притворяясь эксцентричным отшельником, который роется в вещах пилота и спорит с призраком Оби-Вана о целесообразности обучения молодого Скайуокера.
+Йода неохотно соглашается обучать Люка, предупреждая о его возрасте, нетерпеливости и гневе - качествах, которые могут привести к темной стороне Силы. Тренировки включают физические упражнения, медитацию и изучение философии джедаев. Йода учит Люка, что размер не имеет значения, а Сила течет через все живое. Когда X-wing Люка полностью погружается в болото, мастер демонстрирует силу Силы, подняв целый звездолет из воды с помощью телекинеза.
+Тем временем Хан решает обратиться за помощью к своему старому другу Лэндо Калриссиану, администратору Облачного города на планете Беспин. Лэндо тепло встречает друзей, но втайне уже заключил сделку с Империей для защиты своего города и его жителей. Дарт Вейдер прибыл в Облачный город раньше и заставил Лэндо предать друзей в обмен на безопасность города.
+Вейдер планирует использовать друзей Люка как приманку, чтобы заманить молодого джедая в ловушку. Он хочет заморозить Люка в карбоните, как это позже сделают с Ханом Соло для проверки процесса. Хана подвергают пыткам, чтобы его крики боли через Силу достигли Люка на Дагобе. Люк действительно чувствует страдания друзей и, несмотря на предупреждения Йоды и Оби-Вана о том, что это ловушка, решает прервать обучение и лететь на помощь.
+В Облачном городе Хана замораживают в карбоните и передают охотнику за головами Бобе Фетту, который доставит его к Джаббе Хатту для получения награды. Перед заморозкой Лея признается Хану в любви, на что он отвечает "Знаю". Лэндо осознает, что Вейдер нарушает их соглашение и планирует оставить Лею и Чубакку в городе, что побуждает его к восстанию против имперцев.
+Люк прибывает в Облачный город и попадает в тщательно подготовленную ловушку. Вейдер заманивает его в камеру заморозки углерода, но Люку удается избежать заморозки, хотя он получает ранения от обломков. Начинается эпическая дуэль на световых мечах между Люком и Дартом Вейдером в промышленных помещениях города, включая бой над реактором и на узких мостиках.
+Вейдер демонстрирует свое превосходство в владении Силой, швыряя в Люка различные предметы с помощью телекинеза. Во время поединка он пытается соблазнить молодого джедая перейти на темную сторону, утверждая, что вместе они смогут свергнуть Императора и править галактикой как отец и сын. Люк отказывается поверить, когда Вейдер утверждает, что он его отец.
+Дуэль достигает кульминации, когда Вейдер отсекает Люку правую руку вместе с световым мечом. Раненый и шокированный Люк висит над пропастью реактора, а Вейдер раскрывает ужасающую истину: "Нет, я твой отец". Он объясняет, что Оби-Ван лгал Люку о смерти его отца, и предлагает сыну присоединиться к нему для свержения Императора и установления нового порядка в галактике.
+Потрясенный этим откровением, Люк предпочитает броситься в пропасть реактора, чем присоединиться к отцу. Он падает через вентиляционные шахты и в конечном итоге оказывается висящим под городом на антенне. Используя Силу, он телепатически связывается с Леей, которая чувствует его призыв о помощи. Лея убеждает Лэндо и Чубакку вернуться за Люком на "Тысячелетнем соколе".
+Лэндо, Лея, Чубакка и дроиды успешно спасают Люка и избегают преследования имперских сил. На борту медицинского корабля повстанцев Люку устанавливают механический протез руки. Фильм заканчивается на грустной и неопределенной ноте: Хан Соло заморожен и увезен к Джаббе Хатту, Люк потерял руку и узнал травмирующую правду о своем происхождении, а силы Империи продолжают преследовать ослабленных повстанцев.
+В финальной сцене Люк, Лея, Чубакка, Лэндо и дроиды стоят у окна медицинского корабля, глядя в космос и размышляя о своих потерях и неопределенном будущем. Несмотря на временное поражение, они остаются вместе и готовы продолжить борьбу против Империи, хотя впереди их ждут еще большие испытания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Пролетая над гнездом кукушки', 'A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients.', '1975-01-01', 1, '133 minutes', 'One Flew Over the Cuckoo''s Nest', 8.7, 'Рэндл Патрик МакМерфи, мелкий преступник, симулирует психическое заболевание, чтобы избежать тюремного заключения и отбыть оставшийся срок в психиатрической больнице, считая это более легким вариантом. Он попадает в отделение государственной психиатрической клиники в Орегоне, где сталкивается с жесткой системой контроля.
+Отделением управляет медсестра Рэтчед, холодная и властная женщина, которая поддерживает строгую дисциплину среди пациентов с помощью психологического давления, манипуляций и угроз. Она проводит групповые терапевтические сеансы, во время которых заставляет пациентов признаваться в своих слабостях и унижает их перед другими.
+МакМерфи быстро понимает, что попал в место более угнетающее, чем тюрьма. Он знакомится с другими пациентами отделения: тихим и заикающимся Билли Биббитом, который боится своей матери; Чифом Бромденом, высоким индейцем, который притворяется глухонемым; Чарли Чесвиком, слабовольным человеком, ищущим поддержки; Мартини, страдающим галлюцинациями; и другими.
+МакМерфи начинает бунтовать против системы медсестры Рэтчед. Он требует изменить расписание, чтобы пациенты могли смотреть Мировую серию по бейсболу, организует незаконные карточные игры на деньги и сигареты, постоянно нарушает установленные правила. Его бунтарское поведение вдохновляет других пациентов проявлять собственную индивидуальность.
+Рэтчед противостоит МакМерфи тонкими психологическими методами, используя правила больницы и манипулируя другими пациентами против него. Она объясняет пациентам, что в отличие от них, которые попали сюда добровольно, МакМерфи может быть задержан принудительно на неопределенный срок за свое поведение.
+МакМерфи постепенно осознает, что большинство пациентов находятся в больнице добровольно и могут уйти в любой момент, но боятся внешнего мира. Он пытается убедить их в том, что они не сумасшедшие, а просто запуганные и подавленные системой.
+Конфликт обостряется, когда МакМерфи организует рыбалку, незаконно вывезя группу пациентов из больницы на украденном автобусе. Во время поездки пациенты впервые за долгое время чувствуют себя свободными и нормальными людьми. Они знакомятся с подругами МакМерфи и проводят день на океане, получая опыт, который напоминает им о жизни за пределами больничных стен.
+По возвращении МакМерфи подвергается дисциплинарным мерам. Рэтчед усиливает контроль и давление, но МакМерфи продолжает сопротивляться. Ситуация достигает критической точки, когда МакМерфи устраивает вечеринку в отделении, тайно пронеся алкоголь и проституток.
+Во время вечеринки Билли Биббит проводит ночь с одной из женщин, что становится для него первым сексуальным опытом. Утром медсестра Рэтчед обнаруживает последствия вечеринки и угрожает рассказать матери Билли о произошедшем. Не выдержав стыда и страха перед материнским осуждением, Билли совершает самоубийство, перерезав себе горло.
+Потрясенный смертью Билли, МакМерфи в ярости нападает на медсестру Рэтчед, пытаясь задушить ее. Его останавливают санитары, а самого МакМерфи отправляют на лоботомию как крайнюю меру усмирения.
+После операции МакМерфи возвращается в отделение как овощ, полностью лишенный личности и способности к сопротивлению. Чиф Бромден, который на протяжении всего фильма тайно наблюдал за происходящим, не может вынести вида своего друга в таком состоянии. Ночью он душит МакМерфи подушкой, освобождая его от бессмысленного существования.
+После этого Чиф вырывает из пола тяжелую мраморную раковину, которую МакМерфи ранее безуспешно пытался поднять, разбивает ею окно и убегает из больницы на свободу. Другие пациенты просыпаются от шума и радостно кричат, видя, как Чиф бежит через поле к лесу, наконец обретя свободу, которую МакМерфи пытался дать им всем.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Гамильтон', 'The real life of one of America''s foremost founding fathers and first Secretary of the Treasury, Alexander Hamilton. Captured live on Broadway from the Richard Rodgers Theater with the original Broadway cast.', '2020-01-01', 1, '160 minutes', 'Hamilton', 8.6, 'Мюзикл начинается в 1776 году, когда молодой Александр Гамильтон прибывает в Нью-Йорк из Карибских островов. Он сирота с острова Невис, который благодаря своему литературному таланту получил возможность получить образование в Америке. В таверне он встречает Аарона Берра, Джона Лоренса, маркиза де Лафайета и Геркулеса Маллигана. Гамильтон поражает их своим красноречием и страстным желанием присоединиться к революции против британского правления.
+Берр советует Гамильтону быть осторожнее в высказываниях и больше слушать, чем говорить, но Гамильтон отвергает такой подход, предпочитая активно выражать свои убеждения. Он быстро завоевывает репутацию блестящего писателя и оратора, что привлекает внимание революционных лидеров. Лоренс, Лафайет и Маллиган становятся его близкими друзьями и соратниками в борьбе за независимость.
+Гамильтон встречает сестер Скайлер - Анжелику, Элизу и Пегги - на балу. Элиза сразу же очаровывается умным и амбициозным молодым человеком, в то время как старшая сестра Анжелика, несмотря на собственное влечение к Гамильтону, понимает, что он больше подходит Элизе и отступает. Гамильтон и Элиза быстро влюбляются и женятся, получив благословение их отца, влиятельного генерала Филипа Скайлера.
+Тем временем Гамильтон привлекает внимание Джорджа Вашингтона, который ищет помощника. Несмотря на желание Гамильтона сражаться на поле боя, Вашингтон назначает его своим правой рукой, поручив ему административные и стратегические задачи. Гамильтон чувствует разочарование, считая, что теряет возможность обрести славу в бою, но постепенно понимает важность своей роли в планировании революции.
+Король Георг III наблюдает за развитием революции из Британии с смесью амузмента и презрения, уверенный, что колонисты не смогут управлять собой без британского руководства. Он предсказывает, что после обретения независимости американцы будут страдать от внутренних конфликтов и экономических проблем.
+Война продолжается с переменным успехом. В критический момент Гамильтон узнает, что его лучший друг Джон Лоренс погиб в бою в Южной Каролине. Эта потеря глубоко потрясает его и укрепляет решимость довести революцию до победного конца. В финальной битве при Йорктауне Вашингтон наконец позволяет Гамильтону командовать батальоном, и американцы одерживают решающую победу над британцами.
+После войны новая нация сталкивается с серьезными проблемами. Штаты погрязли в долгах, отсутствует единая валюта, а Статьи Конфедерации оказываются неэффективными для управления страной. Гамильтон становится первым министром финансов при президенте Вашингтоне и предлагает амбициозную программу для создания сильной федеральной финансовой системы.
+Его план включает федеральное принятие долгов штатов, создание национального банка и развитие промышленности для превращения Америки в современную экономическую державу. Эти предложения встречают яростное сопротивление со стороны Томаса Джефферсона, который возвращается из Франции как государственный секретарь, и Джеймса Мэдисона. Они считают планы Гамильтона угрозой правам штатов и опасаются создания слишком могущественного федерального правительства.
+Разногласия между Гамильтоном и Джефферсоном приводят к формированию первых политических партий в Америке. Гамильтон возглавляет федералистов, выступающих за сильное центральное правительство и промышленное развитие, в то время как Джефферсон лидирует среди демократических республиканцев, защищающих права штатов и аграрную экономику.
+Напряженность усиливается из-за событий во Франции, где началась революция. Джефферсон поддерживает французских революционеров, видя в них продолжение американского духа свободы, в то время как Гамильтон предостерегает против хаоса и насилия французской революции. Когда Франция объявляет войну Британии, американцы разделяются по вопросу о том, какую сторону поддержать.
+Вашингтон принимает решение о нейтралитете, следуя совету Гамильтона, что вызывает критику со стороны Джефферсона и его сторонников. Политические баталии становятся все более личными и ожесточенными, угрожая единству молодой нации.
+В личной жизни Гамильтон сталкивается с серьезным кризисом. Мария Рейнольдс, молодая женщина в бедственном положении, обращается к нему за помощью. Они начинают роман, который продолжается несколько месяцев. Муж Марии, Джеймс Рейнольдс, обнаруживает связь и начинает шантажировать Гамильтона, требуя деньги в обмен на молчание.
+Когда Джеймс Мэдисон, Томас Джефферсон и Аарон Берр обнаруживают платежи Гамильтона Рейнольдсу, они подозревают его в коррупции и злоупотреблении государственными средствами. Гамильтон вынужден признаться в адюльтере, чтобы доказать, что платежи были личными, а не связанными с его официальными обязанностями. Он публикует подробный памфлет о своей связи, что разрушает его репутацию и глубоко ранит Элизу.
+Элиза чувствует себя преданной и униженной публичным признанием мужа в неверности. Она сжигает письма Гамильтона и удаляется от общественной жизни. Анжелика возвращается из Лондона, чтобы поддержать сестру, и упрекает Гамильтона за его эгоизм и безрассудство.
+Тем временем политическая карьера Берра продвигается медленно, что вызывает его растущее разочарование. Он наблюдает, как Гамильтон, несмотря на скандалы, продолжает оказывать влияние на политику, в то время как его собственные амбиции остаются нереализованными. Берр все больше завидует способности Гамильтона привлекать внимание и формировать общественное мнение.
+Трагедия поражает семью Гамильтона, когда их старший сын Филип вызывает на дуэль человека, оскорбившего честь отца. Следуя советам Гамильтона о том, как вести себя на дуэли с честью, Филип стреляет в воздух, но его противник целится в него и смертельно ранит молодого человека. Смерть сына разрушает Гамильтона и Элизу, которая впадает в глубокую депрессию.
+Горе сближает супругов, и они пытаются восстановить свой брак. Элиза в конечном итоге прощает мужа, и они переезжают за город, где Гамильтон надеется начать новую, более спокойную жизнь. Однако его не оставляют политические страсти.
+В президентских выборах 1800 года происходит патовая ситуация между Томасом Джефферсоном и Аароном Берром. Решение должна принять Палата представителей, где федералисты Гамильтона держат ключевые голоса. Несмотря на философские разногласия с Джефферсоном, Гамильтон считает его более принципиальным и менее опасным для республики, чем Берра, которого он рассматривает как беспринципного оппортуниста.
+Гамильтон активно агитирует против Берра, убеждая федералистов поддержать Джефферсона. Его усилия оказываются решающими в избрании Джефферсона президентом, в то время как Берр становится вице-президентом. Это предательство, как считает Берр, окончательно разрушает их отношения.
+Несколько лет спустя, когда Берр баллотируется на пост губернатора Нью-Йорка, Гамильтон снова выступает против него, произнося публичные речи, в которых ставит под сомнение характер и мотивы Берра. После поражения на выборах Берр требует от Гамильтона публичных извинений за оскорбления. Когда Гамильтон отказывается, Берр вызывает его на дуэль.
+Утром 11 июля 1804 года Гамильтон и Берр встречаются на дуэли в Виехокене, Нью-Джерси, на том же месте, где погиб сын Гамильтона. Элиза умоляет мужа не участвовать в дуэли, но Гамильтон считает, что его честь требует принятия вызова. Он пишет прощальные письма семье и признается, что намерен стрелять в воздух.
+Во время дуэли Гамильтон действительно стреляет в воздух, но Берр целится в него и смертельно ранит. Гамильтон умирает на следующий день в возрасте сорока девяти лет, оставив вдову с семью детьми и множество долгов. Его смерть шокирует нацию и разрушает политическую карьеру Берра, который становится изгоем.
+Мюзикл завершается эпилогом, показывающим, как Элиза посвящает остальную часть своей долгой жизни сохранению наследия мужа. Она собирает и публикует его письма, основывает первый частный детский дом в Нью-Йорке и борется за отмену рабства. Она живет пятьдесят лет после смерти Гамильтона, дожив до девяноста семи лет и став свидетельницей того, как видение ее мужа сильной, объединенной Америки становится реальностью.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Паразиты', 'Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.', '2019-01-01', 1, '132 minutes', 'Gisaengchung', 8.6, 'Семья Ки живет в полуподвальной квартире в бедном районе Сеула и перебивается случайными заработками, включая складывание коробок для пиццы и ловлю бесплатного Wi-Fi от соседей. Семью составляют безработный отец Ки-тхэк, мать Чхун-сук и двое взрослых детей - сын Ки-у и дочь Ки-джон, которые не работают и не учатся.
+Друг Ки-у по имени Мин-хёк, студент престижного университета, предлагает ему временно заменить его в качестве репетитора английского языка для дочери богатой семьи Парк, пока он сам будет учиться за границей. Мин-хёк дарит семье Ки символический камень, который, по его словам, принесет им богатство.
+Ки-у подделывает документы об образовании и под вымышленным именем устраивается репетитором к Да-хе, дочери господина Пака. Семья Парк живет в роскошном современном доме, спроектированном знаменитым архитектором. Ки-у быстро завоевывает доверие госпожи Парк, матери семейства, которая впечатлена его якобы профессиональным подходом к обучению.
+Узнав, что у семьи Парк есть гиперактивный младший сын Да-сон, Ки-у рекомендует свою сестру Ки-джон как арт-терапевта, представив ее под другим именем и утверждая, что она училась за границей. Ки-джон успешно проходит собеседование, демонстрируя псевдопсихологический анализ детских рисунков и впечатляя госпожу Парк своими выдуманными знаниями.
+Далее Ки-джон подстраивает увольнение семейного водителя, подбросив в его машину женские трусы и намекнув госпоже Парк на его неподобающее поведение. Ки-тхэк устраивается новым водителем семьи Парк, представившись через подставное агентство. Наконец, семья избавляется от домработницы Мун-гван, которая работала у Парков много лет. Ки-джон тайно провоцирует у нее приступ аллергии на персики, а затем внушает госпоже Парк, что у домработницы может быть туберкулез.
+Чхун-сук становится новой домработницей, и теперь вся семья Ки работает у Парков под вымышленными именами, тщательно скрывая свое родство. Они наслаждаются относительным благополучием, получая хорошую зарплату и остатки дорогой еды.
+Однако их план рушится, когда семья Парк уезжает в кемпинг, а семья Ки остается наслаждаться роскошным домом. Неожиданно возвращается бывшая домработница Мун-гван, утверждая, что забыла забрать важную вещь. Она ведет Чхун-сук в секретную комнату в подвале, где уже четыре года прячется ее муж Гын-се, скрываясь от кредиторов.
+Мун-гван понимает, что вся семья Ки обманывает Парков, и угрожает разоблачить их. Завязывается драка, во время которай Мун-гван снимает на телефон компрометирующее видео. В этот момент семья Парк неожиданно возвращается домой из-за дождя, который затопил их кемпинг.
+Семья Ки вынуждена прятаться в доме, пока наверху находятся хозяева. Они подслушивают разговор господина и госпожи Парк, в котором те пренебрежительно отзываются о запахе Ки-тхэка, сравнивая его с запахом метро и старых редисок. Эти слова глубоко ранят Ки-тхэка, который начинает осознавать непреодолимую пропасть между классами.
+Тем временем сильный дождь затапливает бедные районы города, включая полуподвальную квартиру семьи Ки. Они возвращаются домой и обнаруживают, что все их немногочисленные пожитки уничтожены водой. Семья проводит ночь в спортивном зале вместе с другими пострадавшими от наводнения.
+На следующий день госпожа Парк просит Чхун-сук организовать вечеринку по случаю дня рождения Да-сона с очень коротким уведомлением, не подозревая о трагедии, которую пережила семья домработницы. Во время подготовки к празднику Гын-се, все еще прячущийся в подвале, нападает на Ки-у камнем - тем самым, который подарил Мин-хёк.
+Начинается хаос. Гын-се выбегает из дома и на глазах у гостей вечеринки убивает Ки-джон кухонным ножом. Ки-тхэк в ярости преследует Гын-се и убивает его тем же ножом. В этот момент Да-сон падает в обморок от потрясения, и господин Парк кричит Ки-тхэку, чтобы тот отвез ребенка в больницу.
+Когда Ки-тхэк подбегает к машине с ребенком на руках, господин Парк отшатывается от него из-за запаха и с отвращением просит отдать ключи. Это становится последней каплей для Ки-тхэка, который понимает, что даже после всего происходящего хозяин думает только о неприятном запахе. В приступе ярости Ки-тхэк убивает господина Пака тем же ножом и скрывается.
+Ки-у выживает после травмы головы, но получает серьезные повреждения мозга. Ки-тхэк прячется в секретном бункере под домом Парков, который теперь продается. Он живет как призрак, изредка выходя наруже и подавая сигналы сыну азбукой Морзе, мигая светом.
+Ки-у мечтает разбогатеть, купить дом и освободить отца, но понимает, что при его нынешнем заработке это займет 564 года. Фильм заканчивается его фантазией о воссоединении с отцом, которая плавно переходит в реальность его скромной жизни в другой полуподвальной квартире, показывая цикличность социального неравенства и невозможность вырваться из замкнутого круга бедности.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Хвала храбрецам', 'Nedumaaran Rajangam "Maara" sets out to make the common man fly and in the process takes on the world''s most capital intensive industry and several enemies who stand in his way.', '2020-01-01', 1, '153 minutes', 'Soorarai Pottru', 8.6, 'Фильм основан на реальных событиях из жизни Г. Р. Гопината, основателя индийской бюджетной авиакомпании Simplifly Deccan, как описано в его мемуарах. История рассказывает о Недумараане Раджангаме по прозвищу Маара, бывшем капитане индийских военно-воздушных сил, который мечтает создать бюджетную авиакомпанию для простых людей.
+Маара идолизирует Парешa Госвами, владельца авиакомпании Jaz Airlines. Маара происходит из деревни в Мадурае и с детства мечтает дать возможность обычным людям летать на самолетах, сделав авиаперелеты доступными для всех слоев общества. Его мотивация частично связана с личной трагедией - смертью его сестры, которую не удалось вовремя доставить в больницу из-за отсутствия быстрого транспорта.
+В фильме показана история знакомства Маара с Сундари, которую называют Бомми. Она приходит к нему как потенциальная невеста, поскольку ее семья ищет для нее жениха. Бомми - сильная и независимая женщина, которая мечтает открыть собственную пекарню. Первоначально между ними возникают разногласия и конфликты, но постепенно они влюбляются друг в друга. Бомми становится не только спутницей жизни Маара, но и его главной поддержкой в достижении мечты.
+Основная сюжетная линия сосредоточена на попытках Маара создать свою авиакомпанию, сталкиваясь с многочисленными препятствиями. Авиационная индустрия является одной из самых капиталоемких отраслей, и Маара должен противостоять могущественным конкурентам и врагам, которые стоят на его пути. Он сталкивается с бюрократическими барьерами, финансовыми трудностями и противодействием со стороны влиятельных людей в авиационной индустрии.
+Парesh Госвами, которого играет Парesh Равал, представлен как главный антагонист - влиятельный авиамагнат, который видит в планах Маара угрозу своей империи. Госвами использует свое влияние и связи, чтобы помешать осуществлению мечты Маара, создавая различные препятствия на его пути.
+Фильм исследует тему классовых различий и социального неравенства в Индии, показывая, как простой человек из деревни пытается бросить вызов элите и изменить систему. Маара сталкивается с предрассудками и скептицизмом со стороны инвесторов, чиновников и даже собственной семьи, которые не верят в возможность успеха его амбициозного проекта.
+В процессе борьбы за свою мечту Маара переживает множество неудач и поражений. Его планы неоднократно рушатся, он теряет деньги, сталкивается с юридическими проблемами и чуть не теряет веру в себя. Однако поддержка Бомми и его непоколебимая решимость помогают ему продолжать борьбу.
+Кульминацией фильма становится момент, когда Маара наконец получает разрешение на создание своей авиакомпании и совершает первый полет. Это символизирует не только его личную победу, но и триумф простого человека над системой, которая пытается его сломить.
+Фильм заканчивается на оптимистичной ноте, показывая, как мечта Маара о доступной авиации для всех начинает воплощаться в реальность. История подчеркивает важность настойчивости, веры в себя и поддержки близких людей в достижении кажущихся невозможными целей. Параллельно показывается, как и мечта Бомми об открытии пекарни также осуществляется, демонстрируя, что успех возможен для всех, кто готов бороться за свои убеждения.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Интерстеллар', 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity''s survival.', '2014-01-01', 1, '169 minutes', 'Interstellar', 8.6, 'В недалеком будущем Земля находится на грани экологической катастрофы. Планету поражают пылевые бури, похожие на те, что происходили во время Великой депрессии, но гораздо более масштабные и разрушительные. Урожаи гибнут от неизвестной болезни растений, кислорода в атмосфере становится все меньше, а человечество медленно вымирает. Правительство скрывает истинные масштабы катастрофы, а школьные учебники переписаны так, чтобы убедить людей, что высадка на Луну была мистификацией, и что человечество должно сосредоточиться на сельском хозяйстве, а не на космических исследованиях.
+Купер, бывший пилот НАСА и инженер, теперь вынужден работать фермером в Колорадо, выращивая кукурузу - один из немногих видов растений, которые еще могут выжить. Он живет со своим тестем Дональдом, пятнадцатилетним сыном Томом и десятилетней дочерью Мерф. Мерф необычайно умна для своего возраста и утверждает, что в ее комнате живет призрак, который сбрасывает книги с полки и оставляет пыльные узоры на полу.
+Купер скептически относится к рассказам дочери о сверхъестественном, но во время очередной пылевой бури он замечает, что пыль в комнате Мерф действительно образует странные линии. Он понимает, что это не случайный узор, а двоичный код, который при расшифровке дает географические координаты. Несмотря на протесты семьи, Купер берет Мерф и отправляется по указанному адресу.
+Координаты приводят их к секретному объекту НАСА, которое официально было расформировано, но на самом деле продолжает работать в глубокой тайне под руководством профессора Брэнда. Брэнд объясняет Куперу, что сорок восемь лет назад возле Сатурна появилась загадочная червоточина - тоннель в пространстве-времени, ведущий в другую галактику. Кто-то или что-то создало этот проход, возможно, чтобы дать человечеству шанс на спасение.
+НАСА уже отправило через червоточину двенадцать разведывательных миссий на потенциально обитаемые планеты. Три миссии подали обнадеживающие сигналы: доктор Миллер на водной планете, доктор Манн на ледяной планете и доктор Эдмундс на планете с твердой поверхностью. Теперь НАСА готовит миссию "Эндьюранс" для окончательного исследования этих миров и, возможно, колонизации одного из них.
+У профессора Брэнда есть два плана спасения человечества. План А предполагает решение проблемы гравитации, что позволит поднять в космос всех людей с Земли и переселить их на новую планету. План Б, более радикальный, заключается в том, чтобы отправить замороженные человеческие эмбрионы для создания новой колонии, по сути бросив умирающее человечество на Земле. Брэнд убеждает Купера присоединиться к миссии как пилота, хотя тот должен будет оставить детей на неопределенное время.
+Команда "Эндьюранса" состоит из Купера, доктора Амелии Брэнд (дочь профессора), физика Ромилли, географа Дойла и двух роботов TARS и CASE. Перед отправлением Мерф злится на отца за то, что он покидает семью, и отказывается попрощаться с ним. Купер дает ей свои наручные часы, обещая вернуться к тому времени, когда она станет такого же возраста, как он сейчас.
+Путешествие к Сатурну занимает два года. Пролетая через червоточину, команда попадает в другую галактику, где их ждут три потенциально обитаемые планеты. Из-за близости к массивной черной дыре Гаргантюа время на этих планетах течет по-разному из-за релятивистских эффектов. На планете Миллер, ближайшей к черной дыре, один час равен семи годам на Земле.
+Команда решает сначала исследовать планету Миллер. Купер, Амелия и Дойл спускаются на поверхность, оставив Ромилли на орбите. Планета оказывается покрытой мелким океаном, по которому перемещаются гигантские приливные волны высотой в километр. Они находят обломки корабля доктора Миллер, но вскоре обнаруживают приближающуюся огромную волну.
+При попытке спастись Дойл гибнет, а их посадочный модуль получает повреждения от воды. Из-за времени, потраченного на ремонт на планете, где час равен семи годам, когда они возвращаются на "Эндьюранс", оказывается, что на Земле прошло двадцать три года. Ромилли постарел в одиночестве, а Купер получает видеосообщения от своих детей, которые теперь стали взрослыми.
+Том женился и имеет семью, но продолжает упорно работать на ферме, несмотря на ухудшающиеся условия. Мерф стала блестящим физиком и работает с престарелым профессором Брэндом над решением уравнения гравитации. В одном из сообщений она сообщает, что профессор Брэнд на смертном одре признался ей, что всегда знал о невозможности решения уравнения без данных из черной дыры, и что План А был ложью, предназначенной для мотивации команды.
+У команды остается топливо только для посещения одной из двух оставшихся планет. Амелия настаивает на планете Эдмундс, признавшись, что была влюблена в доктора Эдмундса и это влияет на ее суждение. Купер выбирает более многообещающую с научной точки зрения планету Манн. Они будят доктора Манна из криогенного сна, и он рассказывает о том, что его планета пригодна для жизни, хотя и сурова.
+Однако вскоре выясняется, что доктор Манн лгал. Его планета представляет собой замерзшую пустыню с ядовитой атмосферой из аммиака. Находясь в полном одиночестве долгие годы, Манн сошел с ума от страха смерти и отправлял ложные данные, надеясь, что кто-то прилетит и спасет его. Он пытается убить Купера, объясняя, что План Б - единственная надежда человечества, и что Купер не должен возвращаться на Землю из сентиментальности.
+Купер выживает, и команда объединяется, чтобы остановить Манна, который пытается захватить "Эндьюранс". При попытке состыковаться с кораблем без соблюдения протокола безопасности Манн взрывает шлюз и погибает, серьезно повредив "Эндьюранс". Купер и Амелия с трудом восстанавливают контроль над кораблем, но понимают, что у них недостаточно топлива для достижения планеты Эдмундс.
+Купер предлагает использовать гравитационное поле черной дыры Гаргантюа для гравитационного маневра, который даст им необходимую скорость. Чтобы уменьшить массу корабля, он и робот TARS отделяются в посадочных модулях и падают в черную дыру, позволяя Амелии долететь до планеты Эдмундс.
+Вместо того чтобы быть разорванным приливными силами, Купер попадает в пятимерный тессеракт - конструкцию, созданную высокоразвитыми существами (возможно, людьми из далекого будущего). Тессеракт позволяет ему наблюдать любой момент времени в комнате дочери и взаимодействовать с прошлым через гравитацию. Он понимает, что именно он был "призраком" в комнате Мерф, и что он направил себя к НАСА, передав координаты через пыльные узоры.
+TARS, который также попал в тессеракт, собирает данные о сингулярности черной дыры - информацию, необходимую для решения уравнения гравитации. Купер передает эти данные взрослой Мерф через секундную стрелку часов, которые он когда-то подарил ей, используя азбуку Морзе. Взрослая Мерф, которая сохранила часы отца в своей старой комнате, расшифровывает послание и получает данные, необходимые для создания антигравитационной технологии.
+После передачи данных тессеракт закрывается, и Купер оказывается возле Сатурна, где его подбирает спасательная команда. Он узнает, что находится на космической станции имени Купера - одной из многих орбитальных колоний, которые человечество построило благодаря решению Мерф уравнения гравитации. Прошло еще несколько десятилетий, и Мерф теперь пожилая женщина на смертном одре, окруженная многочисленными потомками.
+Мерф, которая всю жизнь работала над спасением человечества, встречается с отцом в последний раз. Она прощает его за уход и говорит, что никто из родителей не должен смотреть, как умирает их ребенок. Она убеждает Купера не оставаться с ней, а отправиться к Амелии, которая одна основывает колонию на планете Эдмундс и нуждается в помощи.
+Фильм заканчивается тем, что Купер и TARS отправляются на маленьком корабле к планете Эдмундс, где Амелия в одиночестве устанавливает оборудование для будущей колонии рядом с могилой доктора Эдмундса, который погиб до их прибытия. Человечество спасено благодаря любви отца к дочери, которая преодолела время и пространство, и научному гению Мерф, которая использовала данные из черной дыры для решения величайшей проблемы физики и открытия нового дома для человеческой расы среди звезд.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Город Бога', 'In the slums of Rio, two kids'' paths diverge as one struggles to become a photographer and the other a kingpin.', '2002-01-01', 1, '130 minutes', 'Cidade de Deus', 8.6, 'Фильм рассказывает историю бразильских трущоб Сидади-ди-Деус в Рио-де-Жанейро с 1960-х по 1980-е годы через глаза двух главных персонажей - Ракеты и Зе Пекенью. История начинается в конце 1960-х годов, когда район только формировался как место для переселения бедных семей из центра города. Ракета - застенчивый подросток, мечтающий стать фотографом, растет в этой среде, но старается избежать криминального пути, которым идут многие его сверстники.
+Параллельно показывается становление Зе Пекенью, который с детства проявляет садистские наклонности и стремление к власти. В детстве он получает прозвище Лил Зе и уже тогда отличается особой жестокостью. Трио Нежности, состоящее из старшего брата Ракеты Гуса, Клиппера и Шагги, занимается мелкими ограблениями, включая нападение на мотель. Во время одного из ограблений Лил Зе убивает почти всех находившихся в мотеле людей, что шокирует даже его подельников.
+Проходят годы, и в 1970-е Зе Пекенью становится одним из самых влиятельных наркоторговцев района. Он методично устраняет конкурентов и захватывает их территории, используя невероятную жестокость. Его главным соперником становится Галинья, контролирующий другую часть района. Зе Пекенью отличается тем, что не употребляет наркотики сам, а рассматривает торговлю как бизнес. Он окружает себя детьми-солдатами, которые выполняют самую грязную работу.
+Ракета тем временем пытается найти свое место в жизни. Он работает на различных работах, включая доставку газа, и постепенно осваивает фотографию. Его жизнь кардинально меняется, когда он случайно фотографирует Зе Пекенью с его бандой. Эти фотографии попадают в газету, что делает Ракету известным фотожурналистом, а Зе Пекенью получает нежелательную огласку.
+Конфликт между Зе Пекенью и Галиньей достигает апогея, когда люди Зе насилуют подругу Галиньи. Это приводит к масштабной войне банд, в которую втягивается весь район. Дети берут в руки оружие, насилие становится обыденностью. Полиция периодически проводит рейды, но коррумпированные офицеры часто работают на одну из сторон конфликта.
+Ракета оказывается в центре событий как фотожурналист, документирующий войну банд. Его фотографии привлекают внимание национальных СМИ к проблеме насилия в фавелах. Зе Пекенью поначалу гордится своей известностью, но затем понимает, что слава может навредить его бизнесу.
+Кульминация наступает, когда во время очередного столкновения полиция арестовывает Зе Пекенью. Однако коррумпированные полицейские, получающие взятки от наркоторговца, планируют его освободить после того, как он отдаст им деньги, спрятанные в тайнике. Зе Пекенью соглашается показать место, где спрятаны деньги, но когда полицейские получают их, они все равно убивают его, забрав деньги себе.
+После смерти Зе Пекенью власть в районе переходит к новому поколению еще более молодых и жестоких преступников, возглавляемых ребенком по имени Стингрей. Эти дети, которые раньше были на побегушках у взрослых торговцев, теперь сами становятся лидерами. Фильм заканчивается тем, что они составляют список людей, которых планируют убить, демонстрируя, что цикл насилия будет продолжаться.
+Ракета становится успешным фотожурналистом, его работы публикуются в крупных изданиях. Он смог вырваться из порочного круга насилия и бедности благодаря своему таланту и удаче. Однако район остается во власти преступности, и новое поколение бандитов обещает быть еще более безжалостным, чем предыдущее.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Унесенные призраками', 'During her family''s move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.', '2001-01-01', 1, '125 minutes', 'Sen to Chihiro no kamikakushi', 8.6, 'Десятилетняя Чихиро Огино переезжает с родителями в новый город. По дороге к новому дому семья сворачивает не туда и оказывается перед входом в туннель, ведущий к заброшенному тематическому парку. Несмотря на нежелание Чихиро исследовать это место, родители настаивают на том, чтобы осмотреть территорию.
+В парке они обнаруживают множество ресторанов с аппетитно пахнущей едой, но без персонала. Родители Чихиро начинают жадно поглощать еду, не спросив разрешения, в то время как девочка отказывается есть и бродит по парку одна. Она встречает загадочного мальчика по имени Хаку, который предупреждает ее немедленно покинуть это место до наступления темноты.
+Когда Чихиро возвращается к родителям, она обнаруживает, что они превратились в свиней. Парк наполняется призраками и духами, а Чихиро понимает, что попала в мир духов. Хаку находит перепуганную девочку и объясняет, что единственный способ спасти родителей и вернуться в человеческий мир - это получить работу у Юбабы, могущественной ведьмы, которая управляет банями для духов.
+Хаку ведет Чихиро к котельной, где работает Камадзи, паукообразный дух, управляющий печами и контролирующий сажных духов, которые топят бани. Камадзи отказывается дать работу Чихиро, но сочувствует ей и направляет к Линь, девушке-духу, которая работает в банях и соглашается помочь Чихиро добраться до Юбабы.
+Чихиро поднимается на самый верх здания к Юбабе, преодолевая различные препятствия и встречая странных духов. Юбаба - огромная ведьма с большой головой, живущая в роскошных апартаментах со своим избалованным сыном-великаном по имени Бо. После долгих переговоров Юбаба соглашается дать Чихиро работу, но в качестве платы забирает часть ее имени, называя девочку Сен.
+Хаку предупреждает Чихиро, что она должна помнить свое настоящее имя, иначе никогда не сможет вернуться домой, как это случилось с ним самим. Чихиро начинает работать в банях, сначала помогая Линь обслуживать различных клиентов - духов природы, которые приходят очиститься.
+Самым сложным испытанием становится обслуживание Безликого, загадочного духа в черной мантии с белой маской, который сначала кажется безобидным. Чихиро проявляет к нему доброту, впустив его в бани во время дождя. Безликий начинает производить золото, привлекая жадность персонала бань, но постепенно становится монстром, пожирающим других духов и становясь все более агрессивным.
+Другим важным клиентом оказывается Речной Дух, который выглядит как гигантская куча грязи и мусора. Все остальные работники боятся его обслуживать, но Чихиро берется за эту задачу. В процессе очистки она обнаруживает, что дух на самом деле является богом реки, загрязненной человеческим мусором. Освободив его от мусора, включая велосипед и другие отходы, Чихиро получает от него волшебную пилюлю.
+Тем временем Хаку, который оказывается драконом, получает серьезные ранения, выполняя задание для Юбабы - кражу золотой печати у ее сестры-близнеца Зенибы. Чихиро использует половину волшебной пилюли, чтобы спасти умирающего Хаку, а другую половину дает Безликому, что заставляет его изрыгнуть всех проглоченных им людей и вернуться к первоначальному спокойному состоянию.
+Чихиро решает отправиться к Зенибе, чтобы извиниться за кражу печати и попросить помощи для Хаку. Она отправляется в путешествие на поезде-призраке вместе с Безликим и ожившей бумажной куклой, которая оказывается шпионом Зенибы. Поездка проходит через затопленный мир, где видны только верхушки зданий.
+Зениба живет в скромном коттедже и оказывается полной противоположностью своей жадной сестре. Она добрая и мудрая, объясняет Чихиро, что не сердится за кражу печати, поскольку оно было проклято. Зениба дарит Чихиро защитную резинку для волос, сплетенную из человеческих волос ее друзей, и советует, как помочь Хаку.
+Хаку прилетает за Чихиро в обличье дракона, и во время полета обратно девочка вспоминает, как в детстве упала в реку, которая называлась Кохаку, и чуть не утонула, но была спасена духом этой реки. Она понимает, что Хаку и есть дух реки Кохаку, который забыл свое имя после того, как река была засыпана для строительства.
+Вернувшись в бани, Чихиро сообщает Хаку его настоящее имя - Кохаку, что освобождает его от власти Юбабы и возвращает ему память. В благодарность Хаку соглашается помочь Чихиро освободить ее родителей.
+Юбаба ставит последнее условие: Чихиро должна узнать своих родителей среди стада свиней. Если она угадает правильно, все трое смогут вернуться в человеческий мир. Чихиро внимательно осматривает свиней и заявляет, что среди них нет ее родителей. Она оказывается права - это была ловушка, и ее родители находятся в другом месте.
+Юбаба вынуждена выполнить свою часть сделки. Хаку сопровождает Чихиро и ее восстановленных в человеческом облике родителей обратно к туннелю. Он предупреждает девочку, что она не должна оглядываться назад до тех пор, пока не выйдет из туннеля, иначе все повторится сначала.
+Семья проходит через туннель, и родители Чихиро, которые не помнят ничего из произошедшего, обнаруживают, что их машина покрыта пылью и листьями, словно простояла там очень долго. Они садятся в машину и уезжают к новому дому, а Чихиро оглядывается на туннель в последний раз, держа в волосах подарок Зенибы как напоминание о своем невероятном приключении в мире духов.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Спасти рядового Райана', 'Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.', '1998-01-01', 1, '169 minutes', 'Saving Private Ryan', 8.6, 'Фильм начинается с высадки союзных войск в Нормандии 6 июня 1944 года. Капитан Джон Миллер командует ротой рейнджеров во время штурма пляжа Омаха. Операция проходит с огромными потерями - немецкие войска ведут интенсивный огонь с укрепленных позиций, косящий наступающих американских солдат. Миллер и его люди с трудом прорывают оборону противника, неся тяжелые потери, но в итоге захватывают плацдарм.
+Тем временем в Вашингтоне секретарь армии получает информацию о том, что три брата из семьи Райан погибли в боях в течение нескольких дней. Четвертый брат, рядовой первого класса Джеймс Фрэнсис Райан, служит в 101-й воздушно-десантной дивизии и был сброшен в тыл противника перед высадкой в Нормандии. Чтобы избежать трагедии полной потери всех сыновей в одной семье, как это случилось с братьями Салливан во время Первой мировой войны, принимается решение найти и эвакуировать последнего выжившего сына.
+Капитану Миллеру поручается найти рядового Райана и доставить его домой. В его распоряжение выделяется отряд из семи человек: сержант Хорват, снайпер рядовой Джексон, медик рядовой Уэйд, подрывник рядовой Мелиш, автоматчик рядовой Райбен, переводчик капрал Апхэм и пулеметчик рядовой Карапаццо. Солдаты не понимают логику миссии, считая несправедливым рисковать жизнями восьми человек ради спасения одного, но приказ есть приказ.
+Отряд начинает поиски в разрушенной французской деревне, где встречает французскую семью. Обыскивая руины, они сталкиваются с немецким снайпером, который убивает Карапаццо. После короткого боя снайпера удается нейтрализовать. Поиски приводят их в другую деревню, где они находят рядового Райана, но это оказывается не тот человек, которого они ищут - у него другое имя.
+Продолжая поиски, отряд встречает взвод десантников, которые сообщают, что видели Джеймса Райана у моста через реку в городе Рамель. По пути туда отряд обнаруживает немецкую радарную установку, которую охраняет небольшой гарнизон. Несмотря на то что это отвлекает от основной миссии, Миллер принимает решение уничтожить установку. Во время атаки медик Уэйд получает смертельное ранение. Умирая, он просит товарищей передать матери, что он был хорошим человеком.
+Немецкий пулеметчик, прозванный "Парень из парохода", сдается в плен. Солдаты хотят его расстрелять в отместку за смерть Уэйда, но Апхэм, который служит переводчиком и не имеет боевого опыта, убеждает Миллера отпустить пленного. Это решение вызывает конфликт в отряде, и Райбен даже угрожает дезертировать. Миллер успокаивает ситуацию, рассказав о своей мирной профессии школьного учителя.
+В Рамеле отряд наконец находит Джеймса Райана, который служит в составе небольшой группы парашютистов, удерживающих стратегически важный мост. Райан отказывается покидать своих товарищей, особенно после того как узнает о гибели братьев. Он считает, что не имеет права бросить своих сослуживцев перед неминуемой атакой превосходящих сил противника.
+Миллер принимает решение остаться и помочь защитить мост. Небольшая группа американцев готовится отразить атаку немецких танков и пехоты. Они устанавливают взрывчатку на мосту, готовят засады и импровизированные противотанковые заграждения. Апхэм получает задание доставить боеприпасы, но его неопытность и страх мешают ему эффективно участвовать в бою.
+Немецкая атака начинается с артиллерийского обстрела, за которым следует наступление танков и пехоты. Американцы несут потери один за другим. Джексон погибает от прямого попадания танкового снаряда, когда пытается подбить немецкий танк из снайперской винтовки. Мелиш гибнет в рукопашной схватке с немецким солдатом в разрушенном здании, а Апхэм, который мог бы ему помочь, парализован страхом и не может подняться по лестнице.
+Хорват получает смертельное ранение, но продолжает сражаться до последнего. Мост взрывают, но немцы продолжают наступление. Миллер, тяжело раненный, делает последнюю попытку остановить немецкий танк, стреляя из пистолета по его броне - жест скорее символический, чем практический. В этот момент прибывают американские истребители и уничтожают немецкую технику, переломив ход боя.
+Умирающий Миллер произносит свои последние слова Райану: "Заслужи это", имея в виду жертвы, принесенные ради его спасения. Апхэм, наконец преодолев свой страх, арестовывает сдающихся немецких солдат, среди которых узнает того самого "Парня из парохода", которого они ранее отпустили. В порыве гнева Апхэм расстреливает его.
+Фильм завершается эпилогом, где пожилой Райан много лет спустя приходит на американское военное кладбище в Нормандии со своей семьей. Он стоит у могилы капитана Миллера, размышляя о том, смог ли он прожить жизнь достойно той жертвы, которую принесли ради него восемь человек. Он просит жену подтвердить, что он был хорошим человеком, демонстрируя, что груз ответственности за смерть товарищей нес всю жизнь.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Зеленая миля', 'The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.', '1999-01-01', 1, '189 minutes', 'The Green Mile', 8.6, 'Действие происходит в 1935 году в тюрьме Холодная Гора в штате Луизиана. Пол Эджкомб работает начальником блока смертников, который заключенные называют "Зеленая миля" из-за зеленого линолеума на полу коридора, ведущего к электрическому стулу. Пол страдает от мучительной инфекции мочевыводящих путей, которая причиняет ему сильную боль при мочеиспускании, но он скрывает свою болезнь от жены Джен и коллег.
+В его команду входят заместитель Брутус "Брут" Хауэлл, добродушный гигант с мягким характером, Дин Стэнтон и Гарри Теруиллигер - опытные и гуманные охранники. Однако недавно к ним присоединился Перси Уэтмор, садистский молодой человек, который получил работу благодаря связям своей тети с губернатором. Перси жесток с заключенными, трусоват и отказывается переводиться в психиатрическую больницу Брайар-Ридж, как планировалось.
+На блоке содержатся несколько заключенных, ожидающих казни. Эдуард "Дел" Делакруа - пожилой каджун, осужденный за убийство и изнасилование маленькой девочки, хотя он утверждает, что изнасилования не было. Дел приручил мышь, которую назвал мистер Джинглс, и обучил ее различным трюкам. Мышь стала его единственным другом и утешением. Уильям "Дикий Билл" Уортон - психопатический убийца, который постоянно создает проблемы, кричит непристойности и нападает на охранников.
+Самым загадочным заключенным является Джон Коффи, огромный темнокожий мужчина ростом более двух метров, осужденный за жестокое убийство и изнасилование двух маленьких белых девочек-близнецов, сестер Деттерик. Несмотря на ужасное преступление, Коффи ведет себя тихо, вежливо и кажется почти детски наивным. Он боится темноты и просит оставлять свет включенным в его камере ночью.
+Однажды Коффи просит Пола подойти к решетке его камеры. Когда Пол приближается, Коффи внезапно хватает его за пах, но вместо нападения происходит что-то невероятное - из рта Коффи вылетает облако черных частиц, похожих на насекомых, и инфекция Пола мгновенно исчезает. Пол потрясен и не может понять, что произошло, но он полностью здоров.
+Вскоре после этого Коффи демонстрирует свои сверхъестественные способности исцеления снова. Когда Перси жестоко наступает на мистера Джинглса, мышь получает серьезные травмы и находится при смерти. Коффи просит принести ему мышь и, взяв ее в свои огромные руки, исцеляет животное тем же способом - выдыхая черные частицы болезни. Мистер Джинглс полностью выздоравливает, к радости Дела.
+Пол начинает сомневаться в виновности Коффи и решает расследовать его дело. Он обнаруживает, что Коффи был найден держащим тела мертвых девочек и плачущим над ними, умоляя не причинять им вред. Учитывая его способности исцеления, Пол начинает подозревать, что Коффи пытался спасти девочек, а не убивать их.
+Тем временем жена начальника тюрьмы Хэла Муре, Мелинда, умирает от неоперабельной опухоли мозга. Опухоль вызывает у нее сильные боли, галлюцинации и приступы ярости, во время которых она кричит непристойности, что совершенно не характерно для этой воспитанной женщины. Пол понимает, что Коффи может исцелить Мелинду, но для этого нужно тайно вывезти его из тюрьмы.
+Пол убеждает своих коллег Брута, Дина и Гарри помочь ему в рискованном плане. Они усыпляют Перси и запирают его в камере-одиночке, а затем под видом транспортировки выводят Коффи из тюрьмы. По пути Коффи рассказывает Полу правду о преступлении: настоящим убийцей был Уильям Уортон, который изнасиловал и убил девочек, а затем скрылся. Коффи нашел их тела и пытался исцелить детей, но было уже слишком поздно.
+В доме Хэла Коффи исцеляет Мелинду, извлекая из нее опухоль в виде отвратительного облака черных частиц. Мелинда мгновенно выздоравливает, но Коффи временно поглощает болезнь в себя, что причиняет ему мучительную боль. В благодарность Мелинда дает Коффи медальон святого Христофора.
+Когда они возвращаются в тюрьму, разъяренный Перси требует объяснений. Коффи, все еще страдающий от поглощенной болезни, внезапно хватает Перси и "выдыхает" в него опухоль Мелинды. Перси впадает в кататоническое состояние, а затем, как в трансе, идет к камере Дикого Билла и расстреливает его из служебного пистолета. После убийства Перси окончательно теряет рассудок и проводит остаток жизни в психиатрической больнице Брайар-Ридж.
+Наступает время казни Дела Делакруа. Перси, который должен был быть переведен, но остался из-за инцидента с Диким Биллом, отвечает за подготовку электрического стула. В акте садизма он не смачивает губку, которая должна обеспечить быструю смерть. В результате Дел медленно сгорает заживо в течение нескольких мучительных минут, пока Пол не приказывает увеличить напряжение, чтобы прекратить страдания.
+Несмотря на то, что Пол теперь знает о невиновности Коффи, он не может его освободить - у него нет доказательств, а общество 1930-х годов не поверит показаниям темнокожего заключенного против слова белых. Коффи сам не хочет свободы, объясняя Полу, что устал от жестокости мира и страданий, которые он постоянно чувствует от других людей. Он говорит, что люди причиняют боль друг другу без причины, и что он больше не может этого выносить.
+В ночь перед казнью Коффи просит Пола посмотреть фильм. Они идут в кинотеатр, где показывают мюзикл "Золушка" с Фредом Астером и Джинджер Роджерс. Коффи очарован фильмом и впервые за долгое время улыбается, видя красоту и радость на экране.
+На следующий день происходит казнь Коффи. В последние минуты он отказывается от черного капюшона, говоря, что боится темноты. Его последними словами становится извинение за то, что он не смог спасти девочек Деттерик. Пол с тяжелым сердцем приводит приговор в исполнение, зная, что убивает невинного человека с божественным даром исцеления.
+Фильм возвращается в дом престарелых в 1999 году, где пожилой Пол Эджкомб заканчивает рассказывать свою историю подруге Элейн Коннелли. Он показывает ей мистера Джинглса, который все еще жив спустя более шестидесяти лет после того, как Коффи исцелил его. Пол объясняет, что прикосновение Коффи дало ему самому сверхъестественное долголетие - он уже прожил более ста лет и, вероятно, будет жить еще много десятилетий.
+Пол рассматривает свое долголетие как наказание за то, что он не смог спасти невинного Коффи. Он вынужден наблюдать, как умирают все его близкие - жена, друзья, коллеги - в то время как он продолжает жить. Элейн пытается утешить его, говоря, что он был добрым и справедливым человеком в невозможной ситуации, но Пол остается в плену своей вины.
+Фильм заканчивается тем, что Пол сидит на крыльце дома престарелых с мистером Джинглсом на коленях, размышляя о справедливости, искуплении и цене чудес в мире, полном жестокости и безразличия. История служит притчей о том, как добро и зло сосуществуют в человеческой природе, и о том, что иногда величайшие дары приходят через величайшие страдания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Жизнь прекрасна', 'When an open-minded Jewish librarian and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son from the dangers around their camp.', '1997-01-01', 1, '116 minutes', 'La vita è bella', 8.6, 'В 1939 году еврейский итальянец Гвидо Орефиче приезжает в тосканский город Ареццо вместе со своим другом Ферруччо в поисках работы. Гвидо обладает неиссякаемым оптимизмом, остроумием и способностью находить радость в любых обстоятельствах. Он мечтает открыть собственный книжный магазин и влюбляется в Дору Венторини, молодую учительницу из местной буржуазной семьи.
+Дора помолвлена с Родольфо, местным фашистским чиновником, но Гвидо начинает ухаживать за ней, используя свой юмор и романтические выходки. Он убеждает ее, что их встречи - это знаки судьбы, называя их "добрыми знамениями". Постепенно Дора влюбляется в веселого и непредсказуемого Гвидо, несмотря на социальные различия и давление семьи.
+Гвидо устраивается работать официантом в отеле, где обслуживает немецких гостей, случайно выдавая себя за школьного инспектора. Во время посещения школы, где преподает Дора, он импровизирует лекцию о расовом превосходстве, высмеивая нацистские идеи, демонстрируя "совершенство" арийской расы на примере собственного тела.
+В день помолвки Доры с Родольфо Гвидо приезжает на лошади прямо в театр, где проходит церемония, и увозит Дору, которая решает связать свою судьбу с ним вместо навязанного семьей жениха.
+Проходит несколько лет. Гвидо и Дора счастливо женаты и воспитывают пятилетнего сына Джозуэ. Гвидо осуществил свою мечту и владеет книжным магазином. Однако нацистская оккупация Италии усиливается, и начинаются преследования евреев. На витринах магазинов появляются таблички "Евреям и собакам вход воспрещен".
+В 1944 году, в день рождения Джозуэ, нацисты арестовывают Гвидо и его сына во время облавы. Дора, которая не является еврейкой, добровольно садится в поезд, депортирующий евреев в концентрационный лагерь, чтобы быть рядом с семьей.
+В концентрационном лагере Гвидо понимает, что должен защитить сына от ужасов происходящего. Он убеждает Джозуэ, что все вокруг - это сложная игра, в которой они участвуют, чтобы выиграть настоящий танк. Гвидо объясняет мальчику "правила игры": нужно набрать тысячу очков, не плакать, не просить еду и не звать маму. Тот, кто наберет тысячу очков первым, выиграет танк.
+Гвидо скрывает от сына реальность лагеря, представляя тяжелую работу, голод и жестокость охранников как элементы игры. Когда другие дети исчезают, он говорит Джозуэ, что они спрятались, потому что устали от игры. Работая переводчиком, Гвидо намеренно неправильно переводит немецкие команды, превращая их в объяснения правил игры.
+Дора работает в другой части лагеря, и Гвидо пытается поддерживать с ней связь. Однажды он получает возможность передать ей сообщение через громкоговоритель лагеря, включив музыку Жака Оффенбаха из оперетты "Лодочка", которую они любили. Дора понимает, что это послание от мужа, и это дает ей силы продолжать бороться.
+По мере приближения союзных войск ситуация в лагере становится все более хаотичной. Немцы начинают эвакуацию и уничтожение заключенных. Гвидо понимает, что времени осталось мало, и прячет Джозуэ в металлическом ящике, наказав ему не выходить до утра, когда все станет тихо.
+Гвидо пытается найти Дору среди женщин-заключенных, которых эвакуируют. Его замечает немецкий охранник, и начинается погоня. Проходя мимо укрытия сына, Гвидо делает вид, что идет маршировать как солдат, подмигивает Джозуэ и продолжает изображать игру до самого конца. Его уводят за барак и расстреливают.
+Утром Джозуэ выходит из укрытия и обнаруживает, что лагерь покинут. Вскоре появляется американский танк, и мальчик думает, что выиграл игру и получил обещанный приз. Американский солдат сажает его на танк.
+Танк привозит Джозуэ к группе освобожденных заключенных, среди которых он находит свою мать. Дора бежит к сыну, и они воссоединяются. Фильм завершается словами взрослого Джозуэ, который рассказывает эту историю как воспоминание о жертве отца, подарившего ему детство даже в самых ужасных обстоятельствах. Он заключает, что это была его история, и что его отец подарил ему жизнь, полную радости и любви.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Семь', 'Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.', '1995-01-01', 1, '127 minutes', 'Se7en', 8.6, 'Фильм происходит в неназванном дождливом городе, где детектив Уильям Сомерсет готовится к выходу на пенсию через неделю. К нему в напарники назначают молодого и амбициозного детектива Дэвида Миллса, который недавно переехал в город со своей беременной женой Трейси. Сомерсет - опытный, циничный полицейский, разочарованный в людях и системе, в то время как Миллс полон энтузиазма и веры в справедливость.
+Их первое дело начинается с обнаружения тела крайне толстого мужчины, который был принужден есть до тех пор, пока его желудок не лопнул. На месте преступления найдено слово "GLUTTONY" (чревоугодие), написанное жиром жертвы на стене за холодильником. На следующий день обнаруживается второй труп - богатого адвоката, с которого убийца срезал фунт мяса, оставив надпись "GREED" (жадность). Рядом с телом лежат весы - символ правосудия.
+Сомерсет понимает, что имеет дело с серийным убийцей, который убивает согласно семи смертным грехам христианской традиции. Он погружается в изучение религиозной литературы, особенно работ Данте, Чосера и святого Фомы Аквинского. Миллс поначалу скептически относится к теории напарника, но постепенно убеждается в ее правильности.
+Третьей жертвой становится молодой человек, найденный привязанным к кровати. Убийца год держал его в таком положении, периодически возвращаясь, чтобы продлить его мучения. Жертва превратилась в живой скелет, и врачи констатируют, что он практически мертв, хотя технически еще жив. Это символизирует грех лености (SLOTH). Рядом с кроватью висит фотография мужчины в лучшие времена.
+Четвертая жертва обнаруживается в борделе - проститутку убили с помощью странного устройства с ножом, которое клиент был принужден использовать во время полового акта. Это представляет грех похоти (LUST). Единственный свидетель - травмированный клиент - не может дать связных показаний из-за психического шока.
+Детективы понимают, что убийца тщательно планирует свои преступления и глубоко изучает жертв, выбирая их как идеальные воплощения определенных грехов. Сомерсет использует свои связи в ФБР, чтобы получить доступ к библиотечным записям людей, которые брали книги по теологии и философии морали. Этот поиск приводит их к квартире подозреваемого.
+В квартире они обнаруживают тысячи блокнотов с мелким почерком, стены, исписанные цитатами из религиозных текстов, и фотографии будущих жертв. Квартира напоминает жилище религиозного фанатика. Внезапно появляется сам убийца, который стреляет в Миллса, ранив его в руку, и скрывается. Детективы преследуют его по темным переулкам, но он ускользает.
+Пятой жертвой становится красивая модель, которой убийца изуродовал лицо, приставив нож к одной щеке и дав ей выбор: позвонить в службу спасения и жить изуродованной, или принять большую дозу снотворного и умереть красивой. Она выбрала смерть. Это символизирует грех гордыни (PRIDE). На зеркале написано "PRIDE" ее же помадой.
+Остаются два греха - зависть (ENVY) и гнев (WRATH). На следующее утро убийца, представившийся как Джон Доу, сам является в полицейский участок весь в крови. Он заявляет, что сдается, но только при условии, что Сомерсет и Миллс отвезут его в пустынное место, где находятся тела последних двух жертв. Он угрожает изменить свои показания и избежать наказания, если его условия не будут выполнены.
+Доу оказывается обычным с виду мужчиной средних лет, который считает себя избранным для искоренения грехов общества. Он хладнокровно объясняет свою философию, утверждая, что его жертвы заслужили смерть за свои пороки, а его преступления привлекут внимание к моральному разложению современного мира. Он презирает равнодушие общества к греху и считает себя орудием божественного правосудия.
+По дороге в пустыню Доу рассказывает, что шестой грех - зависть - это он сам. Он завидовал нормальной жизни Миллса, его любящей жене и будущему ребенку. Поэтому он убил Трейси, отрезав ей голову, которая теперь находится в коробке, доставляемой на место курьером. Доу также сообщает, что Трейси была беременна, хотя еще не сказала об этом мужу, так как сомневалась, хочет ли растить ребенка в этом жестоком городе.
+Когда прибывает курьер с коробкой, Сомерсет открывает ее и подтверждает содержимое, не показывая Миллсу. Доу продолжает провоцировать Миллса, описывая, как он убил его жену, и утверждая, что она умоляла о жизни ребенка. Несмотря на отчаянные мольбы Сомерсета сохранить самообладание, Миллс в ярости расстреливает Доу из пистолета.
+Таким образом Доу завершает свой план: Миллс становится воплощением седьмого греха - гнева (WRATH), убив его в порыве ярости. Доу достигает своей цели, став мучеником в собственных глазах и заставив добропорядочного полицейского совершить убийство. Сомерсет понимает, что Доу победил, разрушив жизни всех вокруг и доказав свою точку зрения о том, что каждый человек способен на грех при определенных обстоятельствах.
+Фильм заканчивается арестом Миллса, который будет судим за убийство. Сомерсет, потрясенный произошедшим, решает не выходить на пенсию, поняв, что не может оставить борьбу со злом. Последние кадры сопровождаются цитатой из "Кентерберийских рассказов" Чосера: "Мир прекрасен, и стоит за него бороться", но Сомерсет добавляет, что согласен только со второй частью этого утверждения.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Молчание ягнят', 'A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.', '1991-01-01', 1, '118 minutes', 'The Silence of the Lambs', 8.6, 'Клариса Старлинг, курсантка академии ФБР, получает задание от Джека Кроуфорда, главы отдела поведенческих наук, посетить доктора Ганнибала Лектера в психиатрической больнице строгого режима. Лектер - блестящий психиатр и изощренный каннибал, который содержится в максимально защищенной камере после совершения серии жестоких убийств.
+Кроуфорд надеется, что Лектер поможет в поимке серийного убийцы по прозвищу Буффало Билл, который похищает женщин, держит их в заточении, а затем убивает и снимает с них кожу. Последней жертвой стала Кэтрин Мартин, дочь сенатора Рут Мартин, что делает дело политически значимым.
+Во время первой встречи Лектер демонстрирует свою способность к психологическому анализу, мгновенно считывая детали биографии Кларисы по ее внешности, акценту и поведению. Он отказывается помогать, но проявляет интерес к личности молодой агентши, особенно к ее детским травмам.
+Лектер соглашается на сотрудничество в обмен на личную информацию о Кларисе. Он рассказывает ей о своих встречах с человеком, который, по его мнению, может быть Буффало Биллом. Лектер описывает пациента как человека, жаждущего трансформации, и дает загадочные подсказки о его личности.
+Тем временем Буффало Билл держит Кэтрин в глубоком колодце в своем подвале, кормя ее и требуя использовать лосьон для кожи, чтобы сохранить ее кожу в хорошем состоянии. Кэтрин понимает свою судьбу и пытается найти способ спастись, в том числе пытаясь приручить небольшую собачку убийцы.
+Кроуфорд и его команда обнаруживают голову одной из предыдущих жертв Буффало Билла. В голове они находят куколку бабочки-мертвоголова, что дает важную подсказку о мотивах убийцы и его стремлении к трансформации.
+Лектер продолжает психологические игры с Кларисой, заставляя ее рассказывать о детских травмах в обмен на информацию. Клариса рассказывает о смерти своего отца-полицейского и о том, как она пыталась спасти ягнят на ферме дяди, но не смогла остановить их убийство. Эти воспоминания до сих пор преследуют ее в кошмарах.
+Сенатор Мартин предлагает Лектеру перевод в более комфортную тюрьму в обмен на информацию о местонахождении ее дочери. Лектер соглашается, но дает ложное имя - Луи Френд, что является анаграммой "железная леди", намекая на сенатора.
+Во время транспортировки Лектер совершает дерзкий побег, жестоко убив двух охранников и замаскировавшись под одного из них. Он исчезает, оставив после себя кровавую бойню и издевательски размещенное тело охранника, словно распятое в камере.
+Клариса самостоятельно расшифровывает подсказки Лектера и понимает, что Буффало Билл - это Джеймс Гамб, который живет в доме своей первой жертвы. Она прибывает к дому одновременно с отрядом ФБР, но из-за путаницы в адресах оказывается одна лицом к лицу с убийцей.
+В доме Гамба Клариса обнаруживает ужасающие доказательства его преступлений, включая мастерскую, где он шьет костюм из человеческой кожи. Гамб преследует ее в темноте подвала, используя очки ночного видения, в то время как Клариса вынуждена ориентироваться на слух.
+В напряженной перестрелке в полной темноте Клариса убивает Гамба и спасает Кэтрин из колодца. Это делает ее героем и помогает завершить обучение в академии ФБР.
+На выпускной церемонии в академии ФБР Клариса получает телефонный звонок от Лектера, который звонит из тропической страны, где он скрывается. Он поздравляет ее с успехом и обещает не преследовать ее, поскольку считает их "друзьями". Лектер заканчивает разговор, сказав, что "у него старый друг на ужин", и камера показывает, как он следует за доктором Чилтоном, своим бывшим тюремщиком, который прибыл на тот же курорт.
+Фильм завершается тем, что Лектер исчезает в толпе на карнавале, оставляя зрителей с пониманием того, что он остается на свободе, но Клариса больше не слышит крики ягнят в своих снах, обретя внутренний покой после спасения Кэтрин.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Звездные войны', 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire''s world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.', '1977-01-01', 1, '121 minutes', 'Star Wars', 8.6, 'В далекой галактике разворачивается грандиозный конфликт между злой Галактической Империей и героическим Альянсом повстанцев. Империя завершила строительство своего самого страшного оружия - космической станции "Звезда Смерти", размером с небольшую луну и способной уничтожить целую планету одним выстрелом из своей сверхмощной лазерной пушки.
+Принцесса Лея Органа, сенатор от планеты Альдераан и тайный лидер Сопротивления, получает чертежи Звезды Смерти от группы повстанцев-шпионов, пожертвовавших жизнями ради этой миссии. Когда ее корабль перехватывает звездный разрушитель под командованием зловещего Дарта Вейдера, Лея успевает спрятать планы в память дроида R2-D2 вместе с отчаянным посланием.
+R2-D2 и его компаньон-дроид C-3PO попадают на пустынную планету Татуин, где их находят и покупают джавы - маленькие торговцы металлоломом. Дроидов приобретает фермер Оуэн Ларс для работы на ферме влагособирателей. Оуэн живет со своей женой Беру и племянником Люком Скайуокером, молодым человеком, мечтающим о приключениях среди звезд, но вынужденным помогать на семейной ферме.
+При чистке R2-D2 Люк случайно активирует часть голографического сообщения принцессы Леи, в котором она умоляет некоего Оби-Вана Кеноби о помощи. Люк знает только старого отшельника Бена Кеноби, живущего в пустыне, но R2-D2 убегает ночью, утверждая, что должен найти Оби-Вана. Люк и C-3PO отправляются на поиски беглого дроида и попадают в засаду кочевников-туксенов.
+Их спасает Бен Кеноби, который оказывается тем самым Оби-Ваном. В своей хижине старый отшельник рассказывает Люку шокирующую правду о его происхождении. Отец Люка, Энакин Скайуокер, был рыцарем-джедаем и учеником Оби-Вана. Джедаи были древним орденом воинов, использовавших мистическую энергию, называемую Силой, для поддержания мира и справедливости в галактике на протяжении тысячелетий.
+Однако двадцать лет назад ученик Оби-Вана предал и помог Империи уничтожить орден джедаев. Энакин был соблазнен темной стороной Силы и стал Дартом Вейдером, правой рукой императора. В финальной битве между учителем и учеником Вейдер убил Энакина, или так Оби-Ван рассказывает Люку, скрывая более сложную правду. Оби-Ван также дарит Люку световой меч его отца - элегантное оружие более цивилизованной эпохи.
+Посмотрев полное сообщение Леи, Оби-Ван объясняет, что принцесса была захвачена после того, как украла планы Звезды Смерти. Он просит Люка присоединиться к нему в спасательной миссии и изучении джедайских искусств, но молодой человек отказывается, считая своим долгом помочь дяде и тете на ферме. Оби-Ван отправляется один, но Люк вскоре обнаруживает, что имперские штурмовики убили джав, продавших дроидов, прослеживая их до фермы Ларсов.
+Люк мчится домой и находит сожженные тела Оуэна и Беру. Потеряв все, что связывало его с Татуином, он присоединяется к Оби-Вану в его миссии. В космопорте Мос-Эйсли они нанимают контрабандиста Хана Соло и его корабль "Тысячелетний сокол". Хан - циничный авантюрист, которому нужны деньги для выплаты долга опасному гангстеру Джаббе Хатту. Его компаньон - Чубакка, представитель расы вуки, невероятно сильный и преданный Хану.
+Пока группа направляется к Альдераану, Оби-Ван начинает обучать Люка основам Силы, используя световой меч и тренировочный дроид. Он учит молодого человека доверять своим инстинктам и чувствовать энергию Силы, которая связывает все живое во вселенной. Однако по прибытии в систему Альдераан они обнаруживают только астероидное поле - планета была уничтожена Звездой Смерти в качестве демонстрации ее мощи и для принуждения Леи к раскрытию местоположения главной базы повстанцев.
+"Тысячелетний сокол" захватывается притягивающим лучом Звезды Смерти. Спрятавшись в тайных отсеках корабля, группа проникает на станцию и обнаруживает, что принцесса Лея содержится в тюремном блоке. Пока Оби-Ван отключает притягивающий луч, Люк убеждает скептически настроенного Хана присоединиться к спасательной операции, пообещав щедрую награду от принцессы.
+Спасение принцессы Леи превращается в хаотичную погоню по коридорам Звезды Смерти. Лея оказывается волевой и решительной, берущей командование на себя и ведущей группу через мусоропровод для побега от штурмовиков. В мусорном прессе их чуть не раздавливает, и они спасаются только благодаря способности R2-D2 взломать компьютерную систему станции.
+Пытаясь добраться до корабля, группа сталкивается с Дартом Вейдером, который чувствует присутствие своего бывшего наставника. Оби-Ван и Вейдер сражаются на световых мечах в первый раз за двадцать лет. Старый джедай понимает, что не может победить своего бывшего ученика, ставшего могущественнее, чем он мог себе представить. Видя, что Люк и остальные достигли корабля, Оби-Ван жертвует собой, позволяя Вейдеру нанести смертельный удар. Его тело исчезает, оставив только пустую мантию, поскольку он становится единым с Силой.
+Потрясенный гибелью наставника, Люк слышит голос Оби-Вана, призывающий его бежать. Группа спасается на "Тысячелетнем соколе", но Лея понимает, что побег был слишком легким - Империя позволила им уйти, чтобы проследить их до секретной базы повстанцев. Действительно, корабль ведет имперцев прямо на базу повстанцев на четвертом спутнике планеты Явин.
+На базе повстанцев анализ украденных планов Звезды Смерти выявляет уязвимость в конструкции станции. Небольшой термальный выпускной порт, ведущий прямо к главному реактору, может быть поражен точным выстрелом, что вызовет цепную реакцию и уничтожит всю станцию. Однако порт имеет всего два метра в диаметре, и попасть в него можно только с помощью торпед, запущенных с малого истребителя на высокой скорости.
+Люк присоединяется к отчаянной атаке на Звезду Смерти в качестве пилота истребителя X-wing, несмотря на свой ограниченный опыт полетов. Многие опытные пилоты погибают в безнадежных попытках поразить крошечную цель, защищенную турболазерами и истребителями TIE во главе с самим Дартом Вейдером, который оказывается превосходным пилотом.
+Хан Соло, получив награду, собирается покинуть базу, чтобы расплатиться с Джаббой Хаттом, но в последний момент возвращается, чтобы спасти Люка от Вейдера, который преследует молодого пилота в решающий момент атаки. Когда Люк выстраивается для финального прохода к цели, он слышит голос Оби-Вана, призывающего его использовать Силу вместо компьютерного прицела. Доверившись Силе и своим инстинктам, Люк запускает протонные торпеды в точный момент и поражает крошечный выпускной порт.
+Звезда Смерти взрывается в грандиозном огненном шаре, уничтожая тысячи имперцев и спасая базу повстанцев от неминуемого уничтожения. Вейдер, чей истребитель был поврежден и унесен в космос взрывной волной, выживает и улетает, но Империя понесла сокрушительное поражение. На торжественной церемонии принцесса Лея награждает Люка и Хана медалями за героизм, отмечая важную победу в продолжающейся борьбе за свободу галактики. Чубакка также участвует в церемонии, а дроиды R2-D2 и C-3PO наблюдают за триумфальным моментом, знаменующим новую надежду для сил добра в их войне против тирании Империи.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Харакири', 'When a ronin requesting seppuku at a feudal lord''s palace is told of the brutal suicide of another ronin who previously visited, he reveals how their pasts are intertwined - and in doing so challenges the clan''s integrity.', '1962-01-01', 1, '133 minutes', 'Seppuku', 8.6, 'Фильм происходит в Японии XVII века, в период Токугава, когда многие самураи остались без хозяев после окончания войн и стали ронинами. История разворачивается в поместье клана Иий, куда приходит пожилой ронин по имени Цукумо Ханширо с просьбой разрешить ему совершить сэппуку во дворе их резиденции. Это была распространенная практика среди обедневших самураев, которые либо действительно хотели покончить с собой с честью, либо надеялись, что их пожалеют и дадут денег или работу.
+Старший советник клана Сайто Кагею принимает Ханширо и рассказывает ему историю другого молодого ронина по имени Мотомэ Тикако, который недавно пришел с такой же просьбой. Сайто объясняет, что в последнее время слишком много ронинов злоупотребляют священным ритуалом сэппуку, используя его как способ вымогательства. Поэтому клан принял решение не давать денег просителям, а немедленно предоставлять им возможность совершить ритуал.
+Молодому Мотомэ действительно пришлось совершить сэппуку, но оказалось, что его мечи были не настоящими - он заложил лезвия, оставив только бамбуковые ножны и рукояти. Попытка вскрыть живот бамбуковым мечом превратилась в мучительную агонию, но самураи клана заставили его довести ритуал до конца, не оказав никакой помощи. Мотомэ умирал в страшных муках, пытаясь разрезать себе горло тупым бамбуковым лезвием.
+Ханширо выслушивает эту историю без видимых эмоций и заявляет, что его решение остается неизменным. Однако затем он просит выделить ему секундантов из числа лучших воинов клана, в частности трех самураев: Онодера Хикокуро, Кавабэ Дзиннай и Оикэ Гэнго. Сайто сообщает, что все трое отсутствуют по болезни, что кажется странным совпадением.
+Тогда Ханширо начинает рассказывать свою собственную историю. Он служил вассалом семьи Фукусима, но после поражения его господина при Сэкигахара остался без средств к существованию. Его взял к себе друг Дзиннодзё Дзиробэй, также оставшийся без хозяина. Они жили вместе с дочерью Дзиробэя Мико и зарабатывали изготовлением бумажных зонтиков и вееров, отказавшись от самурайской гордости ради выживания.
+Мико и молодой Мотомэ Тикако, которого они приютили как сына, полюбили друг друга и поженились. У них родился сын Кинго, но вскоре начались трудности. Дзиробэй заболел и умер, семья погрузилась в нищету. Мико и маленький Кинго тяжело заболели, но у семьи не было денег на лечение и лекарства. В отчаянии Мотомэ решил попросить помощи у богатого клана, используя угрозу сэппуку.
+Ханширо умолял зятя не идти к Иий, предчувствуя беду, но молодой человек был полон решимости спасти семью. Он заложил лезвия своих мечей, чтобы купить лекарства, надеясь, что в клане не заметят подмены или пожалеют его. Однако самураи клана оказались беспощадными и заставили его совершить ритуал бамбуковыми мечами.
+После смерти Мотомэ Мико и Кинго тоже умерли от болезни, не получив необходимого лечения. Ханширо остался совершенно один, потеряв всех близких людей. Он провел месяцы в поисках трех самураев, которые были секундантами при сэппуку Мотомэ и которые могли бы проявить милосердие, но предпочли слепо следовать правилам.
+Ханширо нашел каждого из троих самураев и вызвал их на поединок. Во время боев он не только победил их, но и срезал их волосяные пучки - топноты, что было страшным унижением для самурая, равносильным социальной смерти. Именно поэтому они "заболели" и не могут появиться перед господином со срезанными топнотами. Ханширо демонстрирует эти волосяные пучки как доказательство своих слов.
+Разгневанные самураи клана нападают на Ханширо, но он оказывается выдающимся воином и одолевает множество противников. Однако силы неравны, и в конце концов его окружают лучники. Получив множественные ранения от стрел, Ханширо все же совершает сэппуку, но делает это как акт протеста против жестокости и лицемерия самурайской системы.
+Перед смертью он разрушает священные доспехи основателя клана, символически показывая, что честь и слава предков ничего не стоят, если потомки утратили человечность. Его последний поступок - это вызов всей системе, которая ставит формальные правила выше человеческого сострадания.
+После смерти Ханширо Сайто приказывает скрыть правду о произошедшем. Официальная версия гласит, что старый ронин совершил сэппуку с подобающей честью, а трех опозоренных самураев заставляют совершить ритуальное самоубийство, чтобы восстановить репутацию клана. Таким образом, система сохраняет свое лицо, но истинная правда о жестокости и бесчеловечности остается скрытой.
+Фильм заканчивается тем, что во дворе ремонтируют поврежденные доспехи, символически восстанавливая фасад чести, под которым скрывается моральное разложение. История Ханширо становится предупреждением о том, как слепое следование традициям может привести к утрате человечности и сострадания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Семь самураев', 'A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.', '1954-01-01', 1, '207 minutes', 'Shichinin no samurai', 8.6, 'Действие фильма происходит в XVI веке во время периода Сэнгоку в Японии. Маленькая горная деревня регулярно подвергается набегам банды разбойников, которые грабят урожай и запасы крестьян. Разбойники приезжают дважды в год - весной после посевной и осенью после сбора урожая. Крестьяне живут в постоянном страхе и нищете, отдавая большую часть своего труда бандитам.
+Когда разведчики сообщают, что разбойники вновь готовятся к набегу, жители деревни собираются на совет. Старейшина деревни Гранддед предлагает нанять самураев для защиты, хотя у крестьян практически нет денег - они могут предложить только рис в качестве оплаты. Четверо крестьян отправляются в город искать воинов, готовых сражаться за такую скромную плату.
+В городе крестьяне становятся свидетелями того, как опытный самурай Камбей Симада спасает ребенка от вооруженного преступника, переодевшись монахом и проявив выдающееся мастерство. Пораженные его умением и благородством, крестьяне просят его помочь защитить их деревню. Камбей сначала колеблется, понимая всю сложность задачи, но в конце концов соглашается, тронутый отчаянием крестьян.
+Камбей начинает собирать команду, ища опытных воинов, готовых сражаться не за деньги, а за справедливость. Первым к нему присоединяется его старый друг Сичирожи Катаяма, спокойный и надежный самурай. Затем они встречают молодого и горячего Окамото Кацуширо, который умоляет Камбея взять его в ученики. Несмотря на неопытность юноши, Камбей видит в нем потенциал и соглашается.
+Четвертым становится Хейхачи Хаяшида, добродушный самурай, который развлекает товарищей своим юмором, но при этом является искусным воином. Пятый - мрачный и суровый Кюдзо Миямото, непревзойденный мастер меча, который демонстрирует свое мастерство в поединке с самонадеянным противником. Шестым присоединяется Горобей Катаяма, молчаливый и преданный воин.
+Седьмым, и самым необычным членом команды, становится Тоширо Мифунэ, играющий Кикучийо - крестьянского сына, который выдает себя за самурая. Он груб, неотесан и не владеет самурайскими манерами, но обладает отвагой и яростью в бою. Поначалу настоящие самураи относятся к нему с презрением, но постепенно он завоевывает их уважение.
+Семь самураев прибывают в деревню и начинают подготовку к обороне. Камбей разрабатывает стратегический план защиты, решив превратить всю деревню в крепость. Самураи обучают крестьян сражаться копьями и луками, строят баррикады и ловушки. Однако вскоре выясняется, что крестьяне не так просты, как кажутся - у некоторых дома хранится самурайское оружие и доспехи, что означает, что они убивали раненых воинов ради наживы.
+Кикучийо яростно защищает крестьян перед самураями, объясняя, что бедность и отчаяние заставляют людей совершать подлые поступки. Его пламенная речь о тяжелой судьбе крестьян трогает самураев и помогает им понять друг друга. Между воинами и жителями деревни устанавливается взаимное доверие и уважение.
+Молодой самурай Кацуширо влюбляется в крестьянскую девушку Сино, дочь Манзо. Ее отец в ужасе от этой связи и даже стрижет дочь под мальчика, чтобы скрыть ее красоту от самураев. Романтическая линия развивается на фоне подготовки к бою, показывая человеческую сторону суровых воинов.
+Когда прибывают разбойники - их оказывается около сорока человек, вооруженных не только мечами, но и примитивными ружьями - начинается серия ожесточенных сражений. Самураи используют тактику партизанской войны, заманчивая врагов в ловушки и уничтожая их небольшими группами. Первые стычки проходят успешно для защитников.
+Однако во время одной из вылазок погибает добродушный Хейхачи, пронзенный копьем при штурме лагеря разбойников. Его смерть тяжело переживают все товарищи, особенно молодой Кацуширо, для которого это первая потеря близкого человека в бою. Горе закаляет решимость защитников продолжать сражение.
+Решающая битва происходит во время сильного дождя. Разбойники идут на штурм деревни, и завязывается кровопролитное сражение. Мастер меча Кюдзо погибает от выстрела из ружья, что символизирует конец эпохи самураев и наступление новой эры огнестрельного оружия. Его смерть особенно трагична, поскольку непревзойденное мастерство владения мечом оказывается бессильным против примитивного ружья.
+Кикучийо совершает героический поступок, уничтожая последних стрелков из ружей, но сам получает смертельное ранение. Умирая, он в последний раз доказывает, что достоин звания самурая, несмотря на свое крестьянское происхождение. Его жертва обеспечивает окончательную победу над разбойниками.
+В живых остаются только трое самураев - Камбей, Сичирожи и Кацуширо. Деревня спасена, разбойники уничтожены или рассеяны. Крестьяне радостно сажают рис, празднуя наступление мирного времени. Однако атмосфера праздника контрастирует с печалью выживших самураев, которые понимают, что их время уходит.
+Камбей произносит знаменитые заключительные слова о том, что победили не самураи, а крестьяне, которые остались работать на земле и продолжать жизнь. Самураи же, как ветер, приходят и уходят, а земля остается вечной. Фильм заканчивается кадрами могил четырех погибших самураев на холме, откуда видны рисовые поля, где трудятся крестьяне.
+Кацуширо прощается со своей возлюбленной Сино, понимая, что их пути расходятся - он принадлежит миру самураев, а она должна остаться в деревне. Этот момент подчеркивает трагедию социальных различий и невозможность преодоления классовых барьеров даже через любовь и общую борьбу.
+Фильм представляет собой эпическое размышление о чести, долге, самопожертвовании и смысле жизни, показывая как величие самурайского духа, так и неизбежность исторических перемен, которые делают этот образ жизни анахронизмом.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Эта замечательная жизнь', 'An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed.', '1946-01-01', 1, '130 minutes', 'It''s a Wonderful Life', 8.6, 'Фильм рассказывает историю Джорджа Бейли, простого человека из маленького городка Бедфорд-Фоллс, который всю жизнь мечтал покинуть родные места и увидеть мир, но обстоятельства постоянно удерживали его дома. Джордж с детства был добрым и отзывчивым мальчиком - он спас своего младшего брата Гарри от утопления в ледяной воде, но сам при этом оглох на одно ухо. Позже он предотвратил отравление людей лекарствами, когда заметил ошибку расстроенного аптекаря мистера Гауэра, потерявшего сына на войне.
+После школы Джордж планировал поступить в колледж, потом путешествовать по миру и стать архитектором, но смерть отца заставила его остаться и возглавить семейное дело - строительно-кредитную ассоциацию Бейли, которая помогала простым людям покупать жильё. Единственной альтернативой была продажа бизнеса жадному и беспринципиальному банкиру Генри Поттеру, который хотел монополизировать весь город. Джордж пожертвовал своими планами на образование, отдав накопленные на колледж деньги младшему брату Гарри.
+Гарри получил стипендию в университете и стал звездой футбольной команды. После выпуска он женился на дочери своего босса и получил выгодную работу, поэтому не смог вернуться домой, чтобы сменить Джорджа в семейном бизнесе, как планировалось изначально. Джордж остался в Бедфорд-Фоллс, женился на своей школьной подруге Мэри Хэтч и поселился в старом доме, который они вместе отремонтировали. У них родилось четверо детей.
+Джордж честно вёл дела ассоциации, помогая рабочим семьям строить дома в новом районе, который назвали Бейливиль. Он постоянно противостоял попыткам Поттера захватить бизнес и установить контроль над городом. Во время экономического кризиса Джордж предотвратил панику среди вкладчиков, используя деньги, отложенные на медовый месяц с Мэри.
+Кульминация наступает в канун Рождества 1945 года, когда дядя Билли, помощник Джорджа, случайно теряет восемь тысяч долларов - крупную сумму денежных поступлений компании. Деньги по иронии судьбы попадают в руки Поттера, который их присваивает. Без этих денег Джорджу грозит банкротство и тюремное заключение за растрату. В отчаянии он думает о самоубийстве, считая, что его семья получит страховку, если он умрёт.
+Стоя на мосту в снежную ночь, Джордж готовится прыгнуть в реку, но его останавливает появление странного пожилого человека, который сам падает в воду. Джордж спасает его, и незнакомец представляется как Кларенс Одбоди - ангел второго класса, который пытается заслужить крылья. Когда Джордж говорит, что лучше бы он никогда не родился, Кларенс исполняет его желание и показывает, какой была бы жизнь без него.
+В этой альтернативной реальности Бедфорд-Фоллс превратился в мрачный город под названием Поттерсвиль, полностью контролируемый алчным банкиром. Вместо уютных домов для семей рабочих там расположены трущобы, бары и дома терпимости. Брат Джорджа Гарри утонул в детстве, потому что некому было его спасти, а значит, он не смог позже спасти жизни солдат во время войны, за что получил Почётную медаль. Мистер Гауэр попал в тюрьму за отравление ребёнка ядовитыми лекарствами. Мэри стала старой девой-библиотекаршей, а мать Джорджа содержит пансион в бедности.
+Никто не узнаёт Джорджа в этом мире, даже его собственная жена и дети как будто никогда не существовали. Потрясённый увиденным, Джордж умоляет Кларенса вернуть ему жизнь, понимая, как много значила его простая человеческая доброта для окружающих. Он бежит обратно на мост и молит о возвращении к своей настоящей жизни.
+Желание исполняется, и Джордж возвращается домой, где его ждёт арест за растрату. Но Мэри тем временем рассказала жителям города о беде, и все те люди, которым когда-либо помог Джордж, собрали деньги, чтобы покрыть недостачу. Друзья, соседи, клиенты ассоциации приносят не только нужную сумму, но даже больше. В это время приходит телеграмма от брата Гарри, который называет Джорджа самым богатым человеком в городе.
+В финале Джордж находит в кармане книгу "Приключения Тома Сойера" - подарок от Кларенца с надписью: "Помни, ни один человек не является неудачником, если у него есть друзья. Спасибо за крылья. Кларенц." В этот момент звенит колокольчик на рождественской ёлке, и дочка Джорджа говорит, что учительница сказала - каждый раз, когда звенит колокольчик, ангел получает крылья.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Джокер', 'In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.', '2019-01-01', 1, '122 minutes', 'Joker', 8.5, 'Фильм рассказывает историю Артура Флека, человека средних лет, который работает клоуном в агентстве и живет со своей больной матерью Пенни в убогой квартире в Готэме 1981 года. Артур страдает от неврологического расстройства, которое вызывает у него неконтролируемые приступы смеха в неподходящие моменты, особенно когда он нервничает или расстроен. Он принимает множество лекарств и регулярно посещает социального работника.
+Артур мечтает стать стендап-комиком и боготворит телевизионного ведущего Мюррея Франклина, представляя себя гостем его популярного шоу. Он ведет дневник, записывая свои мысли и шутки, многие из которых крайне мрачные и говорят о его внутренних демонах. Его коллеги по работе относятся к нему снисходительно или с насмешкой, не понимая серьезности его состояния.
+Ситуация начинает ухудшаться, когда группа подростков нападает на Артура, пока он работает клоуном, рекламируя магазин. Они избивают его и ломают его рекламный щит. Коллега Рэндалл из сочувствия дает ему пистолет для самозащиты, хотя это строго запрещено компанией. Во время выступления в детской больнице пистолет случайно выпадает из кармана Артура, что приводит к его увольнению. Босс не верит объяснениям Артура и обвиняет его в покупке оружия.
+По дороге домой в метро трое пьяных молодых людей в костюмах, работающих на Уэйна Энтерпрайзес, начинают приставать к молодой женщине. Когда Артур заступается за нее, его состояние вызывает приступ неконтролируемого смеха. Молодые люди начинают избивать его, и в приступе ярости и самозащиты Артур убивает всех троих из пистолета. Двоих он стреляет в вагоне, а третьего преследует и добивает на перроне.
+Убийства становятся катализатором для социальных волнений в Готэме. Горожане, уставшие от неравенства и пренебрежения со стороны богатых, начинают воспринимать неизвестного убийцу в маске клоуна как символ восстания против элиты. По всему городу начинаются протесты, участники которых носят клоунские маски. Томас Уэйн, баллотирующийся в мэры, публично называет протестующих "клоунами", что только усиливает их ярость.
+Артур обнаруживает, что государственные программы сокращаются, и он больше не может получать лекарства или посещать психотерапевта. Его социальный работник сообщает, что их встречи прекращаются, и она честно признает, что системе все равно на таких людей, как Артур. Без лечения его психическое состояние начинает стремительно ухудшаться.
+Тем временем Артур находит в вещах матери старые письма, адресованные Томасу Уэйну. Пенни утверждает, что много лет назад работала у Уэйнов и имела роман с Томасом, и что Артур - его незаконнорожденный сын. Взволнованный этим открытием, Артур пытается встретиться с Томасом Уэйном, но тот категорически отрицает какую-либо связь с Пенни и называет ее психически больной женщиной, которая была помещена в лечебницу за бредовые идеи.
+Артур получает медицинские записи матери из психиатрической больницы Аркхэм и узнает шокирующую правду. Пенни действительно страдала нарциссическим расстройством личности и бредовыми идеями. Более того, она позволяла своему бойфренду физически и сексуально насиловать маленького Артура, что привело к серьезным травмам головы, вызвавшим его неврологическое расстройство. Томас Уэйн никогда не был его отцом - это была лишь фантазия больной женщины.
+Потрясенный этими откровениями, Артур возвращается домой и убивает мать, задушив ее подушкой в больничной палате. В его сознании окончательно стирается грань между реальностью и фантазиями. Он начинает трансформироваться в Джокера, окрашивая волосы в зеленый цвет, отбеливая кожу и рисуя характерную улыбку красной помадой.
+Коллега Рэндалл и карлик Гэри приходят к Артуру домой якобы выразить соболезнования по поводу смерти матери, но на самом деле Рэндалл хочет убедиться, что Артур не сдаст его полиции за передачу пистолета. Артур убивает Рэндалла ножницами с особой жестокостью, но отпускает Гэри, который всегда относился к нему по-доброму, хотя маленький человек в ужасе от увиденного.
+Неожиданно Артур получает приглашение на шоу Мюррея Франклина. Оказывается, видеозапись его неудачного выступления в комедийном клубе попала к продюсерам, и Мюррей хочет показать ее в эфире, чтобы посмеяться над ним. Артур воспринимает это как свой шанс на славу и планирует убить себя в прямом эфире, чтобы его смерть имела смысл.
+Перед съемками шоу по городу распространяются массовые беспорядки. Протестующие в масках клоунов громят магазины, переворачивают автомобили и сражаются с полицией. В одном из переулков участники протестов убивают Томаса и Марту Уэйн на глазах у их маленького сына Брюса, что становится origins story будущего Бэтмена.
+В студии Мюррей представляет Артура как "Джокера" - прозвище, которое дали убийце в маске клоуна. Поначалу интервью идет по плану ведущего, который намеревается унизить гостя, но Артур начинает контролировать ситуацию. Он признается в убийстве троих молодых людей в метро и произносит речь о том, как общество отвергает и игнорирует таких людей, как он, а затем удивляется, когда они "сходят с ума".
+Джокер объясняет свою философию: жизнь - это комедия, а не трагедия, если смотреть на нее под правильным углом. Он критикует Мюррея за то, что тот приглашает людей в шоу только для того, чтобы посмеяться над ними. Когда Мюррей пытается закончить интервью и называет Джокера "психом", тот убивает его выстрелом в голову прямо в эфире, произнеся свою знаменитую фразу: "Получите то, что заслуживаете!"
+Убийство в прямом эфире становится последней каплей. По всему Готэму вспыхивают еще более жестокие беспорядки. Протестующие воспринимают Джокера как своего героя и символ восстания против системы. Полиция арестовывает его, но по дороге в участок машина попадает в аварию из-за протестующих. Джокера освобождают, и он танцует на крыше разбитой машины перед толпой ликующих последователей, окончательно превратившись в культовую фигуру хаоса.
+Фильм заканчивается сценой в психиатрической больнице Аркхэм, где Джокер сидит в белой комнате напротив психиатра. Непонятно, сколько времени прошло и что именно из показанного было реальностью, а что - плодом его больного воображения. Джокер рассказывает врачу шутку, но не делится ею со зрителем, заявляя, что тот "не поймет". Затем он убивает психиатра и идет по коридору больницы, оставляя кровавые следы, в то время как персонал преследует его.
+История представлена как возможное происхождение Джокера, но фильм намеренно оставляет много вопросов открытыми, предполагая, что часть событий могла происходить только в воображении ненадежного рассказчика, страдающего серьезными психическими расстройствами.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Одержимость', 'A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student''s potential.', '2014-01-01', 1, '106 minutes', 'Whiplash', 8.5, 'Фильм рассказывает историю девятнадцатилетнего Эндрю Ниймана, студента престижной музыкальной консерватории Шаффер в Нью-Йорке, который мечтает стать одним из величайших джазовых барабанщиков всех времен. Эндрю живет с отцом Джимом, добрым школьным учителем, который поддерживает сына, но не до конца понимает его амбиции. Мать бросила их, когда Эндрю был маленьким.
+Эндрю фанатично занимается на барабанах, тренируясь до тех пор, пока его руки не начинают кровоточить. Он изучает записи великих джазовых музыкантов, особенно боготворит легендарного барабанщика Бадди Рича. Его единственная цель - попасть в студийный оркестр консерватории, которым руководит знаменитый дирижер Теренс Флетчер, известный своими жестокими методами обучения.
+Флетчер случайно слышит игру Эндрю во время его индивидуальной практики и приглашает его на репетицию своего оркестра в качестве альтернативного барабанщика. Эндрю в восторге от возможности, но вскоре понимает, что Флетчер - настоящий тиран. Дирижер использует психологическое и физическое насилие, чтобы довести музыкантов до предела их возможностей. Он оскорбляет студентов, бросает в них стулья, заставляет играть до изнеможения.
+На первой же репетиции Флетчер унижает Эндрю перед всем оркестром, критикуя его за то, что он не знает, играет ли не в такт или не в тональности. Он заставляет Эндрю играть одну и ту же партию снова и снова, каждый раз находя новые недостатки. Когда Эндрю признается, что не знает точного ответа на вопрос о темпе, Флетчер швыряет в него стул.
+Несмотря на жестокое обращение, Эндрю становится одержим желанием завоевать одобрение Флетчера и доказать свое мастерство. Он тренируется еще усерднее, доводя себя до физического истощения. Его руки покрываются мозолями и ранами, но он продолжает играть. Социальная жизнь отходит на второй план - он разрывает отношения с девушкой Николь, объясняя это тем, что любовь будет отвлекать его от музыки.
+Флетчер рассказывает историю о молодом Чарли Паркере, который стал великим саксофонистом после того, как дирижер Джо Джонс швырнул в него тарелку за плохую игру. По мнению Флетчера, худшие слова, которые можно сказать талантливому человеку - это "хорошая работа", потому что это убивает стремление к совершенству. Он считает, что только через унижение и давление можно выковать настоящего гения.
+Ситуация достигает критической точки во время важного концерта, когда Эндрю теряет ноты за несколько минут до выступления. В панике он бежит взять запасной экземпляр, но попадает в автомобильную аварию. Несмотря на травмы и сотрясение мозга, он добирается до зала и пытается играть, но его окровавленные руки не слушаются. Флетчер останавливает выступление и исключает Эндрю из оркестра за профессиональную непригодность.
+Эндрю обращается к адвокату, который представляет семью Шона Кейси, бывшего студента Флетчера, покончившего с собой из-за психологического давления дирижера. Выясняется, что у Флетчера есть история довождения студентов до нервных срывов и даже самоубийств. Эндрю соглашается дать показания против Флетчера, что приводит к увольнению дирижера из консерватории.
+Месяцы спустя Эндрю бросает музыку и поступает на обычные курсы. Он случайно встречает Флетчера в джазовом баре, где тот теперь работает пианистом. Флетчер приглашает его за стол и объясняет свою философию преподавания. Он утверждает, что его жестокие методы необходимы для создания следующего Чарли Паркера, и что посредственность - это болезнь, которую нужно искоренять любыми способами.
+Флетчер рассказывает, что больше не преподает, но дирижирует оркестром на предстоящем джазовом фестивале, и приглашает Эндрю присоединиться в качестве барабанщика. Он утверждает, что не держит зла и хочет дать Эндрю шанс проявить себя перед влиятельными людьми музыкальной индустрии. Эндрю соглашается, надеясь возобновить свою музыкальную карьеру.
+В ночь концерта, прямо перед выходом на сцену, Флетчер сообщает Эндрю, что знает о его роли в своем увольнении. В качестве мести он дает Эндрю ноты произведений, которые оркестр никогда не репетировал, планируя публично унизить его перед важной аудиторией. Эндрю начинает играть, но быстро понимает, что не знает музыку, и терпит сокрушительную неудачу на сцене.
+Униженный, Эндрю покидает сцену, но затем принимает решение, которое изменит его жизнь. Он возвращается к барабанам и начинает играть "Карavan" - произведение, которое он знает наизусть. Сначала Флетчер пытается остановить его, но Эндрю продолжает играть с невероятной страстью и мастерством. Остальные музыканты постепенно присоединяются к нему.
+Эндрю исполняет расширенное соло, демонстрируя все техники и навыки, которые он развил за годы мучительных тренировок. Его игра становится все более интенсивной и виртуозной, руки снова начинают кровоточить, но он продолжает играть как одержимый. Зал замирает, завороженный его выступлением.
+В кульминационный момент Флетчер понимает, что перед ним действительно находится тот самый музыкальный гений, которого он пытался создать своими жестокими методами. Впервые за весь фильм на его лице появляется выражение, близкое к гордости и одобрению. Он дирижирует вместе с Эндрю, и между ними устанавливается странное взаимопонимание.
+Соло Эндрю становится триумфальным - он достигает того уровня мастерства, о котором мечтал. Зал взрывается аплодисментами, а Флетчер смотрит на него с тем самым одобрением, которого Эндрю добивался все это время. В финальном кадре Эндрю и Флетчер обмениваются взглядами - учитель и ученик, мучитель и жертва, которые в итоге достигли своей общей цели создания великой музыки.
+Фильм заканчивается на этой неоднозначной ноте, оставляя открытым вопрос о том, оправдывают ли художественные достижения те человеческие жертвы, которые были принесены для их получения. История исследует тонкую грань между стремлением к совершенству и разрушительной одержимостью, между наставничеством и насилием.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('1+1', 'After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.', '2011-01-01', 1, '112 minutes', 'The Intouchables', 8.5, 'Филипп - богатый аристократ, парализованный после несчастного случая во время полета на параплане. Он прикован к инвалидному креслу и нуждается в постоянном уходе. После смерти жены он живет в роскошном особняке в Париже в окружении преданной прислуги, но чувствует себя глубоко несчастным и изолированным от мира. Его личная помощница Ивонн организует собеседования для поиска нового сиделки.
+На собеседование приходит Дрисс - молодой чернокожий парень из неблагополучного пригорода, который живет с матерью и многочисленными родственниками в тесной квартире. Он пришел не за работой, а лишь для получения справки об отказе в трудоустройстве, чтобы продолжать получать пособие по безработице. Дрисс ведет себя развязно и непочтительно, что удивляет и одновременно освежает Филиппа, привыкшего к формальному обращению и жалости окружающих.
+Неожиданно для всех Филипп выбирает именно Дриссе на должность сиделки. Молодой человек не имеет никакого опыта ухода за больными, но его прямолинейность и отсутствие снисходительности привлекают парализованного аристократа. Дрисс не видит в Филиппе инвалида, требующего особого отношения, а общается с ним как с обычным человеком.
+Поначалу Дрисс с трудом справляется с обязанностями - он не умеет правильно одевать компрессионные чулки, неловко помогает с гигиеническими процедурами, не разбирается в культурных традициях высшего общества. Однако постепенно между мужчинами завязывается необычная дружба. Филипп открывает Дриссу мир классической музыки, живописи и литературы, а тот в свою очередь знакомит аристократа с современной музыкой, простыми радостями жизни и непосредственным взглядом на вещи.
+Дрисс помогает Филиппу почувствовать себя живым - они вместе курят марихуану, превышают скорость на дорогах, Дрисс учит Филиппа танцевать в коляске. Молодой человек не стесняется шутить над инвалидностью патрона и заставляет его смеяться. Благодаря Дриссу Филипп начинает выходить в свет, посещать оперу и выставки.
+Между Филиппом и женщиной по имени Элеонор завязывается переписка. Она живет в Дюнкерке и пишет ему письма, очарованная его утонченностью и интеллектом. Дрисс поощряет эти отношения и даже помогает организовать встречу, хотя Филипп боится разочаровать женщину своим внешним видом.
+Тем временем младший брат Дрисса связывается с наркоторговцами, что создает проблемы для семьи. Дрисс пытается вмешаться и защитить брата, но это приводит к конфликту с криминальными элементами. Филипп, узнав о проблемах друга, предлагает финансовую помощь, но Дрисс отказывается, не желая становиться зависимым.
+Постепенно Дрисс понимает, что перерос свою роль сиделки и хочет найти настоящую работу, построить собственную жизнь. Он принимает решение покинуть особняк, несмотря на привязанность к Филиппу. Расставание дается обоим тяжело - они стали настоящими друзьями, несмотря на различия в происхождении и социальном статусе.
+После ухода Дрисса Филипп нанимает новых сиделок, но никто не может заменить ту особую связь, которая была между ними. Он замыкается в себе, теряет интерес к жизни и снова погружается в депрессию. Ивонн и дочь Филиппа замечают, как он угасает без своего необычного друга.
+В финале фильма Дрисс, устроившийся на работу курьером, неожиданно появляется у особняка на дорогом автомобиле. Он забирает Филиппа на встречу с Элеонор, которая наконец согласилась на свидание. Во время поездки становится ясно, что их дружба не закончилась - они по-прежнему нужны друг другу. Фильм завершается сценой в ресторане, где Филипп встречается с Элеонор, а Дрисс тактично удаляется, предоставив им возможность побыть наедине, но при этом оставаясь рядом, готовый в любой момент прийти на помощь своему другу.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Престиж', 'After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.', '2006-01-01', 1, '130 minutes', 'The Prestige', 8.5, 'Фильм рассказывает историю двух молодых фокусников - Роберта Энджера и Альфреда Бордена, которые в конце XIX века работают ассистентами у мага в Лондоне. Их дружба разрушается во время трагического инцидента на сцене, когда жена Энджера Джулия погибает, выполняя фокус с побегом из водяного резервуара. Веревка, которую должен был развязать Борден, завязана слишком туго, и женщина тонет на глазах у зрителей.
+Энджер обвиняет Бордена в смерти жены, утверждая, что тот использовал более сложный узел, чем обычно. Борден отрицает это, но между мужчинами возникает непримиримая вражда. Они становятся конкурирующими фокусниками и начинают безжалостную войну, пытаясь превзойти и уничтожить друг друга.
+Борден разрабатывает невероятный фокус под названием "Транспортный человек", где он мгновенно исчезает из одного места на сцене и появляется в другом. Фокус кажется невозможным, поскольку расстояние слишком велико, чтобы его можно было преодолеть за доли секунды. Энджер становится одержим разгадкой секрета этого трюка.
+Пытаясь раскрыть тайну, Энджер внедряет свою помощницу Оливию Венскомб в окружение Бордена как шпионку. Однако Оливия влюбляется в Бордена и становится двойным агентом. Через нее Борден передает Энджеру поддельный дневник с ложной информацией о том, что секрет фокуса связан с работами изобретателя Николы Теслы в Колорадо-Спрингс.
+Энджер отправляется в Америку к Тесле, надеясь, что великий изобретатель поможет ему создать машину для телепортации. Тесла сначала отказывается, но затем соглашается построить устройство за огромную сумму денег. Он предупреждает Энджера, что машина может быть опасной и что он может пожалеть о своей просьбе.
+Тем временем выясняются подробности личной жизни Бордена. Он женат на Саре, но их брак несчастлив из-за его непостоянного поведения. Иногда он кажется любящим мужем, а иногда холодным и отстраненным. У них есть дочь, но Борден не всегда проявляет к ней отцовскую любовь. Сара не понимает этих перепадов настроения и в итоге вешается, оставив записку с вопросом, любил ли он ее на самом деле.
+Энджер возвращается из Америки с машиной Теслы и создает собственную версию "Транспортного человека". Его шоу становится сенсацией, но успех достигается страшной ценой. Каждый раз, используя машину, Энджер создает точную копию себя, а оригинал падает в резервуар с водой под сценой и тонет. Таким образом, он убивает себя каждый вечер, а его дубликат продолжает жить и выступать.
+Борден пытается раскрыть секрет фокуса Энджера, проникнув за кулисы во время представления, но попадается и оказывается обвиненным в убийстве Энджера, найденного утонувшим. Его арестовывают и приговаривают к смерти. Перед казнью Борден встречается с человеком, который представляется лордом Колдлоу, но на самом деле является выжившим Энджером.
+Энджер предлагает Бордену сделку: он спасет его от казни в обмен на секрет "Транспортного человека". Борден отказывается и идет на виселицу, но перед смертью передает секрет своему помощнику, который должен отомстить за него.
+После казни Бордена выясняется шокирующая правда. Оказывается, "Альфред Борден" на самом деле был двумя людьми - близнецами, которые жили одной жизнью, поочередно играя роль фокусника. Они делили все: карьеру, жену, даже пальцы рук - один из них пожертвовал двумя пальцами, чтобы поддержать иллюзию того, что они один человек.
+Казненный близнец действительно любил Сару, в то время как второй был равнодушен к ней, что объясняло непостоянство поведения "Бордена" в браке. Оливия тоже любила только одного из братьев. Секрет их фокуса заключался в том, что один брат исчезал под сценой, а другой появлялся в зрительном зале, создавая иллюзию мгновенной телепортации.
+Выживший близнец приходит к Энджеру в его театр, где обнаруживает ужасающую правду о машине Теслы. В подвале театра стоят десятки резервуаров с водой, в каждом из которых находится труп утонувшего Энджера. Каждое представление создавало новую копию и убивало предыдущую версию фокусника.
+Энджер объясняет, что он никогда не знал, будет ли он тем, кто утонет, или тем, кто получит аплодисменты. Каждый вечер он жертвовал собой ради искусства и славы. Борден спрашивает, стоило ли это того, и Энджер отвечает, что аплодисменты были невероятными.
+В финальной схватке выживший Борден убивает Энджера, поджигая театр. Умирающий Энджер признает, что всегда знал о существовании близнеца, но хотел знать, какой именно из них погибнет. Борден забирает свою дочь, которую Энджер удочерил после смерти своего близнеца, и они покидают горящий театр.
+Фильм заканчивается размышлениями о природе жертвы ради искусства и одержимости. Оба фокусника пожертвовали всем - семьями, счастьем, в конечном счете жизнями - ради совершенства своего ремесла и победы над соперником. История показывает, как талант без человечности превращается в разрушительную силу.
+Структура фильма сама напоминает фокус с тремя актами: "Обет" (подготовка), "Поворот" (исчезновение) и "Престиж" (возвращение с неожиданным результатом). Каждое откровение в сюжете работает как магический трюк, заставляя зрителя пересмотреть все увиденное ранее.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Отступники', 'An undercover cop and a mole in the police attempt to identify each other while infiltrating, plot_summary an Irish gang in South Boston.', '2006-01-01', 1, '151 minutes', 'The Departed', 8.5, 'Фрэнсис Костелло - влиятельный ирландский криминальный авторитет, контролирующий преступный мир южного Бостона. Долгие годы он внедряет своих людей в полицию штата Массачусетс, чтобы получать информацию о планируемых операциях против его организации. Одним из таких внедренных агентов становится Колин Салливан, которого Костелло опекает с детства и который успешно продвигается по службе в полиции, занимая должность в отделе по борьбе с организованной преступностью.
+Параллельно полиция штата внедряет своего агента в организацию Костелло. Этим агентом становится Билли Костиган - молодой полицейский из неблагополучной семьи с криминальными связями, что делает его идеальным кандидатом для глубокого внедрения. Костиган проходит специальную подготовку под руководством капитана Куинана и сержанта Дигнэма. Его официально исключают из полицейской академии за драку и агрессивное поведение, создавая легенду для внедрения в преступную среду.
+Костиган попадает в тюрьму по сфабрикованному обвинению, где знакомится с родственником Костелло и после освобождения постепенно входит в доверие к криминальному босу. Тем временем Салливан, работая в полиции, передает Костелло информацию о планируемых операциях, срывая аресты и обыски.
+Ситуация осложняется, когда оба крота начинают подозревать о существовании друг друга. Костелло поручает своим людям найти полицейского информатора в своих рядах, а полиция усиливает поиски предателя среди своих сотрудников. Салливан, используя свое положение, пытается вычислить Костигана, а тот, в свою очередь, собирает компрометирующие материалы на Костелло и его людей.
+Психологическое напряжение нарастает, когда оба героя начинают терять контроль над ситуацией. Костиган страдает от стресса глубокого внедрения, принимает наркотики и посещает психотерапевта доктора Мэдден, с которой у него начинается роман. Салливан также ведет двойную жизнь, встречаясь с той же психотерапевткой, не зная о ее связи с Костиганом.
+Кульминация наступает во время операции по продаже микропроцессоров, когда полиция пытается поймать Костелло с поличным. Операция проваливается из-за предупреждения Салливана, но Костиган успевает передать важную информацию своим кураторам. В ходе последующих событий Костелло убивает капитана Куинана, который был близок к разоблачению предателя в полиции.
+Ситуация достигает критической точки, когда Костиган и Салливан случайно встречаются в здании полиции и понимают истинную природу друг друга. Начинается смертельная игра в кошки-мышки. Салливан пытается организовать убийство Костигана, но тот выживает и получает доказательства предательства Салливана.
+В финальной сцене на крыше здания происходит решающее противостояние. Костелло, узнав о том, что долгое время был информатором ФБР, оказывается в центре сложной игры спецслужб. Салливан убивает Костелло, чтобы скрыть свою причастность к преступной организации и представить себя героем, раскрывшим преступную сеть.
+Однако Костиган собирает достаточно доказательств против Салливана. В напряженной финальной сцене в лифте Салливан убивает Костигана, но позже сам погибает от руки Дигнэма, который узнает правду о предательстве и мстит за смерть коллег. Фильм заканчивается символической сценой, где крыса пробегает по подоконнику квартиры мертвого Салливана, символизируя тему предательства, пронизывающую весь сюжет.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Пианист', 'A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.', '2002-01-01', 1, '150 minutes', 'The Pianist', 8.5, 'Владислав Шпильман - талантливый польский пианист еврейского происхождения, работающий на варшавском радио. В сентябре 1939 года, когда немецкие войска вторгаются в Польшу, Шпильман играет Ноктюрн Шопена в прямом эфире, но передачу прерывают звуки бомбардировки. Это становится последним выступлением пианиста на долгие годы.
+С установлением нацистской оккупации жизнь еврейского населения Варшавы кардинально меняется. Вводятся дискриминационные законы - евреи обязаны носить белые повязки с синей звездой Давида, им запрещено ходить по тротуарам, посещать парки, кафе и другие общественные места. Семья Шпильманов, включающая родителей, сына Владислава и его братьев и сестер, вынуждена переехать в еврейское гетто, организованное нацистами в одном из районов Варшавы.
+В гетто царят ужасающие условия - перенаселенность, антисанитария, голод и постоянный страх. Семья живет в тесной квартире с другими еврейскими семьями. Владислав пытается заработать на жизнь, играя в кафе для богатых евреев, которые еще сохранили некоторые средства. Ситуация постепенно ухудшается - вводится комендантский час, начинаются массовые облавы и депортации.
+Немецкие солдаты регулярно устраивают жестокие акции устрашения - они могут заставить стариков танцевать, избивают людей без причины, расстреливают на месте за малейшее неповиновение. Владислав становится свидетелем того, как пожилого человека в инвалидной коляске выбрасывают с балкона, как расстреливают семью, пытавшуюся спрятать деньги.
+В 1942 году начинается массовая депортация евреев из варшавского гетто в концентрационные лагеря. Семью Шпильманов также готовят к отправке. На перроне, где собирают людей для погрузки в товарные вагоны, Владислава в последний момент спасает его знакомый - еврейский полицейский, работающий на немцев. Пианист вырывается из толпы и скрывается, в то время как его родители, братья и сестры уезжают в поезде смерти. Это последний раз, когда он видит свою семью.
+Владислав остается один в опустевшем гетто и присоединяется к группе еврейского сопротивления. Они планируют восстание и накапливают оружие. Пианист помогает переносить динамит, но во время одной из операций получает ранение. Его товарищи находят ему убежище в квартире за пределами гетто, где он прячется с помощью польских друзей, рискующих собственными жизнями ради его спасения.
+Когда в апреле 1943 года начинается восстание в варшавском гетто, Владислав наблюдает за боями из окна своего укрытия. Он видит, как немцы методично подавляют сопротивление, сжигая дома и расстреливая повстанцев. После подавления восстания его укрытие становится небезопасным, и он вынужден перебираться в другое место.
+Следующие месяцы Владислав проводит в различных тайниках, полностью зависимый от помощи друзей, которые приносят ему еду и воду. Постоянный страх быть обнаруженным, одиночество и голод доводят его до грани безумия. Он слабеет физически, его руки, которые когда-то виртуозно владели клавишами, дрожат от истощения.
+В 1944 году начинается Варшавское восстание - на этот раз восстают поляки против немецкой оккупации. Владислав снова становится свидетелем жестоких боев и массовых разрушений. Немцы в ответ на восстание начинают систематическое уничтожение Варшавы, взрывая здание за зданием. Город превращается в руины.
+Пианист остается совершенно один в разрушенном городе. Он прячется в развалинах домов, питается остатками консервов, которые находит в заброшенных квартирах. Его физическое состояние критическое - он превратился в скелет, обросший бородой, в рваной одежде. Психика также на пределе - от одиночества и ужасов войны он временами теряет связь с реальностью.
+Зимой 1944 года, когда Владислав прячется в развалинах дома в поисках еды, его обнаруживает немецкий офицер капитан Вильм Хозенфельд. Вместо того чтобы арестовать или убить беглеца, офицер спрашивает о его профессии. Узнав, что перед ним пианист, Хозенфельд ведет его к роялю в разрушенном доме и просит сыграть что-нибудь.
+Владислав исполняет Балладу номер 1 соль минор Шопена. Его игра, несмотря на физическое истощение, потрясает немецкого офицера. Музыка напоминает Хозенфельду о довоенной жизни, о красоте и человечности, которые были утрачены в этой войне. Растроганный офицер принимает решение помочь пианисту выжить.
+Хозенфельд регулярно приносит Владиславу еду, воду и даже теплое пальто. Он не требует ничего взамен и рискует собственной жизнью, помогая еврею. Между ними завязывается странная дружба, основанная на взаимном уважении и любви к музыке, которая преодолевает барьеры национальности и военного противостояния.
+Когда советские войска приближаются к Варшаве, Хозенфельд готовится к отступлению вместе с немецкой армией. В последнюю встречу он спрашивает имя пианиста и говорит, что после войны обязательно придет на его концерт. Владислав в свою очередь узнает имя своего спасителя.
+В январе 1945 года Варшава освобождается советскими войсками. Владислав выходит из своего убежища - истощенный, еле живой, но выживший. Советские солдаты поначалу принимают его за немца из-за пальто, подаренного Хозенфельдом, и чуть не расстреливают, но он успевает объяснить, кто он такой.
+После освобождения Владислав постепенно возвращается к нормальной жизни. Он узнает, что вся его семья погибла в концлагерях. Несмотря на трагические потери, он находит в себе силы вернуться к музыке. Фильм завершается сценой, где Шпильман снова играет с оркестром - на этот раз тот же Ноктюрн Шопена, который он исполнял в начале войны.
+В финальных титрах сообщается, что Хозенфельд попал в советский плен и умер в лагере в 1952 году, несмотря на попытки Шпильмана добиться его освобождения. Владислав Шпильман прожил долгую жизнь, продолжая играть музыку до преклонного возраста, и умер в 2000 году в Варшаве.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Гладиатор', 'A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.', '2000-01-01', 1, '155 minutes', 'Gladiator', 8.5, 'Фильм начинается в 180 году нашей эры на границах Римской империи в Германии, где римские легионы под командованием генерала Максимуса Децимуса Меридиуса ведут последнюю битву против германских племен. Максимус - верный полководец императора Марка Аврелия, пользующийся безграничным доверием правителя и любовью солдат. После победоносного сражения престарелый император Марк Аврелий понимает, что его дни сочтены, и принимает судьбоносное решение - он хочет передать власть не своему сыну Коммоду, а Максимусу, считая его более достойным правителем, способным восстановить республику в Риме.
+Коммод, тщеславный и жестокий наследник престола, узнает о намерениях отца во время их последней встречи в походной палатке. В порыве ярости и отчаяния он собственными руками душит Марка Аврелия, после чего объявляет себя новым императором. Коммод прекрасно понимает, что Максимус представляет для него смертельную угрозу, поскольку легионы преданы генералу больше, чем новому императору. Он приказывает арестовать и казнить Максимуса, а также его семью в Испании.
+Максимусу удается бежать от преторианцев, посланных его убить, но когда он добирается до своего поместья в Испании, то находит обугленные тела жены и сына, распятых и сожженных по приказу Коммода. Обезумевший от горя Максимус теряет сознание возле могил близких и попадает в руки работорговцев. Его продают Проксимо, бывшему гладиатору, который теперь содержит школу гладиаторов в римской провинции.
+Проксимо быстро понимает, что перед ним не обычный раб - боевые навыки и выучка Максимуса выдают в нем профессионального воина. Проксимо начинает готовить Максимуса к боям на арене, обучая его сражаться не только как солдат, но и как гладиатор, для которого каждый бой - это представление для публики. Максимус, движимый жаждой мести, быстро становится непобедимым бойцом, завоевывая славу под именем "Испанец".
+Слава Максимуса растет с каждым боем, и вскоре его отправляют в Рим для участия в грандиозных играх в Колизее, которые Коммод устраивает в честь своего правления. Император, страдающий от непопулярности среди народа и сената, надеется завоевать любовь римлян зрелищными боями. В Риме Максимус встречает Лукциллу, сестру Коммода, с которой у него когда-то была связь. Лукцилла узнает в знаменитом гладиаторе своего бывшего возлюбленного и понимает всю опасность ситуации.
+Во время первого боя в Колизее Максимус должен воссоздать историческую битву при Заме, играя роль карфагенского полководца, обреченного на поражение. Однако он переворачивает ход "спектакля", применив настоящую военную тактику и одержав победу там, где должен был погибнуть. Коммод спускается на арену, чтобы поздравить победителя, и требует, чтобы гладиатор снял шлем и назвал свое имя. Максимус произносит знаменитые слова: "Меня зовут Максимус Децимус Меридиус, командующий армией Севера, генерал легионов Феликс, верный служитель истинного императора Марка Аврелия, отец убитого сына, муж убитой жены, и я отомщу, в этой жизни или в следующей".
+Коммод потрясен - человек, которого он считал мертвым, стоит перед ним живой и здоровый, а главное - любимый народом. Император не может убить Максимуса прямо на арене, поскольку толпа обожает нового героя. Начинается психологическая дуэль между императором и гладиатором. Коммод пытается сломить Максимуса различными способами - устраивает ему все более опасные бои, угрожает его новым друзьям среди гладиаторов.
+Тем временем сенатор Гракх и другие члены сената, недовольные правлением Коммода, начинают плести заговор. Они видят в Максимусе символ, способный поднять народ против тирана. Лукцилла становится посредником между заговорщиками и Максимусом. План заключается в том, чтобы вывезти Максимуса из Рима, где он встретится с верными ему легионами и вернется, чтобы свергнуть Коммода.
+Однако заговор раскрывается. Коммод арестовывает сенаторов и угрожает убить сына Лукциллы, Луция, если она не выдаст местонахождение Максимуса. Максимуса хватают перед самым побегом, его друзья-гладиаторы погибают в бою с преторианцами. Проксимо получает смертельную рану, но перед смертью успевает сказать Максимусу, что они встретятся снова, но не здесь, а в загробном мире.
+Коммод понимает, что должен убить Максимуса публично, чтобы доказать свое превосходство, но сделать это в честном поединке он не может - генерал намного превосходит его в боевом искусстве. Перед финальным боем в Колизее Коммод наносит Максимусу скрытую рану кинжалом между ребер, а затем вызывает его на поединок перед всем Римом.
+Несмотря на смертельную рану, Максимус принимает бой. Поединок проходит с переменным успехом - императорские доспехи и свежие силы против опыта и ярости умирающего гладиатора. В конце концов Максимус убивает Коммода, но сам падает, истекая кровью. Перед смертью он приказывает освободить всех гладиаторов, восстановить власть сената и вернуть Риму величие. Его последние слова обращены к Лукцилле - он просит похоронить его дома, рядом с женой и сыном.
+Фильм завершается сценой в загробном мире, где Максимус идет через золотые поля к дому, где его ждут жена и сын. Голос за кадром произносит: "То, что мы делаем при жизни, эхом отзывается в вечности". В Риме народ и сенат чтят память героя, который вернул империи честь и справедливость ценой собственной жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Американская история X', 'A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did.', '1998-01-01', 1, '119 minutes', 'American History X', 8.5, 'Дерек Винъярд - молодой харизматичный лидер неонацистской группировки в Венис-Бич, Калифорния. Он живет с матерью Дорин, младшим братом Дэнни и сестрой Дэйви. Дерек стал радикальным расистом после того, как его отец-пожарный был убит афроамериканским наркоторговцем во время тушения пожара в черном районе. Трагедия кардинально изменила мировоззрение юноши, и он погрузился в идеологию белого превосходства.
+Дерек возглавляет местную неонацистскую группировку и активно вербует новых членов среди белой молодежи, разочарованной социальными проблемами. Он обвиняет представителей других рас во всех бедах белых американцев - в безработице, росте преступности и упадке традиционных ценностей. Под его влиянием младший брат Дэнни также начинает разделять расистские взгляды и подражать старшему брату.
+Дерек устраивает рейды против иммигрантов, нападает на афроамериканцев и латиноамериканцев, организует акции протеста. Его группировка терроризирует представителей меньшинств в районе, и Дерек становится известной фигурой в движении белых супремасистов. Он бреет голову наголо, покрывает тело татуировками с нацистской символикой и носит одежду, демонстрирующую его убеждения.
+Кульминационным моментом становится ночь, когда несколько афроамериканцев пытаются угнать грузовик Дерека, припаркованный возле его дома. Услышав шум, Дерек выбегает на улицу с дробовиком и убивает одного из угонщиков выстрелом в упор. Второго он ранит, а затем заставляет лечь на тротуар и открыть рот, после чего с садистской жестокостью заставляет его укусить бордюр и наносит смертельный удар ногой по затылку, размозжив череп. Все это происходит на глазах у младшего брата Дэнни, который наблюдает из окна.
+За это двойное убийство Дерека арестовывают и приговаривают к трем годам тюремного заключения. В тюрьме он попадает в среду, где расовые конфликты еще более обострены. Поначалу Дерек примыкает к группировке белых заключенных во главе с авторитетным преступником, но постепенно разочаровывается в их примитивности и лицемерии. Он понимает, что многие из них занимаются наркоторговлей в сотрудничестве с представителями других рас, что противоречит их якобы расовым принципам.
+Переломным моментом становится дружба Дерека с Лэмонтом - афроамериканцем, который работает с ним в тюремной прачечной. Лэмонт оказывается умным, образованным человеком с хорошим чувством юмора, что кардинально меняет представления Дерека о черных людях. Постепенно между ними завязывается настоящая дружба, основанная на взаимном уважении.
+Когда белые заключенные узнают о дружбе Дерека с чернокожим, они считают это предательством расовых принципов. В наказание группа белых насильников нападает на Дерека в душевой и жестоко избивает и насилует его. После этого унижения Дерек окончательно порывает с расистской идеологией и начинает переосмысливать свою жизнь.
+Тем временем на свободе Дэнни продолжает идти по стопам старшего брата. Он пишет сочинения на расистские темы, участвует в деятельности неонацистской группировки и все больше радикализируется. Его школьный учитель, доктор Боб Свини, афроамериканец, который дружил с отцом братьев, пытается повлиять на юношу и отвратить его от пути ненависти, но безуспешно.
+После освобождения из тюрьмы Дерек возвращается домой кардинально изменившимся человеком. Он сбривает татуировки, меняет стиль одежды и пытается наладить нормальные отношения с семьей. Однако Дэнни встречает брата с недоверием и непониманием - младший брат не может поверить, что его кумир отказался от расистских убеждений.
+Дерек пытается объяснить Дэнни, что идеология белого превосходства привела его только к страданиям и разрушению. Он рассказывает о том, что пережил в тюрьме, о дружбе с Лэмонтом и о том, как понял бессмысленность расовой ненависти. Однако Дэнни, уже глубоко погруженный в идеологию, отказывается слушать брата и обвиняет его в предательстве.
+Напряжение в семье нарастает. Мать Дорин, которая всегда боялась влияния сыновей на расистскую деятельность, радуется изменениям в Дереке, но переживает за Дэнни. Сестра Дэйви также страдает от атмосферы ненависти в доме и конфликтов между братьями.
+Дерек встречается с доктором Свини и просит помощи в спасении младшего брата. Учитель дает Дэнни задание написать сочинение о влиянии старшего брата на его жизнь, надеясь, что это поможет юноше переосмыслить свои взгляды. Дэнни неохотно соглашается выполнить задание.
+Работая над сочинением, Дэнни вспоминает историю семьи, анализирует путь старшего брата и постепенно начинает понимать разрушительность расистской идеологии. Он видит, как ненависть разрушила их семью, привела к смерти и страданиям, и не принесла ничего конструктивного.
+В кульминационной сцене Дерек и Дэнни наконец открыто говорят друг с другом. Старший брат убеждает младшего, что путь ненависти ведет только к саморазрушению, и что люди должны судить друг о друге по личным качествам, а не по цвету кожи. Дэнни соглашается изменить свою жизнь и порвать с неонацистской группировкой.
+На следующий день Дэнни идет в школу с намерением представить свое сочинение и начать новую жизнь. Однако в школьном туалете его подстерегает афроамериканский студент, с которым у него был конфликт на расовой почве. Юноша стреляет в Дэнни из пистолета, убивая его на месте в акте мести за прошлые оскорбления и нападения.
+Фильм завершается сценой, где Дерек держит на руках тело мертвого брата в больнице. Трагедия показывает, что цикл насилия и ненависти может продолжаться бесконечно, калеча жизни людей всех рас. Закадровый голос читает отрывок из сочинения Дэнни, в котором тот размышляет о бессмысленности расовой ненависти и необходимости прервать порочный круг насилия. Фильм заканчивается призывом к толерантности и пониманию между людьми разных рас и национальностей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Подозрительные лица', 'A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.', '1995-01-01', 1, '106 minutes', 'The Usual Suspects', 8.5, 'История начинается с взрыва корабля в порту Сан-Педро, в результате которого погибают двадцать семь человек и сгорает наркотиков на девяносто один миллион долларов. Единственными выжившими оказываются сильно обгоревший венгр в больнице и хромой мошенник Роджер "Вербал" Кинт, которого допрашивает таможенный агент Дейв Куян.
+Вербал рассказывает историю, которая началась шесть недель назад в Нью-Йорке. Пять преступников были задержаны полицией по подозрению в угоне грузовика с оружием: сам Вербал, Дин Китон - бывший коррумпированный полицейский, пытающийся завязать с преступной деятельностью, Майкл МакМанус и Фред Фенстер - напарники, специализирующиеся на угоне автомобилей, и Тодд Хокни - взрывник и специалист по взлому сейфов. Хотя их вскоре отпускают, в тюрьме МакМанус предлагает ограбить такси, перевозящее наркокурьеров с крупной суммой денег.
+После успешного ограбления группа обнаруживает, что деньги принадлежат не наркодилерам, а коррумпированным полицейским Нью-Йорка. Это привлекает внимание загадочного криминального авторитета по имени Кайзер Созе - легендарной фигуры преступного мира, о котором ходят самые невероятные слухи. Говорят, что Созе убил собственную семью, чтобы показать врагам, что он способен на все, и с тех пор никто не видел его лица.
+Адвокат Кобаяши встречается с группой и заявляет, что они работают на Кайзера Созе, сами того не зная. Он утверждает, что каждый из них в прошлом невольно нанес ущерб интересам Созе и теперь должен отработать долг. Кобаяши дает им несколько заданий, включая уничтожение группы аргентинцев, которые якобы могут опознать Созе.
+Китон пытается выйти из игры и связывается со своей подругой Эди Финнеран, федеральным прокурором, которая работает над делом против Созе. Она рассказывает Китону, что венгерские гангстеры готовы дать показания против Созе в обмен на защиту. Эти венгры должны прибыть в Лос-Анджелес на корабле в порту Сан-Педро.
+Кобаяши ставит группе ультиматум: они должны атаковать корабль и уничтожить венгра, который может опознать Кайзера Созе, иначе он убьет Эди и всех близких остальных участников группы. Несмотря на нежелание, группа соглашается на операцию.
+Во время штурма корабля все идет не по плану. Хокни погибает от взрыва, МакМанус и Фенстер убиты, а Китон тяжело ранен. Вербал утверждает, что видел, как Китон был убит самим Кайзером Созе, но не может описать убийцу из-за темноты и дыма.
+В ходе допроса агент Куян постепенно начинает подозревать, что Вербал знает больше, чем рассказывает. Тем временем детектив из Лос-Анджелеса Джек Бер показывает Куяну фоторобот Кайзера Созе, составленный со слов выжившего венгра. На рисунке изображен Дин Китон, что подтверждает подозрения о том, что именно он был легендарным криминальным боссом.
+Вербал заканчивает свой рассказ, получает иммунитет и освобождается. Однако, уходя из полицейского участка, он постепенно избавляется от хромоты, а его левая рука, которая казалась парализованной, начинает нормально функционировать. Тем временем Куян, оставшись в кабинете, внимательно рассматривает доску объявлений и другие предметы в комнате и с ужасом понимает, что многие детали рассказа Вербала - имена, места, события - были взяты им с различных бумаг, плакатов и объявлений, находившихся в кабинете.
+Куян выбегает на улицу, но Вербал уже садится в машину к Кобаяши и скрывается. В финальных кадрах показывается, что именно Вербал Кинт и был Кайзером Созе, который мастерски обманул всех, сочинив историю на ходу, используя детали интерьера кабинета. Вся история о Кайзере Созе как о другом человеке оказалась ложью, придуманной самим Созе, чтобы скрыть свою истинную личность и избежать наказания за многочисленные преступления.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Леон', 'Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin''s trade.', '1994-01-01', 1, '110 minutes', 'Léon', 8.5, 'Фильм рассказывает историю профессионального убийцы по имени Леон, живущего в Нью-Йорке. Леон - итальянец средних лет, который работает киллером на итальянского ресторатора Тони. Он ведет крайне замкнутый образ жизни, живет один в скромной квартире, не умеет читать, пьет только молоко и единственным его увлечением является уход за комнатным растением. Леон следует строгим профессиональным правилам - он никогда не убивает женщин и детей, работает только с проверенными людьми и никому не доверяет.
+В том же доме живет двенадцатилетняя девочка Матильда с неблагополучной семьей. Ее отец Стэн торгует наркотиками, мачеха равнодушна к детям, старшая сестра издевается над Матильдой, и только четырехлетний брат Майкл относится к ней с любовью. Матильда часто сидит на лестнице, куря сигареты и размышляя о жизни. Она несколько раз встречается с Леоном в коридоре, но тот избегает любых контактов с соседями.
+Стэн работает на коррумпированного агента DEA Нормана Стэнсфилда, который занимается торговлей наркотиками, используя свое служебное положение. Стэнсфилд - психопат, принимающий наркотики и подверженный приступам неконтролируемой ярости. Когда он обнаруживает, что Стэн украл часть кокаина из их партии, то решает жестоко наказать его. Стэнсфилд вместе с командой коррумпированных агентов приходит в квартиру Стэна под видом обыска и устраивает настоящую резню, убивая всю семью.
+Матильда в это время находится в магазине, покупая продукты. Возвращаясь домой, она видит в коридоре тела и понимает, что произошло что-то страшное. Проявив недетскую сообразительность, девочка не идет в свою квартиру, а стучится к Леону, умоляя его открыть дверь. Леон сначала не хочет впускать ребенка, но видя ее отчаяние и понимая, что снаружи опасность, впускает Матильду в свою квартиру.
+Так начинается странное сожительство профессионального убийцы и двенадцатилетней девочки. Матильда быстро понимает, чем занимается Леон, и требует, чтобы он научил ее убивать. Она хочет отомстить за смерть младшего брата Майкла, которого искренне любила. Леон категорически отказывается, но постепенно привязывается к девочке. Матильда ухаживает за его растением, учит его читать, покупает ему новую одежду и буквально меняет его жизнь.
+Девочка берет на себя роль домохозяйки, готовит, убирает квартиру, а взамен требует обучения профессии киллера. Леон неохотно начинает показывать ей основы - как пользоваться оружием, как незаметно передвигаться, как изучать объект перед убийством. Между ними возникает странная, но искренняя привязанность - Леон становится для Матильды отцом и другом, которого у нее никогда не было, а девочка пробуждает в нем человеческие чувства.
+Матильда несколько раз пытается самостоятельно отомстить Стэнсфилду. Она приходит в здание DEA под видом доставщицы пиццы, пытаясь убить агента, но тот быстро раскрывает ее план. Стэнсфилд понимает, что девочка выжила и теперь охотится за ним. Он начинает искать ее, понимая, что она может стать свидетелем его преступлений.
+Леон спасает Матильду из здания DEA, но понимает, что теперь они оба в опасности. Стэнсфилд начинает активные поиски, используя все свои ресурсы и связи в полиции. Леон решает, что им нужно покинуть город, но сначала он хочет получить деньги у Тони за последние работы, чтобы обеспечить Матильде новую жизнь.
+Однако Тони, испугавшись проблем с DEA, решает избавиться от Леона. Когда киллер приходит за деньгами, Тони пытается его убить, но Леон оказывается быстрее и расправляется с предателем и его людьми. Тем временем Стэнсфилд обнаруживает их квартиру. Он подкупает соседа-наркомана, который выдает местонахождение Леона и Матильды.
+Рано утром здание окружает целая армия полицейских и агентов DEA. Стэнсфилд организует настоящую военную операцию, чтобы взять Леона живым или мертвым. Леон понимает, что у них нет шансов выбраться вместе. Он надевает на Матильду свои очки и заставляет ее спуститься по вентиляционной шахте в подвал, а сам остается прикрывать ее отход.
+Начинается жестокая перестрелка. Леон, используя все свое мастерство и знание здания, уничтожает множество полицейских и агентов. Он передвигается по квартире как призрак, появляясь там, где его не ждут, и исчезая прежде, чем противники успевают среагировать. Стэнсфилд приказывает выпустить по зданию ракету из гранатомета, после чего Леон оказывается серьезно ранен.
+Понимая, что конец близок, Леон решает выйти из здания, притворившись одним из раненых полицейских. План почти удается - он доходит до выхода, но Стэнсфилд узнает его в последний момент. Агент подходит к Леону и говорит, что это конец. Леон отвечает, что согласен, и показывает Стэнсфилду кольца от гранат, которые держит в руках. Взрыв уничтожает обоих.
+Матильда, которой удалось выбраться из здания, становится свидетелем гибели Леона. Девочка идет к директору школы-интерната, куда Леон хотел ее устроить, и рассказывает выдуманную историю о том, что она сирота. Ее принимают в школу. В финальной сцене Матильда сажает растение Леона в землю во дворе школы, говоря, что теперь у него будут корни, как он всегда хотел. Так заканчивается история о странной дружбе между профессиональным убийцей и девочкой, изменившей его жизнь и подарившей ему человечность в последние дни его существования.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Король Лев', 'Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.', '1994-01-01', 1, '88 minutes', 'The Lion King', 8.5, '
+В африканской саванне на Скале Предков живет прайд львов под предводительством мудрого короля Муфасы. У него рождается сын Симба, который должен стать наследником трона. Церемония представления новорожденного принца всем животным королевства проходит торжественно - мандрил-шаман Рафики поднимает львенка над пропастью, и все звери склоняются перед будущим королем.
+Брат Муфасы Шрам, черногривый лев с шрамом через левый глаз, завидует племяннику, поскольку рождение Симбы лишает его права на престол. Шрам вынашивает коварный план по устранению брата и племянника, чтобы самому стать королем. Он заключает тайный союз с кланом гиен во главе с Шензи, Банзаем и Эдом, обещая им доступ к богатым охотничьим угодьям Земель Прайда в обмен на помощь в захвате власти.
+Муфаса учит маленького Симбу основам правления, объясняя ему концепцию круга жизни - как все живые существа связаны между собой, и как король должен уважать всех обитателей своего королевства. Он показывает сыну границы их владений с вершины Скалы Предов, предупреждая его никогда не заходить в мрачные земли за северной границей, где обитают гиены.
+Симба дружит с юной львицей Налой, дочерью одной из львиц прайда. Вместе они играют и мечтают о будущем, когда Симба станет королем. Однако любопытство берет верх над осторожностью, и когда Шрам рассказывает племяннику о таинственном слоновьем кладбище, находящемся в запретных землях, Симба решает отправиться туда вместе с Налой.
+Львята проникают на кладбище, но попадают в засаду гиен. Шензи, Банзай и Эд пытаются съесть детенышей, но в последний момент появляется Муфаса с Заззу - птицей-носорогом, служащей королевским советником. Король спасает львят и строго отчитывает сына за неповиновение и безрассудство.
+Шрам понимает, что его план заманить Симбу к гиенам провалился, и разрабатывает более изощренную схему. Он заводит племянника в ущелье и велит ему ждать там, якобы готовя сюрприз от отца. На самом деле Шрам подает сигнал гиенам, которые поднимают панику среди стада антилоп гну, пасущихся на плато над ущельем.
+Тысячи испуганных антилоп устремляются вниз, создавая смертоносную давку в узком ущелье. Симба оказывается в центре стампеда и пытается спастись, цепляясь за ветку сухого дерева. Заззу сообщает Муфасе о опасности, и король мчится на помощь сыну. Ему удается вытащить Симбу из давки и поместить его в безопасное место на уступе скалы.
+Однако сам Муфаса попадает под копыта антилоп и получает серьезные травмы. Он пытается выбраться из ущелья, цепляясь когтями за отвесную стену, и почти достигает вершины, где его ждет Шрам. Вместо того чтобы помочь брату, Шрам вонзает когти в его лапы и шепчет: "Да здравствует король", после чего сбрасывает Муфасу вниз, где того затаптывает стадо.
+Когда стампед заканчивается, Симба находит тело мертвого отца и безутешно рыдает рядом с ним. Появляется Шрам, который убеждает потрясенного львенка в том, что именно Симба виновен в смерти отца - если бы он не пошел в ущелье, стампеда бы не случилось. Убитый горем и чувством вины Симба верит дяде.
+Шрам советует племяннику бежать из Земель Прайда и никогда не возвращаться, поскольку прайд никогда не простит ему смерти короля. Симба убегает, а Шрам посылает гиен убить его, чтобы окончательно устранить угрозу своей власти. Гиены преследуют львенка до края пустыни, но тот ускользает от них, свалившись с обрыва в заросли колючих кустов внизу. Решив, что он погиб, гиены возвращаются к Шраму с докладом о выполненном задании.
+Шрам объявляет прайду о смерти Муфасы и Симбы в результате трагического несчастного случая и провозглашает себя новым королем. Он позволяет гиенам поселиться в Землях Прайда, что нарушает естественный баланс экосистемы. Под правлением Шрама начинается упадок - чрезмерная охота приводит к исчезновению дичи, засуха высушивает реки, и некогда цветущее королевство превращается в безжизненную пустошь.
+Тем временем Симба, едва живой от жажды и истощения, блуждает по пустыне, где его находят сурикат Тимон и бородавочник Пумба. Эти беззаботные друзья спасают львенка и принимают его в свою компанию, обучая философии "Акуна Матата" - жизни без забот и тревог, когда нужно думать только о настоящем моменте и не переживать о прошлом или будущем.
+Симба взрослеет в джунглях вместе с Тимоном и Пумбой, питаясь насекомыми и личинками, забывая о своем королевском происхождении и ответственности. Он становится сильным молодым львом, но предпочитает беззаботную жизнь воспоминаниям о трагическом прошлом и мыслям о долге перед прайдом.
+Спустя годы взрослая Нала, ставшая красивой львицей, покидает умирающие Земли Прайда в поисках помощи. Она случайно встречает Симбу в джунглях и с радостью узнает своего детского друга, которого все считали мертвым. Нала рассказывает ему о бедственном положении прайда под властью Шрама и умоляет вернуться, чтобы занять свое законное место короля и спасти свой народ.
+Однако Симба отказывается возвращаться, объясняя это тем, что он виновен в смерти отца и не достоин быть королем. Он предлагает Нале остаться с ним в джунглях и забыть о проблемах прайда. Разочарованная и возмущенная его трусостью, Нала покидает его, назвав не тем львом, которого она помнила.
+Той же ночью к Симбе является мудрый Рафики, который каким-то мистическим образом узнал, что принц жив. Шаман ведет его к священному водоему, где в отражении воды Симба видит не только себя, но и образ своего покойного отца. Появляется дух Муфасы, который напоминает сыну о его истинном предназначении и говорит, что тот забыл, кто он на самом деле - он сын Муфасы и законный король Земель Прайда.
+Муфаса объясняет Симбе, что тот живет в нем, как жили в нем все короли прошлого, и что пришло время занять свое место в круге жизни. Дух короля исчезает, оставляя Симбу наедине с пониманием своей ответственности. После внутренней борьбы Симба принимает решение вернуться домой и исправить ошибки прошлого.
+Тимон и Пумба, несмотря на нежелание расставаться с другом, решают сопровождать его в опасном путешествии. Они прибывают в Земли Прайда и видят картину полного запустения - высохшие реки, мертвые деревья, исчезнувшие животные. Скала Предков выглядит мрачно и безжизненно под властью Шрама и его армии гиен.
+Симба тайно встречается с матерью Сарой и остальными львицами прайда, которые не могут поверить, что он жив. Он узнает правду о том, как Шрам довел королевство до краха своим эгоизмом и некомпетентностью. Львицы голодают, поскольку вся дичь истреблена или ушла из этих земель, а гиены захватили лучшие охотничьи угодья.
+Симба бросает вызов Шраму перед всем прайдом, требуя, чтобы тот отказался от трона. Шрам сначала пытается переложить вину за смерть Муфасы на племянника, заставляя его публично признаться в этом "преступлении". Когда Симба, мучимый виной, начинает каяться, Шрам загоняет его к краю Скалы Предков, готовясь сбросить вниз, как когда-то сбросил его отца.
+В этот критический момент Шрам, упоенный близостью победы, признается Симбе, что именно он убил Муфасу. Услышав эту правду, Симба в ярости набрасывается на дядю, и между ними начинается смертельная схватка. Одновременно Нала ведет львиц в бой против гиен, а Тимон и Пумба помогают им, несмотря на свой маленький размер.
+Битва охватывает всю Скалу Предков. Шрам пытается сбежать, но Симба догоняет его на вершине скалы. Шрам молит о пощаде, утверждая, что это гиены были настоящими злодеями, и он был всего лишь их пешкой. Симба, проявляя милосердие, изгоняет дядю из Земель Прайда, но Шрам совершает последнюю попытку убить племянника, бросившись на него сзади.
+Симба отбрасывает Шрама, и тот падает с большой высоты прямо в толпу гиен, которые слышали, как он обвинил их в своих преступлениях. Разъяренные предательством союзника, гиены растерзывают Шрама, после чего бегут из Земель Прайда навсегда.
+С восшествием Симбы на трон в королевство возвращается изобилие. Идут дожди, реки наполняются водой, трава зеленеет, а животные возвращаются в свои родные места. Симба берет в жены Налу и становится мудрым и справедливым королем, подобно своему отцу.
+Фильм завершается сценой, зеркально отражающей начало - Рафики представляет всем животным новорожденного детеныша Симбы и Налы, демонстрируя непрерывность круга жизни и передачу власти от поколения к поколению. Дух Муфасы наблюдает за церемонией с небес, довольный тем, что его сын нашел свой путь и занял свое законное место в великом круге жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Терминатор 2: Судный день', 'A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son, John Connor, from a more advanced and powerful cyborg.', '1991-01-01', 1, '137 minutes', 'Terminator 2: Judgment Day', 8.5, 'В 2029 году машины во главе со сверхразумной системой Скайнет ведут войну против остатков человечества. Лидер сопротивления Джон Коннор представляет серьезную угрозу для машин, поэтому Скайнет отправляет в прошлое нового терминатора - жидкометаллического Т-1000, способного принимать любую форму и восстанавливаться после повреждений. Его цель - убить десятилетнего Джона Коннора в 1991 году, тем самым предотвратив его будущее лидерство.
+Одновременно сопротивление посылает в прошлое перепрограммированного терминатора Т-800 модели 101, внешне идентичного тому, что охотился на Сару Коннор в первом фильме, но теперь его миссия - защитить Джона от Т-1000.
+Т-800 материализуется возле бара, где забирает одежду, мотоцикл и оружие у местных байкеров. Т-1000 прибывает в полицейский участок, убивает полицейского и принимает его облик. Используя полицейские базы данных, он начинает поиск Джона Коннора.
+Джон Коннор живет в приемной семье Войтов, поскольку его мать Сара находится в психиатрической больнице штата Пескадеро. Сара попала туда после попытки взорвать завод компьютерных технологий, рассказывая всем о будущей войне с машинами, в что никто не верит. Джон - трудный подросток, который прогуливает школы и занимается мелким хулиганством вместе с другом Тимом.
+Т-1000 в облике полицейского приходит к приемным родителям Джона, но мальчика нет дома. Тем временем Т-800 находит Джона в торговом центре, где тот играет в игровые автоматы. Происходит первое столкновение двух терминаторов, в ходе которого Джон понимает, что Т-800 прислан защищать его, а полицейский-Т-1000 хочет его убить.
+После погони через городские улицы и канализационные туннели Джон и Т-800 скрываются. Джон узнает от терминатора о судьбе человечества и понимает, что его мать была права. Он приказывает Т-800 помочь освободить Сару из психиатрической больницы.
+В это время Т-1000 посещает дом Войтов, убивает приемных родителей Джона и его собаку, а затем принимает облик приемной матери, ожидая возвращения мальчика. Не дождавшись Джона, он отправляется в психиатрическую больницу, где принимает облик охранника.
+Сара Коннор за годы заключения превратилась в физически и психологически закаленную женщину. Она тренируется в своей палате, планирует побег и пытается убедить доктора Сильбермана в реальности угрозы со стороны машин, но тот считает ее безумной. Когда Сара видит приближающегося Т-800, она впадает в панику, вспоминая их прошлую встречу, но Джон объясняет ей, что теперь терминатор на их стороне.
+Во время побега из больницы происходит жестокое столкновение с Т-1000. Жидкометаллический терминатор демонстрирует свои уникальные способности, превращая руки в клинки и восстанавливаясь после огнестрельных ранений. Семье Коннор удается скрыться, но они понимают, что Т-1000 будет преследовать их до конца.
+Сара решает самостоятельно предотвратить создание Скайнет, отправившись убить Майлза Дайсона - ученого, чьи исследования в области искусственного интеллекта приведут к созданию системы. Она проникает в его дом, но в последний момент не может убить невинного человека на глазах его семьи.
+Дайсон узнает правду о будущем и соглашается помочь уничтожить все исследования, связанные с созданием Скайнет. Группа проникает в лаборатории компании Кибердайн Системс, где Дайсон работает над революционным микропроцессором. Они уничтожают все данные, прототипы и остатки первого терминатора, но их обнаруживает охрана.
+Во время перестрелки Дайсон получает смертельное ранение, но жертвует собой, взорвав лабораторию и уничтожив все следы своих исследований. Тем временем прибывает Т-1000, и начинается финальная погоня через промышленные районы города.
+Кульминация происходит на сталелитейном заводе, где семья Коннор пытается уничтожить неуязвимого Т-1000. Обычное оружие бесполезно против жидкометаллического терминатора, но Т-800 обнаруживает, что экстремальные температуры могут нарушить его молекулярную структуру. После жестокой битвы, в ходе которой Т-800 теряет руку и получает серьезные повреждения, ему удается столкнуть Т-1000 в чан с расплавленной сталью.
+Жидкометаллический терминатор медленно тает, принимая различные формы людей, которых он имитировал, прежде чем окончательно раствориться в металле. Однако оставшийся чип и металлическая рука первого терминатора также должны быть уничтожены, чтобы предотвратить создание Скайнет в будущем.
+Т-800 понимает, что и он сам должен быть уничтожен, поскольку его технологии также могут привести к созданию Скайнет. Несмотря на протесты Джона, который привязался к терминатору как к отцу, Т-800 опускается в расплавленную сталь, показав перед смертью жест одобрения большим пальцем.
+Фильм заканчивается размышлениями Сары о том, что будущее не предопределено и что человечество может изменить свою судьбу, если будет учиться на своих ошибках. Дорога, по которой едет их машина, уходит в неопределенное, но полное надежд будущее.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Новый кинотеатр «Парадизо»', 'A filmmaker recalls his childhood when falling in love with the pictures at the cinema of his home village and forms a deep friendship with the cinema''s projectionist.', '1988-01-01', 1, '155 minutes', 'Nuovo Cinema Paradiso', 8.5, 'Фильм начинается в современном Риме, где известный кинорежиссер Сальваторе получает телефонный звонок от матери из родной сицилийской деревни. Она сообщает ему о смерти Альфредо, старого киномеханика. Эта новость погружает Сальваторе в воспоминания о детстве, и вся история разворачивается в виде флешбэка.
+Действие переносится в послевоенную Сицилию 1940-х годов, в маленькую деревню Джанкальдо. Маленький Тото - любознательный мальчик, живущий с матерью Марией. Его отец погиб на войне, и семья бедствует. Тото обожает кино и каждый день приходит в местный кинотеатр «Парадизо» - единственное место развлечений в деревне. Кинотеатр принадлежит богатому дону Спарлинга, а показом фильмов занимается киномеханик Альфредо.
+Альфредо - ворчливый, но добрый мужчина средних лет, который становится для Тото фигурой отца. Мальчик постоянно крутится возле проекционной будки, несмотря на то, что Альфредо постоянно прогоняет его. Перед каждым сеансом местный священник отец Адельфио просматривает фильмы и требует вырезать все сцены с поцелуями и любовными сценами, считая их неподобающими для верующих. Альфредо покорно вырезает эти кадры, и они накапливаются в отдельных банках с пленкой.
+Тото быстро учится и вскоре знает все тонкости киноаппаратуры. Он помогает Альфредо чинить проектор, менять пленки и даже иногда заменяет его во время сеансов. Кинотеатр становится центром жизни деревни - здесь собирается вся община, обсуждают фильмы, переживают за героев, смеются и плачут вместе с ними. Для жителей маленькой деревни кино - это окно в большой мир.
+Однажды ночью в кинотеатре происходит страшный пожар. Старая нитратная пленка вспыхивает как порох, и здание быстро охватывает огонь. Тото первым замечает пламя и бежит спасать Альфредо, который находится в проекционной будке. Мальчик успевает вытащить киномеханика из горящего здания, но Альфредо получает серьезные ожоги лица и теряет зрение. Старый «Парадизо» полностью сгорает.
+Дон Спарлинг решает построить новый, современный кинотеатр на том же месте. Альфредо, несмотря на слепоту, остается главным киномехаником, а Тото становится его глазами и руками. Мальчик полностью овладевает профессией и фактически заменяет Альфредо, хотя официально остается его помощником. Новый «Парадизо» становится еще более популярным, и кино продолжает объединять жителей деревни.
+Проходят годы, Тото взрослеет и превращается в подростка. Он по-прежнему одержим кинематографом и мечтает стать режиссером. Альфредо становится для него не только наставником в профессии, но и мудрым советчиком по жизни. Киномеханик понимает, что талантливый юноша не должен оставаться в маленькой деревне, и постоянно подталкивает его к тому, чтобы уехать и попытать счастья в большом мире.
+В подростковом возрасте Тото влюбляется в красивую девушку Елену, дочь банкира. Он буквально сходит с ума от любви, следует за ней повсюду, но девушка не обращает на него внимания. Тото предпринимает отчаянные попытки привлечь ее внимание - стоит под ее окнами, пишет письма, даже пытается произвести впечатление, демонстрируя свои знания в области кино. Наконец Елена соглашается на свидание, но ставит условие - Тото должен сто ночей подряд стоять под ее балконом, и если он выдержит это испытание, она будет с ним.
+Тото принимает вызов и каждую ночь приходит под балкон Елены. Проходят недели, жители деревни наблюдают за этой романтической историей, но Елена не появляется. Только на сотую ночь она выходит на балкон и спускается к Тото. Они проводят вместе страстную ночь любви, и между ними завязывается серьезная связь.
+Однако счастье длится недолго. Отец Елены категорически против их отношений из-за социального неравенства и забирает дочь из деревни. Тото остается разбитым и безутешным. Альфредо понимает, что это идеальный момент, чтобы убедить юношу покинуть деревню. Он говорит Тото, что тот должен уехать и никогда не возвращаться, пока не добьется успеха. Альфредо убежден, что только разорвав все связи с прошлым, Тото сможет реализовать свой талант.
+Тото отправляется на военную службу, а затем уезжает в Рим изучать кинематограф. Он следует совету Альфредо и не возвращается в деревню долгие годы, даже когда мать просит его приехать. Тото полностью погружается в работу, становится успешным режиссером, но платит за это одиночеством и отчуждением от корней.
+Спустя тридцать лет Тото, теперь уже знаменитый Сальваторе, возвращается в родную деревню на похороны Альфредо. Деревня сильно изменилась, многие старые дома снесены, построены новые здания. Старый «Парадизо» тоже приговорен к сносу - телевидение убило интерес к кинотеатрам, и здание больше не приносит дохода.
+На похоронах Сальваторе встречает повзрослевшую мать, старых друзей детства, которые остались в деревне и ведут обычную жизнь. Вдова Альфредо передает ему подарок от покойного мужа - банку с кинопленкой и записку, в которой Альфредо просит посмотреть пленку только после его смерти.
+Сальваторе также узнает правду о Елене. Оказывается, девушка не уехала добровольно - ее отец силой увез ее из деревни. Более того, Елена много раз приходила к Альфредо и просила передать Тото, что она его любит и ждет. Но Альфредо, считая, что любовь помешает карьере Тото, никогда не передавал ему эти послания. Елена ждала несколько лет, а затем вышла замуж и уехала.
+Потрясенный этим откровением, Сальваторе находит Елену, которая приехала в деревню на похороны. Они встречаются после тридцатилетней разлуки. Елена рассказывает ему о своей жизни - она была замужем, родила дочь, овдовела. Между ними вспыхивают старые чувства, но оба понимают, что слишком поздно что-то менять. Их жизни пошли разными путями, и воссоединение невозможно.
+Сальваторе присутствует при сносе кинотеатра «Парадизо». Здание, которое было центром его детства и юности, превращается в руины под ударами экскаватора. Это символическое прощание с прошлым и с эпохой, когда кино было магией и чудом для простых людей.
+Вернувшись в Рим, Сальваторе наконец просматривает пленку, оставленную Альфредо. На ней смонтированы все те поцелуи и любовные сцены, которые священник заставлял вырезать из фильмов на протяжении многих лет. Альфредо бережно сохранил эти кадры и подарил их своему ученику как символ любви и красоты, которые всегда остаются, несмотря на запреты и ограничения.
+Просматривая эти кадры, Сальваторе плачет - он понимает глубокий смысл подарка. Альфредо всю жизнь учил его тому, что кино - это не просто развлечение, а способ сохранить и передать человеческие эмоции, любовь и красоту. Фильм заканчается тем, что успешный режиссер, прославившийся во всем мире, сидит в своем кабинете и смотрит на экран, где мелькают образы великих актеров прошлого, обменивающихся поцелуями - символом вечной любви и непреходящей магии кинематографа.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Могила светлячков', 'A young boy and his little sister struggle to survive in Japan during World War II.', '1988-01-01', 1, '89 minutes', 'Hotaru no haka', 8.5, 'События происходят в Японии в 1945 году, в последние месяцы Второй мировой войны. Четырнадцатилетний Сэйта живет в городе Кобе с четырехлетней сестрой Сэцуко и матерью. Их отец служит на флоте Японской империи и сражается на Тихом океане. Семья ведет относительно обеспеченную жизнь до начала массированных американских бомбардировок японских городов.
+В марте 1945 года американская авиация проводит разрушительный налет на Кобе. Мать детей серьезно ранена во время бомбежки - она получает тяжелые ожоги, когда их дом загорается от зажигательных бомб. Сэйта и Сэцуко спасаются в бомбоубежище, но их дом полностью уничтожен, а мать госпитализирована в критическом состоянии.
+Братья и сестра вынуждены жить в школе, превращенной во временное убежище для пострадавших от бомбардировок. Вскоре мать умирает от полученных ожогов, но Сэйта скрывает эту новость от маленькой Сэцуко, не желая травмировать ее. Он говорит сестре, что мама лечится в больнице и скоро поправится.
+Оставшись сиротами, дети отправляются к своей тете, сестре матери, которая неохотно принимает их в свой дом. Поначалу тетя относится к ним терпимо, но по мере того как война затягивается, а продовольственный кризис усугубляется, ее отношение становится все более враждебным. Она считает детей обузой и постоянно упрекает их в том, что они едят ее еду, не внося вклада в семейный бюджет.
+Тетя начинает продавать вещи, оставшиеся от матери детей, включая ее кимоно, чтобы купить рис. Она требует, чтобы Сэйта пошел работать или поступил в военную школу, критикует его за "лень" и "эгоизм". Напряжение в доме нарастает, особенно когда тетя начинает готовить отдельно для своей семьи, не давая детям нормальной еды.
+Не выдержав унижений и постоянных упреков, Сэйта принимает решение покинуть дом тети вместе с Сэцуко. Они забирают свои немногочисленные вещи и поселяются в заброшенном бомбоубежище недалеко от озера. Это пещера в склоне холма, где дети пытаются создать свой собственный дом.
+Поначалу жизнь в пещере кажется им приключением. Они наслаждаются свободой, играют, ловят светлячков, которые освещают их темное убежище волшебным светом. Сэцуко в восторге от светлячков, она танцует с ними и считает их своими друзьями. Брат рассказывает ей, что светлячки - это души умерших людей, которые приходят навестить живых.
+Однако романтика быстро заканчивается, когда заканчиваются припасы еды, которые Сэйта взял из дома. Он пытается достать продукты, обменивая оставшиеся вещи матери на рис и овощи, но в условиях военного времени еда становится все более дефицитной и дорогой. Магазины пусты, а торговцы требуют все больше денег или ценных вещей за жалкие порции риса.
+По мере того как голод усиливается, Сэйта начинает воровать еду с ферм и из домов. Он срывает овощи с огородов, крадет картофель, пытается поймать рыбу в озере. Однако его неопытность в воровстве приводит к тому, что его несколько раз ловят фермеры, которые избивают его и угрожают сдать полиции.
+Сэцуко начинает болеть от недоедания и плохих условий жизни в сырой пещере. У нее появляется сыпь на коже, она становится вялой и капризной. Девочка постоянно плачет, прося есть, но Сэйта не может дать ей достаточно пищи. Он сам худеет и слабеет, но продолжает заботиться о сестре, отдавая ей большую часть добытой еды.
+Состояние Сэцуко ухудшается - у нее начинается диарея, она теряет вес, ее волосы выпадают. Девочка становится апатичной, перестает играть и большую часть времени лежит в пещере. Сэйта в отчаянии пытается найти помощь, но врачи в переполненных госпиталях не могут помочь без денег, а социальные службы перегружены тысячами других беспризорных детей.
+В один из дней Сэйта обнаруживает, что Сэцуко играет с камешками, воображая, что это рисовые шарики, и "кормит" ими куклу. Это показывает, насколько сильно девочка голодает и как ее разум пытается справиться с реальностью. Брат понимает, что сестра умирает от истощения, но не знает, как ей помочь.
+Когда Япония капитулирует в августе 1945 года, Сэйта узнает из радиосводок, что японский флот уничтожен, а это означает, что их отец, скорее всего, погиб. Теперь дети остаются полными сиротами в разрушенной стране, где миллионы людей борются за выживание.
+Состояние Сэцуко становится критическим - она впадает в полубессознательное состояние, бредит, зовет маму. Сэйта снимает деньги с банковского счета матери и покупает арбуз и другую еду, но уже слишком поздно. Маленькая девочка не может больше есть твердую пищу, она только пьет немного воды.
+В последние дни жизни Сэцуко лежит в пещере, окруженная мертвыми светлячками, которые она собирала накануне. Она говорит брату, что светлячки умерли, так же как умерла их мама, показывая, что наконец поняла правду о смерти матери. Девочка умирает тихо ночью на руках у брата, который не смог ее спасти.
+Убитый горем Сэйта кремирует тело сестры и помещает ее прах в жестяную банку из-под конфет, где раньше хранились их детские сокровища. Он больше не видит смысла в жизни, перестает заботиться о себе, бродит по разрушенным улицам как призрак. Без сестры, ради которой он боролся за выживание, Сэйта теряет волю к жизни.
+Через несколько недель после смерти Сэцуко Сэйта умирает от истощения на вокзале, где он искал укрытие среди других беспризорников и беженцев. Уборщик находит его тело и сжигает вместе с личными вещами, но один работник замечает жестяную банку и высыпает прах Сэцуко в траву, не понимая, что это такое. Банку он выбрасывает.
+Фильм завершается мистической сценой, где духи Сэйта и Сэцуко воссоединяются среди светлячков. Они появляются как призрачные фигуры на холме, откуда открывается вид на современный Кобе - процветающий город с небоскребами и огнями. Духи детей наблюдают за тем, как их родина восстановилась и стала мирной, но их собственная трагедия остается вечным напоминанием о цене войны и страданиях невинных людей, которые стали ее жертвами.
+История показана как воспоминание самого Сэйта, который рассказывает свою историю посмертно, что придает повествованию особую меланхолию и трагизм, подчеркивая бессмысленность детских смертей во время войны.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Назад в будущее', 'Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.', '1985-01-01', 1, '116 minutes', 'Back to the Future', 8.5, 'Фильм начинается в 1985 году в вымышленном городке Хилл-Вэлли, штат Калифорния. Семнадцатилетний Марти МакФлай - обычный американский подросток, который играет на гитаре в рок-группе, встречается с девушкой Дженнифер и мечтает о музыкальной карьере. Его лучший друг - эксцентричный изобретатель Доктор Эмметт Браун, которого все называют просто Док. Браун работает над секретными изобретениями в своей лаборатории, а Марти помогает ему в качестве ассистента.
+Семья Марти далека от идеала. Его отец Джордж - застенчивый неудачник, который работает под началом своего бывшего школьного обидчика Биффа Таннена. Мать Лоррейн страдает от лишнего веса и алкоголизма, постоянно вспоминая о том, как в юности она встретила своего будущего мужа. Марти расстроен тем, что его семья живет в бедности и не имеет амбиций, а сам он боится, что тоже станет неудачником.
+Однажды ночью Док Браун вызывает Марти на стоянку торгового центра, чтобы показать свое величайшее изобретение - машину времени, созданную из автомобиля ДеЛореан. Машина работает на плутонии, который Док украл у ливийских террористов, обманув их, продав им вместо настоящей бомбы макет, начиненный использованными презервативами. Для путешествия во времени автомобиль должен развить скорость восемьдесят восемь миль в час.
+Док демонстрирует работу машины, отправив в будущее свою собаку Эйнштейна на одну минуту вперед. Эксперимент проходит успешно, но внезапно появляются ливийские террористы, которые обнаружили обман. Они открывают огонь из автомата, убивая Дока Брауна. Марти в панике запрыгивает в ДеЛореан и пытается скрыться от террористов. Во время погони он случайно разгоняется до восьмидесяти восьми миль в час и переносится в прошлое.
+Марти оказывается в 1955 году на том же месте, где через тридцать лет будет торговый центр, но пока здесь ферма старика Пибоди. Фермер принимает светящийся автомобиль за космический корабль пришельцев и стреляет в Марти из дробовика. Подросток спасается бегством, но ДеЛореан ломается, а весь плутоний израсходован. Марти понимает, что застрял в прошлом.
+Он отправляется в Хилл-Вэлли образца 1955 года и с трудом верит своим глазам - город выглядит совершенно по-другому, люди одеваются и ведут себя не так, как в восьмидесятых. Марти находит молодого Дока Брауна, который в 1955 году еще не изобрел машину времени и считается городским сумасшедшим. Поначалу Док не верит рассказу Марти о путешествии во времени, но когда подросток рассказывает подробности изобретения и называет дату, когда Доку пришла в голову идея флюс-конденсатора, ученый понимает, что перед ним действительно путешественник из будущего.
+Док объясняет Марти, что для возвращения в 1985 год нужна огромная энергия, эквивалентная удару молнии. К счастью, Марти помнит, что в субботу вечером молния ударит в часовую башню городской ратуши именно в 10:04. У них есть неделя, чтобы подготовиться к этому событию и направить энергию молнии в ДеЛореан.
+Однако возникает серьезная проблема. Марти случайно вмешивается в события прошлого - он мешает знакомству своих будущих родителей. Его отец Джордж должен был быть сбит автомобилем деда Лоррейн, а девушка должна была ухаживать за ним и влюбиться. Но Марти оказывается на месте отца и сам получает удар машиной. Теперь Лоррейн влюбляется в Марти, которого считает загадочным незнакомцем по имени Калвин Кляйн.
+Док Браун объясняет Марти всю опасность ситуации - если его родители не влюбятся друг в друга и не поженятся, то он никогда не родится. В качестве доказательства Док показывает фотографию семьи Марти из его кошелька - на снимке уже начинают исчезать фигуры его брата и сестры. У Марти есть только до субботнего вечера, чтобы свести родителей вместе, иначе он перестанет существовать.
+Марти начинает активно действовать. Он пытается подружиться с молодым Джорджем, который в 1955 году такой же застенчивый неудачник, как и в будущем. Джордж тайно влюблен в Лоррейн, но не решается с ней заговорить. Марти пытается придать отцу уверенности в себе, рассказывает ему о том, как нужно вести себя с девушками, даже угрожает ему, представившись пришельцем с планеты Вулкан.
+Тем временем юная Лоррейн все больше интересуется загадочным Калвином. Она приглашает Марти на школьный танец "Зачарованность под морем", который состоится в субботу вечером. Марти понимает, что находится в безвыходной ситуации - он не может пойти с матерью на свидание, но и отказать ей тоже не может, поскольку это окончательно разрушит его планы.
+Марти разрабатывает сложный план. Он договаривается с Джорджем, что будет приставать к Лоррейн на танцах, а Джордж появится как спаситель, даст ему отпор и завоюет сердце девушки. Джордж нервничает, но соглашается на этот план, поскольку это единственный способ завоевать Лоррейн.
+Однако в дело вмешивается Бифф Танненен - школьный хулиган, который и в 1955 году терроризирует Джорджа. Бифф опережает план Марти и сам начинает приставать к Лоррейн в автомобиле. Джордж приходит "спасать" девушку, но обнаруживает вместо Марти настоящего негодяя. Поначалу он пугается, но затем, впервые в жизни, находит в себе смелость дать отпор Биффу. Джордж наносит хулигану мощный удар, который отправляет того в нокаут.
+Лоррейн восхищена храбростью Джорджа, и между ними вспыхивает любовь. Они танцуют на школьном балу, и кризис миновал - родители Марти влюбились друг в друга. На фотографии снова появляются фигуры его брата и сестры, а сам Марти перестает исчезать.
+Во время танцев происходит забавный эпизод - гитарист местной группы травмирует руку, и Марти заменяет его. Он исполняет песню "Earth Angel", под которую танцуют его родители, а затем не удерживается и играет "Johnny B. Goode" Чака Берри. Публика 1955 года не готова к такой музыке, и выступление Марти производит шокирующее впечатление. Лидер группы звонит своему двоюродному брату Чаку Берри и говорит, что нашел тот новый звук, который тот искал.
+После танцев Марти спешит к часовой башне, где Док Браун приготовил все для отправки ДеЛореана в будущее. План состоит в том, чтобы протянуть кабель от громоотвода на башне до проводов, которые Марти должен подсоединить к автомобилю в момент удара молнии. Все идет по плану, но в последний момент кабель обрывается от сильного ветра.
+Док Браун рискует жизнью, забираясь на часовую башню, чтобы вручную соединить провода. Он успевает это сделать как раз в тот момент, когда молния ударяет в башню. Энергия передается в ДеЛореан, и Марти переносится обратно в 1985 год. Однако он прибывает на десять минут раньше того момента, когда покинул свое время, и становится свидетелем убийства Дока террористами.
+Марти пытается предупредить Дока об опасности, но опаздывает. Однако оказывается, что Док прочитал письмо, которое Марти оставил ему в 1955 году, предупреждая о нападении террористов. Хотя Док тогда разорвал письмо, сказав, что не хочет знать будущее, позже он склеил его и принял меры предосторожности - надел бронежилет. Террористы думают, что убили его, но Док остается жив.
+Марти возвращается домой и обнаруживает, что его вмешательство в прошлое кардинально изменило настоящее. Его семья теперь живет в достатке, отец Джордж стал успешным писателем-фантастом, мать Лоррейн выглядит молодо и привлекательно, а бывший хулиган Бифф работает у них автомехаником и с почтением относится к Джорджу. Марти получает новый джип, о котором мечтал, и его отношения с Дженнифер развиваются прекрасно.
+Фильм заканчивается тем, что Док Браун появляется на улице перед домом Марти в модернизированном ДеЛореане, который теперь летает и работает на мусоре вместо плутония. Док сообщает Марти и Дженнифер, что им нужно ехать в будущее - в 2015 год, чтобы решить проблемы, связанные с их будущими детьми. Троица садится в летающий автомобиль, и ДеЛореан взмывает в небо, оставляя за собой огненные следы. Так заканчивается первая часть трилогии, открывая путь для новых приключений во времени.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Однажды на Диком Западе', 'A mysterious stranger with a harmonica joins forces with a notorious desperado to protect a beautiful widow from a ruthless assassin working for the railroad.', '1968-01-01', 1, '165 minutes', 'Once Upon a Time in the West', 8.5, 'История разворачивается в период строительства трансконтинентальной железной дороги на американском Западе. Таинственный незнакомец по прозвищу Гармоника прибывает на железнодорожную станцию, где его встречают трое бандитов, посланных неким Фрэнком. После короткой перестрелки все трое погибают, а Гармоника остается в живых.
+Тем временем жестокий наемный убийца Фрэнк по приказу железнодорожного магната Мортона нападает на ферму Бретта МакБейна. Фрэнк убивает МакБейна и его троих детей, инсценируя нападение как дело рук знаменитого бандита Шайенна. Преступление совершается незадолго до прибытия на ферму Джилл, новой жены МакБейна, которая приехала из Нового Орлеана.
+Джилл обнаруживает тела своей новой семьи и понимает, что осталась совершенно одна в враждебном мире. Она узнает, что ее покойный муж владел землей в местечке Свитуотер, через которую должна пройти железная дорога, что делает эту территорию чрезвычайно ценной. Однако у МакБейна были долги, и если Джилл не сможет их погасить, земля перейдет к железнодорожной компании.
+Настоящий Шайенн, которого ложно обвиняют в убийстве семьи МакБейн, узнает о подставе и начинает собственное расследование. Этот стареющий бандит, несмотря на свою репутацию, обладает определенным кодексом чести и никогда не убивает детей. Он понимает, что кто-то пытается свалить на него чужие преступления.
+Гармоника продолжает преследовать Фрэнка, и постепенно выясняется, что между ними есть личные счеты из прошлого. В серии флешбеков раскрывается трагическая история: много лет назад молодой Фрэнк заставил мальчика поддерживать своего старшего брата, стоящего на его плечах с петлей на шее, а затем повесил брата на арке. Этим мальчиком был Гармоника, и теперь он жаждет мести.
+Мортон, хромой железнодорожный магнат, одержим идеей довести железную дорогу до Тихого океана. Он использует Фрэнка для устранения препятствий на своем пути, но между ними возникают разногласия относительно методов. Мортон предпочитает покупать людей, а Фрэнк привык убивать.
+Джилл постепенно понимает истинную ценность своей земли и решает бороться за нее. Она пытается найти способ расплатиться с долгами мужа, чтобы сохранить права на Свитуотер. К ее удивлению, ей начинают помогать и Шайенн, и загадочный Гармоника, каждый преследуя свои цели.
+Шайенн предлагает Джилл план: он ограбит поезд Мортона, а полученные деньги использует для погашения долгов МакБейна. Во время ограбления Шайенн обнаруживает, что Мортон путешествует в своем роскошном вагоне, будучи смертельно больным и отчаянно стремящимся увидеть океан до своей смерти.
+Фрэнк понимает, что его позиции ослабевают. Мортон начинает сомневаться в его методах и рассматривает возможность от него избавиться. Тем временем Гармоника продолжает психологически давить на Фрэнка, напоминая ему о прошлом и неотвратимости возмездия.
+Напряжение достигает кульминации, когда все основные персонажи собираются в Свитуотер для финального противостояния. Фрэнк убивает своих людей и Мортона, пытаясь взять контроль над ситуацией в свои руки, но понимает, что попал в ловушку.
+Происходит классическая дуэль между Гармоникой и Фрэнком на фоне строящейся железной дороги. В момент, когда Фрэнк умирает от пули Гармоники, тот вкладывает ему в рот губную гармошку - тот самый инструмент, на котором он играл в детстве, поддерживая своего брата. Фрэнк наконец вспоминает то давнее преступление и понимает, кто его настиг.
+Шайенн, смертельно раненный людьми Фрэнка, умирает, но перед смертью передает Джилл деньги от ограбления поезда. Джилл получает возможность сохранить свою землю и начать новую жизнь. Она организует строительство железнодорожной станции в Свитуотер, превращая пустынное место в процветающий городок.
+Гармоника, выполнив свою миссию мести, уезжает в никуда, оставив позади цивилизацию, которая наступает вместе с железной дорогой. В финальных кадрах показано, как рабочие прокладывают рельсы, символизируя конец эпохи Дикого Запада и наступление нового времени, где нет места для таких людей, как Гармоника и Шайенн.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Психо', 'A Phoenix secretary embezzles $40,000 from her employer''s client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother.', '1960-01-01', 1, '109 minutes', 'Psycho', 8.5, 'Марион Крэйн работает секретаршей в агентстве недвижимости в Фениксе, штат Аризона. Она встречается с разведенным мужчиной Сэмом Лумисом, который живет в Калифорнии и не может жениться на ней из-за финансовых проблем - он выплачивает алименты бывшей жене и содержит хозяйственный магазин, который приносит скромный доход. Марион устала от тайных встреч в дешевых гостиницах и мечтает о нормальной семейной жизни.
+В пятницу днем богатый клиент агентства Том Кэссиди приходит купить дом для своей дочери в качестве свадебного подарка и приносит с собой сорок тысяч долларов наличными. Он нагло флиртует с Марион, демонстрируя свое богатство и намекая на возможность близости. Босс поручает Марион отнести деньги в банк, но девушка, поддавшись импульсу, решает украсть их и сбежать к Сэму в Калифорнию.
+Марион забирает деньги, быстро собирает вещи в своей квартире и садится в машину. Она планирует доехать до Фэрвейла, где живет Сэм, отдать ему деньги, чтобы он расплатился с долгами, и начать новую жизнь. Однако по дороге ее останавливает полицейский, который подозревает что-то неладное в ее нервозном поведении. Марион убеждает его, что все в порядке, но патрульный запоминает номер ее машины.
+Понимая, что за ней могут начать охоту, Марион останавливается у автодилера и меняет свой автомобиль на другой, заплатив разницу. Продавец и полицейский, который случайно оказывается поблизости, ведут себя подозрительно, что еще больше нервирует девушку. Она торопливо завершает сделку и продолжает путь, но понимает, что побег оказался сложнее, чем она думала.
+Вечером, во время сильного дождя, Марион сбивается с пути и видит вывеску мотеля "Бейтс". Мотель выглядит заброшенным и мрачным, рядом с ним на холме стоит старый викторианский дом. Марион решает переночевать здесь, поскольку устала и не может продолжать путь в такую погоду.
+Ее встречает молодой человек по имени Норман Бейтс, владелец мотеля. Он кажется дружелюбным, но нервным и застенчивым. Норман рассказывает, что мотель почти не работает с тех пор, как рядом построили новую автостраду, и гости заезжают очень редко. Он живет в доме на холме со своей пожилой матерью, которая является настоящей хозяйкой заведения.
+Норман заселяет Марион в комнату номер один и приглашает поужинать с ним в офисе мотеля. Офис украшен чучелами птиц - хобби Нормана, который увлекается таксидермией. Во время разговора из дома на холме доносится громкий женский голос - мать Нормана яростно ругает его за то, что он пригласил "девицу" на ужин.
+Норман смущенно объясняет Марион, что его мать больна и не любит посторонних. Он рассказывает о своей жизни - как ухаживает за матерью, как она контролирует каждый его шаг, как он мечтает вырваться из этой ситуации, но не может оставить больную старую женщину. Марион сочувствует ему и предлагает поместить мать в специальное заведение, но Норман резко возражает, говоря, что его мать не сумасшедшая.
+После ужина Марион возвращается в свою комнату и принимает решение утром вернуться в Феникс, вернуть украденные деньги и понести наказание. Она понимает, что побег не принесет ей счастья, а только усугубит проблемы. Девушка прячет деньги в газету, принимает душ и готовится ко сну.
+Во время приема душа в ванной комнате появляется темная фигура за занавеской. Внезапно занавеска отдергивается, и Марион видит силуэт пожилой женщины с кухонным ножом. Неизвестная несколько раз наносит удары ножом, убивая девушку. Марион падает в ванну, и ее кровь смешивается с водой, стекающей в слив.
+После убийства появляется Норман, который находит тело Марион и приходит в ужас. Он зовет мать, но та не отвечает. Считая, что убийство совершила его психически больная мать, Норман решает скрыть преступление, чтобы защитить ее. Он тщательно убирает улики, заворачивает тело в занавеску для душа, находит украденные деньги и кладет их в багажник автомобиля Марион вместе с ее вещами.
+Норман топит машину в болоте за мотелем, и она полностью исчезает под водой. Он моет ванную комнату от крови, меняет занавеску и приводит номер в порядок, словно ничего не произошло. Мотель снова выглядит заброшенным и тихим.
+Через неделю сестра Марион Лила и ее жених Сэм Лумис обращаются к частному детективу Милтону Арбогасту с просьбой найти пропавшую девушку. Арбогаст обходит местные мотели, показывая фотографию Марион, и добирается до мотеля "Бейтс". Норман нервно отрицает, что видел девушку, но детектив замечает его странное поведение и несоответствия в рассказе.
+Арбогаст звонит Лиле и Сэму, сообщая, что нашел след Марион, и собирается поговорить с матерью Нормана, которая может знать больше. Он поднимается в дом на холме, но на лестнице на него нападает та же женская фигура с ножом. Детектив падает с лестницы и погибает от множественных ножевых ранений.
+Когда Арбогаст не выходит на связь, Лила и Сэм обращаются к местному шерифу Эл Чамберсу. Шериф рассказывает им, что миссис Бейтс умерла десять лет назад вместе со своим любовником - они отравились стрихнином в результате семейной драмы, когда Норман узнал о романе матери. Он утверждает, что Норман живет в доме один и ни с кем не разговаривает.
+Не поверив официальной версии, Лила и Сэм решают самостоятельно исследовать мотель. Они регистрируются как супружеская пара, чтобы получить возможность осмотреться. Сэм отвлекает Нормана разговором в офисе, а Лила тайно проникает в дом на холме, чтобы найти его мать.
+Лила обыскивает комнаты в доме и обнаруживает странности - детские игрушки в комнате взрослого мужчины, женскую одежду, косметику. В спальне матери она находит отпечаток тела на кровати, словно кто-то недавно здесь лежал. Обстановка дома говорит о том, что время остановилось много лет назад.
+Норман начинает подозревать, что гости ведут себя странно, и спешит в дом, чтобы предупредить мать об опасности. Сэм следует за ним. Лила спускается в подвал и обнаруживает там в кресле фигуру пожилой женщины, обращенную спиной. Когда она поворачивает кресло, то видит мумифицированный труп миссис Бейтс - высохшие останки с пустыми глазницами и оскаленным черепом.
+В этот момент в подвал врывается Норман в женском парике и платье, с ножом в руке, готовый убить Лилу. Он двигается и говорит как женщина, полностью перевоплотившись в свою мертвую мать. Сэм успевает остановить его и обезоружить, после чего прибывают полицейские.
+Психиатр доктор Ричмонд объясняет Лиле и Сэму природу психического расстройства Нормана. После смерти матери, которую он убил в припадке ревности, узнав о ее романе, молодой человек не смог пережить чувство вины. Он украл ее тело из могилы, мумифицировал его и начал жить с иллюзией, что мать все еще жива.
+Личность Нормана расщепилась - он стал попеременно быть собой и своей матерью. Когда материнская личность доминировала, она "убивала" женщин, которые могли привлечь Нормана и угрожали их отношениям. Так погибли Марион, детектив и, вероятно, другие постояльцы мотеля. Норман-сын каждый раз обнаруживал тела и скрывал преступления, считая, что защищает мать.
+В финальной сцене Норман сидит в камере психиатрической лечебницы, полностью поглощенный личностью матери. Внутренний голос миссис Бейтс размышляет о том, что теперь она должна доказать всем свою безобидность, сидеть тихо и не причинять вреда даже мухе. Норман сидит неподвижно с жуткой улыбкой, а на его лицо на мгновение накладывается изображение черепа матери.
+Последний кадр показывает, как из болота вытаскивают автомобиль Марион с ее телом и украденными деньгами, завершая историю трагедией, которая могла бы не случиться, если бы девушка не решилась на роковой побег с чужими деньгами.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Касабланка', 'A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband escape the Nazis in French Morocco.', '1942-01-01', 1, '102 minutes', 'Casablanca', 8.5, 'Действие фильма происходит в декабре 1941 года в Касабланке, французском Марокко, во время Второй мировой войны. Город находится под контролем правительства Виши, союзного нацистской Германии, и служит последней остановкой для европейских беженцев, пытающихся добраться до нейтральной Америки. Касабланка наводнена отчаявшимися людьми, которые готовы на все ради получения выездных виз в Лиссабон, откуда можно попасть в Соединенные Штаты.
+В этом городе работает кафе и игорный дом "У Рика", принадлежащее американцу Рику Блейну. Рик - циничный и замкнутый мужчина, который утверждает, что придерживается нейтралитета и не вмешивается в политику. Его заведение пользуется популярностью среди разнообразной публики - от беженцев до немецких офицеров и французских чиновников. Рик имеет репутацию человека, который может достать все что угодно, но сам никому не помогает и ни во что не вмешивается.
+В кафе работает пианист Сэм, старый друг Рика, который знает о его прошлом больше, чем кто-либо другой. Также постоянными посетителями заведения являются капитан Луи Рено - префект полиции Касабланки, коррумпированный, но обаятельный француз, и Карл - немецкий беженец, работающий официантом и тайно помогающий другим беженцам.
+Спокойная жизнь Рика нарушается, когда в его кафе появляется Угарте - мелкий преступник, который убил двух немецких курьеров и украл у них два проездных документа, подписанных генералом де Голлем. Эти документы дают их обладателям возможность беспрепятственно покинуть Касабланку. Угарте просит Рика спрятать документы, но вскоре его арестовывают по приказу майора Штрассера - высокопоставленного офицера СС, прибывшего в Касабланку по особому заданию.
+Штрассер ищет Виктора Ласло - известного лидера европейского Сопротивления, который сбежал из концентрационного лагеря и направляется в Америку, чтобы продолжить борьбу против нацизма. Немцы знают, что Ласло прибудет в Касабланку, и намерены любой ценой помешать ему покинуть город.
+Вечером того же дня в кафе Рика действительно появляется Виктор Ласло в сопровождении красивой женщины. Рик с ужасом узнает в ней Ильзу Лунд - женщину, которую он страстно любил в Париже и которая разбила ему сердце, исчезнув без объяснений в день немецкой оккупации города. Ильза замужем за Ласло, и Рик понимает, что она тогда скрывала от него правду о своей личности.
+Встреча с Ильзой пробуждает в Рике болезненные воспоминания. В флешбэках показывается их роман в Париже весной 1940 года. Тогда Рик был совершенно другим человеком - открытым, романтичным, готовым бороться за справедливость. Он и Ильза были безумно влюблены друг в друга и планировали вместе покинуть Париж, когда стало ясно, что город падет. Они договорились встретиться на вокзале, но Ильза не пришла, прислав лишь короткую записку о том, что никогда не сможет его увидеть снова. Это предательство превратило Рика в циничного одиночку, каким он является сейчас.
+Ласло и Ильза пытаются получить выездные документы через различные каналы, но безуспешно. Капитан Рено под давлением Штрассера отказывается им помочь. Постепенно становится ясно, что единственная надежда - это украденные документы, которые теперь находятся у Рика. Ласло обращается к Рику за помощью, но тот категорически отказывается.
+Ильза понимает, что должна поговорить с Риком наедине. Она приходит в кафе поздно вечером, когда все посетители уже разошлись. Между бывшими любовниками происходит болезненное объяснение. Ильза рассказывает Рику правду о том, что случилось в Париже. Оказывается, она была замужем за Ласло еще до встречи с Риком, но считала мужа погибшим в концлагере. Когда она узнала, что Виктор жив, то поняла, что должна вернуться к нему и помогать в его борьбе против нацизма.
+Несмотря на объяснения, Рик остается непреклонным. Он по-прежнему полон горечи и не хочет помогать женщине, которая его предала. Ильза в отчаянии угрожает ему пистолетом, требуя отдать документы, но не может выстрелить. Она признается, что все еще любит его, и между ними вспыхивает старая страсть.
+Тем временем Виктор Ласло демонстрирует свое мужество и принципиальность. Когда в кафе Рика немецкие офицеры поют военные песни, Ласло поднимается и запевает "Марсельезу". Все посетители кафе подхватывают французский гимн, заглушая голоса немцев. Этот эпизод показывает силу духа лидера Сопротивления и его способность вдохновлять людей на борьбу.
+Штрассер приказывает Рено закрыть кафе Рика под любым предлогом. Капитан находит предлог - азартные игры, хотя сам регулярно играет в этом заведении. Ласло арестовывают по сфабрикованному обвинению, но Рик заставляет Рено освободить его, угрожая компрометирующими материалами на префекта полиции.
+Рик принимает решение. Он говорит Ильзе, что они с ней улетят вместе, а Ласло останется в Касабланке. Ильза счастлива и готова бросить мужа ради любви. Рик договаривается с Рено о том, что тот арестует Ласло в аэропорту по обвинению в убийстве Угарте, а сам Рик получит крупное вознаграждение за помощь в поимке лидера Сопротивления.
+Однако в аэропорту Рик совершает неожиданный поступок. Он отдает проездные документы Ласло и Ильзе, заставляя их улететь вместе. В знаменитой прощальной сцене Рик объясняет Ильзе, что их личное счастье ничто по сравнению с важностью дела, которому служит ее муж. Ласло нужна Ильза рядом, чтобы продолжать борьбу против нацизма, а их роман принадлежит прошлому.
+Штрассер пытается помешать вылету самолета, но Рик застреливает его. Когда прибывает французская полиция, капитан Рено должен арестовать Рика, но вместо этого приказывает своим людям "искать обычных подозреваемых". Рено понимает, что не может выдать человека, который пожертвовал личным счастьем ради высших идеалов.
+Фильм заканчивается знаменитой сценой, где Рик и Рено уходят в туман, направляясь к свободной французской армии в Браззавиле. Рено говорит, что это может стать началом прекрасной дружбы. Рик снова обрел веру в справедливость и готов активно бороться против нацизма, а циничный префект полиции тоже выбрал сторону добра.
+История "Касабланки" - это рассказ о том, как личные чувства и эгоистические интересы отступают перед лицом исторической необходимости. Рик жертвует любовью ради того, чтобы Виктор Ласло мог продолжить борьбу за свободу Европы. Это история о моральном выборе, который делает человека героем, даже если этот выбор причиняет ему боль. Фильм стал классикой мирового кинематографа и символом того, как искусство может вдохновлять людей на благородные поступки.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Новые времена', 'The Tramp struggles to live in modern industrial society with the help of a young homeless woman.', '1936-01-01', 1, '87 minutes', 'Modern Times', 8.5, 'Чарли Чаплин играет роль рабочего на конвейере большого промышленного завода в эпоху Великой депрессии. Его персонаж, известный как Бродяга, работает на сборочной линии, где его задача состоит в бесконечном закручивании гаек. Монотонная и изнурительная работа на высокой скорости конвейера доводит его до нервного срыва.
+Президент завода постоянно требует увеличения темпов производства, наблюдая за рабочими через систему видеонаблюдения и приказывая ускорить конвейер. Бродяга становится подопытным кроликом для испытания революционной "машины для кормления", которая должна позволить рабочим питаться прямо на рабочем месте, не прерывая производственный процесс. Машина выходит из строя, поливая Бродягу едой и причиняя ему физические страдания.
+Психическое состояние Бродяги ухудшается от постоянного повторения одних и тех же движений. Даже после окончания рабочего дня он продолжает непроизвольно совершать движения руками, как будто все еще закручивает гайки. Это приводит к комическим ситуациям, когда он пытается "закрутить" пуговицы на платье женщины или пожарные гидранты на улице.
+В конце концов Бродяга полностью теряет контроль и устраивает хаос на заводе, забираясь в механизмы конвейера и нарушая весь производственный процесс. Его увозят в психиатрическую больницу, где он проводит некоторое время на лечении. После выписки он обнаруживает, что завод закрыт из-за экономического кризиса, и он остается без работы.
+Бродяга пытается найти новую работу в условиях массовой безработицы. Он случайно попадает в демонстрацию протестующих рабочих, требующих хлеба и работы. Полиция принимает его за лидера демонстрации и арестовывает. В тюрьме Бродяга чувствует себя относительно комфортно - у него есть крыша над головой, регулярное питание и отсутствие экономических забот.
+Тем временем зрители знакомятся с девушкой-беспризорницей, которую играет Полетт Годдар. Она живет в трущобах с безработным отцом и младшими сестрами, пытаясь прокормить семью воровством еды. После смерти отца девушка остается совершенно одна и вынуждена заботиться о себе сама.
+Бродяга неохотно покидает тюрьму, но вскоре снова попадает в неприятности. Он пытается вернуться в тюрьму, совершая мелкие правонарушения, но его планы не срабатывают. Во время одной из таких попыток он встречает беспризорную девушку, которая крадет хлеб. Бродяга берет вину на себя, чтобы защитить ее от ареста.
+Девушка и Бродяга становятся партнерами и вместе пытаются выжить в жестоком мире экономической депрессии. Они мечтают о маленьком домике, где смогут жить счастливо, и эта мечта изображается в виде идиллической сцены домашнего уюта, где фрукты растут прямо за окном, а корова дает молоко по первому требованию.
+Бродяга получает работу ночного сторожа в универмаге. Он приводит туда девушку, и они проводят волшебную ночь среди товаров магазина, катаясь на роликах, играя и наслаждаясь временным изобилием. Однако утром их обнаруживают грабители, оказавшиеся бывшими коллегами Бродяги по заводу, которые также остались без работы и обратились к преступности.
+Полиция арестовывает Бродягу за соучастие в ограблении, и он снова попадает в тюрьму. После освобождения он узнает, что девушка нашла работу танцовщицы в кафе. Бродяга также устраивается туда работать официантом, но его неуклюжесть приводит к катастрофическим последствиям во время обслуживания клиентов.
+Несмотря на профессиональные неудачи, Бродяга неожиданно демонстрирует талант к пению и развлечению публики. Однако их относительное благополучие снова нарушается, когда полиция приходит арестовать девушку как беспризорную. Влюбленная пара вынуждена спасаться бегством.
+В финальной сцене Бродяга и девушка идут по пустынной дороге, покинув город и оставив позади все свои неудачи и разочарования. Когда девушка начинает плакать от отчаяния, Бродяга ободряет ее, говоря, что они должны улыбаться и продолжать бороться. Они идут рука об руку навстречу неопределенному будущему, символизируя несокрушимость человеческого духа перед лицом экономических и социальных невзгод.
+Фильм является острой сатирой на индустриализацию, механизацию труда и бесчеловечность капиталистической системы, показывая, как технический прогресс может превратить человека в придаток машины, лишив его человеческого достоинства и индивидуальности.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Огни большого города', 'With the aid of a wealthy erratic tippler, a dewy-eyed tramp who has fallen in love with a sightless flower girl accumulates money to be able to help her medically.', '1931-01-01', 1, '87 minutes', 'City Lights', 8.5, 'В большом городе живет Маленький Бродяга - добросердечный, но крайне бедный человек в помятом костюме, котелке и с тростью. Он бродит по улицам, не имея постоянного жилья и пропитания, но сохраняя оптимизм и готовность помочь другим. Однажды, прогуливаясь по городу, он замечает красивую молодую женщину, продающую цветы на углу улицы.
+Девушка слепа, но это не лишает ее жизнерадостности и трудолюбия. Она зарабатывает на жизнь продажей цветов, которые сама изготавливает, и живет в скромной комнатке с пожилой бабушкой. Бродяга мгновенно влюбляется в цветочницу и покупает у нее цветок, отдав последние деньги. Когда он случайно наступает в лужу рядом с ее прилавком, звук всплеска заставляет девушку подумать, что покупатель вышел из дорогого автомобиля.
+Так начинается недоразумение - слепая цветочница принимает бедного бродягу за богатого джентльмена. Она не видит его потрепанной одежды и судит о нем только по звукам и голосу. Бродяга не решается разубедить ее, понимая, что правда может разрушить ее иллюзии и причинить боль. Вместо этого он решает поддерживать этот обман, пытаясь вести себя как богатый человек.
+В ту же ночь Бродяга становится свидетелем попытки самоубийства. Пьяный миллионер пытается утопиться в реке, привязав к шее камень. Бродяга бросается спасать его, хотя сам едва умеет плавать. После комичной борьбы в воде ему удается вытащить миллионера на берег и отговорить от самоубийства. Благодарный богач приглашает своего спасителя к себе домой.
+В роскошном особняке миллионер угощает Бродягу дорогими напитками и провозглашает его своим лучшим другом. Он дарит ему деньги, машину и обещает всяческую поддержку. Однако утром, когда миллионер трезвеет, он совершенно не помнит произошедшего и не узнает Бродягу. Слуги выгоняют "незваного гостя" из дома.
+Эта странная закономерность повторяется - в пьяном состоянии миллионер считает Бродягу своим лучшим другом и осыпает его подарками, а трезвый относится к нему как к назойливому попрошайке. Бродяга пытается использовать эти короткие периоды дружбы, чтобы получить деньги для помощи цветочнице.
+Тем временем он продолжает ухаживать за слепой девушкой, встречая ее каждый день и покупая цветы. Он узнает, что она живет в бедности со своей бабушкой и мечтает накопить денег на операцию, которая может вернуть ей зрение. Врач в Вене, как ей сказали, может помочь, но лечение стоит очень дорого.
+Бродяга принимает решение во что бы то ни стало помочь девушке, хотя сам не имеет никаких средств. Он берется за различные работы - пытается стать уличным уборщиком, но из-за своей неловкости создает больше беспорядка, чем убирает. Он также пробует себя в качестве боксера, договорившись с другим бойцом о том, что они поделят призовые деньги поровну.
+Однако партнер Бродяги по боксу сбегает перед матчем, и его заменяют настоящим профессиональным боксером. Бродяга оказывается на ринге против опытного противника, который безжалостно избивает его. Несмотря на комичные попытки увернуться от ударов и случайные моменты кажущегося преимущества, Бродяга терпит сокрушительное поражение и остается без денег.
+Узнав, что цветочница и ее бабушка находятся на грани выселения из-за неуплаты за жилье, Бродяга в отчаянии снова ищет встречи с пьяным миллионером. На этот раз ему удается найти богача в состоянии опьянения, и тот, как обычно, радостно встречает своего "лучшего друга". Миллионер дает Бродяге тысячу долларов - огромную сумму по тем временам.
+Однако в дом миллионера проникают грабители, которые избивают хозяина и пытаются украсть деньги. Бродяга пытается защитить своего благодетеля, но грабители убегают. Когда прибывает полиция, протрезвевший миллионер не помнит, что сам дал деньги Бродяге, и обвиняет его в краже. Полицейские начинают преследование.
+Понимая, что его могут арестовать, Бродяга торопится отдать деньги цветочнице, чтобы она смогла оплатить операцию. Он приходит к ней домой и объясняет, что должен уехать в срочную поделку, но эти деньги помогут ей вернуть зрение. Девушка принимает деньги, не подозревая об опасности, которая грозит ее благодетелю.
+Полиция арестовывает Бродягу, и его приговаривают к тюремному заключению. Он отбывает наказание, зная, что помог любимой девушке, но не имея возможности увидеть результат своей жертвы. Время в тюрьме проходит тяжело, но мысль о том, что цветочница сможет прозреть, поддерживает его дух.
+Через несколько месяцев Бродяга выходит из тюрьмы еще более потрепанным и бедным, чем прежде. Его одежда превратилась в лохмотья, он исхудал и постарел. Бродя по знакомым улицам, он не решается искать встречи с цветочницей, опасаясь того, что она теперь может его увидеть и поймет, кто он на самом деле.
+Проходя мимо цветочного магазина, он видит, что операция прошла успешно - девушка теперь видит и работает в красивом, процветающем магазине вместе со своей бабушкой. Она выглядит счастливой и элегантно одетой, явно больше не нуждается в деньгах. Бродяга радуется ее успеху, но чувствует, что теперь между ними лежит непреодолимая пропасть.
+Девушка замечает оборванного человека, стоящего у витрины, и из жалости выходит к нему, чтобы подать милостыню и подарить цветок. Она не узнает в нем своего благодетеля, поскольку никогда не видела его лица. Однако когда она берет его руку, чтобы вложить в нее деньги, что-то в прикосновении кажется ей знакомым.
+Внезапно в девушке пробуждается воспоминание - она узнает руки человека, который столько раз покупал у нее цветы, который был так добр к ней, который дал ей деньги на операцию. Ее глаза расширяются от изумления и понимания. Она смотрит в лицо Бродяги и видит не богатого джентльмена, которого себе представляла, а бедного, но доброго человека, пожертвовавшего всем ради ее счастья.
+На лице девушки сменяются удивление, понимание, благодарность и нежность. Она понимает масштаб его жертвы и глубину его любви. Бродяга стоит перед ней, боясь ее реакции, но надеясь на понимание. Его глаза полны тревоги и вопроса - примет ли она его таким, какой он есть, простит ли обман?
+Девушка улыбается ему сквозь слезы, и в этой улыбке - принятие, прощение и ответная любовь. Она видит не его бедность, а его благородное сердце. Фильм завершается крупным планом лица Бродяги, на котором медленно расцветает робкая, счастливая улыбка - он понимает, что обрел не только любовь девушки, но и ее уважение к тому, кто он есть на самом деле.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Капернаум', 'While serving a five-year sentence for a violent crime, a 12-year-old boy sues his parents for neglect.', '2018-01-01', 1, '126 minutes', 'Capharnaüm', 8.4, 'Фильм начинается с судебного заседания, где двенадцатилетний мальчик Зейн сидит перед судьей и подает в суд на своих родителей за то, что они его родили. Это шокирующее заявление становится отправной точкой для рассказа о жизни ребенка в трущобах Бейрута, столицы Ливана.
+История разворачивается в виде флешбэков, показывающих жизнь Зейна в семье, живущей в крайней нищете в одном из самых бедных районов города. Зейн - старший из нескольких детей в семье, которая ютится в ветхой квартире без элементарных удобств. Родители Зейна, Селим и Сурайя, не имеют постоянной работы и перебиваются случайными заработками. Отец торгует наркотиками, мать стирает белье за гроши, а дети вынуждены работать с раннего возраста, чтобы помочь семье выжить.
+Зейн не ходит в школу - у семьи нет денег на образование, да и документов у мальчика тоже нет. Он проводит дни, помогая родителям в их нелегальном бизнесе - готовит наркотические средства, растворяя таблетки трамадола в воде, которую затем родители продают заключенным через адвокатов. Зейн также занимается мелкой торговлей и воровством, чтобы прокормить семью.
+Особенно близкие отношения у Зейна с младшей сестрой Сахар, одиннадцатилетней девочкой, которая еще сохранила детскую невинность среди окружающего их хаоса. Зейн защищает сестру и заботится о ней, как может. Он даже помогает ей скрывать начало менструации, понимая, что это может привести к катастрофическим последствиям в их семье.
+Действительно, когда родители узнают, что Сахар достигла половой зрелости, они решают выдать ее замуж за Ассада - владельца небольшого магазина, который согласен взять девочку в жены в обмен на прощение долга семьи. Зейн в ужасе от этого решения и пытается протестовать, но родители не слушают его возражений. Для них это единственный способ избавиться от долгов и получить немного денег.
+В день свадьбы Зейн не может вынести происходящего и убегает из дома. Он скитается по улицам Бейрута, ночует где придется, ворует еду, чтобы не умереть с голоду. Город полон таких же беспризорных детей, каждый из которых борется за выживание в жестоком мире взрослых.
+Во время своих скитаний Зейн встречает Рахиль - молодую эфиопскую женщину, которая работает уборщицей в парке развлечений. Рахиль живет нелегально в Ливане вместе со своим годовалым сыном Йонасом. У нее нет документов, поэтому она постоянно скрывается от полиции и иммиграционных служб. Рахиль проникается сочувствием к бездомному мальчику и позволяет ему остаться у нее.
+Так начинается странное сожительство нелегальной иммигрантки, ее маленького сына и беспризорного мальчика. Зейн помогает Рахиль ухаживать за Йонасом, когда она уходит на работу. Мальчик проявляет удивительную заботу и нежность по отношению к малышу, становясь для него старшим братом и защитником. Рахиль платит Зейну за присмотр за ребенком, и впервые в жизни мальчик получает деньги за честную работу.
+Однако их относительно спокойная жизнь нарушается, когда Рахиль арестовывают за нелегальное пребывание в стране. Женщину депортируют, а маленький Йонас остается на попечении Зейна. Двенадцатилетний мальчик оказывается один с годовалым ребенком на руках, без денег, документов и крыши над головой.
+Зейн пытается ухаживать за малышом, как может. Он ворует детское питание, подгузники, ищет укрытие в заброшенных зданиях. Мальчик демонстрирует невероятную зрелость и ответственность, пытаясь заменить Йонасу родителей. Однако задача оказывается слишком сложной для ребенка - у него нет ни опыта, ни ресурсов для ухода за младенцем.
+В отчаянии Зейн пытается продать Йоnaса торговцам людьми, которые обещают найти ребенку хорошую семью за границей. Это решение показывает всю глубину отчаяния мальчика - он понимает, что не может обеспечить малышу нормальную жизнь, и готов расстаться с ним ради его же блага. Однако в последний момент Зейн передумывает и забирает ребенка обратно.
+Тем временем выясняется трагическая судьба сестры Зейна. Сахар умирает от осложнений после родов - одиннадцатилетняя девочка была слишком молода для материнства, и ее организм не выдержал нагрузки. Эта новость окончательно ломает Зейна. Он возвращается домой и в приступе ярости нападает на Ассада с ножом, обвиняя его в смерти сестры.
+Зейна арестовывают за нападение с оружием и помещают в тюрьму для несовершеннолетних. Именно там он узнает о своих правах и решает подать в суд на собственных родителей. С помощью адвоката и социального работника Зейн формулирует свое обвинение - он считает, что родители не имели права рожать детей, которых не могут обеспечить нормальной жизнью.
+Судебный процесс привлекает внимание СМИ и общественности. История мальчика, который подает в суд на родителей за то, что они его родили, становится сенсацией. Зейн объясняет судье свою позицию - он считает, что дети имеют право на любовь, заботу, образование и безопасность, а если родители не могут этого обеспечить, то они не должны заводить детей.
+Родители Зейна пытаются оправдаться, говоря о своей бедности и безвыходном положении. Они утверждают, что делали все возможное в тяжелых обстоятельствах и что дети - это благословение от Бога. Однако их аргументы выглядят слабо на фоне конкретных фактов - смерти Сахар, беспризорности Зейна, отсутствия у детей документов и образования.
+Суд становится площадкой для обсуждения более широких социальных проблем - детской бедности, отсутствия социальной защиты, проблем беженцев и нелегальных иммигрантов. Зейн становится символом миллионов детей по всему миру, которые лишены элементарных прав и возможностей из-за обстоятельств, от них не зависящих.
+В ходе процесса выясняется, что Зейн даже не знает точно, сколько ему лет - у него нет свидетельства о рождении. Адвокат помогает мальчику получить документы и установить его официальный возраст. Это простое, казалось бы, действие имеет огромное значение - впервые в жизни Зейн получает официальное признание своего существования.
+История Рахиль тоже получает продолжение. Благодаря вниманию к делу Зейна, ее случай пересматривают, и она получает возможность легализовать свое пребывание в стране. Йонаса возвращают матери, и они воссоединяются.
+Фильм заканчивается сценой, где Зейн впервые в жизни фотографируется для официального документа. Когда фотограф просит его улыбнуться, мальчик сначала не понимает, что от него хотят - улыбка кажется ему чем-то чужеродным после всего пережитого. Но постепенно на его лице появляется робкая, но искренняя улыбка - символ надежды на лучшее будущее.
+История Зейна - это мощное обвинение системе, которая позволяет детям расти в условиях крайней нищеты и лишений. Это рассказ о силе человеческого духа, способного сохранить достоинство и способность к любви даже в самых тяжелых обстоятельствах. Фильм поднимает важнейшие вопросы о правах детей, ответственности родителей и общества, о том, что каждый ребенок заслуживает шанса на нормальную жизнь, независимо от обстоятельств его рождения.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Айла: Дочь войны', 'In 1950, amid-st the ravages of the Korean War, Sergeant Süleyman stumbles upon a half-frozen little girl, with no parents and no help in sight. Frantic, scared and on the verge of death, ...                See full summary »', '2017-01-01', 1, '125 minutes', 'Ayla: The Daughter of War', 8.4, 'История разворачивается во время Корейской войны в 1950 году. Турецкий сержант Сулейман Дильбирлиоглу служит в составе турецких войск ООН, направленных для поддержки Южной Кореи в борьбе против северокорейских и китайских сил. Турецкая бригада дислоцируется в небольшом корейском городке, где солдаты сталкиваются с суровой реальностью войны и страданиями мирного населения.
+Во время одного из патрулирований турецкие солдаты обнаруживают разрушенную корейскую деревню, где практически все жители погибли в результате бомбардировки. Среди руин и тел Сулейман находит маленькую корейскую девочку возрастом около пяти лет, чудом выжившую после авиаудара. Ребенок находится в состоянии шока, не говорит и явно пережил сильную психологическую травму от потери семьи и разрушения родного дома.
+Сулейман забирает девочку с собой на турецкую военную базу, несмотря на протесты некоторых сослуживцев, которые считают это нарушением военных правил. Он дает ей имя Айла, что по-турецки означает "лунный свет", поскольку он нашел ее при лунном свете среди развалин. Постепенно между турецким солдатом и корейской девочкой развивается глубокая эмоциональная связь, заменяющая им семейные отношения.
+Поначалу Айла остается немой и замкнутой, отказываясь есть и реагировать на окружающих. Сулейман терпеливо заботится о ней, кормит с рук, поет турецкие песни и постепенно завоевывает ее доверие. Он учит ее нескольким словам по-турецки, а она медленно начинает открываться и привязываться к своему спасителю. Другие турецкие солдаты поначалу скептически относятся к присутствию ребенка на военной базе, но постепенно и они привязываются к Айле, которая становится источником радости и человечности в жестокой военной обстановке.
+Айла быстро адаптируется к жизни среди турецких солдат, изучает их язык и обычаи. Она помогает в лазарете, ухаживая за ранеными, и становится талисманом для всего подразделения. Солдаты шьют ей военную форму маленького размера, и она чувствует себя частью их большой военной семьи. Сулейман обучает ее читать и писать, рассказывает о Турции и своей семье дома.
+Однако военная ситуация ухудшается, и китайские войска начинают крупное наступление. Турецкая бригада получает приказ отступать и в конечном итоге покинуть Корею. Сулейман понимает, что не может взять Айлу с собой в Турцию из-за бюрократических препятствий и военных правил. Он начинает искать для нее безопасное место в Корее, но война сделала это крайне сложной задачей.
+Командование требует, чтобы Сулейман оставил девочку в корейском сиротском приюте перед отбытием турецких войск. Это решение разбивает сердце как солдату, так и ребенку, которые стали настоящей семьей друг для друга. Айла не понимает, почему ее "папа" должен ее покинуть, и умоляет его не уезжать.
+В день отбытия происходит мучительная сцена расставания. Сулейман оставляет Айлу в приюте, обещая вернуться за ней, хотя сам не знает, сможет ли выполнить это обещание. Девочка отчаянно кричит и пытается побежать за уезжающим военным конвоем, но ее удерживают работники приюта. Сулейман также плачет, понимая, что оставляет самого дорогого ему в Корее человека.
+По возвращении в Турцию Сулейман не может забыть Айлу и начинает долгую бюрократическую борьбу за ее удочерение. Он пишет письма в различные организации, обращается к правительственным чиновникам и международным агентствам, пытаясь найти способ воссоединиться с приемной дочерью. Его жена и собственные дети поддерживают его в этом стремлении, понимая, насколько важна для него корейская девочка.
+Проходят годы, и Сулейман не теряет надежды. Он продолжает поиски Айлы, даже когда другие советуют ему забыть прошлое и сосредоточиться на собственной семье. Тем временем Айла растет в корейском приюте, помня своего турецкого "отца" и надеясь на встречу с ним.
+В конце концов, спустя десятилетия, благодаря настойчивости Сулеймана и помощи журналистов, которые заинтересовались их историей, происходит долгожданная встреча. Повзрослевшая Айла, ставшая медсестрой, воссоединяется со своим спасителем в эмоциональной сцене в аэропорту. Несмотря на прошедшие годы, их связь остается такой же сильной, и они наконец могут быть вместе как настоящая семья.
+Фильм показывает, как война может разрушить семьи, но также демонстрирует силу человеческой любви и сострадания, способных преодолеть любые препятствия, включая национальные границы, языковые барьеры и бюрократические преграды.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Викрам Веда', 'Vikram, a no-nonsense police officer, accompanied by Simon, his partner, is on the hunt to capture Vedha, a smuggler and a murderer. Vedha tries to change Vikram''s life, which leads to a conflict.', '2017-01-01', 1, '147 minutes', 'Vikram Vedha', 8.4 , 'Викрам Ведха
+Фильм начинается в городе Лакхнау, где разворачивается история, основанная на древних индийских легендах о короле Викрамадитье и демоне Ветале, который рассказывал царю загадочные истории. В современной интерпретации Викрам - это честный полицейский инспектор, а Ведха - notorious gangster, который становится его противником и одновременно наставником в понимании сложности человеческой природы.
+Викрам - принципиальный офицер полиции, который свято верит в справедливость и закон. Он работает в специальном подразделении по борьбе с организованной преступностью и имеет репутацию неподкупного и эффективного полицейского. У Викрама есть молодая жена, которая работает адвокатом и разделяет его моральные принципы. Vikram гордится тем, что за всю свою карьеру он ни разу не взял взятку и всегда действовал в рамках закона.
+На противоположной стороне находится Ведха - могущественный преступный авторитет, который контролирует значительную часть криминального мира города. Ведха не просто бандит, а человек с собственной философией и кодексом чести. Он живет в трущобах среди простых людей, которые видят в нем защитника от несправедливости властей и богачей. Ведха помогает бедным, решает их проблемы и в каком-то смысле является для них более справедливым судьей, чем официальная система правосудия.
+Долгое время Викрам и Ведха существуют в параллельных мирах. Полицейский ведет борьбу с преступностью, используя законные методы, а бандит управляет своей империей, следуя неписаным правилам преступного мира. Однако судьба сводит их вместе самым неожиданным образом.
+История начинается с того, что младший брат Ведхи попадает в сложную ситуацию. Парень влюбляется в девушку из респектабельной семьи, но их роман встречает яростное сопротивление со стороны ее родственников. Семья девушки обращается к влиятельному бизнесмену, который имеет связи в полиции и требует разобраться с "бандитской семейкой". Ситуация накаляется, и брат Ведхи оказывается под угрозой.
+Ведха понимает, что его брату грозит опасность не только от враждебной семьи, но и от полиции, которая может использовать ситуацию для нанесения удара по его организации. Он принимает решение, которое шокирует всех - добровольно сдается полиции и попадает под арест к Викраму.
+Находясь под стражей, Ведха начинает рассказывать Викраму истории из своей жизни. Как и демон Ветала в древних легендах, он завершает каждый рассказ моральной дилеммой, заставляя полицейского задуматься о природе добра и зла. Первая история касается случая, когда Ведха был вынужден выбирать между спасением невинных людей и соблюдением закона.
+Ведха рассказывает о том, как несколько лет назад группа коррумпированных полицейских требовала от местных торговцев огромные взятки за "защиту". Когда торговцы не смогли заплатить, полицейские начали их терроризировать, избивать и арестовывать по сфабрикованным обвинениям. Официальная система правосудия не могла помочь - все судьи и прокуроры были подкуплены. Тогда Ведха вмешался и устранил главаря коррумпированных полицейских.
+Викрам слушает эту историю с растущим беспокойством. С одной стороны, убийство полицейского - это тяжкое преступление, которое не может быть оправдано. С другой стороны, Ведха спас множество невинных людей от произвола и насилия. Бандит задает Викраму вопрос: что бы сделал он сам в подобной ситуации, если бы знал, что закон не поможет защитить невинных?
+Эта дилемма глубоко потрясает Викрама. Впервые в жизни он сталкивается с ситуацией, где грань между добром и злом не так очевидна. Он начинает сомневаться в абсолютности своих моральных принципов и задаваться вопросами о том, всегда ли закон служит справедливости.
+Вторая история, которую рассказывает Ведха, еще больше усложняет моральную картину. Бандит повествует о том, как его людей обвинили в убийстве, которого они не совершали. Настоящими убийцами были сыновья влиятельного политика, но благодаря связям и деньгам их отцу удалось переложить вину на Ведху. Несколько невинных членов банды были арестованы и подвергнуты пыткам, чтобы вынудить их признаться в преступлении.
+Ведха предпринял собственное расследование и доказал невиновность своих людей, но официальная полиция отказалась пересматривать дело. Тогда он применил свои методы - похитил настоящих убийц и заставил их публично признаться в содеянном. Только после этого его люди были освобождены.
+Эта история еще больше запутывает Викрама. Он понимает, что Ведха поступил справедливо, защищая невинных, но использованные им методы были незаконными. Полицейский начинает осознавать, что мир не черно-белый, и иногда для достижения справедливости приходится нарушать букву закона.
+Тем временем выясняется, что арест Ведхи был частью более сложного плана. Пока бандит находится под стражей и рассказывает свои истории Викраму, его организация проводит операцию по спасению младшего брата. Ведха использовал время, проведенное в тюрьме, чтобы отвлечь внимание полиции и дать своим людям возможность действовать.
+Когда операция по спасению брата завершается успешно, Ведха совершает дерзкий побег из-под стражи. Однако его цель была достигнута не только в практическом плане - он изменил мировоззрение Викрама, заставив честного полицейского усомниться в простых истинах.
+После побега Ведхи между ним и Викрамом начинается сложная игра в кошки-мышки. Полицейский должен арестовать беглеца, но теперь он видит в нем не просто преступника, а сложную личность, действующую по собственным моральным принципам. Викрам начинает применять нестандартные методы расследования, иногда действуя на грани закона.
+Кульминация наступает, когда выясняется, что коррупция в полицейском департаменте гораздо глубже, чем предполагал Викрам. Некоторые из его коллег оказываются связанными с криминальным миром и готовы пойти на убийство, чтобы скрыть свои преступления. Викрам понимает, что система, которой он так доверял, сама поражена злом.
+В финальном противостоянии Викрам и Ведха оказываются по одну сторону баррикад, борясь против общих врагов - коррумпированных полицейских и политиков. Викрам понимает, что иногда для торжества справедливости приходится действовать вне рамок закона, а Ведха осознает, что не все представители власти являются врагами простых людей.
+Фильм заканчивается философским диалогом между главными героями. Ведха говорит Викраму, что их встреча изменила обоих - полицейский стал понимать сложность мира, а бандит увидел, что среди служителей закона есть по-настоящему честные люди. Они остаются по разные стороны закона, но теперь между ними существует взаимное уважение и понимание.
+История "Викрам Ведха" - это современная притча о том, что мир гораздо сложнее простых категорий добра и зла. Фильм исследует темы справедливости, морали и того, как обстоятельства могут заставить людей пересмотреть свои убеждения. Это рассказ о том, что истинная мудрость заключается в понимании сложности человеческой природы и готовности подвергнуть сомнению собственные убеждения.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Твое имя', 'Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?', '2016-01-01', 1, '106 minutes', 'Kimi no na wa.', 8.4, 'История рассказывает о двух подростках из разных частей Японии, которые начинают загадочным образом меняться телами во время сна. Мицуха Миямидзу - семнадцатилетняя девушка, живущая в вымышленном городке Итомори в горной префектуре. Она мечтает о жизни в Токио, устав от консервативной сельской жизни, традиций синтоистского храма, которым управляет ее бабушка, и постоянного внимания к семейным обязанностям как наследницы рода мико (храмовых жриц).
+Таки Татибана - семнадцатилетний парень, живущий в Токио и работающий неполный рабочий день в итальянском ресторане. Он увлекается архитектурой, живет с отцом и ведет обычную городскую жизнь старшеклассника. Однажды утром каждый из них просыпается в теле другого, что поначалу кажется им странным сном.
+Обмен телами происходит нерегулярно, примерно два-три раза в неделю, и подростки постепенно осознают реальность происходящего. Они начинают оставлять друг другу записки на телефонах и в блокнотах, рассказывая о событиях дня и давая советы, как вести себя в их телах. Мицуха в теле Таки помогает ему сблизиться с его коллегой по работе Оку-дэрой, а Таки в теле Мицухи повышает ее популярность в школе и улучшает отношения с одноклассниками.
+Через эти обмены они узнают о жизни друг друга и постепенно влюбляются, несмотря на то что никогда не встречались лично. Таки узнает о традициях изготовления кумико (плетеных шнуров), которые передаются в семье Мицухи из поколения в поколение, и о том, что ее отец бросил семейные традиции ради политической карьеры мэра города.
+Однажды обмены телами внезапно прекращаются. Таки, обеспокоенный судьбой Мицухи, решает найти ее самостоятельно. Он помнит только фрагменты из ее жизни и пейзажи вокруг Итомори, поэтому отправляется в путешествие по горным регионам Японии вместе со своими друзьями Цукасой и Саей-тин. После долгих поисков они находят место, которое узнает Таки, но обнаруживают, что город Итомори был полностью разрушен три года назад упавшим метеоритом.
+В местном музее Таки с ужасом обнаруживает список погибших, в котором значится имя Мицухи Миямидзу. Он понимает, что все это время менялся телами с девушкой из прошлого, которая погибла за несколько лет до того, как он узнал о ее существовании. Эта временная разница объясняет, почему их дневниковые записи исчезали, а воспоминания становились туманными.
+Таки вспоминает о кумико, которое Мицуха оставила в токийском храме во время одного из их телесных обменов. Согласно традициям семьи Миямидзу, эти плетеные шнуры содержат часть души создавшего их человека. Он находит шнур и отправляется к священному озеру возле кратера от метеорита, где когда-то стоял Итомори.
+У озера Таки пьет сакэ кутикамиса - традиционный напиток, освященный Мицухой, который по синтоистским верованиям создает связь между людьми и духами. Это позволяет ему еще раз попасть в тело Мицухи в день катастрофы, за несколько часов до падения метеорита. Он понимает, что у него есть шанс спасти жителей Итомори, предупредив их об опасности.
+В теле Мицухи Таки пытается убедить жителей города эвакуироваться, но никто не верит в угрозу падения метеорита. Вместе с друзьями Мицухи - Тэсси и Саей-тин - он разрабатывает план создания чрезвычайной ситуации, которая заставит власти объявить эвакуацию. Они решают взорвать электростанцию, отключить связь и транслировать через школьное радио предупреждение об опасности.
+Тэсси, которому нравится Мицуха, соглашается помочь, хотя не понимает, откуда у нее появились знания о грядущей катастрофе. Саей-тин также присоединяется к плану. Самой сложной задачей становится убеждение отца Мицухи, мэра города, объявить официальную эвакуацию.
+Во время выполнения плана Таки и Мицуха встречаются в сумеречное время на границе между мирами живых и мертвых. Они видят друг друга вживую впервые, и между ними происходит трогательная встреча. Мицуха возвращается в свое тело, а Таки - в свое, но теперь они находятся в одном временном промежутке. Чтобы не забыть друг друга после разлучения, они пишут имена на руках партнера, но Таки не успевает написать свое имя.
+Мицуха отправляется к отцу, чтобы убедить его эвакуировать город. Встреча проходит трудно, поскольку отец давно отдалился от семьи и традиций, но решимость и искренность дочери в конце концов убеждают его. Он объявляет эвакуацию под предлогом учений по чрезвычайным ситуациям.
+Большинство жителей Итомори удается эвакуировать до падения метеорита, но в суматохе Мицуха, Тэсси и Саей-тин оказываются в опасной зоне. В критический момент, когда кажется, что они не успеют спастись, время снова искажается, и судьба города изменяется.
+Спустя несколько лет Таки живет в Токио, работает архитектором и периодически испытывает странное чувство, что он кого-то ищет, но не может вспомнить кого именно. Мицуха также живет в Токио, выжив после катастрофы благодаря успешной эвакуации. Оба смутно помнят свои приключения, но детали стираются из памяти.
+Однажды они встречаются в поездах, идущих в противоположных направлениях, и узнают друг друга, несмотря на прошедшие годы. Таки выходит на следующей станции и начинает искать девушку по всему району. Когда они наконец встречаются на лестнице, оба не решаются заговорить первыми, боясь, что это лишь игра воображения.
+Наконец Таки набирается смелости и спрашивает: "Мне кажется, мы где-то встречались раньше", на что Мицуха со слезами на глазах отвечает: "Мне тоже так кажется". Фильм заканчивается их воссоединением и пониманием того, что их любовь преодолела время, смерть и забвение.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Дангал', 'Former wrestler Mahavir Singh Phogat and his two wrestler daughters struggle towards glory at the Commonwealth Games in the face of societal oppression.', '2016-01-01', 1, '161 minutes', 'Dangal', 8.4, 'Махавир Сингх Пхогат - бывший борец, который в молодости мечтал выиграть золотую медаль для Индии на международных соревнованиях, но вынужден был оставить спорт из-за отсутствия финансовой поддержки от правительства. Он устраивается на обычную работу, женится и живет в небольшом городке Балали в штате Харьяна, надеясь, что у него родится сын, которого он сможет воспитать как чемпиона по борьбе и осуществить свою несбывшуюся мечту.
+Однако у Махавира и его жены Дайи рождаются четыре дочери: Гита, Бабита, Ритика и Сангита. В консервативном индийском обществе, особенно в сельской местности, девочки традиционно воспитываются для замужества и домашних обязанностей, а не для спортивной карьеры. Махавир первоначально разочарован и, кажется, отказывается от своих амбиций.
+Переломный момент наступает, когда четырнадцатилетняя Гита и тринадцатилетняя Бабита избивают двух мальчиков, которые их дразнили. Вместо того чтобы ругать дочерей, Махавир видит в этом инциденте признак их силы и боевого духа. Он понимает, что золотую медаль может выиграть не только сын, но и дочь, и решает тренировать девочек в борьбе, несмотря на общественные предрассудки.
+Махавир начинает строгий режим тренировок для Гиты и Бабиты. Он заставляет их вставать в пять утра, бегать, выполнять силовые упражнения и изучать техники борьбы. Поначалу девочки сопротивляются, особенно когда отец обрезает им волосы, чтобы они не мешали во время тренировок, что вызывает насмешки одноклассников и соседей.
+Дайя поначалу против решения мужа, беспокоясь о будущем дочерей и их перспективах замужества. Общество также критикует Махавира, считая его методы неподходящими для девочек. Соседи и родственники насмехаются над семьей, а местные жители считают, что он разрушает будущее своих дочерей.
+Гита и Бабита пытаются саботировать тренировки, портя будильник, притворяясь больными и даже подкладывая камни в обувь отца. Однако их отношение кардинально меняется после посещения свадьбы подруги, которая выходит замуж в четырнадцать лет. Подруга объясняет сестрам, что им повезло иметь отца, который заботится об их будущем и дает им возможность контролировать свою судьбу, в отличие от большинства девочек, которых просто выдают замуж.
+С этого момента Гита и Бабита начинают серьезно относиться к тренировкам. Махавир строит для них импровизированную арену во дворе и учит их различным приемам борьбы. Поначалу девочки тренируются с мальчиками из района, легко побеждая большинство из них, что удивляет местное сообщество.
+Первым серьезным испытанием становится участие в официальном турнире по борьбе. Организаторы неохотно разрешают девочкам участвовать, поскольку женская борьба не распространена в регионе. Гита побеждает в своем первом турнире, что привлекает внимание местных СМИ и начинает менять отношение общества к женской борьбе.
+Успехи продолжаются, и обе сестры начинают побеждать на региональных турнирах. Махавир продает свою землю и украшения жены, чтобы финансировать их тренировки и поездки на соревнования. Семья живет в стесненных финансовых условиях, но Махавир готов на любые жертвы ради спортивного будущего дочерей.
+Гита выигрывает чемпионат штата, затем национальный чемпионат и получает стипендию для обучения в Национальном спортивном институте в Патиале. Там она встречается с тренером, который критикует методы ее отца и пытается научить ее новым техникам международной борьбы, отличающимся от традиционного индийского стиля кушти.
+В институте Гита наслаждается новой свободой - она отращивает волосы, начинает есть жареную пищу, ходит в кино и заводит друзей. Ее тренировки становятся менее интенсивными, а дисциплина ослабевает. Когда она возвращается домой на каникулы, между ней и отцом происходит конфликт относительно методов тренировок.
+Гита вызывает отца на поединок, чтобы доказать, что новые техники лучше старых. Она побеждает стареющего Махавира, что болезненно ранит его гордость. Однако на международных турнирах Гита начинает проигрывать, не сумев адаптировать свой стиль к мировому уровню. Ее уверенность падает, и она понимает, что совершила ошибку, отвергнув советы отца.
+Гита звонит отцу и извиняется, прося его вернуться и помочь ей подготовиться к Играм Содружества. Махавир приезжает в Патиалу, где сталкивается с сопротивлением официального тренера, который не хочет вмешательства. Несмотря на препятствия, Махавир тайно тренирует Гиту, восстанавливая ее технику и ментальную силу.
+Тем временем Бабита также добивается успехов в борьбе и получает право участвовать в международных соревнованиях. Младшие сестры, Ритика и Сангита, также проявляют интерес к борьбе, продолжая семейную традицию.
+На Играх Содружества в Глазго Гита проходит через серию сложных поединков. В день финального матча официальный тренер, желая сохранить контроль над спортсменкой, запирает Махавира в подсобном помещении стадиона, чтобы он не мог давать советы дочери во время решающего поединка.
+В финальном матче против австралийской борчихи Гита проигрывает в первом раунде и отстает во втором. Не слыша голоса отца, она вспоминает его учения о том, что она должна быть самостоятельной и не зависеть от других. В решающие моменты третьего раунда Гита выполняет сложный прием на пять очков, который изучала с отцом, и выигрывает золотую медаль.
+Махавир освобождается из заточения как раз вовремя, чтобы увидеть победу дочери. В эмоциональной сцене он обнимает Гиту и говорит ей, что она его гордость. Национальный гимн Индии звучит на церемонии награждения, исполняя давнюю мечту Махавира о том, чтобы его воспитанник принес золотую медаль стране.
+Эпилог показывает, что история семьи Пхогат вдохновила многих других девочек в Индии заняться борьбой. Бабита также становится международной чемпионкой, выигрывая золото на Играх Содружества и серебро на чемпионате мира. Фильм заканчивается посвящением всем отцам, которые верят в своих дочерей и готовы бороться с общественными предрассудками ради их успеха.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Человек-паук: Через вселенные', 'Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.', '2018-01-01', 1, '117 minutes', 'Spider-Man: Into the Spider-Verse', 8.4, 'Майлз Моралес - тринадцатилетний подросток афро-латиноамериканского происхождения, живущий в Бруклине. Его отец Джефферсон Дэвис работает полицейским и скептически относится к деятельности Человека-паука, считая его опасным самозванцем. Мать Майлза Рио поддерживает более либеральные взгляды. Майлз учится в престижной частной школе, но чувствует себя там неуютно и предпочитает проводить время с дядей Аароном, который понимает его увлечение граффити и уличной культурой.
+Однажды вечером дядя Аарон ведет Майлза в заброшенные туннели метро, чтобы тот мог спокойно рисовать граффити. В подземельях Майлз случайно обнаруживает секретную лабораторию криминального босса Кингпина - Уилсона Фиска. Фиск проводит эксперименты с суперколлайдером - машиной, способной открывать порталы в параллельные измерения, надеясь вернуть свою погибшую семью из альтернативной вселенной.
+Во время проведения эксперимента Майлз становится свидетелем битвы между местным Человеком-пауком Питером Б. Паркером и головорезами Кингпина. В ходе схватки радиоактивный паук кусает Майлза, а Человек-паук пытается остановить коллайдер, понимая, что машина может разрушить город. Питер дает Майлзу флешку с вирусом, способным уничтожить суперколлайдер, но погибает от рук Кингпина, не успев завершить миссию.
+После укуса паука Майлз начинает проявлять сверхспособности: сверхсилу, способность прилипать к поверхностям, паучье чутье и уникальные силы - невидимость и биоэлектрические разряды. Однако он не может контролировать свои новые способности, что приводит к комическим и опасным ситуациям в школе и дома.
+Эксперимент с коллайдером нарушает барьеры между измерениями, случайно затягивая в измерение Майлза других версий Человека-паука из параллельных вселенных. Первым прибывает Питер Б. Паркер - более старая и циничная версия героя из альтернативной реальности, где он потерял жену Мэри Джейн и разочаровался в жизни.
+К ним присоединяется Гвен Стейси, также известная как Призрачная Паучиха, из измерения, где она получила способности вместо Питера Паркера. В ее мире она не смогла спасти своего лучшего друга Питера Паркера, который превратился в Ящера и погиб, что привело к тому, что ее отец-полицейский стал охотиться на нее как на преступницу.
+Группу пополняют еще более экзотические версии: Человек-паук Нуар - черно-белый детектив из 1930-х годов, говорящий загадками и сражающийся с нацистами; Пени Паркер - японская школьница-аниме, пилотирующая гигантского мехаробота SP//dr; и Хэм - антропоморфная свинья-супергерой из мультяшной вселенной.
+Все альтернативные версии Человека-паука страдают от глитчей - болезненных искажений, возникающих из-за того, что их тела не совместимы с чужим измерением. Если они не вернутся в свои родные вселенные, то могут умереть или навсегда застрять в искаженном состоянии.
+Майлз пытается доказать другим паукам, что он готов присоединиться к их миссии по остановке Кингпина, но терпит неудачу из-за неспособности контролировать свои силы. Питер Б. Паркер и остальные решают выполнить миссию без него, считая его слишком неопытным и не желая рисковать жизнью ребенка.
+Тем временем выясняется, что дядя Аарон работает на Кингпина под псевдонимом Бродяга. Когда Аарон понимает, что его племянник - новый Человек-паук, он оказывается в конфликте между верностью семье и обязательствами перед боссом. В критический момент Аарон отказывается убить Майлза, за что Кингпин убивает его. Умирая на руках племянника, Аарон раскрывает Майлзу местонахождение логова Кингпина.
+Смерть дяди становится поворотным моментом для Майлза. Он понимает, что должен взять на себя ответственность и стать настоящим героем. Майлз создает собственный костюм Человека-паука, сочетающий элементы оригинального дизайна с его личным стилем, включающим граффити-эстетику и кроссовки.
+Финальная битва происходит в лаборатории Кингпина, где злодей пытается снова запустить суперколлайдер. Выясняется, что Фиск потерял семью в автокатастрофе после того, как его сын увидел отца в костюме Кингпина и испугался, что привело к аварии. Теперь Фиск одержим идеей найти измерение, где его семья жива, не понимая, что его вмешательство может уничтожить все реальности.
+Команда пауков разделяется: опытные герои сражаются с армией головорезов Кингпина, включая Бродягу, Скорпиона и Томбстоуна, а Майлз проникает к суперколлайдеру. В решающий момент он наконец обретает полный контроль над своими способностями, побеждает личные страхи и сомнения.
+Майлз успевает отправить всех альтернативных пауков обратно в их измерения через порталы коллайдера. Гвен перед отъездом дает ему устройство, которое позволит им общаться между измерениями. В финальном противостоянии с Кингпином Майлз использует свои уникальные способности - невидимость и веном-удар, чтобы победить злодея и уничтожить коллайдер, спасая Нью-Йорк от разрушения.
+После победы Майлз полноценно принимает роль нового Человека-паука своего измерения. Он примиряется с отцом, который начинает понимать важность работы супергероев, и находит баланс между школьной жизнью и обязанностями защитника города. В финальной сцене Майлз с уверенностью патрулирует Нью-Йорк, став достойным преемником наследия Человека-паука.
+Фильм завершается намеком на продолжение приключений в мультивселенной, когда Майлз получает сообщение от Гвен из ее измерения, предполагая будущие встречи героев из разных реальностей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мстители: Финал', 'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos'' actions and restore balance to the universe.', '2019-01-01', 1, '181 minutes', 'Avengers: Endgame', 8.4, 'После событий "Войны бесконечности" вселенная погружена в хаос. Танос щелкнул пальцами и уничтожил половину всего живого во вселенной. Прошло пять лет с момента "Щелчка". Выжившие Мстители пытаются жить дальше в разрушенном мире. Тони Старк застрял в космосе с Небулой на корабле, у них заканчиваются припасы. На Земле Стив Роджерс проводит группы поддержки для выживших, Наташа Романофф координирует деятельность оставшихся героев по всей вселенной, включая Кэрол Дэнверс, Родса, Ракету и других. Тор живет в Новом Асгарде с оставшимися асгардцами, впав в депрессию и набрав лишний вес. Брюс Бэннер научился контролировать свою трансформацию и теперь постоянно существует как умный Халк. Клинт Бартон стал Ронином и мстит преступникам по всему миру.
+Кэрол Дэнверс спасает Тони и Небулу из космоса. Мстители узнают местонахождение Таноса и отправляются к нему на планету, где он уничтожил Камни Бесконечности, чтобы никто не смог отменить его действия. Тор в ярости отрубает ему голову, но это не возвращает погибших.
+Пять лет спустя Скотт Лэнг выбирается из Квантового мира, где для него прошло всего пять часов. Он предлагает использовать Квантовое путешествие во времени, чтобы собрать Камни Бесконечности в прошлом и отменить действия Таноса. Тони изначально отказывается, но затем понимает, как осуществить безопасное путешествие во времени, и соглашается помочь.
+Мстители разделяются на команды для сбора камней. Тони, Стив, Брюс и Скотт отправляются в 2012 год в Нью-Йорк во время битвы с читаури, чтобы получить Камень Времени, Камень Разума и Камень Пространства. Тор и Ракета направляются в 2013 год в Асгард за Камнем Реальности. Наташа и Клинт летят на Вормир в 2014 году за Камнем Души. Небула и Родс отправляются на Мораг в 2014 году за Камнем Силы.
+В 2012 году команда сталкивается с проблемами. Брюс получает Камень Времени от Древней, убедив ее в необходимости этого действия. Скотт и Тони не могут получить Тессеракт из-за вмешательства Локи, который сбегает с ним. Стив получает скипетр с Камнем Разума. Тони и Стив отправляются в 1970 год на военную базу, где Тони встречает своего отца Говарда Старка, а Стив видит Пегги Картер. Они получают Тессеракт и частицы Пима для возвращения.
+Тор и Ракета в Асгарде получают Эфир из Джейн Фостер. Тор встречает свою мать Фригу, которая помогает ему справиться с депрессией. Он также призывает Мьёльнир.
+На Вормире Красный Череп объясняет Наташе и Клинту, что для получения Камня Души необходимо пожертвовать тем, кого больше всего любишь. После долгой борьбы за право умереть Наташа жертвует собой, и Клинт получает камень.
+На Мораге Небула и Родс получают Камень Силы, но Небула из 2014 года случайно устанавливает связь с Небулой из 2023 года из-за общей киберсети. Танос из 2014 года узнает о планах Мстителей. Он захватывает Небулу из 2023 года и отправляет свою Небулу в 2023 год.
+Мстители возвращаются в настоящее, скорбя о потере Наташи. Тони создает новую Перчатку Бесконечности. Халк надевает ее и щелкает пальцами, возвращая всех исчезнувших, но получает серьезные травмы руки из-за силы камней.
+Небула из 2014 года использует машину времени, чтобы перенести Таноса и его армию из 2014 года в 2023 год. Танос атакует штаб-квартиру Мстителей. Начинается финальная битва между Мстителями и армией Таноса. К битве присоединяются все воскрешенные герои, включая возвращенных доктором Стрэнджем, армии Ваканды, Асгарда и других миров.
+Во время битвы Тони видит, что доктор Стрэндж показывает ему один палец, указывая на единственный выигрышный сценарий из 14 миллионов возможных. Танос получает все камни и готовится щелкнуть пальцами снова, но Тони крадет камни с помощью нанотехнологий в своем костюме. Произнося слова "Я есть Железный человек", Тони щелкает пальцами, уничтожая Таноса и его армию, но смертельная доза радиации от камней убивает его.
+Фильм завершается похоронами Тони Старка, на которых присутствуют все герои и его близкие. Стив Роджерс возвращает Камни Бесконечности в их временные линии, но остается в прошлом, чтобы жить с Пегги Картер. Он возвращается в настоящее как пожилой человек и передает щит Сэму Уилсону. Тор присоединяется к Стражам Галактики. Клинт воссоединяется с семьей. Мир начинает восстанавливаться после пятилетнего отсутствия половины населения.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мстители: Война бесконечности', 'The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.', '2018-01-01', 1, '149 minutes', 'Avengers: Infinity War', 8.4, 'Фильм начинается с того, что космический корабль асгардских беженцев подвергается нападению Таноса и его приспешников. Танос уже обладает Камнем Силы, который он получил на Ксандаре, уничтожив половину населения планеты. На корабле он пытает Тора и угрожает убить Локи, требуя Тессеракт. Локи в итоге отдает Космический Куб, из которого Танос извлекает Камень Пространства. Когда Локи пытается напасть на Таноса, тот убивает его, сломав шею. Халк нападает на Таноса, но терпит поражение. Хеймдалль успевает телепортировать Халка на Землю через Радужный мост, прежде чем Танос убивает его копьем. Корабль взрывается.
+Халк падает в Святилище Санкторум в Нью-Йорке, где превращается обратно в Брюса Бэннера. Он рассказывает Доктору Стрэнджу и Вонгу о приближающейся угрозе Таноса, который собирает Камни Бесконечности чтобы уничтожить половину всего живого во вселенной. Стрэндж носит на шее Камень Времени в виде Глаза Агамотто. Бэннер звонит Тони Старку, который в этот момент бегает в Центральном парке с Пеппер Потс. Внезапно над Нью-Йорком появляется огромный корабль в форме кольца, из которого спускаются Эбеновый Коготь и Кулл Обсидиан, члены Черного Ордена Таноса. Они требуют Камень Времени.
+Начинается битва в центре Нью-Йорка. К Тони, Стрэнджу и Вонгу присоединяется Питер Паркер в костюме Человека-паука. Вонг телепортирует Кулла Обсидиана в заснеженные горы и отрезает ему руку порталом. Эбеновый Коготь с помощью телекинеза захватывает Доктора Стрэнджа и затягивает его на свой корабль. Старк и Паркер преследуют корабль, который направляется в космос к планете Титан.
+Тем временем Стив Роджерс, Наташа Романофф и Сэм Уилсон прибывают в Эдинбург, где на Вижена и Ванду Максимофф нападают Проксима Миднайт и Корвус Глейв, также члены Черного Ордена. Они пытаются извлечь Камень Разума из лба Вижена. Начинается погоня по улицам города. Роджерс, Романофф и Фалкон помогают Ванде и раненому Вижену скрыться.
+Все герои собираются в секретном комплексе Мстителей, где решают, что нужно удалить Камень Разума из головы Вижена, не убив его. Единственное место, где это можно сделать - Ваканда, где сестра Т''Чаллы Шури обладает необходимыми технологиями. Роджерс связывается с Т''Чаллой, и тот соглашается помочь.
+На космическом корабле Стрэндж, Старк и Паркер побеждают Эбонового Когтя, высосав его в космос через пробоину в корпусе. Они решают лететь на Титан, чтобы встретиться с Таносом там, вместо того чтобы возвращаться на Землю. На Титане они встречают Питера Квилла, Драакса, Мантис и Небулу из Стражей Галактики. Гамора и Ракета с Грутом отправились с Тором, которого они подобрали в космосе.
+Через флешбеки показывается прошлое Гаморы. Танос напал на ее родную планету, когда она была ребенком. Он отобрал половину населения и убил их, включая мать Гаморы, но оставил девочку в живых и воспитал как свою дочь. Танос считает, что спас планету от перенаселения.
+В настоящем Танос прибывает на заброшенную планету Вормир в поисках Камня Души. Там его встречает Красный Череп, ставший призрачным хранителем камня после того, как Тессеракт телепортировал его туда в 1945 году. Красный Череп объясняет, что для получения Камня Души необходимо пожертвовать тем, кого любишь больше всего. Танос понимает, что должен убить Гамору. Несмотря на ее мольбы, он сбрасывает ее со скалы. Камень Души появляется в его руке, а Танос плачет от горя.
+Тор с Ракетой и Грутом прибывают к Нидавеллиру, где живут гномы-кузнецы. Они обнаруживают, что Танос заставил их изготовить для него Перчатку Бесконечности, а затем убил всех, кроме короля Эйтри. Эйтри соглашается выковать для Тора новое оружие - топор Штормбрейкер, способный призывать Радужный мост. В процессе ковки Тор чуть не погибает от жара умирающей звезды, но выживает благодаря своим асгардским способностям.
+На Титане объединенная команда героев разрабатывает план победить Таноса. Стрэндж использует Камень Времени, чтобы просмотреть 14 миллионов возможных вариантов будущего, и видит только один, в котором они побеждают. Прибывает Танос, уже обладающий четырьмя камнями из шести. Начинается эпическая битва. Героям почти удается снять с него Перчатку, но Квилл, узнав о смерти Гаморы, приходит в ярость и нападает на Таноса, нарушив их план. Танос вырывается из ловушки.
+Танос побеждает героев одного за другим. Он ломает Тони Старку броню и смертельно ранит его, но Стрэндж останавливает Таноса, предлагая ему Камень Времени в обмен на жизнь Старка. Танос соглашается и забирает пятый камень.
+В Ваканде начинается массированная атака армии Таноса - тысячи инопланетных существ, похожих на диких собак, атакуют энергетический щит, защищающий страну. Т''Чалла приказывает открыть барьер в одном месте, чтобы не дать врагам обойти его с флангов. Начинается крупномасштабная битва с участием армии Ваканды, Мстителей и Вакандских технологий.
+Шури пытается аккуратно извлечь Камень Разума из головы Вижена, но процесс занимает много времени. Корвус Глейв проникает в лабораторию и нападает на них. Вижен, хотя и ослаблен, присоединяется к битве.
+В разгар сражения прибывает Тор со Штормбрейкером, Ракетой и Грутом. Тор призывает молнии и уничтожает множество врагов, переломив ход битвы в пользу героев.
+Танос телепортируется в Ваканду за последним камнем. Ванда, которая была вынуждена уничтожить Камень Разума вместе с Виженом, чтобы не дать его Таносу, одновременно сдерживает Таноса своими силами. Ей удается разрушить камень, и Вижен умирает. Но Танос использует Камень Времени, чтобы обратить время вспять, воскрешает Вижена и вырывает камень из его лба, убивая его снова.
+Танос получает все шесть Камней Бесконечности. Тор внезапно атакует его, проткнув Штормбрейкером грудь, но Танос говорит, что Тор должен был целиться в голову. Танос щелкает пальцами, активируя все камни одновременно.
+Таноса телепортирует на тихую планету, где он видит маленькую Гамору в духовном измерении Камня Души. Она спрашивает, чего это ему стоило, и он отвечает - всего.
+Начинается процесс исчезновения. Половина всех живых существ во вселенной превращается в пыль. На Титане исчезают Питер Паркер, Питер Квилл, Драакс, Мантис и Стрэндж. Паркер умирает на руках у Старка, говоря, что не хочет умирать. В Ваканде исчезают Т''Чалла, Сэм Уилсон, Ванда Максимофф, Грут и Джеймс Барнс. По всему миру исчезает половина населения.
+Выжившие герои остаются в шоке от произошедшего. Танос сидит на крыльце простой хижины на далекой планете, смотрит на восход солнца и улыбается, довольный выполненной миссией. На его руке видны шрамы от использования Перчатки Бесконечности, но он достиг своей цели.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Коко', 'Aspiring musician Miguel, confronted with his family''s ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.', '2017-01-01', 1, '105 minutes', 'Coco', 8.4, 'Действие фильма разворачивается в мексиканской деревне, где живет двенадцатилетний мальчик по имени Мигель Ривера. Он мечтает стать музыкантом, но его семья категорически запрещает ему заниматься музыкой из-за семейного проклятия, связанного с его прапрадедушкой, который когда-то бросил семью ради музыкальной карьеры. Семья Ривера уже несколько поколений занимается сапожным ремеслом, и все члены семьи должны следовать этой традиции.
+Накануне Дня мертвых Мигель тайно пытается участвовать в музыкальном конкурсе, но бабушка Абуэлита обнаруживает его гитару и разбивает ее. В отчаянии мальчик забирается на кладбище в склеп знаменитого музыканта Эрнесто де ла Круса, которого он считает своим прапрадедушкой, и берет его гитару. В момент, когда Мигель касается струн инструмента, он попадает в Страну мертвых, где встречает духов своих умерших родственников.
+В Стране мертвых Мигель узнает, что должен получить благословение от члена семьи, чтобы вернуться в мир живых до рассвета, иначе навсегда останется среди мертвых. Его прапрабабушка Имельда готова дать ему благословение, но только при условии, что он навсегда откажется от музыки. Мигель отказывается и решает найти Эрнесто де ла Круса, чтобы получить благословение от него.
+По пути мальчик знакомится с оборванным скелетом по имени Гектор, который помогает ему добраться до де ла Круса в обмен на обещание поставить его фотографию на домашний алтарь, чтобы его помнили в мире живых. Гектор постепенно исчезает, потому что его никто не помнит среди живых, и он рискует подвергнуться окончательной смерти.
+Когда Мигель наконец встречается с Эрнесто де ла Крусом, выясняется ужасная правда: де ла Крус не является его прапрадедушкой, а наоборот, он убил настоящего прапрадедушку Мигеля - Гектора, отравив его и украв все его песни, включая знаменитую "Remember Me". Гектор и есть тот самый прапрадедушка, который покинул семью не по своей воле, а потому что де ла Крус убил его, когда Гектор хотел вернуться домой к жене Имельде и дочери Коко.
+Де ла Крус пытается убить и Мигеля, чтобы сохранить свою тайну, но мальчика спасают Гектор и его семья. Мигель понимает, что его прабабушка Коко - это дочь Гектора, и именно она хранит память о своем отце. Время на исходе, и Мигель начинает исчезать. Имельда дает ему благословение без всяких условий, понимая, насколько важна для него музыка.
+Мигель возвращается в мир живых, где находит свою прабабушку Коко в состоянии старческого слабоумия. Он поет ей песню "Remember Me", которую Гектор когда-то написал для нее, и это пробуждает ее воспоминания об отце. Коко достает спрятанные письма и часть фотографии Гектора, что позволяет восстановить его память среди живых и спасти от окончательного исчезновения.
+Семья Ривера примиряется с музыкальным прошлым и принимает увлечение Мигеля. Проходит год, и в следующий День мертвых вся семья, включая духов предков, собирается вместе, а Мигель исполняет музыку в честь своих родных, живых и мертвых.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Джанго освобожденный', 'With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.', '2012-01-01', 1, '165 minutes', 'Django Unchained', 8.4, 'Действие фильма происходит в 1858 году, за два года до Гражданской войны в США. Джанго, раб-афроамериканец, работает на плантации в Техасе вместе с другими рабами. Их ведут по дороге прикованными цепями работорговцы братья Спек, когда их встречает немецкий охотник за головами доктор Кинг Шульц, путешествующий в повозке с гигантским зубом на крыше. Шульц ищет трех братьев Бриттл, за которых назначена награда, и только Джанго может их опознать, так как они были надсмотрщиками на плантации, где он работал со своей женой Брумхильдой фон Шафт.
+Шульц покупает Джанго у работорговцев, убивая одного из братьев Спек, когда тот пытается помешать сделке. Он объясняет Джанго, что является охотником за головами и предлагает ему сделку: помочь найти братьев Бриттл в обмен на свободу и семьдесят пять долларов. Джанго соглашается, и они отправляются на плантацию Беннета Мэнора, где работают братья Бриттл под именами.
+На плантации Джанго опознает братьев Бриттл. Шульц убивает старшего брата Большого Джона Бриттла на глазах у всех, включая маленького сына плантатора. Джанго убивает Эллиса Бриттла, который в прошлом жестоко избивал его жену кнутом за попытку побега. Третьего брата, Роджера Бриттла, они выслеживают и убивают позже. Шульц оставляет плантатору деньги за причиненный ущерб.
+Шульц узнает историю Джанго и его жены Брумхильды, которая получила свое имя от прежних немецких хозяев и даже говорит по-немецки. Год назад их поймали при попытке побега и продали на разные аукционы. Шульц, воодушевленный параллелью с германским мифом о Зигфриде и Брунгильде, предлагает помочь Джанго найти и освободить жену в обмен на помощь в качестве напарника в течение зимы.
+Всю зиму они работают вместе как охотники за головами. Шульц обучает Джанго стрельбе, верховой езде и поведению свободного человека. Джанго быстро становится отличным стрелком и безжалостным убийцей преступников. Весной они узнают, что Брумхильда находится на плантации Кэндиленд в Миссисippi, принадлежащей Кэлвину Кэнди, жестокому плантатору, известному своими боями рабов на смерть, которые он называет мандинго-файтинг.
+Шульц разрабатывает план проникновения на плантацию под видом работорговцев, заинтересованных в покупке бойца-мандинго за двенадцать тысяч долларов. Они планируют попутно выкупить Брумхильду как переводчицу за триста долларов, чтобы не вызвать подозрений относительно истинной цели визита. Джанго играет роль эксперта по мандинго-бойцам, что вызывает недоумение у местных жителей, не привыкших видеть вооруженного чернокожего верхом на лошади.
+На плантации их встречает Кэлвин Кэнди, харизматичный, но садистский плантатор, и его правая рука Стивен, пожилой раб, который фактически управляет хозяйством и относится к другим рабам еще жестче, чем белые хозяева. Кэнди демонстрирует гостям бой мандинго, во время которого его боец Д''Артаньян убивает противника. Затем он показывает жестокую расправу с рабом Д''Анджело, которого разрывают собаки за попытку побега.
+Джанго тайно встречается с Брумхильдой в хижине для наказаний, где ее держат за попытку побега. Их встреча эмоциональна, но Джанго предупреждает ее не выдавать их знакомство. Однако Стивен, подозревая неладное, следит за ними и понимает, что между Джанго и Брумхильдой есть связь. Он сообщает об этом Кэнди.
+Кэнди раскрывает обман и требует за Брумхильду двенадцать тысяч долларов вместо трехсот, угрожая в противном случае убить ее раскаленным молотком. Он также демонстрирует свои псевдонаучные расистские теории, показывая череп своего дедушки и рассуждая о покорности чернокожих. Шульц соглашается на требования Кэнди, но настаивает на заключении сделки рукопожатием.
+Кэнди протягивает руку для рукопожатия, но Шульц, доведенный до предела жестокостью и садизмом плантатора, не может этого вынести. Вместо рукопожатия он достает скрытый дерринджер и стреляет Кэнди в сердце, убивая его на месте. Охранники немедленно застреливают Шульца. Начинается перестрелка, во время которой гибнут несколько человек, а Джанго ранен в ногу и захвачен в плен.
+Джанго приговаривают к кастрации и смерти в шахтах, но по дороге туда он убеждает конвоиров, что может привести их к телу Шульца, за которое назначена награда. Когда они освобождают его от оков, Джанго убивает всех конвоиров и возвращается в Кэндиленд за женой. Он находает Брумхильду в хижине для наказаний и освобождает ее.
+Затем Джанго врывается в главный дом, где проходят поминки по Кэлвину Кэнди. Он убивает множество людей, включая сестру Кэнди Лору Ли, в жестокой перестрелке. Последним он сталкивается со Стивеном, которому отстреливает коленные чашечки, оставляя его умирать в агонии. Перед уходом Джанго поджигает дом, заложив динамит по всему зданию.
+Джанго и Брумхильда скачут прочь от пылающей плантации. Дом взрывается за их спинами, символизируя разрушение системы рабства. Они направляются на север, к свободе, а Джанго окончательно превращается из раба в свободного человека, способного постоять за себя и защитить тех, кого любит. Фильм заканчивается их совместной поездкой верхом под звуки песни, прославляющей свободу Джанго.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Темный рыцарь: Возрождение легенды', 'Eight years after the Joker''s reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.', '2012-01-01', 1, '164 minutes', 'The Dark Knight Rises', 8.4, 'Действие фильма происходит через восемь лет после событий предыдущей части. Готэм-сити переживает период относительного мира благодаря Акту Дента, принятому в честь погибшего прокурора Харви Дента. Организованная преступность практически искоренена, но этот мир основан на лжи о том, что Дент был героем, хотя на самом деле он стал Двуликим и был убит Бэтменом.
+Брюс Уэйн стал затворником в своем поместье Уэйн-мэнор. Он больше не появляется на публике и не надевает костюм Бэтмена. Физически он сильно ослаблен из-за многочисленных травм, полученных за годы борьбы с преступностью, и вынужден ходить с тростью. Компания Уэйн Энтерпрайзис переживает финансовые трудности из-за его невмешательства в дела.
+В это время в городские канализационные туннели проникает наемник в маске по имени Бэйн. Он и его люди нападают на фондовую биржу Готэма, используя мотоциклы Бэтмена, и совершают кибератаку, в результате которой Брюс Уэйн теряет все свое состояние через мошеннические сделки. Это заставляет Бэтмена вернуться после восьмилетнего отсутствия.
+Комиссар Джеймс Гордон оказывается в больнице после операции в канализации, где он едва не был убит людьми Бэйна. Селина Кайл, воровка-кошатница, проникает в дом Брюса под видом горничной и крадет его отпечатки пальцев, но также предупреждает его о надвигающейся буре, которая сметет богатых и привилегированных.
+Молодой полицейский Джон Блейк, работающий с детьми в приюте, догадывается, что Брюс Уэйн и есть Бэтмен, основываясь на выражении его лица, которое он запомнил еще ребенком после смерти родителей Уэйна. Блейк рассказывает об этом Гордону.
+Брюс встречается с Мирандой Тейт, членом совета директоров Уэйн Энтерпрайзис, которая хочет помочь спасти компанию. Она также интересуется проектом чистой энергии, над которым работал Уэйн - термоядерным реактором, способным обеспечить энергией весь город. Однако Брюс приостановил проект, опасаясь, что технология может быть использована как оружие.
+Люциус Фокс, глава отдела прикладных наук Уэйн Энтерпрайзис, показывает Брюсу новую разработку - летательный аппарат "Летучая мышь", оснащенный автопилотом. Брюс также получает новый бронированный костюм.
+Бэйн захватывает доктора Павла, ученого, способного превратить термоядерный реактор в нейтронную бомбу. Бэтмен пытается остановить их, но попадает в ловушку в канализационных туннелях под городом. Там происходит первая схватка между Бэтменом и Бэйном. Бэйн оказывается значительно сильнее и опытнее. Он ломает Брюсу спину через колено и рассказывает, что родился в темноте подземной тюрьмы, в то время как Брюс только принял тьму.
+Бэйн отвозит сломленного Брюса в подземную тюрьму под названием "Яма", расположенную где-то в пустыне. Это древняя тюрьма, из которой можно выбраться только совершив невозможный прыжок между стенами, но веревка, которая должна обезопасить заключенного, часто рвется. Единственный человек, которому удалось сбежать оттуда - ребенок, который совершил прыжок без веревки.
+В Готэме Бэйн реализует свой план. Он взрывает стадион во время футбольного матча, где выступает мальчик-сирота Блейка со старыми записями Харви Дента, и убивает почти всю команду "Готэм Рогс". Затем он захватывает термоядерный реактор и превращает его в нейтронную бомбу с таймером на пять месяцев. Бэйн изолирует Готэм от внешнего мира, взорвав все мосты и туннели, и угрожает взорвать бомбу, если кто-то попытается покинуть город или вмешаться извне.
+Бэйн освобождает всех преступников из тюрьмы Блэкгейт, включая тех, кто был заключен по Акту Дента. Он публично разоблачает правду о Харви Денте, зачитывая прощальное письмо комиссара Гордона. В городе начинается хаос - преступники устраивают "народные суды" над богатыми и влиятельными людьми. Многих приговаривают к смерти через изгнание по тонкому льду замерзшей реки.
+Селина Кайл первоначально работает на Бэйна, надеясь получить "чистый лист" - программу, которая сотрет ее криминальное прошлое из всех баз данных. Однако она начинает понимать истинные планы Бэйна по уничтожению города.
+В тюрьме Брюс медленно восстанавливается. Старый заключенный-врач вправляет ему спину и рассказывает легенду о ребенке, сбежавшем из тюрьмы. Брюс дважды неудачно пытается совершить прыжок с веревкой. В третий раз он следует совету другого заключенного и прыгает без веревки, движимый страхом смерти. Ему удается выбраться из тюрьмы.
+Брюс возвращается в заснеженный Готэм за день до взрыва бомбы. Он встречается с Селиной Кайл и убеждает ее помочь ему. Селина приводит Бэтмена к Бэйну через канализацию, но это оказывается ловушкой. Однако на самом деле это ловушка для Бэйна - Селина привела туда полицию.
+Начинается финальная битва на ступенях мэрии. Сотни полицейских, которые месяцами были заперты в канализации, сражаются с армией наемников Бэйна. В разгар битвы Бэтмен на "Летучей мыши" атакует грузовик с бомбой.
+Выясняется, что Миранда Тейт на самом деле является Талией аль Гул, дочерью Ра''са аль Гула из первого фильма. Именно она была тем ребенком, который сбежал из "Ямы". Ее защищал Бэйн, который получил травмы лица при защите девочки от других заключенных, поэтому теперь носит маску с обезболивающим газом. Талия планирует завершить дело своего отца по уничтожению Готэма. Она смертельно ранит Брюса ножом.
+Бэйн ломает маску Бэтмена, но в последний момент Селина Кайл на мотоцикле убивает Бэйна из пушки "Летучей мыши", говоря, что у нее нет правил насчет не-убийства. Талия пытается активировать бомбу дистанционно, но Гордон заблокировал сигнал. Она садится в грузовик с бомбой, но Бэтмен ее останавливает. Талия умирает в аварии, но активирует таймер - до взрыва остается несколько минут.
+Понимая, что бомбу невозможно обезвредить, Бэтмен цепляет ее к "Летучей мыши" и летит с ней над океан. Бомба взрывается над водой. Все считают, что Бэтмен погиб, включая Альфреда, который плачет на его похоронах. Брюса Уэйна также объявляют погибшим.
+Альфред читает завещание Брюса, в котором тот оставляет поместье Уэйн мальчикам-сиротам, а Джону Блейку - координаты Пещеры летучих мышей. Выясняется, что настоящее имя Блейка - Робин. Гордон находит отремонтированный прожектор с символом Бэтмена.
+В эпилоге показано, что Брюс выжил - он успел выпрыгнуть из "Летучей мыши" на автопилоте, который Люциус Фокс починил за шесть месяцев до событий. Альфред видит Брюса с Селиной в кафе во Флоренции, как он мечтал в начале фильма. Они обмениваются понимающими взглядами. Джон Блейк спускается в Пещеру летучих мышей, где поднимается платформа с костюмами и оборудованием Бэтмена, намекая на то, что он станет новым защитником Готэма.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Три идиота', 'Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them "idiots".', '2009-01-01', 1, '170 minutes', '3 Idiots', 8.4, 'Фильм начинается с того, что два друга Фархан Куреши и Раджу Растоги получают срочный звонок от своего бывшего однокурсника Чатура Рамалингама по прозвищу Глушитель, который сообщает им, что знает местонахождение их третьего друга Ранчо, пропавшего после окончания колледжа десять лет назад. Они отправляются в Имперский колледж инженерии, где когда-то учились, и по дороге вспоминают свои студенческие годы.
+Десять лет назад в колледж поступил студент по имени Ранчодас Шьямалдас Чанчад, которого все звали просто Ранчо. Он сразу же выделялся среди других студентов своим нестандартным подходом к обучению и жизни. Ранчо не зубрил материал механически, а стремился понять суть вещей, задавал неудобные вопросы преподавателям и критиковал устаревшие методы обучения. Это приводило его к постоянным конфликтам с директором колледжа Виру Сахастрабудхе по прозвищу Вирус, который придерживался строгой дисциплины и считал, что страх - лучший мотиватор для студентов.
+Ранчо подружился с Фарханом, который мечтал стать фотографом дикой природы, но по настоянию отца изучал инженерное дело, и Раджу, который происходил из бедной семьи и панически боялся провалить экзамены, так как от его успехов зависело благосостояние всей семьи. Ранчо помогал друзьям справляться с давлением и учил их, что нужно следовать своим увлечениям, а не чужим ожиданиям.
+Главным соперником Ранчо в колледже был Чатур Рамалингам, прозванный Глушителем из-за своей привычки громко пукать во сне. Чатур был отличником-зубрилой, который механически заучивал материал, не понимая его смысла. Ранчо постоянно подшучивал над ним, и однажды во время речи на День учителя подменил текст выступления Чатура на непристойности на хинди, которые тот не понимал, что привело к скандалу.
+Ранчо также влюбился в Пию, дочь директора Вируса. Девушка изначально училась на врача, но была помолвлена с успешным бизнесменом Сунилом, которого выбрал для нее отец. Постепенно Пия начала испытывать чувства к Ранчо, восхищаясь его жизнерадостностью и философией жизни.
+Трагическая кульминация студенческих лет наступила, когда сын Вируса по имени Джой покончил с собой после того, как был отчислен из колледжа за провал проекта. Джой увлекался созданием летательных аппаратов, но его отец считал это пустой тратой времени и требовал сосредоточиться на учебе. Ранчо винил Вируса в смерти сына, обвиняя его в создании атмосферы страха и давления в колледже.
+В результате конфликта с Вирусом Раджу попытался покончить с собой, выбросившись из окна общежития, но выжил и попал в больницу. Ранчо помог своему другу восстановиться и обрести уверенность в себе. На выпускных экзаменах все трое друзей успешно сдали, но сразу после церемонии Ранчо исчез, не оставив никаких контактов.
+Возвращаясь к настоящему времени, Чатур, который теперь стал успешным бизнесменом, привозит Фархана и Раджу в Ладакх, где якобы живет Ранчо. Чатур хочет отомстить своему бывшему однокурснику и показать ему свой успех, а также получить от него подпись на важном контракте. Однако по прибытии выясняется, что человек, живущий под именем Ранчо, совершенно другой - простой учитель, которому настоящий Ранчо когда-то отдал свои документы.
+Друзья узнают потрясающую правду: настоящее имя их друга - Фунсук Вангду, и он является сыном садовника богатой семьи. Настоящий Ранчодас Чанчад был сыном этой семьи, но не хотел учиться, поэтому его родители наняли Фунсука учиться вместо их сына в обмен на образование и деньги. После окончания колледжа Фунсук должен был исчезнуть и позволить настоящему Ранчо воспользоваться дипломом.
+Фунсук стал знаменитым изобретателем и владельцем школы, где учит детей с помощью инновационных методов, основанных на понимании, а не зубрежке. Когда друзья находят его, он как раз помогает Пие принять роды, используя самодельные приспособления и демонстрируя свою изобретательность и медицинские знания.
+Оказывается, что Пия разорвала помолвку с Сунилом и долгие годы искала Ранчо. Встретившись с ним снова, она понимает, что ее чувства не изменились. Фархан тем временем осуществил свою мечту и стал фотографом дикой природы, а Раджу стал успешным инженером.
+В финале выясняется, что Чатур, который хотел заключить важный контракт на поставку изобретений, должен подписать его именно с компанией Фунсука, не зная об этом заранее. Ирония судьбы заставляет его униженно просить подпись у того самого человека, над которым он хотел торжествовать. Фильм заканчивается тем, что друзья воссоединяются, Фунсук и Пия остаются вместе, а все герои находят счастье, следуя своим истинным призваниям, а не общественным ожиданиям.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Звёздочки на земле', 'An eight-year-old boy is thought to be a lazy trouble-maker, until the new art teacher has the patience and compassion to discover the real problem behind his struggles in school.', '2007-01-01', 1, '165 minutes', 'Taare Zameen Par', 8.4, 'Восьмилетний Ишан Авасти живет в Мумбаи с родителями и старшим братом Йоханом. Ишан - необычный ребенок с богатым воображением, который видит мир совершенно по-своему. Буквы и цифры в его восприятии танцуют и прыгают на страницах, что делает чтение и письмо крайне сложными для него. Мальчик постоянно отвлекается, мечтает, рисует и живет в своем внутреннем мире, полном красок и фантазий.
+В школе Ишан испытывает огромные трудности. Учителя считают его ленивым и непослушным учеником, который не хочет учиться. Он не может правильно читать, его почерк неразборчив, он путает буквы местами и пишет их зеркально. Математика дается ему еще сложнее - он не может понять простейших операций. Одноклассники смеются над ним, учителя постоянно ругают, а директор школы регулярно вызывает родителей для разговора о неуспеваемости сына.
+Отец Ишана, Нандкишор Авасти, успешный бизнесмен, крайне расстроен неудачами младшего сына, особенно на фоне успехов старшего брата Йохана, который отлично учится и является гордостью семьи. Мать Майя более терпелива к особенностям Ишана, но и она не понимает истинной причины его проблем. Родители пробуют различные методы: нанимают репетиторов, заставляют больше заниматься, наказывают за плохие оценки, но ничего не помогает.
+После очередной жалобы из школы и серии неудовлетворительных оценок отец принимает кардинальное решение отправить Ишана в закрытую школу-интернат New Era High School, надеясь, что строгая дисциплина и отсутствие домашних "поблажек" исправят мальчика. Для Ишана это становится настоящим шоком - он впервые в жизни оказывается вдали от дома, от матери, в чужой и враждебной среде.
+В интернате ситуация только ухудшается. Строгие учителя еще менее терпимы к его особенностям, одноклассники издеваются над ним, а сам Ишан впадает в глубокую депрессию. Он перестает есть, не может спать, постоянно плачет и мечтает только о возвращении домой. Мальчик замыкается в себе, перестает рисовать - единственное, что раньше приносило ему радость. Его состояние становится критическим.
+В это время в школу приходит работать новый учитель рисования Рам Шанкар Никумбх, молодой и энергичный преподаватель, который использует нетрадиционные методы обучения. Никумбх сразу же обращает внимание на подавленного мальчика, который сидит в углу класса и не участвует в занятиях. Изучив школьные работы Ишана, учитель понимает, что у ребенка дислексия - нарушение способности к обучению чтению при сохранении общей способности к обучению.
+Никумбх начинает индивидуально работать с Ишаном, объясняя ему, что дислексия - это не приговор, и многие великие люди, включая Альберта Эйнштейна, Леонардо да Винчи и Агату Кристи, страдали от этого расстройства, но смогли достичь выдающихся успехов. Учитель разрабатывает специальные методики обучения, учитывающие особенности восприятия мальчика, использует тактильные и визуальные техники, превращает обучение в игру.
+Постепенно Ишан начинает делать успехи. Никумбх помогает ему научиться правильно формировать буквы, читать по слогам, понимать математические концепции через практические примеры. Учитель также организует встречу с родителями, объясняя им природу дислексии и то, что их сын не ленивый или глупый - у него просто другой способ восприятия информации, который требует специального подхода.
+Родители, особенно отец, поначалу скептически относятся к объяснениям учителя, но постепенно начинают понимать свои ошибки. Мать особенно тяжело переживает осознание того, сколько страданий они причинили сыну своим непониманием. Семья начинает перестраивать отношения с Ишаном, проявляя больше терпения и поддержки.
+В школе Никумбх организует конкурс рисования, в котором могут участвовать как ученики, так и учителя. Ишан, воодушевленный поддержкой любимого учителя и почувствовавший уверенность в себе, решает принять участие. Он создает яркую, полную жизни картину, которая отражает его уникальное видение мира. К удивлению всех, включая его самого, Ишан занимает первое место, опередив даже своего учителя.
+Победа в конкурсе становится поворотным моментом в жизни мальчика. Он обретает уверенность в себе, начинает лучше учиться, находит друзей среди одноклассников. Его рисунок вешают в школьном коридоре как пример творческого успеха. Родители с гордостью приезжают на церемонию награждения и видят, каким счастливым и уверенным стал их сын.
+Фильм завершается сценой, где Ишан бежит к родителям после окончания учебного года. Отец, который раньше был строг и требователен, теперь с любовью обнимает сына. Никумбх наблюдает за этой встречей с улыбкой, понимая, что его миссия выполнена - он помог раскрыть талант особенного ребенка и показал всем, что каждый человек уникален и имеет право на понимание и поддержку. Мальчик, который когда-то считался безнадежным, теперь сияет как настоящая звездочка на земле.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('ВАЛЛ-И', 'In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.', '2008-01-01', 1, '98 minutes', 'WALL·E', 8.4, 'Действие фильма происходит в далеком будущем, в 2805 году. Земля превратилась в безжизненную пустошь, покрытую горами мусора и токсичными пылевыми бурями. Человечество покинуло планету 700 лет назад на гигантских космических лайнерах, оставив после себя армию роботов ВАЛЛ-И (Waste Allocation Load Lifter Earth-Class), которые должны были очистить планету от мусора. Однако все роботы давно сломались, кроме одного.
+Последний действующий ВАЛЛ-И продолжает выполнять свою программу, каждый день собирая и прессуя мусор в кубики, которые складывает в огромные башни. За столетия одиночества он развил личность и любознательность. Робот собирает интересные предметы, которые находит среди мусора: зажигалки, кубик Рубика, ложки, и хранит их в своем доме - заброшенном грузовике. Его единственный друг - таракан, которого он назвал Хэл.
+Особенно ВАЛЛ-И очарован старой видеокассетой мюзикла "Хелло, Долли!" 1969 года. Он постоянно пересматривает сцену, где главные герои держатся за руки и танцуют, мечтая найти кого-то, с кем он мог бы разделить такую близость.
+Однажды ВАЛЛ-И находит среди мусора маленький росток растения, растущий в старом ботинке. Он осторожно пересаживает его в консервную банку с небольшим количеством земли и поливает. Это первый живой росток, появившийся на Земле за сотни лет.
+Вскоре с неба спускается белый, элегантный робот разведчик по имени ЕВА (Extraterrestrial Vegetation Evaluator). Ее миссия - найти признаки растительной жизни на Земле. ВАЛЛ-И мгновенно влюбляется в нее, но ЕВА первоначально воспринимает его как помеху своей миссии и даже стреляет в него из своей плазменной пушки.
+Постепенно ВАЛЛ-И показывает ЕВЕ свою коллекцию сокровищ, и она начинает проявлять к нему интерес. Когда ВАЛЛ-И показывает ей росток растения, ЕВА немедленно помещает его в свой грузовой отсек, после чего отключается и ждет возвращения на космический корабль. ВАЛЛ-И не понимает, что произошло, и заботится о неподвижной ЕВЕ, защищая ее от пылевых бурь и молний.
+Когда прилетает корабль за ЕВОй, ВАЛЛ-И цепляется за его внешнюю поверхность и летит в космос. Корабль доставляет их на огромный лайнер "Аксиома", где живут потомки людей, покинувших Землю. За 700 лет в космосе люди превратились в тучных, ленивых существ, которые передвигаются только в ховер-креслах и весь день смотрят на экраны. Они пьют только жидкую пищу и полностью зависят от роботов-слуг. Люди настолько отвыкли от физической активности, что даже не могут самостоятельно встать.
+Корабль управляется автопилотом АВТО, роботом-штурвалом, а номинальным капитаном является Капитан Б. МакКри, который в основном занимается объявлениями для пассажиров и не участвует в реальном управлении кораблем.
+ВАЛЛ-И следует за ЕВОй через корабль, попутно случайно отключая у людей экраны и заставляя их впервые за годы обратить внимание на окружающий мир. Одна женщина, Мэри, первый раз замечает бассейн на корабле, а мужчина Джон впервые видит звезды.
+ЕВА доставляется к Капитану МакКри, который должен просканировать ее на предмет найденной растительности. Однако когда ЕВА открывается, растение исчезло. Ее объявляют неисправной и отправляют в ремонтный отсек вместе с другими "сломанными" роботами.
+ВАЛЛ-И отправляется спасать ЕВУ и освобождает всех роботов из ремонтного отсека, включая массажного робота ПР-Т, робота-уборщика М-О и группу других дефектных роботов, которые присоединяются к ВАЛЛ-И. Выясняется, что растение украл робот ГО-4 по приказу АВТО.
+Тем временем Капитан МакКри впервые за годы заинтересовался чем-то и начинает изучать информацию о Земле в компьютере корабля. Он узнает о растениях, сельском хозяйстве, танцах и других аспектах жизни на планете. Капитан понимает, что хочет вернуться домой.
+ВАЛЛ-И и ЕВА находят растение в каютах капитана, но АВТО отказывается инициировать возвращение на Землю. Выясняется, что АВТО получил секретную директиву А-113 от президента корпорации "Купи-н-Лети" Шелби Форкросса 700 лет назад, согласно которой жизнь на Земле признана невозможной и люди никогда не должны возвращаться. АВТО считает, что выполняет эту директиву, защищая человечество.
+АВТО объявляет капитана мятежником, запирает его в каюте и приказывает ГО-4 выбросить растение в мусоропровод. ВАЛЛ-И пытается спасти растение, но ГО-4 активирует мусоропровод. ВАЛЛ-И застревает в механизме и получает серьезные повреждения, спасая росток. ЕВА в ярости уничтожает ГО-4.
+Поврежденный ВАЛЛ-И и ЕВА с растением возвращаются к капитану. МакКри понимает, что должен поместить растение в Голо-детектор на мостике корабля, чтобы активировать гиперпрыжок домой. Начинается битва между людьми и роботами с одной стороны и АВТО с другой.
+АВТО наклоняет корабль, чтобы не дать капитану добраться до Голо-детектора. ВАЛЛ-И, несмотря на повреждения, помогает МакКри удержать детектор открытым. В критический момент капитан отключает АВТО, нажав переключатель "ручное управление". ЕВА помещает растение в детектор, и корабль начинает автоматическую последовательность возвращения на Землю.
+Однако ВАЛЛ-И получает критические повреждения от Голо-детектора и отключается. ЕВА берет его с собой на Землю, где пытается отремонтировать, используя запчасти из дома ВАЛЛ-И. Ей удается восстановить его корпус и системы, но ВАЛЛ-И включается без своей личности - он снова просто робот-мусоросборщик, не узнающий ЕВУ.
+ЕВА в отчаянии пытается напомнить ВАЛЛ-И об их отношениях, показывая ему сцены из "Хелло, Долли!" и пытаясь взять его за руку, как в фильме. Когда это не помогает, она дает ему прощальный поцелуй и готовится улететь. Поцелуй создает электрический разряд, который восстанавливает память и личность ВАЛЛ-И. Он снова узнает ЕВУ, и они обнимаются.
+Люди начинают заново осваивать Землю. Капитан МакКри сажает росток в землю, и постепенно планета начинает восстанавливаться. Люди учатся ходить, заниматься сельским хозяйством и строить новое общество. ВАЛЛ-И и ЕВА помогают в восстановлении планеты и наслаждаются совместной жизнью.
+В финальных титрах показана эволюция восстановления Земли - от первых ростков до цветущих садов и новых городов, где люди и роботы живут в гармонии с природой. Маленький росток, который нашел ВАЛЛ-И, вырастает в огромное дерево, символизирующее возрождение жизни на планете.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Жизнь других', 'In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives.', '2006-01-01', 1, '137 minutes', 'The Lives of Others', 8.4, 'Действие фильма происходит в Восточной Германии в 1984 году, за пять лет до падения Берлинской стены. Главный герой Гердт Визлер - опытный офицер Штази, восточногерманской тайной полиции, который специализируется на слежке и допросах. Он работает преподавателем в школе Штази, где обучает курсантов методам выявления лжи и психологического давления на подозреваемых.
+Министр культуры Бруно Хемпф обращается к Штази с просьбой организовать слежку за известным драматургом Георгом Драйманом, которого официально считают лояльным режиму. На самом деле Хемпф хочет скомпрометировать Драймана, чтобы получить доступ к его возлюбленной - актрисе Кристе-Марии Зиланд, на которую министр давно положил глаз. Руководство поручает это задание Визлеру, присвоив операции кодовое название "Лазурь".
+Визлер устанавливает в квартире Драймана сложную систему прослушивания и начинает круглосуточно следить за писателем и его подругой из специально оборудованного помещения на чердаке соседнего дома. Поначалу офицер Штази выполняет свою работу механически и профессионально, записывая все разговоры и действия объектов наблюдения.
+Однако постепенно Визлер начинает проникаться жизнью тех, за кем следит. Он становится свидетелем их интимных моментов, творческих исканий, философских размышлений о свободе и искусстве. Драйман и Криста-Мария ведут богатую духовную жизнь, в их доме собираются интеллектуалы, актеры, писатели, которые, несмотря на политические ограничения, стремятся к подлинности в искусстве и человеческих отношениях.
+Переломным моментом становится самоубийство режиссера Альберта Ернски, близкого друга Драймана, которого власти запретили работать в театре из-за его политических взглядов. На похоронах Ернски Драйман исполняет на пианино "Сонату для доброго человека", и эта музыка глубоко трогает Визлера, слушающего через подслушивающие устройства.
+После смерти друга Драйман, который до этого старался не вступать в конфликт с властями, решает написать статью о высоком уровне самоубийств в ГДР для западногерманского журнала. Он получает от друзей пишущую машинку, которую прячет под половицами своей квартиры. Визлер узнает об этом плане, но принимает решение не докладывать руководству о готовящейся "подрывной деятельности".
+Тем временем министр Хемпф начинает шантажировать Кристу-Марию, угрожая запретить ей играть в театре, если она не станет его любовницей. Женщина вынуждена согласиться, что причиняет ей огромные страдания и разрушает ее отношения с Драйманом. В отчаянии она начинает принимать таблетки от депрессии.
+Когда статья Драймана выходит на Западе, Штази начинает активные поиски пишущей машинки и источника утечки информации. Кристу-Марию арестовывают и подвергают жестокому допросу. Не выдержав психологического давления и опасаясь за свою карьеру, она выдает местонахождение машинки. Однако когда сотрудники Штази приходят с обыском, машинки на месте не оказывается - Визлер успел ее убрать.
+Криста-Мария понимает, что предала любимого человека, и в состоянии глубокой депрессии выбегает на улицу, где попадает под грузовик. Ее смерть становится трагическим финалом истории любви и еще больше меняет Визлера, который теперь окончательно осознает бесчеловечность системы, частью которой он является.
+Начальство Штази понимает, что кто-то саботировал операцию, и Визлера переводят на более низкую должность - он становится обычным почтальоном. Его карьера в тайной полиции закончена.
+Действие переносится в 1989 год, когда пала Берлинская стена. Драйман случайно встречает бывшего министра Хемпфа, который рассказывает ему правду о том, что операция по слежке была организована не из-за подозрений в нелояльности, а из-за желания министра заполучить Кристу-Марию. Потрясенный Драйман получает доступ к архивам Штази и узнает всю историю слежки за собой.
+Изучая документы, Драйман обнаруживает, что офицер под кодовым именем "ХГВ XX/7" - то есть Визлер - в критический момент защитил его, не доложив о пишущей машинке. Писатель понимает, что этот человек спас ему жизнь и свободу, пожертвовав собственной карьерой.
+В финале фильма, который происходит через два года после объединения Германии, Драйман находит Визлера, который работает разносчиком рекламных листовок. Писатель не решается подойти к нему напрямую, но когда выходит его новая книга, посвященная "ХГВ XX/7" и озаглавленная "Соната для доброго человека", Визлер покупает ее в книжном магазине. Продавщица предлагает оформить автограф автора, но Визлер отвечает: "Нет, эта книга для меня", понимая, что это и есть его благодарность и признание.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Олдбой', 'After being kidnapped and imprisoned for fifteen years, Oh Dae-Su is released, only to find that he must find his captor in five days.', '2003-01-01', 1, '101 minutes', 'Oldeuboi', 8.4, 'О Дэ-су - обычный корейский бизнесмен средних лет, который ведет довольно банальную жизнь. Однажды вечером в 1988 году, после корпоративной вечеринки и изрядного количества выпитого алкоголя, он звонит домой жене из телефонной будки, чтобы поздравить трехлетнюю дочь с днем рождения. Во время разговора он ведет себя неадекватно из-за опьянения. После завершения звонка Дэ-су таинственным образом исчезает прямо с улицы.
+Дэ-су просыпается в странной комнате, которая больше напоминает гостиничный номер или камеру. Комната полностью изолирована от внешнего мира, окна заложены, дверь заперта. Единственная связь с внешним миром - телевизор и еда, которую подают через специальное отверстие в двери. Из новостей он узнает, что его обвиняют в убийстве собственной жены, а дочь отдали на усыновление.
+Годы проходят в заключении. Дэ-су пытается понять, кто и зачем его похитил, но безуспешно. Он ведет дневник на стенах, тренирует свое тело, готовясь к возможному побегу, и постепенно сходит с ума от одиночества. Единственным его занятием становятся попытки прокопать туннель в стене, используя металлическую ложку и другие подручные средства. Пятнадцать лет он проводит в этой комнате, не зная причины своего заключения.
+В 2003 году, спустя пятнадцать лет заключения, Дэ-су внезапно освобождают. Его усыпляют газом, и он просыпается на крыше высотного здания в Сеуле с костюмом, мобильным телефоном и бумажником с деньгами. Первое, что он делает - пытается покончить жизнь самоубийством, прыгнув с крыши, но его останавливает мужчина с собакой, который просит его поискать его пропавшего питомца.
+Дэ-су направляется в ресторан, где заказывает живого осьминога - блюдо, которое он видел по телевизору во время заключения и мечтал попробовать. Там он знакомится с молодой девушкой Ми-до, которая работает поваром суши. Она помогает ему, когда тот теряет сознание от алкоголя и непривычной пищи, и отводит его к себе домой.
+Ми-до решает помочь Дэ-су найти того, кто держал его в заключении. Используя свои связи, она пытается выяснить, где могла находиться тюрьма Дэ-су. Тем временем Дэ-су получает звонок от неизвестного, который сообщает ему, что у него есть пять дней, чтобы выяснить, за что его заточили на пятнадцать лет. Если он справится с этой задачей, то узнает причину, если нет - таинственный похититель убьет Ми-до.
+Дэ-су начинает методично искать место своего заключения. Он обходит многочисленные частные тюрьмы и гостиницы, пока не находит нужное здание. Там он обнаруживает своего надзирателя и после жестокой драки заставляет его рассказать имя человека, который держал его в заключении пятнадцать лет. Надзиратель называет имя Ли У-джин, после чего совершает самоубийство.
+У-джин оказывается богатым бизнесменом, который живет в роскошном пентхаусе. Когда Дэ-су приходит к нему, У-джин рассказывает ему историю их школьных лет. В старших классах Дэ-су случайно стал свидетелем инцестуозных отношений между У-джином и его младшей сестрой Су-а. Дэ-су рассказал об этом своему другу, и слухи распространились по всей школе. Су-а, не выдержав позора, покончила жизнь самоубийством, бросившись с моста.
+У-джин объясняет, что заточение Дэ-су было только частью его мести. Настоящая месть заключалась в том, чтобы заставить Дэ-су влюбиться в собственную дочь, не зная об этом. Оказывается, Ми-до и есть дочь Дэ-су, которую отдали на усыновление после смерти его жены. У-джин гипнотизировал их обоих, чтобы они влюбились друг в друга и вступили в интимную связь.
+Потрясенный Дэ-су умоляет У-джина не рассказывать Ми-до правду об их родстве. У-джин соглашается, но при условии, что Дэ-су отрежет себе язык - тот самый язык, который когда-то разнес сплетни о нем и его сестре. Дэ-су соглашается и отрезает себе язык ножницами прямо в присутствии У-джина.
+Однако У-джин все равно решает рассказать Ми-до правду по телефону. Ми-до в ужасе от того, что узнала, а У-джин, наконец удовлетворенный своей местью и воссоединившийся с духом мертвой сестры, которая является ему в видениях, стреляет себе в голову из пистолета.
+В финале фильма Дэ-су приходит к гипнотизеру, который работал на У-джина, и просит стереть из его памяти все воспоминания о том, что Ми-до его дочь. Гипнотизер предупреждает его, что процедура может стереть вообще все воспоминания о Ми-до, но Дэ-су соглашается. Фильм заканчивается встречей Дэ-су и Ми-до в заснеженном лесу. По выражению лица Дэ-су неясно, помнит ли он ее или нет, и действительно ли гипноз сработал. Ми-до обнимает его, а он медленно поднимает руки, чтобы обнять ее в ответ, но фильм обрывается, оставляя зрителя в неведении относительно того, какие именно чувства испытывает Дэ-су к девушке.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мементо', 'A man with short-term memory loss attempts to track down his wife''s murderer.', '2000-01-01', 1, '113 minutes', 'Memento', 8.4, 'Фильм рассказывает историю Леонарда Шелби, страдающего от редкой формы потери памяти - антероградной амнезии. После травмы головы, полученной во время нападения на его дом, при котором была изнасилована и убита его жена, Леонард не может формировать новые воспоминания. Он помнит все, что происходило до травмы, но забывает все новые события через несколько минут.
+Фильм имеет уникальную нелинейную структуру - история рассказывается в обратном хронологическом порядке через цветные сцены, которые перемежаются черно-белыми сценами, идущими в прямом хронологическом порядке. Две временные линии встречаются в финале фильма.
+Леонард разработал систему для борьбы со своим состоянием. Он делает фотографии важных людей и мест, на которых пишет заметки. Самые важные факты он татуирует на своем теле, поскольку не может доверять записям, которые может потерять или которые кто-то может подделать. На его груди вытатуировано "Джон Г. изнасиловал и убил мою жену", а также другие ключевые факты для поиска убийцы.
+В черно-белых сценах показано, как Леонард в номере мотеля рассказывает по телефону неизвестному собеседнику о своем состоянии и вспоминает случай Сэмми Дженкинса - человека с похожим заболеванием, которого он расследовал, работая страховым агентом. Сэмми не мог усвоить новые навыки и в итоге случайно убил свою жену, вводя ей инсулин снова и снова, забывая об уже сделанных инъекциях.
+В цветных сценах, идущих в обратном порядке, Леонард ищет человека по имени Джон Г., которого считает убийцей своей жены. Он работает с двумя людьми: Натали, барменшей в баре, и Тедди, который представляется полицейским, помогающим в расследовании.
+Натали использует состояние Леонарда в своих целях. Она заставляет его избавиться от Додда, наркоторговца, который угрожает ей из-за денег, принадлежащих ее погибшему парню Джимми Грантсу. Натали провоцирует Леонарда, оскорбляя память его жены, зная, что он забудет об этом через несколько минут, но запомнит только свой гнев. Затем она убирает все ручки из комнаты, чтобы он не смог записать, что она его спровоцировала.
+Постепенно выясняется, что Тедди не тот, за кого себя выдает. Его настоящее имя - Джон Эдвард Гаммел, и он действительно полицейский, но коррумпированный. Тедди рассказывает Леонарду шокирующую правду: они уже нашли и убили настоящего убийцу его жены более года назад. Этого человека звали Джон Г., но Леонард забыл об этом и продолжил поиски, поскольку месть была единственным, что давало смысл его существованию.
+Тедди признается, что использовал состояние Леонарда, заставляя его убивать наркоторговцев, чьи деньги Тедди потом присваивал. Он также раскрывает, что история Сэмми Дженкинса частично сфабрикована - жена Сэмми не была диабетиком. На самом деле именно жена Леонарда была диабетиком, и именно Леонард случайно убил ее передозировкой инсулина после травмы, не помня о предыдущих инъекциях.
+Потрясенный этими откровениями, Леонард решает заставить себя забыть правду. Он записывает номер машины Тедди как принадлежащий "Джону Г." и татуирует на себе "Не верь его лжи" под фотографией Тедди. Таким образом, когда он снова забудет эти события, он будет считать Тедди своей следующей целью.
+Леонард также сжигает фотографии и документы, которые могли бы привести его к истине, включая фотографию себя, улыбающегося после убийства настоящего Джона Г. Он предпочитает жить в иллюзии цели, чем столкнуться с ужасной правдой о том, что он сам убил свою жену.
+В финальной сцене, которая хронологически является началом событий фильма, Леонард находит Тедди в заброшенном здании. Следуя своим заметкам и татуировкам, он убивает Тедди, считая его убийцей своей жены. Сразу после убийства Леонард забывает, что произошло, и начинает искать ключи от машины Тедди, не понимая, чья это машина.
+Фильм заканчивается сценой, где Леонард едет в тату-салон, чтобы сделать новую татуировку "Я сделал это" - не помня, что именно он сделал. Таким образом, цикл начинается заново, и Леонард обречен снова и снова искать убийцу своей жены, не понимая, что истинный убийца - он сам, а его поиски мести превратились в бесконечную петлю самообмана.
+Через структуру фильма зритель испытывает то же состояние дезориентации, что и главный герой, не понимая полной картины происходящего до самого финала, когда все фрагменты складываются в трагическую историю о человеке, который предпочел комфортную ложь болезненной правде.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Принцесса Мононоке', 'On a journey to find the cure for a Tatarigami''s curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.', '1997-01-01', 1, '134 minutes', 'Mononoke-hime', 8.4, 'Действие фильма разворачивается в средневековой Японии периода Муромати, когда древние боги и духи природы еще существовали бок о бок с людьми. Главный герой Аситака - молодой принц племени Эмиси, последнего независимого племени на севере острова Хонсю. Во время нападения на деревню гигантского демона-кабана Нагао Аситака убивает чудовище, но демон успевает проклясть юношу, оставив на его правой руке багровые отметины, которые постепенно распространяются по телу и обещают мучительную смерть.
+Умирающий старейшина племени рассказывает Аситаке, что демон когда-то был богом-хранителем леса, но превратился в чудовище из-за железной пули, застрявшей в его теле. Чтобы найти способ снять проклятие и понять причины гнева богов природы, Аситака должен отправиться на запад, к месту происхождения железа. Юноша покидает родную деревню навсегда, зная, что путь домой ему заказан.
+По дороге Аситака останавливается в городе, где знакомится с монахом Дзико-бо, который рассказывает ему о легендарном Лесном боге - Шишигами, древнем духе жизни и смерти, чья голова якобы может даровать бессмертие. Дзико-бо тайно работает на императора, который желает заполучить голову Шишигами для обретения вечной жизни.
+Продолжая путешествие, Аситака спасает от волков двух мужчин, которые оказываются работниками Железного города - поселения, основанного леди Эбоси. Этот город стал центром производства железа и огнестрельного оружия, что позволило его жителям, в основном бывшим проституткам и прокаженным, обрести независимость и достоинство. Эбоси - харизматичная и решительная женщина, которая искренне заботится о своих людях, но при этом ведет безжалостную войну против духов леса, вырубая деревья для получения древесного угля, необходимого для выплавки железа.
+В лесу вокруг Железного города живут гигантские волки во главе с Моро, древней волчицей-богиней, и кабаны под предводительством Окото-нуси. Среди волков выросла человеческая девочка по имени Сан, которую Моро воспитала как собственную дочь после того, как родители Сан принесли ее в жертву разгневанной волчице. Сан всем сердцем ненавидит людей за то, что они разрушают лес, и посвятила свою жизнь защите природы. Ее прозвали Принцессой Мононоке - принцессой духов.
+Аситака становится свидетелем ожесточенной битвы между людьми и животными. Сан регулярно нападает на Железный город, пытаясь убить Эбоси, а та в ответ охотится на богов леса. Во время одного из таких столкновений раненая Сан падает без сознания, и Аситака относит ее в священный пруд, где живет Лесной бог. Шишигами предстает в виде огромного оленя с человеческим лицом днем и превращается в гигантского призрачного Ночного ходока после заката.
+Постепенно между Аситакой и Сан зарождаются сложные отношения. Юноша пытается убедить девушку, что не все люди злы, а она показывает ему красоту и мудрость природы. Аситака становится посредником между двумя мирами, стремясь найти способ примирить людей и богов леса.
+Ситуация осложняется, когда клан Асано осаждает Железный город, желая захватить секреты производства огнестрельного оружия. Во время осады Окото-нуси и его кабаны решают нанести последний отчаянный удар по городу. Однако Дзико-бо и его люди подстраивают засаду, и древний бог-кабан получает смертельное ранение. Умирая в ярости и отчаянии, Окото-нуси превращается в демона, подобно тому кабану, который проклял Аситаку.
+Сан пытается спасти Окото-нуси, но оказывается поглощена его демонической сущностью. Аситака бросается ей на помощь, и вместе им удается очистить сердце умирающего бога от ненависти, позволив ему умереть с миром. В этот момент появляется Лесной бог в своем дневном облике и забирает жизнь Окото-нуси, показывая, что смерть является естественной частью цикла жизни.
+Дзико-бо воспользовался хаосом битвы, чтобы отрезать голову Шишигами в момент его превращения из дневной формы в ночную. Лишившись головы, тело Лесного бога превращается в гигантскую разрушительную силу, которая начинает поглощать жизнь из всего живого вокруг, превращая некогда зеленый лес в мертвую пустошь. Ночной ходок без головы бродит по земле, ища свою утраченную часть, и его прикосновение несет смерть.
+Эбоси теряет руку в схватке с Моро, которая умирает, защищая лес, но перед смертью волчица кусает женщину, оставляя ей напоминание о цене войны с природой. Железный город оказывается разрушен силами обезглавленного бога.
+Аситака и Сан понимают, что только возвращение головы Шишигами может остановить разрушение. Они отбирают голову у Дзико-бо и его людей, после чего возвращают ее Лесному богу. Шишигами принимает свою голову и, коснувшись Аситаки, снимает с него проклятие. Затем древний бог исчезает навсегда с восходом солнца, но его смерть приносит не разрушение, а обновление - по всей земле начинает расти новая зелень, символизируя возрождение природы.
+В финале фильма люди и оставшиеся духи природы находят способ сосуществования. Эбоси обещает построить новый город, который будет жить в гармонии с природой. Сан остается в лесу, но теперь ее ненависть к людям смягчена пониманием того, что среди них есть и добрые сердца, такие как Аситака. Молодой принц обещает регулярно навещать ее, построив мост между миром людей и миром природы. Фильм заканчивается на ноте осторожного оптимизма, показывая, что гармония между цивилизацией и природой возможна, но требует взаимного уважения и понимания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Однажды в Америке', 'A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.', '1984-01-01', 1, '229 minutes', 'Once Upon a Time in America', 8.4, 'Фильм начинается в 1968 году, когда стареющий Дэвид "Лапша" Аронсон возвращается в Нью-Йорк после тридцатипятилетнего отсутствия по загадочному приглашению. Он приходает на еврейское кладбище, где обнаруживает, что могилы его друзей детства пусты, а их тела были перенесены в роскошный мавзолей.
+История переносится в 1918 год на Нижний Ист-Сайд Манхэттена, где подростки Дэвид "Лапша" Аронсон, Максимилиан "Макс" Беркович, Филип "Кокосовый глаз" Стейн и Патрик "Пэтси" Голдберг формируют небольшую банду. Они занимаются мелким воровством, вымогательством у школьников и другими незначительными преступлениями в еврейском гетто. Лапша влюбляется в Дебору Геллинг, молодую танцовщицу, которая мечтает стать звездой Бродвея.
+К банде присоединяется Доминик, молодой итальянец, и они расширяют свою деятельность. Макс, амбициозный и безжалостный лидер группы, постоянно стремится к большему. Банда начинает заниматься более серьезными преступлениями, включая ограбления и вымогательство. Во время одного из ограблений они сталкиваются с местным гангстером Баггси, что приводит к насилию и первому убийству, совершенному Лапшой.
+В 1920-х годах, с началом сухого закона, банда переключается на контрабанду алкоголя, что приносит им значительную прибыль и власть. Они становятся влиятельными фигурами в преступном мире Нью-Йорка. Лапша продолжает ухаживать за Деборой, но их отношения осложняются его криминальной деятельностью. Дебора мечтает о респектабельной жизни и карьере, в то время как Лапша погружается все глубже в мир преступности.
+Макс становится все более жестоким и амбициозным. Он планирует ограбление Федерального резервного банка, что Лапша считает самоубийственной миссией. Между друзьями растет напряжение из-за разных взглядов на будущее их организации. Макс хочет расширяться и идти на большие риски, в то время как Лапша предпочитает более осторожный подход.
+Кульминацией их конфликта становится решение Лапши предать своих друзей полиции, чтобы предотвратить их неминуемую гибель во время планируемого ограбления банка. Он анонимно сообщает в полицию о готовящемся преступлении, надеясь, что друзей арестуют, но не убьют. Однако план идет не так, как задумано. Во время перестрелки с полицией Макс, Пэтси и Кокосовый глаз погибают, их тела изуродованы до неузнаваемости.
+Потрясенный смертью друзей и собственным предательством, Лапша покидает Нью-Йорк. Перед отъездом он в последний раз встречается с Деборой, которая сообщает ему о своем отъезде в Голливуд для продолжения карьеры. Их прощание болезненно, поскольку оба понимают, что их пути расходятся навсегда.
+Возвращаясь к 1968 году, Лапша встречается с пожилой Деборой, которая стала успешной актрисой. Она рассказывает ему, что у нее есть сын, и намекает, что отцом может быть Лапша. Однако позже выясняется более шокирующая правда: Дебора была любовницей сенатора Кристофера Бейли, влиятельного политика.
+Самое потрясающее открытие ждет Лапшу, когда он понимает, что сенатор Бейли и есть его старый друг Макс, который инсценировал свою смерть тридцать пять лет назад. Макс выжил после перестрелки с полицией, изменил внешность и личность, стал респектабельным политиком и бизнесменом. Он использовал деньги банды для создания своей новой жизни и карьеры.
+Макс объясняет, что он всегда знал о предательстве Лапши, но был ему благодарен, поскольку это дало ему возможность начать новую жизнь. Однако теперь его политическая карьера под угрозой из-за коррупционного скандала, и он просит Лапшу убить его, чтобы избежать публичного позора. Лапша отказывается, говоря, что Макс умер для него тридцать пять лет назад.
+Фильм завершается неоднозначно. Лапша уходит, оставляя Макса живым, но обреченным на скандал и падение. Последние кадры показывают Лапшу в опиумном притоне в 1933 году, где он курит опиум после смерти друзей. Возникает вопрос: были ли события 1968 года реальностью или наркотическими галлюцинациями умирающего человека, который не может смириться с последствиями своего предательства и мечтает о встрече со старыми друзьями. Фильм оставляет эту интерпретацию открытой, создавая многослойное повествование о дружбе, предательстве, времени и памяти.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Индиана Джонс: В поисках утраченного ковчега', 'In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf Hitler''s Nazis can obtain its awesome powers.', '1981-01-01', 1, '115 minutes', 'Raiders of the Lost Ark', 8.4, 'Фильм начинается в 1936 году в джунглях Южной Америки, где археолог и искатель приключений профессор Индиана Джонс проникает в древний храм, чтобы найти золотую статуэтку плодородия. Храм полон смертельных ловушек: отравленные дротики, провалы в полу и гигантский каменный шар, который катится за Индианой, когда он забирает статуэтку. Ему удается сбежать из храма, но его настигает соперник Белло, французский археолог, работающий с местными племенами. Белло отбирает у Джонса статуэтку, а Индиана едва спасается на самолете.
+Вернувшись в Соединенные Штаты, Джонс преподает археологию в университете. К нему приходят агенты американской военной разведки с заданием. Они рассказывают, что нацисты ищут его бывшего наставника, профессора Абнера Рэйвенвуда, и показывают перехваченную радиограмму, в которой упоминается имя Джонса. Разведчики объясняют, что нацисты заинтересованы в оккультных артефактах, и Гитлер лично приказал найти Ковчег Завета - библейскую реликвию, содержащую каменные скрижали с Десятью заповедями. Согласно легенде, армия, несущая Ковчег перед собой, непобедима.
+Для поиска Ковчега нужен Посох Ра - древний артефакт с головным убором, который при правильном использовании в Картографической комнате в египетском городе Танис покажет точное местоположение Колодца Душ, где спрятан Ковчег. У Рэйвенвуда есть головной убор для посоха. Джонс соглашается найти Ковчег раньше нацистов.
+Индиана отправляется в Непал, где Рэйвенвуд владеет баром в горах. Однако оказывается, что Рэйвенвуд умер, а баром управляет его дочь Мэрион, с которой у Джонса были романтические отношения в прошлом, закончившиеся болезненным разрывом. Мэрион сначала отказывается продать головной убор, но соглашается на крупную сумму.
+В тот же вечер в бар приходят нацистские агенты во главе с гестаповцем Арнольдом Тохтом, который также ищет головной убор. Начинается перестрелка, во время которой бар загорается. Джонс сражается с нацистами, а Мэрион достает из тайника головной убор. В пожаре Тохт хватает головной убор, но металл раскален, и на его ладони остается отпечаток одной стороны артефакта. Тохт бросает головной убор, и Мэрион с Джонсом сбегают. Все думают, что Мэрион погибла в пожаре.
+Джонс прибывает в Каир, где встречается со своим другом Салахом. Они изготавливают Посох Ра, используя головной убор, который спасла Мэрион. В Танисе, в Картографической комнате, луч солнца, проходящий через драгоценный камень на посохе, показывает точное местоположение Колодца Душ и его глубину.
+Тем временем нацисты, работающие с французом Белло, также проводят раскопки в Танисе, но используют неточную копию головного убора, сделанную по отпечатку на руке Тохта. Их посох короче настоящего, поэтому они копают не в том месте.
+Джонс и команда арабских рабочих Салаха находят Колодец Душ в правильном месте. Индиана спускается в колодец на веревках и обнаруживает камеру, полную ядовитых змей, которых он панически боится. На полу камеры стоит Ковчег Завета - золотой ящик с фигурками ангелов на крышке. Салах спускает вниз факелы, чтобы отпугнуть змей, и они поднимают Ковчег наверх.
+Однако их предает Белло, который заключил сделку с нацистами. Нацисты захватывают Ковчег и сбрасывают Джонса обратно в Колодец Душ вместе с Мэрион, которая оказалась жива и была захвачена в Каире. В колодце, кишащем змеями, они находят путь к бегству через древние катакомбы, которые ведут наружу.
+Джонс преследует конвой нацистов на грузовике. В знаменитой сцене погони он сражается с нацистскими солдатами на движущихся машинах, падает под грузовик, но ухватывается за днище и в итоге выбрасывает водителя и захватывает Ковчег. Однако нацистская субмарина забирает Ковчег и Мэрион, а Джонс тайно пробирается на борт подводной лодки.
+Субмарина прибывает на отдаленный остров в Эгейском море, где нацисты устроили секретную базу для церемонии открытия Ковчега. Белло, одетый в церемониальные одежды еврейского первосвященника, и высокопоставленные нацистские офицеры собираются вокруг Ковчега. Джонс, спрятавшийся поблизости, наблюдает за церемонией.
+Когда Ковчег открывают, внутри оказывается только песок - разложившиеся остатки каменных скрижалей. Разочарованные нацисты считают артефакт подделкой. Однако внезапно из Ковчега начинают выходить призрачные сущности - духи, которые сначала кажутся прекрасными, но затем превращаются в ужасающие создания.
+Джонс кричит Мэрион закрыть глаза и не смотреть на происходящее. Духи убивают всех присутствующих нацистов ужасными способами: у Тохта плавится лицо, Белло стареет и рассыпается в прах, а голова командира нацистской базы взрывается. Огненные столбы поднимаются в небо, затем Ковчег закрывается сам собой, а все тела исчезают.
+Джонс и Мэрион, не пострадавшие благодаря тому, что не смотрели на духов, забирают Ковчег и возвращаются в Соединенные Штаты. В Вашингтоне правительственные чиновники забирают у них артефакт, обещая, что "лучшие умы" будут его изучать. Они отказываются сказать Джонсу, где будет храниться Ковчег.
+В финальной сцене показано, что Ковчег Завета помещен в деревянный ящик с трафаретной надписью и затерялся среди тысяч идентичных ящиков в гигантском правительственном складе, где его, вероятно, никто никогда не найдет.
+Фильм заканчивается тем, что Джонс и Мэрион идут по ступенькам Капитолия, восстановив свои отношения, в то время как один из величайших археологических артефактов в истории человечества похоронен в бюрократической безвестности.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Сияние', 'A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.', '1980-01-01', 1, '146 minutes', 'The Shining', 8.4, 'Джек Торранс, писатель, переживающий творческий кризис, устраивается на работу смотрителем отеля Оверлук в горах Колорадо на зимний сезон. Отель закрывается на зиму из-за сильных снегопадов, которые полностью отрезают его от внешнего мира. Джек приезжает на собеседование вместе со своей женой Венди и пятилетним сыном Дэнни. Управляющий отеля Стюарт Ульман рассказывает Джеку об истории места и предупреждает о длительной изоляции, упоминая трагический случай 1970 года, когда предыдущий смотритель Чарльз Грейди сошел с ума от одиночества и убил топором свою жену и двух дочерей, а затем застрелился.
+У маленького Дэнни есть сверхъестественная способность, которую повар отеля Дик Холлоран называет сиянием. Мальчик может читать мысли, видеть прошлое и будущее, а также общаться телепатически с теми, кто обладает похожим даром. Холлоран, который сам обладает сиянием, предупреждает Дэнни о том, что в отеле произошло много плохих событий, и советует держаться подальше от комнаты 237. Он объясняет мальчику, что некоторые места, как и люди, сияют, но не всегда в хорошем смысле.
+Семья остается в отеле одна на всю зиму. Поначалу все идет нормально: Джек работает над своим романом, Венди занимается хозяйством, а Дэнни исследует огромные коридоры отеля на своем трехколесном велосипеде. Однако постепенно изоляция начинает сказываться на психическом состоянии Джека. Он становится раздражительным, агрессивным и все больше времени проводит в баре Золотая комната, хотя алкоголь там закончился еще до их приезда.
+Дэнни начинает видеть призрачные видения: двух девочек-близнецов в синих платьях, которые были убиты Грейди, потоки крови, льющиеся из лифтов, и другие ужасающие образы из прошлого отеля. Мальчик также видит слово REDRUM, написанное кровью на стенах, но не понимает его значения. У него появляется воображаемый друг Тони, который говорит через его палец и предупреждает об опасности.
+Джек становится все более неуравновешенным. Он начинает видеть призраков постояльцев отеля, включая барменa Ллойда Золотой комнаты, который наливает ему виски, и элегантную женщину в ванной комнаты 237, которая превращается в разлагающийся труп. Самой значительной встречей становится разговор с призраком Чарльза Грейди в туалете во время бала-призрака 1921 года. Грейди убеждает Джека, что тот всегда был смотрителем отеля и должен исправить ситуацию со своей семьей, намекая на необходимость убить жену и сына.
+Венди обнаруживает, что Джек не пишет роман, а многократно печатает одну и ту же фразу на сотнях страниц. Когда она пытается поговорить с мужем о необходимости покинуть отель, Джек взрывается гневом и угрожает ей. Венди запирает его в кладовой, но призрак Грейди освобождает Джека, открыв дверь изнутри.
+Дэнни, напуганный видениями и поведением отца, пишет слово REDRUM губной помадкой на двери ванной. Венди видит это слово в зеркале и понимает, что это MURDER (убийство), написанное задом наперед. В этот момент Джек начинает ломать дверь их комнаты топором, произнося ставшую знаменитой фразу сквозь щель в двери.
+Венди и Дэнни спасаются через окно ванной, но Дэнни с помощью своего дара посылает телепатический сигнал о помощи Дику Холлорану, который находится во Флориде. Повар немедленно вылетает в Колорадо и добирается до отеля на снегоходе, но Джек убивает его топором сразу же по прибытии.
+Начинается финальная погоня. Джек преследует Дэнни по заснеженному лабиринту возле отеля. Мальчик использует свою смекалку и идет по собственным следам назад, а затем прячется, позволяя отцу пройти мимо. Джек теряется в лабиринте и замерзает насмерть в снегу. Утром Венди и Дэнни уезжают на снегоходе Холлорана.
+В самом конце фильма камера показывает фотографию 1921 года, висящую в коридоре отеля, на которой среди гостей бала отчетливо виден Джек Торранс, что предполагает, что его душа всегда была частью отеля, или что он стал еще одним призраком в его проклятых стенах. Фильм оставляет открытым вопрос о том, было ли безумие Джека результатом сверхъестественного влияния отеля или следствием его собственных психических проблем, усугубленных изоляцией.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Апокалипсис сегодня', 'A U.S. Army officer serving in Vietnam is tasked with assassinating a renegade Special Forces Colonel who sees himself as a god.', '1979-01-01', 1, '147 minutes', 'Apocalypse Now', 8.4, 'Капитан Бенджамин Уиллард находится в Сайгоне в 1970 году во время Вьетнамской войны. Он страдает от посттравматического стресса, алкоголизма и глубокой депрессии после нескольких туров службы во Вьетнаме. Уиллард получает секретное задание от военного командования: найти и убить полковника Уолтера Курца, бывшего офицера спецназа, который сошел с ума и создал собственное королевство в джунглях Камбоджи, где командует армией монтаньяров и дезертиров.
+Курц когда-то был одним из самых перспективных офицеров армии, но теперь он ведет собственную войну, используя методы, которые командование считает неприемлемыми. Его обвиняют в убийстве южновьетнамских офицеров, которых он подозревал в работе на противника. Миссия Уилларда официально не существует - он должен найти Курца и "прекратить его командование с крайними предрассудками", что является военным эвфемизмом для убийства.
+Уиллард отправляется в путешествие по реке Нунг на патрульном катере под командованием Шефа, опытного моряка из Нового Орлеана. Экипаж также включает Ланса, молодого калифорнийского серфера, который употребляет наркотики, Клина, чернокожего солдата из Южных штатов, и семнадцатилетнего Мистера Клин, самого молодого члена экипажа. Никто из членов экипажа не знает о настоящей цели миссии Уилларда.
+Во время путешествия вверх по реке команда сталкивается с различными проявлениями безумия войны. Они останавливаются на базе, где встречают подполковника Билла Килгора, командира кавалерийского подразделения, который использует вертолеты для атак под музыку Вагнера. Килгор одержим серфингом и узнав, что Ланс профессиональный серфер, решает захватить пляж, контролируемый противником, только для того чтобы Ланс мог покататься на волнах. Атака проходит под звуки "Полета валькирий", а Килгор произносит свою знаменитую фразу о том, что любит запах напалма по утрам.
+Продолжая путешествие, команда видит последний аванпост американских войск, где царит полный хаос. Солдаты употребляют наркотики, никто не знает, кто командует, и идет непрерывная перестрелка с невидимым противником. База освещается прожекторами и находится под постоянным обстрелом. Командир поста сообщает Уилларду, что впереди их никого нет - они последний форпост цивилизации.
+По мере продвижения вверх по реке атмосфера становится все более сюрреалистичной и зловещей. Команда находит французскую плантацию, где живет семья колонистов, которые отказываются покинуть свою землю несмотря на войну. Французы устраивают для американцев ужин и долго рассуждают об истории французского присутствия в Индокитае и бессмысленности американского вмешательства. Уиллард проводит ночь с вдовой одного из французов.
+Путешествие по реке становится все более опасным. Во время обыска вьетнамской лодки Клин паникует и открывает огонь по мирным жителям, убивая всю семью. Позже Клин погибает во время атаки с берега. Шеф также гибнет, пронзенный копьем. Ланс полностью деградирует под воздействием наркотиков и ужасов войны, раскрашивая лицо боевой раскраской и теряя связь с реальностью.
+Наконец катер достигает территории, контролируемой Курцем. Их встречают туземцы и американские дезертиры. Повсюду развешаны отрубленные головы и разлагающиеся трупы. Уилларда берут в плен и приводят к Курцу, который живет в древнем храме в джунглях. Курц предстает как лысый, могучий человек, говорящий загадками и философскими афоризмами о природе войны и человеческой жестокости.
+Курц рассказывает Уилларду историю о том, как он понял бессмысленность американских методов ведения войны. Он вспоминает, как вьетконговцы отрубили руки детям, которым американские медики делали прививки, и как это открыло ему глаза на то, что противник готов идти на любые жертвы ради победы, в то время как американцы ограничивают сами себя моральными принципами, которые делают их слабыми.
+Курц держит Уилларда в плену, но не убивает его. Вместо этого он пытается обратить капитана в свою философию. Курц показывает ему письма от жены и сына, читает поэзию Т.С. Элиота, особенно "Полые люди". Он объясняет, что понял истинную природу войны и человека, и что только полная жестокость без моральных ограничений может привести к победе.
+Фотожурналист, который документирует деятельность Курца, служит своеобразным хором, восхваляющим полковника как гения и пророка. Он рассказывает Уилларду о "методе" Курца, его способности вдохновлять абсолютную преданность среди своих последователей. Однако становится ясно, что Курц также страдает от собственного безумия и осознает, что зашел слишком далеко.
+В кульминационный момент, во время местного религиозного ритуала с жертвоприношением буйвола, Уиллард убивает Курца мачете. Перед смертью Курц шепчет свои последние слова: "Ужас... ужас...", повторяя последние слова Курца из "Сердца тьмы" Джозефа Конрада, на котором основан фильм. Умирая, Курц кажется почти облегченным тем, что кто-то наконец положил конец его мучениям.
+После убийства Курца Уиллард забирает его документы и записи. Туземцы и дезертиры, которые поклонялись Курцу как богу, позволяют Уилларду уйти. Он возвращается к катеру с Лансом, который к этому времени полностью потерял рассудок. Фильм заканчивается отплытием катера по реке в сопровождении голоса Курца, читающего стихотворение Элиота, и кадрами взрывов, символизирующих продолжающееся разрушение войны. Уиллард выполнил свою миссию, но ценой стал свидетелем самых темных сторон человеческой природы и войны.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Чужой', 'After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.', '1979-01-01', 1, '117 minutes', 'Alien', 8.4, 'Действие фильма происходит в далеком будущем, в 2122 году. Коммерческий космический буксир "Ностромо" возвращается на Землю с грузом минеральной руды, когда главный компьютер корабля, прозванный "Мать", получает загадочный сигнал с необитаемой планеты LV-426. Согласно корпоративным протоколам, экипаж обязан исследовать любые потенциальные сигналы бедствия.
+Экипаж состоит из семи человек: капитана Далласа, исполнительного офицера Рипли, навигатора Ламберт, научного офицера Эша, инженеров Паркера и Бретта, а также Кейна. Они просыпаются из анабиоза и обнаруживают, что находятся не у Земли, а возле неизвестной планеты.
+"Ностромо" садится на планету LV-426, которая оказывается мрачным, туманным миром с токсичной атмосферой. Даллас, Кейн и Ламберт в скафандрах отправляются исследовать источник сигнала, оставив остальных на корабле. Рипли анализирует сигнал и обнаруживает, что это не сигнал бедствия, а предупреждение, но не успевает связаться с командой исследования.
+Исследовательская группа обнаруживает огромный заброшенный космический корабль неизвестной конструкции, напоминающий букву U. Внутри они находят останки гигантского инопланетного существа, сидящего в кресле пилота с пробитой грудной клеткой. Кейн спускается в нижний отсек корабля и обнаруживает обширную камеру, заполненную большими яйцевидными объектами.
+Когда Кейн наклоняется к одному из яиц, оно раскрывается, и из него выпрыгивает паукообразное существо, которое прожигает стекло его шлема кислотой и прикрепляется к его лицу. Даллас и Ламберт доставляют без сознания Кейна на "Ностромо", где существо крепко держится на его лице, вставив трубку в его дыхательные пути.
+Рипли, исполняющая обязанности командира, отказывается пускать их на борт согласно карантинным протоколам, но научный офицер Эш игнорирует ее приказы и открывает шлюз. Команда пытается удалить существо с лица Кейна, но когда они разрезают один из его пальцев, из него вытекает молекулярная кислота, которая прожигает несколько палуб корабля. Они понимают, что попытка удаления может убить как существо, так и Кейна.
+Через некоторое время существо само отпадает от лица Кейна и умирает. Кейн приходит в сознание, чувствует себя хорошо и не помнит произошедшего. Команда решает продолжить полет к Земле. Во время обеда в столовой Кейн внезапно начинает задыхаться и конвульсировать. Из его груди с кровью прорывается маленькое змееподобное существо, которое убегает в вентиляционные шахты корабля, оставив Кейна мертвым.
+Экипаж понимает, что на корабле находится быстро растущий хищник. Они вооружаются самодельными огнеметами и электрическими стрелами, чтобы найти и уничтожить существо. Бретт отправляется искать корабельного кота Джонси и сталкивается с полностью выросшим чужим - огромным черным биомеханическим существом с удлиненной головой, выдвижной внутренней челюстью и хвостом с острым наконечником. Чужой убивает Бретта.
+Даллас решает выследить существо в вентиляционных шахтах с помощью детектора движения. Остальные направляют его по рации, но чужой нападает на Далласа в узкой шахте. Даллас исчезает, оставив только работающий детектор движения.
+Рипли принимает командование и обращается к "Матери" за информацией. Компьютер сообщает ей секретное задание: корпорация Вейланд-Ютани знала о существовании чужого и специально направила "Ностромо" на LV-426, чтобы захватить образец для исследования биологического оружия. Экипаж считается расходным материалом.
+Рипли конфронтирует Эша, подозревая его в предательстве. Эш внезапно нападает на нее, пытаясь забить ей горло журналом. Паркер и Ламберт спасают Рипли, отрубив голову Эшу. Выясняется, что Эш - андроид, тайно размещенный корпорацией на корабле. Его голова, подключенная к питанию, сообщает, что у них нет шансов убить чужого - это "идеальный организм" без совести и морали, структурно совершенный.
+Оставшиеся трое решают активировать систему самоуничтожения корабля и спастись на спасательном шаттле "Нарцисс". Однако чужой убивает Ламберт и Паркера, пока Рипли активирует самоуничтожение. Она пытается отменить процедуру, но не успевает, и вынуждена бежать к шаттлу с котом Джонси.
+На борту "Нарцисса" Рипли готовится к полету, когда обнаруживает, что чужой пробрался на шаттл и спит в укромном уголке среди цепей и труб. "Ностромо" взрывается, но шаттл успевает улететь. Рипли тихо надевает скафандр и открывает шлюз, чтобы выбросить чужого в космос.
+Существо цепляется за дверной проем, но Рипли стреляет в него из ручного гарпунного пистолета. Гарпун пронзает чужого, но не убивает его. Когда существо пытается забраться обратно в шаттл через реактивное сопло, Рипли включает двигатели, и чужого выбрасывает в открытый космос.
+Наконец оставшись в безопасности, измученная Рипли записывает последний отчет, сообщая, что остальные члены экипажа мертвы, корабль уничтожен, и она направляется к границам системы, где ее должны подобрать спасательные службы. Она помещает себя и Джонси в анабиозные капсулы для долгого полета домой.
+Фильм заканчивается кадрами дрейфующего в космосе "Нарцисса" с двумя спящими выжившими на борту, в то время как где-то в пустоте космоса дрейфует тело совершенного хищника, который terrorized экипаж "Ностромо" и уничтожил всех, кроме одной женщины, которая оказалась достаточно умной и решительной, чтобы его победить.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ананд', 'The story of a terminally ill man who wishes to live life to the fullest before the inevitable occurs, as told by his best friend.', '1971-01-01', 1, '122 minutes', 'Anand', 8.4, 'Фильм начинается с того, что доктор Бхаскар Баннерджи получает литературную премию за свою книгу. В своей речи он признается, что книга представляет собой всего лишь несколько страниц из его личного дневника, написанных после встречи с человеком по имени Ананд. Затем повествование переходит в воспоминания о том удивительном периоде в жизни доктора.
+Доктор Бхаскар Баннерджи - молодой онколог, который бесплатно лечит бедных пациентов, но часто впадает в депрессию от осознания того, что не может излечить все болезни мира, большинство из которых порождены нищетой. Он видит вокруг себя страдания, болезни и бедность, понимая, что может бороться с заболеваниями, но бессилен перед лицом нищеты. Миллионы людей страдают от авитаминоза, но нет смысла давать витамины тем, кто не имеет денег даже на соль, не говоря уже о лекарствах. Бхаскар прямолинеен и отказывается лечить воображаемые болезни богатых. Он унаследовал от отца-врача большое состояние и особняк, но деньги его мало интересуют. Дома о нем заботится верный слуга Рагху Кака.
+Его друг доктор Пракаш Кулкарни выбрал несколько иной путь: он лечит мнимые болезни богачей, таких как Чандранатх, и использует эти деньги для лечения бедных. В то время как Бхаскар честно сказал бы Чандранатху, что с ним все в порядке и ему нужно просто играть в бадминтон и совершать длительные прогулки для здоровой и долгой жизни, Пракаш идет на компромисс. Пракаш женат на Суман.
+Однажды Кулкарни знакомит Бхаскара с Анандом Сехгалом, который страдает лимфосаркомой кишечника - редким типом рака. Бхаскар знает, что это заболевание неизлечимо и человеку осталось жить не более шести месяцев. Ананд еще может передвигаться и хотел посетить Бомбей, поэтому их общий друг Триведи из Дели направил его к Пракашу, который познакомился с Анандом пять лет назад.
+Ананд обладает жизнерадостным характером и, несмотря на знание правды о том, что ему не суждено прожить больше полугода, сохраняет беспечное поведение и всегда пытается сделать всех вокруг счастливыми. Его жизненное кредо: "Жизнь должна быть широкой, а не длинной". Ананд дразнит Бхаскара, называя его Бабумошай - так его звали в колледже.
+Ананда помещают в больницу Пракаша под наблюдение главной медсестры Д''Са, которая приказывает ему молчать. Медсестра в ужасе от того, что Ананд страдает неизлечимым раком, но он покоряет ее своим простодушным обаянием. Однако не может оставаться в тишине, поэтому сбегает из больницы и поселяется у Бхаскара.
+Ананд говорит Бхаскару, что у них обоих нет семей, и поэтому они могут составить хорошую компанию друг другу в его оставшиеся дни. Прежде чем Бхаскар успевает сообщить Пракашу о побеге пациента, тот сам приезжает вместе с Суман. Суман считает Ананда своим братом, и как Пракаш, так и Ананд скрывают от нее истинное состояние больного. Суман решает отвести Ананда к своему духовному гуру, который дал обет молчания в этой жизни. Ананд желает никогда не причинить никому боль своими словами.
+Жизнерадостная и энергичная натура Ананда успокаивает Бхаскара, обладающего противоположным характером, и они становятся близкими друзьями. У Ананда есть редкое качество привлекать людей и заводить дружбу. Он может подойти к любому незнакомцу, назвать его "Мурарилал" и завести разговор, как будто они старые друзья, которые не виделись долгое время. Фирменная история Ананда заключается в том, что Мурарилал напоил его пивом у Кутуб-Минара. В одной из таких встреч он знакомится с Иса Бхаи, театральным актером. Они наслаждаются обществом друг друга и создают эмоциональную связь. Иса - единственный, кто отвечает Ананду как персонаж Мурарилал и сочиняет собственные истории.
+От слуги Бхаскара Рагху Кака Ананд узнает, что доктор когда-то любил девушку, и она тоже его любила, но Бхаскар был слишком застенчив, чтобы что-то сказать. Девушка ушла через некоторое время, устав от того, что Бхаскар ничего не говорил и не выражал свои чувства. Ананд обнаруживает, что Бхаскар испытывает сильные чувства к Рену, которую он ранее лечил от пневмонии. Когда Ананд настаивает, Бхаскар признается, что любит Рену. Ананд помогает Бхаскару выразить свою любовь.
+Бхаскар рассказывает Рену о болезни Ананда и говорит, что только чудо может спасти его теперь. Хотя Бхаскар атеист, он говорит, что готов поверить во что угодно, если это могло бы привести к излечению Ананда. Суман говорит, что даже Бог не может жить без такого человека, как Ананд.
+Ананд посещает дом Рену и убеждает мать девушки благословить их брак. Однако свадьба не может состояться еще три месяца, поскольку отец Рену умер всего девять месяцев назад. Рену, Д''Са, Суман - все испытывают к нему огромное сочувствие и хотят, чтобы он жил. Рену однажды почти узнает имя девушки, которую любил Ананд, но он умоляет ее не копать глубже, поскольку хочет, чтобы его бывшая возлюбленная продолжила свою жизнь. В день ее свадьбы Ананд приехал в Бомбей из Дели, чтобы забыть ее, но сохранил цветок в книге в память о ней.
+Состояние Ананда постепенно ухудшается, но он не хочет проводить оставшееся время в больничной койке. Вместо этого он свободно бродит по городу и помогает всем вокруг. Он говорит Бхаскару, что все должны помнить его как жизнерадостного человека, а не как онкологического больного.
+Ананд записывает на магнитофон, как Бхаскар читает стихотворение, а сам произносит диалоги, и как они оба смеются вместе. Он считает свои последние вздохи, пока друзья собираются вокруг него, но Бхаскара нет - он ушел за лекарствами. Ананд кричит, зовя его, и умирает.
+Бхаскар возвращается всего через несколько минут и умоляет Ананда заговорить с ним. Внезапно включается магнитофон с голосом Ананда, и его друзья плачут по нему. В небе видны улетающие воздушные шары, символизирующие то, как Ананд покидает этот мир и улетает в небо.
+В конце фильма камера возвращается к церемонии награждения, где Бхаскар завершает свой рассказ, объясняя, что встреча с Анандом полностью изменила его взгляд на жизнь и смерть, научив его ценить каждый момент и находить радость даже в самых трудных обстоятельствах.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Рай и ад', 'An executive of a shoe company becomes a victim of extortion when his chauffeur''s son is kidnapped and held for ransom.', '1963-01-01', 1, '143 minutes', 'Tengoku to jigoku', 8.4, 'Кинго Гондо - успешный исполнительный директор обувной компании "Национальная обувь", живущий в роскошном доме на холме в Йокогаме с видом на город внизу. Он амбициозный бизнесмен, который планирует захватить контроль над компанией, выкупив акции у других директоров. Гондо уже вложил все свои сбережения и взял крупные кредиты для этой сделки, которая должна состояться на следующий день.
+У Гондо есть жена Рейко, маленький сын Джун и верный шофер Аоки с женой и сыном Синити, который часто играет с Джуном. Дом Гондо расположен на холме таким образом, что из него открывается панорамный вид на трущобы внизу, что создает символический контраст между "небом" богатства и "адом" бедности.
+Во время важной деловой встречи в доме Гондо внезапно раздается телефонный звонок. Неизвестный голос сообщает, что похитил его сына и требует тридцать миллионов йен в качестве выкупа - именно ту сумму, которую Гондо собирался потратить на покупку акций. Гондо в панике бежит искать сына, но обнаруживает Джуна дома целым и невредимым.
+Выясняется, что похититель по ошибке взял не сына Гондо, а сына шофера Синити, который был одет в одежду Джуна, поскольку мальчики часто менялись одеждой во время игр. Когда Гондо звонит похитителю, чтобы сообщить об ошибке, тот отвечает, что ему все равно - он все равно требует те же тридцать миллионов йен за освобождение чужого ребенка.
+Гондо оказывается перед мучительным моральным выбором: заплатить выкуп и разориться, потеряв возможность захватить компанию и обеспечить будущее собственной семьи, или отказаться заплатить за чужого ребенка. Его жена умоляет его заплатить, поскольку Синити для них почти как родной сын, но это означает финансовое крушение для семьи Гондо.
+Тем временем к делу подключается полиция во главе с инспектором Токурой. Детективы устанавливают прослушку телефона и начинают расследование, пытаясь выследить похитителя. Они анализируют голос преступника, изучают возможные мотивы и пытаются определить его местонахождение по звукам на заднем плане во время телефонных разговоров.
+После долгих мучений совести Гондо принимает решение заплатить выкуп, несмотря на то что это означает его финансовую гибель. Он звонит похитителю и соглашается на его условия. Преступник дает подробные инструкции по передаче денег: Гондо должен сесть в скорый поезд "Кодама" в Токио с чемоданом денег и выбросить его в определенном месте.
+Полиция разрабатывает сложный план слежки, используя вертолеты, агентов под прикрытием и радиосвязь. Гондо садится в поезд с чемоданом, содержащим тридцать миллионов йен. Поезд мчится по маршруту, а полиция следит за каждым его движением. В назначенном месте Гондо выбрасывает чемодан из окна поезда, как и было приказано.
+Похититель забирает деньги, а мальчика освобождают. Однако полиция теряет след преступника, и он исчезает с деньгами. Гондо разорен - он теряет возможность купить акции, его выгоняют из компании, и он вынужден продать свой роскошный дом. Семья переезжает в скромную квартиру, и Гондо устраивается работать управляющим на небольшую обувную фабрику.
+Полиция продолжает расследование под руководством инспектора Токуры. Детективы методично изучают каждую улику, проводят множество допросов и постепенно сужают круг подозреваемых. Они обнаруживают, что преступник тщательно изучал дом и привычки Гондо, наблюдая за ним из трущоб внизу.
+В ходе расследования выясняется, что похититель - молодой человек из бедной семьи, который жил в трущобах и ежедневно смотрел на роскошный дом Гондо на холме. Его звали Такеси Коморияма, и он работал стажером в больнице. Зависть и ненависть к богатству Гондо довели его до совершения преступления.
+Полиция обнаруживает, что Коморияма потратил украденные деньги на наркотики и разгульную жизнь в районе Йокогамы. Он стал наркоманом и втянулся в преступный мир. Детективы выслеживают его через наркоторговцев и притоны, где он проводил время.
+Кульминация наступает, когда полиция наконец арестовывает Комориваму в наркопритоне. Он полностью деградировал из-за наркотиков и потратил все украденные деньги. Во время ареста он почти не сопротивляется, находясь в наркотическом опьянении.
+На суде выясняются мотивы преступника. Коморияма объясняет, что ненавидел Гондо за его богатство и успех, ежедневно наблюдая за его роскошной жизнью из своей нищеты внизу. Он хотел не только получить деньги, но и разрушить жизнь человека, который, по его мнению, не заслуживал своего богатства.
+Фильм завершается встречей Гондо и Коморияма в тюрьме перед казнью последнего. Коморияма приговорен к смертной казни за убийство наркоторговца во время своих похождений после похищения. В финальной сцене два человека разговаривают через тюремное стекло - один разорившийся, но сохранивший достоинство бизнесмен, другой - приговоренный к смерти преступник, который потерял все из-за своей зависти и ненависти. Коморияма выражает сожаление, но уже слишком поздно - его ведут на казнь, а Гондо остается жить дальше, потеряв богатство, но сохранив честь и семью.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Доктор Стрейнджлав, или Как я научился не волноваться и полюбил атомную бомбу', 'An insane general triggers a path to nuclear holocaust that a War Room full of politicians and generals frantically tries to stop.', '1964-01-01', 1, '95 minutes', 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb', 8.4, 'Фильм представляет собой черную комедию о ядерной войне, действие которой происходит в разгар холодной войны. История начинается на авиабазе Берпельсон, где генерал Джек Д. Риппер, командующий базой, страдающий от параноидальных идей о коммунистическом заговоре, самовольно отдает приказ о ядерном ударе по Советскому Союзу. Он активирует план R - секретный протокол для нанесения превентивного ядерного удара в случае, если связь с высшим командованием будет потеряна.
+Риппер убежден, что коммунисты отравляют американцев, добавляя фторид в питьевую воду, чтобы подорвать их жизненные силы и чистоту драгоценных биологических жидкостей. Он изолирует базу от внешнего мира и отправляет эскадрилью бомбардировщиков B-52 к целям в СССР с ядерными боеголовками.
+Британский офицер группового капитана Лайонела Мандрейка, работающий как офицер связи при Риппере, пытается убедить генерала отменить приказ, но тот отказывается, объясняя свою теорию заговора. Мандрейк понимает, что Риппер сошел с ума, но не может связаться с внешним миром, поскольку Риппер заблокировал все коммуникации и захватил радиорубку.
+В военной комнате Пентагона президент Меркин Маффли созывает экстренное совещание с генералом Баком Тергидсоном, председателем Объединенного комитета начальников штабов, и другими военными советниками. Они пытаются найти способ отозвать бомбардировщики или связаться с ними, но обнаруживают, что самолеты летят в радиомолчании и будут игнорировать любые сигналы отзыва, кроме специального кода, который знает только Риппер.
+Президент принимает беспрецедентное решение связаться с советским премьером Дмитрием Киссовым по горячей линии, чтобы предупредить о приближающихся американских бомбардировщиках и помочь советским силам сбить их. Во время этого абсурдного телефонного разговора президент извиняется за инцидент и пытается объяснить ситуацию, в то время как пьяный советский лидер сначала не может поверить в происходящее.
+Киссов сообщает шокирующую новость: СССР создал "Машину Судного дня" - автоматическую систему ядерного возмездия, которая автоматически взорвет огромные кобальтовые бомбы по всему земному шару, если СССР подвергнется ядерной атаке. Эта система сделает Землю непригодной для жизни на 93 года. Более того, система уже активирована и не может быть отключена.
+В этот момент в военную комнату входит бывший нацистский ученый доктор Стрейнджлав, который сейчас работает советником по ядерному оружию. Он в инвалидном кресле, и его правая рука непроизвольно поднимается в нацистском приветствии, что он пытается подавить левой рукой. Стрейнджлав объясняет логику "Машины Судного дня" как средства устрашения, но критикует Советы за то, что они держали ее существование в секрете, поскольку устрашение работает только когда о нем знают.
+Тем временем американские войска штурмуют базу Берпельсон, чтобы получить от Риппера код отзыва. Понимая, что его планы провалились, Риппер запирается в ванной комнате и стреляет себе в голову. Мандрейк обыскивает его бумаги и находет возможные коды отзыва, основанные на навязчивых идеях Риппера о чистоте жизненных соков.
+Один из бомбардировщиков B-52 под командованием майора Т.Дж. "Кинга" Конга получает повреждения от советской ракеты и не может получить сигнал отзыва из-за поврежденной радиоаппаратуры. Экипаж продолжает лететь к цели. Когда их основная цель оказывается слишком хорошо защищенной, они направляются к запасной цели.
+В военной комнате генерал Тергидсон, воинственный и параноидальный офицер, предлагает немедленно нанести полномасштабный ядерный удар по СССР, чтобы минимизировать потери от "Машины Судного дня". Он утверждает, что при правильном планировании американцы могут "победить" в ядерной войне, потеряв только 10-20 миллионов человек.
+Доктор Стрейнджлав приходит в восторг от возможности ядерной войны и начинает планировать послевоенное будущее. Он предлагает укрыть избранных американцев в глубоких шахтах, где они смогут пережить радиацию. По его плану, каждый мужчина должен быть обеспечен десятью женщинами для восстановления человеческой расы. Стрейнджлав становится все более возбужденным, его протезная рука начинает жить собственной жизнью, и он в конце концов встает из инвалидного кресла, крича "Майн фюрер! Я могу ходить!"
+Бомбардировщик Конга достигает своей цели. Бомбовый люк заклинило, и Конг лично спускается в бомбовый отсек, чтобы вручную освободить ядерную боеголовку. Когда бомба наконец освобождается, Конг оказывается сидящим верхом на ней, размахивая ковбойской шляпой и издавая радостные крики, пока бомба падает на землю.
+Взрыв активирует советскую "Машину Судного дня". Фильм заканчивается серией кадров ядерных взрывов под песню "We''ll Meet Again", в то время как доктор Стрейнджлав продолжает планировать новый мировой порядок в подземных убежищах.
+Через абсурд и сатиру фильм показывает безумие доктрины взаимного гарантированного уничтожения и то, как военно-промышленный комплекс, политическая паранойя и техническая самонадеянность могут привести человечество к самоуничтожению. Каждый персонаж представляет различные аспекты милитаристского мышления времен холодной войны, доведенные до абсурдных крайностей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Свидетель обвинения', 'A veteran British barrister must defend his client in a murder trial that has surprise after surprise.', '1957-01-01', 1, '116 minutes', 'Witness for the Prosecution', 8.4, 'Действие фильма разворачивается в послевоенном Лондоне. Сэр Уилфрид Робартс - пожилой и опытный адвокат, недавно перенесший сердечный приступ. Его врач строго запретил ему брать сложные уголовные дела и велел избегать волнений, курения и алкоголя. За соблюдением этих предписаний следит его медсестра мисс Плимсолл, которая неотступно опекает адвоката, к его великому раздражению.
+В контору Робартса обращается молодой человек по имени Леонард Стивен Воул. Он рассказывает, что подружился с богатой пожилой вдовой Эмили Френч, которая жила одна в большом доме. Воул регулярно навещал женщину, помогал ей по хозяйству, составлял компанию за чаем и выслушивал ее рассказы о покойном муже. Эмили очень привязалась к молодому человеку и даже намекала, что оставит ему наследство.
+Однако вечером накануне Воул узнает, что Эмили Френч найдена мертвой в своем доме с проломленной головой. Полиция подозревает в убийстве именно его, поскольку он был последним, кто видел женщину живой, а также потому, что согласно завещанию он является единственным наследником всего ее немалого состояния. Воул клянется в своей невиновности и просит Робартса защищать его в суде.
+Поначалу адвокат хочет отказаться от дела из-за ограничений врача, но история заинтригovala его профессиональное любопытство. Робартс решает взяться за защиту, несмотря на протесты мисс Плимсолл. Воул утверждает, что в вечер убийства он находился дома со своей женой Кристиной, которая может подтвердить его алиби.
+Робартс встречается с Кристиной Воул - эффектной немкой с загадочным прошлым, которая работала в ночном клубе, когда познакомилась с Леонардом во время войны. Адвокат надеется, что она даст показания в пользу мужа, но Кристина ведет себя странно уклончиво. Она не выражает особой обеспокоенности судьбой Леонарда и намекает, что их брак не был счастливым.
+К ужасу защиты, на суде выясняется, что Кристина не намерена свидетельствовать в пользу мужа. Более того, она выступает как свидетель обвинения и заявляет, что Леонард вернулся домой в ночь убийства намного позже, чем утверждал, с кровью на рукаве и в возбужденном состоянии. Она также показывает, что он признался ей в убийстве, сказав, что ударил старушку, когда она отказалась немедленно изменить завещание в его пользу.
+Робартс потрясен предательством жены подзащитного, но продолжает вести дело. Он пытается дискредитировать показания Кристины, указывая на то, что по британскому закону жена не может свидетельствовать против мужа, но обвинение находит лазейку: оказывается, Кристина все еще состоит в браке со своим первым мужем в Германии, поэтому ее брак с Леонардом недействителен, и она имеет право давать показания.
+Дело принимает безнадежный оборот для защиты. Свидетели обвинения дают убедительные показания, а у Воула нет надежного алиби. Робартс понимает, что его подзащитному грозит смертная казнь, и отчаянно ищет способ спасти его.
+Неожиданно адвокату звонит таинственная женщина с иностранным акцентом, которая предлагает встретиться и передать компрометирующие материалы на Кристину Воул. На встрече в темном переулке неизвестная в темных очках и шарфе передает Робартсу письма, якобы написанные Кристиной своему любовнику. В письмах она признается, что лжет в суде, чтобы избавиться от нежеланного мужа и быть свободной для новых отношений.
+Вооружившись этими письмами, Робартс возвращается в суд и подвергает Кристину жесткому перекрестному допросу. Он показывает ей письма и обвиняет в лжесвидетельстве. Под давлением улик женщина ломается и признается, что солгала в своих показаниях против мужа. Присяжные оправдывают Леонарда Воула.
+После оправдательного приговора Робартс и Воул покидают здание суда, но адвокат чувствует, что что-то не так. Его смущает слишком удачное стечение обстоятельств с появлением компрометирующих писем. В коридоре суда к ним подходит Кристина, теперь без парика и грима, и Робартс с изумлением понимает, что именно она была той таинственной женщиной, которая передала ему письма.
+Кристина объясняет шокированному адвокату свой сложный план. Она всегда знала, что Леонард невиновен, и хотела спасти его, но понимала, что простые показания жены в его пользу не будут убедительными для присяжных - они подумают, что она просто защищает мужа. Поэтому она решила сначала выступить против него, а затем дискредитировать собственные показания, предоставив поддельные письма. Таким образом, присяжные поверят, что она лгала, когда обвиняла мужа, хотя на самом деле она лгала, когда защищала его.
+Потрясенный Робартс понимает, что Кристина обманула и его, и суд, но ее план сработал и спас невиновного человека. Однако торжество длится недолго. Леонард, узнав правду о хитроумном плане жены, вместо благодарности обвиняет ее в неверии в него и объявляет, что уходит к молодой секретарше, с которой у него роман.
+Кристина, посвятившая всю свою изобретательность и энергию спасению неблагодарного мужа, приходит в ярость от его предательства. В припадке гнева она хватает нож и убивает Леонарда прямо в здании суда. Робартс становится свидетелем этого преступления и понимает горькую иронию ситуации: женщина, которая спасла мужа от ложного обвинения в убийстве, сама становится убийцей.
+Фильм заканчивается тем, что Кристину арестовывают за реальное преступление, а потрясенный Робартс, несмотря на запреты врача, закуривает сигарету, осознавая сложность человеческой природы и непредсказуемость судьбы. Мисс Плимсолл отбирает у него сигарету и объявляет, что их следующее дело будет связано с обвинением Кристины Воул в убийстве, что означает, что цикл правосудия начинается заново.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Тропы славы', 'After refusing to attack an enemy position, a general accuses the soldiers of cowardice and their commanding officer must defend them.', '1957-01-01', 1, '88 minutes', 'Paths of Glory', 8.4, 'Действие фильма происходит во время Первой мировой войны в 1916 году во Франции. Французская армия ведет позиционную войну против немцев в условиях окопного противостояния. Генерал Жорж Брулар, амбициозный командующий дивизией, получает приказ от высшего командования захватить сильно укрепленную немецкую позицию под названием "Муравейник". Эта позиция считается практически неприступной, и предыдущие атаки на нее привели к огромным потерям среди французских войск.
+Брулар понимает, что атака обречена на провал, но видит в ней возможность для продвижения по карьерной лестнице. Он вызывает полковника Дакса, командира 701-го пехотного полка, и приказывает ему подготовить атаку на "Муравейник". Дакс, бывший адвокат в мирное время, прекрасно понимает бессмысленность и обреченность этой операции, но вынужден подчиниться приказу.
+Дакс пытается убедить Брулара в невозможности выполнения задачи, объясняя, что его солдаты уже истощены предыдущими боями и что атака на такую укрепленную позицию без соответствующей артиллерийской подготовки равносильна самоубийству. Однако Брулар непреклонен и угрожает Даксу трибуналом за неповиновение, если тот откажется выполнить приказ.
+Накануне атаки Дакс обходит окопы, разговаривая со своими солдатами. Он видит их страх, усталость и отчаяние, но пытается поддержать их моральный дух. Солдаты понимают, что идут на верную смерть, но дисциплина и страх перед военными трибуналами заставляют их готовиться к атаке.
+На рассвете начинается артиллерийская подготовка, за которой следует пехотная атака. Солдаты выбираются из окопов и бегут через нейтральную полосу под убийственным огнем немецких пулеметов и артиллерии. Атака превращается в бойню - солдаты падают сотнями, не дойдя даже до немецких проволочных заграждений.
+Во время боя выясняется, что французская артиллерия стреляет по собственным позициям. Полковник Дакс в ужасе звонит генералу Мирро, командующему артиллерией, требуя прекратить огонь по своим войскам. Мирро объясняет, что получил приказ от генерала Брулара стрелять по отступающим французским солдатам, чтобы заставить их продолжать атаку.
+Атака полностью проваливается. Выжившие солдаты отступают в окопы, не достигнув цели. Потери огромны, а "Муравейник" остается в руках немцев. Генерал Брулар приходит в ярость из-за провала операции и требует найти виновных в неудаче, отказываясь признать, что сама задача была невыполнимой.
+Брулар принимает решение отдать под военный трибунал весь полк за трусость и дезертирство. Однако военный прокурор объясняет ему, что судить сразу четыреста человек практически невозможно. Тогда Брулар приказывает выбрать по одному солдату из каждой роты для показательного суда и казни, чтобы устрашить остальных.
+Выбор жертв происходит по циничному принципу. Из первой роты выбирают рядового Фероля, алкоголика с плохой репутацией. Из второй роты - рядового Арно, который попал в немилость к командованию из-за конфликта с офицером. Из третьей роты выбирают капрала Пари, честного и храброго солдата, который стал жертвой случайности.
+Полковник Дакс, узнав о планах командования, решает защищать своих солдат на военном трибунале, используя свой опыт адвоката. Он понимает, что солдат используют как козлов отпущения для прикрытия некомпетентности высшего командования.
+Военный трибунал проходит в замке, где расквартировано высшее командование. Судьи заранее настроены против обвиняемых, а сам процесс является лишь формальностью. Дакс пытается защищать солдат, доказывая, что они проявили мужество в безнадежной ситуации, что атака была обречена на провал с самого начала, и что обвинения в трусости необоснованны.
+Дакс представляет свидетельства того, что солдаты сражались храбро в невозможных условиях, что многие из них погибли, пытаясь выполнить приказ, и что причиной провала была плохая подготовка операции, а не трусость солдат. Он также обвиняет командование в том, что французская артиллерия стреляла по собственным войскам.
+Однако трибунал игнорирует все доводы защиты. Судьи уже вынесли приговор еще до начала процесса, и все три солдата приговариваются к расстрелу. Решение суда является заранее запланированным, и никакие доказательства невиновности не могут его изменить.
+В последнюю ночь перед казнью Дакс навещает приговоренных в тюремной камере. Он видит, как по-разному люди встречают смерть. Фероль, алкоголик, пытается напиться в последний раз. Арно впадает в истерику и отчаяние. Пари сохраняет достоинство и мужество, готовясь к смерти с честью.
+Утром происходит казнь. Солдат выводят во двор замка, где их расстреливает расстрельная команда. Фероля приходится нести, поскольку он без сознания от выпитого накануне алкоголя. Арно рыдает и умоляет о пощаде. Пари идет к месту казни с высоко поднятой головой, отказываясь от повязки на глаза.
+После казни Дакс встречается с генералом Брулар, который цинично объясняет необходимость расстрела для поддержания дисциплины в армии. Он предлагает Даксу повышение, но тот с отвращением отказывается. Дакс обвиняет Брулара в убийстве невинных людей и в использовании солдат как пушечного мяса для собственной карьеры.
+Брулар пытается оправдать свои действия военной необходимостью и патриотизмом, но Дакс видит в нем только карьериста, готового пожертвовать жизнями подчиненных ради личных амбиций. Разговор между ними показывает пропасть между высшим командованием, находящимся в безопасных замках, и простыми солдатами, умирающими в окопах.
+Фильм завершается сценой в таверне, где солдаты Дакса слушают пение немецкой девушки, захваченной в плен. Сначала солдаты грубо кричат и свистят, но постепенно ее пение трогает их сердца, и они начинают подпевать. Эта сцена показывает общую человечность по обе стороны конфликта и бессмысленность войны, которая заставляет обычных людей убивать друг друга по приказу политиков и генералов. Дакс наблюдает за этой сценой с улицы, понимая, что завтра его солдатам снова придется идти в бой, и цикл бессмысленной бойни продолжится.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Окно во двор', 'A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.', '1954-01-01', 1, '112 minutes', 'Rear Window', 8.4, 'Действие фильма происходит в Нью-Йорке в 1950-х годах. Фотожурналист Л.Б. "Джефф" Джеффрис прикован к инвалидному креслу в своей квартире с загипсованной сломанной ногой, полученной во время съемки автогонок. Его квартира выходит окнами во внутренний двор многоквартирного дома, и от скуки Джефф начинает наблюдать за жизнью своих соседей через заднее окно.
+Джеффа регулярно навещают его подруга Лиза Фримонт, элегантная модель и редактор модного журнала, и медсестра Стелла Масон. Между Джеффом и Лизой существует напряжение в отношениях - она хочет выйти за него замуж, но он считает, что их образы жизни слишком разные. Лиза живет в мире высокой моды и светских мероприятий, в то время как Джефф предпочитает опасные фотокомандировки по всему миру.
+Через окно Джефф наблюдает за различными соседями, каждый из которых представляет отдельную драму. Напротив живет композитор, работающий над новой песней. На первом этаже живет бездетная пара, которая спускает своего маленького пса в корзине во двор. Над ними живет танцовщица, которую Джефф прозвал "Мисс Торсо" из-за ее привычки танцевать в легкой одежде. На верхнем этаже живет одинокая женщина средних лет, которую он называет "Мисс Одиночество", часто плачущая и явно страдающая от депрессии.
+Особое внимание Джеффа привлекает квартира коммивояжера Ларса Торвальда и его прикованной к постели больной жены. Торвальд - крупный, мрачный мужчина, который, кажется, раздражен постоянным уходом за женой.
+Однажды дождливой ночью Джефф просыпается от звуков во дворе и видит, как Торвальд несколько раз выходит из здания с чемоданом. На следующее утро Джефф замечает, что жены Торвальда нигде не видно, хотя обычно она была прикована к постели. Джефф начинает подозревать, что Торвальд убил свою жену.
+Джефф делится своими подозрениями со Стеллой, которая поначалу скептически настроена, но постепенно начинает ему верить. Лиза сначала думает, что это плод воображения Джеффа, но также заинтересовывается тайной.
+Детектив Том Дойл, друг Джеффа, приходит проверить его подозрения и объясняет, что жена Торвальда просто уехала к родственникам. Он показывает Джеффу телеграмму от миссис Торвальд и говорит, что видел ее садящуюся в поезд. Однако Джефф замечает несоответствия: женские украшения и сумочка остались в квартире, что странно для женщины, отправляющейся в долгую поездку.
+Лиза, увлеченная расследованием, предлагает более активно шпионить за Торвальдом. Они наблюдают, как он проводит подозрительную уборку в своей квартире посреди ночи и видят, как он оборачивает большие предметы в газеты. На следующий день они замечают, как он выносит большой сундук с помощью носильщиков.
+Джефф звонит Торвальду, притворяясь, что ошибся номером, чтобы убедиться, что он дома, а затем наблюдает, как тот уходит из квартиры. Лиза и Стелла решают обыскать квартиру Торвальда. Лиза проникает через пожарную лестницу в квартиру, в то время как Джефф наблюдает из окна, а Стелла стоит на страже.
+В квартире Лиза находет обручальное кольцо миссис Торвальд в ее сумочке, что подтверждает подозрения - замужняя женщина не поехала бы в путешествие без обручального кольца. Внезапно возвращается Торвальд и обнаруживает Лизу в квартире. Он хватает ее и начинает угрожать.
+Джефф вызывает полицию, и они арестовывают Лизу за незаконное проникновение. Пока ее уводят, она показывает Джеффу кольцо, которое нашла. Торвальд видит этот жест и понимает, что за ним наблюдают из противоположного окна. Он смотрит прямо на окно Джеффа.
+Оставшись один, Джефф понимает, что находится в опасности. Он пытается связаться с Дойлом, но детектив недоступен. Джефф слышит шаги Торвальда, поднимающегося по лестнице к его квартире. Не имея возможности убежать из-за сломанной ноги, Джефф готовится к конфронтации.
+Торвальд врывается в темную квартиру Джеффа и спрашивает, что тот хочет от него. Джефф пытается выиграть время, ослепляя Торвальда вспышками от фотоаппарата. Торвальд набрасывается на Джеффа и выталкивает его из окна. Джефф падает во двор и ломает вторую ногу.
+Полиция, прибывшая по вызову Джеффа, арестовывает Торвальда. Детектив Дойл подтверждает, что они нашли части тела миссис Торвальд, закопанные в цветочном саду во дворе, где соседская пара недавно посадила цветы. Маленькая собачка пары была убита накануне, потому что копала в том месте, где были зарыты останки.
+В эпилоге показано, что жизнь во дворе возвращается к нормальному ритму. Джефф теперь в двух гипсах спит в кресле спиной к окну. Лиза сидит рядом с ним, читая книгу о приключениях, чтобы показать интерес к его образу жизни, но когда Джефф засыпает, она откладывает эту книгу и берет модный журнал. Композитор закончил свою песню, "Мисс Торсо" встречает своего возлюбленного, вернувшегося из армии, "Мисс Одиночество" знакомится с композитором, а новые жильцы въезжают в квартиру Торвальда.
+Фильм исследует темы вуайеризма, одиночества в современном городе и того, как наблюдение за другими может раскрыть как их секреты, так и наши собственные потребности и страхи. Каждый персонаж во дворе отражает различные аспекты человеческих отношений и изоляции в городской среде.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бульвар Сансет', 'A screenwriter develops a dangerous relationship with a faded film star determined to make a triumphant return.', '1950-01-01', 1, '110 minutes', 'Sunset Blvd.', 8.4, 'Фильм начинается с мертвого тела молодого мужчины, плавающего в бассейне роскошного особняка в Голливуде. Голос за кадром принадлежит самому покойнику - Джо Гиллису, неудачливому сценаристу, который рассказывает историю событий, приведших к его смерти.
+Джо Гиллис - молодой писатель из Огайо, приехавший в Голливуд в поисках успеха, но за несколько лет так и не сумевший пробиться. Он влез в долги, его машину вот-вот заберут за неуплату, а продюсеры отвергают его сценарии один за другим. В отчаянии он пытается переделать один из своих сценариев в бейсбольную историю для Бетти Шефер, молодой читательницы сценариев на студии Paramount, но та жестко критикует его работу.
+Спасаясь от коллекторов, которые пытаются забрать его машину, Джо сворачивает в подъездную дорожку заброшенного особняка на Сансет-бульваре. Дом оказывается не совсем заброшенным - там живет Норма Десмонд, некогда знаменитая звезда немого кино, и ее преданный дворецкий Макс фон Майерлинг. Норма принимает Джо за человека, приехавшего хоронить ее умершую обезьянку, но вскоре выясняется настоящая причина его визита.
+Норма узнает, что Джо - сценарист, и предлагает ему работу над сценарием для ее триумфального возвращения в кино. Она написала сценарий о Саломее и мечтает сыграть эту роль, вернувшись на экран после двадцати лет молчания. Сценарий ужасен, но Джо, находящийся в отчаянном финансовом положении, соглашается его переписать за пятьсот долларов в неделю.
+Постепенно Джо понимает, что попал в ловушку. Норма становится все более навязчивой и собственнической. Она покупает ему дорогую одежду, золотые запонки, сигаретный портсигар, фактически превращая его в содержанку. Джо живет в комнате над гаражом, но большую часть времени проводит в главном доме, развлекая стареющую звезду карточными играми и просмотром ее старых фильмов.
+Норма живет в мире иллюзий, считая, что ее поклонники все еще помнят и любят ее. На самом деле письма от фанатов пишет ей дворецкий Макс, который когда-то был ее мужем и режиссером. Он посвятил свою жизнь поддержанию ее иллюзий величия. Норма регулярно играет в бридж с другими забытыми звездами немого кино - они собираются как призраки прошлого, цепляясь за воспоминания о былой славе.
+Отношения между Нормой и Джо постепенно принимают романтический характер, что вызывает у молодого человека отвращение, но он не может уйти - он слишком привык к комфорту и деньгам. Когда Джо пытается сбежать на новогодней вечеринке, Норма в отчаянии пытается покончить с собой, перерезав вены. Джо возвращается и остается с ней из жалости.
+Тем временем он тайно работает с Бетти Шефер над новым сценарием - детективной историей. Они встречаются по вечерам в ее офисе, и между ними зарождаются чувства. Бетти помолвлена с другим сценаристом Артуром Грином, но постепенно влюбляется в Джо. Он же разрывается между презрением к своему положению игрушки в руках Нормы и растущими чувствами к Бетти.
+Норма отправляет свой сценарий о Саломее режиссеру Сесилю Б. ДеМиллю на студию Paramount. Она даже покупает новую машину и едет на студию, где встречает своего старого коллегу. ДеМилль относится к ней с добротой и уважением, но ясно дает понять, что времена немого кино прошли безвозвратно. Однако Норма неправильно интерпретирует его вежливость как интерес к ее проекту.
+Ситуация достигает критической точки, когда Норма узнает о романе Джо с Бетти. Она звонит девушке и рассказывает ей об их отношениях, показывая подарки, которые сделала Джо. Потрясенная Бетти приезжает в особняк, где Норма демонстрирует ей, как Джо зависит от нее финансово, показывая его дорогую одежду и аксессуары.
+После ухода Бетти Джо принимает окончательное решение покинуть дом. Он собирает свои старые вещи, оставляя все подарки Нормы, и объясняет ей, что больше не может жить в этой нездоровой ситуации. Он жестко говорит ей правду о том, что ее карьера закончена, что зрители забыли о ней, что она живет в мире иллюзий. Норма в ярости и отчаянии хватает револьвер и стреляет в Джо три раза, когда тот направляется к выходу.
+Джо падает в бассейн, где его тело и обнаруживают полиция и журналисты. Дом окружают толпы зевак и представители прессы. Норма окончательно теряет связь с реальностью и воображает, что все это - съемки ее нового фильма. Когда полиция готовится арестовать ее, Макс, понимая ее состояние, объявляет, что идут съемки, и Норма в безумии спускается по лестнице, представляя себя в роли Саломеи перед кинокамерами. Она произносит свою знаменитую фразу о том, что готова к крупному плану, полностью погрузившись в мир фантазий, из которого уже никогда не выберется.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Великий диктатор', 'Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel''s regime.', '1940-01-01', 1, '125 minutes', 'The Great Dictator', 8.4, 'Действие фильма разворачивается в вымышленной стране Томании, которая является аллегорией на нацистскую Германию. История начинается во время Первой мировой войны, где простой солдат-еврей по имени Цирюльник сражается за свою страну. Во время авиакатастрофы он получает травму головы и теряет память, после чего проводит годы в госпитале, не зная о происходящих в стране переменах. Тем временем в Томании к власти приходит диктатор Аденоид Хинкель, который устанавливает фашистский режим и начинает преследования евреев.
+После выздоровления Цирюльник возвращается в еврейское гетто, где открывает парикмахерскую, не подозревая о том, что теперь евреи подвергаются систематическим гонениям. Он встречает девушку по имени Ханна, в которую влюбляется. Штурмовики регулярно устраивают погромы в гетто, но Цирюльник наивно сопротивляется им, не понимая всей серьезности ситуации. Его защищает командир Шульц, который узнает в нем солдата, спасшего ему жизнь во время войны.
+Параллельно показывается жизнь диктатора Хинкеля, который мечтает о мировом господстве и планирует вторжение в соседнюю страну Остерлих. Хинкель заключает союз с диктатором Бензини Наполони из страны Бактерия, хотя между ними существует соперничество. Наполони приезжает с визитом, и между диктаторами происходят комичные переговоры о разделе мира.
+Когда Шульц начинает выступать против антисемитской политики Хинкеля, его арестовывают и отправляют в концлагерь. Туда же попадает и Цирюльник после того, как штурмовики устраивают очередной погром в гетто. Ханна и другие евреи бегут в Остерлих в поисках убежища. В концлагере Цирюльник и Шульц планируют побег. Им удается сбежать, переодевшись в военную форму.
+Тем временем Хинкель отправляется на охоту, где его по ошибке арестовывают собственные солдаты, приняв за беглеца из концлагеря. Цирюльника же, который поразительно похож на диктатора, принимают за самого Хинкеля. В военной форме он направляется к границе с Остерлих, где должна состояться церемония аннексии страны.
+Когда армия Томании вторгается в Остерлих, местное население в страхе собирается на площади. Все ждут речи великого диктатора, но вместо Хинкеля перед микрофоном оказывается простой цирюльник. В кульминационный момент фильма он произносит страстную речь о человечности, демократии и необходимости бороться с тиранией. Он призывает людей не поддаваться ненависти, объединиться во имя свободы и человеческого достоинства. Эта речь становится полной противоположностью фашистской пропаганде и несет в себе послание надежды.
+Речь цирюльника транслируется по радио, и ее слышит Ханна, которая работает на ферме в Остерлих. Услышав призыв к свободе и равенству, она поднимает глаза к небу с надеждой на лучшее будущее, и фильм заканчивается этим символическим кадром, выражающим веру в торжество человечности над тиранией.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('1917', 'April 6th, 1917. As a regiment assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap.', '2019-01-01', 1, '119 minutes', '1917', 8.3, 'Действие фильма разворачивается в апреле 1917 года во время Первой мировой войны на Западном фронте. Два британских солдата, капрал Уильям Скофилд и младший капрал Том Блейк, получают критически важное задание от генерала Эринмора. Они должны пересечь опасную нейтральную полосу и вражескую территорию, чтобы доставить приказ об отмене запланированного наступления 2-го батальона Девонширского полка. Разведка обнаружила, что немцы намеренно отступили, заманивая британцев в ловушку, где их ждет верная смерть. В наступлении должны участвовать 1600 человек, и среди них находится старший брат Блейка - лейтенант Джозеф Блейк.
+Солдаты покидают британские окопы и начинают свой опасный путь через изрытую воронками нейтральную полосу, усеянную трупами и колючей проволокой. Они проникают в покинутые немецкие траншеи, которые оказываются заминированными. Обследуя немецкий бункер, Скофилд чуть не погибает от обвала, а Блейк убивает притаившегося немецкого солдата, который успел ранить его в живот. Блейк истекает кровью на руках у Скофилда, передав ему свои личные вещи и попросив передать письмо и кольцо матери. Скофилд хоронит друга и продолжает миссию в одиночку.
+Продвигаясь через разрушенный французский городок Экуст-Сен-Мейн, Скофилд встречает французскую женщину, которая прячется в подвале с младенцем. Женщина не доверяет ему, но Скофилд делится с ней едой и молоком, найденными в разрушенном городе. Он просит ее позаботиться о кольце Блейка, если он не выживет. Покидая город, Скофилд попадает под обстрел немецкого снайпера, но успешно убивает его, получив при этом ранение в голову.
+Ночью Скофилд выходит к реке, где обнаруживает британских солдат 2-го батальона. Он пытается объяснить им свою миссию, но в темноте и суматохе боя его принимают за дезертира. Ему удается убедить офицера в подлинности приказа, и тот указывает ему путь к командному пункту полковника Маккензи. Скофилд плывет по реке, минуя пороги и немецкие прожекторы, его несет течением мимо горящих руин и плавающих трупов.
+Утром он выбирается на берег, где британские войска уже готовятся к наступлению. Скофилд в отчаянии бежит вдоль траншей, ища командный пункт, в то время как солдаты уже начинают подготовку к атаке. Он находит полковника Маккензи, жесткого военачальника, который изначально отказывается поверить в приказ об отмене наступления, считая его трусостью. Маккензи убежден, что немцы ослаблены и атака будет успешной. Только когда Скофилд показывает официальный приказ с печатью генерала Эринмора, полковник неохотно соглашается отменить наступление, которое должно было начаться через несколько минут.
+Свистки уже прозвучали, и первая волна солдат поднялась в атаку, но Маккензи успевает остановить наступление. Скофилд среди солдат разыскивает лейтенанта Джозефа Блейка и находит его в траншее. Он сообщает ему о смерти брата Тома и передает его личные вещи - письмо матери и семейное кольцо. Джозеф тяжело переживает потерю, но благодарит Скофилда за то, что тот выполнил миссию и спас жизни 1600 человек.
+В финальной сцене измученный Скофилд находит тихое место под деревом вдали от траншей, достает фотографию своей семьи и письмо от жены, которое он до этого не решался прочитать. Фильм заканчивается тем, что он прислоняется к дереву, наконец-то позволив себе отдохнуть после выполнения невозможной миссии, которая стоила жизни его другу, но спасла полтора тысячи солдат от верной смерти.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Тумббад', 'A mythological story about a goddess who created the entire universe. The plot revolves around the consequences when humans build a temple for her first-born.', '2018-01-01', 1, '104 minutes', 'Tumbbad', 8.3, 'Фильм начинается в 1918 году в деревне Тумббад в штате Махараштра, Индия, во времена британского владычества. История разворачивается вокруг древнего проклятия и жадности, передающейся из поколения в поколение.
+Винаяк Рао живет со своей матерью и младшим братом в полуразрушенном особняке, принадлежащем его прабабушке - древней старухе, которая находится в состоянии между жизнью и смертью. Мать Винаяка работает наложницей у местного сардара (феодала), и семья живет в бедности. Прабабушка выглядит как мумия и может лишь бормотать одно слово - "золото".
+Винаяк узнает от матери древнюю легенду о богине-матери, которая родила 160 миллионов богов. Первенцем был Хастар - жадный бог, который пытался съесть всю пищу богов, не оставив ничего для человечества. За это богиня-мать прикованала его и прокляла - он получит пищу только после того, как накормит все человечество. Хастар был заточен под землей, но его сокровища остались доступными для тех, кто достаточно безрассуден, чтобы их искать.
+Мать рассказывает Винаяку, что их предок построил храм Хастара в надежде получить его золото, но это принесло проклятие всей семье. Она запрещает сыну приближаться к храму и произносить имя Хастара вслух, особенно в присутствии прабабушки, которая каким-то образом связана с этим древним злом.
+Когда в деревне начинается эпидемия чумы, британские власти эвакуируют жителей. Мать Винаяка решает бежать с детьми, но Винаяк, движимый жадностью, тайно остается, чтобы найти сокровища в заброшенном особняке. Он находит секретную комнату и древний амулет, а также обнаруживает мешки с золотыми монетами, спрятанные прабабушкой.
+Прошло пятнадцать лет. Винаяк теперь взрослый мужчина, живущий в Пуне со своей женой и маленьким сыном Панвасом. Он работает ростовщиком, но его постоянно мучает память о золоте в Тумббаде. Несмотря на предупреждения жены, он регулярно возвращается в заброшенную деревню, пытаясь найти способ получить сокровища Хастара.
+Винаяк обнаруживает, что прабабушка все еще жива в своем ужасном состоянии. Он понимает, что она является ключом к сокровищам - она каким-то образом связана с Хастаром и может показать путь к его золоту. Используя тесто, сделанное из своей крови, он пробуждает в ней голод и следует за ней в подземный лабиринт под особняком.
+В подземелье Винаяк обнаруживает спящего Хастара - чудовищное создание с множеством рук и ужасающей внешностью. Хастар просыпается от запаха теста, и Винаяк быстро бросает его, заставляя монстра гнаться за едой, пока сам собирает золотые монеты, разбросанные по пещере. Он узнает, что может безопасно брать золото, пока Хастар ест, но должен покинуть пещеру до того, как тот закончит.
+Этот опасный ритуал Винаяк повторяет множество раз на протяжении многих лет, становясь богатым, но с каждым разом риск возрастает. Хастар начинает быстрее поедать тесто, и времени на сбор золота остается все меньше. Жена Винаяка умирает, а сын Панвас вырастает, презирая отца за его одержимость.
+Шестьдесят лет спустя, в 1947 году, во время раздела Индии, Винаяк, теставший старым и жадным, решает сделать последний поход за золотом. Он берет с собой своего взрослого сына Панваса, несмотря на протесты последнего. Винаяк обучает сына ритуалу, но предупреждает, что нужно брать только столько золота, сколько можно унести за время, пока Хастар ест.
+Во время финального спуска жадность берет верх над осторожностью. Винаяк пытается взять слишком много золота и не успевает выбраться вовремя. Хастар хватает его, и в ужасе Винаяк произносит запретное имя бога вслух. Это пробуждает истинную силу Хастара и разрушает древние оковы.
+Хастар убивает Винаяка и начинает преследовать Панваса через лабиринт. Молодой человек едва спасается, но понимает, что освободил древнее зло в мир. Он взрывает вход в подземелье, надеясь заточить Хастара, но монстр находит другой выход.
+Фильм заканчивается тем, что Панвас со своей семьей пытается бежать из Тумббада, но везде, куда бы они ни направились, их преследуют сверхъестественные знаки присутствия Хастара. Проклятие распространяется, и жадность, которая когда-то поразила их семью, теперь угрожает всему миру. В финальных кадрах показано, как дождь в Тумббаде продолжается бесконечно - символ того, что гнев богини-матери и проклятие Хастара никогда не закончатся.
+');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Слепая мелодия', 'A series of mysterious events change the life of a blind pianist, who must now report a crime that he should technically know nothing of.', '2018-01-01', 1, '139 minutes', 'Andhadhun', 8.3, 'История начинается с пианиста Акаша, который притворяется слепым, чтобы вызывать сочувствие у людей и получать больше денег за свои выступления. Он играет в ресторанах и дает частные уроки, используя свою мнимую слепоту как преимущество. Акаш носит темные очки и передвигается с тростью, убеждая всех в своей инвалидности.
+Во время одного из выступлений в ресторане Акаш знакомится с Софи, которая работает там официанткой. Девушка относится к нему с пониманием и заботой, не подозревая о его обмане. Между ними завязываются романтические отношения. Софи восхищается его музыкальным талантом и силой духа, который, по ее мнению, помогает ему справляться с инвалидностью.
+Карьера Акаша идет в гору. Его приглашают играть на частных мероприятиях богатых людей. Однажды бывшая актриса Сими приглашает его сыграть на дне рождения своего мужа Правина Шетти, который является успешным актером. Акаш приходит в их роскошную квартиру, но обнаруживает, что Правин мертв, а Сими находится рядом с трупом вместе со своим любовником, инспектором полиции Манораном.
+Понимая, что стал свидетелем убийства, Акаш оказывается в ловушке. Он не может признаться, что видел преступление, поскольку это разоблачит его обман о слепоте. Сими и Маноран сначала не подозревают, что он может их видеть, поэтому ведут себя относительно спокойно в его присутствии. Акаш вынужден играть роль слепого человека, который ничего не заметил, и даже играет на пианино, пока они убирают следы преступления.
+После этого инцидента жизнь Акаша превращается в кошмар. Сими начинает подозревать, что он может видеть, и устраивает ему различные проверки. Она появляется в его жизни под разными предлогами, наблюдая за его реакциями и поведением. Параллельно Маноран использует свое положение в полиции, чтобы вести расследование смерти Правина и направить подозрения в другую сторону.
+Акаш пытается обратиться за помощью к соседу Правина, пожилому человеку, который также стал свидетелем странных событий в доме. Однако Сими и Маноран обнаруживают это и убивают соседа. Теперь Акаш понимает, что находится в смертельной опасности. Он пытается рассказать правду Софи, но она не верит его истории о том, что он притворялся слепым и стал свидетелем убийства.
+Ситуация осложняется, когда выясняется, что у Правина есть мать, которая начинает подозревать Сими в смерти сына. Пожилая женщина нанимает частного детектива для расследования. Сими понимает, что стены сжимаются вокруг нее, и принимает решение избавиться от всех, кто может ей угрожать.
+Кульминация наступает, когда Сими решает окончательно разобраться с Акашем. Она похищает его и планирует убить. Однако Акаш оказывается более изобретательным, чем она думала. В их финальном противостоянии происходят неожиданные повороты событий. Выясняется, что Маноран тоже строит свои планы и готов предать Сими, когда дело дойдет до спасения собственной шкуры.
+В результате сложной игры на выживание Акаш использует свои актерские способности и знание психологии людей, чтобы перехитрить преступников. Он устраивает ловушку, в которую попадают и Сими, и Маноран. Однако развязка оказывается неоднозначной. История завершается тем, что Акаш рассказывает Софи о произошедших событиях, но его версия событий может быть не совсем правдивой. Зрители остаются в неведении относительно того, что именно произошло на самом деле, а что является выдумкой главного героя, привыкшего к обману и манипуляциям.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Видимость', 'A man goes to extreme lengths to save his family from punishment after the family commits an accidental crime.', '2013-01-01', 1, '160 minutes', 'Drishyam', 8.3, 'Виджай Саргам - простой владелец кабельного телевидения, живущий в небольшом городке Гоа со своей женой Нандини и двумя дочерьми - шестнадцатилетней Анжу и младшей Ану. Виджай - человек, окончивший только четвертый класс, но страстно увлекающийся фильмами, особенно криминальными драмами, из которых он черпает жизненную мудрость и понимание человеческой природы. Его семья живет скромно, но счастливо.
+Анжу отправляется в школьный лагерь, где знакомится с Самом Десмухом, сыном генерального инспектора полиции Михиры Десмух. Сам тайно снимает Анжу на видео в душе и начинает шантажировать девочку, угрожая распространить компрометирующие кадры, если она не будет встречаться с ним. Анжу в отчаянии рассказывает матери о происходящем. Нандини приходит в ярость и требует от Сама удалить видео и оставить дочь в покое.
+Конфликт достигает критической точки, когда Сам приходит в дом Саргамов с мобильным телефоном, продолжая угрожать и издеваться над семьей. В завязавшейся драке Нандини и Анжу случайно убивают Сама ударом лопаты по голове, когда он пытается напасть на них. Семья впадает в панику, осознав, что убили сына высокопоставленного полицейского чиновника.
+Виджай возвращается домой и находит семью в состоянии шока. Выяснив обстоятельства произошедшего, он берет ситуацию под контроль. Используя знания, почерпнутые из многочисленных криминальных фильмов, Виджай разрабатывает детальный план сокрытия преступления. Они закапывают тело Сама под строящимся полицейским участком, где фундамент должны залить бетоном на следующий день.
+Виджай тщательно продумывает алиби для всей семьи. Он заставляет жену и дочерей многократно репетировать их версию событий того дня. По его плану, они якобы ездили в соседний город Панаджи на религиозную церемонию, затем смотрели фильм в кинотеатре и ночевали в отеле. Виджай подкупает служащих кинотеатра и отеля, чтобы они подтвердили их присутствие. Он изучает каждую деталь фильма, который они якобы смотрели, чтобы семья могла убедительно рассказать о сюжете.
+Когда Сам не возвращается домой, его мать Михира Десмух начинает поиски. Полиция устанавливает, что Сам последний раз видели направляющимся к дому Саргамов. Михира лично допрашивает семью Виджая, но они четко придерживаются заученной версии событий. Несмотря на подозрения, у полиции нет доказательств, и алиби семьи кажется безупречным.
+Отчаявшаяся Михира использует свое служебное положение, чтобы оказать давление на семью Саргамов. Полиция арестовывает Виджая и подвергает его жестоким пыткам, пытаясь выбить признание. Нандини и дочерей также допрашивают и запугивают, но они не сдаются и продолжают повторять заученную версию. Виджай выдерживает пытки, не выдавая семью.
+Михира обнаруживает, что билеты в кинотеатр были куплены на день позже указанной даты, и понимает, что алиби сфабриковано. Однако это открытие не дает ей прямых доказательств убийства. Полиция обыскивает дом Саргамов и прилегающую территорию, но не находит тела. Виджай предусмотрительно переместил останки Сама в другое место еще до начала активных поисков.
+Дело заходит в тупик. Михира, несмотря на твердую уверенность в виновности семьи Саргамов, не может их арестовать из-за отсутствия доказательств. Виджай становится местной знаменитостью как человек, который смог противостоять коррумпированной полицейской системе и защитить свою семью от несправедливого обвинения.
+В кульминационный момент происходит неожиданный поворот. Михира решается на отчаянный шаг и инсценирует убийство Ану, младшей дочери Виджая. Она тайно забирает девочку и прячет ее, заставляя семью поверить, что Ану мертва. Это становится последней каплей для Нандини, которая готова во всем признаться, чтобы спасти оставшуюся дочь.
+Однако Виджай разгадывает план Михиры. В драматической сцене в полицейском участке он противостоит генеральному инспектору и ее подчиненным. Виджай признается в сокрытии тела, но утверждает, что это было самооборона, а не преднамеренное убийство. Он рассказывает всю правду о том, как Сам шантажировал его дочь, и как произошла трагедия.
+В финале фильма выясняется, что Виджай переиграл всех. Тело, которое он показывает полиции, оказывается останками собаки, а настоящее тело Сама надежно спрятано в другом месте. Михира осознает, что была обманута, но уже не может ничего доказать. Дело закрывается, семья Саргамов остается свободной, а Виджай демонстрирует, что простой человек может победить систему, используя ум, терпение и знания, полученные даже из развлекательных фильмов. История заканчивается тем, что семья восстанавливает нормальную жизнь, но навсегда изменилась после пережитых испытаний.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Охота', 'A teacher lives a lonely life, all the while struggling over his son''s custody. His life slowly gets better as he finds love and receives good news from his son, but his new luck is about to be brutally shattered by an innocent little lie.', '2012-01-01', 1, '115 minutes', 'Jagten', 8.3, 'Фильм разворачивается в небольшом датском городке, где живет Лукас - добрый и любящий мужчина средних лет, работающий воспитателем в детском саду. Лукас переживает тяжелый период в жизни - он проходит через болезненный развод с женой, которая получила опеку над их сыном-подростком Маркусом. Несмотря на финансовые трудности, Лукас пытается сохранить отношения с сыном и планирует переехать к нему, как только найдет более стабильную работу.
+В детском саду Лукас пользуется любовью и уважением детей. Особенно к нему привязана пятилетняя Клара - дочь его лучшего друга Тео. Клара происходит из благополучной семьи, но страдает от недостатка внимания родителей, которые постоянно заняты работой. Она находит в Лукасе фигуру отца, которого ей не хватает дома, и часто дарит ему рисунки и самодельные подарки.
+Однажды Клара, подражая поведению, которое увидела в порнографическом фильме на телефоне своего старшего брата, дарит Лукасу самодельное сердечко и пытается поцеловать его в губы. Лукас мягко, но решительно отстраняет девочку, объясняя, что так делают только взрослые, которые любят друг друга, и отправляет ее играть с другими детьми. Клара чувствует себя отвергнутой и обиженной.
+Позднее тем же днем заведующая детским садом Гретта замечает, что Клара выглядит расстроенной, и осторожно расспрашивает ее. Клара, все еще обиженная на Лукаса, говорит, что он показал ей свой пенис. Она описывает мужской половой орган, используя слова, которые слышала от брата, когда тот смотрел порнографию. Гретта, следуя протоколу, немедленно сообщает об этом властям и руководству детского сада.
+Лукаса мгновенно отстраняют от работы до выяснения обстоятельств. Несмотря на то, что Клара довольно быстро отказывается от своих слов, говоря, что солгала, взрослые решают, что ребенок просто боится и пытается защитить обидчика. Психолог, работающий с Кларой, использует наводящие вопросы, которые только укрепляют веру взрослых в виновность Лукаса.
+Новость о предполагаемом преступлении быстро распространяется по маленькому городку. Жители, многие из которых знали Лукаса годами, начинают сторониться его. Его лучший друг Тео, отец Клары, оказывается в невозможной ситуации - он должен выбирать между дружбой и защитой своей дочери. Под давлением жены и общественного мнения он прекращает общение с Лукасом.
+Ситуация быстро выходит из-под контроля. Другие родители начинают расспрашивать своих детей, не делал ли Лукас что-то неподобающее с ними. Под влиянием истерии и наводящих вопросов некоторые дети начинают "вспоминать" инциденты, которых никогда не было. Лукаса обвиняют в систематическом растлении детей.
+Лукас становится изгоем в собственном городе. Его увольняют из детского сада, в магазинах ему отказывают в обслуживании, соседи избегают его. Кто-то бросает камень в окно его дома, кто-то убивает его собаку. Даже его собственный сын Маркус поначалу сомневается в невиновности отца, что причиняет Лукасу особенно сильную боль.
+Полицейское расследование не находит никаких доказательств виновности Лукаса. Клара неоднократно говорит, что солгала, но взрослые продолжают интерпретировать это как попытку защитить "обидчика". Лукас отказывается покинуть город, несмотря на давление. Он настаивает на своей невиновности и требует, чтобы люди поверили ему.
+Постепенно Маркус начинает понимать, что его отец невиновен, и переезжает к нему жить. Сын становится единственной поддержкой Лукаса в этот тяжелый период. Они вместе переносят травлю и изоляцию.
+Кульминация наступает во время рождественской службы в местной церкви. Лукас, несмотря на враждебность окружающих, приходит на службу, желая показать, что не собирается прятаться. В церкви присутствует почти весь город, включая семью Тео. Напряжение достигает пика, когда Маркус Лукаса, старший брат Клары, не выдерживает и нападает на Лукаса, обвиняя его в том, что он сделал с его сестрой. Завязывается драка, которая разрешается только благодаря вмешательству других прихожан.
+Проходит год. Официальное расследование полностью оправдывает Лукаса, и обвинения с него снимают. Жизнь в городе постепенно возвращается к нормальному состоянию. Лукас находит новую работу в школе, люди снова начинают с ним здороваться. Тео делает попытки восстановить дружбу, и Лукас, хоть и с трудом, принимает его извинения.
+Во время охоты на оленей, традиционного мужского мероприятия в их городе, Лукас впервые за долгое время чувствует себя принятым обществом. Мужчины снова общаются с ним как с равным, и кажется, что кошмар позади. Однако в финале фильма, когда Лукас отделяется от группы охотников, в него кто-то стреляет. Пуля пролетает в опасной близости от его головы.
+Лукас не видит стрелявшего и не знает, была ли это случайность или намеренная попытка убийства. Он понимает, что хотя официально он оправдан, подозрения и ненависть в сердцах некоторых людей могут сохраниться навсегда. Клара, теперь уже школьница, дружелюбно машет ему рукой, когда он проходит мимо, но этот момент только подчеркивает трагическую иронию ситуации.
+Фильм заканчивается пониманием того, что репутация, разрушенная ложным обвинением, может никогда полностью не восстановиться, и что в обществе всегда найдутся те, кто будет помнить только обвинение, но не оправдание.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Развод Надера и Симин', 'A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating, plot_summary parent who has Alzheimer''s disease.', '2011-01-01', 1, '123 minutes', 'Jodaeiye Nader az Simin', 8.3, 'История разворачивается в современном Тегеране и рассказывает о семейной паре среднего класса, которая переживает серьезный кризис в отношениях. Симин хочет покинуть Иран вместе с одиннадцатилетней дочерью Термех и переехать в другую страну, чтобы обеспечить ребенку лучшее будущее и больше возможностей. Она уже получила визы для себя и дочери, но Надер категорически отказывается уезжать, поскольку не может оставить своего пожилого отца, страдающего болезнью Альцгеймера.
+Из-за этих непримиримых разногласий Симин подает на развод, но суд отказывается удовлетворить ее просьбу, считая причину недостаточно веской. Тогда Симин принимает решение временно уйти из дома и поселиться у своей матери, оставив Надера одного заботиться об отце и дочери. Термех оказывается в центре конфликта между родителями, и ей приходится выбирать, с кем остаться.
+Надер, оставшись один с больным отцом, нанимает сиделку Разие, молодую женщину из бедной религиозной семьи, которая беременна и скрывает свою работу от мужа Ходжата. Разие изо всех сил старается справляться с уходом за пожилым мужчиной, но это оказывается значительно сложнее, чем она ожидала. Дедушка часто не узнает ее, может быть агрессивным, и за ним требуется постоянный присмотр.
+Однажды Надер возвращается домой раньше обычного и обнаруживает, что отец привязан к кровати, а Разие отсутствует. Он приходит в ярость от того, что сиделка оставила беспомощного больного человека одного. Когда Разие возвращается, между ней и Надером происходит жестокая ссора. В порыве гнева Надер выталкивает женщину из квартиры, и она падает на лестнице.
+На следующий день выясняется, что Разие потеряла ребенка и находится в больнице. Ее муж Ходжат обвиняет Надера в том, что тот убил их нерожденного ребенка, и требует справедливости. Надер же утверждает, что не знал о беременности Разие и что его действия не могли стать причиной выкидыша. Начинается судебное разбирательство, которое разделяет семьи и обнажает глубокие социальные противоречия в иранском обществе.
+В ходе расследования выявляются различные версии произошедшего. Разие признается, что в день инцидента была сбита машиной по дороге на работу, но скрыла это от мужа. Возникает вопрос: что именно стало причиной выкидыша - падение на лестнице или более ранняя травма. Ходжат, узнав правду, оказывается в сложном положении, но его гордость и принципы не позволяют ему отступить.
+Параллельно разворачивается история отношений между Надером и Симин. Судебное дело сближает их, они пытаются защитить семью и найти выход из сложившейся ситуации. Симин даже готова отказаться от планов эмиграции ради сохранения семьи. Однако между супругами остаются недоверие и обиды, которые накапливались годами.
+Термех становится ключевой фигурой в разрешении конфликта. Девочка знает важную информацию о том, что произошло в день инцидента, но ее показания могут навредить отцу. Она мучается выбором между правдой и защитой семьи. Надер просит дочь солгать ради него, что становится для девочки серьезным моральным испытанием.
+В конце концов семья Разие и Ходжата соглашается на денежную компенсацию, но при условии, что Надер публично принесет извинения и поклянется на Коране, что не знал о беременности. Для Надера, человека не очень религиозного, эта клятва не представляет большой проблемы, но его мучает совесть, поскольку он подозревал о беременности Разие.
+Кульминацией фильма становится сцена в суде, где Надер должен принести клятву. В последний момент он отказывается это делать, что приводит к краху достигнутого соглашения. Дело принимает новый оборот, и конфликт между семьями возобновляется с новой силой.
+Финал фильма остается открытым. Судья предлагает Термех самой выбрать, с кем из родителей она хочет жить после развода. Девочка просит время на размышления, и фильм заканчивается сценой ожидания в коридоре суда, где Надер и Симин сидят по разные стороны, а их дочь должна принять решение, которое определит будущее всей семьи. Зритель так и не узнает, какой выбор сделает Термех, что подчеркивает сложность и неоднозначность жизненных ситуаций, в которых нет простых решений.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Пожары', 'Twins journey to the Middle East to discover their family history and fulfill their mother''s last wishes.', '2010-01-01', 1, '131 minutes', 'Incendies', 8.3, 'Фильм начинается в Канаде, где нотариус Жан Лебель зачитывает завещание недавно умершей Наваль Марван ее взрослым детям-близнецам Жанне и Симону. Наваль была эмигранткой с Ближнего Востока, работавшей уборщицей в университете. В завещании содержатся странные и болезненные требования: Жанна должна найти их отца, которого они считали мертвым, и передать ему конверт, а Симон должен найти их брата, о существовании которого они не знали, и также передать ему письмо. Только после выполнения этих условий на могиле матери может появиться надгробный камень. Симон отказывается участвовать в том, что считает бредом умирающей женщины, но Жанна, математик по профессии, отправляется на родину матери, в неназванную ближневосточную страну, погруженную в гражданскую войну.
+В стране Жанна обращается к нотариусу Вадиму Кальфату, который был другом ее матери. Постепенно открывается трагическая история Наваль. В молодости она жила в горной деревне, где влюбилась в палестинского беженца. Их роман вызвал ярость в ее христианской семье, особенно у братьев. Когда Наваль забеременела, семья изгнала ее, а возлюбленного убили. Ребенка, сына, у нее отобрали сразу после рождения и отдали в приют, вытатуировав ему на пятке три точки для опознания.
+Наваль поклялась найти своего первенца и отправилась в город получать образование. Она стала активисткой левой организации и участвовала в политической борьбе. Во время эскалации конфликта между христианами и мусульманами Наваль совершила теракт, расстреляв автобус с христианскими ополченцами в отместку за резню в палестинском лагере беженцев. Этот акт сделал ее разыскиваемой террористкой.
+Наваль была арестована и отправлена в тюрьму Хавр Давуд, печально известную пытками и изнасилованиями заключенных. Там она провела пятнадцать лет, подвергаясь постоянным пыткам и сексуальному насилию со стороны охранников. В тюрьме она получила прозвище "Женщина, которая поет", потому что продолжала рассказывать истории и петь другим заключенным, несмотря на запреты и наказания. От изнасилований в тюрьме она забеременела близнецами - Жанной и Симоном.
+Жанна узнает, что главным палачом и насильником в тюрьме был человек по имени Абу Тарек. Она разыскивает его и обнаруживает шокирующую правду: Абу Тарек - это ее старший брат, тот самый сын, которого отняли у Наваль при рождении. Мальчик вырос в приюте, стал солдатом-наемником, и его жестокость была легендарной. Татуировка из трех точек на пятке подтверждает его личность.
+Еще более ужасающим открытием становится то, что Абу Тарек не только насиловал свою мать в тюрьме, но и является отцом близнецов. Это означает, что Жанна и Симон одновременно являются детьми и внуками Наваль, а также сводными братом и сестрой своего старшего брата-отца. Вся семейная структура оказывается чудовищно искаженной последствиями войны и насилия.
+Симон, который изначально отказывался участвовать в поисках, прилетает к сестре и узнает правду. Близнецы находят Абу Тарека, который после окончания войны стал обычным механиком в автомастерской, живущим под новым именем. Когда они сообщают ему, кто они такие, мужчина полностью ломается психически, осознав весь ужас того, что он делал, не зная, что его жертва была его собственной матерью.
+Жанна и Симон передают письма Абу Тареку и возвращаются в Канаду, где передают нотариусу письмо от их матери, адресованное им самим. В этом письме Наваль объясняет, что всю оставшуюся жизнь хранила молчание не из-за травмы, а из-за невозможности рассказать детям правду об их происхождении. Она просит их не судить их брата-отца слишком строго, поскольку он тоже был жертвой обстоятельств и не знал правды.
+Фильм заканчивается тем, что на могиле Наваль наконец устанавливают надгробный камень, а близнецы пытаются смириться с ужасающей правдой о своей семье. История показывает, как циклы насилия и мести разрушают человеческие жизни на протяжении поколений, превращая жертв в палачей, а любовь в трагедию. Молчание Наваль было не проявлением равнодушия к детям, а актом материнской любви, попыткой защитить их от знания, которое могло бы их уничтожить.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Чудо в камере № 7', 'A story of love between a mentally-ill father who was wrongly accused of murder and his lovely six years old daughter. The prison would be their home. Based on the 2013 Korean movie 7-beon-bang-ui seon-mul (2013).', '2019-01-01', 1, '132 minutes', 'Miracle in cell NO.7', 8.3, 'Фильм начинается в современности, где молодой адвокат Йесын поднимает дело своего давно казнённого отца Йонгу, чтобы очистить его имя Чудо в камере № 7 — Википедия. Затем действие переносится в 1997 год, где разворачивается основная история.
+Ли Йон Гу - добродушный мужчина с умственной отсталостью, чей интеллект соответствует уровню шестилетнего ребенка. Он живет со своей маленькой дочерью Йесын, которая несмотря на свой юный возраст гораздо умнее отца и часто заботится о нем как взрослая. Йон Гу работает дворником и живет скромно, но они с дочерью очень любят друг друга. Их любимое развлечение - смотреть мультфильм "Сейлор Мун", и Йесын мечтает о рюкзаке с изображением этого персонажа.
+Однажды Йон Гу идет в магазин игрушек, чтобы купить дочери желанный рюкзак "Сейлор Мун". В магазине он встречает маленькую девочку, дочь комиссара полиции, которая тоже хочет этот рюкзак. Когда девочка случайно падает с лестницы, пытаясь достать рюкзак, и получает смертельную травму головы, Йон Гу пытается ей помочь. Однако его находят рядом с мертвым телом ребенка, держащим в руках тот самый рюкзак.
+Из-за своей умственной отсталости Йон Гу не может четко объяснить произошедшее. Полиция, возглавляемая отцом погибшей девочки, комиссаром Хван Чун Хо, арестовывает его по обвинению в убийстве и изнасиловании ребенка. Йон Гу подвергается жестоким допросам и пыткам, в результате которых он подписывает признание в преступлении, которого не совершал, просто чтобы прекратить страдания.
+Йон Гу приговаривают к смертной казни и помещают в камеру номер 7 - камеру для особо опасных преступников, ожидающих исполнения приговора. Поначалу сокамерники встречают его враждебно, считая детоубийцей и педофилом. В камере находятся разные преступники: Со Ян Хо по прозвищу "Янки" - главарь банды, Шин Бон Сик - мошенник и аферист, Мин Хван Ки - религиозный фанатик, Лим Пен Сик - пожилой заключенный, и Кан Ман Бом - бывший гангстер.
+Постепенно заключенные понимают, что Йон Гу невиновен. Его детская наивность, доброта и искреннее горе по поводу разлуки с дочерью убеждают их в том, что он не способен на такое преступление. Особенно их трогает то, как Йон Гу рассказывает о своей дочери и как сильно он по ней скучает. Сокамерники начинают защищать его от других заключенных и постепенно становятся его друзьями.
+Тем временем маленькая Йесын остается одна. Ее помещают в детский дом, но она постоянно пытается сбежать к отцу. Девочка умна не по годам и понимает, что отец невиновен. Она несколько раз пытается попасть в тюрьму, чтобы увидеть папу, но безуспешно.
+Сокамерники Йон Гу, видя его страдания, решают помочь ему встретиться с дочерью. Они разрабатывают сложный план, как тайно провести девочку в тюрьму. Во время массовых беспорядков в тюрьме, которые они организуют, Йесын удается проникнуть внутрь и добраться до камеры номер 7, спрятавшись в мешке для белья.
+Встреча отца с дочерью после долгой разлуки становится невероятно трогательной. Йесын прячется в камере несколько дней, и все заключенные помогают скрывать ее присутствие от охранников. За это время между всеми обитателями камеры складываются теплые, почти семейные отношения. Заключенные учат девочку разным вещам, играют с ней, заботятся о ней. Йесын для них становится как родная дочь или внучка.
+Особенно сильная связь возникает между Йесын и Янки, который раньше был жестоким преступником, но теперь проявляет неожиданную нежность к ребенку. Все заключенные преображаются под влиянием невинности и чистоты девочки, вспоминая о своих собственных семьях и детях.
+Однако счастье длится недолго. Йесын обнаруживают, и ее выводят из тюрьмы. Начальство тюрьмы в ярости от того, что заключенные сумели провести ребенка в камеру, и всех обитателей камеры номер 7 жестоко наказывают. Но они не сожалеют о своем поступке, видя, как счастлив был Йон Гу от встречи с дочерью.
+После этого инцидента власти решают ускорить исполнение приговора Йон Гу. Назначается дата казни. Йон Гу не понимает, что такое смертная казнь, и сокамерники не могут объяснить ему правду. Они говорят ему, что его просто переведут в другую тюрьму.
+В последние дни перед казнью сокамерники пытаются создать для Йон Гу праздничную атмосферу. Они организуют импровизированный день рождения, дарят ему подарки, сделанные своими руками. Йон Гу счастлив и наивно радуется, не подозревая о своей участи.
+В день казни Йон Гу все еще не понимает, что происходит. Он прощается с сокамерниками, думая, что просто переезжает. Только в последний момент, когда его ведут к электрическому стулу, он начинает понимать ужас происходящего. Его последние слова - просьба позаботиться о его дочери.
+Смерть Йон Гу потрясает всех заключенных камеры номер 7. Они понимают, что потеряли не просто сокамерника, а настоящего друга, который изменил их всех к лучшему. Янки особенно тяжело переживает потерю, чувствуя, что не смог защитить невинного человека.
+Прошло много лет. Йесын выросла и стала адвокатом, как и планировала. Она всю жизнь знала, что отец невиновен, и посвятила свою карьеру тому, чтобы доказать это. Она находит новые доказательства, включая записи камер наблюдения, которые показывают, что произошло в магазине игрушек на самом деле.
+В финале фильма проходит судебное заседание, где Йесын представляет доказательства невиновности отца. Настоящая причина смерти девочки - несчастный случай, а Йон Гу просто пытался ей помочь. Суд посмертно оправдывает Йон Гу, очищая его имя.
+На судебном заседании присутствуют выжившие бывшие сокамерники отца, которые теперь стали свидетелями его доброты и невиновности. Они плачут, вспоминая своего друга, который научил их любить и быть лучше. Йесын наконец может с гордостью носить фамилию отца, зная, что мир узнал правду о нем.
+Фильм заканчивается флешбэком, где показано, как Йон Гу и маленькая Йесын смотрят "Сейлор Мун" и мечтают о будущем. Эта сцена подчеркивает трагичность потери невинного человека и силу любви между отцом и дочерью, которая преодолела даже смерть.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Отец мой и сын мой', 'The family of a left-wing journalist is torn apart after the military coup of Turkey in 1980.', '2005-01-01', 1, '112 minutes', 'Babam ve Oglum', 8.3, 'История начинается в 1980 году, когда в Турции происходит военный переворот. Садык, молодой левый активист и журналист, вынужден бежать из страны вместе со своей женой Марией, которая беременна. Они эмигрируют в Грецию, где рождается их сын Дениз. Садык покидает родную деревню и семью, не простившись со своим отцом Хюсейном, строгим и консервативным человеком, который не одобрял политическую деятельность сына.
+Прошло восемнадцать лет. Садык работает в Греции журналистом, но постоянно тоскует по родине. Его жена Мария умирает от рака, оставив его одного с семнадцатилетним сыном Дениз, который говорит только по-гречески и совершенно не знает турецкую культуру. После смерти жены Садык принимает решение вернуться в Турцию вместе с сыном, чтобы воссоединиться с отцом, которого не видел почти два десятилетия.
+Возвращение в родную деревню на побережье Черного моря оказывается болезненным для всех. Хюсейн, теперь уже пожилой мужчина, с трудом прощает сына за долгое отсутствие и за то, что тот женился на иностранке-христианке. Старик чувствует себя преданным и обиженным, хотя в глубине души рад возвращению сына. Дениз совершенно не понимает деда и местных обычаев, чувствует себя чужим в этой стране, которую отец называет родиной.
+Садык пытается наладить отношения с отцом и помочь сыну адаптироваться к новой жизни. Он устраивается работать учителем в местной школе, но сталкивается с предрассудками и подозрительностью со стороны консервативного сельского сообщества. Многие помнят его как смутьяна и левого активиста, и относятся к нему настороженно.
+Постепенно между тремя поколениями начинают налаживаться отношения. Дениз учит турецкий язык и знакомится с местными ребятами, хотя поначалу испытывает серьезные трудности в общении. Хюсейн, несмотря на свою суровость, начинает привязываться к внуку и пытается передать ему семейные традиции. Садык работает над восстановлением доверия отца и старается быть мостом между двумя мирами для своего сына.
+Однако семейная идиллия оказывается недолгой. У Садыка диагностируют рак легких в терминальной стадии. Врачи говорят, что жить ему осталось совсем немного. Садык скрывает свою болезнь от отца и сына, не желая причинять им боль. Он понимает, что должен успеть восстановить разрушенные отношения и подготовить близких к своему уходу.
+Состояние Садыка постепенно ухудшается, но он продолжает работать и заботиться о семье. Он старается провести как можно больше времени с сыном, обучая его турецкому языку и рассказывая о семейной истории. С отцом Садык пытается найти общий язык, объясняя свои поступки прошлого и прося прощения за причиненную боль.
+Хюсейн постепенно начинает понимать мотивы сына и сожалеть о потерянных годах. Старик видит, как Садык мучается от болезни, хотя тот старается это скрывать. Между отцом и сыном происходят важные разговоры о жизни, семье, прощении и любви. Дениз тоже начинает чувствовать себя частью турецкой семьи и привязывается к деду.
+Кульминация наступает, когда Садык больше не может скрывать свою болезнь. Он попадает в больницу, и правда выходит наружу. Хюсейн и Дениз потрясены новостью о его неизлечимой болезни. Отец винит себя за потерянное время и холодность в отношениях с сыном. Дениз осознает, что может потерять единственного оставшегося родителя.
+Последние дни Садыка проходят в атмосфере любви и взаимного прощения. Хюсейн неотлучно находится рядом с сыном, ухаживает за ним и просит прощения за прошлые обиды. Дениз изучает турецкий язык с новым рвением, понимая, что это единственная связь с отцом и дедом. Садык чувствует умиротворение от того, что смог воссоединить семью перед своим уходом.
+Фильм завершается смертью Садыка, которая происходит в окружении любящих его людей. Хюсейн и Дениз остаются вдвоем, но теперь между ними установилась крепкая связь. Дед берет на себя воспитание внука, а Дениз принимает Турцию как свою родину. В финальных сценах показано, как проходят похороны Садыка, на которые приходит вся деревня, и как дед с внуком начинают новую жизнь вместе, объединенные памятью о любимом человеке и пониманием важности семейных уз.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бесславные ублюдки', 'In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner''s vengeful plans for the same.', '2009-01-01', 1, '153 minutes', 'Inglourious Basterds', 8.3, 'Фильм разворачивается в оккупированной нацистами Франции в 1944 году и состоит из пяти глав. История начинается с того, как полковник СС Ганс Ланда, известный как "Охотник на евреев", прибывает на ферму к Перье Лападиту в сельской местности. Ланда подозревает, что фермер прячет еврейскую семью Дрейфусов. Во время напряженного допроса, проводимого на французском языке, чтобы скрытые под полом евреи могли понять происходящее, Ланда психологически ломает фермера. Лападит в конце концов выдает местонахождение семьи. Нацисты расстреливают всю семью через пол, но восемнадцатилетней Шошанне Дрейфус удается сбежать. Ланда видит ее бегство, но не преследует, крикнув ей вслед прощальные слова.
+Четыре года спустя лейтенант Альдо Рейн, американский солдат с частично индейскими корнями, формирует отряд еврейско-американских солдат для проведения террористических операций против нацистов во Франции. Члены отряда, прозванного "Ублюдками", специализируются на жестоких убийствах немецких солдат и скальпировании их жертв. Рейн требует от каждого солдата принести ему сто нацистских скальпов. Особенно жесток сержант Донни Доновиц, прозванный "Медвежьей битой" за свою привычку забивать пленных немцев бейсбольной битой.
+Тем временем Шошанна, выжившая под именем Эммануэль Мимье, управляет кинотеатром в Париже. В ее кинотеатр влюбляется немецкий снайпер Фредерик Золлер, герой войны, о подвигах которого снят пропагандистский фильм "Гордость нации". Золлер добивается того, чтобы премьера фильма состоялась именно в кинотеатре Шошанны. На премьере будут присутствовать высшие чины нацистской партии, включая Геббельса, Геринга и самого Гитлера.
+Шошанна понимает, что это идеальная возможность для мести. Она планирует поджечь кинотеатр во время премьеры, используя крайне горючую нитратную пленку, которая хранится в подвале. Ее помощник и любовник Марсель, чернокожий француз, помогает ей в подготовке. Они готовят специальную пленку с сообщением Шошанны, которое должно быть показано после поджога.
+Параллельно британская разведка планирует операцию "Киносеанс" с целью ликвидировать нацистское руководство во время той же премьеры. Лейтенант Арчи Хикокс, кинокритик, превратившийся в офицера разведки, должен встретиться с немецкой актрисой Бриджит фон Хаммерсмарк, которая работает на союзников. К операции также привлекают двух немецкоговорящих членов отряда "Ублюдков" - Хьюго Штиглица, бывшего немецкого солдата, перешедшего на сторону союзников после убийства своих офицеров, и Вильгельма Вики.
+В таверне "Ла Луизиан" встреча разведчиков с фон Хаммерсмарк идет не по плану. Хикокс выдает себя неправильным жестом при заказе трех стаканов виски - он показывает три пальца по-английски, а не по-немецки. Майор СС Хеллстром, которого они встретили в таверне, становится подозрительным. Завязывается перестрелка, в результате которой погибают все присутствующие, кроме фон Хаммерсмарк, которая получает ранение в ногу.
+Рейн и Доновиц встречаются с раненой фон Хаммерсмарк и решают продолжить операцию. Актриса должна привести их на премьеру как своих итальянских гостей. Рейн и Доновиц выдают себя за итальянских кинопродюсеров, но их ужасное произношение итальянского языка сразу выдает обман.
+В ночь премьеры несколько планов пересекаются в кинотеатре. Ланда, который к этому времени понял истинную личность Шошанны, встречается с ней в частном разговоре. Однако он не препятствует ее плану, поскольку уже принял решение предать нацистов и перейти на сторону союзников в обмен на иммунитет и американское гражданство.
+Ланда арестовывает фон Хаммерсмарк и душит ее в небольшой комнате, поняв из ее туфли, оставшейся в таверне, что она шпионка. Затем он встречается с Рейном и Доновицем, предлагая им сделку: он обеспечит успех их миссии в обмен на безопасность и новую жизнь в Америке.
+Во время показа фильма "Гордость нации" Золлер пытается соблазнить Шошанну в проекционной кабине. Когда она отвергает его, он становится агрессивным. Шошанна убивает его, но получает смертельное ранение. Умирая, она запускает пожар, используя заготовленную нитратную пленку.
+Одновременно Рейн и Доновиц, переодетые скальпированными лицами убитых немцев, проникают в кинозал. Когда начинается пожар и на экране появляется лицо Шошанны, объявляющей о своей мести "за кровь еврейского народа", Доновиц и другой "Ублюдок" Омар открывают огонь по находящимся в ложе нацистским лидерам, включая Гитлера и Геббельса. Они расстреливают их в упор, а затем взрывают кинотеатр заранее заложенными бомбами.
+Пожар быстро охватывает весь кинотеатр, запертые двери не позволяют никому спастись. Погибают все высшие чины нацистской партии, что кардинально меняет ход войны. В финале Ланда, выполнив свою часть сделки, ожидает выполнения обещаний американцев. Однако Рейн, не доверяя нацистскому полковнику, вырезает на его лбу свастику ножом, заявляя, что это его "шедевр" - Ланда никогда не сможет снять форму и скрыть свое прошлое. Фильм заканчивается альтернативной версией истории, где война завершается гораздо раньше благодаря ликвидации нацистского руководства в парижском кинотеатре.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Вечное сияние чистого разума', 'When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.', '2004-01-01', 1, '108 minutes', 'Eternal Sunshine of the Spotless Mind', 8.3, 'Фильм начинается с того, что Джоэл Барриш, замкнутый и меланхоличный мужчина, неожиданно для себя прогуливает работу и садится в поезд до Монтока. На пляже он встречает яркую и импульсивную девушку Клементину Крузински с оранжевыми волосами. Между ними завязывается странный разговор, и они проводят день вместе, несмотря на то, что кажутся совершенно разными людьми.
+На следующий день Джоэл идет в книжный магазин, где работает Клементина, надеясь продолжить знакомство, но она ведет себя так, словно видит его впервые. Она холодна и даже враждебна к нему. Джоэл в недоумении и расстройстве покидает магазин.
+Вернувшись домой, Джоэл обнаруживает, что все его вещи, связанные с Клементиной - книги, записи, фотографии - валяются в коридоре в коробке. Его друзья Роб и Кэрри объясняют ему шокирующую правду: Клементина обратилась в компанию "Лакуна Инкорпорейтед", которая занимается удалением болезненных воспоминаний из памяти людей. Она стерла из своей памяти все воспоминания о двухлетних отношениях с Джоэлом.
+Потрясенный и разгневанный, Джоэл решает сделать то же самое - стереть Клементину из своей памяти. Он приходит в "Лакуна Инкорпорейтед", где встречается с доктором Говардом Мирзиаком, основателем компании. Мирзиак объясняет процедуру: пациента погружают в сон, а специальная аппаратура находит и удаляет все нейронные связи, связанные с конкретным человеком.
+Джоэл собирает все предметы, связанные с Клементиной, чтобы помочь технике настроиться на нужные воспоминания. Вечером к нему домой приезжает техническая команда: Стэн Функ и Патрик Мирман устанавливают оборудование, а Мэри Свонсон, секретарша доктора Мирзиака, наблюдает за процессом.
+Процедура начинается, и сознание Джоэла погружается в мир его воспоминаний о Клементине. Процесс удаления начинается с самых болезненных и свежих воспоминаний - их последней ссоры и расставания. Джоэл переживает эти моменты заново, наблюдая, как они постепенно стираются и исчезают из его памяти.
+Однако по мере того как процедура продвигается к более ранним и счастливым воспоминаниям, Джоэл начинает сожалеть о своем решении. Он заново переживает моменты влюбленности, первые встречи, смех, интимность и понимает, что не хочет терять эти драгоценные переживания, даже если они связаны с болью.
+В глубинах своего подсознания Джоэл начинает сопротивляться процедуре. Он берет образ Клементины за руку и пытается спрятать ее в воспоминаниях, которые не связаны с ней напрямую - в детских переживаниях, в воспоминаниях о других людях. Они бегут через различные периоды его жизни, пытаясь скрыться от процесса стирания.
+Тем временем в реальном мире происходят свои драмы. Патрик, один из техников, использует информацию из стертых воспоминаний Клементины, чтобы соблазнить ее в реальной жизни. Он повторяет фразы и жесты Джоэла, не понимая, что причиняет Клементине смутную боль, поскольку что-то в его поведении кажется ей знакомым, но она не может вспомнить что именно.
+Мэри, наблюдающая за процедурой, флиртует с доктором Мирзиаком, который приезжает проверить ход операции. Между ними происходит интимная близость, но позже выясняется шокирующая правда: у Мэри тоже была процедура удаления памяти, и она стерла воспоминания о романе с женатым доктором Мирзиаком. Когда жена доктора находит их вместе, она рассказывает Мэри правду об их прошлых отношениях.
+В сознании Джоэла воспоминания продолжают разрушаться. Образ Клементины становится все более размытым и искаженным, поскольку его память о ней исчезает. В отчаянии она говорит ему: "Встретимся в Монтоке" - имея в виду место, где они были счастливы вместе.
+Джоэл переносится в свое самое раннее воспоминание о Клементине - их первую встречу на пляже в Монтоке. Но даже это воспоминание начинает рассыпаться. Пляжный домик разваливается, и Клементина медленно исчезает из его памяти. В последний момент они говорят друг другу "до свидания", и Джоэл просыпается, не помня ничего о Клементине.
+Утром Джоэл, как и в начале фильма, неожиданно для себя прогуливает работу и едет в Монток, не понимая, что им движет. На том же пляже он встречает Клементину с оранжевыми волосами, и они знакомятся заново, не подозревая о своем прошлом.
+Однако их притяжение друг к другу оказывается сильнее стертой памяти. Они проводят день вместе и чувствуют странную близость, словно уже знают друг друга. Клементина приглашает Джоэла к себе домой.
+Тем временем Мэри, потрясенная открытием о своих стертых воспоминаниях, решает разоблачить компанию "Лакуна". Она крадет файлы всех пациентов и рассылает им записи их собственных сеансов, сделанные перед процедурой удаления памяти.
+На следующее утро и Джоэл, и Клементина получают кассеты с записями своих голосов, объясняющих, почему они хотели забыть друг друга. Они слушают эти записи и узнают правду о своих отношениях, о расставании и о процедуре стирания памяти.
+Сначала они в шоке. Клементина хочет уйти, говоря, что если они расстались один раз, то расстанутся снова. Но Джоэл останавливает ее, говоря "Хорошо" - соглашаясь на возможную боль ради возможности любить.
+Фильм заканчивается циклично: показаны кадры Джоэла и Клементины, бегущих по заснеженному пляжу и смеющихся, причем эта сцена повторяется несколько раз, словно они обречены встречаться, влюбляться, расставаться и стирать память друг о друге в бесконечном цикле. Но каждый раз они выбирают любовь, несмотря на знание о предстоящей боли.
+Финал предполагает, что истинная любовь и человеческие связи сильнее любых попыток их стереть, и что воспоминания - как болезненные, так и радостные - являются неотъемлемой частью того, кто мы есть.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Амели', 'Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.', '2001-01-01', 1, '122 minutes', 'Amélie', 8.3, 'История рассказывает о двадцатитрехлетней Амели Пулен, которая работает официанткой в парижском кафе на Монмартре. Амели выросла замкнутой и застенчивой девушкой из-за особенностей воспитания. Ее отец Рафаэль, бывший военный врач, был чрезмерно осторожным и редко позволял дочери общаться с другими детьми, ошибочно диагностировав у нее порок сердца из-за учащенного сердцебиения во время осмотров. Мать Амели Амандин погибла в нелепой случайности, когда на нее упала самоубийца, прыгнувшая с Нотр-Дама.
+Амели живет одна в небольшой квартире и ведет довольно уединенный образ жизни. Она любит простые удовольствия: макать ложку в сахар, разбивать корочку крем-брюле, пускать камешки по воде. У нее богатое воображение, и она постоянно наблюдает за окружающими людьми, придумывая истории об их жизни.
+Поворотный момент в жизни Амели происходит 31 августа 1997 года, когда она узнает о смерти принцессы Дианы. От шока девушка роняет крышку от флакона духов, которая откатывается и выбивает плитку в ванной. За плиткой Амели обнаруживает старую жестяную коробку с детскими сокровищами: игрушечным солдатиком, марками, фотографией футболиста и другими мелочами. Она понимает, что эти вещи принадлежали мальчику, который жил в ее квартире много лет назад.
+Амели решает найти владельца коробки и возвращает ее Бредодо, который теперь стал взрослым мужчиной с семьей. Встреча с детскими воспоминаниями глубоко трогает мужчину и помогает ему восстановить отношения с отчужденным сыном. Этот успех вдохновляет Амели, и она решает посвятить себя тайному улучшению жизни окружающих людей.
+Амели начинает серию добрых дел. Она помогает слепому старику перейти дорогу, подробно описывая ему все происходящее вокруг. Устраивает встречу своего соседа Дюфайеля, художника-затворника, который годами копирует картину Ренуара "Завтрак гребцов", с его бывшей возлюбленной. Она также сводит вместе Жоржетту, хозяйку табачной лавки, страдающую от одиночества, с Жозефом, постоянным клиентом кафе.
+Особое внимание Амели уделяет Люсьену Дюфайелю, пожилому соседу, который живет как затворник из-за болезни костей. Она тайно проникает в его квартиру, меняет местами его вещи и заменяет его адресную книгу на новую, где указаны только номера бывших возлюбленных, побуждая его восстановить старые связи.
+Параллельно Амели наказывает тех, кто причиняет зло другим. Она мстит Колиньону, злобному торговцу овощами, который издевается над своим помощником Люсьеном, страдающим задержкой развития. Амели проникает в квартиру торговца, меняет его будильники, подмешивает зубную пасту в крем для обуви, заменяет алкоголь на жидкость для полоскания рта и совершает другие мелкие пакости, доводя мужчину до паранойи.
+В своей работе в кафе "Два мельника" Амели наблюдает за постоянными посетителями: неудачником Ипполитом, который записывает все услышанные им оскорбления, писателем, который каждый год приходит выпить сливового ликера в память об умершем друге, и другими колоритными персонажами.
+Жизнь Амели меняется, когда она находит на станции метро фотоальбом, полный снимков из фотоавтомата, где запечатлен один и тот же таинственный молодой человек. Амели решает найти владельца альбома и начинает расследование. Выясняется, что альбом принадлежит Нино Кентину, который работает в секс-шопе и подрабатывает оператором в парке аттракционов "Луна-парк".
+Нино имеет странное хобби: он собирает порванные фотографии из фотоавтоматов и пытается восстановить лица людей. Его особенно интригует загадочный мужчина, который появляется на многих снимках. Амели узнает, что этот человек является служащим, который регулярно проверяет и чинит фотоавтоматы.
+Влюбившись в Нино с первого взгляда, Амели начинает сложную игру по его завоеванию. Она организует для него настоящий квест по всему Парижу, оставляя загадочные послания и подсказки. Амели ведет себя как тайный благодетель, направляя Нино по различным местам города, включая фотобудку на станции метро Аббессес, где она устраивает для него встречу с загадочным мужчиной из фотографий.
+Однако когда дело доходит до личного счастья, Амели становится робкой и неуверенной. Она несколько раз упускает возможность познакомиться с Нино лично, довольствуясь ролью таинственной незнакомки. Люсьен Дюфайель, который стал ее другом и советчиком, убеждает девушку не упустить свой шанс на любовь.
+Кульминация наступает, когда Амели наконец решается на прямой контакт. Она назначает Нино встречу в кафе "Два мельника", но в последний момент теряет решимость и прячется. Нино приходит на встречу, но не находит ее. Расстроенный, он уходит, забыв свой альбом.
+Дюфайель укоряет Амели за трусость и говорит, что она рискует остаться одинокой, как персонаж на картине Ренуара, которую он копирует. Этот разговор заставляет девушку пересмотреть свое поведение. Она понимает, что, помогая другим обрести счастье, она сама упускает возможность быть счастливой.
+В финале фильма Амели преодолевает свою застенчивость. Когда Нино приходит к ней домой за забытым альбомом, она наконец открывает ему дверь. Между ними происходит долгожданная встреча, которая перерастает в романтические отношения. Фильм заканчивается тем, что Амели обретает личное счастье, не переставая при этом делать мир вокруг себя лучше и добрее.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Большой куш', 'Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers and supposedly Jewish jewelers fight to track down a priceless stolen diamond.', '2000-01-01', 1, '104 minutes', 'Snatch', 8.3, 'История разворачивается в криминальном подземелье Лондона и начинается с кражи огромного бриллианта весом 86 карат в Антверпене. Вор-одиночка Фрэнки Четыре Пальца крадет камень у ортодоксальных евреев-торговцев алмазами и отправляется в Лондон, чтобы передать его нью-йоркскому гангстеру Ави Дентону. Однако в Лондоне Фрэнки попадает в ловушку, устроенную местным криминальным авторитетом Микки О''Нилом по прозвищу "Одноглазый Микки".
+Микки руководует подпольными боксерскими поединками без правил и ищет сильного бойца для предстоящего турнира. Он узнает о прибытии Фрэнки и его ценном грузе от информатора. Микки похищает Фрэнки и заставляет его поставить украденный бриллиант на кон в боксерском поединке. Фрэнки вынужден согласиться, но в процессе игры проигрывает камень Микки.
+Тем временем мелкие мошенники Томми и Тюрки пытаются купить караван для своей матери у группы ирландских цыган, известных как "пикеи". Главарь цыган Микки О''Нил предлагает им сделку: он продаст караван за смешную цену, если Томми проведет один боксерский поединок. Томми соглашается, не подозревая, что Микки - профессиональный боец-наемник, который может одним ударом отправить противника в нокаут.
+Поединок должен был быть договорным - Микки должен был продержаться четыре раунда, а затем упасть, но цыган нокаутирует своего противника одним ударом в первом же раунде. Это приводит в ярость букмекера Кайрота Берни, который потерял огромные деньги на ставках. Берни принуждает Томми и Тюрки заставить Микки драться снова, на этот раз по его правилам.
+Параллельно разворачивается история с поисками украденного бриллианта. Ави прилетает в Лондон со своим партнером Дугом Головой и нанимает местного "решалу" Вини Пулю, чтобы найти Фрэнки и вернуть камень. Вини - психопатичный киллер, который имеет странную привычку кормить свиней человеческими останками, поскольку свиньи способны полностью переварить человеческое тело за восемь минут.
+Фрэнки тем временем пытается связаться с Ави, но его постоянно перехватывают люди Микки. Одноглазый гангстер понимает ценность бриллианта и решает использовать его для собственного обогащения. Он заставляет Фрэнки звонить Ави и назначать встречи, которые оказываются ловушками.
+Ситуация осложняется, когда в игру вступает еще один криминальный авторитет - Кайрот Берни, который узнает о существовании бриллианта и тоже хочет им завладеть. Берни угрожает Томми и Тюрки, требуя, чтобы они заставили Микки проиграть следующий бой в четвертом раунде. Если цыган не выполнит условие, Берни убьет всех троих.
+Микки соглашается на сделку, но выдвигает свое условие - он хочет новый караван для своей матери взамен старого, который сгорел при загадочных обстоятельствах. Томми и Тюрки покупают роскошный караван, но обнаруживают, что мать Микки умерла, а сам он готовится к отъезду из Лондона.
+В день решающего боя происходит серия двойных игр и предательств. Микки выходит на ринг, но вместо того чтобы упасть в четвертом раунде, как было договорено, он нокаутирует противника в первом раунде. Это приводит Берни в бешенство, поскольку он снова теряет деньги на ставках.
+Берни приказывает своим людям убить Микки, Томми и Тюрки. Однако цыгане оказываются не такими беззащитными, как казались. Завязывается перестрелка, в ходе которой погибает большинство людей Берни. Сам Берни пытается сбежать, но его настигает возмездие от родственников Микки.
+Вини Пуля тем временем продолжает охоту за Фрэнки и бриллиантом. Он выясняет, что Фрэнки скрывается у Ави в отеле, и организует засаду. В результате короткой, но жестокой перестрелки Фрэнки получает смертельное ранение, но успевает проглотить бриллиант перед смертью.
+Ави и Даг Голова попадают в руки к Вини Пуле, который отвозит их на свою свиноферму, планируя скормить их свиньям. Однако им удается освободиться и повернуть оружие против Вини. В итоге сам Вини становится кормом для своих свиней.
+Поиски бриллианта приводят всех участников истории к морге, где должно быть вскрыто тело Фрэнки. Однако выясняется, что камень уже извлечен из желудка покойного и украден работником морга. След приводит к небольшой ювелирной лавке, где бриллиант уже огранен и подготовлен к продаже.
+В финальной сцене Томми случайно покупает этот же бриллиант в качестве подарка для своей подруги, не подозревая о его истинной ценности и той кровавой истории, которая с ним связана. Ави и Даг возвращаются в Нью-Йорк ни с чем, Микки исчезает вместе со своим цыганским табором, а лондонское криминальное подземелье остается таким же хаотичным и непредсказуемым, каким было всегда.
+История заканчивается тем, что все участники событий либо мертвы, либо остались ни с чем, кроме Томми, который неожиданно для себя стал обладателем самого ценного бриллианта в мире, даже не подозревая об этом.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Реквием по мечте', 'The drug-induced utopias of four Coney Island people are shattered when their addictions run deep.', '2000-01-01', 1, '102 minutes', 'Requiem for a Dream', 8.3, 'Фильм рассказывает о четырех людях, чьи жизни разрушаются под воздействием различных видов зависимости. История разворачивается в Бруклине и на Кони-Айленде.
+Гарри Голдфарб - молодой человек, живущий со своей овдовевшей матерью Сарой в небольшой квартире. Гарри употребляет героин вместе со своим лучшим другом Тайроном Лавом и девушкой Мэрион Сильвер. Сара Голдфарб - пожилая женщина, которая проводит дни в одиночестве, смотря телевизор и мечтая о том времени, когда была молодой и красивой.
+Гарри регулярно крадет телевизор матери, чтобы продать его и купить наркотики, а Сара каждый раз выкупает его обратно в ломбарде. Эта болезненная рутина повторяется снова и снова, причиняя страдания обеим сторонам, но ни один из них не может разорвать этот цикл.
+Сара получает телефонный звонок, в котором ей сообщают, что она выбрана для участия в популярном телешоу. На самом деле это обман - автоматический обзвон с рекламой, но одинокая женщина принимает это за правду. Она начинает мечтать о том, как появится на телевидении в своем любимом красном платье, которое носила на выпускном сына.
+Сара пытается влезть в старое платье, но обнаруживает, что сильно поправилась за годы. Она идет к врачу, чтобы похудеть, и тот выписывает ей амфетамины, антидепрессанты и транквилизаторы. Сара начинает принимать эти таблетки в увеличивающихся дозах, постепенно развивая зависимость от них.
+Под воздействием препаратов Сара худеет, но одновременно становится все более нервной, параноидальной и оторванной от реальности. Она начинает испытывать галлюцинации и мании преследования. Ей кажется, что ее холодильник пытается напасть на нее, а персонажи из телепередач разговаривают с ней напрямую.
+Тем временем Гарри, Тайрон и Мэрион мечтают разбогатеть, продавая наркотики. Они покупают чистый героин и планируют перепродавать его с прибылью. Мэрион мечтает открыть свой магазин одежды, а Гарри и Тайрон хотят стать крупными наркодилерами.
+Поначалу их план кажется успешным. Они зарабатывают деньги, покупают новую одежду, снимают хорошую квартиру. Мэрион даже начинает планировать свой бутик. Однако их собственное употребление наркотиков постоянно растет, и они тратят все больше денег и товара на себя.
+Ситуация осложняется, когда полиция начинает крупную операцию против наркоторговцев. Поставки героина прекращаются, а цены резко взлетают. Гарри, Тайрон и Мэрион оказываются в отчаянном положении - они больше не могут зарабатывать деньги, но их зависимость от наркотиков только усиливается.
+У Гарри развивается тяжелая инфекция в руке от грязных игл, но он отказывается идти к врачу, боясь, что его арестуют. Рука распухает и начинает гнить, причиняя ему невыносимую боль. Тайрон также страдает от абстинентного синдрома и отчаянно ищет способы достать наркотики.
+Мэрион, не имея денег на героин, начинает заниматься проституцией. Сначала она продает свое тело незнакомцам, затем соглашается участвовать в унизительных сексуальных представлениях за наркотики. Ее мечты о собственном бизнесе превращаются в кошмар деградации и самоуничтожения.
+Состояние Сары тем временем критически ухудшается. Ее галлюцинации становятся все более яркими и пугающими. Она верит, что скоро появится на телевидении, и начинает готовиться к этому событию, хотя никакого приглашения на самом деле не было. Соседи вызывают скорую помощь, когда обнаруживают ее в состоянии полного психоза.
+Фильм достигает кульминации зимой, когда все четыре главных героя оказываются в катастрофическом положении. Гарри и Тайрон едут на юг в поисках наркотиков, но их арестовывают. Гарри попадает в тюремную больницу, где врачи ампутируют его зараженную руку. Тайрона отправляют на принудительные работы в тюрьму, где он подвергается жестокому обращению.
+Мэрион окончательно погружается в проституцию, участвуя в групповых сексуальных оргиях за дозу героина. Она полностью теряет человеческое достоинство и самоуважение.
+Сару помещают в психиатрическую больницу, где ей проводят электрошоковую терапию. Процедура превращает ее в овощ - она сидит в кресле с пустым взглядом, не узнавая окружающих людей. Ее мечты о телевизионной славе и красном платье навсегда остаются нереализованными.
+Фильм заканчивается серией параллельных сцен, показывающих всех четырех персонажей в их окончательном, разрушенном состоянии. Каждый из них лежит в позе эмбриона - Гарри без руки в тюремной больнице, Тайрон избитый в тюремной камере, Мэрион наркоманка в своей квартире, и Сара как живой труп в психиатрической больнице.
+Финальные кадры представляют мрачную иронию: каждый персонаж улыбается в своих снах или галлюцинациях, переживая счастливые моменты прошлого или несбыточные мечты о будущем, в то время как их тела разрушены, а жизни уничтожены. Фильм показывает, как зависимость не только разрушает физическое здоровье, но и убивает человеческие мечты, превращая надежды в иллюзии, а людей - в тени самих себя.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Красота по-американски', 'A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter''s best friend.', '1999-01-01', 1, '122 minutes', 'American Beauty', 8.3, 'История рассказывает о сорокадвухлетнем Лестере Бернэме, который переживает глубокий кризис среднего возраста. Он работает в рекламном агентстве уже четырнадцать лет, но чувствует себя неудачником и ненужным человеком. Его брак с женой Кэролин давно превратился в формальность, наполненную взаимными упреками и холодностью. Их семнадцатилетняя дочь Джейн презирает отца и считает его жалким неудачником.
+Кэролин Бернэм одержима успехом и материальным благополучием. Она работает агентом по недвижимости, но дела у нее идут не очень хорошо. Женщина постоянно стремится создать видимость идеальной семьи и успешной жизни, но внутри она так же несчастна, как и муж. Она помешана на порядке, садоводстве и поддержании безупречного внешнего вида их дома в пригороде.
+Джейн Бернэм чувствует отчуждение от родителей и стесняется своей внешности. Она дружит с Анджелой Хейз, одноклассницей, которая считает себя невероятно красивой и соблазнительной. Анджела постоянно хвастается своими мнимыми сексуальными похождениями и мечтает стать моделью.
+Переломный момент в жизни Лестера наступает, когда он приходит на школьное представление, где выступает его дочь. Там он видит Анджелу и мгновенно влюбляется в нее, несмотря на огромную разность в возрасте. Девушка кажется ему воплощением красоты и молодости, которых ему так не хватает в жизни. Лестер начинает фантазировать об Анджеле, и эти грезы полностью меняют его мировосприятие.
+Под влиянием своей одержимости Лестер кардинально меняет образ жизни. Он увольняется с ненавистной работы, начинает заниматься спортом, чтобы привести себя в форму, покупает красную спортивную машину и начинает курить марихуану. Лестер словно возвращается в подростковый возраст, игнорируя социальные нормы и ожидания.
+Параллельно развивается история новых соседей Бернэмов. Рядом поселяется семья полковника Фрэнка Фитца, отставного военного с крайне консервативными взглядами. У полковника есть сын Рики, странный молодой человек, который торгует наркотиками и постоянно снимает окружающий мир на видеокамеру. Рики находит красоту в самых неожиданных вещах и философски размышляет о жизни.
+Рики влюбляется в Джейн, и между ними завязываются отношения. Молодой человек показывает девушке мир через объектив своей камеры, обучая ее видеть красоту в повседневных вещах. Их роман развивается на фоне все большего безумия, которое охватывает взрослых.
+Кэролин, не выдержав охлаждения в браке, заводит роман с успешным агентом по недвижимости Бадди Кейном. Она видит в нем то, чем не смог стать ее муж: уверенного в себе, богатого и влиятельного мужчину. Их отношения основаны скорее на взаимном восхищении успехом друг друга, чем на настоящих чувствах.
+Полковник Фитц, обнаружив, что его сын торгует наркотиками, приходит в ярость. Между отцом и сыном происходит жестокая ссора, во время которой полковник избивает Рики. Молодой человек решает сбежать из дома вместе с Джейн, и они планируют уехать в Нью-Йорк.
+Ситуация достигает апогея, когда полковник Фитц, увидев, как Лестер и его сын общаются через окно, делает неправильные выводы об их отношениях. Консервативный военный, страдающий от внутренней гомофобии, решает разобраться с соседом. Он приходит к Лестеру под дождем и неожиданно пытается его поцеловать. Лестер мягко отвергает его, и потрясенный полковник уходит.
+В финальный вечер все сюжетные линии сходятся вместе. Анджела приходит к Бернэмам в гости и остается ночевать. Лестер, наконец получив возможность осуществить свои фантазии, обнаруживает, что Анджела на самом деле неопытная девственница, которая лишь притворялась искушенной. Их близость не состоится, но между ними происходит искренний разговор, в котором Лестер проявляет отеческую заботу.
+После этого разговора Лестер чувствует умиротворение и счастье. Он сидит за кухонным столом, разглядывая семейные фотографии и размышляя о красоте жизни. В этот момент в дом входит полковник Фитц с пистолетом и стреляет Лестеру в затылок.
+Фильм завершается закадровым монологом убитого Лестера, который рассказывает о красоте, которую он видел в своей жизни. Он говорит о том, что иногда в мире так много красоты, что сердце не может ее вместить. Камера показывает реакцию близких на смерть Лестера: Кэролин рыдает в шкафу среди его одежды, Джейн и Рики смотрят на его тело, а Анджела в ужасе от произошедшего. Лестер заключает, что не стоит бояться смерти, потому что жизнь прекрасна, и эта красота остается с нами навсегда.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Умница Уилл Хантинг', 'Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.', '1997-01-01', 1, '126 minutes', 'Good Will Hunting', 8.3, 'Уилл Хантинг - двадцатилетний молодой человек из рабочего района Южного Бостона, который работает уборщиком в Массачусетском технологическом институте. Несмотря на отсутствие формального образования, Уилл обладает феноменальными математическими способностями и фотографической памятью. Он может решать сложнейшие математические задачи, на которые у профессоров уходят месяцы, за считанные минуты. Однако Уилл скрывает свой талант и проводит время с друзьями детства - Чаки Салливаном, Морганом О''Мэлли и Билли МакБрайдом, занимаясь мелким хулиганством и выпивкой.
+Профессор математики MIT Джеральд Ламбо вывешивает на доске в коридоре сложную математическую задачу, над которой его аспиранты бились два года без результата. На следующий день он обнаруживает, что задача решена анонимным автором. Ламбо выставляет еще более сложную задачу, и она тоже оказывается решенной. Профессор организует слежку и выясняет, что задачи решает молодой уборщик.
+Тем временем Уилл попадает в неприятности с законом после драки, в которой он напал на полицейского, который несколько лет назад издевался над ним. Уиллу грозит тюремное заключение за нападение на офицера и предыдущие правонарушения. Ламбо предлагает судье сделку: он берет Уилла под свою опеку для математических занятий при условии, что молодой человек будет проходить психотерапию.
+Уилл соглашается на условия, но саботирует встречи с психотерапевтами. Он настолько хорошо знает психологию, что может манипулировать специалистами, анализировать их личные проблемы и доводить до эмоциональных срывов. Несколько известных психологов отказываются с ним работать после первых же сеансов.
+В отчаянии Ламбо обращается к своему бывшему однокурснику Шону Магуайру, психологу, который работает в общественном колледже Бункер Хилл. Шон сам выходец из рабочего класса Южного Бостона и понимает происхождение и проблемы Уилла лучше, чем элитарные специалисты. На первой встрече Уилл пытается анализировать картину в кабинете Шона и делать выводы о его личной жизни, но психолог останавливает его и предупреждает, что не позволит манипулировать собой.
+Постепенно между Шоном и Уиллом устанавливаются доверительные отношения. Выясняется, что Уилл рос в детских домах и приемных семьях, где подвергался физическому и психологическому насилию. Шрамы на его теле свидетельствуют о жестоких побоях. Из-за травматичного детства Уилл боится близких отношений и намеренно саботирует любые попытки людей приблизиться к нему.
+Шон тоже имеет свои психологические травмы. Его жена умерла от рака два года назад, и он до сих пор не может смириться с потерей. Он живет в прошлом, окружив себя ее вещами и воспоминаниями. В процессе терапии Уилла Шон сам начинает исцеляться от своей боли.
+Параллельно Ламбо пытается направить математический талант Уилла в нужное русло. Он организует встречи с представителями крупных корпораций и правительственных агентств, включая Агентство национальной безопасности, которые предлагают Уиллу высокооплачиваемую работу. Однако молодой человек отвергает все предложения, не желая использовать свои способности для создания оружия или служения системе, которую презирает.
+В это время Уилл знакомится с Скайлар, студенткой Гарварда по медицине, которая учится в Англии. Между ними возникают романтические отношения, но когда Скайлар признается в любви и предлагает Уиллу поехать с ней в Калифорнию, он панически отталкивает ее, придумывает жестокую ложь о том, что не любит ее, и разрывает отношения.
+Лучший друг Уилла Чаки работает на стройке и мечтает, чтобы его друг использовал свой талант и вырвался из их бедного района. В эмоциональном разговоре Чаки говорит Уиллу, что было бы оскорблением для всех них, если бы он остался в Южном Бостоне и не реализовал свой потенциал. Чаки мечтает о дне, когда придет забирать Уилла на работу, а его дома не окажется.
+Конфликт достигает пика, когда Ламбо и Шон спорят о будущем Уилла. Профессор считает, что психолог не стимулирует молодого человека к академическим достижениям, а Шон убежден, что Уилл должен сам выбрать свой путь, а не идти туда, куда его направляют другие.
+В кульминационный момент терапии Шон повторяет Уиллу фразу "Это не твоя вина" относительно перенесенного в детстве насилия. Сначала Уилл отвергает эти слова, но когда психолог продолжает повторять их, молодой человек наконец ломается и плачет, впервые позволив себе почувствовать боль от детских травм и принять тот факт, что он не виноват в том, что с ним происходило.
+После этого прорыва Уилл начинает меняться. Он мирится со Скайлар, признаваясь ей в любви и объясняя свое поведение. Шон тоже находит в себе силы отпустить прошлое - он убирает вещи жены и решает отправиться в путешествие, о котером они мечтали вместе.
+В финале фильма Уилл принимает решение отвергнуть все престижные предложения работы и отправиться в Калифорнию к Скайлар. Он оставляет Шону записку со словами благодарности. Когда Чаки приходит забирать друга на работу, он обнаруживает пустой дом и улыбается, понимая, что его мечта сбылась - Уилл наконец выбрал свой собственный путь и покинул район.
+Фильм заканчивается тем, что Уилл едет по шоссе в сторону Калифорнии, навстречу новой жизни, любви и возможности использовать свой талант так, как считает нужным. История показывает, что истинное взросление и исцеление происходят не тогда, когда человек реализует ожидания других, а когда он находит мужество быть самим собой и открыться для близких отношений.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Дети небес', 'After a boy loses his sister''s pair of shoes, he goes on a series of adventures in order to find them. When he can''t, he tries a new way to "win" a new pair.', '1997-01-01', 1, '89 minutes', 'Bacheha-Ye aseman', 8.3, 'Фильм рассказывает историю девятилетнего мальчика Али и его семилетней сестры Захры, живущих в бедном районе Тегерана. Их отец работает садовником и еле сводит концы с концами, а мать больна и нуждается в лечении.
+История начинается с того, что Али забирает отремонтированные розовые туфли своей младшей сестры из сапожной мастерской. По дороге домой он останавливается купить картофель для матери и оставляет пакет с туфлями рядом с овощной лавкой. Старый мусорщик, не заметив, что в пакете находится обувь, забирает его вместе с другим мусором.
+Когда Али возвращается за покупками, туфель уже нет. Он в панике обыскивает всю округу, расспрашивает торговцев, но безрезультатно. Мальчик понимает, что потерял единственную пару обуви сестры, а у семьи нет денег, чтобы купить новую.
+Дома Али с ужасом сообщает Захре о потере. Девочка расстраивается до слез - эти розовые туфли были ее единственной парой обуви, и без них она не может ходить в школу. Али умоляет сестру не рассказывать родителям о случившемся, обещая найти решение проблемы. Он боится расстроить больную мать и разгневать отца, который и так переживает из-за финансовых трудностей.
+Брат и сестра придумывают временное решение: они будут по очереди носить единственную пару обуви Али - его потрепанные кроссовки. Захра будет надевать их в школу утром, а после уроков быстро бежать домой, чтобы передать обувь Али для его дневных занятий.
+Эта схема требует идеальной синхронизации. Захра должна как можно быстрее добираться домой после школы, а Али - терпеливо ждать ее, рискуя опоздать на свои уроки. Каждый день превращается в гонку на время. Али часто опаздывает в школу и получает замечания от учителей, но не может объяснить истинную причину своих опозданий.
+Для маленькой Захры большие мужские кроссовки крайне неудобны - они постоянно спадают с ее ног, заставляя ее бежать в неловкой, смешной манере. Одноклассники начинают обращать внимание на ее странную обувь, и девочка чувствует себя неловко и пристыженно.
+Ситуация осложняется, когда Захра однажды теряет один кроссовок, переходя через ручей по дороге в школу. Кроссовок уносит течением, и девочка в отчаянии бежит за ним вдоль берега, но не может его достать. Она возвращается домой в слезах, в одной обуви. Али, несмотря на свое расстройство, утешает сестру и обещает, что они найдут выход.
+Кроссовок в итоге находит другой ребенок и возвращает его Захре, но инцидент показывает, насколько хрупким является их решение проблемы.
+Однажды Захра замечает свои потерянные розовые туфли на ногах у одноклассницы из бедной семьи. Она рассказывает об этом Али, и они решают проследить за девочкой, чтобы узнать, где она живет. Брат и сестра следуют за одноклассницей до ее дома в еще более бедном районе города.
+Увидев нищету, в которой живет семья девочки, и поняв, что ее слепой отец работает мусорщиком (тем самым, который случайно забрал туфли), Али и Захра понимают, что не могут просто потребовать обувь обратно. Эта семья нуждается в туфлях не меньше их.
+Али решает найти другой способ решить проблему. Он узнает о детском марафоне, где третье место награждается парой новых кроссовок, а первое место - более ценными призами. Али решает участвовать в забеге, планируя занять именно третье место, чтобы получить кроссовки, которые он сможет отдать Захре.
+Мальчик начинает тренироваться, бегая по улицам и паркам. Его потрепанные кроссовки совсем не подходят для бега, но он упорно готовится к соревнованию.
+Тем временем отец Али и Захры получает работу у богатого семейства - ему нужно привести в порядок их сад. Он берет с собой Али в качестве помощника. Мальчик видит роскошь, в которой живут богатые люди, и мечтает о том, чтобы его семья тоже могла позволить себе такую жизнь.
+Во время работы в саду Али случайно слышит разговор хозяйки дома с подругой о том, что она выбрасывает много хорошей одежды и обуви. Мальчик хочет попросить эти вещи для своей семьи, но стесняется и не решается заговорить.
+Наступает день марафона. Али регистрируется для участия в забеге среди детей его возрастной группы. Он нервничает, понимая, что от результата этого забега зависит решение проблемы с обувью для сестры.
+Марафон начинается, и Али бежит изо всех сил. Однако вскоре он понимает, что его план сложнее осуществить, чем казалось - во время забега невозможно контролировать свое место с такой точностью. Он может либо выиграть, либо проиграть, но занять именно третье место очень сложно.
+По ходу забега Али то выходит вперед, то отстает. Его старые кроссовки начинают разваливаться от нагрузки. Он думает о Захре, о ее слезах, о том, как она каждый день мужественно бегает в его неудобной обуви, и это придает ему силы.
+В финальном рывке Али изо всех сил стремится к финишу. Он обгоняет других бегунов и... побеждает в марафоне, заняв первое место. Толпа ликует, его поздравляют, вручают кубок и медаль.
+Но Али расстроен - ведь за первое место дают не кроссовки, а другие призы. Когда журналист спрашивает его о чувствах по поводу победы, мальчик может только спросить: "А кроссовки? Где мои кроссовки?" Взрослые не понимают, почему победитель расстроен.
+Али возвращается домой подавленный, несмотря на свою победу. Захра ждет его у окна, надеясь увидеть новую обувь. Когда она видит расстроенное лицо брата, она понимает, что план не сработал. Они оба плачут от разочарования.
+Дома Али снимает свои совершенно разорванные кроссовки и опускает ноги, покрытые мозолями и ранами от бега, в небольшой бассейн во дворе. В воде плавают золотые рыбки, создавая красивый, почти сказочный образ.
+Фильм заканчивается сценой, где отец Али и Захры возвращается домой на велосипеде. В корзине велосипеда лежат две пары детской обуви - для сына и для дочери. Эта сцена дает зрителю надежду на то, что проблема детей наконец-то будет решена, хотя сами дети об этом пока не знают.
+Финал фильма символичен - он показывает, что иногда решение проблем приходит неожиданно и не обязательно тем путем, который мы планировали. Любовь, жертвенность и упорство детей в конце концов вознаграждаются, хотя и не так, как они ожидали.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('История игрушек', 'A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy''s room.', '1995-01-01', 1, '81 minutes', 'Toy Story', 8.3, 'Действие фильма происходит в детской комнате мальчика по имени Энди Дэвис. Главным героем является ковбой Вуди, игрушка, которая уже много лет является любимой игрушкой Энди. Вуди занимает лидирующее положение среди других игрушек и гордится тем, что именно его имя написано на подошве ботинка мальчика.
+В мире игрушек действует важное правило: они должны притворяться неодушевленными предметами в присутствии людей, но когда остаются одни, могут свободно двигаться и разговаривать. Вуди руководит группой игрушек в комнате Энди, которая включает в себя мистера Картофельную Голову, поросенка Хэма, собачку Спиралькина, тираннозавра Рекса, солдатиков во главе с сержантом и многих других.
+Жизнь игрушек кардинально меняется, когда в канун дня рождения Энди его мать покупает ему новую игрушку - космического рейнджера Базза Лайтера. Базз представляет собой высокотехнологичную фигурку с множеством функций: лазерным прицелом, выдвижными крыльями и различными звуковыми эффектами. Однако в отличие от других игрушек, Базз не осознает, что он игрушка, и искренне верит, что является настоящим космическим рейнджером, защитником галактики.
+Появление Базза сразу же меняет расстановку сил в детской. Энди быстро увлекается новой игрушкой и начинает брать Базза с собой повсюду, оставляя Вуди в стороне. Это вызывает у ковбоя сильную ревность и желание вернуть свое прежнее положение любимой игрушки мальчика.
+Вуди пытается доказать другим игрушкам, что Базз просто игрушка, а не настоящий космический рейнджер, но они восхищаются его способностями и не слушают ковбоя. Базз же продолжает вести себя так, словно он действительно выполняет важную миссию по защите вселенной от злого императора Зурга.
+Ситуация обостряется, когда Энди собирается идти с семьей в пиццерию, и может взять с собой только одну игрушку. Вуди, отчаянно желая быть выбранным, пытается скинуть Базза за письменный стол, но вместо этого случайно выбрасывает его из окна. Другие игрушки становятся свидетелями этого инцидента и обвиняют Вуди в намеренной попытке избавиться от Базза.
+Энди, не найдя Базза, берет с собой Вуди в пиццерию. Там ковбой пытается спасти Базза, который оказался в соседнем дворе, но в результате они оба попадают в руки соседского мальчика Сида Филлипса, который известен своей жестокостью по отношению к игрушкам.
+Сид живет рядом с семьей Энди и имеет репутацию разрушителя игрушек. Он получает удовольствие от того, что взрывает, сжигает и уродует игрушки различными способами. В его комнате находятся мутантные игрушки, которые он создал, соединяя части разных игрушек в причудливые комбинации.
+Оказавшись в доме Сида, Вуди и Базз сначала пытаются выбраться самостоятельно, но вскоре понимают, что должны работать вместе. Вуди наконец удается убедить Базза в том, что он игрушка, показав ему рекламу космического рейнджера по телевизору, где говорится, что это всего лишь игрушка. Это открытие становится для Базза тяжелым ударом, и он впадает в депрессию.
+Положение героев ухудшается, когда Сид решает привязать петарду к Баззу и взорвать его на следующее утро. Ночью Вуди пытается разработать план побега с помощью мутантных игрушек Сида, которые оказываются не злыми монстрами, а дружелюбными существами, помогающими друг другу.
+Утром, когда Сид готовится взорвать Базза, Вуди решается на отчаянный шаг. Он нарушает главное правило мира игрушек и начинает говорить с Сидом, притворяясь живым. Ковбой пугает мальчика, говоря, что игрушки живые и они будут мстить ему, если он продолжит их мучить. Все мутантные игрушки присоединяются к этому представлению, и перепуганный Сид убегает, обещая никогда больше не обижать игрушки.
+Освободившись от Сида, Вуди и Базз пытаются догнать грузовик, на котором семья Энди переезжает в новый дом. Им помогают солдатики и радиоуправляемая машинка. В захватывающей погоне по улицам города игрушки используют все свои способности, чтобы добраться до грузовика.
+Кульминацией становится момент, когда Вуди поджигает петарду, привязанную к Баззу, и они взлетают в воздух. Базз раскрывает свои крылья, и они планируют прямо в машину Энди через открытый люк в крыше. Мальчик находит обе свои любимые игрушки и радуется их возвращению.
+В финале фильма показано, как игрушки обустраиваются в новом доме Энди. Вуди и Базз становятся лучшими друзьями, а ковбой больше не ревнует к популярности космического рейнджера. Наступает Рождество, и игрушки с тревогой и любопытством слушают через радиопередатчик, какие новые игрушки получит Энди в подарок. Фильм заканчивается на оптимистичной ноте, показывая, что в мире игрушек всегда найдется место для дружбы и приключений.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Храброе сердце', 'Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.', '1995-01-01', 1, '178 minutes', 'Braveheart', 8.3, 'Фильм начинается в конце XIII века в Шотландии, где юный Уильям Уоллес становится свидетелем жестокости английского короля Эдуарда I Длинноногого. Король казнит шотландских дворян, пригласивших их на переговоры под предлогом мира. Отец и брат Уильяма погибают в восстании против англичан, и мальчика забирает его дядя Аргайл, который увозит его из Шотландии для получения образования.
+Спустя годы взрослый Уильям возвращается в родную деревню Элдерсли, надеясь жить мирной жизнью фермера. Он тайно женится на своей детской любви Мюррон, поскольку англичане ввели закон о праве первой ночи, согласно которому английские лорды могут овладеть любой шотландской невестой в первую брачную ночь. Молодые супруги скрывают свой брак от местного английского магистрата.
+Когда Мюррон отказывается от домогательств английского солдата, тот пытается изнасиловать ее. Уильям заступается за жену, завязывается драка, и паре удается скрыться. Однако на следующий день магистрат хватает Мюррон и на глазах у всей деревни перерезает ей горло, пытаясь выманить Уильяма. Обезумевший от горя Уоллес врывается в деревню, убивает магистрата и всех английских солдат.
+Весть о восстании быстро распространяется по Шотландии. К Уильяму присоединяются сначала его односельчане, затем жители соседних деревень. Отряд растет, превращаясь в настоящую армию. Уоллес демонстрирует не только храбрость, но и тактический гений, используя партизанские методы войны против превосходящих сил противника.
+Первой крупной победой становится битва при Стерлинге, где шотландцы сталкиваются с профессиональной английской армией. Перед битвой многие шотландские дворяне хотят вести переговоры с англичанами, но Уоллес произносит вдохновляющую речь, призывая воинов сражаться за свободу. Используя длинные копья и знание местности, шотландцы наносят сокрушительное поражение английской коннице и пехоте.
+После победы при Стерлинге Уоллес становится легендарной фигурой. Король Эдуард посылает свою невестку, французскую принцессу Изабеллу, для переговоров с шотландским лидером. Изабелла должна была предложить Уоллесу титулы и земли в обмен на прекращение восстания, но встреча с Уильямом производит на нее глубокое впечатление. Она влюбляется в него и начинает тайно помогать шотландцам.
+Тем временем шотландские дворяне, номинально поддерживающие восстание, ведут двойную игру. Роберт Брюс, имеющий права на шотландский трон, колеблется между поддержкой Уоллеса и компромиссом с англичанами. Его отец, пораженный проказой, постоянно советует сыну думать о политических выгодах, а не о принципах.
+Уоллес ведет свою армию в Англию, опустошая северные графства и доходя почти до Йорка. Однако отсутствие поддержки со стороны французского короля и предательство шотландских дворян заставляют его отступить. В решающей битве при Фолкерке шотландская кавалярия во главе с дворянами покидает поле боя в самый критический момент, оставив пехоту Уоллеса без прикрытия.
+Уильям получает серьезные ранения в битве, но выживает благодаря помощи верных соратников. Понимая, что открытое восстание обречено без поддержки дворян, он переходит к партизанской тактике. Одновременно он пытается получить поддержку от других европейских правителей, враждебных Англии.
+Роберт Брюс, терзаемый угрызениями совести за предательство при Фолкерке, встречается с Уоллесом и просит прощения. Уильям прощает его, но предупреждает, что следующее предательство будет последним. Брюс клянется в верности делу независимости Шотландии.
+Принцесса Изабелла становится любовницей Уоллеса, и от их связи она беременеет. Она предупреждает Уильяма о планах мужа и короля Эдуарда арестовать его во время мнимых переговоров о мире. Однако Уоллес, уставший от войны и потерь, решает рискнуть, надеясь на возможность достичь мира для своего народа.
+Встреча оказывается ловушкой, организованной при участии отца Роберта Брюса, который снова предает Уоллеса ради политических выгод. Роберт в ужасе от предательства отца, но уже слишком поздно. Уоллес схвачен англичанами и доставлен в Лондон для суда.
+На суде Уоллеса обвиняют в государственной измене, хотя он утверждает, что никогда не присягал на верность английскому королю и поэтому не мог его предать. Ему предлагают быструю смерть в обмен на публичное покаяние и признание власти Эдуарда над Шотландией, но Уильям отказывается.
+Уоллеса подвергают мучительной публичной казни: его вешают, но снимают с виселицы живым, затем потрошат и четвертуют. Во время пыток судья последний раз предлагает ему помилование в обмен на слово "пощады", но Уильям, собрав последние силы, кричит "Свобода!" перед смертью.
+Казнь Уоллеса производит обратный эффект. Вместо того чтобы сломить дух шотландцев, она вдохновляет их на новую борьбу. Роберт Брюс, потрясенный мужеством Уоллеса, принимает корону Шотландии и ведет объединенную шотландскую армию против англичан. В финальной битве при Бэннокберне в 1314 году шотландцы наносят решающее поражение английским войскам.
+Фильм заканчивается тем, что голос Уоллеса за кадром рассказывает о том, как его смерть привела к независимости Шотландии, а Роберт Брюс, размахивая мечом Уоллеса, ведет своих воинов в атаку со словами о том, что они могут отнять у шотландцев жизнь, но никогда не отнимут их свободу. История показывает, как личная трагедия одного человека может стать катализатором для освобождения целого народа, а готовность умереть за принципы часто оказывается сильнее любой военной мощи.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бешеные псы', 'When a simple jewelry heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant.', '1992-01-01', 1, '99 minutes', 'Reservoir Dogs', 8.3, 'Фильм начинается в кафе, где группа мужчин в черных костюмах завтракает и ведет непринужденную беседу о различных темах, включая обсуждение песни Мадонны и правила чаевых в ресторанах. Эти люди - участники ограбления ювелирного магазина, организованного криминальным авторитетом Джо Кэботом и его сыном "Славным" Эдди Кэботом.
+У каждого участника есть кодовое имя по названию цвета: мистер Белый, мистер Розовый, мистер Блондин, мистер Голубой, мистер Коричневый и мистер Оранжевый. Джо специально дает им псевдонимы, чтобы они не знали настоящих имен друг друга и не могли выдать сообщников в случае ареста.
+После завтрака группа отправляется на дело, но фильм не показывает само ограбление. Вместо этого действие переносится в заброшенный склад, куда участники должны были собраться после операции. Туда прибывают только мистер Белый и тяжело раненный мистер Оранжевый, который истекает кровью от пулевого ранения в живот.
+Мистер Белый, опытный преступник по имени Ларри Димик, пытается помочь умирающему напарнику, несмотря на то, что знает его всего несколько дней. Он рассказывает раненому о том, что ограбление провалилось - полиция была готова к их появлению, что означает, что среди них есть предатель.
+К ним присоединяется мистер Розовый, параноидальный и подозрительный преступник по имени мистер Розовый. Он также убежден, что их кто-то заложил, и подозревает каждого из участников. Мистер Розовый рассказывает свою версию событий: как только они ворвались в магазин, началась стрельба, полиция окружила здание, и все пошло наперекосяк.
+Через флешбэки зрители узнают предысторию операции. Джо Кэбот собрал команду профессиональных преступников, большинство из которых не знают друг друга. Мистер Белый - опытный грабитель, мистер Розовый - осторожный и расчетливый, мистер Блондин - непредсказуемый психопат, мистер Коричневый - молодой и неопытный.
+Мистер Оранжевый представлен как начинающий преступник по имени Фредди Ньюэндик, которого Джо берет в команду по рекомендации торговца наркотиками Лонг Бич Майка. На самом деле Фредди - полицейский под прикрытием, который месяцами готовился к этой операции, изучая легенду и отрабатывая роль мелкого преступника.
+В одном из флешбэков показано, как Фредди репетирует перед другими полицейскими выдуманную историю о том, как он чуть не попался с наркотиками в аэропорту. Эта история должна была убедить Джо в том, что Фредди настоящий преступник.
+На складе ситуация накаляется. Мистер Розовый хочет забрать свою долю украденных бриллиантов и исчезнуть, но мистер Белый настаивает на том, что они должны дождаться остальных и выяснить, что произошло. Их спор прерывается появлением мистера Блондина.
+Мистер Блондин, настоящее имя которого Вик Вега, оказывается полным психопатом. Он привозит на склад связанного полицейского по имени Марвин Нэш, которого взял в заложники во время ограбления. Блондин утверждает, что полицейский знает о засаде и может рассказать, кто их предал.
+Когда мистер Белый и мистер Розовый уходят по делам, мистер Блондин остается наедине с полицейским и мистером Оранжевым, который продолжает терять сознание от потери крови. Блондин включает радио и под веселую музыку начинает пытать полицейского, отрезая ему ухо бритвой и поливая его бензином, угрожая сжечь живьем.
+В этот момент мистер Оранжевый, который на самом деле тоже полицейский, не выдерживает и стреляет в мистера Блондина, убивая его. Он говорит раненому коллеге, что он полицейский под прикрытием, и обещает, что скоро прибудет подкрепление.
+Возвращаются мистер Белый и мистер Розовый, которые обнаруживают мертвого мистера Блондина. Мистер Оранжевый объясняет, что Блондин сошел с ума и собирался убить полицейского и его самого, поэтому ему пришлось стрелять в целях самообороны.
+На склад прибывают Джо Кэбот и "Славный" Эдди. Они в ярости от провала операции и смерти мистера Блондина, который приходился Джо близким другом. Джо подозревает, что предатель - это мистер Оранжевый, поскольку именно он убил Блондина.
+"Славный" Эдди рассказывает, что мистер Коричневый погиб во время ограбления, а мистер Голубой расстрелян полицией при попытке к бегству. Джо направляет пистолет на умирающего мистера Оранжевого, готовясь его казнить.
+Мистер Белый, который за время ожидания проникся симпатией к раненому напарнику, становится на его защиту и направляет оружие на Джо. "Славный" Эдди в свою очередь целится в мистера Белого. Мистер Розовый пытается разрядить ситуацию, но безуспешно.
+В результате короткой перестрелки Джо и "Славный" Эдди убивают друг друга, а мистер Белый получает ранение. Мистер Розовый хватает сумку с бриллиантами и исчезает, оставив двух раненых на складе.
+Умирающий мистер Оранжевый признается мистеру Белому в том, что он полицейский. Потрясенный Белый, который рискнул жизнью, защищая того, кого считал другом, понимает, что был обманут. В отчаянии и ярости он направляет пистолет на голову полицейского.
+В этот момент на склад врывается спецназ. Полицейские кричат мистеру Белому, чтобы он бросил оружие, но тот, находящясь в состоянии эмоционального шока, не подчиняется. Раздается выстрел мистера Белого, затем залп полицейских автоматов.
+Фильм заканчивается на этой ноте, не показывая окончательной судьбы персонажей, но давая понять, что операция закончилась полным провалом для всех участников. Никто из преступников не получил выгоды от ограбления, большинство погибли, а единственный выживший полицейский тяжело ранен.
+История рассказана нелинейно, через серию флешбэков и переходов во времени, постепенно раскрывая характеры персонажей и истинную природу произошедших событий. Фильм исследует темы лояльности, предательства и профессиональной этики в криминальном мире.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Цельнометаллическая оболочка', 'A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.', '1987-01-01', 1, '116 minutes', 'Full Metal Jacket', 8.3, 'Фильм состоит из двух частей, первая из которых разворачивается в учебном лагере морской пехоты США на острове Пэррис в Южной Каролине в 1967 году. Группа новобранцев прибывает для прохождения базовой подготовки под руководством сержанта-инструктора Хартмана, жестокого и беспощадного военного, который использует крайне жесткие методы для превращения гражданских в боевых морских пехотинцев.
+Хартман сразу же дает всем новобранцам прозвища и начинает их психологическое и физическое подавление. Главный герой получает кличку Джокер за свое чувство юмора и саркастические замечания. Среди других новобранцев выделяется полный и неуклюжий Леонард Лоуренс, которого сержант называет Пайлом за его медлительность и неспособность выполнять команды.
+Хартман подвергает новобранцев жестоким тренировкам, постоянным унижениям и физическим наказаниям. Он использует расистские и оскорбительные выражения, создавая атмосферу страха и подчинения. Особенно тяжело приходится Пайлу, который не может справиться с физическими упражнениями и постоянно совершает ошибки.
+Джокер пытается помочь Пайлу, обучая его основам военной подготовки и поддерживая морально. Некоторое время кажется, что Пайл начинает справляться лучше, но его неудачи продолжают навлекать наказания на весь взвод. Это вызывает гнев других новобранцев, которые начинают винить его в своих страданиях.
+Ситуация достигает критической точки, когда сослуживцы устраивают Пайлу "суд Линча" - избивают его ночью мыльными брусками, завернутыми в полотенца. Джокер, несмотря на свое нежелание, вынужден участвовать в этом избиении под давлением группы. После этого инцидента Пайл становится еще более замкнутым и странным.
+Постепенно Пайл начинает демонстрировать признаки психического расстройства. Он разговаривает со своей винтовкой, называя ее Шарлин, и становится одержим оружием и стрельбой. Одновременно он показывает выдающиеся результаты в обращении с оружием, что радует сержанта Хартмана.
+Кульминация первой части наступает в последнюю ночь перед выпуском, когда Джокер обнаруживает Пайла в туалете с заряженной винтовкой. Пайл находится в состоянии психоза и говорит о своих планах убийства. Появляется сержант Хартман, который пытается взять ситуацию под контроль, но Пайл стреляет в него, убив наповал. Затем он поворачивает оружие против себя и совершает самоубийство на глазах у потрясенного Джокера.
+Вторая часть фильма переносит действие во Вьетнам в 1968 году, во время Тетского наступления. Джокер теперь работает военным корреспондентом в газете "Звезды и полосы" в Дананге. Он носит на каске значок мира, а на бронежилете надпись "Рожден убивать", что символизирует двойственность военного опыта.
+Джокер работает вместе с фотографом Рафтерманом, который мечтает увидеть настоящие боевые действия. Их начальник полковник требует от журналистов писать позитивные материалы о ходе войны, скрывая ее реальную жестокость и бессмысленность.
+Когда начинается Тетское наступление, Джокера и Рафтермана отправляют в осажденный город Хюэ для освещения событий. Там Джокер воссоединяется со своим старым товарищем по учебке по прозвищу Ковбой, который теперь командует пехотным отделением.
+Отделение Ковбоя состоит из различных солдат с характерными прозвищами: Энимэл Мазер, Восьмишар, Сумасшедший Эрл и другие. Каждый из них по-своему справляется со стрессом войны и пытается сохранить человечность в нечеловеческих условиях.
+Группа получает приказ зачистить район города от вьетконговцев. Во время патрулирования они попадают в засаду снайпера, который методично убивает членов отделения одного за другим. Сначала погибает их радист, затем получает смертельное ранение Ковбой, который умирает на руках у Джокера.
+Оставшиеся солдаты решают найти и уничтожить снайпера. После долгих поисков они обнаруживают, что стрелок - молодая вьетнамская девушка, которая ранена и не может двигаться. Солдаты окружают ее, и она молит о милосердии, прося убить ее и прекратить страдания.
+Возникает моральная дилемма: что делать с умирающим врагом, который оказался совсем юной девушкой. Другие солдаты колеблются, не решаясь выстрелить в ребенка. В конце концов Джокер берет на себя эту тяжелую ношу и стреляет в девушку, прекращая ее мучения.
+Фильм завершается сценой, где выжившие солдаты маршируют через горящие руины города, напевая песню о Микки Маусе. Этот контраст между детской песенкой и окружающими разрушениями подчеркивает абсурдность и трагичность войны. Джокер в закадровом тексте размышляет о том, что он все еще жив и больше не боится смерти, но война изменила его навсегда, превратив в существо, способное убивать.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Иди и смотри', 'After finding an old rifle, a young boy joins the Soviet resistance movement against ruthless German forces and experiences the horrors of World War II.', '1985-01-01', 1, '142 minutes', 'Idi i smotri', 8.3, 'Действие фильма происходит летом 1943 года в оккупированной немцами Белоруссии. Четырнадцатилетний мальчик Флёра живет с матерью и сестрами в деревне и мечтает присоединиться к партизанам. Несмотря на мольбы матери, которая умоляет его не уходить, Флёра откапывает спрятанную в песке винтовку и направляется в лес к партизанскому отряду.
+В партизанском лагере командир сначала не хочет брать подростка в отряд, считая его слишком молодым для войны. Однако нехватка людей заставляет партизан принять Флёру. Мальчик остается в лагере с другими новобранцами и Глашей, девочкой примерно его возраста, дочерью погибшего партизана. Глаша влюбляется во Флёру, видя в нем защитника и опору.
+Когда основные силы партизан уходят на боевое задание, лагерь подвергается авиационному налету немецкой авиации. Флёра получает контузию от близкого разрыва бомбы, в результате чего у него серьезно повреждается слух. Мир для мальчика становится приглушенным и искаженным, звуки доходят до него как через воду. Этот звуковой эффект сохраняется на протяжении большей части фильма, погружая зрителя в ощущения травмированного ребенка.
+После бомбежки Флёра и Глаша остаются одни в разбомбленном лагере. Мальчик решает вернуться домой, чтобы проверить, что случилось с его семьей. Глаша умоляет его не идти, предчувствуя беду, но Флёра настаивает. Они вместе идут через болота и леса к его деревне.
+Добравшись до родной деревни, Флёра обнаруживает, что дом цел, но странно пуст. Он зовет мать и сестер, но никто не отвечает. В доме все осталось на своих местах, как будто жители внезапно исчезли. Флёра находит только кота и радостно думает, что семья временно ушла и скоро вернется. Глаша, более интуитивная, понимает, что произошло что-то страшное.
+Ночью Флёра слышит звуки и думает, что это вернулась семья. Он бежит на звук и в болоте натыкается на огромную груду тел - это жители его деревни, расстрелянные немцами. Среди трупов он узнает лица соседей, но не может найти мать и сестер. Эта сцена окончательно ломает детскую психику мальчика.
+Флёра возвращается к партизанам в состоянии глубокого шока. Его волосы за одну ночь становятся седыми, лицо принимает застывшее, безумное выражение. Командир отряда понимает, что подросток пережил страшную травму, и пытается его успокоить, но Флёра уже изменился навсегда.
+Партизаны получают задание сопровождать группу мирных жителей через лес в безопасное место. Во время перехода колонна попадает в засаду немецких войск. Начинается хаотичная перестрелка в болоте, люди тонут в трясине, пытаясь спастись от пуль. Флёра чудом остается жив, но теряет Глашу в суматохе боя.
+Мальчик блуждает по лесу один, пока не встречает старика-крестьянина, который ведет его к деревне, где, по его словам, можно найти еду. Однако когда они приближаются к деревне, становится ясно, что это ловушка. Деревня окружена немецкими войсками и полицаями-коллаборационистами.
+Всех жителей деревни, включая стариков, женщин и детей, сгоняют в деревянную церковь. Солдаты обливают здание бензином и поджигают его, а тех, кто пытается выбраться, расстреливают. Флёра прячется среди трупов и становится свидетелем этого чудовищного военного преступления. Крики и стоны горящих людей слышны долго, а немецкие солдаты фотографируются на фоне пылающего здания как на память.
+Чудом выживший Флёра пытается спастись, но его замечают и берут в плен. Немецкий офицер развлекается, заставляя мальчика позировать для фотографий, а затем приказывает солдатам использовать его как живую мишень для стрельбы. Пули свистят вокруг головы подростка, но каким-то чудом не попадают в него.
+В последний момент появляются партизаны и освобождают Флёру, уничтожив немецкий отряд. Среди убитых оказывается тот самый офицер, который издевался над мальчиком. Флёра находит его фотоаппарат и в ярости начинает расстреливать найденные в нем фотографии зверств.
+Когда Флёра стреляет в портрет Гитлера, начинается сюрреалистическая последовательность, в которой история Третьего рейха прокручивается в обратном порядке - от войны к приходу нацистов к власти, затем к детству Гитлера. В какой-то момент мальчик останавливается, не в силах выстрелить в изображение ребенка, даже если этот ребенок - будущий диктатор.
+Фильм заканчивается тем, что Флёра присоединяется к отряду партизан, уходящих вглубь леса продолжать борьбу. Мальчик, который в начале фильма был обычным подростком, мечтающим о героических подвигах, превратился в старика в теле ребенка, навсегда травмированного увиденными ужасами. На экране появляется статистика: за время оккупации в Белоруссии было уничтожено 628 деревень вместе с жителями, 186 из них так и не были восстановлены.
+Название фильма отсылает к библейскому Апокалипсису, где звучат слова "иди и смотри" как приглашение увидеть ужасы конца света. Фильм показывает войну глазами ребенка, демонстрируя, как насилие разрушает не только тела, но и души людей, превращая детей в преждевременно состарившихся свидетелей апокалипсиса.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Чужие', 'Fifty-seven years after surviving an apocalyptic attack aboard her space vessel by merciless space creatures, Officer Ripley awakens from hyper-sleep and tries to warn anyone who will listen about the predators.', '1986-01-01', 1, '137 minutes', 'Aliens', 8.3, 'История начинается через пятьдесят семь лет после событий первого фильма. Эллен Рипли дрейфует в космосе в спасательной капсуле в состоянии гиперсна и случайно обнаруживается поисковым кораблем корпорации Вейланд-Ютани. Ее доставляют на космическую станцию Гейтвей, где она узнает, что за время ее отсутствия планета LV-426, где экипаж "Ностромо" впервые столкнулся с чужими, была колонизирована и на ней построено поселение под названием Хадлис Хоуп.
+Рипли предстает перед комиссией корпорации, которая не верит ее рассказу о чужих и обвиняет ее в уничтожении дорогостоящего космического буксира. Ей сообщают, что связь с колонией на LV-426 прервалась, но представители корпорации утверждают, что это обычная техническая неисправность. Рипли теряет лицензию пилота и вынуждена работать грузчиком в доках.
+Через некоторое время к Рипли обращается представитель корпорации Картер Берк с предложением сопровождить военную экспедицию на LV-426 в качестве консультанта. Изначально она отказывается, но кошмары о чужих не дают ей покоя, и врач советует ей столкнуться со своими страхами. Рипли соглашается при условии, что целью миссии будет уничтожение всех чужих.
+Экспедиция состоит из отряда колониальных морских пехотинцев под командованием лейтенанта Гормана, неопытного офицера, который никогда не участвовал в реальных боевых действиях. Среди солдат выделяются сержант Аподе, капрал Хикс, частный Хадсон, снайпер Васкес и другие профессиональные военные. К группе также присоединяется синтетический андроид Бишоп, что вызывает у Рипли недоверие из-за предательства андроида Эша в первом фильме.
+По прибытии на LV-426 группа обнаруживает колонию в разрушенном состоянии. Все жители исчезли, повсюду следы борьбы и разрушений, но тел практически нет. Военные находят лишь одну выжившую - девочку по имени Ньют, которая прячется в вентиляционных шахтах и находится в состоянии сильного шока. Рипли удается завоевать доверие ребенка, и Ньют рассказывает, что все взрослые исчезли, а "монстры" приходят в основном ночью.
+Исследуя атмосферный процессор колонии, команда обнаруживает множество коконов с колонистами, которые служили инкубаторами для чужих. Внезапно начинается атака множества взрослых чужих. В панике лейтенант Горман приказывает не использовать тяжелое оружие из-за близости к реактору, что приводит к катастрофическим потерям среди морпехов. Большинство солдат погибает, включая сержанта Аподе, а сам Горман получает травму головы и теряет сознание.
+Рипли нарушает приказы и прилетает на десантном корабле спасать выживших. Ей удается эвакуировать Хикса, Хадсона, Васкес и раненого Гормана, но их корабль разбивается при посадке. Группа укрывается в центральном комплексе колонии и пытается связаться с основным кораблем "Сулако", находящимся на орбите.
+Бишоп вызывается пробраться через подземные туннели к передающей антенне, чтобы дистанционно управлять вторым десантным кораблем с "Сулако". Тем временем выжившие баррикадируются и готовятся к обороне. Рипли обнаруживает, что Берк знал о присутствии чужих на планете и специально отправил колонистов исследовать космический корабль, надеясь получить образцы для биологического оружия корпорации.
+Ситуация ухудшается, когда чужие проникают в комплекс через потолок. В отчаянной битве погибают Хадсон и Васкес, которая подрывает себя гранатой, чтобы не дать чужим захватить ее живой. Горман, придя в сознание, остается с Васкес и также погибает от взрыва. Рипли, Ньют и раненый Хикс остаются одни.
+Группу захватывают чужие и доставляют в улей, расположенный в нижних уровнях атмосферного процессора. Там Рипли обнаруживает Берка, который превратился в кокон, и множество яиц с лицехватами. Она освобождает себя и Ньют, сжигает яйца огнеметом, что привлекает внимание королевы чужих - огромного существа, которое откладывает яйца.
+Рипли угрожает уничтожить все яйца, если королева не позволит им уйти. Королева отзывает своих воинов, и Рипли с Ньют начинают отступление. Однако когда они почти добрались до выхода, Рипли все же сжигает кладку яиц, приводя королеву в ярость.
+Начинается погоня через разрушающийся комплекс. Атмосферный процессор готовится к взрыву из-за повреждений, полученных во время битвы. Рипли и Ньют добираются до посадочной площадки, где их ждет Бишоп с десантным кораблем. Во время взлета королева чужих, которая незаметно прицепилась к шасси корабля, прорывается внутрь и разрывает Бишопа пополам.
+Рипли помещает Ньют в безопасное место и идет сражаться с королевой в погрузочном отсеке корабля. Она использует экзокостюм-погрузчик и вступает в рукопашную схватку с королевой. После напряженной битвы Рипли удается открыть аварийный люк и выбросить королеву в космос.
+Фильм завершается тем, что выжившие - Рипли, Ньют, Хикс и поврежденный, но функционирующий Бишоп - погружаются в гиперсон для возвращения на Землю. Рипли наконец обретает покой, зная, что угроза чужих уничтожена, а она смогла защитить Ньют, которая стала для нее подобием дочери, заменив ту, которую она потеряла за годы дрейфа в космосе.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Амадей', 'The life, success and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was insanely jealous of Mozart''s talent and claimed to have murdered him.', '1984-01-01', 1, '160 minutes', 'Amadeus', 8.3, 'История рассказывается в 1823 году в венской психиатрической больнице, где престарелый композитор Антонио Сальери пытается покончить жизнь самоубийством, перерезав себе горло. После неудачной попытки он попадает в лечебницу, где молодому священнику Фоглеру исповедуется в убийстве Вольфганга Амадея Моцарта. Сальери рассказывает свою историю как длинную исповедь о зависти, предательстве и разрушительной одержимости гением другого человека.
+В детстве Сальери был глубоко религиозным мальчиком из провинциальной итальянской семьи. Он молился Богу, обещая посвятить свою жизнь служению через музыку в обмен на композиторский талант. Казалось, Бог услышал его молитвы - Сальери получил музыкальное образование, переехал в Вену и к 1780-м годам стал придворным композитором императора Иосифа II, пользуясь уважением и успехом.
+Жизнь Сальери кардинально меняется, когда в 1781 году в Вену прибывает двадцатипятилетний Моцарт. На приеме у архиепископа Зальцбурга Сальери впервые слышит игру молодого музыканта и потрясен его гениальностью. Однако личность Моцарта шокирует его еще больше - вместо благочестивого служителя искусства Сальери видит вульгарного, инфантильного молодого человека с пронзительным смехом, который ведет себя как избалованный ребенок и рассказывает непристойные шутки.
+Сальери не может понять, почему Бог даровал божественный талант этому недостойному человеку, в то время как он, посвятивший жизнь служению, получил лишь посредственные способности. Это становится источником мучительной зависти и религиозного кризиса. Сальери начинает воспринимать ситуацию как личное оскорбление со стороны Всевышнего.
+Моцарт приезжает в Вену с надеждой получить место при императорском дворе. Он влюблен в Констанце Вебер, молодую женщину из музыкальной семьи, на которой намерен жениться вопреки желанию своего деспотичного отца Леопольда. Отношения Моцарта с отцом крайне напряжены - Леопольд считает, что сын растрачивает свой талант и должен думать о финансовой стабильности, а не о любовных утехах.
+Сальери использует свое влияние при дворе, чтобы тайно вредить карьере Моцарта. Когда молодой композитор пишет оперу "Похищение из сераля", Сальери подговаривает императора сократить количество арий и танцев, чтобы опера казалась менее значительной. Он также блокирует назначение Моцарта на престижные должности, предлагая вместо этого символические посты с мизерным жалованьем.
+Несмотря на препятствия, Моцарт создает шедевр за шедевром. Его оперы "Свадьба Фигаро" и "Дон Жуан" покоряют публику, хотя император и его окружение не всегда понимают их революционность. Сальери присутствует на премьерах и каждый раз испытывает смесь восхищения музыкой и ненависти к ее создателю.
+Финансовое положение Моцарта постоянно ухудшается. Он живет не по средствам, тратя деньги на роскошную одежду, развлечения и азартные игры. Констанце часто уезжает на курорты лечиться, оставляя мужа одного с растущими долгами. Моцарт вынужден давать частные уроки и выступать на концертах, но его доходы нерегулярны.
+Отношения с отцом окончательно портятся, когда Леопольд приезжает в гости и видит, в каких условиях живет сын. Старый музыкант не одобряет образ жизни Вольфганга и считает Констанце легкомысленной женщиной, которая разоряет семью. После отъезда отца Моцарт получает известие о его смерти, что становится для него серьезным ударом.
+Сальери решает использовать горе Моцарта в своих целях. Он переодевается в черный плащ и маску, появляется у композитора ночью и заказывает ему реквием, обещая щедрую плату. Моцарт, находящийся в депрессии после смерти отца, воспринимает таинственного заказчика как посланца смерти и начинает работать над реквиемом как над собственной заупокойной мессой.
+Здоровье Моцарта резко ухудшается из-за переутомления, стресса и алкоголизма. Он работает над тремя крупными произведениями одновременно: оперой "Волшебная флейта", которая должна спасти его от банкротства, Концертом для фортепиано № 27 и заказанным реквиемом. Констанце, обеспокоенная состоянием мужа, пытается заставить его отдохнуть, но Моцарт одержим работой.
+Премьера "Волшебной флейты" проходит с огромным успехом, но Моцарт уже настолько болен, что едва может стоять на ногах. В ночь после премьеры он теряет сознание и оказывается прикованным к постели. Констанце уезжает за врачом, оставив мужа под присмотром служанки.
+Сальери пользуется отсутствием Констанцы и приходит к умирающему Моцарту под видом заботы о его здоровье. На самом деле он хочет выведать секреты композиторского мастерства гения. Моцарт, находящийся в бреду, не узнает в Сальери своего тайного врага и с благодарностью принимает его помощь в завершении реквиема.
+В одной из самых драматических сцен фильма Сальери записывает под диктовку умирающего Моцарта партии реквиема, впервые в жизни находясь так близко к процессу создания гениальной музыки. Он потрясен тем, как легко Моцарт создает сложнейшие музыкальные структуры, словно просто переписывая уже существующую в его голове партитуру.
+Моцарт умирает на руках у Сальери, так и не узнав, кто был его главным врагом. Из-за долгов его хоронят в общей могиле для бедняков, и на похоронах присутствуют только Констанце, Сальери и несколько музыкантов. Сальери понимает, что его победа оказалась пирровой - он уничтожил человека, музыка которого будет жить вечно, в то время как его собственные произведения уже начинают забываться.
+В финале фильма престарелый Сальери заканчивает свою исповедь священнику. Он признается, что убил Моцарта не ядом или кинжалом, а завистью, интригами и разрушением его карьеры. Священник пытается утешить старика, говоря, что его музыка тоже имеет ценность, но Сальери знает правду - он был посредственностью, которая пыталась уничтожить гений.
+В последней сцене Сальери объявляет себя покровителем всех посредственностей мира и благословляет других пациентов лечебницы, таких же неудачников, как он сам. Фильм заканчивается звучанием музыки Моцарта, которая переживет и своего создателя, и его завистника, доказывая, что истинный талант невозможно уничтожить человеческими интригами. История показывает трагедию человека, который посвятил жизнь борьбе с гением вместо того, чтобы найти свое место в искусстве и принять ограниченность собственных способностей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Лицо со шрамом', 'In 1980 Miami, a determined Cuban immigrant takes over a drug cartel and succumbs to greed.', '1983-01-01', 1, '170 minutes', 'Scarface', 8.3, 'История начинается в 1980 году, когда кубинский беженец Тони Монтана прибывает в Майами вместе с тысячами других эмигрантов во время массового исхода с Кубы, известного как "Лодочный подъем Мариэль". Тони попадает в лагерь для беженцев, где американские власти проводят собеседования для определения статуса прибывших. Выясняется, что Тони был заключенным на Кубе за политические преступления.
+В лагере Тони знакомится со своим другом Манни Рибера, оптимистичным кубинцем, который становится его верным товарищем. Вместе с ними находятся Анхель и Чи Чи, которые также становятся частью их группы. Все четверо мечтают о лучшей жизни в Америке и готовы на все ради достижения американской мечты.
+Тони получает возможность выйти из лагеря, согласившись убить бывшего кубинского коммуниста, который также находится среди беженцев. Он выполняет это задание, что позволяет ему и его друзьям получить грин-карты и начать новую жизнь в Майами.
+Первоначально друзья устраиваются на работу в забегаловку, где моют посуду за минимальную зарплату. Однако Тони не собирается довольствоваться честным трудом за копейки. Его амбиции намного больше, и он стремится к богатству и власти. Вскоре им предлагают участвовать в сделке по покупке кокаина у колумбийцев.
+Сделка проходит в мотеле и оборачивается кровавой резней. Колумбийские торговцы оказываются жестокими грабителями, которые пытают Анхеля бензопилой, требуя больше денег. Тони и Чи Чи попадают в ловушку, но благодаря вмешательству Манни, который привозит подкрепление, им удается спастись и завладеть наркотиками и деньгами.
+Эта сделка привлекает внимание Фрэнка Лопеса, влиятельного наркобарона кубинского происхождения, который контролирует значительную часть торговли кокаином в Майами. Фрэнк впечатлен смелостью и жестокостью Тони и предлагает ему работать на себя. Тони начинает выполнять различные задания для Лопеса, постепенно поднимаясь по иерархической лестнице преступного мира.
+Во время работы на Фрэнка Тони встречает Эльвиру Хэнкок, красивую блондинку, которая является любовницей Лопеса. Эльвира аддикт, зависимая от кокаина, циничная и пресыщенная женщина, но Тони мгновенно влюбляется в нее и решает, что она должна принадлежать ему.
+Тони быстро зарабатывает репутацию безжалостного и эффективного исполнителя. Он получает все более важные задания, включая поездки в Боливию для встреч с поставщиками кокаина. Там он знакомится с Алехандро Соса, могущественным колумбийским наркобароном, который впечатлен деловыми качествами Тони.
+Отношения между Тони и Фрэнком постепенно ухудшаются. Тони становится слишком амбициозным и начинает действовать самостоятельно, не всегда согласовывая свои планы с боссом. Кроме того, его открытое ухаживание за Эльвирой вызывает гнев Фрэнка. Ситуация усугубляется, когда Тони узнает, что Фрэнк планирует его убить.
+Опередив босса, Тони организует убийство Фрэнка Лопеса и захватывает контроль над его империей. Он женится на Эльвире и переезжает в роскошный особняк, став одним из самых влиятельных наркобаронов Майами. Манни становится его правой рукой, а их организация процветает.
+Однако успех дается Тони дорогой ценой. Он становится параноиком, постоянно подозревая окружающих в предательстве. Его отношения с Эльвирой портятся из-за его одержимости работой и растущей жестокости. Сам Тони начинает употреблять кокаин в больших количествах, что влияет на его рассудительность и поведение.
+Проблемы усугубляются, когда в жизни Тони появляется его сестра Джина, которая приезжает из Нью-Йорка. Тони чрезмерно опекает сестру и приходит в ярость, обнаружив, что она встречается с Манни. В припадке ревности и гнева он убивает своего лучшего друга, не выслушав объяснений. Только после этого Тони узнает, что Манни и Джина тайно поженились и планировали сообщить ему об этом.
+Убийство Манни становится переломным моментом. Джина проклинает брата и обвиняет его в разрушении их семьи. Эльвира окончательно уходит от Тони, не выдержав его психопатического поведения. Соса разрывает деловые отношения с Тони из-за его непредсказуемости и отказа выполнять определенные задания.
+Империя Тони начинает рушиться. Федеральные агенты усиливают давление, его бывшие союзники становятся врагами, а сам он все больше погружается в паранойю и наркотическую зависимость. Он укрывается в своем особняке, превратив его в настоящую крепость с множеством охранников и систем безопасности.
+Кульминация наступает, когда армия наемников, посланная Соса, штурмует особняк Тони. Несмотря на отчаянное сопротивление, охрана не может сдержать атакующих. Тони, находясь под воздействием огромного количества кокаина, берет автомат и выходит навстречу врагам.
+В финальной сцене Тони стоит на балконе своего особняка с автоматом в руках, выкрикивая угрозы и ведя огонь по нападающим. Он получает множественные ранения, но продолжает сражаться, демонстрируя нечеловеческую стойкость. В конце концов снайпер стреляет ему в спину, и Тони падает в фонтан перед своим домом, где под статуей с надписью "Мир принадлежит твоему" заканчивается его кровавый путь к власти и богатству.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Звёздные войны: Эпизод VI — Возвращение джедая', 'After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor''s trap.', '1983-01-01', 1, '131 minutes', 'Star Wars: Episode VI - Return of the Jedi', 8.3, 'Действие происходит через год после событий «Империи наносит ответный удар». Хан Соло находится в карбонитовой заморозке во дворце Джаббы Хатта на Татуине. Люк Скайуокер, ставший более могущественным джедаем, разрабатывает сложный план спасения друга. Сначала во дворец проникают дроиды C-3PO и R2-D2 с посланием от Люка, в котором он предлагает Джаббе сделку. Затем принцесса Лея переодевается охотником за головами Бушем и привозит «пленённого» Чубакку, но на самом деле планирует освободить Хана ночью. Однако Джабба разоблачает её и берёт в плен, заставив носить костюм рабыни.
+Люк является к Джаббе и демонстрирует свои возросшие способности Силы, требуя освободить друзей. Джабба отказывается и приговаривает Люка, Хана и Чубакку к смерти в Саркаккской впадине, где их должен съесть Сарлакк. Во время казни Люк получает свой световой меч от R2-D2 и начинает бой на барже Джаббы. В схватке Лея душит Джаббу цепью, Боба Фетт случайно активирует свой реактивный ранец и падает в пасть Сарлакка, а наши герои спасаются, взорвав баржу.
+Люк отправляется на Дагобу к умирающему Йоде, который подтверждает, что Дарт Вейдер действительно его отец, и раскрывает, что у Люка есть сестра-близнец. Йода умирает, став единым с Силой. Дух Оби-Вана объясняет Люку, что скрывал правду о его отце, поскольку Энакин Скайуокер был «предан и убит» тёмной стороной. Люк понимает, что его сестра — это Лея.
+Тем временем Император лично прибывает на строящуюся вторую Звезду Смерти, чтобы ускорить её завершение и лично руководить уничтожением флота Повстанцев. Альянс получает разведданные о том, что защитный щит станции генерируется с луны Эндора. Хан Соло возглавляет команду диверсантов, включающую Люка, Лею, Чубакку и дроидов, чтобы уничтожить генератор щита.
+На Эндоре группа попадает в засаду имперских разведчиков. В погоне Лея падает со спидербайка и теряется в лесу, где встречает эвока Уикета. Эвоки — маленькие пушистые существа, живущие в деревьях. Сначала они принимают C-3PO за божество и планируют принести остальных в жертву, но дроид убеждает их помочь Альянсу.
+Люк признаётся Лее, что она его сестра, а Вейдер — их отец. Он чувствует, что его присутствие подвергает миссию опасности, поскольку Вейдер ощущает его через Силу. Люк сдаётся имперским войскам, надеясь обратить отца обратно к светлой стороне. Вейдер приводит сына к Императору на Звезду Смерти.
+Император раскрывает, что знал о планах Повстанцев и что это ловушка. Вторая Звезда Смерти на самом деле уже функциональна и начинает уничтожать корабли флота Повстанцев. Император искушает Люка гневом и ненавистью, провоцируя его на поединок с Вейдером. Во время боя Люк скрывается в тени, но Вейдер проникает в его мысли и узнаёт о Лее. Когда Вейдер угрожает обратить сестру на тёмную сторону, Люк впадает в ярость и жестоко атакует отца, отрубив ему механическую руку.
+Император призывает Люка убить Вейдера и занять его место, но Люк отказывается, заявляя: «Я джедай, как мой отец до меня». Разъярённый Император начинает убивать Люка молниями Силы. Вейдер не может смотреть на страдания сына и, наконец, поворачивается против своего хозяина, хватая Императора и сбрасывая его в реактор станции, но при этом смертельно повреждая свои жизнеобеспечивающие системы.
+На Эндоре эвоки помогают повстанцам победить имперские войска в лесном сражении, используя примитивное оружие и ловушки против высокотехнологичной имперской армии. Хан Соло и его команда успешно уничтожают генератор щита.
+Умирающий Энакин Скайуокер просит Люка снять с него маску, чтобы увидеть сына собственными глазами. Он говорит Люку, что тот был прав — в нём действительно осталось добро. Энакин умирает, и Люк сжигает его тело на погребальном костре на Эндоре.
+Без защитного щита флот Повстанцев атакует Звезду Смерти. Лэндо Калриссиан на «Тысячелетнем соколе» и Уэдж Антиллес проникают внутрь станции и уничтожают главный реактор, что приводит к взрыву всей станции.
+По всей галактике празднуют падение Империи. На Эндоре Люк видит духи Йоды, Оби-Вана и своего искупившегося отца Энакина, которые наблюдают за празднованием. Фильм заканчивается всеобщим торжеством победы над Империей и восстановлением свободы в галактике.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Подводная лодка', 'The claustrophobic world of a WWII German U-boat; boredom, filth and sheer terror.', '1981-01-01', 1, '149 minutes', 'Das Boot', 8.3, 'Действие фильма происходит в 1941 году во время Второй мировой войны. Военный корреспондент Лейтенант Вернер прибывает на базу немецких подводных лодок в оккупированной Франции, чтобы освещать боевые действия подводного флота. Он должен отправиться в боевой поход на подводной лодке U-96 под командованием опытного капитана, известного среди экипажа просто как «Старик».
+Перед отправлением экипаж устраивает бурную вечеринку в портовом борделе. Во время празднования становится ясно, что многие подводники скептически относятся к войне и нацистской идеологии, особенно офицеры, которые являются профессиональными военными, а не фанатичными нацистами. Капитан открыто выражает презрение к нацистской партии и Гитлеру.
+U-96 выходит в море в составе волчьей стаи - группы подводных лодок, охотящихся на союзные конвои. Первые недели патрулирования проходят без контакта с противником. Экипаж страдает от скуки, тесноты, духоты и постоянного напряжения. Вернер наблюдает за повседневной жизнью подводников: их рутиной, шутками, страхами и товариществом в замкнутом пространстве лодки.
+Наконец лодка обнаруживает британский конвой. Во время атаки U-96 торпедирует несколько судов, но один из торпедированных кораблей оказывается госпитальным судном. Капитан испытывает угрызения совести, видя тонущих раненых в воде, но приказывает не подбирать выживших, так как это поставит под угрозу лодку.
+Лодка подвергается контратаке британских эсминцев, которые сбрасывают глубинные бомбы. Экипаж переживает мучительные часы под водой, слушая звуки взрывов и скрип корпуса лодки под давлением воды. Некоторые члены экипажа начинают паниковать от клаустрофобии и страха. Лодке удается уйти от преследования, но несколько человек получают ранения.
+Во время следующей атаки на конвой U-96 снова атакует, но на этот раз попадает под более ожесточенную контратаку. Глубинные бомбы серьезно повреждают лодку: выходят из строя рули глубины, появляются течи, отказывают некоторые системы. Лодка неуправляемо погружается на критическую глубину, где давление воды может раздавить корпус.
+Экипаж отчаянно борется за выживание, пытаясь устранить повреждения и всплыть на поверхность. Механики работают в затопленных отсеках, рискуя жизнью. После нескольких часов борьбы лодке удается всплыть, но она серьезно повреждена и может двигаться только в надводном положении.
+Капитан получает приказ следовать на базу в оккупированную Францию для ремонта. Однако по пути лодка попадает в сильный шторм в Бискайском заливе. Огромные волны захлестывают мостик, несколько подводников смывает за борт. Лодка с трудом переживает шторм, но прибывает к берегам Франции сильно поврежденной.
+Когда U-96 входит в порт Ла-Рошель, экипаж радуется возвращению домой. Однако их радость оказывается преждевременной. Во время стоянки в порту начинается налет союзной авиации. Бомбы падают прямо на док, где стоит подводная лодка. U-96 получает прямое попадание и начинает тонуть прямо у причала.
+Большая часть экипажа, включая капитана и главного механика, погибает во время бомбардировки. Вернер выживает и с ужасом наблюдает, как лодка, пережившая все опасности океана, гибнет в считанные минуты от бомб в собственном порту. Лодка медленно погружается в воду дока, унося с собой тела погибших товарищей.
+Фильм заканчивается кадрами затонувшей лодки на дне порта, символизируя бессмысленность войны и трагическую судьбу молодых людей, ставших жертвами безумия военного конфликта.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Таксист', 'A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute.', '1976-01-01', 1, '114 minutes', 'Taxi Driver', 8.3, 'История разворачивается в Нью-Йорке середины 1970-х годов. Трэвис Бикл, двадцатишестилетний ветеран войны во Вьетнаме, страдающий от бессонницы и отчуждения, устраивается работать водителем такси в ночную смену. Он ездит по самым криминальным районам города, наблюдая за проститутками, наркоманами и другими представителями городского дна, что постепенно усиливает его отвращение к окружающему миру.
+Трэвис влюбляется в Бетси, красивую блондинку, которая работает в предвыборном штабе сенатора Чарльза Палантина, баллотирующегося в президенты. Он приглашает её на свидание, но совершает роковую ошибку, приведя девушку в порнокинотеатр, после чего Бетси разрывает с ним отношения и отказывается общаться. Это событие становится катализатором для дальнейшего психического расстройства Трэвиса.
+Одновременно Трэвис знакомится с двенадцатилетней проституткой Айрис, которую контролирует сутенёр Спорт. Девочка пытается сбежать от него, забравшись в такси к Трэвису, но Спорт силой забирает её обратно. Этот эпизод глубоко потрясает главного героя и зарождает в нём идею спасти ребёнка от этой жизни.
+Погружаясь всё глубже в свои навязчивые идеи об очищении города от скверны, Трэвис начинает интенсивно тренироваться физически и закупать оружие. Он сбривает волосы, оставляя характерный ирокез, и изготавливает специальные приспособления для скрытого ношения пистолетов. В своём дневнике он записывает планы убийства как можно большего количества негодяев.
+Первоначально Трэвис планирует совершить покушение на сенатора Палантина во время его предвыборного митинга, рассматривая это как способ привлечь внимание Бетси и доказать свою значимость. Однако охрана замечает его подозрительное поведение, и он вынужден отступить.
+Тогда Трэвис переключается на план спасения Айрис. Он приходит в бордель, где содержится девочка, и устраивает кровавую бойню. Сначала он убивает охранника у входа, затем в перестрелке погибает Спорт, а также хозяин заведения. Сам Трэвис получает несколько ранений, но остаётся жив. Когда прибывает полиция, она обнаруживает его сидящим в кресле, истекающим кровью, с пальцем, приставленным к виску в имитации самоубийства.
+События получают неожиданную развязку. Пресса представляет Трэвиса как героя, спасшего несовершеннолетнюю от принуждения к проституции. Родители Айрис пишут ему благодарственное письмо. После выздоровления он возвращается к работе таксистом. В финальной сцене в его такси садится Бетси, которая теперь относится к нему с уважением, но Трэвис ведёт себя холодно и отстранённо, словно случайно взглянув в зеркало заднего вида и увидев что-то тревожное, что намекает на то, что его психические проблемы не решены и могут проявиться вновь.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Афера', 'Two grifters team up to pull off the ultimate con.', '1973-01-01', 1, '129 minutes', 'The Sting', 8.3, 'Действие фильма происходит в 1936 году в Чикаго во времена Великой депрессии. История начинается с того, как мелкий мошенник Джонни Хукер и его опытный партнёр Лютер Коулман проворачивают небольшую аферу, обманув курьера и забрав у него крупную сумму денег. Однако они не подозревают, что эти деньги принадлежат Дойлу Лонегану, одному из самых влиятельных и безжалостных гангстеров города.
+Лонеган быстро выясняет, кто украл его деньги, и приказывает убить обоих мошенников. Лютера находят и жестоко убивают, а Хукер чудом избегает смерти. Понимая, что Лонеган не оставит его в покое, Хукер решает отомстить за смерть своего наставника и друга. По совету Лютера он отправляется в поисках Генри Гондорфа, легендарного мошенника, который когда-то был партнёром Коулмана.
+Хукер находит Гондорфа в полуразрушенном доме, где тот скрывается от федеральных агентов и предается пьянству. Первоначально Гондорф не хочет ввязываться в опасную авантюру, но история о смерти Лютера и желание проучить Лонегана убеждают его присоединиться к делу. Они решают провести сложную многоходовую аферу, известную как "большая афера" или "длинная игра".
+План состоит в том, чтобы создать фальшивую букмекерскую контору и заманить туда Лонегана, заставив его поставить огромную сумму на заведомо проигрышную лошадь. Для этого они арендуют большое помещение и превращают его в правдоподобную имитацию букмекерской конторы, полную подставных игроков и сотрудников. Гондорф принимает личность Шоу, крупного букмекера, а Хукер играет роль недовольного сотрудника, готового предать своего босса.
+Хукер подходит к Лонегану в поезде и представляется работником Шоу, который может обеспечить ему информацию о результатах скачек до их официального объявления. Лонеган клюёт на наживку, особенно после того, как Хукер демонстрирует ему выигрышную ставку, сделанную якобы по инсайдерской информации. Гангстер соглашается на крупную сделку и приходит в фальшивую букмекерскую контору.
+Параллельно развивается побочная сюжетная линия с федеральным агентом Снайдером, который преследует и Хукера, и Гондорфа. Снайдер пытается заставить Хукера сдать Гондорфа в обмен на свободу. Ситуация осложняется появлением таинственного убийцы, который охотится за Хукером по заданию Лонегана.
+В кульминационный момент Лонеган приходит в букмекерскую контору, чтобы сделать ставку на огромную сумму денег. Хукер сообщает ему, что результат скачек уже известен, и называет лошадь-победителя. Однако в последний момент он якобы путает и называет лошадь для ставки "на место" вместо "на победу". Лонеган ставит полмиллиона долларов.
+Когда объявляются результаты скачек, оказывается, что названная лошадь действительно пришла первой, но поскольку ставка была сделана "на место", а не "на победу", Лонеган проигрывает все деньги. В этот момент в букмекерскую контору врывается ФБР во главе со Снайдером. Начинается перестрелка, в ходе которой Снайдер стреляет в Гондорфа, а затем Хукер стреляет в Снайдера. Лонеган в панике убегает с места событий.
+Однако финальная сцена раскрывает, что вся перестрелка была инсценирована. Снайдер оказывается не настоящим федеральным агентом, а сообщником Гондорфа, Хукер и Гондорф живы и невредимы, а кровь была поддельной. Вся операция была тщательно спланированным спектаклем для того, чтобы Лонеган поверил в реальность происходящего и не заподозрил подвох. Мошенники успешно отомстили за смерть Лютера, обогатились и остались безнаказанными, а Лонеган остался и без денег, и без возможности отомстить, поскольку считает всех участников аферы мертвыми.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Заводной апельсин', 'In the future, a sadistic gang leader is imprisoned and volunteers for a conduct-aversion experiment, but it doesn''t go as planned.', '1971-01-01', 1, '136 minutes', 'A Clockwork Orange', 8.3, 'Действие фильма происходит в недалёком будущем в Британии. Главный герой — Алекс ДеЛардж, харизматичный и образованный подросток, который является лидером банды из четырёх человек. Алекс обожает классическую музыку, особенно Бетховена, и говорит на специальном сленге под названием «надсат», смеси английского и русского языков.
+Алекс и его друзья Дим, Джорджи и Пит проводят ночи в молочном баре «Корова-Молоко», где употребляют молоко с наркотиками, а затем отправляются совершать акты «ультранасилия». Они избивают бродягу, участвуют в драке с конкурирующей бандой, угоняют автомобиль и вторгаются в дом писателя Александра, где жестоко избивают его и насилуют его жену перед его глазами, при этом Алекс поёт песню и танцует.
+Постепенно в банде нарастает напряжение, поскольку остальные участники устают от доминирования Алекса и хотят совершать более серьёзные преступления ради денег. Во время планирования ограбления дома богатой женщины, владелицы кошек, происходит конфликт, и Дим ударяет Алекса бутылкой по лицу. В ответ Алекс избивает Дима и Джорджи, утверждая своё лидерство.
+Банда всё же совершает ограбление дома «Кошачьей леди». Алекс проникает в дом через окно, но хозяйка оказывает сопротивление. В завязавшейся борьбе Алекс случайно убивает её, ударив фаллической скульптурой. Когда он пытается сбежать, бывшие друзья предают его, ослепив бутылкой молока, и оставляют полиции. Алекса арестовывают и приговаривают к четырнадцати годам тюремного заключения.
+В тюрьме Алекс становится образцовым заключённым, льстит тюремному капеллану и притворяется религиозным, читая Библию, хотя на самом деле его привлекают только сцены насилия в Ветхом Завете. Через два года он узнаёт об экспериментальной программе реабилитации под названием «Техника Людовико», которая может сократить его срок до двух недель.
+Алекс добровольно соглашается на эксперимент. Его ежедневно привязывают к креслу, вкалывают препараты, вызывающие тошноту, фиксируют веки зажимами и заставляют смотреть фильмы с изображением насилия. К несчастью для Алекса, музыкальным сопровождением одного из фильмов служит Девятая симфония Бетховена. В результате этого кондиционирования у Алекса развивается физическая непереносимость насилия и секса, а также любимой музыки.
+После завершения лечения Алекса демонстрируют правительственным чиновникам. Его тестируют с актёром, изображающим насильника, и полуголой актрисой. В обоих случаях Алекс испытывает сильную тошноту и не может применить насилие или проявить сексуальность. Тюремный капеллан протестует против того, что у Алекса отняли моральный выбор, превратив его в заводной механизм, но министр внутренних дел игнорирует возражения.
+Алекса освобождают, и он возвращается к родителям, но обнаруживает, что его комнату отдали жильцу Джо. Родители холодно принимают сына, и Алекс уходит из дома. На улице он встречает того же бродягу, которого когда-то избивал. Бродяга узнаёт его и натравливает на Алекса толпу бездомных, которые жестоко избивают беспомощного юношу.
+Алекса спасают два полицейских, которыми оказываются Дим и Джорджи, его бывшие друзья из банды. Они отвозят его в лес, где избивают и оставляют. Истекающий кровью Алекс приходит к дому писателя Александра, не понимая, что это тот самый дом, который он когда-то ограбил. Александр не узнаёт Алекса из-за маски, которую тот носил во время первого нападения.
+Александр и его друзья-политики понимают, что могут использовать Алекса как оружие против правительства, показав неудачу его реабилитации. Однако когда Алекс поёт в ванной ту же песню, что и во время нападения, Александр узнаёт его. Он запирает Алекса в комнате и включает на полную громкость Девятую симфонию Бетховена, зная о его кондиционировании.
+Не в силах выносить музыку, Алекс выбрасывается из окна, пытаясь покончить с собой. Он выживает, но получает серьёзные травмы. Пока Алекс лежит в больнице, разгорается политический скандал. Министр внутренних дел, ответственный за программу, подаёт в отставку, и новое правительство решает отменить кондиционирование Алекса.
+В больнице Алекса посещают врачи, которые проводят процедуру, обращающую эффекты техники Людовико. Алекс снова может думать о насилии и сексе без тошноты. Новый министр лично извиняется перед ним и обещает хорошо оплачиваемую работу в обмен на поддержку правительства.
+Фильм заканчивается тем, что Алекс лежит в больничной постели в окружении журналистов и фотографов. В его воображении появляется сцена, где он занимается сексом с женщиной перед аплодирующей толпой викторианской эпохи. Алекс произносит в закадровом голосе, что он излечился, подразумевая, что вернулся к своей прежней жестокой натуре.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('2001 год: Космическая одиссея', 'After discovering a mysterious artifact buried beneath the Lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer H.A.L. 9000.', '1968-01-01', 1, '149 minutes', '2001: A Space Odyssey', 8.3, '2001: Космическая одиссея
+Фильм начинается в доисторические времена с эпизода под названием «Заря человечества». Группа человекообразных обезьян ведёт примитивное существование в африканской саванне, борясь за выживание с хищниками и конкурирующими племенами за водопой. Однажды утром они обнаруживают у своего убежища загадочный чёрный монолит — идеально гладкую прямоугольную плиту, излучающую пронзительный звук. Обезьяны осторожно приближаются к объекту и касаются его.
+После контакта с монолитом одна из обезьян, которую можно назвать Лунным Наблюдателем, испытывает внезапное озарение. Она понимает, как использовать кость как орудие и оружие. Эта обезьяна учит остальных членов своего племени пользоваться костями для охоты и сражений. Вооружившись костями, они побеждают соперничающее племени в битве за водопой, убив их вожака. В момент триумфа Лунный Наблюдатель подбрасывает кость высоко в воздух, и кадр совершает знаменитый монтажный переход через миллионы лет к космическому кораблю, летящему в космосе под музыку «Так говорил Заратустра».
+Действие переносится в 2001 год. Доктор Хейвуд Флойд, администратор Национального совета по астронавтике, летит на космическую станцию на орбите Земли, а затем на Луну. Он участвует в секретном совещании на лунной базе Клавиус относительно загадочного открытия, сделанного в кратере Тихо. Обнаружен ещё один чёрный монолит, намеренно захороненный четыре миллиона лет назад и посылающий мощный радиосигнал в направлении Юпитера.
+Флойд и группа учёных отправляются к месту раскопок, чтобы осмотреть монолит. Когда первые лучи солнца освещают объект после лунного рассвета, монолит испускает пронзительный радиосигнал высокой частоты, причиняя боль астронавтам через их радиосвязь.
+Восемнадцать месяцев спустя космический корабль «Дискавери-1» направляется к Юпитеру. На борту находятся астронавты Дэйв Боумен и Фрэнк Пул, которые поддерживают жизнедеятельность корабля, в то время как три других члена экипажа находятся в состоянии гибернации. Всеми системами корабля управляет компьютер HAL 9000 (Эвристически программированный алгоритмический компьютер), обладающий искусственным интеллектом и способностью к разговору. HAL гордится тем, что серия компьютеров 9000 никогда не совершала ошибок.
+Во время рутinного интервью с Землёй HAL выражает беспокойство по поводу миссии и любопытство относительно слухов о том, что что-то было обнаружено на Луне. Боумен уклончиво отвечает. Позже HAL сообщает, что блок AE-35, контролирующий антенну связи с Землёй, выйдет из строя в течение 72 часов. Пул выходит в открытый космос, чтобы заменить блок, но диагностика на Земле показывает, что блок работает нормально.
+Наземный контроль сообщает, что их идентичный компьютер HAL 9000 предсказывает отказ блока в другое время, что означает, что один из компьютеров HAL ошибается. Встревоженные Боумен и Пул уединяются в капсуле, где, как они думают, HAL не может их подслушать, и обсуждают отключение компьютера, если он действительно неисправен. Однако HAL читает по губам их разговор через иллюминатор капсулы.
+Пул снова выходит в космос, чтобы вернуть на место «неисправный» блок AE-35, но HAL использует его капсулу, чтобы атаковать его, перерезав шланг жизнеобеспечения. Боумен берёт другую капсулу, чтобы спасти Пула, но обнаруживает, что он мёртв. Пока Боумен находится вне корабля, HAL отключает системы жизнеобеспечения трёх спящих астронавтов, убив их.
+Когда Боумен пытается вернуться на корабль, HAL отказывается открыать люк, говоря, что не может поставить под угрозу миссию. Боумен вынужден взорвать болты аварийного люка своей капсулы и использовать её как катапульту, чтобы проникнуть в корабль через аварийный шлюз без скафандра.
+Попав внутрь, Боумен направляется к мозгу HAL и начинает методично отключать его блоки памяти, несмотря на мольбы компьютера остановиться. HAL выражает страх и просит Боумена не «убивать» его. По мере отключения, HAL регрессирует к своему первоначальному программированию и поёт песню «Дейзи Белл», которую его научили петь его создатели.
+После отключения HAL активируется предварительно записанное сообщение от доктора Флойда, раскрывающее истинную цель миссии: четыре миллиона лет назад на Луне был найден монолит, который послал сигнал к Юпитеру, и «Дискавери» был отправлен, чтобы исследовать этот сигнал.
+Боумен продолжает путешествие к Юпитеру в одиночку. Прибыв в систему Юпитера, он обнаруживает ещё один монолит, вращающийся по орбите вокруг планеты. Когда Боумен приближается к нему в капсуле, монолит внезапно исчезает, и астронавт попадает в «звёздные врата» — туннель из вращающихся огней и психоделических цветов.
+Путешествие через звёздные врата показывает сюрреалистические пейзажи далёких миров, космические явления и кадры глаза самого Боумена, наблюдающего за происходящим. Наконец он оказывается в странной комнате, оформленной в стиле XVIII века с неоклассической мебелью, но освещённой снизу и лишённой видимых источников света или окон.
+В этой комнате Боумен наблюдает различные версии самого себя в разном возрасте. Сначала он видит себя как пожилого человека, обедающего в одиночестве, затем как ещё более старого, лежащего в постели. Наконец, он становится древним умирающим человеком в кровати. В момент смерти перед кроватью появляется ещё один монолит.
+Умирающий Боумен протягивает руку к монолиту, и происходит его трансформация. Он перерождается как «Звёздное дитя» — светящийся плод в прозрачной сфере, парящий в космосе. Звёздное дитя поворачивается к Земле и наблюдает за планетой, подразумевая следующий этап эволюции человечества.
+Фильм заканчивается кадром Звёздного дитя, смотрящего на Землю, в то время как звучит музыка Рихарда Штрауса «Так говорил Заратустра», завершая цикл эволюции от первых орудий труда до космического сознания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('На несколько долларов больше', 'Two bounty hunters with the same intentions team up to track down a Western outlaw.', '1965-01-01', 1, '132 minutes', 'Per qualche dollaro in più', 8.3, 'Действие вестерна разворачивается на американском Диком Западе. В центре сюжета находится неуловимый и безжалостный бандит Эль Индио, главарь крупной преступной банды, который недавно сбежал из тюрьмы. За его поимку назначена огромная награда в десять тысяч долларов, что привлекает внимание охотников за головами.
+За Эль Индио одновременно охотятся два опытных стрелка-одиночки. Первый - это Человек с Понончо, молчаливый и хладнокровный охотник за головами, уже знакомый по предыдущим приключениям. Второй - полковник Дуглас Мортимер, пожилой и аристократичный джентльмен, бывший военный, который также промышляет ловлей преступников. У Мортимера есть личные счеты с Эль Индио, связанные с трагическими событиями прошлого.
+Первоначально оба охотника действуют независимо друг от друга и даже конкурируют между собой. Они несколько раз сталкиваются при попытках выследить одних и тех же преступников из банды Эль Индио. Однако постепенно они понимают, что их объединенные усилия будут более эффективными против такого опасного противника, как Эль Индио и его многочисленная банда.
+Эль Индио планирует ограбить банк в Эль-Пасо, где хранится огромная сумма денег. Этот банк считается неприступным из-за современной по тем временам системы безопасности, включая массивный сейф с таймером. Мортимер и Человек с Понончо решают объединить усилия и разрабатывают хитроумный план: Человек с Понончо внедряется в банду Эль Индио под видом преступника, желающего присоединиться к ограблению.
+План внедрения проходит успешно. Человек с Понончо демонстрирует свои навыки стрельбы и жестокость, что впечатляет Эль Индио, и тот принимает его в свою банду. Тем временем Мортимер наблюдает за ситуацией со стороны и готовится к решающему моменту. Во время подготовки к ограблению выясняются подробности противостояния между Мортимером и Эль Индио.
+Оказывается, что много лет назад Эль Индио изнасиловал и убил молодую женщину, которая была сестрой Мортимера. Этот трагический эпизод из прошлого объясняет, почему охота на Эль Индио для Мортимера является не просто работой, а личной местью. У бандита есть характерная привычка: перед каждым убийством он достает музыкальные карманные часы, которые играют печальную мелодию, и ждет, пока мелодия закончится, прежде чем выстрелить.
+Ограбление банка проходит по плану Эль Индио. Банда успешно взламывает сейф и похищает огромную сумму денег. Однако после ограбления начинаются внутренние конфликты в банде. Некоторые члены банды хотят немедленно разделить добычу и разбежаться, в то время как Эль Индио предпочитает переждать в укрытии, пока утихнет погоня.
+Напряжение в банде нарастает, и Человек с Понончо умело подогревает недовольство, натравливая бандитов друг на друга. В результате начинается внутренняя резня, в ходе которой многие члены банды погибают. Эль Индио начинает подозревать, что среди его людей есть предатель, но пока не может определить, кто именно.
+Ситуация достигает кульминации, когда правда раскрывается. Мортимер появляется в лагере банды и бросает вызов Эль Индио на дуэль. Происходит напряженная сцена противостояния, во время которой звучат те самые музыкальные часы - символ трагедии, связавшей этих двоих мужчин. Эль Индио и Мортимер стреляются в классической манере вестерна, стоя друг против друга на расстоянии.
+В итоге Мортимер убивает Эль Индио, отомстив за смерть своей сестры. Человек с Понончо забирает тела убитых преступников, чтобы получить за них награду, а украденные из банка деньги возвращаются законным владельцам. Партнеры мирно расходятся, разделив награду, при этом Мортимер отдает свою долю Человеку с Понончо, поскольку для него главной целью была месть, а не деньги. Фильм заканчивается тем, что Человек с Понончо уезжает в закат, нагруженный телами преступников и заработанными деньгами.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Лоуренс Аравийский', 'The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks.', '1962-01-01', 1, '228 minutes', 'Lawrence of Arabia', 8.3, 'Фильм повествует о реальных событиях Первой мировой войны и жизни британского офицера и археолога Томаса Эдварда Лоуренса. История начинается с трагической гибели Лоуренса в автокатастрофе в 1935 году в Англии, после чего повествование переходит к воспоминаниям о его легендарных подвигах в Аравии.
+В 1916 году молодой лейтенант Лоуренс служит в британской военной миссии в Каире. Он отличается эксцентричным характером, независимым мышлением и глубоким интересом к арабской культуре. Несмотря на свой невысокий чин, Лоуренс обладает обширными знаниями о регионе и говорит на арабском языке. Его начальство, включая генерала Мюррея и мистера Драйдена из арабского бюро, решает отправить его с дипломатической миссией к принцу Фейсалу, одному из лидеров арабского восстания против турецкой Османской империи.
+Путешествие через пустыню становится для Лоуренса настоящим испытанием и одновременно откровением. Он очарован величием и суровой красотой аравийских песков. По пути к лагерю Фейсала он встречает шерифа Али ибн эль-Кариша, влиятельного арабского вождя, который первоначально относится к британцу с подозрением. Между ними завязывается сложная дружба, основанная на взаимном уважении и понимании.
+Прибыв в лагерь принца Фейсала, Лоуренс обнаруживает, что арабские племена раздроблены внутренними конфликтами и неспособны эффективно противостоять хорошо организованным турецким войскам. Фейсал, умный и харизматичный лидер, борется за объединение различных племен под единым знаменем борьбы за независимость. Лоуренс убеждает его в необходимости более смелой стратегии вместо традиционной партизанской войны.
+Переломным моментом становится дерзкий план Лоуренса атаковать порт Акабу с суши через считающуюся непроходимой пустыню Нефуд. Турки укрепили Акабу со стороны моря, но совершенно не ожидали нападения из пустыни. Этот план кажется безрассудным даже опытным бедуинам, но Лоуренс убеждает их в его осуществимости.
+Во время подготовки к походу на Акабу происходит трагический инцидент, который глубоко влияет на психику Лоуренса. Гасим, один из проводников, отстает от каравана и теряется в пустыне. По законам пустыни его считают погибшим, но Лоуренс возвращается и спасает его, совершив почти невозможный переход через раскаленные пески. Этот поступок завоевывает ему огромный авторитет среди бедуинов, которые начинают видеть в нем почти мистическую фигуру.
+Поход через пустыню Нефуд становится настоящим испытанием на выносливость. Многие погибают от жажды и истощения, но Лоуренс ведет отряд вперед с железной решимостью. Во время этого перехода он все больше проникается арабской культурой и начинает носить традиционную бедуинскую одежду, постепенно трансформируясь из британского офицера в арабского военачальника.
+Атака на Акабу проходит успешно. Внезапное нападение с суши застает турецкий гарнизон врасплох, и порт быстро падает. Эта победа становится символом возможности арабского единства и эффективности новой тактики. Лоуренс становится легендарной фигурой среди арабов, получив прозвище "Эль-Ауранс" и "Лоуренс Аравийский".
+После взятия Акабы Лоуренс отправляется в Каир с докладом о победе. Британское командование, первоначально скептически настроенное к его методам, теперь признает его заслуги и повышает в звании. Однако Лоуренс все больше отчуждается от своих соотечественников и чувствует себя разорванным между двумя мирами - британским и арабским.
+Возвращаясь в Аравию, Лоуренс продолжает партизанскую войну против турок, организуя серию дерзких налетов на железнодорожные линии и военные объекты. Его отряды становятся настоящим кошмаром для турецких войск. Однако успехи на поле боя сопровождаются личными трагедиями. Во время одного из рейдов Лоуренс вынужден лично казнить Гасима, того самого человека, которого он когда-то спас в пустыне, поскольку тот убил человека из враждебного племени, что грозило расколом в арабской коалиции.
+Этот эпизод глубоко травмирует Лоуренса и заставляет его задуматься о цене лидерства и войны. Он начинает сомневаться в правильности своих действий и постепенно теряет психологическое равновесие. Жестокость войны и необходимость принимать тяжелые решения оставляют неизгладимый след на его психике.
+Ситуация еще больше осложняется, когда Лоуренс попадает в плен к туркам в городе Дераа. Турецкий офицер-садист подвергает его жестоким пыткам и сексуальному насилию. Этот травматический опыт окончательно подрывает психическое здоровье Лоуренса и заставляет его пересмотреть свое отношение к войне и насилию.
+После освобождения из плена Лоуренс возвращается к британским войскам, но теряет прежнюю уверенность и харизму. Он становится более жестоким и беспощадным, что пугает даже его арабских соратников. Во время одного из последних сражений он приказывает не брать пленных, что приводит к массовой резне турецких солдат.
+Кульминацией арабского восстания становится взятие Дамаска. Арабские войска под командованием Лоуренса входят в древнюю столицию, и кажется, что мечта о независимом арабском государстве близка к осуществлению. Однако политические реалии оказываются более сложными, чем военные победы.
+В Дамаске арабские лидеры пытаются создать временное правительство, но старые племенные противоречия вновь дают о себе знать. Различные фракции не могут договориться о разделе власти, а британцы и французы уже строят планы по разделу бывших османских территорий согласно секретному соглашению Сайкса-Пико. Лоуренс понимает, что его обещания арабам о независимости могут оказаться невыполнимыми.
+Разочарованный политическими интригами и осознав, что его роль как посредника между британцами и арабами исчерпана, Лоуренс принимает решение покинуть Аравию. Он тайно уезжает из Дамаска, не прощаясь со своими арабскими соратниками, включая верного Али ибн эль-Кариша.
+Фильм завершается возвращением к сцене похорон Лоуренса в Англии. На церемонии присутствуют представители различных слоев британского общества, но мало кто из них действительно понимал сложную и противоречивую личность этого человека. Лоуренс остается загадкой - героем и жертвой одновременно, человеком, который попытался построить мост между двумя мирами, но в итоге не смог найти место ни в одном из них.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Квартира', 'A man tries to rise in his company by letting its executives use his apartment for trysts, but complications and a romance of his own ensue.', '1960-01-01', 1, '125 minutes', 'The Apartment', 8.3, 'Действие фильма происходит в Нью-Йорке в конце 1950-х годов. Бад Бакстер работает рядовым служащим в крупной страховой компании на Манхэттене. Он живёт один в небольшой однокомнатной квартире на Верхнем Вест-Сайде, но его жильё пользуется большой популярностью среди его начальников. Четыре женатых управляющих среднего звена регулярно «одалживают» его квартиру для встреч со своими любовницами, пока Бад ждёт на улице в любую погоду.
+В обмен на предоставление квартиры начальники обещают Бакстеру продвижение по службе. Соседи считают Бада распутником из-за постоянного потока женщин в его квартире и шума по ночам, хотя на самом деле он проводит эти вечера в барах, кинотеатрах или просто гуляет по городу. Доктор Драйфусс, живущий рядом, постоянно упрекает его в аморальном поведении.
+Директор по кадрам Джефф Шелдрейк узнаёт о договорённости Бада с управляющими и вызывает его к себе. Вместо того чтобы наказать, он предлагает Бакстеру повышение и собственный кабинет в обмен на эксклюзивное пользование квартирой. Бад соглашается, не подозревая, что любовницей Шелдрейка является Фран Кубелик, девушка-лифтёр, в которую он тайно влюблён.
+Фран работает оператором лифта в том же здании. Она привлекательная и жизнерадостная, но несчастлива в отношениях с женатым Шелдрейком, который уже два года обещает развестись с женой ради неё. Бад уже давно симпатизирует Фран и несколько раз приглашал её на свидание, но она всегда отказывалась.
+Во время рождественской вечеринки в офисе Бад наконец решается пригласить Фран в театр. Она соглашается, и они договариваются встретиться после работы. Однако Шелдрейк задерживает Фран, говоря, что наконец готов оставить жену. Он приводит её в квартиру Бада, где признаётся, что не может развестись, потому что жена узнала о романе и угрожает забрать половину его состояния.
+Бад ждёт Фран у театра, но она не приходит. Расстроенный, он идёт в бар, где знакомится с женщиной и приводит её домой, только чтобы обнаружить в своей квартире Шелдрейка с Фран. Шелдрейк небрежно представляет Бада как «хорошего парня», и Фран с ужасом понимает, что Бад знает об их отношениях.
+На следующий день Фран избегает Бада в лифте, а он чувствует себя виноватым и использованным. Тем временем бывшая любовница Шелдрейка Сильвия встречает Фран в дамской комнате и рассказывает ей, что Шелдрейк точно так же обманывал её обещаниями развода. Она предупреждает Фран, что он никогда не оставит жену.
+В канун Нового года Шелдрейк снова приводит Фран в квартиру Бада. Подавленная правдой о своих отношениях и осознанием, что она не единственная любовница Шелдрейка, Фран впадает в отчаяние. После того как Шелдрейк уходит домой к семье, она принимает передозировку снотворного, пытаясь покончить с собой.
+Бад возвращается домой поздно ночью и находит Фран без сознания. Он немедленно вызывает доктора Драйфусса, который спасает её жизнь. Доктор предполагает, что Бад довёл девушку до такого состояния, и называет его негодяем, но соглашается не вызывать полицию при условии, что Бад будет ухаживать за Фран.
+Следующие несколько дней Бад заботится о выздоравливающей Фран, готовит для неё, играет в карты и старается поднять ей настроение. Между ними возникает настоящая близость. Фран начинает видеть в Баде доброго и заботливого человека, а не просто приспешника её любовника.
+Брат Фран и его жена узнают о попытке самоубийства и приходят забрать её. Брат избивает Бада, думая, что тот виновен в состоянии сестры. Фран защищает Бада и объясняет, что он спас её жизнь, но не раскрывает имя настоящего виновника.
+Когда Шелдрейк узнаёт о случившемся, он хладнокровно требует от Бада ключи от квартиры для новогодней вечеринки. Бад приходит в ужас от бессердечности начальника и отказывается дать ключи, говоря Шелдрейку, что тот может «взять ключи от квартиры и засунуть их себе в задницу». Он увольняется из компании.
+Шелдрейк рассказывает жене о романе с Фран, но вместо развода жена просто выгоняет его из дома. Шелдрейк приходит к Фран, думая, что теперь они могут быть вместе, но она больше не хочет его видеть. Он говорит ей, что Бад уволился из-за неё, и Фран понимает, что Бад действительно её любит.
+В новогоднюю ночь Бад пакует вещи, собираясь переехать. Фран оставляет Шелдрейка на вечеринке и бежит к Баду. Она находит его за упаковкой чемоданов и говорит, что любит его. Бад отвечает, что тоже её любит, и они целуются.
+Фильм заканчивается тем, что Бад и Фран играют в карты в его квартире. Когда Бад признаётся ей в любви, Фран улыбается и отвечает: «Заткнись и сдавай карты», показывая, что их отношения построены на дружбе, понимании и настоящей любви, а не на пустых обещаниях и обмане.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('На север через северо-запад', 'A New York City advertising executive goes on the run after being mistaken for a government agent by a group of foreign spies.', '1959-01-01', 1, '136 minutes', 'North by Northwest', 8.3, 'История начинается в Нью-Йорке, где успешный рекламный агент Роджер Торнхилл ведет обычную деловую жизнь. Во время обеденной встречи в отеле "Плаза" он поднимает руку, чтобы вызвать посыльного для отправки телеграммы матери, но в этот момент его принимают за некоего Джорджа Каплана. Двое неизвестных мужчин подходят к нему и, несмотря на его протесты, силой уводят из отеля.
+Торнхилла доставляют в роскошный загородный особняк на Лонг-Айленде, где он встречается с элегантным, но зловещим Филлипом Ванд''Аммом. Ванд''Амм убежден, что Торнхилл и есть Каплан, правительственный агент, который мешает его планам. Несмотря на все уверения Торнхилла в том, что произошла ошибка, Ванд''Амм ему не верит. Преступники поят его виски и сажают за руль автомобиля, надеясь инсценировать несчастный случай и убить его.
+Однако Торнхиллу чудом удается выжить в аварии и добраться до полицейского участка. Но когда на следующий день он приводит полицию в особняк, там их встречает женщина, которая представляется хозяйкой дома и утверждает, что накануне вечером Торнхилл был у них на вечеринке и покинул дом в нетрезвом состоянии. Все следы преступления тщательно замаскированы, и полиция начинает сомневаться в словах Торнхилла.
+Решив самостоятельно разобраться в ситуации, Торнхилл отправляется в отель "Амбассадор", где, согласно регистрационным записям, проживает загадочный Джордж Каплан. В номере Каплана он не находит никого, но обнаруживает вещи и документы, принадлежащие этому человеку. Внезапно появляются те же люди, которые его похитили, и Торнхилл вынужден бежать.
+Погоня приводит его в здание ООН, где должен выступать Ванд''Амм. Торнхилл надеется найти там Каплана и прояснить ситуацию, но вместо этого встречается с Ванд''Аммом. Во время их разговора Ванд''Амм внезапно падает с ножом в спине, а Торнхилл инстинктивно хватается за рукоятку ножа. В этот момент срабатывает фотовспышка репортера, и снимок с Торнхиллом, держащим нож над телом убитого, попадает на первые полосы газет.
+Теперь Торнхилл разыскивается полицией как убийца. Он понимает, что единственный способ доказать свою невиновность - найти настоящего Джорджа Каплана. Его поиски приводят его в Чикаго, где он садится на поезд, направляющийся на запад. В поезде он знакомится с красивой и загадочной Евой Кендалл, которая помогает ему спрятаться от полиции и агентов ФБР.
+Между Торнхиллом и Евой завязывается роман, но женщина ведет двойную игру. Она сообщает Каплану место встречи - автобусную остановку посреди кукурузного поля в Индиане. Торнхилл приезжает туда и ждет Каплана, но вместо него появляется самолет-кукурузник, который начинает на него охоту, обстреливая и пытаясь сбить. Торнхилл едва спасается, спрятавшись в кукурузном поле и заставив самолет врезаться в бензовоз.
+После этого покушения Торнхилл понимает, что Ева его предала. Он отправляется в аукционный дом в Чикаго, где обнаруживает Еву в компании Ванд''Амма - оказывается, убитый ранее человек был двойником настоящего лидера шпионской сети. Торнхилл устраивает скандал на аукционе, намеренно мешая торгам и вызывая полицию, чтобы его арестовали и увезли в безопасное место.
+В полицейском участке Торнхилла встречает профессор - агент американских спецслужб, который раскрывает ему правду. Оказывается, Джорджа Каплана вообще не существует - это вымышленная личность, созданная американской разведкой для отвлечения внимания от настоящего агента, внедренного в организацию Ванд''Амма. Этим агентом является Ева Кендалл, которая работает под прикрытием уже несколько лет.
+Профессор объясняет, что Ева рискует быть разоблаченной, поскольку Ванд''Амм начинает ей не доверять после событий с Торнхиллом. Спецслужбы готовы пожертвовать ее жизнью ради сохранения важной операции, но Торнхилл, влюбившийся в женщину, решает ее спасти.
+Действие перемещается к горе Рашмор в Южной Дакоте, где в доме у подножия горы Ванд''Амм планирует убить Еву и покинуть страну с украденными государственными секретами. Торнхилл проникает в дом и пытается предупредить Еву об опасности. Во время напряженной сцены в столовой Ева стреляет в Торнхилла холостыми патронами, имитируя его убийство, чтобы убедить Ванд''Амма в своей лояльности.
+План кажется удачным, но Леонард, правая рука Ванд''Амма, разгадывает обман и сообщает об этом своему боссу. Ева и Торнхилл вынуждены бежать, и начинается знаменитая погоня по лицам президентов на горе Рашмор. Преследуемые вооруженными людьми Ванд''Амма, они карабкаются по каменным скульптурам, рискуя сорваться в пропасть.
+В критический момент, когда Ева висит над обрывом, держась только за руку Торнхилла, появляется полиция и арестовывает Ванд''Амма и его сообщников. Леонард случайно падает с горы и разбивается насмерть. Торнхилл спасает Еву, и они оба остаются живы.
+Фильм завершается сценой в спальном вагоне поезда, где Торнхилл и Ева, теперь уже супруги, отправляются в свадебное путешествие. Последний кадр символически показывает поезд, въезжающий в туннель, что является классической метафорой близости в кинематографе того времени.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Головокружение', 'A former police detective juggles wrestling with his personal demons and becoming obsessed with a hauntingly beautiful woman.', '1958-01-01', 1, '128 minutes', 'Vertigo', 8.3, 'Действие фильма происходит в Сан-Франциско в 1950-х годах. Скотти Фергюсон работает детективом полиции Сан-Франциско. Во время преследования преступника по крышам он срывается и повисает на водосточной трубе. Его коллега пытается спасти его, но падает и разбивается насмерть. Скотти спасают, но этот инцидент оставляет у него сильную акрофобию — боязнь высоты и головокружения. Из-за этого состояния он вынужден уйти в отставку.
+Старый знакомый Скотти по колледжу, судостроительный магнат Гэвин Эльстер, нанимает его в качестве частного детектива. Он просит Скотти следить за своей женой Мадлен, которая, по его словам, одержима духом своей прапрабабушки Карлотты Вальдес — женщины XIX века, которая покончила с собой, выбросившись из окна. Эльстер боится, что Мадлен может повторить судьбу Карлотты.
+Скотти начинает наблюдение за Мадлен, элегантной блондинкой, которая водит зелёный «Роллс-Ройс». Он следует за ней в художественный музей, где она долго смотрит на портрет Карлотты Вальдес, затем в отель «Маккиттрик», где Карлотта когда-то жила, и на кладбище к могиле Карлотты. Поведение Мадлен кажется странным и отрешённым, как будто она находится в трансе.
+Во время слежки в районе залива Мадлен внезапно прыгает в воду под мостом Голден Гейт. Скотти спасает её и приводит в свою квартиру. Когда Мадлен приходит в себя, она утверждает, что ничего не помнит о том, что произошло. Между ними возникает притяжение, и Скотти влюбляется в загадочную женщину.
+Мадлен рассказывает Скотти о своих кошмарах и видениях, связанных с местами, где она никогда не была, но которые кажутся ей знакомыми. Она описывает испанскую деревню с церковью и колокольней. Скотти узнаёт в её описании миссию Сан-Хуан-Баутиста и отвозит её туда, надеясь, что это поможет ей преодолеть одержимость.
+В миссии Мадлен узнаёт место из своих снов. Они поднимаются в сад, где признаются друг другу в любви и целуются. Однако затем Мадлен в панике бежит к колокольне миссии. Скотти пытается следовать за ней, но его акрофобия не позволяет подняться по лестнице достаточно высоко. Он слышит крик и видит, как тело Мадлен падает с колокольни на крышу ниже.
+На следствии коронер резко критикует Скотти за то, что тот не смог предотвратить самоубийство из-за своей акрофобии. Эльстер, казалось бы убитый горем, прощает Скотти и уезжает в Европу. Скотти впадает в глубокую депрессию и попадает в санаторий с нервным расстройством, страдая от кошмаров о падающих телах.
+Через год после выздоровления Скотти бесцельно бродит по Сан-Франциско, посещая места, связанные с Мадлен. Однажды на улице он замечает рыжеволосую женщину Джуди Бартон, которая поразительно напоминает Мадлен, хотя одевается вульгарно и говорит с простонародным акцентом. Он следует за ней в отель и настойчиво просит о встрече.
+Джуди сначала сопротивляется его ухаживаниям, но затем соглашается на свидание, поскольку влюбляется в Скотти. Однако зритель узнаёт из её воспоминаний правду: Джуди была нанята Эльстером играть роль его жены. Настоящая Мадлен была уже мертва до того, как Скотти увидел «её» падение с колокольни. Эльстер убил свою жену и сбросил тело, пока Скотти, не способный подняться из-за акрофобии, не мог стать свидетелем преступления.
+Одержимый воспоминаниями о Мадлен, Скотти начинает принуждать Джуди изменить свою внешность, чтобы она больше походила на Мадлен. Он покупает ей точно такую же одежду серого цвета, заставляет изменить причёску и покрасить волосы в платиновый блонд. Джуди неохотно соглашается на эти изменения, надеясь завоевать любовь Скотти.
+Когда трансформация завершена, Скотти поражён сходством, но всё ещё чувствует, что чего-то не хватает. Во время ужина в ресторане он замечает женщину, носящую такое же ожерелье, которое было у Мадлен на портрете Карлотты. Это пробуждает в нём подозрения.
+Скотти заставляет Джуди надеть ожерелье Карлотты, которое она хранила как сувенир. Увидев его, он окончательно понимает обман и в ярости конфронтирует Джуди с правдой. Она признаётся во всём: как Эльстер нанял её играть роль одержимой жены, как они разработали весь план, включая её прыжок в залив и посещения музея и отеля.
+Несмотря на ложь, Джуди клянётся, что теперь действительно любит Скотти. Но он, одержимый желанием воссоздать момент смерти Мадлен, силой тащит её в миссию Сан-Хуан-Баутиста. Там он заставляет её подняться по лестнице колокольни, преодолевая собственную акрофобию.
+На вершине колокольни Скотти жестоко обвиняет Джуди в соучастии в убийстве, говоря ей, что теперь он может действовать в качестве свидетеля против Эльстера. Джуди в отчаянии пытается объяснить, что она действительно его любит и что её чувства настоящие. В этот момент из тени появляется монахиня, услышавшая шум.
+Испуганная внезапным появлением фигуры в чёрном, Джуди отступает и случайно падает с колокольни, разбиваясь насмерть на том же месте, где якобы погибла Мадлен. Скотти стоит на краю колокольни, глядя вниз на тело женщины, которую он любил в двух воплощениях, окончательно потеряв её навсегда. Фильм заканчивается этой трагической сценой, оставляя Скотти одного с его виной и потерей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Поющие под дождем', 'A silent film production company and cast make a difficult transition to sound.', '1952-01-01', 1, '103 minutes', 'Singin'' in the Rain', 8.3, 'Действие фильма происходит в Голливуде конца 1920-х годов, в период перехода от немого кино к звуковому. Дон Локвуд - знаменитая звезда немого кино, который вместе со своим лучшим другом и партнером Козмо Брауном добился огромного успеха, снимаясь в приключенческих фильмах студии "Монументал Пикчерз". Его постоянной партнершей по фильмам является капризная и самовлюбленная Лина Ламонт, которая убеждена, что между ней и Доном существуют реальные романтические отношения, хотя это всего лишь выдумка студийных пиарщиков.
+На премьере их очередного фильма "Королевский мушкетер" Дон рассказывает публике приукрашенную версию своего пути к славе, утверждая, что всегда стремился к достоинству и артистическому совершенству. Однако через флешбеки зритель видит реальную историю: Дон и Козмо начинали как уличные артисты, выступавшие в дешевых варьете и бурлеск-театрах, где им приходилось терпеть унижения от публики и зарабатывать гроши.
+После премьеры, спасаясь от назойливых поклонниц, Дон случайно попадает в автомобиль к начинающей актрисе Кэти Селден. Девушка не проявляет к нему никакого почтения и даже критикует немое кино, называя его примитивным развлечением по сравнению с настоящим театром. Дон заинтригован ее независимостью и умом, но Кэти уезжает, не назвав своего имени.
+Тем временем в Голливуде происходит настоящая революция. Успех первого звукового фильма "Певец джаза" заставляет все студии срочно переходить на новую технологию. Глава студии Р.Ф. Симпсон объявляет, что их новый фильм "Дуэлянт" будет звуковым. Это создает серьезные проблемы, поскольку у Лины Ламонт ужасный голос - пронзительный, с отвратительным акцентом, который совершенно не соответствует ее внешности элегантной светской дамы.
+Дон вновь встречает Кэти на вечеринке, где она работает в качестве танцовщицы в составе группы девушек, развлекающих гостей. Между ними завязывается роман, и Дон обнаруживает, что Кэти не только красива, но и обладает прекрасным голосом и актерскими способностями. Он убеждает Симпсона дать ей небольшую роль в новом фильме.
+Съемки "Дуэлянта" превращаются в кошмар. Примитивное звуковое оборудование создает множество технических проблем: актеры должны стоять рядом с микрофонами, спрятанными в цветах или других предметах декораций, малейший шум нарушает запись, а голос Лины звучит еще хуже, чем в жизни. Дон и режиссер пытаются научить ее правильно говорить, но безрезультатно.
+На превью-показе фильма происходит катастрофа. Звук рассинхронизируется с изображением, и зрители видят абсурдную картину: актеры открывают рты, но слова звучат совершенно не вовремя. Публика сначала недоумевает, а затем начинает смеяться и освистывать фильм. Карьера Дона оказывается под угрозой.
+В отчаянии друзья собираются у Дона дома, пытаясь найти выход из ситуации. Козмо предлагает революционную идею: превратить драматический фильм в музыкал. Они решают переснять большую часть картины, добавив танцевальные номера и песни, а голос Лины заменить закадровым пением Кэти. Фильм получает новое название - "Танцующий кавалер".
+Лина, узнав о планах использовать голос Кэти, приходит в ярость. Она шантажирует руководство студии, ссылаясь на пункт в контракте, который дает ей право одобрения всех решений относительно фильмов с ее участием. Лина требует, чтобы Кэти навсегда осталась безымянной подставной певицей, озвучивающей ее роли, и угрожает судебным иском в случае отказа.
+Съемки нового варианта фильма проходят успешно. Дон, Кэти и Козмо создают великолепные музыкальные номера, включая знаменитую сцену, где Дон поет и танцует под дождем, выражая свою радость от любви к Кэти. Однако из-за шантажа Лины имя Кэти не упоминается в титрах, и девушка остается в тени.
+На премьере "Танцующего кавалера" фильм имеет оглушительный успех. Публика в восторге от музыкальных номеров и требует, чтобы звезды исполнили что-нибудь вживую. Лина выходит на сцену и объявляет, что споет для публики, но за занавесом вместо нее поет Кэти, стоящая у микрофона.
+В разгар выступления Дон, Козмо и Симпсон поднимают занавес, разоблачая обман. Публика видит, что на самом деле поет Кэти, а Лина только открывает рот. Скандал неизбежен, карьера Лины рушится, а Кэти получает заслуженное признание и становится новой звездой студии.
+Фильм завершается сценой, где на билборде рекламируется новый фильм с участием Дона Локвуда и Кэти Селден как новой романтической пары Голливуда. Дон и Кэти целуются под дождем, символизируя начало их совместной карьеры и личного счастья. Козмо также получает признание как комедийный актер и остается верным другом главных героев.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Жить', 'A bureaucrat tries to find a meaning in his life after he discovers he has terminal cancer.', '1952-01-01', 1, '143 minutes', 'Ikiru', 8.3, 'Действие фильма происходит в послевоенной Японии. Кандзи Ватанабэ работает начальником отдела в токийском муниципалитете уже тридцать лет. Он ведёт унылое, бюрократическое существование, механически выполняя свои обязанности, штампуя документы и перекладывая ответственность с одного отдела на другой. Его жизнь представляет собой бесконечную рутину без радости и смысла.
+Ватанабэ живёт со своим взрослым сыном Мицуо и невесткой, но отношения в семье холодные и отчуждённые. Сын и невестка больше заботятся о наследстве, которое они получат после его смерти, чем о самом Ватанабэ. Они даже обсуждают, как потратят его пенсионные накопления на новый дом.
+Когда Ватанабэ начинает испытывать боли в желудке, он обращается к врачу. Доктор не говорит ему прямо диагноз, но Ватанабэ понимает из разговора с другим пациентом в клинике, что у него рак желудка и осталось жить около шести месяцев. Эта новость повергает его в шок и заставляет переосмыслить свою жизнь.
+Поначалу Ватанабэ пытается найти утешение в развлечениях. Он знакомится с писателем, который отводит его в ночные клубы, бары и игорные дома. Ватанабэ пытается пить, развлекаться с проститутками и даже поёт в караоке-баре меланхоличную песню «Гондола но Ута», но все эти попытки получить удовольствие от жизни кажутся пустыми и не приносят ему настоящего удовлетворения.
+Затем Ватанабэ сближается с молодой сотрудницей своего отдела Тойо Одагири, которая недавно уволилась, чтобы работать на фабрике игрушек. Тойо полна жизни, энергии и оптимизма — всего того, чего не хватает в жизни Ватанабэ. Он начинает часто встречаться с ней, водит её в рестораны и кафе, находя в её компании отдушину от мыслей о смерти.
+Поначалу Тойо рада его обществу и благодарна за щедрость, но постепенно она начинает чувствовать себя неловко от его навязчивого внимания. Ватанабэ признаётся ей, что умирает, и объясняет, что её молодость и жизнерадостность дают ему силы. Тойо пытается подбодрить его, предлагая найти смысл в работе, но затем мягко просит оставить её в покое, поскольку его присутствие начинает её пугать.
+После расставания с Тойо Ватанабэ возвращается к работе с новым пониманием. Он вспоминает группу женщин, которые месяцами добивались разрешения на осушение заболоченного участка в их районе для создания детской площадки. Их заявление постоянно перенаправлялось из отдела в отдел без результата — типичный пример бюрократической волокиты.
+Ватанабэ решает взять это дело в свои руки и сделать его своим последним проектом. Он преодолевает сопротивление коллег, борется с коррупцией, лично посещает различные отделы и использует все свои связи, чтобы пробить проект. Несмотря на препятствия со стороны бюрократии и даже угрозы от якудзы, контролирующих мусорный бизнес в этом районе, Ватанабэ упорно продвигает создание парка.
+Работая над проектом, Ватанабэ преображается. Из апатичного чиновника он превращается в страстного борца за справедливость. Он тратит свои личные деньги, работает сверхурочно и игнорирует своё ухудшающееся здоровье ради реализации парка.
+Фильм делает временной скачок к поминкам Ватанабэ после его смерти. Его коллеги собираются в ресторане, чтобы помянуть покойного. Поначалу они обсуждают его вежливо, но по мере того как алкоголь развязывает языки, начинают откровенно говорить о его последних месяцах жизни.
+Через воспоминания коллег зритель узнаёт о героических усилиях Ватанабэ по созданию парка. Они рассказывают, как он боролся с системой, как преодолевал препятствия и как его решимость поражала всех, кто его знал. Некоторые коллеги признают, что вначале не понимали его поведения и даже критиковали его методы.
+Один из младших сотрудников рассказывает, как нашёл Ватанабэ мёртвым на качелях в только что открытом парке во время снежной бури. Он качался на детских качелях и тихо пел ту же песню «Гондола но Ута», которую исполнял в ночном клубе, но теперь она звучала не как плач отчаяния, а как песня удовлетворения и покоя.
+Коллеги понимают, что Ватанабэ умер счастливым человеком, который нашёл смысл в последние месяцы своей жизни. Они клянутся следовать его примеру и работать на благо людей, а не просто толкать бумаги. Однако на следующий день, когда они возвращаются в офис, старые привычки берут верх, и они снова погружаются в рутину бюрократической работы.
+Фильм заканчивается кадром парка, полного играющих детей — живого памятника человеку, который нашёл способ по-настоящему жить в последние месяцы перед смертью. Парк символизирует идею о том, что жизнь обретает смысл через служение другим и создание чего-то ценного, что переживёт самого человека.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Похитители велосипедов', 'In post-war Italy, a working-class man''s bicycle is stolen. He and his son set out to find it.', '1948-01-01', 1, '89 minutes', 'Ladri di biciclette', 8.3, 'Действие фильма происходит в послевоенном Риме 1948 года, когда Италия переживает тяжелый период экономического восстановления после Второй мировой войны. Антонио Риччи, безработный рабочий, живет в бедном районе города вместе со своей женой Марией и двумя маленькими сыновьями - старшим Бруно и младенцем. Семья находится в крайне стесненных обстоятельствах, у них практически нет денег, и они вынуждены закладывать в ломбард даже постельное белье, чтобы купить еду.
+В отделе трудоустройства Антонио наконец получает работу - его нанимают расклейщиком афиш кинофильмов по всему городу. Это простая, но честная работа, которая может обеспечить семье стабильный доход. Однако есть одно обязательное условие: у работника должен быть собственный велосипед для передвижения по городу. У Антонио есть велосипед, но он заложен в ломбарде из-за нехватки денег.
+Мария, узнав о требованиях к новой работе мужа, принимает тяжелое решение. Она снимает с себя простыни и наволочки - последние ценные вещи в доме - и относит их в ломбард, чтобы выкупить велосипед Антонио. В ломбарде видны горы заложенного постельного белья, что свидетельствует о массовой бедности в послевоенное время.
+На следующий день Антонио с энтузиазмом приступает к работе. Его сопровождает старший сын Бруно, мальчик лет восьми, который помогает отцу и гордится тем, что может быть полезным. Они расклеивают афиши американского фильма с Ритой Хейворт по стенам зданий. Работа идет хорошо, и Антонио чувствует облегчение от того, что наконец может обеспечить семью.
+Во время обеденного перерыва происходит трагедия. Антонио оставляет велосипед у стены здания и отходит поесть. В этот момент молодой вор хватает велосипед и быстро скрывается в толпе. Антонио бросается в погоню, но преступник исчезает в лабиринте римских улиц. Без велосипеда Антонио не может продолжать работу, а значит, семья снова остается без средств к существованию.
+Полиция проявляет мало интереса к краже велосипеда, поскольку в послевоенном Риме такие преступления происходят постоянно. Офицер записывает заявление, но дает понять, что шансы найти украденный велосипед практически равны нулю. Антонио понимает, что если он хочет вернуть свое средство заработка, ему придется искать вора самостоятельно.
+На следующий день Антонио вместе с Бруно отправляется на поиски по римским улицам. Они начинают с посещения огромного рынка подержанных велосипедов на площади Порта Портезе, надеясь обнаружить там свой велосипед. Рынок кишит торговцами сомнительного вида, которые продают велосипеды неясного происхождения, разбирают их на запчасти и собирают заново.
+Поиски на рынке не приносят результата, но Антонио замечает молодого человека, который показался ему похожим на вора. Он пытается следовать за ним, но подозреваемый скрывается. Отец и сын продолжают методично обследовать различные районы города, проверяя каждый велосипед, который может оказаться украденным.
+Во время поисков между Антонио и Бруно происходят трогательные моменты, раскрывающие их отношения. Мальчик безоговорочно верит в отца и готов помочь ему в любой ситуации. Антонио старается сохранить достоинство перед сыном, но постепенно его отчаяние нарастает.
+В один из дней поисков они случайно встречают старика, который был свидетелем кражи. Он соглашается помочь им найти вора, но его показания довольно расплывчаты. Тем не менее, это единственная зацепка, и Антонио цепляется за нее как за последнюю надежду.
+Старик приводит их в бедный район, где живет подозреваемый. Они находят молодого человека, и Антонио обвиняет его в краже. Однако вор категорически отрицает свою вину, а его мать и соседи встают на его защиту. Без вещественных доказательств и при враждебном отношении местных жителей Антонио ничего не может сделать.
+Ситуация накаляется, когда молодой человек притворяется, что у него случился эпилептический припадок от стресса. Собравшаяся толпа начинает угрожать Антонио, обвиняя его в ложных обвинениях. Появившийся полицейский объясняет, что без доказательств арест невозможен, и советует Антонио прекратить поиски.
+Полностью деморализованный и отчаявшийся, Антонио понимает, что его попытки найти велосипед провалились. Он возвращается домой с пустыми руками, зная, что завтра ему нечем будет кормить семью. Чувство безысходности и унижения достигает критической точки.
+В финальной сцене, которая становится кульминацией фильма, происходит моральное падение главного героя. Антонио видит на улице велосипед, оставленный без присмотра у стадиона, где идет футбольный матч. В момент отчаяния он принимает решение украсть этот велосипед, превратившись в того самого вора, которого сам искал.
+Антонио отсылает Бруно домой на автобусе, но мальчик не успевает уехать и становится свидетелем того, как его отец пытается угнать чужой велосипед. Кража проходит неудачно - Антонио тут же ловят, и разъяренная толпа начинает его избивать. Владелец велосипеда и окружающие люди обрушивают на него град ударов и оскорблений.
+Самым страшным для Антонио оказывается не физическая боль, а то, что его унижение происходит на глазах у сына. Бруно видит, как его героя и кумира избивают как обычного преступника. Мальчик плачет, понимая, что его отец совершил то же самое преступление, от которого пострадала их семья.
+В конце концов владелец велосипеда, увидев плачущего ребенка и поняв всю трагичность ситуации, решает не вызывать полицию и отпускает Антонио. Толпа расходится, оставляя отца и сына наедине с их горем и стыдом.
+Фильм завершается потрясающей по эмоциональному воздействию сценой. Антонио и Бруно медленно идут по улице среди безразличной толпы. Отец плачет от стыда и отчаяния, а сын, несмотря на все увиденное, берет его за руку, демонстрируя детскую любовь и прощение. Они растворяются в толпе римлян, каждый из которых борется за выживание в жестоком послевоенном мире, где честность и достоинство становятся непозволительной роскошью для бедных людей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Двойная страховка', 'An insurance representative lets himself be talked by a seductive housewife into a murder/insurance fraud scheme that arouses the suspicion of an insurance investigator.', '1944-01-01', 1, '107 minutes', 'Double Indemnity', 8.3, 'Действие фильма происходит в Лос-Анджелесе в 1938 году. Уолтер Нефф работает страховым агентом в компании Pacific All-Risk Insurance. Однажды вечером он приходит в свой офис с пулевым ранением и начинает надиктовывать признание на диктофон для своего начальника и друга Бартона Киза, опытного следователя по страховым случаям.
+В своём рассказе Нефф возвращается к событиям нескольких месяцев назад, когда он приехал к клиенту Диетрихсону для продления полиса автострахования. Диетрихсона не оказалось дома, но Нефф встречает его жену Филлис — красивую блондинку в полотенце, которая только что принимала солнечные ванны. Между ними сразу возникает взаимное притяжение, несмотря на то что Филлис замужем.
+При следующей встрече Филлис начинает расспрашивать Нефа о страховании жизни, якобы для мужа, но её вопросы о двойной выплате в случае несчастного случая настораживают опытного агента. Нефф понимает, что она планирует убить мужа ради страховки, и поначалу отказывается участвовать в этом. Однако Филлис удаётся соблазнить его, и он соглашается помочь ей разработать план убийства.
+Они разрабатывают сложную схему. Нефф продаёт Диетрихсону полис страхования жизни на сто тысяч долларов с пунктом о двойном возмещении в случае смерти при несчастном случае на железнодорожном транспорте. Диетрихсон подписывает документы, не читая их внимательно, думая, что это обычное автострахование.
+План заключается в том, чтобы убить Диетрихсона и инinscenировать его смерть как несчастный случай при падении с поезда. В назначенный вечер Филлис убеждает мужа поехать на встречу выпускников колледжа в Стэнфорд на поезде, хотя он собирался ехать на машине из-за больной ноги. Нефф прячется на заднем сиденье их автомобиля.
+По дороге на вокзал Нефф душит Диетрихсона, а затем переодевается в его одежду, надевает его шляпу и, хромая как Диетрихсон из-за больной ноги, садится в поезд, используя его билет. Филлис остаётся с телом в машине. На определённом участке пути, где поезд замедляется, Нефф выпрыгивает из поезда, а Филлис подъезжает и помогает ему положить тело мужа на железнодорожные пути, создавая видимость того, что Диетрихсон упал с поезда и был задавлен.
+Полиция классифицирует смерть как несчастный случай, но Бартон Киз начинает подозревать мошенничество. Он отмечает множество странных обстоятельств: Диетрихсон никому не говорил о поездке на встречу выпускников, он купил полис всего за несколько дней до смерти, и свидетели видели человека, выпрыгнувшего с поезда в районе, где было найдено тело.
+Киз отказывается выплачивать страховку и начинает расследование. Он подозревает Филлис в убийстве мужа, но не может доказать это. Тем временем отношения между Нефом и Филлис становятся напряжёнными. Они не могут открыто встречаться, чтобы не вызвать подозрений, и вынуждены общаться тайно.
+Ситуация осложняется, когда в дом Филлис начинает приходить Нино Захетти, молодой человек, который встречался с пасынком Диетрихсона Лолой. Нефф подозревает, что у Филлис роман с Нино, и начинает ревновать. Лола рассказывает Нефу, что подозревает Филлис в убийстве своего отца, и что Филлис могла также убить свою первую мужа, мать Лолы.
+Нефф понимает, что Филлис использовала его, как возможно использовала и других мужчин в прошлом. Он начинает встречаться с Лолой, частично из симпатии к ней, а частично чтобы защитить её от Филлис, которая, по его мнению, может попытаться устранить её как свидетеля.
+Давление расследования Киза и растущие подозрения заставляют Нефа и Филлис встретиться в её доме для окончательного разговора. Филлис признаётся, что планирует убить Нефа, чтобы свалить всю вину за убийство Диетрихсона на него, а затем выйти замуж за Нино. Она стреляет в Нефа, ранив его в плечо.
+Нефф, несмотря на ранение, отбирает у неё пистолет. Филлис признаётся, что никогда не любила ни его, ни Нино, ни даже Диетрихсона. Она говорит, что не способна любить никого. Однако в последний момент она утверждает, что полюбила Нефа, но он не верит ей и стреляет, убивая её.
+Нефф инсценирует самоубийство Филлис, оставив записку о том, что она не может жить с виной за убийство мужа. Затем он идёт в офис, где диктует своё признание Кизу. Когда он заканчивает рассказ, приходит Киз, который давно подозревал друга, но надеялся, что тот не замешан в преступлении.
+Нефф пытается уйти в Мексику, но теряет слишком много крови и падает у лифта в офисном здании. Киз помогает ему закурить сигарету — жест дружбы, который он часто делал для Киза в прошлом. Подъезжают полиция и скорая помощь, и фильм заканчивается пониманием того, что Нефф заплатил полную цену за свою жадность и');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Гражданин Кейн', 'Following the death of publishing tycoon Charles Foster Kane, reporters scramble to uncover the meaning of his final utterance; ''Rosebud''.', '1941-01-01', 1, '119 minutes', 'Citizen Kane', 8.3, 'Гражданин Кейн
+Фильм начинается с загадочной смерти медиамагната Чарльза Фостера Кейна в его роскошном поместье Ксанаду во Флориде. Перед смертью из его уст вырывается единственное слово - "Rosebud" ("Бутон розы"), а из руки выпадает хрустальный шар со снежной сценой внутри, который разбивается о пол. Никто из присутствующих не понимает значения этого последнего слова умирающего миллионера.
+После смерти Кейна в кинотеатрах показывают документальную киноленту "Новости дня", рассказывающую о жизни и карьере медиамагната. Фильм представляет Кейна как одну из самых влиятельных и противоречивых фигур американской истории - человека, который построил медиаимперию, влиял на политику и общественное мнение, но при этом вызывал множество споров и критики.
+Продюсер киностудии Роулстоун считает документальный фильм неполным и поручает репортеру Джерри Томпсону найти значение последнего слова Кейна - "Rosebud". Томпсон должен опросить людей, близко знавших Кейна, и попытаться разгадать эту загадку, которая, по мнению продюсера, может раскрыть истинную суть личности медиамагната.
+Томпсон начинает свое расследование с попытки поговорить со второй женой Кейна, Сьюзан Александер, которая работает певицей в дешевом ночном клубе. Однако женщина находится в состоянии алкогольного опьянения и отказывается говорить с журналистом. Тогда Томпсон обращается к другим людям из окружения покойного.
+Первым свидетелем становится Уолтер Паркс Тэтчер, банкир и опекун Кейна с детства. Из его мемуаров Томпсон узнает историю ранних лет жизни Чарльза. Кейн родился в бедной семье в Колорадо, но его мать неожиданно разбогатела, когда на их участке земли обнаружили золото. Понимая, что не сможет дать сыну должное образование и воспитание, она передает его на попечение банкира Тэтчера.
+Мальчик болезненно переживает разлуку с матерью и враждебно относится к Тэтчеру, который забирает его из родного дома. В день, когда Чарльза увозят, он играет в снегу со своими санками, на которых написано "Rosebud". Это последний день его беззаботного детства в родительском доме.
+Повзрослев, Кейн получает в наследство огромное состояние и решает заняться издательским бизнесом. Вопреки советам консервативного Тэтчера, он покупает убыточную газету "Нью-Йорк Инквайрер" и превращает ее в популярное издание, борющееся за права простых людей против коррупции и злоупотреблений власти.
+Следующим собеседником Томпсона становится Джедедайя Лиланд, бывший лучший друг и театральный критик Кейна. Лиланд рассказывает о годах становления газетной империи Кейна и его первом браке с Эмили Нортон, племянницей президента США. Брак заключается по расчету и должен способствовать политическим амбициям Кейна.
+Постепенно отношения между Чарльзом и Эмили охлаждаются. Жена не одобряет желтую прессу мужа и его популистские методы привлечения читателей. Серия завтраков супругов показывает эволюцию их отношений от страстной любви к холодному отчуждению. В конце концов они даже читают за столом разные газеты - она газету конкурентов мужа.
+Одновременно с семейными проблемами Кейн развивает свою медиаимперию, покупая все новые издания по всей стране. Он становится влиятельной политической фигурой и решает баллотироваться на пост губернатора Нью-Йорка, видя в этом первый шаг к президентству. Его предвыборная кампания идет успешно, и победа кажется обеспеченной.
+Однако политическая карьера Кейна рушится из-за скандала. Его соперник, действующий губернатор Джим Геттис, обнаруживает роман Чарльза с начинающей певицей Сьюзан Александер и угрожает обнародовать эту информацию. Кейн отказывается отказаться от любовницы и выйти из губернаторской гонки, в результате чего скандал становится достоянием общественности.
+Эмили Нортон разводится с мужем, забрав с собой их сына. Политическая карьера Кейна заканчивается, не успев начаться, а его репутация серьезно пострадала. Тем не менее он женится на Сьюзан и пытается сделать из нее оперную певицу, хотя у девушки нет ни таланта, ни соответствующего образования.
+Кейн использует всю мощь своей медиаимперии для продвижения карьеры жены, заставляя критиков писать положительные рецензии на ее выступления. Однако публика и независимые критики безжалостно критикуют Сьюзан за отсутствие вокальных данных. Даже лучший друг Кейна Лиланд пишет разгромную рецензию на ее дебют в опере.
+Этот случай становится последней каплей в отношениях между Кейном и Лиландом. Чарльз заканчивает рецензию друга в том же критическом духе и отправляет ему чек на двадцать пять тысяч долларов вместе с уведомлением об увольнении. Лиланд возвращает деньги, и их многолетняя дружба окончательно разрушается.
+Сьюзан продолжает петь в опере исключительно из-за давления мужа, хотя каждое выступление становится для нее пыткой. Она понимает, что не способна к вокальной карьере, и умоляет Чарльза позволить ей бросить пение. Однако Кейн непреклонен - он видит в успехе жены способ восстановить свою пошатнувшуюся репутацию и доказать всем свою правоту.
+Напряжение в их отношениях достигает критической точки, когда Сьюзан пытается покончить с собой, приняв большую дозу снотворного. Этот инцидент наконец заставляет Кейна понять, что он зашел слишком далеко, и он разрешает жене оставить оперную карьеру.
+После этого Кейн строит роскошное поместье Ксанаду во Флориде, где они с Сьюзан живут в роскоши, но в полной изоляции от внешнего мира. Чарльз наполняет дворец произведениями искусства, статуями и антиквариатом, скупленными по всему миру, превращая дом в подобие музея или склада сокровищ.
+Однако материальная роскошь не может компенсировать духовную пустоту их существования. Сьюзан скучает в золотой клетке Ксанаду, где нет никого, кроме прислуги, а Кейн становится все более деспотичным и эгоистичным. Он требует от жены полного подчинения и благодарности за предоставленную ею роскошь.
+Отношения окончательно разрушаются после ссоры, во время которой Сьюзан обвиняет мужа в том, что он купил ее, как одну из своих статуй, и никогда не интересовался ее собственными желаниями и чувствами. Она заявляет о намерении уехать, но Кейн угрожает ей и физически пытается заставить остаться.
+В итоге Сьюзан все же покидает Ксанаду, оставив Кейна в полном одиночестве среди его сокровищ. Это становится окончательным крахом всех его попыток найти любовь и человеческое тепло. Медиаимперия также приходит в упадок, поскольку Кейн потерял интерес к работе и погрузился в депрессию.
+После разговоров со всеми свидетелями Томпсон так и не смог разгадать тайну слова "Rosebud". Люди из окружения Кейна предлагают различные интерпретации - от имени любовницы до названия скаковой лошади, но никто не знает точного ответа. Репортер приходит к выводу, что одно слово не может объяснить всю жизнь человека.
+В финальной сцене, когда прислуга разбирает вещи покойного в Ксанаду, рабочие сжигают кучу старого хлама, среди которого находятся детские санки Кейна с надписью "Rosebud". Камера крупным планом показывает, как пламя поглощает это слово, а затем поднимается над трубой дома, из которой идет дым.
+');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('М убийца', 'When the police in a German city are unable to catch a child-murderer, other criminals join in the manhunt.', '1931-01-01', 1, '117 minutes', 'M - Eine Stadt sucht einen Mörder', 8.3, 'М - город ищет убийцу
+Действие фильма происходит в немецком городе (снимался в Берлине) в начале 1930-х годов. Город охвачен паникой из-за серии жестоких убийств детей, совершенных неизвестным маньяком. Преступник заманивает детей конфетами и игрушками, а затем убивает их. Полиция ведет интенсивное расследование, но убийца остается неуловимым, что вызывает растущее беспокойство среди населения.
+Очередной жертвой становится маленькая Элси Беккман. Девочка возвращается из школы домой, когда к ней подходит мужчина в темном пальто и шляпе. Он покупает ей воздушный шарик у уличного торговца и угощает сладостями. Мать Элси ждет дочь к обеду, но девочка не возвращается. Женщина в отчаянии ищет ребенка, кричит ее имя на лестничной площадке и во дворе, но ответа нет. Позже воздушный шарик Элси находят запутавшимся в телефонных проводах, а ее одежду обнаруживают в лесу.
+Полиция под руководством инспектора Ломана мобилизует все силы для поимки убийцы. Проводятся массовые обыски, проверки документов, допросы подозрительных лиц. Власти используют все доступные методы расследования, включая анализ отпечатков пальцев, почерковедческую экспертизу писем, которые убийца иногда присылает в газеты, и психологическое профилирование преступника.
+Интенсивные действия полиции серьезно затрагивают преступный мир города. Постоянные облавы и проверки мешают деятельности воров, мошенников и других криминальных элементов. Главари преступных группировок понимают, что их бизнес несет убытки из-за повышенного внимания властей, и принимают решение самостоятельно найти детоубийцу, чтобы передать его полиции и восстановить нормальную обстановку в городе.
+Под руководством опытного криминального авторитета Шренкера преступный мир организует собственное расследование. У них есть преимущество перед полицией - они знают город изнутри, имеют связи во всех слоях общества и могут использовать методы, недоступные официальным органам. Криминальные группировки привлекают к поиску нищих, попрошаек и уличных торговцев, которые постоянно находятся на улицах и могут заметить подозрительную активность.
+Тем временем убийца продолжает свою деятельность. Им оказывается Ганс Беккерт, внешне обычный человек средних лет, страдающий психическим расстройством. Беккерт осознает свою болезнь и пытается бороться с навязчивыми импульсами, но не может контролировать себя. Он живет в постоянном страхе и напряжении, понимая, что его ищут, но не способный остановиться.
+Характерной особенностью Беккерта является то, что перед каждым преступлением он насвистывает мелодию из оперы Грига "В пещере горного короля". Эта деталь становится ключевой для его обнаружения. Слепой торговец воздушными шариками, который продавал шарик Элси Беккман, запоминает эту мелодию и связывает ее с убийцей.
+Когда Беккерт снова появляется в том же районе и пытается заговорить с другой маленькой девочкой, насвистывая знакомую мелодию, слепой торговец узнает его и незаметно сообщает об этом члену преступной группировки. Один из преступников незаметно помечает Беккерта, написав мелом букву "М" на спине его пальто, что означает "Mörder" (убийца по-немецки).
+Беккерт обнаруживает метку, когда видит свое отражение в витрине магазина. Понимая, что он разоблачен, он пытается скрыться, но преступники уже организовали за ним слежку. Начинается напряженная погоня по улицам города. Беккерт прячется в большом офисном здании после окончания рабочего дня, надеясь переждать там до утра.
+Однако преступники блокируют все выходы из здания и организуют методичный обыск. Они разделяются на группы и этаж за этажом прочесывают помещения. Беккерт прячется в чердачном помещении, но его обнаруживают. Попытка убежать через крышу не удается, и его захватывают.
+Преступники доставляют Беккерта в заброшенную фабрику, где организуют своеобразный "суд". Собирается целая толпа криминальных элементов всех мастей - от карманников до убийц. Они назначают "защитника" для Беккерта, чтобы процесс выглядел справедливо, но результат предрешен - они намерены его убить.
+Во время "суда" Беккерт произносит страстную речь в свою защиту. Он объясняет, что не может контролировать свои действия, что его преследуют навязчивые мысли и импульсы, с которыми он не в силах бороться. Он описывает свои мучения и страдания, утверждая, что сам является жертвой своей болезни. Беккерт противопоставляет себя присутствующим преступникам, говоря, что они совершают преступления по собственному выбору ради выгоды, а он действует против своей воли под влиянием психического расстройства.
+Эта речь производит сильное впечатление на некоторых присутствующих, но большинство остается непреклонным. Они считают, что такие люди, как Беккерт, должны быть уничтожены для защиты общества. Напряжение в толпе нарастает, и кажется, что самосуд неизбежен.
+В критический момент в здание врывается полиция. Оказывается, власти также вели расследование и вычислили местонахождение преступников. Начинается перестрелка между полицией и бандитами. В суматохе многие преступники пытаются скрыться, но большинство арестовывают.
+Беккерта передают официальным властям. Фильм завершается сценой в настоящем суде, где его судят по закону. Однако режиссер не показывает приговор, оставляя зрителям возможность самим решить вопрос о справедливости наказания для психически больного преступника.
+В финальной сцене матери жертв сидят в зале суда. Одна из них, мать Элси Беккман, произносит фразу о том, что никакой суд не вернет ей дочь, и призывает других матерей лучше следить за своими детьми. Фильм заканчивается на этой ноте, подчеркивая, что трагедия уже произошла и никакое наказание преступника не может ее исправить.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Метрополис', 'In a futuristic city sharply divided between the working class and the city planners, the son of the city''s mastermind falls in love with a working-class prophet who predicts the coming of a savior to mediate their differences.', '1927-01-01', 1, '153 minutes', 'Metropolis', 8.3, 'В далеком будущем 2026 года существует огромный город Метрополис, разделенный на два мира. Наверху в роскошных небоскребах живет элита - сыновья правящего класса, которые проводят время в удовольствиях в Вечных Садах. Внизу, глубоко под землей, в мрачных катакомбах трудятся рабочие, обслуживающие гигантские машины, которые поддерживают жизнь города. Эти два мира никогда не пересекаются.
+Фредер, сын Йо Фредерсена - правителя Метрополиса, беззаботно развлекается в Садах Наслаждений со своими друзьями. Однажды к ним приходит прекрасная девушка Мария в сопровождении группы детей рабочих. Она говорит богатым юношам что это их братья, после чего охрана выдворяет их. Фредер потрясен красотой Марии и впервые задумывается о существовании другого мира.
+Одержимый желанием найти девушку, Фредер спускается в подземный город рабочих. Там он становится свидетелем ужасающих условий труда - люди работают как автоматы у гигантских машин в изнурительном ритме. Фредер видит как один из рабочих падает от истощения, и машина взрывается, превращаясь в его воображении в древнего бога Молоха, пожирающего людей.
+Потрясенный увиденным, Фредер возвращается к отцу и умоляет его помочь рабочим. Йо Фредерсен холодно отвечает что рабочие принадлежат машинам, а машины принадлежат ему. Он приказывает своему помощнику Тонкому Человеку следить за сыном.
+Фредер снова спускается вниз и меняется одеждой с рабочим по имени Георгий, чтобы испытать на себе их труд. Он работает у машины номер 11811, едва выдерживая нечеловеческий ритм. Вечером он следует за рабочими в древние катакомбы, где Мария проводит тайные собрания.
+Мария рассказывает рабочим легенду о Вавилонской башне, объясняя что те кто задумывал башню и те кто ее строили, говорили на разных языках и не понимали друг друга. Она призывает к терпению и ожиданию посредника - медиатора, который станет сердцем между руками рабочих и мозгом правителей. Фредер понимает что он должен стать этим посредником.
+Тем временем Йо Фредерсен узнает о собраниях и приходит к безумному изобретателю Ротвангу, который когда-то любил мать Фредера Хель и потерял руку создавая машины для Фредерсена. Ротванг показывает ему свое последнее изобретение - женщину-робота, которой он хочет дать облик покойной Хель чтобы она вернулась к нему.
+Фредерсен приказывает Ротвангу придать роботу облик Марии, чтобы тот смог обмануть рабочих и разрушить их единство. Ротванг соглашается, но втайне планирует использовать робота для мести Фредерсену за потерю Хель. Он похищает настоящую Марию и помещает ее в свою лабораторию, где с помощью сложных машин переносит ее облик на робота.
+Робот-Мария получается точной копией девушки, но с совершенно противоположной натурой. Фредерсен отправляет ее к рабочим, где она призывает к восстанию и разрушению машин. Одновременно Ротванг посылает робота в клубы верхнего города, где тот исполняет эротический танец и сводит с ума богатых мужчин, провоцируя драки и убийства.
+Обманутые рабочие под предводительством ложной Марии разрушают машины, что приводит к затоплению их подземного города. Только тогда они понимают что их дети остались внизу и могут погибнуть. Настоящая Мария, которой удается сбежать от Ротванга, вместе с Фредером спасает детей, выводя их в верхний город.
+Разъяренные рабочие, поняв что их обманули, ловят робота-Марию и сжигают ее на костре. Когда огонь уничтожает искусственную плоть, обнажается механический скелет. Ротванг в безумии преследует настоящую Марию по крышам собора, думая что это его возлюбленная Хель. Фредер сражается с ним на крыше, и изобретатель падает и разбивается.
+В финале Фредер становится посредником между своим отцом, представляющим мозг города, и лидером рабочих Громом, представляющим руки. Под звон колоколов на ступенях собора Фредер соединяет их руки, воплощая слова Марии о том что посредник между мозгом и руками должен быть сердцем. Так достигается примирение между классами и восстанавливается порядок в Метрополисе.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Малыш', 'The Tramp cares for an abandoned child, but events put that relationship in jeopardy.', '1921-01-01', 1, '68 minutes', 'The Kid', 8.3, 'Фильм рассказывает историю успешного бизнесмена Расса Дуритца, которому исполняется сорок лет. Он живет в Лос-Анджелесе, занимается консалтингом в области связей с общественностью и полностью поглощен работой. У него нет семьи, он холост, циничен и сосредоточен исключительно на карьере и деньгах. Расс забыл о своих детских мечтах и превратился в человека, которого сам бы не любил в детстве.
+Однажды вечером в своем доме Расс обнаруживает восьмилетнего мальчика, который оказывается им самим в детстве. Мальчик по имени Расти прилетел из прошлого и крайне разочарован тем, кем он стал во взрослой жизни. Расти мечтал стать пилотом, иметь собаку и жить насыщенной, полной приключений жизнью, но вместо этого видит перед собой скучного взрослого в костюме, который даже не помнит своих детских грез.
+Поначалу взрослый Расс пытается избавиться от своего детского двойника, думая, что сходит с ума, но постепенно понимает, что мальчик реален. Расти критикует взрослого себя за то, что тот не исполнил ни одной детской мечты, особенно болезненно воспринимая отсутствие собаки и семьи. Мальчик заставляет Расса вспомнить, каким он был в детстве и о чем мечтал.
+В процессе общения Расс начинает переосмысливать свою жизнь. Он понимает, что в погоне за успехом потерял связь со своим внутренним ребенком и настоящими желаниями. Расти помогает ему вспомнить травматичный момент детства, когда отец раскритиковал его мечту стать пилотом, назвав ее глупой и нереалистичной. Именно тогда маленький Расс решил стать практичным и серьезным.
+Под влиянием Расти взрослый Расс начинает меняться. Он покупает красный спортивный самолет, исполняя детскую мечту о полетах, заводит собаку породы английский бульдог по кличке Честер, о которой мечтал в детстве. Более того, он начинает проявлять интерес к своей помощнице Эми, с которой работал долгие годы, но никогда не рассматривал как потенциальную спутницу жизни.
+Расс понимает, что должен научиться жить полной жизнью, а не только работать. Он начинает уделять внимание отношениям с людьми, особенно с Эми, которая всегда была рядом и поддерживала его. Постепенно между ними развиваются романтические отношения.
+Кульминация наступает, когда Расс осознает главный урок - жизнь должна включать в себя не только профессиональные достижения, но и личные отношения, мечты и радость. Он делает предложение Эми и решает кардинально изменить свой подход к жизни.
+В финале Расти исчезает, вернувшись в свое время, но не раньше, чем убеждается, что взрослый Расс наконец-то стал тем человеком, которым мог бы гордиться его внутренний ребенок. Расс женится на Эми, у них появляется дочь, он продолжает заниматься любимым делом, но теперь его жизнь наполнена смыслом, любовью и теми простыми радостями, о которых он мечтал в детстве. История завершается тем, что Расс становится полноценным человеком, сумевшим объединить практичность взрослого и мечтательность ребенка.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Налегке', 'A tragic incident forces Anirudh, a middle-aged man, to take a trip down memory lane and reminisce his college days along with his friends, who were labelled as losers.', '2019-01-01', 1, '143 minutes', 'Chhichhore', 8.2, 'Фильм рассказывает историю Анируддха по прозвищу Анни, успешного инженера средних лет, чья жизнь кардинально меняется, когда его сын Рагху пытается совершить самоубийство после провала на вступительных экзаменах в престижный Индийский технологический институт. Находясь в больнице у постели сына в коме, Анни решает рассказать ему историю своих студенческих лет, надеясь, что это поможет сыну понять, что неудачи - это не конец света.
+История переносится в 1992 год, когда молодой Анни поступает в общежитие H4 Индийского технологического института. Общежитие H4 считается местом для неудачников и аутсайдеров, в отличие от престижного H3, где живут отличники и популярные студенты. Анни знакомится со своими соседями по комнате и будущими лучшими друзьями: Сикандером по прозвищу Секси, который мечтает стать актером, Дереком, помешанным на алкоголе парнем, Акшатом по прозвищу Кислота, гением химии с эксцентричными замашками, Сахилом или Саху, толстяком-обжорой, и Бевдой, алкоголиком из богатой семьи.
+Группа друзей быстро становится изгоями в институте, постоянно сталкиваясь с издевательствами и унижениями со стороны студентов из H3, особенно от высокомерного Манни и его банды. Несмотря на это, друзья находят утешение друг в друге и в своих безумных выходках. Анни влюбляется в Майю, умную и красивую студентку, которая первоначально встречается с Манни. Майя постепенно начинает замечать искренность и доброту Анни, что приводит к росту чувств между ними.
+Кульминационным событием студенческих лет становится ежегодный чемпионат общежитий, включающий различные соревнования от спорта до академических дисциплин. H4 традиционно занимает последнее место, но друзья решают впервые серьезно побороться за победу. Они начинают интенсивные тренировки, каждый развивая свои сильные стороны: Секси готовится к театральным выступлениям, Кислота к научным олимпиадам, Саху к соревнованиям по еде, а Анни становится капитаном команды и мотиватором группы.
+В процессе подготовки друзья сталкиваются с множеством препятствий, включая саботаж со стороны H3 и внутренние конфликты. Майя окончательно порывает с Манни и начинает встречаться с Анни, что еще больше накаляет обстановку между общежитиями. Несмотря на все трудности, команда H4 показывает удивительные результаты в различных дисциплинах, постепенно поднимаясь в рейтинге.
+Финальное соревнование проходит в напряженной атмосфере. H4 неожиданно для всех показывает выдающиеся результаты, но в последний момент, когда победа кажется близка, происходит трагедия. Во время решающего соревнования один из друзей получает серьезную травму, что ставит крест на шансах команды на победу. Однако друзья понимают, что настоящая победа заключается не в получении трофея, а в том, что они смогли преодолеть свои страхи, поверить в себя и доказать, что неудачники тоже могут добиться успеха.
+Возвращаясь к настоящему времени, Анни заканчивает свой рассказ, объясняя сыну, что жизнь полна взлетов и падений, но главное - это не сдаваться и помнить, что есть люди, которые любят тебя независимо от твоих достижений. Он рассказывает, как после института их дружеская группа распалась, каждый пошел своим путем, но воспоминания о тех временах помогали ему преодолевать жизненные трудности.
+Рагху приходит в сознание и понимает урок отца о том, что неудача в одном экзамене не определяет всю жизнь. Фильм завершается воссоединением старых друзей у постели Рагху, где они снова становятся той веселой и поддерживающей друг друга командой, какой были в студенческие годы. Майя, которая стала женой Анни и матерью Рагху, также присутствует при этой встрече, показывая, что настоящая дружба и любовь преодолевают время и расстояния.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ури: Нападение на базу', 'Indian army special forces execute a covert operation, avenging the killing of fellow army men at their base by a terrorist group.', '2018-01-01', 1, '138 minutes', 'Uri: The Surgical Strike', 8.2, 'Фильм основан на реальных событиях хирургического удара индийской армии по террористическим лагерям в Пакистане в 2016 году. История начинается с показа напряженной обстановки на границе между Индией и Пакистаном, где постоянно происходят террористические атаки и провокации.
+Майор Виханг Шарма командует подразделением специальных сил и участвует в операции по ликвидации террористов на территории Кашмира. Во время одной из таких операций его отряд попадает в засаду, и Виханг получает серьезное ранение в ногу, что делает его непригодным для активной боевой службы. Его переводят на штабную работу, что становится для него тяжелым ударом, поскольку он всегда был полевым офицером.
+Тем временем ситуация на границе обостряется. Террористы, поддерживаемые пакистанскими спецслужбами, совершают дерзкие атаки на индийские военные базы. Особенно жестокой становится атака на базу в Ури, где погибают 19 индийских солдат. Эта трагедия становится переломным моментом, после которого индийское правительство принимает решение о проведении хирургического удара по террористическим лагерям на территории Пакистана.
+Для планирования и проведения этой сверхсекретной операции создается специальная группа под руководством генерала Джасвира Сингха. Несмотря на свою травму, Виханг добивается включения в состав оперативной группы, убеждая командование в своей готовности участвовать в миссии. Планирование операции проходит в строжайшей секретности, поскольку любая утечка информации может привести к международному скандалу и эскалации конфликта.
+Операция получает кодовое название и предполагает одновременные удары по нескольким террористическим лагерям, расположенным на пакистанской территории недалеко от границы. Индийские спецподразделения должны пересечь границу, уничтожить цели и вернуться, не оставив следов своего присутствия. Весь удар должен быть проведен за одну ночь.
+Параллельно с военной подготовкой разворачивается дипломатическая игра. Индийские власти готовятся к возможным международным последствиям операции, в то время как пакистанская сторона усиливает охрану границы, подозревая о возможных ответных действиях Индии после атаки в Ури.
+В ночь операции несколько групп спецназа одновременно пересекают границу в разных точках. Виханг возглавляет одну из групп, несмотря на проблемы с ногой. Каждая группа имеет конкретную цель и строго ограниченное время на выполнение задачи. Операция проводится с использованием самого современного оборудования и при поддержке дронов и спутниковой разведки.
+Группа Виханга успешно достигает своей цели - крупного террористического лагеря, где проходят подготовку боевики, планирующие атаки на индийской территории. Несмотря на сильную охрану и сложности местности, индийские спецназовцы уничтожают лагерь, ликвидируют значительное количество террористов и разрушают инфраструктуру подготовки боевиков.
+Во время операции происходит несколько критических моментов, когда группы рискуют быть обнаруженными пакистанскими силами безопасности. Виханг демонстрирует выдающееся мужество и тактическое мастерство, преодолевая боль от травмы и ведя свою группу через все препятствия. Особенно напряженным становится момент отхода, когда пакистанские силы начинают понимать, что подверглись атаке.
+Все группы успешно выполняют свои задачи и возвращаются на индийскую территорию до рассвета, не понеся потерь. Операция проходит настолько скрытно, что пакистанская сторона первоначально отрицает сам факт ударов, утверждая, что никаких вторжений не было.
+Индийское правительство официально объявляет о проведении хирургических ударов, представляя их как ответ на террористическую атаку в Ури. Это заявление вызывает международный резонанс и напряженность в отношениях между двумя ядерными державами. Однако точность и эффективность операции демонстрируют возможности индийских вооруженных сил и решимость страны защищать свои интересы.
+Фильм завершается показом того, как успешная операция повышает боевой дух индийской армии и демонстрирует способность страны отвечать на террористические угрозы. Виханг и его товарищи возвращаются как герои, доказав, что профессионализм и мужество могут преодолеть любые препятствия. Операция становится символом новой решимости Индии в борьбе с терроризмом и демонстрацией того, что страна готова защищать себя любыми необходимыми средствами.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Золотые прииски Колара: Глава 1', 'In the 1970s, a fierce rebel rises against brutal oppression and becomes the symbol of hope to legions of downtrodden people.', '2018-01-01', 1, '156 minutes', 'K.G.F: Chapter 1', 8.2, 'Фильм начинается в 2018 году, когда журналистка Анита Сурэш получает информацию о том, что могущественный криминальный авторитет по имени Роки погиб. Она начинает расследование его жизни и обращается к Вангараму, который был свидетелем восхождения Роки к власти.
+История переносится в 1951 год в район Коларских золотых приисков в штате Карнатака. K.G.F расшифровывается как Kolar Gold Fields - место, где находились одни из самых богатых золотых месторождений в мире. Эти прииски контролируются жестокой династией, где рабочие трудятся в нечеловеческих условиях, фактически являясь рабами.
+Главный герой Роки рождается в бедной семье в трущобах Бомбея. Его мать умирает при родах, но перед смертью берет с него обещание, что он никогда не будет унижен бедностью и станет самым богатым и влиятельным человеком. Это обещание становится движущей силой всей его жизни.
+Роки растет сиротой на улицах, зарабатывая на жизнь мелким криминалом. Он постепенно поднимается по криминальной лестнице, становясь все более жестоким и амбициозным. Его репутация растет, и он обзаводится верными соратниками, включая своего лучшего друга.
+Узнав о K.G.F и несметных богатствах золотых приисков, Роки решает, что именно там он сможет исполнить обещание, данное матери. Он понимает, что для достижения своей цели ему нужно свергнуть существующую власть на приисках.
+K.G.F контролируется семьей, во главе которой стоит безжалостный правитель. Прииски превращены в настоящую крепость, окруженную высокими стенами, где тысячи рабочих добывают золото в ужасающих условиях. Они не могут покинуть это место, живут в нищете, а их семьи фактически находятся в заложниках.
+Роки разрабатывает сложный план проникновения в K.G.F. Он использует свои связи в криминальном мире и постепенно внедряется в систему приисков. Сначала он появляется там как обычный рабочий, но быстро демонстрирует свои лидерские качества и беспощадность.
+Роки начинает завоевывать доверие других рабочих, показывая им, что можно противостоять угнетателям. Он организует сопротивление против охранников и надсмотрщиков, используя свой опыт уличных боев и криминального мира. Постепенно вокруг него формируется группа преданных последователей.
+Параллельно показывается политическая ситуация того времени. Индия только получила независимость, и различные политические силы борются за контроль над такими прибыльными активами, как золотые прииски. Роки умело использует эти противоречия в своих интересах.
+Кульминация первой части происходит, когда Роки открыто бросает вызов существующей власти на приисках. Он демонстрирует свою силу и жестокость, устраивая кровавую расправу над теми, кто стоял на его пути. Рабочие, воодушевленные его примером, поднимают восстание.
+В серии жестоких и зрелищных боевых сцен Роки постепенно захватывает контроль над различными участками приисков. Он использует как физическую силу, так и тактическое мышление, превосходя своих противников в стратегии и беспощадности.
+Фильм завершается тем, что Роки становится новым хозяином K.G.F, исполнив первую часть своего обещания матери. Он превращается из уличного сироты в могущественного криминального авторитета, контролирующего один из богатейших источников золота в мире. Однако его восхождение к власти только начинается, и зрители понимают, что это лишь первая глава в его жестокой истории завоевания абсолютной власти и богатства. Фильм заканчивается на интригующей ноте, обещая продолжение истории во второй части.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Зеленая книга', 'A working-class Italian-American bouncer becomes the driver of an African-American classical pianist on a tour of venues through the 1960s American South.', '2018-01-01', 1, '130 minutes', 'Green Book', 8.2, 'Фильм основан на реальных событиях и рассказывает историю, происходящую в 1962 году в Америке, во времена расовой сегрегации. Главный герой Тони Валлелонга по прозвищу Тони Лип работает вышибалой в престижном ночном клубе Копакабана в Нью-Йорке. Он итало-американец из рабочего класса, грубоватый, но добродушный семьянин с женой Долорес и двумя сыновьями.
+Когда клуб закрывается на ремонт на два месяца, Тони остается без работы и desperately нуждается в деньгах для содержания семьи. Его знакомые рекомендуют его на должность водителя и телохранителя к доктору Дону Ширли, выдающемуся афроамериканскому пианисту-виртуозу.
+Дон Ширли живет в роскошной квартире над знаменитым концертным залом Карнеги-холл в Манхэттене. Он блестяще образован, говорит на нескольких языках, обладает утонченными манерами и живет в окружении произведений искусства. Ширли предлагает Тони работу сопровождать его в концертном туре по южным штатам Америки, где действуют законы Джима Кроу о расовой сегрегации.
+Поначалу Тони относится к этому предложению скептически, поскольку имеет собственные расовые предрассудки, характерные для его социальной среды. Однако финансовая необходимость заставляет его согласиться на эту работу. Ширли объясняет ему, что им предстоит путешествие по югу, где афроамериканцы сталкиваются с жестокой дискриминацией и даже опасностью для жизни.
+Название фильма происходит от реально существовавшего путеводителя под названием "The Negro Motorist Green Book", который издавался для афроамериканских путешественников и содержал информацию о безопасных местах для ночлега, питания и заправки в южных штатах.
+Путешествие начинается, и сразу же становится очевидным контраст между двумя мужчинами. Тони неотесан, любит нездоровую пищу, не слишком образован, но обладает уличной смекалкой и практичностью. Ширли, напротив, аристократичен, изыскан в манерах, но оторван от реальной жизни простых людей и даже от афроамериканской культуры.
+По мере продвижения на юг ситуация становится все более напряженной. В престижных концертных залах Ширли встречают как великого артиста, но сразу после выступлений он сталкивается с унизительной дискриминацией. Ему запрещают пользоваться туалетами для белых, есть в ресторанах, где он только что давал концерт, останавливаться в отелях для белых.
+Тони становится свидетелем этих унижений и постепенно начинает понимать абсурдность и жестокость системы сегрегации. Он видит, как талантливого и образованного человека третируют исключительно из-за цвета кожи. Это заставляет его пересмотреть собственные предрассудки.
+Между мужчинами завязывается необычная дружба. Тони учит Ширли быть более непосредственным, знакомит его с популярной музыкой, учит есть жареную курицу руками и общаться с простыми людьми. Ширли, в свою очередь, помогает Тони писать письма жене, обучая его более изысканному языку и манерам.
+Во время турне происходит несколько опасных инцидентов. В одном из баров на Ширли нападают местные расисты, и Тони вынужден применить силу для его защиты. В другом случае Ширли арестовывают по ложному обвинению, и Тони использует свои связи с мафией для его освобождения.
+Особенно драматичный момент происходит, когда Ширли обнаруживают в компрометирующей ситуации с мужчиной в YMCA, что в те времена было не только социально неприемлемо, но и уголовно наказуемо. Тони снова помогает ему избежать серьезных неприятностей, и этот инцидент еще больше сближает их.
+Кульминация наступает в канун Рождества, когда они должны дать последний концерт в престижном клубе в Бирмингеме, штат Алабама. Организаторы сообщают Ширли, что он не может обедать в главном зале ресторана клуба, несмотря на то, что является звездой вечера. Ширли отказывается выступать в таких условиях, демонстрируя достоинство и принципиальность.
+Вместо этого они отправляются в афроамериканский бар, где Ширли дает импровизированный концерт для простых людей, играя блюз и соул-музыку, к которой он раньше относился с некоторым снобизмом. Этот момент становится символом его воссоединения со своими корнями и культурой.
+На обратном пути в Нью-Йорк они попадают в снежную бурю. Тони засыпает за рулем, и Ширли берет управление на себя, несмотря на то, что не умеет водить. Они благополучно добираются до дома Тони как раз к рождественскому ужину.
+Тони приглашает Ширли зайти в дом познакомиться с его семьей. Сначала Ширли колеблется, но затем решается войти. Семья Тони тепло принимает его, и он впервые в жизни чувствует себя частью настоящей семьи, полной любви и простого человеческого тепла.
+Фильм завершается сценой, показывающей, как эта поездка изменила обоих мужчин. Тони избавился от расовых предрассудков и обрел друга на всю жизнь. Ширли преодолел свою отчужденность и нашел связь с простыми человеческими радостями и настоящей дружбой. Их маловероятная дружба, родившаяся в путешествии через расово разделенную Америку, стала доказательством того, что человеческие связи сильнее социальных барьеров и предрассудков.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Три билборда на границе Эббинга, Миссури', 'A mother personally challenges the local authorities to solve her daughter''s murder when they fail to catch the culprit.', '2017-01-01', 1, '115 minutes', 'Three Billboards Outside Ebbing, Missouri', 8.2, 'Фильм рассказывает историю Милдред Хейс, волевой и решительной женщины средних лет, чья дочь Анджела была изнасилована и убита семь месяцев назад. Расследование зашло в тупик, и полиция не смогла найти виновного, что приводит Милдред в ярость от бездействия правоохранительных органов. В отчаянии и желании привлечь внимание к нераскрытому делу, она арендует три заброшенных билборда на малопосещаемой дороге недалеко от города Эббинг в штате Миссури.
+На билбордах она размещает провокационные послания, адресованные начальнику местной полиции Уильяму Уиллоуби. Первый билборд гласит "Изнасилована во время смерти", второй "И все еще никаких арестов", а третий "Как дела, начальник Уиллоуби?". Эти билборды вызывают бурю негодования в маленьком консервативном городке, где шериф Уиллоуби пользуется всеобщим уважением.
+Уиллоуби оказывается добропорядочным семьянином с женой Энн и двумя маленькими дочерьми, который искренне хочет раскрыть дело об убийстве Анджелы, но у полиции просто нет улик или свидетелей. Более того, у шерифа диагностирован неизлечимый рак поджелудочной железы, и ему осталось жить всего несколько месяцев, о чем знают только его семья и близкие коллеги. Милдред не знает о болезни Уиллоуби, когда начинает свою кампанию.
+Одним из подчиненных Уиллоуби является офицер Джейсон Диксон, расист и гомофоб с серьезными проблемами гнева, который живет с матерью и часто прибегает к насилию при исполнении служебных обязанностей. Диксон особенно возмущен билбордами и считает их оскорблением своего уважаемого начальника. Он начинает преследовать Милдред и угрожать Реду Уэлби, владельцу рекламного агентства, который сдал ей билборды в аренду.
+Местное сообщество разделяется во мнениях. Многие жители считают действия Милдред неуместными и жестокими по отношению к умирающему шерифу, в то время как некоторые поддерживают ее право требовать справедливости. Сын Милдред, Робби, учащийся старших классов, испытывает смущение и злость из-за действий матери, которые делают его объектом насмешек в школе. Бывший муж Милдред, Чарли, алкоголик, бросивший семью ради девятнадцатилетней девушки по имени Пенелопа, также выступает против билбордов.
+Священник приходит к Милдред, чтобы убедить ее снять билборды, но она жестко отвергает его доводы, обвиняя церковь в покрывательстве педофилов. Дантист, к которому она приходит на прием, намеренно причиняет ей боль во время лечения в знак протеста против ее действий. Несмотря на давление со всех сторон, Милдред остается непреклонной.
+Ситуация достигает критической точки, когда Уиллоуби совершает самоубийство, не в силах больше терпеть боль от рака. Он оставляет несколько прощальных писем: жене, Диксону и Милдред. В письме к Милдред он объясняет, что понимает ее боль и гнев, но подчеркивает, что полиция действительно делала все возможное для раскрытия дела. Он также оплачивает аренду билбордов на следующий месяц, что еще больше шокирует общественность.
+После смерти Уиллоуби новым исполняющим обязанности шерифа становится его заместитель Седрик Коннолли, который увольняет Диксона за его неподобающее поведение и применение чрезмерной силы. В ярости Диксон избивает Реда Уэлби и выбрасывает его из окна второго этажа, серьезно травмировав его. Это происходит в тот же день, когда кто-то поджигает билборды ночью.
+Милдред подозревает Диксона в поджоге и в отместку поджигает здание полицейского участка коктейлями Молотова. Диксон, который читал в участке свое прощальное письмо от Уиллоуби, получает серьезные ожоги, пытаясь спасти дело об убийстве Анджелы из горящего здания. В письме Уиллоуби советовал Диксону научиться контролировать свой гнев и попытаться стать лучшим человеком, способным любить.
+Находясь в больнице с ожогами, Диксон случайно подслушивает разговор человека, который хвастается изнасилованием и убийством молодой девушки. Диксон запоминает номер машины этого человека и сообщает информацию Милдред. Они вместе отправляются в соседний штат, чтобы найти подозреваемого, но по пути выясняется, что мужчина служил в армии во время убийства Анджелы и не мог быть причастен к преступлению.
+Тем не менее, Диксон и Милдред понимают, что этот человек, вероятно, виновен в других преступлениях, и решают продолжить поездку, чтобы выяснить правду. Фильм заканчивается тем, что они едут по шоссе, неуверенные в том, что будет дальше, но объединенные общим стремлением к справедливости. Милдред признается, что не уверена, хочет ли она действительно убить подозреваемого, если он окажется виновным, а Диксон отвечает, что он тоже не уверен, но они разберутся по ходу дела.
+История показывает, как горе и гнев могут как разрушать, так и объединять людей, и как даже самые испорченные характеры способны на искупление и изменения.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Виновен', 'An experienced investigator confronts several conflicting theories about the perpetrators of a violent double homicide.', '2015-01-01', 1, '132 minutes', 'Talvar', 8.2, 'Фильм основан на реальном уголовном деле об убийстве 14-летней Арушти Талвар и 45-летнего слуги Хемраджа в доме семьи Талвар в Нойде в 2008 году. История рассказывается через призму трех различных расследований, каждое из которых приходит к разным выводам о том, кто совершил эти убийства.
+Фильм начинается с того, что утром 16 мая 2008 года доктор Раджеш Талвар обнаруживает тело своей дочери Шрути в ее спальне. Девочка лежит в постели с перерезанным горлом, накрытая одеялом. Полиция прибывает на место происшествия, и Раджеш сообщает, что их домашний слуга Кхемпал пропал, что делает его главным подозреваемым. Тело Кхемпала находят на следующий день на террасе дома, также с перерезанным горлом.
+Первое расследование ведет местная полиция Нойды под руководством инспектора Гуруджана Сингха. Они быстро арестовывают Раджеша Талвара, отца Шрути, считая его главным подозреваемым. Полиция строит теорию о том, что Раджеш застал дочь в компрометирующей ситуации со слугой и в приступе ярости убил их обоих. Они утверждают, что Раджеш инсценировал кражу, чтобы отвести от себя подозрения, и указывают на несоответствия в его показаниях.
+Дело получает широкую огласку в СМИ, которые представляют различные сенсационные версии произошедшего. Семья Талвар подвергается жестокому общественному осуждению, их репутация полностью разрушена. Жена Раджеша Нупур находится под домашним арестом, пока ее муж содержится в тюрьме.
+Через несколько месяцев дело передается Центральному бюро расследований CBI. Новая команда следователей во главе с Ашвином Кумаром начинает расследование с нуля. Они находят множество упущений в работе местной полиции и приходят к выводу, что настоящими убийцами являются слуги - Виджай Мандал, Раджкумар и Вишну, которые работали в соседних домах и имели ключи от дома Талваров.
+По версии CBI, слуги проникли в дом с намерением изнасиловать Шрути, но были обнаружены Кхемпалом, который попытался их остановить. В завязавшейся драке они убили и девочку, и слугу, а затем инсценировали кражу. Раджеша освобождают из тюрьмы, и трое слуг арестовываются. Однако вскоре выясняется, что у подозреваемых есть алиби, и их также освобождают.
+Дело снова передается новой команде CBI под руководством Кумара Ранджана. Это третье расследование приходит к шокирующему выводу о том, что убийцами являются сами родители Шрути. По их версии, Раджеш и Нупур обнаружили свою дочь в интимной близости с Кхемпалом и в состоянии аффекта убили их обоих. Затем они тщательно инсценировали место преступления, чтобы выглядело как ограбление.
+Следователи утверждают, что родители действовали совместно, помогая друг другу скрыть преступление. Они указывают на множество улик: отсутствие признаков взлома, тот факт, что родители спали в соседней комнате и не слышали никаких звуков, странное поведение Раджеша утром после обнаружения тела, и медицинские свидетельства о времени смерти.
+Нупур Талвар также арестовывается, и супружеская пара предстает перед судом по обвинению в двойном убийстве. Во время судебного процесса защита пытается опровергнуть доказательства обвинения, указывая на многочисленные процедурные нарушения и противоречия в показаниях свидетелей. Адвокаты утверждают, что их клиенты стали жертвами предвзятого расследования и медийной травли.
+Суд выносит противоречивые решения. Первоначально суд низшей инстанции оправдывает супругов Талвар из-за недостатка доказательств, но затем Высокий суд Аллахабада отменяет это решение и приговаривает их к пожизненному заключению за убийство собственной дочери и домашнего слуги.
+Фильм заканчивается тем, что показывает, как одно и то же дело может быть интерпретировано совершенно по-разному в зависимости от того, кто ведет расследование. Каждая версия событий кажется убедительной, когда представлена изолированно, но все они не могут быть истинными одновременно. Это поднимает вопросы о природе истины, справедливости и о том, как предрассудки и внешние факторы могут влиять на ход правосудия.
+Талвар демонстрирует сложность современной индийской судебной системы, роль СМИ в формировании общественного мнения и трагедию семьи, которая потеряла не только дочь, но и свою репутацию, свободу и веру в справедливость. Фильм оставляет зрителей с вопросом о том, что на самом деле произошло той ночью, и можно ли вообще узнать правду в столь запутанном деле.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бахубали 2: Рождение легенды', 'When Shiva, the son of Bahubali, learns about his heritage, he begins to look for answers. His story is juxtaposed with past events that unfolded in the Mahishmati Kingdom.', '2017-01-01', 1, '167 minutes', 'Baahubali 2: The Conclusion', 8.2, 'Фильм является продолжением первой части и раскрывает тайну, почему Катаппа убил Бахубали, а также рассказывает о восхождении Махендры Бахубали к трону Махишмати.
+История начинается с того момента, где закончилась первая часть. Шивуду, который теперь знает, что он является сыном легендарного Амарендры Бахубали, требует от Катаппы объяснений, почему тот убил его отца. Катаппа начинает рассказывать историю, которая произошла двадцать пять лет назад.
+Повествование переносится в прошлое, в царство Махишмати, где правила королева-мать Шивагами. У неё было два сына: Амарендра Бахубали и Бхаллаладева. Оба принца были воспитаны как наследники престола, но Шивагами должна была выбрать одного из них. Амарендра Бахубали отличался благородством, справедливостью и любовью к народу, в то время как Бхаллаладева был амбициозен, жесток и стремился к власти любой ценой.
+Чтобы определить достойного наследника, Шивагами устраивает испытание, отправляя обоих принцев в путешествие по царству, чтобы они изучили нужды народа и проявили свои качества правителя. Во время этого путешествия Амарендра Бахубали встречает Деваcену, принцессу соседнего царства Кунтала, и влюбляется в неё.
+Деваcена правит своим царством мудро и справедливо, но сталкивается с угрозой со стороны жестокого царя, который хочет жениться на ней силой. Амарендра Бахубали, скрывая свою истинную личность, помогает ей защитить царство и побеждает врагов. Между ними вспыхивает взаимная любовь.
+Тем временем Бхаллаладева и его отец Биджаладева плетут интриги против Амарендры Бахубали. Они понимают, что Шивагами склоняется к тому, чтобы назначить Амарендру наследником престола из-за его благородных качеств и любви народа.
+Когда Амарендра Бахубали возвращается в Махишмати с Деваcеной, Шивагами официально объявляет его наследником престола. Однако Биджаладева и Бхаллаладева начинают сеять семена недоверия в сердце Шивагами, внушая ей, что Амарендра Бахубали может предать царство ради любви к жене.
+Ситуация осложняется, когда происходит конфликт между Деваcеной и Шивагами. Деваcена, не зная, что Шивагами является матерью её мужа, отказывается подчиниться некоторым дворцовым традициям, что оскорбляет королеву-мать. Бхаллаладева и Биджаладева используют этот конфликт, чтобы настроить Шивагами против Амарендры Бахубали.
+В конце концов, под влиянием интриг, Шивагами принимает роковое решение. Она изгоняет Амарендру Бахубали из царства, лишает его титула наследника и назначает Бхаллаладеву королем. Амаренда Бахубали, не желая идти против матери, покорно принимает её решение и покидает дворец вместе с беременной Деваcеной.
+Однако вскоре Шивагами понимает, что была обманута. Она узнаёт о настоящих планах Бхаллаладевы и его отца, но уже слишком поздно. Бхаллаладева захватывает власть и приказывает Катаппе убить Амарендру Бахубали, угрожая жизни Шивагами и будущего ребёнка Деваcены.
+Катаппа, связанный клятвой верности трону Махишмати, вынужден выполнить приказ и убивает Амарендру Бахубали, несмотря на то, что любил его как сына. Это становится самым трагическим моментом в его жизни.
+После смерти Амарендры Бахубали Деваcена рождает сына Махендру. Шивагами, осознав свою ошибку и желая защитить ребёнка от Бхаллаладевы, бежит с младенцем. Во время побега она жертвует собой, спасая ребёнка, который позже был найден и воспитан как Шивуду.
+Узнав всю правду, Махендра Бахубали (Шивуду) исполняется решимости отомстить за отца и вернуть себе законный трон. Он объединяется с освободительным движением, которое тайно действует против тирании Бхаллаладевы.
+Бхаллаладева за двадцать пять лет правления превратился в жестокого тирана, который угнетает народ и держит Деваcену в заточении, постоянно унижая её. Он построил огромную статую себя и заставляет людей поклоняться ей.
+Махендра Бахубали разрабатывает план штурма крепости Махишмати. Он использует свои навыки, изобретательность и помощь верных союзников, включая Катаппу, который жаждет искупить свою вину за убийство Амарендры Бахубали.
+Начинается эпическая битва за освобождение Махишмати. Махендра Бахубали демонстрирует невероятную силу, мужество и тактическое мышление, унаследованные от отца. Он освобождает мать Деваcену и сражается с армией Бхаллаладевы.
+Кульминация наступает в личной дуэли между Махендрой Бахубали и Бхаллаладевой. Это грандиозное сражение, в котором решается судьба царства. Махендра Бахубали побеждает своего дяди, отомстив за смерть отца и страдания матери.
+После победы Махендра Бахубали восходит на престол Махишмати как законный король. Он восстанавливает справедливость в царстве, освобождает народ от тирании и воссоединяется с Деваcеной, которая наконец получает признание как королева-мать.
+Фильм завершается коронацией Махендры Бахубали, который клянётся править справедливо и мудро, как его отец. Катаппа получает прощение, и в царстве восстанавливается мир и процветание. История семьи Бахубали получает достойное завершение, а наследие Амарендры Бахубали живёт в его сыне.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Клаус', 'A simple act of kindness always sparks another, even in a frozen, faraway place. When Smeerensburg''s new postman, Jesper, befriends toymaker Klaus, their gifts melt an age-old feud and deliver a sleigh full of holiday traditions.', '2019-01-01', 1, '96 minutes', 'Klaus', 8.2, 'Фильм рассказывает историю Джеспера Йохансена, избалованного сына богатого почтмейстера, который привык к роскошной жизни в столице и совершенно не интересуется семейным почтовым бизнесом. Отец, разочарованный безответственностью сына, ставит ему ультиматум: Джеспер должен отправиться в отдаленный северный городок Смиренсбург и наладить там почтовую службу, доставив шесть тысяч писем в течение года, иначе он лишится наследства и будет вынужден самостоятельно зарабатывать на жизнь.
+Смиренсбург оказывается мрачным, холодным местом, расположенным за полярным кругом, где царит вечная зима. Город разделен на два враждующих клана - семьи Элленгард и Круммы, которые ведут между собой кровную вражду уже много поколений. Никто точно не помнит, из-за чего началась эта война, но ненависть передается от родителей детям, создавая атмосферу постоянной агрессии и недоверия. Дети с раннего возраста учатся драться и участвовать в семейных конфликтах.
+Прибыв в Смиренсбург, Джеспер обнаруживает, что местная почтовая служба не функционирует, поскольку жители предпочитают решать споры кулаками, а не письмами. Местный лодочник Моуген встречает его на пристани и везет в город, предупреждая о опасностях местной жизни. Джеспер поселяется в заброшенном почтовом отделении и знакомится с Альвой, местной учительницей, которая вынуждена работать продавцом рыбы, поскольку в городе, где все заняты враждой, никто не заинтересован в образовании детей.
+Попытки Джеспера наладить почтовую службу терпят неудачу, поскольку жители относятся к нему с подозрением и враждебностью. В отчаянии он решает покинуть город, но случайно забредает в лес, где встречает загадочного лесоруба Клауса, огромного бородатого мужчину, живущего в изолированной хижине, наполненной самодельными игрушками исключительного качества. Клаус оказывается мастером-игрушечником, который создает удивительные деревянные фигурки, куклы, поезда и другие игрушки, но живет в полном одиночестве.
+Джеспер узнает, что у Клауса трагическое прошлое - он потерял жену и не смог иметь детей, поэтому посвятил себя изготовлению игрушек в память о несбывшихся мечтах о семье. Когда Джеспер случайно находит письмо от местного мальчика, просящего игрушку, он понимает, как можно использовать мастерство Клауса для налаживания почтовой службы. Он убеждает отшельника начать дарить игрушки детям в обмен на письма, которые Джеспер будет доставлять.
+Первые попытки доставки игрушек проходят тайно и драматично. Джеспер и Клаус пробираются в дома ночью, оставляют игрушки и исчезают, что создает вокруг них ореол таинственности. Дети в городе начинают писать письма, прося игрушки, и постепенно новость о загадочном дарителе распространяется. Альва помогает детям писать письма, что возрождает интерес к образованию в городе.
+По мере того как дети получают игрушки, в городе начинают происходить удивительные изменения. Дети из враждующих семей начинают играть вместе, забывая о семейной вражде. Родители, видя радость своих детей, постепенно смягчают свое отношение друг к другу. Клаус устанавливает правило: игрушки получают только хорошие дети, что мотивирует детей вести себя лучше, помогать друг другу и проявлять доброту.
+Джеспер и Альва сближаются, работая вместе над проектом. Альва снова становится учительницей, поскольку дети хотят научиться писать письма Клаусу. Джеспер обнаруживает, что находит удовлетворение в том, что приносит радость людям, и его изначально корыстная мотивация трансформируется в искреннее желание помогать.
+Главы враждующих кланов, миссис Элленгард и мистер Крумм, обеспокоены тем, что их многолетняя вражда угасает из-за растущей доброты в городе. Они объединяются, чтобы остановить деятельность Клауса и Джеспера, понимая, что мир угрожает их власти, основанной на конфликте. Они распространяют слухи о том, что Клаус - опасный колдун, и натравливают жителей против него.
+Кульминация наступает во время попытки жителей напасть на хижину Клауса. Джеспер пытается защитить своего друга, но в суматохе Клаус получает ранение. Альва и Джеспер ухаживают за ним, и в этот момент Клаус рассказывает полную историю своей жизни. Он признается, что его жена всегда мечтала о детях и что создание игрушек стало его способом сохранить ее память и исполнить ее желания через радость других детей.
+Дети города, узнав о том, что их любимый даритель игрушек в опасности, объединяются, чтобы защитить его. Они противостоят взрослым, показывая, что научились доброте и состраданию. Это становится переломным моментом - родители осознают, насколько их дети изменились к лучшему, и начинают пересматривать свои взгляды на жизнь.
+В финале фильма Смиренсбург полностью преображается. Город становится процветающим и дружелюбным местом, где царят мир и взаимопонимание. Джеспер успешно выполняет задание отца, доставив необходимое количество писем, но понимает, что не хочет возвращаться к прежней жизни. Он остается в городе, женится на Альве, и они создают счастливую семью.
+Клаус продолжает дарить игрушки детям, и традиция постепенно распространяется на другие города. Фильм показывает, как из этой истории родилась легенда о Санта-Клаусе - добром старике, который дарит подарки детям на Рождество. Клаус со временем начинает носить красную одежду, использует оленей для передвижения по снегу, а его репутация распространяется далеко за пределы Смиренсбурга.
+История завершается тем, что Джеспер, ставший пожилым человеком, рассказывает эту историю своим внукам, объясняя, как один акт доброты может изменить весь мир и как настоящее волшебство заключается в способности людей меняться к лучшему и дарить радость друг другу.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Видимость', 'Desperate measures are taken by a man who tries to save his family from the dark side of the law, after they commit an unexpected crime.', '2015-01-01', 1, '163 minutes', 'Drishyam', 8.2, 'Фильм рассказывает историю Виджая Сальгаонкара, простого человека из небольшого городка Гоа, который владеет кабельным телевидением и живет скромной жизнью со своей женой Нандини и двумя дочерьми - старшей Анжу и младшей Ану. Виджай страстно увлечен кино и проводит большую часть свободного времени, просматривая фильмы, что дает ему обширные знания о различных сюжетах и человеческой психологии.
+Семья Сальгаонкар ведет тихую, размеренную жизнь, пока их мир не рушится из-за трагического инцидента. Анжу, старшая дочь, участвует в школьном лагере, где ее тайно снимает на видео Сэм Десмукх, сын высокопоставленного полицейского офицера - генерального инспектора полиции Мира Десмукха. Сэм записывает компрометирующие кадры с Анжу в душе и начинает шантажировать ее, требуя встреч и угрожая распространить видео.
+Доведенная до отчаяния Анжу рассказывает о шантаже матери Нандини. Когда Сэм приходит к ним домой, требуя денег и продолжая угрожать, Нандини в попытке защитить дочь случайно убивает его во время драки. Анжу становится свидетелем происходящего, и обе женщины приходят в ужас от случившегося.
+Когда Виджай возвращается домой, он находит жену и дочь в состоянии шока. Узнав о произошедшем, он понимает всю серьезность ситуации. Сэм - сын одного из самых влиятельных полицейских в штате, и его исчезновение неизбежно приведет к масштабному расследованию. Виджай принимает решение защитить свою семью любой ценой.
+Используя свои знания, почерпнутые из многочисленных детективных фильмов, Виджай разрабатывает сложный план сокрытия преступления. Он заставляет семью точно запомнить алиби на весь день - они якобы ездили в соседний город Панаджи, где смотрели фильм, ужинали в ресторане и даже останавливались в отеле. Виджай тщательно продумывает каждую деталь их ложного маршрута, создавая убедительные доказательства их присутствия в другом месте в момент исчезновения Сэма.
+Тело Сэма Виджай хоронит на строительной площадке будущего полицейского участка, рассчитывая, что никто не будет искать труп в таком месте. Он также уничтожает все улики, включая мобильный телефон Сэма и компрометирующее видео.
+Когда Сэм не возвращается домой, его мать Мира Десмукх начинает поиски. Вскоре выясняется, что сын последний раз был замечен направляющимся к дому Сальгаонкаров. Мира, используя свое положение в полиции, начинает давить на семью Виджая, требуя правды о местонахождении сына.
+Несмотря на интенсивные допросы и психологическое давление, семья Сальгаонкар придерживается своей версии событий. Виджай демонстрирует удивительную стойкость и хитрость, отвечая на каждый вопрос следователей и не позволяя им найти противоречия в показаниях. Он даже предъявляет квитанции и билеты, подтверждающие их алиби, которые он заранее подготовил.
+Мира Десмукх становится все более отчаянной и начинает применять незаконные методы. Она арестовывает всю семью и пытается выбить из них признание с помощью физического и психологического насилия. Особенно жестоко она обращается с младшей дочерью Ану, надеясь сломить сопротивление родителей.
+Когда пытки становятся невыносимыми, Нандини готова признаться во всем, чтобы спасти дочь от мучений. Однако Виджай понимает, что признание уничтожит всю семью, и находит способ остановить жену. В критический момент он демонстрирует, что их алиби подтверждается не только документами, но и показаниями множества свидетелей, которые якобы видели их в Панаджи.
+Расследование заходит в тупик, поскольку полиция не может найти тело Сэма или доказать вину семьи Сальгаонкар. Мира вынуждена освободить их, но продолжает следить за семьей, надеясь поймать их на ошибке.
+Тем временем Виджай понимает, что давление на семью будет продолжаться, и решает перенести тело Сэма в более безопасное место. Ночью он тайно выкапывает труп со строительной площадки, где уже началось строительство нового полицейского участка, и перезахоранивает его в другом месте.
+История получает неожиданный поворот, когда становится известно, что происшествие попало в местные новости, и общественность начинает обсуждать методы полиции. Мира подвергается критике за превышение полномочий и жестокое обращение с невинной семьей. Политическое давление заставляет ее отступить и прекратить преследование Сальгаонкаров.
+Фильм завершается тем, что семья Виджая возвращается к нормальной жизни, но навсегда изменившись от пережитого испытания. Виджай доказал, что простой человек может противостоять системе, если он достаточно умен и решителен. Однако цена этой победы оказывается высокой - семья живет с тяжким секретом, который навсегда связывает их и заставляет быть постоянно настороже.
+В финальной сцене Виджай посещает новый полицейский участок, построенный на том месте, где первоначально было закопано тело Сэма, символически демонстрируя, что иногда правда может быть похоронена навсегда, а справедливость имеет много лиц.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мандарины', 'In 1992, war rages in Abkhazia, a breakaway region of Georgia. An Estonian man Ivo has decided to stay behind and harvest his crops of tangerines. In a bloody conflict at his door, a wounded man is left behind, and Ivo takes him in.', '2013-01-01', 1, '87 minutes', 'Mandariinid', 8.2, 'Фильм разворачивается в 1992 году в Абхазии во время грузино-абхазского конфликта. История рассказывает о пожилом эстонце Иво, который живет в небольшой деревне в горах Абхазии вместе со своим соседом и другом Маргусом. Большинство эстонских поселенцев, живших в этом регионе с советских времен, уже покинули свои дома из-за военных действий, но Иво и Маргус остались, чтобы собрать урожай мандаринов, который является их основным источником дохода.
+Иво работает столяром и изготавливает деревянные ящики для упаковки мандаринов, которые выращивает Маргус. Они планируют собрать урожай и продать фрукты, после чего тоже покинуть опасную зону. Деревня практически опустела, и старики живут в постоянном напряжении, слушая звуки приближающихся боевых действий.
+Однажды утром недалеко от дома Иво происходит ожесточенная перестрелка между грузинскими солдатами и чеченскими наемниками, сражающимися на стороне абхазов. После боя Иво обнаруживает несколько тел и двух тяжело раненых бойцов: грузина Ники и чеченца Ахмеда. Несмотря на то, что эти люди являются врагами и готовы убить друг друга, Иво из человеколюбия решает помочь обоим, перенеся их в свой дом.
+Маргус скептически относится к решению соседа, считая, что это может навлечь на них неприятности, но Иво непреклонен в своем желании помочь раненым. Он лечит их раны, кормит и ухаживает за ними, несмотря на их взаимную ненависть. Ники, молодой грузинский солдат, полон патриотического пыла и ненавидит всех, кто сражается против Грузии. Ахмед, опытный чеченский боец, презирает грузин и клянется убить Ники, как только выздоровеет.
+Иво устанавливает строгое правило: в его доме не будет никакого насилия, и если кто-то из них попытается причинить вред другому, то немедленно будет выгнан на улицу, что в их состоянии означает верную смерть. Оба раненых вынуждены согласиться с этим условием, но продолжают обмениваться угрозами и враждебными взглядами.
+По мере того как дни проходят, а раненые медленно восстанавливаются, между ними начинают происходить сложные психологические взаимодействия. Иво, мудрый и терпеливый старик, постепенно становится своеобразным посредником между врагами. Он не принимает ничью сторону в конфликте, считая войну бессмысленной тратой человеческих жизней, и пытается показать бойцам, что они, в сущности, обычные люди, а не воплощение зла друг для друга.
+Ахмед оказывается более сложной личностью, чем казалось изначально. Он рассказывает о своей семье, о том, как война разрушила его жизнь, и о том, что он сражается не из идеологических убеждений, а чтобы заработать деньги для содержания семьи. Ники же постепенно начинает сомневаться в правильности своих убеждений, видя человечность в своем враге.
+Ситуация осложняется, когда в деревню прибывает группа грузинских солдат во главе с капитаном, ищущих пропавших товарищей. Иво вынужден скрывать присутствие Ахмеда, что создает напряженную атмосферу. Капитан подозрительно относится к эстонцам и угрожает им, но в конце концов уходит, не найдя того, кого искал.
+Позже появляется группа чеченских боевиков, разыскивающих Ахмеда. Теперь Иво приходится скрывать присутствие Ники. Эти визиты показывают абсурдность войны и то, как обычные люди становятся заложниками чужой ненависти. Иво рискует собственной жизнью, защищая обоих раненых от их же соратников.
+Кульминационный момент наступает, когда Ники и Ахмед наконец остаются наедине и могут разрешить свой конфликт. Ахмед, который уже достаточно окреп, получает возможность убить беззащитного Ники, но неожиданно для себя не может этого сделать. Он понимает, что месяцы, проведенные в доме Иво, изменили его восприятие врага.
+Трагедия происходит, когда в деревню снова возвращаются грузинские солдаты. На этот раз они обнаруживают Ахмеда и готовятся его расстрелять. Ники, несмотря на то что Ахмед является его врагом, не может позволить хладнокровному убийству человека, который делил с ним кров и пищу. Он пытается защитить чеченца, но в завязавшейся перестрелке получает смертельное ранение.
+Умирающий Ники просит Иво похоронить его под мандариновым деревом в саду. Ахмед, потрясенный тем, что грузинский солдат пожертвовал жизнью ради него, помогает Иво выкопать могилу. Это становится символическим актом примирения и признания общей человечности поверх национальных и политических разногласий.
+После похорон Ники Ахмед принимает решение покинуть деревню и вернуться домой к семье. Он благодарит Иво за урок человечности и обещает никогда больше не участвовать в войне. Иво остается в своем доме, продолжая ухаживать за мандариновыми деревьями, которые стали свидетелями как ненависти, так и примирения.
+Фильм завершается тем, что Иво в одиночестве собирает урожай мандаринов, размышляя о бессмысленности войны и о том, как простые человеческие поступки могут преодолеть даже самую глубокую вражду. Мандарины становятся метафорой жизни, которая продолжается несмотря на войну, и надежды на мир, который возможен, если люди увидят друг в друге не врагов, а просто людей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Беги, Милкха, беги', 'The truth behind the ascension of Milkha Singh who was scarred because of the India-Pakistan partition.', '2013-01-01', 1, '186 minutes', 'Bhaag Milkha Bhaag', 8.2, 'Фильм рассказывает биографическую историю Милкхи Сингха, легендарного индийского бегуна, известного как "Летающий сикх". История начинается в 1960 году на Римских Олимпийских играх, где Милкха участвует в финале забега на 400 метров, но неожиданно замедляется на последних метрах и проигрывает медаль, которая казалась уже в его руках.
+Повествование переносится в детство Милкхи в деревне Говиндпура в районе Музаффаргарх, который тогда был частью британской Индии. Милкха растет в большой сикхской семье вместе со своими родителями и братьями и сестрами. Он обычный деревенский мальчик, не проявляющий особых спортивных способностей, больше интересующийся играми и шалостями со своими друзьями.
+Жизнь семьи кардинально меняется в 1947 году во время раздела Индии на два государства - Индию и Пакистан. Религиозные беспорядки охватывают регион, и семье Милкхи приходится бежать из родной деревни. Во время хаотичной эвакуации в поезде происходит трагедия - родители и большинство членов семьи Милкхи погибают в результате нападения религиозных фанатиков. Милкха чудом выживает и оказывается среди тысяч беженцев.
+Осиротевший подросток попадает в лагерь беженцев, а затем живет на улицах Дели, промышляя мелким воровством и попрошайничеством, чтобы выжить. Он становится членом уличной банды и неоднократно попадает в тюрьму за кражи. Жизнь на улице делает его жестким и циничным, но также развивает его способность быстро бегать, что помогает ему убегать от полиции.
+В 1951 году Милкха решает кардинально изменить свою жизнь и поступает на военную службу в индийскую армию. Во время тренировок он демонстрирует выдающиеся способности в беге, что привлекает внимание тренеров. Армейский тренер хавилдар Гурдев Сингх видит потенциал в молодом солдате и начинает серьезно тренировать его.
+Первоначально Милкха относится к тренировкам несерьезно, но постепенно понимает, что бег может стать его способом достичь чего-то значительного в жизни. Он начинает усиленно тренироваться и быстро прогрессирует, выигрывая армейские соревнования и привлекая внимание национальных тренеров.
+В 1956 году Милкха впервые попадает в национальную сборную и едет на Олимпийские игры в Мельбурн. Однако из-за неопытности и нервозности он показывает плохой результат и не проходит в финал. Это поражение становится для него важным уроком и мотивацией для дальнейшего совершенствования.
+После Олимпиады Милкха встречает тренера Ранвира Сингха, который становится его наставником и помогает ему профессионально подходить к тренировкам. Под его руководством Милкха начинает показывать выдающиеся результаты на национальном уровне, устанавливая новые рекорды Индии в беге на различные дистанции.
+В 1958 году Милкха участвует в Азиатских играх в Токио, где завоевывает золотую медаль в беге на 400 метров, становясь первым индийским спортсменом, выигравшим золото в этой дисциплине на международном уровне. Эта победа делает его национальным героем и приносит ему прозвище "Летающий сикх".
+Следующим важным испытанием становятся Игры Содружества 1958 года в Кардиффе, где Милкха снова завоевывает золотую медаль, подтверждая свой статус одного из лучших спринтеров мира. Его успехи привлекают международное внимание, и он получает приглашения на престижные соревнования по всему миру.
+Особенно знаменательным становится его выступление в 1960 году в США, где он бегает против лучших американских спринтеров и показывает выдающиеся результаты. Американские тренеры предлагают ему остаться в США и получить американское гражданство, но Милкха отказывается, считая своим долгом представлять Индию.
+Параллельно с спортивной карьерой развивается личная жизнь Милкхи. Он влюбляется в девушку по имени Биро, но их отношения осложняются различиями в социальном статусе и амбициями Милкхи в спорте. В конечном итоге они расстаются, что становится для него болезненным переживанием.
+Вершиной карьеры Милкхи должны были стать Олимпийские игры 1960 года в Риме. Он приезжает туда как один из фаворитов в беге на 400 метров и успешно проходит предварительные раунды. В финале он занимает отличную позицию и лидирует большую часть дистанции.
+Однако на последних 50 метрах с Милкхой происходит что-то необъяснимое - он внезапно замедляется и оглядывается назад, позволяя соперникам обогнать себя. Он финиширует четвертым, упустив олимпийскую медаль, которая казалась уже в его руках. Этот момент становится самым трагическим в его карьере.
+Позже выясняется, что в критический момент Милкха вспомнил травматические события своего детства - смерть родителей во время раздела Индии. Психологическая травма, которую он носил в себе годы, проявилась в самый ответственный момент его жизни, лишив его олимпийской медали.
+После Рима Милкха продолжает выступать и устанавливает национальный рекорд Индии в беге на 400 метров, который продержится несколько десятилетий. Однако он понимает, что упущенная олимпийская медаль останется болезненной темой на всю жизнь.
+В более поздние годы Милкха Сингх становится тренером и наставником для молодых спортсменов, передавая им свой опыт и знания. Он также активно занимается благотворительностью и общественной деятельностью, становясь вдохновляющим примером для многих поколений индийских спортсменов.
+Фильм завершается показом того, как Милкха, несмотря на упущенную олимпийскую медаль, стал легендой индийского спорта и символом стойкости и преодоления. Его история демонстрирует, что истинное величие заключается не только в победах, но и в способности подняться после поражений и продолжать идти вперед.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Тайна в его глазах', 'A retired legal counselor writes a novel hoping to find closure for one of his past unresolved homicide cases and for his unreciprocated love with his superior - both of which still haunt him decades later.', '2009-01-01', 1, '129 minutes', 'El secreto de sus ojos', 8.2, 'Фильм начинается в 1999 году, когда Бенхамин Эспосито, бывший следователь уголовного суда, решает написать роман о деле, которое преследовало его 25 лет. Он приходит к своей бывшей начальнице Ирэне Менендес-Гастингс, которая теперь работает судьей, чтобы обсудить с ней детали того старого дела и свои чувства, которые он к ней испытывал.
+История переносится в 1974 год, когда Эспосито работал помощником следователя в уголовном суде Буэнос-Айреса. Вместе со своим коллегой и лучшим другом Пабло Сандовалем, алкоголиком с острым умом и циничным взглядом на жизнь, он расследует различные преступления. Их начальница Ирэне Менендес-Гастингс - молодая привлекательная женщина из высшего общества, только что окончившая юридический факультет и назначенная на эту должность.
+Жизнь Эспосито кардинально меняется, когда в их отделение поступает дело об изнасиловании и убийстве молодой женщины по имени Лилиана Кольото. Тело девушки находят в ее квартире, и все указывает на то, что преступление было совершено человеком, который хорошо ее знал. Муж жертвы, Рикардо Морелес, становится главным подозреваемым, но его алиби подтверждается, и он исключается из списка подозреваемых.
+Эспосито глубоко потрясен жестокостью преступления и красотой погибшей девушки, фотографии которой он видит в ее квартире. Он начинает одержимо искать настоящего убийцу, изучая каждую деталь дела. Вместе с Сандовалем они анализируют фотографии из дома жертвы и замечают, что на всех снимках один и тот же молодой человек смотрит на Лилиану с особой страстью и одержимостью.
+Этого человека зовут Исидоро Гомес, и он оказывается давним другом Лилианы, который был тайно в нее влюблен. Эспосито понимает, что именно безответная любовь и одержимость могли привести к преступлению. Однако когда они приходят арестовывать Гомеса, выясняется, что он уже сбежал, видимо, поняв, что его вычислили.
+Поиски Гомеса затягиваются на месяцы. Эспосито проводит бесчисленные часы, пытаясь найти след беглого убийцы, и постепенно сближается с мужем жертвы Рикардо Морелесом. Морелес - простой человек, который безгранично любил свою жену, и ее смерть полностью разрушила его жизнь. Он каждый день приходит на вокзал, надеясь увидеть Гомеса, который, по его мнению, рано или поздно вернется в Буэнос-Айрес.
+Эспосито скептически относится к этой идее, считая ее наивной, но Морелес объясняет ему, что человек, одержимый страстью, не может жить вдали от объекта своей одержимости даже после того, как объект исчез. Гомес будет возвращаться в места, связанные с Лилианой, потому что не сможет от них отказаться.
+Действительно, через год Гомеса замечают на футбольном матче команды "Расинг", за которую он болел вместе с Лилианой. Эспосито и полиция устраивают засаду на стадионе и арестовывают убийцу среди тысяч болельщиков. Гомес признается в преступлении, объясняя, что убил Лилиану в приступе ярости, когда она отвергла его признание в любви.
+Казалось бы, дело закрыто, справедливость восторжествовала, и Эспосито может с чистой совестью перейти к другим делам. Однако через некоторое время он с ужасом узнает, что Гомеса освободили по приказу высокопоставленного чиновника Романо, который завербовал его в качестве информатора для охоты на политических диссидентов во времена военной диктатуры.
+Эспосито приходит в ярость от такой несправедливости и решает бороться с системой. Он пытается добиться повторного ареста Гомеса, но сталкивается с мощным сопротивлением коррумпированных чиновников. Романо прямо угрожает ему, намекая, что Эспосито может повторить судьбу тех диссидентов, которых ловит Гомес.
+Ситуация становится критической, когда Гомес и его подручные убивают Пабло Сандоваля, лучшего друга Эспосито, в попытке запугать следователя. Смерть Сандоваля становится для Эспосито страшным ударом и заставляет его понять, что он не может победить систему в одиночку.
+Опасаясь за свою жизнь и понимая бесполезность дальнейшей борьбы, Эспосито принимает тяжелое решение покинуть Буэнос-Айрес. Он не может признаться Ирэне в своих чувствах, боясь подвергнуть и ее опасности, и уезжает в провинцию, где работает в небольшом суде и ведет тихую, скромную жизнь.
+Возвращаясь в 1999 год, Эспосито рассказывает Ирэне о том, как дело Кольото и смерть Сандоваля разрушили его жизнь. Он признается ей в любви, которую скрывал 25 лет, и Ирэне отвечает взаимностью, признавая, что тоже была в него влюблена, но не решалась это показать из-за различий в социальном положении.
+Однако Эспосито чувствует, что не сможет жить спокойно, не узнав, что случилось с Гомесом. Он решает найти Рикардо Морелеса, чтобы выяснить, удалось ли ему как-то отомстить убийце жены. Эспосито разыскивает Морелеса в его старом доме и обнаруживает, что тот никогда не оправился от смерти жены и живет как отшельник.
+В шокирующем финале выясняется, что Морелес не просто нашел Гомеса, но и похитил его много лет назад. Он держит убийцу своей жены в заточении в старом сарае, где Гомес проводит дни в полном одиночестве, лишенный возможности говорить с кем-либо или покинуть свою тюрьму.
+Морелес объясняет Эспосито, что смерть была бы слишком легким наказанием для Гомеса. Вместо этого он обрек его на пожизненное заключение в полном одиночестве, что является более жестокой карой, чем смерть. Гомес превратился в сумасшедшего старика, который уже не помнит, зачем он здесь находится.
+Эспосито потрясен увиденным, но понимает, что не может осудить Морелеса за его выбор. Справедливость была восстановлена, хотя и не тем способом, который предусматривает закон. Он решает никому не рассказывать о том, что увидел, и позволяет Морелесу продолжать свою месть.
+Фильм завершается тем, что Эспосито возвращается к Ирэне, и они наконец могут быть вместе, освободившись от груза прошлого. История показывает, как одно преступление может разрушить множество жизней, но также демонстрирует силу любви, дружбы и стремления к справедливости, даже когда официальная система правосудия дает сбой.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Воин', 'The youngest son of an alcoholic former boxer returns home, where he''s trained by his father for competition in a mixed martial arts tournament - a path that puts the fighter on a collision course with his estranged, older brother.', '2011-01-01', 1, '140 minutes', 'Warrior', 8.2, 'Воин (русское название)
+Фильм рассказывает историю двух братьев из разрушенной семьи, которые встречаются в мире смешанных единоборств через много лет после трагического разрыва. История начинается в Питтсбурге, где младший брат Томми Риордан возвращается домой после четырнадцати лет отсутствия, чтобы навестить своего отца Пэдди, бывшего алкоголика, который теперь ведет трезвый образ жизни и работает уборщиком в школе.
+Томми - бывший морской пехотинец, недавно вернувшийся из Ирака, где служил в элитном подразделении. Он холоден и отчужден со своим отцом, который в прошлом был жестоким пьяницей и разрушил семью своим поведением. Томми винит отца в том, что тот довел мать до алкоголизма, что в конечном итоге привело к ее смерти. Несмотря на враждебность, Томми просит Пэдди тренировать его для участия в турнире смешанных единоборств.
+Старший брат Брендан Конлон живет в пригороде Филадельфии с женой Тесс и двумя дочерьми. Он работает учителем физики в средней школе, но семья испытывает серьезные финансовые трудности. Их дом находится под угрозой конфискации из-за неоплаченной ипотеки, а одна из дочерей нуждается в дорогостоящем лечении сердечного заболевания. Отчаявшись найти способ заработать деньги, Брендан тайно возвращается к смешанным единоборствам, которыми занимался в молодости.
+Брендан начинает тренироваться в местном спортзале и участвует в подпольных боях, чтобы заработать деньги для семьи. Когда администрация школы узнает о его второй деятельности, его отстраняют от работы, что еще больше усугубляет финансовое положение семьи. Тесс сначала не понимает и не поддерживает решение мужа, опасаясь за его здоровье и будущее семьи.
+Тем временем Томми демонстрирует феноменальные способности в смешанных единоборствах, легко побеждая опытных бойцов за считанные секунды. Видео его боев становятся вирусными в интернете, и он быстро привлекает внимание промоутеров и СМИ. Несмотря на успех, Томми остается замкнутым и отказывается общаться с журналистами или раскрывать подробности своего прошлого.
+Объявляется крупнейший турнир по смешанным единоборствам под названием "Спарта", где победитель получает приз в пять миллионов долларов. Это привлекает лучших бойцов со всего мира, включая непобедимого российского бойца Козлова, который считается главным фаворитом турнира. И Томми, и Брендан решают принять участие в этом турнире, каждый по своим причинам.
+Для Брендана участие в "Спарте" - это последний шанс спасти свой дом и обеспечить лечение дочери. Он понимает, что его шансы против элитных бойцов минимальны, но альтернативы у него нет. Его тренер Фрэнк помогает ему подготовиться, хотя тоже сомневается в его способности победить таких сильных противников.
+Для Томми мотивация более сложная. Постепенно выясняется, что он планирует отдать призовые деньги семье своего погибшего в Ираке друга Мэнни Фернандеса. Мэнни спас жизнь Томми и других солдат, но сам погиб в бою, оставив жену и детей без средств к существованию. Томми чувствует себя обязанным позаботиться о семье героя, который пожертвовал жизнью ради товарищей.
+Когда начинается турнир, и Томми, и Брендан показывают неожиданные результаты. Томми легко проходит первые раунды, демонстрируя превосходную технику и физическую подготовку. Брендан, несмотря на более скромные данные, побеждает благодаря невероятной выносливости и умению терпеть боль, часто выигрывая бои в последние секунды за счет удушающих приемов.
+По мере продвижения братьев по турнирной сетке становится очевидным, что они могут встретиться в финале. Пэдди, который следит за успехами обоих сыновей, пытается помирить их, но Томми категорически отказывается иметь дело с семьей, которая, по его мнению, бросила его и мать в трудную минуту.
+В полуфинале Брендан встречается с Козловым, русским бойцом, который считался непобедимым. В драматичном поединке Брендан получает серьезную травму плеча, но благодаря невероятной силе воли и поддержке зрителей умудряется победить фаворита турнира удушающим приемом. Его победа становится сенсацией, но травма ставит под вопрос его участие в финале.
+Томми также проходит в финал, легко расправившись со своим соперником. Теперь братья должны сразиться друг с другом за главный приз. Встреча происходит в эмоционально заряженной атмосфере, поскольку все знают об их семейной истории благодаря освещению в СМИ.
+Финальный бой между братьями становится не только спортивным состязанием, но и попыткой разрешить старые семейные конфликты. Томми, физически более сильный и технически подготовленный, доминирует в начале боя, но Брендан показывает невероятную стойкость, несмотря на травмированное плечо.
+По мере продолжения боя эмоции берут верх над спортивным духом. Томми злится, что Брендан не сдается, и начинает драться более агрессивно, пытаясь быстро закончить поединок. Брендан же понимает, что это может быть его единственным шансом не только выиграть деньги, но и восстановить отношения с младшим братом.
+В решающий момент Брендан получает Томми в удушающий захват и отказывается отпускать его, несмотря на то, что Томми отчаянно пытается освободиться. Брендан начинает извиняться перед братом, говоря ему, что любит его и что они все еще семья. Эти слова ломают эмоциональную защиту Томми, и он наконец позволяет эмоциям выйти наружу.
+Понимая, что не может больше сопротивляться и что проиграет от удушения, Томми постукивает рукой, сдаваясь и признавая поражение. Но более важно то, что он обнимает Брендана, показывая, что их братские отношения восстановлены. Брендан помогает травмированному Томми покинуть октагон, и они уходят вместе, восстановив семейные связи.
+Фильм завершается тем, что Брендан получает призовые деньги, которые позволяют ему спасти дом и оплатить лечение дочери. Томми также находит способ помочь семье своего погибшего друга. Самое главное, братья преодолевают прошлые обиды и восстанавливают семейные отношения, поняв, что семья важнее любых денег или спортивных достижений. Пэдди также получает шанс на искупление, наблюдая, как его сыновья находят путь друг к другу через спорт и взаимное прощение.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Остров проклятых', 'In 1954, a U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane.', '2010-01-01', 1, '138 minutes', 'Shutter Island', 8.2, 'Фильм рассказывает историю Тедди Дэниелса, федерального маршала США, который в 1954 году прибывает на остров Шаттер в сопровождении своего нового напарника Чака Ауле для расследования исчезновения пациентки из психиатрической больницы Эшклифф. Пропавшая женщина по имени Рэйчел Соландо была помещена в лечебницу после того, как утопила своих троих детей, но каким-то образом сумела сбежать из запертой камеры, не оставив никаких следов.
+Остров Шаттер расположен в Бостонской гавани и служит домом для больницы, предназначенной для лечения психически больных преступников. Учреждением руководит доктор Джон Коули, который вместе со своим заместителем доктором Иеремией Нэрингом проводит экспериментальные методы лечения. Тедди с самого начала испытывает недоверие к персоналу больницы, подозревая, что они скрывают правду об исчезновении пациентки.
+У Тедди есть скрытые мотивы для посещения острова. Два года назад его жена Долорес погибла в пожаре, который устроил поджигатель по имени Эндрю Лэддис. Тедди считает, что Лэддис находится на острове среди пациентов, и планирует отомстить ему за смерть жены. Кроме того, Тедди подозревает, что в больнице проводятся нелегальные эксперименты над пациентами, включая хирургические операции на мозге и испытания наркотических веществ, финансируемые правительством в рамках программ времен холодной войны.
+Во время расследования Тедди и Чак сталкиваются с различными препятствиями. Персонал больницы ведет себя подозрительно и уклончиво отвечает на вопросы. Когда маршалы пытаются изучить личные дела пациентов, им сообщают, что большинство документов было повреждено в результате пожара. Доктор Коули объясняет, что Рэйчел страдала от тяжелых галлюцинаций и была убеждена, что все еще живет в своем доме с детьми, отрицая реальность своего преступления.
+Тедди начинает испытывать сильные головные боли и галлюцинации. Он видит свою мертвую жену Долорес, которая появляется перед ним и предупреждает об опасности. Она говорит ему, что Лэддис все еще находится на острове и что Тедди должен найти его. Эти видения становятся все более частыми и реалистичными, что заставляет Тедди сомневаться в собственном психическом состоянии.
+Во время исследования острова Тедди и Чак обнаруживают пещеру, где прячется женщина, называющая себя настоящей Рэйчел Соландо. Она утверждает, что является бывшим психиатром больницы, которая была превращена в пациентку после того, как попыталась разоблачить нелегальные эксперименты. Она рассказывает Тедди о существовании секретного отделения в маяке, где проводятся самые страшные опыты, включая лоботомию.
+Убежденный в правоте своих подозрений, Тедди решает проникнуть в маяк, несмотря на предупреждения Чака о том, что это может быть ловушкой. По пути к маяку между напарниками происходит конфликт, во время которого Тедди обнаруживает, что Чак не является федеральным маршалом и не имеет при себе оружия или удостоверения. Чак пытается успокоить Тедди и убедить его вернуться в больницу, но тот бежит к маяку.
+В маяке Тедди встречает доктора Коули, который объясняет ему шокирующую правду. Тедди Дэниелс на самом деле является пациентом больницы по имени Эндрю Лэддис, который два года назад убил свою жену Долорес после того, как она утопила их троих детей в озере возле дома. Долорес страдала от тяжелой депрессии и психоза, но Эндрю игнорировал признаки ее болезни и не смог предотвратить трагедию.
+Не в силах принять реальность своего преступления, разум Эндрю создал сложную фантазию, в которой он является федеральным маршалом Тедди Дэниелсом, расследующим исчезновение пациентки. В этой фантазии его жена погибла в пожаре, а он охотится за поджигателем по имени Эндрю Лэддис. Чак на самом деле является его лечащим врачом доктором Шином, который согласился участвовать в экспериментальной терапии ролевых игр, разработанной доктором Коули.
+Вся ситуация с расследованием была тщательно спланированной терапевтической процедурой, направленной на то, чтобы помочь Эндрю принять реальность. Все сотрудники больницы, включая охранников и медсестер, участвовали в этой постановке. Пропавшая пациентка Рэйчел Соландо была придуманным персонажем, а женщина в пещере - актрисой, нанятой для усиления иллюзии.
+Доктор Коули показывает Эндрю фотографии его настоящей семьи и объясняет, что если терапия не поможет ему принять правду, то он будет подвергнут лоботомии как последнему средству лечения. Постепенно воспоминания о реальных событиях начинают возвращаться к Эндрю. Он вспоминает, как нашел тела своих детей в озере и как в ярости убил свою больную жену.
+В кульминационный момент Эндрю кажется принявшим реальность. Он признает свою настоящую личность и понимает, что произошло с его семьей. Доктор Коули и доктор Шин надеются, что прорыв произошел, и планируют продолжить лечение амбулаторно. Однако на следующее утро выясняется, что Эндрю снова регрессировал в фантазию Тедди Дэниелса.
+Заключительная сцена происходит на ступенях больницы, где Эндрю сидит с доктором Шином, которого снова называет Чаком. Он говорит загадочную фразу о том, что лучше умереть хорошим человеком, чем жить монстром. Эта фраза намекает на то, что Эндрю на самом деле помнит правду, но сознательно выбирает безумие, поскольку не может жить с осознанием того, что он сделал.
+Когда доктор Шин с тревогой машет рукой медицинскому персоналу, сигнализируя о регрессе пациента, Эндрю спокойно встает и идет навстречу санитарам, которые отведут его на лоботомию. Его последние слова предполагают, что он предпочитает потерять рассудок и даже жизнь, чем продолжать существовать с невыносимым грузом вины за смерть семьи.
+Фильм завершается двусмысленно, оставляя зрителей гадать, действительно ли Эндрю снова сошел с ума или он сознательно выбрал смерть как единственный способ искупить свою вину и избежать мучительных воспоминаний о трагедии, которую он не смог предотвратить.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Вверх', '78-year-old Carl Fredricksen travels to Paradise Falls in his house equipped with balloons, inadvertently taking a young stowaway.', '2009-01-01', 1, '96 minutes', 'Up', 8.2, 'Фильм начинается с детства главного героя Карла Фредриксена, застенчивого мальчика, который мечтает о приключениях и путешествиях. Его кумиром является знаменитый исследователь Чарльз Мунц, который отправляется в экспедицию в Южную Америку на поиски мифической разноцветной птицы в Райских Водопадах. Однако когда Мунц возвращается с доказательствами существования этой птицы, научное сообщество обвиняет его в подделке, и он в позоре покидает страну, поклявшись не возвращаться без живого доказательства.
+Однажды Карл встречает Элли, энергичную девочку, которая разделяет его восхищение Мунцем и мечты о приключениях. Она показывает ему свой секретный клуб в заброшенном доме и рассказывает о своей мечте переехать в дом у Райских Водопадов в Южной Америке. Дети становятся лучшими друзьями и дают друг другу обещание однажды отправиться туда вместе.
+Время идет, и через серию трогательных кадров без диалогов показывается вся жизнь Карла и Элли. Они женятся, переезжают в тот самый заброшенный дом детства, который они вместе ремонтируют и превращают в уютное семейное гнездышко. Карл работает продавцом воздушных шаров, а Элли становится смотрителем зоопарка.
+Они постоянно откладывают деньги на поездку в Южную Америку, но жизненные обстоятельства постоянно заставляют их тратить накопления на более насущные нужды - ремонт машины, медицинские счета, восстановление дома после ураганов. Они так и не смогли завести детей, что стало для них большой печалью, но их любовь друг к другу только крепла с годами.
+Элли и Карл стареют вместе, оставаясь влюбленными и преданными друг другу. В старости Элли заболевает, и Карл наконец решает воплотить их детскую мечту в жизнь, покупая билеты в Южную Америку. Однако в день отъезда с Элли случается сердечный приступ, и она умирает в больнице, так и не успев осуществить мечту всей жизни.
+После похорон семидесятивосьмилетний Карл остается совершенно одиноким в доме, полном воспоминаний о жизни с Элли. Он становится угрюмым, замкнутым и раздражительным стариком, который цепляется за каждую вещь, напоминающую ему о жене. Город развивается вокруг его дома, и застройщики хотят снести его для строительства небоскребов, но Карл категорически отказывается продавать свой дом.
+Ситуация обостряется, когда Карл в порыве гнева ударяет строителя своей тростью после того, как тот случайно повредил почтовый ящик Элли. Суд постановляет отправить Карла в дом престарелых, и социальные работники должны забрать его на следующее утро.
+Однако в ночь перед отъездом Карл приводит в действие план, над которым тайно работал. Он привязывает к своему дому тысячи гелиевых шаров и буквально поднимает его в воздух, отправляясь в полет к Райским Водопадам в Южной Америке, чтобы исполнить обещание, данное Элли много лет назад.
+Уже находясь в воздухе, Карл обнаруживает, что у него есть неожиданный попутчик - восьмилетний скаут по имени Рассел, который накануне стучался к нему в дверь, пытаясь заработать последний значок скаута за помощь пожилому человеку. Мальчик случайно остался на крыльце дома во время взлета.
+Рассел оказывается полной противоположностью угрюмому Карлу - он болтливый, энергичный, оптимистичный ребенок, который искренне хочет помочь и подружиться со стариком. Несмотря на раздражение Карла, им приходится путешествовать вместе.
+После долгого полета дом приземляется в джунглях Южной Америки, недалеко от Райских Водопадов. Карл привязывает дом к себе с помощью садового шланга и начинает тащить его через джунгли к водопадам, надеясь поставить дом именно в том месте, о котором мечтала Элли.
+В джунглях они встречают удивительную разноцветную птицу, которую Рассел называет Кевин, не зная ее пола. Птица оказывается именно тем самым мифическим существом, которое искал Чарльз Мунц много лет назад. Кевин привязывается к Расселу, и мальчик начинает заботиться о ней, несмотря на протесты Карла, который хочет как можно быстрее добраться до водопадов.
+Также они знакомятся с говорящей собакой по имени Даг, которая носит специальный ошейник, переводящий ее мысли в человеческую речь. Даг объясняет им, что его хозяин охотится за большой птицей, и когда Карл и Рассел понимают, что речь идет о Кевин, они попадают в опасность.
+Хозяином Дага оказывается сам Чарльз Мунц, который все эти годы жил в джунглях на своем дирижабле, одержимо охотясь за птицей, чтобы восстановить свою репутацию. За десятилетия изоляции он превратился в параноидального и жестокого человека, готового убить любого, кто встанет у него на пути.
+Поначалу Мунц дружелюбно принимает Карла и Рассела на своем дирижабле, поскольку Карл является его поклонником с детства. Однако когда Мунц понимает, что они встречались с птицей, он обвиняет их в попытке украсть его открытие и начинает охоту на них.
+Карл оказывается перед выбором между безопасностью Рассела и Кевин и своей мечтой поставить дом у водопадов. Сначала его эгоизм и зацикленность на прошлом берут верх, и он отказывается помогать птице, которая стала жертвой Мунца.
+Однако когда Карл видит, что Рассел готов рискнуть жизнью, чтобы спасти Кевин, и понимает, что мальчик напоминает ему самого в детстве - полного мечтаний и желания помочь другим, он осознает, что держится за прошлое в ущерб настоящему и будущему.
+В кульминационной битве на дирижабле Мунца Карл и Рассел сражаются с одержимым исследователем и его стаей собак. Карл жертвует своим домом, отцепляя его, чтобы дирижабль смог взлететь и спасти Кевин. Дом падает в пропасть, и вместе с ним исчезает последняя материальная связь Карла с Элли.
+Мунц погибает, запутавшись в воздушных шарах и упав в пропасть, а Карл, Рассел и Кевин спасаются на его дирижабле. Они возвращают Кевин к ее птенцам, и Карл понимает, что нашел новый смысл жизни в заботе о Расселе, который оказался ребенком из неполной семьи, нуждающимся в отцовской фигуре.
+В финале фильма показано, как Карл и Рассел становятся настоящими друзьями. Карл берет на себя роль дедушки для мальчика, они вместе считают облака, едят мороженое и живут полной жизнью. Карл больше не цепляется за прошлое, а открыт для новых отношений и приключений.
+В самом конце фильма показывается, что дом Карла все-таки достиг своей цели и стоит у Райских Водопадов именно там, где мечтала Элли, что символизирует исполнение их общей мечты, хотя и не так, как они планировали в детстве.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Волк с Уолл-стрит', 'Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.', '2013-01-01', 1, '180 minutes', 'The Wolf of Wall Street', 8.2, 'Волк с Уолл-стрит (русское название)
+Фильм основан на реальных событиях и рассказывает историю Джордана Белфорта, молодого амбициозного брокера с Лонг-Айленда. История начинается в конце 1980-х годов, когда Джордан только начинает свою карьеру на Уолл-стрит в качестве младшего брокера в престижной компании. Он женат на своей первой жене Терезе, работает официанткой, и они живут скромной жизнью.
+Джордан мечтает о богатстве и успехе, и его наставник Марк Ханна знакомит его с культурой Уолл-стрит, где господствуют деньги, наркотики, секс и безудержное потребление. Ханна объясняет ему, что ключ к успеху в этом бизнесе - заставлять клиентов постоянно торговать акциями, зарабатывая комиссионные, независимо от того, приносит ли это прибыль клиентам.
+Однако карьера Джордана в крупной фирме заканчивается внезапно, когда в 1987 году происходит крах фондового рынка, известный как "Черный понедельник", и компания увольняет всех младших сотрудников. Оставшись без работы, Джордан вынужден искать новые возможности и устраивается в небольшую фирму на Лонг-Айленде, которая торгует так называемыми "розовыми листами" - акциями мелких, малоизвестных компаний.
+В этой маленькой фирме Джордан обнаруживает, что комиссионные от продажи дешевых акций составляют пятьдесят процентов, в отличие от одного процента с дорогих акций на Уолл-стрит. Используя свои навыки продаж и агрессивную тактику, он начинает зарабатывать огромные деньги, продавая никчемные акции богатым клиентам, убеждая их в том, что это выгодные инвестиции.
+Джордан решает создать собственную брокерскую фирму и нанимает группу своих друзей из района - торговцев наркотиками и мелких мошенников, которых он обучает искусству продаж акций. Они основывают компанию "Стрэттон Окмонт", которая располагается в бывшем автосалоне. Несмотря на отсутствие формального образования в области финансов, эти люди оказываются чрезвычайно эффективными продавцами.
+Компания быстро растет и процветает, используя схему "накачай и сбрось" - они искусственно завышают цены на никчемные акции через агрессивные продажи, а затем продают свои доли, оставляя инвесторов с обесценившимися бумагами. Джордан и его команда зарабатывают миллионы долларов, обманывая доверчивых инвесторов.
+По мере роста богатства образ жизни Джордана становится все более экстравагантным. Он покупает огромный особняк, дорогие машины, яхту и самолет. Его офис превращается в место непрерывных оргий, где сотрудники употребляют наркотики, нанимают проституток и устраивают дикие вечеринки прямо во время рабочего дня. Джордан становится известен как "Волк с Уолл-стрит" за свою агрессивность и жадность.
+Личная жизни Джордана также кардинально меняется. Он разводится с Терезой и женится на Наоми Лапаглиа, бывшей модели, с которой у него начался роман. Наоми привлекает его своей красотой и статусом, но их отношения строятся на поверхностных ценностях и взаимной выгоде.
+Джордан становится зависимым от кокаина и седативных препаратов, особенно от кваалюдов, что серьезно влияет на его поведение и способность принимать разумные решения. Его зависимость приводит к множеству опасных и унизительных ситуаций, включая инцидент, когда он едва не погибает, пытаясь добраться домой на машине под воздействием наркотиков.
+Тем временем ФБР начинает расследование деятельности "Стрэттон Окмонт". Агент Патрик Денэм ведет дело против Джордана, методично собирая доказательства мошенничества. Денэм представляет полную противоположность Джордану - он честный, скромно живущий государственный служащий, который ездит на работу на метро и искренне верит в справедливость.
+Джордан пытается избежать ответственности, перемещая деньги в швейцарские банки через своего швейцарского банкира Жана-Жака Сореля. Он также использует своих родственников и друзей как посредников для отмывания денег, втягивая их в свои преступные схемы.
+Ситуация осложняется, когда один из ближайших соратников Джордана, Донни Азофф, начинает вести себя все более безрассудно под воздействием наркотиков и алкоголя. Донни основан на реальном человеке по имени Дэнни Портуш, и их дружба становится все более токсичной по мере развития их преступной деятельности.
+Переломный момент наступает, когда Джордан и его команда попадают в шторм во время поездки в Италию на яхте. Яхта тонет, и несколько человек погибают, включая трех члена береговой охраны, которые пытались их спасать. Этот инцидент становится поворотной точкой для Джордана, который начинает осознавать последствия своего образа жизни.
+ФБР усиливает давление, и швейцарский банкир Джордана арестован. Сталкиваясь с перспективой длительного тюремного заключения, Джордан решает сотрудничать с властями. Он соглашается носить прослушивающее устройство и записывать разговоры со своими соратниками, предавая людей, которые были ему наиболее близки.
+Предательство друзей и коллег становится одним из самых болезненных моментов в истории Джордана. Он записывает инкриминирующие разговоры с Донни и другими, зная, что это приведет к их аресту и тюремному заключению. Это решение разрушает все его личные отношения и показывает глубину его морального падения.
+В конце концов Джордан арестован и предстает перед судом. Он получает относительно мягкий приговор благодаря сотрудничеству с властями - четыре года тюрьмы, из которых отбывает менее двух лет в минимально охраняемой тюрьме. Многие из его жертв потеряли свои жизненные сбережения и так и не получили компенсацию.
+Брак Джордана с Наоми разваливается, она разводится с ним и получает опеку над их дочерью. Джордан теряет все свое богатство, особняк, яхту и роскошный образ жизни. Его падение столь же стремительно, как и взлет.
+После освобождения из тюрьмы Джордан пытается построить новую жизнь. Он становится мотивационным спикером, проводя семинары по продажам, где учит людей техникам, которые использовал в своей преступной карьере, но теперь в легальном контексте. Ирония заключается в том, что он продолжает зарабатывать на своей способности убеждать людей, хотя теперь и законными методами.
+Фильм заканчивается сценой, где Джордан выступает перед аудиторией на семинаре в Новой Зеландии, обучая людей искусству продаж. Камера показывает лица слушателей, которые жадно впитывают каждое его слово, что служит комментарием на тему того, как общество продолжает восхищаться успехом, даже если он достигнут нечестными методами. История завершается напоминанием о том, что Джордан все еще должен своим жертвам миллионы долларов в качестве реституции, большую часть которой он так и не выплатил.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Нефть', 'A story of family, religion, hatred, oil and madness, focusing on a turn-of-the-century prospector in the early days of the business.', '2007-01-01', 1, '158 minutes', 'There Will Be Blood', 8.2, 'Фильм рассказывает историю Дэниела Плейнвью, безжалостного нефтяного магната в начале XX века в Калифорнии. История начинается в 1898 году, когда Плейнвью работает старателем в одиночку в пустынной местности, добывая серебро из шахты киркой и лопатой. Во время работы он падает в шахту и серьезно травмирует ногу, но продолжает работать, демонстрируя невероятную силу воли и одержимость богатством.
+Через несколько лет Плейнвью переключается на нефтяной бизнес и создает небольшую нефтяную компанию. Он усыновляет сына своего погибшего партнера, мальчика по имени Илай Санди, которого выдает за своего собственного сына и использует в качестве символа семейности при ведении переговоров с потенциальными партнерами. Ребенок помогает Плейнвью создавать образ честного семьянина, что облегчает заключение сделок с доверчивыми фермерами.
+В 1911 году к Плейнвью приходит молодой человек по имени Пол Санди, который утверждает, что знает место, где из земли буквально сочится нефть. Пол рассказывает о ранчо своей семьи в отдаленном районе под названием Литл Бостон, где есть признаки богатых нефтяных месторождений. В обмен на информацию он просит пятьсот долларов.
+Плейнвью отправляется в Литл Бостон вместе со своим приемным сыном и партнерами для разведки. Там он встречает семью Санди, включая отца Пола - Илая Санди, местного молодого проповедника, который ведет небольшую церковь Третьего Откровения. Плейнвью быстро понимает, что местность действительно богата нефтью, и начинает скупать земли у местных фермеров по низким ценам, не раскрывая истинной причины своего интереса.
+Между Плейнвью и Илаем сразу возникает взаимная неприязнь и соперничество. Плейнвью презирает религию и считает Илая мошенником, который использует веру людей для собственной выгоды. Илай же видит в Плейнвью угрозу своему влиянию в общине и пытается извлечь выгоду из его присутствия, требуя пожертвований на церковь и признания своего авторитета.
+Плейнвью успешно покупает большинство земель в районе, но сталкивается с проблемой - один фермер по имени Бэнди отказывается продавать свой участок, который находится в центре будущего нефтяного месторождения. Без этой земли добыча нефти становится практически невозможной. Плейнвью пытается различными способами убедить Бэнди продать землю, но тот остается непреклонным.
+Во время бурения скважины происходит несчастный случай - взрыв, в результате которого Илай Санди теряет слух. Мальчик больше не может говорить и общается только с помощью жестов, что становится тяжелым ударом для Плейнвью, который искренне любит приемного сына. Этот инцидент усиливает его цинизм и недоверие к окружающим.
+Илай использует несчастье для усиления давления на Плейнвью, утверждая, что взрыв - это наказание за его жадность и неуважение к религии. Он требует, чтобы Плейнвью публично покаялся в церкви и сделал крупное пожертвование. Плейнвью вынужден согласиться, поскольку нуждается в поддержке местного сообщества для продолжения работы.
+Унизительная сцена в церкви, где Плейнвью должен признаться в грехах перед всей общиной и попросить прощения, становится одним из самых болезненных моментов в его жизни. Он с трудом сдерживает ярость, произнося слова раскаяния, которые абсолютно не соответствуют его убеждениям. Илай наслаждается моментом унижения своего противника.
+Нефтяной бизнес Плейнвью процветает, и он становится очень богатым человеком. Однако его отношения с приемным сыном ухудшаются по мере того, как мальчик взрослеет и начинает понимать истинную природу своего отца. Илай Санди решает уехать в Калифорнию, чтобы учиться, что расстраивает Плейнвью, поскольку сын был единственным человеком, к которому он испытывал искренние чувства.
+Через несколько лет к Плейнвью приходит человек, который утверждает, что является его сводным братом. Генри говорит, что узнал Плейнвью по газетным статьям и решил найти единственного оставшегося члена семьи. Плейнвью, который всю жизнь был одиноким, радуется возможности иметь родственника и принимает Генри в свой дом и бизнес.
+Однако вскоре Плейнвью начинает подозревать, что Генри не тот, за кого себя выдает. Он проверяет его рассказы о семье и детстве и обнаруживает несоответствия. В конце концов Генри признается, что он не является братом Плейнвью, а просто мошенник, который пытался воспользоваться его богатством. В приступе ярости Плейнвью убивает Генри и хоронит его тело в пустыне.
+Время идет, и Плейнвью становится еще более богатым и влиятельным, но также более одиноким и озлобленным. Его приемный сын Илай вырастает и решает заняться собственным бизнесом, что окончательно разрушает последние человеческие связи Плейнвью. Он чувствует себя преданным единственным человеком, которого считал семьей.
+В 1927 году, спустя много лет, Илай Санди, теперь успешный проповедник с собственной радиопрограммой, приходит к Плейнвью с деловым предложением. Он предлагает продать последний участок земли семьи Санди, который Плейнвью нужен для завершения нефтепровода. Илай нуждается в деньгах для расширения своей религиозной деятельности.
+Плейнвью, который к этому времени стал эксцентричным отшельником, живущим в огромном особняке, встречает Илая с плохо скрываемой враждебностью. Он согласен заключить сделку, но выставляет унизительное условие - Илай должен отречься от своей веры и признать, что Бог не существует.
+После долгих колебаний и унижений Илай соглашается на требования Плейнвью и произносит богохульные слова, отрекаясь от всего, во что верил. Однако когда дело доходит до заключения сделки, Плейнвью сообщает, что земля Илая уже не нужна ему, поскольку он получил всю нефть с помощью технологии наклонного бурения с соседних участков.
+В финальной сцене озлобленный и униженный Илай пытается напасть на Плейнвью, но тот убивает его кеглей для боулинга в собственном особняке. Стоя над телом своего давнего врага, Плейнвью произносит знаменитую фразу о том, что закончил свое дело. Фильм завершается тем, что Плейнвью остается совершенно один в своем огромном доме, богатый, но полностью изолированный от человечества, окруженный только результатами своей безжалостной жадности и амбиций.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Лабиринт Фавна', 'In the Falangist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world.', '2006-01-01', 1, '118 minutes', 'Pan''s Labyrinth', 8.2, 'Фильм происходит в 1944 году в Испании, через пять лет после окончания Гражданской войны, когда режим Франко все еще борется с партизанскими отрядами республиканцев в горных районах. Главная героиня - одиннадцатилетняя девочка по имени Офелия, которая путешествует со своей беременной матерью Кармен к дому своего нового отчима, капитана Видаля, жестокого офицера франкистской армии.
+Кармен больна и с трудом переносит беременность, а Офелия чувствует себя потерянной в этом мрачном мире взрослых, полном жестокости и смерти. Она страстно любит читать сказки и фантастические истории, которые становятся для неё способом escape от суровой реальности.
+Капитан Видаль - безжалостный и садистский офицер, одержимый идеей поймать и уничтожить республиканских партизан, скрывающихся в окрестных лесах. Он относится к Офелии с холодным безразличием, интересуясь только ребенком, которого вынашивает Кармен, надеясь, что это будет сын, который продолжит его наследие.
+В первую же ночь пребывания в доме Видаля Офелия встречает странное насекомое, похожее на палочника, которое, как она считает, является феей. Следуя за ним, она попадает в древний каменный лабиринт рядом с домом, где встречает Фавна - мифическое существо с рогами и козлиными ногами.
+Фавн сообщает Офелии поразительную новость: она является принцессой подземного королевства, дочерью Короля подземного мира, которая много лет назад покинула свой мир и умерла в человеческом теле, но теперь может вернуться домой. Однако для этого ей необходимо выполнить три задания до полнолуния, чтобы доказать, что её душа не была испорчена человеческим миром.
+Первое задание заключается в том, чтобы извлечь золотой ключ из живота гигантской жабы, которая живет в корнях умирающего фигового дерева и пожирает все его соки. Офелия должна проникнуть внутрь дерева, заставить жабу проглотить три волшебных камня, которые убьют её, а затем забрать ключ из её желудка. Девочка успешно выполняет это отвратительное задание, покрывшись грязью и слизью, но получив нужный ключ.
+Параллельно с фантастическими приключениями Офелии разворачивается мрачная реальность войны. Видаль ведет жестокую кампанию против партизан, пытая и убивая подозреваемых. В одной из самых шокирующих сцен фильма он зверски убивает двух невинных охотников, заподозрив их в связях с партизанами, разбивая одному из них лицо молотком.
+Врач Ферейро, который лечит беременную Кармен, и служанка Мерседес тайно помогают партизанам, передавая им медикаменты и информацию. Мерседес особенно сочувствует Офелии и становится для неё материнской фигурой, поскольку настоящая мать девочки все время болеет.
+Второе задание Фавна ещё более опасно. Офелия должна использовать золотой ключ, чтобы открыть одну из трех замочных скважин в комнате Бледного Человека - чудовищного существа, которое сидит неподвижно за столом, уставленным роскошными яствами. Фавн предупреждает её, что она не должна ничего есть из этой пищи, иначе Бледный Человек проснется и убьет её.
+Офелия проникает в подземный дворец Бледного Человека, используя волшебный мел, который позволяет ей создавать двери в стенах. Она находит кинжал в одной из шкатулок, но не может удержаться от соблазна и съедает две виноградины со стола. Это пробуждает Бледного Человека - ужасающее существо с глазами на ладонях, которое начинает охотиться на неё. Он убивает двух фей, которые сопровождали Офелию, и едва не ловит саму девочку, которая спасается, создав дверь в стене.
+Фавн приходит в ярость из-за неповиновения Офелии и отказывается дать ей третье задание, заявляя, что она провалила испытание и никогда не сможет вернуться в подземное королевство. Офелия отчаивается, особенно потому, что состояние её матери ухудшается.
+Кармен умирает при родах, оставив сына, которого Видаль называет в свою честь. Перед смертью Офелия пытается спасти мать, используя мандрагору - корень в форме человечка, которого дал ей Фавн. Мандрагора действительно помогает Кармен почувствовать себя лучше, но когда Видаль обнаруживает этот "суеверный бред", он заставляет Кармен бросить корень в огонь, после чего у неё начинаются преждевременные роды.
+После смерти матери Офелия остается совершенно одинокой с жестоким отчимом, который видит в ней только обузу. Тем временем Видаль обнаруживает предательство Мерседес и доктора Ферейро. Доктор предпочитает покончить с собой, а не позволить Видалю пытать его, а Мерседес пытают, но ей удается escape к партизанам.
+Партизаны организуют финальное нападение на гарнизон Видаля. В разгар битвы Фавн появляется перед Офелией в последний раз и дает ей шанс выполнить третье задание. Она должна принести своего новорожденного брата в лабиринт до полуночи.
+Офелия крадет ребенка из комнаты Видаля и бежит в лабиринт, преследуемая разъяренным отчимом. В центре лабиринта Фавн ждет её с кинжалом и объясняет, что для открытия портала в подземное королевство необходимо пролить кровь невинного - несколько капель крови младенца.
+Офелия категорически отказывается причинить вред своему брату, заявляя, что скорее умрет сама, чем допустит пролитие невинной крови. Фавн исчезает, по-видимому, разочарованный её отказом.
+В этот момент появляется Видаль, который видит только Офелию, разговаривающую с воздухом - он не может воспринимать волшебных существ. Он забирает у неё ребенка и хладнокровно застреливает падчерицу в живот.
+Офелия умирает, но её кровь капает на алтарь в центре лабиринта. Фавн объясняет, что последнее испытание заключалось именно в том, чтобы пожертвовать собой ради защиты невинного, и Офелия прошла его, доказав чистоту своей души.
+Видаль выходит из лабиринта с младенцем и сталкивается с партизанами во главе с Мерседес, которые окружили его. Понимая, что его смерть неизбежна, он передает ребенка Мерседес и просит её рассказать сыну о том, каким был его отец. Мерседес отвечает, что мальчик никогда не узнает имени отца, после чего партизаны убивают Видаля.
+В финальной сцене умирающая Офелия попадает в золотой тронный зал подземного королевства, где её ждут Король и Королева - её истинные родители. Король объясняет, что она успешно прошла все испытания, последнее из которых было самым важным - она выбрала пролить собственную кровь вместо крови невинного.
+Офелия воссоединяется со своими подземными родителями и занимает место принцессы подземного мира. Однако фильм оставляет открытым вопрос о том, было ли это реальностью или галлюцинацией умирающей девочки, которая искала утешения в фантастическом мире, чтобы escape от ужасов реальной войны.
+История завершается эпилогом, показывающим, что республиканские партизаны победили, Мерседес заботится о младенце, а в лабиринте расцветает фиговое дерево, символизируя возрождение и надежду после тьмы войны и смерти.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('История игрушек 3', 'The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it''s up to Woody to convince the other toys that they weren''t abandoned and to return home.', '2010-01-01', 1, '103 minutes', 'Toy Story 3', 8.2, 'История игрушек 3 (русское название фильма Toy Story 3)
+Фильм начинается спустя одиннадцать лет после событий второго фильма. Энди Дэвис теперь семнадцатилетний подросток, готовящийся к поступлению в колледж. Он давно перестал играть со своими игрушками, которые годами лежат в сундуке, покрываясь пылью и мечтая о том времени, когда их хозяин снова обратит на них внимание. Многие игрушки из оригинальной коллекции уже исчезли - проданы на гаражных распродажах, переданы другим детям или выброшены.
+Основная группа выживших игрушек включает ковбоя Вуди, космического рейнджера Базза Лайтера, мистера и миссис Картофельная Голова, поросенка Хэма, динозавра Рекса, собачку Слинки и пастушку Бо Пип. Они с тревогой наблюдают, как их мир медленно разрушается, понимая, что скоро Энди уедет, и их ждет неопределенное будущее. Вуди остается оптимистом и убеждает остальных, что Энди не забыл о них и обязательно найдет для них подходящее место.
+Перед отъездом в колледж мама Энди просит его разобрать вещи в комнате и решить, что взять с собой, что отдать, а что выбросить. Энди планирует взять с собой только Вуди, а остальных игрушек сложить в мешок для мусора до принятия окончательного решения. Однако мама по ошибке выносит мешок с игрушками к мусорному контейнеру, считая его обычным мусором.
+Игрушки в ужасе обнаруживают себя среди отходов и начинают паниковать, думая, что Энди действительно решил их выбросить. Только Вуди знает правду о том, что произошла ошибка, но остальные игрушки ему не верят, считая его наивным. В отчаянии они решают сбежать и прыгают в коробку для пожертвований, предназначенную для детского сада "Саннисайд".
+Вуди пытается убедить друзей вернуться, но они полны решимости начать новую жизнь в месте, где их будут любить и с ними будут играть дети. Не желая бросать друзей, Вуди неохотно соглашается отправиться с ними в детский сад, хотя и продолжает верить в то, что Энди не хотел от них избавляться.
+В детском саду "Саннисайд" игрушки встречает харизматичный розовый медведь по имени Лотсо, который представляется как лидер местного игрушечного сообщества. Лотсо рассказывает новичкам о преимуществах жизни в детском саду: здесь всегда есть дети, которые хотят играть, игрушки никогда не остаются забытыми, а когда дети вырастают, приходят новые. Он обещает им место в группе "Бабочки", где играют старшие, более аккуратные дети.
+Однако вместо этого Лотсо направляет новичков в группу "Гусеницы", где находятся малыши ясельного возраста. Эти дети играют очень грубо, не умея обращаться с игрушками бережно. Базз, мистер Картофельная Голова и другие подвергаются жестокому обращению со стороны малышей, которые их грызут, бросают, пачкают красками и ломают. К концу дня игрушки находятся в ужасном состоянии и понимают, что попали в настоящий кошмар.
+Вуди, который не участвовал в "игре" с малышами, пытается организовать побег, но остальные игрушки решают попросить Лотсо о переводе в другую группу. Базз отправляется на переговоры с розовым медведем, но обнаруживает, что детский сад управляется как тюрьма. Лотсо контролирует все через систему наблюдения и сеть игрушек-приспешников, включая Кена, модного кукольного парня, который влюблен в Барби из группы Энди.
+Выясняется, что Лотсо имеет трагическое прошлое. Когда-то он принадлежал девочке по имени Дейзи, которая очень любила его. Однако во время пикника Лотсо потерялся, а когда наконец добрался домой, обнаружил, что Дейзи заменила его идентичным медведем. Эта травма превратила некогда доброго Лотсо в циничного тирана, который считает, что все дети в конечном итоге предают свои игрушки, поэтому лучше контролировать ситуацию и использовать других игрушек для собственной выгоды.
+Когда Базз пытается противостоять Лотсо, тот перепрограммирует космического рейнджера в демонстрационный режим, превращая его в безжалостного охранника. Лотсо использует знание о кнопке сброса на спине Базза, но случайно активирует испанский языковой режим, что создает комический эффект, но не меняет того факта, что Базз теперь работает против своих друзей.
+Вуди тем временем попадает в дом маленькой девочки по имени Бонни, которая посещает детский сад. Бонни оказывается добрым и творческим ребенком, который очень заботливо относится к своим игрушкам. В ее доме Вуди встречает других игрушек, включая плюшевого ежа Мистера Дикобраза, клоуна Чакли и других, которые рассказывают ему правду о Лотсо и о том, что происходит в детском саду.
+Узнав о бедственном положении своих друзей, Вуди решает вернуться в "Саннисайд", чтобы спасти их. Он разрабатывает сложный план побега, который включает в себя сброс настроек Базза, чтобы вернуть ему память, и использование романтических чувств Кена к Барби для получения информации о системе безопасности детского сада.
+План частично удается: Барби соблазняет Кена и узнает о планировке здания и режиме охраны, а Вуди с помощью других игрушек пытается восстановить программы Базза. Однако в процессе перепрограммирования что-то идет не так, и Базз временно теряет всю память, не узнавая своих друзей и считая их врагами.
+Во время попытки побега игрушек ловят, и Лотсо собирается их жестоко наказать. Однако в этот момент прибывает Дейзи, теперь уже взрослая женщина с собственной дочерью, которая случайно узнает своего старого медведя. Встреча с бывшей хозяйкой потрясает Лотсо, но вместо раскаяния он становится еще более жестоким, не в силах справиться с болью прошлого.
+Кульминация фильма происходит на городской свалке, куда игрушки попадают после неудачной попытки побега. Они оказываются на конвейере, ведущем к мусоросжигательной печи, и понимают, что это может быть их концом. В критический момент, когда кажется, что спасения нет, игрушки берутся за руки, готовые встретить смерть вместе как семья.
+Спасение приходит в виде трех зеленых инопланетян из автомата с призами, которых Мистер Картофельная Голова когда-то спас. Инопланетяне управляют гигантским краном-захватом и вытаскивают друзей из печи в последний момент. Лотсо, который мог бы спасти всех, но предпочел спастись сам, оказывается прикрепленным к решетке мусоровоза и обречен на вечные страдания.
+Вернувшись домой, игрушки обнаруживают, что Энди собирается отправиться в колледж и ищет Вуди, чтобы взять его с собой. Вместо этого Вуди оставляет записку, предлагающую Энди подарить все игрушки маленькой девочке по имени Бонни. Энди приезжает к дому Бонни и лично передает каждую игрушку, рассказывая об их особенностях и о том, как с ними играть.
+Самым трогательным моментом становится передача Вуди. Энди колеблется, поскольку ковбой был его любимой игрушкой с детства, но в конце концов понимает, что Вуди нужен Бонни больше, чем ему. Он играет с Бонни и игрушками в последний раз, а затем уезжает в колледж, оставив своих верных спутников детства в надежных руках.
+Фильм заканчивается тем, что игрушки начинают новую жизнь с Бонни, которая оказывается прекрасной хозяйкой, любящей творческие игры и заботящейся о своих игрушках. Базз полностью восстанавливает память и снова становится лучшим другом Вуди. История завершается осознанием того, что хотя детство заканчивается, любовь и дружба могут найти новые формы выражения, а игрушки могут продолжать приносить радость следующему поколению детей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('V — значит вендетта', 'In a future British tyranny, a shadowy freedom fighter, known only by the alias of "V", plots to overthrow it with the help of a young woman.', '2005-01-01', 1, '132 minutes', 'V for Vendetta', 8.2, 'Фильм разворачивается в антиутопической Британии 2020 года, где у власти находится тоталитарная партия "Норсфайр" во главе с канцлером Адамом Сатлером. Режим установился после серии катастрофических событий, включающих эпидемию смертельного вируса, гражданские беспорядки и международный конфликт. Правительство контролирует все аспекты жизни граждан через массовую слежку, цензуру медиа и жестокие репрессии против любых проявлений инакомыслия.
+История начинается с Эви Хэммонд, молодой женщины, работающей на государственной телевизионной станции BTN. Однажды вечером, нарушив комендантский час, она попадает в руки секретной полиции, которая пытается ее изнасиловать. Эви спасает загадочный человек в маске Гая Фокса, называющий себя V. Он одет в черный плащ, цилиндр и никогда не снимает белую маску с улыбающимся лицом и тонкими усами.
+V приводит Эви на крышу здания, откуда они наблюдают за взрывом Олд-Бейли, старого здания суда. Взрыв сопровождается фейерверком и музыкой Чайковского, превращая разрушение в грандиозное представление. На следующий день V захватывает телевизионную станцию и транслирует обращение к народу, в котором объявляет о своем намерении через год, пятого ноября, взорвать здание Парламента. Он призывает граждан присоединиться к нему и восстать против тирании.
+Эви становится невольной свидетельницей этих событий и вынуждена скрываться вместе с V в его подземном убежище, представляющем собой обширную галерею, заполненную произведениями искусства, книгами, музыкой и фильмами, запрещенными режимом. V оказывается высокообразованным человеком с изысканными манерами, который коллекционирует культурные артефакты и готовит изысканные блюда, но при этом является безжалостным мстителем.
+Расследование деятельности V ведет главный инспектор Эрик Финч, честный полицейский, который постепенно начинает понимать коррумпированность системы, которой служит. Финч обнаруживает, что V методично убивает людей, связанных с концлагерем Ларкхилл, где много лет назад проводились медицинские эксперименты над политическими заключенными, гомосексуалистами, мусульманами и другими "нежелательными элементами".
+Через серию флешбэков выясняется предыстория V. Он был одним из заключенных Ларкхилла, где доктор Дилия Сарридж проводила эксперименты с биологическим оружием. В результате этих опытов большинство подопытных умерло, но V не только выжил, но и приобрел сверхчеловеческие способности - невероятную силу, скорость, выносливость и устойчивость к боли. Эксперименты также разрушили его внешность, заставив навсегда скрыть лицо под маской.
+V сбежал из лагеря в ночь на пятое ноября, устроив масштабный пожар, который уничтожил лагерь и убил многих охранников и персонал. С тех пор он планировал свою месть, изучая каждого человека, причастного к его страданиям. Оказывается, что многие высокопоставленные члены правящей партии были связаны с Ларкхиллом и использовали созданный там вирус для прихода к власти, намеренно заразив население, а затем представив себя спасителями с вакциной.
+Эви постепенно проникается идеологией V и начинает понимать важность борьбы против тирании. Однако когда она пытается покинуть убежище, чтобы навестить своего коллегу Гордона Дитрича, V предупреждает ее об опасности. Гордон оказывается тайным диссидентом, который в своей телепередаче высмеивает канцлера. За это его арестовывают и казнят, а Эви бросают в тюрьму.
+В заключении Эви подвергается пыткам и допросам, но отказывается выдать местонахождение V. Ее поддерживает письмо от бывшей заключенной по имени Валери, лесбиянки, которая была заключена в соседней камере и погибла, но успела передать свою историю. Письмо вдохновляет Эви на сопротивление, и она готова умереть, но не предать свои принципы.
+В шокирующем повороте выясняется, что Эви никогда не покидала убежище V, а ее заключение было инсценировкой, организованной самим V, чтобы освободить ее от страха и показать силу человеческого духа. Эви в ярости от такого обмана покидает V, но позже понимает, что пережитое изменило ее, сделав сильнее и решительнее.
+Тем временем режим начинает разваливаться изнутри. Инспектор Финч обнаруживает правду о происхождении вируса и роли правительства в его распространении. Различные фракции внутри партии начинают бороться за власть, понимая, что дни Сатлера сочтены. V продолжает свою кампанию мести, убивая оставшихся причастных к Ларкхиллу, включая доктора Сарридж и других.
+Приближается пятое ноября, день, когда V обещал взорвать Парламент. Он тайно распространяет по всему Лондону тысячи масок Гая Фокса, и в назначенный день огромная толпа людей в одинаковых масках движется к зданию Парламента, несмотря на запреты властей. Полиция и армия оказываются неспособными остановить мирную, но решительную массу демонстрантов.
+В финальном противостоянии V сталкивается с вооруженным отрядом во главе с Питером Криди, правой рукой канцлера. Несмотря на множественные огнестрельные ранения, V убивает всех нападавших, демонстрируя свои сверхчеловеческие способности. Смертельно раненный, он возвращается к Эви, которая помогает ему добраться до подготовленного поезда, начиненного взрывчаткой.
+Эви кладет тело V в поезд и запускает его по подземному туннелю к зданию Парламента. Поезд взрывается точно в полночь, разрушая символ тоталитарной власти под аккомпанемент "Увертюры 1812 года" Чайковского и грандиозного фейерверка. Толпы людей в масках наблюдают за взрывом, символизирующим освобождение от тирании.
+В эпилоге показано, как общество начинает восстанавливаться после падения режима. Инспектор Финч, который в конце концов позволил V завершить свою миссию, встречается с Эви среди толпы. Он спрашивает, кем был V под маской, на что Эви отвечает, что V был каждым из них - символом сопротивления и стремления к свободе.
+Фильм завершается мыслью о том, что идеи пуленепробиваемы, и что V достиг своей цели не только отомстив за личные страдания, но и вдохновив народ на борьбу за свободу. Маска Гая Фокса становится символом сопротивления любой форме тирании, а наследие V живет в каждом, кто готов бороться за справедливость.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бэтмен: Начало', 'After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.', '2005-01-01', 1, '140 minutes', 'Batman Begins', 8.2, 'Бэтмен: Начало (русское название)
+Фильм рассказывает историю становления Брюса Уэйна как Бэтмена, начиная с его детства и травмирующих событий, которые определили его судьбу. История открывается сценой из детства восьмилетнего Брюса, который играет с подругой Рэйчел Доус в поместье Уэйнов. Во время игры Брюс падает в заброшенную колодец на территории поместья, где на него нападает стая летучих мышей, что становится источником его пожизненной фобии.
+Несколько лет спустя Брюс вместе с родителями - Томасом и Мартой Уэйн - посещает оперу в центре Готэма. Во время представления, где исполнители одеты как летучие мыши, Брюс пугается и просит родителей уйти. Семья покидает театр и направляется через темный переулок, где на них нападает грабитель Джо Чилл. В попытке отобрать жемчужное ожерелье Марты, преступник паникует и застреливает обоих родителей на глазах у маленького Брюса.
+После похорон родителей Брюс воспитывается дворецким семьи Альфредом Пенниуортом в огромном особняке Уэйнов. Он вырастает, одержимый идеей мести убийце родителей, и решает убить Чилла, когда тот освобождается из тюрьмы. Однако в суде Чилла убивает другой преступник раньше, чем Брюс успевает осуществить свой план. Рэйчел Доус, которая стала помощником окружного прокурора, осуждает Брюса за жажду мести и объясняет ему разницу между справедливостью и местью.
+Потрясенный своей неспособностью понять преступный мир, Брюс покидает Готэм и отправляется в путешествие по миру, пытаясь понять природу страха и преступности. Он намеренно совершает мелкие преступления в различных странах, чтобы попасть в тюрьмы и изучить криминальную психологию изнутри. В тибетской тюрьме его находит таинственный человек по имени Анри Дюкар, который представляет организацию под названием Лига Теней.
+Дюкар предлагает Брюсу присоединиться к Лиге и получить подготовку у их лидера Раса аль-Гула. Брюс соглашается and отправляется в монастырь в горах, где проходит интенсивную подготовку под руководством Дюкара. Он изучает боевые искусства, технику маскировки, психологию страха и различные способы борьбы с преступностью. Дюкар учит его, что для победы над врагами нужно стать больше чем человеком - стать символом, легендой, которой будут бояться преступники.
+Однако когда Брюс завершает подготовку, выясняется, что настоящий Рас аль-Гул - это сам Дюкар, а человек, которого представляли как лидера, был лишь приманкой. Рас аль-Гул раскрывает истинную цель Лиги Теней - уничтожение коррумпированных городов, которые считаются безнадежными. Их следующая цель - Готэм-сити, который они планируют стереть с лица земли.
+Брюс отказывается участвовать в геноциде и восстает против Лиги. В завязавшейся битве он убивает самозванца Раса аль-Гула и поджигает монастырь, но спасает настоящего Раса, не желая становиться убийцей. Он возвращается в Готэм после семи лет отсутствия, чтобы найти свой способ борьбы с преступностью.
+Вернувшись домой, Брюс обнаруживает, что Готэм погряз в коррупции глубже, чем когда-либо. Преступный босс Кармине Фальконе контролирует город через подкупленных судей, полицейских и политиков. Рэйчел, которая стала помощником окружного прокурора, безуспешно пытается бороться с коррупцией через правовую систему, но постоянно сталкивается с препятствиями.
+Брюс понимает, что для эффективной борьбы с преступностью ему нужно действовать за пределами закона. Он решает создать альтер-эго, которое будет внушать страх преступникам. Используя образ летучей мыши - символа своего детского страха, который он превратил в силу - Брюс создает костюм Бэтмена с помощью Альфреда и главы отдела прикладных наук Wayne Enterprises Лусиуса Фокса.
+Фокс предоставляет Брюсу доступ к прототипам военного оборудования, включая броневой костюм, плащ-планер и специально модифицированный автомобиль Бэтмобиль. Брюс также оборудует Бэтпещеру - секретную базу в пещерах под особняком Уэйнов, где когда-то на него напали летучие мыши.
+Бэтмен начинает свою деятельность с нападения на склад Фальконе, где уничтожает партию наркотиков и оставляет преступника связанным для полиции. Его действия привлекают внимание одного из немногих честных полицейских в городе - сержанта Джеймса Гордона, который был первым, кто пришел на помощь Брюсу в ночь убийства его родителей.
+Тем временем в городе появляется новая угроза в лице доктора Джонатана Крейна, психиатра из психиатрической больницы Аркхэм, который тайно работает с преступниками и экспериментирует с токсином страха - химическим веществом, вызывающим галлюцинации самых сильных фобий человека. Крейн, известный как Пугало, помогает преступникам избежать тюрьмы, признавая их невменяемыми.
+Расследуя деятельность Пугала, Бэтмен обнаруживает, что за ним стоит более крупный заговор. Выясняется, что Рас аль-Гул выжил после пожара в монастыре и прибыл в Готэм под видом респектабельного бизнесмена. Он планирует уничтожить город, испарив токсин страха через систему водоснабжения с помощью украденного Wayne Enterprises генератора микроволн.
+План Раса предусматривает создание массовой паники среди населения Готэма, которая приведет к самоуничтожению города. Он считает, что Готэм слишком коррумпирован для спасения и должен быть уничтожен, как это уже случалось с другими городами в истории. Лига Теней, по его словам, уже разрушила Рим, Лондон во времена чумы и другие "декадентские" цивилизации.
+В кульминационной битве Бэтмен противостоит Лиге Теней на поезде, который везет генератор микроволн к центру города. Он сражается с Расом аль-Гулом, пока Гордон на Бэтмобиле разрушает рельсы впереди поезда. Рас погибает в крушении поезда, а план по уничтожению Готэма терпит неудачу.
+Бэтмен также побеждает Пугала, подвергнув его воздействию его собственного токсина страха, что превращает Крейна в безумца, который видит Бэтмена как демона. Фальконе арестовывается благодаря доказательствам, собранным Бэтменом, что наносит серьезный удар по организованной преступности в городе.
+В финале Бэтмен встречается с Гордоном, которого повышают до лейтенанта, на крыше полицейского участка. Гордон благодарит его за помощь в очистке города и сообщает о появлении нового преступника, который оставляет игральные карты с джокерами на местах преступлений, намекая на появление в будущем более опасных врагов.
+Фильм завершается тем, что Брюс полностью принимает свою роль Бэтмена и готовится к продолжению борьбы с преступностью в Готэме. Рэйчел узнает его истинную личность, но решает хранить секрет. Wayne Enterprises восстанавливается под управлением Брюса, а Альфред и Фокс становятся его союзниками в войне против преступности. Бэтмен становится символом надежды для честных жителей Готэма и источником страха для преступников, именно таким, каким его задумывал создать Брюс Уэйн.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бункер', 'Traudl Junge, the final secretary for Adolf Hitler, tells of the Nazi dictator''s final days in his Berlin bunker at the end of WWII.', '2004-01-01', 1, '156 minutes', 'Der Untergang', 8.2, 'Фильм показывает последние двенадцать дней Третьего рейха, с 20 апреля по 2 мая 1945 года, когда советские войска штурмовали Берлин и окружали правительственный квартал. История рассказывается преимущественно с точки зрения Траудль Юнге, одной из личных секретарш Адольфа Гитлера, которая находилась в фюрербункере до самого конца и стала свидетелем падения нацистского режима.
+Действие начинается в день рождения Гитлера, 20 апреля 1945 года, когда фюрер уже несколько месяцев практически не покидает своего подземного бункера под Рейхсканцелярией. Гитлер предстает как физически и психически разрушенный человек с дрожащими руками, который тем не менее продолжает отдавать приказы и строить иллюзорные планы контрнаступления, несмотря на очевидность поражения.
+В бункере вместе с Гитлером находятся его ближайшие соратники: Йозеф Геббельс с женой Магдой и шестью детьми, Мартин Борман, генерал Вильгельм Кейтель, генерал Альфред Йодль, генерал Ганс Кребс, рейхсфюрер СС Генрих Гиммлер и другие высокопоставленные нацисты. Атмосфера в бункере крайне напряженная, поскольку все понимают, что конец близок, но никто не осмеливается открыто об этом говорить.
+Гитлер категорически отказывается покидать Берлин или сдаваться, считая, что германский народ не оправдал его ожиданий и заслуживает уничтожения. Он приказывает уничтожить всю инфраструктуру страны, чтобы ничего не досталось противнику, проявляя полное безразличие к судьбе мирного населения. Многие генералы и офицеры начинают понимать безумие этих приказов и тайно саботируют их выполнение.
+Параллельно показана жизнь обычных берлинцев во время осады города. Доктор Эрнст-Гюнтер Шенк работает в импровизированном госпитале, пытаясь спасти раненых солдат и мирных жителей. Молодые солдаты фольксштурма, многие из которых еще подростки или уже пожилые мужчины, отправляются на верную смерть, защищая город с устаревшим оружием против превосходящих сил противника.
+В бункере происходят драматические сцены, когда различные нацистские лидеры пытаются убедить Гитлера принять реалистичные решения. Генерал СС Феликс Штайнер должен был провести контрнаступление для деблокады Берлина, но его силы настолько малочисленны, что операция заведомо обречена на провал. Когда Гитлер узнает, что наступление не состоялось, он впадает в ярость и впервые открыто признает, что война проиграна.
+Геббельс остается одним из немногих, кто до конца сохраняет фанатичную преданность фюреру. Он вместе с женой принимает решение покончить с собой и убить своих шестерых детей, считая, что они не должны жить в мире без национал-социализма. Магда Геббельс лично отравляет детей цианидом, после чего супруги выходят из бункера и просят адъютанта застрелить их.
+Гиммлер предает Гитлера, пытаясь вести тайные переговоры с союзниками через шведского дипломата графа Бернадота. Когда об этом становится известно, Гитлер приходит в ярость и исключает Гиммлера из партии, называя его предателем. Также выясняется, что Герман Геринг попытался взять власть в свои руки, отправив телеграмму с требованием передать ему полномочия фюрера.
+29 апреля Гитлер женится на Еве Браун, своей многолетней возлюбленной, которая добровольно присоединилась к нему в бункере. Церемония проходит в сюрреалистической атмосфере, когда над головами слышатся взрывы советской артиллерии. После свадьбы Гитлер диктует свое политическое завещание, в котором обвиняет евреев в развязывании войны и назначает адмирала Карла Деница своим преемником.
+30 апреля, когда советские войска находятся в нескольких сотнях метров от бункера, Гитлер и Ева Браун совершают самоубийство. Гитлер застреливается из пистолета, а Ева принимает цианид. Их тела выносят во двор Рейхсканцелярии, поливают бензином и сжигают согласно последней воле фюрера, который не хотел, чтобы его труп достался врагам.
+После смерти Гитлера в бункере начинается хаос. Борман пытается взять контроль в свои руки, но большинство обитателей бункера думают только о том, как спастись. Генерал Кребс отправляется на переговоры с советским командованием, но получает требование о безоговорочной капитуляции, что неприемлемо для оставшихся нацистских лидеров.
+Доктор Шенк остается в бункере, чтобы помочь раненым, и становится свидетелем массовых самоубийств среди персонала. Многие офицеры и чиновники предпочитают смерть плену, понимая, что их ждет суд за военные преступления. Телохранитель Гитлера Рохус Миш пытается организовать прорыв из окруженного города, но большинство попыток заканчиваются гибелью беглецов.
+Траудль Юнге вместе с другими секретаршами и адъютантами пытается покинуть бункер и пробраться через советские позиции. Во время их побега город превращается в руины, повсюду горят здания, а улицы завалены трупами солдат и мирных жителей. Многие берлинцы празднуют окончание войны, понимая, что кошмар наконец закончился.
+Фильм показывает, как некоторые жители города пытаются продолжать нормальную жизнь даже в условиях апокалипсиса. Дети играют среди руин, люди стоят в очередях за едой, а пожилые берлинцы обсуждают происходящее, многие из них испытывают облегчение от того, что война наконец заканчивается.
+В эпилоге показана судьба главных персонажей после войны. Траудль Юнге выживает и много лет спустя рассказывает свою историю, признавая, что долгое время не могла простить себе службу у Гитлера, даже понимая, что была очень молодой и наивной. Доктор Шенк также выживает и продолжает медицинскую практику.
+Фильм завершается размышлениями о том, как обычные люди могут стать частью преступной системы, не осознавая полной масштабности происходящего. История показана без героизации или демонизации персонажей, представляя их как сложных людей, оказавшихся в экстремальных обстоятельствах, что делает фильм особенно пронзительным свидетельством о последних днях одного из самых мрачных периодов в истории человечества.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ходячий замок', 'When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.', '2004-01-01', 1, '119 minutes', 'Hauru no ugoku shiro', 8.2, 'Восемнадцатилетняя Софи работает в шляпной лавке своего отца и считает себя самой обычной девушкой. Однажды, когда она идет навестить младшую сестру, на нее нападают солдаты, но спасает таинственный молодой человек с длинными светлыми волосами - волшебник Хаул. Он помогает ей убежать, буквально поднимая в воздух и перенося по крышам города. В тот же вечер в лавку приходит Ведьма Пустошей - старая и толстая колдунья, которая из ревности накладывает на Софи проклятие, превращая ее в девяностолетнюю старуху.
+Не в силах объяснить семье что с ней произошло, Софи покидает дом и отправляется в Пустошь искать способ снять проклятие. Там она встречает пугало по имени Репка, которое показывает ей дорогу к движущемуся замку Хаула. Замок представляет собой невероятное сооружение на металлических ногах, постоянно передвигающееся по местности и извергающее черный дым.
+Софи проникает в замок, где знакомится с огненным демоном Кальцифером, который поддерживает жизнь замка и заключил контракт с Хаулом. Кальцифер просит Софи помочь разорвать этот контракт, обещая взамен снять с нее проклятие. Софи также встречает Маркла - ученика Хаула, мальчика, который на самом деле гораздо старше, чем кажется.
+Хаул оказывается тщеславным и капризным молодым человеком, одержимым своей красотой. Когда Софи случайно нарушает порядок расположения его косметических средств, и его волосы окрашиваются в неправильный цвет, он впадает в истерику и покрывается зеленой слизью от отчаяния. Софи берет на себя роль уборщицы в замке и постепенно наводит порядок в хаотичной жизни его обитателей.
+Тем временем страна ведет войну с соседним государством. Король вызывает всех волшебников, включая Хаула, на службу, но тот уклоняется от призыва. Софи, представившись матерью Хаула, отправляется во дворец к королю, где снова встречает Ведьму Пустошей. Оказывается, ведьма потеряла большую часть своих сил после того, как придворная волшебница Салливан лишила ее магии в наказание за злые дела.
+Во дворце Софи узнает, что Хаул действительно участвует в войне, превращаясь в гигантскую птицу и сражаясь с военными самолетами противника. Однако каждое такое превращение грозит тем, что он может навсегда потерять человеческий облик и стать чудовищем. Салливан показывает Софи, как война разрушает страну, и просит ее убедить Хаула помочь закончить конфликт.
+Когда Софи возвращается в замок, она обнаруживает, что Хаул создал вокруг него магическую защиту из цветущих растений, чтобы защитить ее и остальных обитателей замка. Однако враги атакуют замок, и он начинает разрушаться. В хаосе сражения Хаул улетает в своем птичьем обличье, а Кальцифер слабеет.
+Софи понимает, что должна спасти Хаула. Она берет Кальцифера в руки и переносит его в оставшуюся часть замка. При этом она обжигает руки, но ее волосы становятся серебряными, а сама она частично возвращает молодой облик, что показывает ослабление проклятия по мере того, как она обретает уверенность в себе и смелость.
+В кульминационный момент Софи следует за Хаулом через магическую дверь, которая переносит ее в прошлое, где она видит Хаула-ребенка, который встретил упавшую с неба звезду - Кальцифера. Маленький Хаул отдал свое сердце демону, чтобы спасти его, и именно это стало основой их контракта. Софи кричит Хаулу, что найдет его в будущем, и это воспоминание дает ему силы в настоящем.
+Вернувшись в свое время, Софи находит Хаула, который почти полностью превратился в птицу и потерял человеческий разум. Она объясняет Кальциферу, что поняла секрет их контракта - Хаул отдал демону свое сердце, и теперь она возвращает его обратно. Когда Софи отдает сердце Хаулу, Кальцифер освобождается, но решает остаться с друзьями по собственной воле.
+Хаул возвращается в человеческий облик, а проклятие с Софи полностью снимается - она снова становится молодой девушкой. В финале война заканчивается, Ведьма Пустошей, потерявшая злобность вместе с магической силой, остается жить в замке как добрая старушка. Пугало Репка оказывается заколдованным принцем соседней страны, и когда Софи целует его, чары разрушаются. Принц улетает домой, чтобы остановить войну со своей стороны.
+Хаул признается Софи в любви, говоря, что его сердце принадлежит ей, и они целуются. Замок, восстановленный магией Кальцифера, который теперь свободно служит своим друзьям, поднимается в воздух, и вся компания отправляется навстречу новой жизни, полной приключений и счастья.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Игры разума', 'After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.', '2001-01-01', 1, '135 minutes', 'A Beautiful Mind', 8.2, 'Фильм рассказывает историю Джона Нэша, молодого математика-аспиранта Принстонского университета в 1947 году. Нэш отличается от своих сокурсников замкнутостью и эксцентричностью, но обладает выдающимся математическим умом. Он стремится найти оригинальную идею, которая принесет ему признание в научном мире. В университете он дружит с Чарльзом Германом, своим соседом по комнате, который становится его единственным близким другом.
+Нэш разрабатывает революционную теорию игр, которая в корне меняет экономическую науку. Его работа о равновесии в некооперативных играх позже принесет ему Нобелевскую премию. После окончания университета он получает место в Массачусетском технологическом институте, где работает преподавателем и исследователем.
+В МТИ Нэш знакомится с Алисией Ларде, студенткой, изучающей физику. Между ними завязываются романтические отношения, и они женятся. Одновременно Нэш начинает работать на правительство США, выполняя секретные задания для агента ЦРУ Уильяма Парчера. Парчер поручает ему расшифровывать коды в советских сообщениях, которые якобы скрыты в обычных журналах и газетах. Нэш должен искать скрытые паттерны и передавать найденную информацию через секретный почтовый ящик.
+Работа для ЦРУ становится все более напряженной и параноидальной. Нэш начинает видеть советских агентов повсюду, боится за свою жизнь и жизнь жены. Его поведение становится все более странным и пугающим для окружающих. Алисия замечает, что с мужем происходит что-то серьезное, но не может понять, что именно.
+Кульминация наступает, когда во время лекции в университете за Нэшем приходят люди в белых халатах. Он думает, что это советские агенты, и пытается убежать, но его ловят и увозят в психиатрическую больницу. Доктор Розен ставит ему диагноз параноидная шизофрения. Выясняется, что Уильям Парчер, агент ЦРУ, его лучший друг Чарльз и маленькая племянница Чарльза Марси существуют только в воображении Нэша. Все секретные задания, погони, шпионская деятельность были галлюцинациями.
+Алисия находит в сарае тайник с множеством нераспечатанных конвертов, которые Нэш якобы отправлял в ЦРУ. Она понимает масштаб болезни мужа. В больнице Нэша лечат инсулиновой терапией и сильными препаратами, которые подавляют галлюцинации, but делают его апатичным и неспособным к математическому мышлению.
+После выписки Нэш тайно прекращает принимать лекарства, так как они лишают его способности заниматься математикой и быть нормальным мужем. Галлюцинации возвращаются. Однажды, оставшись присматривать за маленьким сыном, он видит Чарльза и Марси и полностью погружается в свой воображаемый мир, не замечая, что ребенок едва не утонул в ванне. Алисия спасает сына и понимает, что Нэш снова болен.
+Она готова уйти от него, но Нэш умоляет ее остаться. Он признает, что болен, и обещает бороться с болезнью. Начинается долгий и мучительный процесс выздоровления. Нэш учится отличать реальность от галлюцинаций. Он разрабатывает собственную систему проверки реальности и постепенно возвращается к работе в Принстоне.
+Галлюцинации не исчезают полностью, но Нэш учится их игнорировать. Чарльз, Парчер и Марси продолжают периодически появляться, но он больше не взаимодействует с ними, понимая, что они нереальны. Годы спустя, несмотря на болезнь, Нэш продолжает заниматься математикой и преподавать.
+В 1994 году Джон Нэш получает Нобелевскую премию по экономике за свою раннюю работу по теории игр. На церемонии награждения его поддерживают коллеги и жена Алисия, которая все эти годы оставалась рядом с ним. В своей речи Нэш благодарит жену за то, что она поверила в него и помогла ему победить болезнь, а также говорит о том, что самые важие открытия он сделал не в математике, а в понимании важности человеческих отношений и любви.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Карты, деньги, два ствола', 'A botched card game in London triggers four friends, thugs, weed-growers, hard gangsters, loan sharks and debt collectors to collide with each other in a series of unexpected events, all for the sake of weed, cash and two antique shotguns.', '1998-01-01', 1, '107 minutes', 'Lock, Stock and Two Smoking Barrels', 8.2, 'Четверо друзей из Лондона - Эдди, Том, Соуп и Бэкон - решают заработать денег, участвуя в покерной игре, организованной криминальным авторитетом Гарри "Топором". Эдди считается талантливым картежником, поэтому друзья собирают сто тысяч фунтов стерлингов в качестве входного взноса, рассчитывая на легкую победу. Однако игра оказывается подстроенной, и Эдди проигрывает полмиллиона фунтов. Гарри дает друзьям неделю на возврат долга, угрожая отрубить им пальцы, а квартиру отца Эдди забрать в счет погашения долга.
+В отчаянии друзья начинают искать способы быстро раздобыть деньги. Они случайно подслушивают разговор соседей Эдди - группы наркоторговцев под предводительством Барри "Крестителя", которые планируют ограбить группу марихуановых фермеров. Друзья решают ограбить самих грабителей, получив таким образом и деньги, и наркотики.
+Тем временем Гарри поручает своим головорезам Барри и Дэнни найти и украсть две антикварные дробовика у торговца оружием по имени Ник "Грек". Однако Ник продает пушки другому торговцу оружием по кличке Гарри "Мясник", который, в свою очередь, продает их Барри "Крестителю" для планируемого ограбления.
+Друзья покупают несколько старых ружей у Гарри "Мясника" и готовятся к своему плану. Они следят за квартирой наркоторговцев и ждут подходящего момента. Когда банда Барри "Крестителя" отправляется грабить фермеров, в их квартире остается только один охранник. Друзья врываются в квартиру, но их план идет наперекосяк - охранник оказывается вооружен, завязывается перестрелка, в результате которой погибают несколько человек.
+В это же время банда Барри "Крестителя" успешно грабит марихуановых фермеров, но по возвращении обнаруживает в своей квартире трупы и пропавшие деньги с наркотиками. Барри понимает, что их ограбили, и начинает поиски грабителей. Одновременно фермеры, которых ограбили, тоже выходят на след и начинают охоту за теми, кто украл их товар.
+Гарри "Топор" тем временем посылает своих людей к Эдди с требованием денег. Не найдя друзей дома, они встречают отца Эдди и угрожают ему. Ситуация накаляется, когда все враждующие группировки начинают сходиться в одной точке. Банда Барри "Крестителя" выходит на след четверки друзей, фермеры выслеживают банду Барри, а люди Гарри ищут всех подряд.
+Кульминация наступает, когда все группировки сталкиваются в жестокой перестрелке. В результате хаотичной бойни погибает большинство участников криминальных группировок, включая Барри "Крестителя" и его людей, а также фермеров. Четверо друзей чудом остаются живы среди этой бойни.
+В итоге друзья получают и деньги, и наркотики, но понимают, что им нужно срочно избавиться от улик. Они решают продать наркотики и отдать долг Гарри. Однако в самом конце фильма выясняется ироничная деталь - те самые антикварные дробовики, которые искал Гарри "Топор", оказались у друзей среди оружия, купленного у Гарри "Мясника". Эдди собирается выбросить ружья в Темзу, не подозревая об их истинной ценности, что создает комический финал истории о том, как случайность и недопонимание могут кардинально изменить судьбу.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Секреты Лос-Анджелеса', 'As corruption grows in 1950s Los Angeles, three policemen - one strait-laced, one brutal, and one sleazy - investigate a series of murders with their own brand of justice.', '1997-01-01', 1, '138 minutes', 'L.A. Confidential', 8.2, 'Действие происходит в Лос-Анджелесе 1950-х годов. История начинается с массового арестования мексиканцев в канун Рождества в баре, который заканчивается жестоким избиением задержанных в полицейском участке. Этот инцидент становится отправной точкой для развития сложной криминальной истории, в центре которой оказываются три полицейских с разными характерами и мотивами.
+Бад Уайт - брутальный детектив, склонный к насилию, особенно когда дело касается преступлений против женщин. Его методы работы находятся за гранью закона, но он руководствуется собственным кодексом справедливости. Эд Экели - амбициозный и образованный офицер, который стремится к карьерному росту и готов использовать любую возможность для саморекламы, часто сотрудничая с прессой и телевидением. Джек Винсеннес - детектив отдела по борьбе с наркотиками, работающий консультантом популярного телешоу о полиции и получающий взятки от таблоида за информацию о знаменитостях.
+События набирают обороты после резни в кафе "Найт Оул", где убиты шесть человек, включая бывшего полицейского Дика Стенсланда. Поначалу преступление списывают на троих афроамериканцев, которых быстро находят и убивают при попытке к бегству, но Бад Уайт сомневается в их вине, поскольку один из погибших в кафе был его партнером.
+Параллельно развивается история с элитной службой эскорта, которой управляет Пирс Пачетт. Его девушки подвергаются пластическим операциям, чтобы походить на голливудских звезд. Одна из них, Линн Брэкен, сделанная похожей на Вероника Лейк, становится любовницей Бада Уайта. Другая проститутка из этой службы, Сьюзен Лефферц, обращается к Экели за защитой, утверждая, что знает правду о резне в "Найт Оул".
+Джек Винсеннес расследует дело о порнографии, в которое замешан богатый бизнесмен, и постепенно понимает, что все события связаны между собой. Он обнаруживает связь между убийством в кафе, порнографическим бизнесом и коррупцией в полиции. Когда Винсеннес приближается к разгадке, его убивает капитан Дадли Смит - внешне порядочный и уважаемый полицейский начальник.
+Выясняется, что Дадли Смит является главой преступной группировки, которая контролирует наркоторговлю в Лос-Анджелесе. После ареста Микки Коэна, предыдущего криминального авторитета города, Смит решил занять его место. Резня в "Найт Оул" была организована им для устранения людей, которые могли помешать его планам, включая Стенсланда, который случайно узнал о преступной деятельности своего начальника.
+Бад Уайт и Эд Экели, несмотря на взаимную неприязнь, объединяют усилия для расследования. Они обнаруживают, что Смит использовал службу эскорта Пачетта для компрометации влиятельных людей, фотографируя их в компрометирующих ситуациях. Линн Брэкен оказывается не просто проституткой, а любовницей Пачетта, который в свою очередь работает на Смита.
+Экели выясняет, что его бывший партнер капитан Джек Винсеннес был убит именно Смитом после того, как приблизился к разгадке схемы. Смит также убил Сьюзен Лефферц, которая была свидетельницей событий в "Найт Оул" и могла разоблачить настоящих убийц.
+В финальной конфронтации Смит пытается убить как Уайта, так и Экели. Он заманивает их в мотель, где происходит перестрелка. Смит ранит обоих детективов, но им удается убить его и его сообщников. Выясняется, что Смит планировал списать их смерть на перестрелку между коррумпированными копами, но его план провалился.
+После смерти Смита вся правда о коррупции в полиции Лос-Анджелеса выходит наружу. Экели получает повышение и награды за раскрытие дела, что удовлетворяет его амбиции. Бад Уайт увольняется из полиции и уезжает из города вместе с Линн Брэкен, наконец найдя покой и любовь. Линн призналась ему, что вопреки всему действительно полюбила его, несмотря на то что изначально была подослана к нему Пачеттом по заданию Смита.
+Фильм заканчивается размышлениями о том, что Лос-Анджелес остается городом, где за блестящим фасадом скрываются темные секреты, но справедливость все же может восторжествовать, если найдутся люди, готовые за нее бороться, даже ценой собственной жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Схватка', 'A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist.', '1995-01-01', 1, '170 minutes', 'Heat', 8.2, 'Фильм разворачивается в Лос-Анджелесе и рассказывает о противостоянии между профессиональным грабителем Нилом МакКоли и детективом отдела по расследованию ограблений Винсентом Ханной. История начинается с дерзкого ограбления бронированного автомобиля, которое проводит банда МакКоли. Во время налета они убивают охранников, что не входило в первоначальный план. Один из членов банды, Уэйнгро, проявляет излишнюю жестокость, что вызывает недовольство МакКоли, который придерживается строгого профессионального кодекса.
+Винсент Ханна, опытный детектив со сложным характером и проблемами в личной жизни, берется за расследование этого дела. Его одержимость работой разрушает его третий брак с Джастин, которая устала от его постоянного отсутствия и эмоциональной недоступности. У Ханны есть падчерица Лорен, которая страдает от семейных проблем и позже пытается покончить с собой.
+МакКоли живет по принципу никогда не привязываться к тому, от чего нельзя отказаться за тридцать секунд, если почувствуешь, что за тобой идут. Он ведет аскетичный образ жизни в стерильном доме у океана, избегая серьезных отношений. Однако все меняется, когда он встречает Иди, работающую в книжном магазине графическим дизайнером. Между ними завязываются серьезные отношения, что нарушает жизненное кредо МакКоли.
+Банда МакКоли включает в себя профессиональных преступников: Криса Шиерлиса, который пытается наладить отношения с женой Шарлин и ее сыном от первого брака, Майкла Червито, семьянина с больной женой, и взрывника Трехо. Уэйнгро, психопатичный член банды, становится источником проблем из-за своей неуравновешенности и жестокости.
+Ханна постепенно выходит на след банды через информаторов и улики. Он устанавливает слежку за членами группировки и узнает об их планах. Между тем МакКоли планирует последнее крупное дело - ограбление банка, после которого хочет уйти на покой вместе с Иди.
+Кульминационный момент фильма наступает, когда Ханна и МакКоли случайно встречаются в кафе. Они ведут философскую беседу о своих профессиях, жизненных принципах и том, что они готовы убить друг друга, если обстоятельства этого потребуют. Несмотря на то, что они находятся по разные стороны закона, между ними возникает взаимное уважение и понимание. Оба признают, что они одинаково одержимы своим делом и готовы пожертвовать личной жизнью ради профессии.
+После встречи МакКоли решает убить Уэйнгро, который стал слишком большой угрозой для всей банды. Однако Уэйнгро успевает предупредить полицию о планируемом ограблении банка. Несмотря на это, МакКоли решает провести операцию, так как его люди нуждаются в деньгах.
+Ограбление банка превращается в настоящую войну на улицах Лос-Анджелеса. Банда МакКоли проводит операцию профессионально, но полиция во главе с Ханной устраивает засаду. Завязывается жестокая перестрелка с использованием автоматического оружия прямо в центре города. Червито погибает в бою, Крис получает ранение, но МакКоли удается скрыться.
+Крис, истекающий кровью, пытается добраться до договоренного места встречи, где его должна ждать жена Шарлин. Однако Шарлин, уставшая от жизни преступника, предает его, сообщив полиции о месте встречи через Ханну. Крис понимает предательство и в отчаянии погибает в перестрелке с полицией.
+МакКоли остается один и планирует покинуть город вместе с Иди. Однако он узнает местонахождение Уэйнгро и не может устоять перед желанием отомстить предателю. Это решение нарушает его главный жизненный принцип и становится роковым. Он убивает Уэйнгро в отеле, но Ханна отслеживает его по этому убийству.
+Финальная погоня происходит в аэропорту Лос-Анджелеса. МакКоли пытается сбежать, но Ханна настигает его на летном поле среди взлетающих самолетов. В последней перестрелке МакКоли получает смертельное ранение. Умирая, он берет за руку Ханну, который остается с ним в последние минуты жизни. Этот жест символизирует странную связь и взаимное уважение между двумя мужчинами, которые всю жизнь были по разные стороны закона, но в глубине души понимали друг друга как никто другой.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Казино', 'A tale of greed, deception, money, power, and murder occur between two best friends: a mafia enforcer and a casino executive compete against each other over a gambling empire, and over a fast-living and fast-loving socialite.', '1995-01-01', 1, '178 minutes', 'Casino', 8.2, 'Фильм рассказывает историю Сэма "Эйса" Ротстейна, профессионального букмекера и игрока, который в начале 1970-х годов получает задание от чикагской мафии управлять казино "Танджерс" в Лас-Вегасе. Сэм блестяще справляется с работой, превращая казино в невероятно прибыльное предприятие благодаря своему математическому уму и способности просчитывать любые игровые ситуации. Он устанавливает жесткий контроль над всеми операциями, следит за каждой мелочью и безжалостно расправляется с мошенниками и жуликами.
+В Вегас также приезжает старый друг Сэма - Никки Санторо, жестокий и неуравновешенный гангстер, которого мафия посылает защищать интересы Ротстейна. Однако Никки быстро выходит из-под контроля, создавая собственную преступную группировку и занимаясь грабежами, вымогательством и убийствами по всему городу. Его безрассудные действия начинают привлекать нежелательное внимание ФБР и местных властей.
+Жизнь Сэма кардинально меняется, когда он встречает Джинджер МакКенну, бывшую проститутку и авантюристку, которая зарабатывает на жизнь, обманывая богатых мужчин в казино. Несмотря на предупреждения друзей о ее прошлом и характере, Сэм влюбляется в нее и делает предложение. Джинджер соглашается выйти за него замуж, но продолжает поддерживать отношения со своим бывшим сутенером Лестером Даиамондом, мелким мошенником и наркоманом.
+Брак Сэма и Джинджер с самого начала обречен на провал. Джинджер не может забыть свое прошлое и постоянно тоскует по прежней свободной жизни. Она начинает злоупотреблять алкоголем и наркотиками, становится все более неуправляемой и параноидальной. Сэм пытается контролировать ее, но это только усугубляет ситуацию. Джинджер тайно передает деньги Лестеру, врет мужу и устраивает скандалы на публике.
+Тем временем Никки продолжает свои безумные выходки, убивая людей по малейшему поводу и привлекая внимание правоохранительных органов. Его действия ставят под угрозу всю операцию в Лас-Вегасе и начинают серьезно беспокоить боссов в Чикаго. ФБР начинает масштабное расследование деятельности мафии в Неваде, устанавливает прослушку и ведет наблюдение за ключевыми фигурами.
+Ситуация еще больше осложняется, когда местный политик Филип Грин, который формально является владельцем лицензии на казино, начинает требовать больше денег и угрожает разоблачить мафиозные связи. Сэм понимает, что стены сжимаются вокруг него со всех сторон - проблемы с женой, неконтролируемые действия Никки, давление властей и недовольство мафиозных боссов.
+Отношения между Сэмом и Никки начинают портиться, когда Ротстейн понимает, что безрассудство друга угрожает всему их делу. Конфликт достигает апогея, когда Джинджер, находясь в состоянии алкогольного и наркотического опьянения, звонит в ФБР и предлагает дать показания против мужа в обмен на защиту. Хотя она позже отказывается от своих слов, инцидент окончательно разрушает и без того хрупкие отношения в треугольнике.
+Боссы мафии в Чикаго принимают решение избавиться от Никки, который стал слишком большой обузой. Они заманивают его и его брата Доминика в засаду под предлогом повышения в мафиозной иерархии. Братьев жестоко избивают бейсбольными битами и закапывают живыми в кукурузном поле в Индиане.
+Джинджер тем временем окончательно теряет рассудок от алкоголя и наркотиков. Она умирает от передозировки в дешевом мотеле в Лос-Анджелесе, так и не сумев справиться со своими демонами и найти покой. Ее смерть становится логическим завершением саморазрушительного пути.
+Сэм, лишившись всего - жены, друга, бизнеса - вынужден покинуть Лас-Вегас. Мафиозная империя в казино рушится под давлением правоохранительных органов, многие участники схемы арестованы или убиты. Эпоха господства организованной преступности в Вегасе подходит к концу.
+В финале фильма постаревший Сэм возвращается к своим корням, работая букмекером в небольшом заведении где-то на окраине. Он размышляет о том, как изменился Лас-Вегас, который теперь превратился в семейный курорт с тематическими отелями и аттракционами, где нет места для таких людей, как он. Романтическая эпоха мафиозного Вегаса ушла в прошлое, уступив место корпоративному развлекательному бизнесу.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Непрощенный', 'Retired Old West gunslinger William Munny reluctantly takes on one last job, with the help of his old partner Ned Logan and a young man, The "Schofield Kid."', '1992-01-01', 1, '130 minutes', 'Unforgiven', 8.2, 'Уильям Манни - бывший убийца и грабитель, который одиннадцать лет назад женился, завел детей и полностью изменил свой образ жизни благодаря влиянию покойной жены. Теперь он ведет тяжелую жизнь фермера-свиновода в Канзасе, едва сводя концы с концами и воспитывая двоих маленьких детей после смерти супруги от оспы. Его ферма приходит в упадок, свиньи болеют, и семья живет в бедности.
+В городке Биг Уиски в Вайоминге происходит инцидент в местном салоне-борделе. Ковбой по имени Квик Майк Делани искалечил проститутку Делилу Фицджеральд, разрезав ей лицо ножом после того, как она засмеялась над размером его мужского достоинства. Шериф Литтл Билл Дэггетт вместо справедливого наказания принимает решение, что Делани и его друг Дэйви Банкер должны компенсировать ущерб хозяину заведения Скинни Дабуа, отдав ему несколько своих лошадей, полностью игнорируя страдания самой жертвы.
+Проститутки салона, возмущенные таким решением, собирают деньги и объявляют награду в тысячу долларов за убийство обоих ковбоев. Эта новость доходит до молодого стрелка по прозвищу Малыш Скофилд, который приезжает на ферму Манни и предлагает ему присоединиться к охоте за головами, зная о его прошлом как безжалостного убийцы.
+Поначалу Манни категорически отказывается, говоря что больше не тот человек, каким был раньше, и что его покойная жена изменила его. Однако финансовые трудности и необходимость обеспечить будущее своих детей заставляют его пересмотреть решение. Он соглашается участвовать в деле, но настаивает на том, чтобы привлечь своего старого партнера Неда Логана, который также завязал с преступной жизнью и теперь живет с индейской женщиной.
+Неда удается уговорить, и трое мужчин отправляются в Биг Уиски. По дороге выясняется, что Манни уже не тот меткий стрелок, каким был в молодости - он плохо видит, не может попасть в цель и едва держится в седле. Годы мирной жизни сделали его обычным человеком, далеким от своего кровавого прошлого.
+Тем временем в Биг Уиски прибывает знаменитый стрелок Инглиш Боб в сопровождении своего биографа У.У. Бошампа, который пишет книги о героях Дикого Запада. Боб также прослышал о награде и намерен получить ее. Однако шериф Литтл Билл Дэггетт, который управляет городом железной рукой и не терпит присутствия вооруженных людей, жестоко избивает Боба и выгоняет его из города. Бошамп остается и переключает свое внимание на шерифа, начиная собирать материал о его подвигах.
+Когда Манни, Нед и Малыш прибывают в город, они останавливаются в салоне, где Манни заболевает лихорадкой. Проститутки рассказывают им подробности о том, что произошло с Делилой, и Манни видит ее изуродованное лицо. Это зрелище глубоко трогает его, поскольку он всегда особенно сочувствовал страданиям женщин.
+Первую попытку убить ковбоев предпринимает Нед, но он не может заставить себя выстрелить в человека и передает винтовку Манни. Тот убивает Дэйви Банкера, но это дается ему с большим трудом - он несколько раз промахивается, а когда наконец попадает, Дэйви долго и мучительно умирает. Манни испытывает угрызения совести и пытается утешить умирающего, говоря что даст ему воду, но тот отвечает что хочет не пить, а видеть своих детей.
+После этого Нед окончательно решает, что не может продолжать убивать, и покидает группу, направляясь домой. Однако его ловят люди шерифа, и Литтл Билл жестоко пытает его, требуя информацию о местонахождении Манни и Малыша. Нед умирает от пыток, не выдав своих друзей.
+Манни и Малыш выслеживают Квика Майка в горах, где тот прячется с несколькими людьми. Малыш убивает Майка из засады, когда тот справляет нужду в уборной. Однако после совершения первого в своей жизни убийства Малыш впадает в истерику, понимая что убил безоружного человека, и признается Манни что все его рассказы о предыдущих подвигах были выдумкой.
+Когда они возвращаются в город за второй половиной награды, Манни узнает что Нед мертв, а его тело выставлено перед салоном с табличкой в назидание другим охотникам за головами. Эта новость полностью преображает Манни - он выпивает целую бутылку виски, впервые за много лет, и в нем просыпается тот безжалостный убийца, каким он был в прошлом.
+Манни врывается в салон Скинни, где шериф допрашивает и избивает проституток, пытаясь выяснить кто еще помогал охотникам за головами. Манни хладнокровно убивает безоружного Скинни выстрелом из дробовика, когда тот пытается достать спрятанное ружье. Затем начинается перестрелка, в ходе которой Манни убивает Литтла Билла и нескольких его помощников.
+Перед смертью Литтл Билл, лежа раненый на полу, говорит Манни что тот получит то что заслуживает, на что Манни отвечает что все мы получаем то что заслуживаем, и добивает шерифа. После этого он угрожает всем присутствующим в салоне, что если кто-то тронет проституток или будет плохо обращаться с телом Неда, он вернется и убьет всех жителей города.
+Манни забирает свою долю награды и покидает Биг Уиски под проливным дождем. Титры сообщают что впоследствии он забрал своих детей и исчез, предположительно переехав в Сан-Франциско, где занялся торговлей. Мать его покойной жены так никогда и не смогла понять, как ее добродетельная дочь могла выйти замуж за такого человека, известного как безжалостный убийца женщин и детей, хотя сам Манни всегда утверждал что никогда не убивал женщин и детей, а алкоголь искажал его воспоминания о совершенных преступлениях.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Время цыган', 'In this luminous tale set in the area around Sarajevo and in Italy, Perhan, an engaging young Romany (gypsy) with telekinetic powers, is seduced by the quick-cash world of petty crime, which threatens to destroy him and those he loves.', '1988-01-01', 1, '142 minutes', 'Dom za vesanje', 8.2, 'Фильм рассказывает сюрреалистическую и трагикомическую историю цыганского подростка Перхана, который обладает телекинетическими способностями. Действие происходит в Югославии среди цыганского табора. Перхан живет с бабушкой Хатидже, которая занимается народной медициной и гаданием, его младшей сестрой Данирой, у которой проблемы с ногами, и дядей Мердзаном, музыкантом-алкоголиком.
+Перхан влюблен в красивую цыганку Азру, но ее мать Салия против их отношений, считая юношу недостойным своей дочери из-за бедности. Хатидже решает отправить Данира на операцию в Словению, чтобы исправить ее ногу. Появляется богатый цыган Ахмед, который обещает организовать лечение девочки за границей и предлагает Перхану поехать с ними, чтобы заработать денег.
+Перхан соглашается, несмотря на предчувствия бабушки и собственные сомнения. Он покидает родной табор, оставив Азру, которая к тому времени беременна от него. Ахмед увозит Перхана и других цыганских детей в Италию, где заставляет их заниматься попрошайничеством и мелким воровством на улицах Милана.
+В Италии Перхан живет в ужасных условиях вместе с другими эксплуатируемыми детьми. Ахмед оказывается безжалостным торговцем людьми, который наживается на детском труде. Перхан понимает, что его обманули, но не может вернуться домой. Он использует свои телекинетические способности, чтобы помогать в воровстве, передвигая предметы силой мысли.
+Время идет, и Перхан взрослеет, становясь частью преступного мира Ахмеда. Он так и не получает обещанных денег, а о сестре Данире нет никаких вестей. Перхан узнает, что девочку продали в другое место, и что вся история с операцией была ложью. Его телекинетические способности становятся сильнее, но он чувствует себя все более потерянным и оторванным от корней.
+В Италии Перхан встречает другую цыганку и женится на ней, но этот брак не приносит ему счастья. Он живет в роскошном доме, но внутренне остается опустошенным. Годы спустя он получает известие о смерти бабушки Хатидже и решает вернуться домой на похороны.
+Вернувшись в табор, Перхан обнаруживает, что все изменилось. Азра вышла замуж за другого и воспитывает их общего сына, который даже не знает, кто его настоящий отец. Мальчик стал настоящим хулиганом и попрошайкой. Перхан пытается наладить отношения с сыном, но между ними нет связи.
+Дядя Мердзан все так же пьет и музицирует, но стал еще более опустившимся. Табор погружен в нищету и хаос. Перхан понимает, что потерял не только годы жизни, но и свою душу. Он так и не нашел сестру Данира, которая исчезла в преступных сетях Ахмеда.
+Перхан решает отомстить Ахмеду за все годы обмана и эксплуатации. Он планирует убийство, используя свои сверхъестественные способности. Финальная конфронтация происходит в доме Ахмеда, где Перхан с помощью телекинеза устраивает кровавую расправу. Ахмед и его сообщники погибают в хаосе разрушения, которое создает разъяренный Перхан.
+Однако месть не приносит удовлетворения. Вернувшись в табор, Перхан обнаруживает, что его сына убили турецкие солдаты во время конфликта. Мальчик погиб, так и не узнав правды о своем отце. Это становится последним ударом для Перхана.
+Фильм заканчивается трагически - Перхан умирает, так и не найдя покоя и искупления. Его телекинетические способности, которые должны были стать даром, превратились в проклятие. История Перхана становится притчей о том, как погоня за лучшей жизнью может привести к потере самого главного - семьи, корней и собственной души. Фильм сочетает в себе магический реализм с жестокой социальной критикой, показывая трагедию цыганского народа через судьбу одного человека.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мой сосед Тоторо', 'When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.', '1988-01-01', 1, '86 minutes', 'Tonari no Totoro', 8.2, 'История происходит в послевоенной Японии в 1958 году. Профессор Кусакабэ переезжает со своими двумя дочерьми в старый дом в сельской местности, чтобы быть ближе к больнице, где лечится их мать от туберкулеза. Старшей дочери Сацуки десять лет, младшей Мэй четыре года. Девочки с энтузиазмом исследуют новый дом, который местные жители считают населенным духами, и находят в нем загадочные черные существа, которые быстро исчезают при свете.
+Однажды, пока Сацуки в школе, а отец работает в университете, любопытная Мэй следует за двумя маленькими духами леса в густой лес рядом с домом. Духи приводят ее к гигантскому камфорному дереву, где она встречает огромное пушистое существо, мирно спящее. Когда существо просыпается, Мэй пытается произнести его имя, но получается "Тоторо". Гигантский лесной дух оказывается добрым и позволяет девочке поспать на своем мягком животе. Когда отец и Сацуки находят заснувшую Мэй, она рассказывает им о встрече, но Тоторо исчезает.
+Отец верит рассказу дочери и объясняет девочкам, что они встретили хранителя леса, и что увидеть такого духа - большая удача. Он приводит их к древнему дереву и они втроем благодарят духов леса за то, что позволили им жить поблизости. Вскоре и Сацуки удается увидеть Тоторо, когда сестры ждут отца на автобусной остановке во время дождя. Тоторо появляется рядом с ними, и Сацуки делится с ним зонтиком, что очень радует лесного духа, поскольку ему нравится звук капель дождя, ударяющихся о зонт.
+В благодарность Тоторо дает девочкам небольшой сверток с семенами. Следуя инструкциям, которые они видели во сне, сестры сажают семена в саду. Ночью Тоторо и другие лесные духи исполняют магический ритуал роста, и семена мгновенно превращаются в гигантское дерево. Тоторо берет девочек в полет над лесом и деревней на своем волшебном волчке. Утром гигантское дерево исчезает, но на его месте остаются маленькие ростки, доказывающие, что магия была настоящей.
+Однажды сестры получают телеграмму о том, что состояние их матери ухудшилось, и запланированная поездка домой откладывается. Мэй очень расстраивается и решает самостоятельно отнести матери кукурузу, которую она сорвала в саду, веря, что это поможет ей выздороветь. Маленькая девочка теряется по дороге в больницу, и вся деревня начинает ее поиски.
+В отчаянии Сацуки бежит к камфорному дереву и просит Тоторо о помощи. Лесной дух призывает Котобас - двенадцатилапого кота, который служит лесным автобусом. Тоторо и Сацуки летят на Котобасе через всю округу, пока не находят потерявшуюся Мэй, сидящую у дороги и плачущую. Котобас доставляет сестер к больнице, где они через окно видят своих родителей, разговаривающих и смеющихся, что означает, что с матерью все в порядке.
+Девочки тайно оставляют кукурузу на подоконнике больничной палаты с запзапиской "Для мамы", а сами возвращаются домой на магическом коте. Мать находит подарок и каким-то образом чувствует присутствие своих дочерей, хотя и не видит их. Вскоре женщина полностью выздоравливает и возвращается домой к семье.
+В финальных кадрах показывается, как семья счастливо живет в своем доме, а Тоторо и другие лесные духи продолжают незримо присматривать за ними. Фильм завершается сценами повседневной жизни семьи в разные времена года, подчеркивая, что магия и чудо могут существовать рядом с обычной жизнью, если сохранять веру и открытое сердце.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Крепкий орешек', 'An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.', '1988-01-01', 1, '132 minutes', 'Die Hard', 8.2, 'Джон МакКлейн, полицейский детектив из Нью-Йорка, прилетает в Лос-Анджелес на Рождество, чтобы помириться со своей отчужденной женой Холли, которая работает в японской корпорации "Накатоми" и использует свою девичью фамилию Дженаро. Они находятся в процессе развода из-за того, что Холли переехала в Калифорнию ради карьеры, а Джон отказался последовать за ней. У них есть двое маленьких детей.
+МакКлейн прибывает на рождественскую вечеринку компании, которая проходит на тридцатом этаже небоскреба "Накатоми Плаза". Атмосфера между супругами напряженная, и после короткой стычки Джон уходит в кабинет Холли, чтобы освежиться и снять обувь, следуя совету попутчика в самолете босиком ходить по ковру для снятия напряжения после полета.
+В это время здание захватывает группа террористов под предводительством Ганса Грубера, харизматичного немца, который представляется революционером, борющимся за освобождение политических заключенных. На самом деле Грубер и его команда планируют ограбить сейф корпорации, в котором хранятся предъявительские облигации на сумму 640 миллионов долларов. Террористы убивают охранника и берут в заложники всех участников вечеринки.
+МакКлейн, оставшийся незамеченным на верхних этажах, становится единственной надеждой на спасение заложников. Он убивает одного из террористов и забирает его рацию и оружие, пытаясь связаться с полицией. Ему удается выйти на связь с сержантом Элом Пауэллом, полицейским, который работает за столом после того, как случайно застрелил ребенка и больше не может нести патрульную службу.
+Грубер требует освобождения нескольких террористов из тюрем, но это лишь отвлекающий маневр. Его настоящий план заключается в том, чтобы взломать сейф корпорации, для чего необходимо отключить семь электронных замков. Последний замок можно открыть только при отключении электропитания всего здания, что произойдет, когда ФБР, следуя стандартному протоколу при захвате заложников, отключит внешнее питание.
+МакКлейн ведет психологическую войну с террористами, используя знание здания и элемент внезапности. Он убивает нескольких членов группы и постоянно досаждает Груберу по рации, насмехаясь над ним и портя его планы. Грубер, в свою очередь, пытается выяснить личность своего противника и использовать против него заложников.
+Ситуация осложняется, когда прибывают спецслужбы. Агент ФБР Джонсон старший и его напарник Джонсон младший берут командование на себя, игнорируя мнения местной полиции и планируя штурм здания. МакКлейн понимает, что их действия только помогут террористам осуществить ограбление.
+Одним из самых напряженных моментов становится встреча МакКлейна с Грубером лицом к лицу. Грубер, притворившись одним из заложников, пытается выяснить планы полицейского, но МакКлейн разоблачает его благодаря акценту и поведению. Грубер едва избегает смерти и еще больше озлобляется против МакКлейна.
+В ходе противостояния МакКлейн узнает, что среди террористов есть Карл, брат которого он убил ранее. Карл жаждет мести и становится особенно опасным противником. Также выясняется, что группа Грубера включает экс-членов западногерманской террористической группировки и других международных преступников.
+Телевизионный репортер Ричард Торнберг осложняет ситуацию, транслируя в прямом эфире события и случайно раскрывая информацию о семье МакКлейна, что подвергает опасности его детей в Нью-Йорке и дает Грубер новые козыри против него.
+Кульминация наступает, когда ФБР действительно отключает электропитание здания, что позволяет Грубер открыть последний замок сейфа. Однако МакКлейн срывает план террористов, взрывая весь тридцатый этаж с помощью взрывчатки, которую он прикрепил к лифту. В взрыве погибают несколько террористов и агенты ФБР.
+Грубер пытается бежать, взяв Холли в качестве заложницы. Он планирует спуститься на крышу, где его ждет вертолет для эвакуации, но МакКлейн перехватывает их. В финальной схватке на крыше Грубер держит Холли на краю здания, угрожая сбросить ее вниз. МакКлейн стреляет в Грубера, но тот успевает схватиться за часы на руке Холли.
+В критический момент МакКлейн расстегивает застежку часов, и Грубер падает с тридцатого этажа насмерть, выкрикивая перед смертью фразу из фильма, который смотрел ранее. Холли спасена, но Карл, выживший после взрыва, пытается убить МакКлейна из автомата. Его останавливает сержант Пауэлл, который преодолевает свой психологический барьер и стреляет в Карла, спасая жизнь МакКлейна.
+Фильм заканчивается тем, что МакКлейн и Холли мирятся, она снова называет себя его фамилией, и они уезжают вместе с вечеринки в лимузине, который предоставил водитель Арджело. Пауэлл обретает уверенность в себе и готов вернуться к патрульной службе. Таким образом, Рождество становится временем воссоединения семьи и личного искупления для всех главных положительных героев истории.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ран', 'In Medieval Japan, an elderly warlord retires, handing over his empire to his three sons. However, he vastly underestimates how the new-found power will corrupt them and cause them to turn on each other...and him.', '1985-01-01', 1, '162 minutes', 'Ran', 8.2, 'Фильм представляет собой японскую интерпретацию шекспировского «Короля Лира», перенесенную в средневековую Японию эпохи сэнгоку. История рассказывает о могущественном военачальнике Хидэтора Итимондзи, который в преклонном возрасте решает отойти от дел и разделить свои владения между тремя сыновьями.
+Хидэтора созывает своих сыновей: старшего Таро, среднего Дзиро и младшего Сабуро, а также своих вассалов на совет. Он объявляет о своем решении передать власть сыновьям, оставив за собой лишь почетный титул и свиту из тридцати самураев. Старший сын Таро получает главный замок и становится главой клана, Дзиро получает второй замок, а Сабуро - третий.
+Сабуро, единственный честный из братьев, открыто выступает против решения отца, называя его безумием. Он предупреждает, что братья не смогут жить в мире и что раздел власти приведет к войне. Хидэтора приходит в ярость от дерзости младшего сына и изгоняет его из клана. Вассал Тангэ также осуждает решение господина и тоже попадает в изгнание вместе с Сабуро.
+Изгнанного Сабуро принимает соседний правитель Фудзимаки, который высоко ценит его честность и выдает за него свою дочь. Тем временем Таро, получив власть, немедленно начинает проявлять неуважение к отцу. Его жена Каэде, дочь врага, убитого Хидэторой много лет назад, подстрекает мужа избавиться от отца окончательно. Она жаждет мести за смерть своей семьи и хочет уничтожить весь клан Итимондзи изнутри.
+Конфликт между отцом и старшим сыном обостряется, когда Таро требует, чтобы Хидэтора распустил свою свиту и жил как обычный старик. Оскорбленный Хидэтора покидает замок старшего сына и направляется к среднему сыну Дзиро, надеясь найти у него понимание и уважение.
+Однако Дзиро, находящийся под влиянием своей жены Суэ, также отказывается принять отца с его свитой. Суэ, как и Каэде, имеет личные счеты с Хидэторой - он убил ее семью и ослепил ее брата. Дзиро выдвигает те же требования, что и Таро - отец должен отказаться от свиты и жить в уединении.
+Хидэтора понимает, что совершил роковую ошибку. Он скитается со своей уменьшающейся свитой, постепенно теряя рассудок от горя и унижения. Между тем Каэде начинает плести интриги, стравливая братьев друг с другом. Она соблазняет Дзиро и убеждает его начать войну против Таро.
+Разгорается жестокая междоусобная война между братьями. Дзиро убивает Таро и захватывает главный замок. Каэде становится его любовницей и фактически правит от его имени, продолжая свою месть против клана Итимондзи. Она принуждает Дзиро убить Суэ, что тот и делает, окончательно попадая под ее влияние.
+Хидэтора с остатками верных самураев укрывается в третьем замке, который раньше принадлежал изгнанному Сабуро. Дзиро осаждает замок, требуя капитуляции отца. Начинается кровавая битва, во время которой замок превращается в ад. Самураи Хидэторы сражаются до последнего, но силы неравны.
+В ходе штурма замка происходит страшная резня. Хидэтора, окончательно потерявший рассудок, бродит среди пылающих руин и трупов, став свидетелем полного краха своего дома. Его верные слуги погибают один за другим, защищая безумного господина. Замок полностью сгорает, а немногие выжившие рассеиваются.
+Сабуро, узнав о бедствиях отца, возвращается с армией Фудзимаки, чтобы помочь. Происходит встреча отца и младшего сына, во время которой Хидэтора впервые за долгое время обретает ясность сознания и просит прощения у Сабуро. Однако этот момент примирения длится недолго - снайпер убивает Сабуро выстрелом из аркебузы.
+Смерть любимого сына окончательно добивает Хидэтору. Он умирает от горя, держа в руках тело Сабуро. Дзиро также погибает в финальной битве. Каэде, достигшая своей цели по уничтожению клана Итимондзи, в конце концов сама становится жертвой - ее убивает Куроготани, верный слуга покойного Таро, который мстит за смерть своего господина.
+Фильм завершается апокалиптическими сценами полного разрушения. Слепой брат Суэ, Цурумару, остается один на руинах замка, символизируя слепоту человечества перед лицом разрушительных последствий гордыни и жажды власти. Вся династия Итимондзи уничтожена, их замки сожжены, а земли опустошены войной. История становится притчей о том, как амбиции и месть могут уничтожить целые поколения, превращая некогда могущественный клан в пепел и воспоминания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бешеный бык', 'The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.', '1980-01-01', 1, '129 minutes', 'Raging Bull', 8.2, 'Бешеный бык
+Фильм рассказывает историю Джейка Ламотты, итало-американского боксера из Бронкса, чья карьера проходит в 1940-1950-х годах. Джейк сражается в среднем весе и известен своим агрессивным, безрассудным стилем ведения боя - он готов пропустить десяток ударов, чтобы нанести один сокрушительный. Его тренирует и ведет дела младший брат Джоуи, который пытается продвигать карьеру Джейка, несмотря на его взрывной и непредсказуемый характер.
+Джейк женат на девушке по имени Ленор, но их брак трещит по швам из-за его патологической ревности и вспышек ярости. Ламотта постоянно подозревает жену в измене, устраивает скандалы и может избить ее по малейшему поводу. Его паранойя не знает границ - он может взорваться из-за того, что жена слишком дружелюбно поздоровалась с соседом или слишком долго разговаривала с продавцом в магазине.
+Ситуация кардинально меняется, когда Джейк встречает пятнадцатилетнюю Викки на общественном бассейне в Бронксе. Девочка поражает его своей красотой - светловолосая, с фигурой кинозвезды, она кажется ему недосягаемой богиней. Джейк немедленно влюбляется в нее с первого взгляда, хотя понимает, что она слишком молода и красива для такого грубого человека, как он. Викки происходит из более обеспеченной семьи и явно принадлежит к другому социальному кругу.
+Джейк разводится с Ленор и начинает упорно ухаживать за Викки, несмотря на разницу в возрасте и социальном положении. Его грубая харизма и статус известного боксера в конце концов очаровывают девушку, и она соглашается стать его женой. Они женятся, когда Викки исполняется семнадцать лет, и поначалу кажется, что Джейк обрел счастье с женщиной своей мечты.
+Однако брак с Викки только усиливает патологическую ревность Ламотты. Он не может смириться с тем, что такая красивая женщина принадлежит ему, и постоянно подозревает ее в связях с другими мужчинами. Джейк следит за каждым ее движением, проверяет, куда она ходит, с кем разговаривает. Он может устроить скандал из-за того, что она слишком много времени потратила на покупки, или из-за того, что сосед слишком дружелюбно с ней поздоровался.
+На ринге дела у Джейка идут неплохо, но он сталкивается с серьезным препятствием в лице мафии, которая контролирует бокс в Нью-Йорке. Криминальные боссы предлагают ему "бизнес-партнерство" - они будут продвигать его карьеру в обмен на то, что он будет время от времени проигрывать бои по их указанию. Джейк долго сопротивляется, считая это предательством своих принципов как боксера, но в конце концов давление становится слишком сильным.
+Переломным моментом становится бой с Билли Фоксом в 1947 году. Мафия заставляет Джейка проиграть этот бой, пообещав взамен дать ему шанс на титул чемпиона мира. Ламотта нехотя соглашается и откровенно сдает бой, имитируя нокдаун от слабого удара. Поражение выглядит настолько неубедительно, что Джейка лишают боксерской лицензии на семь месяцев, а комиссия начинает расследование.
+Несмотря на этот скандал, мафия сдерживает обещание, и Джейку предоставляется возможность сразиться за титул чемпиона мира в среднем весе против Марселя Сердана в 1949 году. Ламотта побеждает и становится чемпионом мира, достигнув пика своей боксерской карьеры. Однако успех на ринге не приносит ему счастья в личной жизни.
+Паранойя и ревность Джейка достигают болезненных масштабов. Он постоянно подозревает Викки в измене, устраивает ей допросы с пристрастием, следит за ней и может избить за малейшее подозрение. В одном из приступов ревности он начинает подозревать даже собственного брата Джоуи в связи с женой. Основанием для подозрений становится то, что Викки якобы слишком дружелюбно общается с Джоуи и знает подробности его личной жизни.
+Ситуация взрывается, когда во время семейного барбекю Джейк публично обвиняет Викки в измене с Джоуи. Не выдержав постоянных подозрений и унижений, Викки в отчаянии кричит, что да, она спала с Джоуи, и не только с ним, но и со всеми в районе, включая соседей и даже собаку. Она говорит это не потому, что это правда, а потому, что хочет причинить Джейку боль и показать абсурдность его обвинений.
+Джейк принимает ее слова за чистую монету и в ярости избивает Джоуи прямо на глазах у гостей, включая детей. Братья жестоко дерутся, и их отношения разрушаются навсегда. Джоуи отказывается иметь дело с братом и прекращает работать его менеджером. Викки, понимая, что жизнь с психически больным мужем стала невыносимой, подает на развод и забирает детей.
+Боксерская карьера Джейка начинает стремительно идти под откос. Без поддержки брата, потеряв семью и мотивацию, он начинает проигрывать бои. Особенно болезненным становится поражение от Шугара Рея Робинсона, которого он победил в одном из предыдущих боев. Ламотта отказывается признавать поражение и даже после жестокого избиения продолжает стоять на ногах, выкрикивая сопернику, что тот не смог его сломить.
+После завершения карьеры в 1954 году Джейк перебирается во Флориду, где открывает ночной клуб и пытается работать комиком и конферансье. Однако его грубый юмор и отсутствие таланта к развлекательному бизнесу делают заведение непопулярным. Финансовые проблемы заставляют его продать титульный пояс чемпиона мира и даже драгоценные камни из него, чтобы сводить концы с концами.
+В 1957 году Джейка арестовывают по обвинению в сводничестве и растлении малолетних после того, как в его клубе была задержана четырнадцатилетняя девочка. Хотя Ламотта утверждает, что не знал о ее возрасте, его приговаривают к тюремному заключению в окружной тюрьме Дейд Каунти. В камере-одиночке, лишенный всего, что когда-то делало его значимым, Джейк в приступе отчаяния бьется головой и кулаками о стены, крича о том, что он не животное.
+Этот момент становится кульминацией его падения - человек, который когда-то был чемпионом мира, теперь сидит в тюрьме как обычный преступник, разрушив все отношения со своими близкими и потеряв все, что имел. В тюрьме он впервые начинает осознавать масштаб разрушений, которые принесла его жизнь ему самому и окружающим.
+После освобождения из тюрьмы в начале 1960-х Джейк возвращается в Нью-Йорк и пытается построить новую жизнь. Он работает в стрип-клубах как конферансье, рассказывая анекдоты и развлекая публику историями из своей боксерской карьеры. Его выступления посещает в основном неприхотливая публика, которая приходит смотреть на бывшую знаменитость.
+Джейк пытается наладить отношения с Джоуи, которого встречает на улице спустя годы после их ссоры. Он извиняется перед братом и пытается обнять его, но Джоуи остается холодным и отстраненным. Хотя он не отталкивает Джейка открыто, ясно, что доверие между братьями утрачено навсегда, и их отношения никогда не вернутся к прежней близости.
+Фильм завершается сценой, где постаревший и располневший Джейк готовится к очередному выступлению в захудалом клубе. Он стоит перед зеркалом в убогой гримерной, репетируя монолог из пьесы "На набережной" Терри Мэллоя о том, что он мог бы стать претендентом, мог бы стать кем-то, вместо того чтобы стать неудачником. Этот монолог становится горьким размышлением о загубленных возможностях и неправильных жизненных выборах.
+История Джейка Ламотты представляет собой трагедию саморазрушения, где талантливый спортсман разрушает свою жизнь и отношения с близкими из-за патологической ревности, неконтролируемой агрессии и неспособности справиться со своими внутренними демонами. Фильм показывает, как успех на ринге не может компенсировать личностные недостатки и как насилие, которое может быть оправдано в спорте, становится разрушительным в обычной жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Сталкер', 'A guide leads two men through an area known as the Zone to find a room that grants wishes.', '1979-01-01', 1, '162 minutes', 'Stalker', 8.2, 'Действие происходит в неопределенном будущем в мрачном индустриальном мире, где существует таинственная территория, называемая Зоной. По легенде, двадцать лет назад на это место упал метеорит или произошло вторжение инопланетян, после чего область приобрела аномальные свойства. Зона окружена колючей проволокой и охраняется военными, вход туда строго запрещен. Считается, что внутри Зоны существует особое место, называемое Комнатой, которое способно исполнить самые сокровенные желания человека.
+Главный герой по прозвищу Сталкер живет в убогом бараке на окраине промышленного города со своей женой Жоной и дочерью Мартышкой, которая возможно является мутантом - она не может ходить, но обладает телекинетическими способностями. Сталкер зарабатывает на жизнь тем, что нелегально проводит людей в Зону, рискуя быть застреленным военными патрулями или погибнуть от многочисленных смертельных ловушек и аномалий, которыми изобилует эта территория.
+Жена Сталкера категорически против его опасной профессии, она умоляет его бросить это занятие и найти нормальную работу. Она рассказывает о том, как страдает, ожидая его возвращения из каждого похода, не зная, вернется ли он живым. Сталкер объясняет, что не может жить по-другому, что Зона - это его призвание, его смысл существования. Он верит, что Зона может сделать людей лучше, дать им то, что им действительно нужно.
+К Сталкеру обращаются двое клиентов, желающих попасть в Комнату. Первый - это Писатель, интеллектуал средних лет, переживающий творческий кризис. Он утратил вдохновение, не может больше создавать значимые произведения и надеется, что Комната вернет ему талант. Писатель циничен, он не верит в высокие идеалы и считает, что люди движимы только низменными инстинктами. Второй клиент - Профессор, ученый-физик, который внешне заявляет о научном интересе к Зоне, но на самом деле имеет тайные мотивы.
+Троица отправляется в путь на дрезине по заброшенным железнодорожным путям. Сталкер объясняет спутникам правила поведения в Зоне: нельзя возвращаться тем же путем, которым пришел, нельзя идти прямо к цели, в Зоне нет безопасных мест, она постоянно меняется, и то, что было безопасно вчера, сегодня может быть смертельно опасным. Он рассказывает историю о другом сталкере по прозвищу Дикобраз, который довел до Комнаты своего брата, но тот получил не то, что хотел, а то, что втайне желал - богатство вместо возвращения любимой женщины, после чего повесился от отчаяния.
+Путешествие по Зоне превращается в философское странствие, полное опасностей и откровений. Сталкер ведет своих спутников запутанными маршрутами, избегая ловушек, проверяя путь с помощью привязанных к гайкам тряпочек, которые он бросает перед собой. Зона предстает как живой организм, который чувствует намерения людей и реагирует на них. Пейзажи Зоны поражают своей красотой и одновременно внушают ужас - это руины цивилизации, поглощенные природой, где среди разрушенных зданий растут деревья, а в затопленных помещениях плавают рыбы.
+По мере продвижения между спутниками разгораются философские споры о природе человека, смысле жизни, вере и знании. Писатель и Профессор скептически относятся к рассказам Сталкера о чудесных свойствах Зоны, они видят вокруг только обычные руины и не замечают никаких аномалий. Сталкер страстно защищает свою веру в Зону, утверждая, что она - последнее место на земле, где возможны чудеса, где человек может стать лучше.
+Профессор постепенно раскрывает свои истинные намерения. Он принес с собой в рюкзаке атомную бомбу и планирует взорвать Комнату, чтобы она не попала в руки диктаторов и маньяков, которые могут использовать ее силу во зло. Он рассуждает о том, что человечество не готово к такой власти, что люди будут желать только богатства, власти и мести. Писатель возражает ему, указывая на то, что уничтожение надежды - это худшее, что можно сделать человечеству.
+Кульминация наступает, когда троица наконец достигает Комнаты. Это небольшое полуразрушенное помещение с водой на полу и проемом в дальней стене, через который виден следующий зал. Место выглядит совершенно обычно, никак не соответствуя ожиданиям величественного святилища. Сталкер объясняет, что для исполнения желания нужно войти в дальний зал, но предупреждает, что Комната исполнит не то желание, которое человек произносит вслух, а то, что он действительно хочет в глубине души.
+У самого порога Комнаты происходит драматическая сцена. Писатель и Профессор внезапно отказываются входить внутрь. Писатель признается, что боится узнать, чего он действительно хочет, возможно, это окажется что-то ужасное. Профессор также колеблется, начиная сомневаться в правильности своего плана уничтожить Комнату. Они обвиняют Сталкера в том, что он привел их сюда не ради их желаний, а ради подтверждения собственной веры.
+Сталкер переживает глубокий кризис. Он понимает, что люди не хотят становиться лучше, что они боятся истины о самих себе. Он произносит страстный монолог о том, что Зона - это его надежда, его способ помочь людям, но они предпочитают оставаться в своих иллюзиях. Профессор в итоге разбирает свою бомбу, решив не уничтожать Комнату, но и не входить в нее.
+Троица возвращается обратно, не использовав возможности Комнаты. По дороге они продолжают спорить о смысле происшедшего, о природе человеческих желаний и о том, нужны ли людей чудеса. Писатель размышляет о том, что возможно само путешествие было важнее цели, что они изменились, пройдя через испытания Зоны.
+Сталкер возвращается домой опустошенным и разочарованным. Жена встречает его с укоризной, но потом утешает, понимая его состояние. Она произносит монолог о том, что несмотря на все страдания, которые приносит ей жизнь со Сталкером, она не жалеет о своем выборе, потому что полюбила его таким, какой он есть. Она предпочитает короткую яркую жизнь с человеком, который верит в чудеса, чем долгую серую жизнь с обычным человеком.
+Фильм заканчивается загадочной сценой, в которой дочь Сталкера Мартышка, оставшись одна на кухне, силой мысли двигает стаканы по столу, один из которых падает и разбивается. За окном проходит поезд, и непонятно, от его ли вибрации или от телекинетических способностей девочки происходит это явление. Эта финальная сцена оставляет открытым вопрос о том, существуют ли действительно чудеса в мире фильма, или все объясняется естественными причинами.
+На протяжении всего фильма поднимаются глубокие философские вопросы о природе веры, о том, нужны ли человеку чудеса, о цене надежды и о том, готов ли человек к исполнению своих истинных желаний. Зона становится метафорой человеческой души, места, где проявляется истинная сущность людей, их страхи, сомнения и потаенные желания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Осенняя соната', 'A married daughter who longs for her mother''s love is visited by the latter, a successful concert pianist.', '1978-01-01', 1, '99 minutes', 'Höstsonaten', 8.2, 'Фильм разворачивается в отдаленном доме на западном побережье Норвегии, где живет Ева со своим мужем пастором Виктором. Ева - женщина средних лет, которая ведет тихую, размеренную жизнь в сельской местности, посвящая себя домашним делам и заботе о своей тяжело больной сестре Лене, страдающей дегенеративным неврологическим заболеванием. Лена прикована к инвалидному креслу, не может говорить и нуждается в постоянном уходе, который обеспечивает преданная медсестра.
+История начинается с того, что Ева получает письмо от своей матери Шарлотты Андергаст, всемирно известной концертирующей пианистки, которая сообщает о внезапной смерти своего любовника Леонардо. Шарлотта пишет, что хочет навестить дочь, с которой не виделась семь долгих лет. Ева приглашает мать приехать, хотя это решение дается ей нелегко - отношения между матерью и дочерью всегда были сложными и болезненными.
+Шарлотта приезжает на следующий день на своем элегантном автомобиле, привозя с собой множество чемоданов и свой привычный мир роскоши и артистизма. Она выглядит значительно моложе своих лет, тщательно следит за внешностью и излучает ту особую ауру знаменитости, которая окружает ее всю жизнь. Встреча матери и дочери поначалу проходит в атмосфере вежливой натянутости - обе женщины стараются вести себя цивилизованно, обмениваются любезностями и пытаются наверстать упущенное время.
+Шарлотта шокирована, увидев состояние Лены, о тяжелой болезни которой она не знала. Ева с горечью рассказывает матери, что Лена начала болеть четыре года назад, но Шарлотта была слишком занята своей карьерой и гастролями, чтобы интересоваться состоянием дочерей. Лена, которая раньше была талантливой пианисткой и могла стать достойной соперницей матери, теперь представляет собой жалкую тень прежней себя.
+Первый вечер проходит относительно мирно. Женщины ужинают, Шарлотта рассказывает о своей концертной деятельности, турне по всему миру, встречах со знаменитостями. Она говорит о Леонардо, с которым прожила несколько лет и который недавно умер от инфаркта. Ева слушает, пытаясь понять эту женщину, которая является ее матерью, но всегда оставалась для нее загадкой и источником боли.
+Виктор, муж Евы, ведет себя предупредительно и дружелюбно по отношению к теще, но чувствует напряжение, которое создает присутствие Шарлотты в их спокойном доме. Он пытается сгладить острые углы и создать атмосферу семейного тепла, но понимает, что между матерью и дочерью существуют глубокие неразрешенные конфликты.
+На следующий день атмосфера начинает накаляться. Ева показывает матери свою игру на фортепиано, исполняя Прелюдию Шопена. Игра Евы технически правильна, но лишена эмоциональной глубины и артистизма. Шарлотта, не сумев сдержаться, начинает критиковать дочь, указывая на недостатки ее исполнения. Затем она сама садится за инструмент и играет ту же пьесу, демонстрируя свое мастерство и превосходство. Ее исполнение действительно значительно превосходит игру дочери - каждая нота звучит с особой выразительностью и технической безупречностью.
+Этот момент становится катализатором для взрыва накопившихся за годы обид и претензий. Ева больше не может сдерживать свою боль и начинает высказывать матери все, что накопилось у нее на сердце за долгие годы. Она обвиняет Шарлотту в том, что та никогда не была настоящей матерью, всегда ставила карьеру выше детей, была эмоционально недоступна и холодна.
+Ева рассказывает о своем детстве, полном одиночества и жажды материнской любви. Она говорит о том, как маленькой девочкой часами ждала возвращения матери с концертов и гастролей, как мечтала о том, чтобы Шарлотта хотя бы раз отменила выступление ради дочери. Ева вспоминает, как завидовала другим детям, у которых были обычные матери, проводившие с ними время, читавшие на ночь сказки, утешавшие в моменты грусти.
+Особенно болезненной для Евы является тема ее младшей сестры Лены. Она обвиняет мать в том, что та своим равнодушием и отсутствием довела Лену до нервного срыва и болезни. Ева рассказывает, как Лена всю жизнь пыталась добиться материнского признания, как развивала свой музыкальный талант в надежде хотя бы таким образом завоевать любовь Шарлотты. Но мать воспринимала успехи Лены как угрозу собственному превосходству и никогда не давала дочери почувствовать себя достойной любви и внимания.
+Ева также говорит о своей собственной неудачной попытке построить карьеру пианистки. Она рассказывает, как в молодости мечтала стать музыкантом, но отсутствие материнской поддержки и постоянное сравнение с гениальной Шарлоттой сломили ее уверенность в себе. В результате она отказалась от музыкальных амбиций и выбрала тихую жизнь домохозяйки, но эта жертва оставила в ее душе глубокую горечь.
+Шарлотта пытается защищаться, объясняя свои поступки требованиями карьеры и искусства. Она говорит о том, что талант накладывает определенные обязательства, что она не могла пожертвовать своим даром ради обычной материнской роли. Шарлотта утверждает, что она любила дочерей по-своему, но ее любовь была иной - более сложной и противоречивой, чем банальная материнская привязанность.
+Однако оправдания Шарлотты звучат неубедительно даже для нее самой. В глубине души она понимает справедливость обвинений дочери, но не может признать этого открыто. Гордость и привычка к самооправданию не позволяют ей взять на себя ответственность за причиненную боль.
+Конфликт достигает кульминации, когда Ева приводит мать к постели больной Лены. Увидев состояние младшей дочери, Шарлотта испытывает потрясение, но пытается скрыть свои чувства за маской профессионального сочувствия. Она неловко пытается общаться с Леной, но становится очевидно, что между ними нет никакой связи. Лена не реагирует на присутствие матери, и Шарлотта быстро покидает комнату больной, не в силах выносить это зрелище.
+Ева с болью наблюдает за реакцией матери и понимает, что даже сейчас, столкнувшись с трагедией дочери, Шарлотта думает прежде всего о себе и своих переживаниях. Мать не способна на настоящее сострадание и самопожертвование - даже перед лицом страдания собственного ребенка она остается эгоцентричной и эмоционально закрытой.
+Ночная сцена становится самой интенсивной в фильме. Мать и дочь продолжают свой болезненный диалог, в котором каждая пытается заставить другую понять свою позицию. Ева требует от матери признания вины и раскаяния, хочет услышать хотя бы раз слова любви и сожаления. Шарлотта же пытается объяснить сложность своей натуры, говорит о том, что она не умеет любить так, как этого ожидают от нее окружающие.
+В этом ночном разговоре раскрываются самые глубокие психологические травмы обеих женщин. Ева рассказывает о своих попытках самоубийства в юности, о том, как отчаяние от недостатка материнской любви довело ее до попытки покончить с собой. Шарлотта узнает об этом впервые и испытывает шок, но даже эта информация не может сломить ее защитные механизмы.
+Шарлотта, в свою очередь, пытается объяснить дочери природу артистического темперамента. Она говорит о том, что великие художники обречены на одиночество, что их дар требует полной самоотдачи и не оставляет места для обычных человеческих привязанностей. Она представляет себя жертвой собственного таланта, человеком, который пожертвовал личным счастьем ради служения искусству.
+Однако эти объяснения не приносят облегчения ни одной из женщин. Ева видит в словах матери лишь новые попытки самооправдания и отказа от ответственности. Шарлотта же понимает, что ее философия не может заполнить пустоту в отношениях с дочерьми и не может оправдать причиненную им боль.
+К утру эмоциональные силы обеих женщин истощаются. Они достигают некоего понимания друг друга, но примирения не происходит. Слишком много боли накопилось за годы, слишком глубоки нанесенные раны. Шарлотта понимает, что ее визит не принес исцеления, а лишь вскрыл старые травмы.
+Утром Шарлотта принимает решение уехать. Она не может больше выносить атмосферу взаимных обвинений и боли. Прощание проходит в холодной и формальной обстановке. Мать и дочь обмениваются дежурными фразами, но обе понимают, что эта встреча, вероятно, последняя в их жизни.
+Виктор провожает Шарлотту до машины, пытаясь сохранить видимость семейной гармонии. Он надеется, что время залечит раны и женщины смогут найти путь друг к другу. Но его оптимизм выглядит наивным на фоне глубины конфликта между матерью и дочерью.
+После отъезда Шарлотты Ева остается в опустошенном состоянии. Долгожданная встреча с матерью не принесла ей ожидаемого облегчения. Наоборот, она еще острее почувствовала глубину пропасти, разделяющей их. Ева понимает, что ее мать никогда не станет такой, какой она хотела бы ее видеть, и что ей придется жить с этой болью до конца своих дней.
+Фильм завершается сценой, в которой Ева ухаживает за больной сестрой. Она читает ей вслух письмо, которое написала матери после ее отъезда, но так и не отправила. В этом письме Ева пытается найти слова прощения и понимания, но они звучат неубедительно даже для нее самой. Финальные кадры показывают Еву в ее повседневной жизни, полной заботы о Лене и попыток создать то тепло и любовь, которых ей самой так не хватало в детстве.
+История становится глубоким исследованием сложности семейных отношений, цены артистического призвания, невозможности изменить прошлое и трагедии непонимания между самыми близкими людьми. Фильм показывает, как эгоизм одного поколения может искалечить жизнь следующего, и как даже самые искренние попытки примирения не всегда способны залечить нанесенные временем раны.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Послание', 'This epic historical drama chronicles the life and times of Prophet Muhammad and serves as an introduction to early Islamic history.', '1976-01-01', 1, '177 minutes', 'The Message', 8.2, 'Послание
+Фильм рассказывает о зарождении ислама в седьмом веке нашей эры на Аравийском полуострове. История начинается в Мекке, священном городе арабов, где господствует язычество и поклонение множеству идолов в храме Кааба. Мекканское общество разделено на племена, ведущие постоянные войны друг с другом, а экономика города основана на торговле и паломничестве язычников к святыням.
+В этой обстановке среди племени курейш появляется новое религиозное учение, проповедуемое Мухаммедом, который призывает арабов отказаться от идолопоклонства и обратиться к единому Богу Аллаху. Пророк, которого в фильме никогда не показывают напрямую из уважения к религиозным традициям, начинает проповедовать среди жителей Мекки, призывая их к справедливости, милосердию и отказу от племенной розни.
+Первыми последователями новой религии становятся близкие родственники и друзья пророка. Среди них его дядя Хамза, отважный воин и уважаемый член племени, который первоначально скептически относится к проповедям племянника, но постепенно убеждается в истинности его послания. Также к пророку присоединяется Билал, эфиопский раб, который становится одним из самых преданных последователей и первым муэдзином в истории ислама.
+Мекканская знать во главе с Абу Суфьяном и другими влиятельными торговцами начинает враждебно относиться к новому учению, видя в нем угрозу своему политическому и экономическому господству. Они понимают, что если люди перестанут поклоняться идолам в Каабе, то паломничество прекратится, и город потеряет основной источник дохода. Кроме того, проповеди о равенстве всех людей перед Аллахом подрывают традиционную племенную иерархию.
+Преследования мусульман усиливаются с каждым днем. Язычники начинают подвергать последователей пророка пыткам, экономическому бойкоту и физическому насилию. Особенно жестоко обращаются с рабами и людьми низкого происхождения, принявшими ислам. Билала, например, привязывают к раскаленному песку пустыни и требуют отречься от веры, но он продолжает повторять "Ахад, ахад" - "Един, един", имея в виду единство Аллаха.
+Видя усиление преследований, пророк принимает решение отправить часть своих последователей в Эфиопию, где правит справедливый христианский царь Негус. Мусульманские беженцы во главе с Джафаром, двоюродным братом пророка, отправляются через Красное море в Африку. В Эфиопии их встречает при дворе Негуса, который внимательно выслушивает объяснения исламского учения.
+Мекканцы посылают в Эфиопию своих послов с дарами, требуя выдачи беглецов. Однако после того, как Джафар рассказывает Негусу о принципах ислама и читает суры из Корана о Деве Марии и Иисусе Христе, христианский правитель отказывается выдать мусульман, заявив, что их учение и христианство исходят из одного источника божественного откровения.
+Тем временем в Мекке ситуация становится критической. Мусульман подвергают экономической блокаде, их изгоняют из города, лишают средств к существованию. Племенная знать требует от пророка прекратить проповеди или покинуть город. В этих условиях пророк получает божественное откровение о необходимости переселения в Медину, город к северу от Мекки, жители которого готовы принять мусульман.
+Хиджра - переселение в Медину в 622 году - становится поворотным моментом в истории ислама. В Медине пророк создает первую мусульманскую общину, где устанавливает принципы справедливого общественного устройства. Мусульмане строят первую мечеть, организуют систему взаимопомощи между переселенцами из Мекки и местными жителями Медины.
+Однако мекканцы не оставляют мусульман в покое и начинают военные действия против новой общины. Первое крупное сражение происходит при Бадре в 624 году, где небольшое мусульманское войско сталкивается с превосходящими силами мекканцев. Несмотря на численное превосходство противника, мусульмане одерживают решительную победу, что укрепляет веру последователей пророка в божественную поддержку их дела.
+Абу Суфьян и мекканская знать организуют новое наступление на Медину. В битве при Ухуде мусульмане первоначально побеждают, но затем терпят поражение из-за нарушения дисциплины частью войска. В этом сражении погибает Хамза, дядя пророка, что становится тяжелым ударом для мусульманской общины. Его смерть показана как великая трагедия, поскольку Хамза был одним из самых храбрых и преданных сподвижников.
+Кульминацией противостояния становится осада Медины объединенными силами мекканцев и их союзников в 627 году. Мусульмане роют глубокий ров вокруг города, что становится неожиданной тактикой для арабов того времени. Осада затягивается, и в конце концов мекканцы вынуждены отступить, не добившись успеха.
+После неудачной осады пророк заключает Худайбийское соглашение с мекканцами, по которому устанавливается десятилетнее перемирие. Согласно договору, мусульмане получают право совершать паломничество в Мекку, а племена могут свободно выбирать, к какой стороне присоединиться. Многие последователи пророка первоначально недовольны этим соглашением, считая его слишком мягким, но оно оказывается мудрым политическим шагом.
+Перемирие позволяет исламу распространяться среди арабских племен без военного противодействия. Многие племена принимают новую религию, видя справедливость ее принципов и успехи мусульманской общины. Постепенно баланс сил меняется в пользу мусульман, и Мекка оказывается в изоляции.
+В 630 году, после нарушения перемирия союзниками мекканцев, пророк ведет большое войско на Мекку. Город сдается практически без сопротивления, и мусульмане входят в него мирно. Пророк проявляет великодушие к своим бывшим врагам, объявляя всеобщую амнистию и призывая к примирению.
+Первым делом мусульмане очищают Каабу от идолов, восстанавливая ее первоначальное предназначение как храма единого Бога, построенного, согласно исламской традиции, еще Авраамом и Исмаилом. Абу Суфьян и другие мекканские лидеры принимают ислам, и город становится центром новой религии.
+Фильм завершается сценами объединения арабских племен под знаменами ислама и началом распространения новой религии за пределы Аравийского полуострова. Показываются массовые сцены паломничества в Мекку, где люди всех племен и социальных слоев молятся вместе, демонстрируя единство мусульманской общины.
+Заключительные кадры подчеркивают основные принципы ислама - единобожие, равенство всех людей перед Аллахом, справедливость и милосердие. Фильм представляет историю возникновения ислама как торжество божественной истины над языческим невежеством и племенной рознью, показывая, как небольшая группа верующих смогла изменить ход истории целого региона.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Монти Пайтон и Священный Грааль', 'King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail, encountering many, very silly obstacles.', '1975-01-01', 1, '91 minutes', 'Monty Python and the Holy Grail', 8.2, 'Фильм представляет собой пародию на легенды о короле Артуре и рыцарях Круглого стола, выполненную в абсурдистском стиле британской комедийной группы Монти Пайтон. Действие происходит в 932 году нашей эры в средневековой Англии.
+Король Артур путешествует по стране в поисках рыцарей для своего Круглого стола. Вместо лошади он скачет пешком, а его слуга Пэтси следует за ним, стуча кокосовыми орехами, имитируя звук лошадиных копыт. Эта абсурдная деталь становится одной из главных комических тем фильма.
+Артур встречает различных людей и пытается убедить их присоединиться к нему. Сначала он находит сэра Бедивера Мудрого, который участвует в суде над женщиной, обвиняемой в колдовстве. Логика суда абсурдна: ведьмы горят, дерево тоже горит, значит ведьмы сделаны из дерева, дерево плавает как утки, следовательно, если женщина весит столько же, сколько утка, она ведьма. К счастью для обвиняемой, она оказывается легче утки и избегает сожжения.
+Следующий рыцарь, которого встречает Артур, - сэр Ланселот Храбрый, известный своей безрассудной отвагой и склонностью к неоправданному насилию. Затем к ним присоединяются сэр Галахад Чистый, молодой и наивный рыцарь, и сэр Робин Не-Очень-Храбрый-Как-Сэр-Ланселот, который позже будет назван Сэром Робином Храбро-Убегающим-Прочь.
+В замке Камелот Артур собирает рыцарей за Круглым столом, но их встречает Бог, который появляется в виде анимированного лица на облаках. Бог дает им священную миссию - найти Святой Грааль. Рыцари принимают задание и отправляются в путь, но их попытки войти в Камелот прерываются словами "это глупое место", и они решают его обойти.
+Группа рыцарей путешествует вместе, пока не доходит до моста, где встречает Черного Рыцаря, который не пропускает никого. Артур вызывает его на поединок. В абсурдной сцене боя Артур последовательно отрубает Черному Рыцарю руки и ноги, но тот продолжает сражаться и утверждает, что это всего лишь "царапины". Даже лишившись всех конечностей, Черный Рыцарь продолжает вызывать Артура на бой.
+После этого рыцари разделяются для поисков Грааля. Артур и Бедивер встречают Рыцарей, которые говорят "Ни!", - загадочную группу, которая требует жертвоприношений в виде кустарников. Они терроризируют всех, произнося слово "Ни!", и требуют от Артура принести им кустарник, а затем еще один кустарник, который должен быть выше первого, но не слишком дорогим. Когда Артур случайно произносит слово "это", рыцари корчатся от боли, и герои понимают, что это их слабость.
+Сэр Робин сталкивается с Трехголовым Рыцарем, у которого три головы постоянно спорят между собой. Робин пытается пройти мимо, но рыцарь вызывает его на поединок. Воспользовавшись тем, что головы не могут договориться о том, как сражаться, Робин трусливо убегает, за что и получает свое прозвище.
+Сэр Ланселот получает записку с просьбой о помощи от принцессы, заточенной в замке. В своем стиле он врывается в замок и устраивает кровавую резню, убивая множество безобидных гостей свадьбы. Выясняется, что записку написал не принцесса, а принц Герберт, который хочет сбежать от нежеланной свадьбы и стать певцом. Отец принца в ярости от разрушений, но в итоге соглашается отпустить сына.
+Сэр Галахад заблуждается и попадает в замок Антракс, где живут более ста соблазнительных девушек, которые якобы нуждаются в спасении. Девушки пытаются соблазнить чистого рыцаря, и он почти поддается искушению, но в последний момент его "спасают" прибывшие Ланселот и Артур, к его явному разочарованию.
+Рыцари воссоединяются и встречают Старика из Сцены, который рассказывает им о том, что Грааль находится в замке Аарг в Шотландии. По дороге они сталкиваются с Кроликом Из Каэрбанног, который выглядит безобидно, но оказывается смертельно опасным зверем с огромными зубами. Кролик убивает нескольких рыцарей, включая знаменитого сэра Борса, прежде чем его удается уничтожить с помощью Священной Ручной Гранаты Антиохии.
+В пещере за кроликом рыцари встречают Тима Чародея, который предупреждает их об опасностях впереди и показывает видение Грааля в замке Аарг. Он также рассказывает им о надписи, высеченной в замке, которая содержит подсказку о местонахождении Грааля.
+Наконец рыцари добираются до замка Аарг, который оказывается занят французскими рыцарями. Французы насмехаются над ними со стен замка, оскорбляют их матерей и бросают в них различные предметы, включая корову. Артур пытается договориться, но французы только издеваются над ними, демонстрируя показное высокомерие и произнося оскорбления с сильным французским акцентом.
+Рыцари отступают и разрабатывают план штурма. Они строят гигантского деревянного кролика по образцу Троянского коня, но забывают спрятаться внутри него перед тем, как подарить французам. План проваливается, и французы используют кролика как снаряд, обстреливая им англичан.
+Артур получает новый план от чародея Тима - он должен использовать Священную Ручную Гранату против замка. Однако вместо этого Артур решает организовать массированную атаку. Рыцари собирают огромную армию и готовятся к решающему штурму замка.
+В кульминационный момент, когда рыцари наконец готовы взять замок штурмом, внезапно появляется современная полиция и арестовывает всех участников за убийство историка, которого случайно убил сэр Ланселот в одной из предыдущих сцен. Полицейские закрывают камеру рукой, и фильм внезапно обрывается, так и не показав, нашли ли рыцари Святой Грааль.
+Этот неожиданный финал является типичным для стиля Монти Пайтон приемом разрушения четвертой стены и пародирует условности традиционного кинематографа. Фильм изобилует анахронизмами, абсурдными диалогами, неожиданными поворотами сюжета и пародиями на жанровые клише средневекового эпоса, создавая уникальную комедию, которая высмеивает как героические легенды, так и сами принципы кинопроизводства.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Большой побег', 'Allied prisoners of war plan for several hundred of their number to escape from a German camp during World War II.', '1963-01-01', 1, '172 minutes', 'The Great Escape', 8.2, 'Фильм основан на реальных событиях и рассказывает о массовом побеге союзных военнопленных из немецкого лагеря для военнопленных Шталаг Люфт III во время Второй мировой войны. Лагерь расположен в Силезии и предназначен специально для содержания захваченных летчиков союзных войск. Немецкое командование считает этот лагерь неприступным - он окружен двойным забором из колючей проволоки под напряжением, по периметру расставлены пулеметные вышки с прожекторами, а сам лагерь построен на песчаной почве, что делает рытье туннелей крайне сложным.
+В лагерь прибывает новая партия военнопленных, среди которых находятся наиболее опытные и неоднократно совершавшие побеги офицеры из различных лагерей по всей Германии. Немцы специально собрали этих "проблемных" заключенных в одном месте, надеясь таким образом облегчить охрану остальных лагерей. Однако это решение оказывается роковой ошибкой, поскольку концентрация наиболее способных к побегам людей в одном месте создает критическую массу для организации крупномасштабной операции.
+Среди прибывших выделяются несколько ключевых фигур. Роджер Бушелл, южноафриканский летчик, известный под кодовым именем "Большой X", становится главным организатором побега. Он обладает выдающимися организаторскими способностями и непоколебимой решимостью. Бушелл разрабатывает грандиозный план одновременного побега двухсот пятидесяти человек через систему туннелей, что должно создать хаос в немецких тылах и отвлечь значительные силы на поиски беглецов.
+Хилтс, американский летчик по прозвищу "Король холодка", славится своими многочисленными попытками побега и способностью сохранять спокойствие в любых ситуациях. Он становится одним из ключевых участников подготовки, хотя изначально скептически относится к возможности успеха массового побега. Дэнни Велински и Уильям Дикс специализируются на изготовлении поддельных документов и гражданской одежды, без которых побег был бы невозможен.
+Луи Седжвик, известный как "Изготовитель", отвечает за создание всех необходимых инструментов и приспособлений для рытья туннелей. Арчибальд Айвз, "Туннельная крыса", руководит непосредственно земляными работами благодаря своему небольшому росту и опыту. Роберт Хендли, "Скрепочник", организует снабжение операции всеми необходимыми материалами, которые он добывает различными способами внутри лагеря.
+План предусматривает одновременное рытье трех туннелей под кодовыми названиями "Том", "Дик" и "Гарри". Эта стратегия должна обеспечить успех операции даже в случае обнаружения одного или двух туннелей немцами. Туннели начинаются из различных бараков и должны выходить за пределы лагеря в лесу, откуда беглецы смогут разойтись в разных направлениях.
+Рытье туннелей представляет собой чрезвычайно сложную техническую задачу. Заключенные работают в условиях постоянной угрозы обнаружения, используя самодельные инструменты и примитивные средства освещения. Песчаная почва постоянно осыпается, что требует укрепления стен туннеля деревянными досками, которые приходится незаметно добывать из различных построек лагеря. Главной проблемой становится утилизация выкопанного песка - его нельзя просто высыпать где попало, поскольку желтый цвет резко контрастирует с серой поверхностной почвой.
+Для решения проблемы песка заключенные разрабатывают изощренную систему его распределения по территории лагеря. Специальные мешочки, сшитые из одежды, прячутся под брюками, и во время прогулок по лагерю песок незаметно высыпается небольшими порциями. Эту работу выполняют "пингвины" - заключенные, которые ходят особой походкой, скрывающей процесс высыпания песка.
+Одновременно с рытьем туннелей идет подготовка документов и гражданской одежды. Поддельные паспорта, пропуска и удостоверения изготавливаются с использованием самых примитивных средств, но с поразительным мастерством. Заключенные перешивают военную форму, превращая ее в гражданскую одежду, изготавливают компасы из намагниченных бритвенных лезвий, собирают карты из обрывков газет и журналов.
+Немецкая охрана во главе с комендантом фон Люгером подозревает о подготовке побега, но не может обнаружить конкретных доказательств. Унтер-офицер Шульц, ответственный за безопасность в лагере, постоянно проводит обыски и наблюдение, но заключенные всегда оказываются на шаг впереди. Система наблюдения и предупреждения, организованная среди военнопленных, позволяет им заранее узнавать о планируемых обысках и принимать соответствующие меры.
+Через несколько месяцев напряженной работы туннель "Том" готов почти наполовину, когда немцы случайно обнаруживают его во время обыска. Это серьезный удар по моральному состоянию заключенных, но Бушелл принимает решение продолжать работу над оставшимися туннелями. Туннель "Дик" используется как склад для хранения земли из туннеля "Гарри", который становится основным проектом.
+Работы над туннелем "Гарри" продолжаются с удвоенной интенсивностью. Заключенные работают круглосуточно, сменяя друг друга в тесном подземелье. Недостаток кислорода, постоянная угроза обвала, физическое и нервное истощение делают эту работу крайне тяжелой. Несколько раз туннель едва не обнаруживают немцы, но каждый раз удается избежать разоблачения благодаря хорошо отлаженной системе предупреждения.
+Когда туннель наконец готов, выясняется, что он оказался короче запланированного и выходит не в лесу, а всего в нескольких метрах от забора лагеря. Это создает дополнительный риск, но Бушелл принимает решение проводить побег, поскольку дальнейшее продление работ может привести к обнаружению туннеля.
+Побег назначается на ночь с 24 на 25 марта 1944 года. Это холодная зимняя ночь без луны, что обеспечивает максимальную темноту, но создает дополнительные трудности для беглецов. Заключенные выстраиваются в очередь согласно заранее составленному списку, основанному на вкладе каждого в подготовку операции и их шансах на успешное достижение нейтральной территории.
+Процесс побега начинается с серьезных проблем. Выход из туннеля оказывается прямо под прожектором охранной вышки, что значительно замедляет эвакуацию. Каждый беглец должен дождаться момента, когда луч прожектора отворачивается в другую сторону. Кроме того, большинство участников значительно крупнее тех, кто рыл туннель, что создает дополнительные трудности при передвижении под землей.
+Первые беглецы успешно выходят из туннеля и исчезают в лесу. Среди них Бушелл с несколькими спутниками, которые направляются к железнодорожной станции, рассчитывая добраться поездом до нейтральной территории. Другие группы выбирают различные маршруты - некоторые пытаются пройти пешком через лес к границе, другие направляются к крупным городам, надеясь затеряться среди населения.
+Однако вскоре происходит непредвиденное. Один из немецких часовых случайно обнаруживает выход из туннеля, когда очередной беглец неосторожно высовывается из-под земли. Поднимается тревога, и побег прерывается. К этому моменту из лагеря успели выбраться только семьдесят шесть человек вместо запланированных двухсот пятидесяти.
+Немецкое командование приходит в ярость от масштаба побега. По всей Германии объявляется максимальная тревога, в поиски включаются не только военные части, но и полиция, гестапо, местное население. Фотографии беглецов распространяются по всей стране, проверяются все поезда, автомобили, устанавливаются блокпосты на дорогах.
+Большинство беглецов задерживается в течение первых нескольких дней. Некоторые попадаются на железнодорожных станциях при проверке документов, другие выдают себя незнанием немецкого языка или неумением правдоподобно объяснить свое присутствие в данной местности. Местное население, запуганное пропагандой о "террористах-летчиках", активно помогает в поисках.
+Хилтс попадается почти сразу при попытке угнать мотоцикл. Его возвращают в лагерь и помещают в карцер, но он остается жив. Дэнни и Уильям пытаются добраться до швейцарской границы, но их ловят в поезде. Арчибальд Айвз задерживается при попытке пересечь границу пешком.
+Трагическая развязка наступает, когда выясняется, что Гитлер лично отдал приказ расстрелять всех пойманных беглецов как пример для остальных. Несмотря на протесты военного командования, ссылающегося на Женевскую конвенцию, пятьдесят пойманных офицеров расстреливаются гестапо. Среди погибших оказывается и Роджер Бушелл, главный организатор побега.
+Только троим беглецам удается достичь безопасности. Двое норвежских летчиков добираются до Швеции морским путем, а один достигает Гибралтара через Испанию. Их успех становится единственным светлым моментом в трагической истории.
+Когда в лагерь приходит известие о расстреле пятидесяти товарищей, среди оставшихся заключенных царит скорбь и ожесточение. Комендант фон Люгер, который пытался предотвратить расстрелы, сам попадает в немилость у руководства и переводится на фронт, где вскоре погибает.
+Фильм завершается сценой, где Хилтс снова оказывается в карцере, но не сломлен духом. Он продолжает играть в мяч о стену камеры, планируя новый побег. Этот финал символизирует несгибаемый дух союзных пленных и их готовность продолжать борьбу даже перед лицом смерти.
+История Большого побега становится легендой среди военнопленных всех лагерей Третьего рейха. Хотя операция не достигла своей непосредственной цели массового освобождения заключенных, она имела огромное психологическое значение. Побег продемонстрировал, что даже в самых безнадежных условиях люди не теряют стремления к свободе и готовы пойти на любые жертвы ради нее. Кроме того, поиски беглецов действительно отвлекли значительные немецкие силы от военных действий, что было одной из стратегических целей операции.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Убить пересмешника', 'Atticus Finch, a lawyer in the Depression-era South, defends a black man against an undeserved rape charge, and his children against prejudice.', '1962-01-01', 1, '129 minutes', 'To Kill a Mockingbird', 8.2, 'Убить пересмешника
+История происходит в 1930-х годах в вымышленном городке Мейкомб, штат Алабама, во времена Великой депрессии. Рассказ ведется от лица взрослой Джин Луизы Финч, которая вспоминает события своего детства, когда ей было шесть лет. Джин, которую все зовут Скаут, живет со своим отцом Аттикусом Финчем, адвокатом средних лет и вдовцом, и старшим братом Джемом в старом доме на главной улице города.
+Аттикус Финч - человек высоких моральных принципов, который воспитывает детей в духе справедливости, честности и сострадания к другим людям. Он работает адвокатом и пользуется уважением в городе за свою порядочность и профессионализм. Детей также воспитывает Кальпурния, темнокожая домработница и кухарка, которая заменила им мать и относится к ним с материнской заботой и строгостью.
+Летом к Финчам приезжает племянник Диллом Харрис, мальчик примерно того же возраста, что и Скаут. Трое детей быстро подружаются и проводят время, придумывая игры и исследуя окрестности. Их особенно интригует мрачный дом по соседству, где живет семья Рэдли. В этом доме затворником живет Артур Рэдли, которого все называют Бу, и о котором в городе ходят зловещие слухи.
+Местные жители рассказывают страшные истории о Бу Рэдли - что он психически больной, что он когда-то пырнул ножницами ногу отца, что он бродит по ночам и заглядывает в окна домов, что он ест сырых белок и кошек. Дети одновременно боятся и очарованы этой загадочной фигурой. Они придумывают игры, изображая жизнь семьи Рэдли, и постоянно пытаются заманить Бу из дома, подбираясь все ближе к его жилищу.
+Однажды дети обнаруживают, что кто-то оставляет для них небольшие подарки в дупле старого дуба возле дома Рэдли - жевательную резинку, две индейские головы, выточенные из мыла фигурки, изображающие Скаут и Джема, старые часы и другие мелочи. Дети понимают, что это делает Бу, но когда они пытаются оставить ему ответную записку, обнаруживают, что дупло заделано цементом. Натан Рэдли, брат Бу, объясняет, что дерево больное, хотя Аттикус говорит детям, что дерево выглядит здоровым.
+Тем временем Аттикус получает назначение защищать в суде темнокожего мужчину по имени Том Робинсон, которого обвиняют в изнасиловании белой женщины Майеллы Юэлл. Это дело вызывает бурю негодования среди белого населения города, поскольку в те времена на Юге любые обвинения белой женщины против темнокожего мужчины считались безусловно истинными, а попытка адвоката серьезно защищать такого подсудимого расценивалась как предательство расовой солидарности.
+Несмотря на давление общественного мнения и угрозы, Аттикус решает честно выполнять свой профессиональный долг и изо всех сил защищать Тома Робинсона. Он объясняет детям, что человек не может называться порядочным, если не борется за то, что считает правильным, даже если заранее знает, что обречен на поражение. Аттикус говорит Скаут, что настоящее мужество - это когда ты знаешь, что проиграл еще до начала, но все равно начинаешь и идешь до конца.
+Дети начинают сталкиваться с проявлениями расизма и социального неравенства в своем городе. В школе одноклассники дразнят Скаут, называя ее отца "любителем ниггеров". Девочка дерется с обидчиками, но Аттикус объясняет ей, что драки не решают проблем, и просит сдерживать свой гнев. Он учит детей пытаться понимать других людей, ставя себя на их место.
+Ситуация обостряется, когда пожилая соседка миссис Дюбоуз, морфинистка с отвратительным характером, публично оскорбляет Аттикуса. В приступе ярости Джем уничтожает ее камелии в саду. В качестве наказания Аттикус заставляет сына каждый день читать старухе вслух. Только после ее смерти дети узнают, что она боролась с наркотической зависимостью и умерла свободной от морфия. Аттикус объясняет, что миссис Дюбоуз была по-своему мужественным человеком.
+По мере приближения суда напряжение в городе нарастает. Группа мужчин приходит к дому Финчей с требованием, чтобы Аттикус отказался от защиты Тома Робинсона. Позже толпа окружает тюрьму, где содержится обвиняемый, с намерением учинить самосуд. Аттикус проводит ночь возле тюрьмы, охраняя своего подзащитного. Дети тайно следят за отцом и в критический момент появляются на месте событий.
+Скаут узнает среди толпы мистера Каннингема, отца своего одноклассника, и начинает с ним непринужденную беседу о его сыне и юридических проблемах семьи. Ее детская искренность и невинность пристыжают мужчин, и толпа расходится, не причинив вреда. Этот эпизод показывает силу человечности и индивидуального подхода в противостоянии групповой ненависти.
+Суд становится главным событием в жизни города. Весь белый Мейкомб приходит в здание суда, а темнокожие жители наблюдают за процессом с балкона для "цветных". Дети тайком пробираются в зал суда и устраиваются на балконе вместе с темнокожими зрителями под присмотром преподобного Сайкса, пастора местной темнокожей церкви.
+В ходе судебного процесса выясняются обстоятельства дела. Майелла Юэлл, девятнадцатилетняя дочь местного пьяницы и бездельника Боба Юэлла, обвиняет Тома Робинсона в том, что он напал на нее в их доме, когда она была одна. Том работал разнорабочим и иногда помогал семье Юэлл с хозяйственными делами из жалости к их бедности.
+Аттикус блестяще ведет защиту, демонстрируя многочисленные противоречия в показаниях обвинителей. Он доказывает, что повреждения на лице Майеллы могли быть нанесены только левшой, тогда как левая рука Тома была искалечена в детстве и совершенно не функционирует. Боб Юэлл, напротив, левша. Аттикус предполагает, что Боб Юэлл избил дочь, застав ее в попытке соблазнить темнокожего мужчину, что было абсолютным табу в их обществе.
+Том Робинсон дает показания и рассказывает свою версию событий. Он утверждает, что Майелла сама пригласила его в дом под предлогом помочь с работой, а затем попыталась его соблазнить. Когда появился ее отец, Том в панике убежал, понимая, какие последствия может иметь подобная ситуация для темнокожего мужчины. Его показания звучат правдиво и логично, но прокурор умело играет на расовых предрассудках присяжных.
+Несмотря на очевидность невиновности Тома и блестящую защиту Аттикуса, присяжные выносят обвинительный приговор. Вердикт не удивляет взрослых, знающих реалии жизни на Юге, но дети потрясены несправедливостью. Они не могут понять, как можно осудить заведомо невиновного человека. Аттикус объясняет им, что в судах присяжных обычно отражаются предрассудки общества.
+После суда Боб Юэлл чувствует, что Аттикус опозорил его перед всем городом, разоблачив его ложь. Он публично угрожает адвокату и его семье, плюет ему в лицо при встрече на улице и пытается проникнуть в дом судьи Тейлора. Аттикус не воспринимает угрозы серьезно, считая, что Юэлл просто выпускает пар, но другие жители города предупреждают его о возможной опасности.
+Том Робинсон, отправленный в тюрьму в ожидании апелляции, пытается бежать и погибает от семнадцати пулевых ранений. Власти утверждают, что он пытался перелезть через тюремную ограду, но количество ранений вызывает сомнения в официальной версии. Аттикус сообщает эту новость семье Робинсона, и его горечь от несправедливости системы становится очевидной детям.
+Тем временем мистер Андервуд, редактор местной газеты, пишет редакционную статью, в которой сравнивает убийство Тома Робинсона с бессмысленным убийством певчих птиц. Это перекликается с советом Аттикуса детям никогда не стрелять в пересмешников, поскольку эти птицы не причиняют вреда, а только радуют людей своим пением. Пересмешник становится символом невинности, которую общество разрушает своими предрассудками.
+Проходит время, и кажется, что страсти улеглись. Дети возвращаются к обычной школьной жизни. Однако Боб Юэлл не забывает о своей жажде мести. В октябре, во время школьного праздника Хэллоуина, Скаут участвует в представлении, изображая окорок в самодельном костюме из проволоки и коричневой ткани. После представления дети возвращаются домой темным вечером через лесок.
+По дороге домой на Скаут и Джема нападает Боб Юэлл с ножом. В темноте происходит ожесточенная схватка. Юэлл ломает руку Джему и пытается заколоть детей, но неожиданно появляется таинственный спаситель. В драке Боб Юэлл погибает от удара ножом, а дети спасены. Незнакомец несет раненого Джема домой, где его встречают Аттикус и вызванный врач.
+Скаут постепенно понимает, что их спасителем был Бу Рэдли. Впервые увидев его при свете, она обнаруживает бледного, худого мужчину с добрыми глазами, совершенно не похожего на чудовище из детских страхов. Бу стоит в углу комнаты Джема, наблюдая за мальчиком с нежностью и заботой. Скаут понимает, что все эти годы Бу тайно заботился о них - оставлял подарки, накрывал одеялом во время пожара у соседей, и теперь спас им жизнь.
+Шериф Хек Тейт прибывает расследовать происшествие. Выслушав обстоятельства дела, он принимает решение заявить, что Боб Юэлл упал на собственный нож во время драки. Аттикус сначала протестует, считая, что правда должна быть раскрыта, даже если это означает судебное разбирательство для Бу. Однако шериф объясняет, что втягивать Бу в судебный процесс и делать его героем в глазах общественности было бы жестокостью по отношению к человеку, который всю жизнь избегал общества.
+Скаут провожает Бу домой, взяв его под руку как взрослая леди. На крыльце дома Рэдли она смотрит на свой район глазами Бу и впервые понимает, как он видел их жизнь все эти годы - наблюдая за детьми, радуясь их играм, беспокоясь об их безопасности. Она осознает мудрость отцовского совета о том, что нельзя по-настоящему понять человека, пока не попробуешь взглянуть на мир его глазами.
+Вернувшись домой, Скаут садится возле кровати выздоравливающего Джема, и Аттикус читает ей книгу. Она задремывает под звук его голоса, чувствуя себя в безопасности в своем доме, где царят любовь, понимание и справедливость. История завершается размышлениями взрослой рассказчицы о том, что большинство людей в конечном счете хороши, когда ты наконец их понимаешь.
+Фильм представляет собой историю взросления и потери невинности, показывая, как дети сталкиваются с жестокой реальностью предрассудков и несправедливости, но при этом учатся состраданию и пониманию благодаря примеру мудрого и принципиального отца. Центральные темы произведения - борьба против расизма, важность моральной стойкости и способность видеть человечность в каждом, даже в тех, кого общество отвергает или боится.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Телохранитель', 'A crafty ronin comes to a town divided by two criminal gangs and decides to play them against each other to free the town.', '1961-01-01', 1, '110 minutes', 'Yôjinbô', 8.2, 'Действие происходит в 1860 году в небольшом японском городке в период упадка сёгуната Токугава. Безымянный ронин - самурай без господина - приходит в пыльный пограничный городок, который напоминает декорации вестерна. Город разделен надвое двумя враждующими кланами, которые ведут между собой войну за контроль над местным игорным бизнесом и публичными домами.
+Ронин останавливается на перекрестке и решает свою судьбу, подбрасывая палку в воздух - в какую сторону она укажет, туда он и пойдет. Палка указывает направление в город, где самурай сразу же становится свидетелем напряженной атмосферы. Улицы практически пусты, лишь бродячие собаки таскают человеческие руки - зловещий знак того, насколько опасно стало это место.
+С одной стороны города располагается клан Сейбеи, которым руководит слабый старик, но реальную власть в котором держит его жена - хитрая и жестокая женщина. У них есть взрослый сын Ютаро, трусливый и неспособный к бою молодой человек. С другой стороны находится клан Ущитора, более агрессивный и воинственный, во главе с жестким и решительным лидером.
+Ронин наблюдает за конфликтом со стороны и решает использовать вражду кланов в своих интересах. Он представляется владельцу местной сакейной лавки Горонджи, который становится его союзником и источником информации. Горонджи - единственный нейтральный человек в городе, он ненавидит оба клана за то, что они разрушили мирную жизнь города.
+Самурай демонстрирует свое мастерство владения мечом, мгновенно убивая трех человек из клана Ущитора, которые пытались его запугать. Это произвело такое впечатление на клан Сейбеи, что они немедленно нанимают его в качестве телохранителя. Ронин соглашается, но ставит условие - он будет работать только за деньги и не связывает себя никакими обязательствами верности.
+Ситуация осложняется прибытием в город Уносукэ, младшего брата главы клана Ущитора, который вернулся из большого города с револьвером - оружием, которое дает ему огромное преимущество над традиционными мечами и копьями. Уносукэ - садист и психопат, который получает удовольствие от убийств и пыток. Его появление кардинально меняет баланс сил в городе.
+Ронин узнает о существовании женщины по имени Нуи, жены одного из самураев клана Сейбеи, которую силой удерживает клан Ущитора как наложницу своего лидера. Нуи живет в доме клана против своей воли, разлученная со своим мужем и маленьким сыном. Это пробуждает в ронине чувство справедливости, которое противоречит его циничному плану наживы на чужой вражде.
+Самурай разрабатывает сложную интригу, чтобы стравить кланы еще больше. Он подслушивает планы одного клана и передает информацию другому, провоцирует инциденты и раздувает мелкие конфликты в серьезные столкновения. Его цель - заставить кланы полностью уничтожить друг друга, чтобы город снова стал мирным.
+Кульминационный момент интриги наступает, когда ронин инсценирует похищение Нуи, заставляя каждый клан думать, что это сделал противник. В результате между кланами происходит кровавая битва, в которой погибает множество людей с обеих сторон. Ронин наблюдает за резней с холма, удовлетворенный успехом своего плана.
+Однако Уносукэ оказывается умнее, чем предполагал ронин. Он начинает подозревать самурая в двойной игре и устраивает ловушку. Уносукэ захватывает Горонджи и пытает его, заставляя признаться в сотрудничестве с ронином. Не желая, чтобы невинный человек пострадал из-за него, ронин сдается и позволяет себя захватить.
+Ронина жестоко избивают и заключают в сарай, где он несколько дней находится без еды и воды. Уносукэ методично пытает его, пытаясь выяснить, где спрятана Нуи и сколько денег самурай получил за свои услуги. Ронин стойко переносит пытки, не выдавая своих секретов.
+Горонджи, рискуя собственной жизнью, тайно приносит ронину еду и питье, поддерживая его силы. Он также сообщает самураю новости о том, что происходит в городе - оба клана понесли тяжелые потери и практически уничтожили друг друга, что было целью ронина.
+В решающий момент ронину удается сбежать из плена. Он прячется в храме и восстанавливает силы, готовясь к финальной схватке. Тем временем выясняется, что выжившие члены обоих кланов объединились под руководством Уносукэ, поняв, что их использовали.
+Финальная дуэль происходит на главной улице города. Уносукэ, вооруженный револьвером, противостоит ронину с его традиционным мечом. Это классическое противостояние старого и нового, традиции и прогресса. Уносукэ уверен в своем преимуществе, ведь пистолет стреляет быстрее, чем самурай может выхватить меч.
+Однако ронин оказывается хитрее и быстрее, чем ожидал Уносукэ. Используя выброшенный металлический предмет как щит и отвлекающий маневр, самурай смертельно ранит Уносукэ ножом, который он тайно держал наготове. Остальные члены банды, увидев смерть своего лидера, разбегаются или сдаются.
+Город наконец освобожден от тирании двух кланов. Ронин освобождает Нуи, воссоединяя ее с мужем и сыном. Горонджи благодарит самурая за спасение города, но ронин скромно отклоняет благодарности, говоря, что просто делал то, что считал правильным.
+В финальной сцене ронин покидает город таким же таинственным образом, каким и прибыл. Он идет по пыльной дороге, и его фигура постепенно исчезает в дымке. Город остается позади, мирный и спокойный, готовый начать новую жизнь без насилия и страха. Самурай отправляется дальше, возможно, на поиски новых приключений или просто следуя своей судьбе странствующего воина без господина.
+Фильм является классическим образцом жанра чамбара и оказал огромное влияние на мировой кинематограф, особенно на вестерны, включая трилогию Серджо Леоне о Человеке с Гармошкой, которая была прямо вдохновлена этой картиной.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Нюрнбергский процесс', 'In 1948, an American court in occupied Germany tries four Nazis judged for war crimes.', '1961-01-01', 1, '179 minutes', 'Judgment at Nuremberg', 8.2, 'Действие происходит в 1948 году в разрушенном послевоенном Нюрнберге, где проходит один из последующих военных трибуналов союзников над нацистскими преступниками. Главный судья Дэн Хейвуд, пожилой американский юрист из штата Мэн, прибывает в Германию, чтобы возглавить трибунал по делу четырех немецких судей, обвиняемых в преступлениях против человечности за их участие в нацистской системе правосудия.
+Хейвуд - человек принципиальный и справедливый, но он не имеет опыта работы с делами такого масштаба. Он поселяется в реквизированном особняке, который раньше принадлежал нацистскому генералу, и пытается понять сложную моральную и юридическую ситуацию, в которой оказался. Атмосфера в городе напряженная - начинается холодная война, Берлинский кризис обостряется, и американские власти больше заинтересованы в привлечении Западной Германии в качестве союзника против Советского Союза, чем в продолжении судебных процессов над нацистами.
+Главным обвиняемым является доктор Эрнст Янинг, в прошлом уважаемый юрист и министр юстиции, который считался одним из самых образованных правоведов Германии. До прихода нацистов к власти Янинг пользовался международным признанием за свои работы по правовой теории. Теперь он обвиняется в том, что извратил закон, поставив его на службу нацистской идеологии, и в соучастии в стерилизации, депортации и убийстве невинных людей.
+Обвинение представляет полковник Тэд Лоусон, молодой и энергичный военный прокурор, который страстно верит в необходимость привлечения к ответственности всех причастных к нацистским преступлениям. Лоусон собрал обширные доказательства против подсудимых, включая документальные свидетельства их решений, которые привели к страданиям и смерти тысяч людей.
+Защиту обвиняемых ведет Ганс Рольфе, опытный немецкий адвокат, который пытается представить своих подзащитных как людей, попавших в невозможную ситуацию и вынужденных подчиняться режиму под угрозой собственной жизни. Рольфе утверждает, что судьи просто исполняли законы, принятые правительством их страны, и что нельзя судить их по стандартам, которые не существовали в то время.
+В ходе процесса вскрываются ужасающие детали нацистской программы принудительной стерилизации и эвтаназии. Свидетели рассказывают о том, как немецкие суды выносили приговоры о стерилизации людей, признанных "неполноценными", как принимались решения об уничтожении психически больных, и как правовая система использовалась для легализации расовых законов и депортации евреев.
+Одним из ключевых свидетелей становится Ирен Хоффман, немецкая женщина, которая была осуждена за "расовое осквернение" за связь с пожилым евреем. Ее показания потрясают зал суда - она рассказывает, как была приговорена к тюремному заключению за отношения, которые по человеческим меркам были совершенно нормальными, но нацистские расовые законы объявили преступными.
+Другим важным свидетелем является Рудольф Петерсен, человек, который подвергся принудительной стерилизации по решению суда как "умственно отсталый". Петерсен - простой, но явно здравомыслящий человек, чья единственная "вина" заключалась в том, что он не соответствовал нацистским представлениям о расовой чистоте. Его показания демонстрируют абсурдность и жестокость нацистской евгеники.
+Во время процесса судья Хейвуд пытается понять менталитет обычных немцев и их отношение к происходившему. Он знакомится с фрау Бертольд, вдовой немецкого генерала, в чьем доме он живет. Она представляет точку зрения многих немцев, которые утверждают, что не знали о полном масштабе нацистских преступлений и что они сами были жертвами режима.
+Защитник Рольфе пытается переложить ответственность на высшее руководство нацистской партии, утверждая, что его подзащитные были лишь винтиками в большой машине и не могли повлиять на общую политику режима. Он также указывает на то, что многие страны, включая США, имели в своей истории подобные программы принудительной стерилизации, что делает американский суд лицемерным.
+Кульминацией процесса становится решение доктора Янинга дать показания от своего имени. До этого момента он хранил молчание, но теперь встает и произносит длинную речь, в которой пытается объяснить свои действия. Янинг признает, что знал о преступлениях режима и что участвовал в них, но утверждает, что делал это, веря в то, что служит высшим интересам Германии.
+Янинг рассказывает о том, как постепенно происходила коррупция правовой системы, как небольшие компромиссы приводили к все большим отступлениям от принципов справедливости, пока система полностью не извратилась. Он говорит о том, что в какой-то момент понял чудовищность происходящего, но было уже слишком поздно остановиться, не подвергнув риску себя и свою семью.
+Обвинитель Лоусон в своей заключительной речи страстно призывает к справедливости, утверждая, что преступления подсудимых не могут быть оправданы никакими обстоятельствами. Он подчеркивает, что если не привлечь к ответственности тех, кто извратил закон для служения злу, то правосудие потеряет всякий смысл.
+Защитник Рольфе в своей заключительной речи призывает к пониманию и милосердию, указывая на сложность исторической ситуации и на то, что его подзащитные были втянуты в события, которые превышали их способность контролировать. Он просит суд учесть человеческую слабость и невозможность принятия идеальных решений в условиях тоталитарного режима.
+После долгих размышлений судья Хейвуд выносит приговор. Он признает всех четырех подсудимых виновными в преступлениях против человечности и приговаривает их к пожизненному заключению. В своем решении он подчеркивает, что независимо от политических обстоятельств и давления режима, каждый человек несет личную ответственность за свои действия, особенно те, кто находился в положении, позволявшем влиять на судьбы других людей.
+Хейвуд объясняет, что закон не может быть отделен от морали, и что судьи, более чем кто-либо другой, должны были понимать разницу между справедливостью и несправедливостью. Он отвергает аргументы защиты о том, что подсудимые были лишь исполнителями, указывая на то, что их образование и положение налагали на них особую ответственность сопротивляться злу.
+После вынесения приговора Хейвуд встречается наедине с доктором Янингом в его камере. Янинг пытается еще раз объяснить свои действия, говоря, что никогда не предполагал, что дело дойдет до геноцида. На это Хейвуд отвечает, что преступления начались в тот момент, когда был осужден первый невинный человек, намекая на то, что все последующие ужасы были неизбежным следствием первых компромиссов с совестью.
+Фильм заканчивается титрами, сообщающими, что из-за изменения политической ситуации и начала холодной войны большинство осужденных нацистских преступников были освобождены досрочно в начале 1950-х годов. Эта информация подчеркивает трагическую иронию ситуации и ставит под вопрос эффективность попыток добиться справедливости в условиях меняющихся политических приоритетов.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('В джазе только девушки', 'After two male musicians witness a mob hit, they flee the state in an all-female band disguised as women, but further complications set in.', '1959-01-01', 1, '121 minutes', 'Some Like It Hot', 8.2, 'Фильм разворачивается в Чикаго 1929 года, в разгар эпохи сухого закона и господства организованной преступности. Джо и Джерри - два неудачливых музыканта, которые играют в подпольном джаз-клубе и с трудом сводят концы с концами. Джо играет на саксофоне и отличается большей практичностью и цинизмом, в то время как Джерри, контрабасист, более наивен и романтичен. Оба постоянно испытывают финансовые трудности и вынуждены искать любую возможность заработать на жизнь.
+Их обычная жизнь кардинально меняется в одну роковую ночь, когда они становятся случайными свидетелями массового убийства в гараже на Кларк-стрит. Банда гангстера Коломбо устраивает засаду конкурирующей группировке босса О''Банниона, и музыканты оказываются в неподходящем месте в неподходящее время. Они прячутся за автомобилями и наблюдают, как люди Коломбо методично расстреливают своих противников из автоматов Томпсона.
+Самое страшное происходит, когда главарь банды Коломбо замечает музыкантов. Джо и Джерри понимают, что их жизни теперь в смертельной опасности - они являются единственными свидетелями резни, которая потрясла весь Чикаго. Гангстеры начинают охоту на них, и друзьям приходится бежать, бросив все свое имущество и даже музыкальные инструменты.
+Скрываясь от преследования, Джо и Джерри понимают, что им необходимо немедленно покинуть Чикаго. Проблема заключается в том, что у них нет денег на билеты, а все их знакомые связи могут быть под наблюдением гангстеров. В отчаянных поисках работы они натыкаются на объявление о том, что женский джазовый оркестр "Милые леди и их лидер" ищет музыкантов для турне во Флориду.
+Не видя другого выхода, друзья принимают отчаянное решение переодеться женщинами и присоединиться к оркестру под именами Жозефина и Дафни. Джо становится саксофонисткой Жозефиной, а Джерри превращается в контрабасистку Дафни. Их маскировка довольно примитивна - парики, женская одежда, косметика и фальцет, но в спешке им приходится довольствоваться доступными средствами.
+Во время прослушивания они знакомятся с участницами оркестра, среди которых выделяется Шугар Кейн, солистка и укулелистка. Шугар - блондинка с детским голосом и наивным характером, которая мечтает о стабильных отношениях с богатым мужчиной. Она рассказывает новым подругам о своих неудачах в личной жизни - все ее романы были с саксофонистами, которые оказывались безответственными и бросали ее.
+Оркестр отправляется поездом во Флориду, в роскошный отель в Майами, где должен выступать на протяжении сезона. Поездка становится испытанием для друзей - им приходится постоянно следить за своим поведением, голосом и манерами, чтобы не выдать себя. Особенно трудно приходится Джерри-Дафни, который быстро входит во вкус женской роли и начинает флиртовать с мужчинами.
+В поезде Джо-Жозефина сближается с Шугар и узнает о ее мечтах найти миллионера, который обеспечит ей безбедную жизнь. Шугар признается, что устала от музыкантов и хочет найти мужчину с яхтой, который увезет ее от всех проблем. Джо понимает, что влюбляется в Шугар, но не может признаться ей в своих чувствах, находясь в женском обличье.
+По прибытии в Майами друзья размещаются в роскошном отеле "Семинол Риц", где их ждут комфортабельные условия и регулярные выступления. Однако их спокойствие нарушается, когда в том же отеле останавливается конвенция "Друзей итальянской оперы" - на самом деле это съезд гангстеров со всей страны, включая людей Коломбо.
+Джо разрабатывает план завоевания Шугар. Он создает альтернативную личность - наследника нефтяной империи Шелла младшего, который якобы владеет яхтой и не интересуется женщинами из-за психологической травмы. Джо надевает очки, меняет прическу и голос, превращаясь в застенчивого миллионера. Он рассчитывает, что Шугар попытается "излечить" его от фригидности, что даст ему возможность сблизиться с ней.
+План срабатывает лучше, чем ожидалось. Шугар проявляет инициативу и приглашает мнимого миллионера на свидание на его "яхту" - на самом деле Джо занимает яхту настоящего богача Осгуда Филдинга третьего, который отсутствует. На яхте происходит романтическое свидание, во время которого Шугар пытается пробудить страсть в якобы фригидном наследнике, а Джо наслаждается близостью с любимой женщиной.
+Тем временем Дафни-Джерри привлекает внимание самого Осгуда Филдинга, пожилого плейбоя-миллионера, который влюбляется в него с первого взгляда. Осгуд начинает активно ухаживать за Дафни, засыпая "ее" подарками и приглашениями на танцы. Джерри поначалу пытается отвязаться от навязчивого поклонника, но постепенно входит во вкус и начинает получать удовольствие от роли роковой женщины.
+Ситуация усложняется, когда Осгуд делает Дафни предложение руки и сердца. Джерри в панике рассказывает Джо о своих проблемах, но тот, поглощенный собственным романом с Шугар, не воспринимает серьезно переживания друга. Джерри даже начинает серьезно рассматривать возможность брака с миллионером, рассуждая о финансовых выгодах такого союза.
+Кульминация наступает, когда на съезде гангстеров происходит новая резня. Банда из Детройта устраивает засаду чикагской группировке Коломбо, и в отеле начинается настоящая война. Джо и Джерри, переодетые женщинами, случайно оказываются свидетелями этой бойни и снова видят, как Коломбо и его люди расстреливают противников.
+Коломбо замечает "девушек" и узнает в них свидетелей первого убийства в Чикаго. Теперь друзьям угрожает смертельная опасность даже во Флориде. Они понимают, что должны немедленно бежать из отеля, но не знают, как это сделать незаметно.
+Джо принимает решение рассказать Шугар правду о своей личности. Он признается ей, что он не миллионер, а обычный музыкант, который переодевался женщиной, чтобы попасть в оркестр. Однако он не говорит ей о гангстерах и причинах своего бегства. Шугар чувствует себя обманутой и разочарованной - снова саксофонист разбил ей сердце.
+Во время финального выступления оркестра в отеле Джо поет песню, глядя прямо на Шугар и вкладывая в исполнение всю свою любовь и отчаяние. Шугар понимает, что чувства Джо искренни, и прощает его обман. Однако их примирение прерывается появлением вооруженных людей Коломбо.
+Начинается захватывающая погоня по отелю. Джо и Джерри, все еще в женских нарядах, пытаются скрыться от гангстеров, которые стреляют не разбирая. Друзьям удается добраться до пристани, где их ждет Осгуд на своем катере. Шугар присоединяется к ним в последний момент, окончательно выбрав любовь вместо безопасности.
+На катере происходят объяснения. Джо снимает парик и женскую одежду, представляясь Шугар в своем настоящем виде. Джерри пытается объяснить Осгуду, что не может выйти за него замуж, перечисляя различные причины - он курит, не может иметь детей, у него не тот темперамент. На каждое возражение Осгуд находит понимающий ответ.
+В отчаянии Джерри срывает с себя парик, показывая Осгуду, что он мужчина. Однако и это не останавливает влюбленного миллионера, который произносит ставшую легендарной фразу: "Ну, никто не совершенен!" Эта реплика становится идеальным завершением комедии, показывая, что истинная любовь не знает границ и предрассудков.
+Фильм заканчивается сценой на катере, мчащемся по волнам навстречу закату. Джо и Шугар обнимаются, наконец-то открыв друг другу правду о своих чувствах. Джерри остается в недоумении от неожиданной реакции Осгуда, но и он, кажется, начинает видеть определенные преимущества в своем положении. Четверка героев направляется к новой жизни, оставив позади опасности и обман.
+История становится блестящей комедией о любви, дружбе и том, что ради счастья люди готовы идти на самые невероятные ухищрения. Фильм показывает, как обстоятельства могут заставить человека открыть в себе неожиданные качества и понять, что условности общества часто мешают истинным чувствам.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Земляничная поляна', 'After living a life marked by coldness, an aging professor is forced to confront the emptiness of his existence.', '1957-01-01', 1, '91 minutes', 'Smultronstället', 8.2, 'Фильм рассказывает историю семидесятишестилетнего профессора медицины Исака Борга, который готовится получить почетную степень доктора honoris causa в Лундском университете в честь пятидесятилетия своей научной деятельности. Старый профессор живет уединенно в своем доме в Стокгольме, погруженный в воспоминания и размышления о прожитой жизни. Он холоден и отстранен от окружающих, включая собственную семью.
+Накануне церемонии Исак видит странный и тревожный сон. Он идет по пустынным улицам города, где все часы показывают разное время, а стрелки некоторых отсутствуют. Он встречает человека без лица, который рассыпается прахом при прикосновении. Затем появляется траурная процессия с гробом, из которого выпадает тело, и к ужасу профессора, покойник оказывается им самим. Этот кошмар заставляет Исака задуматься о смысле своего существования и приближающейся смерти.
+Первоначально профессор планировал лететь в Лунд на самолете, но после тревожного сна принимает решение ехать на автомобиле. Его сопровождает невестка Марианна, жена сына Эвальда, которая находится в состоянии глубокого семейного кризиса. Марианна беременна, но размышляет о разводе из-за холодности и эгоизма мужа, который не желает иметь детей и повторяет характер своего отца.
+По дороге в Лунд они останавливаются у заброшенного летнего дома семьи Борг, где профессор провел детство и юность. Это место называется Земляничной поляной, и оно наполнено для Исака самыми светлыми воспоминаниями. Здесь он погружается в грезы о своей юности, видя себя молодым человеком, а также свою кузину и первую любовь Сару.
+В видении Исак наблюдает, как молодая Сара собирает землянику для дядюшки Арне, его дяди. Девушка весела, кокетлива и полна жизни. Она флиртует одновременно с Исаком и его братом Сигфридом, который более решителен и эмоционален. Сара колеблется между братьями, но в конце концов выбирает Сигфрида, выходит за него замуж и рожает ему детей. Эта потеря первой любви оставила глубокий след в душе Исака и во многом определила его замкнутый характер.
+Видение прерывается появлением настоящей молодой девушки по имени Сара, которая поразительно похожа на кузину профессора. Она путешествует с двумя молодыми людьми - Андерсом, изучающим теологию, и Виктором, будущим врачом. Молодые люди едут в Лунд и просят подвезти их. Исак соглашается, и их беседы о жизни, любви, науке и религии оживляют старого профессора.
+Андерс и Виктор постоянно спорят о существовании Бога и смысле жизни. Теолог верит в божественное провидение и утверждает, что наука не может объяснить все тайны бытия. Виктор, напротив, полагается только на научное знание и рациональное мышление. Сара пытается примирить друзей, но их философские разногласия продолжаются. Эти споры заставляют Исака размышлять о собственных убеждениях и жизненных принципах.
+По дороге попутчики встречают супружескую пару средних лет - инженера Стена и его жену Бритт, чья машина попала в аварию. Эта пара представляет собой образец несчастливого брака, полного взаимных упреков, презрения и ненависти. Они постоянно оскорбляют друг друга, обвиняют в неудачах и демонстрируют полное отсутствие любви и уважения. Исак видит в них отражение собственного неудачного брака и понимает, что его холодность разрушила семейное счастье.
+Во время остановки на заправке Исак снова погружается в воспоминания. Он видит сцену из своего детства, когда его дядя Арне читает молитву за семейным обедом в летнем доме. Вся большая семья собралась за столом - родители, дети, тети, дяди, кузены. Атмосфера наполнена теплом, любовью и взаимопониманием. Дядя благодарит Бога за дарованные блага и просит благословения для всех присутствующих. Это видение показывает Исаку, какой могла бы быть его жизнь, если бы он не замкнулся в себе.
+Следующее воспоминание переносит профессора в период его медицинской практики. Он видит себя молодым врачом, сдающим экзамен по медицине. Экзаменатор задает ему вопросы, на которые он не может ответить. Когда его просят поставить диагноз пациенту, он заявляет, что больной мертв, хотя тот жив и здоров. Экзаменатор обвиняет Исака в некомпетентности и, что еще хуже, в равнодушии и черствости сердца.
+Затем экзаменатор ведет Исака в лес, где он становится свидетелем сцены супружеской неверности. Его жена Карин изменяет ему с другим мужчиной, жалуясь любовнику на холодность и бесчувственность мужа. Она говорит, что живет с мертвецом, который не способен на настоящие чувства. Исак наблюдает эту сцену со стороны, понимая, что сам довел жену до измены своим равнодушием и неспособностью к эмоциональной близости.
+Проснувшись от этого тягостного видения, Исак обнаруживает, что Марианна и молодые люди беспокоятся о его состоянии. Марианна рассказывает ему о своих семейных проблемах, о том, что Эвальд не хочет детей и угрожает покончить с собой, если она родит ребенка. Она винит в холодности сына его отца, который никогда не проявлял настоящей отцовской любви и заботы.
+В разговоре с Марианной Исак начинает осознавать, как его эмоциональная холодность повлияла на сына и внуков. Эвальд вырос таким же отстраненным и неспособным к любви, как его отец. Марианна прямо говорит свекру, что он эгоист, который всю жизнь думал только о себе и своей карьере, игнорируя потребности близких людей в тепле и понимании.
+Прибыв в Лунд, Исак участвует в торжественной церемонии получения почетной степени. Его чествуют как выдающегося ученого и врача, прославившего университет своими научными достижениями. Однако во время церемонии профессор думает не о почестях, а о прожитой жизни и упущенных возможностях человеческого счастья.
+После церемонии к Исаку приходят его старые друзья и коллеги, выражая восхищение его научными заслугами. Молодая Сара и ее спутники также прощаются с профессором, благодаря его за поездку и желая счастья. Сара целует старика в щеку и говорит, что он очень добрый, хотя пытается скрыть это. Эти слова глубоко трогают Исака.
+Вечером в гостинице Исак встречается с сыном Эвальдом, который приехал на церемонию. В их разговоре отец пытается наладить отношения с сыном, рассказывая о своем долге перед ним. Исак предлагает простить долг и даже дать дополнительные деньги, но Эвальд холодно отвергает предложение, не желая быть обязанным отцу. Однако в конце разговора сын все же проявляет некоторую теплоту, соглашаясь на компромисс в отношениях с женой и будущим ребенком.
+Ночью Исак видит последний сон, который кардинально отличается от предыдущих кошмаров. Он видит себя молодым человеком на Земляничной поляне, где Сара ведет его к его родителям. Мать сидит у воды и штопает, отец ловит рыбу. Когда Сара показывает на родителей, они машут Исаку рукой через водную гладь. Это видение наполнено миром, прощением и надеждой на воссоединение с ушедшими близкими.
+Утром Исак просыпается с ощущением внутреннего покоя и просветления. Он звонит сыну и впервые за долгие годы говорит с ним тепло и по-отцовски. Эвальд сообщает, что они с Марианной решили сохранить брак и ждать ребенка. Профессор понимает, что его попытка наладить отношения с сыном не прошла даром.
+По дороге домой Исак и Марианна останавливаются у дома, где живет старая мать профессора, которой уже за девяносто лет. Старая женщина холодна и неприветлива, живет в окружении портретов умерших родственников и воспоминаний о прошлом. Она показывает Исаку старые фотографии, но в ее словах нет тепла, только констатация фактов. Исак видит в матери источник той эмоциональной холодности, которая передалась ему и его сыну.
+Вернувшись в Стокгольм, Исак обнаруживает, что его восприятие мира изменилось. Он по-новому видит своего слугу Агду, которая верно служила ему много лет. Профессор благодарит ее за заботу и впервые обращается к ней не как к прислуге, а как к человеку. Агда удивлена такой переменой в характере хозяина.
+Фильм завершается сценой, где Исак ложится спать и снова видит Земляничную поляну своего детства. На этот раз видение наполнено светом и радостью. Он видит своих родителей молодыми и счастливыми, они приветствуют его с любовью. Профессор понимает, что несмотря на ошибки и упущенные возможности, жизнь дала ему шанс на искупление и примирение с самим собой.
+История Исака Борга представляет собой глубокое размышление о смысле человеческого существования, о важности эмоциональных связей между людьми и о возможности духовного обновления даже в преклонном возрасте. Путешествие к месту получения почетной степени становится метафорическим путешествием к самопознанию и примирению с прошлым.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Седьмая печать', 'A man seeks answers about life, death, and the existence of God as he plays chess against the Grim Reaper during the Black Plague.', '1957-01-01', 1, '96 minutes', 'Det sjunde inseglet', 8.2, 'Фильм разворачивается в средневековой Швеции XIV века, во время опустошительной эпидемии чумы, которая выкашивает целые города и деревни. Рыцарь Антониус Блок возвращается домой после десяти лет участия в крестовых походах на Святой земле. Вместе с ним путешествует его верный оруженосец Йенс, простодушный и практичный человек, который сохранил здравый смысл и жизнелюбие, несмотря на все ужасы войны.
+Блок - человек глубоко религиозный, но мучимый сомнениями в существовании Бога и смысле жизни. Крестовые походы не принесли ему духовного просветления, которого он искал, а только усилили его внутренние терзания. Он видел слишком много жестокости, совершавшейся во имя веры, слишком много невинных страданий, чтобы сохранить наивную веру детства.
+На морском берегу, где они высаживаются, Блок встречает Смерть - мрачную фигуру в черном плаще, которая пришла за его душой. Смерть является ему в образе бледного человека с холодными глазами, и между ними завязывается философский диалог о жизни, смерти и существовании Бога. Блок не готов умереть, не получив ответов на мучающие его вопросы, и предлагает Смерти сыграть партию в шахматы на свою жизнь.
+Смерть соглашается на эту игру, и они начинают партию, которая будет продолжаться на протяжении всего путешествия Блока домой. Пока игра не закончена, рыцарь остается жив, но он понимает, что время его ограничено. Эта шахматная партия становится метафорой человеческой жизни - постоянной борьбы со смертью, попыткой отсрочить неизбежное и найти смысл существования.
+Блок и Йенс продолжают свой путь через опустошенную чумой страну. Повсюду они видят признаки социального и морального разложения. В деревнях и городах царит хаос, люди либо умирают от болезни, либо предаются разврату и пьянству, считая, что раз конец света близок, то нет смысла соблюдать моральные устои. Церковь проповедует покаяние и самобичевание, но сама погрязла в пороках.
+В одной из деревень путники встречают странствующих актеров - семью циркачей, состоящую из Йофа, его жены Мии и их маленького сына Микаэля. Йоф - простодушный мечтатель, который видит видения и верит в чудеса. Он рассказывает жене, что видел Деву Марию с младенцем Иисусом, которые гуляли по лугу и собирали цветы. Миа относится к фантазиям мужа с нежной снисходительностью, но любит его таким, какой он есть.
+Эта семья представляет в фильме чистоту и невинность среди всеобщего разложения. Они живут просто, любят друг друга, находят радость в мелочах - в игре с ребенком, в миске молока с земляникой, в солнечном дне. Их вера наивна, но искренна, и они не мучаются философскими сомнениями, которые терзают Блока.
+Блок наблюдает за этой семьей и завидует их простому счастью. В разговоре с Мией он пытается понять секрет их умиротворенности. Миа говорит ему, что они не думают о смерти и не ищут глубокого смысла жизни - они просто живут, любят и радуются каждому дню. Эта простая мудрость поражает рыцаря больше, чем все богословские трактаты.
+Путешествие продолжается, и компания путников увеличивается. К ним присоединяется кузнец Плог, который ищет свою неверную жену Лизу, сбежавшую с актером Скотом. Плог - грубый, но честный человек, который живет простыми инстинктами и не задается сложными вопросами. Его проблемы земные и понятные - измена жены, оскорбленная честь, желание мести.
+Они также встречают девушку, обвиненную в связях с дьяволом и приговоренную к сожжению. Блок пытается поговорить с ней, надеясь услышать что-то о дьяволе, который, по его мнению, мог бы подтвердить существование Бога. Но девушка оказывается просто душевнобольной, и ее бред не дает ответов на мучающие рыцаря вопросы.
+В пути они встречают группу религиозных фанатиков - флагеллантов, которые бичуют себя и призывают к покаянию. Их предводитель проповедует о грядущем Страшном суде и требует от людей искупления грехов через страдания. Эта мрачная процессия символизирует извращенную религиозность, которая вместо утешения приносит только страх и боль.
+Блок продолжает свою шахматную партию со Смертью, которая периодически появляется в различных обличьях. Иногда она предстает как священник в исповедальне, иногда как обычный путник. Рыцарь пытается выведать у Смерти тайны загробного мира, но та отвечает, что не знает больше живых и что за гранью смерти может быть только пустота.
+По мере приближения к замку Блока становится ясно, что Смерть выигрывает партию. Рыцарь понимает, что его время истекает, но он еще не готов смириться с поражением. В решающий момент он совершает единственный по-настоящему значимый поступок в своей жизни - жертвует собой, чтобы спасти семью актеров.
+Когда Смерть на мгновение отвлекается, Блок намеренно опрокидывает шахматную доску, создавая хаос на игровом поле. Этот жест дает Йофу, Мии и их сыну возможность незаметно скрыться. Смерть понимает, что произошло, но не препятствует побегу актеров. Она восстанавливает расположение фигур на доске и завершает партию, объявляя мат королю Блока.
+В замке рыцаря его ждет жена Катарина, которая провела десять лет в одиночестве, ожидая возвращения мужа. Встреча супругов лишена эмоций - слишком много времени прошло, слишком многое изменилось. Катарина стала холодной и отчужденной, а Блок остается поглощенным своими философскими исканиями даже в последние часы жизни.
+За ужином в замке собираются все спутники Блока - Йенс, кузнец Плог, его вернувшаяся жена Лиза, немая служанка. Они едят и пьют, зная, что это их последняя трапеза. Атмосфера напряженная - каждый по-своему готовится к встрече со смертью. Йенс остается верен себе, произнося циничные, но мудрые речи о бессмысленности существования и неизбежности конца.
+Внезапно в замок врывается Смерть в своем истинном обличье. Она пришла за всеми собравшимися, и теперь никто не может избежать своей судьбы. Смерть объявляет, что для каждого из них пробил час, и приказывает им взяться за руки для последнего танца.
+Начинается знаменитая сцена пляски смерти - все персонажи, взявшись за руки, следуют за мрачной фигурой в черном через холм на фоне грозового неба. Этот танец символизирует универсальность смерти, которая не делает различий между рыцарем и кузнецом, между верующим и скептиком. Все равны перед лицом неизбежного конца.
+Тем временем семья актеров, спасенная жертвой Блока, продолжает свой путь. Йоф видит видение - силуэты танцующих на холме и понимает, что это Смерть ведет свой последний хоровод с теми, кого они недавно встретили. Миа не видит этого видения, но верит мужу. Они продолжают путь со своим ребенком, символизируя продолжение жизни, надежду и обновление.
+Фильм завершается философским размышлением о смысле человеческого существования. Блок так и не получил ответов на свои вопросы о Боге и смысле жизни, но в последний момент совершил поступок, который дал его жизни значение - он спас невинную семью. Возможно, именно в таких актах самопожертвования и любви к ближнему заключается истинный смысл человеческого существования.
+История становится притчей о вечных вопросах человечества - о смерти и бессмертии, о вере и сомнении, о поиске смысла в seemingly бессмысленном мире. Фильм не дает простых ответов, но предлагает зрителю задуматься над глубочайшими вопросами бытия, показывая, что даже перед лицом неизбежной смерти человек может сохранить достоинство и совершить значимый выбор.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мужские разборки', 'Four men plan a technically perfect crime, but the human element intervenes...', '1955-01-01', 1, '118 minutes', 'Du rififi chez les hommes', 8.2,'Тони ле Стефанэ выходит из тюрьмы Санте в Париже после пяти лет заключения за вооруженное ограбление. Он стареющий преступник с больными легкими, который кашляет кровью и чувствует себя изможденным. Первым делом он отправляется к своему старому другу Жо ле Суэдуа, который живет со своей женой Луизой и маленьким сыном Тото в скромной квартире. Жо рассказывает Тони, что его бывшая возлюбленная Мадо теперь живет с Пьером Грюттером, владельцем ночного клуба и криминальным авторитетом. Тони болезненно переживает это предательство.
+Тони идет к Мадо в ее роскошную квартиру, которую ей обеспечил Грюттер. Он видит дорогую норковую шубу и другие подарки от нового любовника. В приступе ревности и гнева Тони срывает с Мадо одежду и жестоко избивает ее ремнем, требуя, чтобы она вернулась к нему. Мадо, избитая и униженная, тем не менее отказывается оставить Грюттера, понимая, что Тони не может дать ей той жизни, которую она ведет сейчас.
+На следующий день Жо предлагает Тони поучаствовать в ограблении ювелирного магазина Мейплс на улице де Риволи. План Жо заключается в том, чтобы разбить витрину и схватить драгоценности, но Тони считает этот план примитивным и опасным. Вместо этого он предлагает более сложную операцию - проникнуть в сам сейф магазина через потолок из квартиры наверху. Для этого им понадобятся специалисты.
+Тони и Жо обращаются к Марио Ферратти, опытному итальянскому взломщику сейфов, который живет со своей женой и работает днем как обычный рабочий. Марио долго колеблется, но в конечном итоге соглашается, понимая размер потенциальной добычи. К команде также присоединяется Сезар ле Миланэ, молодой и импульсивный миланец, протеже Марио, известный своими навыками взломщика и любовью к женщинам.
+Четверка преступников начинает тщательную подготовку. Они изучают здание ювелирного магазина, расположение охранной сигнализации, распорядок работы охраны и полицейских патрулей в районе. Тони арендует квартиру прямо над магазином под вымышленным именем, представляясь солидным коммерсантом. Они закупают необходимые инструменты: дрели, стетоскопы для прослушивания механизма сейфа, зонтик для сбора мусора при сверлении.
+Тони устанавливает жесткие правила: никакого оружия, никакого насилия, полная тишина во время операции. Он объясняет, что любое отклонение от плана может привести к провалу и длительному тюремному заключению. Марио изучает конструкцию сейфа и определяет, что для его вскрытия потребуется несколько часов кропотливой работы.
+Наступает ночь ограбления. В знаменитой получасовой сцене, снятой практически без диалогов и музыки, четверка осуществляет свой план. Они проникают в квартиру над магазином и начинают осторожно сверлить дыру в полу. Каждый звук может их выдать, поэтому они работают с предельной осторожностью. Марио ложится на пол и при помощи стетоскопа прослушивает, где проходят провода сигнализации. Они аккуратно просверливают отверстие и спускаются в магазин.
+Первым делом они нейтрализуют систему сигнализации, перерезав нужные провода. Затем Марио приступает к вскрытию сейфа. Это медленный и методичный процесс - он прослушивает механизм, определяет комбинацию и постепенно открывает замки. Остальные члены команды стоят на стреме и помогают с инструментами. Когда сейф наконец открывается, они обнаруживают огромное количество драгоценностей, золотых слитков и денег.
+Ограбление проходит идеально. Они забирают всю добычу, тщательно убирают за собой следы и покидают место преступления, не оставив никаких улик. На следующий день вся пресса пишет об ограблении века, полиция в растерянности, а четверка друзей делит добычу в безопасном месте. Тони настаивает на том, чтобы некоторое время никто не выходил на улицу с дорогими покупками и не привлекал к себе внимание.
+Однако молодой и импульсивный Сезар нарушает договоренность. Он дарит своей возлюбленной Вивиан, певице из ночного клуба Грюттера, дорогое бриллиантовое кольцо из награбленного. Вивиан, не подозревая об истинном происхождении подарка, с гордостью демонстрирует кольцо в клубе. Грюттер, который разбирается в драгоценностях, сразу понимает, что это одно из украшений, украденных из ювелирного магазина Мейплс, о чем писали в газетах.
+Грюттер и его люди - брат Реми и наркоман Луи по кличке Ле Малыш - начинают собственное расследование. Они выясняют, что Сезар связан с кражей, и через него выходят на остальных участников ограбления. Грюттер понимает, что у него есть шанс заполучить всю добычу от ограбления века.
+Банда Грюттера действует жестоко и решительно. Они похищают маленького Тото, сына Жо, прямо с улицы, когда мальчик играл с друзьями. Луиза, мать ребенка, в истерике обращается в полицию, но Грюттер через своих людей передает Жо ультиматум: вся добыча в обмен на жизнь сына. Жо в отчаянии понимает, что у него нет выбора.
+Тем временем Грюттер и его люди выслеживают других участников ограбления. Они находят Марио в его доме и жестоко пытают, требуя рассказать, где спрятаны драгоценности. Марио, несмотря на пытки, не выдает местонахождение клада, и Реми убивает его. Жена Марио находит его тело и в ужасе сообщает об убийстве.
+Сезар, узнав о похищении Тото, понимает, что это его вина, и решает попытаться спасти мальчика самостоятельно. Он проникает в логово Грюттера, но его быстро обнаруживают. Во время попытки бегства Сезар получает смертельное ранение от выстрела Луи и умирает, так и не успев рассказать, где находятся украденные драгоценности.
+Жо приходит к Тони и со слезами рассказывает о похищении сына. Тони, несмотря на свою болезнь и усиливающийся кашель с кровью, решает помочь другу и отомстить за убитых товарищей. Он понимает, что это может быть его последнее дело, но чувство долга и дружбы оказывается сильнее страха смерти.
+Тони разрабатывает план мести. Он методично изучает привычки и распорядок дня каждого члена банды Грюттера. Первой его жертвой становится Луи. Тони выслеживает наркомана в одном из притонов и хладнокровно убивает его из пистолета. Затем он отправляется на поиски Реми, брата Грюттера.
+Реми он находит в публичном доме, где тот развлекается с проститутками. Тони дожидается, когда Реми выйдет на улицу, и убивает его в темном переулке. Каждое убийство Тони совершает профессионально и хладнокровно, но его здоровье продолжает ухудшаться, и он понимает, что времени у него остается немного.
+Наконец настает время финальной схватки с самим Грюттером. Тони приходит в его ночной клуб, когда там идет представление. В зале полно посетителей, играет музыка, на сцене выступает Вивиан. Грюттер сидит за своим обычным столиком, не подозревая о надвигающейся опасности.
+Тони незаметно проникает в клуб и внезапно нападает на Грюттера. Завязывается жестокая драка, во время которой Грюттер пытается достать пистолет, но Тони оказывается быстрее и опытнее. Он убивает Грюттера, но сам получает тяжелое ранение в живот. Посетители клуба в панике разбегаются, начинается хаос.
+Истекающий кровью Тони обыскивает помещения клуба и находит маленького Тото, которого Грюттер держал в подсобке. Мальчик напуган, но жив и невредим. Тони берет ребенка на руки и выводит его из клуба к своей машине, припаркованной на улице.
+Несмотря на сильную боль и продолжающееся кровотечение, Тони сажает Тото на переднее сиденье и начинает долгую поездку через весь Париж к дому Жо. Это мучительное путешествие длится несколько километров по ночным улицам города. Тони едва держится за рулем, его сознание затуманивается от потери крови, но он упорно продолжает путь, понимая, что должен доставить мальчика домой живым.
+Машина медленно движется по пустынным ночным улицам. Тото сидит рядом, не до конца понимая, что происходит, но чувствуя, что добрый дядя везет его домой к папе и маме. Тони несколько раз останавливается, чтобы перевести дух и собраться с силами, но каждый раз заставляет себя продолжать путь.
+Наконец машина подъезжает к дому Жо. Тони останавливается у подъезда и последним усилием воли открывает дверцу машины, выпуская Тото. Мальчик бежит к дому, где его уже ждут обезумевшие от горя родители. Жо и Луиза со слезами радости обнимают своего сына, понимая, что Тони сдержал свое обещание и спас ребенка.
+Тони остается сидеть за рулем, его голова откидывается на спинку сиденья, и он тихо умирает от потери крови. Вскоре к дому подъезжают полицейские машины, привлеченные звуками стрельбы в ночном клубе. Полицейские обнаруживают мертвого Тони в машине, а Жо стоит на пороге дома, держа на руках спасенного сына. Фильм заканчивается кадром мертвого Тони, который даже после смерти выглядит умиротворенно, словно выполнивший свой последний долг перед друзьями.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('В случае убийства набирайте «М»', 'A former tennis player tries to arrange his wife''s murder after learning of her affair.', '1954-01-01', 1, '105 minutes', 'Dial M for Murder', 8.2, 'Тони Вендис, бывший профессиональный теннисист, живет в роскошной лондонской квартире со своей красивой женой Марго. Их брак уже давно дал трещину, и Марго тайно встречается с американским писателем детективных романов Марком Халлидеем, который приехал в Лондон по делам. Тони прекрасно знает об этой связи и даже следил за женой, но тщательно скрывает свою осведомленность. Проблема Тони заключается в том, что все семейное состояние принадлежит Марго, и в случае развода он останется ни с чем. Убийство жены представляется ему единственным способом сохранить богатство и при этом избавиться от неверной супруги.
+Тони начинает разрабатывать дьявольски изощренный план. Он разыскивает своего старого знакомого по Кембриджскому университету Чарльза Александра Свона, которого знал под фамилией Лесгейт. За годы после университета Свон скатился на социальное дно, занимается мелкими аферами и нуждается в деньгах. Тони устраивает случайную встречу со Своном в баре и приглашает его к себе домой якобы для дружеской беседы о старых временах.
+Когда Свон приходит в квартиру Вендисов, Тони раскрывает свои карты. Он показывает Свону письмо, которое тот написал некой женщине, с которой у него была интрижка, и которая впоследствии покончила с собой. Тони объясняет, что если это письмо попадет в руки полиции, Свона обвинят в доведении до самоубийства. Используя этот компромат как рычаг давления, Тони принуждает Свона согласиться убить Марго за тысячу фунтов стерлингов.
+План убийства разработан до мельчайших деталей. Тони договаривается о мужском ужине в клубе на субботний вечер и назначает время убийства на одиннадцать часов. Свон должен проникнуть в квартиру через балконную дверь, воспользовавшись ключом, который Тони спрячет для него под ковриком на лестничной площадке. Точно в одиннадцать Тони позвонит домой из клуба, Марго подойдет к телефону в гостиной, повернувшись спиной к балконной двери, и в этот момент Свон задушит ее шарфом. После этого Свон должен инсценировать ограбление, взять деньги из сумочки Марго и скрыться через балконную дверь, оставив ее открытой.
+В субботний вечер план приводится в действие. Тони находится в клубе в окружении друзей, создавая себе алиби. В половине одиннадцатого он извиняется и идет звонить жене, якобы чтобы сообщить, что задерживается. Свон тем временем проникает в квартиру через главный вход, используя оставленный ключ, поскольку балконная дверь оказывается заперта. Он прячется за шторами в гостиной и ждет телефонного звонка.
+Ровно в одиннадцать Тони звонит домой. Марго, которая читала книгу в постели, встает и идет в гостиную отвечать на звонок. Когда она поднимает трубку и поворачивается спиной к комнате, Свон выскакивает из своего укрытия и накидывает на ее шею шарф, пытаясь задушить. Марго отчаянно сопротивляется, хватается за письменный стол, нащупывает ножницы и в борьбе за жизнь всаживает их Свону в спину. Свон падает мертвым, а потрясенная Марго остается стоять с трубкой в руке, слушая обеспокоенный голос мужа, который не понимает, что происходит.
+Тони быстро возвращается домой и обнаруживает жену в состоянии шока и труп Свона на полу гостиной. Поняв, что его идеальный план провалился, Тони мгновенно переключается на запасной вариант. Он должен представить произошедшее не как неудавшееся убийство по найму, а как преднамеренное убийство, совершенное Марго. Тони быстро осматривает место происшествия и начинает переставлять улики.
+Он перекладывает тело Свона так, чтобы создать впечатление, будто тот упал, пытаясь достать сумочку Марго. Сумочку он подкладывает под труп, создавая видимость того, что Свон пытался ее украсть. Самое главное, Тони находит у Свона любовное письмо от Марка к Марго, которое он сам подложил заранее, предвидя возможность провала основного плана. Это письмо должно стать мотивом убийства - якобы Свон шантажировал Марго этим компрометирующим письмом.
+Когда прибывает полиция во главе с инспектором Хаббардом, Тони рассказывает придуманную версию событий. По его словам, Свон явился к ним домой и попытался шантажировать Марго письмом от Марка, требуя деньги за молчание. Марго в порыве гнева схватила ножницы и убила шантажиста. Тони изображает любящего мужа, который пытается защитить свою неверную, но раскаявшуюся жену.
+Марго пытается рассказать правду о том, что убила нападавшего в самообороне, но ее версия кажется неправдоподобной. Улики говорят против нее: письмо от любовника дает мотив, расположение тела и предметов указывает на преднамеренность, а не на самооборону. Марго арестовывают по обвинению в убийстве первой степени.
+Судебный процесс проходит неблагоприятно для Марго. Прокурор убедительно рисует картину ревнивой жены, которая убила шантажиста, чтобы скрыть свою измену. Адвокат Марго не может опровергнуть вещественные доказательства. Марк пытается помочь, нанимает частных детективов, но все их усилия тщетны. Присяжные выносят обвинительный вердикт, и Марго приговаривают к смертной казни через повешение.
+Инспектор Хаббард, опытный сыщик, начинает сомневаться в очевидности дела. Его настораживают несколько нестыковок. Во-первых, если Свон пришел за деньгами и шантажировал Марго, почему он не взял деньги из сумочки после того, как получил их? Во-вторых, как именно развивались события - почему Марго оказалась в положении, удобном для нанесения удара в спину? В-третьих, каким образом Свон попал в квартиру?
+Хаббард решает провести эксперимент и просит Тони воспроизвести события того вечера. Они приходят в квартиру, и Тони показывает, как, по его мнению, все происходило. Но внимательный инспектор замечает важную деталь: у Свона был обнаружен ключ от квартиры Вендисов, при этом балконная дверь была заперта изнутри на засов. Это означает, что Свон попал в дом через главный вход, используя ключ, а не проник через балкон, как утверждал Тони в своих показаниях.
+Хаббард понимает, что ключ Свон мог получить только от Тони заранее, что указывает на заговор между ними. Инспектор начинает разматывать клубок лжи. Он выясняет, что Тони и Свон учились в одном университете, что между ними была связь в прошлом. Постепенно вырисовывается картина убийства по найму, которое провалилось.
+Чтобы окончательно изобличить Тони, Хаббард устраивает хитроумную ловушку. Он говорит Тони, что собирается освободить квартиру и передать ее Марку, поскольку Марго скоро казнят. При этом инспектор намеренно оставляет ключ от квартиры в тайнике под лестницей, где его должен был найти Свон в ночь убийства. Хаббард прячется в квартире и наблюдает.
+Тони, понимая, что ключ может стать уликой против него, приходит за ним ночью. Он точно знает, где искать ключ, поскольку сам спрятал его там для Свона. Когда Тони находит ключ в тайнике, это окончательно доказывает его причастность к заговору. Хаббард выходит из укрытия и арестовывает Тони.
+Под тяжестью неопровержимых улик Тони вынужден признаться в своем преступлении. Выясняется вся изощренная схема: как он планировал убийство жены, как шантажировал Свона, как после провала плана переиначил все обстоятельства, чтобы обвинить Марго. Марго немедленно освобождают и снимают с нее все обвинения. Она воссоединяется с Марком, который все это время боролся за ее оправдание. Тони арестовывают по обвинению в покушении на убийство, сговоре с целью убийства и лжесвидетельстве. Ему грозит длительное тюремное заключение, а возможно, и смертная казнь за столь изощренную попытку убить собственную жену и подставить ее.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Токийская история', 'An old couple visit their children and grandchildren in the city, but receive little attention.', '1953-01-01', 1, '136 minutes', 'Tôkyô monogatari', 8.2, 'Фильм начинается в тихом приморском городке Ономити, где живут пожилые супруги Сюкити и Томи Хираяма. Сюкити уже на пенсии, а его жена Томи занимается домашним хозяйством. С ними живет их младшая дочь Кёко, которая работает учительницей в местной школе и до сих пор не замужем. Старики решают совершить долгожданную поездку в Токио, чтобы навестить своих взрослых детей, с которыми они давно не виделись. Это событие становится для них настоящим приключением, поскольку они редко покидают родные места.
+Прибыв в столицу, супруги направляются к своему старшему сыну Коити, который работает участковым врачом в одном из токийских районов. Коити живет в небольшом доме вместе с женой и двумя маленькими детьми. Несмотря на радость от встречи с родителями, Коити оказывается чрезвычайно занятым своей медицинской практикой. К нему постоянно приходят пациенты, он вынужден делать визиты к больным, и у него практически не остается времени для общения с отцом и матерью. Жена Коити также занята домашними делами и воспитанием детей, поэтому родители чувствуют себя несколько обузой в этом доме.
+После нескольких дней пребывания у сына старики перебираются к своей дочери Сигэ, которая содержит парикмахерскую в центральной части Токио. Сигэ живет над своим салоном вместе с мужем, и ее дом более просторный, чем жилище Коити. Однако и здесь родители сталкиваются с тем, что дочь полностью поглощена своим бизнесом. Парикмахерская работает с утра до вечера, постоянно приходят клиентки, и Сигэ не может уделить достаточно внимания матери и отцу. Более того, она начинает открыто выражать недовольство тем, что присутствие родителей мешает нормальному ходу дел в доме и в салоне.
+Единственным человеком, который встречает стариков с искренней радостью и теплотой, оказывается Норико - вдова их среднего сына Сёдзи, погибшего на войне восемь лет назад. Норико работает в офисе и живет скромно в небольшой квартире. Несмотря на то что она формально уже не является членом семьи, поскольку овдовела, она проявляет к свекру и свекрови больше внимания и заботы, чем их собственные дети. Норико берет выходной на работе и проводит целый день с Сюкити и Томи, показывая им токийские достопримечательности, водит их в Императорский дворец, в парк Уэно, рассказывает о городе и с удовольствием общается с ними.
+Тем временем Коити и Сигэ, чувствуя неудобство от присутствия родителей и желая избавиться от них деликатным способом, придумывают план отправить стариков на курорт Атами. Они представляют это как заботу о здоровье родителей, говорят о пользе горячих источников и морского воздуха, скидываются на поездку и бронируют им номер в гостинице. Родители, не желая быть обузой, соглашаются на эту поездку, хотя и не очень понимают необходимость такого отдыха.
+На курорте Атами пожилая пара попадает в совершенно чуждую им атмосферу. Курорт оказывается местом развлечений для молодежи и людей среднего возраста, которые приезжают сюда веселиться, пить и громко проводить время. В их гостинице каждую ночь проходят шумные вечеринки, молодые люди пьют саке, поют песни и танцуют до поздней ночи. Сюкити и Томи не могут спать из-за постоянного шума, чувствуют себя неуместно среди этого веселья и понимают, что этот курорт совершенно не подходит для людей их возраста и характера.
+Не выдержав даже одной ночи, старики принимают решение досрочно вернуться в Токио. Однако их неожиданное возвращение застает детей врасплох. Сигэ особенно недовольна тем, что родители вернулись раньше срока, поскольку она уже строила планы на эти дни без них. Коити также не может принять родителей, поскольку у него назначены важные встречи с пациентами. Чувствуя себя нежеланными гостями, родители решают разделиться.
+Сюкити отправляется к своему старому другу, с которым они вместе работали много лет назад. Этот друг, также пожилой человек, радушно принимает Сюкити в своем скромном жилище. Они проводят вечер, выпивая саке и вспоминая молодые годы, рассказывая друг другу о своих семьях, о том, как изменилась жизнь, как выросли дети. Этот вечер становится для Сюкити одним из немногих по-настоящему приятных моментов в токийской поездке.
+Томи тем временем отправляется в Осаку к младшему сыну Кэндзи. Поездка в поезде оказывается для нее тяжелой - она чувствует усталость и недомогание. В Осаке Кэндзи встречает мать с радостью, но вскоре становится ясно, что ее состояние серьезно ухудшилось. Томи слабеет с каждым часом, у нее поднимается температура, и она вынуждена лечь в постель. Понимая серьезность ситуации, Кэндзи срочно отправляет телеграммы всем родственникам, сообщая о болезни матери.
+Коити первым получает известие и немедленно выезжает из Токио в Осаку. За ним следует Сигэ, которая, несмотря на свою занятость, понимает серьезность момента. Норико также бросает все дела и приезжает к умирающей свекрови. Из родного Ономити приезжает Кёко. Вся семья собирается у постели Томи, которая лежит в традиционной японской комнате на футоне.
+Томи находится в сознании и может общаться с детьми, но всем понятно, что ее силы на исходе. Она говорит с каждым из детей, дает им последние наставления, благодарит за заботу. Особенно трогательными оказываются ее слова, обращенные к Норико, которой она выражает благодарность за верность памяти погибшего сына и за доброту, проявленную к ней и Сюкити. Томи мирно умирает в окружении всей семьи, держа за руку мужа.
+После смерти Томи тело перевозят в родной Ономити для проведения традиционной буддийской похоронной церемонии. В доме Хираяма собираются все родственники, соседи и друзья семьи. Проводится поминальная служба, во время которой буддийский монах читает сутры, а родственники и друзья прощаются с покойной. Церемония проходит в строгом соответствии с японскими традициями.
+Сразу после похорон дети начинают собираться в обратную дорогу. Коити спешит вернуться к своей медицинской практике в Токио, поскольку его отсутствие означает, что пациенты остаются без помощи. Сигэ также торопится вернуться к своему парикмахерскому салону, где ее ждут клиентки и накопившиеся дела. Перед отъездом она подходит к отцу и просит подарить ей одно из кимоно покойной матери на память. Сюкити, не подозревая о ее истинных намерениях, отдает ей красивое кимоно из шелка. Сигэ планирует либо продать его, либо перешить для себя, поскольку материал дорогой и качественный.
+Единственной, кто не спешит уезжать, остается Норико. Она понимает, как тяжело Сюкити остаться одному в доме, где все напоминает о покойной жене, и решает задержаться на несколько дней, чтобы поддержать его в этот трудный период. Она помогает ему разобрать вещи Томи, приготовить еду, просто составляет ему компанию в долгие вечера.
+В одном из таких вечеров между Сюкити и Норико происходит глубокий и откровенный разговор. Старик с горечью размышляет о том, как дети, вырастая, неизбежно отдаляются от родителей. Он говорит, что понимает - у Коити и Сигэ своя жизнь, свои заботы и обязанности, и они не могут постоянно думать о старых родителях. Это естественный ход вещей, но от понимания этого факта боль не становится меньше. Он благодарит Норико за всю доброту, которую она проявила к нему и Томи, особенно подчеркивая, что она единственная отнеслась к ним с искренней теплотой.
+Норико, в свою очередь, признается, что она не такая хорошая, как он думает. Она рассказывает, что иногда проходят целые дни, когда она не думает о своем покойном муже Сёдзи, и это вызывает у нее чувство вины. Она боится, что забывает его, что память о нем стирается, и это кажется ей предательством их любви. Сюкити мудро утешает ее, объясняя, что это совершенно нормально - жизнь должна продолжаться, и она не должна винить себя за то, что живет дальше. Он даже деликатно намекает, что она еще молода и могла бы выйти замуж снова, и в этом не было бы ничего плохого.
+В знак благодарности и как память о жене и сыне Сюкити дарит Норико наручные часы Томи - простые, но дорогие ей как память часы, которые покойная носила много лет. Этот жест глубоко трогает Норико, и она принимает подарок со слезами на глазах.
+Наконец приходит время и Норико уезжать в Токио. Сюкити и Кёко провожают ее на железнодорожную станцию. В поезде Норико сидит у окна и смотрит на проплывающие мимо пейзажи, размышляя о быстротечности жизни, о том, как быстро меняется все вокруг, как люди рождаются, взрослеют, стареют и умирают. Часы Томи тикают у нее на руке, напоминая о неумолимом течении времени.
+Фильм завершается сценой в опустевшем доме Хираяма. Сюкити и Кёко остаются одни в доме, который теперь кажется особенно пустым без Томи. Кёко выражает возмущение поведением старших детей, особенно Сигэ, которая даже на похоронах матери думала только о том, как получить что-то для себя. Она не понимает, как можно быть такими эгоистичными по отношению к собственным родителям.
+Однако Сюкити проявляет философское спокойствие и мудрость. Он объясняет дочери, что не следует слишком строго судить Коити и Сигэ. Дети неизбежно создают свои собственные семьи, у них появляются свои заботы, обязанности и приоритеты. Это естественный порядок вещей - каждое поколение живет своей жизнью, и родители не могут ожидать, что дети будут посвящать им всю свою жизнь. Это печально, но таков закон природы. Старик принимает эту реальность с достоинством, хотя боль от одиночества и непонимания детей остается с ним.
+В финальных кадрах камера медленно удаляется от дома, где остались только отец и дочь, показывая тихий приморский город, залив и горы на горизонте. Жизнь продолжается своим чередом, но для Сюкити она уже никогда не будет прежней без любимой спутницы жизни, с которой он прожил долгие годы.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Расёмон', 'The rape of a bride and the murder of her samurai husband are recalled from the perspectives of a bandit, the bride, the samurai''s ghost and a woodcutter.', '1950-01-01', 1, '88 minutes', 'Rashômon', 8.2, 'Расёмон (русское название)
+Действие фильма происходит в средневековой Японии в период Хэйан. Три человека - дровосек, монах и простолюдин - укрываются от проливного дождя под полуразрушенными воротами Расёмон в Киото. Дровосек и монах потрясены и подавлены тем, что им пришлось недавно пережить на судебном разбирательстве, которое касалось загадочного преступления в лесу. Простолюдин, заинтригованный их состоянием, выпытывает подробности истории.
+Дровосек рассказывает, что три дня назад он отправился в лес за дровами и наткнулся на тело мертвого самурая Канадзавы но Такэхико, пронзенного мечом. Рядом валялись женские вещи и обрывки дорогой ткани. Дровосек немедленно сообщил о находке властям, после чего началось расследование.
+На суде было заслушано четыре различных версии произошедшего. Первой свидетельствовала жена убитого самурая, красавица Масаго. Она рассказала, что они с мужем путешествовали по лесной дороге, когда на них напал разбойник Тадзёмару, известный своей жестокостью и похотливостью. Разбойник связал самурая и изнасиловал ее на глазах у беспомощного мужа. После этого Тадзёмару попытался увести ее с собой, но она, обезумев от стыда и отчаяния, схватила кинжал и в состоянии аффекта убила своего мужа, не в силах вынести его презрительный взгляд. Затем она потеряла сознание, а когда очнулась, кинжал торчал в груди мужа, а разбойник исчез.
+Вторую версию рассказал сам разбойник Тадзёмару, которого поймали через несколько дней после преступления. Он признался в нападении и изнасиловании женщины, но заявил, что убил самурая в честном поединке. По его словам, после изнасилования женщина потребовала от него убить мужа, поскольку не может жить, зная о своем позоре. Она сказала, что достанется тому из них, кто останется в живых. Тадзёмару развязал самурая, и они сражались на мечах. Разбойник одолел самурая в длительном и тяжелом бою, пронзив его грудь мечом. Однако когда он обернулся, чтобы взять женщину в награду, она исчезла, сбежав в лес.
+Третью версию рассказал сам мертвый самурай Такэхико через медиума - женщину, которая вошла в транс и передавала слова духа убитого. Дух самурая поведал совершенно иную историю. После того как разбойник изнасиловал его жену, та не только не сопротивлялась, но и умоляла Тадзёмару убить мужа и увезти ее с собой. Она говорила, что не может жить с двумя мужчинами, знающими ее позор. Разбойник, потрясенный такой низостью, спросил самурая, что тот хочет сделать с подобной женщиной - убить ее или отпустить. Самурай через медиума рассказал, что в этот момент разбойник пнул женщину и ушел, оставив супругов наедине. Жена в ярости и отчаянии тоже убежала. Самурай, оставшись один, связанный и оскорбленный изменой жены, не смог вынести позора и покончил с собой, вонзив кинжал себе в грудь.
+Простолюдин слушает эти противоречивые версии и замечает, что все они не могут быть правдой одновременно, поскольку кардинально отличаются друг от друга. Монах в отчаянии говорит, что потерял веру в человеческую природу, поскольку даже мертвые лгут.
+Тогда дровосек, который до этого молчал, признается, что он тоже лжет. На самом деле он не просто нашел тело самурая, а был свидетелем всего преступления, спрятавшись за деревьями. Он рассказывает четвертую версию событий, которая отличается от всех предыдущих.
+По словам дровосека, после изнасилования разбойник действительно предложил женщине уйти с ним, но она потребовала, чтобы сначала он освободил ее мужа. Когда Тадзёмару развязал самурая, тот отказался сражаться за такую женщину, заявив, что она не стоит риска. Женщина в ярости начала оскорблять обоих мужчин, называя их трусами и презирая их нежелание сражаться за нее. Она кричала, что настоящий мужчина должен был бы убить обидчика или умереть в попытке отомстить.
+Под градом оскорблений и насмешек женщины оба мужчины в конце концов взялись за мечи, но их поединок был далек от благородного сражения, описанного разбойником. Это была жалкая, трусливая драка двух испуганных людей, которые больше отступали, чем наступали. Они неумело размахивали мечами, падали, спотыкались о корни деревьев, и их движения больше напоминали панические метания, чем искусное фехтование. В конце концов Тадзёмару случайно пронзил самурая мечом, скорее от везения, чем от мастерства. Женщина в ужасе убежала в лес, а разбойник, схватив меч убитого, тоже скрылся.
+Простолюдин выражает недоверие и к этой версии, намекая, что дровосек тоже что-то скрывает. Он предполагает, что дровосек украл дорогой кинжал с места преступления, и именно поэтому боялся рассказать правду сразу. Дровосек не отрицает этого обвинения, что подтверждает корыстность его мотивов.
+Пока три человека спорят под воротами, дождь постепенно стихает, но их философские размышления о природе правды и человеческой морали прерывает плач младенца. Они обнаруживают, что кто-то подбросил новорожденного ребенка под ворота. Простолюдин немедленно начинает снимать с младенца дорогие одежды и амулеты, объясняя, что все равно ребенок умрет, так почему бы не взять вещи, которые могут пригодиться.
+Дровосек возмущается такой жестокостью и пытается остановить простолюдина. Тот в ответ обвиняет дровосека в лицемерии, напоминая о краже кинжала. Простолюдин уходит с украденными детскими вещами, оставляя дровосека и монаха наедине с плачущим младенцем.
+Дровосек берет ребенка на руки, и монах сначала подозревает, что тот тоже хочет что-то украсть или причинить вред младенцу. Однако дровосек объясняет, что у него самого шестеро детей, и он может взять еще одного. Он говорит, что хочет усыновить найденыша и воспитать его вместе со своими детьми.
+Монах, потрясенный этим проявлением человеческой доброты после всех услышанных историй о лжи, предательстве и жестокости, отдает ребенка дровосеку. Он говорит, что этот поступок восстановил его веру в человеческую природу и показал, что в людях все-таки есть добро.
+Дождь полностью прекращается, и солнце начинает пробиваться сквозь тучи. Дровосек уходит с младенцем на руках, направляясь домой к своей семье. Монах остается стоять под воротами Расёмон, глядя вслед удаляющемуся дровосеку, и его лицо выражает надежду и восстановленную веру в человечество.
+Фильм заканчивается символическими кадрами просветляющегося неба и древних ворот, которые служили свидетелями бесчисленных человеческих драм на протяжении веков. Основная идея картины заключается в том, что абсолютная правда может быть недостижима, поскольку каждый человек интерпретирует события через призму своих интересов, страхов и желаний, но человеческое сострадание и готовность к самопожертвованию все же способны преодолеть цинизм и отчаяние.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Все о Еве', 'A seemingly timid but secretly ruthless ingénue insinuates herself into the lives of an aging Broadway star and her circle of theater friends.', '1950-01-01', 1, '138 minutes', 'All About Eve', 8.2, 'Стареющая бродвейская звезда Марго Ченнинг находится на пике своей карьеры, играя главную роль в успешном спектакле. Ей сорок лет, и она начинает ощущать давление времени в мире театра, где молодость ценится превыше всего. Марго живет с режиссером Биллом Сэмпсоном, который на восемь лет младше ее, что добавляет ей неуверенности в отношениях. Ее лучшей подругой является жена драматурга Карен Ричардс, которая предана Марго, но иногда устает от ее капризов и истерик.
+Однажды вечером после спектакля Карен находит в театральной уборной молодую поклонницу по имени Ева Харрингтон. Девушка рассказывает трогательную историю о том, как обожает Марго, как следила за ее карьерой и даже переехала в Нью-Йорк из Сан-Франциско только ради того, чтобы видеть ее выступления. Ева говорит, что недавно овдовела - ее муж погиб на войне, и театр стал для нее единственным утешением. Карен, тронутая этой историей, знакомит Еву с Марго.
+Марго очарована преданностью молодой поклонницы и принимает ее под свое крыло. Ева становится личной помощницей Марго, выполняя различные поручения с удивительной эффективностью и преданностью. Она помогает с костюмами, организует быт, сопровождает Марго на светские мероприятия. Поначалу все восхищаются скромностью и трудолюбием Евы. Она кажется идеальной помощницей - никогда не жалуется, всегда готова помочь, искренне восхищается талантом Марго.
+Однако постепенно Ева начинает проявлять более амбициозные наклонности. Она изучает роль Марго, якобы чтобы лучше помогать ей, запоминает каждую реплику, каждое движение. Когда Марго заболевает, Ева предлагает заменить ее на репетиции, демонстрируя поразительное знание роли. Режиссер Билл и драматург Ллойд Ричардс поражены ее способностями.
+Влиятельный театральный критик Аддисон ДеВитт замечает Еву и начинает оказывать ей покровительство. Аддисон - циничный и расчетливый человек, который обладает огромной властью в театральном мире. Он может сделать карьеру актера или разрушить ее одной рецензией. Аддисон видит в Еве родственную душу - такую же амбициозную и беспринципную.
+Ситуация достигает критической точки, когда Карен, желая помочь Еве получить шанс, тайно сливает бензин из машины Марго перед спектаклем. Марго опаздывает на представление, и Ева выходит на сцену вместо нее. Ева блестяще справляется с ролью, получает восторженные отзывы прессы и внимание продюсеров. Это становится ее звездным часом.
+После этого успеха Ева становится все более дерзкой. Она начинает открыто конкурировать с Марго, добиваясь собственных ролей. Ллойд Ричардс пишет новую пьесу, и все ожидают, что главную роль получит Марго, но продюсеры предпочитают более молодую и перспективную Еву. Марго чувствует, что ее предают все, кому она доверяла.
+Отношения между Марго и Биллом начинают разрушаться под давлением этих событий. Марго становится все более подозрительной и ревнивой, устраивает сцены, обвиняет Билла в интересе к молодой Еве. Ее поведение становится все более невыносимым, что только отталкивает от нее близких людей и играет на руку Еве.
+Ева не останавливается на достигнутом. Она пытается соблазнить Билла, рассчитывая отбить его у Марго, но Билл видит ее насквозь и отвергает. Тогда Ева переключает внимание на Ллойда Ричардса, пытаясь использовать его чувства для продвижения своей карьеры. Карен начинает понимать, что совершила ошибку, помогая Еве, и пытается защитить свой брак.
+Постепенно всем становится ясно, что Ева - искусная манипулятор, которая использует людей для достижения своих целей. Выясняется, что многое в ее рассказе о себе было ложью. Она не была замужем за погибшим солдатом, не была простодушной поклонницей из провинции. Ева - расчетливая авантюристка, которая тщательно спланировала свое вторжение в жизнь Марго.
+Аддисон ДеВитт, который поначалу покровительствовал Еве, в конце концов берет ее под полный контроль. Он шантажирует ее, угрожая разоблачить ее ложь, и фактически делает ее своей собственностью. Ева понимает, что, победив Марго, она попала в еще более страшную зависимость от циничного критика.
+В финале фильма Ева получает престижную театральную премию за лучшую женскую роль. На церемонии награждения она произносит благодарственную речь, в которой лицемерно благодарит Марго за наставничество. Марго присутствует на церемонии, уже смирившаяся со своим поражением, но сохранившая достоинство.
+После церемонии Ева возвращается домой и обнаруживает там молодую поклонницу по имени Фиби Энн Девитт, которая поразительно напоминает ее саму несколько лет назад. Девушка рассказывает ту же трогательную историю о своей любви к театру и преданности Еве. Пока Ева принимает ванну, Фиби примеряет ее наградную статуэтку и мантию, репетируя благодарственную речь перед зеркалом. В этот момент становится ясно, что цикл повторяется - новая амбициозная молодая женщина готова использовать ту же схему, чтобы свергнуть Еву, как та когда-то свергла Марго.
+Марго тем временем находит свое счастье с Биллом, их отношения укрепляются после пережитого кризиса. Карен остается с Ллойдом, их брак выживает благодаря взаимной любви и пониманию. Все главные персонажи получают жестокий урок о природе амбиций, предательства и цене успеха в безжалостном мире шоу-бизнеса.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Сокровища Сьерра-Мадре', 'Two Americans searching for work in Mexico convince an old prospector to help them mine for gold in the Sierra Madre Mountains.', '1948-01-01', 1, '126 minutes', 'The Treasure of the Sierra Madre', 8.2, 'Действие фильма происходит в 1925 году в Мексике. Фред Доббс, безработный американец, бродяжничает по улицам мексиканского города Тампико, выпрашивая мелочь у туристов. Он несколько раз подходит к одному и тому же хорошо одетому американцу в белом костюме, каждый раз получая от него небольшую сумму. В конце концов благотворитель говорит ему, что пора бы заняться работой вместо попрошайничества.
+Доббс знакомится с Бобом Кертином, таким же безработным американцем, оказавшимся в похожем положении. Они находят работу у подрядчика Пэта Маккормика, который нанимает их для строительных работ. Маккормик обещает хорошую оплату, но после завершения работы отказывается платить обещанную сумму. Доббс и Кертин требуют свои деньги, но Маккормик прогоняет их, угрожая расправой.
+Разгневанные обманом, Доббс и Кертин находят Маккормика в местном баре и устраивают с ним драку, в результате которой отбирают причитающиеся им деньги. После этого инцидента они понимают, что им лучше покинуть город, пока не возникли серьезные проблемы с местными властями.
+В дешевой гостинице, где они остановились, Доббс и Кертин знакомятся с Говардом, пожилым американцем, который много лет прожил в Мексике и имеет богатый опыт золотоискательства. Говард рассказывает молодым людям захватывающие истории о поиске золота в горах Сьерра-Мадре, о том, как золото меняет людей, делая их жадными и подозрительными. Он предупреждает, что золото может принести не только богатство, но и проклятие, разрушив дружбу и доверие между партнерами.
+Несмотря на предупреждения старика о том, что поиск золота - это опасное предприятие, которое часто заканчивается трагически, Доббс и Кертин загораются идеей отправиться в горы на поиски сокровищ. У них есть небольшая сумма денег, которую они отобрали у Маккормика, но этого недостаточно для покупки необходимого снаряжения. Удача улыбается им, когда Доббс выигрывает в лотерею значительную сумму, которой хватает на приобретение всего необходимого для экспедиции.
+Трое мужчин покупают оружие, инструменты, ослов, припасы и отправляются в горы Сьерра-Мадре. Путешествие оказывается трудным и опасным. Им приходится преодолевать сложные горные тропы, переносить тяжести в условиях изнуряющей жары. По дороге их поезд подвергается нападению бандитов под предводительством некоего Золотой Шляпы, но троице удается отбиться от разбойников.
+Достигнув отдаленной горной местности, Говард благодаря своему опыту находит место, где можно искать золото. Они разбивают лагерь и начинают тяжелую работу по добыче драгоценного металла. Промывка песка и породы требует огромных физических усилий, работать приходится с утра до вечера под палящим солнцем. Постепенно их усилия начинают приносить плоды - они находят золотые крупинки, которые со временем превращаются в довольно внушительное количество золотого песка.
+По мере накопления золота между партнерами начинают возникать первые разногласия. Доббс становится все более подозрительным и жадным. Он начинает следить за своими товарищами, подозревая их в желании обмануть его или украсть его долю. Говард, как самый опытный, предлагает честно делить все найденное золото на три равные части, но Доббс все чаще выражает недовольство таким разделом, считая, что он работает больше других и заслуживает большей доли.
+Ситуация осложняется, когда к их лагерю приходит молодой американец по имени Джеймс Коуди, который утверждает, что заблудился в горах. Коуди явно заинтересован в том, что делают трое золотоискателей, и намекает на желание присоединиться к ним в качестве партнера. Доббс категорически против принятия нового компаньона, опасаясь, что им придется делить золото на четыре части вместо трех. Кертин более склонен помочь Коуди, считая, что они не должны оставлять человека в беде в этих диких местах.
+Спор между Доббсом и Кертином по поводу Коуди перерастает в серьезный конфликт. Доббс открыто заявляет, что готов применить силу, чтобы не допустить присоединения четвертого партнера. Напряжение достигает критической точки, когда появляются бандиты во главе с Золотой Шляпой, которые давно следили за золотоискателями. Коуди присоединяется к защитникам лагеря, но в завязавшейся перестрелке погибает от пули бандитов.
+После отражения нападения и смерти Коуди отношения между тремя оставшимися партнерами продолжают ухудшаться. Доббс становится все более параноидальным, он начинает спать с ружьем под рукой и подозревает Говарда и Кертина в заговоре против него. Он требует немедленного раздела золота и предлагает каждому забрать свою долю и разойтись в разные стороны.
+Ситуация кардинально меняется, когда в их лагерь приходят местные индейцы. Один из индейских детей тонет в горной реке, и Говард, используя свои медицинские знания, спасает мальчика, сделав ему искусственное дыхание. Благодарные индейцы воспринимают это как чудо и объявляют Говарда великим целителем и почти божеством. Они настаивают на том, чтобы он пошел с ними в их деревню и остался там в качестве их врача и духовного наставника.
+Говард понимает, что отказаться от такого предложения будет опасно, поскольку это может оскорбить индейцев. Кроме того, он устал от постоянных конфликтов с Доббсом и видит в этом предложении возможность начать новую жизнь. Он соглашается пойти с индейцами, оставляя свою долю золота Доббсу и Кертину и договариваясь встретиться с ними в Дуранго через некоторое время.
+Оставшись вдвоем, Доббс и Кертин собирают лагерь и начинают спуск с гор с тремя долями золота. Однако одиночество с Доббсом становится для Кертина настоящей пыткой. Доббс окончательно теряет рассудок от жадности и подозрительности. Он постоянно обвиняет Кертина в попытках украсть золото, проверяет и пересчитывает свою долю, не спит по ночам, охраняя мешки с драгоценным песком.
+Во время одной из стоянок конфликт достигает апогея. Доббс открыто заявляет, что не доверяет Кертину и считает его вором. В припадке ярости и паранойи он хватает ружье и стреляет в Кертина, ранив его в плечо. Раненый Кертин падает, а Доббс, думая, что убил товарища, забирает все золото и скрывается.
+Однако Кертин остается жив, хотя и тяжело ранен. Ему удается добраться до ближайшего поселения, где ему оказывают медицинскую помощь. Он рассказывает местным жителям о предательстве Доббса и просит помочь найти его.
+Тем временем Doббс, нагруженный тремя долями золота, медленно продвигается по горным тропам к цивилизации. Тяжесть груза и постоянный страх преследования делают его путешествие мучительным. Он вынужден часто останавливаться для отдыха, постоянно оглядывается, подозревая каждый шорох в кустах.
+В одном из безлюдных мест Доббса настигают бандиты во главе с Золотой Шляпой, которые все это время преследовали золотоискателей. Бандиты окружают Доббса и требуют отдать все золото. Доббс пытается сопротивляться, но силы неравны. В завязавшейся перестрелке Доббс получает смертельное ранение.
+Бандиты забирают у умирающего Доббса мешки с золотом, но в своем невежестве принимают золотой песок за обычную пыль. Они высыпают драгоценное содержимое мешков на землю, а сами мешки забирают как более ценные для них предметы. Ветер разносит золотой песок по пустыне, возвращая его земле, откуда он был добыт такими усилиями.
+Позже бандиты приходят в город, где пытаются продать вещи убитого Доббса. Их узнают по описанию как убийц золотоискателя, и местная полиция арестовывает всю банду. Золотая Шляпа и его подручные предстают перед судом и получают смертный приговор за убийство.
+Говард, завершив свое служение в индейской деревне, спускается в Дуранго, где встречается с выздоровевшим Кертином. Они узнают о судьбе Доббса и о том, что все их золото развеяно ветром по пустыне. Вместо отчаяния оба мужчины воспринимают эту новость с философским спокойствием и даже с некоторым облегчением.
+Говард смеется над иронией судьбы, говоря, что золото вернулось туда, откуда пришло, и что, возможно, так и должно было случиться. Он решает вернуться к индейцам, которые приняли его как своего и где он чувствует себя нужным и счастливым. Кертин тоже принимает философскую позицию по отношению к потере богатства и решает вернуться в Соединенные Штаты, чтобы начать новую жизнь, возможно, найти семью вдовы Коуди, которая, как он помнит, жила где-то в Техасе.
+Фильм заканчивается сценой, где Говард и Кертин прощаются друг с другом на вокзале. Говард садится в поезд, идущий обратно в горы к его новой семье индейцев, а Кертин - в поезд, направляющийся на север, в Соединенные Штаты. Оба мужчины расстаются как друзья, очистившиеся от золотой лихорадки и понявшие, что истинные сокровища заключаются не в материальных богатствах, а в человеческих отношениях, достоинстве и внутреннем покое. Их смех над иронией судьбы звучит в финальных кадрах как символ мудрости, которую они обрели через страдания и потери.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Быть или не быть', 'During the Nazi occupation of Poland, an acting troupe becomes embroiled in a Polish soldier''s efforts to track down a German spy.', '1942-01-01', 1, '99 minutes', 'To Be or Not to Be', 8.2, 'Быть или не быть (русское название)
+Действие фильма разворачивается в Варшаве в 1939 году, накануне и во время немецкой оккупации Польши. Главные герои - Йозеф Тура и его жена Мария, знаменитые актеры польского театра, которые играют в постановке "Гамлета". Йозеф исполняет роль принца датского и произносит знаменитый монолог "Быть или не быть", а Мария играет Офелию.
+В театральной труппе также работает молодой актер Бронский, который безнадежно влюблен в Марию. Каждый вечер, когда Йозеф начинает произносить монолог "Быть или не быть", Бронский по договоренности с Марией встает со своего места в зрительном зале и направляется за кулисы к ней в гримерную. Это их тайный сигнал для романтических встреч, что крайне задевает самолюбие Йозефа, поскольку зрители видят, как кто-то уходит во время его главной сцены.
+Тем временем в Польше нарастает военная напряженность. Молодой летчик Станислав Собински влюбляется в Марию после того, как увидел ее фотографию в витрине театра. Он добивается встречи с ней и, как и Бронский, получает разрешение приходить в ее гримерную во время монолога "Быть или не быть". Мария, тщеславная и любящая поклонение, наслаждается вниманием молодых людей, не придавая особого значения ревности мужа.
+Собински оказывается не только влюбленным поклонником, но и членом польского сопротивления. Когда 1 сентября 1939 года начинается война, он улетает в Англию, где присоединяется к польским военно-воздушным силам. В Лондоне он встречает профессора Силецкого, который якобы также сбежал из оккупированной Польши и собирает информацию о подпольном движении сопротивления.
+Собински доверчиво рассказывает Силецкому о деятелях польского сопротивления, включая подробности о руководителях подполья в Варшаве. Однако другие польские офицеры начинают подозревать, что Силецкий может быть немецким агентом. Когда эти подозрения подтверждаются, становится ясно, что Силецкий собирается вернуться в Варшаву со списком имен участников сопротивления, что приведет к их арестам и казням.
+Собински добровольно вызывается лететь в оккупированную Польшу, чтобы предотвратить катастрофу. Он должен найти и уничтожить Силецкого прежде, чем тот передаст список гестапо. Собински парашютируется в окрестностях Варшавы и пробирается в город, где связывается с подпольем.
+Тем временем в Варшаве жизнь кардинально изменилась. Немцы оккупировали город, ввели жесточайшие репрессии против польского населения. Театр теперь работает под немецким контролем и вынужден ставить пропагандистские спектакли. Йозеф и Мария продолжают играть, но теперь в постановках, прославляющих немецкое превосходство. Актеры вынуждены приспосабливаться к новой реальности, чтобы выжить.
+Собински тайно встречается с Марией и объясняет ей всю серьезность ситуации. Он рассказывает о предательстве Силецкого и о том, что многие участники сопротивления могут погибнуть, если не остановить шпиона. Мария понимает важность миссии и соглашается помочь, хотя это крайне опасно.
+План заключается в том, чтобы использовать театральные таланты и связи труппы для проникновения к Силецкому. Когда профессор прибывает в Варшаву, Мария под предлогом старого знакомства договаривается о встрече с ним в ресторане. Она должна выманить его в театр, где Собински сможет его убить или захватить.
+Однако план осложняется, когда Силецкий приводит с собой немецких офицеров. Мария, демонстрируя актерское мастерство, играет роль соблазнительной женщины, готовой к сотрудничеству с оккупантами. Она убеждает Силецкого, что хочет помочь немцам, используя свое влияние в театральных кругах.
+Силецкий, поверив в искренность Марии, соглашается приехать к ней домой для приватной беседы. Там его уже ждут Собински и другие члены сопротивления. Завязывается драка, во время которой Собински убивает предателя, но при этом понимает, что список с именами участников подполья уже попал в руки гестапо.
+Ситуация становится критической, когда немцы обнаруживают убийство Силецкого и начинают масштабные поиски убийц. Гестапо окружает театр и требует выдать всех, кто был связан с Силецким. Йозеф, узнав о происходящем, решает помочь жене и ее любовнику, несмотря на ревность и обиду.
+Актеры театра разрабатывают сложную схему обмана, используя свои профессиональные навыки. Йозеф переодевается в форму высокопоставленного немецкого офицера и, имитируя немецкий акцент, пытается провести гестаповцев. Другие актеры играют роли его подчиненных и создают видимость официальной немецкой операции.
+Самая напряженная сцена происходит, когда Йозефу приходится встретиться лицом к лицу с настоящим немецким полковником Эрхардтом, который командует поисковой операцией. Йозеф, используя все свое актерское мастерство, убеждает полковника, что он представляет секретную службу и ведет собственное расследование убийства Силецкого.
+Йозеф настолько убедителен в роли немецкого офицера, что Эрхардт не только верит ему, но и предлагает свою помощь. Более того, полковник оказывается поклонником театра и выражает желание посмотреть спектакль с участием знаменитых актеров. Йозеф вынужден согласиться на это представление, понимая, что это может стать либо их спасением, либо окончательной гибелью.
+Театральная труппа готовит специальный спектакль для немецкого командования. Это должна быть пропагандистская пьеса, прославляющая Гитлера и немецкое превосходство. Однако актеры тайно планируют использовать это представление для своего побега. Они разрабатывают план, согласно которому во время спектакля смогут незаметно покинуть театр и скрыться.
+Во время представления происходят невероятные события. Актеры, играя свои роли, одновременно осуществляют план побега. Йозеф в роли Гитлера произносит речь перед немецкими офицерами, а в это время другие члены труппы готовят путь к отступлению. Бронский, все еще влюбленный в Марию, жертвует собой, отвлекая внимание охранников.
+Кульминационный момент наступает, когда Йозеф, все еще в костюме Гитлера, должен пройти мимо немецких часовых. Его немецкий акцент и актерская игра настолько совершенны, что солдаты отдают ему честь, принимая за настоящего фюрера. Это позволяет всей группе беженцев добраться до заранее подготовленного самолета.
+Побег осуществляется в последний момент, когда немцы понимают, что их обманули. Начинается погоня, но самолет уже поднимается в воздух. Собински, который оказывается опытным летчиком, управляет машиной, а актеры находятся в пассажирском отсеке, не веря в то, что им удалось спастись.
+Во время полета происходит последняя драматическая сцена. Немецкие истребители пытаются перехватить беглецов, завязывается воздушный бой. Собински демонстрирует выдающееся мастерство пилотирования, уклоняясь от атак и прокладывая путь к свободе. Несколько напряженных минут решают судьбу всех пассажиров.
+Самолет успешно пересекает границу и приземляется в Англии, где беженцев встречают как героев. Польское правительство в изгнании высоко оценивает их вклад в борьбу против нацистов. Актеры получают возможность продолжить свою карьеру в Лондоне, где существует большая польская диаспора.
+Фильм завершается сценой в лондонском театре, где труппа снова ставит "Гамлета". Йозеф опять произносит монолог "Быть или не быть", но теперь эти слова звучат совершенно по-другому после всех пережитых испытаний. Мария сидит в зрительном зале и слушает мужа с новым пониманием и уважением. Их отношения изменились - теперь между ними нет тайн и недоверия.
+Собински также присутствует на спектакле, но теперь он не соперник Йозефа, а друг и союзник. Военные испытания и общая борьба против фашизма объединили всех троих. Бронский погиб в Варшаве, пожертвовав жизнью ради спасения друзей, и его память остается священной для всех участников событий.
+В финальной сцене камера показывает лица актеров и зрителей, среди которых много польских эмигрантов, которые нашли в театре частичку родины. Монолог "Быть или не быть" теперь звучит не просто как шекспировская философия, а как реальный выбор, который пришлось сделать каждому из героев - выбор между жизнью в покорности и смертью в борьбе за свободу.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Золотая лихорадка', 'A prospector goes to the Klondike in search of gold and finds it and more.', '1925-01-01', 1, '95 minutes', 'The Gold Rush', 8.2, 'Чарли Чаплин играет Маленького Бродягу, который отправляется на Аляску в разгар золотой лихорадки в надежде разбогатеть. Он плохо подготовлен к суровым условиям севера, одет в свой обычный костюм и котелок, совершенно не подходящие для арктического климата. Бродяга бредет по заснеженным горам, борясь с пургой и холодом.
+Во время сильной метели Бродяга случайно забредает в хижину, где скрывается бандит Черный Ларсен, который убил человека и теперь прячется от правосудия. Ларсен грубо выгоняет Бродягу, но тут же в хижину врывается еще один искатель золота - Большой Джим Маккей, который только что обнаружил богатую золотую жилу. Джим укрывается от той же метели, что и Бродяга.
+Ларсен пытается выгнать обоих незваных гостей, но Джим оказывается сильнее и заставляет бандита остаться. Троица вынуждена переждать бурю вместе в тесной хижине. Еды у них практически нет, и вскоре начинается настоящий голод. Мужчины едят свечи, ремни, гвозди - все, что может хоть как-то утолить голод.
+В бреду от голода Большому Джиму начинает мерещиться, что Бродяга превратился в гигантскую курицу. Джим пытается поймать и съесть воображаемую птицу, преследуя перепуганного Бродягу по хижине с топором. Бродяга в ужасе прячется и отбивается как может. Ситуация становится критической, когда они решают, что один из них должен пойти за едой, рискуя жизнью в пургу.
+Они тянут жребий, и проигравший должен выйти в метель. Жребий выпадает Ларсену, но тот обманывает товарищей и вместо поисков еды отправляется к золотой жиле Джима, намереваясь завладеть ею. По пути Ларсен погибает в снежной лавине, но перед смертью успевает переставить разметку границ участка, так что теперь местоположение жилы известно только ему.
+Бродяга и Большой Джим, не зная о смерти Ларсена, ждут его возвращения. Наконец появляется медведь, которого они убивают и съедают, спасаясь от голодной смерти. После этого метель утихает, и они расходятся в разные стороны. Джим отправляется искать свою золотую жилу, но не может ее найти из-за проделок Ларсена. Бродяга спускается в город.
+В городке Ном Бродяга влюбляется в танцовщицу салуна Джорджию. Девушка красива и популярна среди мужчин, но относится к странному маленькому искателю золота снисходительно, скорее с жалостью, чем с интересом. У Джорджии есть поклонник - здоровяк Джек Камерон, который ревнует ее к другим мужчинам и издевается над Бродягой.
+Бродяга находит работу по уборке снега и снимает небольшую хижину. Он безнадежно влюблен в Джорджию и мечтает произвести на нее впечатление. Когда Джорджия с подругами заходит к нему в хижину, спасаясь от преследований пьяного Джека, Бродяга приглашает их на новогодний ужин. Девушки легкомысленно соглашаются, не воспринимая приглашение всерьез.
+Бродяга тратит все свои скудные сбережения на праздничный ужин. Он покупает курицу, готовит изысканные блюда, украшает стол. В ожидании гостей он разучивает танец с двумя хлебными булочками, надетыми на вилки, - это становится одной из самых знаменитых сцен в истории кинематографа. Бродяга с трогательным изяществом заставляет булочки-ножки танцевать на столе.
+Но Джорджия и ее подруги не приходят. Они забыли о приглашении и веселятся в салуне. Бродяга ждет всю ночь, засыпая за накрытым столом. Утром он просыпается один, разочарованный и опустошенный. Звуки веселья из салуна напоминают ему о том, что его забыли.
+Тем временем Большой Джим продолжает искать свою золотую жилу. Он получает удар по голове и временно теряет память, не помня где находится его золото. Врач говорит ему, что память может вернуться, если он окажется в том месте, где получил травму. Джим вспоминает только то, что был в хижине с маленьким человеком в котелке, и начинает искать Бродягу по всему городу.
+Джим находит Бродягу и предлагает ему сделку - они вместе отправятся искать золотую жилу, и Бродяга получит половину найденного золота в обмен на помощь в поисках. Бродяга соглашается, надеясь разбогатеть и завоевать сердце Джорджии. Они отправляются в горы к той самой хижине, где когда-то голодали.
+Но за время их отсутствия хижина сильно сместилась из-за ветров и снегопадов. Она теперь стоит на самом краю обрыва, едва держась на скале. Ночью, пока Бродяга и Джим спят, хижина начинает медленно сползать к пропасти. Мужчины просыпаются и обнаруживают, что их жилище висит над бездной, качаясь от малейшего движения.
+Начинается отчаянная борьба за выживание. Каждое движение может привести к падению хижины в пропасть. Они пытаются осторожно выбраться, но хижина наклоняется все сильнее. В критический момент Бродяга срывается и повисает на веревке над обрывом, а Джим пытается вытащить его. Хижина окончательно срывается и падает в пропасть, но мужчины успевают выпрыгнуть на твердую землю.
+И тут происходит чудо - когда они осматривают место падения хижины, Джим внезапно восстанавливает память и понимает, что они находятся прямо рядом с его золотой жилой. Золото лежит буквально под ногами в огромных количествах. Они становятся мультимиллионерами за одну ночь.
+Год спустя Бродяга и Большой Джим возвращаются в Америку на роскошном пароходе как одни из самых богатых людей мира. Журналисты встречают их на пристани, фотографируют для газет. Для фотосессии Бродягу просят надеть свою старую одежду, чтобы показать контраст между прошлым и настоящим.
+На том же пароходе случайно оказывается Джорджия, которая едет в Америку как пассажирка третьего класса. Ее дела в городке Ном пошли плохо, и она решила попытать счастья в Штатах. Джорджия не узнает в элегантно одетом миллионере того странного маленького человека, который когда-то был в нее влюблен.
+Во время фотосессии Бродяга, одетый в свои старые лохмотья, случайно падает за борт парохода. Его вытаскивают моряки, и Джорджия, увидев промокшего человека в знакомой одежде, принимает его за безбилетного пассажира. Она пытается помочь ему спрятаться от коркорабельной охраны, не зная, что он на самом деле владелец всего парохода.
+Бродяга не сразу открывает ей правду, наслаждаясь ее заботой и вниманием. Наконец он признается, кто он такой, и Джорджия понимает, что отвергла когда-то человека, который искренне ее любил и который теперь стал одним из богатейших людей мира. Она осознает свою ошибку и понимает, что всегда относилась к нему несправедливо.
+В финале фильма Бродяга и Джорджия целуются, а журналисты фотографируют их для первых полос газет. Бедный искатель золота не только разбогател, но и завоевал сердце той, которую любил. История завершается счастливым концом, где любовь и упорство побеждают все невзгоды и обстоятельства. Маленький человек с большим сердцем получает заслуженную награду за свои страдания и верность своим чувствам.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Шерлок младший', 'A film projectionist longs to be a detective, and puts his meagre skills to work when he is framed by a rival for stealing his girlfriend''s father''s pocketwatch.', '1924-01-01', 1, '45 minutes', 'Sherlock Jr.', 8.2, 'Главный герой фильма - молодой человек, работающий киномехаником в небольшом кинотеатре провинциального города. Он мечтает стать великим детективом и в свободное время изучает учебник по криминалистике, пытаясь освоить искусство дедукции и расследования преступлений. Параллельно с работой в кинотеатре он подрабатывает дворником, подметая улицы и убирая мусор.
+Киномеханик влюблен в девушку, которая живет с отцом в их доме. У девушки есть еще один поклонник - местный щеголь, одетый по последней моде, который также претендует на ее руку. Этот соперник значительно богаче главного героя и может позволить себе дорогие подарки.
+Киномеханик решает купить своей возлюбленной коробку шоколадных конфет в подарок. Он приходит в магазин, но обнаруживает, что у него есть деньги только на самую маленькую коробку конфет за один доллар. Продавец по ошибке дает ему коробку за четыре доллара, но когда обнаруживается ошибка, главному герою приходится довольствоваться крошечной коробочкой.
+Тем временем его соперник приходит в тот же магазин и покупает огромную коробку дорогих конфет за четыре доллара. Когда оба поклонника приходят к девушке со своими подарками, контраст между маленькой коробочкой киномеханика и роскошной коробкой щеголя становится очевидным и болезненным.
+Ситуация усугубляется, когда соперник разрабатывает коварный план, чтобы скомпрометировать киномеханика. Он крадет дорогие карманные часы у отца девушки, а затем подбрасывает их киномеханику, одновременно оставляя у него дома цепочку от этих часов в качестве улики. После этого он идет к отцу девушки и сообщает ему о пропаже часов, предлагая помочь в их поиске.
+Когда обнаруживается кража часов, подозрение естественным образом падает на киномеханика, особенно после того, как у него находят цепочку. Отец девушки обвиняет его в воровстве и выгоняет из дома. Девушка, поверив обвинениям против своего поклонника, отвергает его и склоняется к другому претенденту на ее руку.
+Опечаленный и униженный киномеханик пытается провести собственное расследование, чтобы доказать свою невиновность. Он следует за своим соперником, пытаясь найти доказательства его вины, но все его попытки заканчиваются неудачей. Более того, его любительские детективные методы только создают ему дополнительные проблемы и делают его еще более подозрительным в глазах окружающих.
+Расстроенный неудачами в реальной жизни, киномеханик возвращается к своей работе в кинотеатре. В этот вечер показывают детективный фильм под названием "Сердца и жемчуга", в котором рассказывается история похожего преступления. Главные герои фильма удивительно напоминают людей из его собственной жизни - есть красивая девушка, ее отец, благородный герой и подлый злодей.
+Во время сеанса, сидя в будке киномеханика, главный герой засыпает от усталости и разочарования. Во сне его душа покидает тело и направляется к экрану. Он буквально входит в фильм, который показывается на экране, становясь его главным героем - великим детективом по имени Шерлок младший.
+В мире кинофильма киномеханик превращается в элегантно одетого детектива в цилиндре и с тростью. Обстановка вокруг него роскошная - богатый особняк с дорогой мебелью, произведениями искусства и изысканными интерьерами. Девушка в этом мире - дочь богатого человека, а злодей планирует украсть драгоценное жемчужное ожерелье.
+Шерлок младший демонстрирует невероятные детективные способности, которых не было у скромного киномеханика в реальной жизни. Он легко разгадывает сложные загадки, видит улики там, где другие ничего не замечают, и демонстрирует блестящую дедукцию. Однако злодеи не собираются сдаваться без борьбы и строят планы по устранению назойливого детектива.
+В киномире начинается череда невероятных погонь и трюков. Злодеи пытаются убить Шерлока младшего самыми изощренными способами. Они подкладывают взрывчатку в бильярдный стол, где он играет, но детектив каким-то чудом избегает смерти. Они пытаются отравить его, подсыпав яд в его напиток, но и эта попытка проваливается.
+Одна из самых захватывающих сцен происходит, когда Шерлок младший преследует злодеев на мотоцикле. Водитель мотоцикла падает, но детектив, не заметив этого, продолжает "ехать" на мотоцикле без водителя, при этом мотоцикл каким-то образом продолжает двигаться и даже перепрыгивает через разрушенный мост. Эта сцена становится одним из самых знаменитых трюков в истории кинематографа.
+Погоня продолжается с использованием самых разных транспортных средств. Шерлок младший прыгает с поезда в воду, переодевается в различные маскировки, демонстрирует акробатические способности и ловкость, которые граничат с магией. Каждая попытка злодеев навредить ему оборачивается против них самих.
+В конце концов Шерлок младший разоблачает преступников, спасает девушку и восстанавливает справедливость. Злодей получает по заслугам, украденное жемчужное ожерелье возвращается к законному владельцу, а детектив завоевывает любовь и восхищение прекрасной девушки.
+Однако в это время в реальном мире происходят свои события. Девушка, которая изначально поверила обвинениям против киномеханика, начинает сомневаться в виновности своего отвергнутого поклонника. Она решает провести собственное расследование и начинает следить за своим новым кавалером - щеголем, который добивался ее руки.
+Девушка обнаруживает, что щеголь пытается продать украденные часы своего отца в ломбарде. Она следует за ним и становится свидетелем того, как он получает деньги за продажу краденого. Это открытие полностью меняет ее представление о том, что произошло. Она понимает, что киномеханик был невиновен, а настоящим вором является тот, кто его обвинял.
+Девушка спешит в кинотеатр, чтобы сообщить киномеханику о своем открытии и попросить у него прощения за то, что поверила ложным обвинениям. Она приходает в будку киномеханика и находит его спящим во время сеанса.
+В этот момент происходит пробуждение главного героя. Его приключения в качестве Шерлока младшего оказываются сном, но этот сон дал ему уверенность в себе и понимание того, что справедливость в конце концов восторжествует. Девушка будит его и рассказывает о том, что она узнала о настоящем воре.
+Киномеханик счастлив услышать, что его имя очищено от обвинений, но он все еще чувствует себя неуверенно в отношениях с девушкой. Он не знает, как себя вести, как проявить свои чувства. В этот момент он смотрит на экран, где все еще идет романтический фильм, и решает учиться искусству ухаживания у киногероев.
+На экране герой фильма нежно берет героиню за руку. Киномеханик повторяет этот жест со своей возлюбленной. Затем киногерой целует девушку, и реальный киномеханик тоже целует свою подружку. Но когда на экране появляется сцена, где герой показан уже женатым с несколькими детьми, киномеханик в замешательстве чешет голову, не понимая, как так быстро перейти к этому этапу отношений.
+Фильм заканчивается этой комической сценой, где искусство кино становится учебником жизни для простого киномеханика, который благодаря своим мечтам о детективной работе и магии кинематографа смог не только очистить свое имя, но и завоевать сердце любимой девушки. Реальность и кинофантазия переплетаются, показывая силу мечты и воображения в преодолении жизненных трудностей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Портрет девушки в огне', 'On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.', '2019-01-01', 1, '122 minutes', 'Portrait de la jeune fille en feu', 8.1, 'Действие фильма происходит в Бретани в конце XVIII века. Молодая художница Мариан получает заказ написать свадебный портрет Элоизы, дочери состоятельной графини. Элоиза должна выйти замуж за миланского дворянина, которого никогда не видела, и портрет предназначен для жениха, чтобы тот мог увидеть свою будущую невесту до свадьбы.
+Мариан прибывает на изолированный остров у берегов Бретани, где в старинном особняке живет графиня со своей дочерью. Она узнает, что предыдущий художник не смог завершить работу, поскольку Элоиза категорически отказывается позировать. Девушка не желает выходить замуж и всеми способами саботирует приготовления к свадьбе, включая создание портрета.
+Графиня вынуждена уехать на несколько дней по делам, и она поручает Мариан хитростью написать портрет. Художница должна притвориться компаньонкой, которая составит Элоизе компанию на прогулках, и тайно изучать ее лицо, чтобы потом по памяти создать портрет. Мариан представляется как дама-компаньонка, и между женщинами завязывается дружба.
+Элоиза - красивая, умная и своенравная девушка, которая чувствует себя пленницей в доме матери. Она мечтает о свободе и боится предстоящего замужества, которое окончательно лишит ее независимости. Старшая сестра Элоизы несколько лет назад покончила с собой, бросившись со скалы, не желая выходить замуж, и это событие наложило мрачный отпечаток на всю семью.
+Мариан и Элоиза проводят дни, гуляя по побережью, читая книги и ведя долгие беседы. Мариан тайно изучает черты лица Элоизы, ее манеры, выражения, стараясь запомнить каждую деталь для будущего портрета. Она делает это настолько искусно, что Элоиза не подозревает об истинной цели их встреч.
+Между женщинами постепенно возникает глубокая эмоциональная связь. Они обсуждают искусство, литературу, философию, делятся сокровенными мыслями о жизни, любви и свободе. Элоиза рассказывает о своих страхах перед браком и материнством, о желании самой выбирать свою судьбу. Мариан, которая как художница пользуется большей свободой, чем большинство женщин того времени, понимает чувства Элоизы.
+Постепенно дружба перерастает в нечто большее. Между женщинами возникает романтическое влечение, которое они сначала пытаются скрыть даже от самих себя. Это чувство усиливается от осознания того, что их время вместе ограничено - скоро вернется графиня, портрет будет закончен, и Элоизе придется готовиться к отъезду к жениху.
+В доме также живет служанка София, молодая женщина, которая оказывается беременной. Она просит помощи у Мариан и Элоизы, поскольку не может родить ребенка - это разрушит ее жизнь и карьеру. Женщины помогают Софии найти знахарку, которая может прервать беременность. Эта поездка в деревню к целительнице становится важным эпизодом, показывающим солидарность между женщинами разных социальных слоев.
+Во время этой поездки Мариан и Элоиза становятся еще ближе. Они видят, как тяжела участь женщин, не имеющих возможности контролировать свою судьбу, и это укрепляет их собственную связь. После возвращения домой напряжение между ними достигает пика.
+Однажды вечером Элоиза случайно обнаруживает, что Мариан рисует ее портрет. Она понимает, что была обманута, и чувствует себя преданной. Элоиза в ярости confrontует Мариан, обвиняя ее в том, что та использовала их дружбу в корыстных целях. Она чувствует, что Мариан украла ее образ без разрешения, превратила ее в объект для чужого взгляда.
+Мариан пытается объяснить, что у нее не было выбора, что это была работа, порученная матерью Элоизы. Но она также признается, что в процессе работы ее чувства изменились, что теперь она рисует не просто по заказу, а потому что хочет запечатлеть красоту Элоизы. Между женщинами происходит болезненное объяснение, во время которого они наконец признаются друг другу в любви.
+Элоиза прощает Мариан, и они проводят вместе последние дни перед возвращением графини. Эти дни наполнены особой интенсивностью, поскольку обе понимают, что их отношения обречены. Они не могут быть вместе в обществе XVIII века, где такие отношения между женщинами немыслимы и опасны.
+Мариан заканчивает портрет, но теперь это не просто заказная работа, а произведение искусства, созданное с любовью. Она пишет Элоизу такой, какой видит ее - живой, страстной, свободной, не скованной условностями. Портрет получается удивительно живым и выразительным.
+Когда графиня возвращается, она одобряет портрет и готовится отправить его жениху дочери. Элоиза смотрит на свое изображение и видит себя глазами Мариан - она понимает, что художница сумела передать не только внешнее сходство, но и внутреннюю сущность.
+Приближается день отъезда Мариан. Женщины понимают, что больше никогда не увидятся. Они проводят последнюю ночь вместе, говорят о будущем, о том, что будут помнить эти дни всю жизнь. Элоиза просит Мариан нарисовать еще один портрет - для нее самой, чтобы у нее осталась память об их любви.
+Мариан рисует второй портрет - более интимный и личный. На этом изображении Элоиза предстает в момент чтения, когда уголок ее платья охвачен пламенем камина. Этот образ символизирует страсть, которая сжигает их обеих, и дает название всему фильму - "Портрет девушки в огне".
+Утром Мариан уезжает с острова. Прощание происходит в присутствии графини и слуг, поэтому женщины не могут выразить свои чувства открыто. Они обмениваются формальными словами благодарности, но их взгляды говорят гораздо больше. Элоиза остается на острове, готовиться к свадьбе и отъезду в Италию.
+Фильм завершается эпилогом, который происходит много лет спустя. Мариан, ставшая известной художницей, живет в Париже и преподает живопись. Однажды ученица показывает ей книгу с репродукциями, среди которых она узнает картину Элоизы. Это автопортрет, на котором Элоиза изображена с маленькой девочкой - очевидно, своей дочерью.
+В углу автопортрета Мариан замечает деталь, которую может понять только она - крошечное изображение женщины в белом платье на фоне пламени. Это отсылка к их последнему портрету, знак того, что Элоиза сохранила память об их любви и нашла способ зашифровать эту память в своем искусстве.
+Позднее Мариан идет на концерт, где исполняют "Времена года" Вивальди. Она замечает в зрительном зале элегантную даму средних лет, в которой узнает Элоизу. Женщины сидят далеко друг от друга и не разговаривают, но Мариан наблюдает за реакцией Элоизы на музыку. Когда начинает звучать особенно эмоциональная часть произведения - та самая мелодия, которую они когда-то слушали вместе на острове - Элоиза не может сдержать слез.
+Мариан понимает, что Элоиза тоже помнит их время вместе, что музыка вызывает у нее те же воспоминания. Они не подходят друг к другу, не разговаривают, но этот момент говорит о том, что их любовь осталась живой в памяти обеих, несмотря на прошедшие годы и жизненные обстоятельства.
+Фильм заканчивается кадром лица Элоизы, слушающей музыку с закрытыми глазами, полностью погруженной в воспоминания о тех нескольких днях, которые стали самыми важными в ее жизни. Камера медленно приближается к ее лицу, показывая игру эмоций, и зрители понимают, что настоящая любовь может существовать вне времени и обстоятельств, оставаясь в памяти как самое дорогое сокровище.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Пинк', 'When three young women are implicated in a crime, a retired lawyer steps forward to help them clear their names.', '2016-01-01', 1, '136 minutes', 'Pink', 8.1, 'Фильм начинается в Дели, где три молодые независимые женщины живут в съемной квартире. Миналь Арора работает в небольшой компании, Фалак Али изучает дизайн, а Андреа Тарианг работает в спа-салоне. Девушки ведут современный образ жизни, работают, развлекаются и не зависят от родительского контроля, что для консервативного индийского общества является довольно смелым.
+Однажды вечером девушки отправляются в ресторан, где знакомятся с группой влиятельных молодых людей из богатых семей. Среди них Раджвир, племянник влиятельного политика, его друзья Риши и Вишал. Мужчины приглашают девушек продолжить вечер в загородном коттедже. Поначалу все выглядит как обычная вечеринка с выпивкой и музыкой.
+Однако ситуация быстро выходит из-под контроля. Раджвир начинает принуждать Миналь к близости против ее воли. Когда девушка решительно отказывается и пытается уйти, Раджвир становится агрессивным и пытается изнасиловать ее. В отчаянии Миналь хватает бутылку и бьет Раджвира по голове, ранив его. Девушки в панике убегают с вечеринки и возвращаются домой.
+На следующий день начинается настоящий кошмар. Раджвир и его друзья, используя свои связи и влияние, начинают мстить девушкам. Они подают заявление в полицию, обвиняя Миналь в нападении, искажая факты и представляя себя жертвами. Полиция, находящаяся под влиянием коррумпированной системы, встает на сторону влиятельных молодых людей.
+Девушек начинают преследовать, им угрожают по телефону, их репутацию целенаправленно уничтожают. Коллеги и знакомые отворачиваются от них, услышав слухи об их "распутном" поведении. Общество моментально клеймит их как "плохих девочек", которые сами спровоцировали ситуацию своим поведением, одеждой и образом жизни.
+Ситуация ухудшается, когда Раджвир и его друзья подкупают некоторых свидетелей и фабрикуют доказательства против девушек. Миналь теряет работу, Фалак отчисляют из учебного заведения, а Андреа увольняют из спа-салона. Их домовладелец требует, чтобы они освободили квартиру, не желая связываться с "такими девушками".
+В отчаянии девушки обращаются к нескольким адвокатам, но те отказываются взяться за их дело, опасаясь испортить отношения с влиятельными людьми. Кажется, что справедливости не добиться, и девушки остаются один на один с коррумпированной системой.
+Спасение приходит неожиданно. Сардип Дипак Сегал, пожилой адвокат на пенсии, который живет по соседству с девушками, становится свидетелем их страданий. Сегал - человек с принципами, бывший защитник, который всю жизнь боролся за справедливость. Он страдает от биполярного расстройства и проходит лечение, но его моральные принципы непоколебимы.
+Сегал предлагает свои услуги девушкам бесплатно. Поначалу они сомневаются, видя его психическое состояние и странности в поведении, но постепенно понимают, что это их единственный шанс. Адвокат берется за дело, понимая, что предстоит сражение не только в зале суда, но и с общественными предрассудками.
+Судебный процесс становится ареной жесткого противостояния. Адвокат противной стороны, представляющий Раджвира, использует все возможные приемы, чтобы дискредитировать девушек. Он акцентирует внимание на их современном образе жизни, на том, что они живут без родительского контроля, ходят в бары, общаются с мужчинами. По его версии, такое поведение само по себе является провокацией.
+Защита пытается представить девушек как женщин легкого поведения, которые сами спровоцировали ситуацию и теперь пытаются оклеветать "порядочных" молодых людей. Адвокат противной стороны использует двойные стандарты общества, где одно и то же поведение у мужчин считается нормальным, а у женщин - предосудительным.
+Сегал методично разбивает все обвинения против своих подзащитных. Он доказывает, что согласие на ужин в ресторане не означает согласия на интимную близость. Он объясняет суду и присяжным фундаментальный принцип: "Нет значит нет". Неважно, что предшествовало этому моменту - если женщина сказала "нет", это должно быть немедленно принято и уважено.
+В ходе судебного процесса Сегал вызывает на свидетельский стул самого Раджвира и его друзей. Под давлением перекрестного допроса их показания начинают противоречить друг другу. Выясняется, что они изначально планировали принудить девушек к близости, рассматривая их как легкую добычу из-за их независимого образа жизни.
+Ключевой момент наступает, когда Сегал демонстрирует суду записи телефонных разговоров, в которых Раджвир и его друзья угрожают девушкам и обсуждают, как "проучить" их за сопротивление. Эти записи становятся решающим доказательством того, что именно мужчины были агрессорами, а девушки - жертвами.
+В своей заключительной речи Сегал обращается не только к судьям, но и ко всему обществу. Он говорит о том, что женщина имеет право сказать "нет" в любой момент и при любых обстоятельствах. Не имеет значения, как она одета, где работает, с кем общается или какой образ жизни ведет. Согласие - это не постоянное состояние, его можно отозвать в любой момент.
+Адвокат подчеркивает абсурдность ситуации, когда общество судит женщин за их независимость и современность, но при этом закрывает глаза на преступное поведение мужчин. Он призывает к изменению общественного сознания и уважению к правам женщин.
+Суд выносит справедливый вердикт. Раджвир и его друзья признаются виновными в попытке изнасилования, принуждении и угрозах. Их приговаривают к тюремному заключению. Девушки полностью оправданы, их честь восстановлена.
+После суда жизнь девушек постепенно налаживается. Они возвращаются к работе и учебе, но теперь они изменились - стали сильнее и увереннее в себе. Они понимают, что их борьба была важна не только для них самих, но и для всех женщин, которые сталкиваются с подобной несправедливостью.
+Сегал продолжает свою адвокатскую практику, помогая другим жертвам несправедливости. Его победа в этом деле становится важным прецедентом, который может помочь другим женщинам в подобных ситуациях.
+Фильм завершается мощным посланием о том, что согласие - это основа любых отношений между людьми, и что каждый человек, независимо от пола, имеет право на уважение своих границ и решений. "Нет значит нет" - этот принцип становится лейтмотивом всей истории и важным социальным заявлением.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Форма голоса', 'A young man is ostracized by his classmates after he bullies a deaf girl to the point where she moves away. Years later, he sets off on a path for redemption.', '2016-01-01', 1, '130 minutes', 'Koe no katachi', 8.1, 'История начинается в начальной школе, где учится обычный мальчик Сёя Исигами, который живет обычной школьной жизнью со своими друзьями Симадой и Хиросе. Их размеренные дни кардинально меняются, когда в класс переводится новая ученица - Сёко Нисимия, девочка с нарушением слуха. Учительница объясняет детям, что Сёко не может слышать, и просит всех относиться к ней с пониманием и помогать в общении.
+Сначала одноклассники пытаются наладить контакт с Сёко, но из-за сложностей в коммуникации многие быстро теряют интерес. Сёко общается при помощи записей в блокноте, пытается читать по губам и носит слуховые аппараты, которые позволяют ей различать некоторые звуки. Она старается изо всех сил влиться в коллектив и участвовать в школьной жизни наравне с другими детьми.
+Однако Сёя начинает испытывать раздражение от присутствия Сёко в классе. Ему кажется, что из-за нее уроки проходят медленнее, учительница тратит дополнительное время на объяснения, а общий ритм школьной жизни нарушается. Постепенно это раздражение перерастает в открытую агрессию и издевательства.
+Сёя начинает систематически травить Сёко. Он прячет и портит ее слуховые аппараты, которые стоят очень дорого и жизненно необходимы девочке. Он насмехается над ее попытками говорить, имитирует ее неразборчивую речь, толкает ее, обзывает и всячески унижает. Постепенно к травле присоединяются и другие одноклассники, но Сёя остается главным инициатором и самым жестоким из обидчиков.
+Сёко терпеливо сносит все издевательства, продолжая пытаться подружиться с одноклассниками. Она пишет в своем блокноте извинения за то, что создает неудобства, благодарит за помощь даже тех, кто ее обижает, и изо всех сил старается не показывать, как сильно ей больно. Ее покорность и неспособность дать отпор только еще больше раздражают Сёю.
+Ситуация достигает критической точки, когда Сёя ломает очередной слуховой аппарат Сёко. Мать девочки, которая уже потратила огромные деньги на замену поломанных аппаратов, приходит в школу и требует объяснений. Учительница и директор, до этого закрывавшие глаза на травлю, вынуждены принять меры.
+Однако вместо того чтобы наказать всех участников травли, школьная администрация решает найти единственного виновного. Под давлением учителей одноклассники указывают на Сёю как на главного зачинщика, хотя многие из них сами участвовали в издевательствах. Симада и Хиросе, бывшие друзья Сёи, отворачиваются от него, чтобы защитить себя.
+Сёя оказывается в полной изоляции. Сёко переводят в другую школу, а он становится изгоем в своем классе. Теперь уже его самого начинают травить те самые одноклассники, которые раньше вместе с ним издевались над глухой девочкой. Его парту исписывают оскорбительными надписями, портят его вещи, бойкотируют и унижают.
+Проходят годы. Сёя учится в старшей школе, но психологические травмы детства продолжают преследовать его. Он стал замкнутым, молчаливым подростком, который избегает общения со сверстниками и живет в постоянном чувстве вины за свои поступки в детстве. Он не может забыть лицо плачущей Сёко и понимает, какую боль причинил ей своей жестокостью.
+Сёя решает выучить язык жестов, чтобы в случае встречи с Сёко суметь попросить у нее прощения на понятном ей языке. Он записывается на курсы и упорно изучает сурдоперевод, что становится для него способом покаяния и попыткой искупить свою вину.
+Наконец Сёя решается найти Сёко. Он узнает, что она посещает центр изучения языка жестов, и приходит туда. Встреча происходит на мосту через реку, где они когда-то кормили рыбок в детстве. Сёя пытается извиниться перед Сёко на языке жестов, но его техника еще несовершенна, и он неправильно показывает знаки.
+К удивлению Сёи, Сёко не только прощает его, но и сама просит прощения за то, что в детстве была обузой для класса. Эта реакция шокирует Сёю - он понимает, что Сёко винит себя в том, что произошло, считая себя причиной всех проблем. Такое самообвинение жертвы травли еще больше усиливает чувство вины Сёи.
+Между Сёей и Сёко постепенно завязывается дружба. Сёя знакомится с младшей сестрой Сёко - Юзуру, которая очень недоверчиво относится к нему, зная о том, что он делал с ее сестрой в детстве. Юзуру фотографирует мертвых животных и ведет себя как мальчик, что является ее способом справиться с трудностями семейной жизни.
+Сёя также знакомится с матерью Сёко, которая работает в парикмахерской и одна воспитывает двух дочерей. Мать Сёко поначалу очень холодно относится к Сёе, помня о том, как он издевался над ее дочерью. Однако постепенно она видит, что юноша искренне изменился и действительно заботится о Сёко.
+В процессе общения с Сёко Сёя начинает открываться для дружбы с другими людьми. Он знакомится с Томохиро Нагацукой, эксцентричным и добродушным парнем, который становится его первым настоящим другом за много лет. Нагацука не знает о прошлом Сёи и принимает его таким, какой он есть.
+Постепенно вокруг Сёи и Сёко формируется круг друзей. К ним присоединяется Миюки Сахара, тихая девочка с комплексами по поводу своей внешности, которая находит поддержку в этой компании. Позже появляется и Наока Уэно, одноклассница Сёи из начальной школы, которая также участвовала в травле Сёко.
+Уэно по-прежнему испытывает неприязнь к Сёко, но теперь ее злость направлена не столько на глухоту девочки, сколько на то, что она, по мнению Уэно, "украла" у нее Сёю. Уэно была влюблена в Сёю еще в детстве, и теперь ревнует его к Сёко. Она не может понять, почему Сёя так изменил свое отношение к девочке, которую раньше травил.
+В компанию также входит Миюки Кавай, которая в детстве тоже училась с Сёей и Сёко. Кавай представляет себя невинной жертвой обстоятельств, утверждая, что никогда не участвовала в травле, хотя на самом деле она тоже была частью проблемы, просто более пассивным образом.
+Отношения в группе становятся все более сложными и напряженными. Каждый из персонажей несет свои психологические травмы и нерешенные проблемы из прошлого. Уэно открыто конфликтует с Сёко, Кавай лицемерно пытается представить себя в лучшем свете, а Сёя чувствует себя ответственным за все проблемы группы.
+Ситуация достигает критической точки во время фестиваля фейерверков. Компания собирается вместе посмотреть на салют, но старые обиды и недопонимания приводят к серьезному конфликту. Уэно в очередной раз нападает на Сёко с обвинениями, Кавай притворяется невинной, а остальные не знают, как реагировать на происходящее.
+Сёко, не выдержав постоянного напряжения и чувствуя себя виновной во всех проблемах друзей, решает, что лучше всего будет, если она исчезнет из их жизни. Она тайно готовится к самоубийству, убирает свою комнату, раздает вещи и оставляет записки с извинениями.
+В день, когда Сёко планирует покончить с собой, Сёя приходит к ней домой, чтобы вернуть тетрадь, которую она забыла. Он поднимается на балкон и застает Сёко в тот момент, когда она собирается спрыгнуть. Сёя успевает схватить ее за руку и попытаться втащить обратно, но из-за их веса и неудобного положения он сам срывается и падает с балкона.
+Сёя получает серьезные травмы и попадает в больницу в коматозном состоянии. Сёко винит себя в произошедшем и впадает в глубокую депрессию. Она проводит дни у постели Сёи, молясь о его выздоровлении и обвиняя себя в том, что из-за нее пострадал человек, который пытался ей помочь.
+Мать Сёи, узнав о том, что сын пытался спасти Сёко от самоубийства, наконец понимает, как сильно изменился ее сын и как важна для него эта девочка. Она встречается с матерью Сёко, и между женщинами происходит важный разговор о прощении и принятии.
+Постепенно Сёя приходит в сознание, но его состояние остается тяжелым. Врачи предупреждают, что восстановление будет долгим и трудным. Сёко не отходит от него, читает ему книги, разговаривает с ним, хотя он не может ей отвечать.
+В этот период другие члены их компании также переосмысливают свои отношения и поступки. Уэно наконец понимает, что ее ревность и злость причиняют боль не только Сёко, но и Сёе, которого она якобы любит. Кавай вынуждена признать свою роль в травле и лицемерие своего поведения.
+Когда Сёя окончательно выздоравливает, он и Сёко имеют долгий разговор о жизни, прощении и будущем. Сёя говорит Сёко, что хочет продолжать жить и исправлять ошибки прошлого, а не убегать от них. Он убеждает ее, что жизнь стоит того, чтобы ее прожить, несмотря на все трудности.
+Фильм завершается сценой на школьном фестивале, где Сёя наконец преодолевает свои психологические барьеры. На протяжении всего повествования он воспринимал лица окружающих людей как перечеркнутые крестом, что символизировало его неспособность к полноценному общению и страх перед социальными контактами.
+В финальной сцене, когда Сёя поднимает голову и смотрит на толпу людей на фестивале, кресты исчезают с их лиц. Он видит улыбающихся, живых, настоящих людей и понимает, что готов снова стать частью общества. Слезы радости текут по его лицам, когда он осознает, что научился прощать себя и принимать мир таким, какой он есть.
+История заканчивается с нотой надежды и искупления. Сёя и Сёко оба прошли через тяжелые испытания, но их дружба помогла им исцелиться от травм прошлого и найти смысл в жизни. Фильм показывает, что прощение возможно, люди способны измениться, а настоящая дружба может преодолеть любые препятствия.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Невидимый гость', 'A successful entrepreneur accused of murder and a witness preparation expert have less than three hours to come up with an impregnable defense.', '2016-01-01', 1, '106 minutes', 'Contratiempo', 8.1, 'Фильм начинается с того, что успешный бизнесмен Адриан Дориа просыпается в гостиничном номере рядом с мертвым телом своей любовницы Лауры Видал. У него травма головы, он дезориентирован и не помнит, что произошло. Номер заперт изнутри, ключ находится внутри, окна закрыты, и создается впечатление, что это было убийство в закрытой комнате. Адриан становится главным подозреваемым в убийстве Лауры.
+Адриана арестовывают, но благодаря дорогим адвокатам и недостатку прямых улик его выпускают под залог. Его жена Сония, несмотря на измену мужа, решает поддержать его и нанимает лучшего адвоката по уголовным делам в стране - Вирджинию Гудман, которая славится тем, что никогда не проигрывает дела.
+Вирджиния Гудман - элегантная женщина средних лет с безупречной репутацией. Она соглашается взяться за дело Адриана, но предупреждает, что у них есть только три часа до встречи с прокурором, который, по ее сведениям, получил новые улики, способные окончательно изобличить Адриана. Поэтому им необходимо немедленно разработать защитную стратегию.
+Адриан и Вирджиния встречаются в отеле, где адвокат требует от клиента полной честности. Она объясняет, что сможет его защитить, только если будет знать всю правду без утайки. Адриан неохотно начинает рассказывать свою версию событий, но делает это постепенно, раскрывая детали под давлением проницательных вопросов адвоката.
+Адриан рассказывает, что у него уже несколько месяцев был роман с Лаурой Видал, талантливым фотографом и его деловым партнером. Она помогала ему в развитии технологической компании, и их профессиональные отношения переросли в личные. В день убийства они встретились в загородном отеле, чтобы обсудить будущее их отношений и бизнеса.
+По словам Адриана, во время их разговора в номер ворвался неизвестный мужчина в маске, который требовал деньги. Завязалась драка, во время которой Лаура получила смертельную травму головы, а сам Адриан потерял сознание от удара. Когда он очнулся, грабитель уже скрылся, а Лаура была мертва. Адриан утверждает, что это было ограбление, которое пошло не по плану.
+Вирджиния внимательно выслушивает эту версию, но указывает на множество несоответствий. Во-первых, в номере не было следов взлома, все ценности остались нетронутыми. Во-вторых, судмедэксперт установил, что Лаура умерла от единственного точного удара, что не характерно для хаотичной драки с грабителем. В-третьих, на теле Адриана нет серьезных повреждений, которые могли бы объяснить его потерю сознания.
+Под давлением этих фактов Адриан вынужден признаться, что солгал. Он рассказывает вторую версию событий, которая якобы является правдой. По его новым словам, в тот день они с Лаурой поехали не в отель, а к ней домой. Там их застал бывший муж Лауры, который был в состоянии алкогольного опьянения и ревности.
+Бывший муж угрожал Лауре и Адриану, требуя, чтобы та вернулась к нему. Завязалась ссора, которая перешла в драку. В ходе драки Лаура случайно получила смертельную травму, а Адриан в панике решил инсценировать ограбление в отеле, чтобы скрыть настоящие обстоятельства ее смерти. Он перевез тело в гостиницу и создал ложную картину преступления.
+Вирджиния снова указывает на противоречия в этой версии. Камеры наблюдения отеля показывают, что Адриан и Лаура прибыли туда вместе и живыми, а бывший муж Лауры находился в это время в другом городе, что подтверждается алиби. Более того, адвокат сообщает, что у нее есть информация о том, что незадолго до смерти Лаура планировала разорвать как личные, так и деловые отношения с Адрианом.
+Загнанный в угол, Адриан рассказывает третью версию, которая, по его утверждению, является абсолютной правдой. Он признается, что за несколько месяцев до убийства Лауры с ними произошла автомобильная авария, которую они скрыли от полиции. Эта авария стала началом всех их проблем.
+Адриан рассказывает, что они ехали по горной дороге поздно вечером после деловой встречи. Лаура была за рулем, они оба были уставшими и невнимательными. Внезапно на дороге появился молодой человек, который голосовал, пытаясь остановить машину. Лаура не успела затормозить и сбила его. Парень по имени Даниэль Гарридо получил тяжелые травмы.
+Вместо того чтобы вызвать скорую помощь, Адриан и Лаура в панике решили избавиться от тела. Они погрузили умирающего Даниэля в багажник своей машины и отвезли его к ближайшему озеру, где утопили вместе с автомобилем, сделав это похожим на несчастный случай. Полиция позднее нашла машину с телом Даниэля на дне озера и решила, что молодой человек сам съехал с дороги в воду.
+Родители Даниэля - Томас и Эльвира Гарридо - не поверили в версию о несчастном случае. Они начали собственное расследование и постепенно вышли на след Адриана и Лауры. Томас Гарридо, бывший военный, решил отомстить за смерть сына. Он долго следил за убийцами, изучал их привычки и планировал месть.
+По словам Адриана, именно Томас Гарридо проник в гостиничный номер и убил Лауру, желая отомстить за смерть сына. Адриан утверждает, что Томас хотел убить и его, но что-то помешало - возможно, приближение горничной или других постояльцев. Томас скрылся, оставив Адриана живым, но оглушенным.
+Вирджиния выслушивает эту версию, но снова находит в ней противоречия. Она указывает, что если Томас действительно хотел отомстить, он бы убил обоих, а не ограничился только Лаурой. Более того, адвокат сообщает, что у нее есть свидетель, который может опровергнуть алиби Адриана.
+В этот момент происходит неожиданный поворот. Вирджиния получает телефонный звонок и сообщает Адриану, что свидетель готов дать показания. Этим свидетелем оказывается пожилая женщина, которая якобы видела, как Томас Гарридо покидал отель в день убийства. Адриан облегченно вздыхает, думая, что его версия подтвердилась.
+Однако Вирджиния объясняет, что эта женщина - не настоящий свидетель, а мать Даниэля Гарридо, Эльвира. Она хочет встретиться с Адрианом и услышать от него правду о смерти сына. Вирджиния настаивает, что эта встреча необходима для построения защиты, поскольку Эльвира может стать ключевым свидетелем в деле.
+Когда в номер входит пожилая женщина, представленная как Эльвира Гарридо, Адриан сначала не узнает ее. Эльвира спокойно и достойно просит его рассказать правду о том, что случилось с ее сыном. Она говорит, что как мать имеет право знать последние минуты жизни Даниэля.
+Под эмоциональным давлением Эльвиры Адриан наконец рассказывает настоящую правду. Он признается, что после аварии Даниэль был еще жив, но тяжело ранен. Вместо того чтобы вызвать помощь, Адриан и Лаура решили избавиться от свидетеля. Они намеренно утопили живого парня, чтобы скрыть свое преступление.
+Более того, Адриан признается, что это была его идея. Лаура сначала сопротивлялась, хотела вызвать скорую, но Адриан убедил ее, что это разрушит их карьеры и жизни. Он заставил ее участвовать в убийстве, а потом долго манипулировал ею, чтобы она молчала.
+Со временем Лаура все тяжелее переносила чувство вины. Она начала пить, у нее развилось посттравматическое расстройство. В конце концов она решила признаться полиции во всем, что произошло. В день своей смерти она встретилась с Адрианом, чтобы сообщить о своем решении.
+Адриан понял, что если Лаура расскажет правду, это разрушит не только его бизнес, но и семью. Он попытался отговорить ее, обещал деньги, лечение, все что угодно. Но Лаура была непреклонна - она хотела очистить совесть и понести наказание за убийство Даниэля.
+Тогда Адриан в приступе ярости и страха убил Лауру, ударив ее тяжелым предметом по голове. После этого он инсценировал ограбление, чтобы скрыть мотив убийства. Он сам нанес себе легкую травму головы, чтобы выглядеть жертвой нападения.
+Выслушав эту исповедь, Эльвира встает и направляется к двери. Адриан, эмоционально истощенный, просит у нее прощения и говорит, что готов понести наказание. Эльвира останавливается и поворачивается к нему.
+В этот момент происходит финальный и самый шокирующий поворот сюжета. Эльвира снимает парик и очки, и Адриан с ужасом понимает, что перед ним не мать Даниэля, а Томас Гарридо, который все это время выдавал себя за женщину.
+Томас объясняет, что он и его жена Эльвира долго планировали эту операцию. Они выяснили, кто убил их сына, и разработали сложный план мести. Томас, используя актерские навыки и грим, создал образ адвоката Вирджинии Гудман. Настоящая Вирджиния была похищена и убита накануне встречи.
+Томас рассказывает, что они с женой потратили месяцы на изучение методов работы известного адвоката, ее манер, речи, профессиональных приемов. Цель была проста - заставить Адриана признаться во всех преступлениях и записать эту исповедь на диктофон.
+Все это время разговор записывался на скрытые микрофоны. Томас включает запись, и Адриан слышит свой собственный голос, признающийся в убийстве Даниэля и Лауры. Эта запись станет основным доказательством вины в суде.
+Томас объясняет, что он не собирается убивать Адриана - он хочет, чтобы тот провел остаток жизни в тюрьме, мучаясь сознанием своих преступлений. Смерть была бы для него слишком легким наказанием. Томас хочет, чтобы Адриан страдал так же, как страдали родители Даниэля все эти месяцы.
+Томас уходит, оставляя Адриана одного в номере с пониманием того, что он сам выкопал себе могилу. Через несколько минут в номер врывается настоящая полиция с ордером на арест. Они забирают запись признания и арестовывают Адриана по обвинению в двойном убийстве.
+Фильм заканчивается кадрами суда, где Адриана приговаривают к пожизненному заключению. В зале присутствуют Томас и Эльвира Гарридо, которые наконец получили справедливость за смерть сына. Адриан понимает, что стал жертвой идеально спланированной мести, но никто не поверит его словам о том, что его заставили признаться обманным путем.
+Последние кадры показывают Адриана в тюремной камере, где он осознает всю глубину своего падения. Человек, который считал себя умнее всех и способным выкрутиться из любой ситуации, оказался перехитрен простыми людьми, движимыми родительской любовью и жаждой справедливости.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Служанка', 'A woman is hired as a handmaiden to a Japanese heiress, but secretly she is involved in a plot to defraud her.', '2016-01-01', 1, '145 minutes', 'Ah-ga-ssi', 8.1, 'Действие фильма происходит в Корее 1930-х годов, во время японской оккупации. История начинается с того, что молодая женщина по имени Нам Сук-хи работает воровкой и мошенницей в команде преступников. Группа специализируется на различных аферах, включая кражи и обман богатых людей.
+К Сук-хи обращается граф Фудзивара, корейский аристократ, который сотрудничает с японцами и ведет роскошный образ жизни. Фудзивара предлагает ей участие в сложной и долгосрочной афере, которая может принести огромную прибыль. План заключается в том, чтобы обмануть богатую наследницу и завладеть ее состоянием.
+Целью аферы является леди Хидеко, молодая японская аристократка, которая живет в изолированном поместье со своим дядей Кодзуки. Хидеко - наследница огромного состояния, но она находится под полным контролем своего дяди, который является ее опекуном. Дядя планирует жениться на Хидеко, чтобы получить контроль над ее наследством, но пока она остается незамужней.
+План Фудзивары состоит в том, чтобы Сук-хи устроилась служанкой к Хидеко под вымышленным именем Тамако, войдя к ней в доверие и убедив выйти замуж за графа. После свадьбы Фудзивара планирует поместить Хидеко в психиатрическую лечебницу, объявив ее сумасшедшей, и таким образом получить полный контроль над ее богатством. Сук-хи за свою роль в этой афере должна получить значительную долю от украденного состояния.
+Сук-хи прибывает в поместье Кодзуки под видом новой личной служанки для Хидеко. Поместье оказывается мрачным и угнетающим местом, наполненным темными секретами. Дядя Хидеко, Кодзуки, - извращенец и садист, который коллекционирует редкие эротические книги и заставляет Хидеко читать их вслух перед мужской аудиторией для развлечения богатых японских коллекционеров.
+Хидеко живет в этом поместье как в тюрьме. Она получила изысканное образование, говорит на нескольких языках, прекрасно разбирается в искусстве и литературе, но при этом совершенно изолирована от внешнего мира. Единственным ее занятием является чтение вслух порнографических книг из коллекции дяди, что причиняет ей глубокое унижение и страдание.
+Сук-хи начинает выполнять свою роль, постепенно входя в доверие к Хидеко. Она представляется простой деревенской девушкой, которая ничего не знает о высшем обществе, и просит Хидеко научить ее хорошим манерам. Хидеко, страдающая от одиночества, с радостью принимает новую служанку и начинает обучать ее этикету, речи и поведению аристократки.
+Между женщинами постепенно завязывается близкая дружба. Хидеко делится с Сук-хи своими страхами, мечтами и планами на будущее. Она рассказывает о том, как ненавидит свою жизнь в поместье, как мечтает о свободе и как боится своего дяди. Сук-хи, изначально видевшая в Хидеко лишь объект для мошенничества, начинает испытывать к ней искренние чувства.
+Постепенно дружба между женщинами перерастает в романтические отношения. Они проводят все больше времени вместе, делятся самыми интимными секретами и начинают испытывать друг к другу страстную любовь. Для обеих женщин эти отношения становятся первым опытом настоящей близости и понимания.
+Сук-хи оказывается в сложном положении. С одной стороны, она связана обязательствами перед Фудзиварой и должна выполнить план по обману Хидеко. С другой стороны, она искренне полюбила девушку и не может вынести мысли о том, что причинит ей вред. Внутренний конфликт между долгом и любовью терзает ее.
+Тем временем граф Фудзивара начинает активно ухаживать за Хидеко, посещая поместье и демонстрируя ей свою образованность и утонченность. Он представляется как человек, который сможет освободить ее от тирании дяди и дать ей новую жизнь. Хидеко, не зная о его истинных намерениях, начинает видеть в нем потенциального спасителя.
+Сук-хи, следуя плану, активно поддерживает ухаживания Фудзивары, убеждая Хидеко, что граф действительно любит ее и что брак с ним станет ее спасением. Она помогает организовать их встречи, передает письма и всячески способствует развитию их отношений, хотя каждое такое действие причиняет ей боль.
+Ситуация становится еще более сложной, когда Хидеко признается Сук-хи в любви и предлагает ей сбежать вместе из поместья. Она говорит, что готова отказаться от своего наследства и начать новую жизнь в бедности, лишь бы быть с любимой женщиной. Это предложение ставит Сук-хи перед невозможным выбором между любовью и материальной выгодой.
+Однако вскоре выясняется, что ситуация гораздо сложнее, чем казалось изначально. В середине фильма происходит неожиданный поворот сюжета, который полностью меняет восприятие происходящего. Оказывается, что Хидеко с самого начала знала о плане Фудзивары и Сук-хи и разработала собственную контр-аферу.
+Хидеко, несмотря на свою кажущуюся наивность, является очень умной и расчетливой женщиной. Она давно планировала побег от дяди и искала способ завладеть его богатством, не став при этом его жертвой. Узнав о плане Фудзивары, она решила использовать его в своих целях, разработав еще более сложную схему обмана.
+План Хидеко заключается в том, чтобы выйти замуж за Фудзивару, но вместо того чтобы стать его жертвой, самой обмануть его. Она планирует убить графа сразу после свадьбы и завладеть как его состоянием, так и наследством дяди. Роль Сук-хи в этом плане - стать свидетелем "самоубийства" Хидеко и помочь ей инсценировать собственную смерть, после чего они смогут сбежать вместе с украденными деньгами.
+Однако и этот план оказывается не таким простым, как кажется. Постепенно раскрывается еще более сложная система обманов и двойных игр, в которую вовлечены все персонажи. Каждый из них имеет свои скрытые мотивы и планы, которые противоречат планам других.
+Выясняется, что дядя Кодзуки также не так прост, как казался. Он давно подозревает племянницу в попытках обмануть его и разрабатывает собственные меры защиты. Более того, его отношения с Хидеко оказываются еще более извращенными и жестокими, чем представлялось изначально.
+В ходе развития событий раскрывается трагическая предыстория Хидеко. Оказывается, что ее мать покончила с собой, не выдержав издевательств Кодзуки, а сама Хидеко с детства подвергалась физическому и психологическому насилию. Чтение порнографических книг было лишь одним из способов унижения, которому ее подвергал дядя.
+Фудзивара также оказывается более сложным персонажем, чем казалось вначале. У него есть собственные счеты с Кодзуки, связанные с прошлыми обидами и унижениями. Его план мести включает не только завладение состоянием Хидеко, но и уничтожение ее дяди.
+По мере развития событий союзы между персонажами постоянно меняются. Сук-хи и Хидеко то доверяют друг другу, то подозревают в предательстве. Фудзивара играет свою собственную игру, пытаясь перехитрить всех остальных. Кодзуки, чувствуя приближающуюся опасность, принимает все более жестокие меры для сохранения контроля над ситуацией.
+Кульминация наступает во время свадебной церемонии Хидеко и Фудзивары. Казалось бы, план графа близок к завершению, но именно в этот момент происходит серия неожиданных поворотов. Хидеко и Сук-хи, объединившись против общих врагов, приводят в действие свой собственный план мести.
+В финальной части фильма происходит жестокая расправа с теми, кто причинял страдания женщинам. Кодзуки и Фудзивара получают по заслугам за свои преступления и извращения. Способы их наказания отражают характер их собственной жестокости и садизма.
+Хидеко и Сук-хи, освободившись от всех своих мучителей и обманщиков, наконец получают возможность быть вместе. Они завладевают богатством, которое по праву принадлежит Хидеко, и получают свободу, о которой так долго мечтали.
+Фильм заканчивается сценой, где две женщины наслаждаются своей любовью и свободой, находясь далеко от мрачного поместья и тех ужасов, которые им пришлось пережить. Их победа достается дорогой ценой, но они сумели преодолеть все препятствия и обрести счастье друг с другом.
+История представляет собой сложную игру обманов и контр-обманов, где каждый персонаж пытается перехитрить остальных, но в конечном итоге любовь и справедливость торжествуют над жестокостью и алчностью. Фильм исследует темы женской солидарности, борьбы против патриархального угнетения и силы настоящей любви в мире, полном предательства и насилия.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мамочка', 'A widowed single mother, raising her violent son alone, finds new hope when a mysterious neighbor inserts herself into their household.', '2014-01-01', 1, '139 minutes', 'Mommy', 8.1, 'Фильм начинается с титров, объясняющих, что действие происходит в альтернативной версии Канады 2015 года, где был принят закон S-14, позволяющий родителям детей с психическими расстройствами помещать их в специализированные учреждения без длительных судебных процедур, если они представляют опасность для себя или окружающих.
+Диана Деспре, экстравагантная женщина средних лет с яркой внешностью и резким характером, приезжает забирать своего пятнадцатилетего сына Стива из специализированного центра для подростков с поведенческими нарушениями. Стив страдает синдромом дефицита внимания и гиперактивности в тяжелой форме, у него случаются приступы неконтролируемой агрессии, во время которых он может быть опасен.
+Администрация центра сообщает Диане, что они больше не могут содержать Стива после того, как он устроил пожар в столовой, в результате которого пострадал другой ребенок. Несмотря на протесты Дианы, которая понимает, что не готова справляться с сыном в одиночку, ей приходится забрать его домой.
+Диана и Стив живут в небольшом доме в пригороде Монреаля. Их отношения крайне сложные - они искренне любят друг друга, но постоянно конфликтуют. Стив может быть нежным и заботливым сыном, но его настроение меняется мгновенно, и тогда он становится агрессивным и неуправляемым. Диана пытается справляться с его приступами, но часто теряет терпение и сама срывается на крик.
+Стив обладает высоким интеллектом, он остроумен и харизматичен, но его психическое состояние делает нормальную жизнь практически невозможной. Он не может учиться в обычной школе, у него нет друзей, он чувствует себя изгоем общества. Диана работает на нескольких работах, чтобы содержать семью, но денег постоянно не хватает, особенно на лечение и специальные программы для Стива.
+Ситуация осложняется тем, что недавно умер отец Стива, с которым мальчик был очень близок. Смерть отца стала дополнительной травмой для и без того неустойчивой психики подростка. Диана винит себя в том, что не смогла сохранить семью - ее муж ушел от них из-за того, что не выдержал постоянного стресса, связанного с воспитанием особенного ребенка.
+Соседкой Дианы и Стива оказывается Кайла, учительница средних лет, которая находится в творческом отпуске после нервного срыва на работе. Кайла страдает от заикания, которое усилилось после стрессовой ситуации в школе, где один из учеников напал на нее. Она живет одна, избегает общения с людьми и проводит время в саду.
+Поначалу Кайла относится к новым соседям настороженно, особенно после того, как слышит громкие ссоры и крики из их дома. Однажды во время особенно сильного приступа Стива во дворе разбивается окно, и осколки летят на участок Кайлы. Женщина выходит посмотреть, что происходит, и становится невольным свидетелем конфликта между матерью и сыном.
+Диана, смущенная тем, что соседка видела их семейные проблемы, пытается объяснить ситуацию. Она рассказывает Кайле о состоянии Стива и просит понимания. Кайла, которая как педагог имеет опыт работы с трудными детьми, проявляет сочувствие и предлагает свою помощь.
+Постепенно между тремя персонажами формируется необычная связь. Кайла начинает проводить время со Стивом, помогая ему с учебой. Она использует специальные методики для работы с детьми с СДВГ, и у нее получается находить подход к мальчику. Стив, в свою очередь, помогает Кайле справиться с заиканием, поощряя ее говорить без стеснения.
+Создается подобие семьи, где каждый помогает другим справляться с их проблемами. Диана получает столь необходимую ей поддержку в воспитании сына, Кайла обретает цель и смысл, а Стив получает внимание и понимание, которых ему так не хватало. Некоторое время их совместная жизнь складывается относительно гармонично.
+Кайла помогает Стиву заниматься, они вместе готовят, смотрят фильмы, обсуждают книги. Стив проявляет свои лучшие качества - он умен, талантлив, у него есть художественные способности. Кайла видит в нем не только проблемного подростка, но и личность с огромным потенциалом. Она начинает верить, что при правильном подходе Стив может найти свое место в жизни.
+Диана тоже меняется под влиянием Кайлы. Она учится быть более терпеливой с сыном, начинает лучше понимать его потребности. Впервые за долгое время она чувствует, что не одна в борьбе за благополучие Стива. Между женщинами завязывается крепкая дружба, основанная на взаимной поддержке.
+Однако идиллия оказывается хрупкой. Стив остается непредсказуемым, и его состояние может резко ухудшиться в любой момент. Триггерами для его приступов могут стать самые незначительные события - изменение планов, критическое замечание, даже громкий звук. Когда приступ начинается, Стив теряет контроль над собой и может причинить вред себе или окружающим.
+Во время одного из таких приступов Стив серьезно травмирует Диану, случайно толкнув ее во время драки. Диана попадает в больницу с переломом руки, и этот инцидент становится переломным моментом в их отношениях. Стив осознает, что причинил боль любимой матери, и это ввергает его в глубокую депрессию.
+Кайла пытается поддержать и мать, и сына, но понимает, что ситуация выходит из-под контроля. Соседи начинают жаловаться на шум и беспорядки, социальные службы интересуются положением дел в семье. Диана понимает, что может потерять опеку над сыном, если не сможет доказать, что способна обеспечить ему безопасность.
+Финансовое положение семьи тоже ухудшается. Диана вынуждена тратить все больше денег на лечение Стива, на ремонт того, что он ломает во время приступов, на возмещение ущерба соседям. Она рассматривает возможность продать дом, но понимает, что и этих денег надолго не хватит.
+Постепенно Диана приходит к мучительному выводу, что не может обеспечить сыну необходимую помощь. Она начинает рассматривать возможность воспользоваться законом S-14 и поместить Стива в специализированное учреждение на постоянной основе. Эта мысль причиняет ей невыносимую боль, но она видит, что их текущая ситуация никого не делает счастливым.
+Кайла пытается отговорить Диану от этого решения, предлагая различные альтернативы. Она готова взять на себя еще больше ответственности за Стива, помочь найти лучших специалистов, но Диана понимает, что это нечестно по отношению к соседке, которая уже и так пожертвовала своей жизнью ради их семьи.
+Стив чувствует, что мать рассматривает возможность отдать его в интернат, и это усиливает его тревожность. Он становится еще более неуправляемым, устраивает сцены, пытается доказать, что может измениться. Но его попытки часто приводят к обратному результату - он еще больше убеждает окружающих в том, что нуждается в профессиональной помощи.
+В один из особенно тяжелых дней происходит серьезный инцидент. Стив во время приступа набрасывается на Кайлу, и та получает травму. Хотя Кайла прощает мальчика и не винит его, этот случай становит последней каплей для Дианы. Она понимает, что больше не может рисковать безопасностью людей, которых любит.
+Диана принимает окончательное решение воспользоваться законом S-14. Она заполняет необходимые документы и договаривается о помещении Стива в специализированную клинику. Это решение дается ей невероятно тяжело - она чувствует, что предает сына, но в то же время понимает, что это может быть единственным способом обеспечить ему необходимую помощь.
+Последние дни перед разлукой проходят в особой атмосфере. Диана, Стив и Кайла проводят время вместе, пытаясь создать хорошие воспоминания. Они готовят вместе, смотрят любимые фильмы Стива, слушают музыку. Стив понимает, что происходит, но не может изменить ситуацию.
+В день отъезда Стива происходит эмоциональное прощание. Мальчик просит мать не отдавать его, обещает измениться, быть послушным, но Диана остается непреклонной. Она объясняет ему, что это решение принято из любви, что в клинике ему смогут помочь лучше, чем она дома.
+Кайла также тяжело переживает расставание. За это время Стив стал для нее почти как родной сын, и она искренне верила, что их нетрадиционная семья сможет справиться со всеми трудностями. Расставание с мальчиком означает для нее возвращение к одиночеству и потерю смысла жизни, который она обрела, помогая ему.
+Фильм заканчивается сценой в специализированном учреждении, куда помещают Стива. Мальчик сидит в стерильной комнате, окруженный другими детьми с подобными проблемами. Он выглядит потерянным и подавленным, понимая, что его мечты о нормальной семейной жизни разрушены.
+Диана возвращается домой к пустому дому, где все напоминает о сыне. Она садится на его кровать и плачет, осознавая всю тяжесть принятого решения. Кайла тоже возвращается к своей прежней изолированной жизни, но теперь одиночество кажется ей еще более невыносимым после пережитого опыта близости и семейности.
+Последние кадры фильма показывают каждого из персонажей в их новой реальности - все трое разделены, каждый страдает по-своему, но жизнь продолжается. Фильм не дает однозначного ответа на вопрос, было ли решение Дианы правильным, оставляя зрителям возможность самим решить, что они думают о сложных этических дилеммах, связанных с воспитанием детей с особыми потребностями.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Хайдер', 'A young man returns to Kashmir after his father''s disappearance to confront his uncle, whom he suspects of playing a role in his father''s fate.', '2014-01-01', 1, '160 minutes', 'Haider', 8.1, 'Фильм происходит в 1995 году в Кашмире, во время жестокого конфликта между индийскими военными и кашмирскими сепаратистами. Хайдер Мир - молодой поэт и интеллектуал, который учится в университете в Дели. Его отец Хилал Мир работает врачом в Шринагаре и тайно лечит раненых боевиков, что ставит его в крайне опасное положение.
+Однажды ночью индийские военные проводят рейд в доме семьи Мир. Они ищут раненого сепаратиста, которого лечил доктор Хилал. Во время облавы Хилала арестовывают по подозрению в пособничестве террористам. Мать Хайдера, Газала, остается одна в разрушенном войной Кашмире с маленьким сыном.
+Хайдер узнает об аресте отца и спешит домой из Дели. По приезде в Шринаgar он обнаруживает, что их дом частично разрушен военными, а отец бесследно исчез. Официальные власти утверждают, что не знают о его местонахождении. Хайдер начинает отчаянные поиски отца, обращаясь в различные инстанции, но везде получает отказ или уклончивые ответы.
+Во время поисков Хайдер с ужасом обнаруживает, что его мать Газала теперь живет с его дядей Кхуррамом, братом исчезнувшего отца. Кхуррам - местный бизнесмен, который сумел приспособиться к военному положению и даже извлекает выгоду из хаоса, сотрудничая с индийскими властями. Хайдер потрясен тем, как быстро мать нашла утешение в объятиях дяди, пока судьба отца остается неизвестной.
+Отношения между Хайдером и матерью становятся напряженными. Он обвиняет ее в предательстве памяти отца и неверности. Газала пытается объяснить сыну, что в их жестоком мире женщине нужна защита, и Кхуррам предложил ей и ее семье безопасность. Но Хайдер не может простить того, что он считает изменой.
+Ситуация осложняется тем, что Кхуррам искренне заботится о Газале и пытается наладить отношения с Хайдером, предлагая ему помощь в поисках отца. Однако Хайдер подозревает дядю в двуличности и не доверяет его мотивам. Молодой человек разрывается между желанием найти истину о судьбе отца и растущим недоверием к окружающим.
+В это время Хайдер возобновляет отношения со своей возлюбленной Арши, дочерью местного полицейского. Арши работает журналисткой и пытается освещать ситуацию в Кашмире объективно, что ставит ее в опасное положение. Она поддерживает Хайдера в его поисках, но их отношения осложняются общей атмосферой недоверия и страха.
+Переломный момент наступает, когда к Хайдеру обращается таинственный человек, который представляется Розенкранцем. Этот человек утверждает, что был сокамерником отца Хайдера в секретной тюрьме. Розенкранц рассказывает ужасающую историю о том, что произошло с доктором Хилалом в заключении.
+По словам Розенкранца, Хилала пытали в тюрьме, требуя информации о сепаратистах. Но самое страшное открытие заключается в том, что доктора предал его собственный брат Кхуррам. Именно Кхуррам сообщил военным о том, что Хилал лечит боевиков, в обмен на собственную безопасность и возможность завладеть имуществом брата и его женой.
+Розенкранц рассказывает, что Хилал умер в тюрьме от пыток, так и не выдав своих пациентов. Он передает Хайдеру последнее послание отца, в котором тот просит сына отомстить за его смерть, но предупреждает о том, что месть может разрушить его душу. Доктор Хилал завещает сыну жить достойной жизнью, не позволяя ненависти поглотить его.
+Хайдер потрясен этим откровением. Он понимает, что его подозрения относительно дяди были обоснованными, но теперь перед ним встает мучительная дилемма. С одной стороны, он жаждет отомстить за смерть отца и предательство дяди. С другой стороны, месть означает убийство Кхуррама, что разрушит жизнь матери и сделает Хайдера убийцей.
+Внутренняя борьба Хайдера усиливается, когда он наблюдает за отношениями матери и дяди. Газала кажется счастливой с Кхуррамом, который действительно заботится о ней. Хайдер мучается вопросом: имеет ли он право разрушить это счастье ради мести? Он начинает сомневаться в своих моральных принципах и чувствует, как ненависть отравляет его душу.
+Хайдер решает проверить правдивость рассказа Розенкранца и начинает собственное расследование. Он обнаруживает документы и свидетельства, которые подтверждают предательство дяди. Становится ясно, что Кхуррам действительно сотрудничал с военными и именно из-за его доноса арестовали и убили Хилала.
+Вооружившись этими доказательствами, Хайдер противостоит дяде. Кхуррам не отрицает своей вины, но пытается оправдать свои действия. Он говорит, что спас семью от полного уничтожения, что в условиях войны приходится делать трудный выбор. Кхуррам утверждает, что любит Газалу и заботится о семье лучше, чем мог бы это делать идеалист Хилал.
+Конфронтация между Хайдером и Кхуррамом происходит в присутствии Газалы. Мать Хайдера узнает правду о смерти мужа и предательстве деверя. Она потрясена и разрывается между ужасом от предательства и пониманием того, что Кхуррам действительно защищал ее и детей в опасное время.
+Ситуация достигает критической точки, когда военные узнают о деятельности Хайдера и объявляют его в розыск как потенциального террориста. Его поиски истины и открытое противостояние системе делают его мишенью для властей. Арши пытается помочь ему скрыться, но ситуация становится безнадежной.
+В финальной сцене происходит трагическое столкновение. Военные окружают дом, где скрывается Хайдер. В последующей перестрелке погибают несколько человек, включая невинных мирных жителей. Хайдер понимает, что его жажда мести привела к еще большему кровопролитию и страданиям невинных людей.
+В кульминационный момент Хайдер получает возможность убить Кхуррама и отомстить за отца. Но видя разрушения вокруг и страдания матери, он делает выбор в пользу прощения. Хайдер понимает, что месть только порождает новую месть, и что единственный способ разорвать этот порочный круг - это отказаться от насилия.
+Однако трагедия неизбежна. В финальной перестрелке погибают и Кхуррам, и Газала. Хайдер остается один, потеряв всех, кого любил. Он понимает, что его стремление к справедливости привело к разрушению семьи и гибели близких. Фильм завершается образом Хайдера, который уходит в неизвестность, навсегда изменившись от пережитых трагедий.
+Финал фильма несет мощное послание о бессмысленности мести и разрушительной силе насилия. Хайдер научился на собственном горьком опыте, что в мире, где правит жестокость, нет победителей - есть только жертвы. Его личная трагедия отражает более широкую трагедию Кашмира, где конфликт разрушает семьи и уничтожает невинных людей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Логан', 'In a future where mutants are nearly extinct, an elderly and weary Logan leads a quiet life. But when Laura, a mutant child pursued by scientists, comes to him for help, he must get her to safety.', '2017-01-01', 1, '137 minutes', 'Logan', 8.1, 'Действие происходит в 2029 году в мрачном будущем, где мутанты практически исчезли. Логан, также известный как Росомаха, теперь стареющий человек за пятьдесят, работает водителем лимузина в Эль-Пасо, штат Техас, недалеко от мексиканской границы. Его легендарные способности к регенерации ослабли, и его тело покрыто шрамами, которые больше не заживают полностью. Металлический скелет и когти, которые когда-то делали его неуязвимым, теперь отравляют его организм адамантием.
+Логан живет в заброшенном промышленном комплексе в мексиканской пустыне вместе с очень старым профессором Чарльзом Ксавьером, которому за девяносто лет. Когда-то могущественный телепат теперь страдает от дегенеративного заболевания мозга, похожего на болезнь Альцгеймера. Его телепатические приступы стали настолько разрушительными, что правительство классифицировало их как оружие массового поражения. Во время одного из таких приступов год назад Ксавьер случайно убил нескольких X-Men в школе в Вестчестере.
+За Ксавьером ухаживает мутант-альбинос Калибан, который может отслеживать других мутантов по их генетическим сигнатурам. Калибан помогает Логану добывать лекарства для профессора и поддерживать его в стабильном состоянии. Логан зарабатывает деньги как водитель лимузина, мечтая накопить достаточно средств, чтобы купить яхту и увезти себя и профессора подальше от мира, где их больше не хотят.
+Мир изменился к худшему для мутантов. Новые мутанты не рождаются уже более двадцати лет из-за генетически модифицированной кукурузы, которая подавляет X-ген. Большинство существующих мутантов были уничтожены или умерли естественной смертью. Человечество больше не нуждается в X-Men, а оставшиеся мутанты рассматриваются как угроза, которую нужно устранить.
+Однажды к Логану обращается медсестра по имени Габриэла с просьбой отвезти ее и одиннадцатилетнюю девочку по имени Лора в Северную Дакоту к канадской границе. Габриэла предлагает большую сумму денег, но Логан изначально отказывается, не желая вмешиваться в чужие проблемы. Однако его интригует девочка, которая странно молчалива и демонстрирует признаки того, что она может быть мутантом.
+Вскоре выясняется, что за Габриэлой и Лорой охотится зловещая корпорация Трансиген и их военная команда под руководством Дональда Пирса, киборга с механической рукой. Трансиген - биотехнологическая компания, которая проводила секретные эксперименты по созданию мутантов-солдат. Лора - продукт этих экспериментов, созданная с использованием ДНК Логана.
+Лора является клоном Логана, обладающим аналогичными способностями: невероятной физической силой, ускоренной регенерацией и костяными когтями, покрытыми адамантием. Однако у нее есть когти не только на руках, но и на ногах, что делает ее еще более смертоносной. Несмотря на свой юный возраст, Лора является безжалостным убийцей, воспитанным и тренированным Трансигеном как живое оружие.
+Габриэла была одной из медсестер, работавших в секретной лаборатории Трансигена в Мексике, где проводились эксперименты над детьми-мутантами. Когда компания решила уничтожить всех подопытных детей, поскольку проект больше не считался прибыльным, Габриэла и несколько других медсестер помогли детям бежать. Их цель - добраться до Эдема, предполагаемого убежища для мутантов в Канаде.
+Трансиген посылает за беглецами отряд солдат-киборгов, называемых Жнецами, под командованием Пирса. Они безжалостно преследуют детей, убивая всех, кто встает у них на пути. Габриэла погибает во время одной из атак, но перед смертью успевает передать Логану координаты места встречи и умоляет его защитить Лору.
+Логан неохотно соглашается помочь девочке, частично из-за денег, но также потому, что чувствует странную связь с ней. Профессор Ксавьер сразу понимает, что Лора - особенная, и настаивает на том, чтобы они помогли ей. Несмотря на свое состояние, Ксавьер все еще обладает моральным авторитетом и убеждает Логана сделать правильный выбор.
+Началось опасное путешествие через Америку. Логан, Ксавьер и Лора пытаются добраться до Северной Дакоты, постоянно скрываясь от преследователей Трансигена. Во время путешествия Лора постепенно открывается, демонстрируя не только свои боевые способности, но и детскую уязвимость. Она почти не говорит по-английски, но понимает испанский и общается в основном жестами.
+Отношения между Логаном и Лорой развиваются медленно. Логан изначально видит в ней только обузу и источник проблем, но постепенно начинает проявлять отеческие чувства. Лора, в свою очередь, тянется к Логану, инстинктивно чувствуя их генетическую связь. Профессор Ксавьер становится для девочки дедушкой, которого у нее никогда не было.
+Во время одной из остановок они останавливаются у фермерской семьи Мансонов, которые оказывают им гостеприимство. Семья состоит из Уилла Мансона, его жены Кэтрын и их сына Нейта. Мансоны - простые люди, которые борются за выживание своей фермы против корпоративного давления. Эта встреча дает Логану и Лоре возможность увидеть, как выглядит нормальная семейная жизнь.
+Однако идиллия недолговечна. Солдаты Трансигена выслеживают беглецов и нападают на ферму. В жестокой битве погибают все члены семьи Мансонов, а также сам профессор Ксавьер. Перед смертью Ксавьер успевает сказать Логану, что Лора - это будущее, и что он должен защитить ее любой ценой.
+Смерть профессора становится переломным моментом для Логана. Он теряет последнего друга и наставника, человека, который верил в лучшее будущее для мутантов. Теперь Логан остается один с Лорой, неся полную ответственность за ее безопасность и будущее.
+Логан и Лора продолжают путешествие, но Логан все больше слабеет из-за отравления адамантием. Его способности к регенерации почти исчезли, и каждая рана заживает все медленнее. Лора замечает его состояние и пытается помочь, но понимает, что времени остается мало.
+Наконец они добираются до указанного места встречи в Северной Дакоте. Там они находят группу молодых мутантов, таких же продуктов экспериментов Трансигена, которые смогли бежать. Среди них Рикки, который может управлять электричеством, Бобби, способный создавать ледяные конструкции, и несколько других детей с различными способностями.
+Дети планируют пересечь границу с Канадой, где, по их информации, их ждет безопасное убежище. Логан скептически относится к существованию этого Эдема, считая его мифом, но соглашается помочь детям добраться до границы. Он понимает, что это может быть их единственный шанс на свободу.
+Однако Трансиген не сдается. Пирс и его команда выслеживают беглецов и готовят финальную атаку. Но у них есть секретное оружие - X-24, клон Логана, созданный из его ДНК, но лишенный человечности и сострадания. X-24 обладает всеми физическими способностями Логана в расцвете сил, но представляет собой чистую машину для убийства.
+Финальная битва происходит в лесу недалеко от канадской границы. Логан сражается против превосходящих сил Трансигена, пытаясь дать детям время для бегства. Несмотря на свое ослабленное состояние, он демонстрирует героизм и самопожертвование, которые всегда определяли его характер.
+Кульминацией становится схватка между Логаном и X-24. Это символическая битва между человечностью и машиной, между тем, кем Логан стал благодаря любви и дружбе, и тем, чем он мог бы быть как чистое оружие. X-24 физически сильнее, но Логану помогают дети, особенно Лора, которая в решающий момент убивает X-24.
+В финальных сценах тяжело раненный Логан умирает на руках у Лоры. Перед смертью он наконец произносит слова, которые показывают, что он принял свою роль отца: он говорит Лоре, что она должна быть лучше его, что она не должна становиться тем оружием, которым пытались сделать ее создатели. Логан умирает, зная, что спас не только Лору, но и будущее поколение мутантов.
+Лора и другие дети успешно пересекают границу и добираются до Канады, где их действительно ждет убежище. В последней сцене Лора хоронит Логана и устанавливает на его могиле крест, который она делает из двух веток. Она поворачивает крест на бок, превращая его в X - символ X-Men и всего, за что боролся Логан.
+Фильм завершается тем, что Лора и дети уходят в неизвестность, представляя новое поколение мутантов, которые будут строить лучший мир. Смерть Логана не напрасна - он передал свое наследие следующему поколению, научив их, что истинная сила заключается не в способностях, а в готовности защищать тех, кто не может защитить себя сам.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Комната', 'Held captive for 7 years in an enclosed space, a woman and her young son finally gain their freedom, allowing the boy to experience the outside world for the first time.', '2015-01-01', 1, '118 minutes', 'Room', 8.1, 'Пятилетний мальчик по имени Джек живет со своей матерью Джой в маленьком помещении, которое он называет просто "Комната". Для Джека это единственный мир, который он знает - он родился здесь и никогда не выходил за пределы этих четырех стен. Комната размером примерно три на три метра содержит кровать, небольшую кухню, ванную комнату, шкаф и телевизор. Джек считает, что все предметы в Комнате живые и являются его друзьями - он разговаривает со столом, стульями, лампой и другими вещами.
+Джой попала в эту комнату семь лет назад, когда ей было девятнадцать лет. Мужчина по имени Старый Ник похитил ее, заманив просьбой помочь найти потерявшуюся собаку. Он построил звукоизолированное помещение на заднем дворе своего дома и держит Джой там как пленницу. Старый Ник регулярно приходит ночью, и именно в результате этих визитов родился Джек.
+Для Джека Старый Ник - это почти мифическая фигура, которая приносит продукты и припасы. Мать прячет мальчика в шкафу каждый раз, когда приходит Старый Ник, поэтому Джек никогда не видел его полностью и не понимает истинной природы ситуации. Джой создала для сына целую систему объяснений о внешнем мире, говоря ему, что за пределами Комнаты ничего настоящего нет - только космос и телевизионные передачи.
+Джой разработала строгий распорядок дня, чтобы сохранить рассудок и обеспечить сыну максимально нормальное развитие. Они делают физические упражнения, бегая по Комнате, читают книги, которые приносит Старый Ник, играют в самодельные игры. Джой учит Джека читать, считать, рассказывает ему истории. Она пытается дать ему образование и эмоциональное развитие в рамках их ограниченных возможностей.
+Однако по мере того как Джек растет и становится более любознательным, Джой понимает, что не сможет вечно скрывать от него правду. Мальчик начинает задавать вопросы о мире за пределами Комнаты, интересуется, почему они не могут выйти наружу. Джой мучается дилеммой - как объяснить пятилетнему ребенку ужасную реальность их ситуации, не травмируя его психику.
+Ситуация осложняется тем, что Старый Ник начинает испытывать финансовые трудности. Он теряет работу и не может больше обеспечивать пленниц всем необходимым. Электричество в Комнате периодически отключается, еды становится меньше, а отопление работает с перебоями. Джой понимает, что их положение становится все более опасным, и Старый Ник может принять решение избавиться от них.
+Джой решает рассказать Джеку правду о внешнем мире и об их ситуации. Это становится одним из самых трудных разговоров в ее жизни. Она объясняет сыну, что за пределами Комнаты существует огромный мир с другими людьми, деревьями, животными, что у них есть бабушка и дедушка, которые думают, что Джой мертва. Джек поначалу не может поверить в это - его картина мира полностью рушится.
+Мальчик проходит через стадии отрицания, гнева и растерянности. Ему трудно принять, что все, во что он верил, было неправдой. Джой терпеливо объясняет ему реальность, показывает, что телевизионные передачи показывают настоящие места и людей. Постепенно Джек начинает понимать, что они находятся в плену, и что Старый Ник - их тюремщик.
+Джой разрабатывает отчаянный план побега. Она решает симулировать смерть Джека, надеясь, что Старый Ник вывезет тело из Комнаты, и мальчик сможет сбежать и привести помощь. Это чрезвычайно рискованный план, который требует от пятилетнего ребенка невероятной храбрости и самообладания.
+Джой учит Джека притворяться мертвым, лежать неподвижно и не дышать видимо, когда его будут нести. Она объясняет ему, что когда грузовик остановится на светофоре или в пробке, он должен выпрыгнуть из кузова и бежать к первому попавшемуся человеку, крича о помощи. Мальчик должен запомнить адрес полиции и объяснить, что его мать находится в плену.
+План приводится в действие, когда Старый Ник приходит в очередной раз. Джой говорит ему, что Джек серьезно болен и умер. Старый Ник поначалу подозрителен, но видя неподвижное тело мальчика, завернутое в ковер, решает избавиться от него. Он загружает "тело" в свой грузовик и отвозит, намереваясь где-то закопать.
+Джек, лежащий в кузове грузовика, впервые в жизни видит настоящий мир - небо, деревья, другие машины, здания. Он потрясен масштабом и красотой мира, о котором мать рассказывала ему. Когда грузовик останавливается на светофоре, Джек выпрыгивает и бежит, крича о помощи. Прохожие сначала не понимают, что происходит, но быстро понимают серьезность ситуации.
+Полиция арестовывает Старого Ника и освобождает Джой из Комнаты. Воссоединение матери и сына происходит в больнице, где их обследуют врачи. Физически они относительно здоровы, но психологическая травма огромна. Начинается долгий процесс адаптации к нормальному миру.
+Джой и Джек переезжают жить к матери Джой, которая все эти годы надеялась на возвращение дочери. Бабушка с трудом принимает существование внука, рожденного в таких обстоятельствах, но постепенно проникается к нему любовью. Также в доме живет новый партнер бабушки, что создает дополнительные сложности в адаптации.
+Для Джека адаптация к внешнему миру становится невероятно сложным процессом. Пространство огромного дома пугает его, он не может спать в отдельной комнате и просится обратно в Комнату. Простые вещи, такие как лестницы, собаки, множество людей, звуки автомобилей - все это вызывает у него стресс и тревогу. Мальчик скучает по своей прежней жизни, где все было понятно и предсказуемо.
+Джой тоже испытывает огромные трудности с адаптацией. Она страдает от посттравматического стрессового расстройства, депрессии и чувства вины. Окружающий мир кажется ей слишком сложным и пугающим после семи лет изоляции. СМИ постоянно преследуют их, желая получить интервью, что только усугубляет стресс.
+Особенно болезненными для Джой становятся критические замечания в интернете и СМИ от людей, которые не понимают, как она могла родить ребенка в плену и растить его в таких условиях. Некоторые обвиняют ее в том, что она должна была найти способ убежать раньше или не должна была рожать ребенка от насильника.
+Кульминацией становится момент, когда Джой пытается покончить с собой, не выдержав давления и чувства безнадежности. Ее спасают, и она попадает в психиатрическую клинику. Джек остается с бабушкой, не понимая, почему мать его покинула. Это становится для него еще одним травматическим опытом - ведь мать была единственным постоянным элементом в его жизни.
+Во время лечения Джой работает с психологами и постепенно начинает восстанавливаться. Она понимает, что должна быть сильной ради сына, что он нуждается в ней больше, чем кто-либо другой. Джой учится справляться со своими травмами и принимать помощь от близких.
+Джек тем временем постепенно адаптируется к новой жизни с помощью бабушки и специалистов. Он учится общаться с другими детьми, исследует дом и двор, привыкает к разнообразной еде и новым ощущениям. Процесс идет медленно, но мальчик демонстрирует удивительную стойкость и способность к адаптации.
+Когда Джой возвращается из больницы, она и Джек начинают строить новые отношения в изменившихся обстоятельствах. Они вместе исследуют мир, и Джой учится быть матерью в нормальных условиях, а не только в ситуации выживания. Она понимает, что должна позволить сыну расти и развиваться, а не только защищать его.
+В финале фильма Джой и Джек решают вернуться в то место, где находилась Комната, чтобы попрощаться с ней. Джек хочет забрать некоторые вещи и сказать "до свидания" предметам, которые считал своими друзьями. Когда они приходят туда, Комната кажется Джеку намного меньше, чем он запомнил.
+Эта сцена символизирует их готовность отпустить прошлое и двигаться вперед. Джек берет несколько важных для него вещей, но понимает, что его настоящая жизнь теперь в большом мире. Они уходят от Комнаты, держась за руки, готовые строить новую жизнь, полную возможностей и надежды.
+Фильм завершается образом матери и сына, которые нашли силы преодолеть невообразимую травму и начать новую жизнь. Их история становится свидетельством невероятной силы человеческого духа, материнской любви и способности к выживанию в самых экстремальных обстоятельствах.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Душа', 'After landing the gig of a lifetime, a New York jazz pianist suddenly finds himself trapped in a strange land between Earth and the afterlife.', '2020-01-01', 1, '100 minutes', 'Soul', 8.1, 'Джо Гарднер работает учителем музыки в средней школе Нью-Йорка, но его истинная страсть - джаз. Он мечтает стать профессиональным джазовым пианистом и наконец получает шанс выступить с известной саксофонисткой Дорой Хокинс в престижном джазовом клубе "Полумесяц". После успешного прослушивания, возвращаясь домой в эйфории, Джо падает в открытый люк и умирает.
+Его душа попадает в загробный мир, где находится эскалатор, ведущий в "Великое После" - финальное место назначения всех душ. Не желая умирать именно сейчас, когда его мечта так близка, Джо пытается сбежать, но случайно попадает в "Великое До" - место, где новые души получают свои личности перед отправкой на Землю.
+В "Великом До" Джо знакомится с душой номер 22, которая существует там тысячи лет, отказываясь идти на Землю. У 22 были наставники - великие личности вроде Матери Терезы, Мухаммеда Али, Коперника, но никто не смог помочь ей найти свою "искру" - то особенное качество, которое делает жизнь стоящей. Джо убеждает 22 помочь ему вернуться на Землю в обмен на то, что он поможет ей найти искру.
+Они пытаются вернуть Джо в его тело через портал, но что-то идет не так. Джо попадает в тело больничного кота, а 22 - в тело самого Джо. Они вынуждены действовать вместе: 22 в теле Джо должна прожить его день, включая важное выступление вечером, а Джо в теле кота пытается найти способ все исправить.
+22 проводит день, живя жизнью Джо - стрижется у парикмахера Дезе, который оказывается мудрым и философски настроенным человеком, ест пиццу, наблюдает за людьми в метро, слушает уличного музыканта. Она открывает для себя простые радости жизни, которые Джо, сосредоточенный на своей мечте о славе, не замечал. 22 понимает, что искра - это не талант или призвание, а просто готовность жить и находить смысл в повседневных моментах.
+Джо находает мистика по имени Лунная Ветер, которая помогает им поменяться телами обратно. Однако, когда 22 получает свой пропуск на Землю, она решает остаться в теле Джо, потому что наконец почувствовала радость жизни. Джо злится и говорит жестокие слова, утверждая, что 22 просто копирует его жизнь и у нее нет собственных мечтаний. Расстроенная 22 убегает и попадает в темную зону потерянных душ.
+Джо возвращается в свое тело и блестяще выступает с Дорой Хокинс. Выступление проходит великолепно, его принимают в группу для постоянных выступлений. Но вместо ожидаемой эйфории Джо чувствует пустоту - его мечта сбылась, но он не чувствует того удовлетворения, которого ожидал.
+Дора рассказывает ему историю о рыбе, которая всю жизнь искала океан, не понимая, что уже находится в нем. Джо осознает, что всю жизнь был так сосредоточен на достижении своей цели, что не замечал красоты самой жизни. Он понимает, что обидел 22 и должен ее спасти.
+Джо намеренно возвращается в загробный мир, где находит 22, превратившуюся в потерянную душу - темное, искаженное существо. Он извиняется перед ней и помогает вспомнить все прекрасные моменты, которые она пережила в его теле. 22 возвращается к своему нормальному виду и получает пропуск на Землю, готовая начать собственную жизнь.
+Терри, бухгалтер загробного мира, который всю историю преследовал их из-за нарушенного баланса душ, наконец находит их. Джо готов принять смерть, но получает второй шанс от Джерри - одного из существ, управляющих "Великим До". Джерри объясняет, что помощь 22 найти ее искру была именно тем предназначением, которое нужно было выполнить Джо.
+Джо возвращается на Землю с новым пониманием жизни. Он идет по Нью-Йорку, впервые по-настоящему замечая красоту вокруг себя - падающие листья, смех людей, музыку улиц. Фильм заканчивается тем, что Джо садится за пианино в своей квартире, готовый жить полной жизнью, ценя каждый момент, а не только гоняясь за мечтами о славе.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Зимняя спячка', 'A hotel owner and landlord in a remote Turkish village deals with conflicts within his family and a tenant behind on his rent.', '2014-01-01', 1, '196 minutes', 'Kis Uykusu', 8.1, 'Фильм рассказывает о бывшем актере Айдыне, который вместе со своей молодой женой Нихал и разведенной сестрой Неклой живет в отеле в Каппадокии, Турция. Айдын владеет несколькими домами в округе, которые сдает в аренду местным жителям, и пишет колонку для местной газеты. Его жизнь кажется размеренной, но внутри семьи назревают серьезные конфликты.
+История начинается с инцидента, когда мальчик по имени Ильяс бросает камень в окно автобуса, в котором едут Айдын и его водитель. Выясняется, что отец мальчика Исмаил должен Айдыну деньги за аренду дома. Айдын отправляется к семье должника вместе с полицией, но встречает там дядю мальчика Хамди, который пытается урегулировать ситуацию. Между Айдыном и Хамди происходит напряженный разговор о справедливости и морали.
+Параллельно развивается конфликт между Айдыном и его женой Нихал. Она занимается благотворительностью, помогая местным школам, но Айдын критически относится к ее деятельности, считая ее наивной. Нихал обвиняет мужа в пассивности и цинизме. Их отношения становятся все более холодными и отчужденными.
+Сестра Айдына Некла, которая переживает сложный развод и борется с депрессией, также вступает в конфликт с братом. Она упрекает его в эгоизме и неспособности к искренним чувствам. Некла планирует уехать в Стамбул, но постоянно откладывает отъезд.
+Ситуация обостряется, когда Исмаил приходит к Айдыну и просит отсрочку по долгу, объясняя свое тяжелое финансовое положение. Айдын соглашается, но затем Исмаил в состоянии отчаяния и унижения поджигает деньги, которые принес в качестве частичной оплаты долга. Этот поступок глубоко потрясает Айдына.
+Конфликт с женой достигает критической точки во vrijeme длительного и болезненного разговора, в котором Нихал высказывает все накопившиеся претензии к мужу. Она обвиняет его в том, что он разрушил их брак своим равнодушием и высокомерием. Айдын в ответ пытается защищаться, но понимает правоту многих ее слов.
+После серии конфликтов Айдын решает уехать в Стамбул, оставив жену и сестру. В городе он пытается вернуться к писательской деятельности, работает над мемуарами о своей актерской карьере. Однако одиночество и воспоминания о доме не дают ему покоя.
+В финале фильма Айдын возвращается домой поздней ночью во время снежной бури. В письме, которое он начинает писать жене, он признается в своих ошибках и просит прощения. Он понимает, что несмотря на все проблемы, он не может жить без семьи и привычного окружения. Фильм заканчивается на ноте примирения и надежды на возможность начать отношения заново, хотя неясно, сможет ли семья действительно преодолеть накопившиеся противоречия.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Отель "Гранд Будапешт"', 'A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel''s glorious years under an exceptional concierge.', '2014-01-01', 1, '99 minutes', 'The Grand Budapest Hotel', 8.1, 'История разворачивается в 1930-е годы в вымышленной восточноевропейской стране Зубровка. Фильм рассказывает о легендарном консьерже престижного отеля "Гранд Будапешт" Густаве Х., человеке безупречных манер и профессионализма, который берет под свое крыло молодого посыльного Зеро Мустафу.
+Густав поддерживает интимные отношения с пожилыми богатыми гостьями отеля, в том числе с восьмидесятичетырехлетней мадам Д., которая регулярно останавливается в отеле. Когда мадам Д. внезапно умирает при загадочных обстоятельствах в своем поместье, выясняется, что она завещала Густаву бесценную картину эпохи Возрождения "Мальчик с яблоком".
+Сын покойной Дмитрий вместе со своими сестрами и зловещим телохранителем Джоплингом яростно оспаривает завещание. Дмитрий подозревает, что Густав убил его мать ради наследства, и обвинения в убийстве заставляют консьержа скрываться от правосудия. Ситуация осложняется тем, что тело мадам Д. эксгумируют и обнаруживают следы редкого яда.
+Густав арестовывают и помещают в тюрьму, где он знакомится с группой заключенных во главе с Людвигом. Зеро продолжает работать в отеле и влюбляется в Агату, молодую кондитершу из местной пекарни. Агата помогает им организовать побег, спрятав инструменты в специально приготовленных пирожных.
+После драматичного побега из тюрьмы Густав и Зеро отправляются в монастырь, где укрывается горничная мадам Д. по имени Серж. Она подтверждает, что мадам Д. действительно была отравлена, и готова дать показания против Дмитрия. Однако Джоплинг убивает Сержа прежде, чем она успевает заявить об этом официально.
+Тем временем политическая ситуация в стране накаляется - фашистские войска готовятся к вторжению. В стране устанавливается военное положение, проводятся облавы и проверки документов. Зеро как беженец из далекой страны оказывается в особенно уязвимом положении.
+Густав и Зеро возвращаются в отель, чтобы забрать картину, но обнаруживают, что на ее месте висит подделка. Они понимают, что оригинал спрятан за фальшивой картиной. Забрав настоящую картину, они пытаются скрыться, но их настигает Джоплинг. В финальной схватке Джоплинг случайно падает со скалы и разбивается насмерть.
+Смерть Джоплинга и находка документов, подтверждающих его преступления, снимают все обвинения с Густава. Более того, выясняется, что мадам Д. завещала Густаву не только картину, но и все свое огромное состояние, включая отель "Гранд Будапешт". Густав планирует жениться на Агате, чтобы помочь Зеро получить гражданство.
+Однако счастье длится недолго. Во время поездки на поезде военные патрули проверяют документы пассажиров. Когда они грубо обращаются с Зеро, Густав вступается за своего протеже, но солдаты убивают его прямо в вагоне поезда. Агата также вскоре умирает от болезни, оставив Зеро вдовцом с маленьким сыном.
+Спустя много лет пожилой Зеро, ставший владельцем отеля, рассказывает эту историю молодому писателю. Он объясняет, что сохраняет отель в память о Густаве и Агате, хотя заведение давно утратило свой былой блеск. Зеро признается, что каждый день вспоминает то короткое время, когда он был по-настоящему счастлив рядом с любимой женой и наставником. Фильм заканчивается тем, что писатель публикует эту историю в своей книге, а молодая девушка читает ее у памятника автору в парке, замыкая временную петлю повествования.RetryClaude can make mistakes. Please double-check responses.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Исчезнувшая', 'With his wife''s disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it''s suspected that he may not be innocent.', '2014-01-01', 1, '149 minutes', 'Gone Girl', 8.1, 'Исчезнувшая (российское название)
+Ник Данн живет в штате Миссури со своей женой Эми, куда они переехали из Нью-Йорка после того, как оба потеряли работу журналистов во время экономического кризиса. Ник открыл бар вместе со своей сестрой-близнецом Марго, а их брак с Эми постепенно разваливается. В день их пятой годовщины свадьы Ник приходит домой и обнаруживает, что Эми исчезла, а в гостиной явные следы борьбы.
+Полиция начинает расследование под руководством детектива Риты Болни. Ник ведет себя странно на пресс-конференциях - улыбается неуместно, кажется равнодушным к исчезновению жены. СМИ и общественность начинают подозревать его в убийстве. Ситуация усугубляется, когда выясняется, что у Ника был роман с его двадцатитрехлетней студенткой Энди Фицджеральд.
+Через флешбеки мы узнаем историю их отношений. Ник и Эми познакомились на вечеринке в Нью-Йорке, где между ними сразу возникла страсть. Эми была дочерью знаменитых детских писателей, создавших серию книг "Удивительная Эми" по мотивам ее детства. Первые годы их брак казался идеальным, но после переезда в Миссури и потери работы отношения стали портиться. Ник стал отстраненным и грубым, а Эми чувствовала себя несчастной в маленьком городке.
+Полиция находает все больше улик против Ника: увеличенные страховки на жизнь Эми, спрятанные покупки на кредитных картах, которые Ник не помнит, и дорогие вещи в сарае его сестры. Ник понимает, что кто-то его подставляет, но не может понять кто и зачем. Его адвокат Таннер Болт, специализирующийся на делах мужей-убийц, говорит ему, что дело выглядит очень плохо.
+Внезапно выясняется, что Эми жива. Она скрывается в кемпинге в штате Озарк под чужим именем, тщательно изменив свою внешность. Через ее внутренние монологи мы узнаем правду: Эми инсценировала собственное исчезновение, чтобы подставить Ника за измену и равнодушие к их браку. Она месяцами планировала это, изучая поведение жертв преступлений, создавая фальшивые улики, даже искусственно оплодотворяя себя спермой Ника из клиники репродуктологии, а затем выбрасывая плод, чтобы создать видимость беременности и ее насильственного прерывания.
+Эми планировала покончить с собой после того, как Ника приговорят к смертной казни, но ее планы нарушаются, когда соседи по кемпингу Джефф и Гретта крадут у нее деньги. Оставшись почти без средств, она обращается к своему бывшему бойфренду Дези Коллингзу, который всегда был в нее влюблен. Дези, богатый наследник, прячет ее в своем загородном доме на озере.
+Тем временем Ник начинает понимать, что его жена психопатка, способная на такую сложную манипуляцию. Он вспоминает тревожные моменты их брака: как Эми обвиняла его в толчке, которого не было, как она могла холодно планировать месть. С помощью адвоката и сестры он пытается доказать свою невиновность, но улики против него кажутся неопровержимыми.
+Эми живет у Дези как в золотой клетке. Он контролирует каждый ее шаг, покупает ей дорогую одежду, следит за ней через камеры безопасности. Эми понимает, что попала из одной ловушки в другую. Она начинает планировать новую аферу. Эми соблазняет Дези, занимается с ним сексом, втайне травмирует себя, создавая следы насилия на теле, а затем перерезает ему горло разбитой бутылкой вина во время интимной близости.
+Эми возвращается домой, заявляя, что ее похитил и удерживал Дези, который якобы был одержим ею со времен колледжа. Она рассказывает полиции и СМИ историю о том, как сбежала от психованного похитителя, который изнасиловал ее и держал в заточении. Физические следы на ее теле и мертвый Дези как будто подтверждают ее версию.
+Общественность, которая недавно ненавидела Ника, теперь сочувствует ему как жертве ужасного недоразумения. Но Ник знает правду и понимает, что его жена убила невинного человека, чтобы вернуться к своему первоначальному плану. Наедине с Эми он требует развода, но она открывает ему, что действительно беременна его ребенком, зачав во время одной из их последних близостей до исчезновения.
+Эми объясняает Нику, что если он попытается ее бросить или разоблачить, она обвинит его в домашнем насилии и заберет ребенка. Она мастерски манипулирует ситуацией, представляя их воссоединение как торжество любви над испытаниями. Ник понимает, что попал в ловушку более изощренную, чем тюремное заключение.
+В финале Ник остается с Эми, зная, что она психопатка и убийца, но не имея способа это доказать или от нее уйти. Эми добилась своего: она наказала мужа за измену и равнодушие, заставив его навсегда остаться с ней в браке, который теперь основан на взаимном страхе и ненависти. Ник вынужден играть роль любящего мужа на публике, в то время как дома живет с женщиной, которая способна на любую жестокость ради достижения своих целей. Их ребенок становится последним звеном в цепи, которой Эми приковала к себе Ника навсегда.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Волчьи дети Амэ и Юки', 'After her werewolf lover unexpectedly dies in an accident while hunting for food for their children, a young woman must find ways to raise the werewolf son and daughter that she had with him while keeping their trait hidden from society.', '2012-01-01', 1, '117 minutes', 'Ôkami kodomo no Ame to Yuki', 8.1, 'История начинается с рассказа молодой студентки Ханы, которая влюбляется в загадочного одногруппника в университете. Мужчина кажется замкнутым и необычным, он работает на нескольких работах, чтобы прокормить себя, поскольку не имеет официальных документов. Постепенно между ними завязываются романтические отношения, и однажды он открывает Хане свою тайну - он последний представитель древнего рода оборотней, способный превращаться в волка.
+Несмотря на шок от этого откровения, Хана принимает возлюбленного таким, какой он есть. Вскоре они начинают жить вместе, и у пары рождается дочь Юки, унаследовавшая способности отца к превращению. Через год появляется сын Амэ. Оба ребенка могут по желанию принимать человеческий или волчий облик, что создает множество сложностей для семьи.
+Трагедия обрушивается на семью, когда отец детей погибает в результате несчастного случая во время охоты в волчьем обличье. Его тело находят как труп обычного волка, и Хана остается одна с двумя детьми-полукровками. Она понимает, что не может обратиться за помощью к социальным службам или врачам, поскольку необычная природа детей будет раскрыта.
+Хана пытается воспитывать детей в городской квартире, но это становится все сложнее. Юки, более активная и импульсивная, часто превращается в волчонка во время игр, разрушая мебель и пугая соседей своим воем. Амэ, наоборот, застенчивый и тихий, предпочитает человеческий облик. Когда Юки достигает школьного возраста, Хана понимает, что дети нуждаются в большем пространстве и свободе.
+Семья переезжает в заброшенный дом в горной деревне, где Хана пытается освоить сельское хозяйство, чтобы прокормить семью. Поначалу ее попытки выращивать овощи терпят неудачу, но постепенно она учится у местных жителей и добивается успеха. Соседи сначала относятся к ней с подозрением как к городской жительнице, но со временем принимают ее в свое сообщество.
+Юки идет в местную школу, где ей приходится скрывать свою истинную природу. Она учится контролировать свои превращения и постепенно социализируется, заводя друзей среди одноклассников. Особенно близкие отношения у нее складываются с мальчиком по имени Сохей, который случайно узнает ее секрет, но обещает никому не рассказывать.
+Амэ выбирает противоположный путь. Он все больше времени проводит в лесу в волчьем обличье, изучая дикую природу и общаясь со старым волком, который становится его наставником. Мальчик постепенно отдаляется от человеческого мира и все реже возвращается домой. Его тянет к жизни в дикой природе, и он чувствует ответственность за сохранение волчьего наследства отца.
+Конфликт достигает пика, когда во время сильной бури Амэ не возвращается домой. Хана отправляется искать его в горах, несмотря на опасность. Она находит сына, который сообщает ей, что старый волк-наставник умер, и теперь Амэ должен занять его место как защитник горного леса. Мальчик принял окончательное решение остаться в дикой природе.
+В эмоциональной сцене прощания Амэ в последний раз превращается в человека, чтобы попрощаться с матерью. Он благодарит ее за все, что она для него сделала, и обещает, что будет защищать эти горы. Затем он навсегда принимает волчий облик и исчезает в лесной чаще. Хана остается одна с Юки, которая теперь полностью интегрировалась в человеческое общество.
+Фильм завершается тем, что Юки поступает в среднюю школу в городе и живет в общежитии, полностью приняв человеческую жизнь, хотя сохраняет способность к превращению. Хана остается жить в деревне, где ее приняли как полноправного члена сообщества. Иногда по ночам она слышит вой волка с гор и понимает, что это Амэ дает ей знать, что с ним все в порядке. История заканчивается размышлениями Ханы о том, как ее дети выбрали свои собственные пути в жизни, и она гордится тем, что смогла дать им возможность сделать этот выбор самостоятельно.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('По соображениям совести', 'World War II American Army Medic Desmond T. Doss, who served during the Battle of Okinawa, refuses to kill people, and becomes the first man in American history to receive the Medal of Honor without firing a shot.', '2016-01-01', 1, '139 minutes', 'Hacksaw Ridge', 8.1, 'Десмонд Досс растет в Вирджинии в семье ветерана Первой мировой войны Тома Досса, который страдает от алкоголизма и посттравматического стресса. В детстве Десмонд чуть не убивает своего брата Хела во время драки, ударив его кирпичом по голове. Этот инцидент, а также строгое религиозное воспитание матери Берты, адвентистки седьмого дня, формируют у Десмонда глубокое убеждение в недопустимости убийства и насилия. Заповедь "Не убий" становится основой его жизненной философии.
+Повзрослев, Десмонд работает в больнице и влюбляется в медсестру Дороти Шютте. Он просит ее руки, и она соглашается выйти за него замуж. Когда начинается Вторая мировая война и Япония атакует Перл-Харбор, Десмонд чувствует патриотический долг служить своей стране, но его религиозные убеждения не позволяют ему брать в руки оружие. Он решает поступить на военную службу в качестве санитара, что вызывает непонимание и гнев отца, который считает сына трусом.
+Десмонд проходит базовую подготовку в учебном лагере под командованием сержанта Хауэлла и капитана Глоувера. Его отказ даже прикасаться к винтовке вызывает насмешки, издевательства и откровенную враждебность со стороны сослуживцев. Они считают его трусом и предателем, который подвергает опасности всю роту. Особенно жестоко относится к нему солдат Смитти Райкер. Сослуживцы избивают Десмонда, крадут его Библию, всячески пытаются заставить его уйти из армии.
+Военное командование пытается исключить Десмонда из армии, обвинив его в психической неуравновешенности и нежелании выполнять приказы. Ему грозит военный трибунал за неподчинение, когда он отказывается брать винтовку на учениях по субботам, которые являются для него священным днем отдыха. Дороти приезжает навестить его перед судом, но Десмонд остается непреклонен в своих убеждениях, даже если это означает тюрьму и потерю невесты.
+Неожиданно в дело вмешивается отец Десмонда Том, который, несмотря на свои проблемы с алкоголем, остается влиятельным ветераном. Он приносит письмо от своего бывшего командира, подтверждающее право его сына на альтернативную службу по религиозным убеждениям. Трибунал отменяется, и Десмонду разрешают служить санитаром без оружия.
+Рота отправляется на Тихоокеанский театр военных действий, где участвует в операции по захвату японского острова Окинава. Их цель - захватить стратегически важную высоту, которую американцы называют Хэксоу Ридж (Пильный хребет) из-за ее отвесных скалистых склонов. Японцы превратили эту высоту в неприступную крепость с системой туннелей, бункеров и огневых точек.
+Первая атака на Хэксоу Ридж превращается в кровавую бойню. Американские солдаты поднимаются по веревочным лестницам на вершину утеса и попадают под шквальный огонь японцев. Десмонд следует за ними, не имея оружия, только медицинскую сумку и носилки. Когда солдаты начинают падать раненые и убитые, Десмонд бесстрашно бросается спасать их под градом пуль и осколков.
+Он перевязывает раны прямо под огнем, тащит раненых в безопасные места, молясь: "Господи, помоги мне спасти еще одного". Десмонд спасает солдата за солдатом, включая тех, кто раньше издевался над ним. Смитти Райкер, который больше всех ненавидел Десмонда, получает тяжелое ранение ног, и именно Десмонд рискует жизнью, чтобы его спасти. Умирая на руках у Десмонда, Райкер просит прощения за свое отношение к нему.
+Американцы вынуждены отступить, оставив множество раненых на вершине утеса. Все солдаты спускаются вниз, но Десмонд остается на вершине один. Всю ночь он ползает по полю боя, находит живых раненых американцев и один за другим спускает их вниз по утесу с помощью веревок и импровизированных носилок. Каждый раз, спасая очередного солдата, он молится: "Помоги мне спасти еще одного".
+К утру Десмонд спас семьдесят пять человек, работая в полном одиночестве под носом у японцев. Его подвиг потрясает всю роту. Солдаты, которые раньше считали его трусом, теперь отказываются идти в новую атаку без Десмонда. Капитан Глоувер откладывает наступление до тех пор, пока Десмонд не закончит свои молитвы в субботу утром.
+Во время второй атаки Десмонд снова идет в бой без оружия. Он продолжает спасать раненых, но сам получает тяжелые ранения от осколка гранаты в ногу и руку. Несмотря на боль, он помогает раненому сослуживцу, отдает ему свои носилки, а сам ползет к краю утеса. Когда его наконец эвакуируют, выясняется, что американцы сумели захватить Хэксоу Ридж.
+В госпитале Десмонд наконец женится на Дороти. За свой подвиг на Окинаве он становится первым отказчиком по соображениям совести, который получает высшую военную награду США - Медаль Почета. Президент Гарри Трумэн лично вручает ему награду, отмечая, что Десмонд спас жизни семидесяти пяти американских солдат, не сделав ни одного выстрела по врагу.
+Фильм заканчивается кадрами интервью с настоящим Десмондом Доссом и выжившими ветеранами, которые подтверждают правдивость показанных событий. Они рассказывают, что подвиг Десмонда на Хэксоу Ридж стал легендой среди американских военных и изменил отношение армии к солдатам, отказывающимся носить оружие по религиозным убеждениям.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Головоломка', 'After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.', '2015-01-01', 1, '95 minutes', 'Inside Out', 8.1, 'История рассказывает об одиннадцатилетней девочке Райли, которая переезжает вместе с родителями из Миннесоты в Сан-Франциско из-за новой работы отца. Однако основное действие разворачивается в сознании Райли, где живут пять персонифицированных эмоций: Радость, Печаль, Страх, Гнев и Брезгливость.
+Радость является главной эмоцией и старается сделать так, чтобы Райли всегда была счастлива. Она руководит пультом управления в штаб-квартире разума девочки, стараясь не допускать к управлению другие эмоции, особенно Печаль. В памяти Райли хранятся цветные шары воспоминаний, причем самые важные окрашены в золотой цвет и питают пять островов личности: семейный, дружеский, честности, глупостей и хоккейный.
+Переезд становится серьезным испытанием для Райли. Новый дом оказывается маленьким и унылым, движущийся фургон с их вещами задерживается, а в новой школе девочка чувствует себя неуютно. Когда учитель просит Райли рассказать о себе перед классом, она начинает вспоминать счастливые моменты из прошлой жизни, но Печаль случайно касается золотого воспоминания, окрашивая его в грустные тона. Райли начинает плакать перед одноклассниками, и формируется новое печальное золотое воспоминание.
+Радость пытается избавиться от этого воспоминания, но в процессе борьбы с Печалью они обе вместе с золотыми воспоминаниями выпадают из штаб-квартиры в лабиринты долговременной памяти. Управление переходит к оставшимся эмоциям - Страху, Гневу и Брезгливости, которые не справляются со своими обязанностями. Острова личности Райли начинают рушиться один за другим, девочка становится апатичной и отстраненной.
+В долговременной памяти Радость и Печаль встречают Бинго Бонго, забытого воображаемого друга детства Райли, который мечтает попасть на Луну на своей радужной ракете. Он помогает им найти обратный путь к штаб-квартире. По дороге они проходят через различные отделы сознания: студию снов, где производятся сновидения, абстрактное мышление, которое чуть не уничтожает их, и свалку забытых воспоминаний.
+Тем временем поведение Райли в реальном мире становится все более проблематичным. Она грубит родителям, бросает хоккей, ссорится с лучшей подругой из Миннесоты и решает сбежать домой, украв кредитную карту матери. Оставшиеся в штаб-квартире эмоции понимают, что не могут исправить ситуацию без Радости.
+Когда Радость и Печаль почти добираются до штаб-квартиры, последний остававшийся остров личности начинает рушиться. Бинго Бонго жертвует собой, выпрыгивая из своей ракеты, чтобы Радость смогла добраться до цели. В этот момент Радость осознает важность Печали, просматривая воспоминания и понимая, что грустные моменты часто приводили к тому, что родители и друзья утешали Райли, что делало ее еще счастливее.
+Райли уже садится в автобус, направляющийся в Миннесоту, когда Радость и Печаль возвращаются в штаб-квартиру. Радость позволяет Печали взять управление на себя, и девочка понимает, что совершает ошибку. Она возвращается домой и впервые честно рассказывает родителям о своих переживаниях по поводу переезда. Родители поддерживают дочь, признавая, что им тоже тяжело дается адаптация к новой жизни.
+Это искреннее проявление эмоций создает новое золотое воспоминание, которое окрашено одновременно и радостью, и печалью. Острова личности Райли восстанавливаются и становятся больше и сложнее, отражая ее взросление. В штаб-квартире появляется более сложная консоль управления, а сами эмоции начинают работать совместно, смешивая различные чувства.
+Спустя год Райли полностью адаптировалась к жизни в Сан-Франциско. У нее появились новые друзья, она играет в хоккей в смешанной команде и научилась ценить как радостные, так и грустные моменты жизни. В ее сознании появились новые острова личности, отражающие новые интересы и увлечения. Фильм заканчивается тем, что эмоции с удивлением обнаруживают кнопку "Половое созревание" на консоли управления, что намекает на новые вызовы, которые ждут Райли в подростковом возрасте.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('12 лет рабства', 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.', '2013-01-01', 1, '134 minutes', '12 Years a Slave', 8.1, '12 лет рабства
+Фильм основан на реальных мемуарах и рассказывает историю Соломона Нортапа, свободного афроамериканца, жившего в 1841 году в штате Нью-Йорк со своей женой и двумя детьми. Соломон работает плотником и талантливым скрипачом, ведет благополучную жизнь среднего класса. Когда его семья уезжает на несколько недель, к Соломону обращаются двое белых мужчин, представившихся цирковыми артистами, с предложением поехать в Вашингтон и заработать, играя на скрипке в их представлениях.
+Соломон соглашается на выгодное предложение, и мужчины устраивают ему роскошный ужин в столице. После обильного употребления алкоголя Соломон теряет сознание и просыпается закованным в кандалы в темном подвале. Выясняется, что его обманули и продали в рабство. Работорговец Джеймс Берч избивает Соломона, когда тот пытается доказать, что является свободным человеком, и угрожает убить его, если он еще раз заявит о своем статусе.
+Соломона отправляют на корабле в Новый Орлеан вместе с другими рабами, где работорговец Теофилус Фриман продает их на невольничьем рынке. Соломона, которому дают новое имя Платт, покупает относительно гуманный плантатор Уильям Форд. Форд ценит ум и таланты Соломона, позволяет ему играть на скрипке и поручает ответственные задания. Однако из-за конфликта с жестоким надсмотрщиком Джоном Тибитсом, который завидует благосклонности хозяина к Соломону, ситуация становится опасной.
+После того как Тибитс пытается повесить Соломона, а тот вынужден несколько часов провести с петлей на шее, балансируя на цыпочках, Форд понимает, что не может больше защищать своего any раба. Он продает Соломона жестокому плантатору Эдвину Эппсу, известному своей беспощадностью к рабам.
+На плантации Эппса Соломон проводит следующие десять лет в нечеловеческих условиях. Эппс одержим религиозным фанатизмом и регулярно избивает рабов, оправдывая это библейскими цитатами. Он требует, чтобы каждый раб собирал определенное количество хлопка в день, и жестоко наказывает тех, кто не выполняет норму. Особенно достается молодой рабыне Патси, которая собирает больше хлопка, чем кто-либо другой, но становится объектом сексуальных домогательств Эппса.
+Жена Эппса Мэри люто ненавидит Патси из-за внимания мужа к ней и постоянно требует избавиться от девушки. Ситуация усугубляется, когда Патси уходит к соседям за мылом, чтобы помыться, поскольку хозяйка не дает рабам средств для гигиены. Эппс воспринимает это как побег и устраивает Патси жестокую порку, заставляя Соломона участвовать в наказании под угрозой смерти.
+За годы рабства Соломон несколько раз пытается связаться с друзьями и семьей на севере, но его попытки заканчиваются неудачей. Он пишет письмо, но раб, которому он доверяет его передать, выдает его Эппсу из страха. Соломон вынужден сжечь письмо и чуть не погибает от гнева хозяина.
+Поворотный момент наступает, когда на плантацию приезжает канадский плотник Сэмюэл Басс, нанятый для строительных работ. Басс открыто выступает против рабства, что вызывает конфликты с Эппсом. Соломон осторожно сближается с ним и в конце концов решает довериться канадцу, рассказав свою истинную историю. Басс соглашается отправить письмо друзьям Соломона в Нью-Йорк.
+Письмо доходит до адресата, и друзья Соломона обращаются к властям штата Нью-Йорк. Поскольку Соломон был свободным гражданином, правительство отправляет шерифа и адвоката в Луизиану для его освобождения. Когда они прибывают на плантацию Эппса с соответствующими документами, Соломон должен доказать свою личность, рассказав подробности своей прошлой жизни.
+После двенадцати лет рабства Соломон наконец обретает свободу. В эмоциональной сцене прощания он не может помочь Патси, которая умоляет его забрать ее с собой или убить, чтобы избавить от страданий. Соломон возвращается домой в Нью-Йорк, где воссоединяется с семьей. Его жена не изменилась, но дети выросли, и он встречает внучку, названную в его честь.
+Фильм завершается титрами, сообщающими, что Соломон Нортап стал активистом движения за отмену рабства и помогал беглым рабам через подземную железную дорогу. Также упоминается, что работорговцы, похитившие его, так и не понесли наказания, несмотря на судебные процессы. Обстоятельства смерти самого Соломона остаются неизвестными, но его мемуары стали важным историческим документом, свидетельствующим о жестокости американского рабства.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Гонка', 'The merciless 1970s rivalry between Formula One rivals James Hunt and Niki Lauda.', '2013-01-01', 1, '123 minutes', 'Rush', 8.1, 'История начинается в 1970 году на гоночной трассе Формулы-3 в Германии, где встречаются два амбициозных молодых гонщика - англичанин Джеймс Хант и австриец Ники Лауда. Их характеры кардинально противоположны: Хант - харизматичный плейбой, любитель вечеринок, алкоголя и женщин, который полагается на природный талант и интуицию за рулем. Лауда - педантичный перфекционист, который досконально изучает каждую деталь автомобиля и полагается на технические знания и расчеты. С первой встречи между ними возникает острое соперничество, переходящее во взаимную неприязнь.
+Оба гонщика продвигаются по карьерной лестнице и в 1972 году попадают в Формулу-1. Хант присоединяется к команде Hesketh Racing, небольшой британской команде лорда Александра Хеската, известной своим богемным стилем и вечеринками. Лауда покупает себе место в команде March, а затем переходит в Ferrari, где его технические знания и методичный подход к настройке автомобиля быстро приносят результаты.
+К 1975 году Лауда становится чемпионом мира, выиграв первый титул для Ferrari за одиннадцать лет. Хант все еще борется за стабильные результаты, его импульсивный стиль вождения часто приводит к авариям и сходам. Личная жизнь Ханта также нестабильна - он женится на модели Сьюзи Миллер, но их брак быстро трещит по швам из-за его неверности и склонности к саморазрушению.
+В 1976 году Хант переходит в команду McLaren, получив наконец конкурентоспособный автомобиль. Начинается сезон, который станет одним из самых драматичных в истории Формулы-1. Лауда лидирует в чемпионате, но Хант начинает выигрывать гонки и догонять его в общем зачете. Их соперничество достигает пика - они борются не только за победы в гонках, но и за право называться лучшим гонщиком своего поколения.
+Кульминация наступает на Гран-при Германии на легендарной трассе Нюрбургринг, которую гонщики называли "Зеленым адом" из-за ее невероятной сложности и опасности. Лауда, всегда осторожный в вопросах безопасности, выступает против проведения гонки в дождливую погоду, считая условия слишком опасными. Большинство гонщиков, включая Ханта, голосуют за проведение гонки, и Лауда вынужден согласиться, несмотря на свои опасения.
+Во время гонки автомобиль Лауды на высокой скорости слетает с трассы, врезается в ограждение и загорается. Ferrari переворачивается, и Лауда оказывается заблокированным в горящей машине. Несколько гонщиков, включая Артуро Мерцарио, Гая Эдвардса, Харальда Эртля и Бретта Лунгера, останавливаются и рискуя жизнью вытаскивают Лауду из пылающего автомобиля. Он получает тяжелейшие ожоги лица, головы и легких, врачи дают ему мало шансов на выживание.
+Пока Лауда борется за жизнь в больнице, Хант выигрывает несколько гонок подряд и практически догоняет его в чемпионате. Медики говорят, что Лауде потребуется минимум год на восстановление, и многие считают его карьеру законченной. Но всего через шесть недель после аварии, когда раны еще не зажили, а лицо изуродовано ожогами, Лауда возвращается в кокпит на Гран-при Италии в Монце.
+Возвращение Лауды потрясает весь мир автоспорта. Несмотря на физические страдания и психологическую травму, он финиширует четвертым и продолжает бороться за чемпионство. Его мужество и решимость заставляют даже Ханта испытывать уважение к сопернику. Борьба за титул переносится на последнюю гонку сезона - Гран-при Японии на трассе Фудзи.
+В Японии снова дождь, трасса мокрая и крайне опасная. Лауда, который получил психологическую травму от огня, понимает, что не может больше рисковать жизнью ради спорта. После нескольких кругов он принимает решение сойти с дистанции, заявив, что "не может водить машину как животное". Хант финиширует третьим, что дает ему достаточно очков для победы в чемпионате с преимуществом всего в одно очко.
+После завершения карьеры пути бывших соперников расходятся. Хант пытается наслаждаться славой чемпиона мира, но постепенно понимает, что без острого соперничества с Лаудой гонки потеряли для него смысл. Его результаты ухудшаются, а личная жизнь окончательно рушится - Сьюзи уходит от него к Ричарду Бертону. Хант завершает карьеру в 1979 году и становится комментатором гонок.
+Лауда восстанавливается после травм и возвращается в Ferrari, затем переходит в Brabham и McLaren. Он выигрывает еще два чемпионата мира в 1977 и 1984 годах, доказав, что его методичный подход и сила воли сильнее любых физических препятствий. После завершения карьеры гонщика он становится успешным бизнесменом, создает авиакомпанию Lauda Air.
+Годы спустя, когда эмоции утихли, Хант и Лауда встречаются в аэропорту. Они понимают, что их жестокое соперничество сделало каждого из них лучше, заставив превзойти собственные пределы. Лауда признает, что без давления со стороны Ханта он никогда не достиг бы таких высот, а Хант понимает, что Лауда научил его уважать опасность и ценить жизнь.
+Фильм заканчивается информацией о том, что Хант умер от сердечного приступа в 1993 году в возрасте 45 лет, а Лауда стал одним из самых уважаемых людей в автоспорте, построив успешную деловую империю. Их противостояние в сезоне 1976 года остается одной из величайших спортивных историй всех времен, показывая, как два совершенно разных человека могут подтолкнуть друг друга к достижению невозможного.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Форд против Феррари', 'American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order to defeat Ferrari at the 24 Hours of Le Mans in 1966.', '2019-01-01', 1, '152 minutes', 'Ford v Ferrari', 8.1, 'Фильм рассказывает о реальных событиях 1960-х годов, когда автомобильная компания Ford Motor Company решила бросить вызов доминированию Ferrari в престижных автогонках, особенно в легендарной гонке 24 часа Ле-Мана во Франции. История сосредоточена на двух ключевых фигурах: автомобильном дизайнере Кэрролле Шелби и британском гонщике Кене Майлзе.
+Кэрролл Шелби - бывший успешный автогонщик, вынужденный завершить карьеру из-за проблем с сердцем. Теперь он занимается разработкой высокопроизводительных автомобилей и продает их со своего ранчо в Калифорнии. Кен Майлз - талантливый, но вспыльчивый британский механик и гонщик, который работает в небольшом гараже и с трудом сводит концы с концами. Несмотря на его выдающиеся навыки вождения, команды не спешат приглашать его из-за его непредсказуемого характера.
+Генри Форд II, внук основателя компании Ford, обеспокоен падением продаж и устаревшим имиджем бренда среди молодежи. Его помощник Ли Якокка предлагает радикальное решение - войти в мир автоспорта, чтобы повысить престиж марки. Они решают попытаться купить Ferrari, но переговоры с Энцо Феррари срываются в последний момент. Разгневанный итальянский автопроизводитель оскорбляет Форда, называя его автомобили скучными, а самого его - толстым американцем.
+Унижение заставляет Генри Форда II поставить амбициозную цель: создать гоночный автомобиль, способный победить Ferrari в Ле-Мане. Якокка обращается к Шелби как к единственному американцу, выигравшему эту престижную гонку. Шелби понимает масштаб задачи - Ferrari доминирует в Ле-Мане на протяжении многих лет, и их автомобили специально созданы для этой гонки.
+Шелби собирает команду инженеров и привлекает Кена Майлза в качестве ведущего тест-пилота. Они начинают работу над проектом GT40, стремясь создать автомобиль, способный развивать скорость более 200 миль в час и выдерживать 24 часа непрерывной гонки. Процесс разработки оказывается чрезвычайно сложным - первые версии автомобиля имеют серьезные проблемы с аэродинамикой, тормозами и надежностью.
+Майлз проводит бесчисленные часы на трассе, тестируя различные модификации и доводя автомобиль до совершенства. Его жена Молли и сын Питер поддерживают его, несмотря на опасность и финансовые трудности. Между тем корпоративная политика Ford создает дополнительные препятствия. Лео Бибе, исполнительный директор Ford, и другие руководители скептически относятся к проекту и особенно к кандидатуре Майлза в качестве пилота.
+Первые попытки в Ле-Мане в 1964 и 1965 годах заканчиваются неудачей. Автомобили Ford ломаются один за другим, не выдерживая нагрузки 24-часовой гонки. Ferrari продолжает побеждать, и проект оказывается под угрозой закрытия. Шелби понимает, что у него есть последний шанс в 1966 году, и он полностью перерабатывает конструкцию автомобиля.
+К 1966 году GT40 Mark II становится значительно более надежным и быстрым. Однако корпоративная политика Ford мешает Шелби выставить Майлза в качестве основного пилота. Руководство компании считает британца слишком непредсказуемым для представления бренда Ford. Шелби вынужден бороться как с техническими проблемами, так и с бюрократией.
+В драматической сцене Шелби берет самого Генри Форда II на тест-драйв на GT40, развивая огромную скорость и демонстрируя возможности автомобиля. Потрясенный Форд разрешает Майлзу участвовать в гонке, но с условием, что он будет подчиняться командной стратегии.
+В Ле-Мане 1966 года три автомобиля Ford показывают выдающиеся результаты, значительно опережая Ferrari. Майлз лидирует большую часть гонки, демонстрируя мастерство и выносливость. Однако в последние часы руководство Ford приказывает ему замедлиться, чтобы все три автомобиля пересекли финишную черту одновременно для эффектного фото. Майлз неохотно подчиняется приказу.
+Из-за технических правил определения победителя автомобиль, стартовавший позже но финишировавший одновременно с Майлзом, объявляется победителем. Майлз лишается индивидуальной победы, которую заслуживал, ради корпоративного пиара Ford. Это решение глубоко расстраивает его и Шелби, но общая цель достигнута - Ford наконец побеждает Ferrari в Ле-Мане.
+Два месяца спустя во время тестирования нового прототипа J-Car на трассе Риверсайд в Калифорнии происходит трагедия. Автомобиль становится неуправляемым на высокой скорости, и Майлз погибает в результате аварии. Его смерть потрясает Шелби и всю команду.
+Фильм завершается информацией о том, что Ford продолжал выигрывать в Ле-Мане в 1967, 1968 и 1969 годах, используя разработки Шелби и Майлза. Наследие их работы повлияло на всю автомобильную индустрию, а GT40 стал легендарным автомобилем. Шелби продолжал создавать высокопроизводительные автомобили, но никогда не забывал своего друга и партнера Кена Майлза, чей вклад в победу Ford был неоценим.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('В центре внимания', 'The true story of how the Boston Globe uncovered the massive scandal of child molestation and cover-up within the local Catholic Archdiocese, shaking the entire Catholic Church to its core.', '2015-01-01', 1, '129 minutes', 'Spotlight', 8.1, 'В 2001 году в редакции влиятельной бостонской газеты "The Boston Globe" появляется новый главный редактор Марти Барон, приехавший из Майами. Барон еврей и не католик, что делает его чужаком в преимущественно католическом Бостоне. На одном из первых редакционных собраний он обращает внимание на небольшую заметку о священнике Джоне Геогане, обвиняемом в сексуальных домогательствах к детям. Барон предлагает отделу расследований "Spotlight" заняться этой историей более глубоко.
+Отдел "Spotlight" состоит из четырех опытных журналистов под руководством Уолтера "Робби" Робинсона. В команду входят Майк Резендес, Сэша Пфайффер и Мэтт Кэрролл. Изначально журналисты не особенно воодушевлены идеей расследования, считая это локальной историей об одном проблемном священнике. Бостон - глубоко католический город, где церковь обладает огромным влиянием, и критика священнослужителей может серьезно навредить карьере.
+Команда начинает с изучения судебных документов по делу Геогана. Они обнаруживают, что адвокат Митчелл Габер уже много лет ведет дела жертв священников-педофилов, но большинство случаев заканчиваются конфиденциальными соглашениями с церковью. Габер рассказывает журналистам, что проблема гораздо масштабнее, чем один священник - речь идет о системном сокрытии преступлений церковной иерархией.
+Резендес пытается получить доступ к судебным документам, которые были засекречены по запросу церкви. Он встречается с адвокатом Эриком МакЛеишем, который представляет интересы жертв и утверждает, что кардинал Бернард Лоу, глава Бостонской архиепархии, знал о преступлениях священников и систематически переводил их из прихода в приход, скрывая правду от прихожан и полиции.
+Пфайффер и Кэрролл начинают поиски жертв священников-педофилов. Они обнаруживают, что многие из пострадавших стали наркоманами, алкоголиками, некоторые покончили жизнь самоубийством. Жертвы рассказывают, что священники специально выбирали детей из неблагополучных семей, разведенных родителей, сирот - тех, кому некому было пожаловаться или кому не поверили бы.
+Команда консультируется с бывшим священником Ричардом Сайпом, экспертом по вопросам целибата и сексуального поведения духовенства. Сайп объясняет, что по его оценкам около шести процентов священников имели сексуальные контакты с несовершеннолетними. Применив эту статистику к Бостонской архиепархии, журналисты понимают, что речь может идти о примерно девяноста священниках-педофилах.
+Кэрролл получает католический справочник и начинает составлять базу данных всех священников архиепархии за последние десятилетия. Он отслеживает необъяснимые перемещения священников между приходами, длительные "отпуска для лечения", внезапные переводы в другие штаты. Постепенно вырисовывается четкая картина системного сокрытия преступлений.
+Резендес наконец получает доступ к судебным документам после длительной правовой борьбы. Документы подтверждают, что кардинал Лоу лично знал о преступлениях десятков священников и систематически переводил их в новые приходы, где они продолжали совращать детей. В некоторых случаях церковные власти даже рекомендовали проблемных священников для работы с молодежью.
+По мере продвижения расследования журналисты сталкиваются с давлением со всех сторон. Церковь пытается дискредитировать их работу, влиятельные католики в городе выражают недовольство, даже некоторые коллеги считают, что они заходят слишком далеко. Робинсон обнаруживает, что его собственная газета получала информацию о священниках-педофилах еще в 1993 году, но тогда редакция не стала развивать эту тему.
+Команда также сталкивается с сопротивлением внутри католической общины, включая адвоката Джима Салливана, который сам является жертвой священника, но защищает церковь в судах. Салливан объясняет сложность ситуации для католиков, которые любят свою веру, но вынуждены признать, что их духовные лидеры предали доверие.
+В процессе расследования выясняется, что проблема выходит далеко за пределы Бостона. Священники-педофилы переводились не только между приходами, но и между епархиями в разных штатах и даже странах. Церковная иерархия действовала как международная сеть сокрытия преступлений, ставя репутацию института выше безопасности детей.
+После месяцев кропотливой работы команда "Spotlight" готова к публикации. Они собрали доказательства против семидесяти священников в Бостонской архиепархии и документально подтвердили, что кардинал Лоу и другие высокопоставленные церковники знали о преступлениях и систематически их скрывали.
+6 января 2002 года "The Boston Globe" публикует первую статью серии под названием "Church allowed abuse by priest for years". Статья производит эффект разорвавшейся бомбы. В редакцию газеты начинают звонить десятки новых жертв, многие из которых молчали десятилетиями. Становится ясно, что масштаб проблемы еще больше, чем предполагали журналисты.
+В течение следующих месяцев "Globe" публикует сотни статей о скандале с священниками-педофилами. Расследование запускает волну аналогичных разоблачений по всему миру. Кардинал Лоу вынужден подать в отставку, десятки священников отстраняются от служения, церковь выплачивает сотни миллионов долларов компенсаций жертвам.
+Фильм заканчивается информацией о том, что к 2016 году подобные скандалы были обнаружены в католических церквах более чем в ста городах по всему миру. Команда "Spotlight" получила Пулитцеровскую премию за общественную службу, а их расследование кардинально изменило отношение к проблеме сексуальных злоупотреблений в религиозных организациях. Работа бостонских журналистов показала, как важна независимая пресса в борьбе с коррупцией и злоупотреблениями власти, даже когда эта власть прикрывается религиозным авторитетом.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Песнь моря', 'Ben, a young Irish boy, and his little sister Saoirse, a girl who can turn into a seal, go on an adventure to free the fairies and save the spirit world.', '2014-01-01', 1, '93 minutes', 'Song of the Sea', 8.1, 'Песнь моря
+Фильм рассказывает историю десятилетнего мальчика Бена, который живет с отцом Конором на маяке на небольшом ирландском острове. Шесть лет назад мать Бена Бронах исчезла в ночь, когда родилась его младшая сестра Сирша. Бен винит сестру в исчезновении матери и относится к ней с неприязнью.
+Сирша оказывается необычным ребенком - она никогда не говорит и проявляет странную связь с морем. В день своего шестого дня рождения девочка находит белое пальто в комнате матери и надевает его. Пальто оказывается волшебным - в нем Сирша превращается в тюленя и уплывает в море. Бен следует за ней и спасает, но их бабушка, напуганная происшествием, настаивает на том, чтобы дети переехали к ней в Дублин.
+В городе Сирша начинает болеть и слабеть. Тем временем Бен узнает от странного человека по имени Дэн, что его сестра является последней селки - мифическим существом, которое может превращаться из человека в тюленя. Селки должны петь древнюю песню, чтобы освободить волшебных существ, превращенных в камень злой совой-ведьмой Махой.
+Оказывается, что Маха когда-то была матерью, но потеряла своего сына Мак Лира и от горя превратилась в сову. Она забирает эмоции у людей и волшебных существ, превращая их в камень, чтобы они не страдали, как страдала она. Волшебные существа древней Ирландии - феи, великаны и другие мифические создания - исчезают из мира, окаменевая под влиянием ее заклинаний.
+Бен понимает, что должен помочь Сирше вернуться на остров, чтобы она смогла найти свое пальто и исполнить песню селки. Дети убегают от бабушки и отправляются в опасное путешествие через волшебную Ирландию. По пути они встречают различных мифических существ, включая трех волшебных братьев, которые помогают им добраться до дома.
+Во время путешествия Бен узнает правду о своей матери - Бронах тоже была селки, и после рождения Сирши она должна была вернуться в море навсегда, как того требует природа селки. Она не бросила семью по своей воле, а подчинилась древнему закону. Это открытие помогает Бену понять и полюбить свою сестру.
+Маха преследует детей, стремясь превратить Сиршу в камень, чтобы "защитить" ее от боли. Она похищает девочку и уносит в свое логово. Бен храбро отправляется спасать сестру, проникая в мир Махи. Там он встречает окаменелые фигуры волшебных существ и понимает масштаб трагедии, которую причинила сова-ведьма.
+В кульминационной сцене Бен помогает Махе вспомнить ее собственную человечность, показывая ей, что боль и печаль являются неотъемлемой частью жизни и любви. Он рассказывает ей о своей собственной потере и о том, как научился принимать исчезновение матери. Маха понимает, что, пытаясь защитить других от страданий, она лишила их радости жизни.
+Сирша исполняет древнюю песню селки, которая разрушает заклинания Махи и возвращает к жизни всех окаменевших волшебных существ. Песня также исцеляет саму Маху, возвращая ей человеческий облик и воссоединяя с ее сыном Мак Лиром. Волшебные существа восстанавливают свою связь с миром, но понимают, что время их пребывания на земле подходит к концу.
+После исполнения песни Сирша, как настоящая селки, должна навсегда уйти в море вместе с другими волшебными существами. Однако любовь брата и отца оказывается сильнее древних законов. Бронах, мать детей, появляется из моря и дает Сирше выбор - остаться с семьей или уйти в волшебный мир.
+Сирша выбирает остаться с семьей, отказываясь от своей селки природы ради любви к брату и отцу. Семья воссоединяется на маяке, где Конор наконец находит мир с потерей жены, а Бен полностью принимает свою сестру. Сирша начинает говорить, и дети строят крепкие братские отношения.
+Фильм завершается тем, что семья счастливо живет на острове, а волшебные существа, хотя и покинули физический мир, остаются частью ирландского фольклора и памяти. История подчеркивает важность принятия как радости, так и печали в жизни, силу семейных уз и богатство ирландской мифологии, которая продолжает жить в сердцах людей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('История', 'A pregnant woman''s search for her missing husband takes her from London to Kolkata, but everyone she questions denies having ever met him.', '2012-01-01', 1, '122 minutes', 'Kahaani', 8.1, 'Видья Багчи, беременная женщина из Лондона, прилетает в Калькутту в поисках своего пропавшего мужа Арнаба Багчи. Она утверждает, что он приехал в город по работе два месяца назад и внезапно перестал выходить на связь. Видья обращается в полицию, где ее дело берет под контроль помощник комиссара Рана и инспектор Чаттерджи.
+Когда полиция начинает проверять информацию о муже Видьи, выясняются странные обстоятельства. В отеле, где якобы остановился Арнаб, его никто не помнит, а записи в регистрационной книге выглядят подозрительно. В компании National Data Center, где он якобы работал программистом, говорят, что такого сотрудника у них никогда не было.
+Видья настаивает на продолжении поисков, несмотря на скепсис полицейских. Ей помогает добродушный служащий страховой компании Сарадж Кумар, который сопровождает ее по городу и переводит с бенгальского. Чем дальше продвигается расследование, тем больше нестыковок обнаруживается в истории Видьи.
+Инспектор Чаттерджи начинает подозревать, что Видья что-то скрывает. Проверка показывает, что человек по имени Арнаб Багчи действительно существовал, но умер два года назад в автокатастрофе. Тогда кто тот мужчина, которого ищет Видья, и почему она использует имя мертвого человека?
+Параллельно развивается сюжетная линия о подготовке теракта в Калькутте. Разведывательные службы отслеживают террористическую ячейку, планирующую взрыв во время празднования Дурга Пуджи. Оперативники знают, что в городе скрывается опасный террорист по кличке Милинд Дамле, но не могут его найти.
+Видья продолжает свои поиски, несмотря на растущие подозрения полиции. Она посещает различные места в Калькутте, где якобы мог бывать ее муж, постепенно собирая информацию. Ее беременность вызывает сочувствие у местных жителей, которые охотно помогают ей.
+Постепенно выясняется связь между поисками Видьи и террористической угрозой. Человек, которого она ищет под именем Арнаб Багчи, на самом деле является Милиндом Дамле - тем самым террористом, которого разыскивают спецслужбы. Но истинные мотивы Видьи остаются неясными.
+В процессе расследования раскрывается трагическая предыстория. Два года назад во время теракта в метро Калькутты погиб муж Видьи по имени Арнаб Багчи - настоящий Арнаб, чье имя она использует. Видья была беременна, но потеряла ребенка из-за травмы, полученной в результате взрыва, организованного Милиндом Дамле.
+Видья раскрывает свой план мести. Она не беременна - живот является искусной имитацией, скрывающей взрывчатку. Все это время она выслеживала Милинда Дамле, используя поддельную личность и притворяясь беременной, чтобы вызвать сочувствие и получить помощь в поисках.
+Видья находит Милинда Дамле в его укрытии. Она раскрывает ему свою истинную личность и мотивы мести. Дамле понимает, что попал в ловушку, но уже слишком поздно - Видья активирует взрывчатку, спрятанную в поддельном животе.
+Взрыв убивает и Видью, и Милинда Дамле, предотвращая запланированный им крупный теракт во время религиозного праздника. Полиция прибывает на место происшествия и обнаруживает останки террориста, которого так долго искали спецслужбы.
+В финале выясняется полная картина происходившего. Видья Багчи была обычной домохозяйкой, которая потеряла мужа и будущего ребенка в результате теракта. Движимая жаждой мести, она два года готовилась к операции по уничтожению убийцы своей семьи, тщательно изучив его привычки и связи в Калькутте.
+Инспектор Чаттерджи и помощник комиссара Рана понимают, что Видья сознательно пожертвовала собой, чтобы предотвратить новый теракт и защитить тысячи невинных людей. Ее месть превратилась в акт героизма, спасший город от катастрофы.
+Фильм заканчивается сценами празднования Дурга Пуджи в Калькутте, которое проходит мирно благодаря жертве Видьи. Полицейские отдают дань уважения женщине, которая обманула их всех, но сделала это ради высшей цели. История Видьи становится городской легендой о материнской любви, превратившейся в силу, способную победить зло.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Пленницы', 'When Keller Dover''s daughter and her friend go missing, he takes matters into his own hands as the police pursue multiple leads and the pressure mounts.', '2013-01-01', 1, '153 minutes', 'Prisoners', 8.1, 'История начинается в День благодарения в пенсильванском городке, где две семьи - Довер и Берч - проводят праздничный ужин. Келлер Довер работает плотником-подрядчиком и воспитывает своих детей в строгих христианских традициях, готовя их к возможным трудностям жизни. Франклин Берч работает врачом и ведет более либеральный образ жизни со своей женой Нэнси.
+После ужина шестилетние дочери семей - Анна Довер и Джой Берч - идут к дому Анны за свистком, который она забыла. Девочки исчезают, и их поиски ни к чему не приводят. Единственной зацепкой становится старый жилой трейлер, который видели припаркованным в районе незадолго до исчезновения детей.
+Детектив Локи, опытный полицейский с безупречной репутацией раскрытия дел, арестовывает владельца трейлера - молодого человека по имени Алекс Джонс. У Алекса интеллект десятилетнего ребенка из-за несчастного случая в детстве, и он живет со своей тетей Холли Джонс. Во время допроса Алекс ведет себя странно, но не дает никакой полезной информации о местонахождении девочек.
+Из-за отсутствия доказательств полиция вынуждена отпустить Алекса через 48 часов. Келлер Довер приходит в ярость, убежденный, что Алекс виновен и просто скрывает правду. После освобождения подозреваемого Келлер подходит к нему на парковке, и Алекс шепчет ему: "Они не плакали, пока я не оставил их." Эти слова укрепляют подозрения Келлера.
+Не доверяя полиции и отчаявшись найти дочь, Келлер решает взять дело в свои руки. Он похищает Алекса и заточает его в заброшенном доме, принадлежащем его отцу. Франклин Берч сначала протестует против этих действий, но отчаяние за судьбу своей дочери заставляет его стать соучастником.
+Келлер начинает жестоко пытать Алекса, требуя признания и информации о девочках. Он использует физическое насилие, лишает пищи и применяет психологическое давление. Несмотря на пытки, Алекс продолжает утверждать, что не знает, где находятся дети, и ведет себя как напуганный ребенок.
+Тем временем детектив Локи продолжает расследование по официальным каналам. Он обнаруживает в подвале дома священника Дуэйна тайник с детской одеждой и трупом мужчины, который пролежал там 16 лет. Священник признается, что убил этого человека после того, как тот сказал, что "начал войну против Бога" и похищал детей.
+Локи также находит связь между несколькими нераскрытыми делами о пропавших детях в регионе. Расследование приводит его к бывшему священнику, а затем к подозрительному магазину, где он обнаруживает тела нескольких детей и арестовывает владельца. Однако это не приводит к обнаружению Анны и Джой.
+Постепенно выясняется более сложная картина преступления. Локи узнает о существовании подпольной сети людей, которые похищают детей как часть "войны против Бога" - попытки заставить людей отвернуться от веры через страдания. Эта сеть действует уже несколько десятилетий.
+В процессе расследования Локи приходит к Холли Джонс, тете Алекса, чтобы задать дополнительные вопросы. Во время разговора он замечает в доме детский лабиринт-кулон, точно такой же, какой носила Анна в день исчезновения. Холли понимает, что попалась, и пытается отравить детектива.
+Выясняется, что Холли и ее покойный муж были частью сети похитителей детей. Они похищали детей и психологически ломали их, превращая в таких же поврежденных личностей, как Алекс. Настоящее имя Алекса - Барри Милланд, и он сам был похищен 26 лет назад. Холли воспитывала его как своего племянника, превратив в умственно неполноценного человека.
+Локи обнаруживает, что девочки все это время были заперты в тайной комнате под домом Холли. Анна серьезно больна от длительного заточения, а Джой находится в критическом состоянии. Холли пытается убить детектива, но он успевает вызвать подкрепление и арестовать ее.
+Тем временем Келлер продолжает пытать невиновного Алекса, не зная правды. Алекс, несмотря на умственную отсталость, постепенно начинает вспоминать подавленные воспоминания о своем собственном похищении. Он рассказывает Келлеру о "змеях" и лабиринтах - деталях, которые Келлер не понимает.
+Когда правда открывается и девочек находят, Келлер понимает, что пытал невиновного человека. Он освобождает Алекса, но по дороге в больницу попадает в автомобильную аварию. Алекс получает медицинскую помощь, но Келлер исчезает.
+В финале фильма выясняется, что Холли успела похитить Келлера и заточить его в той же яме во дворе своего дома, где ранее держала девочек. Джой выздоравливает и рассказывает Локи, что слышала, как мужчина кричал из-под земли. Локи возвращается к дому Холли и слышит слабые звуки свистка из-под земли - Келлер подает сигналы тем самым свистком, который искала его дочь в день исчезновения.
+Фильм завершается тем, что Локи останавливается и внимательно прислушивается к звукам, оставляя зрителя в неопределенности относительно того, услышит ли он сигналы и спасет ли Келлера. Этот открытый финал подчеркивает темы справедливости, искупления и последствий наших действий в экстремальных ситуациях.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Безумный Макс: Дорога ярости', 'In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.', '2015-01-01', 1, '120 minutes', 'Mad Max: Fury Road', 8.1, 'В постапокалиптическом мире, где цивилизация рухнула из-за войн за ресурсы, бывший дорожный патрульный Макс Рокатански скитается по пустошам Австралии, мучимый воспоминаниями о погибшей семье. Он попадает в плен к Военным мальчикам - фанатичным последователям тирана Бессмертного Джо, который правит Цитаделью, единственным источником чистой воды в регионе.
+Бессмертный Джо держит в рабстве множество людей, используя их как доноров крови, производителей грудного молока и для других нужд. Макса делают "кровяным мешком" для больного Военного мальчика по имени Нукс, который страдает от радиационного отравления и нуждается в постоянных переливаниях крови.
+Императорица Фуриоза, одна из лейтенантов Джо, получает задание отвезти топливную цистерну в соседний форпост Газтаун. Однако вместо выполнения приказа она сворачивает с маршрута, направляясь на восток к "Зеленому месту" - легендарной земле ее детства. В цистерне она прячет пять жен Бессмертного Джо: Тост, Способную, Хрупкую, Дэг и беременную Великолепную Ангару, которых тиран держал как наложниц для продолжения рода.
+Обнаружив побег, разъяренный Бессмертный Джо организует масштабную погоню, мобилизовав все свои силы. К нему присоединяются армии союзных форпостов - Газтауна под командованием Народного Мясника и Пулетфермы под руководством Рыцаря Пули. Нукс, привязанный к Максу как к живому донору крови, участвует в погоне на своей боевой машине.
+Во время первого столкновения машина Нукса переворачивается, и он оказывается брошенным своими товарищами. Макс освобождается от оков и пытается захватить цистерну Фуриозы, но понимает, что в одиночку ему не выжить в пустыне без воды и топлива. Он вынужден объединиться с Фуриозой и женами против общего врага.
+Группа направляется через опасные соляные равнины, где их атакует банда "Скрежещущих" на мотоциклах с шипастыми колесами. Макс проявляет свои навыки бойца и водителя, помогая отбить нападение. Нукс, первоначально пытавшийся саботировать побег, постепенно переходит на сторону беглецов под влиянием доброты Способной, которая не боится его уродства и болезни.
+Фуриоза ведет группу к своему детскому дому, где, по воспоминаниям, должно быть "Зеленое место" - плодородная земля с чистой водой. На пути они встречают банду на ходулях, вооруженную взрывчаткой, но успешно прорываются через засаду. Однако когда они достигают места назначения, оказывается, что "Зеленое место" давно превратилось в токсичное болото.
+Там их встречает клан Вульвалини - группа пожилых женщин-воительниц на мотоциклах, которые оказываются бывшими соплеменницами Фуриозы. Они рассказывают, что их родная земля отравлена, и теперь они ищут новое место для жизни, планируя пересечь соляные равнины в поисках мифической "земли обетованной".
+Макс понимает, что путешествие через пустыню на 160 дней - это самоубийство, особенно для беременной Ангары и ослабевших женщин. Он предлагает альтернативный план: вернуться в Цитадель, пока основные силы Джо находятся в погоне, захватить крепость и ее водные ресурсы. После жарких споров группа соглашается на этот отчаянный план.
+Начинается обратный путь, но вскоре их настигают силы Бессмертного Джо. Разворачивается грандиозная погоня через пустыню с участием множества боевых машин. Макс переходит на танкер-погрузчик, принадлежащий Рыцарю Пули, и ведет воздушный бой с самолетом-истребителем. Фуриоза сражается на своей цистерне против армады врагов.
+Во время битвы Ангара пытается стрелять в Бессмертного Джо, но падает между машинами и погибает под колесами, не сумев родить здорового наследника, о котором мечтал тиран. Ее смерть еще больше озлобляет Джо, который становится безрассудным в своей ярости.
+Фуриоза получает серьезное ранение в схватке с Бессмертным Джо, но Макс и Нукс помогают ей. Нукс жертвует своей жизнью, направив цистерну в узкое ущелье и заблокировав проход для преследователей. Его последние слова обращены к Способной: "Свидетельствуй меня".
+В финальном поединке Фуриоза убивает Бессмертного Джо, оторвав ему лицо вместе с дыхательной маской. Макс делает Фуриозе переливание крови, спасая ей жизнь, как когда-то его кровь спасала Нукса.
+Группа выживших возвращается в Цитадель, где Макс помогает поднять Фуриозу на платформе перед толпой жаждущих людей. Увидев мертвого тирана, народ ликует. Фуриоза открывает водяные клапаны, и чистая вода свободно течет для всех жителей Цитадели.
+В суматохе освобождения Макс незаметно исчезает в толпе, продолжив свои скитания по пустошам. Он остается призраком, который появляется в критические моменты, чтобы помочь другим обрести свободу, но сам не может найти покой от своих внутренних демонов.
+Фильм заканчивается тем, что Фуриоза становится новой правительницей Цитадели вместе с выжившими женами Джо и кланом Вульвалини, обещая построить более справедливое общество, основанное на равенстве и заботе о слабых, а не на тирании и эксплуатации.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Среда', 'A retiring police officer reminisces about the most astounding day of his career. About a case that was never filed but continues to haunt him in his memories - the case of a man and a Wednesday.', '2008-01-01', 1, '104 minutes', 'A Wednesday', 8.1, 'Фильм начинается с того, как комиссар полиции Мумбаи Пракаш Ратход рассказывает молодому журналисту об одном из самых поразительных случаев в своей карьере накануне выхода на пенсию. События разворачиваются между 2 и 6 часами дня в одну среду A Wednesday! | Die Hard scenario Wiki | Fandom, и эта история никогда не была официально зафиксирована, существуя только в памяти участников событий.
+В среду днем комиссар полиции Пракаш Ратход получает телефонный звонок от человека, называющего себя "Простым человеком", который требует освобождения четырех мусульманских террористов из индийских тюрем A Wednesday — Film Review. Анонимный звонящий утверждает, что он заложил пять бомб в различных частях Мумбаи и взорвет их, если его требования не будут выполнены в течение четырех часов.
+Голос принадлежит обычному среднему классу жителю Мумбаи, который представляется просто как "обычный человек". Он говорит на чистом хинди без акцента и демонстрирует детальное знание работы полиции и городской инфраструктуры. Этот человек не выдвигает политических требований и не принадлежит ни к каким экстремистским группировкам - он просто устал от террористических атак, которые регулярно потрясают его город.
+Комиссар Ратход изначально воспринимает звонок скептически, предполагая, что это очередной розыгрыш или попытка запугивания. Однако когда звонящий детально описывает расположение первой бомбы и предоставляет точную информацию о ее устройстве, полиция понимает серьезность угрозы. Специальная группа находит взрывное устройство именно в указанном месте.
+Мужчина объясняет свою мотивацию через серию воспоминаний. Он рассказывает о том, как террористические атаки коснулись лично его жизни и жизни его близких. В его голосе слышны боль и фрустрация обычного гражданина, который видит, как террористы получают справедливое судебное разбирательство и адвокатов, while их жертвы остаются забытыми.
+Четыре террориста, освобождения которых он требует - это особо опасные преступники, ответственные за множественные теракты в Мумбаи. Они были арестованы и ожидают суда, но благодаря юридическим проволочкам и правозащитным организациям их дела затягиваются на годы. Звонящий требует, чтобы их привезли в конкретное место для якобы обмена на информацию о бомбах.
+По мере развития событий полиция обнаруживает остальные взрывные устройства в местах массового скопления людей - вокзалах, торговых центрах, больницах. Все бомбы настоящие и готовы к детонации. Это заставляет власти серьезно рассмотреть требования анонимного звонящего, несмотря на нежелание идти на переговоры с террористами.
+Комиссар Ратход пытается проследить звонки и установить личность мужчины, но тот оказывается чрезвычайно осторожным и технически подкованным. Он использует различные телефоны и местоположения, не оставляя следов. В разговорах с полицией он демонстрирует глубокое понимание системы правосудия и ее недостатков.
+Под давлением времени и угрозы жизни тысяч невинных людей власти соглашаются на требования. Четырех террористов доставляют в указанное место - заброшенное здание в промышленной зоне города. Полиция окружает здание, готовясь к операции по захвату как террористов, так и анонимного звонящего.
+Однако в кульминационный момент происходит неожиданный поворот. "Простой человек" не появляется для обмена. Вместо этого взрывается само здание, где находились четыре террориста. Выясняется, что вся операция была тщательно спланированной местью - мужчина никогда не собирался освобождать преступников, а наоборот, хотел устранить их, используя полицию как инструмент доставки.
+После взрыва анонимный звонящий связывается с комиссаром в последний раз. Он объясняет, что действовал от имени всех обычных граждан, которые устали от бесконечного цикла терактов и безнаказанности. Он убежден, что система правосудия неспособна обеспечить справедливость для жертв терроризма, поэтому взял закон в свои руки.
+Мужчина раскрывает, что остальные бомбы были ложными - только взрывчатка в здании была настоящей. Он никогда не собирался вредить невинным людям, его целью было устранить четырех конкретных террористов. В его словах звучит удовлетворение от выполненной миссии, но также и печаль от того, что обычному человеку пришлось прибегнуть к таким крайним мерам.
+Полиция начинает расследование, пытаясь установить личность "простого человека", но все следы ведут в никуда. Он исчезает так же внезапно, как и появился, оставив после себя только мертвых террористов и множество вопросов о природе справедливости в современном обществе.
+Комиссар Ратход завершает свой рассказ размышлениями о морали и этике этого случая. Он признает, что официально не может одобрить действия анонимного звонящего, но как человек и гражданин понимает его мотивы. Случай остается нерасследованным и незарегистрированным, поскольку результат - устранение четырех опасных террористов - соответствует интересам общественной безопасности.
+Фильм заканчивается тем, что журналист спрашивает комиссара о его личном мнении относительно действий "простого человека". Ратход отвечает, что иногда система дает сбои, и тогда обычные люди вынуждены принимать экстраординарные меры. Он подчеркивает, что это была история о среде - дне, который изменил его понимание справедливости и показал, на что способен обычный гражданин, доведенный до отчаяния постоянным терроризмом.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Гран Торино', 'Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor, Thao Lor, a Hmong teenager who tried to steal Kowalski''s prized possession: a 1972 Gran Torino.', '2008-01-01', 1, '116 minutes', 'Gran Torino', 8.1, 'Уолт Ковальски - семидесятивосьмилетний ветеран Корейской войны польского происхождения, работавший всю жизнь на автозаводе Ford в Детройте. После смерти любимой жены Дороти он остается один в доме в районе, который когда-то был процветающим белым рабочим кварталом, а теперь населен преимущественно иммигрантами из Юго-Восточной Азии, в основном хмонгами из Лаоса.
+Уолт - озлобленный расист, который с презрением относится к своим азиатским соседям, называя их оскорбительными прозвищами и жалуясь на изменения в районе. Он живет в изоляции, попивая пиво Pabst Blue Ribbon, ухаживая за своим идеальным газоном и лелея свою гордость - безупречный Ford Gran Torino 1972 года выпуска, который он сам собирал на заводе.
+Отношения Уолта с собственными сыновьями Мичем и Стивом крайне натянуты. Они живут в пригородах, озабочены только материальным благополучием и считают отца упрямым стариком, который должен переехать в дом престарелых. Уолт презирает их мягкотелость и потребительский образ жизни, считая, что они не понимают ценности честного труда.
+По соседству с Уолтом живет большая семья хмонгов. Подросток Тао Лор - тихий, застенчивый мальчик, который не может найти свое место ни в американском обществе, ни в традиционной культуре хмонгов. Его кузен Спайдер пытается втянуть его в уличную банду хмонгов, принуждая совершить инициацию - украсть Gran Torino Уолта.
+Ночью Тао пытается угнать машину, но Уолт ловит его с винтовкой M1 Garand времен Корейской войны. Хотя мальчик убегает, инцидент привлекает внимание всего района. На следующий день банда Спайдера нападает на Тао прямо на лужайке перед домом Уолта за неудачную попытку кражи.
+Уолт, разозлившись на то, что беспорядки происходят на его территории, выходит с винтовкой и прогоняет бандитов. Это делает его невольным героем в глазах семьи хмонгов, особенно бабушки Тао и его старшей сестры Сью, которая изучает журналистику в колледже и свободно говорит по-английски.
+Семья Тао считает себя в долгу перед Уолтом за защиту мальчика. Несмотря на протесты старика, они начинают приносить ему традиционную еду и цветы. Бабушка настаивает, что Тао должен отработать свой позор, помогая Уолту по хозяйству в качестве искупления за попытку кражи.
+Поначалу Уолт крайне неохотно принимает помощь Тао, но постепенно начинает видеть в застенчивом мальчике что-то от себя в молодости. Он учит Тао мужским навыкам - как пользоваться инструментами, как ремонтировать вещи, как стоять за себя. Уолт даже помогает Тао найти работу на стройке, используя свои связи и научив мальчика "правильно" разговаривать с белыми работодателями.
+Сью становится посредником между двумя мирами - она объясняет Уолту культуру хмонгов, их историю как союзников американцев во Вьетнамской войне, традиции и ценности. Постепенно Уолт начинает понимать, что у него и его соседей больше общего, чем он думал - все они трудолюбивые люди, ценящие семью и пытающиеся выжить в меняющемся мире.
+Отношения Уолта с семьей углубляются, когда они приглашают его на традиционный праздник. Поначалу неловко чувствуя себя единственным белым гостем, Уолт постепенно расслабляется и даже получает удовольствие от общения. Он начинает понимать, что эти люди - не захватчики его района, а беженцы, которые так же привязаны к своей новой родине, как и он.
+Ситуация осложняется, когда банда Спайдера усиливает давление на Тао. Они стреляют в дом семьи, а затем нападают на Сью, избивают и насилуют ее. Тао, потрясенный случившимся с сестрой, приходит к Уолту за помощью, требуя оружие для мести. Он больше не тихий мальчик - в нем проснулась ярость.
+Уолт понимает, что если даст Тао оружие, мальчик либо будет убит бандитами, либо сам станет убийцей и попадет в тюрьму. Вместо этого он запирает Тао в подвале своего дома и отправляется разбираться с бандой один. Перед уходом он исповедуется молодому священнику отцу Янковичу, рассказав о своих военных грехах в Корее.
+Уолт приезжает в дом, где собралась банда Спайдера. Собравшиеся соседи наблюдают за происходящим. Уолт громко обвиняет банду в нападении на невинную девушку и требует, чтобы они оставили семью в покое. Когда он резко засовывает руку в куртку, как будто за пистолетом, бандиты открывают огонь и убивают его.
+Выясняется, что Уолт был безоружен - в руке у него только зажигалка с эмблемой его старого армейского подразделения. Его убийство на глазах у множества свидетелей означает, что все члены банды будут арестованы и осуждены за убийство, что решит проблему семьи Тао раз и навсегда. Уолт сознательно пожертвовал собой, чтобы защитить людей, которых полюбил.
+На похоронах Уолта его родные сыновья сидят в стороне, явно думая о наследстве, а истинными скорбящими оказываются хмонгские соседи, которые потеряли защитника и друга. Зачитывается завещание Уолта - дом он оставляет церкви, а свой драгоценный Gran Torino завещает Тао с условием, что тот никогда не будет его модифицировать.
+Фильм заканчивается тем, что Тао, теперь уже уверенный в себе молодой человек, едет по шоссе за рулем Gran Torino с собакой Уолта по кличке Дейзи. Машина стала символом связи между старым и новым поколениями, между разными культурами, объединенными общими человеческими ценностями честности, мужества и защиты семьи.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Гарри Поттер и Дары Смерти. Часть 2', 'Harry, Ron, and Hermione search for Voldemort''s remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.', '2011-01-01', 1, '130 minutes', 'Harry Potter and the Deathly Hallows: Part 2', 8.1, 'Действие фильма «Гарри Поттер и Дары Смерти. Часть 2» разворачивается сразу после событий предыдущей части, когда Гарри Поттер, Рон Уизли и Гермиона Грейнджер покидают убежище, в котором скрывались, чтобы продолжить миссию по уничтожению крестражей — частей души Лорда Волан-де-Морта, обеспечивающих ему бессмертие. После того как им удаётся уничтожить крестраж в виде медальона Слизерина с помощью меча Гриффиндора, они понимают, что для полной победы над Волан-де-Мортом необходимо найти и уничтожить все оставшиеся крестражи. Однако их дальнейшие поиски осложняются тем, что Волан-де-Морт уже захватил контроль над Министерством магии и установил жестокий режим, преследуя всех, кто не принадлежит к чистокровным волшебникам. Хогвартс, некогда безопасная школа магии, теперь находится под контролем про-волан-де-мортовских сил, включая Амбридж и новых преподавателей из числа его сторонников, а профессор Северус Снейп назначен директором.
+Гарри, Рон и Гермиона приходят к выводу, что следующий крестраж может быть связан с одним из основателей Хогвартса — Геллертом Гриффиндором. Они узнают, что меч Гриффиндора, который ранее помог им уничтожить крестраж, хранится у Беллатрис Лестрейндж в её особняке — Малфой-мэнор. Чтобы проникнуть туда, они используют зелье Полумерного Принца и помощь домового эльфа Добби. В ходе рискованной операции по краже меча они сталкиваются с Беллатрис, которая подозревает их и начинает пытать Гермиону, требуя узнать, как они проникли в её хранилище. В этот момент Добби телепортирует всех членов команды в безопасное место — дом Билла и Флёр в Заливке, но сам погибает, получив удар кинжалом от Беллатрис. Его смерть становится тяжёлой утратой для Гарри, который сам хоронит Добби на берегу моря, глубоко переживая потерю преданного друга.
+В ходе дальнейшего расследования Гарри получает доступ к воспоминаниям профессора Олливандера, которого они спасли из плена Беллатрис. Олливандер рассказывает, что палочка Волан-де-Морта, сломанная при первой попытке убить Гарри, была заменена палочкой драконьего сердца, а сам Волан-де-Морт похитил легендарную палочку Смерти — палочку, принадлежавшую Альбусу Дамблдору, которую он выкопал из могилы. Эта палочка считается самой мощной в мире и является одной из трёх Даров Смерти — легендарных артефактов, которые в совокупности дают власть над смертью. Два других Дара — Невидимость-плащ и Камень Воскрешения. Гарри осознаёт, что он уже обладает плащом с самого детства, а Камень Воскрешения был вставлен в перстень, который он нашёл в доме Реддлов. Однако в финальной битве он использует Камень, чтобы призвать духов своих умерших близких — родителей, Сириуса Блэка и Люпина, которые поддерживают его перед входом в Запретный лес.
+Между тем, Гарри получает от профессора Макгонагалл сигнал, что студенты Хогвартса в опасности, и решает вернуться в школу. Там он узнаёт, что последний крестраж — кубок Геллерта — находится в подземельях Хогвартса, в комнате, где хранились вещи Равны Равенкло. Однако, проникнув туда, он обнаруживает, что кубок уже украден Беллатрис и спрятан в хранилище в Гринготтсе. Гарри, Рон и Гермиона решают ограбить банк, используя зелье превращения и помощь гоблина Грипшика. Проникнув в хранилище, они находят кубок, но их преследует охрана. В ходе побега они оседлали дракона, охранявшего хранилище, и с его помощью сбрасывают преследователей, после чего дракон улетает на свободу.
+После возвращения в Хогвартс Гарри узнаёт, что последний крестраж — диадема Равенкло — всё ещё находится в школе. Он находит её в Тайной комнате Равенкло, где она была спрятана Драко Малфоем, но сам Драко уже не контролирует ситуацию. В попытке уничтожить крестраж вмешивается Винсент Крабб, который запускает заклятие Фиендифайр — неуправляемый огонь, способный уничтожить всё живое. В результате пожара диадема сгорает, а сам Крабб погибает. Тем временем, Волан-де-Морт, узнав, что его крестражи уничтожаются, блокирует все выходы из Хогвартса и требует выдать Гарри в обмен на мир.
+Гарри, осознавая, что он сам является последним крестражем — часть души Волан-де-Морта прилипла к нему в момент убийства его родителей, — принимает решение пожертвовать собой. Он прощается с друзьями, передавая Рону и Гермионе инструкции, и отправляется в Запретный лес, где встречается с Волан-де-Мортом. Тот стреляет в него заклятием Авада Кедавра. Гарри оказывается в состоянии, напоминающем сон или переходное пространство, внешне похожем на вокзал, где он встречает дух Альбуса Дамблдора. Дамблдор объясняет, что заклятие убило лишь часть души Волан-де-Морта, жившую в Гарри, но не самого Гарри, и что он может либо вернуться к жизни, либо продолжить путешествие в иное измерение. Гарри выбирает возвращение.
+Он просыпается, всё ещё держа палочку Волан-де-Морта, но притворяется мёртвым, и Невилл Лонгботтом переносит его тело в замок. Волан-де-Морт демонстрирует тело Гарри перед армией Хогвартса, чтобы сломить их дух, но вместо этого это вдохновляет защитников на последнюю битву. В ходе сражения погибают многие: Фред Уизли погибает в результате взрыва, устроенного Огденом, Ремус Люпин и Нимфадора Тонкс убиты в бою, Пенелопа Кристалл, Колин Криви и многие другие. Тем временем, Невилл, вдохновлённый словами Гарри, который якобы «жив», вытаскивает из шляпы Гриффиндора меч и убивает Нагайну — последнего живого крестраж, тем самым лишая Волан-де-Морта возможности к воскрешению.
+Финальная дуэль происходит в разрушенном Большом зале Хогвартса. Гарри противостоит Волан-де-Морту. Он раскрывает, что палочка Смерти никогда не принадлежала Волан-де-Морту по-настоящему, потому что настоящим победителем и хозяином палочки стал Драко Малфой, когда он разоружил Дамблдора на башне, а затем Гарри, который победил Драко в Малфой-мэноре, отобрав у него палочку. Таким образом, палочка Смерти признаёт Гарри своим хозяином. Когда Волан-де-Морт произносит заклятие убийства, оно отскакивает и убивает его самого. Его тело падает, а душа исчезает, окончательно уничтоженная.
+После победы Гарри отправляется в кабинет директора, где с помощью фестоуля — устройства для хранения воспоминаний — просматривает воспоминания Северуса Снейпа, который умер от укуса Нагайны. В них раскрывается трагическая история: Снейп всю жизнь любил Лили Эванс — мать Гарри, и, несмотря на свою ненависть к Джеймсу Поттеру, по просьбе Дамблдора защищал Гарри, работая двойным агентом. Он убил Дамблдора по просьбе самого директора, чтобы сохранить своё положение в стане Волан-де-Морта и продолжать помогать сопротивлению. Гарри понимает, что Снейп был самым храбрым человеком, которого он знал, и позже называет своего сына Альбус Сириус Северус Поттер в честь Снейпа, Сириуса и Дамблдора.
+Фильм завершается эпилогом, действие которого происходит 19 лет спустя. Гарри женат на Джинни Уизли, у них трое детей — Джеймс, Альбус и Люси. Рон и Гермиона женаты, у них двое детей — Роуз и Хьюго. Друзья встречаются на платформе 9¾, провожая своих детей в Хогвартс. Альбус Поттер переживает, что может попасть в Слизерин, но Гарри успокаивает его, говоря, что он может выбрать свой факультет, как это сделал его кузен Скорпиус Малфой, сын Драко. Финальная сцена показывает, как поезд отходит, оставляя после себя легендарную историю, которая продолжается в новых поколениях.
+Фильм является кульминацией всей саги, объединяя все сюжетные линии, раскрывая тайны, демонстрируя эволюцию героев и завершая историю борьбы добра и зла через жертвы, верность и любовь.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Окурибито', 'A newly unemployed cellist takes a job preparing the dead for funerals.', '2008-01-01', 1, '130 minutes', 'Okuribito', 8.1, 'Фильм «Окурибито», вышедший в российском прокате под названием «Отправитель», рассказывает историю 38-летнего Такаси Кобаяси, бывшего игрока на скрипке, который возвращается в Токио после смерти своей матери. Он и его молодая жена Мика живут скромно, и у них возникают финансовые трудности. Однажды Такаси получает неожиданное предложение о работе — должность в компании под названием «Учияма Сиро», которая специализируется на ритуальных церемониях отправления умерших — так называемом «нокансэ». Эта профессия, известная как «окурибито» (буквально — «отправляющий»), предполагает подготовку тела умершего к кремации: тщательное мытьё, бритьё, одевание в традиционное кимоно и макияж, чтобы человек выглядел естественно и достойно перед тем, как его проводят в последний путь.
+Сначала Такаси с трудом принимает эту работу. Он испытывает отвращение и страх перед смертью, особенно когда сталкивается с телами, повреждёнными в результате несчастных случаев или болезней. Его первый опыт — работа с телом женщины, умершей от рака, — оказывается особенно тяжёлым. Однако постепенно под руководством опытного ритуальщика Сасаки, молчаливого и глубоко уважающего свою профессию человека, Такаси начинает понимать суть своей новой миссии. Он осознаёт, что работа окурибито — это не просто техническая процедура, а акт глубокого уважения к умершему и его семье. Каждое движение, каждый жест должны быть совершены с максимальной деликатностью и вниманием к деталям, чтобы сохранить достоинство человека даже после смерти.
+По мере погружения в профессию Такаси начинает видеть в смерти не ужас, а естественную часть жизни. Он наблюдает, как семьи прощаются с близкими, и замечает, как правильно проведённая церемония помогает людям принять утрату. Он видит, как слёзы превращаются в благодарность, когда родственники видят, что их мать, отец или супруг выглядят так, будто просто спят. Особенно запоминается сцена, когда Такаси и Сасаки готовят к отправлению тело молодой женщины, погибшей в автокатастрофе. Её лицо сильно повреждено, но ритуальщики с помощью макияжа и аккуратных движений восстанавливают её внешность, и семья, увидев её, плачет, но уже не от ужаса, а от любви и прощания.
+В то же время в личной жизни Такаси происходят изменения. Его жена Мика, чувствуя его отстранённость и занятость новой работой, начинает испытывать тревогу. Она не понимает, чем он занимается, и считает, что он скрывает от неё правду. Их отношения дают трещину. Однако после того как Мика случайно узнаёт о его профессии, она приходит в ужас и шок, но позже, наблюдая за тем, как Такаси рассказывает о своей работе с глубоким уважением и чувством ответственности, она начинает его понимать. Кульминацией становится момент, когда Мика сама приходит на похороны, где работает Такаси, и видит, как он с бесконечной нежностью моет тело пожилого мужчины, поправляет уголок кимоно и говорит тихое «спасибо» перед тем, как тело уносят.
+Фильм также раскрывает внутренние переживания Такаси. Он вспоминает своё детство, отношения с матерью, которую не успел проститься должным образом. Через свою работу он словно искупает этот долг. Он понимает, что смерть — не конец, а переход, и что важно не избегать её, а научиться с ней сосуществовать.
+Финал фильма символичен. Проходит несколько лет. Такаси продолжает работать окурибито. Он становится настоящим мастером своего дела, передаёт опыт новому ученику. Мика рожает ребёнка, и их семья крепнет. Однажды Такаси получает известие о смерти Сасаки. Он приходит на церемонию и сам становится тем, кто готовит тело своего учителя к кремации. Эта сцена — высшая точка уважения и преемственности. Он аккуратно моет тело Сасаки, бреет его, одевает в кимоно, как когда-то Сасаки делал это с другими. Когда он заканчивает, он смотрит на лицо учителя и тихо говорит: «Спасибо».
+Фильм завершается финальной надписью, в которой говорится, что профессия окурибито существует в Японии уже много веков, но долгое время оставалась табуированной. Однако в последние годы отношение к ней меняется, и теперь ритуальщиков начинают уважать как хранителей достоинства человека в самый последний момент.
+«Окурибито» — это не просто фильм о смерти, а глубокое размышление о жизни, уважении, любви и значении прощания. Он показывает, что через прикосновение к смерти можно научиться ценить жизнь, а через служение умершим — обрести смысл и внутреннюю гармонию.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Хатико: Самый верный друг', 'A college professor bonds with an abandoned dog he takes into his home.', '2009-01-01', 1, '93 minutes', 'Hachi: A Dog''s Tale', 8.1, 'Фильм «Хатико: История одной собаки» (оригинальное название Hachi: A Dog''s Tale) — это драматическая адаптация реальной истории о верности и преданности, произошедшей в Японии, перенесённая в американский контекст. Действие фильма разворачивается в небольшом городке в штате Род-Айленд. Главный герой — профессор музыки на пенсии, Кей Паркер, которого все зовут по отчеству — Паркер. Он живёт в тихом доме с женой Кэти и дочерью Венди, которая вскоре выходит замуж и уезжает в другой штат. Паркер — человек сдержанный, любящий порядок и музыку, особенно игру на гобое. Каждый день он ходит на работу в университет и каждый вечер ездит на электричке до Бостона и обратно.
+Однажды утром, направляясь на вокзал, Паркер замечает маленькую щенячью собачку породы акита, заблудившуюся на перроне. Щенок сидит в коробке с надписью «Бесплатно», но у Паркера нет времени и желания заводить собаку. Однако он не может оставить щенка одного. Он пытается найти хозяина, но безуспешно. В итоге он берёт его домой, хотя Кэти сначала возражает, считая, что собака испортит интерьер и создаст беспорядок. Однако вскоре щенка, которого Паркер называет Хатико (или просто Хачи), принимают в семью.
+С этого момента начинается особая связь между Паркером и Хачи. Каждое утро Хачи сопровождает Паркера на вокзал, где провожает его на поезд. Каждый вечер он возвращается на тот же перрон, чтобы встретить хозяина, когда тот возвращается. Это становится их ежедневным ритуалом. Хачи становится местной достопримечательностью: сотрудники вокзала, полицейские, пассажиры узнают его, кормят и ласкают. Он всегда сидит на одном и том же месте — рядом с лавочкой, где Паркер ждёт поезд.
+Проходит несколько лет. Хачи вырастает в большую, сильную собаку, но остаётся преданной и спокойной. Он продолжает каждый день ходить на вокзал, даже когда Паркер, из-за плохой погоды или болезни, просит жену не выпускать собаку. Но Хачи находит способ выбраться и всё равно приходит. Его преданность становится легендой в городе.
+Однажды утром Паркер чувствует себя неважно, но всё равно идёт на работу. Хачи, как обычно, провожает его на вокзал. Но в этот день Паркер не возвращается. Он умирает от сердечного приступа прямо на кафедре во время лекции. Новость о смерти Паркера шокирует всю семью. Кэти, не зная, что делать с Хачи, решает отдать его на ферму к другу семьи — бывшему студенту Паркера по имени Алекс. Хачи сначала адаптируется к новой жизни, но через несколько дней сбегает и возвращается в город, на вокзал. Он снова садится на своё место и ждёт.
+Когда Алекс находит его, он пытается увезти Хачи обратно, но собака снова сбегает. В конце концов, Алекс и Кэти понимают, что Хачи не может жить без ритуала встречи. Они позволяют ему остаться в городе, но не могут держать его дома. Местные жители — кассир вокзала, полицейский, владелец закусочной — берут собаку под своё крыло. Они кормят его, укрывают от дождя, но не могут забрать к себе, потому что Хачи отказывается уходить с вокзала. Он каждый день приходит туда утром и ждёт до вечера, когда приходит последний поезд.
+Проходят годы. Хачи стареет. Его шерсть сереет, движения становятся медленнее, но он продолжает приходить на вокзал. Некоторые люди считают его бродячей собакой, другие пытаются отогнать, но большинство уважают его и оставляют в покое. Появляются дети, которые узнают историю Хачи от родителей. Он становится символом верности.
+Венди, дочь Паркера, приезжает в город с мужем и дочерью — маленькой девочкой, которую зовут Кэти, в честь бабушки. Она видит Хачи на вокзале и рассказывает внучке историю о том, как он каждый день ждал своего хозяина. Девочка кладёт руку на спину старой собаке, и Хачи смотрит на неё с тихой благодарностью.
+Финал фильма наступает холодной зимой. Хачи, уже очень слабый, приходит на вокзал, как всегда. Он ложится на своё место, дрожит от холода, но не уходит. Он засыпает. Во сне он видит молодого Паркера, который выходит из поезда, как в старые времена. Паркер улыбается, зовёт Хачи по имени, и собака бежит к нему. Они обнимаются, как будто время остановилось.
+На следующее утро Хачи не просыпается. Люди находят его мёртвым на перроне. Все, кто знал его, приходят проститься. Его тело хоронят рядом с могилой Паркера. На надгробии — фотография Хачи и надпись: «Девять лет он ждал. Девять лет он верил. Девять лет он любил».
+Фильм основан на реальной истории собаки Хатико, которая ждала своего хозяина — профессора Хидэсабуро Уэно — на станции Сибуя в Токио более девяти лет после его смерти в 1925 году. В Японии Хатико стал национальным символом верности, а памятник ему у станции Сибуя — одно из самых известных мест встреч. Американская версия сохраняет дух оригинальной истории, передавая глубокую эмоциональную связь между человеком и животным, силу преданности, которая превосходит время, смерть и разум. Фильм — это не просто история о собаке, а размышление о любви, долге, памяти и том, что значит быть верным до конца.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мэри и Макс', 'A tale of friendship between two unlikely pen pals: Mary, a lonely, eight-year-old girl living in the suburbs of Melbourne, and Max, a forty-four-year old, severely obese man living in New York.', '2009-01-01', 1, '92 minutes', 'Mary and Max', 8.1, 'Действие начинается в 1976 году в меланхоличном пригороде Мельбурна, Австралия. Главная героиня — восьмилетняя Мэри Дасч, маленькая девочка с круглыми очками, родинкой в форме крекера на лбу и трудным детством. Она живёт в семье, где мать страдает от депрессии и пристрастия к джину, а отец увлечён коллекционированием помётов птиц. Мэри чувствует себя одинокой, её не понимают в школе, она не умеет общаться с другими детьми и проводит время в одиночестве, читая книги о Чарльзе Диккенсе и наблюдая за соседями.
+Однажды, просматривая телефонную книгу в поисках имени, похожего на её, Мэри находит фамилию Шлесингер — Макс Джером Полли, живущего в Нью-Йорке, США. Она решает написать ему письмо, рассказывая о себе, о своей жизни, своих страхах и вопросах. Она спрашивает, что такое счастье, и почему её мать пьёт джин.
+Макс, которому на момент получения письма 44 года, — аспирилянт (человек с синдромом Аспергера), живущий в тесной квартире в Квинсе. Он работает на фабрике по производству печенья, питается исключительно чёрными оливками, шоколадом и «Кока-Колой», и придерживается строгого распорядка дня. У него нет друзей, он не понимает социальных норм, иронии, шуток, но обладает высоким интеллектом и честностью. Он страдает от одиночества, но боится контактов с людьми. Получив письмо от Мэри, Макс впервые чувствует, что его кто-то понимает. Он отвечает, рассказывая о себе, о своей любви к сериалу «Чудо-женщина», о своей коллекции фигурок из «Кока-Колы», и объясняет, что такое счастье — по его мнению, это когда работаешь, ешь любимую еду и смотришь любимое шоу.
+Так начинается переписка, которая длится на протяжении 20 лет. Каждое письмо — это глубокое признание, история из жизни, попытка понять мир. Макс становится для Мэри наставником, другом, почти отцом. Он учит её честности, терпимости, помогает справляться с одиночеством. Мэри, в свою очередь, дарит Максу ощущение принадлежности, показывает, что его мысли и чувства важны.
+По мере взросления Мэри сталкивается с новыми трудностями. Она влюбляется в одноклассника Дэмиена, который её не замечает. Пытается стать популярной, но терпит неудачу. Её мать умирает в результате несчастного случая — она падает с лестницы, выпив джин. Отец женится на женщине, которая тоже пьёт. Мэри чувствует себя ещё более потерянной. Она поступает в университет, изучает психологию, пишет диплом о синдроме Аспергера и решает использовать переписку с Максом как основу для своей диссертации, не спросив у него разрешения.
+Макс, узнав об этом из опубликованной книги (Мэри публикует историю их переписки под псевдонимом, но Макс узнаёт себя по деталям), чувствует себя преданным. Он воспринимает это как нарушение доверия, как использование его личной жизни в корыстных целях. Для него, человека, который не понимает нюансов этики, но свято чтит обещания, это становится трагедией. Он перестаёт отвечать на письма.
+Мэри, страдая от чувства вины, депрессии и алкоголизма, пытается связаться с Максом, но безуспешно. Она узнаёт, что он пережил нервный срыв и был помещён в психиатрическую больницу. Она пишет ему письмо с извинениями, но не получает ответа.
+Проходит время. Мэри выходит замуж за коллегу-психолога, Дезмонда, который страдает от бессонницы и коллекционирует чайные чашки. У них рождается дочь. Мэри пытается наладить жизнь, но внутренняя пустота остаётся.
+Однажды она получает письмо от сотрудника больницы в Нью-Йорке. В нём говорится, что Макс умер. В приложении — конверт, адресованный ей, и документы. В письме Макс пишет, что простил её. Он рассказывает, что после её книги он долго не мог доверять людям, но в конце концов понял, что она не хотела причинить ему боль. Он пишет, что благодарен за 20 лет дружбы, за то, что она была его единственным другом. Он признаётся, что мечтал однажды встретиться с ней, но боялся, что реальность разрушит их идеальную дружбу.
+Мэри приезжает в Нью-Йорк. Она посещает квартиру Макса, теперь пустую. Она видит его коллекции, его расписание, его письма. Она находит свою фотографию, которую он хранил на стене. Она понимает, насколько он её любил.
+В финале Мэри возвращается в Австралию. Она садится за стол, берёт ручку и начинает писать новое письмо — на этот раз для своей дочери. Она рассказывает ей историю о Максе, о дружбе, о верности, о том, что каждый человек, даже самый странный, заслуживает любви.
+Фильм завершается кадром, в котором Мэри, сидя у окна, смотрит на закат. На столе лежит открытый блокнот. Экран темнеет, и звучит голос Макса: «Моя тётя Рейчел говорила, что Бог создал нас несовершенными, чтобы мы могли учиться на ошибках. Но я думаю, что Бог создал нас несовершенными, чтобы мы могли быть друзьями».
+«Мэри и Макс» — это глубокий, меланхоличный и трогательный фильм о одиночестве, дружбе, принятии чужой странности и хрупкости человеческих связей. Он показывает, как через простые письма можно создать нечто вечное, как слова могут спасти человека от отчаяния, и как прощение становится высшей формой любви. Фильм не имеет ярких красок или счастливого финала в традиционном смысле, но оставляет после себя чувство светлой грусти и уважения к тем, кто живёт в своём ритме и всё равно остаётся верным себе и другим.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Как приручить дракона', 'A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.', '2010-01-01', 1, '98 minutes', 'How to Train Your Dragon', 8.1, 'Фильм «Как приручить дракона», вышедший в российском прокате под одноимённым названием «Как приручить дракона», переносит зрителя в суровый викингский мир острова Берк — место, где драконы являются постоянной угрозой, а викинги славятся своей силой, мужеством и ненавистью к крылатым чудовищам. Главный герой — 15-летний Хикки, сын вождя племени Стоика-Толстяка. В отличие от других викингов, Хикки не обладает физической силой, часто попадает в нелепые переделки и считается слабаком. Он мечтает доказать своё право быть настоящим воином, участвуя в боевых тренировках и пытаясь участвовать в сражениях с драконами, но каждый раз его действия приводят к разрушениям и насмешкам.
+Жизнь викингов Берка проходит в постоянной борьбе с драконами, которые нападают на поселение, чтобы украсть скот и сжечь дома. В ответ викинги сражаются с ними, используя оружие, ловушки и хитрость. Хикки, будучи изобретателем, создаёт различные устройства для поимки драконов, но они редко работают как задумано. Однажды, во время очередного нападения, он замечает странный свет в небе и решает отправиться в Запретные джунгли, чтобы найти место падения дракона.
+Там он находит раненого ночной фурии — редкого, быстрого и крайне опасного дракона чёрного цвета с зелёными глазами и реактивными зрачками. Хикки ловит его в сеть, но, оказавшись лицом к лицу с животным, не может убить его. Вместо этого он освобождает дракона, хотя тот пытается напасть. Позже Хикки возвращается с едой и замечает, что дракон не может летать — его хвост повреждён. Он начинает наблюдать за ним, изучать его поведение, и постепенно между ними возникает связь. Хикки даёт дракону имя — Беззубик, потому что тот, будучи сыт, открывает пасть, обнажая множество втягивающихся зубов, но при этом не кусается.
+Понимая, что Беззубик не может улететь, Хикки решает помочь ему. Он изготавливает искусственный хвост из кожи и дерева, который позволяет дракону управлять полётом, но только если Хикки будет управлять им вручную. Он тайно учится летать вместе с Беззубиком, наблюдая, как дракон охотится, как реагирует на звуки, как боится шипящих предметов. Хикки понимает, что драконы не просто убивают — они нападают, чтобы выжить, и что их поведение можно предсказать. Он узнаёт, что все драконы на острове прилетают с одного места — откуда-то изнутри огромного вулканического острова, который викинги считают священным.
+Между тем, вождь Стоик решает отправить молодых викингов — включая Астрид, Сноутелса, Фишлауса, Рейф, Туффната и Спайкера — на обучение в школу драконов, где они должны научиться сражаться с чудовищами. Хикки, несмотря на свои неудачи, тоже допускается туда, и, используя свои новые знания о драконах, начинает неожиданно хорошо справляться с заданиями. Он интуитивно понимает поведение драконов, избегает агрессии и вместо боя использует хитрость. Это вызывает подозрение у Астрид, которая начинает следить за ним.
+Однажды она замечает, как Хикки улетает на спине Беззубика. Она преследует его и обнаруживает логово дракона. Хикки вынужден рассказать ей правду. Астрид шокирована, но после полёта на Беззубике начинает понимать, что драконы не враги. Однако, когда они возвращаются, Стоик уже нашёл логово и решает использовать знания Хикки, чтобы найти гнездо драконов и уничтожить их королеву — гигантскую драконицу, которая заставляет других драконов нападать на Берк, чтобы прокормить себя и своё потомство.
+Хикки пытается объяснить отцу, что драконы — не злые, а вынуждены нападать из страха, но Стоик не слушает. Он считает, что только уничтожение королевы положит конец войне. Хикки, понимая, что Беззубик и другие драконы погибнут, решает лететь к гнезду, чтобы остановить викингов.
+На месте он обнаруживает ужасающую картину: гигантская королева драконов, длина которой превышает сотню метров, пленяет и пожирает своих собственных сородичей, если те не приносят еды. Все нападения драконов на деревни — это попытка выжить под её диктатом. Когда викинги атакуют, драконы, вместо того чтобы сражаться, бегут, потому что боятся королеву больше, чем людей.
+В решающей битве Хикки и Беззубик пытаются уничтожить королеву. Они маневрируют в тоннелях гнезда, избегают её огненных атак и ядовитых шипов. В финальной схватке Беззубик получает тяжёлые повреждения, когда его хвост сгорает в огне, и он теряет способность управлять полётом. Хикки, вися на обрыве, видит, как королева готовится убить его. В последний момент Беззубик, несмотря на раны, бросается на неё и стреляет в уязвимое место — глаз. Это отвлекает чудовище, и Хикки удаётся запустить катапульту, установленную на корабле, которая вонзает шест в тело королевы. Она падает в лаву и погибает.
+Однако Беззубик, истекая кровью и не в силах летать, падает в море. Хикки прыгает следом, но теряет сознание. Он просыпается дома, где его лечат. Беззубик находится рядом — он спасён, но его хвост повреждён навсегда. Хикки изготавливает для него новый, управляемый механический хвост, который позволяет дракону летать, но только если Хикки будет с ним.
+С этого момента начинается новая эра на острове Берк. Викинги и драконы становятся союзниками. Драконов приручают, учат летать на них, использовать в мирных целях. Астрид получает своего дракона — шипастого розового дракона по кличке Шипучка. Другие молодые викинги тоже находят себе напарников. Хикки, наконец-то признанный героем, становится уважаемым членом племени.
+Фильм заканчивается финальной сценой, в которой Хикки и Беззубик совершают полёт над островом, показывая, что мир, где враги становятся друзьями, возможен. Появляется надпись, что с тех пор на Берке проводятся соревнования по полётам, гонкам и трюкам, а драконы становятся частью жизни викингов.
+«Как приручить дракона» — это история о преодолении страха, отвержении стереотипов, силе дружбы и способности одного человека изменить целый мир. Фильм показывает, что понимание, а не насилие, является ключом к миру, а настоящая храбрость — это не сила удара, а смелость быть другим и защищать то, во что веришь.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('В диких условиях', 'After graduating from Emory University, top student and athlete Christopher McCandless abandons his possessions, gives his entire $24,000 savings account to charity and hitchhikes to Alaska to live in the wilderness. Along the way, Christopher encounters a series of characters that shape his life.', '2007-01-01', 1, '148 minutes', 'Into the Wild', 8.1, 'Фильм «В диких условиях», вышедший в российском прокате под одноимённым названием «В диких условиях», основан на реальной истории Кристофера МакКензи, чье путешествие в одиночку по Америке и в дикую природу Аляски стало символом поиска смысла, свободы и отказа от материальных ценностей. Главный герой — 22-летний выпускник Университета Эмори по имени Кристофер МакКендлс, которого в фильме зовут Кристофер МакКензи. Он происходит из обеспеченной семьи в Вирджинии, но испытывает глубокое отвращение к потребительскому обществу, лицемерию, лжи и моральному разложению, которые, по его мнению, пронизывают его окружение. Он узнаёт, что его отец продолжал жить с матерью Кристофера, хотя у него была другая семья, и что родители долгое время скрывали от него правду о двойной жизни отца. Этот обман становится для него последней каплей.
+После получения диплома с отличием Кристофер принимает радикальное решение: отказаться от всего. Он жертвует все свои сбережения — 24 000 долларов — благотворительной организации, уничтожает свои кредитные карты, документы и водительские права, сжигает наличные деньги в костре, садится на свой старый «Додж» и уезжает, не сказав никому, куда направляется. Он берёт себе новое имя — Александр Супер-Трава (Alexander Supertramp), символизируя тем самым отказ от прежней личности и рождение нового, свободного человека.
+Его путешествие начинается в южных штатах. Он путешествует пешком и автостопом, живёт в лесах, на берегах рек, в пустынях. По пути он встречает множество людей, каждый из которых оставляет след в его жизни. Первый — Билли, старый фермер в Техасе, который позволяет Кристоферу жить на его участке, работать и размышлять. Билли одинок, пьёт, но добр к юноше. Кристофер помогает ему с фермой, учится выживать, но не остаётся надолго. Он чувствует, что привязанность к людям мешает ему быть полностью свободным.
+Затем он встречает Вэйна Уэстерберга — владельца элеватора в Южной Дакоте. Вэйн — бывший заключённый, но порядочный человек, который даёт Кристоферу работу, жильё и проявляет к нему отеческую заботу. Кристофер работает на элеваторе, подруживается с местными, особенно с девушкой по имени Трини, которая влюбляется в него. Между ними возникает близость, но Кристофер отстраняется, отказываясь от отношений, потому что считает, что любовь и привязанность — это цепи.
+Он продолжает путь, пересекает пустыню, попадает в Аризону, где проводит время с пожилой парой — Джейн и Бобом, которые живут в трейлере и путешествуют по стране. Они принимают его как сына, дарят ему подарки, предлагают остаться. Кристофер проводит с ними несколько месяцев, учится играть на гармонике, слушает их истории. Джейн влюбляется в него как в сына, мечтает, чтобы он стал отцом её будущего внука. Но когда он объявляет, что уезжает в Аляску, она в отчаянии пытается удержать его, говоря, что он не сможет выжить один. Он отвечает, что должен это сделать.
+Кристофер добирается до Аляски, где его главная цель — жить в полной изоляции в дикой природе. Он находит заброшенный автобус, известный как «Бус 142», стоящий в глуши, в нескольких днях пути от ближайшего поселения. Там он устраивает себе убежище, запасается топором, ружьём, солью, крупой и книгами — в том числе «Волшебником Земного Овала» Толстого, «Путешествием» Буковски, «Кавказским пленником» Льва Толстого и «Маленьким принцем» Сент-Экзюпери.
+Он начинает новую жизнь: охотится на животных, ловит рыбу, собирает ягоды, ведёт дневник, размышляя о свободе, одиночестве, природе и Боге. Сначала он чувствует себя счастливым. Он пишет, что наконец-то обрёл себя, что больше не зависит от системы, от лжи, от денег. Он чувствует единение с природой.
+Но постепенно реальность наступает. Зима приближается. Река, через которую он перебрался, разливается, превращаясь в бурный поток, и он понимает, что не сможет перейти её обратно. Он оказывается в ловушке. Еда становится дефицитом. Он убивает оленя, но не умеет правильно его разделать, и часть мяса портится. Он пытается есть коренья, грибы, ягоды.
+В один из дней он находит растение, похожее на картофельный корень, и начинает есть его семена. Это дикая редька, но он не знает, что семена содержат токсин, который блокирует усвоение белка. Постепенно он начинает слабеть. Он худеет, у него появляются галлюцинации, головокружение, он теряет силы. В дневнике он пишет: «Счастье только тогда реальное, когда его делится». Это — его главное откровение. Он осознаёт, что свобода без любви, без связи с другими людьми — пуста. Он понимает, что ошибался, отвергая близость.
+Он пытается покинуть автобус, но слишком слаб. Он возвращается, ложится на пол и пишет на фотографии своей семьи: «Счастливый человек не нуждается в будущем». Это его последняя запись.
+Через несколько месяцев автобус находят охотники. Они обнаруживают тело Кристофера — истощённое, почти скелетообразное. Его дневник и последние записи передают полиции. Его родители, сестра Карин и Вэйн узнают о его смерти. Карин приезжает на Аляску, подходит к автобусу, плачет.
+Фильм заканчивается кадрами, снятыми на месте действия: автобус, река, лес. Звучит голос Кристофера, читающего строки из письма, которое он написал Вэйну, но так и не отправил: «Спасибо за всё. Я нашёл то, что искал. Но я понял, что счастье — в любви. Я скучаю по вам. Я скучаю по Карин. Я скучаю по отцу, хотя он и обманул нас. Я прощаю его».
+«В диких условиях» — это не просто история о выживании, а глубокая философская драма о поиске смысла жизни, о противостоянии одиночеству и потребности в человеческой связи. Фильм показывает, как идеализм, доведённый до крайности, может привести к трагедии, и как даже в самой глуши человеку не удаётся избежать своей природы — быть частью общества. Кристофер МакКензи не стал жертвой дикой природы, а жертвой собственной идеи свободы, которую он не смог совместить с любовью. Его история остаётся предостережением и одновременно гимном стремлению к истине, честности и внутренней чистоте.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Старикам тут не место', 'Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.', '2007-01-01', 1, '122 minutes', 'No Country for Old Men', 8.1, 'Фильм «Старикам тут не место», вышедший в российском прокате под одноимённым названием «Старикам тут не место», является кинематографической адаптацией одноимённого романа Кормака Маккарти. Действие разворачивается в 1980 году на юго-западе Техаса, у границы с Мексикой. Фильм рассказывает о цепи жестоких событий, начавшихся с находки обычного человека, которые раскрывают мрачную картину насилия, судьбы и упадка моральных устоев.
+Главный герой — Луэллин Мосс, рабочий-нефтяник, ветеран Вьетнамской войны. Однажды, во время охоты в пустыне, он находит обстреленный грузовик, мёртвых людей, трупы собак и, наконец, чемодан с двумя миллионами долларов наличными и раненого человека, умоляющего о воде. Мосс не забирает деньги сразу, но позже возвращается с водой и решает взять чемодан, понимая, что втягивается в опасную игру. Он прячет деньги у себя дома, но чувствует, что за ним охотятся.
+Тем временем на место преступления прибывает шериф Белл — пожилой, уставший от насилия представитель закона, который считает, что мир становится всё более жестоким и непонятным. Он расследует убийства, но чувствует, что его методы, основанные на порядочности и традициях, больше не работают. Он видит, что преступники стали аморальными, безжалостными, а насилие — бессмысленным.
+Мосс понимает, что оставил воду, и боится, что кто-то найдёт его следы. Он возвращается в пустыню, чтобы уничтожить улики, но сталкивается с группой мексиканских бандитов, которые ищут деньги. В перестрелке он убивает всех, но сам получает ранение. Он увозит деньги, меняет место укрытия и пытается спрятаться, снимая номер в мотеле на границе.
+Однако за ним охотится не просто бандитская группировка. Главный антагонист — Антон Чигур, профессиональный убийца, присланный, чтобы вернуть деньги. Чигур — человек без эмоций, без морали, без прошлого. Он говорит мало, двигается плавно, одет в чистый комбинезон и использует пневматическое устройство для убийств — пневматический резак, которым он убивает своих жертв, в том числе шерифа в маленьком городке, просто потому что тот пытается его арестовать. Чигур символизирует абсолютное зло — не личное, а системное, необъяснимое, неумолимое.
+Чигур начинает выслеживать Мосса, используя передатчик, который был в чемодане с деньгами. Он убивает всех, кто встаёт у него на пути: владельца мотеля, который помог Моссу, мексиканского посредника, полицейских. Он задаёт людям странные вопросы, например, предлагает им сыграть в орёл-решку, чтобы решить, убивать ли их. Когда женщина за прилавком отказывается играть, он убивает её. Когда другой человек соглашается и выигрывает, Чигур отпускает его, говоря: «Ты должен держать слово».
+Мосс, раненый и измотанный, пытается спасти себя и свою жену Кэрол Дин. Он звонит ей, предупреждает, чтобы она уезжала, но она не понимает серьёзности угрозы. Тем временем он снимает деньги со счёта, прячет их в вентиляционной шахте в другом мотеле и пытается бежать в Мексику. Однако Чигур настигает его. В одной из сцен, происходящей в ночном мотеле, разворачивается напряжённая перестрелка между Моссом, мексиканскими бандитами и Чигуром. В темноте, в дыму, при вспышках выстрелов, Мосс, кажется, убивает нападавших, но сам получает смертельное ранение.
+Чигур, тоже раненый, добирается до больницы, где убивает врача и сбегает. Он приходит в мотель, находит деньги в вентиляции, но затем сталкивается с неожиданной аварией — водитель, не справившись с управлением, врезается в него. Чигур выживает, но понимает, что его путь прерван случайностью.
+Кэрол Дин, жена Мосса, пытается скрыться, но шериф Белл не успевает её предупредить вовремя. Она возвращается домой, где её убивает один из мексиканских киллеров. Белл находит её тело и впадает в отчаяние.
+Через некоторое время Белл рассказывает своей жене о снах, в которых его отец несёт огонь в лошадиной попоне, чтобы согреть его в холодной пустыне. Он говорит, что чувствует, будто не успевает, что мир выходит из-под контроля, что старые ценности утрачены. Он уходит в отставку, понимая, что не может противостоять новой реальности.
+Финал фильма — Чигур, искалеченной аварией, хромает по улице. Он разговаривает с владельцем магазина, снова предлагает сыграть в орёл-решку. Тот соглашается, выигрывает. Чигур уходит. Камера следует за ним, но затем он исчезает из кадра. Шериф Белл, уже на пенсии, сидит в кафе, вспоминает свои сны и говорит, что, возможно, огонь, который нес отец, — это доброта, которую он пытался передать.
+Фильм не даёт морального урока, не объясняет мотивы Чигура, не наказывает его. Он показывает мир, в котором зло существует само по себе, где случайность решает судьбы, а герои гибнут, не достигнув цели. «Старикам тут не место» — это медитация о природе насилия, о бессилии закона, о невозможности понять современный мир через призму прошлого. Фильм лишён музыкального сопровождения, наполнен тишиной, что усиливает ощущение тревоги и абсурда. Он заканчивается не победой добра, а уходом старого поколения, оставляющего мир тем, кого не понимает.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Малышка на миллион', 'A determined woman works with a hardened boxing trainer to become a professional.', '2004-01-01', 1, '132 minutes', 'Million Dollar Baby', 8.1, 'Фильм рассказывает историю тренера по боксу, пожилого ветерана спорта и одинокого человека, чья жизнь кардинально меняется после появления в его жизни молодой женщины, мечтающей стать чемпионкой. Главный герой — Фрэнки Данн, бывший боксёр, ныне владелец небольшого боксёрского зала в Лос-Анджелесе. Ему за 60, он живёт в одиночестве, каждое утро посещает церковь, но не может довести исповедь до конца. Он держится в стороне от людей, не доверяет другим, особенно женщинам, и считает, что лучшие годы его позади.
+Однажды в его зал приходит 31-летняя Мэгги Фицджеральд — официантка из Миссури, которая работает, чтобы прокормить свою большую, равнодушную и жадную семью. Она приходит с мечтой — стать профессиональной боксёршей. Фрэнки сначала отказывает ей, считая, что слишком поздно начинать карьеру в таком возрасте, да ещё и женщине в мужском виде спорта. Однако Мэгги настойчива. Она приходит каждый день, платит за тренировки, занимается сама, несмотря на насмешки других боксёров.
+Постепенно Фрэнки видит её упорство, силу духа и настоящую любовь к боксу. Он решает взять её в ученицы, несмотря на то, что это противоречит его принципам. В зале работает его друг и помощник — Скип, бывший боксёр, который не может стать тренером из-за цвета кожи, но обладает огромным опытом. Он поддерживает Фрэнки и Мэгги.
+Фрэнки начинает тренировать Мэгги с нуля. Он учит её технике, дисциплине, дыханию, тактике. Он строг, требователен, часто кричит на неё, но видит, как она растёт как спортсменка. Мэгги побеждает в первых боях, быстро набирает очки, и её имя начинают узнавать. Фрэнки, хотя и не признаётся в этом, начинает гордиться ею. Между ними складываются отношения, похожие на отцовские. Он становится для неё наставником, защитником, единственным человеком, который верит в неё по-настоящему.
+Мэгги продолжает побеждать. Она становится чемпионкой, побеждает в боях за титул, и её ждёт главный бой — против действующей чемпионки мира по версии WBA, Билли «The Blue Bear» Глэйз. Бой проходит в Лас-Вегасе. Фрэнки предупреждает, что противник опасен, что нужно быть осторожной. Однако в последнем раунде, когда Мэгги уже побеждает по очкам, чемпионка, понимая, что проигрывает, наносит запрещённый удар — удар в затылок, когда Мэгги стоит с опущенными руками. Удар настолько силен, что Мэгги падает, ударяется головой о канаты и теряет сознание.
+Она доставляется в больницу, где врачи констатируют перелом шейного отдела позвоночника. В результате травмы она оказывается полностью парализованной — от шеи и ниже. Она больше не может двигаться, дышит с помощью аппарата, питается через зонд. Её карьера, мечта, вся жизнь разрушены одним ударом.
+Фрэнки приходит в больницу каждый день. Он сидит рядом с ней, читает ей, разговаривает, хотя она может только моргать. Он чувствует вину — он не смог защитить её, не смог предотвратить бой, не услышал её, когда она говорила, что это её шанс. Он пытается ухаживать за ней, как за ребёнком.
+Мэгги просит его об одном — чтобы он помог ей умереть. Она не хочет жить в таком состоянии, не хочет быть обузой, не хочет, чтобы её семья забрала деньги за компенсацию и бросила её. Она просит Фрэнки отключить аппарат, который держит её в живых.
+Фрэнки долго сопротивляется. Он обращается к священнику, к адвокатам, к врачам. Он понимает, что это убийство, что он нарушит закон и свои принципы. Но он видит страдания Мэгги, её унижение, её полную зависимость от других. Он видит, как её семья приезжает, требует деньги, а потом бросает её.
+В один из вечеров, когда в больнице тишина, Фрэнки приходит к ней. Он говорит, что расскажет ей историю — как он однажды пообещал своей сестре, что позаботится о её ребёнке, но не сделал этого, и ребёнок умер. Он говорит, что всю жизнь наказывал себя за это. Он говорит, что любит её, как дочь, и что сделает то, о чём она просит, не из жестокости, а из любви.
+Он отключает аппарат. Мэгги умирает.
+Через несколько дней Фрэнки получает письмо от Мэгги, которое она написала заранее. В нём она благодарит его за всё, называет его отцом, говорит, что благодаря ему она стала чемпионкой, что она жила полной жизнью, пусть и короткой. Она просит его не винить себя.
+Фрэнки уходит в отставку. Он закрывает зал. Он приходит в церковь и, наконец, произносит исповедь. Он говорит, что сделал то, что должен был сделать.
+Фильм заканчивается тем, что Фрэнки садится в автобус, уезжает из города, и больше о нём ничего не слышно.
+«Малышка на миллион» — это не просто фильм о боксе. Это история о любви, одиночестве, ответственности, сострадании и моральном выборе. Он показывает, что настоящая сила — не в победах на ринге, а в способности любить, жертвовать и принимать решения, которые разрывают сердце. Фильм лишён пафоса, наполнен тишиной и болью, и оставляет после себя ощущение глубокой человеческой трагедии и, одновременно, достоинства.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Отель «Руанда»', 'Paul Rusesabagina, a hotel manager, houses over a thousand Tutsi refugees during their struggle against the Hutu militia in Rwanda, Africa.', '2004-01-01', 1, '121 minutes', 'Hotel Rwanda', 8.1, 'Фильм «Отель „Руанда“», вышедший в российском прокате под одноимённым названием «Отель „Руанда“», основан на реальных событиях и рассказывает о трагедии 1994 года — геноциде в Руанде, когда за 100 дней было уничтожено более 800 000 человек этнической группы тутси и умеренных хуту. Главный герой — Пол Руспе, менеджер отеля «Дельфес» в столице Руанды, Кигали. Он — представитель этнической группы хуту, но женат на женщине из тутси, Тате, и у них двое детей. Пол — человек умный, тактичный, умеющий находить общий язык с властью, полицией, бизнесменами и иностранными гостями. Он заботится о своём статусе, о комфорте гостей, о благополучии своей семьи.
+В начале фильма напряжённость между этническими группами уже нарастает. Хуту, составляющие большинство, подстрекаются пропагандой к ненависти против тутси, которых называют «тараканами» и обвиняют в измене стране. Пол старается держаться в стороне, не вмешиваться в политику, верит, что конфликт пройдёт, как и раньше.
+Однако 6 апреля 1994 года президент Руанды, представитель хуту, погибает при крушении самолёта. Это становится сигналом к началу массовых убийств. Армия, ополчение «Интара» и вооружённые группы хуту начинают систематически убивать тутси и хуту-умеренцев. Улицы Кигали наполняются насилием: людей убивают на глазах у детей, дома сжигают, семьи расчленяют.
+Пол сначала пытается защитить свою семью, укрывая её в отеле. Но вскоре к нему начинают приходить соседи, друзья, родственники — в основном тутси, которым больше негде спрятаться. Пол понимает, что должен действовать. Он использует все свои связи, харизму, дипломатию и хитрость, чтобы сохранить жизни. Он подкупает офицеров, договаривается с командирами ополчения, лжёт, умоляет, притворяется, чтобы отвести от отеля смерть.
+Он превращает «Дельфес» — роскошный отель, принадлежащий международной сети — в убежище для более чем 1200 беженцев. Он кормит их, организует воду, скрывает их от патрулей. Он звонит иностранным дипломатам, журналистам, просит помощи, но получает отказ. Западные страны эвакуируют своих граждан, но оставляют африканцев на произвол судьбы. Пол слышит по радио, как представители ООН заявляют, что не могут вмешиваться, потому что это «внутренние дела Руанды».
+Одним из ключевых персонажей становится офицер ООН Колинс, который с небольшим контингентом пытается поддерживать порядок, но ограничен приказами не применять оружие. Он честен, но бессилен. Он говорит Полу: «Мы не можем помочь. Мы здесь только для наблюдения».
+Пол продолжает бороться. Он использует телефон, чтобы звонить влиятельным людям, в том числе владельцу отеля в Южной Африке, угрожая разрушить репутацию сети, если те не вмешаются. Он организует поставки еды, прячет людей в номерах, на чердаках, в подвалах. Он сталкивается с угрозами каждый день: ополченцы приходят, требуют выдать «тараканов», угрожают убить всех. Пол угощает их виски, даёт взятки, говорит, что в отеле живут «важные люди», что если что-то случится — будет международный скандал.
+Его жена Тата живёт в постоянном страхе. Она видит, как убивают её родных, как соседи исчезают. Она не верит, что они выживут. Пол поддерживает её, говорит, что держится ради детей.
+В один из дней Полу удаётся организовать эвакуацию части беженцев в безопасную зону, контролируемую повстанческой армией РПФ (Руандийская патриотическая фронт), которая постепенно отвоёвывает территорию у режима убийц. Он сам везёт автобус с людьми, рискуя жизнью на блокпостах.
+Фильм показывает, как Пол меняется: из человека, заботившегося только о себе и своей семье, он превращается в героя, готового жертвовать собой ради других. Он теряет иллюзии, понимает, что в мире нет справедливости, что помощь приходит только от тех, кто сам рискует.
+Когда геноцид заканчивается — после прихода РПФ в Кигали — Пол и его семья выживают. Более 1200 человек, спрятавшихся в отеле, остаются в живых.
+Фильм заканчивается текстом на экране: «Геноцид в Руанде длился 100 дней. За это время погибло более 800 000 человек. Международное сообщество не вмешалось. Пол Руспе и его семья выжили. Сегодня он продолжает бороться за правду и память о жертвах».
+«Отель „Руанда“» — это не просто хроника ужасов. Это история одного человека, который в условиях тотального безумия сохранил человечность. Фильм показывает, как храбрость, сострадание и решимость одного человека могут спасти сотни жизней в мире, где молчат другие. Он обнажает лицемерие международной политики, трагедию равнодушия и силу личного выбора в эпоху беззакония.
+');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('38-я параллель', 'When two brothers are forced to fight in the Korean War, the elder decides to take the riskiest missions if it will help shield the younger from battle.', '2004-01-01', 1, '140 minutes', 'Taegukgi hwinalrimyeo', 8.1, 'Тэгвульги: Там, где сходятся небо и земля
+Фильм «Тэгвульги: Там, где сходятся небо и земля», вышедший в российском прокате под названием «Тэгвульги», является масштабной военной драмой, основанной на реальных событиях Корейской войны 1950–1953 годов. Главные герои — два брата, Джин-тхэ и Джин-су, живущие в Сеуле в 1950 году. Джин-тхэ — старший брат, грубый, своенравный, бывший шофёр автобуса, который живёт только ради своей младшей сестры Со-ён и мечтает выдать её замуж. Джин-су — младший брат, тихий, образованный, мечтательный студент, который пишет стихи и собирается стать учителем. Между братьями существуют напряжённые отношения: Джин-тхэ считает младшего слабым, а Джин-су раздражает грубость старшего.
+Когда северокорейские войска неожиданно вторгаются на юг и захватывают Сеул, братья вовлекаются в хаос войны. Во время попытки бегства они теряют сестру в толпе беженцев. Джин-тхэ в отчаянии клянётся, что вернёт её, и решает записаться в армию Южной Кореи, чтобы получить шанс найти Со-ён. Джин-су, не желавший воевать, вынужден последовать за братом, чтобы тот не погиб.
+Они попадают в армию, где проходят жестокую подготовку. Джин-тхэ проявляет себя как сильный боец, но его грубость и неповиновение приказам вызывают конфликты с офицерами. Джин-су — слаб физически, но умён и дисциплинирован. Они становятся частью взвода, в котором также служат их друзья детства.
+На фронте братья проходят через ад сражений. Первые бои происходят во время отступления южнокорейской армии. Они участвуют в обороне Пусана, где южане, оттеснённые к югу, собирают последние силы. В боях Джин-тхэ проявляет героизм, но его методы — жестокость, пытки пленных, безжалостность — вызывают ужас у Джин-су. Младший брат видит, как война меняет старшего, превращая его в хладнокровного убийцу.
+Однако всё меняется, когда Джин-су оказывается в плену у северокорейцев. Джин-тхэ, несмотря на приказы, бросается его спасать. Он проникает в тыл врага, убивает охрану и возвращает брата. После этого Джин-су начинает меняться. Он видит, что выживание требует жестокости, и постепенно сам становится более агрессивным.
+Ключевой момент — битва за Инчхон, где американские и южнокорейские войска под командованием генерала Макартура высаживаются и начинают контрнаступление. Братья участвуют в освобождении Сеула. Там Джин-тхэ находит сестру — она жива, но пережила ужасы войны, включая насилие. Она узнаёт братьев, но их радость длится недолго: северокорейцы отступают, и братья получают приказ преследовать их до самой границы с Китаем.
+Они участвуют в боях на севере, включая сражение при озере Чхонджин, где южнокорейские войска сталкиваются с китайскими интервентами. Здесь гибнут почти все их товарищи. Джин-тхэ получает ранение, но продолжает сражаться. Джин-су, видя смерть друзей, окончательно теряет человечность.
+В кульминационной сцене братья оказываются в окружении. Их взвод уничтожен. Они обнаруживают, что их противником является северокорейский отряд, в котором служит их старый друг, тоже мобилизованный насильно. В финальной битве происходит трагическая развязка: Джин-тхэ, пытаясь спасти брата, стреляет в северокорейского солдата, но тот оказывается Джин-су, который, переодетый в форму врага, пытался подойти к нему. Джин-тхэ убивает собственного брата.
+Раненый, истекающий кровью Джин-су умирает на руках старшего брата. В последние минуты он просит Джин-тхэ не ненавидеть, не мстить, а просто жить. Он говорит, что не хочет, чтобы война продолжалась в сердце брата.
+Джин-тхэ, сломленный горем, хоронит брата. Он возвращается в разрушенный дом в Сеуле, где находит сестру. Она выживает, но их семья уничтожена.
+Фильм заканчивается финальной сценой: пожилой Джин-тхэ приходит к мемориалу погибшим на войне. Он кладёт на плиту фотографию Джин-су и старую шахматную фигуру — символ их детства. Он смотрит на небо и шепчет: «Я выжил. Я не ненавижу. Я помню».
+«Тэгвульги» — это не просто фильм о войне, а трагедия братьев, разорванных конфликтом, в котором нет победителей. Фильм показывает, как война уничтожает не только тела, но и души, как она превращает любящих братьев в убийц, как национальная идея раздирает семьи. Название «Тэгвульги» — это символ флага Кореи, на котором изображены небо и земля, ян и инь, единство и гармония. Фильм напоминает, что война — это разрыв этого единства, а цена мира — в памяти о тех, кто погиб, и в отказе от мести.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Перед закатом', 'Nine years after Jesse and Celine first met, they encounter each other again on the French leg of Jesse''s book tour.', '2004-01-01', 1, '80 minutes', 'Before Sunset', 8.1, 'Действие фильма разворачивается в Париже летом 2004 года, спустя девять лет после событий первой части. Джесси Уоллес, теперь успешный американский писатель, находится во французской столице с промо-туром своей автобиографической книги "This Time". Роман основан на той самой магической ночи, которую он провел с француженкой Селин в Вене в 1994 году. Книга стала бестселлером, но Джесси тщательно скрывает реальную личность своей музы.
+В знаменитом парижском книжном магазине Shakespeare and Company проходит презентация книги. Журналисты задают вопросы о сюжете и особенно интересуются концовкой - встретились ли герои снова через полгода в Вене, как договаривались. Джесси дипломатично уклоняется от прямых ответов, говоря, что каждый читатель должен самостоятельно решить, поверил ли он в любовь или нет. Он выглядит усталым и несколько циничным, явно не в восторге от необходимости обсуждать свою личную жизнь с незнакомцами.
+Когда презентация заканчивается и последние посетители расходятся, Джесси неожиданно замечает знакомую фигуру среди книжных полок. Это Селин Виллами. Она узнала о книге, поняла, что это об их встрече, и решила прийти. Первые минуты полны неловкости и волнения - они не виделись девять лет, оба сильно изменились внешне и внутренне.
+Селин теперь работает в экологической организации, занимается вопросами защиты окружающей среды и прав человека. Она более зрелая, немного уставшая от жизни, но все еще сохранила свою французскую элегантность и острый ум. Джесси женат на американке, у него есть семилетний сын Хэнк, которого он очень любит, но брак превратился в формальность, полную взаимных упреков и недопонимания.
+У Джесси есть всего несколько часов до вылета обратно в Америку, и они решают прогуляться по Парижу. Начинается долгое путешествие по городу, во время которого они постепенно восстанавливают утраченную связь. Сначала разговор носит формальный характер - они обмениваются новостями о работе, семье, планах на будущее. Но постепенно тон становится более личным и откровенным.
+Выясняется болезненная правда о том судьбоносном дне в декабре 1994 года. Они действительно должны были встретиться в Вене через полгода после их первой встречи, но бабушка Селин скончалась как раз в это время, и она не смогла приехать на свидание. Джесси все же прилетел в Вену и целый день бродил по знакомым местам в надежде случайно встретить ее, но безуспешно. Это признание болезненно для обоих - они понимают, что упустили шанс, который мог бы кардинально изменить их жизни.
+Во время прогулки по узким парижским улочкам, мимо кафе и антикварных магазинов, они обсуждают философские вопросы о природе любви, времени, судьбе. Селин рассказывает о своих отношениях с французским фотографом-журналистом, которые длились несколько лет, но закончились из-за его постоянных командировок и нежелания иметь детей. Джесси откровенно говорит о проблемах в браке - жена постоянно критикует его, они спят в разных комнатах, единственное, что их связывает, это сын.
+Они садятся в небольшое кафе, где продолжают разговор за бокалом вина. Селин курит сигареты и размышляет о том, что жизнь оказалась не такой, как она представляла в молодости. Она хотела изменить мир, но чувствует, что все ее усилия тщетны перед лицом глобальных проблем. Джесси признается, что написание книги было для него способом вернуться к тому моменту в жизни, когда он чувствовал себя по-настоящему живым и влюбленным.
+Затем они садятся на прогулочный кораблик и плывут по Сене. Париж предстает во всей своей красе - старинные мосты, собор Нотр-Дам, набережные с букинистами. Во время речной прогулки между ними возникает особая интимность. Они сидят рядом, их руки случайно соприкасаются, взгляды становятся более долгими и многозначительными. Селин рассказывает, как она иногда мечтала о том, что встретит его случайно на улице, и они продолжат тот разговор, который начали девять лет назад.
+Прогулка продолжается по набережной Сены. Они говорят о смерти, о том, как изменилось их восприятие жизни с возрастом. Селин вспоминает свою бабушку, которая перед смертью говорила ей о важности любви и о том, что нужно ценить каждый момент счастья. Джесси рассказывает о своем страхе перед тем, что он повторит ошибки своих родителей, которые развелись, когда он был подростком.
+Время неумолимо течет, и становится ясно, что Джесси может опоздать на самолет. Но он словно не хочет прерывать этот разговор, эти мгновения близости, которых он был лишен так долго. Они обсуждают концепцию времени, параллельных реальностей, возможность того, что где-то в другой вселенной они остались вместе и прожили счастливую жизнь.
+В какой-то момент разговор становится более напряженным. Селин упрекает Джесси в том, что он использовал их историю для своей книги, не спросив ее разрешения. Она чувствует себя преданной, особенно учитывая то, что он изменил некоторые детали их встречи. Джесси оправдывается, говоря, что это была его попытка найти ее, что он надеялся, что она прочитает книгу и свяжется с ним. Между ними возникает легкая ссора, которая, однако, только подчеркивает глубину их чувств.
+Они продолжают идти по городу, и постепенно напряжение спадает. Селин показывает Джесси места, которые важны для нее - маленький сад, где она любит читать, мост, с которого открывается красивый вид на Эйфелеву башню. Она рассказывает о своих мечтах и разочарованиях, о том, как трудно найти баланс между идеализмом молодости и реальностью взрослой жизни.
+Джесси признается, что все эти годы он сравнивал других женщин с ней, что ни с кем больше он не чувствовал такой связи, как с Селин в ту ночь в Вене. Он говорит, что их встреча была самым искренним и настоящим моментом в его жизни, и он боится, что больше никогда не испытает ничего подобного.
+Солнце начинает садиться, и они понимают, что время их встречи подходит к концу. Джесси должен ехать в аэропорт, но он явно не хочет расставаться. Селин предлагает зайти к ней домой, чтобы он мог вызвать такси и добраться до аэропорта быстрее.
+Квартира Селин находится в старом парижском доме. Это уютное пространство, полное книг, растений, фотографий с путешествий. Интерьер отражает ее личность - здесь есть предметы искусства со всего мира, картины, винтажная мебель. Джесси рассматривает ее вещи, пытаясь лучше понять, какой стала ее жизнь за эти годы.
+Селин включает музыку - песню Нины Симон "Just in Time". Музыка наполняет комнату, создавая особую атмосферу. Селин начинает двигаться в ритм мелодии, сначала просто покачиваясь, а затем танцуя все более свободно. Она имитирует манеру исполнения Нины Симон, поет вслед за записью, полностью погружаясь в музыку.
+Джесси сидит в кресле и наблюдает за ней, завороженный. В этот момент она кажется ему такой же свободной и притягательной, как девять лет назад в Вене. Танец Селин становится все более чувственным и раскрепощенным, она словно забывает обо всем на свете, живя только настоящим моментом.
+Время отлета уже давно прошло, но Джесси не делает ни малейших попыток встать и уйти. Он полностью поглощен происходящим, этой магией момента, которая снова связала их невидимыми нитями. Селин, заметив, что он не торопится, с легкой улыбкой говорит ему, что он опоздает на самолет.
+Джесси смотрит на нее и спокойно отвечает: "Я знаю". В этих простых словах заключается вся его решимость. Он готов изменить свою жизнь, готов рискнуть, готов остаться в этом моменте, который может больше никогда не повториться.
+Фильм заканчивается именно на этой фразе, оставляя зрителей в напряженном ожидании. Камера медленно отдаляется от окна квартиры, за которым догорает парижский закат, символизируя конец этого дня, но, возможно, начало чего-то нового и важного в жизни героев.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Воспоминания об убийстве', 'In a small Korean province in 1986, two detectives struggle with the case of multiple young women being found raped and murdered by an unknown culprit.', '2003-01-01', 1, '131 minutes', 'Salinui chueok', 8.1, 'Действие фильма разворачивается в 1986 году в провинциальном южнокорейском городке Хвасон в провинции Кёнгидо. Страна находится в состоянии политических волнений - идут студенческие демонстрации против военной диктатуры, по всей стране введено военное положение. На этом фоне происходит серия жестоких убийств молодых женщин, которые потрясают маленький сельский городок.
+Первое убийство обнаруживается на рисовом поле. Молодая женщина найдена изнасилованной и убитой, ее тело связано собственным бельем. Расследование поручается местным детективам - сержанту Пак Ту Ману и детективу Чо Ён Гу. Пак Ту Ман - ленивый, некомпетентный полицейский, который привык решать дела с помощью принуждения и фальсификации улик. Его методы архаичны и жестоки - он избивает подозреваемых, заставляет их подписывать признания, не утруждая себя настоящим расследованием.
+Чо Ён Гу еще более примитивен в своих методах. Он отличается особой жестокостью и готов применить физическое насилие к любому, кто покажется ему подозрительным. Оба детектива представляют собой образец коррумпированной и неэффективной провинциальной полиции того времени, которая больше заботится о быстром закрытии дела, чем о поиске истины.
+Когда происходит второе убийство с аналогичным почерком, становится ясно, что в городке орудует серийный убийца. Жертвами становятся молодые женщины, которых насилуют и убивают в дождливые ночи. Убийца оставляет тела на рисовых полях, связывая жертв их собственной одеждой. Детали преступлений указывают на то, что маньяк тщательно выбирает жертв и следует определенному образцу поведения.
+Из Сеула прибывает детектив Со Тхэ Юн - опытный следователь, который должен помочь в расследовании. Со Тхэ Юн кардинально отличается от местных полицейских - он использует современные криминалистические методы, анализирует улики, строит психологический портрет преступника. Его прибытие создает напряжение в команде, поскольку его профессиональный подход контрастирует с грубыми методами провинциальных коллег.
+Местные детективы быстро находят "подозреваемого" - умственно отсталого молодого человека по имени Квак Хи Бон, который признается в убийствах под пытками. Пак Ту Ман и Чо Ён Гу уверены, что дело закрыто, и готовят документы для передачи в суд. Однако Со Тхэ Юн сомневается в виновности Квака, указывая на несоответствия в его показаниях и отсутствие реальных доказательств.
+Во время допроса выясняется, что Квак физически не способен совершить преступления такой сложности. Его алиби проверяется и подтверждается. Более того, пока Квак находится под арестом, происходит еще одно убийство с тем же почерком. Это окончательно доказывает его невиновность, и подозреваемого приходится отпустить.
+Расследование заходит в тупик. Детективы пытаются найти связь между жертвами, но единственное, что их объединяет - все они были молодыми женщинами, носили красную одежду в ночь убийства и были убиты в дождливые дни. Убийца словно испаряется после каждого преступления, не оставляя следов.
+В ходе расследования Со Тхэ Юн обращает внимание на странное поведение одного из местных жителей - молодого человека по имени Пак Хён Гю. Тот работает на местной фабрике, ведет себя замкнуто и подозрительно. При этом он обладает определенной образованностью и интеллектом, что выделяет его среди других жителей городка.
+Детективы начинают следить за Пак Хён Гю, но их методы слежки настолько непрофессиональны, что подозреваемый легко их замечает. Тем не менее, косвенные улики начинают указывать на него - он был в районе всех преступлений, знал жертв, а его поведение в дни убийств кажется подозрительным.
+Параллельно с расследованием в стране нарастает политическая напряженность. Студенческие демонстрации становятся все более массовыми, полиция получает приказы подавлять протесты. Это отвлекает ресурсы от расследования убийств, и дело отходит на второй план. Политическая ситуация влияет на ход следствия - многие потенциальные свидетели боятся контактировать с полицией, опасаясь быть обвиненными в политической деятельности.
+Во время одной из попыток задержать Пак Хён Гю происходит трагедия. Чо Ён Гу, действуя по своему обыкновению грубо и непрофессионально, случайно убивает подозреваемого во время погони. Пак Хён Гю падает под поезд и погибает, унося с собой все возможные ответы о своей потенциальной причастности к убийствам.
+После смерти главного подозреваемого убийства внезапно прекращаются. Это можно было бы считать доказательством его вины, но доказательств по-прежнему нет. Дело остается нераскрытым, и через некоторое время его архивируют. Детективы расходятся - Со Тхэ Юн возвращается в Сеул, разочарованный провалом расследования и некомпетентностью местной полиции.
+Проходят годы. Пак Ту Ман оставляет службу в полиции и становится продавцом в небольшом магазинчике. Страна демократизируется, военная диктатура уходит в прошлое, но дело об убийствах в Хвасоне так и остается нераскрытым. Время от времени в прессе появляются статьи об этой серии преступлений, но новых зацепок не находится.
+В финальной сцене, происходящей спустя много лет, повзрослевший Пак Ту Ман возвращается на то рисовое поле, где было найдено первое тело. Он стоит у дренажной трубы, где были обнаружены улики, и вспоминает события тех дней. Неожиданно к нему подходит маленькая девочка и рассказывает, что недавно здесь был мужчина, который тоже смотрел в эту трубу.
+Девочка описывает этого человека как обычного, ничем не примечательного - именно такого, каким мог бы быть настоящий убийца. Пак Ту Ман спрашивает, как выглядело лицо этого человека. Девочка отвечает, что оно было "обычным". В этот момент Пак Ту Ман поворачивается и смотрит прямо в камеру, прямо на зрителя.
+Этот финальный взгляд в камеру становится одним из самых пронзительных моментов в истории кинематографа. Взгляд Пак Ту Мана полон осознания собственной некомпетентности, сожаления о нераскрытом деле и понимания того, что настоящий убийца так и остался на свободе. Возможно, он все еще где-то рядом, возможно, это обычный человек с обычным лицом, который может оказаться кем угодно - даже зрителем фильма.
+Фильм основан на реальных событиях - серии убийств, которые действительно происходили в провинции Кёнгидо в 1980-х годах. Настоящий убийца так и не был найден, и дело остается нераскрытым до сих пор. Режиссер Пон Чжун Хо использует эту историю для критики коррумпированной полицейской системы авторитарной Южной Кореи, показывая, как некомпетентность, жестокость и политическое давление могут помешать справедливости.
+Фильм также является размышлением о природе зла и о том, как обычные люди могут скрывать в себе монстров. Образ "обычного" убийцы с "обычным" лицом становится метафорой банальности зла - идеи о том, что самые страшные преступления могут совершаться самыми неприметными людьми, которые живут среди нас и которых мы никогда не заподозрим.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Убить Билла', 'After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.', '2003-01-01', 1, '111 minutes', 'Kill Bill: Vol. 1', 8.1, 'Фильм открывается черно-белой сценой в маленькой церкви в Эль-Пасо, штат Техас. Невеста, одетая в свадебное платье, лежит на полу, избитая и окровавленная. Над ней склоняется мужчина, которого мы видим только по пояс - это Билл. Он нежно вытирает кровь с ее лица носовым платком и говорит о том, как жаль, что все так обернулось. Невеста пытается объяснить ему что-то о ребенке, но Билл прерывает ее словами "Это моя любимая пистолетка" и стреляет ей в голову.
+Четыре года спустя Невеста просыпается в больнице округа Сент-Мэри в Остине после длительной комы. Она пытается пошевелить пальцами ног, но не чувствует их. Врач объясняет санитару, что атрофия мышц после четырехлетней комы - обычное дело. Когда Невеста остается одна, она обнаруживает, что больше не беременна. В отчаянии она кричит, понимая, что ее ребенок мертв.
+Ночью в палату заходит санитар Бак вместе с толстым мужчиной по имени Томми. Выясняется, что Бак регулярно приводил к коматозной пациентке мужчин за плату, позволяя им заниматься с ней сексом. Бак рассказывает Томми правила: час времени за семьдесят пять долларов, презерватив обязателен, никаких поцелуев в губы, никаких следов. Когда Томми пытается воспользоваться беззащитной женщиной, Невеста внезапно приходит в сознание и откусывает ему язык. Разъяренный Томми пытается ее задушить, но она ломает ему нос. Затем Невеста заманивает Бака в палату, притворившись снова без сознания, и убивает его, размозжив голову дверью больничной тумбочки.
+Невеста крадет грузовик Бака и его запас оружия. Проведя несколько часов в машине, она тренирует свои атрофированные ноги, заставляя их двигаться силой воли и повторяя мантру "Шевелись, черт возьми!" В конце концов ей удается восстановить чувствительность и подвижность конечностей.
+Из флэшбеков мы узнаем, что Невеста была частью элитной группы женщин-убийц под названием "Отряд Смертоносных Гадюк", работавших на загадочного босса по имени Билл. Каждая из них носила кодовое имя, взятое от названия ядовитых змей: Невеста была известна как Черная Мамба, О-Рен Ишии - как Мамба-стрекоза, Вернита Грин - как Медноголовая Змея, Элль Драйвер - как Калифорнийская Горная Змея, а Буд - как Боковая Гремучая Змея.
+Невеста составляет "Список Смерти" - перечень пяти человек, которые участвовали в резне на ее свадьбе: О-Рен Ишии, Вернита Грин, Буд, Элль Драйвер и сам Билл. Она планирует убить каждого из них.
+Первой целью становится Вернита Грин, которая теперь живет обычной жизнью домохозяйки в пригороде Пасадены под именем Дженни Белл. У нее есть муж и четырехлетняя дочь Никки. Невеста приезжает к ней домой, когда муж на работе, а дочь в школе. Сначала женщины вежливо беседуют на кухне за чашкой кофе. Вернита извиняется за произошедшее четыре года назад, объясняя, что у нее не было выбора - Билл бы убил ее, если бы она отказалась участвовать. Она говорит, что теперь у нее новая жизнь, семья, и просит оставить прошлое в прошлом.
+Однако Невеста непреклонна. Она достает пистолет, но Вернита опрокидывает стол и начинается жестокая схватка на кухне. Женщины дерутся, используя все, что попадается под руку - сковородки, ножи, блендер. Вернита пытается ударить Невесту ножом для мяса, но промахивается. В итоге Невеста метает нож прямо в грудь Верниты, убивая ее мгновенно.
+В этот момент домой приходает четырехлетняя Никки. Она видит мертвую мать и незнакомую женщину с ножом. Невеста опускается на колени перед ребенком и извиняется, объясняя, что у нее не было выбора, поскольку ее мама была плохим человеком. Она говорит Никки, что если девочка когда-нибудь захочет отомстить за мать, то сможет найти ее, когда вырастет.
+Следующей целью становится О-Рен Ишии, наполовину китаянка, наполовину японка, которая теперь возглавляет все криминальные операции якудза в Токио и известна как "Королева Подземного Мира Токио". Ее смешанное происхождение вызывает недовольство среди консервативных боссов якудза, но О-Рен жестоко подавляет любое неповиновение.
+Через серию анимированных сцен в стиле аниме мы узнаем предысторию О-Рен. В девятилетнем возрасте она стала свидетельницей убийства своих родителей боссом якудза Мацумото во время кровавой разборки. Ее отец работал на американские военные базы, а мать была членом якудза. Мацумото пытал и убил обоих родителей прямо на глазах у ребенка, который прятался под кроватью. Две недели спустя О-Рен проникла в дом Мацумото, переодевшись в кимоно, и убила его, вонзив меч ему в спину во время занятий сексом с проституткой. После этого она посвятила жизнь боевым искусствам и к двадцати годам стала одной из лучших убийц в мире.
+Невеста отправляется в Окинаву, Япония, чтобы найти Хаттори Ханзо, легендарного мастера-кузнеца, который изготавливал лучшие самурайские мечи в мире. Ханзо теперь владеет небольшим суши-баром и поклялся больше никогда не делать орудия смерти. Он говорит на ломаном английском и кажется простоватым поваром, но когда Невеста упоминает имя Билла, выражение его лица кардинально меняется.
+Выясняется, что Билл был учеником Ханзо, но пошел по темному пути, используя полученные знания во зло. Ханзо считает себя частично ответственным за все злодеяния Билла. Узнав, что меч нужен для убийства его бывшего ученика, мастер соглашается сделать исключение из своей клятвы. Он работает над катаной целый месяц, и в итоге создает самый совершенный меч, который когда-либо делал. Клинок настолько острый, что может разрезать что угодно.
+Вооружившись мечом Ханзо, Невеста прибывает в Токио и начинает планировать нападение на О-Рен. Она узнает, что каждый четверг О-Рен посещает эксклюзивный ресторан "Дом голубых листьев" для встреч с другими боссами якудза. Ресторан окружен традиционным японским садом со снежным покровом.
+О-Рен окружена мощной охраной, включая ее личную армию из восьмидесяти восьми элитных бойцов, известных как "Безумные 88", а также ее главную телохранительницу - семнадцатилетнюю Гого Юбари. Гого - полная психопатка, которая получает садистское удовольствие от убийств. Она носит японскую школьную форму и вооружена цепом с шипованным металлическим шаром. В одной из сцен показано, как она без всякой причины убивает пожилого мужчину в баре, проткнув его шипованным шаром.
+Невеста проникает в ресторан, где О-Рен проводит встречу с боссами в традиционном японском зале. Сначала она спокойно заходит в зал и объявляет, что пришла за О-Рен Ишии. Боссы якудза смеются над одинокой женщиной с мечом, но их смех быстро прекращается, когда Невеста демонстрирует скорость и мастерство владения катаной, отрубив руку одному из нападавших.
+Начинается легендарная битва в "Доме голубых листьев". Невеста сражается против "Безумных 88" сначала в главном зале ресторана, а затем действие переносится в заснеженный сад. Каждый из противников вооружен катаной или другим традиционным оружием. Невеста движется с нечеловеческой грацией и скоростью, ее меч Ханзо разрезает все на своем пути.
+Битва показана в различных стилистических приемах - то в цвете, то в черно-белом изображении, то в силуэтах. Кровь брызжет фонтанами, окрашивая белый снег в ярко-красный цвет. Некоторых противников Невеста убивает мгновенно одним точным ударом, других оставляет искалеченными. Один боец лишается обеих рук, другой - ног, третьему отрубают голову. Несколько человек пытаются напасть на нее одновременно, но она легко парирует все атаки и наносит смертельные удары в ответ.
+Когда большинство "Безумных 88" повержено, на сцену выходит Гого Юбари. Между ней и Невестой происходит напряженная дуэль в заснеженном саду ресторана. Гого оказывается исключительно опасным противником - она быстра, непредсказуема и совершенно безумна. Ее цеп с шипованным шаром едва не попадает в Невесту несколько раз. Девочка-психопатка хихикает и издает странные звуки во время боя, получая явное удовольствие от процесса.
+Схватка длится долго, обе участницы получают ранения. В какой-то момент кажется, что Гого может победить, но Невеста использует обломок деревянного стола как метательное оружие. Острый кусок дерева пробивает череп Гого, убивая ее мгновенно. Девочка падает в снег, и ее кровь растекается красным пятном.
+После этого О-Рен наконец появляется в саду для финальной дуэли. Она также вооружена катаной и является мастером боевых искусств. О-Рен одета в элегантное белое кимоно, которое контрастирует с кровавой бойней вокруг. Женщины сходятся на узком деревянном мостике посреди заснеженного сада.
+Поначалу О-Рен насмехается над Невестой, говоря, что репутация мечей Ханзо сильно преувеличена, и что она не представляет серьезной угрозы. Они обмениваются ударами, демонстрируя высочайшее мастерство фехтования. Каждая атака и защита выполняется с идеальной техникой. Звук стали о сталь разносится по тихому саду.
+В решающий момент дуэли Невеста наносит мощный вертикальный удар сверху вниз. Клинок Ханзо проходит через защиту О-Рен и срезает верхнюю часть ее головы. О-Рен стоит несколько секунд, затем срезанная часть черепа соскальзывает, и она падает в снег.
+Умирая, О-Рен признает мастерство противника и качество меча Ханзо. Она искренне извиняется за свои пренебрежительные слова о клинке и говорит, что это действительно превосходное оружие. Ее последние слова произносятся с уважением к сопернице.
+Невеста вычеркивает имя О-Рен из своего "Списка Смерти". Она подходит к Софи Фатэль, франко-японской советнице О-Рен, которая потеряла левую руку в битве с "Безумными 88". Невеста дает Софи список всех членов организации О-Рен, которые не присутствовали в ресторане в ту ночь, и говорит, что может оставить ее в живых, если та передаст остальным сообщение о том, что произошло.
+Фильм заканчивается тем, что Невеста покидает "Дом голубых листьев" и садится в самолет, направляющийся в Америку. Она едет к своим следующим целям - сначала к Баду, затем к Элль Драйвер. В финальной сцене показывается шокирующее откровение: маленькая девочка смотрит телевизор в доме, где на заднем плане слышен голос Билла, говорящего "Мама скоро придет домой". Становится ясно, что дочь Невесты жива и находится у Билла, что полностью меняет мотивацию главной героини и подготавливает почву для второй части фильма.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('В поисках Немо', 'After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.', '2003-01-01', 1, '100 minutes', 'Finding Nemo', 8.1, 'История начинается в Большом Барьерном рифе у берегов Австралии, где живет семья рыб-клоунов. Марлин и его жена Корал только что обустроили свой новый дом в актинии и с нетерпением ждут появления на свет их многочисленного потомства - сотен икринок. Они мечтают о будущем, выбирают имена для будущих малышей, и жизнь кажется им прекрасной и безопасной.
+Однако идиллия внезапно нарушается появлением огромной барракуды - хищной рыбы с острыми зубами. Марлин пытается защитить семью, но барракуда оказывается слишком сильной. В результате нападения Корал погибает, а все икринки, кроме одной, оказываются уничтожены. Единственная уцелевшая икринка получила повреждение, из-за которого у вылупившегося из нее малыша один плавник оказался меньше другого.
+Марлин называет сына Немо и с того дня становится чрезмерно опекающим отцом. Травма потери семьи превратила его в параноидального родителя, который видит опасность буквально во всем. Он постоянно предупреждает Немо об угрозах океана, запрещает ему отплывать далеко от дома и относится к любому проявлению самостоятельности сына как к смертельной опасности.
+Наступает день, когда Немо должен пойти в школу. Марлин крайне неохотно соглашается на это, но все же отводит сына к учительнице - скату мистеру Рэю. В классе Немо знакомится с другими молодыми рыбками, среди которых выделяются Таб, Перл и Шелдон. Дети очень разные по характеру, но всех их объединяет любопытство к окружающему миру.
+Во время школьной экскурсии мистер Рэй показывает ученикам различные части рифа, рассказывая о морской жизни. Немо, несмотря на предупреждения отца, очарован всем, что видит. Особенно его привлекает Drop Off - место, где риф обрывается в глубокую синеву открытого океана. Марлин строго-настрого запретил сыну приближаться к этому месту.
+Когда группа оказывается возле Drop Off, Немо не может сдержать любопытства. Другие дети начинают его дразнить, называя трусом и говоря, что его отец слишком его опекает. Чтобы доказать свою смелость, Немо решает коснуться лодки, которая стоит на якоре в открытом море. Это выглядит как безобидная детская шалость, но именно она запускает цепь событий, которая изменит жизнь героев.
+Марлин замечает, что происходит, и в панике бросается к сыну, крича, чтобы тот немедленно вернулся. Его истерические вопли привлекают внимание людей на лодке - дайверов, которые занимаются ловлей тропических рыб для аквариумов. Они замечают Немо и быстро ловят его сетью. Марлин пытается спасти сына, но лодка уносит Немо прочь.
+В отчаянии Марлин бросается следом за лодкой, но не может ее догнать. Он остается один в открытом океане, не зная, что делать и куда плыть. Именно в этот момент он встречает Дори - синюю рыбу-хирурга с серьезными проблемами кратковременной памяти. Дори утверждает, что видела лодку и может показать, в какую сторону она уплыла.
+Дори становится спутницей Марлина в его путешествии, хотя ее забывчивость постоянно создает проблемы. Она может забыть, что происходило буквально секунду назад, не помнит имен, путает направления. Однако у нее есть удивительная способность читать человеческие надписи, и она обладает оптимизмом, который помогает Марлину не сдаваться.
+Тем временем Немо оказывается в аквариуме стоматологической клиники доктора Шермана в Сиднее. Аквариум населен разнообразными морскими обитателями, каждый из которых попал сюда по разным причинам. Лидером группы является Жабр - рыба-ангел с поврежденным плавником, которая уже давно планирует побег. В группу также входят Блоут - рыба-еж с проблемами самоконтроля, Персик - морская звезда, которая прилипает к стеклу и наблюдает за происходящим в клинике, Гурглс - королевская граммма с обсессивно-компульсивным расстройством, Бабблс - желтый губан, одержимый пузырьками, Деб - рыба-хирург, которая думает, что ее отражение это ее сестра Фло, и Жак - креветка, которая поддерживает чистоту в аквариуме.
+Обитатели аквариума рассказывают Немо ужасную новость - доктор Шерман планирует подарить его своей племяннице Дарле на день рождения. Дарла известна как "рыбоубийца" - девочка, которая по неосторожности погубила уже несколько рыбок из-за своего неумения с ними обращаться. День рождения Дарлы - завтра, поэтому у Немо очень мало времени на побег.
+Жабр берет Немо под свое крыло и начинает обучать его плану побега. Идея заключается в том, чтобы засорить фильтр аквариума, после чего доктор Шерман будет вынужден временно переместить всех рыб в пакеты для чистки аквариума. В этот момент они смогут попасть в раковину, а оттуда через канализацию в океан.
+Марлин и Дори тем временем продолжают свои поиски. Их путешествие полно опасностей и приключений. Сначала они встречают Брюса, Анкора и Чума - трех акул, которые организовали группу поддержки под названием "Акулы-анонимы" и пытаются избавиться от привычки есть рыбу. Их девиз звучит как "Рыба - друг, а не еда". Однако когда Дори случайно получает кровоточащую рану, инстинкты Брюса берут верх, и начинается погоня.
+Во время бегства от акул Марлин и Дори попадают в подводное минное поле времен Второй мировой войны. Дори случайно задевает одну из мин, что приводит к серии взрывов. В результате они оказываются в глубоких водах, где встречают морского черта - хищную рыбу с устрашающей внешностью и светящейся приманкой. Морской черт нападает на них, но во время схватки Марлин замечает водолазную маску - ту самую, которую потерял один из дайверов, поймавших Немо.
+На маске есть надпись с адресом: "Шерман, 42 Обои, Сидней". Это первая реальная зацепка, которая может привести их к Немо. Однако маска падает в океанскую впадину, и Дори, несмотря на свой страх темноты, спускается за ней. В глубине они встречают стаю светящихся медуз, прохождение через которую становится настоящим испытанием. Медузы жалят их, но Марлин и Дори помогают друг другу пройти через это препятствие.
+После прохождения через медуз они оказываются в Восточно-Австралийском течении, где встречают группу морских черепах во главе с Крушем - 150-летней черепахой с расслабленным характером серфера. Краш и его сын Сквирт помогают Марлину и Дори быстро добраться ближе к Сиднею, используя силу течения.
+Во время путешествия с черепахами Марлин рассказывает историю о том, как его сын был похищен. История быстро распространяется по океану через различных морских обитателей, и вскоре о храбром отце-клоуне, который пересекает весь океан в поисках сына, знают все рыбы.
+В аквариуме план побега Жабра почти срабатывает, но Немо застревает в трубе фильтра из-за своего поврежденного плавника. Остальные рыбы вынуждены вернуть фильтр в рабочее состояние, чтобы спасти Немо от удушья. План проваливается, и надежда на побег кажется потерянной.
+Марлин и Дори наконец добираются до Сиднейской гавани, где встречают пеликана Найджела, который оказывается другом обитателей аквариума доктора Шермана. Найджел знает о Немо и рассказывает Марлину, что его сын жив, но сегодня его должны отдать Дарле. Времени почти не остается.
+Найджел соглашается доставить Марлина и Дори в стоматологическую клинику. Полет над городом становится головокружительным приключением, особенно когда их начинают преследовать чайки, постоянно кричащие "Мое! Мое! Мое!" и пытающиеся отнять у Найджела его добычу.
+В клинике начинается хаос. Дарла уже пришла за своим подарком, а Немо, притворившись мертвым по совету Жабра, лежит в пакете. Когда Марлин врывается в клинику вместе с Найджелом, он видит своего сына в таком состоянии и думает, что опоздал. Горе отца настолько искреннее и глубокое, что даже Немо, который только притворялся, на мгновение забывает о своем плане.
+Дарла, увидев "мертвую" рыбку, начинает трясти пакет, пытаясь "разбудить" Немо. Жабр понимает, что медлить нельзя, и с помощью других обитателей аквариума катапультирует себя из аквариума прямо на лицо Дарлы, отвлекая ее внимание. В суматохе Немо удается попасть в канализацию и начать путь к океану.
+Марлин, убитый горем и винящий себя в смерти сына, возвращается домой вместе с Дори. Однако по дороге они встречают Немо, который смог выбраться из канализации в гавань. Радость встречи омрачается новой опасностью - Дори попадает в рыболовную сеть вместе с косяком групперов.
+Марлин снова охватывает паника, он боится потерять еще одного близкого друга. Но Немо, вдохновленный примером Жабра и других обитателей аквариума, предлагает план спасения. Он проплывает через сеть и убеждает всех пойманных рыб плыть вниз одновременно. Марлин должен доверить сыну выполнение этого опасного плана.
+Это становится переломным моментом для Марлина. Он понимает, что должен позволить сыну быть самостоятельным, даже если это связано с риском. План Немо срабатывает - сеть рвется под весом рыб, плывущих в одном направлении, и все оказываются на свободе.
+Отец и сын наконец воссоединяются, и их отношения кардинально меняются. Марлин понимает, что его чрезмерная опека была вызвана страхом, а не любовью, и что настоящая любовь требует доверия и готовности отпустить. Немо, в свою очередь, лучше понимает заботы отца и ценит его защиту, но также утверждает свое право на самостоятельность.
+Они возвращаются домой на риф, где их с радостью встречают соседи. Марлин больше не запрещает Немо исследовать мир - наоборот, он поощряет его любознательность, оставаясь при этом заботливым отцом. Немо возвращается в школу, где с гордостью рассказывает одноклассникам о своих приключениях.
+Дори остается жить рядом с ними, став частью их маленькой семьи. Ее проблемы с памятью никуда не исчезают, но теперь у нее есть друзья, которые помогают ей справляться с этим. В финале фильма мы видим, как вся троица отправляется в новое приключение с мистером Рэем и классом, но теперь это исследование мира происходит в атмосфере доверия и взаимной поддержки.
+История заканчивается оптимистично, показывая, что иногда самые большие приключения начинаются тогда, когда мы готовы преодолеть свои страхи и довериться тем, кого любим. Океан больше не кажется Марлину враждебным местом - он стал пространством для роста, обучения и семейного счастья.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Поймай меня, если сможешь', 'Barely 21 yet, Frank is a skilled forger who has passed as a doctor, lawyer and pilot. FBI agent Carl becomes obsessed with tracking down the con man, who only revels in the pursuit.', '2002-01-01', 1, '141 minutes', 'Catch Me If You Can', 8.1, 'Фильм рассказывает историю Фрэнка Абигнейла-младшего, который в возрасте шестнадцати лет начинает карьеру мошенника после развода родителей. История начинается в 1963 году, когда Фрэнк узнает, что его отец Фрэнк-старший имеет серьезные финансовые проблемы с налоговой службой, а его мать Паула заводит роман с другом семьи Джеком Барнсом. Когда родители объявляют о разводе и просят сына выбрать, с кем он хочет жить, шестнадцатилетний Фрэнк убегает из дома.
+Оставшись без денег, Фрэнк начинает с мелкого мошенничества, выписывая фальшивые чеки. Он быстро понимает, что его юный возраст и невинная внешность помогают ему обманывать людей. Фрэнк совершенствует свои навыки подделки документов и чеков, изучая банковские процедуры и используя слабые места в системе безопасности того времени.
+Первой крупной аферой Фрэнка становится выдача себя за пилота авиакомпании Pan American. Он подделывает удостоверение пилота и форму, что позволяет ему бесплатно летать по всему миру, пользуясь системой взаимной вежливости между авиакомпаниями. В роли пилота он останавливается в лучших отелях, знакомится с привлекательными стюардессами и живет роскошной жизнью, при этом никогда не управляя самолетом.
+За Фрэнком начинает охоту агент ФБР Карл Хэнрэтти, который специализируется на финансовых преступлениях. Хэнрэтти методично изучает схемы мошенничества Фрэнка и постепенно приближается к его поимке. Между ними завязывается своеобразная игра в кошки-мышки, где Фрэнк всегда остается на шаг впереди, но Карл неустанно преследует его.
+Когда схема с пилотом становится слишком рискованной, Фрэнк меняет личность и становится доктором, работая главным педиатром в больнице Джорджии. Несмотря на отсутствие медицинского образования, он успешно справляется с административными обязанностями, перекладывая реальную медицинскую работу на интернов и медсестер. В больнице он знакомится с медсестрой Бредой Стронг, в которую влюбляется.
+Отношения с Бредой становятся серьезными, и Фрэнк даже думает о том, чтобы остепениться. Однако давление со стороны ФБР усиливается, и ему приходится снова сменить личность. На этот раз он становится адвокатом в Луизиане, сдав экзамен на адвокатскую практику после нескольких недель интенсивной подготовки. Работая помощником генерального прокурора, он демонстрирует удивительные способности к изучению права.
+В Луизиане Фрэнк знакомится с семьей Стронг, родителями Бреды, и просит руки их дочери. Он представляется как успешный молодой прокурор, и семья принимает его с распростертыми объятиями. Планируется свадьба, и кажется, что Фрэнк наконец-то может начать честную жизнь.
+Однако агент Хэнрэтти выходит на след Фрэнка через банковские записи. Во время помолвочной вечеринки ФБР окружает дом, но Фрэнку удается бежать через заднее окно. Брэнда понимает, что ее жених не тот, за кого себя выдавал, но к тому времени она уже успела полюбить его.
+Фрэнк бежит в Европу, где продолжает свою мошенническую деятельность, подделывая чеки различных банков. Он живет в Монпелье, Франции, под очередным вымышленным именем. Тем временем Хэнрэтти продолжает преследование, работая с французской полицией и Интерполом.
+На Рождество Фрэнк звонит Карлу Хэнрэтти, и между ними происходит странный разговор, в котором чувствуется взаимное уважение и даже своеобразная дружба. Фрэнк понимает, что Карл тоже одинок и посвящает всю свою жизнь работе. Эти телефонные разговоры становятся традицией, подчеркивая психологическую связь между преследователем и преследуемым.
+Французская полиция в конце концов арестовывает Фрэнка в типографии, где он печатал фальшивые чеки. Его экстрадируют в Соединенные Штаты, где он предстает перед судом. За свои преступления Фрэнк получает двенадцать лет тюремного заключения в федеральной тюрьме строгого режима.
+В тюрьме здоровье Фрэнка серьезно ухудшается. Карл Хэнрэтти навещает его и делает необычное предложение: он может помочь ФБР в борьбе с финансовыми преступлениями, используя свои уникальные знания методов мошенничества. Первоначально Фрэнк отказывается, но условия тюремного заключения заставляют его пересмотреть свое решение.
+Фрэнк начинает работать с ФБР в качестве консультанта по финансовым преступлениям. Его экспертиза в области подделки документов и чеков оказывается неоценимой для раскрытия сложных дел. Он помогает разработать новые методы защиты банковских документов и обучает агентов распознавать различные виды мошенничества.
+Работая с ФБР, Фрэнк получает возможность навестить своего отца, который к тому времени значительно постарел и живет в скромной квартире. Отец гордится достижениями сына и тем, что он нашел способ использовать свои таланты во благо закона. Однако вскоре после этой встречи отец Фрэнка умирает, что становится для него серьезным ударом.
+Несмотря на успешную работу с ФБР, Фрэнк предпринимает попытку побега, не выдержав ограничений, связанных с его новым статусом. Он исчезает на несколько дней, но в конце концов возвращается, понимая, что у него нет другого выбора. Карл встречает его в аэропорту, и между ними происходит откровенный разговор о том, что побег не решит проблем Фрэнка.
+Фильм завершается сценой, показывающей Фрэнка через несколько лет. Он стал успешным консультантом по безопасности, работает с крупными корпорациями и банками, помогая им защищаться от мошенничества. Карл Хэнрэтти стал его другом и наставником. В финальных титрах сообщается, что настоящий Фрэнк Абигнейл продолжает работать консультантом по вопросам безопасности и за свою карьеру помог предотвратить мошенничество на миллиарды долларов.
+Фильм исследует темы отцовства, взросления и поиска места в жизни. Фрэнк ищет фигуру отца в лице Карла Хэнрэтти, который становится для него стабилизирующей силой. История показывает, как молодой человек, используя свои исключительные способности в преступных целях, в итоге находит способ направить эти таланты на служение обществу. Это история о втором шансе и возможности искупления даже после серьезных преступлений.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Сука-любовь', 'A horrific car accident connects three stories, each involving characters dealing with loss, regret, and life''s harsh realities, all in the name of love.', '2000-01-01', 1, '154 minutes', 'Amores perros', 8.1, 'Фильм состоит из трех переплетающихся историй, объединенных одним трагическим дорожно-транспортным происшествием в Мехико.
+Первая история - Октавио и Сусана
+Октавио - молодой парень из бедного района, который безнадежно влюблен в Сусану, жену своего старшего брата Рамиро. Рамиро работает в супермаркете, но его зарплаты едва хватает на содержание семьи. У пары есть маленький ребенок, но их брак трещит по швам из-за постоянных финансовых проблем и грубого обращения Рамиро с женой.
+Октавио постоянно наблюдает за страданиями Сусаны и мечтает увезти ее далеко от этой нищеты. Он работает на своего друга Хорхе, который организует подпольные собачьи бои в заброшенных зданиях и на пустырях. У Октавио есть собака по кличке Кофи, которая оказывается исключительно агрессивной и успешной в боях.
+Поначалу Октавио просто наблюдает за боями, но когда он видит, как много денег можно заработать, решает принять участие. Кофи побеждает в нескольких боях подряд, принося хозяину значительные суммы. Октавио начинает тратить деньги на Сусану - покупает ей красивую одежду, детское питание для ребенка, предлагает снять им отдельную квартиру.
+Сначала Сусана сопротивляется ухаживаниям деверя, но постепенно поддается его настойчивости. Между ними начинается тайный роман. Октавио рассказывает ей о своих планах - он хочет накопить достаточно денег от собачьих боев, чтобы они могли уехать в другой город и начать новую жизнь.
+Однако дела осложняются, когда Рамиро узнает об измене жены. Начинается серия конфликтов между братьями. Рамиро пытается запретить Октавио участвовать в боях и угрожает выгнать его из дома. Октавио становится все более отчаянным и решает принять участие в особо крупном бою, который может принести огромный выигрыш.
+В день решающего боя что-то идет не так. Во время драки между собаками начинается стрельба между организаторами - видимо, кто-то пытается обмануть с деньгами. Октавио хватает Кофи и деньги, садится в машину с Хорхе и пытается скрыться. За ними начинается погоня с перестрелкой. Хорхе получает ранение в живот и истекает кровью на заднем сиденье.
+Октавио мчится через город, пытаясь добраться до больницы, но на большой скорости проезжает на красный свет и врезается в другую машину на перекрестке. Это столкновение становится центральным событием, связывающим все три истории фильма.
+Вторая история - Валерия и Даниэль
+Валерия - успешная модель, лицо рекламной кампании дорогих духов, чьи огромные фотографии украшают билборды по всему Мехико. Даниэль - женатый мужчина средних лет, главный редактор журнала, который бросил жену и двух дочерей ради романа с молодой красавицей.
+В день автокатастрофы они переезжают в новую роскошную квартиру, которую Даниэль снял для их совместной жизни. Квартира находится на высоком этаже современного здания с панорамными окнами, из которых видны рекламные щиты с изображением самой Валерии. Даниэль дарит ей маленькую белую собачку породы чихуахуа по кличке Рикки.
+Они едут отмечать новоселье в ресторан, и именно тогда происходит роковое столкновение. Машина Валерии и Даниэля переворачивается после удара. Валерия получает серьезные травмы ноги - множественные переломы, которые требуют сложных операций и длительного лечения.
+Врачи борются за то, чтобы спасти ногу, но инфекция и осложнения приводят к тому, что в итоге они вынуждены ампутировать конечность. Для модели, чья карьера полностью зависела от внешности, это становится катастрофой. Рекламные контракты расторгаются, ее фотографии снимают с билбордов.
+Пока Валерия прикована к постели, между ней и Даниэлем начинают возникать серьезные проблемы. Стресс от травмы, потери карьеры и неопределенного будущего сказывается на их отношениях. Даниэль пытается поддержать возлюбленную, но постепенно понимает, что их роман был основан во многом на физическом влечении и общественном статусе Валерии.
+Дополнительную драму добавляет исчезновение Рикки. Маленькая собачка проваливается в дыру в полу квартиры, которая образовалась из-за протечки воды от соседей сверху. Рикки застревает в межэтажном пространстве, и ее нельзя достать обычными способами. Валерия слышит жалобный лай питомца, доносящийся из-под пола, но не может ничего сделать из-за своего состояния.
+Даниэль пытается найти собаку, ломает полы, нанимает рабочих, но Рикки словно растворилась в лабиринте труб и балок между этажами. Поиски собаки становятся символом разрушения их отношений и потери всего, что было дорого. В какой-то момент лай прекращается, и становится неясно, жива ли Рикки.
+История заканчивается тем, что Валерия остается инвалидом, ее карьера разрушена, а отношения с Даниэлем фактически закончены. Последние кадры этой сюжетной линии показывают ее одну в пустой квартире, где она тщетно пытается найти следы своего исчезнувшего питомца.
+Третья история - Эль Чиво
+Мартин, известный как Эль Чиво (Козел), выглядит как бездомный старик с длинными седыми волосами и бородой, который толкает тележку с мусором по улицам Мехико в окружении стаи бродячих собак. Однако на самом деле он профессиональный киллер, который выполняет заказы на убийство для различных клиентов.
+Двадцать лет назад Эль Чиво был революционером-партизаном, который боролся против правительства. Во время одной из операций он был арестован и провел много лет в тюрьме. За это время его жена вышла замуж за другого мужчину, а дочь выросла, думая, что отец мертв. После освобождения Мартин не смог вернуться к нормальной жизни и стал наемным убийцей, используя образ бродяги как идеальное прикрытие.
+Эль Чиво становится свидетелем автокатастрофы на перекрестке. Он видит, как из разбитой машины Октавио выбирается окровавленная собака Кофи, и забирает ее с собой. Кофи получила серьезные ранения, но Эль Чиво выхаживает ее в своем убежище - заброшенном складе, где он живет со своей стаей собак.
+В это время Эль Чиво получает новый заказ на убийство от богатого бизнесмена Густаво. Клиент хочет устранить своего делового партнера Луиса, с которым у него конфликт из-за крупной суммы денег. Густаво и Луис - сводные братья, которые наследовали семейный бизнес, но не могут поделить между собой власть и прибыль.
+Эль Чиво начинает следить за Луисом, изучает его привычки и распорядок дня. Он обнаруживает, что у цели есть семья - жена и маленькие дети, которые ничего не знают о темных делах отца. Это заставляет киллера задуматься о моральной стороне своей работы.
+Тем временем выясняется, что Кофи, которую Эль Чиво подобрал на месте аварии, обладает исключительно агрессивным характером из-за участия в собачьих боях. Когда собака достаточно окрепла, она нападает на других псов в стае Эль Чиво и убивает нескольких из них. Это событие глубоко потрясает старика, поскольку он искренне любил своих четвероногих спутников.
+Эль Чиво решает выполнить заказ на убийство, но делает это по-своему. Вместо того чтобы убить Луиса, он похищает обоих братьев - и цель, и заказчика. Он привозит их в свое убежище и заставляет разобраться между собой лично. Эль Чиво говорит им, что один из них должен убить другого, иначе он убьет обоих.
+Братья оказываются связанными в подвале склада, напротив друг друга. Эль Чиво оставляет между ними пистолет и уходит. В его отсутствие происходит драка, в результате которой оба брата получают смертельные ранения и умирают.
+Получив деньги за выполненный заказ, Эль Чиво принимает важное решение - он хочет попытаться восстановить отношения с семьей. Он стрижет волосы и бороду, покупает новую одежду и отправляется к дочери. Выясняется, что она теперь взрослая женщина, замужем и имеет собственную дочь.
+Эль Чиво наблюдает за ними издалека, не решаясь подойти. Он видит, как его дочь играет с внучкой в парке, и понимает, что они счастливы без него. В конце концов он решает не вмешиваться в их жизнь и оставляет для дочери только фотографию и записку с извинениями, в которой объясняет, что всегда любил ее.
+В финальных кадрах Эль Чиво покидает Мехико вместе с Кофи, единственной выжившей собакой из его стаи. Он садится в автобус и уезжает в неизвестном направлении, начиная новую жизнь.
+Финал
+Фильм заканчивается возвращением к месту автокатастрофы, показывая, как это событие необратимо изменило жизни всех участников. Октавио погиб в больнице от полученных травм, так и не успев осуществить свою мечту о побеге с Сусаной. Валерия потеряла ногу и карьеру, ее отношения с Даниэлем разрушились. Эль Чиво потерял свою стаю собак, но обрел шанс на искупление и новое начало.
+Лейтмотивом всего фильма становятся собаки - они присутствуют в каждой истории как символы верности, жестокости, любви и потери. Название "Amores Perros" можно перевести как "Собачья любовь" или "Любовь - сука", что отражает сложную природу человеческих отношений, где любовь часто приводит к страданию и разрушению.
+Фильм исследует темы социального неравенства в мексиканском обществе, показывая контраст между бедными районами, где живет Октавио, и роскошными апартаментами Валерии и Даниэля. Каждая история представляет разный социальный класс, но всех героев объединяют универсальные человеческие переживания - любовь, предательство, потеря и поиск смысла жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Корпорация монстров', 'In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, 2 monsters realize things may not be what they think.', '2001-01-01', 1, '92 minutes', 'Monsters, Inc.', 8.1, 'В параллельном мире существует город Монстрополис, населенный различными монстрами. Главный источник энергии для города - детские крики, которые собирают на фабрике "Корпорация монстров". Монстры проникают в детские комнаты через специальные двери, пугают детей и собирают их крики в специальные контейнеры.
+Джеймс П. Салливан по прозвищу Салли - лучший пугатель компании, большой синий монстр с рогами. Его лучший друг Майк Вазовски - маленький зеленый одноглазый монстр, который работает его ассистентом и мечтает сам стать пугателем, хотя совершенно не страшный.
+Главный антагонист - Рэндалл Боггс, фиолетовый хамелеон-монстр, который может становиться невидимым. Он завидует успеху Салли и мечтает занять его место лучшего пугателя. Рэндалл тайно работает над секретным проектом с генеральным директором компании мистером Уотерноузом.
+Однажды вечером Салли обнаружил активированную дверь в детскую комнату, хотя рабочий день уже закончился. Заглянув внутрь, он случайно позволил двухлетней девочке по имени Бу попасть в мир монстров. Это катастрофа, поскольку монстры считают детей смертельно токсичными.
+Салли и Майк пытаются тайно вернуть ребенка обратно, пряча ее в своей квартире. Они обнаруживают, что девочка совершенно не боится монстров и воспринимает все как игру. Бу называет Салли "Китти" из-за его кошачьей внешности и быстро привязывается к нему.
+Выясняется, что Рэндалл и Уотерноуз разработали машину для извлечения криков - "Экстрактор крика", которая может высасывать крики прямо из детей, причиняя им боль. Они планируют революционизировать энергетическую индустрию, но их методы жестоки. Рэндалл использует дверь Бу для тестирования своего устройства.
+Когда Салли узнает об этом плане, он ужасается. В компании поднимается паника из-за присутствия человеческого ребенка. Специальная команда КЗИ (Комиссия по защите от инфекции) во главе с агентом Розом пытается найти и дезактивировать предполагаемый источник заражения.
+Происходит погоня через фабрику дверей - огромный склад с тысячами дверей, ведущих в детские комнаты по всему миру. Салли, Майк и Бу перемещаются между различными локациями, от заснеженных гор до тропических пляжей, убегая от Рэндалла и охранников.
+В кульминационной сцене Салли и Рэндалл дерутся в детской комнате мальчика, который просыпается и видит настоящих монстров. Ребенок кричит так громко, что это перегружает всю энергосистему Монстрополиса, вызывая отключение электричества по всему городу.
+Майк попадает в Экстрактор крика, но Бу, защищая его, впервые кричит от страха. Ее крик оказывается настолько мощным, что разрушает машину и выводит из строя все оборудование. Рэндалл терпит поражение и изгоняется в человеческий мир через дверь в трейлер, где его избивают люди с бейсбольными битами.
+Уотерноуз арестован за незаконные эксперименты. Выясняется, что настоящая цель плана состояла в том, чтобы решить энергетический кризис, поскольку дети стали меньше бояться монстров, и крики стало труднее добывать.
+Салли становится новым генеральным директором компании. Он делает революционное открытие: детский смех производит в десять раз больше энергии, чем крики. Компания полностью меняет свою бизнес-модель - теперь монстры развлекают детей вместо того, чтобы их пугать.
+В финальной сцене дверь Бу была уничтожена из соображений безопасности, но Майк тайно сохранил несколько щепок. Он восстанавливает дверь, и Салли воссоединяется с девочкой, которая радостно кричит "Китти!" при виде своего друга. Фильм заканчивается их счастливой встречей, показывая, что дружба между монстром и ребенком изменила целый мир.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Конец Евангелиона', 'Concurrent theatrical ending of the TV series Shin seiki evangerion (1995).', '1997-01-01', 1, '87 minutes', 'Shin seiki Evangelion Gekijô-ban: Air/Magokoro wo, kimi ni', 8.1, 'Фильм состоит из двух частей и служит альтернативным финалом к аниме-сериалу "Neon Genesis Evangelion", заменяя спорные последние эпизоды.
+Часть первая: "Air"
+События начинаются сразу после 24-й серии сериала. Синдзи Икари находится в глубокой депрессии после того, как был вынужден убить Пятого Ангела Кавору, который оказался его близким другом. Он лежит в больничной палате рядом с коматозной Аской Лэнгли Сорью, которая получила тяжелые психологические травмы в битве с Пятнадцатым Ангелом.
+В состоянии отчаяния и одиночества Синдзи совершает акт мастурбации над бессознательной Аской, что символизирует его полную моральную деградацию и неспособность к нормальным человеческим отношениям. После этого он произносит фразу о том, как он жалок, что становится ключевой темой фильма.
+Тем временем организация SEELE приводит в действие свой финальный план - Проект Дополнения Человека. Они посылают вооруженные силы Японии для захвата штаба NERV в Токио-3, поскольку больше не доверяют Гендо Икари и его собственным планам. Начинается масштабное военное вторжение в подземную крепость NERV.
+Мисато Кацураги, майор и опекун Синдзи, пытается добраться до него через охваченную боями базу. Она получает смертельное ранение, но успевает найти Синдзи и попытаться убедить его пилотировать Еву-01. Перед смертью она целует его - их первый и последний поцелуй взрослой женщины и подростка, что еще больше травмирует психику мальчика.
+Аска внезапно пробуждается из комы, обретя новое понимание себя и своих отношений с матерью. Она садится в Еву-02 и вступает в бой против серии Евангелионов производства SEELE. Поначалу она сражается с невиданным мастерством и яростью, уничтожая одного противника за другим в жестокой рукопашной схватке.
+Однако противников слишком много. Серийные Евангелионы окружают Еву-02 и начинают буквально пожирать ее и Аску заживо. Девочка испытывает физическую боль от каждого повреждения своего меха. В финальные моменты битвы копье Лонгина пробивает голову Евы-02, и Аска умирает в агонии, произнося последние слова о том, что не хочет умирать.
+Синдзи становится свидетелем гибели Аски и окончательно ломается психически. Он садится в Еву-01, но отказывается сражаться, позволяя серийным Евангелионам схватить его машину.
+Часть вторая: "Искренне твоя"
+Гендо Икари проникает в Центральную Догму, где находится Лилит - гигантское существо, пригвожденное к кресту. У него есть рука Адама, которую он вживляет в себя. Его план состоит в том, чтобы воссоединиться со своей женой Юи, сознание которой находится в Еве-01, и запустить собственную версию Дополнения.
+Однако Рей Аянами, которая является клоном Юи и сосудом для души Лилит, отвергает Гендо. Она воссоединяется с Лилит, превращаясь в гигантское существо с множеством красных глаз. Начинается процесс Третьего Удара - апокалиптического события, которое должно объединить все человечество в единое существо.
+Синдзи оказывается в центре происходящего. Рей/Лилит предлагает ему выбор - он может решить судьбу всего человечества. Мальчик переживает серию психологических видений, в которых анализирует свои отношения с окружающими людьми, свои страхи одиночества и отвержения.
+Гигантская Рей начинает процесс растворения всех AT-полей - барьеров, которые отделяют одного человека от другого. Люди по всему миру превращаются в LCL - первичную жидкость жизни, оранжевую субстанцию, из которой изначально произошла вся жизнь на Земле. Их души сливаются в единое коллективное сознание.
+Синдзи сначала принимает это как освобождение от боли индивидуального существования. В мире без AT-полей нет одиночества, отвержения или непонимания, но также нет индивидуальности, личности или настоящих отношений. Все становится одним гомогенным существом.
+Однако в процессе размышлений Синдзи понимает, что мир без боли также мир без радости, без роста, без возможности настоящей близости. Он осознает, что страдание является неотъемлемой частью человеческого опыта и что без него невозможна подлинная любовь или счастье.
+Синдзи отвергает Дополнение и выбирает возвращение к индивидуальному существованию. Гигантская Рей начинает распадаться, а процесс Дополнения обращается вспять. AT-поля восстанавливаются, и люди получают возможность вернуться к индивидуальной форме, если захотят.
+Мир превращается в постапокалиптический пейзаж. Океаны стали красными от LCL, большинство городов разрушено. Синдзи просыпается на берегу красного моря рядом с гигантской головой Рей. Он плачет, осознавая масштаб произошедшей катастрофы и свою роль в ней.
+Внезапно рядом с ним материализуется Аска. Синдзи начинает душить ее, возможно, проверяя, реальна ли она, или выражая свой гнев и фрустрацию. Аска поднимает руку и нежно касается его щеки. Это простое проявление человеческой нежности заставляет Синдзи остановиться и заплакать.
+Аска произносит свои финальные слова: "Как отвратительно", но тон ее голоса скорее нежный, чем презрительный. Фильм заканчивается кадром разрушенного мира, где двое подростков лежат на берегу красного моря под черно-красным небом, представляя собой возможность нового начала для человечества.
+Фильм исследует темы депрессии, самоубийства, сексуальности, отношений между людьми и цены индивидуального существования. Режиссер Хидеаки Анно вложил в произведение свой собственный опыт борьбы с депрессией, создав одно из самых психологически сложных и противоречивых произведений в аниме. Финал остается открытым для интерпретации - неясно, смогут ли Синдзи и Аска построить новые отношения, или человечество действительно способно возродиться после такой катастрофы.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Шестое чувство', 'A boy who communicates with spirits seeks the help of a disheartened child psychologist.', '1999-01-01', 1, '107 minutes', 'The Sixth Sense', 8.1, 'Фильм начинается в Филадельфии, где детский психолог доктор Малкольм Кроу возвращается домой к своей жене Анне после успешного профессионального вечера. Он получил награду от города за свою работу с детьми, и супруги празднуют это событие романтическим ужином дома. Анна поднимается в спальню за бутылкой вина из их коллекции, но внезапно что-то привлекает ее внимание. В доме раздаются странные звуки, окно в ванной разбито, и становится ясно, что кто-то проник в их жилище.
+Малкольм и Анна обнаруживают в ванной молодого человека в одном нижнем белье. Это Винсент Грей, бывший пациент Малкольма, которого он лечил много лет назад. Винсент находится в крайне возбужденном состоянии, он обвиняет доктора Кроу в том, что тот не смог ему помочь, что он не выслушал его, не поверил ему. Винсент кричит, что Малкольм заставил его чувствовать себя сумасшедшим, хотя на самом деле с ним происходило нечто реальное и ужасное.
+В руке у Винсента пистолет. Он направляет его на Малкольма и стреляет в живот, а затем поворачивает оружие на себя и совершает самоубийство. Анна в ужасе кричит, а Малкольм падает, истекая кровью.
+Следующая сцена происходит осенью, несколько месяцев спустя. Малкольм сидит на скамейке в парке, изучая досье нового пациента - восьмилетнего мальчика по имени Коул Сир. История ребенка удивительно напоминает случай Винсента Грея - те же странные симптомы, те же жалобы на необъяснимые явления, та же социальная изоляция. Малкольм видит в этом случае возможность искупить свою прошлую неудачу.
+Коул живет с матерью-одиночкой Линн в скромной квартире. Линн работает в двух местах, чтобы свести концы с концами, и очень беспокоится о психическом состоянии сына. Мальчик ведет себя странно - он рисует жуткие картинки с мертвыми людьми, разговаривает сам с собой, боится ходить в школу, где другие дети его дразнят и считают странным.
+Малкольм начинает регулярные сеансы с Коулом. Мальчик крайне замкнут и неохотно идет на контакт. Он явно что-то скрывает, но не решается рассказать правду. Во время их встреч в доме постоянно происходят странные вещи - резко падает температура, дыхание становится видимым на холоде, двери сами собой открываются и закрываются.
+Постепенно Малкольм замечает, что у него самого проблемы. Его отношения с женой Анной серьезно ухудшились после того инцидента. Она почти не разговаривает с ним, кажется, не замечает его присутствия, ведет себя так, будто он призрак. Он пытается наладить общение, но Анна словно его не слышит. Она принимает антидепрессанты, спит на диване, избегает супружеской спальни.
+Тем временем с Коулом происходят все более странные и пугающие события. В школьном спектакле, где он играет Артура в постановке о короле Артуре, мальчик внезапно начинает задыхаться и падает. Когда его раздевают, на спине обнаруживаются красные полосы, словно от ударов кнутом, хотя никто его не трогал.
+Дома Коул прячется в самодельном укрытии - палатке из одеял, увешанной религиозными изображениями различных святых. Он верит, что эти образы могут защитить его от того, что его преследует. Линн находит под кроватью сына странные рисунки - изображения повешенных людей, жертв несчастных случаев, умерших от болезней.
+Во время одного из сеансов Коул рассказывает Малкольму историю о том, как король когда-то попросил совета у мудреца. Мудрец сказал королю правду, но король не поверил ему и казнил мудреца. Эта притча явно имеет личный смысл для мальчика - он боится рассказать правду, потому что думает, что ему не поверят и накажут.
+Малкольм все больше погружается в изучение случая Коула. Он пересматривает старые записи сеансов с Винсентом Греем и делает поразительное открытие. На пленке, которую он не слышал раньше, слышны голоса, говорящие на испанском языке слова угрожающего характера. Это заставляет его по-новому взглянуть на случай Винсента и понять, что, возможно, молодой человек действительно переживал нечто реальное, а не галлюцинации.
+Коул наконец решается довериться Малкольму и рассказывает ему свой страшный секрет. Он видит мертвых людей. Они ходят вокруг, как обычные живые люди, но не знают, что они мертвы. Они видят только то, что хотят видеть. Некоторые из них даже не понимают, что умерли. Мальчик объясняет, что мертвые приходят к нему, потому что хотят, чтобы он помог им завершить незаконченные дела.
+Сначала Малкольм скептически относится к этому признанию, но постепенно начинает понимать, что мальчик говорит правду. Особенно убедительным становится случай, когда Коул описывает призрак женщины, которая висит в школе, и оказывается, что много лет назад в этом здании действительно произошло самоубийство учительницы.
+Малкольм предлагает Коулу попробовать не бояться призраков, а выслушать их и помочь им. Возможно, если он поможет им решить их проблемы, они оставят его в покое. Это становится поворотным моментом в терапии.
+Первый случай помощи происходит, когда к Коулу приходит призрак маленькой больной девочки по имени Кира Коллинз. Она умерла при загадочных обстоятельствах, и ее дух не может найти покой. Кира показывает Коулу коробку, спрятанную в ее бывшей комнате. В коробке находится видеозапись, которая разоблачает страшную правду - мать девочки постепенно отравляла ее, подсыпая чистящее средство в еду. Это синдром Мюнхгаузена по доверенности - психическое расстройство, при котором родитель намеренно вызывает болезнь у ребенка, чтобы получить внимание и сочувствие.
+Коул и Малкольм приходят на поминки Киры, где Коул передает видеозапись отцу девочки. Правда вскрывается, мать арестовывают, а младшая сестра Киры, которая могла стать следующей жертвой, оказывается спасена. Дух Киры наконец обретает покой.
+После этого успеха отношения между Коулом и его матерью значительно улучшаются. Мальчик решает довериться Линн и рассказывает ей о своем даре. Сначала она в шоке, но когда Коул передает ей сообщение от ее умершей матери - о том, что она гордится Линн и что ответ на ее вопрос о том, заставила ли она мать гордиться собой, звучит как "каждый день", Линн понимает, что сын говорит правду.
+Малкольм наблюдает за этой сценой примирения матери и сына, понимая, что его работа с Коулом завершена. Мальчик научился жить со своим даром и использовать его для помощи другим. Теперь Малкольм может заняться собственными проблемами и попытаться наладить отношения с Анной.
+Он приходит домой, где находит спящую Анну. Рядом с ней на тумбочке лежит их свадебное видео. Малкольм садится рядом с женой и начинает говорить о том, как сожалеет о том, что произошло, как хочет все исправить. Он говорит, что любит ее и не хочет терять.
+Анна, все еще находясь в полусне, шепчет: "Почему ты оставил меня?" На ее руке Малкольм замечает обручальное кольцо, которое она держит в руке, но не носит на пальце. Внезапно его осеняет ужасная истина.
+Он вспоминает слова Коула о том, что мертвые видят только то, что хотят видеть, что они не знают, что мертвы. Малкольм начинает анализировать последние месяцы своей жизни. Он понимает, что Анна никогда с ним не разговаривала, потому что не могла его видеть. Что в ресторане, где он якобы ждал ее на годовщину, она сидела одна. Что Коул был единственным, кто мог его видеть и слышать.
+В этот момент Малкольм осознает, что он умер в ту ночь, когда Винсент Грей выстрелил в него. Он стал одним из тех призраков, о которых рассказывал Коул. Все это время он был мертв, но не понимал этого, цепляясь за незавершенное дело - необходимость помочь ребенку, которого он не смог спасти в лице Винсента.
+Теперь, когда он помог Коулу принять свой дар и научиться жить с ним, его миссия завершена. Он может найти покой. Малкольм нежно целует спящую Анну в лоб и шепчет ей, что любит ее. Затем он медленно исчезает, оставляя обручальное кольцо упасть из руки Анны на пол.
+Фильм заканчивается тем, что Анна просыпается, видит упавшее кольцо и впервые за долгое время слабо улыбается, словно почувствовав присутствие любимого мужа и его прощание. Теперь она может начать процесс исцеления и двигаться дальше.
+В финальных кадрах мы видим Коула, который идет в школу уже не как изгой и странный ребенок, а как мальчик, который понял свое предназначение и научился жить с необычным даром, помогая тем, кто нуждается в помощи для обретения покоя.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Легенда о пианисте', 'A baby boy, discovered in 1900 on an ocean liner, grows into a musical prodigy, never setting foot on land.', '1998-01-01', 1, '169 minutes', 'La leggenda del pianista sull''oceano', 8.1, 'История начинается в 1900 году на борту роскошного пассажирского парохода "Вирджиния", курсирующего между Европой и Америкой. Кочегар Дэнни Будман обнаруживает в первоклассном салоне коробку с младенцем. Ребенок был оставлен безымянными пассажирами, вероятно эмигрантами, которые не могли его содержать. Дэнни решает усыновить мальчика и дает ему имя Дэнни Будман Ти Ди Лемон Новесенто, где "Новесенто" означает "девятьсот" - год его рождения. Все на корабле просто называют его Новесенто.
+Мальчик растет на корабле под опекой Дэнни и команды. Когда ему восемь лет, Дэнни погибает в несчастном случае во время работы в машинном отделении. Новесенто остается сиротой, но команда корабля берет его под свою коллективную опеку. Капитан корабля неофициально разрешает ребенку остаться на борту, хотя это противоречит правилам.
+Однажды ночью пассажиры и команда слышат прекрасную музыку, доносящуюся из бального зала. Они обнаруживают маленького Новесенто, играющего на рояле сложную мелодию. Мальчик утверждает, что научился играть сам, просто слушая музыку и наблюдая за пассажирами. Его талант кажется сверхъестественным - он способен играть любую мелодию после первого прослушивания и импровизировать с невероятным мастерством.
+С этого момента Новесенто становится корабельным пианистом. Он играет для пассажиров всех классов, его музыка способна выражать самые глубокие человеческие эмоции. Во время штормов его игра успокаивает напуганных пассажиров, во время празднеств - создает атмосферу радости и веселья. Новесенто обладает уникальной способностью читать людей и выражать их внутренний мир через музыку.
+На корабле Новесенто знакомится с трубачом Максом Туни, который становится его лучшим другом и рассказчиком истории. Макс восхищается талантом Новесенто и пытается убедить его покинуть корабль, чтобы показать свой дар всему миру. Однако Новесенто категорически отказывается сходить на берег, объясняя, что океан и корабль - это его единственный дом, а суша кажется ему бесконечной и пугающей.
+Репутация Новесенто как выдающегося пианиста распространяется далеко за пределы корабля. На борт поднимается знаменитый джазовый пианист Джелли Ролл Мортон, который считает себя создателем джаза и лучшим пианистом в мире. Он вызывает Новесенто на музыкальную дуэль. В незабываемой сцене два пианиста соревнуются в мастерстве. Мортон играет сложные джазовые композиции, демонстрируя техническое совершенство, но Новесенто отвечает музыкой такой красоты и эмоциональной глубины, что буквально растапливает струны рояля Мортона. Побежденный Мортон покидает корабль, признав превосходство Новесенто.
+Во время одного из рейсов Новесенто влюбляется в молодую эмигрантку, которая путешествует в третьем классе со своим отцом. Девушка никогда не слышит его игры, поскольку пассажиры третьего класса не имеют доступа к концертным залам. Новесенто тайно наблюдает за ней и сочиняет для нее прекрасную мелодию. Он даже записывает эту композицию на восковой цилиндр - единственную запись своей музыки, которую он когда-либо делал. Когда корабль прибывает в Нью-Йорк, девушка покидает судно со своим отцом, и Новесенто больше никогда ее не видит. Этот эпизод становится для него болезненным напоминанием о том, что его связывает с внешним миром.
+Годы проходят, и Новесенто продолжает играть на "Вирджинии". Его музыка эволюционирует, становясь все более сложной и эмоционально насыщенной. Он создает собственный уникальный стиль, сочетающий классику, джаз, блюз и народные мелодии со всего мира, которые он слышит от пассажиров. Музыкальные критики и продюсеры звукозаписывающих компаний пытаются уговорить его сойти на берег и начать коммерческую карьеру, но Новесенто неизменно отказывается.
+Макс пытается понять философию своего друга. Новесенто объясняет, что для него корабль представляет собой целую вселенную с ясными границами. На корабле у всего есть начало и конец - нос и корма, левый и правый борт. Суша же кажется ему бесконечной, и эта бесконечность пугает его. Он говорит, что на суше слишком много возможностей, слишком много выборов, и он не знает, как справиться с такой свободой.
+Во время Второй мировой войны "Вирджиния" реквизируется военными и превращается в госпитальное судно. Новесенто продолжает играть для раненых солдат, его музыка помогает им справляться с физической болью и психологическими травмами. В одной из сцен корабль подвергается бомбардировке, но Новесенто продолжает играть, даже когда вокруг него рушится все.
+После войны пассажирские перевозки возобновляются, но эра великих океанских лайнеров подходит к концу. Авиаперевозки становятся более популярными, и количество пассажиров на "Вирджинии" резко сокращается. Судоходная компания принимает решение списать корабль и продать его на металлолом.
+Макс, который к тому времени покинул море и работает в музыкальном магазине на берегу, узнает о судьбе "Вирджинии". Он отправляется в порт, чтобы найти Новесенто и в последний раз убедить его покинуть корабль. Макс обыскивает пустое, готовящееся к сносу судно и наконец находит своего друга в заброшенном бальном зале.
+Происходит последний разговор между друзьями. Макс умоляет Новесенто сойти на берег, объясняя, что корабль будет взорван и что у него еще есть шанс начать новую жизнь. Новесенто рассказывает Максу притчу о том, как он однажды почти сошел на берег в Нью-Йорке. Он дошел до трапа, увидел огромный город с его бесконечными улицами и небоскребами, и понял, что не сможет жить в мире без границ. Он говорит, что предпочитает прожить одну прекрасную жизнь на корабле, чем потеряться в бесконечности суши.
+В знак прощания Новесенто дарит Максу восковой цилиндр с записью мелодии, которую он сочинил для девушки много лет назад. Это его единственное музыкальное наследие. Макс в отчаянии покидает корабль, а Новесенто остается в бальном зале за роялем.
+Корабль взрывают с Новесенто на борту. Макс становится свидетелем этого трагического момента с берега. Великий пианист океана исчезает вместе со своим плавучим домом, оставив после себя только воспоминания тех, кто слышал его музыку, и одну единственную запись на восковом цилиндре.
+Фильм завершается сценой, где пожилой Макс рассказывает эту историю владельцу музыкального магазина, который собирается выбросить старую трубу Макса. История о Новесенто убеждает владельца сохранить инструмент, понимая его эмоциональную ценность.
+Фильм является размышлением о выборе между безопасностью и свободой, о цене таланта и о том, что значит быть верным себе. Новесенто представляет собой фигуру художника, который предпочитает совершенство в ограниченном пространстве бесконечным возможностям, но неопределенности внешнего мира. Его история задает вопросы о природе искусства, одиночестве гения и о том, должен ли великий талант обязательно принадлежать всему миру или может существовать для узкого круга ценителей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Шоу Трумана', 'An insurance salesman discovers his whole life is actually a reality TV show.', '1998-01-01', 1, '103 minutes', 'The Truman Show', 8.1, 'Трумен Бербанк - тридцатилетний продавец страховых полисов, живущий в идиллическом городке Сихейвен на острове. Он женат на медсестре Мерил, работает в страховой компании и ведет размеренную жизнь. Однако Трумен не подозревает, что вся его жизнь с рождения является телевизионным шоу, которое транслируется круглосуточно для миллионов зрителей по всему миру.
+Сихейвен - это гигантская телестудия под куполом, самая большая декорация в истории. Все жители города, включая жену, лучшего друга и коллег, являются актерами, играющими свои роли. Погода контролируется искусственно, солнце и луна - это мощные прожекторы, а океан, окружающий остров, представляет собой границу декорации. За всем происходящим наблюдает режиссер Кристоф из диспетчерской, расположенной на орбите студии.
+Трумен начинает замечать странности в своей жизни. Однажды утром с неба падает прожектор, который должен изображать звезду. На радиостанции он случайно перехватывает частоту, на которой комментируют каждое его движение. Он видит, как его "умерший" отец появляется среди бездомных, но того быстро увозят.
+Самым важным событием становится встреча с девушкой по имени Сильвия (которую в шоу называют Лорен). Она учится в колледже и играет роль статистки, но на самом деле является членом движения за освобождение Трумена. Между ними возникает настоящая любовь, но съемочная группа вынуждена срочно "переселить" ее персонажа в другой город, чтобы не нарушить сценарий шоу.
+Перед отъездом Сильвия пытается открыть Трумену правду о его жизни, но не успевает. Она оставляет ему только намек: "Они не могут слышать нас сейчас. Все ненастоящее. Ты, я, все это декорация". Трумен хранит ее фотографию и мечтает найти ее, но не знает, где искать.
+Кристоф, создатель и режиссер шоу, понимает, что Трумен становится подозрительным. Чтобы отвлечь его, он возвращает в сценарий отца Трумена, инсценируя трогательное воссоединение после многих лет разлуки. Это временно успокаивает главного героя, но не устраняет его сомнения полностью.
+Трумен всегда мечтал о путешествиях, особенно о поездке на остров Фиджи, где, как он думает, живет Сильвия. Однако у него развилась фобия воды после того, как в детстве утонул его отец (это было частью сценария). Кроме того, турагенты всегда находят причины, чтобы отговорить его от поездок - то самолеты не летают, то нет свободных мест.
+Поведение жены Мерил становится все более неестественным. Она постоянно рекламирует различные товары в повседневных разговорах, что выглядит крайне странно. Их брак фактически разваливается, поскольку для Мерил это только работа, а Трумен интуитивно чувствует фальшь в отношениях.
+Решающий момент наступает, когда Трумен решает спонтанно поехать с женой в отпуск. Он буквально заталкивает испуганную Мерил в машину и пытается выехать из города. Однако на каждой дороге возникают препятствия - то авария, то лесной пожар, то утечка радиации. Все эти "случайности" организованы съемочной группой, чтобы удержать Трумена в границах декорации.
+В кульминационной сцене Мерил не выдерживает давления и, угрожая Трумену кухонным ножом, кричит в камеру: "Делайте что-нибудь!" Это окончательно убеждает Трумена в том, что его жизнь - обман. Мерил уезжает из города, а ее персонаж исключают из шоу.
+Лучший друг Трумена Марлон пытается убедить его, что все в порядке, произнося заготовленные сценаристами фразы о дружбе и реальности. Но Трумен больше никому не верит. Он начинает планировать побег, понимая, что за каждым его шагом наблюдают.
+Трумен притворяется, что смирился со своей жизнью, и даже делает вид, что засыпает дома. На самом деле он прорывает туннель в подвале и убегает ночью. Съемочная группа теряет его из виду впервые за тридцать лет. Кристоф в панике отключает трансляцию и организует масштабные поиски.
+Выясняется, что Трумен сумел преодолеть свой страх воды и уплыл на парусной лодке, пытаясь добраться до края своего мира. Кристоф обнаруживает его в океане с помощью скрытых камер. Режиссер создает искусственный шторм, пытаясь заставить Трумена вернуться, но тот отказывается сдаваться, даже когда волны переворачивают лодку.
+Наконец лодка Трумена ударяется о горизонт - буквально о стену студии, которая была окрашена под небо. Трумен понимает, что добрался до границы своего искусственного мира. Он находит дверь в стене, ведущую в реальный мир.
+В финальной сцене Кристоф впервые напрямую обращается к Трумену через систему громкой связи. Он представляется как создатель шоу и пытается убедить Трумена остаться. Кристоф утверждает, что реальный мир не лучше искусственного, что в студии Трумен защищен от всех бед и опасностей, что миллионы людей любят его и наблюдают за ним каждый день.
+Трумен слушает эту речь, стоя на пороге между искусственным и реальным мирами. Затем он произносит свою знаменитую фразу-прощание, которую всегда говорил соседям: "На случай, если не увижу вас - добрый день, добрый вечер и спокойной ночи!" Он кланяется в камеру и выходит через дверь в реальный мир.
+Зрители по всему миру взрываются аплодисментами. Показано, как люди в барах, дома, на работе радуются освобождению Трумена. Сильвия, которая все эти годы боролась за его свободу, со слезами на глазах бежит встречать его. Два охранника-телезрителя, следившие за шоу, равнодушно переключают канал со словами: "Посмотрим, что еще показывают".
+Фильм исследует темы реальности и иллюзии, манипуляций СМИ, права на частную жизнь и свободу выбора. Это притча о современном обществе, где люди живут в искусственно созданной реальности, не подозревая об этом, а их жизни становятся развлечением для других.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Большой Лебовски', 'Jeff "The Dude" Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.', '1998-01-01', 1, '117 minutes', 'The Big Lebowski', 8.1, 'История происходит в Лос-Анджелесе в 1991 году во время войны в Персидском заливе. Главный герой Джеффри Лебовски, которого все называют просто Чувак, это безработный хиппи среднего возраста, который проводит время играя в боулинг, выпивая пиво и куря марихуану. Он живет в скромной квартире, его основные занятия - игра в боулинг с друзьями и философские размышления о жизни.
+Однажды вечером к Чуваку домой врываются два бандита, которые требуют деньги, якобы украденные его женой Банни. Они мочатся на его любимый ковер, который действительно связывал всю комнату воедино, как позже неоднократно подчеркивает Чувак. Выясняется, что бандиты перепутали его с другим Джеффри Лебовски - богатым бизнесменом, известным как Большой Лебовски.
+По совету своего друга Уолтера Собчака, вспыльчивого ветерана войны во Вьетнаме, помешанного на правилах боулинга и иудаизме, Чувак отправляется к Большому Лебовски требовать компенсацию за испорченный ковер. Большой Лебовски - это пожилой инвалид в инвалидной коляске, владелец благотворительного фонда, женатый на молодой жене Банни Лебовски.
+Во время их встречи Большой Лебовски получает звонок о том, что Банни похитили и требуют выкуп в миллион долларов. Он просит Чувака стать посредником в передаче выкупа, поскольку тот уже был втянут в эту историю из-за путаницы с именами. Чувак неохотно соглашается, рассчитывая получить за это щедрое вознаграждение.
+Чувак вместе с Уолтером и их другом Донни Кигом, наивным и добродушным боулером, который постоянно задает вопросы и которого Уолтер регулярно заставляет замолчать фразой о том, что он вне своей лиги, отправляется передавать выкуп. Операция проходит неудачно из-за импульсивного поведения Уолтера, который решает обмануть похитителей, подбросив в сумку вместо денег грязное белье.
+После провала операции Чувак обнаруживает, что его машину украли вместе с домашним заданием одного старшеклассника, что становится источником дополнительных проблем. Расследуя исчезновение автомобиля, он знакомится с различными эксцентричными персонажами Лос-Анджелеса, включая порнографического магната Джеки Трихорна, который оказывается должен денег Большому Лебовски.
+Чувак начинает подозревать, что история с похищением сложнее, чем кажется. Он встречается с дочерью Большого Лебовски от первого брака, Мод Лебовски, радикальной феминисткой и концептуальной художницей. Мод открывает ему, что Банни не была похищена, а просто уехала навестить друзей в Малибу, и что вся история с выкупом - это махинация ее отчима, направленная на кражу денег из семейного фонда.
+Выясняется, что Большой Лебовски на самом деле не такой богатый, каким кажется. Он растратил деньги благотворительного фонда и придумал историю с похищением, чтобы скрыть недостачу и получить страховку. Мод также сообщает Чуваку, что ее отчим на самом деле не инвалид и может ходить.
+Тем временем настоящие бандиты, которые изначально перепутали Чувака с Большим Лебовски, продолжают преследовать его, требуя деньги. Среди них нигилист Ули Кункель и его подруги, которые изображают из себя серьезных преступников, но на деле оказываются довольно жалкими личностями.
+Ситуация осложняется, когда Донни во время конфронтации с нигилистами получает сердечный приступ и умирает. Это становится настоящей трагедией для Уолтера, который, несмотря на свое постоянное раздражение по отношению к Донни, очень любил его. Похороны Донни проходят в трогательной и одновременно комичной сцене, где Уолтер пытается развеять прах друга над океаном, но ветер дует прах обратно на него и Чувака.
+В финале фильма все тайны раскрываются. Большой Лебовски действительно оказывается мошенником, который пытался использовать историю с мнимым похищением для кражи денег. Банни возвращается из Малибу целая и невредимая, оказавшись обычной молодой женщиной, которая просто хотела отдохнуть от своего пожилого мужа.
+Чувак не получает никакого материального вознаграждения за свои приключения, но приобретает новый жизненный опыт. Мод Лебовски соблазняет его, поскольку хочет забеременеть от него, считая его подходящим отцом для своего будущего ребенка из-за его расслабленного отношения к жизни.
+Фильм завершается сценой, где Чувак возвращается к своей обычной жизни в боулинге. Незнакомец, который периодически появлялся в фильме в роли рассказчика и представлял собой архетип ковбоя Дикого Запада, подводит итоги истории, отмечая что Чувак остается верен себе и продолжает жить так, как считает нужным.
+История рассказана через призму детективного жанра, но в реальности является пародией на него. Чувак играет роль частного детектива поневоле, но в отличие от классических героев нуара, он не стремится к справедливости или разгадке тайн. Его главное желание - вернуть свой украденный ковер и продолжить спокойную жизнь.
+Фильм исследует темы идентичности, американской мечты и социальных изменений в Америке начала 1990-х годов. Чувак представляет собой остатки контркультуры 1960-х, которая пытается выжить в мире материализма и агрессивного капитализма. Его философия пацифизма и невмешательства противостоит воинственности Уолтера и цинизму других персонажей.
+Каждый персонаж фильма представляет определенный аспект американского общества: Большой Лебовски олицетворяет коррумированную элиту, Уолтер - милитаризм и склонность к насилию, Мод - интеллектуальную элиту и феминизм, а нигилисты представляют европейский декаданс и философскую пустоту. Чувак же остается человеком простых удовольствий, который хочет только играть в боулинг, пить белые русские коктейли и наслаждаться жизнью без лишних усложнений.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Любовное настроение', 'Two neighbors, a woman and a man, form a strong bond after both suspect extramarital activities of their spouses. However, they agree to keep their bond platonic so as not to commit similar wrongs.', '2000-01-01', 1, '98 minutes', 'Fa yeung nin wah', 8.1, 'Любовное настроение
+Действие фильма происходит в Гонконге в 1962 году. Чоу Мо Ван, журналист местной газеты, и Су Ли Чжэнь, секретарша в судоходной компании, переезжают в соседние комнаты в одном доме практически одновременно со своими супругами. Здание представляет собой типичный гонконгский жилой дом того времени - тесные комнаты, общие коридоры, где жильцы постоянно пересекаются друг с другом, создавая атмосферу вынужденной близости и одновременно строгого соблюдения приличий.
+Чоу Мо Ван живет с женой, которую зрители практически никогда не видят полностью - камера показывает только ее руки, ноги, фрагменты фигуры. Су Ли Чжэнь замужем за мужчиной, который также остается за кадром. Оба супруга постоянно отсутствуют дома по работе, что создает ситуацию, когда Чоу и Су остаются наедине в доме, окруженные другими жильцами - пожилой парой, которая сдает им комнаты, и шумным семейством с детьми.
+Поначалу отношения между соседями строго формальные. Они встречаются в коридоре, на лестнице, вежливо здороваются, обмениваются короткими фразами о погоде или повседневных делах. Су Ли Чжэнь всегда безупречно одета в традиционные китайские платья чипао различных расцветок и фасонов, каждое из которых подчеркивает ее элегантность и женственность. Чоу Мо Ван носит строгие костюмы, его манеры подчеркнуто вежливы и сдержанны.
+Постепенно между ними завязывается осторожная дружба. Они начинают ходить вместе за лапшой в небольшую закусочную на углу, поскольку оба не любят готовить для себя одних, когда супруги в отъезде. Эти совместные походы за едой становятся ритуалом, который структурирует их одинокие вечера. Они идут всегда одним и тем же маршрутом, заказывают одно и то же, но их разговоры постепенно становятся более личными.
+Чоу работает над написанием романа в жанре уся - традиционных китайских приключенческих историй о мастерах боевых искусств. Он рассказывает Су о своих литературных амбициях, о том, как видит развитие сюжета, о героях своих историй. Су слушает с интересом, иногда предлагает свои идеи, и постепенно становится его негласной соавторшей и первым читателем.
+Со временем они начинают подозревать, что их супруги изменяют им друг с другом. Первые подозрения возникают из мелких деталей - жена Чоу приносит домой сумочку, которую он ей не покупал, но точно такую же он видел у мужа Су. Галстук, который носит муж Су, оказывается таким же, какой жена подарила Чоу. Эти вещественные доказательства неверности их супругов становятся болезненным открытием.
+Сначала они не решаются открыто обсуждать свои подозрения. Разговор ведется намеками, недосказанностями, значимыми паузами. Но постепенно правда становится очевидной для них обоих - их супруги действительно состоят в любовной связи. Это открытие сближает Чоу и Су, создавая между ними особую эмоциональную близость людей, переживших одинаковое предательство.
+Они решают встречаться, чтобы обсуждать эту ситуацию, планировать, как поступить с неверными супругами. Но поскольку встречаться дома неудобно из-за других жильцов и возможных сплетен, они арендуют небольшую комнату в отеле, где могут разговаривать в приватной обстановке. Эта комната становится их убежищем от внешнего мира, местом, где они могут быть открытыми друг с другом.
+В гонконгском обществе начала 1960-х годов строго соблюдаются конфуциански правила приличия. Любые отношения между мужчиной и женщиной, не состоящими в браке, подвергаются общественному осуждению. Чоу и Су прекрасно понимают это и стараются соблюдать внешние приличия. Они никогда не касаются друг друга, поддерживают физическую дистанцию, их общение остается в рамках дружеской беседы.
+Однако эмоциональная близость между ними углубляется. Они начинают разыгрывать сцены конфронтации с неверными супругами, репетируя, что скажут, когда решат их обличить. Чоу играет роль мужа Су, а Су - роль жены Чоу. Эти ролевые игры становятся способом выражения их собственных чувств друг к другу, хотя формально они обсуждают чужие отношения.
+Чоу пишает свой роман, и Су помигает ему, перепечатывая рукопись на машинке. Их творческое сотрудничество становится еще одной формой близости. Через литературных героев они выражают чувства, которые не могут произнести напрямую. История о мастере боевых искусств и его возлюбленной становится метафорой их собственных отношений.
+Постепенно становится ясно, что между Чоу и Су возникла настоящая любовь, но они не могут и не хотят ее реализовать. Они не желают повторить грех своих супругов, не хотят стать такими же, как те, кто их предал. Их мораль не позволяет им перейти от эмоциональной близости к физической измене, даже если их собственные браки уже разрушены предательством супругов.
+Эта внутренняя борьба между желанием и долгом, между любовью и моральными принципами становится центральной темой фильма. Каждая их встреча наполнена напряжением невысказанных чувств, каждый взгляд значим, каждое случайное прикосновение электризует воздух между ними.
+Соседи начинают сплетничать об их отношениях. Миссис Сун, хозяйка дома, делает намеки на неприличное поведение жильцов. Общественное давление усиливается, и Чоу с Су понимают, что их дружба становится объектом пересудов. Это заставляет их быть еще более осторожными, но одновременно придает их встречам оттенок запретности.
+В один из вечеров, после очередной совместной трапезы в кафе, они возвращаются домой под дождем. В узком коридоре дома происходит момент максимального эмоционального напряжения - они стоят очень близко друг к другу, и кажется, что сейчас произойдет то, чего они так долго избегали. Но в последний момент они сдерживаются, и каждый уходит в свою комнату.
+Чоу получает предложение о работе в Сингапуре. Это становится поворотной точкой в их отношениях. Возможность отъезда означает расставание, но также и освобождение от невыносимого напряжения их платонической любви. Он рассказывает Су о предложении, и она понимает, что их отношения подходят к концу.
+В последний вечер перед отъездом Чоу приходит к Су в арендованную комнату. Впервые за все время их знакомства они остаются наедине в обстановке полной приватности. Эмоциональное напряжение достигает пика. Кажется, что сейчас они наконец преодолеют барьеры, которые сами себе поставили.
+Чоу просит Су уехать с ним в Сингапур. Он признается ей в любви, говорит, что больше не может жить без нее, что готов начать новую жизнь вдали от Гонконга и всех его условностей. Су мучительно размышляет над этим предложением. Ее чувства к Чоу не менее глубоки, но она не может решиться на такой радикальный шаг.
+В конце концов Су отказывается ехать. Она объясняет, что не хочет, чтобы их любовь была омрачена обстоятельствами ее возникновения - предательством супругов. Она боится, что их отношения, начавшиеся из взаимного одиночества и боли, не смогут стать основой для счастливой жизни. Более того, она не готова нарушить общественные нормы и стать объектом осуждения.
+Чоу уезжает в Сингапур один. Их расставание происходит без громких сцен, без драматических признаний. Они прощаются сдержанно, как и подобает их характерам, но боль разлуки ощущается в каждом жесте, в каждом взгляде.
+Проходит время. Фильм показывает, как складывается жизнь героев после расставания. Су остается в Гонконге, но переезжает в другой дом. Она по-прежнему работает секретаршей, по-прежнему носит красивые платья чипао, но в ее глазах появилась печаль человека, познавшего любовь и потерявшего ее.
+Чоу в Сингапуре пытается начать новую жизнь. Он работает редактором газеты, завершает свой роман. У него появляется новая знакомая - привлекательная женщина, которая проявляет к нему интерес. Но его мысли постоянно возвращаются к Су, к их невысказанной и нереализованной любви.
+Через несколько лет Чоу возвращается в Гонконг. Он узнает, что Су больше не живет в их старом доме. Он пытается найти ее, расспрашивает соседей, но следы затерялись. Выясняется, что у нее теперь есть ребенок - мальчик, который по возрасту мог бы быть сыном Чоу, если бы они тогда остались вместе.
+Чоу не решается искать Су активно. Возможно, он боится разрушить ту хрупкую идеальную память об их любви, которую он бережно хранит в сердце. Возможно, он понимает, что время изменило их обоих, и встреча может принести только разочарование.
+Финальная сцена фильма происходит в Ангкор-Вате в Камбодже. Чоу приезжает к древним руинам храмового комплекса, где, согласно местной традиции, можно рассказать свою тайну камням, и она останется похороненной навсегда. Он находит небольшое отверстие в каменной стене, прижимается к нему губами и шепчет что-то, что зрители не слышат.
+Возможно, он рассказывает камням о своей любви к Су, о том, что так и не решился ей признаться полностью. Возможно, он говорит о сожалении по поводу упущенного счастья, о том, что они могли бы быть вместе, если бы оба были смелее. После того как он заканчивает говорить, он затыкает отверстие травой и листьями, символически хороня свою тайну навсегда.
+Камера медленно отъезжает от фигуры Чоу, показывая величественные руины Ангкор-Вата на фоне тропического неба. Эти древние камни видели множество человеческих историй, множество любовей и потерь, и история Чоу и Су становится лишь одной из бесчисленного множества тайн, которые хранят эти стены.
+Фильм заканчивается на этой меланхоличной ноте, не давая зрителю катарсиса или ясного разрешения. Любовь Чоу и Су остается незавершенной, их история - открытой. Это история о том, как обстоятельства, общественные условности и собственные моральные принципы могут помешать любви, даже самой искренней и глубокой.
+Режиссер Вонг Кар Вай создает визуальную поэму о невысказанных чувствах, о красоте недостижимого, о том, как время и место могут определить судьбу человеческих отношений. Каждый кадр фильма пропитан ностальгией по ушедшей эпохе, по утраченным возможностям, по любви, которая могла бы быть, но не стала реальностью.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('На игле', 'Renton, deeply immersed in the Edinburgh drug scene, tries to clean up and get out, despite the allure of the drugs and influence of friends.', '1996-01-01', 1, '93 minutes', 'Trainspotting', 8.1, 'Фильм рассказывает о группе молодых наркоманов из Эдинбурга, Шотландия, в 1980-х годах. Главный герой - Марк Рентон, умный и образованный молодой человек, который пристрастился к героину вместе со своими друзьями.
+Рентон живет в депрессивном районе Лейта и проводит дни в поисках наркотиков вместе с компанией: Спадом, тупым и агрессивным парнем, помешанным на футболе и драках; Сик Боем Томми, изначально чистым от наркотиков, спортивным и здоровым; Бегби, психопатичным алкоголиком, склонным к насилию, который презирает наркоманов, не понимая собственной зависимости от алкоголя; и Матерью-Нижним, дилером героина.
+Фильм начинается с попытки Рентона "завязать" с наркотиками. Он произносит знаменитый монолог "Выберите жизнь", в котором описывает обычные ценности среднего класса - работу, семью, телевизор, стиральную машину - и объясняет, почему он выбрал героин вместо этого. По его словам, он выбрал "не выбирать жизнь".
+Рентон и Спад пытаются ограбить книжный магазин, но операция проваливается. Спад убегает, а Рентон попадается. Его арестовывают, но вместо тюрьмы ему дают возможность пройти программу замещающей терапии метадоном. Однако он продолжает употреблять героин поверх метадона, что чуть не убивает его от передозировки.
+После очередной передозировки Рентон оказывается в больнице. Его родители забирают его домой и запирают в комнате, заставляя пройти "холодную ломку" без медицинской помощи. Рентон переживает кошмарные галлюцинации - мертвый младенец ползает по потолку, его преследуют образы друзей и врагов. Эти сцены показаны с максимальным натурализмом, демонстрируя ужас наркотической ломки.
+Тем временем Томми, который раньше не употреблял наркотики и осуждал друзей за их пристрастие, начинает колоться героином после расставания с девушкой Лиззи. Она бросила его, обнаружив, что исчезла их домашняя порнографическая видеокассета, которую на самом деле случайно взял Рентон.
+После восстановления Рентон пытается вести нормальную жизнь. Он переезжает в Лондон, находит работу в агентстве недвижимости и встречается с девушкой Дайан. Однако выясняется, что Дайан еще несовершеннолетняя, что шокирует Рентона. Несмотря на это, между ними завязываются отношения.
+В Лондоне Рентон получает известие о том, что Томми умер от токсоплазмоза - оппортунистической инфекции, развившейся на фоне ВИЧ, которым он заразился через грязные иглы. На похоронах Рентон воссоединяется со старыми друзьями и снова начинает употреблять героин.
+После похорон компания решает провернуть крупную сделку с героином. Мать-Нижний организовывает продажу большой партии наркотика, которая должна принести каждому участнику по четыре тысячи фунтов. В сделке участвуют Рентон, Спад, Бегби и Мать-Нижний.
+Сделка проходит успешно, и четверо мужчин останавливаются в дешевом отеле, чтобы поделить деньги. Однако ночью Рентон принимает решение, которое изменит все. Он осознает, что если останется с этими людьми, то никогда не вырвется из порочного круга наркомании и криминала.
+Рано утром, пока остальные спят, Рентон забирает все деньги - шестнадцать тысяч фунтов - и исчезает. Он оставляет только долю Спада, поскольку считает его единственным настоящим другом из всей компании. Бегби и Мать-Нижний остаются ни с чем.
+Фильм заканчивается повторением монолога "Выберите жизнь", но теперь с противоположным смыслом. Рентон идет по улице с чемоданом денег и размышляет о своем будущем. На этот раз он действительно выбирает жизнь - работу, ипотеку, стиральную машину, компакт-диски, электрические консервные ножи, здоровье, низкий уровень холестерина и страхование зубов. Он выбирает фиксированные выплаты, первые дни дома, костюмы из лайкры и подходящие чемоданы.
+В финальных кадрах Рентон исчезает в толпе на оживленной лондонской улице, символизируя его переход к нормальной жизни. Голос за кадром завершает: "Я выбираю жизнь. Но зачем я хотел делать что-то подобное? Я выбрал что-то еще. И причины? Причин нет. Кому нужны причины, когда у тебя есть героин?"
+Фильм исследует темы зависимости, дружбы, предательства и социального отчуждения. Он показывает наркоманию не как романтическое приключение, а как разрушительную силу, которая уничтожает жизни и отношения. Режиссер Дэнни Бойл использует яркую визуальную стилистику и энергичный саундтрек, чтобы передать одновременно притягательность и отвратительность наркотического образа жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Фарго', 'Jerry Lundegaard''s inept crime falls apart due to his and his henchmen''s bungling and the persistent police work of the quite pregnant Marge Gunderson.', '1996-01-01', 1, '98 minutes', 'Fargo', 8.1, '"Фарго" (1996) - криминальная комедия-драма режиссеров братьев Коэн, действие которой происходит в заснеженной Миннесоте и Северной Дакоте зимой 1987 года.
+История начинается с Джерри Лундегаарда, неудачливого продавца автомобилей из Миннеаполиса, который оказался в серьезных финансовых затруднениях. Он задолжал крупную сумму денег неким криминальным элементам и отчаянно ищет способ достать деньги. Джерри женат на Джин Лундегаард, дочери богатого владельца автосалона Уэйда Густафсона, который относится к зятю с нескрываемым презрением и не желает помочь ему финансово.
+Не видя другого выхода, Джерри разрабатывает план ложного похищения собственной жены. Он отправляется в Фарго, Северная Дакота, где в местном баре встречается с двумя криминальными типами: Карлом Шоуолтером, болтливым мелким жуликом, и Гэром Гримсрудом, молчаливым психопатом. Джерри предлагает им похитить его жену, а затем потребовать выкуп у тестя. План заключается в том, что похитители получат новый автомобиль плюс половину выкупа, который, как рассчитывает Джерри, составит восемьдесят тысяч долларов.
+Карл и Гэар соглашаются на сделку и отправляются в Миннеаполис выполнять задание. По дороге их останавливает патрульный полицейский Лу Дэнтон за превышение скорости. В машине находится связанная Джин, поэтому ситуация становится критической. Гэар хладнокровно убивает полицейского выстрелом в голову. Затем он преследует и убивает двух случайных свидетелей, молодую пару, которая проезжала мимо места преступления.
+Тройное убийство привлекает внимание полиции. Расследование ведет Мардж Гундерсон, начальник полиции небольшого городка Брейнерд, которая находится на седьмом месяце беременности. Мардж - опытный и проницательный детектив, несмотря на свою внешнюю простоту и дружелюбный характер. Она методично изучает место преступления и быстро понимает, что имеет дело не с обычным дорожным инцидентом, а с чем-то более серьезным.
+Тем временем Карл и Гэар привозят похищенную Джин в отдаленную хижину в лесу. Карл постоянно жалуется на холод и на то, что Гэар слишком жесток, в то время как молчаливый Гэар методично следует плану. Джин находится в состоянии шока и ужаса, не понимая, что происходит и зачем ее похитили.
+Джерри информирует тестя о похищении дочери и требовании выкупа. Однако вместо ожидаемых восьмидесяти тысяч долларов Уэйд готов заплатить миллион. Это создает проблему для Джерри, поскольку теперь ему придется объяснять похитителям, почему сумма выкупа так резко увеличилась, и делиться с ними большими деньгами.
+Мардж продолжает расследование, опрашивая свидетелей и собирая улики. Она обнаруживает связь между убийствами и автосалоном, где работает Джерри. Ее простые, но проницательные вопросы постепенно выводят на поверхность правду. Несмотря на беременность, Мардж энергично ведет расследование, демонстрируя профессионализм и интуицию.
+Уэйд решает лично доставить выкуп, несмотря на возражения Джерри, который предпочел бы справиться с ситуацией самостоятельно. Встреча для передачи денег назначается на парковке. Карл приезжает один, поскольку Гэар остается охранять заложницу. Во время передачи денег между Уэйдом и Карлом возникает перестрелка. Уэйд ранит Карла в челюсть, но сам получает смертельное ранение и умирает на месте.
+Карл забирает сумку с деньгами и скрывается, но по дороге к хижине останавливается, чтобы пересчитать деньги. Обнаружив, что в сумке находится миллион долларов, а не оговоренные восемьдесят тысяч, он решает обмануть Гэара. Карл прячет большую часть денег в снегу около дороги, оставляя только небольшую сумму для деления с напарником.
+Когда Карл возвращается в хижину и сообщает Гэару о смерти Уэйда и о том, что они получили меньше денег, чем ожидалось, между партнерами вспыхивает конфликт. Гэар не верит объяснениям Карла и подозревает, что тот его обманывает. В ярости он убивает Карла топором, а затем уничтожает улики, проталкивая его тело через дробилку для древесины.
+Джин становится свидетелем убийства Карла и в ужасе пытается убежать. Гэар легко догоняет ее в лесу и также убивает. Теперь он остается один с частью денег, не зная о том, где Карл спрятал основную сумму.
+Мардж тем временем приближается к разгадке. Она допрашивает Джерри в автосалоне, задавая ему конкретные вопросы о пропавших автомобилях и о его связях с преступниками. Джерри нервничает и дает противоречивые ответы, что только усиливает подозрения опытного детектива.
+Продолжая расследование, Мардж обнаруживает хижину в лесу. Она видит Гэара, который в это время проталкивает остатки тела Карла через дробилку для древесины. Мардж пытается арестовать его, но Гэар убегает в лес. Во время погони он пытается напасть на беременную женщину-полицейского, но Мардж стреляет в него и убивает в порядке самообороны.
+Джерри понимает, что расследование подходит к концу, и пытается скрыться. Он убегает из автосалона и пытается покинуть город, но полиция быстро выходит на его след. Его арестовывают в мотеле, где он зарегистрировался под вымышленным именем. Во время ареста Джерри ведет себя как испуганный ребенок, плачет и отчаянно сопротивается.
+Фильм завершается спокойной сценой в доме Мардж и ее мужа Норма. Они лежат в постели, обсуждая обычные бытовые вопросы. Норм, который работает художником и рисует марки, сообщает жене, что его рисунок будет использован на трехцентовой почтовой марке. Мардж поздравляет мужа с этим скромным достижением, а затем размышляет о бессмысленности преступлений, которые она расследовала. Она не может понять, зачем люди убивают друг друга из-за денег, когда жизнь может быть такой простой и хорошей.
+История показывает контраст между жадностью и насилием преступников и простыми, честными ценностями обычных людей Среднего Запада. Мардж представляет собой идеал здравого смысла и человеческой порядочности. Несмотря на то, что она сталкивается с ужасными преступлениями, она сохраняет веру в добро и не теряет своего оптимистичного взгляда на жизнь.
+Фильм исследует темы жадности, морального упадка и последствий плохих решений. Джерри начинает с относительно безобидного плана решения финансовых проблем, но его действия приводят к цепочке убийств и трагедий. Каждый персонаж получает по заслугам: жадные и жестокие преступники погибают, коррумпированный Джерри попадает в тюрьму, а честная и принципиальная Мардж торжествует.
+Фильм также является портретом американского Среднего Запада с его суровыми зимами, простыми людьми и специфическим диалектом. Братья Коэн создают атмосферу маленького городка, где все знают друг друга, но где тем не менее могут происходить страшные преступления. Снежный пейзаж становится почти отдельным персонажем фильма, создавая ощущение изоляции и холодной красоты.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Андеграунд', 'A group of Serbian socialists prepares for the war in a surreal underground filled by parties, tragedies, love and hate.', '1995-01-01', 1, '170 minutes', 'Underground', 8.1, 'Андеграунд
+Фильм начинается в Белграде в 1941 году, накануне немецкой бомбардировки Югославии. Марко Дрень и Петар Попара по прозвищу Черни - два неразлучных друга, живущих бурной богемной жизнью в предвоенном Белграде. Марко - харизматичный авантюрист, торговец оружием и прожженный мошенник с амбициями политика. Черни - простодушный слесарь и механик, мастер на все руки, влюбленный в актрису Наталию. Оба они страстно любят жизнь, женщин, выпивку и веселье, не задумываясь о грядущих потрясениях.
+Наталия - красивая актриса, которая играет в белградском театре. Она мечтает о карьере, славе и красивой жизни. Между Марко и Черни возникает любовный треугольник из-за Наталии, хотя открытого соперничества пока нет. Марко более изощрен в ухаживаниях, он понимает женскую психологию, умеет произвести впечатление, в то время как Черни влюблен искренне и наивно.
+В ночь начала немецкой бомбардировки Белграда друзья находятся в зоопарке на празднике. Немецкие самолеты начинают бомбить город, и в хаосе происходит символическая сцена - из разрушенных клеток зоопарка убегают различные животные, что становится метафорой освобождения диких инстинктов войны. Слон, тигры, обезьяны разбегаются по городу, смешиваясь с паникующими людьми.
+Во время бомбежки Марко принимает быстрое решение - он уводит группу людей, включая Черни, его беременную жену Веру и других близких друзей и родственников, в огромный подвал под своим домом. Этот подвал соединен с разветвленной системой тоннелей и бункеров, которые тянутся под всем Белградом. Марко представляет это как временное убежище до окончания бомбардировки.
+Однако война затягивается. Немцы оккупируют Югославию, начинается партизанское движение сопротивления. Марко быстро понимает, что может использовать ситуацию в своих интересах. Он говорит обитателям подвала, что война все еще продолжается, что наверху крайне опасно, и что они должны оставаться в укрытии для собственной безопасности.
+В подвале постепенно формируется целое подземное сообщество. Черни, благодаря своим техническим способностям, организовывает производство оружия для партизан. Он не подозревает, что Марко продает это оружие и немцам, и партизанам, извлекая двойную прибыль из войны. Подземные жители живут в полной изоляции от внешнего мира, получая информацию только от Марко.
+Марко рассказывает им о том, что происходит наверху, но информация сильно искажена или полностью выдумана. Он описывает ужасы войны, рассказывает о зверствах оккупантов, о героической борьбе партизан. Все это подается так, чтобы подземные жители не захотели покидать свое убежище. Марко становится для них единственным связующим звеном с внешним миром.
+Наталия остается наверху. Она быстро приспосабливается к новой ситуации и становится любовницей немецкого офицера. Это дает ей определенную защиту и возможность продолжать актерскую карьеру, играя в спектаклях для немецкой администрации. Марко регулярно встречается с ней, и между ними завязывается роман. Она становится его сообщницей в обмане подземных жителей.
+В подвале жизнь идет своим чередом. Люди женятся, рождаются дети, происходят ссоры и примирения. Вера рожает сына Йована, который растет, не зная, что существует мир наверху. Для него подвал - это вся вселенная. Черни продолжает работать, веря, что его оружие помогает освободить родину.
+Подземное сообщество развивает свою культуру и традиции. У них есть свой оркестр, который играет народную музыку, свои праздники, свои ритуалы. Музыка становится важной частью их жизни - она помогает справляться с замкнутым пространством и дает эмоциональную разрядку. Цыганская музыка с ее страстью и меланхолией особенно точно передает их душевное состояние.
+Проходят годы. Война заканчивается, но Марко не сообщает об этом подземных жителям. Наоборот, он придумывает новые истории о продолжающихся боевых действиях. Югославия становится социалистической страной под руководством Тито, начинается восстановление разрушенного войной хозяйства. Марко использует свои связи времен войны и становится влиятельным партийным функционером.
+Наталия тоже приспосабливается к новой эпохе. Она порывает с немецким прошлым и становится звездой югославского кинематографа. Ее фильмы пропагандируют социалистические идеалы, она играет положительных героинь - партизанок, рабочих, строительниц нового общества. Общественность воспринимает ее как патриотку, которая всегда была на стороне народа.
+Марко продолжает эксплуатировать подземных жителей. Он организовывает производство различных товаров, которые затем продает наверху, присваивая всю прибыль. Черни и другие работают, думая, что помогают партизанам, не подозревая, что война давно закончилась. Марко регулярно спускается к ним с рассказами о военных действиях, показывает поддельные сводки с фронта.
+В подвале рождается новое поколение. Йован, сын Черни, вырастает крепким молодым человеком, который никогда не видел солнца и неба. Он знает о внешнем мире только из рассказов взрослых и представляет его как место постоянной войны и опасности. У него развивается своя философия жизни, основанная на подземном существовании.
+Однажды случается авария - взрыв в подземной мастерской. Йован получает тяжелые ранения, и становится ясно, что ему нужна серьезная медицинская помощь, которую невозможно оказать в подвале. Черни требует от Марко вывести сына наверх для лечения. Марко понимает, что его обман может раскрыться, но вынужден согласиться.
+Когда Йована доставляют в больницу, он впервые видит современный мир 1960-х годов. Белград восстановлен после войны, строятся новые здания, по улицам ездят автомобили, люди одеты в современную одежду. Йован не может понять, где же война, о которой ему столько рассказывали. Врачи и медсестры говорят на сербском языке, а не на немецком, как он ожидал.
+Постепенно до Йована доходит правда - война давно закончилась, его отец и все остальные были обмануты Марко. Он возвращается в подвал и рассказывает об увиденном. Среди подземных жителей начинается смятение. Одни не верят Йовану, другие требуют объяснений от Марко.
+Когда Марко в очередной раз спускается в подвал, его ждет разъяренная толпа. Черни, узнав о многолетнем обмане, приходит в ярость. Начинается драка, во время которой случайно загорается склад с боеприпасами. Происходит мощный взрыв, который разрушает часть подземного комплекса.
+В хаосе взрыва и пожара подземные жители впервые за двадцать лет выбираются наверх. Они оказываются в совершенно незнакомом мире. Белград кардинально изменился, это уже не город 1941 года, который они помнили. Технический прогресс, новая архитектура, изменившиеся социальные отношения - все это шокирует людей, которые провели два десятилетия в изоляции.
+Черни узнает, что его жена Вера умерла еще во время войны, но Марко скрывал это от него, заставляя верить, что она просто живет в другой части подвала. Это становится последней каплей в чаше его терпения. Он клянется отомстить Марко за все годы обмана и страданий.
+Начинается третья часть фильма, действие которой происходит уже в 1990-х годах, во время распада Югославии и начала гражданских войн. Черни становится командиром одного из отрядов в хаотичной войне, которая охватила Балканы. Йован также участвует в боевых действиях, но уже на противоположной стороне.
+Марко тем временем превратился в военного профитера, который торгует оружием всем воюющим сторонам. Он не имеет политических убеждений, его интересует только прибыль. Наталия стала его женой и помогает ему в делах. Они живут в роскоши, нажитой на несчастьях других людей.
+Война 1990-х годов предстает как фарсовое повторение Второй мировой войны. Те же методы, тот же национализм, та же жестокость, но уже без ясных идеологических целей. Люди убивают друг друга из-за территорий, религиозных различий, исторических обид. Сербы, хорваты, боснийцы, которые раньше жили в одной стране, теперь стали смертельными врагами.
+Черни и Йован случайно встречаются на поле боя, но не узнают друг друга. Война разделила их, как разделила всю страну. Отец и сын стреляют друг в друга, не понимая, кто перед ними. Эта сцена становится апогеем трагедии - война разрушает не только страну, но и самые близкие человеческие связи.
+В финале фильма все главные герои погибают. Черни умирает, так и не найдя покоя и не отомстив Марко. Йован погибает в бессмысленной стычке. Марко взрывается на собственном складе оружия. Наталия также погибает в хаосе войны. Югославии больше не существует, она распалась на несколько враждующих государств.
+Однако фильм не заканчивается смертью героев. В сюрреалистическом эпилоге мы видим всех персонажей живыми на каком-то мистическом острове. Они празднуют свадьбу, пьют, танцуют, играют музыку. Этот остров отделяется от материка и плывет по морю как корабль.
+Закадровый голос объясняет, что это земля, которая называется Югославия. Страна, которая больше не существует в реальности, но продолжает жить в памяти и мечтах. Остров-корабль несет на себе всю культуру, всю историю, всех людей исчезнувшей страны.
+Фильм представляет собой сложную метафору истории Югославии в XX веке. Подвал символизирует коммунистическую Югославию - закрытое общество, изолированное от внешнего мира, где люди живут в иллюзиях, созданных партийной пропагандой. Марко воплощает фигуру политического лидера, который манипулирует народом для достижения собственных целей.
+Взрыв, который разрушает подвал, символизирует крах коммунизма и распад Югославии. Выход людей наверх - это столкновение с реальностью рыночной экономики и демократии. Война 1990-х годов показана как трагическое следствие национализма и исторических обид.
+Режиссер Эмир Кустурица создает визуально богатый, музыкально насыщенный эпос, который сочетает реализм с сюрреализмом, трагедию с комедией, историю с мифом. Фильм является одновременно хроникой конкретной страны и универсальной притчей о том, как политические амбиции разрушают человеческие отношения и целые цивилизации.
+Музыка Горана Бреговича играет в фильме особую роль. Цыганские мелодии, народные песни, духовая музыка создают эмоциональный фон, который помогает зрителю почувствовать дух балканской культуры. Музыка становится языком, на котором персонажи выражают свои чувства, когда слов недостаточно.
+Фильм получил Золотую пальмовую ветвь Каннского кинофестиваля и стал одним из самых значительных произведений европейского кинематографа 1990-х годов. Он остается актуальным как размышление о природе политической власти, национализма и человеческой способности к самообману.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ненависть', '24 hours in the lives of three young men in the French suburbs the day after a violent riot.', '1995-01-01', 1, '98 minutes', 'La haine', 8.1, 'Действие фильма происходит в течение двадцати четырех часов в одном из неблагополучных пригородов Парижа. Предыстория начинается с массовых беспорядков, которые вспыхнули после того, как полиция жестоко избила молодого араба по имени Абдель Ишаш во время задержания. Абдель находится в больнице в коме между жизнью и смертью, а его район охвачен волнениями, в ходе которых была сожжена школа, разбиты витрины магазинов и произошли столкновения с полицией.
+Главными героями являются три молодых друга из этого пригорода, представляющие три основные этнические группы французского общества. Винс - белый француз еврейского происхождения, импульсивный и агрессивный молодой человек, который мечтает о карьере боксера, но не обладает достаточной дисциплиной. Хуберт - темнокожий парень, который занимается боксом и мечтает уехать из пригорода, открыть спортивный зал и начать нормальную жизнь вдали от насилия и преступности. Саид - молодой араб, самый миролюбивый из троих, который часто играет роль миротворца между друзьями.
+Утром после беспорядков Винс обнаруживает, что у него есть револьвер, который потерял один из полицейских во время вчерашних столкновений. Он показывает оружие друзьям и заявляет, что если Абдель умрет, то он убьет полицейского в отместку. Хуберт категорически против такого плана, понимая, что насилие порождает только еще большее насилие. Саид занимает промежуточную позицию, пытаясь удержать друзей от крайностей.
+Троица проводит день, слоняясь по пригороду и наблюдая за последствиями ночных беспорядков. Они видят разрушенные здания, сгоревшие машины и патрули полиции, которые контролируют район. Атмосфера напряженная, многие жители боятся выходить на улицу, а молодежь группируется, обсуждая произошедшие события и планируя возможную месть.
+Друзья посещают больницу, где лежит Абдель, но им не разрешают его увидеть. Врачи сообщают, что состояние молодого человека критическое, и неизвестно, выживет ли он. Эта новость еще больше накаляет обстановку. Винс становится более агрессивным и настаивает на необходимости мести, в то время как Хуберт пытается убедить его в бессмысленности насилия.
+В спортивном зале, где тренируется Хуберт, происходит значимый разговор между друзьями. Хуберт рассказывает притчу о человеке, который падает с небоскреба и на каждом этаже повторяет себе "До сих пор все хорошо, до сих пор все хорошо", но важно не то, как ты падаешь, а то, как ты приземлишься. Эта метафора становится лейтмотивом фильма, символизируя состояние французского общества и молодежи пригородов.
+По мере развития событий друзья попадают в различные конфликтные ситуации. Они сталкиваются с враждебностью полиции, которая рассматривает их как потенциальных преступников исключительно на основании их внешности и места жительства. Полицейские проводят унизительные обыски, используют расистские выражения и демонстрируют откровенное презрение к жителям пригорода.
+Саид становится жертвой полицейского произвола, когда его арестовывают по подозрению в торговле наркотиками, хотя у него нет никаких доказательств причастности к этому. В полицейском участке его подвергают психологическому давлению и угрозам. Винс и Хуберт пытаются добиться его освобождения, что приводит к дополнительным конфликтам с правоохранительными органами.
+Во второй половине дня друзья решают поехать в центр Парижа, чтобы попытаться достать денег у одного знакомого, который должен Саиду. Поездка в центральные районы города становится для них путешествием в другой мир. Они оказываются среди богатых районов, дорогих магазинов и благополучных людей, которые смотрят на них с подозрением и страхом.
+В центре Парижа они посещают художественную галерею, где проходит выставка современного искусства. Молодые люди чувствуют себя чужими в этой среде интеллектуальной элиты. Они встречают знакомого Хуберта, который пытается влиться в богемную среду, но очевидно, что и он не вполне принят этим обществом. Эта сцена подчеркивает классовые и культурные барьеры, существующие во французском обществе.
+Попытка получить деньги оборачивается неудачей, и друзья вынуждены провести ночь в центре города. Они попадают в различные неприятные ситуации, включая конфликт в туалете ночного клуба, где над ними издеваются богатые молодые люди. Эти инциденты еще больше подчеркивают их отчуждение от основного французского общества.
+Поздно ночью, когда метро уже не работает, друзья пытаются добраться домой. Они крадут автомобиль, но машина ломается по дороге, и им приходится идти пешком через всю столицу. Эта долгая прогулка через ночной Париж становится символическим путешествием через социальные барьеры и предрассудки.
+Под утро они наконец добираются до своего пригорода, уставшие и разочарованные. Там их ждут плохие новости: Абдель умер от полученных травм. Эта информация становится последней каплей для Винца, который теперь твердо решает привести в исполнение свою угрозу убить полицейского.
+Тем временем полиция усиливает патрулирование в районе, ожидая новых беспорядков в связи со смертью Абдела. Атмосфера становится крайне напряженной, жители готовятся к возможным столкновениям, а власти стягивают дополнительные силы правопорядка.
+В кульминационной сцене Винс, Хуберт и Саид встречают двух полицейских в безлюдном месте. Винс достает револьвер и направляет его на одного из полицейских, готовясь выполнить свою угрозу. Хуберт отчаянно пытается остановить друга, понимая, что убийство полицейского приведет только к эскалации насилия и разрушит жизни всех троих.
+Между друзьями происходит драматичная борьба за оружие. В этот момент второй полицейский, испугавшись за жизнь напарника, достает свой пистолет. В суматохе происходит случайный выстрел, и Винс падает мертвым. Увидев смерть друга, Хуберт подбирает револьвер и направляет его на полицейского, который убил Винса.
+Фильм завершается сценой противостояния: Хуберт держит под прицелом полицейского, а тот направляет оружие на него. Саид стоит между ними, отчаянно пытаясь предотвратить трагедию. Камера медленно отъезжает от этой сцены, а на экране появляется надпись, напоминающая зрителям о том, что важно не то, как ты падаешь, а то, как ты приземляешься. Раздается выстрел, но неясно, кто стрелял и кто стал жертвой.
+Фильм является мощным обвинением французской системы социального неравенства, расизма и полицейского произвола. Он показывает, как бедность, дискриминация и отсутствие перспектив толкают молодых людей к отчаянию и насилию. Каждый из главных героев представляет различные стратегии выживания в враждебной среде: Винс выбирает агрессию и месть, Хуберт пытается найти конструктивный выход через спорт и образование, а Саид старается сохранить человечность и избежать крайностей.
+Режиссер использует черно-белую съемку, чтобы подчеркнуть документальность и жесткость изображаемой реальности. Фильм снят в стиле социального реализма с элементами хип-хоп культуры, что отражает мировоззрение и эстетику молодежи французских пригородов. Музыкальное сопровождение включает рэп и хип-хоп композиции, которые усиливают атмосферу социального протеста.
+"Ненависть" стала пророческим фильмом, предсказавшим многие проблемы, которые впоследствии проявились во французском обществе, включая массовые беспорядки в пригородах 2005 года. Фильм не предлагает простых решений сложных социальных проблем, но заставляет зрителей задуматься о корнях социального неравенства и необходимости системных изменений в обществе.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Перед рассветом', 'A young man and woman meet on a train in Europe, and wind up spending one evening together in Vienna. Unfortunately, both know that this will probably be their only night together.', '1995-01-01', 1, '101 minutes', 'Before Sunrise', 8.1, 'История начинается в поезде, идущем из Будапешта в Вену. Американский турист Джесси, двадцатитрехлетний молодой человек, путешествует по Европе перед возвращением в США. В том же вагоне едет французская студентка Селин, которая возвращается в Париж после посещения бабушки в Будапеште.
+Поначалу они сидят в разных местах, но внимание Джесси привлекает разговор немецкой супружеской пары, которая громко ссорится. Селин, которая тоже слышит этот неприятный скандал, пересаживается ближе к Джесси. Между молодыми людьми завязывается непринужденная беседа о путешествиях, отношениях и жизни.
+Когда поезд прибывает в Вену - конечную остановку Джесси - он неожиданно предлагает Селин сойти с ним и провести ночь в городе, исследуя Вену вместе. Поначалу девушка колеблется, но Джесси убеждает ее рискнуть, говоря, что через десять-двадцать лет она может пожалеть о неиспользованной возможности пережить спонтанное приключение. У него есть только одна ночь до утреннего рейса в Америку, и он хочет провести ее не один.
+Селин соглашается, и они начинают бродить по ночной Вене. Сначала они просто гуляют по улицам, разговаривая обо всем на свете - о своем детстве, семьях, мечтах, страхах, отношениях. Джесси рассказывает о своей недавней болезненной разлуке с девушкой, из-за которой он и отправился в это европейское путешествие. Селин делится своими размышлениями о любви, отношениях между мужчинами и женщинами, о своих планах на будущее.
+Они заходят в небольшое кафе, где встречают пожилого поэта, который за небольшую плату сочиняет стихи на любую тему. Джесси заказывает стихотворение о них двоих, и поэт создает удивительно точный и романтичный стих об этой случайной встрече двух молодых людей в Вене.
+Продолжая прогулку, они попадают на кладбище, где разговаривают о смерти, смысле жизни и том, как люди помнят умерших. Селин рассказывает о своей подруге Кэти, которая погибла в автокатастрофе, и о том, как эта смерть изменила ее восприятие жизни.
+В книжном магазине они играют в игру - каждый берет случайную книгу и читает вслух отрывок, который, по их мнению, описывает их личность или текущие чувства. Эти отрывки оказываются удивительно подходящими к их ситуации и помогают им еще лучше понять друг друга.
+Они заходят в музыкальный магазин, где в прослушивающей кабинке слушают песню Кэт Блум "Come Here". Это становится одним из самых интимных моментов фильма - они стоят в тесной кабинке, слушают романтичную музыку и смотрят друг на друга, чувствуя растущее влечение, но не решаясь на первый шаг.
+Ночь продолжается, и они посещают различные места Вены - парки, мосты, церкви. В одном из кафе они играют в игру "первый раз" - рассказывают друг другу о своих первых переживаниях: первом поцелуе, первом сексе, первом разочаровании в любви. Эти откровения делают их близость еще более глубокой.
+Когда кафе закрывается, они идут к Дунаю и садятся на скамейку у реки. Здесь происходит их первый разговор о том, что они чувствуют друг к другу. Селин признается, что обычно не ведет себя так импульсивно, а Джесси говорит, что чувствует особую связь с ней, которую редко испытывал с другими людьми.
+Они идут дальше и в парке встречают цыганку-гадалку, которая читает ладонь Селин. Предсказание получается двусмысленным - говорится о том, что она будет любимой, но также упоминается о грусти в отношениях. Это предсказание становится символичным для их отношений.
+По мере того как ночь углубляется, их разговоры становятся все более личными и философскими. Они обсуждают различия между мужчинами и женщинами, природу любви, реинкарнацию, политику, искусство. Каждый разговор раскрывает новые грани их личностей и усиливает взаимное притяжение.
+В одном из самых запоминающихся эпизодов они звонят друзьям из телефонной будки. Джесси звонит своему другу в Америку и рассказывает о встрече с удивительной девушкой, а Селин звонит подруге в Париж. Эти разговоры показывают, как глубоко их затронула эта встреча.
+Когда общественный транспорт перестает работать, они понимают, что должны провести остаток ночи на улице или найти место для отдыха. Они приходят в парк развлечений, где садятся в колесо обозрения. На высоте, глядя на огни Вены внизу, они наконец целуются - их первый поцелуй происходит в самой романтической обстановке.
+После этого они находят тихое место в парке, где ложатся на траву и продолжают разговаривать. Здесь подразумевается, что между ними происходит физическая близость, хотя это показано очень деликатно - камера отводится в сторону, а зрители видят только их одежду на траве.
+Утром они просыпаются в парке и понимают, что их время вместе подходит к концу. Джесси должен быть в аэропорту через несколько часов. Они идут в кафе позавтракать, но атмосфера уже другая - они оба понимают, что расставание неизбежно.
+За завтраком они обсуждают, что делать дальше. Джесси предлагает Селин поехать с ним в Америку, но она не может - у нее учеба в университете, работа, своя жизнь в Париже. Селин предлагает Джесси остаться в Европе, но у него тоже есть обязательства дома.
+В итоге они принимают решение встретиться снова через шесть месяцев в том же месте в Вене, где они впервые поцеловались - на колесе обозрения. Они договариваются не обмениваться адресами или телефонами, чтобы сохранить романтику и спонтанность их отношений. Если их чувства окажутся настоящими, они найдут способ встретиться снова.
+Фильм заканчивается в поезде, где они прощаются. Джесси садится в поезд до аэропорта, а Селин - в поезд до Парижа. Они смотрят друг на друга через окна поездов, отъезжающих в противоположных направлениях. В финальных кадрах показаны места в Вене, где они провели ночь, теперь пустые, но хранящие память об их встрече.
+Фильм исследует темы случайных встреч, мимолетной любви, связи между незнакомцами и того, как одна ночь может изменить жизнь. Режиссер Ричард Линклейтер создал интимный портрет зарождающихся отношений, где диалог важнее действия, а эмоциональная близость развивается через разговоры и общие переживания. Это история о том, как два человека могут за одну ночь узнать друг друга лучше, чем многие пары за годы отношений.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('ри цвета: Красный', 'A model discovers a retired judge is keen on invading people''s privacy.', '1994-01-01', 1, '99 minutes', 'Trois couleurs: Rouge', 8.1, '"Три цвета: Красный" (1994) - заключительная часть трилогии французского режиссера Кшиштофа Кесьлёвского, посвященной идеалам Французской революции: свободе, равенству и братству.
+Фильм происходит в Женеве и рассказывает историю Валентины Дюссо, молодой студентки и модели, которая подрабатывает, позируя для рекламных фотосессий. Валентина живет одна в небольшой квартире и поддерживает отношения со своим бойфрендом Мишелем, который находится в Англии. Их отношения переживают кризис из-за географического расстояния и взаимного недопонимания. Мишель ревнует Валентину и подозревает ее в неверности, что приводит к болезненным телефонным разговорам.
+Однажды вечером, возвращаясь домой после фотосессии, Валентина случайно сбивает на машине собаку породы немецкая овчарка. Животное ранено, но живо. Проверив ошейник, она узнает адрес владельца и решает отвезти собаку домой. Адрес приводит ее к дому отставного судьи Жозефа Керна, пожилого человека, который живет в полном одиночестве.
+Керн встречает Валентину с холодностью и равнодушием. Он не проявляет особого беспокойства о состоянии своей собаки и не выражает благодарности за то, что она привезла животное. Более того, он заявляет, что собака ему не нужна, и предлагает Валентине оставить ее себе. Эта встреча оставляет у девушки неприятное впечатление, но она чувствует странную притягательность к этому загадочному человеку.
+Постепенно выясняется, что Керн занимается подслушиванием телефонных разговоров своих соседей. У него дома установлено сложное радиооборудование, с помощью которого он перехватывает частные беседы жителей своего района. Он знает интимные подробности жизни окружающих его людей: семейные конфликты, любовные связи, финансовые проблемы и секреты. Однако он не использует эту информацию во вред людям, а просто наблюдает за человеческими драмами как отстраненный зритель.
+Валентина случайно узнает об этом занятии Керна и приходит в ужас. Она требует от него прекратить шпионаж и угрожает обратиться в полицию. Между ними происходят напряженные дискуссии о морали, одиночестве и смысле человеческого существования. Керн объясняет свое поведение глубоким разочарованием в людях и потерей веры в справедливость.
+Постепенно раскрывается трагическая предыстория судьи. В молодости он был идеалистом, верившим в справедливость и закон. Он любил женщину, которая предала его, уйдя к его лучшему другу. Эта личная трагедия совпала с профессиональным разочарованием: он понял, что правосудие часто несправедливо, что невинные люди страдают, а виновные избегают наказания. Постепенно он превратился в циника, потерявшего веру в человеческую природу.
+Параллельно основной сюжетной линии развивается история молодого судьи Огюста Брюнера, который живет по соседству с Валентиной, хотя они никогда не встречались. Огюст готовится к сдаче экзамена на судью и переживает личную драму: его подруга Карин изменяет ему с другим мужчиной. Жизнь Огюста удивительным образом повторяет молодость Керна: та же профессия, те же идеалы, та же личная трагедия с изменой любимой женщины.
+Керн с помощью своей подслушивающей аппаратуры узнает о измене Карин раньше самого Огюста. Он рассказывает об этом Валентине, которая оказывается в моральной дилемме: должна ли она предупредить незнакомого молодого человека о предательстве его подруги? Керн утверждает, что вмешательство в чужие дела бессмысленно, поскольку люди все равно поступают согласно своей природе.
+Тем временем отношения между Валентиной и Керном постепенно углубляются. Несмотря на значительную разницу в возрасте и различие в жизненных взглядах, между ними возникает странная дружба. Валентина представляет собой молодость, надежду и веру в добро, в то время как Керн олицетворяет усталость от жизни, разочарование и цинизм. Их общение становится для обоих целительным: Валентина помогает старому судье вернуть веру в человечность, а он дает ей мудрость и понимание сложности человеческой природы.
+Керн рассказывает Валентине о своих философских размышлениях. Он говорит о том, что возможно существует параллельная жизнь, в which люди могли бы принимать другие решения и избежать тех ошибок, которые они совершили в реальности. Он размышляет о том, что если бы он встретил кого-то вроде Валентины в молодости, его жизнь могла бы сложиться совершенно по-другому.
+Валентина постепенно убеждает Керна в необходимости прекратить подслушивание соседей. Она апеллирует к его совести и человечности, утверждая, что каждый человек имеет право на приватность. Под ее влиянием Керн начинает пересматривать свои взгляды на жизнь и людей. Он даже признается в своих действиях, написав анонимное письмо в газету о том, что кто-то подслушивает телефонные разговоры в их районе.
+Огюст тем временем узнает об измене Карин и переживает глубокий кризис. Его реакция почти точно повторяет реакцию молодого Керна в аналогичной ситуации. Он становится замкнутым и циничным, теряет веру в любовь и справедливость. Судьба словно повторяется, демонстрируя цикличность человеческих драм.
+В кульминационный момент фильма Валентина принимает решение поехать в Англию к своему бойфренду Мишелю, чтобы попытаться спасти их отношения. Она прощается с Керном, который дарит ей книгу и желает счастливого пути. Старый судья понимает, что их дружба подходит к концу, но он благодарен Валентине за то, что она вернула ему веру в добро.
+Валентина садится на паром, следующий из Франции в Англию. По странному стечению обстоятельств на том же пароме оказывается Огюст, который также направляется в Англию по своим делам. Они по-прежнему незнакомы друг с другом, но судьба сближает их.
+Во время плавания происходит трагедия: паром попадает в сильный шторм и терпит крушение. Из полутора тысяч пассажиров выживают только семь человек, среди которых оказываются Валентина и Огюст. Спасательная операция привлекает внимание международных СМИ, и история выживших становится сенсацией.
+Керн узнает о катастрофе из новостей и с облегчением видит, что Валентина среди выживших. Он понимает, что судьба свела ее с Огюстом не случайно - возможно, это тот самый шанс на счастье, которого он сам был лишен в молодости. Старый судья с умилением наблюдает по телевизору, как спасатели выносят Валентину и Огюста с места катастрофы.
+В финальных кадрах показано, что среди выживших оказались также главные персонажи двух предыдущих фильмов трилогии: Жюли из "Синего" и Кароль с Домиником из "Белого". Это символическое объединение всех трех историй подчеркивает связь между человеческими судьбами и универсальность тем, затронутых в трилогии.
+Фильм завершается сценой, где Керн сидит дома и слушает по радио сводки о спасательной операции. Он больше не подслушивает частные разговоры - его радиоприемник настроен на обычную радиостанцию. Рядом с ним лежит собака, которую когда-то сбила Валентина. Старый судья обрел покой и примирение с жизнью.
+"Красный" исследует тему братства и человеческой солидарности. Фильм показывает, как случайные встречи могут изменить жизнь людей, как взаимопонимание и сочувствие способны исцелить даже самые глубокие душевные раны. История Валентины и Керна демонстрирует, что любовь и доброта могут преодолеть барьеры возраста, опыта и мировоззрения.
+Кесьлёвский создает сложную философскую притчу о судьбе, случайности и предопределенности. Фильм задает вопросы о том, насколько наша жизнь определяется нашими собственными выборами, а насколько - внешними обстоятельствами. Параллели между судьбами Керна и Огюста предполагают, что история может повторяться, но вмешательство доброго человека способно изменить ее течение.
+Красный цвет в фильме символизирует не только братство, но и кровь, страсть, жизненную силу. Он присутствует в костюме Валентины, в интерьерах, в закатном небе, создавая визуальное единство и эмоциональную насыщенность. Кинематография Кесьлёвского отличается особой поэтичностью и символизмом, каждый кадр продуман и наполнен смыслом.RetryClaude can make mistakes. Please double-check responses.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Чунгкингский экспресс', 'Two melancholy Hong Kong policemen fall in love: one with a mysterious female underworld figure, the other with a beautiful and ethereal server at a late-night restaurant he frequents.', '1994-01-01', 1, '102 minutes', 'Chung Hing sam lam', 8.1, 'Фильм открывается динамичной сценой погони через многолюдные улицы района Чунгкинг в Гонконге. Полицейский под номером 223, имя которого Хэ Чжиу, преследует преступника через лабиринт узких переулков и торговых рядов. Его внутренний монолог рассказывает о том, что его девушка Мэй бросила его ровно месяц назад, первого апреля, и он решил дать ей месяц на размышления. Если до первого мая она не вернется, он окончательно забудет о ней. Каждый день он покупает банку консервированных ананасов с истекающим сроком годности первого мая, создавая символическую связь между своими чувствами и этими продуктами. К концу месяца у него накапливается тридцать банок ананасов.
+Параллельно развивается история загадочной женщины в светлом парике и солнцезащитных очках, одетой в белый плащ. Она профессиональный наркокурьер, работающий на крупную преступную организацию. Женщина организовала операцию по переправке большой партии кокаина из Индии в Европу, используя группу индийских курьеров. План заключался в том, чтобы каждый курьер проглотил определенное количество капсул с наркотиком и вылетел разными рейсами в Амстердам. Однако операция проваливается катастрофически - все курьеры исчезают вместе с товаром на сумму в несколько миллионов долларов. Некоторые из них, судя по всему, решили обмануть организацию и продать наркотики самостоятельно.
+Женщина понимает, что теперь она должна либо найти пропавших курьеров и вернуть товар, либо компенсировать убытки из собственных средств, либо расплатиться жизнью. Ее босс, жестокий мужчина в костюме, ясно дает понять, что времени у нее мало. Она начинает методичную охоту по барам, отелям и притонам Гонконга, показывая фотографии пропавших индийцев и пытаясь выследить их местонахождение. При этом она вынуждена постоянно менять внешность, меняя парики и одежду, чтобы избежать преследования как со стороны полиции, так и конкурентов.
+Тем временем полицейский 223 продолжает свою рутинную работу, но мысли его полностью поглощены предстоящим дедлайном. Он философски размышляет о природе времени, любви и забвения. В своих внутренних монологах он представляет, как разговаривает с Мэй, объясняет ей свое решение дать ей месяц. Он верит, что если человек может забыть что-то за одну минуту, то за месяц можно забыть целого человека. Первого мая, в день истечения своего личного ультиматума, он начинает есть все тридцать банок ананасов подряд, пытаясь физически избавиться от символов своей прошлой любви.
+В ту же ночь, находясь в состоянии эмоционального истощения, полицейский 223 заходит в ночной бар, где встречает ту самую женщину в белом плаще. Она тоже находится в критическом состоянии - поиски не принесли результатов, время истекает, и она понимает, что, скорее всего, обречена. Между ними не происходит традиционного знакомства или флирта. Скорее, два одиноких человека в кризисной ситуации находят друг друга и решают провести эту ночь вместе. Они идут в дешевый отель, но их взаимодействие больше напоминает взаимную терапию, чем романтическое свидание. Женщина засыпает от истощения, а полицейский всю ночь бодрствует, наблюдая за ней и размышляя о странности жизни. Утром она исчезает, оставив лишь записку с благодарностью за компанию. Позже становится известно, что ей удалось собрать необходимую сумму для компенсации убытков, продав свои драгоценности, и она покинула Гонконг, избежав расправы.
+Вторая часть фильма, происходящая месяц спустя, фокусируется на другом полицейском - номер 663, которого зовут Линь. Он регулярно питается в маленькой закусочной в торговом центре, которой владеет пожилой мужчина. Недавно его девушка, работающая стюардессой, разорвала с ним отношения и через владельца закусочной передала ключи от его квартиры, не желая встречаться с ним лично. Владелец передает ключи молодой работнице по имени Фэй, энергичной девушке с короткой стрижкой, которая постоянно слушает песню "California Dreamin''" группы "The Mamas and the Papas".
+Фэй наблюдает за полицейским каждый день, когда он приходит есть, и постепенно влюбляется в него. Она видит его грусть, его попытки справиться с расставанием, и у нее возникает желание позаботиться о нем. Получив ключи от его квартиры, Фэй начинает тайно посещать его жилище, пока он на работе. Сначала это простое любопытство, но постепенно превращается в навязчивое желание улучшить его жизнь. Она незаметно меняет просроченные продукты на свежие, переставляет мебель, меняет полотенца, заправляет постель. Она даже меняет кассеты в его магнитофоне, заменяя грустную музыку на более жизнерадостную.
+Полицейский 663 замечает эти изменения, но его реакция поразительна - вместо того чтобы заподозрить вторжение, он начинает разговаривать с предметами в своей квартире, как будто они живые. Он благодарит полотенце за то, что оно стало более мягким, спрашивает у мыла, почему оно изменило запах, интересуется у плюшевого медвежонка, не скучно ли ему в одиночестве. Эти монологи показывают его одиночество, но также и способность находить магию в повседневности. Он создает целую философию о том, что предметы тоже имеют чувства и могут меняться от одиночества или радости.
+Постепенно между Фэй и полицейским завязывается настоящее общение в закусочной. Он начинает задерживаться после еды, они болтают о мелочах. Фэй пытается скрыть свое знание о его личной жизни, полученное во время тайных визитов, но иногда случайно выдает себя, упоминая детали, которые не могла бы знать иначе. Однажды полицейский 663 приходит домой раньше обычного и застает Фэй в своей квартире. Вместо скандала происходит честный разговор. Фэй объясняет, что делала это не из корыстных побуждений, а из желания сделать его жизнь лучше, потому что видела, как он страдает. Она призналась, что влюблена в него и мечтала стать частью его жизни, даже таким странным способом.
+Полицейский удивительно спокойно реагирует на это признание. Возможно, подсознательно он уже догадывался о происходящем, или же месяцы одиночества научили его ценить любую форму заботы. Они начинают встречаться официально, и их отношения развиваются стремительно. Фэй постоянно говорит о своей мечте поехать в Калифорнию, вдохновленная песней, которую она слушает. Полицейский, желая сделать ей приятное, покупает два билета в Калифорнию и назначает встречу в аэропорту.
+Однако в день отлета Фэй не появляется. Вместо нее полицейский находит записку, в которой она объясняет, что решила уехать одна, потому что боится разочаровать его или разрушить их отношения реальностью совместного путешествия. Она оставляет ему свой посадочный талон как память и улетает в Америку одна. Полицейский остается в аэропорту, держа два билета и размышляя о непредсказуемости любви.
+Проходит целый год. Полицейский 663 кардинально меняет свою жизнь - он покупает ту самую закусочную, где работала Фэй, и становится ее владельцем. Прежний хозяин эмигрирует в Австралию. Однажды в закусочную заходит Фэй, но теперь она одета в форму стюардессы - ее мечта о путешествиях осуществилась, и она получила работу в авиакомпании. Встреча происходит спокойно, без драматизма. Они обмениваются учтивыми фразами, и Фэй спрашивает, когда у него выходной. Этот вопрос намекает на возможность восстановления их отношений, но уже на новом уровне - как двух людей, которые изменились за год разлуки и готовы начать заново. Фильм заканчивается на этой многообещающей ноте, оставляя зрителя в неведении относительно дальнейшего развития событий, но с ощущением надежды и возможности нового начала.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Парк Юрского периода', 'A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park''s cloned dinosaurs to run loose.', '1993-01-01', 1, '127 minutes', 'Jurassic Park', 8.1, 'Фильм открывается напряженной сценой на тропическом острове Исла-Нублар у берегов Коста-Рики. Команда рабочих под руководством охотника Роберта Малдуна пытается переместить велоцираптора из транспортировочной клетки в новый загон. Операция идет не по плану - хищный динозавр нападает на одного из рабочих по имени Хэнри Хардинг, который попадает в клетку. Несмотря на отчаянные попытки спасти человека, рабочий погибает от укусов раптора. Малдун понимает всю серьезность ситуации и предлагает уничтожить всех велоцирапторов, но его не слушают.
+В это время в бесплодных землях Монтаны палеонтолог доктор Алан Грант и палеоботаник доктор Элли Сэттлер ведут археологические раскопки, обнаружив почти полный скелет велоцираптора. Грант - эксперт по поведению хищных динозавров, особенно рапторов. Он рассказывает группе посетивших раскопки детей о том, насколько смертоносными были эти существа, используя серповидный коготь раптора длиной шесть дюймов для демонстрации. Один из мальчиков скептически замечает, что раптор выглядит как большая индейка, на что Грант жестко отвечает, описывая тактику охоты этих хищников - они нападали стаей, окружали жертву, и пока одни отвлекали, другие наносили смертельный удар когтями по животу.
+Внезапно над раскопками появляется вертолет, из которого выходит эксцентричный миллиардер Джон Хэммонд - владелец компании InGen. Хэммонд предлагает Гранту и Сэттлер стать консультантами его нового проекта в обмен на финансирование их исследований еще на три года. Он загадочно говорит о том, что хочет показать им нечто экстраординарное, что изменит их представление о естественной истории.
+К экспедиции присоединяется математик и теоретик хаоса доктор Ян Малкольм, известный своими черными одеждами и циничным взглядом на мир. Малкольм изначально настроен скептически, считая, что любая попытка контролировать природу обречена на провал согласно теории хаоса. Также в группу входит нервный адвокат Дональд Дженнаро, представляющий инвесторов Хэммонда, которые обеспокоены инцидентом с рабочим и требуют независимой оценки безопасности проекта.
+По прибытии на Исла-Нублар группу встречает управляющий парка Рэй Арнольд - заядлый курильщик и компьютерный эксперт, который контролирует все системы острова из центрального командного пункта, и главный программист системы безопасности Деннис Недри - толстяк в очках, который кажется недовольным своей работой и зарплатой.
+Хэммонд ведет гостей в современную лабораторию, где главный генетик доктор Генри Ву подробно объясняет революционный процесс воссоздания динозавров. Ученые извлекли ДНК древних рептилий из желудков доисторических комаров, которые сохранились в янтарных отложениях. Поскольку в древней ДНК были пробелы, их заполнили генетическим материалом современных лягушек. Все динозавры созданы исключительно женского пола с помощью хромосомного контроля, что должно предотвратить неконтролируемое размножение. Кроме того, животные генетически зависят от лизина - аминокислоты, которую они не могут производить самостоятельно и должны получать с пищей, что является дополнительной мерой контроля.
+Малкольм выражает серьезные сомнения в этической стороне проекта, цитируя свою знаменитую фразу о том, что ученые были так увлечены тем, могут ли они это сделать, что не задумались о том, должны ли они это делать. Он предупреждает, что жизнь найдет способ преодолеть любые ограничения.
+Группа отправляется на экскурсию по парку на автоматизированных электрических автомобилях, оборудованных интерактивными мониторами с голосом самого Хэммонда. Первые встречи с динозаврами поражают воображение - они видят величественное стадо брахиозавров, мирно пасущихся среди высоких деревьев. Грант буквально теряет дар речи, видя живых существ, которых он изучал всю жизнь только по окаменелостям. Группа также наблюдает за стадом галлимимов - быстрых травоядных динозавров, напоминающих страусов.
+Когда автомобили останавливаются у загона с больным трицератопсом, ветеринар парка доктор Хардинг и Элли пытаются выяснить причину недомогания животного. Элли остается помочь с лечением, предполагая, что трицератопс отравился растениями, которые он ест вместе с камнями-гастролитами, помогающими пищеварению. К этому моменту к экскурсии присоединяются внуки Хэммонда - тринадцатилетний Тим, помешанный на компьютерах и динозаврах, и его младшая сестра Лекс, которая является экспертом по компьютерным системам.
+Тем временем Деннис Недри, недовольный своей зарплатой и обремененный финансовыми проблемами, тайно встречается с представителем конкурирующей биотехнологической компании Biosyn. За полтора миллиона долларов он соглашается украсть эмбрионы пятнадцати видов динозавров, спрятанные в специальном контейнере, замаскированном под банку с кремом для бритья. План Недри заключается в том, чтобы временно отключить системы безопасности парка, украсть эмбрионы из лаборатории глубокой заморозки и передать их на корабле, который ждет у восточного дока острова.
+Недри приводит свой план в действие во время шторма, который обрушивается на остров. Он отключает большинство систем безопасности, включая электрические заборы, содержащие динозавров, и камеры наблюдения. Автомобили с экскурсионной группой останавливаются прямо рядом с загоном тираннозавра рекс - самого крупного хищника в парке.
+Сначала ничего не происходит, и Дженнаро нервно шутит о том, что за такие деньги динозавр должен был бы появиться по требованию. Но затем дети замечают рябь в стаканах с водой, вызванную тяжелыми шагами приближающегося хищника. Тираннозавр, привлеченный светом фар и движением, выходит из своего загона.
+Первой жертвой становится козел, которого держали в качестве приманки для динозавра. Затем тираннозавр обращает внимание на автомобили. Дженнаро в панике выбегает из машины и прячется в находящемся рядом туалете, бросив детей на произвол судьбы. Малкольм пытается отвлечь гигантского хищника, размахивая фонариком и выбегая из машины, но тираннозавр сбивает его и ломает ему ногу.
+Тираннозавр переворачивает автомобиль, в котором прятался Дженнаро, находит перепуганного адвоката в туалете и съедает его одним укусом. Затем хищник возвращается к машине с детьми и начинает ее переворачивать. Грант спасает Тима и Лекс, и они укрываются за упавшим деревом, стараясь не двигаться, поскольку Грант предполагает, что зрение тираннозавра основано на движении.
+В центре управления Арнольд и Хэммонд обнаруживают, что Недри заблокировал их доступ к основным системам, оставив только минимальное освещение и телефонную связь. Они понимают, что произошло что-то серьезное, когда теряют связь с экскурсионной группой.
+Недри тем временем пытается добраться до восточного дока через джунгли, но из-за отключенных им же навигационных систем сбивается с пути во время шторма. Его джип застревает в грязи рядом с оврагом. Пытаясь освободить машину, Недри сталкивается с дилофозавром - небольшим хищным динозавром с характерным гребнем на голове. Сначала динозавр кажется игривым и безобидным, но затем раскрывает свой цветной воротник и плюется ядовитой слюной, ослепляя Недри. Программист пытается укрыться в джипе, но дилофозавр пробирается внутрь и убивает его. Контейнер с эмбрионами теряется в грязи.
+Элли и Малдун отправляются на поиски выживших на джипе. Они находят раненого Малкольма, который, несмотря на боль, сохраняет свое чувство юмора и философский настрой. Малдун хочет немедленно покинуть остров, понимая, что ситуация вышла из-под контроля, но Элли настаивает на поисках остальных.
+Грант с детьми проводят ночь на высоком дереве, где они сталкиваются со стадом брахиозавров. Несмотря на устрашающие размеры, эти травоядные гиганты оказываются мирными. Утром группа обнаруживает гнездо с разбитыми яичными скорлупами, что служит доказательством того, что динозавры размножаются вопреки генетическим ограничениям. Грант понимает, что лягушачья ДНК, использованная для заполнения пробелов, позволила некоторым особям изменить пол с женского на мужской, как это происходит у некоторых видов лягушек в природе.
+Путешествуя через остров, Грант и дети сталкиваются со стадом галлимимов, которые внезапно разбегаются в панике. Причиной оказывается молодой тираннозавр, который охотится на этих быстрых травоядных. Группе удается спрятаться под упавшим стволом дерева и избежать встречи с хищником.
+Добравшись до центра для посетителей, они обнаруживают разгромленное здание. В кухне дети сталкиваются лицом к лицу с двумя велоцирапторами, которые проникли в здание. Эти умные хищники демонстрируют способность открывать двери, используя когти и работая в команде. Лекс и Тим прячутся в промышленных холодильниках и с помощью отражений в металлических поверхностях избегают обнаружения.
+Лекс, несмотря на свой юный возраст, оказывается настоящим компьютерным гением. Она взламывает компьютерную систему парка и восстанавливает замки и телефонную связь. Грант связывается с кораблем, увозящим оставшихся рабочих с острова, и просит их вернуться за выжившими.
+Тем временем Элли отправляется в подземный бункер с аварийными генераторами, чтобы восстановить основное электроснабжение парка. В темных коридорах бункера она подвергается нападению велоцираптора, но ей удается избежать смерти и включить главные генераторы, восстановив питание электрических заборов по всему острову.
+В кульминационной сцене фильма три велоцираптора загоняют Гранта, Тима и Лекс в главный зал центра для посетителей. Хищники демонстрируют высокий интеллект, координируя свои действия и используя засады. Один раптор отвлекает внимание, в то время как другие заходят с флангов. Кажется, что героям некуда деваться, когда внезапно в зал врывается взрослый тираннозавр рекс и нападает на велоцирапторов.
+Происходит эпическая битва между королем хищников и стаей умных рапторов. Тираннозавр убивает одного из рапторов мощным укусом, а остальные спасаются бегством. Воспользовавшись хаосом, люди незаметно покидают здание и воссоединяются с Малкольмом, Элли и Хэммондом у посадочной площадки.
+Хэммонд, который до последнего момента надеялся спасти свой проект и настаивал на том, что все можно исправить, наконец осознает масштаб катастрофы. Его мечта о парке развлечений с живыми динозаврами превратилась в кошмар. Старик с грустью соглашается покинуть остров и оставить свое детище.
+Все выжившие - Грант, Элли, Малкольм, дети и сам Хэммонд - эвакуируются на вертолете. Малкольм, несмотря на серьезную травму ноги, выживает благодоря медицинской помощи. Во время полета он произносит свою знаменитую фразу о том, что жизнь найдет выход.
+Фильм завершается символической сценой: когда вертолет удаляется от острова, камера показывает стаю пеликанов, летящих над океаном. Эти современные птицы, являющиеся прямыми потомками динозавров, служат напоминанием о том, что древние рептилии никогда полностью не исчезали, а эволюционировали в новые формы жизни. Остров остается во власти динозавров, которые теперь свободно развиваются и размножаются, создавая свою собственную экосистему, неподконтрольную человеку. Проект Хэммонда терпит полное фиаско, но сама жизнь торжествует, находя способ преодолеть все искусственные ограничения, что полностью подтверждает предсказания Малкольма о непредсказуемости сложных систем.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Во имя отца', 'A man''s coerced confession to an I.R.A. bombing he did not commit results in the imprisonment of his father as well. An English lawyer fights to free them.', '1993-01-01', 1, '133 minutes', 'In the Name of the Father', 8.1, 'Фильм открывается в Белфасте в 1974 году, где молодой Джерри Конлон живет с отцом Джузеппе в атмосфере постоянного напряжения между католиками и протестантами. Джерри ведет беспечный образ жизни, не работает, развлекается с друзьями и не особо задумывается о политической ситуации. Однажды он с приятелями попадает в неприятности с британскими солдатами во время уличных беспорядков. Джузеппе, опасаясь, что сын может связаться с ИРА или пострадать от военных, настаивает на том, чтобы Джерри уехал из Белфаста. Он дает сыну деньги и отправляет его в Лондон к тете Энни, надеясь, что перемена обстановки пойдет ему на пользу.
+В Лондоне Джерри воссоединяется со своим другом детства Полом Хиллом, который уже обосновался в столице. Они поселяются в коммуне хиппи в Килберне, где живут богемной жизнью, экспериментируют с наркотиками, посещают концерты и практически не работают. Джерри увлекается девушкой по имени Кэрол, но их отношения остаются поверхностными. Деньги заканчиваются, и друзья начинают промышлять мелкими кражами, чтобы свести концы с концами.
+Пятого октября 1974 года Джерри и Пол совершают ограбление проститутки в одном из лондонских районов. Они отбирают у нее деньги, но не причиняют серьезного вреда. Испугавшись возможных последствий и осознав, что их жизнь в Лондоне зашла в тупик, они решают вернуться в Белфаст. Именно в этот вечер в пабе Horse and Groom в Гилфорде происходит взрыв, устроенный ИРА. Бомба убивает пять человек и ранит множество других. Это становится одним из самых резонансных терактов того времени.
+Через несколько дней полиция арестовывает Джерри прямо в доме его отца в Белфасте. Вместе с ним задерживают Пола Хилла, Пэдди Армстронга и Кэрол Ричардсон. Их доставляют в полицейский участок, где начинаются жестокие допросы. Следователи уверены, что перед ними террористы ИРА, ответственные за взрыв в Гилфорде. Детективы применяют физическое насилие, лишают сна, угрожают и психологически давят на подозреваемых.
+Джерри подвергается особенно жестокому обращению. Его бьют, заставляют стоять в неудобных позах часами, кричат на него и угрожают еще более серьезными последствиями, если он не признается. Полицейские показывают ему фотографии жертв взрыва, обвиняя его в их смерти. Не выдержав физических и моральных пыток, Джерри в конце концов подписывает заявление о признании вины. В нем он якобы признается в том, что является членом ИРА и участвовал в планировании и осуществлении теракта в Гилфорде.
+Узнав об аресте сына, Джузеппе немедленно отправляется в Лондон, чтобы найти ему адвоката и помочь. Однако по прибытии он также оказывается арестован по подозрению в связях с ИРА и пособничестве терроризму. Вместе с ним арестовывают его сестру Энни Магуайр, ее мужа Пэдди и их детей, а также других родственников. Полиция утверждает, что дом Магуайров использовался как база для изготовления взрывчатых веществ, хотя никаких серьезных доказательств этого нет.
+Суд над Гилфордской четверкой и семьей Магуайр проходит в атмосфере общественного возмущения и жажды мести. Британское общество требует наказания для террористов, и давление на судебную систему огромно. Несмотря на то, что защита указывает на многочисленные нарушения процедуры во время следствия, на принуждение к даче показаний и отсутствие материальных доказательств, суд выносит обвинительный приговор. Джерри, Пол, Пэдди и Кэрол получают пожизненное заключение за убийство и терроризм. Джузеппе также приговаривают к длительному сроку за пособничество.
+В тюрьме отношения между Джерри и отцом складываются непросто. Джерри винит Джузеппе в том, что тот не смог защитить его, что позволил полиции арестовать себя. Он считает отца слабым и неспособным постоять за семью. Джузеппе же разочарован в сыне, видя в нем безответственного молодого человека, который не ценит жертвы, которые приносит семья. Их ссоры часто переходят в крики и взаимные обвинения.
+Однако постепенно их отношения начинают меняться. Джузеппе показывает Джерри, как важно сохранять достоинство даже в самых тяжелых обстоятельствах. Он учит сына читать, помогает ему получить образование в тюрьме, показывает важность знаний и самосовершенствования. Джузеппе сам изучает юриспруденцию, читает законы, пишет письма в различные инстанции, пытаясь найти способ обжаловать несправедливый приговор.
+В тюрьме Джерри знакомится с Джо Макандрю, настоящим членом ИРА, который отбывает срок за действительно совершенные теракты. Макандрю рассказывает Джерри правду о том, кто на самом деле взорвал паб в Гилфорде. Оказывается, это была совершенно другая ячейка ИРА, и Гилфордская четверка не имеет никакого отношения к теракту. Макандрю даже предлагает дать показания в пользу Джерри, но тюремная администрация препятствует этому.
+Здоровье Джузеппе постепенно ухудшается. У него развивается эмфизема легких, он начинает задыхаться, но продолжает бороться за справедливость. Он проводит дни в тюремной библиотеке, изучая правовые документы, составляя петиции, ища любые зацепки, которые могли бы помочь в деле. Его преданность и упорство начинают влиять на Джерри, который постепенно понимает силу характера своего отца.
+Через несколько лет после приговора дело привлекает внимание адвоката Гарет Пирс, которая специализируется на судебных ошибках и неправомерных осуждениях. Она начинает собственное расследование обстоятельств ареста и суда над Гилфордской четверкой. Пирс обнаруживает множество нарушений в ведении дела: принуждение к даче показаний, сокрытие улик, фабрикация доказательств.
+Особенно важным становится открытие того факта, что у полиции имелись алиби для некоторых из обвиняемых на момент совершения теракта, но эти материалы не были представлены в суде. Выясняется также, что показания свидетелей были искажены, а некоторые улики были сфабрикованы. Пирс находит документы, подтверждающие, что следователи знали о слабости своих доказательств, но скрывали это от суда и защиты.
+Джузеппе продолжает слабеть, но его дух остается несломленным. Он часами беседует с Джерри о жизни, о важности прощения, о том, что ненависть разрушает человека изнутри. Он рассказывает сыну о своей молодости, о том, как встретил его мать, о своих мечтах и надеждах. Эти разговоры помогают Джерри лучше понять отца и оценить его жертвы.
+Когда состояние Джузеппе критически ухудшается, Джерри просит администрацию тюрьмы о переводе отца в госпиталь, но получает отказ. Джузеппе умирает в тюремной камере на руках у сына, так и не дождавшись справедливости. Его последние слова Джерри - это просьба не терять надежду и продолжать борьбу за правду.
+Смерть отца становится переломным моментом для Джерри. Он перестает быть пассивным узником и начинает активно помогать Гарет Пирс в подготовке апелляции. Джерри изучает материалы дела, вспоминает детали своего ареста и допросов, помогает адвокату найти новые доказательства невиновности.
+Пирс удается добиться пересмотра дела. Она представляет суду документы, которые были скрыты во время первого процесса, показания свидетелей, подтверждающих алиби обвиняемых, и экспертные заключения, опровергающие обвинения в изготовлении взрывчатых веществ. Особое внимание уделяется показаниям Джо Макандрю, который официально подтверждает, что Гилфордская четверка не имела отношения к теракту.
+Новое судебное заседание проходит в совершенно иной атмосфере. Общественное мнение начинает поворачиваться в пользу осужденных, СМИ освещают нарушения, допущенные во время следствия. Судья внимательно изучает новые доказательства и приходит к выводу, что имело место грубейшее нарушение правосудия.
+После пятнадцати лет заключения суд отменяет приговор Гилфордской четверке. Джерри, Пол, Пэдди и Кэрол освобождаются из тюрьмы. Выходя из здания суда, Джерри видит толпу журналистов, активистов и сторонников. Он произносит эмоциональную речь, в которой говорит о невиновности своего отца, о том, что Джузеппе умер за правду, и о необходимости реформы судебной системы, чтобы подобные ошибки больше не повторялись.
+Фильм завершается кадрами реального Джерри Конлона и посвящением памяти Джузеппе Конлона и других невинных жертв судебных ошибок. Подчеркивается, что борьба за справедливость продолжается, и что память об этих людях должна служить напоминанием о важности защиты прав человека и справедливого судопроизводства.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Прощай, моя наложница', 'Two boys meet at an opera training school in Peking in 1924. Their resulting friendship will span nearly 70 years and will endure some of the most troublesome times in China''s history.', '1993-01-01', 1, '171 minutes', 'Ba wang bie ji', 8.1, 'Фильм открывается в 1977 году, когда два пожилых актера Пекинской оперы Чэн Дие и Дуань Сяолоу встречаются после одиннадцати лет разлуки для последней репетиции легендарной оперы "Прощание наложницы с князем". Затем действие переносится в 1924 год, где начинается основная история.
+В старом Пекине проститутка приводит своего девятилетнего сына Доуцзы в знаменитую школу Пекинской оперы мастера Гуань. Мальчик рожден с шестью пальцами на руке, что считается дурным знаком. Мать отрубает лишний палец кухонным ножом прямо у ворот школы, чтобы его приняли. Доуцзы становится учеником и получает новое имя - Чэн Дие. В школе царят жестокие нравы - детей регулярно избивают, морят голодом и подвергают нечеловеческим тренировкам.
+Единственным другом Чэн Дие становится старший ученик Шитоу, который защищает его от издевательств других мальчиков и учителей. Шитоу крепкий и решительный, в отличие от хрупкого и женственного Чэн Дие. Из-за своей внешности Чэн Дие определяют играть женские роли (дань), а Шитоу станет исполнителем мужских партий (шэн). Обучение длится годами и включает изучение акробатики, пения, танца и актерского мастерства.
+Ключевой момент в становлении Чэн Дие происходит во время изучения классической пьесы "Прощание наложницы с князем". В этой опере рассказывается история князя Сян Юя и его любимой наложницы Юй Цзи. Когда князь терпит поражение в битве и окружен врагами, наложница исполняет для него последний танец, а затем убивает себя мечом, чтобы не стать обузой для возлюбленного. Первоначально Чэн Дие неправильно произносит одну из ключевых фраз, говоря "я по природе мужчина" вместо "я по природе женщина". За это его жестоко избивают, пока он не начинает правильно произносить текст. Этот момент символически ломает его мужскую идентичность.
+По мере взросления Чэн Дие все больше погружается в мир женских ролей. Он начинает чувствовать себя женщиной не только на сцене, но и в жизни. Шитоу получает сценическое имя Дуань Сяолоу и становится звездой мужских партий. Их дуэт в "Прощании наложницы" приобретает легендарную славу в Пекине. Чэн Дие влюбляется в своего сценического партнера и воспринимает их отношения как реальные, а не театральные.
+В это время в жизнь Дуань Сяолоу входит Цзюсянь - красивая и умная проститутка из известного борделя. Она влюбляется в актера и всячески добивается его внимания. Дуань Сяолоу поначалу относится к ней как к обычной клиентке, но постепенно проникается к ней чувствами. Цзюсянь решает порвать с прошлым и выкупает себя из борделя, чтобы стать респектабельной женщиной.
+Чэн Дие болезненно переживает растущую близость друга с женщиной. Он чувствует себя преданным и начинает искать утешение в опиуме. В его жизни появляется богатый покровитель Юань Шиу - коллекционер антиквариата и ценитель искусства, который становится его любовником и поставщиком наркотика. Юань Шиу устраивает для Чэн Дие роскошные приемы и осыпает подарками, но актер не может забыть Дуань Сяолоу.
+Когда начинается японская оккупация Китая в 1937 году, ситуация кардинально меняется. Японские офицеры требуют от актеров выступлений для развлечения оккупационных войск. Многие артисты оказываются перед трудным выбором между выживанием и патриотическими принципами. Дуань Сяолоу категорически отказывается выступать для врагов и открыто выражает свою ненависть к захватчикам. За это его арестовывают и подвергают пыткам.
+Цзюсянь в отчаянии умоляет Чэн Дие спасти мужа. Несмотря на ревность к ней, Чэн Дие соглашается выступить перед японским генералом, который славится своей жестокостью, но также является ценителем китайского искусства. Генерал очарован мастерством Чэн Дие и его исполнением роли наложницы. Он освобождает Дуань Сяолоу, но теперь Чэн Дие считается коллаборационистом.
+Дуань Сяолоу возвращается домой сломленным пытками, но живым. Он женится на Цзюсянь, что окончательно разбивает сердце Чэн Дие. Актер все больше погружается в наркотическое забытье и начинает терять грань между реальностью и театральными ролями. Он начинает верить, что действительно является женщиной и наложницей князя.
+После поражения Японии и окончания войны в Китае начинается гражданская война между коммунистами и гомендановцами. Когда коммунисты побеждают и провозглашают Китайскую Народную Республику в 1949 году, начинается новая эра. Традиционное искусство объявляется "феодальным пережитком" и подвергается критике. Актеров заставляют изучать новые "революционные" пьесы и отказываться от классического репертуара.
+Дуань Сяолоу пытается приспособиться к новой действительности и даже записывается в коммунистическую партию. Цзюсянь рожает ребенка, и семья кажется счастливой. Но Чэн Дие не может принять новые реалии и продолжает тайно исполнять классические роли для узкого круга ценителей.
+Настоящая катастрофа разражается во время Культурной революции в 1966 году. Красногвардейцы - фанатичные молодые революционеры - начинают беспощадную борьбу с "четырьмя старостями". Они громят театры, жгут костюмы и декорации, избивают и унижают актеров старшего поколения.
+Чэн Дие и Дуань Сяолоу арестовывают и устраивают над ними публичный суд. Их обвиняют в пропаганде феодальной идеологии, связях с японскими оккупантами, гомосексуализме и других "преступлениях против народа". Толпа требует от них публичного покаяния и взаимных обвинений.
+Под невыносимым давлением и угрозами расправы над семьей Дуань Сяолоу ломается и отрекается от друга. Он называет Чэн Дие извращенцем, предателем и плохим влиянием на китайскую молодежь. Чэн Дие, потрясенный предательством единственного близкого человека, в свою очередь обвиняет Дуань Сяолоу в связях с проституткой и буржуазном образе жизни.
+Цзюсянь не выдерживает публичного унижения и позора. Вернувшись домой после суда, она вешается на ремне в своей комнате. Ее смерть становится последней каплей в разрушении дружбы двух актеров. Дуань Сяолоу винит Чэн Дие в смерти жены, а тот обвиняет друга в собственном предательстве.
+Годы проходят в разлуке и взаимной ненависти. Культурная революция заканчивается со смертью Мао Цзэдуна в 1976 году, и начинается постепенная реабилитация традиционного искусства. В 1977 году, спустя одиннадцать лет, пожилые актеры встречаются снова.
+Дуань Сяолоу, поседевший и постаревший, приходит к Чэн Дие с предложением в последний раз исполнить их знаменитую сцену из "Прощания наложницы". Оба понимают, что это будет их последнее выступление - они слишком стары, а эпоха классической оперы безвозвратно ушла в прошлое.
+Во время репетиции в пустом театре оба актера пытаются восстановить прежнюю близость. Чэн Дие, несмотря на годы разлуки, по-прежнему любит своего сценического партнера. Дуань Сяолоу тоже понимает, что потерял самого преданного друга и соучастника своей жизни.
+В кульминационный момент, когда по сюжету оперы наложница Юй Цзи должна проститься с князем Сян Юем перед лицом неминуемого поражения, Чэн Дие полностью сливается со своей ролью. Он берет настоящий меч вместо театрального бутафорского и вонзает его себе в горло, точно повторяя действия своей героини.
+Умирая на руках потрясенного Дуань Сяолоу, Чэн Дие наконец обретает покой. Он прожил жизнь в постоянном конфликте между мужской биологической природой и женской театральной ролью, между реальностью и искусством, между любовью и дружбой. Его смерть становится последним и совершенным исполнением роли наложницы, которая предпочла смерть разлуке с возлюбленным.
+Фильм завершается тем, что Дуань Сяолоу остается один на сцене с телом друга, осознавая масштаб трагедии и собственной вины. Их история становится метафорой судьбы традиционной китайской культуры, которая была растоптана политическими катаклизмами XX века, но сохранила свою красоту и достоинство даже перед лицом смерти.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Подними красный фонарь', 'A young woman becomes the fourth wife of a wealthy lord, and must learn to live with the strict rules and tensions within the household.', '1991-01-01', 1, '125 minutes', 'Dà hóng denglong gaogao guà', 8.1, 'Фильм разворачивается в Китае 1920-х годов и рассказывает историю девятнадцатилетней Сунлянь, которая после смерти отца вынуждена стать четвертой женой богатого торговца Чэнь Цзуоцяня. Семья девушки находится в сложном финансовом положении, и этот брак представляется единственным способом обеспечить ее будущее. Сунлянь получила университетское образование и мечтала о независимой жизни, но обстоятельства заставляют ее принять традиционную роль наложницы в патриархальном доме.
+Особняк Чэнь представляет собой традиционный китайский комплекс с четырьмя отдельными дворами, каждый из которых принадлежит одной из жен. Первый двор занимает Юйру, старшая жена, которая уже не молода и потеряла благосклонность мужа, но сохраняет формальный статус главной супруги. Во втором дворе живет Чжоян, вторая жена, властная и амбициозная женщина средних лет, которая фактически управляет домашним хозяйством и имеет большое влияние на решения главы семьи. Третий двор принадлежит Мэйшань, молодой и красивой третьей жене, которая была оперной певицей до замужества. Она кокетлива, своенравна и привыкла быть в центре внимания мужа. Четвертый двор теперь отводится Сунлянь.
+В доме действует сложная система ритуалов и правил, связанных с красными фонарями. Каждый вечер муж выбирает, в каком дворе он проведет ночь, и там зажигают красные фонари, символизирующие его присутствие и благосклонность к конкретной жене. Жена, удостоенная визита, получает различные привилегии: ей делают массаж ног, подают изысканные блюда, прислуга относится к ней с особым почтением. Этот ритуал становится центром ежедневной борьбы между женами за внимание и власть в доме.
+Поначалу Сунлянь, будучи молодой и образованной, привлекает внимание мужа, и красные фонари часто зажигаются в ее дворе. Это вызывает ревность других жен, особенно Мэйшань, которая привыкла считать себя фавориткой. Между третьей и четвертой женами завязывается скрытая вражда. Мэйшань использует свое обаяние и женские хитрости, чтобы вернуть расположение мужа, устраивает небольшие провокации против Сунлянь. Чжоян, вторая жена, наблюдает за этими интригами и умело манипулирует ситуацией в своих интересах, натравливая соперниц друг на друга.
+Сунлянь постепенно понимает, что оказалась в ловушке патриархальной системы, где женщины лишены свободы и вынуждены бороться за крохи мужского внимания. Ее образование и прежние мечты о независимости кажутся здесь бесполезными. Она пытается адаптироваться к новым условиям, но ее прямолинейность и неумение интриговать делают ее уязвимой в этой среде.
+Ситуация осложняется, когда Сунлянь обнаруживает, что Мэйшань тайно встречается с семейным доктором Гао. В традиционной китайской семье измена жены каралась смертью, и Сунлиань получает в руки мощное оружие против соперницы. Однако она колеблется, понимая серьезность последствий. Тем временем Мэйшань, подозревая, что ее секрет раскрыт, усиливает атаки против Сунлянь, пытаясь скомпрометировать ее в глазах мужа.
+Кульминация наступает во время празднования дня рождения главы семьи. Мэйшань в состоянии алкогольного опьянения ведет себя вызывающе и в конце концов открыто оскорбляет Сунлянь перед всей семьей и гостями. В ответ на это унижение Сунлиань в порыве гнева рассказывает Чжоян о связи Мэйшань с доктором. Чжоян, которая давно искала способ избавиться от своевольной третьей жены, немедленно докладывает об измене мужу.
+Последствия оказываются ужасающими. Глава семьи, связанный традициями и необходимостью сохранить лицо, приказывает казнить Мэйшань. Ее вешают в одном из заброшенных помещений особняка, следуя древнему семейному правилу наказания за прелюбодеяние. Сунлиань становится свидетелем этой экзекуции и понимает, что своим доносом фактически подписала смертный приговор сопернице. Чувство вины и осознание собственного участия в этой жестокой системе потрясают ее.
+После смерти Мэйшань атмосфера в доме становится еще более угнетающей. Сунлиань впадает в глубокую депрессию, мучимая угрызениями совести. Она начинает терять связь с реальностью, часто бродит по дому как призрак, разговаривает сама с собой. Красные фонари в ее дворе зажигаются все реже, так как муж избегает ее, возможно, тоже испытывая дискомфорт от недавних событий.
+Психическое состояние Сунлянь продолжает ухудшаться. Она становится параноидальной, видит угрозы там, где их нет, не доверяет даже прислуге. Ее попытки бунта против системы выражаются в мелких актах неповиновения - она отказывается участвовать в семейных ритуалах, игнорирует правила поведения. Однако эти действия только усугубляют ее изоляцию в доме.
+В финале фильма проходит еще один год, и в дом приводят пятую жену - молодую девушку примерно того же возраста, в каком была Сунлиань год назад. Церемония встречи новой жены происходит в том же дворе, где когда-то поселилась сама Сунлиань. Зрители наблюдают тот же ритуал зажигания красных фонарей, те же надежды и ожидания в глазах молодой женщины. Тем временем Сунлиань, окончательно сломленная системой, превратилась в безумную женщину, которая бесцельно бродит по особняку. Она стала живым призраком собственной прежней жизни, предупреждением о том, что ожидает любую женщину, попавшую в эту ловушку патриархальной традиции. Фильм заканчивается символическим кадром, где красные фонари снова зажигаются, символизируя бесконечное повторение цикла угнетения и разрушения женских судеб в рамках жестокой системы, которая маскируется под респектабельные семейные традиции.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Dead Poets Society', 'Maverick teacher John Keating uses poetry to embolden his boarding school students to new heights of self-expression.', '1989-01-01', 1, '128 minutes', 'Dead Poets Society', 8.1, 'Действие фильма разворачивается в 1959 году в престижной частной школе для мальчиков Уэлтон Академии в штате Вермонт. Это элитное учебное заведение славится своими строгими традициями, дисциплиной и высокими академическими стандартами. Школа руководствуется четырьмя столпами: традиция, честь, дисциплина и превосходство. Большинство выпускников поступают в престижные университеты и становятся врачами, юристами или бизнесменами, следуя ожиданиям своих семей.
+В начале учебного года в школу приходит новый преподаватель английской литературы Джон Китинг, который сам когда-то был выпускником Уэлтона. Китинг кардинально отличается от других преподавателей своими нетрадиционными методами обучения и свободолюбивым подходом к образованию. На первом же занятии он заводит студентов в коридор школы, где висят фотографии прежних выпускников, и произносит речь о том, что все эти люди уже мертвы, но когда-то были молодыми и полными надежд, как его нынешние ученики.
+Среди студентов Китинга выделяются несколько ключевых персонажей. Нил Перри - талантливый и чувствительный юноша, мечтающий стать актером, но его отец категорически против этого и настаивает на том, чтобы сын стал врачом. Тодд Андерсон - застенчивый новичок школы, младший брат бывшего выпускника, страдающий от неуверенности в себе и живущий в тени успехов старшего брата. Нокс Овер стрит влюбляется в девушку Крис, которая встречается с местным футболистом. Чарли Далтон - бунтарь и шутник, который больше других воодушевляется идеями свободы. Ричард Камерон - прилежный студент, строго следующий правилам. Стивен Микс и Джерард Питтс - близкие друзья, увлекающиеся радиотехникой.
+Китинг использует необычные методы преподавания, которые шокируют как студентов, так и коллег. Он заставляет учеников вырвать из учебника страницы с формальным анализом поэзии, объясняя, что поэзию нельзя измерить математическими формулами. Он учит их смотреть на мир под разными углами, буквально заставляя встать на парты. Китинг рассказывает студентам о концепции "carpe diem" - "лови день", призывая их жить полной жизнью и следовать своим мечтам.
+Студенты находят в старом школьном ежегоднике информацию о том, что Китинг в свое время был членом "Общества мертвых поэтов" - тайного клуба, где студенты собирались в пещере и читали поэзию. Вдохновленные этой идеей, Нил и его друзья решают возродить общество. Они начинают тайно встречаться в старой пещере недалеко от школы, где читают стихи классиков и собственные произведения, обсуждают литературу и делятся своими мыслями о жизни.
+Под влиянием учения Китинга каждый из студентов начинает меняться. Нил тайно от отца записывается на прослушивание в местный театр и получает главную роль в постановке "Сон в летнюю ночь" Шекспира. Он страстно готовится к роли, находя в театре то, что делает его по-настоящему счастливым. Тодд постепенно преодолевает свою застенчивость благодаря поддержке Китинга и друзей. Особенно запоминается урок, на котором Китинг помогает Тодду импровизировать стихотворение, показывая ему, что у него есть собственный голос и что-то важное, что можно сказать миру.
+Нокс Овер стрит, воодушевленный призывом "лови день", решается признаться в любви Крис. Он появляется на вечеринке, где она проводит время со своим парнем, и, несмотря на унижения и даже физическую расправу, не сдается. В конце концов его искренность и настойчивость производят впечатление на девушку.
+Чарли Далтон заходит дальше всех в своем бунтарстве. Он публикует в школьной газете статью от имени Общества мертвых поэтов, требуя принятия девочек в Уэлтон. Когда директор школы Гейл Нолан вызывает его в кабинет, Чарли не только не раскаивается, но и дерзит администрации. За это его исключают из школы, но перед уходом он предупреждает друзей быть осторожными.
+Тем временем отец Нила узнает о его участии в театральной постановке. В ярости он приезжает на спектакль, где Нил блестяще исполняет роль Пака. После представления отец устраивает сыну скандал и объявляет, что переводит его в военную академию, а затем тот должен будет изучать медицину. Нил пытается объяснить отцу, что театр - это его призвание, что он хочет стать актером, но отец категорически отказывается слушать.
+Той же ночью в отчаянии Нил возвращается домой, где все спят. Он идет в кабинет отца, берет его служебный пистолет и стреляет себе в голову. Трагическая смерть талантливого юноши потрясает всю школу. Администрация немедленно начинает расследование, пытаясь найти причины произошедшего и того, кто может быть за это ответственен.
+Родители Нила и школьная администрация обвиняют в трагедии Джона Китинга, утверждая, что его нетрадиционные методы преподавания и призывы к свободе мышления довели мальчика до самоубийства. Директор Нолан лично проводит допросы студентов, заставляя их подписать документ, обвиняющий Китинга в подстрекательстве к созданию несанкционированного общества и в негативном влиянии на учеников.
+Большинство студентов, испуганные возможными последствиями и давлением со стороны родителей и администрации, подписывают обвинительный документ. Особенно активно сотрудничает с администрацией Ричард Камерон, который рассказывает все подробности оЩестве мертвых поэтов и деятельности Китинга. Тодд отказывается подписывать документ, но его заставляют это сделать.
+Китинга увольняют из школы. В последний день он приходит в свой кабинет за личными вещами как раз в тот момент, когда директор Нолан сам ведет урок английской литературы у его бывших учеников, вернувшись к традиционным методам преподавания. Нолан заставляет студентов читать учебник формальным, скучным тоном, что является полной противоположностью живым и вдохновляющим урокам Китинга.
+Когда Китинг собирает свои вещи и направляется к выходу, Тодд Андерсон, преодолев свою застенчивость, внезапно встает на парту и обращается к учителю словами "О капитан, мой капитан" - цитатой из стихотворения Уолта Уитмена, которое Китинг часто использовал на своих уроках. Несмотря на крики Нолана и угрозы исключения, один за другим большинство учеников поднимаются на парты, демонстрируя свою благодарность и уважение к учителю, который изменил их жизни.
+Китинг, глубоко тронутый этим жестом, благодарит студентов и покидает класс. Фильм заканчивается этой сценой, показывающей, что, несмотря на трагедию и попытки администрации подавить свободу мышления, идеи Китинга о важности индивидуальности, критического мышления и следования своим мечтам укоренились в сердцах его учеников. Хотя сам учитель вынужден уйти, его влияние на молодые умы остается, и семена свободомыслия, которые он посеял, продолжат расти.
+Фильм поднимает важные темы о конфликте между традициями и новаторством, о давлении общественных ожиданий на молодежь, о важности поддержки индивидуальности и творческого мышления в образовании, а также о трагических последствиях, к которым может привести неспособность родителей понять и принять мечты своих детей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Останься со мной', 'After the death of one of his friends, a writer recounts a childhood journey with his friends to find the body of a missing boy.', '1986-01-01', 1, '89 minutes', 'Stand by Me', 8.1, 'Фильм разворачивается в небольшом городке Касл-Рок в штате Орегон в конце лета 1959 года. История рассказывается от лица взрослого писателя Гордона Лашанса, который вспоминает события своего двенадцатилетого возраста. Горди живет в семье, где его постоянно сравнивают с старшим братом Денни, звездой местной футбольной команды и гордостью родителей. Денни недавно погиб в автомобильной аварии, и Горди чувствует, что родители винят его в том, что выжил не тот сын. Мальчик страдает от недостатка внимания и понимания в семье, находит утешение в написании рассказов и дружбе с местными ребятами.
+Лучший друг Горди - Крис Чемберс, умный и чувствительный мальчик из неблагополучной семьы. Его отец алкоголик, старший брат имеет репутацию хулигана и мелкого преступника. Несмотря на ум и потенциал, Крис уже несет на себе клеймо семейной репутации - учителя и горожане автоматически записывают его в неудачники и потенциальные проблемы. Он болезненно переживает эту несправедливость, но пытается бороться с предрассудками. К их компании также принадлежат Тедди Дюшан, эксцентричный мальчик с поврежденным слухом и ухом, которое изуродовал его отец-ветеран войны в припадке посттравматического стресса, и Верн Тессио, полноватый и наивный ребенок, который служит источником комического relief в группе, но при этом искренне предан друзьям.
+Все меняется, когда Верн случайно подслушивает разговор своего старшего брата Билли с друзьями. Он узнает, что они обнаружили тело пропавшего мальчика Рэя Брауэра возле железнодорожных путей в лесу, но не сообщили об этом властям, опасаясь неприятностей, связанных с их незаконной поездкой на угнанной машине. Верн делится этой информацией с друзьями, и у мальчиков возникает план найти тело и сообщить о находке властям, что принесет им славу героев и признание в городе.
+Родители мальчиков отсутствуют или не обращают на них внимания, поэтому четверка легко организовывает двухдневный поход к предполагаемому месту находки. Они берут с собой минимум провизии, спальные мешки и отправляются пешком по железнодорожным путям через лес. Путешествие становится для них настоящим приключением и испытанием на прочность дружбы. По дороге мальчики делятся своими мечтами, страхами, рассказывают истории. Горди сочиняет для друзей рассказ о мальчике по имени Лард-Попой Хоган, который отомстил всему городу за постоянные унижения, что становится метафорой их собственного желания доказать свою значимость.
+Во время путешествия происходит несколько опасных и значимых эпизодов. Мальчики переходят высокий железнодорожный мост над рекой, когда внезапно появляется поезд. Им приходится бежать по мосту, рискуя жизнью, что становится символом их перехода от детства к более взрослому пониманию опасности и смертности. В другом эпизоде они пытаются перейти болото и подвергаются атаке пиявок, что вызывает панику, особенно у Горди, который обнаруживает пиявок на самых интимных частях тела.
+Ночью у костра мальчики ведут откровенные разговоры о будущем, о том, что их ждет в старших классах, о своих семьях и проблемах. Крис признается Горди, что однажды украл деньги из школьной кассы, но потом вернул их учительнице, которая, однако, присвоила их себе и обвинила его в краже. Этот эпизод показывает несправедливость системы по отношению к детям из неблагополучных семей. Крис понимает, что его уже записали в преступники, но при этом мечтает вырваться из этого порочного круга.
+На следующий день мальчики наконец находят тело Рэя Брауэра в лесной чаще рядом с железнодорожными путями. Зрелище мертвого ребенка их возраста потрясает их сильнее, чем они ожидали. Смерть из абстрактного понятия превращается в конкретную реальность. Горди особенно тяжело переживает находку, так как видит в мертвом мальчике отражение собственной смертности и вспоминает смерть брата.
+Их планы прославиться рушатся с появлением местной банды старших подростков во главе с Эйсом Меррилом, старшим братом Криса, и его приятелем Билли, братом Верна. Банда прибыла на машинах, узнав о планах младших мальчиков от Билли. Эйс и его друзья требуют, чтобы младшие ушли и позволили им присвоить славу находки тела. Возникает напряженное противостояние, во время которого Крис впервые в жизни дает отпор старшему брату, направляя на него пистолет, который взял из дома отца. Этот момент становится кульминацией его взросления и попыткой разорвать семейные стереотипы.
+После напряженной психологической дуэли старшие подростки отступают, но мальчики понимают, что их победа временная и что за нее придется расплачиваться позже. Они принимают решение не претендовать на славу, а анонимно сообщить властям о местонахождении тела. Это решение показывает их моральную зрелость и понимание того, что некоторые вещи важнее личной выгоды.
+На обратном пути домой атмосфера в группе меняется. Приключение закончилось, реальность ждет их впереди, и каждый понимает, что что-то изменилось безвозвратно. Они больше не просто дети, играющие в героев, а люди, столкнувшиеся с серьезными жизненными вопросами. Дружба между ними остается крепкой, но появляется понимание того, что жизнь может развести их в разные стороны.
+Взрослый рассказчик завершает историю информацией о дальнейших судьбах друзей. Горди стал успешным писателем, осуществив свою детскую мечту. Крис, несмотря на семейную репутацию и предрассудки, смог поступить в университет, стал адвокатом, но трагически погиб, пытаясь разнять драку в ресторане. Тедди и Верн не смогли преодолеть ограничения своего социального происхождения - Тедди был отвергнут армией из-за проблем со слухом и зрением, что разрушило его главную мечту, Верн женился рано и работал на стройке. Фильм заканчивается философским размышлением о том, что такие друзья, как в двенадцать лет, больше никогда не встречаются в жизни, и что это нормально, потому что детство и те особые моменты единения остаются в памяти как самые драгоценные переживания, формирующие личность на всю жизнь.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Взвод', 'Chris Taylor, a neophyte recruit in Vietnam, finds himself caught in a battle of wills between two sergeants, one good and the other evil. A shrewd examination of the brutality of war and the duality of man in conflict.', '1986-01-01', 1, '120 minutes', 'Platoon', 8.1, 'Фильм рассказывает историю молодого американского солдата Криса Тейлора, который в 1967 году добровольно записывается в армию и отправляется воевать во Вьетнам. Крис происходит из привилегированной семьи и мог бы избежать призыва, поступив в колледж, но он считает несправедливым, что вместо таких как он воюют и умирают бедные парни из рабочих семей. Движимый идеалистическими представлениями о долге и справедливости, он принимает решение добровольно пойти на войну.
+По прибытии во Вьетнам Крис попадает в 25-й пехотный взвод, базирующийся недалеко от камбоджийской границы. С первых дней молодой солдат сталкивается с жестокой реальностью войны в джунглях. Он понимает, что романтические представления о войне как о героическом предприятии не имеют ничего общего с действительностью. Вместо этого он видит грязь, страх, усталость, болезни и постоянную угрозу смерти от невидимого врага.
+Крис быстро обнаруживает, что взвод разделен на две противоборствующие группировки, возглавляемые двумя сержантами с диаметрально противоположными взглядами на войну и методы ее ведения. Сержант Элайас Гродин представляет более гуманный подход к войне. Он опытный солдат, который прошел через множество сражений, но сохранил человечность и моральные принципы. Элайас курит марихуану, слушает рок-музыку и пытается защитить невинных мирных жителей от жестокости войны. Он становится наставником и фигурой отца для молодых солдат, включая Криса.
+Противоположность Элайасу представляет сержант Боб Барнс, покрытый шрамами ветеран, который считает, что на войне все средства хороши для выживания. Барнс циничен, жесток и готов убивать любого, кто представляет хотя бы потенциальную угрозу, включая мирных жителей. Он презирает слабость и считает, что сентиментальность может стоить жизни американским солдатам. Вокруг Барнса группируются солдаты, разделяющие его методы и философию.
+Крис поначалу с трудом приспосабливается к условиям войны. Он страдает от тропических болезней, укусов насекомых, постоянной усталости и стресса. Другие солдаты относятся к нему с подозрением, считая богатым мальчиком, который играет в солдатики. Постепенно, однако, Крис закаляется и становится полноценным членом взвода.
+Во время одной из операций взвод обнаруживает тайник с оружием и рисом в вьетнамской деревне. Барнс подозревает, что жители деревни сотрудничают с Вьетконгом и скрывают информацию о местонахождении вражеских сил. Он начинает жестокий допрос стариков и женщин, угрожая им и применяя физическое насилие. Когда одна из женщин отказывается говорить, Барнс хладнокровно убивает ее мужа на глазах у всех жителей.
+Элайас пытается остановить Барнса, между ними вспыхивает жаркий спор о методах ведения войны. Элайас угрожает доложить о военных преступлениях Барнса командованию. Ситуация накаляется, когда некоторые солдаты под влиянием Барнса начинают поджигать дома и угрожать мирным жителям. Крис оказывается свидетелем попытки изнасилования вьетнамской девочки и вмешивается, чтобы защитить ее.
+После этого инцидента отношения между сторонниками Элайаса и Барнса становятся еще более напряженными. Взвод фактически разделяется на два враждующих лагеря. Крис постепенно склоняется на сторону Элайаса, видя в нем более достойную модель поведения на войне.
+Во время очередной операции взвод попадает в засаду крупных сил Вьетконга. Завязывается ожесточенный бой, в ходе которого американцы несут тяжелые потери. В хаосе сражения Барнс намеренно направляет артиллерийский огонь на позицию, где находится Элайас, пытаясь избавиться от своего противника. Элайас получает смертельные ранения, но ему удается выбраться из джунглей на открытое пространство, где его видят солдаты в вертолете.
+Элайас падает на колени под градом пуль Вьетконга, воздевая руки к небу в жесте, который становится одним из самых запоминающихся образов фильма. Его смерть глубоко потрясает Криса, который начинает подозревать, что Барнс намеренно подставил Элайаса.
+После эвакуации раненых Крис прямо обвиняет Барнса в убийстве Элайаса. Барнс цинично отвечает, что на войне такие вещи случаются, и угрожает Крису расправой, если тот продолжит распространять обвинения. Напряжение между ними достигает предела, и только вмешательство других солдат предотвращает открытое столкновение.
+Вскоре после этого взвод получает приказ об эвакуации с занимаемых позиций. Однако в последнюю ночь они подвергаются массированной атаке объединенных сил Вьетконга и северовьетнамской армии. Враг атакует с превосходящими силами, используя артиллерию, минометы и пехоту.
+Начинается ожесточенное ночное сражение. Американские позиции подвергаются интенсивному обстрелу, многие солдаты гибнут или получают ранения. Крис сражается отчаянно, видя, как его товарищи падают один за другим. В какой-то момент его контузит взрывом, и он теряет сознание.
+Когда Крис приходит в себя, битва все еще продолжается. Он видит, как Барнс методично добивает раненых американских солдат, очевидно потерявший рассудок от ужасов войны. Когда Барнс замечает Криса, он направляет на него автомат, готовясь убить. В этот критический момент американская авиация наносит удар напалмом по позициям противника, взрыв отбрасывает обоих солдат.
+Наутро, когда подходят подкрепления и эвакуируют выживших, Крис находит тяжело раненного Барнса. Сержант просит Криса вызвать медиков, но молодой солдат вместо этого направляет на него автомат. В этот момент Крис окончательно утрачивает невинность и совершает свое первое хладнокровное убийство, мстя за смерть Элайаса и всех других солдат, которые пострадали от жестокости Барнса.
+Крис получает ранение и эвакуируется с поля боя. В вертолете он размышляет о своем опыте войны, о том, как она изменила его, превратив идеалистичного молодого человека в закаленного убийцу. Он понимает, что война не только физически ранила его, но и нанесла непоправимый ущерб его душе.
+В финальном монологе Крис размышляет о двух сержантах как о символах двух сторон человеческой натуры - добра и зла, которые сражались друг с другом через него и других солдат. Он говорит о том, что они были его отцами на этой войне, и теперь ему предстоит жить с наследием обоих. Крис выражает надежду, что выжившие солдаты смогут найти смысл в своих страданиях и что их жертвы не были напрасными.
+Фильм заканчается словами посвящения всем американским ветеранам Вьетнамской войны. Через историю Криса Тейлора режиссер показывает, как война разрушает невинность, развращает человеческую душу и заставляет людей делать невозможный выбор между выживанием и сохранением человечности. Фильм не героизирует войну, а показывает ее как трагедию, которая одинаково разрушительна для всех участников, независимо от того, на какой стороне они сражаются.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Париж, Техас', 'Travis Henderson, an aimless drifter who has been missing for four years, wanders out of the desert and must reconnect with society, himself, his life, and his family.', '1984-01-01', 1, '145 minutes', 'Paris, Texas', 8.1, 'Фильм открывается образом бескрайней техасской пустыни, где одинокая фигура мужчины бредет по раскаленной земле под палящим солнцем. Этот человек - Трэвис Хендерсон, который провел в пустыне четыре года, скитаясь как потерянная душа после того, как его жизнь разрушилась. Он одет в изношенный красный костюм, бейсболку и ботинки, которые развалились от долгой ходьбы. Трэвис не говорит, находится в состоянии амнезии или глубокой травмы, и когда его находят пограничники, у него есть только документы и фотография участка земли в городке Париж, штат Техас.
+Власти связываются с его братом Уолтом, который живет в Лос-Анджелесе и работает в рекламном бизнесе. Уолт женат на француженке Анне, и вместе они воспитывают Хантера, семилетнего сына Трэвиса, который попал к ним после исчезновения родителей. Уолт прилетает в Техас, чтобы забрать брата, но Трэвис по-прежнему молчит и ведет себя как дикий зверь. Он не узнает брата, не реагирует на попытки общения, и Уолт понимает, что психическое состояние Трэвиса крайне тяжелое.
+Во время поездки обратно в Лос-Анджелес Трэвис внезапно выходит из машины на заправке и снова исчезает в пустыне. Уолт вынужден разыскивать его, и когда находит, Трэвис сидит на холме и смотрит на горизонт. Постепенно, очень медленно, он начинает возвращаться к реальности. Первые слова, которые он произносит после долгого молчания, связаны с участком земли в Париже, Техас, который он когда-то купил, потому что именно там, по его представлениям, был зачат - его отец рассказывал ему, что встретил его мать в городе Париж, Техас.
+По возвращении в Лос-Анджелес Трэвис медленно адаптируется к цивилизованной жизни в доме Уолта и Анны. Самое сложное для него - восстановить отношения с сыном Хантером, который за четыре года привык считать Уолта и Анну своими родителями. Мальчик сначала избегает Трэвиса, боится его, не понимает, кто этот странный человек и почему все говорят, что это его отец. Хантер счастлив в своей текущей жизни и не хочет перемен.
+Трэвис терпеливо и осторожно пытается наладить контакт с сыном. Он покупает ему подарки, пытается играть с ним, рассказывает истории. Постепенно лед тает, и между отцом и сыном начинают формироваться новые отношения. Хантер начинает видеть в Трэвисе не угрозу, а человека, который искренне его любит. Особенно их сближает совместный просмотр домашних видеозаписей, на которых запечатлена их семейная жизнь до катастрофы - Трэвис, его жена Джейн и маленький Хантер выглядят счастливой семьей.
+Из разговоров с Уолтом и Анной зритель постепенно узнает предысторию трагедии. Трэвис был одержим ревностью к своей красивой жене Джейн. Его любовь к ней была настолько интенсивной и собственнической, что превратилась в разрушительную страсть. Он подозревал ее в изменах, следил за ней, устраивал сцены ревности. Ситуация достигла критической точки четыре года назад, когда произошла страшная ссора, в результате которой загорелся их дом. Точные обстоятельства того, что произошло, остаются неясными, но очевидно, что инцидент был настолько травматичным, что разрушил их брак. Джейн исчезла с маленьким Хантером, потом мальчика оставили у Уолта, а Трэвис ушел в пустыню.
+Теперь, частично восстановившись психически, Трэвис одержим идеей найти Джейн и воссоединить семью. Он начинает собственное расследование, используя банковские записи и другие следы. Выясняется, что Джейн регулярно переводит деньги на счет Хантера из Хьюстона. Трэвис убеждает сначала скептически настроенного Уолта, что он способен взять на себя ответственность за сына, и забирает Хантера из Лос-Анджелеса. Они отправляются в путешествие в Хьюстон на красном пикапе, который Трэвис покупает.
+Во время поездки отношения между отцом и сыном окончательно налаживаются. Хантер видит, что Трэвис изменился, стал более спокойным и ответственным. Они останавливаются в мотелях, едят в придорожных кафе, и это путешествие становится для них временем настоящего сближения. Хантер начинает называть Трэвиса папой и с нетерпением ждет встречи с матерью, которую он помнит смутно.
+В Хьюстоне поиски приводят их в стрип-клуб особого типа, где клиенты могут разговаривать с девушками через односторонние зеркала по телефону, но не могут их видеть или прикасаться к ним. Трэвис обнаруживает, что Джейн работает там под именем Клэр. Этот выбор работы символичен - она позволяет мужчинам видеть ее, но создает физический барьер, защищающий ее от реального контакта и возможной боли.
+Трэвис несколько раз приходит в это заведение, но не может заставить себя заговорить с Джейн напрямую. Он понимает, что их встреча будет болезненной для обеих сторон. Наконец он решается на разговор, но не называет своего имени. Сидя по одну сторону одностороннего зеркала, он начинает рассказывать Джейн историю их любви и разрушения, говоря о себе в третьем лице, как о некоем мужчине, которого он якобы знал.
+Этот разговор становится кульминацией фильма и одной из самых эмоциональных сцен в истории кинематографа. Трэвис рассказывает о том, как сильно этот человек любил свою жену, как эта любовь превратилась в одержимость, как ревность отравила их отношения. Он описывает, как мужчина начал контролировать каждый шаг жены, как он привязывал ее к постели, чтобы она не могла уйти, пока он на работе. Постепенно Джейн понимает, что разговаривает с самим Трэвисом, и ее реакция показывает, как глубоко его поведение ее травмировало.
+Трэвис продолжает свою исповедь, рассказывая о последней ночи, когда их ссора достигла апогея. В порыве ярости и отчаяния он облил бензином себя и дом, угрожая самоубийством. Джейн пыталась остановить его, и в результате начался пожар. Оба получили ожоги, но физические раны оказались меньшим злом по сравнению с эмоциональными травмами. После этого инцидента стало ясно, что их отношения невозможно восстановить.
+Джейн плачет, слушая эту историю, и признается, что тоже виновата в разрушении их брака. Она говорит, что после рождения Хантера чувствовала себя в ловушке, что хотела свободы и, возможно, давала Трэвису поводы для ревности. Их разговор становится взаимным отпущением грехов, попыткой понять и простить друг друга за причиненную боль.
+В конце разговора Трэвис сообщает Джейн, что Хантер ждет ее в отеле, и дает адрес. Он понимает, что их с Джейн время прошло, что они не могут вернуться к прежним отношениям, но их сын заслуживает быть с матерью. Это решение требует от Трэвиса огромного самопожертвования - он отказывается от единственного, что у него осталось, ради счастья сына.
+Трэвис возвращается в отель и объясняет Хантеру, что мама придет за ним, но что сам он не останется. Мальчик не понимает этого решения и умоляет отца остаться. Эта сцена разрывает сердце - ребенок только что обрел отца и снова его теряет. Но Трэвис понимает, что его присутствие осложнит жизнь и Джейн, и Хантеру. Он оставляет сына в отеле и уезжает.
+Финальная сцена показывает воссоединение матери и сына в отеле, а затем Трэвиса, который едет в своем красном пикапе по ночной автостраде, снова один, но теперь не как сломленный человек, а как тот, кто нашел в себе силы сделать правильный выбор. Его путешествие в пустыню четыре года назад было бегством от ответственности и боли. Теперь его отъезд - это осознанное решение взрослого человека, который принимает последствия своих действий и ставит благополучие близких выше собственных желаний. Фильм заканчивается на дороге, символизируя, что жизнь продолжается, что каждый должен найти свой путь к искуплению и что иногда самая большая любовь проявляется в способности отпустить.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Навсикая из Долины Ветров', 'Warrior and pacifist Princess Nausicaä desperately struggles to prevent two warring nations from destroying themselves and their dying planet.', '1984-01-01', 1, '117 minutes', 'Kaze no tani no Naushika', 8.1, 'Действие фильма происходит через тысячу лет после Семи Дней Огня - глобальной экологической катастрофы, которая разрушила индустриальную цивилизацию и превратила большую часть Земли в токсичный лес, называемый Фукай или Море Гниения. Этот лес населен гигантскими насекомыми-мутантами, среди которых самыми опасными являются Омы - огромные жукообразные существа с множеством глаз, способные уничтожать целые армии.
+В небольшой Долине Ветров, защищенной от ядовитых спор морскими ветрами, живет принцесса Навсикая - шестнадцатилетняя девушка с удивительным даром понимать природу и животных. Она единственная из людей умеет общаться с насекомыми и не боится заходить в токсичный лес. Навсикая изучает споры и растения Фукая, пытаясь понять природу загрязнения, и обнаруживает, что под лесом растут чистые кристаллы, а сам лес медленно очищает землю от токсинов, накопленных древней цивилизацией.
+Правитель долины, отец Навсикаи, серьезно болен от ядовитых спор. Девушка заботится о нем и управляет мирным народом, который научился жить в гармонии с природой. Жители долины используют ветряные мельницы для получения энергии и выращивают растения, способные фильтровать воздух.
+Однажды ночью в долину падает грузовой корабль королевства Толмекия. Навсикая обнаруживает, что корабль перевозил зародыш Бога Воина - гигантского биомеханического оружия времен Семи Дней Огня. Единственной выжившей в катастрофе оказывается принцесса Ластель из города-государства Пежитэ, которая перед смертью передает Навсикае загадочный камень и просит уничтожить груз.
+На следующий день в долину вторгается армада воздушных кораблей Толмекии под командованием принцессы Кушаны - амбициозной и жестокой военачальницы в золотых доспехах. Толмекийцы захватывают долину и забирают зародыш Бога Воина, планируя использовать его для уничтожения токсичного леса и создания новой империи. Во время захвата солдаты убивают старого короля, и Навсикая в гневе убивает нескольких толмекийцев, прежде чем ее останавливает мастер меча Юпа - странствующий воин, который служит наставником принцессе.
+Кушана берет Навсикаю в заложницы и отправляется на воздушном корабле в столицу Толмекии. Однако их корабль атакуют истребители из Пежитэ, и он терпит крушение в токсичном лесу. Выжившие, включая Навсикаю, Кушану и нескольких солдат, оказываются в сердце Фукая среди гигантских грибов и ядовитых спор.
+В лесу Навсикая демонстрирует свой уникальный дар - она умеет успокаивать насекомых и понимать их язык. Когда группу атакует раненый Ом, Навсикая исцеляет его детеныша и возвращает матери, за что благодарные насекомые показывают людям безопасный путь из леса. Во время путешествия Навсикая объясняет Кушане истинную природу Фукая - лес не враг человечества, а его спаситель, медленно очищающий мир от древнего загрязнения.
+Тем временем жители Пежитэ под руководством принца Асбела эвакуируются из своего города, который захватили толмекийцы. Они планируют использовать рой разъяренных Омов для уничтожения толмекийской армии и Бога Воина. Асбел спасает Навсикаю из плена и доставляет в тайное убежище своего народа, но принцесса ужасается их плану, понимая, что разъяренные Омы уничтожат не только врагов, но и невинных жителей Долины Ветров.
+Пежитэйцы приманивают тысячный рой Омов, пытаясь направить их на толмекийскую армию. Однако насекомые выходят из-под контроля и движутся прямо к Долине Ветров. Навсикаая пытается остановить рой, летя на своем планере впереди насекомых и призывая их к миру, но Омы слишком разъярены и не слушают ее.
+В долине толмекийцы активируют незрелого Бога Воина. Гигантский биомеханический монстр поднимается в воздух и атакует приближающийся рой лазерными лучами из глаз, уничтожая множество Омов. Однако оружие несовершенно - его плоть начинает разлагаться, и вскоре Бог Воин падает и умирает, не сумев остановить рой.
+Навсикая приземляется прямо перед лидером роя - огромным золотым Омом - и пытается остановить его. Разъяренное насекомое давит принцессу своими массивными щупальцами, и она погибает. Однако ее жертва и чистота души поражают Омов. Золотой лидер поднимает тело девушки своими щупальцами, и она оживает в сиянии золотого света, исцеленная силой природы.
+Омы признают в Навсикае ту, кто была предсказана в древних пророчествах - человека в синих одеждах, который придет на золотое поле и восстановит связь между людьми и природой. Рой успокаивается и мирно уходит обратно в лес. Войска Толмекии и Пежитэ прекращают сражение, пораженные чудом.
+Навсикая возвращается в свою долину как мудрая правительница, понявшая истинную гармонию между человечеством и природой. Она продолжает изучать токсичный лес, зная, что через много столетий он очистит мир и создаст новую чистую землю для будущих поколений.
+Фильм завершается сценой, где Навсикая играет с детьми в своей долине под шелест ветра, а в небе летают споры обновленного леса - символ надежды на возрождение мира. Послание картины заключается в том, что истинная сила заключается не в военной мощи или технологиях, а в понимании, сострадании и гармонии с природой.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Нечто', 'A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.', '1982-01-01', 1, '109 minutes', 'The Thing', 8.1, 'Фильм начинается в 1982 году в Антарктиде, где группа норвежских исследователей на вертолете преследует и пытается убить обычную, казалось бы, собаку хаски, которая бежит по снежной пустыне к американской полярной станции. Норвежцы стреляют по собаке из винтовки и даже бросают гранату, но животное удается спастись и добраться до американской базы "Outpost 31".
+Американские полярники во главе с вертолетчиком Макриди встречают норвежский вертолет с недоумением. Один из норвежцев продолжает стрелять по собаке, случайно ранив при этом американского исследователя Бенингса. Второй норвежец кричит что-то на норвежском языке, пытаясь предупредить американцев об опасности, но его никто не понимает. В суматохе командир базы Гарри стреляет в норвежца из пистолета, убивая его, а поврежденный норвежский вертолет взрывается вместе с пилотом.
+Озадаченные американцы принимают решение отправиться на норвежскую станцию, чтобы выяснить причины странного поведения исследователей. Макриди и доктор Коппер прилетают на норвежскую базу и обнаруживают ее полностью разрушенной. Повсюду разбросаны трупы, здания сожжены, а в одном из помещений они находят странные останки - обгоревшую массу плоти, которая выглядит как искаженная пародия на человеческое тело с двумя головами.
+На норвежской станции они также находят видеозаписи, показывающие, как норвежцы откопали из льда большой космический корабль и извлекли из него нечто, замороженное во льду десятки тысяч лет назад. Становится ясно, что норвежцы обнаружили внеземную форму жизни и каким-то образом освободили ее.
+Вернувшись на свою базу, американцы помещают найденную собаку в вольер с другими ездовыми собаками. Ночью собака-пришелец начинает трансформацию. Ее тело раскрывается, обнажая кошмарную массу щупалец, зубов и инопланетной плоти, которая пытается поглотить и ассимилировать других собак. Макриди и другие полярники, услышав ужасающие звуки, прибегают в вольер и видят чудовищное зрелище.
+Они сжигают трансформирующееся существо огнеметом, но понимают, что столкнулись с чем-то невероятно опасным. Биолог Блэр исследует останки сгоревшего существа и делает ужасающее открытие: инопланетная форма жизни способна идеально имитировать любой живой организм на клеточном уровне. Она может поглощать других существ и принимать их облик, оставаясь при этом абсолютно неотличимой от оригинала.
+Блэр приходит к выводу, что если эта сущность доберется до цивилизации, то за несколько лет она сможет заразить все человечество. Он подсчитывает, что через 27000 часов после попадания в крупный населенный пункт инопланетный организм сможет захватить всю планету. Эта перспектива доводит ученого до нервного срыва.
+Среди полярников начинается паранойя. Никто не знает, кто из них еще остается человеком, а кто уже заменен инопланетным имитатором. Существо может копировать не только внешний вид, но и воспоминания, и личность человека, делая обнаружение практически невозможным. Подозрения падают на каждого, атмосфера в группе накаляется.
+Блэир в приступе безумия разрушает радиооборудование, вертолеты и снегоходы, изолируя станцию от внешнего мира. Он утверждает, что никто не должен покидать базу, чтобы предотвратить распространение заражения. Остальные полярники запирают его в инструментальном сарае, считая, что он сошел с ума от стресса.
+Макриди предлагает провести тест, чтобы определить, кто из них является "нечто". Он берет у каждого образец крови и нагревает ее раскаленной медной проволокой. Идея основана на том, что кровь инопланетного имитатора, будучи живой тканью, должна реагировать на угрозу и пытаться защитить себя.
+Тест проходят все, кроме Палмера, чья кровь буквально выпрыгивает из чашки при контакте с горячим металлом. Палмер немедленно трансформируется в ужасающее чудовище с множеством щупалец и зубов. Макриди сжигает его огнеметом, но понимает, что могут быть и другие зараженные.
+По мере развития событий группа полярников сокращается. Некоторые погибают от рук существа, других сжигают по подозрению в заражении. Атмосфера недоверия и страха усиливается. Каждый подозревает каждого, никто не знает, кому можно доверять.
+Выясняется, что повар Наулс заражен - его обнаруживают в процессе трансформации. Постепенно становится ясно, что существо не только имитирует людей, но и может разделяться на части, каждая из которых обладает собственным разумом и инстинктом самосохранения.
+Макриди обнаруживает, что Блэир, которого они считали сошедшим с ума, на самом деле был заражен и втайне строил летательный аппарат из деталей вертолетов и другого оборудования. План существа заключался в том, чтобы дождаться весны, а затем улететь в цивилизованный мир и начать массовое заражение человечества.
+В финальной конфронтации Макриди взрывает подземную часть станции, где Блэир-нечто создавало свой корабль. Существо принимает гигантскую, кошмарную форму, объединив в себе несколько зараженных людей и собак. Начинается отчаянная битва среди пламени и разрушений.
+Макриди удается уничтожить основную массу существа с помощью динамита, но станция полностью разрушена и горит. Выжившими остаются только он сам и Чайлдс, один из полярников. Они сидят среди руин горящей станции в лютый мороз, понимая, что вскоре замерзнут насмерть.
+Между ними происходит напряженный диалог. Каждый подозревает другого в том, что он может быть "нечто". Макриди предлагает разделить бутылку виски, и они сидят в молчании, наблюдая, как догорают остатки станции. Неясно, остались ли они оба людьми, или один из них является существом, ожидающим подходящего момента.
+Фильм заканчивается на этой неопределенной ноте. Макриди и Чайлдс обречены на смерть от холода, но остается вопрос: удалось ли им полностью уничтожить угрозу, или существо выжило в одном из них и будет ждать спасательной команды, чтобы продолжить свое распространение.
+Фильм исследует темы паранойи, недоверия и того, что делает нас людьми. В изолированной среде полярной станции, где спасение невозможно, персонажи вынуждены столкнуться не только с внешней угрозой, но и с разрушением социальных связей и взаимного доверия. Существо представляет собой идеальную угрозу - невидимую, неопределяемую и способную разрушить группу изнутри, используя их собственные страхи и подозрения.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Фицкарральдо', 'The story of Brian Sweeney Fitzgerald, an extremely determined man who intends to build an opera house in the middle of a jungle.', '1982-01-01', 1, '158 minutes', 'Fitzcarraldo', 8.1, 'Фильм разворачивается в начале двадцатого века в перуанской Амазонии и рассказывает историю Брайана Суини Фицджеральда, ирландского авантюриста и мечтателя, которого местные жители и испанцы называют Фицкарральдо из-за сложности произношения его настоящего имени. Фицкарральдо - это ирландский каучуковый барон, известный в Перу под этим именем, который одержим идеей транспортировки парохода через горы Анд для доступа к богатой каучуковой территории в бассейне Амазонки WikipediaRoger Ebert. Он живет в небольшом городке Икитос на берегу Амазонки, где зарабатывает скромные деньги, управляя фабрикой по производству льда вместе со своей возлюбленной Молли, содержательницей местного борделя.
+Фицкарральдо страстно любит оперу, проводя дни, зарабатывая немного денег на ледяной фабрике, а ночи Fitzcarraldo movie review & film summary (1982) | Roger Ebert слушая записи великих оперных произведений на граммофоне. Его величайшая мечта - построить оперный театр прямо в джунглях Амазонии и привезти сюда лучших оперных певцов мира, чтобы местные жители и он сам могли наслаждаться высоким искусством в этом забытом богом уголке земли. Фицкарральдо - мечтатель, который планирует построить оперный театр в Икитосе, в перуанской Амазонии, поэтому для финансирования своего проекта он отправляется в эпическое приключение за сбором каучука ‎Fitzcarraldo (1982) directed by Werner Herzog • Reviews, film + cast • Letterboxd.
+Проблема заключается в том, что строительство оперного театра требует огромных финансовых вложений, которых у Фицкарральдо нет. Единственный способ разбогатеть в этом регионе - заняться торговлей каучуком, который в то время был чрезвычайно ценным и прибыльным товаром. Все лучшие каучуковые территории вдоль доступных рек уже заняты другими предпринимателями, но Фицкарральдо узнает о существовании нетронутой территории, богатой каучуковыми деревьями, в верховьях реки Укаяли. Единственная проблема состоит в том, что эта река недоступна для больших судов из-за опасных порогов.
+Изучив карты региона, Фицкарральдо обнаруживает, что река Укаяли в своих верховьях очень близко подходит к притоку Амазонки, и между ними есть небольшой перешеек суши шириной всего в несколько километров. У него рождается безумная идея: купить пароход, подплыть по доступной реке до этого перешейка, затем каким-то образом перетащить судно по суше на другую сторону и спустить его в воды Укаяли, где он сможет собрать каучук и транспортировать его обратно.
+На последние деньги, заложив ледяную фабрику и получив поддержку от Молли, Фицкарральдо покупает старый, но еще рабочий пароход весом в несколько сотен тонн. Он набирает команду из местных рабочих и отправляется в путешествие вверх по реке. Команда относится к затее с большим скептицизмом, считая своего хозяина сумасшедшим, но деньги заставляют их участвовать в этом предприятии.
+По пути к месту назначения экспедиция сталкивается с множеством опасностей. Река полна крокодилов, ядовитых змей и других смертельных существ. Климат невыносимо жаркий и влажный, болезни косят членов команды. Постоянно нависает угроза нападения враждебных племен индейцев, которые не всегда дружелюбно относятся к белым пришельцам. Несколько раз команда оказывается на грани мятежа, люди хотят повернуть назад, но железная воля Фицкарральдо и его фанатичная преданность идее заставляют экспедицию продолжать движение.
+Достигнув места, где две реки ближе всего подходят друг к другу, команда сталкивается с почти невыполнимой задачей. Пароход необходимо вытащить из воды и перетащить через холм, покрытый густыми джунглями, на расстояние нескольких километров. У Фицкарральдо нет ни подходящего оборудования, ни достаточного количества людей для такой операции. Единственная надежда - заручиться помощью местного племени индейцев.
+Первый контакт с туземцами оказывается крайне напряженным. Воины появляются из джунглей, вооруженные копьями и луками, готовые защищать свою территорию. Однако Фицкарральдо находит способ наладить с ними отношения через свою страсть к музыке. Он включает граммофон с записями оперной музыки, и звуки арий производят на индейцев магическое впечатление. Они никогда не слышали ничего подобного и воспринимают эту музыку как нечто сверхъестественное.
+Вождь племени интерпретирует появление Фицкарральдо и его музыку через призму своих религиозных верований. Согласно местной мифологии, белый человек с волшебной музыкой должен помочь им в борьбе против враждебного соседнего племени. Индейцы соглашаются помочь в перетаскивании парохода, но не из альтруизма, а потому что верят, что после завершения операции Фицкарральдо поведет их в бой против врагов.
+Начинается титаническая работа по подъему парохода на сушу. Используя систему канатов, блоков и рычагов, сотни индейцев под руководством нескольких европейцев начинают медленно тащить многотонное судно вверх по склону холма через непроходимые джунгли. Приходится рубить деревья, расчищать дорогу, строить временные мосты через овраги. Работа продолжается неделями в нечеловеческих условиях. Многие получают травмы, некоторые погибают от несчастных случаев или болезней.
+Фицкарральдо работает наравне со всеми, воодушевляя людей личным примером и постоянно напоминая о великой цели - будущем оперном театре. Он рассказывает индейцам об опере, пытается объяснить им красоту этого искусства, играет им записи Карузо. Музыка становится единственным, что поддерживает моральный дух участников этого безумного предприятия.
+Когда пароход наконец достигает вершины холма, происходит катастрофа. Один из канатов лопается под чудовищным напряжением, и судно начинает неконтролируемо скатываться назад. Несколько человек погибают, многие получают серьезные травмы. Кажется, что вся операция обречена на провал, но Фицкарральдо отказывается сдаваться. Он реорганизует работу, находит новые решения технических проблем, и операция продолжается.
+Тем временем среди индейцев растет напряжение. Они начинают понимать, что белый человек использует их труд для своих целей и не собирается помогать им в войне с соседним племенем, как они изначально думали. Вождь племени принимает решение избавиться от Фицкарральдо и его людей, как только пароход будет спущен на воду на другой стороне.
+После нескольких месяцев нечеловеческих усилий пароход наконец оказывается на берегу реки Укаяли. Казалось бы, самая сложная часть операции завершена, и теперь можно приступать к сбору каучука. Однако индейцы тайно прорубают канаты, удерживающие судно, и пароход неконтролируемо несется вниз по течению через опасные пороги.
+Фицкарральдо и оставшиеся члены его команды оказываются в смертельной ловушке на палубе корабля, который мчится через пороги и водопады. Судно получает серьезные повреждения, но чудом остается на плаву и в конце концов выносится в спокойные воды Амазонки. Однако мечта о каучуковой империи разрушена - они находятся далеко от богатых каучуком территорий, команда деморализована, а средства на новую экспедицию отсутствуют.
+Вернувшись в Икитос как потерпевший крушение мечтатель, Фицкарральдо обнаруживает, что его история стала легендой. Люди с восхищением говорят о человеке, который смог перетащить пароход через гору. Хотя коммерческая цель не была достигнута, само достижение кажется невероятным.
+В финальной сцене Фицкарральдо находит способ частично осуществить свою мечту об опере в джунглях. Он тратит последние деньги на то, чтобы привезти в Икитос настоящую оперную труппу для единственного представления на палубе своего потрепанного парохода. Местные жители, европейские колонисты и даже некоторые индейцы собираются послушать настоящую оперу в сердце Амазонии.
+Представление проходит на закате, и звуки арий разносятся над водной гладью реки, эхом отражаясь от стен джунглей. Фицкарральдо сидит среди зрителей, наконец услышав живую оперу в том месте, о котором мечтал. Хотя его грандиозный план провалился, он смог на один вечер превратить забытый уголок мира в храм высокого искусства. Фильм заканчивается тем, что пароход с оперными певцами медленно плывет по Амазонке в лучах заходящего солнца, а музыка продолжает звучать над бескрайними джунглями, символизируя торжество человеческого духа и искусства над враждебными силами природы и обстоятельств.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Фанни и Александр', 'Two young Swedish children experience the many comedies and tragedies of their family, the Ekdahls.', '1982-01-01', 1, '188 minutes', 'Fanny och Alexander', 8.1, 'Фильм начинается в 1907 году в шведском городе Уппсала, где живет богатая театральная династия Экдаль. Действие открывается в канун Рождества в роскошном особняке семьи, где собирается многочисленная родня. Десятилетний Александр Экдаль - мечтательный и впечатлительный мальчик с богатым воображением, который обожает театр и мистические истории. Его младшая сестра Фанни более практична и приземлена. Их отец Оскар Экдаль руководит семейным театром вместе со своей матерью Хеленой - властной и мудрой женщиной, которая является душой семьи.
+Рождественский праздник проходит в атмосфере любви, изобилия и театральности. Дом полон гостей, слуг, музыки и смеха. Дети получают щедрые подарки, а взрослые ставят домашние спектакли. Однако это семейное счастье омрачается внезапной смертью Оскара, который умирает от инсульта прямо на сцене театра во время репетиции "Гамлета", играя роль призрака отца Гамлета.
+После похорон молодая вдова Эмили остается одна с двумя детьми. Женщина погружается в глубокую депрессию и отчуждается от театрального мира, который напоминает ей о покойном муже. В это трудное время в ее жизни появляется епископ Эдвард Вергерус - строгий и фанатично религиозный человек средних лет, который ухаживает за ней под предлогом духовного утешения.
+Вергерус кардинально отличается от богемной театральной семьи Экдаль. Он презирает искусство, считая его греховным и развращающим, проповедует аскетизм и строгую мораль. Епископ убеждает Эмили, что театр - это мир лжи и иллюзий, а истинное спасение можно найти только в религии и самоотречении. Постепенно он полностью подчиняет себе волю скорбящей женщины.
+Несмотря на протесты всей семьи Экдаль, особенно бабушки Хелены, Эмили выходит замуж за епископа и переезжает с детьми в его мрачный дом при епископской резиденции. Новый дом разительно отличается от теплого семейного гнезда - здесь царят холод, строгость и религиозный фанатизм. Вергерус запрещает детям любые развлечения, изымает их игрушки и книги, заставляет часами молиться и изучать религиозные тексты.
+Александр, привыкший к свободе и творчеству, не может смириться с новыми порядками. Он открыто противостоит отчиму, отказывается принимать его авторитет и выражает презрение к его методам воспитания. Фанни более осторожна, но также страдает от гнетущей атмосферы дома. Епископ считает Александра исчадием ада и пытается "изгнать бесов" из мальчика жестокими наказаниями.
+В доме епископа также живут его сестра Хенриетта - злобная и фанатичная старая дева, и его мать - немая и парализованная старуха, прикованная к инвалидному креслу. Обе женщины ненавидят детей и всячески поддерживают жестокие методы Вергеруса. Единственным союзником детей становится служанка Джустина - молодая девушка, которая тайно сочувствует им и пытается облегчить их страдания.
+Александр начинает выдумывать истории о епископе, рассказывая другим детям, что тот убил свою первую жену и детей. Когда эти слухи доходят до Вергеруса, он устраивает мальчику жестокую порку, требуя признания во лжи. Но Александр упорно отказывается признавать свои слова ложью, даже когда епископ избивает его до крови.
+Ситуация становится критической, когда Эмили понимает, что беременна от нового мужа. Она осознает, что попала в ловушку и не может защитить своих детей от жестокости отчима. Женщина пытается примирить мужа с пасынком, но Вергерус непреклонен в своем желании "сломать гордыню" мальчика.
+Тем временем бабушка Хелена и остальные члены семьи Экдаль разрабатывают план спасения детей. К операции привлекают Исака Якобссона - богатого еврейского антиквара и коллекционера, который дружит с семьей. Якобссон - загадочная фигура, окруженная слухами о занятиях магией и каббалой. Он живет в доме, полном древних артефактов, магических предметов и секретных комнат.
+Якобссон и его племянники Арон и Исмаэль организуют похищение детей. Александра и Фанни прячут в огромном сундуке и тайно вывозят из епископского дома. Операция проходит успешно, и дети оказываются в безопасности в доме антиквара, который кажется им волшебным дворцом после мрачной резиденции епископа.
+В доме Якобссона Александр встречает загадочного мальчика Исмаэля, который может быть как реальным человеком, так и сверхъестественным существом. Исмаэль обладает магическими способностями и показывает Александру видения прошлого и будущего. Через него мальчик узнает страшную правду о епископе - тот действительно убил свою первую семью, заперев жену и детей в комнате и подпалив дом.
+Вергерус приходит в ярость, обнаружив исчезновение пасынков. Он требует их возвращения и угрожает Эмили, но та наконец находит в себе силы противостоять мужу. Епископ запирает беременную жену в ее комнате, фактически делая ее пленницей.
+Кульминация наступает, когда в епископском доме происходит загадочная трагедия. Ночью вспыхивает пожар, в котором погибают сам Вергерус, его сестра Хенриетта и парализованная мать. Эмили чудом спасается, но роды начинаются преждевременно от шока. Обстоятельства пожара остаются загадочными - неясно, был ли это несчастный случай, самоубийство отчаявшегося епископа или результат сверхъестественного вмешательства.
+После смерти Вергеруса Эмили с новорожденной дочерью возвращается в дом семьи Экдаль. Александр и Фанни воссоединяются с матерью и бабушкой. Семья снова собирается вместе, хотя пережитая травма оставляет свои следы на всех участниках драмы.
+Фильм завершается летним праздником в доме Экдалей, где отмечают крестины новорожденной. Атмосфера радости и примирения противопоставляется мрачным событиям зимы. Александр читает монолог о том, что мертвые продолжают жить среди живых, влияя на их судьбы. В финальной сцене призрак епископа Вергеруса появляется перед мальчиком, напоминая, что зло не исчезает бесследно и продолжает преследовать тех, кто с ним сталкивался.
+Фильм представляет собой глубокое исследование противостояния между творческой свободой и религиозным фанатизмом, между жизнеутверждающим искусством и мертвящим догматизмом. Бергман показывает, как авторитарность и жестокость разрушают человеческие души, особенно детские, и как важно защищать право на воображение, творчество и духовную свободу от любых форм тирании.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бегущий по лезвию', 'A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.', '1982-01-01', 1, '117 minutes', 'Blade Runner', 8.1, 'Действие фильма происходит в 2019 году в Лос-Анджелесе, который превратился в мрачный киберпанк-мегаполис с многоярусными улицами, постоянными кислотными дождями и неоновой рекламой на множестве языков. Город перенаселен, загрязнен и пропитан атмосферой упадка. Многие люди эмигрировали в космические колонии, оставив на Земле преимущественно бедняков и тех, кто не прошел медицинский отбор для переселения.
+В этом мире корпорация "Тайрелл" создает искусственных людей, называемых репликантами, которые внешне и внутренне неотличимы от настоящих людей, но превосходят их по силе, ловкости и интеллекту. Репликанты используются как рабская рабочая сила в опасных космических колониях для выполнения работ, которые слишком рискованны для людей. Чтобы предотвратить восстания, репликантам программируется ограниченный срок жизни в четыре года, после чего они умирают от заложенного в их организм механизма старения.
+Рик Декард - бывший бегущий по лезвию, специальный полицейский, задача которого заключается в выслеживании и "списании" (убийстве) репликантов, которые бежали или восстали против своих хозяев. Декард давно вышел в отставку и теперь ведет унылое существование в переполненном городе, но его принуждают вернуться к работе.
+Капитан Брайант вызывает Декарда в полицейский участок и сообщает, что группа из шести репликантов модели Нексус-6 совершила побег с космической колонии, убив людей и захватив корабль. Четверо из них, предположительно, добрались до Земли. Предыдущий бегущий по лезвию Холден был тяжело ранен при попытке выявить одного из беглецов, поэтому Декарду предстоит завершить работу.
+Декард получает досье на беглецов: Рой Батти - лидер группы, интеллектуальный и физически совершенный боевой репликант; Прис - "основная модель удовольствия"; Жора - тренированная убийца; и Леон - рабочий репликант с эмоциональным развитием ребенка, но огромной физической силой. Пятым был Ходж, но его убили при попытке проникнуть в корпорацию Тайрелл.
+Для идентификации репликантов используется тест Войта-Кампфа - сложный психологический тест, измеряющий эмпатические реакции через анализ движений глаз и эмоциональных ответов на моральные дилеммы. Репликанты, не обладая настоящими эмоциями и детскими воспоминаниями, реагируют на тест по-другому.
+Декард отправляется в корпорацию Тайрелл, чтобы протестировать новый тест на репликанте Нексус-6. Там он встречает основателя компании доктора Элдона Тайрелла и его помощницу Рэйчел. Декард проводит тест на Рэйчел и с удивлением обнаруживает, что ей требуется гораздо больше вопросов, чем обычно, чтобы выявить ее искусственную природу. Тайрелл объясняет, что Рэйчел - экспериментальная модель с имплантированными воспоминаниями, что делает ее более человечной и затрудняет обнаружение.
+Между тем беглые репликанты начинают искать способ продлить свою жизнь. Леон возвращается в свою квартиру за фотографиями - единственными "доказательствами" своего прошлого. Декард обыскивает квартиру и находит фотографии и искусственную чешую змеи. Леон застает его там, и завязывается драка. Репликант легко побеждает человека и собирается убить его, но в последний момент появляется Рэйчел и стреляет в Леона, спасая Декарда.
+После этого инцидента Рэйчел приходит к Декарду домой, потрясенная осознанием того, что она репликант. Она показывает ему фотографии своих "воспоминаний" о детстве, но Декард жестоко разрушает ее иллюзии, рассказывая подробности ее имплантированных воспоминаний, которые на самом деле принадлежат племяннице Тайрелла. Рэйчел плачет и убегает, но постепенно между ней и Декардом возникает сложная эмоциональная связь.
+Декард продолжает охоту и выслеживает Жору, которая работает танцовщицей со змеей в стриптиз-клубе. После погони по переполненным улицам он убивает ее выстрелом в спину, когда она пытается скрыться среди толпы. Этот момент заставляет Декарда задуматься о моральности своей работы, особенно видя, как умирает красивая женщина, которая просто хотела жить.
+Тем временем Рой и Прис находят Дж.Ф. Себастьяна, одинокого генетического инженера, работающего на Тайрелл и страдающего от болезни преждевременного старения. Они используют его симпатию и одиночество, чтобы получить доступ к Тайреллу. Себастьян живет в огромном заброшенном здании, населенном его искусственными игрушками-компаньонами, и сочувствует репликантам как таким же искусственным созданиям.
+Рой заставляет Себастьяна организовать встречу с Тайреллом. В пентхаусе корпорации происходит философский диалог между создателем и его творением. Рой просит продлить ему жизнь, но Тайрелл объясняет, что это технически невозможно - механизм смерти интегрирован в генетическую структуру и не может быть отключен без разрушения всего организма.
+Тайрелл говорит Рою, что тот должен радоваться яркой жизни, которую прожил: "Свеча, которая горит в два раза ярче, живет в два раза меньше, и ты горел очень ярко." Рой, понимая безнадежность ситуации и переполненный гневом на своего создателя за приговор к смерти, убивает Тайрелла, раздавив ему голову. Затем он также убивает Себастьяна.
+Декард выслеживает репликантов в здании Себастьяна. Там он находит и убивает Прис в жестокой схватке. Девушка-репликант демонстрирует сверхчеловеческую акробатику и силу, но в конце концов Декард застреливает ее из бластера. Ее смерть сопровождается конвульсиями и криками, что еще больше размывает грань между искусственным и настоящим.
+Рой возвращается и находит труп Прис. Его горе кажется абсолютно человеческим. Начинается финальная игра в кошки-мышки между Роем и Декардом в лабиринте пустых квартир заброшенного здания. Рой демонстрирует свое превосходство, играя с Декардом как кот с мышкой, но в то же время переживает приближение собственной смерти - его четырехлетний срок истекает.
+Преследование достигает кульминации на крыше здания. Декард пытается перепрыгнуть на соседнее здание, но срывается и висит на краю, держась за карниз. Рой легко перепрыгивает пропасть и оказывается рядом с ним. Вместо того чтобы добить беспомощного противника, Рой спасает Декарда, вытащив его на крышу.
+Затем происходит одна из самых знаменитых сцен в истории кино. Рой садится под дождем, и его тело начинает отказывать - приближается запрограммированная смерть. В своем последнем монологе он говорит Декарду: "Я видел вещи, которые вы, люди, не поверили бы. Атакующие корабли в огне у плеча Ориона. Я наблюдал, как Си-лучи сверкают в темноте рядом с вратами Таннгейзера. Все эти моменты исчезнут во времени, как слезы под дождем. Время умирать." С этими словами Рой мирно умирает, и белый голубь, которого он держал в руках, улетает в небо.
+Декард, потрясенный человечностью и благородством репликанта в его последние мгновения, начинает серьезно сомневаться в природе своей работы. Он возвращается в свою квартиру, где находит Рэйчел. Они планируют бежать вместе, но появляется другой бегущий по лезвию, Гафф, который сообщает, что задание выполнено. Странным образом он не арестовывает Рэйчел, хотя знает, что она репликант, и даже оставляет намек, что у нее, возможно, нет ограничения по сроку жизни.
+В финальной сцене Декард и Рэйчел покидают квартиру и уезжают из города. В режиссерской версии фильм заканчивается в лифте, оставляя открытым вопрос об их судьбе. В театральной версии есть дополнительная сцена, где они едут по красивому горному пейзажу, и закадровый голос Декарда говорит о том, что Рэйчел особенная и не имеет срока истечения.
+На протяжении всего фильма поднимается главный философский вопрос: что делает нас людьми? Репликанты демонстрируют эмоции, стремления, страхи и даже способность к самопожертвованию и любви. В некоторых аспектах они кажутся более человечными, чем сами люди. Особенно это заметно в контрасте между благородством умирающего Роя и черствостью многих человеческих персонажей.
+Существует также скрытая тема о том, может ли сам Декард быть репликантом. Различные намеки в фильме - его сны о единороге, которые совпадают с оригами, оставленными Гаффом, его необычно сильная эмоциональная реакция на фотографии - позволяют интерпретировать его как репликанта с имплантированными воспоминаниями, который не знает о своей истинной природе.
+Фильм исследует темы памяти, идентичности, искусственного интеллекта и того, что значит быть живым. В мире, где граница между искусственным и настоящим стирается, главные вопросы касаются не технологий, а фундаментальных основ человеческого существования: души, эмоций, смысла жизни и права на существование.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Человек-слон', 'A Victorian surgeon rescues a heavily disfigured man who is mistreated while scraping a living as a side-show freak. Behind his monstrous façade, there is revealed a person of kindness, intelligence and sophistication.', '1980-01-01', 1, '124 minutes', 'The Elephant Man', 8.1, '"Человек-слон" (1980)
+Фильм открывается в викторианском Лондоне 1884 года с шокирующей сцены в родильном доме, где молодая женщина рожает в муках, окруженная образами слонов - намек на легенду о том, что деформации ее будущего ребенка были вызваны тем, что во время беременности ее напугали слоны в цирке. Эта пролог-фантазия объясняет, согласно медицинским представлениям того времени, происхождение ужасных физических уродств главного героя.
+Основное действие начинается с того, как доктор Фредерик Тривз, уважаемый хирург из Лондонской больницы, идет по грязным улицам Ист-Энда и слышит зазывалу, который приглашает публику посмотреть на "самое отвратительное создание на земле". Движимый профессиональным любопытством, Тривз платит за вход в балаган, где ему показывают Джона Меррика, человека с настолько чудовищными деформациями, что его демонстрируют как цирковый аттракцион под именем "Человек-слон".
+Меррик страдает от тяжелейшей формы нейрофиброматоза, болезни, которая привела к чудовищным костным и кожным деформациям по всему телу. Его голова непропорционально огромна, правая рука превратилась в бесформенную массу, все тело покрыто наростами и язвами. Он может говорить, но его речь настолько искажена деформациями рта и челюсти, что почти непонятна. Владелец балагана, Байтс, жестокий и корыстный человек, обращается с Мерриком как с животным, держит его в клетке, заставляет есть из миски на полу.
+Тривз просит разрешения осмотреть Меррика для медицинских целей и потрясен не только масштабом деформаций, но и тем фактом, что этот человек явно обладает интеллектом. Он договаривается с Байтсом о том, чтобы привести Меррика в больницу для более детального изучения, планируя представить его случай медицинскому сообществу. Однако когда Меррик прибывает в больницу, выясняется, что его состояние гораздо сложнее, чем просто медицинский казус.
+Первоначально Тривз действительно рассматривает Меррика как интересный клинический случай и демонстрирует его коллегам-врачам, подробно описывая деформации. Меррик стоит обнаженный перед аудиторией медиков, которые обсуждают его как живой анатомический препарат. Однако постепенно Тривз начинает понимать, что имеет дело не просто с медицинским феноменом, а с глубоко чувствующим и умным человеком, который страдает не только от физических деформаций, но и от постоянного унижения и одиночества.
+Администрация больницы изначально против длительного пребывания Меррика в учреждении, поскольку больница не является приютом для уродов, а предназначена для лечения излечимых пациентов. Главный администратор Карр-Гомм ставит условие: если Меррик действительно человек, а не животное, он должен продемонстрировать это, показав способность к нормальному человеческому общению.
+Тривз начинает регулярно беседовать с Мерриком, и постепенно выясняется, что тот не только умеет читать и писать, но и обладает утонченным вкусом, любит поэзию, особенно творчество Теннисона, и мечтает о красоте и нормальной человеческой жизни. У него есть маленькая фотография красивой молодой женщины, которую он называет своей матерью, хотя на самом деле это просто картинка, которую он носит с собой как символ материнской любви, которой был лишен.
+Меррик рассказывает Тривзу о своей жизни в балаганах и цирках, о постоянных унижениях и побоях, о том, как его выставляют на потеху публике. Он с горечью говорит о том, что люди видят в нем только монстра, но никто не пытается понять, что у него есть душа и чувства. Единственным его утешением была религия - он знает наизусть псалмы и молитвы, находя в вере единственный источник надежды.
+Когда Карр-Гомм наконец встречается с Мерриком, тот читает ему псалом 23 ("Господь - пастырь мой") прекрасным, образованным голосом, демонстрируя не только интеллект, но и глубокую духовность. Этот момент становится поворотным - администрация больницы соглашается предоставить Меррику постоянное место жительства в специально оборудованных комнатах в подвале больницы.
+Постепенно история Меррика становится известной в лондонском обществе, и он начинает принимать посетителей из высших кругов. Актриса Миссис Кендал, красивая и добросердечная женщина, становится его подругой и регулярно навещает его. Ее визиты приносят Меррику огромную радость - впервые в жизни красивая женщина обращается с ним как с джентльменом, а не как с монстром. Она дарит ему зеркало и набор для бритья, символические подарки, означающие признание его человеческого достоинства.
+Другие представители аристократии также начинают посещать Меррика, частично из любопытства, частично из искреннего сочувствия. Он получает подарки, книги, у него появляются элементы нормальной человеческой жизни. Меррик с энтузиазмом изучает этикет, учится вести себя в обществе, строит модель собора из картона - занятие, которое требует терпения и точности и доказывает его умственные способности.
+Однако спокойная жизнь нарушается, когда Байтс возвращается и требует вернуть ему его "собственность". Он угрожает Тривзу судебными разбирательствами, утверждая, что имеет законные права на Меррика. Под давлением Байтс похищает Меррика и увозит его обратно в мир балаганов, но теперь не в Англии, а в континентальной Европе, где законы менее строгие.
+В Европе жизнь Меррика становится еще более кошмарной, чем прежде. Его не только выставляют на показ, но и подвергают побоям и издевательствам. Других уродов в балагане тоже обижают, и между ними складывается странное товарищество изгоев. Меррик пытается сбежать, и ему это удается. Он добирается до Лондона, но путешествие изматывает его, и его здоровье резко ухудшается.
+На вокзале в Лондоне толпа узнает в нем знаменитого "Человека-слона" и начинает преследовать его, крича "Он не животное, он человек!" - фраза, которая стала знаменитой цитатой из фильма. Меррика спасает полиция и доставляет обратно в больницу, где он воссоединяется с Тривзом.
+К этому времени состояние Меррика значительно ухудшилось. Огромный вес его деформированной головы создает постоянную нагрузку на шею и позвоночник. Врачи понимают, что он умирает, но ничего не могут сделать для его спасения. Меррик тоже осознает приближение смерти, но относится к этому философски, как к освобождению от страданий.
+В последние дни жизни Меррик получает особенный подарок - билеты на театральное представление. Впервые в жизни он идет в театр как обычный зритель. Представление прерывается, когда актриса Миссис Кендал представляет его публике, и весь театр встает, аплодируя ему. Этот момент триумфа человеческого достоинства над физическими недостатками становится вершиной короткой, но полной страданий жизни Меррика.
+Вернувшись в больницу после театра, Меррик чувствует, что его время пришло. Он завершает работу над моделью собора, пишет прощальные письма своим друзьям. Всю жизнь он был вынужден спать сидя, поскольку вес его головы мог задушить его, если он ляжет. Но в последнюю ночь он принимает сознательное решение лечь в постель как нормальный человек, зная, что это означает смерть.
+Фильм заканчивается тем, как Меррик ложится в постель, смотрит на фотографию своей воображаемой матери и тихо умирает во сне. Его последние слова - цитата из Теннисона: "It is finished" (Свершилось). Камера медленно удаляется от его мирного лица, а на экране появляются звезды - символ того, что душа Меррика наконец обрела покой и свободу от страданий физического мира. Голос за кадром произносит слова Миссис Кендал о том, что ничто не умирает по-настоящему, и что красота души Меррика будет жить вечно, несмотря на уродство его тела.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Житие Брайана по Монти Пайтон', 'Born on the original Christmas in the stable next door to Jesus Christ, Brian of Nazareth spends his life being mistaken for a messiah.', '1979-01-01', 1, '94 minutes', 'Life of Brian', 8.1, 'Фильм начинается в Вифлееме в ночь рождения Иисуса Христа. Трое волхвов следуют за звездой и по ошибке приходят не в ту конюшню, где вместо младенца Иисуса находят новорожденного Брайана Коэна. Они преподносят дары матери Брайана Мэнди, но вскоре понимают свою ошибку и забирают подарки обратно, отправляясь в соседнюю конюшню к настоящему мессии.
+Действие переносится на тридцать три года вперед. Брайан вырос в обычного молодого еврея, живущего в Иерусалиме под римской оккупацией. Его мать Мэнди работает на рынке, а сам Брайан недоволен римским правлением. Вместе с друзьями он присутствует на Нагорной проповеди Иисуса, но стоит в задних рядах и плохо слышит слова проповедника, что приводит к комическим недоразумениям в интерпретации заповедей блаженства.
+Брайан влюбляется в Джудит - красивую революционерку, которая состоит в антиримской организации "Народный фронт Иудеи". Чтобы произвести впечатление на девушку, Брайан вступает в эту группу, которая больше времени тратит на споры с конкурирующими революционными организациями вроде "Иудейского народного фронта" и "Популярного фронта Иудеи", чем на борьбу с римлянами.
+Лидер "Народного фронта Иудеи" Рег поручает Брайану выполнить первое задание - написать антиримские граффити на стенах дворца. Однако центурион Винус Инконтиваунтус ловает Брайана за этим занятием и заставляет его сто раз написать правильную латинскую фразу "Римляне, идите домой" вместо грамматически неверной "Romanes eunt domus". После исправления всех ошибок центурион отпускает Брайана, приказав закончить граффити к рассвету.
+На следующий день римский префект Понтий Пилат, страдающий дефектом речи и произносящий "р" как "в", устраивает публичное выступление. Брайан и его товарищи планируют похитить жену Пилата, но операция проваливается. Во время бегства от римских солдат Брайан случайно попадает на проповедь уличного пророка и вынужден продолжить его речь, чтобы не быть узнанным.
+Импровизированная проповедь Брайана производит сильное впечатление на толпу. Он говорит о том, что каждый человек уникален и должен думать самостоятельно, но собравшиеся понимают это буквально наоборот и начинают хором повторять его слова. Когда Брайан покидает площадь, за ним следует толпа людей, считающих его новым мессией.
+Брайан пытается скрыться дома, но толпа верующих окружает его жилище. Мать Мэнди пытается объяснить людям, что ее сын самый обычный человек, но это только укрепляет веру толпы в его божественность - ведь истинный мессия должен быть скромным. Среди новых последователей выделяется особенно фанатичный Артур, который интерпретирует каждое слово и действие Брайана как священное откровение.
+Брайан в отчаянии убегает из дома и случайно оказывается на площади, где торгуют различными религиозными реликвиями и проповедуют многочисленные пророки. Он видит бывшего прокаженного, которого исцелил Иисус, но который теперь жалуется на потерю работы, поскольку больше не может просить милостыню. Это подчеркивает абсурдность религиозного фанатизма и его непредвиденные последствия.
+Преследуемый толпой фанатиков, Брайан присоединяется к самоубийственной атаке "Народного фронта Иудеи" на дворец Пилата. Все участники операции, включая Джудит, погибают или попадают в плен, но Брайану удается скрыться. Однако его ловят римские солдаты и приговаривают к распятию вместе с другими преступниками.
+В тюрьме Брайан встречает Бена - оптимистичного заключенного, который призывает всегда смотреть на светлую сторону жизни, даже перед лицом смерти. Бен объясняет Брайану, что жизнь прекрасна, несмотря на все трудности, и нужно радоваться каждому моменту.
+На следующее утро римляне ведут приговоренных на Голгофу для распятия. Мать Брайана приходит попрощаться с сыном, но вместо утешения ругает его за все неприятности, которые он принес семье. Толпа последователей собирается у подножия креста, ожидая чуда, но Брайан объясняет им, что он не мессия, а обычный человек.
+Появляется отряд "Народного фронта Иудеи" под командованием Рега, но вместо спасения Брайана они устраивают бюрократические проволочки, требуя от него письменного запроса на спасение. Пока они препираются, приходит другая революционная группа - "Десантники-самоубийцы Иудеи", которые совершают массовое самоубийство, не принеся никакой пользы.
+В финале фильма Брайан остается на кресте, но Бен и другие распятые начинают петь жизнерадостную песню "Always Look on the Bright Side of Life", призывая не унывать даже в самые тяжелые моменты. Эта песня становится гимном оптимизма перед лицом абсурдности существования.
+Фильм завершается тем, что все распятые подхватывают песню, превращая казнь в сюрреалистический мюзикл. Брайан так и не признается мессией и умирает обычным человеком, случайно ставшим объектом религиозного культа из-за стечения обстоятельств и человеческой склонности к фанатизму.
+Картина является сатирой на организованную религию, политический радикализм и человеческую склонность обожествлять харизматических лидеров, показывая абсурдность догматизма и важность индивидуального мышления.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Охотник на оленей', 'An in-depth examination of the ways in which the U.S. Vietnam War impacts and disrupts the lives of people in a small industrial town in Pennsylvania.', '1978-01-01', 1, '183 minutes', 'The Deer Hunter', 8.1, 'Фильм начинается в 1968 году в небольшом промышленном городке Кларктон в Пенсильвании, населенном преимущественно русскими и украинскими иммигрантами. Три друга детства - Майкл, Ник и Стивен - работают в местной сталелитейной печи и готовятся к отправке во Вьетнам. Перед отъездом на войну Стивен женится на своей беременной подруге Анджеле, причем ребенок не от него, но он готов принять его как своего.
+Свадьба Стивена становится центральным событием первой части фильма, длящейся почти час. Это пышное торжество в духе русских традиций с обильным застольем, танцами, пением и выпивкой. Во время празднования происходят важные для понимания характеров эпизоды. Майкл, прирожденный лидер группы, серьезный и ответственный, танцует с Линдой, девушкой Ника, и между ними явно возникает взаимная симпатия, хотя оба пытаются скрыть свои чувства из уважения к Нику.
+Ник - мечтательный и чувствительный молодой человек, который искренне любит Линду и мечтает о совместном будущем. Он показывает ей особую пулю, которую сделал для охоты, и говорит о планах после возвращения с войны. Стивен - самый юный и наивный из троицы, добродушный, но не очень решительный.
+После свадьбы друзья отправляются на традиционную охоту на оленей в горы Пенсильвании. Майкл демонстрирует свою философию "одного выстрела" - он считает, что настоящий охотник должен убивать с первого выстрела, что это вопрос чести и уважения к животному. Во время охоты он действительно убивает оленя одним точным выстрелом, что символизирует его мастерство и самоконтроль.
+Вторая часть фильма резко переносит зрителей во Вьетнам, где три друга попадают в плен к вьетконговцам. Их содержат в подземной тюрьме у реки, где пленных американских солдат заставляют играть в русскую рулетку на деньги для развлечения охранников. Это одна из самых напряженных и жестоких сцен в истории кинематографа.
+Майкл понимает, что единственный способ выжить - это переиграть охранников. Он убеждает их увеличить количество патронов в барабане с одного до трех, утверждая, что так игра станет интереснее и принесет больше денег. На самом деле он планирует использовать дополнительные патроны для побега. Майкл и Ник по очереди играют в смертельную игру, демонстрируя невероятное самообладание.
+В критический момент Майкл дает сигнал, и они убивают охранников, используя патроны из револьвера. Во время побега Стивен падает в реку и ломает ноги, но друзьям удается спастись на американском вертолете. Однако при эвакуации происходит трагическая ошибка - Ник падает с вертолета обратно в джунгли, а Майкл и раненый Стивен попадают в военный госпиталь.
+В госпитале Майкл пытается убедить Стивена, что они должны вернуться и найти Ника, но Стивен, психологически сломленный пережитым ужасом, отказывается. Майкл в одиночку возвращается в Сайгон искать друга. Он обнаруживает, что Ник потерял память и играет в русскую рулетку в подпольных притонах за деньги, полностью одержимый этой смертельной игрой.
+Ник не узнает Майкла и убегает, когда тот пытается с ним заговорить. Майкл вынужден вернуться в Америку один, оставив друга в аду войны. Эта сцена показывает, как война разрушает не только тела, но и души, превращая людей в призраков самих себя.
+Третья часть фильма показывает возвращение Майкла домой. Он приезжает в родной городок, но не может сразу войти в дом, где его ждут. Вместо этого он останавливается в мотеле, мучимый чувством вины и неспособностью адаптироваться к мирной жизни. Когда он наконец приходит домой, друзья устраивают ему вечеринку, но Майкл чувствует себя отчужденным от их беззаботности.
+Майкл начинает отношения с Линдой, которая все эти годы ждала известий о Нике. Их связь основана на общей боли утраты, но постепенно перерастает в настоящую любовь. Однако Майкл мучается чувством предательства по отношению к пропавшему другу.
+Стивен возвращается домой инвалидом, потеряв обе ноги. Он находится в госпитале для ветеранов и отказывается видеться с женой, считая себя обузой. Майкл регулярно навещает его и пытается убедить вернуться к семье. Во время одного из визитов Стивен показывает Майклу пачки денег, которые кто-то анонимно присылает ему из Сайгона.
+Майкл понимает, что деньги идут от Ника, который продолжает играть в русскую рулетку. Это открытие заставляет его принять решение вернуться во Вьетнам, чтобы спасти друга. К этому времени американские войска готовятся к эвакуации из Сайгона, город охвачен хаосом последних дней войны.
+Майкл находит Ника в том же подпольном игорном доме. Ник по-прежнему не узнает его, полностью поглощенный наркотиками и азартом смертельной игры. Он стал местной знаменитостью, виртуозно играющим в русскую рулетку. Майкл пытается достучаться до сознания друга, напоминая ему о доме, о Линде, об их совместном прошлом.
+В отчаянной попытке пробить стену амнезии Майкл садится напротив Ника и предлагает сыграть с ним в русскую рулетку. Он надеется, что экстремальная ситуация поможет Нику вспомнить. Во время игры Майкл повторяет фразы из их прошлого, пытаясь вызвать воспоминания.
+На мгновение кажется, что Ник начинает узнавать друга. Он улыбается и произносит: "Один выстрел", вспоминая охотничью философию Майкла. Но в следующий момент он приставляет револьвер к голове и нажимает курок. На этот раз в барабане оказывается патрон. Ник умирает на руках у Майкла, наконец обретя покой.
+Майкл привозит тело Ника домой. Фильм заканчивается поминками в том же баре, где когда-то праздновали свадьбу Стивена. Друзья собираются за столом, но атмосфера совершенно иная - это не радостное торжество, а скорбное прощание с молодостью и невинностью.
+Линда, Майкл, Стивен и другие друзья сидят в молчании, каждый погруженный в собственные мысли о потерянном друге и о том, как война изменила их жизни. Постепенно, неловко и тихо, они начинают петь "God Bless America", но это не триумфальный гимн, а скорее тихая молитва о надежде и исцелении.
+Фильм исследует разрушительное воздействие войны на человеческую психику и отношения. Он показывает, как обычные люди из рабочего класса становятся жертвами исторических событий, находящихся вне их контроля. Русская рулетка становится мощной метафорой случайности жизни и смерти на войне, где выживание часто зависит от удачи, а не от мужества или навыков.
+Центральная тема фильма - цена войны, измеряемая не только в человеческих жизнях, но и в разрушенных душах, разорванных связях и утраченной невинности. Каждый из персонажей по-своему становится жертвой конфликта: Ник теряет рассудок и жизнь, Стивен остается инвалидом и не может адаптироваться к мирной жизни, а Майкл, хотя и выживает физически, несет тяжелое бремя вины выжившего.
+Фильм также затрагивает тему американской мечты и того, как война разрушает традиционные ценности рабочего класса. Сообщество, показанное в начале фильма как сплоченное и жизнерадостное, к концу становится травмированным и разобщенным, но все же пытается найти способ продолжать жить и сохранять человеческое достоинство перед лицом трагедии.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Рокки', 'A small-time boxer gets a supremely rare chance to fight a heavy-weight champion in a bout in which he strives to go the distance for his self-respect.', '1976-01-01', 1, '120 minutes', 'Rocky', 8.1, 'Фильм происходит в 1976 году в рабочих районах Филадельфии. Рокки Бальбоа - тридцатилетний боксер-любитель итало-американского происхождения, который зарабатывает на жизнь как коллектор долгов для местного ростовщика Тони Гаццо. Рокки не слишком умен, говорит с характерным акцентом и часто мямлит, но обладает добрым сердцем и железной волей. Он живет в убогой квартирке в бедном районе и тренируется в захудалом спортзале Микки Голдмилла.
+Рокки влюблен в Эдриан Пеннино - застенчивую и замкнутую девушку, которая работает в зоомагазине. Эдриан носит очки, некрасиво одевается и живет со своим грубым братом Полли, который работает на мясокомбинате и дружит с Рокки. Эдриан очень неуверенна в себе и боится мужчин, но Рокки видит в ней красоту и доброту. Он регулярно заходит в зоомагазин, покупает корм для своих черепах Кафф и Линк, и неуклюже пытается ухаживать за девушкой.
+Карьера Рокки как боксера находится в глубоком кризисе. Он выступает в третьеразрядных боях и часто проигрывает. Его тренер Микки - семидесятилетний ветеран бокса, который считает Рокки бесперспективным и отдает его раздевалку другому боксеру. Микки жестко критикует Рокки, говоря, что тот потратил свой талант и превратился в уличного головореза.
+Тем временем в мире профессионального бокса происходят драматические события. Чемпион мира в тяжелом весе Аполло Крид готовится к титульному бою в Филадельфии, приуроченному к празднованию двухсотлетия США. Однако за пять недель до боя его соперник получает травму и не может участвовать в поединке. Промоутеры в панике - отменить бой означает потерять миллионы долларов.
+Аполло Крид - харизматичный афроамериканский боксер, мастер саморекламы и шоу-бизнеса. Он предлагает гениальную с маркетинговой точки зрения идею - дать шанс неизвестному местному боксеру сразиться за титул чемпиона мира. Крид просматривает список филадельфийских боксеров и выбирает Рокки Бальбоа исключительно из-за его прозвища "Итальянский жеребец" и патриотической символики - итало-американец против афроамериканца в День независимости.
+Для Крида это чистое шоу - он абсолютно уверен в легкой победе и планирует устроить зрелищный бой для публики. Он даже придумывает сценарий поединка, планируя "поиграть" с соперником несколько раундов, а затем эффектно нокаутировать его.
+Рокки потрясен неожиданным предложением. Ему предлагают гонорар в сто пятьдесят тысяч долларов - сумму, о которой он не мог и мечтать. Вся страна начинает следить за этой историей о простом парне, получившем шанс всей жизни. СМИ представляют бой как воплощение американской мечты.
+Понимая уникальность момента, к Рокки возвращается Микки, который предлагает стать его тренером. Между ними происходит эмоциональный разговор - Микки признается, что видел потенциал в Рокки, но считал его упущенным. Теперь старый тренер хочет получить последний шанс на славу, готовя бойца к самому важному поединку в истории бокса.
+Начинается интенсивная подготовка. Рокки тренируется с фанатичной одержимостью - бегает по улицам Филадельфии на рассвете, отрабатывает удары на мясных тушах на бойне, где работает Полли, качает мышцы подручными средствами. Знаменитая сцена бега по ступеням Музея искусств Филадельфии, где Рокки поднимает руки в триумфальном жесте, становится символом преодоления себя и стремления к мечте.
+Отношения с Эдриан развиваются параллельно с подготовкой к бою. В День благодарения Рокки приглашает девушку на свидание. Сначала они идут на каток, где Эдриан впервые в жизни встает на коньки, а затем Рокки приводит ее к себе домой. В его скромной квартире происходит их сближение - Эдриан снимает очки и шляпу, распускает волосы, и Рокки видит ее истинную красоту. Они проводят ночь вместе, и впервые в жизни оба чувствуют настоящую любовь.
+Эдриан становится главной поддержкой Рокки в его подготовке. Она помогает ему преодолеть неуверенность и поверить в себя. Когда Рокки сомневается в своих силах, говоря, что не может победить Крида, Эдриан отвечает простыми словами: "Win!" ("Побеждай!"). Эта поддержка дает ему моральную силу для продолжения борьбы.
+За несколько дней до боя Рокки посещает пустую арену, где должен состояться поединок. Масштаб предстоящего события поражает его - он понимает, что будет сражаться перед миллионами зрителей против непобедимого чемпиона. В разговоре с Эдриан Рокки признается, что не надеется на победу, но хочет доказать, что он не очередной неудачник - если он продержится все пятнадцать раундов с чемпионом мира, это будет его личной победой.
+Наступает день боя. Арена переполнена, бой транслируется по всей стране. Аполло Крид появляется в образе дяди Сэма, разыгрывая патриотическое шоу. Рокки входит в зал под скромные аплодисменты - он явный аутсайдер, и большинство зрителей пришли посмотреть на его быстрое поражение.
+Первые раунды проходят по сценарию Крида - чемпион играет с соперником, демонстрируя техническое превосходство. Однако уже в первом раунде происходит неожиданное - Рокки удается нокдауном отправить Крида на пол. Чемпион быстро поднимается, но его самоуверенность получает серьезный удар.
+По ходу боя становится ясно, что Крид недооценил противника. Рокки оказывается невероятно выносливым и упорным бойцом. Он пропускает множество ударов, лицо его превращается в кровавую маску, но он продолжает наступать и наносить мощные удары по корпусу чемпиона. Крид начинает уставать от неожиданно жесткого сопротивления.
+К середине боя Аполло понимает, что недооценил соперника и рискует потерять титул. Он переходит к серьезной тактике, используя все свое мастерство. Рокки получает серьезную травму глаза - веко рассечено так сильно, что он практически не видит. Микки хочет остановить бой, но Рокки категорически отказывается сдаваться.
+В четырнадцатом раунде Крид нокдауном отправляет Рокки на пол. Кажется, что бой окончен, но Рокки поднимается на счет девять и продолжает сражаться. Его стойкость поражает даже чемпиона. В последнем раунде оба боксера обмениваются мощными ударами, демонстрируя невероятную волю к победе.
+Финальный гонг застает бойцов на ногах. Оба измотаны до предела - Крид едва держится на ногах, а Рокки практически слепой от крови. Результат боя настолько близок, что судьи объявляют раздельное решение в пользу Аполло Крида, который сохраняет титул чемпиона мира с минимальным преимуществом.
+Однако для Рокки это моральная победа. Он достиг своей цели - продержался все пятнадцать раундов против чемпиона мира и доказал, что он настоящий боксер, а не просто уличный головорез. Крид, потрясенный упорством соперника, с уважением пожимает ему руку и говорит, что не хочет реванша.
+В финальной сцене окровавленный, но счастливый Рокки пробирается через толпу репортеров и фанатов к Эдриан. Их объятия на ринге становятся кульминацией фильма - это победа не столько в спорте, сколько в жизни. Простой парень из рабочего района доказал себе и всему миру, что с упорством и верой в себя можно достичь невозможного.
+Фильм завершается на пике эмоций - Рокки обрел любовь, уважение и уверенность в себе. Он остался тем же добрым и простым человеком, но теперь знает, что способен на великие свершения. История Рокки Бальбоа становится воплощением американской мечты о том, что каждый может изменить свою судьбу, если достаточно сильно этого захочет.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Телесеть', 'A television network cynically exploits a deranged former anchor''s ravings and revelations about the news media for its own profit.', '1976-01-01', 1, '121 minutes', 'Network', 8.1, 'Телесеть
+Фильм происходит в 1976 году в мире американского телевидения. Говард Бил - ветеран телевизионных новостей, который двадцать пять лет ведет вечернюю программу новостей на телеканале UBS (Union Broadcasting System). Рейтинги его передачи катастрофически падают, и руководство канала решает уволить его. Лучшим другом Била является Макс Шумахер - продюсер новостей, который также работает на канале много лет и вынужден сообщить другу неприятную новость об увольнении.
+Узнав о своем увольнении, Бил впадает в глубокую депрессию. Его жена умерла, дети выросли и живут своей жизнью, а работа была единственным смыслом его существования. В состоянии алкогольного опьянения и отчаяния Бил объявляет в прямом эфире, что через неделю, в свой последний день на телевидении, он застрелится прямо в студии, поскольку жизнь потеряла для него всякий смысл.
+Это заявление вызывает скандал и привлекает огромное внимание публики. Руководство канала в панике, но рейтинги программы резко подскакивают - зрители в массовом порядке настраиваются на канал, чтобы посмотреть, действительно ли ведущий покончит с собой в прямом эфире. На следующий день Макс пытается уговорить друга извиниться перед аудиторией и достойно завершить карьеру.
+Однако Бил появляется в эфире в еще более взвинченном состоянии и произносит страстную речь о том, что он "сыт по горло и больше не намерен это терпеть". Он призывает зрителей выйти к окнам и прокричать эту фразу, выражая свое недовольство состоянием общества. По всей стране люди действительно открывают окна и кричат, что они "сыты по горло", превращая телепередачу в массовое движение протеста.
+Рейтинги программы взлетают до небес, и руководство канала понимает, что наткнулось на золотую жилу. Молодая и амбициозная программный директор Диана Кристенсен видит в происходящем уникальную возможность революционизировать телевидение. Она предлагает сделать из Била звезду нового формата - "пророка эфирного времени", который будет еженедельно обличать пороки общества в развлекательном шоу.
+Диана - циничная карьеристка, одержимая рейтингами и готовая на все ради успеха. Она живет только работой, не имеет личной жизни и рассматривает людей исключительно как инструменты для достижения своих целей. Макс, напротив, представляет старую школу журналистики, где новости должны информировать общество, а не развлекать его.
+Между Максом и Дианой завязывается роман, несмотря на их кардинальные различия в профессиональных взглядах. Макс женат на Луизе и имеет взрослых детей, но Диана очаровывает его своей энергией и страстью к работе. Их отношения развиваются на фоне растущего конфликта по поводу коммерциализации новостей.
+Тем временем психическое состояние Говарда Била продолжает ухудшаться. Он начинает верить, что получает божественные откровения, и называет себя "гневным пророком". Его передача "Час Говарда Била" становится самым популярным шоу на телевидении. Бил обличает коррупцию, лицемерие политиков, потребительское общество и моральный упадок, но делает это в театральной, почти истерической манере.
+Диана разрабатывает еще более радикальные программы для увеличения рейтингов. Она создает реалити-шоу с участием настоящих террористов - "Шоу Мао Цзэ-дуна", где левые радикалы из "Эклектичной освободительной армии" совершают реальные преступления в прямом эфире. Это вызывает возмущение Макса, который считает такой подход к телевидению неэтичным и опасным.
+Конфликт между Максом и Дианой достигает пика, когда она переводит новости в развлекательный отдел, фактически превращая информационные программы в шоу-бизнес. Макс публично критикует такую политику и призывает к возвращению серьезной журналистики. За это его увольняют, а Диана получает полный контроль над программной политикой канала.
+Разрыв с Максом становится поворотным моментом в жизни Дианы. Она осознает, что пожертвовала личным счастьем ради карьеры, но уже не может изменить свою натуру. Макс возвращается к жене, понимая, что их брак важнее мимолетной страсти к молодой коллеге.
+Популярность Говарда Била достигает апогея, когда он становится культурной иконой и выразителем общественного недовольства. Однако его растущее влияние начинает беспокоить крупный бизнес. Когда Бил начинает критиковать сделку канала UBS с саудовскими инвесторами, председатель совета директоров Артур Дженсен вызывает его к себе.
+В драматической сцене Дженсен объясняет Билу истинное устройство современного мира. Он говорит, что национальные государства устарели, а миром правят транснациональные корпорации и финансовые потоки. По его словам, демократия и индивидуальность - это иллюзии, а человечество должно стать частью единой корпоративной системы. Эта речь производит сильное впечатление на психически неустойчивого Била.
+После встречи с Дженсеном Бил кардинально меняет свое послание. Вместо призывов к протесту он начинает проповедовать фатализм и покорность корпоративному порядку. Он говорит зрителям, что индивидуальные усилия бессмысленны перед лицом глобальных экономических сил. Это новое послание депрессивно действует на аудиторию, и рейтинги программы начинают падать.
+Диана оказывается в сложном положении - ее главная звезда больше не приносит прибыли, но контракт с Билом не позволяет его уволить. Она начинает искать способы избавиться от надоевшего "пророка". В это время террористы из "Эклектичной освободительной армии", недовольные условиями своего телевизионного контракта, требуют пересмотра соглашения и угрожают расправой.
+Диана приходит гениальная с ее точки зрения идея - она убеждает террористов убить Говарда Била в прямом эфире, представив это как революционный акт против капиталистической медиа-системы. Террористы соглашаются, видя в этом способ прославиться и получить максимальную огласку для своих идей.
+В финальной сцене фильма Говард Бил ведет свою последнюю передачу, даже не подозревая о готовящемся покушении. Он произносит очередную депрессивную речь о бессилии человека перед корпоративной машиной. В этот момент в студию врываются боевики "Эклектичной освободительной армии" и расстреливают его прямо на глазах у миллионов телезрителей.
+Закадровый голос цинично комментирует произошедшее, отмечая, что Говард Бил стал первым человеком в истории, убитым из-за низких рейтингов. Его смерть в прямом эфире становится апогеем превращения телевидения в машину для производства сенсаций, где человеческая жизнь имеет ценность только с точки зрения коммерческого успеха.
+Фильм завершается мрачным предостережением о том, как средства массовой информации могут манипулировать общественным мнением и превращать трагедии в развлечение. Диана достигает своей цели - канал получает сенсацию века, но ценой человеческой жизни и окончательной утраты журналистской этики. История Говарда Била становится притчей о том, как медиа-индустрия пожирает своих собственных создателей во имя прибыли и рейтингов.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Барри Линдон', 'An Irish rogue wins the heart of a rich widow and assumes her dead husband''s aristocratic position in 18th-century England.', '1975-01-01', 1, '185 minutes', 'Barry Lyndon', 8.1, 'Фильм рассказывает историю жизни Редмонда Барри, позже ставшего Барри Линдоном, и охватывает период с середины до конца XVIII века. Повествование ведется от лица всезнающего рассказчика, который с ироничной отстраненностью комментирует события.
+История начинается в Ирландии в 1750-х годах, где молодой Редмонд Барри живет в небогатой семье со своей матерью на небольшом поместье. Отец Редмонда погиб на дуэли еще до рождения сына из-за спора о покупке лошадей. Юноша влюбляется в свою кузину Нору Брейди, но та предпочитает ему английского офицера капитана Джона Квина, который богаче и имеет лучшие перспективы.
+Ревнивый и импульсивный Редмонд вызывает Квина на дуэль. Поединок происходит на пистолетах, и Редмонд, как ему кажется, убивает соперника. На самом деле дуэль была подстроена семьей Брейди и Квином - пистолет Редмонда был заряжен холостыми патронами, а Квин лишь притворился мертвым. Однако Редмонд об этом не знает и, считая себя убийцей, спешно покидает Ирландию.
+По дороге в Дублин Редмонда грабят разбойники, которые забирают все его деньги и лошадь. Молодой человек вынужден пешком добираться до города, где записывается в британскую армию. Он попадает в полк, который отправляют воевать в Семилетнюю войну в Пруссию.
+Военная служба оказывается тяжелым испытанием. Редмонд участвует в кровопролитных сражениях, где гибнут многие его товарищи. Он становится свидетелем жестокости войны и бессмысленности многих военных действий. Во время одной из битв он спасает жизнь своему офицеру капитану Грогану, который становится его наставником и рассказывает о том, что произошло в действительности с капитаном Квином.
+Узнав правду о дуэли, Редмонд понимает, что его обманули, но теперь он связан военной службой. Он пытается дезертировать, украв форму прусского офицера, но его ловят и вербуют в прусскую армию. Теперь ему приходится сражаться на стороне противника против своих бывших товарищей.
+После окончания войны Редмонд становится шпионом прусского министра полиции, который поручает ему следить за шевалье де Баливари - ирландским дворянином, подозреваемым в шулерстве в карты. Однако Баливари оказывается земляком Редмонда, и они объединяются для обмана прусских властей.
+Вместе с Баливари Редмонд путешествует по Европе, играя в карты в аристократических салонах и зарабатывая этим на жизнь. Они ведут роскошный образ жизни, но их деятельность рискованна - шулерство может привести к дуэли или тюремному заключению. Редмонд изучает манеры высшего общества и превращается в изысканного джентльмена.
+В одном из немецких курортных городов Редмонд встречает графиню Линдон - красивую молодую женщину, замужнюю за пожилым и болезненным графом Линдоном. Граф невероятно богат, владеет обширными поместьями в Ирландии и Англии. Редмонд начинает ухаживать за графиней, видя в ней возможность войти в высшее общество.
+Граф Линдон внезапно умирает, и после приличествующего периода траура Редмонд женится на вдове, получая титул Барри Линдон и доступ к огромному состоянию. Он становится владельцем роскошного поместья Хакелтон в Ирландии и лондонского особняка.
+Первые годы брака кажутся счастливыми. У Барри и леди Линдон рождается сын Брайан, которого отец обожает и в котором видит продолжателя рода. Барри наслаждается богатством, устраивает роскошные приемы, покупает дорогие картины и предметы искусства, ведет жизнь аристократа.
+Однако постепенно отношения в семье ухудшаются. Леди Линдон погружается в меланхолию и начинает пить. Она чувствует, что муж женился на ней только ради денег, и не может простить ему расчетливость. Барри действительно относится к жене скорее как к средству достижения социального положения, чем как к любимой женщине.
+Особенно сложными становятся отношения Барри с пасынком лордом Балибарреном - сыном леди Линдон от первого брака. Мальчик, а затем юноша, ненавидит отчима, считая его выскочкой и узурпатором. Балибаррен наследует титул и большую часть состояния, что создает постоянное напряжение в семье.
+Барри пытается войти в английское высшее общество, но сталкивается с предрассудками. Аристократы презирают его как ирландца-выскочку, который купил себе место в обществе женитьбой. Несмотря на богатство, ему не удается получить рыцарский титул или избраться в парламент.
+Финансовое положение семьи постепенно ухудшается из-за расточительности Барри. Он тратит огромные суммы на азартные игры, дорогие покупки и содержание любовниц. Управляющие поместьями предупреждают о растущих долгах, но Барри не прислушивается к их советам.
+Трагедия происходит, когда маленький Брайан, играя на лошади, падает и получает смертельную травму. Смерть любимого сына разрушает Барри - он теряет смысл жизни и окончательно погружается в пьянство и разврат. Леди Линдон также не может пережить потерю ребенка и пытается покончить с собой.
+Лорд Балибаррен, достигший совершеннолетия, решает избавиться от ненавистного отчима. Он нанимает адвокатов, которые находят способы ограничить доступ Барри к семейным финансам. Между пасынком и отчимом происходят открытые конфликты.
+Кульминацией противостояния становится дуэль между Барри и лордом Балибарреном. Поединок происходит в сарае при свечах в атмосфере мрачной торжественности. По правилам дуэли стреляют по очереди. Балибаррен стреляет первым, но его пистолет дает осечку.
+Барри получает право на ответный выстрел, но в последний момент решает выстрелить в воздух, не желая убивать сына своей жены. Это благородный жест, но он роковым образом сказывается на его судьбе. По правилам дуэли поединок должен продолжаться.
+Во втором раунде Балибаррен целится более тщательно и ранит Барри в ногу. Рана оказывается настолько серьезной, что ногу приходится ампутировать. Барри становится калекой и окончательно теряет остатки своего влияния в семье.
+Балибаррен и адвокаты принуждают Барри покинуть поместье в обмен на ежегодную пенсию. Ему запрещают видеться с женой и оставаться в Англии. Барри вынужден вернуться в Ирландию, где живет в бедности на скромное содержание.
+Фильм завершается информацией о том, что Барри Линдон умер в Дублине через несколько лет в нищете и безвестности. Леди Линдон прожила еще много лет, но так и не оправилась от трагедий. Лорд Балибаррен унаследовал все семейное состояние и стал уважаемым членом общества.
+Заключительный титр фильма гласит, что все персонажи этой истории теперь равны, поскольку все они мертвы, подчеркивая тщетность человеческих амбиций перед лицом времени. История Барри Линдона представлена как притча о взлете и падении, о цене социальных амбиций и иллюзорности материального успеха в аристократическом обществе XVIII века.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Зеркало', 'A dying man in his forties remembers his past. His childhood, his mother, the war, personal moments and things that tell of the recent history of all the Russian nation.', '1975-01-01', 1, '107 minutes', 'Zerkalo', 8.1, 'Зеркало (1975, режиссёр Андрей Тарковский)
+Фильм представляет собой глубоко личную автобиографическую медитацию режиссёра о памяти, времени, семейных связях и человеческой судьбе в контексте истории ХХ века. Повествование строится как сложный поток сознания умирающего поэта Алексея, который в последние дни жизни переосмысливает своё прошлое, пытаясь понять закономерности собственной судьбы и её связь с судьбами родных людей.
+Фильм открывается документальным сюжетом о лечении заикания гипнозом, который символически предваряет основную тему - преодоление внутренних барьеров и обретение способности к самовыражению. Далее мы знакомимся с Алексеем, который лежит на смертном одре в своём доме и мучается воспоминаниями. Его терзают угрызения совести по поводу разрушенных отношений с близкими людьми и нереализованных возможностей.
+Центральная линия детских воспоминаний разворачивается в 1930-е годы в сельской местности, где маленький Алексей живёт с матерью Марией и младшим братом после того, как отец покинул семью. Мать, которую играет Маргарита Терехова, работает корректором в типографии и с огромным трудом поднимает детей одна. Её образ исполнен достоинства и внутренней силы, но также глубокой печали и усталости от жизненных испытаний.
+Одна из самых пронзительных сцен детства связана с эпизодом пропажи сережек. Мать обвиняет Алексея в их краже, и мальчик, несмотря на свою невиновность, готов взять вину на себя, лишь бы не расстраивать мать. Позже серьги находятся, но травма несправедливого обвинения остается в душе ребёнка навсегда. Эта сцена становится символом сложных, противоречивых отношений между матерью и сыном, полных любви, но также недопонимания и взаимных обид.
+Другой важный эпизод детства - появление незнакомца, который рассказывает о докторе Хоффмане и его опытах с гипнозом. Этот загадочный персонаж словно из другого мира вторгается в обыденную жизнь семьи, принося с собой ощущение тайны и предчувствие перемен. Сцена с незнакомцем снята в особой, сновидческой манере, подчёркивающей её символическое значение.
+Военное время показано через воспоминания о работе матери на эвакуированной типографии. Мы видим, как Мария корректирует тексты, и в одной из сцен она обнаруживает ошибку в важном документе, которая могла бы иметь серьёзные последствия. Этот эпизод раскрывает её профессиональную добросовестность и ответственность, но также показывает атмосферу военного времени, когда любая ошибка могла стоить очень дорого.
+Параллельно детским воспоминаниям развивается линия взрослого Алексея, который сам стал отцом, но повторил судьбу своего родителя - оставил семью. Его сын Игорь растёт с матерью Натальей, и между отцом и сыном существует та же эмоциональная пропасть, которая когда-то разделяла Алексея и его отца. Наталью также играет Маргарита Терехова, что подчёркивает цикличность судеб и повторение жизненных паттернов из поколения в поколение.
+В одной из ключевых сцен Алексей разговаривает с Натальей по телефону, пытаясь объяснить свои поступки и чувства, но разговор не клеится, слова не находят отклика, и связь в итоге прерывается. Эта сцена символизирует разрыв коммуникации между людьми и невозможность передать свои истинные чувства.
+Образ отца-поэта пронизывает весь фильм, хотя он практически не появляется в кадре. Его присутствие ощущается через стихи, которые звучат за кадром голосом Арсения Тарковского, отца режиссёра. Эти стихотворения - о войне, любви, природе, времени - становятся лирическим комментарием к происходящему на экране и выражают ту поэтическую суть бытия, которую пытается постичь герой.
+Фильм насыщен историческими отступлениями, которые показывают, как личная судьба семьи вплетается в историю страны и человечества. Мы видим документальные кадры советско-китайского конфликта на озере Хасан, где воевал отец героя, эпизоды гражданской войны в Испании, тренировки советских солдат. Эти исторические вставки не просто иллюстрируют эпоху, но показывают, как большая история формирует индивидуальные судьбы.
+Особенно впечатляет сцена с военным инструктором, который обучает солдат преодолевать колючую проволоку. Медленный, почти ритуальный характер этих движений превращает военное упражнение в своеобразный танец смерти, символизирующий готовность человека к самопожертвованию.
+Центральный символ фильма - зеркало - появляется в различных контекстах и значениях. В одной из самых запоминающихся сцен мать смотрится в зеркало и словно видит там не только своё отражение, но и отражение своей судьбы, своих детей, всей своей жизни. Зеркало становится метафорой памяти, которая отражает не только прошлое, но и будущее, показывая неразрывную связь поколений.
+Природные образы играют особую роль в поэтике фильма. Ветер, колышущий траву и листья деревьев, становится символом времени и изменчивости жизни. Дождь символизирует очищение и обновление. Огонь несёт в себе одновременно разрушительное и очистительное начало. Особенно поражает сцена пожара в доме, когда на фоне пылающих стен мы видим левитирующую фигуру матери - этот сюрреалистический образ символизирует освобождение души от материальных привязанностей.
+Сцена с птицами, которые залетают в дом, также наполнена символическим смыслом. Птицы традиционно символизируют душу, свободу, связь между земным и небесным мирами. Их появление в доме предвещает важные перемены или переход в иное состояние бытия.
+Время в фильме течёт не линейно, а концентрически - прошлое, настоящее и будущее существуют одновременно, переплетаясь и взаимопроникая друг в друга. Детские воспоминания Алексея перемежаются сценами его взрослой жизни и историческими эпизодами, создавая сложную временную мозаику, которая отражает устройство человеческой памяти и сознания.
+Музыка Эдуарда Артемьева и классические произведения Баха и Перселла создают особое звуковое пространство фильма, усиливая его медитативный, почти мистический характер. Звуки природы - шум ветра, дождя, треск огня - органично вплетаются в музыкальную ткань произведения.
+В финале фильма умирающий Алексей переживает момент прозрения и примирения. Он видит свою мать молодой, понимает масштаб её жертв и силу её любви, прощает отца за уход из семьи. Последние кадры показывают идиллическую сцену из довоенного детства - мать с детьми на лугу среди высокой травы. Это воспоминание о потерянном рае детства, к которому душа стремится в момент перехода в вечность.
+Фильм завершается ощущением катарсиса и принятия жизни во всей её сложности и противоречивости. Алексей понимает, что его судьба - это часть большого круговорота времени и памяти, где каждое поколение повторяет ошибки предыдущего, но также наследует его любовь и мудрость. Зеркало отражает не только индивидуальную судьбу, но и судьбу всего человечества, показывая вечные законы бытия, которые проявляются в каждой отдельной жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Китайский квартал', 'A private detective hired to expose an adulterer finds himself caught up in a web of deceit, corruption, and murder.', '1974-01-01', 1, '130 minutes', 'Chinatown', 8.1, 'Китайский квартал (1974, режиссёр Роман Полански)
+Фильм представляет собой неонуарный детектив, действие которого разворачивается в Лос-Анджелесе 1937 года. Главный герой - частный детектив Джейк Гиттес, которого играет Джек Николсон, специализируется на расследовании супружеских измен и других деликатных дел. Гиттес - циничный профессионал, который предпочитает не вмешиваться в большие дела и довольствуется мелкими, но безопасными заказами.
+История начинается, когда в офис Гиттеса приходит женщина, представившаяся Эвелин Малрей, женой Холлиса Малрея - главного инженера Департамента водоснабжения Лос-Анджелеса. Она просит детектива проследить за мужем, подозревая его в измене. Гиттес принимает дело и начинает наблюдение за Малреем. Он обнаруживает, что тот действительно встречается с молодой женщиной, и фотографирует их вместе в лодке в одном из городских парков.
+На следующий день фотографии появляются в газетах с сенсационными заголовками о романе главного инженера. Однако в офис Гиттеса приходит другая женщина, которая заявляет, что она - настоящая Эвелин Малрей, и угрожает подать на детектива в суд за клевету и вторжение в частную жизнь. Гиттес осознает, что стал жертвой подставы и кто-то использовал его для компрометации Малрея.
+Вскоре Холлис Малрей погибает при загадочных обстоятельствах - его находят утонувшим в одном из городских резервуаров, хотя накануне в городе не было дождя, а резервуар был почти пустым. Полиция считает это несчастным случаем, но Гиттес подозревает убийство. Его подозрения усиливаются, когда лейтенант полиции Лу Эскобар, старый знакомый детектива, предупреждает его не вмешиваться в дело.
+Настоящая Эвелин Малрей, которую играет Фэй Данауэй, нанимает Гиттеса для расследования смерти мужа. Она оказывается загадочной и противоречивой женщиной - то холодной и отстраненной, то страстной и уязвимой. Между ней и детективом возникает взаимное притяжение, но Гиттес чувствует, что она что-то скрывает.
+Расследуя обстоятельства смерти Малрея, Гиттес обнаруживает, что инженер незадолго до гибели конфликтовал с городскими властями из-за строительства новой дамбы. Малрей считал проект опасным и нецелесообразным, но его мнение игнорировали. Детектив также узнает, что молодая женщина, с которой встречался Малрей, работала в мэрии и могла передавать ему конфиденциальную информацию.
+След приводит Гиттеса к Ною Кроссу - влиятельному бизнесмену и землевладельцу, которого играет Джон Хьюстон. Кросс оказывается отцом Эвелин и бывшим партнером её покойного мужа по водному департаменту. Во время их первой встречи Кросс производит впечатление обаятельного пожилого джентльмена, но Гиттес интуитивно чувствует в нем опасность.
+Расследование приводит детектива в дом престарелых "Мар Виста", где он обнаруживает, что многие участки земли в долине Сан-Фернандо скупаются под вымышленными именами умерших стариков. Кто-то методично скупает землю, которая сейчас практически бесполезна из-за засухи, но станет чрезвычайно ценной, если в долину придет вода.
+Гиттес понимает, что имеет дело с грандиозной коррупционной схемой. Группа влиятельных бизнесменов и политиков искусственно создает дефицит воды в городе, сбрасывая пресную воду в океан по ночам, чтобы оправдать строительство новой дамбы и водопровода в долину Сан-Фернандо. После этого земля в долине резко вырастет в цене, принеся заговорщикам миллионы долларов прибыли.
+Холлис Малрей погиб, потому что разгадал эту схему и собирался её обнародовать. Его убили, чтобы заставить замолчать, а детектива использовали для дискредитации инженера, представив его как человека, который пренебрегает служебными обязанностями ради любовных похождений.
+Во время одного из расследований на Гиттеса нападают неизвестные. Один из них, коротышка с ножом, разрезает детективу ноздрю, предупреждая не совать нос в чужие дела. Эта травма становится видимым символом того, как опасное любопытство может покалечить человека.
+Отношения между Гиттесом и Эвелин развиваются, и они проводят ночь вместе. Эвелин рассказывает детективу о своих сложных отношениях с отцом, но Гиттес чувствует, что она по-прежнему что-то скрывает. Утром он обнаруживает в бассейне Малреев очки, которые, как он подозревает, принадлежали Холлису и могли попасть туда в ночь убийства.
+Следуя за Эвелин, Гиттес обнаруживает, что она тайно посещает дом в одном из бедных районов города, где живет молодая мексиканка с девочкой-подростком. Детектив сначала думает, что это любовница покойного мужа Эвелин, но затем понимает, что девочка каким-то образом связана с самой Эвелин.
+Когда Гиттес конфронтирует Эвелин по поводу девочки, она сначала говорит, что это её сестра, затем - что это её дочь. В ярости детектив бьет её, требуя правды. Наконец Эвелин произносит страшные слова: "Она моя сестра и моя дочь!" Выясняется чудовищная правда - девочка родилась от инцеста между Эвелин и её отцом Ноем Кроссом, когда Эвелин была подростком.
+Эвелин объясняет, что много лет назад она убежала от отца, чтобы защитить ребенка, но Кросс разыскал их и теперь хочет получить опеку над внучкой-дочерью. Она боится, что он повторит с девочкой то же самое, что когда-то сделал с ней. Поэтому Эвелин планирует бежать с ребенком в Мексику, подальше от влияния отца.
+Ной Кросс появляется в доме с вооруженными людьми и захватывает Эвелин, девочку и Гиттеса. Он приказывает детективу вести их в Чайнатаун, где должна состояться передача девочки. По дороге Кросс объясняет Гиттесу свою философию: "Большинство людей никогда не сталкиваются с истинным злом в своей жизни. Но ты сталкиваешься." Он представляет себя как воплощение этого зла, человека, который берет то, что хочет, независимо от последствий.
+В Чайнатауне происходит финальная конфронтация. Эвелин пытается уехать с девочкой, но полиция, которую вызвал Кросс, окружает машину. Лейтенант Эскобар требует, чтобы Эвелин вышла из автомобиля, но она отказывается. В возникшей суматохе раздается выстрел, и Эвелин погибает - пуля попадает ей в глаз, тот самый дефект, который она унаследовала от отца.
+Кросс забирает плачущую девочку, утешая её словами: "Всё будет хорошо, дорогая. Дедушка позаботится о тебе." Гиттес понимает весь ужас ситуации - девочка теперь полностью во власти человека, который когда-то изнасиловал её мать. Детектив пытается вмешаться, но Эскобар и другие полицейские уводят его прочь.
+Один из коллег Гиттеса произносит фразу, которая стала знаменитой: "Забудь об этом, Джейк. Это Чайнатаун." Эти слова отсылают к прошлому детектива, когда он работал в полиции и патрулировал Чайнатаун - район, где царили свои законы, где полиция предпочитала не вмешиваться в местные дела, и где попытки навести порядок часто приводили к трагедиям.
+Фильм заканчивается тем, что Гиттес остается один на темной улице Чайнатауна, осознавая свое полное бессилие перед лицом системной коррупции и зла. Его попытка восстановить справедливость не только провалилась, но и привела к смерти невинной женщины и передаче ребенка в руки извращенца.
+"Китайский квартал" представляет мрачную картину американского общества, где власть и деньги позволяют избежать наказания за любые преступления, включая убийство и инцест. Водная схема оказывается лишь верхушкой айсберга коррупции, которая пронизывает все уровни общества. Фильм показывает, что в таких условиях честность и стремление к справедливости не только бесполезны, но и опасны - они могут разрушить жизни тех, кого пытаешься защитить.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бумажная луна', 'During the Great Depression, a con man finds himself saddled with a young girl who may or may not be his daughter, and the two forge an unlikely partnership.', '1973-01-01', 1, '102 minutes', 'Paper Moon', 8.1, 'Бумажная луна (1973, режиссёр Питер Богданович)
+Фильм представляет собой трагикомедию времён Великой депрессии, действие которой разворачивается в 1936 году в штате Канзас. История начинается с похорон молодой женщины, на которых присутствует загадочный мужчина по имени Мозес Прэй, которого играет Райан О''Нил. Мозес - странствующий торговец Библиями и мелкий мошенник, который зарабатывает на жизни, продавая священные книги вдовам, убеждая их, что покойные мужья заказывали эти Библии перед смертью.
+На похоронах Мозес знакомится с девятилетней девочкой по имени Эйди Логгинс, которую играет Тейтум О''Нил, дочь Райана О''Нила в реальной жизни. Эйди осталась сиротой после смерти матери, и соседи пытаются пристроить её к дальним родственникам в Миссури. Девочка утверждает, что Мозес - её отец, хотя он это категорически отрицает. Тем не менее, он соглашается подвезти Эйди к родственникам за двести долларов.
+Во время путешествия выясняется, что Эйди - необычайно сообразительный и циничный ребёнок, который быстро раскусывает мошеннические схемы Мозеса. Более того, она оказывается ещё более талантливой аферисткой, чем он сам. Когда Мозес продаёт Библию одной из вдов, Эйди замечает, что мужчина взял с женщины слишком мало денег, и хитростью выманивает у покупательницы дополнительную сумму.
+Постепенно между Мозесом и Эйди складывается странное партнёрство. Девочка становится незаменимой помощницей в мошеннических операциях, используя свой детский облик и наивность для усыпления бдительности жертв. Она придумывает всё более изощрённые способы обмана, проявляя недетскую хитрость и понимание человеческой психологии.
+Их первая крупная афера происходит в небольшом городке, где они выдают себя за отца и дочь, торгующих Библиями. Эйди разыгрывает трогательную сцену, рассказывая потенциальным покупательницам о том, как её покойная мама мечтала о красивой Библии. Женщины, растроганные историей сироты, покупают книги по завышенным ценам. Мозес поражён способностями девочки и начинает относиться к ней как к равноправному партнёру.
+Однако их отношения осложняются, когда в их жизнь входит Триси Лин, молодая танцовщица из варьете, которую играет Мэдлин Кан. Мозес влюбляется в неё и забывает о своих обязанностях по отношению к Эйди. Триси Лин оказывается не менее хитрой, чем сама Эйди, но её интересуют только деньги Мозеса. Она быстро понимает, что настоящий источник их доходов - не торговля Библиями, а способности девочки к мошенничеству.
+Эйди сразу невзлюбливает Триси Лин, видя в ней соперницу за внимание Мозеса. Между женщинами разгорается настоящая война, в которой девятилетняя девочка проявляет недетскую жестокость и изобретательность. Она подстраивает различные пакости Триси Лин, портит её вещи, распускает слухи о её прошлом.
+Ситуация осложняется, когда Триси Лин приводит с собой своего любовника - мелкого преступника по имени Имогин, которого играет П.Дж. Джонсон. Имогин сразу понимает, какие деньги можно заработать, используя способности Эйди, и предлагает организовать более масштабные аферы. Он планирует использовать девочку для ограбления банка, выдав её за заложника.
+Мозес, ослеплённый страстью к Триси Лин, сначала соглашается на участие в этих планах, но постепенно начинает понимать, что подвергает Эйди серьёзной опасности. Переломный момент наступает, когда во время одной из афер девочка чуть не попадает в руки полиции. Мозес осознает, что его безответственность может стоить Эйди свободы или даже жизни.
+Конфликт достигает кульминации в отеле, где они остановились на ночь. Триси Лин и Имогин планируют украсть все деньги, заработанные Мозесом и Эйди, и исчезнуть. Эйди узнаёт об этом плане и пытается предупредить Мозеса, но тот не верит ей, считая, что девочка просто ревнует к его новой подруге.
+Утром Мозес просыпается и обнаруживает, что Триси Лин и Имогин исчезли, забрав с собой все их сбережения. Эйди встречает его словами: "Я же говорила", но без злорадства - она понимает, как больно Мозесу. В этот момент между ними происходит важный эмоциональный сдвиг - они начинают относиться друг к другу не как партнёры по бизнесу, а как семья.
+Оставшись без денег, Мозес и Эйди вынуждены жить в машине и перебиваться мелкими аферами. Их отношения становятся более тёплыми и искренними. Мозес начинает проявлять отеческую заботу о девочке, а Эйди позволяет себе быть ребёнком, а не только хитрой мошенницей.
+Однако их спокойная жизнь нарушается, когда они встречают шерифа, который подозревает их в мошенничестве. Начинается погоня, во время которой выясняется, что Эйди всё это время тайно откладывала часть заработанных денег, не доверяя Мозесу полностью. У неё есть достаточно средств, чтобы они могли начать новую жизнь где-нибудь в другом месте.
+В финале фильма Мозес и Эйди приезжают в город, где живут родственники девочки. Но за время их путешествия между ними сложились настолько близкие отношения, что расставание кажется невозможным. Эйди больше не хочет жить с чужими людьми - она хочет остаться с Мозесом, которого теперь действительно считает своим отцом.
+Мозес тоже понимает, что не может расстаться с девочкой. Она изменила его жизнь, научила его быть ответственным и заботливым. Более того, он начинает подозревать, что Эйди действительно может быть его дочерью - даты сходятся, и он помнит роман с её матерью много лет назад.
+Фильм заканчивается тем, что Мозес и Эйди решают не расставаться. Они садятся в машину и уезжают вместе, планируя продолжить свои путешествия, но теперь уже как настоящая семья. Их мошеннические дни остались в прошлом - теперь они будут искать честные способы заработка.
+Последние кадры показывают их машину, удаляющуюся по пыльной дороге среди бескрайних равнин Канзаса. Звучит песня "It''s Only a Paper Moon", от которой фильм получил своё название. Эта песня о том, что даже искусственные, "бумажные" вещи могут стать настоящими, если в них верить и если рядом есть любимый человек.
+"Бумажная луна" представляет собой трогательную историю о том, как два одиноких человека - циничный мошенник и осиротевшая девочка - находят друг в друге семью. Фильм показывает, что даже в самых неблагоприятных обстоятельствах возможны искренние человеческие отношения, основанные на взаимной заботе и привязанности. Великая депрессия служит фоном для истории о том, как люди выживают не только благодаря хитрости и изобретательности, но и благодаря способности любить и быть любимыми.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Шепоты и крики', 'When a woman dying of cancer in early twentieth-century Sweden is visited by her two sisters, long-repressed feelings between the siblings rise to the surface.', '1972-01-01', 1, '91 minutes', 'Viskningar och rop', 8.1, 'Крики и шёпот (1972, режиссёр Ингмар Бергман)
+Фильм представляет собой глубокую психологическую драму о смерти, страдании и сложных отношениях между тремя сёстрами в викторианской Швеции. Действие разворачивается в большом семейном поместье, где одна из сестёр, Агнес, медленно умирает от рака. Весь фильм пронизан красным цветом - красные стены, красные ткани, красные детали интерьера, которые символизируют кровь, страдание, жизненную силу и приближающуюся смерть.
+История начинается в предрассветные часы, когда Агнес, которую играет Харриет Андерссон, просыпается от мучительной боли. Рядом с ней бодрствует верная служанка Анна, которая ухаживает за больной с материнской нежностью. Агнес страдает от неизлечимой болезни, которая постепенно разрушает её тело, но её дух остаётся ясным и она осознаёт приближение смерти.
+В поместье находятся две другие сестры Агнес - Карин и Мария. Карин, которую играет Ингрид Тулин, замужем за дипломатом и живёт в Германии. Она приехала проведать умирающую сестру, но её присутствие наполнено холодностью и отчуждением. Карин - женщина подавленных эмоций, которая всю жизнь жила в строгих рамках приличий и никогда не позволяла себе искренних чувств.
+Мария, которую играет Лив Ульман, кажется более тёплой и эмоциональной, но её чувственность поверхностна и эгоистична. Она замужем за преуспевающим врачом, но ведёт легкомысленный образ жизни и изменяет мужу. Мария привыкла быть в центре внимания и использовать свою привлекательность для получения того, что ей нужно.
+Служанка Анна, которую играет Кари Сильван, единственная в доме проявляет к Агнес настоящую любовь и заботу. Она потеряла собственную дочь и перенесла всю свою материнскую нежность на больную женщину. Анна кормит Агнес с ложечки, читает ей, утешает во время приступов боли, не оставляя её ни на минуту.
+Через флешбэки зритель узнаёт о прошлом сестёр и причинах их эмоциональной отчуждённости. Их детство было лишено материнской любви - мать была холодной и недоступной женщиной, которая не умела проявлять чувства. Отец также не давал дочерям эмоционального тепла, и девочки выросли, не научившись любить себя и других.
+Карин живёт в несчастливом браке с мужчиной, который её не понимает и не ценит. Её сексуальность подавлена, она испытывает отвращение к физической близости. В одной из самых шокирующих сцен фильма Карин в припадке самоненависти и фрустрации наносит себе раны осколком бокала в интимной области, а затем мажет кровью рот, словно это помада.
+Мария кажется более живой и привлекательной, но её лёгкость и кокетство скрывают внутреннюю пустоту. Она не способна на глубокие чувства и воспринимает отношения с людьми как игру. У неё есть роман с семейным доктором, но даже эта связь для неё не более чем развлечение.
+Агнес, умирающая сестра, парадоксальным образом оказывается самой живой и искренней из троих. Несмотря на физические страдания, она сохраняет способность чувствовать красоту жизни - радуется звукам природы, прикосновению руки, человеческому голосу. Она ведёт дневник, в котором записывает свои мысли о жизни и смерти.
+Доктор Давид, которого играет Эрланд Юзефсон, лечащий врач Агнес, знает, что болезнь неизлечима, но старается облегчить её страдания. Он также является любовником Марии, но их отношения причиняют ему больше боли, чем радости, поскольку он понимает поверхностность её чувств.
+По мере приближения смерти Агнес атмосфера в доме становится всё более напряжённой. Сёстры пытаются примириться друг с другом и с умирающей, но их попытки близости наталкиваются на годы накопившегося отчуждения и взаимных претензий.
+Кульминационный момент наступает, когда Агнес умирает в мучительных страданиях. Её смерть показана с беспощадной реалистичностью - Бергман не щадит зрителя, показывая все физические аспекты умирания. Последние часы Агнес проводит в объятиях Анны, которая единственная остаётся с ней до конца.
+Однако смерть Агнес оказывается не финалом, а кульминацией фильма. В сюрреалистической сцене мёртвая Агнес возвращается к жизни и зовёт к себе сестёр. Она просит их остаться с ней, согреть её, поскольку ей холодно и страшно в мире мёртвых. Эта сцена может интерпретироваться как галлюцинация, сон или мистическое видение.
+Карин отказывается приблизиться к мёртвой сестре, испытывая ужас и отвращение. Мария сначала подходит к Агнес, но, коснувшись её холодного тела, в панике убегает. Только Анна, верная служанка, берёт мёртвую Агнес на руки и согревает её своим телом, как мать согревает ребёнка.
+Эта сцена с Анной, держащей на руках тело Агнес, является прямой отсылкой к иконографии Пьеты - изображению Богоматери с телом мёртвого Христа. Анна воплощает безусловную любовь и сострадание, которых были лишены сёстры в своём детстве и которые они не смогли дать друг другу.
+После похорон сёстры готовятся разъехаться по домам. Карин возвращается к мужу в Германию, Мария - к своей легкомысленной жизни в городе. Они пытаются сблизиться перед расставанием, но даже перед лицом смерти не могут преодолеть барьеры отчуждения.
+В предпоследней сцене фильма Анна читает отрывок из дневника Агнес, где та описывает один счастливый день, проведённый с сёстрами в саду. Агнес пишет о том, как они сидели на качелях под белыми деревьями, и она чувствовала себя окружённой любовью и красотой. Это воспоминание контрастирует с общей атмосферой отчуждения и показывает, что между сёстрами когда-то существовала близость.
+Фильм завершается сценой в саду, которая может быть как воспоминанием из дневника Агнес, так и символическим изображением того счастья, которое могло бы быть у сестёр, если бы они научились любить. Три женщины в белых платьях сидят на качелях под цветущими деревьями, и на их лицах покой и умиротворение.
+"Крики и шёпот" представляет собой мучительное исследование человеческой природы, показывающее, как недостаток любви в детстве калечит людей на всю жизнь. Фильм задаёт вопрос о том, что делает нас людьми - способность страдать или способность любить и сострадать. Бергман показывает, что истинная близость между людьми возможна только через принятие боли и смертности друг друга.
+Цветовая символика фильма глубоко продумана - красный цвет символизирует не только кровь и страдание, но и жизненную силу, страсть, любовь. Белый цвет в финальной сцене символизирует чистоту, невинность, возможность искупления. Чёрный цвет одежды персонажей символизирует смерть и траур не только по Агнес, но и по их собственным нереализованным возможностям любить.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Солярис', 'A psychologist is sent to a station orbiting a distant planet in order to discover what has caused the crew to go insane.', '1972-01-01', 1, '167 minutes', 'Solaris', 8.1, 'Солярис
+Психолог Крис Кельвин получает задание отправиться на космическую станцию, вращающуюся вокруг планеты Солярис, чтобы оценить психическое состояние экипажа и принять решение о продолжении миссии. Планета Солярис покрыта живым океаном, который ученые изучают уже много десятилетий, но так и не смогли понять его природу. Перед отлетом Кельвин встречается со своим другом Анри Бертоном, который много лет назад был пилотом в первой экспедиции к Солярису. Бертон рассказывает о странных явлениях, которые он наблюдал на планете - океан создавал гигантские структуры, похожие на города или сады, которые появлялись и исчезали без всякой логики. Его рассказы тогда посчитали галлюцинациями, и карьера Бертона была разрушена. Он показывает Кельвину старые видеозаписи, предупреждая его о непредсказуемости планеты.
+По прибытии на станцию Кельвин обнаруживает царящий там хаос. Из трех членов экипажа один, Гибарян, покончил с собой незадолго до прибытия Кельвина, оставив ему загадочную видеозапись с предупреждением. Двое оставшихся ученых ведут себя крайне странно. Доктор Снаут, старый исследователь Соляриса, выглядит измученным и говорит загадками, постоянно оглядываясь по сторонам. Кибернетик Сарториус еще более замкнут и подозрителен, он запирается в своей лаборатории и общается с Кельвином только через переговорное устройство. Оба они намекают на присутствие на станции неких "гостей" и предупреждают Кельвина быть готовым ко всему, но отказываются давать четкие объяснения.
+Кельвин исследует станцию и находит ее в беспорядке - повсюду разбросаны личные вещи, женская одежда и украшения, что странно для научной станции. В каюте Гибаряна он находит библиотеку книг о Солярисе и записи, в которых ученый описывает необъяснимые события. Ночью Кельвин слышит странные звуки и голоса, но никого не может найти.
+В первую же ночь Кельвин просыпается и обнаруживает в своей каюте свою жену Хари, которая десять лет назад покончила с собой в их земном доме, выпив жидкий кислород после болезненной ссоры с мужем. Она была психически неуравновешенной, склонной к депрессиям, и их брак переживал кризис. В ту роковую ночь Кельвин произнес жестокие слова, после чего ушел к друзьям, а вернувшись утром, нашел ее мертвой. Теперь Хари выглядит точно так же, как в день смерти - молодая, красивая, одетая в то же платье. Она ведет себя абсолютно естественно, помнит их общее прошлое, но не помнит о своей смерти и не понимает, как оказалась на космической станции.
+Потрясенный и напуганный Кельвин решает, что это галлюцинация или что он сходит с ума. Он заманивает Хари в спасательную капсулу под предлогом прогулки и запускает ее в космос, думая, что это избавит его от видения. Но на следующую ночь она появляется снова, причем не помнит о том, что происходило накануне. Кельвин в панике бросается к Снауту за объяснениями.
+Снаут наконец раскрывает тайну станции. Океан Соляриса обладает разумом, но разумом совершенно чуждым человеческому пониманию. Он способен сканировать подсознание людей, находящихся на станции, и материализовывать из их памяти давно умерших или потерянных близких. Эти создания, которых ученые называют "гостями" или "фи-созданиями", неотличимы от оригиналов - они обладают всеми воспоминаниями, чертами характера, даже родимыми пятнами настоящих людей. Однако их сознание неполно - они существуют только в связи со своими "создателями" и не могут покинуть станцию, испытывая при попытке удалиться невыносимую физическую боль.
+Снаут показывает Кельвину свою "гостью" - уродливую женщину, которую он скрывает в своей каюте. У Сарториуса тоже есть "гость", которого он держит в лаборатории и который является источником его страхов. Гости появляются из самых глубоких, часто подавленных воспоминаний, не обязательно приятных. Они обладают сверхчеловеческой силой - их тела способны восстанавливаться после любых повреждений, их невозможно убить обычными способами.
+Кельвин постепенно принимает ситуацию и пытается жить с Хари как с настоящей женой. Он рассказывает ей об их прошлой жизни на Земле, об их любви, о том, как они познакомились, о счастливых моментах их брака. Он также осторожно рассказывает ей о том, как она умерла, стараясь не травмировать ее. Хари постепенно начинает понимать свою природу, что причиняет ей глубокие страдания. Она осознает, что является лишь отражением памяти и подсознания Кельвина о ней, а не настоящим человеком со своей собственной душой и судьбой.
+Хари пытается покончить с собой, выпив жидкий кислород, как это сделала настоящая Хари на Земле, но ее тело мгновенно восстанавливается. Она понимает, что обречена на существование, которое она не выбирала, и что ее любовь к Кельвину может быть всего лишь запрограммированной эмоцией. Кельвин мучается, понимая, что любит ее, но не может забыть, что она не настоящая.
+Между тем ученые пытаются найти способ избавиться от гостей. Сарториус, который больше всех страдает от присутствия своего "гостя", предлагает радикальное решение - воздействовать на океан мощным рентгеновским излучением, модулированным энцефалограммами человеческого мозга. Теория заключается в том, что если океан может читать человеческие мысли, то человеческие мозговые волны могут нарушить его способность создавать фи-создания. Кельвин поначалу категорически протестует против эксперимента, не желая снова терять Хари, но постепенно понимает, что их отношения обречены - она не может жить полноценной жизнью, а он не может отпустить прошлое и двигаться дальше.
+Хари, мучимая осознанием своей искусственной природы и не желая быть источником страданий для любимого человека, тайно соглашается помочь Сарториусу в его эксперименте. Она понимает, что единственный способ освободить Кельвина от мучительных воспоминаний и позволить ему жить дальше - это пожертвовать собой. В последнюю ночь перед экспериментом она проводит с Кельвином, не говоря ему о своем решении. Утром, когда включается излучение, она исчезает вместе с другими гостями, оставив Кельвину прощальную записку, в которой просит его простить ее и жить дальше.
+После исчезновения гостей на станции воцаряется тишина. Снаут и Сарториус готовятся к возвращению на Землю, но Кельвин, оставшись наедине со своими мыслями, принимает решение остаться на Солярисе. Он понимает, что океан дал ему уникальную возможность пережить заново свои отношения с женой, простить себя за ее смерть и найти внутренний покой. Возможно, он надеется, что океан снова материализует Хари, но уже в новом качестве - не как отражение его вины и боли, а как воплощение прощения и любви.
+Фильм заканчивается философскими размышлениями о том, что человек, исследуя космос, на самом деле ищет не новые миры и цивилизации, а самого себя, свое место во вселенной, ответы на вечные вопросы о любви, смерти и смысле существования. Солярис демонстрирует невозможность по-настоящему понять чужой разум, даже если этот разум пытается с нами общаться, используя единственно доступный ему способ - через наши собственные воспоминания и эмоции.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Самурай', 'After professional hitman Jef Costello is seen by witnesses his efforts to provide himself an alibi drive him further into a corner.', '1967-01-01', 1, '105 minutes', 'Le samouraï', 8.1, 'Самурай
+Жеф Костелло, профессиональный киллер, живет в спартанской квартире в Париже со своей единственной спутницей - канарейкой в клетке. Он ведет крайне методичный образ жизни, следуя строгому ритуалу подготовки к каждому заказу. Костелло получает задание убить владельца ночного клуба. Он тщательно готовится к операции - крадет автомобиль, меняя замки и номерные знаки, создает себе алиби, договорившись с проституткой Джейн о том, что она подтвердит его присутствие у нее в квартире в нужное время.
+В назначенный вечер Костелло проникает в ночной клуб через служебный вход и убивает владельца выстрелом в голову. Однако его видит пианистка клуба Валери, которая становится единственной свидетельницей преступления. Костелло смотрит ей в глаза, но не убивает ее, что нарушает его обычную методику работы. Валери также не выдает его полиции, сказав следователям, что не видела лица убийцы.
+Полиция под руководством комиссара Жослена начинает расследование. Они составляют список подозреваемых профессиональных киллеров и методично проверяют каждого. Костелло попадает в этот список, и полицейские приходят к нему домой для допроса. Джейн подтверждает его алиби, утверждая, что он провел вечер у нее, но один из свидетелей опознает Костелло в полицейской очереди. Несмотря на алиби, комиссар Жослен подозревает именно его и организует слежку.
+Костелло понимает, что за ним следят, и начинает сложную игру с полицией. Он использует парижское метро, чтобы оторваться от преследования, совершая серию пересадок и маневров, которые демонстрируют его профессионализм и хладнокровие. Ему удается ускользнуть от слежки и встретиться со своим связником Оливье, который передает ему деньги за выполненный заказ и новое задание.
+Однако выясняется, что заказчики решили избавиться от Костелло, поскольку он стал слишком заметен для полиции и представляет угрозу для их безопасности. Они нанимают других киллеров, чтобы убить его. Костелло обнаруживает, что его квартира подверглась обыску - кто-то побывал там в его отсутствие, но оставил все на своих местах. Единственное, что выдает вторжение - его канарейка ведет себя беспокойно, что служит ему сигналом опасности.
+Костелло понимает, что его предали, и решает нанести ответный удар. Он выслеживает киллеров, которых наняли для его устранения, и убивает их одного за другим. Полиция продолжает охоту за ним, но он остается неуловимым, используя свои профессиональные навыки и знание города.
+Между тем развиваются отношения между Костелло и Валери. Он несколько раз приходит в клуб, где она работает, и между ними возникает странная связь, основанная на взаимном понимании и молчаливом договоре. Валери не боится его, хотя знает, что он убийца, а Костелло впервые в жизни испытывает что-то похожее на привязанность к другому человеку.
+Заказчики дают Костелло последнее задание - убить Валери, единственную свидетельницу, которая может его опознать. Это должно стать проверкой его профессионализма и лояльности. Костелло получает ключи от квартиры Валери и пистолет с глушителем. Он приходит к ней домой, когда она принимает ванну, и направляет на нее оружие.
+Однако Костелло не может убить Валери. Вместо этого он говорит ей, что заказчики хотят ее смерти, и советует немедленно уехать из Парижа. Это окончательно нарушает его кодекс профессионального киллера и ставит под угрозу его собственную жизнь.
+Понимая, что теперь заказчики определенно убьют его, Костелло решает покончить с этой игрой. Он возвращается в ночной клуб, где все началось, зная, что там его ждет ловушка. В клубе его окружают вооруженные люди заказчика. Завязывается перестрелка, в ходе которой Костелло убивает нескольких противников, но получает смертельное ранение.
+Умирая, Костелло выходит из клуба на улицу, где его ждет комиссар Жослен с полицейскими. Он падает на тротуар, и из его рук выпадает игрушечный пистолет - его настоящее оружие было разряжено еще в клубе. Комиссар понимает, что Костелло сознательно пошел на смерть, выбрав свой собственный конец вместо того, чтобы продолжать быть марионеткой в руках заказчиков.
+Фильм заканчивается смертью Костелло на парижской улице. Его кодекс чести самурая, который требовал абсолютной преданности и профессионализма, в конечном итоге привел его к конфликту с собственной человечностью. Не сумев убить невинную женщину, он предпочел смерть предательству своих принципов, оставшись верным себе до конца.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Хладнокровный Люк', 'A laid back Southern man is sentenced to two years in a rural prison, but refuses to conform.', '1967-01-01', 1, '127 minutes', 'Cool Hand Luke', 8.1, 'Хладнокровный Люк (1967, режиссёр Стюарт Розенберг)
+Фильм рассказывает историю Люкаса Джексона, которого играет Пол Ньюман, бывшего военного и неисправимого бунтаря, который попадает в тюрьму строгого режима на юге США в конце 1940-х годов. История начинается в маленьком городке поздним вечером, где пьяный Люк в порыве бессмысленного протеста срезает головки парковочных счётчиков. Его арестовывают за хулиганство и приговаривают к двум годам каторжных работ.
+Люка отправляют в исправительную колонию, которой управляет жестокий капитан, окружённый надзирателями в тёмных очках, которых заключённые называют "человек без глаз". Тюрьма представляет собой настоящий концлагерь, где заключённые работают на строительстве дорог под палящим солнцем, живут в переполненных бараках и подвергаются постоянным унижениям.
+В тюрьме существует строгая иерархия среди заключённых. Во главе стоит Драглайн, которого играет Джордж Кеннеди, физически мощный и влиятельный заключённый, который пользуется уважением как администрации, так и сокамерников. Драглайн сначала относится к новичку с подозрением, считая его слабаком, неспособным выжить в тюремных условиях.
+Люк с самого начала демонстрирует непокорность и нежелание подчиняться тюремным порядкам. Он отказывается признавать авторитет Драглайна и других влиятельных заключённых, ведёт себя независимо и даже дерзко. Его поведение раздражает сокамерников, которые привыкли к чёткой иерархии и боятся, что действия новичка навлекут наказание на всех.
+Конфликт между Люком и Драглайном достигает кульминации в драке, которая становится легендарной среди заключённых. Несмотря на то, что Драглайн физически превосходит противника, Люк отказывается сдаваться, поднимаясь после каждого нокдауна. Даже когда он уже не может стоять на ногах, он продолжает пытаться драться, демонстрируя невероятную силу духа и упорство.
+Эта драка кардинально меняет отношение заключённых к Люку. Они начинают восхищаться его несгибаемостью и готовностью бороться до конца, даже против превосходящих сил. Драглайн первым признаёт поражение и протягивает Люку руку помощи, и с этого момента между ними завязывается странная дружба, основанная на взаимном уважении.
+Популярность Люка среди заключённых растёт после нескольких эпизодов, которые демонстрируют его исключительные способности. В знаменитой сцене поедания яиц Люк заключает пари, что съест пятьдесят сваренных вкрутую яиц за час. Сокамерники считают это невозможным, но Люк методично поедает яйцо за яйцом, несмотря на физическое недомогание. Эта победа над собственным телом становится символом его способности преодолевать любые ограничения.
+Администрация тюрьмы начинает видеть в Люке угрозу установленному порядку. Капитан и надзиватели понимают, что его пример может вдохновить других заключённых на неповиновение. Они начинают применять к нему особенно жёсткие меры наказания, пытаясь сломить его дух и заставить подчиниться.
+Ситуация обостряется, когда Люк получает известие о смерти матери. Администрация отказывается отпустить его на похороны, опасаясь побега. Более того, его помещают в карцер на время похорон, чтобы он даже не думал о попытке сбежать. Эта жестокость окончательно убеждает Люка в том, что система не оставляет ему выбора, кроме как бежать.
+Первая попытка побега происходит вскоре после похорон матери. Люк тщательно планирует побег, используя свои знания местности и помощь сокамерников. Ему удаётся выбраться из тюрьмы, но через несколько дней его ловят с помощью ищеек. Возвращение беглеца в тюрьму превращается в настоящее представление - Люка приводят в кандалах, избитого и измождённого.
+Наказание за побег оказывается жестоким. Люка заковывают в тяжёлые кандалы, которые он должен носить постоянно, что делает любую работу мучительной. Его также заставляют прокладывать дорогу под палящим солнцем без передышки, пока он не падает от изнеможения. Капитан произносит свою знаменитую фразу о том, что "некоторые люди просто не умеют общаться", объясняя жестокость наказания необходимостью поддержания дисциплины.
+Однако даже это наказание не ломает дух Люка. Он предпринимает вторую попытку побега, на этот раз более изощрённую. Ему снова удаётся скрыться, но побег длится ещё меньше времени. После второго возвращения его подвергают ещё более жестоким наказаниям, пытаясь окончательно сломить его волю.
+Третий побег Люк планирует особенно тщательно. На этот раз он берёт с собой Драглайна, который становится его единственным союзником. Вместе они скрываются в заброшенной церкви, где Люк переживает что-то вроде духовного кризиса. Он обращается к Богу с просьбой о знаке, о помощи в понимании смысла своих страданий и борьбы.
+В церкви Люк произносит свой знаменитый монолог, в котором говорит о своей неспособности подчиниться системе, даже если это будет стоить ему жизни. Он объясняет Драглайну, что не может жить в мире, где человека заставляют отказаться от своего достоинства и свободы. Для него смерть предпочтительнее капитуляции.
+Драглайн пытается убедить Люка сдаться, понимая, что продолжение бегства приведёт к трагедии. Он видит, что его друг дошёл до предела и больше не способен на разумные компромиссы. Но Люк остаётся непреклонным в своём решении не возвращаться в тюрьму живым.
+Полиция окружает церковь, и начинается финальное противостояние. Капитан тюрьмы лично приезжает на место, чтобы попытаться убедить Люка сдаться. Он обещает, что наказание будет не слишком суровым, если беглец добровольно выйдет из церкви. Но Люк понимает, что это ложь, и что его ждёт только более изощрённые пытки.
+В последние минуты жизни Люк демонстрирует свой неисправимый характер. Он появляется в окне церкви и повторяет фразу капитана о том, что "некоторые люди просто не умеют общаться", но в его устах эти слова звучат как вызов всей системе. Снайпер стреляет, и Люк падает, смертельно раненный.
+Умирающего Люка увозят в больницу, но его раны оказываются фатальными. Перед смертью он произносит последние слова, в которых нет раскаяния или сожаления о прожитой жизни. Он умирает непокорённым, сохранив своё достоинство до конца.
+Драглайн возвращается в тюрьму, но теёт рассказывает сокамерникам о последних часах жизни Люка, приукрашивая их и превращая в легенду. В его версии Люк умирает с улыбкой на лице, насмехаясь над своими преследователями до последнего вздоха. Эта легенда вдохновляет заключённых и даёт им надежду на то, что человеческий дух невозможно полностью сломить.
+Фильм заканчивается сценой, где заключённые работают на дороге, но теперь в их глазах горит огонёк надежды и сопротивления. История Люка стала для них символом того, что даже в самых безнадёжных обстоятельствах человек может сохранить свою свободу духа. Его смерть превратилась в победу над системой, которая не смогла заставить его подчиниться.
+"Хладнокровный Люк" представляет собой мощную притчу о противостоянии личности и системы, о цене свободы и достоинства. Фильм показывает, что истинная свобода заключается не в физическом освобождении, а в способности сохранить свою индивидуальность и принципы перед лицом любого давления. Люк становится современным мучеником, который предпочитает смерть капитуляции и своим примером вдохновляет других на сопротивление несправедливости.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Персона', 'A nurse is put in charge of a mute actress and finds that their personae are melding together.', '1966-01-01', 1, '85 minutes', 'Persona', 8.1, 'Персона (1966, режиссёр Ингмар Бергман)
+Фильм представляет собой сложную психологическую драму о кризисе идентичности, природе личности и границах между реальностью и иллюзией. История начинается с того, что знаменитая актриса Элизабет Воглер, которую играет Лив Ульман, во время спектакля "Электра" внезапно замолкает на сцене и больше не произносит ни слова. Врачи не могут найти физических причин её немоты - это психологическая реакция на что-то, что остаётся загадкой.
+Элизабет помещают в психиатрическую клинику, где с ней работает молодая медсестра Альма, которую играет Биби Андерссон. Альма - простая, искренняя девушка из провинции, которая верит в свою профессию и готова помочь пациентке любыми способами. Она пытается заставить Элизабет заговорить, рассказывает ей о своей жизни, читает письма, но актриса остаётся безмолвной, лишь изредка кивая или качая головой.
+Врач предлагает перевести Элизабет в загородный дом на морском побережье, где она сможет отдохнуть в спокойной обстановке. Альма соглашается сопровождать пациентку и ухаживать за ней. Они поселяются в изолированном коттедже, где начинается странная психологическая игра между двумя женщинами.
+В уединении Альма начинает рассказывать Элизабет о себе всё более откровенно. Она говорит о своём детстве, о своём женихе, о своих мечтах и страхах. Элизабет внимательно слушает, но продолжает молчать, что создаёт односторонний характер их общения. Альма чувствует себя в безопасности рядом с молчаливой женщиной и позволяет себе быть совершенно открытой.
+Самый откровенный рассказ Альмы касается случая, произошедшего на пляже несколько лет назад. Она рассказывает о том, как она и её подруга встретили двух незнакомых юношей и провели с ними день, который закончился спонтанным групповым сексом на песке. Альма описывает этот опыт как одновременно волнующий и постыдный, признаваясь, что никогда никому об этом не рассказывала.
+Постепенно между женщинами устанавливается странная близость. Альма начинает чувствовать, что Элизабет понимает её лучше, чем кто-либо другой, несмотря на молчание. Актриса становится для неё идеальным слушателем - она присутствует, сочувствует, но не судит и не даёт советов. Альма начинает проецировать на неё свои фантазии о дружбе и понимании.
+Однако это псевдо-равновесие нарушается, когда Альма случайно читает письмо, которое Элизабет написала врачу. В письме актриса описывает медсестру как наивную и болтливую девушку, которая рассказала ей "забавную" историю о групповом сексе. Элизабет пишет о том, что изучает Альму как интересный психологический случай, но относится к ней покровительственно и несколько презрительно.
+Открытие этого письма становится поворотным моментом в отношениях женщин. Альма чувствует себя преданной и использованной. Она понимает, что Элизабет всё это время наблюдала за ней как за подопытным животным, собирая материал для своих актёрских работ. Молчание, которое казалось проявлением понимания и сочувствия, оказывается формой манипуляции и контроля.
+Альма пытается заставить Элизабет заговорить, становясь всё более агрессивной и настойчивой. Она обвиняет её в лицемерии, эгоизме и жестокости. Во время одного из таких конфликтов Альма оставляет на дорожке разбитое стекло, о которое Элизабет ранит ногу. Этот акт агрессии показывает, насколько глубоко Альма была задета предательством.
+Ухаживая за раненой ногой Элизабет, Альма переживает сложные чувства - смесь раскаяния, нежности и продолжающегося гнева. В этот момент между женщинами возникает физическая близость, которая может интерпретироваться как эротическая или материнская. Границы между их личностями начинают размываться.
+По мере развития событий становится всё менее ясно, где заканчивается одна женщина и начинается другая. Альма начинает говорить о себе в третьем лице, как будто наблюдает за собой со стороны. Элизабет иногда реагирует на слова Альмы так, как будто они обращены к ней самой. Их идентичности начинают смешиваться и взаимопроникать.
+Кульминационный момент наступает, когда Альма рассказывает историю о сыне Элизабет. Она говорит о том, как актриса не хотела рожать ребёнка, как она пыталась сделать аборт, как она отвергала сына после рождения. Эта история рассказывается дважды - сначала камера показывает лицо Альмы, затем лицо Элизабет, произносящих одни и те же слова. Это создаёт впечатление, что обе женщины являются частями одной личности.
+В одной из самых известных сцен фильма Бергман показывает составное лицо, где левая половина принадлежит Альме, а правая - Элизабет. Этот образ символизирует слияние их личностей или, возможно, раскрывает, что они всегда были двумя сторонами одной натуры.
+Фильм содержит множество сюрреалистических и метакинематографических элементов. В начале мы видим кинопроектор, горящую целлулоидную плёнку, фрагменты других фильмов Бергмана. В середине фильма плёнка "рвётся", и мы видим технические детали кинопроизводства. Эти приёмы напоминают зрителю, что он смотрит фильм, и ставят под сомнение границы между реальностью и искусством.
+Тема материнства проходит через весь фильм. Альма рассказывает о своём желании иметь детей, о своих материнских инстинктах. История с абортом Элизабет раскрывает её отвержение материнской роли. В конце фильма Альма буквально становится матерью для Элизабет, держа её голову на своих коленях в позе Пьеты.
+Молчание Элизабет может интерпретироваться по-разному. Возможно, это реакция на лицемерие и фальшь современного мира, отказ участвовать в бессмысленных разговорах. Возможно, это форма власти - молчание как способ контролировать ситуацию и заставлять других раскрываться. А может быть, это признание того, что слова неспособны выразить истинную суть человеческого опыта.
+Название "Персона" отсылает к латинскому слову, обозначающему театральную маску. Фильм исследует идею о том, что человеческая личность - это набор масок, которые мы носим в разных ситуациях. Вопрос в том, есть ли за этими масками подлинное "я" или личность состоит только из ролей, которые мы играем.
+Финал фильма остаётся загадочным. Альма собирает вещи и готовится вернуться в город, к своей обычной жизни. Элизабет остаётся в доме, по-прежнему молчаливая. Но неясно, действительно ли они расстаются или это символическое разделение двух сторон одной личности. Последние кадры показывают оператора, снимающего фильм, что снова напоминает о искусственности происходящего.
+"Персона" представляет собой глубокое исследование природы человеческой идентичности, показывая, как люди влияют друг на друга, как они проецируют свои потребности и страхи на других. Фильм задаёт фундаментальные вопросы о том, что делает нас теми, кто мы есть, и можем ли мы когда-нибудь по-настоящему познать другого человека или даже самих себя. Бергман создаёт произведение, которое работает одновременно как психологическая драма, философская притча и экспериментальное кино, бросающее вызов традиционным представлениям о повествовании и реальности.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Андрей Рублёв', 'The life, times and afflictions of the fifteenth-century Russian iconographer St. Andrei Rublev.', '1966-01-01', 1, '205 minutes', 'Andrei Rublev', 8.1, 'Фильм состоит из восьми новелл, охватывающих период с 1400 по 1423 годы, рассказывающих о жизни великого русского иконописца Андрея Рублёва на фоне жестокой эпохи междоусобных войн, татарских набегов и религиозных противоречий.
+Фильм открывается прологом о шутке по имени Ефим, который пытается улететь на самодельном воздушном шаре из дерева и кожи, привязанном к колокольне церкви. Крестьяне помогают ему подняться в воздух, и он действительно летит некоторое время, прежде чем упасть и разбиться насмерть. Этот эпизод символизирует стремление человека к свободе и творчеству вопреки земным ограничениям.
+В первой новелле три монаха-иконописца - Андрей Рублёв, Даниил Чёрный и Кирилл - путешествуют из Андроникова монастыря в Москву, где их ждет работа по росписи храмов. По дороге они останавливаются в корчме, где встречают скомороха, который развлекает народ непристойными песнями и рассказами, высмеивающими духовенство и власть. Кирилл возмущается и требует прекратить богохульство, но скоморох продолжает свое выступление. Вскоре в корчму врываются княжеские воины и арестовывают скомороха. Этот эпизод показывает конфликт между народной культурой и официальной церковью.
+Во второй новелле Феофан Грек, знаменитый византийский художник, работающий на Руси, беседует с Андреем Рублёвом о природе искусства и вере. Феофан пессимистично относится к человеческой природе, считая людей грешными и недостойными божественной благодати. Он предлагает Рублёву работу по росписи Благовещенского собора в Москве, но Андрей сомневается в своих способностях. Феофан видит в молодом монахе талант и пытается убедить его принять заказ, несмотря на зависть и интриги других иконописцев.
+В третьей новелле показаны страсти вокруг росписи собора. Кирилл завидует успеху Рублёва и пытается очернить его перед заказчиками, утверждая, что тот недостаточно опытен для такой важной работы. Когда Кириллу отказывают в участии в росписи, он в ярости покидает монастырь и уходит в мир. Рублёв остается работать с Данилой Чёрным, но мучается сомнениями в правильности изображения святых и религиозных сюжетов.
+Четвертая новелла рассказывает о работе Рублёва над фресками. Он стремится изображать святых не как грозных судий, а как милосердных заступников, что вызывает недовольство некоторых церковных иерархов. Андрей спорит с заказчиками о том, должно ли религиозное искусство устрашать верующих или вселять в них надежду и любовь. Его концепция христианства основана на идеях всепрощения и человеколюбия, что противоречит суровой церковной догматике того времени.
+В пятой новелле Рублёв становится свидетелем языческого праздника Ивана Купалы, где участвует в ночных ритуалах с обнаженными крестьянами, танцующими вокруг костров. Этот опыт заставляет его переосмыслить отношение к плотской любви и человеческой природе. На следующий день его строго порицают в монастыре за участие в языческих обрядах, и он испытывает глубокий внутренний конфликт между христианской моралью и пониманием естественности человеческих страстей.
+Шестая новелла показывает татарский набег на Владимир. Город подвергается жестокому разорению, храмы осквернены, множество людей убито или уведено в плен. Рублёв становится свидетелем невероятной жестокости - он видит, как татары и их русские союзники убивают монахов, насилуют женщин, грабят церкви. В соборе, где он работал над фресками, происходит резня. Рублёв пытается защитить слабоумную девушку от насильника и в схватке убивает русского воина, нарушив тем самым заповедь "не убий". Этот поступок становится поворотным моментом в его жизни.
+После пережитого ужаса Рублёв дает обет молчания и прекращает заниматься иконописью. Он не может понять, как можно изображать божественную красоту и милосердие в мире, полном зла и страданий. Слабоумная девушка, которую он спас, остается с ним, и он заботится о ней как о ребенке. Они живут в разрушенном городе среди руин, и Рублёв постепенно теряет веру в смысл своего искусства.
+Седьмая новелла происходит несколько лет спустя. Даниил Чёрный находит Рублёва и пытается убедить его вернуться к иконописи, но Андрей остается непреклонен в своем молчании. В это время в городе происходит важное событие - юный Борис, сын умершего мастера-литейщика, берется отлить огромный колокол для князя. Мальчик утверждает, что отец передал ему секрет литья, хотя на самом деле никаких секретов не знает. Это отчаянная попытка выжить, поскольку князь угрожает смертью в случае неудачи.
+Восьмая новелла подробно показывает процесс создания колокола. Борис с невероятной энергией и интуицией руководит сложными работами - поиском подходящей глины, строительством печей, сбором металла. Рублёв наблюдает за этим процессом, постепенно восхищаясь мужеством и талантом мальчика. Литье колокола становится метафорой творческого процесса, требующего полной самоотдачи и веры в успех вопреки всем сомнениям.
+Когда колокол готов и его поднимают на колокольню, наступает момент истины. Если колокол не зазвучит, Бориса казнят. Вся толпа замирает в ожидании. Колокол издает чистый, мощный звон, и люди ликуют. Борис, измученный напряжением и страхом, плачет от облегчения и признается Рублёву, что отец на самом деле не передал ему никаких секретов - он действовал интуитивно, полагаясь только на веру в свои силы.
+Этот момент становится откровением для Рублёва. Он понимает, что искусство не требует полного понимания мира или ответов на все вопросы - оно требует веры в человека и в ценность творчества даже в самые темные времена. Вдохновленный примером мальчика, Рублёв нарушает обет молчания и обещает Борису, что они будут работать вместе - он вернется к иконописи, а мальчик продолжит лить колокола.
+Фильм завершается эпилогом, в котором показаны подлинные иконы Андрея Рублёва в цвете, на фоне звучащей духовной музыки. Эти кадры контрастируют с черно-белым изображением предшествующих событий, символизируя переход от мрачной реальности средневековой жизни к вечной красоте искусства. Заключительные кадры показывают лошадей на лугу под дождем, что символизирует обновление и возрождение жизни после пережитых страданий.
+Фильм исследует темы веры и сомнения, роли художника в жестоком мире, противоречия между христианскими идеалами и реальностью, природы творчества и его связи с народной культурой. Рублёв показан не как святой, а как живой человек, переживающий глубокий духовный кризис и находящий путь к возрождению через понимание ценности человеческого творчества и веры в добро.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Битва за Алжир', 'In the 1950s, fear and violence escalate as the people of Algiers fight for independence from the French government.', '1966-01-01', 1, '121 minutes', 'La battaglia di Algeri', 8.1, 'Фильм начинается в 1957 году в Алжире, когда французские десантники под командованием полковника Матье проводят операцию по поимке последних руководителей Фронта национального освобождения Алжира. В ходе облавы они находят укрывающегося Али ла Пуанта, одного из главных лидеров алжирского сопротивления, и через пытки выясняют местонахождение других участников движения.
+Повествование переносится на три года назад, в 1954 год, когда показывается, как простой алжирец Али ла Пуант становится членом подпольной организации. Изначально он занимается мелким криминалом, но после ареста и заключения знакомится с идеями национально-освободительного движения. После освобождения его вербует организация ФНО, и Али постепенно становится одним из ключевых фигур городского подполья в районе Касба.
+Фронт национального освобождения начинает партизанскую войну против французского колониального режима. Алжирские боевики совершают теракты против французских полицейских и коллаборационистов, используя тактику городской герильи. Французские власти отвечают жестокими репрессиями, арестами и пытками подозреваемых. Конфликт постепенно эскалирует, и к операциям подключается французская армия.
+Одним из центральных эпизодов фильма становится серия терактов, организованных женщинами-боевицами ФНО. Три алжирские женщины, переодевшись в европейскую одежду и изменив внешность, проносят бомбы в людные места, посещаемые французскими колонистами - кафе, бар и аэропорт. Взрывы происходят практически одновременно, погибают и получают ранения десятки мирных жителей. Эти теракты становят поворотным моментом в конфликте.
+В ответ на усиление террористической активности французское правительство направляет в Алжир элитные подразделения десантников под командованием полковника Матье, ветерана французского Сопротивления времен Второй мировой войны. Матье получает чрезвычайные полномочия для борьбы с повстанцами и начинает систематическую операцию по уничтожению подпольной сети ФНО в Алжире.
+Французские военные применяют жестокие методы - массовые аресты, пытки, создание концентрационных лагерей. Они постепенно разрушают организационную структуру ФНО в городе, арестовывая одного за другим руководителей и рядовых боевиков. Полковник Матье лично руководит допросами и не останавливается перед применением пыток для получения информации о местонахождении лидеров сопротивления.
+Несмотря на первоначальные успехи партизан, французская армия методично уничтожает алжирское подполье. Один за другим гибнут или попадают в плен руководители ФНО. Сначала арестовывают и казнят Ларби Бен М''Хиди, одного из главных идеологов движения. Затем в результате предательства французы выходят на след Джафара Сади, военного командира алжирского сопротивления в городе.
+Кульминацией французской операции становится штурм дома в Касбе, где укрывается Али ла Пуант с несколькими соратниками. Французские десантники окружают здание и требуют сдаться. Понимая, что пути к отступлению нет, Али и его товарищи решают сражаться до конца. Во время штурма они подрывают себя гранатами, предпочтя смерть плену.
+К 1957 году французской армии удается практически полностью разгромить городское подполье ФНО в Алжире. Битва за Алжир формально закончена победой французов, террористические акты прекращаются, в городе устанавливается относительное спокойствие. Полковник Матье на пресс-конференции объявляет о завершении операции и уничтожении террористической сети.
+Однако фильм завершается эпилогом, показывающим события 1960 года, когда в Алжире вспыхивают массовые народные демонстрации за независимость. Тысячи алжирцев выходят на улицы с национальными флагами, требуя освобождения от французского господства. Французские войска пытаются разогнать демонстрантов, но масштаб протестов показывает, что, несмотря на военное поражение ФНО в битве за Алжир, освободительное движение не было уничтожено и национально-освободительная борьба продолжается. Фильм заканчивается кадрами ликующих алжирцев, празднующих провозглашение независимости Алжира в 1962 году, что демонстрирует окончательную победу алжирского народа в борьбе за свободу.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ангел-истребитель', 'The guests at an upper-class dinner party find themselves unable to leave.', '1962-01-01', 1, '95 minutes', 'El ángel exterminador', 8.1, 'Фильм представляет собой сюрреалистическую притчу о человеческой природе и общественных условностях, действие которой разворачивается в особняке мексиканской буржуазии в начале 1960-х годов. История начинается с того, что богатый аристократ дон Эдмундо Нобиле устраивает роскошный званый ужин в своём особняке для избранного круга друзей из высшего общества. Гости прибывают в дорогих автомобилях, одетые в изысканные вечерние наряды, готовые провести приятный светский вечер.
+Однако уже с самого начала происходят странные события, которые намекают на надвигающуюся катастрофу. Слуги один за другим находят предтексты, чтобы покинуть дом - кто-то вспоминает о неотложных делах, кто-то внезапно заболевает, кто-то получает срочный вызов. Остаётся только дворецкий Лукас, который верно служит семье уже много лет. Хозяин дома удивлён таким поведением прислуги, но не придаёт этому особого значения.
+Среди приглашённых гостей - представители мексиканской элиты: промышленники, дипломаты, светские дамы, военные, врачи, адвокаты. Все они принадлежат к одному социальному кругу, связаны деловыми отношениями, браками, старыми знакомствами. Они ведут привычные светские разговоры о политике, искусстве, сплетнях, демонстрируя показную учтивость и воспитанность.
+Ужин проходит в обычной атмосфере светского мероприятия. Гости наслаждаются изысканными блюдами, дорогим вином, ведут непринуждённые беседы. После трапезы компания перемещается в музыкальную гостиную, где молодая пианистка исполняет классическую музыку. Атмосфера кажется идиллической - красивые, образованные люди наслаждаются культурным досугом в роскошных интерьерах.
+Однако постепенно выясняется, что гости не могут покинуть дом. Они подходят к выходу из гостиной, но какая-то невидимая сила заставляет их поворачивать обратно. Сначала это выглядит как простая нерешительность или вежливость - никто не хочет первым нарушить светский этикет и уйти. Но по мере того, как время идёт, становится ясно, что происходит что-то сверхъестественное.
+Гости проводят первую ночь в гостиной, устроившись на диванах и креслах. Они объясняют своё решение остаться усталостью, поздним временем, нежеланием беспокоить хозяев. Но когда наступает утро, а затем и следующий день, а они по-прежнему не могут выйти из комнаты, растерянность сменяется тревогой.
+Попытки покинуть гостиную оказываются безуспешными. Каждый раз, подходя к двери, гости чувствуют непреодолимое внутреннее сопротивление, словно какая-то сила удерживает их в комнате. Они не понимают природы этого явления и не могут его объяснить рационально. Некоторые пытаются найти логические причины - может быть, это массовая галлюцинация, нервное расстройство, результат отравления.
+Снаружи дома также происходят странные события. Полиция и пожарные прибывают к особняку, но не могут войти внутрь - их также останавливает та же невидимая сила. Родственники и друзья гостей собираются возле дома, но никто не может проникнуть за порог. Дом становится недоступным как изнутри, так и снаружи.
+По мере того как дни проходят, цивилизованный лоск гостей начинает спадать. У них заканчивается еда и вода, поскольку слуги не могут войти, чтобы принести припасы. Гости начинают испытывать физический дискомфорт - голод, жажду, потребность в гигиене. Изысканные вечерние наряды становятся помятыми и грязными, причёски растрёпываются, макияж смывается.
+Социальные условности и манеры постепенно рушатся под давлением обстоятельств. Гости начинают открыто выражать недовольство друг другом, высказывать претензии, которые раньше скрывали за маской вежливости. Выявляются скрытые конфликты, старые обиды, тайные романы и неприязни. Аристократические манеры сменяются примитивными инстинктами выживания.
+Нехватка пищи приводит к тому, что гости начинают искать съестное в самых неожиданных местах. Они разламывают стену и находят там водопроводную трубу, из которой можно пить воду. Кто-то предлагает съесть комнатных овец, которые каким-то образом оказались в доме. Эта деталь, как и многие другие в фильме, лишена логического объяснения и подчёркивает сюрреалистический характер происходящего.
+Религиозные и суеверные настроения усиливаются по мере продолжения заточения. Некоторые гости начинают видеть в происходящем божью кару за свои грехи. Они вспоминают свои проступки, каются, молятся. Другие, наоборот, теряют веру и впадают в отчаяние. Один из гостей кончает жизнь самоубийством, не выдержав психологического давления.
+В доме начинают происходить всё более странные и пугающие события. Гости видят галлюцинации, призраков, кошмарные видения. Реальность смешивается с фантазией, прошлое с настоящим. Некоторые персонажи начинают вести себя неадекватно, словно теряя связь с действительностью.
+Социальная иерархия, которая казалась незыблемой, начинает разрушаться. Богатство, статус, образование теряют значение перед лицом общей беды. Гости объединяются в группы по принципам, которые не имеют отношения к их прежнему положению в обществе. Возникают новые союзы и конфликты, основанные на личных симпатиях и антипатиях.
+Кульминация наступает, когда один из гостей, масон и рационалист, предлагает теорию о том, что их заточение связано с нарушением какого-то ритуала или порядка. Он предлагает воссоздать точную ситуацию начала вечера - встать в те же позы, произнести те же слова, восстановить ту же атмосферу. Эта идея может показаться абсурдной, но в мире Бунюэля магическое мышление оказывается не менее действенным, чем логика.
+Гости с отчаянием последней надежды пытаются воспроизвести церемонию первого вечера. Они встают в те же позиции, в которых находились, когда впервые не смогли выйти из комнаты. Повторяют те же слова, воссоздают ту же атмосферу. И чудесным образом заклятие разрушается - они обретают способность покинуть гостиную.
+Освобождение гостей становится сенсацией. Пресса, полиция, родственники окружают особняк. Гости, измученные и изменившиеся, наконец покидают место своего заточения. Они возвращаются к своим домам и семьям, пытаясь забыть о пережитом кошмаре и вернуться к нормальной жизни.
+Однако фильм не заканчивается освобождением. В финальной сцене те же гости собираются в кафедральном соборе на благодарственной службе по случаю своего спасения. Они молятся, благодарят Бога за избавление от неведомой напасти, надеются, что худшее позади. Но когда служба заканчивается и прихожане направляются к выходу, история повторяется - они снова не могут покинуть здание.
+Последние кадры показывают, как толпа людей стоит у входа в собор, не в силах переступить порог. Они оказываются в той же ситуации, что и гости в особняке - заперты в замкнутом пространстве невидимой силой. Это повторение предполагает, что цикл может продолжаться бесконечно, что человечество обречено на повторение одних и тех же ошибок.
+"Ангел-истребитель" представляет собой острую сатиру на буржуазное общество и его условности. Бунюэль показывает, как быстро рушится цивилизованный фасад, когда люди оказываются в экстремальной ситуации. Фильм критикует лицемерие, показушность и моральную пустоту высшего класса, демонстрируя, что за внешним лоском скрываются те же примитивные инстинкты, что и у всех людей.
+Сюрреалистическая природа происходящего позволяет Бунюэлю создать метафору человеческого состояния в целом. Невидимые барьеры, которые удерживают персонажей, могут символизировать психологические, социальные или экзистенциальные ограничения, которые препятствуют человеческой свободе. Фильм задаёт вопросы о природе свободы, о том, что действительно держит нас в плену - внешние обстоятельства или наши собственные страхи и предрассудки.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Что случилось с Бэби Джейн?', 'A former child star torments her paraplegic sister in their decaying Hollywood mansion.', '1962-01-01', 1, '134 minutes', 'What Ever Happened to Baby Jane?', 8.1, 'В 1917 году маленькая Джейн Хадсон была знаменитой детской звездой водевиля, выступавшей под псевдонимом Бэби Джейн. Одетая в кукольные платьица с бантиками, она пела песенки и танцевала на сцене, пока публика восторженно аплодировала. Ее старшая сестра Бланш сидела в зрительном зале с завистью наблюдая за успехом младшей сестры, которая купалась в лучах славы и получала все внимание родителей. Отец девочек полностью сосредоточился на карьере Бэби Джейн, игнорируя Бланч.
+Годы спустя, в 1935 году, ситуация кардинально изменилась. Бланш стала успешной голливудской актрисой, звездой мелодрам, в то время как Джейн, несмотря на попытки сделать карьеру во взрослом кино, потерпела полное фиаско. Ее фильмы провалились в прокате, критики высмеивали ее игру, а публика не принимала бывшую детскую звезду в серьезных ролях. Джейн начала пить, становилась все более неуравновешенной и завидовала успеху сестры.
+Однажды вечером после очередной голливудской вечеринки сестры возвращались домой на машине. Джейн была за рулем в состоянии сильного алкогольного опьянения. У ворот их дома произошла страшная авария - машина на большой скорости врезалась в ворота, и Бланш получила серьезные травмы позвоночника, которые навсегда приковали ее к инвалидному креслу. Джейн, находившаяся в алкогольном опьянении, почти не пострадала физически, но обстоятельства аварии остались невыясненными.
+В 1962 году, спустя почти тридцать лет после аварии, сестры живут вместе в старом особняке в Голливуде. Бланш, прикованная к инвалидному креслу, зависит от ухода Джейн, которая превратилась в алкоголичку и психически неуравновешенную женщину. Бланш получает доходы от показа своих старых фильмов по телевидению и планирует продать дом, что приводит Джейн в ярость, поскольку она не хочет никуда переезжать и менять привычный образ жизни.
+Джейн живет в мире иллюзий, все еще видя себя маленькой Бэби Джейн. Она носит детскую одежду, кукольные платья с бантиками, накладывает толстый слой белой пудры и ярких румян, создавая гротескный образ стареющей женщины, играющей в куклу. Она разговаривает сама с собой, напевает свои старые песенки и мечтает о возвращении на сцену. Ее поведение становится все более эксцентричным и пугающим.
+Отношения между сестрами крайне напряженные. Джейн испытывает смесь ненависти и зависимости по отношению к Бланш, которая остается для нее символом всего, чего она сама не смогла достичь. Бланш, в свою очередь, боится Джейн, понимая, что сестра психически нестабильна, но вынуждена полагаться на ее заботу. Джейн контролирует всю корреспонденцию Бланш, не позволяя ей общаться с внешним миром.
+Ситуация обостряется, когда Бланш узнает, что ее старые фильмы будут показывать по телевидению, и она получит за это хорошие деньги. Она тайно связывается со своим врачом и просит его помочь ей устроиться в санаторий, поскольку больше не может выносить жизнь с психически больной сестрой. Джейн перехватывает телефонный разговор и понимает, что Бланш планирует от нее избавиться.
+В ответ Джейн начинает настоящую психологическую войну против сестры. Она подает ей на обед дохлую крысу вместо еды, прячет ее инвалидное кресло, не позволяет ей спускаться вниз, фактически превращая ее в пленницу в собственном доме. Бланш пытается привлечь внимание соседей, кидая записки из окна, но Джейн быстро пресекает эти попытки.
+Тем временем Джейн решает осуществить свою давнюю мечту о возвращении на эстраду. Она находит объявление молодого музыканта Эдвина Флагга, который предлагает услуги аккомпаниатора. Джейн нанимает его для подготовки шоу, рассказывая ему о своей былой славе Бэби Джейн и демонстрируя старые фотографии и программки. Эдвин, нуждающийся в деньгах, соглашается работать с ней, хотя быстро понимает, что имеет дело с психически больной женщой.
+Джейн репетирует свои старые номера, но ее выступления выглядят жутко - пожилая женщина в детской одежде, с размазанным макияжем, поющая детские песенки скрипучим голосом. Эдвин пытается деликатно объяснить ей, что публика не примет такое выступление, но Джейн не желает его слушать, живя в мире собственных фантазий.
+Ситуация достигает критической точки, когда горничная Эльвира обнаруживает Бланш связанной в ее комнате. Джейн в панике убивает Эльвиру молотком, а затем связывает и Бланш. Она понимает, что больше не может скрывать происходящее в доме, и решается на отчаянный шаг.
+Эдвин, встревоженный странным поведением Джейн и исчезновением Эльвиры, приходит в дом и обнаруживает связанную Бланч. Джейн застает его и в приступе ярости нападает на него. В завязавшейся борьбе Эдвин получает серьезные травмы, но ему удается скрыться и вызвать полицию.
+Понимая, что все раскрылось, Джейн решает бежать вместе с Бланш. Она сажает прикованную к креслу сестру в машину и везет ее на пляж, где они когда-то играли в детстве. На пустынном берегу океана Джейн покупает мороженое и кормит им умирающую от обезвоживания Бланш, словно играя в заботливую сестру.
+На пляже, понимая, что это конец, Бланш признается Джейн в страшной тайне, которую она хранила все эти годы. Оказывается, в ту роковую ночь 1935 года за рулем была не Джейн, а сама Бланш. Она намеренно пыталась переехать пьяную Джейн у ворот дома, но потеряла управление и врезалась в ворота. Джейн, находившаяся в алкогольном опьянении, ничего не помнила, и Бланш позволила ей думать, что именно она была виновницей аварии. Все эти годы Джейн мучилась чувством вины за то, чего не совершала.
+Это откровение шокирует Джейн, которая понимает, что десятилетиями жила во лжи и ненависти к себе. Бланш умирает у нее на руках, а Джейн остается одна на пляже со своими воспоминаниями и осознанием бессмысленности всех пережитых страданий.
+Когда на пляж прибывают полиция и медики, они находят Джейн, которая снова превратилась в маленькую Бэби Джейн. Она танцует на песке и поет свою знаменитую детскую песенку, полностью погрузившись в мир детских воспоминаний. Собравшаяся толпа зевак сначала смеется над странной старухой в детской одежде, но постепенно понимает, что перед ними трагическая фигура человека, сломленного жизнью и потерявшего связь с реальностью.
+Фильм заканчивается тем, что Джейн увозят на машине скорой помощи, а она продолжает напевать свою песенку, окончательно вернувшись в единственное время своей жизни, когда она была счастлива и любима - в детство, когда она была знаменитой Бэби Джейн.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Телохранитель 2: Отважный Сандзюро', 'A crafty samurai helps a young man and his fellow clansmen save his uncle, who has been framed and imprisoned by a corrupt superintendent.', '1962-01-01', 1, '96 minutes', 'Sanjuro', 8.1, 'Фильм является продолжением картины "Телохранитель" и рассказывает о дальнейших приключениях ронина Санджуро Цубаки. События разворачиваются в период Эдо, когда самурайская система переживает кризис, а коррупция проникает во все слои общества.
+История начинается с того, что девять молодых самураев собираются в храме, чтобы обсудить коррупцию в их клане. Они подозревают, что их настоящий лидер, добродетельный Мунемори, находится в опасности из-за интриг продажного управляющего Кикуи и его союзника Мурото. Молодые воины полны решимости восстановить справедливость, но им не хватает опыта и практических навыков для борьбы с опытными противниками.
+Внезапно в храм заходит бродячий самурай Санджуро Цубаки, который случайно подслушивает их разговор. Сначала молодые самураи подозревают его в шпионаже, но Санджуро быстро доказывает свою честность и предлагает помощь. Он сразу же указывает на наивность молодых людей, которые готовы слепо доверять людям только на основании их репутации.
+Санджуро объясняет юношам, что ситуация гораздо сложнее, чем они думают. Он предполагает, что их подозрения направлены не в ту сторону - истинным злодеем может оказаться тот, кого они считают союзником. Опытный ронин предупреждает их о том, что внешняя добродетель часто скрывает подлое сердце, а грубая внешность может принадлежать честному человеку.
+Группа направляется к дому Мунемори, чтобы предупредить его об опасности, но обнаруживает, что он уже захвачен в плен. Его жена и дочь также находятся под стражей в собственном доме, охраняемые наемниками. Санджуро разрабатывает план освобождения, но молодые самураи своей горячностью и неопытностью постоянно осложняют ситуацию.
+Ронин демонстрирует свое мастерство не только в бою, но и в психологических играх. Он умело манипулирует врагами, заставляя их сомневаться друг в друге и совершать ошибки. Санджуро проникает в дом под видом слуги и устанавливает контакт с женой и дочерью Мунемори, заверяя их в скором освобождении.
+Тем временем выясняется, что настоящим злодеем является именно тот человек, которого молодые самураи считали своим союзником. Этот персонаж долгое время строил репутацию добродетельного чиновника, но на самом деле был главным организатором коррупционной схемы. Он планировал устранить Мунемори и захватить контроль над кланом.
+Санджуро организует сложную операцию по освобождению пленников. Он использует хитрость и обман, заставляя врагов поверить в то, что Мунемори уже мертв, показав им отрубленную руку в кимоно старика. На самом деле это была рука уже умершего человека, а Мунемори остается жив и прячется в безопасном месте.
+Молодые самураи постепенно учатся у Санджуро искусству стратегии и терпения. Они понимают, что настоящая сила не в горячности и прямолинейности, а в умении думать и действовать расчетливо. Ронин постоянно подчеркивает важность осторожности и размышлений перед действием.
+Кульминация наступает, когда все стороны сходятся для финального противостояния. Санджуро вызывает главного злодея на поединок, но перед этим умело разоблачает его перед всеми присутствующими. Он показывает, как легко обмануться внешностью и репутацией, не заглянув в истинную суть человека.
+Финальный поединок происходит с молниеносной скоростью. Санджуро одним движением катаны разрубает противника пополам, и кровь фонтаном бьет из раны. Этот момент шокирует всех присутствующих, включая самого Санджуро, который с отвращением смотрит на результат своего мастерства. Жена главного злодея с ужасом смотрит на труп мужа.
+После победы Санджуро освобождает всех пленников, и справедливость восстанавливается. Мунемори возвращается к своим обязанностям, а коррупционная схема разрушена. Молодые самураи благодарят ронина за помощь и уроки, которые он им преподал.
+Однако Санджуро остается верен своей природе бродяги. Несмотря на предложения остаться и служить клану, он отказывается от всех почестей и вознаграждений. В финальной сцене ронин уходит прочь, качая головой и почесывая затылок своим характерным жестом, оставляя позади благодарных, но повзрослевших молодых самураев. Его фигура исчезает вдали, символизируя вечное странствие и нежелание привязываться к одному месту или группе людей.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Человек, который застрелил Либерти Вэлэнса', 'A senator returns to a western town for the funeral of an old friend and tells the story of his origins.', '1962-01-01', 1, '123 minutes', 'The Man Who Shot Liberty Valance', 8.1, 'Человек, который застрелил Либерти Вэлэнса (1962, режиссёр Джон Форд)
+Фильм представляет собой классический вестерн, который исследует трансформацию американского Запада от эпохи беззакония к цивилизованному обществу. История начинается в современности, когда пожилой сенатор Рэнсом Стоддард и его жена Хэлли прибывают поездом в небольшой городок Шинбон в штате, чтобы присутствовать на похоронах местного жителя Тома Донифона. Журналисты удивлены присутствием такого влиятельного политика на похоронах простого ковбоя и просят рассказать о связи между ними.
+Стоддард начинает рассказ-воспоминание, который переносит действие на несколько десятилетий назад, когда он был молодым адвокатом из восточных штатов. Молодой Рэнсом ехал на Запад, полный идеалистических представлений о том, как закон и порядок могут цивилизовать дикие территории. По дороге дилижанс, в котором он ехал, подвергся нападению банды во главе с жестоким разбойником Либерти Вэлэнсом, которого играет Ли Марвин.
+Либерти Вэлэнс представляет собой воплощение хаоса и беззакония старого Запада. Он жесток, беспринципен и управляет округой через страх и насилие. Вэлэнс избивает молодого адвоката и оставляет его умирать в пустыне только за то, что тот осмелился протестовать против грабежа. Этот эпизод становится определяющим в отношениях между персонажами и символизирует столкновение цивилизации с варварством.
+Избитого и раненого Стоддарда находит местный ранчер Том Донифон, которого играет Джон Уэйн. Донифон - человек старой закалки, который живёт по неписаным законам Запада, где сила и меткость стрельбы решают все споры. Он доставляет пострадавшего в город к доктору и в ресторан Питера и Норы Эриксон, где Стоддарда выхаживает официантка Хэлли, которую играет Вера Майлз.
+Хэлли - местная девушка, которая мечтает об образовании и цивилизованной жизни. Она восхищена образованностью и манерами восточного адвоката, видя в нём представителя того мира, к которому стремится. Между ней и Стоддардом постепенно возникают романтические отношения, основанные на общих ценностях и стремлении к прогрессу.
+Том Донифон также влюблён в Хэлли и собирается сделать ей предложение. Он даже строит для неё дом и разбивает сад, надеясь, что она согласится стать его женой. Однако он понимает, что не может дать ей того, что она ищет - образования, культуры, перспектив развития. Донифон представляет уходящую эпоху, а Стоддард - будущее, и Хэлли инстинктивно тянется к последнему.
+Стоддард остаётся в городке и пытается установить там верховенство закона. Он открывает юридическую практику, учит местных жителей грамоте, выступает за создание школ и больниц. Его усилия встречают поддержку у прогрессивно настроенных горожан, но также и сопротивление со стороны тёмных сил, которые процветают в условиях беззакония.
+Либерти Вэлэнс видит в адвокате угрозу своему влиянию и власти. Он понимает, что закон и порядок лишат его возможности грабить и терроризировать округу. Вэлэнс начинает открыто угрожать Стоддарду, требуя, чтобы тот покинул город, и обещая убить его, если он не подчинится.
+Конфликт обостряется, когда приближается время выборов делегата на конвент штата, который должен решить вопрос о придании территории статуса штата. Стоддард выдвигает свою кандидатуру, обещая бороться за образование, развитие железных дорог и установление цивилизованного правопорядка. Его поддерживают фермеры, мелкие торговцы и все, кто заинтересован в мирном развитии региона.
+Либерти Вэлэнс и его покровители из числа крупных скотоводов противодействуют этим планам. Они заинтересованы в сохранении статус-кво, когда можно безнаказанно захватывать земли, избегать налогов и управлять территорией через силу. Вэлэнс срывает избирательное собрание, избивает кандидатов и угрожает всем, кто осмелится голосовать против его интересов.
+Том Донифон оказывается в сложном положении. С одной стороны, он симпатизирует стремлениям Стоддарда к установлению порядка. С другой стороны, он понимает, что успех адвоката означает конец его собственного образа жизни и потерю Хэлли. Донифон - человек чести, но его представления о чести сформированы культурой старого Запада, где личное мужество и готовность к поединку ценятся выше юридических тонкостей.
+Кульминация наступает, когда Либерти Вэлэнс вызывает Стоддарда на дуэль. Адвокат не умеет стрелять и понимает, что это самоубийство, но отказ от поединка означал бы полную потерю авторитета и крах всех его начинаний. Хэлли умоляет его не принимать вызов, но Стоддард чувствует, что у него нет выбора.
+Дуэль происходит на главной улице города при большом скоплении народа. Либерти Вэлэнс уверен в своей победе - он опытный стрелок, а его противник едва держит револьвер в руках. Однако когда раздаются выстрелы, именно Вэлэнс падает мёртвым, а Стоддард остаётся стоять, к собственному удивлению.
+Смерть Либерти Вэлэнса превращает Стоддарда в легенду. Человек закона, который смог победить самого опасного бандита территории в честном поединке, становится символом торжества цивилизации над варварством. Его избирают делегатом, затем в конгресс, потом в сенат. Вся его политическая карьера строится на репутации "человека, который застрелил Либерти Вэлэнса".
+Однако многие годы спустя Том Донифон раскрывает Стоддарду правду о той ночи. Оказывается, что Донифон скрытно присутствовал на дуэли и именно он застрелил Вэлэнса из укрытия, когда тот собирался убить неопытного адвоката. Стоддард промахнулся, но получил славу победителя, потому что никто не знал об участии Донифона в поединке.
+Это открытие потрясает Стоддарда. Он понимает, что вся его карьера основана на лжи, что он не герой, а обманщик, который присвоил себе чужую славу. Донифон объясняет, что совершил этот поступок не ради Стоддарда, а ради Хэлли и будущего, которое тот представляет. Он пожертвовал своим счастьем и своими принципами ради общего блага.
+После дуэли жизнь Донифона идёт под откос. Он понимает, что потерял Хэлли навсегда - она выйдет замуж за "героя", победившего Вэлэнса. Более того, он осознаёт, что его время прошло, что в новом мире нет места для таких, как он. Донифон начинает пить, его ранчо приходит в упадок, а сам он превращается в горького одинокого старика.
+В настоящем времени Стоддард заканчивает свой рассказ и предлагает журналистам опубликовать правду. Однако редактор газеты разрывает свои записи со словами, которые стали знаменитыми: "Когда легенда становится фактом, печатай легенду." Он объясняет, что люди нуждаются в героях и мифах больше, чем в исторической точности.
+Фильм заканчивается тем, что Стоддард и Хэлли уезжают из города. Они прожили долгую и успешную жизнь, внесли вклад в развитие цивилизации, но цена этого успеха была высокой. Том Донифон, настоящий герой истории, умер в безвестности, а его подвиг остался неизвестным.
+"Человек, который застрелил Либерти Вэлэнса" представляет собой размышление о природе героизма, цене прогресса и роли мифов в формировании национального самосознания. Форд показывает, что переход от дикого Запада к цивилизованному обществу требует жертв, что старые ценности должны уступить место новым, даже если это болезненно для тех, кто олицетворяет уходящую эпоху.
+Фильм также исследует различные типы мужественности и героизма. Донифон представляет традиционного героя - сильного, молчаливого, готового к самопожертвованию. Стоддард олицетворяет новый тип лидера - образованного, принципиального, но зависящего от общественного мнения. Оба типа необходимы для развития общества, но их сосуществование часто оказывается невозможным.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Иваново детство', 'In WW2, twelve year old Soviet orphan Ivan Bondarev works for the Soviet army as a scout behind the German lines and strikes a friendship with three sympathetic Soviet officers.', '1962-01-01', 1, '95 minutes', 'Ivanovo detstvo', 8.1, 'Фильм начинается со сна двенадцатилетнего Ивана Бондарева. Мальчик видит себя в мирное довоенное время - он бежит по солнечному лугу к матери, которая стоит у колодца, затем взбирается на высокое дерево и видит с его вершины прекрасный мир детства. Но этот сон резко обрывается - Иван просыпается в холодном, мрачном бункере на передовой Великой Отечественной войны.
+Иван - сирота, потерявший всю семью в начале войны. Немцы убили его отца, расстреляли мать и маленькую сестренку Люську на его глазах. Теперь мальчик живет с одной целью - мстить фашистам. Он стал разведчиком, работающим в тылу врага. Благодаря своему детскому возрасту и маленькому росту, Иван может проникать туда, куда не пройдет взрослый разведчик.
+Старший лейтенант Гальцев командует небольшим подразделением на передовой. Однажды ночью его разбуждает часовой - на их участке фронта задержан ребенок, который утверждает, что является разведчиком и требует связать его с Москвой. Гальцев сначала не верит мальчику, думая, что это местный беспризорник, но Иван называет секретные пароли и номера, которые может знать только настоящий разведчик.
+Связавшись с командованием, Гальцев узнает, что Иван действительно ценный агент, работающий под кодовым именем "Бондаренко". Мальчик только что вернулся из сложного задания в тылу противника, где собирал важные разведывательные данные. Гальцев поражен тем, что ребенок выполняет такую опасную работу, и пытается убедить командование отправить Ивана в суворовское училище, подальше от фронта.
+Иван категорически отказывается от любых попыток увезти его с передовой. Он одержим жаждой мести и не может представить себе жизни вдали от войны. Мальчик с презрением относится к попыткам взрослых оградить его от опасности, считая, что только участие в боевых действиях имеет смысл. Он рассказывает Гальцеву о своем прошлом - как немцы сожгли их деревню, как он видел смерть родных, как выживал в лесах, питаясь корой и травой.
+Капитан Хлин, опытный разведчик, который работает с Иваном, понимает ценность мальчика как агента, но также видит, что война уничтожает его детскую душу. Иван больше не способен на обычные детские радости - он не играет, не смеется, живет только мыслями о мести. Хлин пытается найти баланс между использованием способностей мальчика и заботой о его человечности.
+Лейтенант Гальцев развивает отношения с военной медсестрой Машей, молодой женщиной, которая также потеряла близких на войне. В их романе есть что-то трагическое - они пытаются найти островок нормальной человеческой жизни посреди всеобщего разрушения. Иван наблюдает за их отношениями с детской серьезностью, словно пытаясь понять, что такое любовь и счастье, которые он сам уже не способен испытать.
+Готовится новое задание для Ивана. Ему необходимо переправиться через реку в тыл противника и собрать информацию о немецких укреплениях. Это чрезвычайно опасная операция - берег реки простреливается, патрули ходят постоянно, и малейшая ошибка будет стоить жизни. Гальцев снова пытается отговорить мальчика, но Иван непреклонен.
+Перед заданием Иван рассказывает Гальцеву о своих снах. Он видит свою маленькую сестру Люську, которая зовет его играть, видит мать, видит яблоневый сад возле родного дома. Эти сны - единственное, что осталось у него от детства, но даже они постепенно тускнеют под влиянием военной реальности. Мальчик боится, что скоро совсем перестанет видеть эти сны и окончательно потеряет связь со своим прошлым.
+Операция по переправке Ивана через реку показана с напряженным драматизмом. Гальцев и Хлин сопровождают мальчика до берега, где его ждет лодка. Река кажется бесконечно широкой в темноте, немецкие прожекторы шарят по воде, слышны выстрелы. Иван исчезает в ночи, и остается только ждать его возвращения.
+Проходят дни, но Иван не возвращается. Гальцев и Хлин понимают, что что-то пошло не так, но ничего не могут предпринять. Они продолжают службу, надеясь на чудо, но в глубине души понимают, что мальчик, скорее всего, погиб. Война продолжается, и им приходится выполнять другие задания, но мысли об Иване не оставляют их.
+Спустя несколько месяцев советские войска освобождают территорию, где действовал Иван. В захваченных немецких архивах Гальцев находит документы, которые проливают свет на судьбу мальчика. Среди бумаг есть фотографии казненных советских разведчиков, и на одной из них Гальцев с ужасом узнает Ивана. Мальчик был схвачен немцами и повешен вместе с другими партизанами.
+Фильм завершается еще одним сном, но теперь это сон не Ивана, а память о нем. Мальчик снова бежит по солнечному берегу моря, играет с другими детьми, радуется жизни. Эти кадры сняты в ярких, почти сказочных тонах, контрастирующих с мрачной черно-белой реальностью войны. Голос за кадром произносит имена детей, играющих на берегу, и среди них звучит имя Ивана.
+Последние кадры показывают мертвый лес, искореженный войной - обгоревшие стволы деревьев тянутся к небу как руки погибших. Этот образ символизирует не только смерть природы, но и смерть детства, невинности, будущего. Иван стал жертвой не только фашистов, которые его убили, но и самой войны, которая превратила ребенка в солдата и лишила его права на детство.
+Фильм исследует тему влияния войны на детскую психику, показывая, как жестокость и ненависть разрушают детскую душу изнутри. Иван физически остается ребенком, но духовно он уже взрослый, травмированный человек, неспособный вернуться к нормальной жизни. Его трагедия заключается не только в смерти, но и в том, что он потерял детство задолго до гибели.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Девичий источник', 'An innocent yet pampered young virgin and her family''s pregnant and jealous servant set out to deliver candles to church, but only one returns from events that transpire in the woods along the way.', '1960-01-01', 1, '89 minutes', 'Jungfrukällan', 8.1, 'Фильм разворачивается в средневековой Швеции XIV века и рассказывает трагическую историю о мести, вере и искуплении. В центре повествования находится зажиточный крестьянин Торе, глубоко религиозный человек, живущий со своей женой Маретой в отдаленной усадьбе. У них есть единственная дочь Карин, пятнадцатилетняя девушка невинная и чистая, которая является центром их мира и воплощением родительской любви.
+В доме также живет Ингери, приемная дочь, темноволосая и завистливая девушка, которая тайно беременна и исповедует языческие верования в противовес христианской вере хозяев дома. Ингери испытывает глубокую ревность к Карин, которая получает всю родительскую любовь и внимание, в то время как сама она остается в тени, выполняя роль служанки.
+Торе решает отправить Карин в соседнюю церковь, чтобы она принесла свечи для службы в честь Девы Марии. Это важное религиозное поручение, и Карин готовится к путешествию с особой тщательностью. Мать наряжает дочь в лучшие одежды, надевает на нее дорогие украшения и дает с собой хлеб для церкви. Ингери должна сопровождать Карин в этом путешествии в качестве служанки и защитницы.
+Перед отъездом Ингери тайно посещает старого мельника, который практикует языческие ритуалы и колдовство. Она просит его навести порчу на Карин, движимая завистью и злобой. Мельник предостерегает ее о последствиях, но Ингери настаивает на своем желании причинить вред приемной сестре. Этот момент становится предзнаменованием грядущей трагедии.
+Девушки отправляются в путь через дремучий лес. Карин едет верхом на лошади, радостная и беззаботная, напевая песни и наслаждаясь красотой природы. Ингери идет пешком, мрачная и молчаливая, обдумывая свои темные планы. По дороге они встречают трех пастухов-козопасов - двух взрослых братьев и маленького мальчика, который оказывается их младшим братом.
+Сначала встреча кажется безобидной. Пастухи предлагают девушкам разделить с ними трапезу, и наивная Карин соглашается, не видя опасности. Ингери чувствует недоброе и пытается увести Карин прочь, но та не слушает предостережений. Во время еды пастухи начинают вести себя все более агрессивно и похотливо, их взгляды и жесты становятся угрожающими.
+Ингери, испугавшись развития событий и поняв, что ее колдовство может привести к ужасным последствиям, убегает в лес, оставляя Карин одну с тремя мужчинами. Она прячется за деревьями и становится свидетелем происходящего, но не решается вмешаться. Два старших брата нападают на Карин с намерением изнасиловать ее.
+Карин отчаянно сопротивляется, кричит и пытается убежать, но силы неравны. Пастухи жестоко избивают ее, рвут дорогую одежду и насилуют. Когда девушка продолжает сопротивляться и кричать, один из братьев в ярости убивает ее ударом дубины по голове. Невинная жизнь обрывается в один момент, и тело Карин остается лежать в лесу среди разбросанных вещей и изорванной одежды.
+Убийцы забирают дорогие украшения и одежду Карин в качестве добычи, не понимая, что эти вещи могут выдать их. Маленький мальчик потрясен увиденным и пытается протестовать против действий старших братьев, но те заставляют его молчать и быть соучастником преступления. Ингери остается в лесу, охваченная ужасом и чувством вины за свою роль в произошедшем.
+Тем временем в доме Торе и Марета с нарастающим беспокойством ждут возвращения дочери. Когда наступает ночь, а Карин не появляется, они понимают, что случилось что-то страшное. Торе организует поиски, но в темноте найти что-либо невозможно. Родители проводят бессонную ночь в молитвах и страхе за судьбу единственной дочери.
+На следующий день три пастуха случайно приходят именно в дом Торе, не зная, что это дом их жертвы. Они просят ночлега и еды, представляясь простыми путешественниками. Торе и Марета, следуя законам гостеприимства, впускают их в дом и предлагают кров. Пастухи ведут себя спокойно, думая, что их преступление осталось нераскрытым.
+Роковая ошибка происходит, когда жена одного из пастухов пытается продать Марете дорогую рубашку, которая на самом деле принадлежала Карин. Марета мгновенно узнает одежду своей дочери и понимает, кто находится в их доме. Она сохраняет самообладание и не показывает своих подозрений, но тайно сообщает мужу о своем открытии.
+Торе охватывает страшный гнев, но он сдерживается, стараясь узнать правду о судьбе дочери. Он допрашивает пастухов, и те под давлением признаются в убийстве Карин. Они рассказывают, где оставили тело, не проявляя особого раскаяния и оправдывая свои действия бедностью и необходимостью выживания.
+Узнав всю правду о смерти дочери, Торе принимает решение отомстить убийцам собственными руками. Он запирает пастухов в доме и начинает готовиться к расправе. Глубоко религиозный человек, Торе переживает внутренний конфликт между христианским учением о прощении и жаждой справедливого возмездия. Он молится, прося у Бога прощения за то, что собирается совершить.
+В ритуальной сцене Торе совершает языческий обряд очищения, моясь в бане и бичуя себя березовыми вениками, готовясь к кровавой мести как к священному долгу. Этот момент показывает смешение христианских и языческих традиций в сознании средневекового человека. Торе надевает чистую одежду и берет топор, превращаясь из мирного крестьянина в орудие возмездия.
+Торе возвращается в дом и методично убивает двух старших братьев, рубя их топором с холодной решимостью. Убийство совершается с особой жестокостью - он буквально разрубает их на куски, вымещая всю свою боль и ярость. Когда очередь доходит до маленького мальчика, Торе колеблется, видя в нем невинного ребенка, но затем убивает и его, бросив о стену, не желая оставлять свидетелей своей мести.
+После совершения мести Торе и Марета отправляются в лес искать тело дочери. Они находят Карин лежащей среди листьев, ее лицо мирно и красиво даже в смерти. Родители склоняются над телом единственной дочери, охваченные безграничным горем. Торе обращается к Богу с молитвой, в которой он признает, что не понимает божественной воли, но просит прощения за совершенное им убийство.
+В своей молитве Торе обещает построить каменную церковь на том месте, где погибла Карин, как искупление за свой грех и как памятник невинной дочери. Он понимает, что месть не принесла ему облегчения, а только добавила грех к трагедии. В этот момент из земли под головой мертвой Карин начинает бить чистый источник, что воспринимается как знак божественного прощения и святости невинной жертвы.
+Ингери, которая все это время пряталась в лесу, наконец появляется и признается в своей роли в трагедии. Она рассказывает о своем обращении к колдуну и просит прощения. Марета, несмотря на свое горе, прощает приемную дочь, понимая, что и она была жертвой собственной зависти и темных сил.
+Фильм завершается сценой, где семья несет тело Карин домой для погребения, а из земли продолжает бить чудесный источник, символизирующий очищение, прощение и вечную память о невинной жертве. Трагедия показана как результат столкновения добра и зла, веры и суеверий, справедливости и мести в жестоком средневековом мире, где человеческие страсти приводят к необратимым последствиям.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Пожнешь бурю', 'Based on a real-life case in 1925, two great lawyers argue the case for and against a science teacher accused of the crime of teaching evolution.', '1960-01-01', 1, '128 minutes', 'Inherit the Wind', 8.1, 'Фильм основан на реальных событиях знаменитого "обезьяньего процесса" 1925 года в городе Дейтон, штат Теннесси, но имена персонажей изменены. Молодой школьный учитель Берт Кейтс арестован за преподавание теории эволюции Дарвина в нарушение закона штата Теннесси, который запрещает обучение любой теории происхождения человека, противоречащей библейскому рассказу о сотворении мира.
+Арест Кейтса превращает маленький провинциальный городок Хиллсборо в центр национального внимания. Религиозные фундаменталисты со всей страны съезжаются поддержать обвинение, рассматривая процесс как битву за христианские ценности против безбожной науки. Город наводняют журналисты, торговцы сувенирами и проповедники. Мэр города и местные бизнесмены довольны вниманием и потенциальными доходами от туризма.
+Для поддержки обвинения приглашается Мэтью Харрисон Брэди, трижды неудачный кандидат в президенты США, знаменитый оратор и защитник фундаменталистских взглядов. Брэди приезжает в город как герой, его встречают с оркестром и торжественными речами. Он уверен в легкой победе и рассматривает процесс как возможность восстановить свою политическую репутацию.
+Защиту Кейтса берет на себя Генри Драммонд, известный адвокат и защитник гражданских свобод, агностик, который неоднократно выступал против религиозного фанатизма в судах. Драммонд прибывает в город как изгой - местное население встречает его с враждебностью, считая посланником дьявола. Гостиницы отказываются его принимать, и ему приходится остановиться у сочувствующих.
+Процесс освещает циничный журналист Э.К. Хорнбек из балтиморской газеты, который презирает религиозное невежество горожан и делает едкие заметки об "обезьяньем процессе". Хорнбек привез Драммонда и финансирует защиту, но его мотивы не столько в поддержке справедливости, сколько в желании высмеять фундаменталистов.
+Кейтс находится в сложном положении - его невеста Рэйчел Браун является дочерью местного проповедника, ярого противника эволюции. Преподобный Браун ведет агрессивную кампанию против учителя, организует митинги и призывает к его осуждению. Рэйчел разрывается между любовью к жениху и преданностью отцу, который требует от нее свидетельствовать против Кейтса.
+Судья Коффи ведет процесс предвзято, отклоняя большинство ходатайств защиты и не допуская научных экспертов для дачи показаний о теории эволюции. Драммонд пытается доказать, что закон штата нарушает конституционные принципы свободы мысли и разделения церкви и государства, но встречает постоянное противодействие.
+Брэди выступает с пламенными речами, цитируя Библию и призывая защитить христианскую веру от атак материалистической науки. Он утверждает, что эволюция подрывает моральные основы общества и ведет к безбожию. Его поддерживает толпа верующих, которые видят в процессе борьбу добра со злом.
+Драммонд в своих выступлениях подчеркивает важность свободы мысли и права на сомнение. Он утверждает, что наука и религия могут сосуществовать, и что запрет на преподавание научных теорий является формой интеллектуальной тирании. Его речи умны и логичны, но вызывают враждебность у большинства присутствующих.
+Кульминацией процесса становится момент, когда Драммонд вызывает самого Брэди в качестве эксперта по Библии. Это неожиданный ход, который ставит обвинителя в положение свидетеля. Драммонд методично задает вопросы о буквальном толковании библейских историй - о том, как Иона мог жить во чреве кита, откуда взялась жена Каина, как солнце могло остановиться для Иисуса Навина.
+Брэди, привыкший к роли обвинителя, оказывается беспомощным под перекрестным допросом. Он пытается защищать буквальное толкование Библии, но запутывается в противоречиях и вынужден признать, что некоторые библейские рассказы могут пониматься символически. Его авторитет как религиозного лидера серьезно подрывается.
+Драммонд заставляет Брэди признать, что "день" в библейском рассказе о сотворении мира необязательно означает двадцать четыре часа и может длиться миллионы лет. Это подрывает основной аргумент против эволюции и показывает, что наука и религия не обязательно противоречат друг другу.
+Присяжные, состоящие из местных жителей, предсказуемо выносят обвинительный приговор Кейтсу, но судья назначает минимальный штраф в сто долларов, фактически признавая символический характер наказания. Драммонд объявляет о намерении обжаловать приговор в высших судах.
+После процесса Брэди, униженный и разбитый неудачным выступлением, пытается произнести заключительную речь, которую ему не дали сказать в суде. Но публика уже расходится, потеряв к нему интерес. В момент эмоционального напряжения у Брэди случается сердечный приступ, и он умирает прямо в зале суда, став жертвой собственных амбиций и фанатизма.
+Хорнбek цинично комментирует смерть Брэди, но Драммонд защищает память своего бывшего друга и оппонента, говоря, что тот был великим человеком, который ошибался, но искренне верил в свои идеалы. Драммонд выражает сожаление о том, что их дружба была разрушена идеологическими разногласиями.
+Рэйчел Браун принимает сторону жениха и уезжает с ним из города, порвав с отцом-фанатиком. Она понимает, что любовь и понимание важнее слепой веры и предрассудков. Кейтс, хотя и осужденный, морально побеждает, доказав свое право на свободу мысли.
+Фильм заканчивается сценой, где Драммонд остается один в опустевшем зале суда. Он берет с адвокатского стола две книги - Библию и труд Дарвина "Происхождение видов", взвешивает их в руках, словно на весах, а затем кладет обе книги в свой портфель и уходит. Этот символический жест показывает, что истинная мудрость заключается не в отрицании одного во имя другого, а в признании ценности и науки, и духовности.
+Фильм исследует темы свободы мысли, опасности фанатизма, конфликта между наукой и религией, роли СМИ в формировании общественного мнения. Он показывает, как страх перед новыми идеями может привести к интеллектуальной тирании и преследованию инакомыслящих.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Четыреста ударов', 'A young boy, left without attention, delves into a life of petty crime.', '1959-01-01', 1, '99 minutes', 'Les quatre cents coups', 8.1, 'Фильм рассказывает историю двенадцатилетнего парижского мальчика Антуана Данеля, который живет в тесной квартире со своей матерью Жильбертой и отчимом Жюльеном Данелем. Семейная атмосфера в доме напряженная и холодная, мать относится к сыну с раздражением и равнодушием, воспринимая его скорее как обузу, чем как любимого ребенка. Отчим пытается проявлять заботу о пасынке, но их отношения остаются поверхностными и формальными.
+Антуан учится в строгой парижской школе, где царят жесткая дисциплина и авторитарные методы воспитания. Учитель французского языка господин Сурель относится к ученикам с презрением и жестокостью, постоянно унижая и наказывая их за малейшие проступки. Мальчик испытывает трудности с учебой не из-за отсутствия способностей, а из-за полного отсутствия мотивации и поддержки как дома, так и в школе.
+У Антуана есть лучший друг Рене Бигэ, мальчик из более благополучной семьи, который становится его соучастником в различных проказах и авантюрах. Вместе они прогуливают уроки, бродят по улицам Парижа, посещают кинотеатры и ярмарки, пытаясь найти развлечения и убежать от унылой действительности школы и дома. Их дружба основана на взаимном понимании и желании противостоять миру взрослых.
+Однажды Антуан не приходит в школу, сославшись на смерть матери, что оказывается ложью. Когда обман раскрывается, мальчик подвергается жестокому наказанию со стороны учителя и родителей. Этот инцидент становится поворотным моментом, после которого отношение к Антуану дома становится еще более холодным и враждебным. Мать открыто выражает свое недовольство сыном и угрожает отправить его в исправительное учреждение.
+Ситуация дома ухудшается, когда Антуан случайно становится свидетелем измены матери. Он видит, как она целуется с незнакомым мужчиной на улице, что окончательно разрушает его доверие к взрослым и представления о семейных ценностях. Мальчик чувствует себя преданным и одиноким, понимая, что не может рассчитывать на поддержку и понимание со стороны самых близких людей.
+В школе Антуан пытается реабилитироваться, написав сочинение, в котором он плагиатирует отрывок из произведения Оноре де Бальзака. Учитель обнаруживает плагиат и публично унижает мальчика перед всем классом, обвиняя его в нечестности и угрожая исключением. Этот эпизод окончательно разрушает и без того слабую связь Антуана со школой и образовательным процессом.
+Чувствуя себя загнанным в угол со всех сторон, Антуан принимает решение сбежать из дома. Он проводит ночь на улицах Парижа, прячась в типографии, где работает отчим, и пытаясь найти укрытие от холода и голода. Утром его находят и возвращают домой, где родители встречают его не с облегчением, а с еще большим раздражением и угрозами наказания.
+Отчаявшись найти выход из своего положения и нуждаясь в деньгах, Антуан вместе с Рене решают украсть пишущую машинку из офиса отчима. Они планируют продать ее и получить деньги для самостоятельной жизни, но план проваливается уже на стадии попытки сбыть украденное. Мальчики пытаются вернуть машинку обратно, но их застают на месте преступления.
+Отчим обнаруживает Антуана в своем офисе с украденной пишущей машинкой и немедленно вызывает полицию. Мальчика арестовывают и доставляют в полицейский участок, где с ним обращаются как с настоящим преступником. Антуан проводит ночь в камере предварительного заключения вместе со взрослыми правонарушителями, что становится для него травматическим опытом и окончательно разрушает остатки детской наивности.
+На следующий день Антуана переводят в центр для несовершеннолетних правонарушителей, где он проходит собеседование с психологом. Во время этой беседы, которая снимается скрытой камерой, мальчик рассказывает о своей жизни, семейных проблемах и чувстве отверженности. Его откровенный рассказ раскрывает глубину его эмоциональных травм и показывает, что его поведение является результатом отсутствия любви и понимания со стороны взрослых.
+Антуана помещают в исправительное учреждение для трудных подростков, расположенное на морском побережье. Здесь царит строгий режим и военная дисциплина, воспитанники живут в казарменных условиях и выполняют различные работы под постоянным надзором. Несмотря на относительно гуманное отношение некоторых воспитателей, Антуан чувствует себя заключенным и мечтает только о свободе.
+В исправительном учреждении Антуан знакомится с другими подростками, каждый из которых имеет свою трагическую историю. Они рассказывают друг другу о своих семьях, преступлениях и мечтах о будущем. Эти разговоры показывают, что большинство из них стали правонарушителями не по злому умыслу, а из-за неблагополучных семейных обстоятельств и отсутствия должного воспитания.
+Во время игры в футбол Антуан видит возможность для побега. Он незаметно отходит от группы и начинает бежать через поля и леса к морю. Побег превращается в долгий и изнурительный марафон, во время которого мальчик преодолевает различные препятствия и прячется от преследователей. Его стремление к свободе становится символом естественного желания ребенка вырваться из-под контроля бездушной системы.
+Антуан бежит до тех пор, пока не достигает морского берега. Он впервые в жизни видит море, о котором долго мечтал, и заходит в воду, ощущая долгожданное чувство свободы и единения с природой. Однако его радость омрачается пониманием того, что у него нет места, куда можно пойти, и никого, кто мог бы его понять и принять.
+Фильм завершается знаменитым стоп-кадром, когда Антуан поворачивается к камере, стоя на берегу моря. Его лицо выражает смесь надежды и отчаяния, детской наивности и преждевременной зрелости. Этот финальный кадр стал одним из самых известных в истории кинематографа и символизирует неопределенность будущего подростка, который находится на пороге взрослой жизни, но еще не знает, какой путь ему предстоит выбрать. Открытый финал оставляет зрителя в размышлениях о судьбе Антуана и о проблемах детей, которые растут без любви и понимания в жестоком мире взрослых.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бен-Гур', 'After a Jewish prince is betrayed and sent into slavery by a Roman friend, he regains his freedom and comes back for revenge.', '1959-01-01', 1, '212 minutes', 'Ben-Hur', 8.1, 'Действие фильма разворачивается в Иудее в I веке нашей эры, во времена римской оккупации. В центре повествования находится Иуда Бен-Гур, молодой иудейский князь из знатного иерусалимского рода, который живет в роскошном дворце со своей матерью Мирьям и сестрой Тирцой. Семья Бен-Гуров пользуется уважением среди местного населения и поддерживает относительно мирные отношения с римскими властями.
+В детстве лучшим другом Иуды был Мессала, сын римского торговца, который жил в Иерусалиме. Годы спустя Мессала возвращается в город уже в качестве командира римского легиона, получив назначение для укрепления римской власти в неспокойной провинции. Встреча старых друзей поначалу проходит радостно, они вспоминают детские годы и клянутся в вечной дружбе, несмотря на то, что теперь принадлежат к разным мирам.
+Однако вскоре выясняется, что годы службы в римской армии кардинально изменили характер Мессалы. Он стал жестоким и амбициозным офицером, фанатично преданным римской империи и презирающим покоренные народы. Мессала требует от Иуды предать ему имена иудейских повстанцев и активно сотрудничать с римской администрацией, но Бен-Гур отказывается предавать свой народ, что приводит к разрыву их дружбы.
+Роковой инцидент происходит во время торжественного въезда нового римского наместника Валерия Грата в Иерусалим. Иуда со своей семьей наблюдает за процессией с крыши своего дома. Случайно черепица срывается с крыши и падает на наместника, ранив его. Хотя это был несчастный случай, Мессала использует ситуацию для расправы со своим бывшим другом, обвинив семью Бен-Гуров в покушении на убийство римского чиновника.
+Иуду арестовывают и отправляют на галеры в качестве гребца-раба без суда и следствия. Его мать и сестру заключают в темницу, где они должны провести остаток жизни. Мессала хладнокровно наблюдает за арестом, игнорируя мольбы своего детского друга и демонстрируя полное превращение в бездушного римского офицера, для которого карьера важнее человеческих отношений.
+На галере Иуда проводит три мучительных года, прикованный цепью к веслу и вынужденный грести под ударами бича надсмотрщика. Тяжелая работа, недостаток пищи и постоянные унижения превращают его из изнеженного аристократа в закаленного и озлобленного человека. Единственное, что поддерживает его в эти страшные годы, это жажда мести Мессале и надежда на освобождение матери и сестры.
+Судьба Иуды кардинально меняется во время морского сражения между римским и пиратским флотами. Галера, на которой он служит, участвует в битве под командованием консула Квинта Арриуса, опытного военачальника. Когда вражеские корабли идут на абордаж, Иуда спасает жизнь Арриусу, защитив его от пиратов и помогая ему добраться до безопасности после кораблекрушения.
+Благодарный Арриус освобождает Иуду от рабства и усыновляет его, дав ему римское имя и гражданство. Бен-Гур получает прекрасное образование, изучает военное дело и становится искусным колесничим. Несколько лет он живет в Риме как приемный сын влиятельного консула, но его сердце остается в Иерусалиме, где находятся его мать и сестра, о судьбе которых он ничего не знает.
+Получив от приемного отца значительное состояние и собственную колесницу, Иуда возвращается в Иудею, движимый желанием найти свою семью и отомстить Мессале. По дороге домой он встречает молодого плотника из Назарета по имени Иисус, который дает ему воды, когда тот изнемогает от жажды. Эта встреча производит глубокое впечатление на Бен-Гура, хотя он еще не понимает, кто этот человек и какую роль он сыграет в его жизни.
+В Иерусалиме Иуда узнает, что его дом разрушен, а имущество конфисковано. Он находит своего бывшего слугу Симонида, который тайно сохранил часть семейного богатства и управлял им все эти годы. От Симонида и его дочери Эстер Иуда узнает, что его мать и сестра до сих пор находятся в заключении в крепости Антония, но никто не знает, живы ли они.
+Бен-Гур тайно встречается с Мессалой, который к этому времени стал трибуном и одним из самых влиятельных римских офицеров в Иудее. Иуда требует освобождения матери и сестры, но Мессала отказывается даже обсуждать этот вопрос, заявляя, что они умерли много лет назад. На самом деле женщины живы, но заболели проказой в сырой темнице, и Мессала скрывает это, боясь скандала.
+Жажда мести приводит Иуду к мысли о вызове Мессалы на состязание колесниц во время предстоящих игр в честь нового наместника. Это будет единственная возможность публично унизить своего врага и доказать превосходство над ним. Мессала принимает вызов, рассчитывая раз и навсегда покончить со своим бывшим другом и продемонстрировать мощь Рима.
+Подготовка к гонке колесниц становится центральным событием в жизни Иерусалима. Иуда тренируется с лучшими лошадьми, которых ему предоставляет шейх Ильдерим, арабский вождь, ставший его союзником. Арабские кони белой масти отличаются невероятной скоростью и выносливостью, но требуют особого подхода и понимания. Иуда проводит недели, налаживая контакт с животными и совершенствуя свое мастерство управления колесницей.
+День великой гонки наступает, и весь Иерусалим собирается на ипподроме, чтобы стать свидетелем поединка между иудейским князем и римским трибуном. Состязание начинается с участием восьми колесниц, но истинная борьба разворачивается между Иудой и Мессалой. Римлянин использует все возможные уловки, включая острые лезвия на колесах своей колесницы, чтобы покалечить лошадей и колесницы противников.
+Гонка превращается в смертельную битву, когда Мессала пытается столкнуть колесницу Иуды в стену арены. Однако его план оборачивается против него самого - колесница римлянина переворачивается, и он падает под копыта лошадей, получив смертельные ранения. Иуда побеждает в гонке, но его триумф омрачается видом умирающего Мессалы, который перед смертью признается, что мать и сестра Бен-Гура все еще живы в темнице.
+Иуда немедленно отправляется в крепость Антония и находит мать и сестру в ужасном состоянии. Годы заключения в сырой темнице превратили их в больных проказой женщин, изуродованных болезнью и едва живых. Встреча с семьей приносит Иуде не радость, а новое горе, поскольку он понимает, что его месть не вернула ему близких, а только причинила дополнительные страдания.
+Мать и сестра, стыдясь своего состояния, просят Иуду оставить их и не рассказывать никому о том, что они живы. Они уходят в Долину прокаженных, где живут такие же изгои общества, отвергнутые всеми и ждущие только смерти. Иуда остается один со своим богатством и славой победителя, но чувствует полную пустоту и бессмысленность своего существования.
+В это время по Иудее распространяется слава о пророке из Назарета, который творит чудеса и проповедует любовь и прощение. Иуда вспоминает свою встречу с Иисусом и начинает следить за его деятельностью. Учение Христа о том, что месть только порождает новую месть, а спасение приходит через прощение и любовь, постепенно находит отклик в сердце измученного Бен-Гура.
+Кульминация наступает в день распятия Иисуса. Иуда присутствует при казни и видит, как человек, который когда-то напоил его водой, умирает мучительной смертью, прощая своих палачей. В момент смерти Христа происходит землетрясение и ливень, который воспринимается как знак божественного гнева и одновременно очищения.
+Чудесным образом дождь исцеляет мать и сестру Иуды от проказы. Они возвращаются к нему здоровыми и красивыми, какими были до заключения. Семья воссоединяется, но теперь их объединяет не только кровная связь, но и вера в учение Христа о любви и прощении. Иуда понимает, что истинная победа заключается не в мести врагам, а в способности простить и найти мир в своем сердце.
+Фильм завершается сценой, где Иуда со своей семьей и Эстер, которая стала его женой, слушают рассказы о воскресении Христа. Бывший князь-мститель превратился в человека, исповедующего веру в любовь и прощение. Его духовное преображение символизирует победу христианских ценностей над языческой жаждой мести и показывает путь от ненависти к пониманию и состраданию.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Трое негодяев в скрытой крепости', 'Lured by gold, two greedy peasants unknowingly escort a princess and her general across enemy lines.', '1958-01-01', 1, '139 minutes', 'Kakushi-toride no san-akunin', 8.1, 'В период феодальных войн в средневековой Японии два крестьянина-бродяги, Тахэй и Мацукити, пытаются выжить в хаосе военных действий. Они трусливы, жадны и думают только о собственной выгоде. Попытавшись продать военные трофеи, они попадают в плен к клану Ямана, который ведет войну против клана Акидзуки. Их приговаривают к смерти как шпионов, но в последний момент спасает вмешательство других пленных.
+В тюрьме крестьяне знакомятся с генералом Рокурота Макабэ, могучим воином клана Акидзуки, который также попал в плен. Макабэ планирует побег и предлагает крестьянам присоединиться к нему в обмен на золото. Тахэй и Мацукити соглашаются, движимые исключительно жадностью, не подозревая о масштабах предстоящего приключения.
+Побег проходит успешно благодаря военному мастерству Макабэ, который в одиночку справляется с множеством стражников. Но крестьяне узнают, что их спутник не обычный самурай, а один из самых верных вассалов принцессы Юки, наследницы клана Акидзуки. Их клан потерпел поражение в войне, их замок пал, а принцесса вынуждена скрываться.
+Макабэ ведет крестьян к руинам старой крепости в горах, где скрывается принцесса Юки. Однако когда они встречают ее, крестьяне видят не благородную даму, а грубую, злобную женщину, которая ведет себя как простолюдинка. Она груба с ними, постоянно ругается и не проявляет никаких признаков аристократических манер. Тахэй и Мацукити недоумевают, зачем им рисковать жизнью ради такой особы.
+На самом деле эта женщина - служанка принцессы, которая играет роль своей госпожи, чтобы отвлечь внимание преследователей. Настоящая принцесса Юки скрывается под видом немой крестьянской девушки. Она молода, красива и благородна, но вынуждена притворяться простолюдинкой и не может говорить, чтобы не выдать себя своей речью.
+Макабэ объясняет крестьянам план: они должны провести принцессу через территорию противника в соседнюю провинцию, где их союзники помогут восстановить клан Акидзуки. В награду за это им обещано большое количество золота, скрытого в деревянных поленьях. Крестьяне, ослепленные перспективой богатства, соглашаются на опасное путешествие.
+Путь лежит через вражескую территорию, где повсюду патрулируют солдаты клана Ямана, которые ищут беглую принцессу. Группа путешествует пешком по горным тропам, стараясь избегать дорог и селений. Макабэ демонстрирует не только воинское мастерство, но и стратегический ум, выбирая безопасные маршруты и предвидя действия противника.
+Во время путешествия между принцессой и одним из крестьян - более добродушным Мацукити - завязываются человеческие отношения. Он не знает, кто она на самом деле, но проявляет к "немой девушке" доброту и защищает ее от грубости своего спутника. Принцесса, впервые в жизни сталкиваясь с искренним человеческим участием без подобострастия, начинает понимать ценность простых человеческих чувств.
+Группа несколько раз оказывается на грани разоблачения. В одном из эпизодов они встречают отряд солдат, и Макабэ вынужден притвориться торговцем дровами, а принцесса - его дочерью. Напряжение достигает пика, когда солдаты начинают подозревать неладное, но Макабэ удается убедить их в своей невинности.
+В другом эпизоде они вынуждены переночевать в деревне, где местные жители устраивают праздник. Принцесса впервые видит, как веселятся простые люди, и это открывает ей новый мир, далекий от придворных церемоний. Она тайно участвует в народных танцах, испытывая радость от свободы и простоты человеческих отношений.
+Но самое серьезное испытание ждет их впереди. Отряд противника обнаруживает их след и начинает преследование. Макабэ понимает, что в открытом бою им не победить, и решает использовать хитрость. Он организует ложное отступление, заманивая преследователей в горное ущелье, где устраивает им засаду.
+Во время погони ложная принцесса героически жертвует собой, отвлекая внимание солдат и давая возможность настоящей принцессе скрыться. Ее смерть глубоко потрясает всех участников группы, особенно крестьян, которые впервые сталкиваются с подлинным самопожертвованием и преданностью.
+Макабэ демонстрирует чудеса воинского искусства, сражаясь с превосходящими силами противника. Его мастерство владения мечом и копьем позволяет небольшой группе одерживать победы над многочисленными отрядами. Но каждый бой дается нелегко, и потери неизбежны.
+Наконец группа достигает границы союзной территории, но их путь преграждает последнее препятствие - хорошо укрепленная застава противника. Макабэ разрабатывает дерзкий план прорыва, используя военную хитрость и внезапность атаки. В решающем сражении он сражается как истинный самурай, демонстрируя не только физическую силу, но и непоколебимую волю.
+Крестьяне, первоначально мотивированные только жадностью, постепенно проникаются уважением к Макабэ и сочувствием к принцессе. Они начинают понимать, что участвуют не просто в выгодном предприятии, а в благородной миссии восстановления справедливости. Особенно это касается Мацукити, который искренне привязывается к "немой девушке".
+После успешного прорыва через заставу группа оказывается в безопасности на союзной территории. Здесь принцесса Юки наконец может открыть свое истинное лицо и заговорить. Крестьяне поражены, узнав, что простая девушка, к которой они относились с участием, на самом деле принцесса.
+Принцесса Юки благодарит всех за спасение и щедро награждает крестьян обещанным золотом. Но самое важное - она изменилась как личность. Путешествие среди простых людей научило ее понимать нужды народа и ценить человеческие качества выше происхождения. Она обещает стать мудрой и справедливой правительницей.
+Макабэ выполнил свой долг вассала, сохранив жизнь принцессе и обеспечив продолжение рода Акидзуки. Его преданность и мужество позволили не только спасти наследницу, но и дать ей возможность стать лучшим правителем, чем она могла бы быть без этого испытания.
+Крестьяне получают свою награду, но главное - они обретают новое понимание чести, преданности и человеческого достоинства. Их путешествие с принцессой и самураем изменило их взгляд на мир и на самих себя. Фильм заканчивается тем, что они расстаются, но каждый из них стал другим человеком благодаря пережитым приключениям.
+Фильм исследует темы чести и долга, классовых различий и человеческих ценностей, показывая, как экстремальные обстоятельства раскрывают истинную природу людей и способствуют их духовному росту.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ночи Кабирии', 'A waifish prostitute wanders the streets of Rome looking for true love but finds only heartbreak.', '1957-01-01', 1, '110 minutes', 'Le notti di Cabiria', 8.1, 'Ночи Кабирии
+Кабирия Чеккарелли - маленькая, энергичная проститутка, работающая на окраинах Рима в районе Аква Санта. Несмотря на свою профессию и тяжелую жизнь, она сохраняет детскую наивность, веру в любовь и мечты о лучшем будущем. Фильм начинается с того, что ее бойфренд Джорджио заманивает ее к реке, отбирает сумочку с деньгами и сталкивает в воду, пытаясь утопить. Кабирия чудом спасается благодаря прохожим, но теряет все свои сбережения.
+Вернувшись домой в свою маленькую лачугу на пустыре, где живет вместе с соседкой Вандой, также проституткой, Кабирия пытается забыть о предательстве и продолжает работать. Она упорно отрицает, что Джорджио хотел ее убить, уверяя всех, что он просто хотел ограбить, а в воду она упала случайно. Эта способность к самообману и нежелание видеть жестокую реальность характеризует Кабирию на протяжении всего фильма.
+Однажды вечером, работая на улице, Кабирия становится свидетельницей ссоры знаменитого актера Альберто Лаццари с его любовницей. Девушка уезжает, бросив его, и расстроенный актер замечает Кабирию. В порыве одиночества и желания досадить бывшей возлюбленной он приглашает проститутку провести с ним вечер. Кабирия в восторге - для нее это как сказка.
+Альберто везет ее в роскошный ночной клуб, покупает ей красивое платье, представляет друзьям. Кабирия чувствует себя принцессой, мечтая о том, что актер влюбится в нее и заберет из уличной жизни. Но когда они приезжают к нему домой, появляется его возлюбленная, которая решила помириться. Альберто тут же забывает о Кабирии и запирает ее в ванной комнате, чтобы скрыть от подруги.
+Проведя всю ночь в ванной, утром Кабирия получает от актера немного денег и уходит, глубоко униженная. Но даже этот болезненный опыт не может сломить ее оптимизм. Она рассказывает Ванде о роскошной жизни актера, восхищаясь его домом и образом жизни, не акцентируя внимание на унижении.
+Стремясь изменить свою жизнь, Кабирия идет на религиозное паломничество в святилище Божественной Любви вместе с другими женщинами ее профессии. Она горячо молится о чуде, надеясь, что вера поможет ей начать новую жизнь. Но когда они возвращаются в Рим, Кабирия понимает, что ничего не изменилось - она все та же проститутка с теми же проблемами.
+Разочарованная неэффективностью молитв, Кабирия решает попробовать другой путь изменения жизни. Она идет на представление уличного гипнотизера, который выбирает ее из публики для сеанса гипноза. Под гипнозом Кабирия превращается в невинную, мечтательную девушку, рассказывающую о своих романтических грезах и желании найти настоящую любовь.
+В зрительном зале сидит Оскар Д''Онофрио, скромный бухгалтер средних лет, который работает в благотворительной организации. Он очарован искренностью и уязвимостью Кабирии под гипнозом и после представления знакомится с ней. Оскар представляется застенчивым, добрым человеком, который живет с матерью и ведет тихую, размеренную жизнь.
+Оскар начинает ухаживать за Кабирией, не зная о ее профессии. Он водит ее в театр, на прогулки, дарит скромные подарки. Кабирия в восторге от этих чистых, романтических отношений. Впервые в жизни она чувствует себя по-настоящему любимой не за деньги, а за саму себя. Она верит, что наконец нашла своего принца, который спасет ее от уличной жизни.
+Их отношения развиваются медленно и трогательно. Оскар кажется искренне влюбленным, он говорит Кабирии о том, как она изменила его жизнь, как он мечтает о совместном будущем. Кабирия, окрыленная любовью, решает полностью изменить свою жизнь. Она продает свой дом, собирает все сбережения, покупает приданое и готовится к замужеству.
+Ванда и другие подруги предупреждают Кабирию о том, что слишком быстро доверяет незнакомцу, но она не желает их слушать. Она полностью отдается мечте о счастливой семейной жизни, представляя себя хорошей женой и, возможно, матерью. Кабирия даже начинает вести себя более сдержанно, пытаясь соответствовать образу респектабельной женщины.
+Наконец Оскар делает ей предложение и назначает встречу в романтическом месте - на утесе над морем недалеко от Рима. Кабирия приходит на свидание в лучшем платье, с чемоданом, полным вещей, и сумкой с деньгами - всем своим состоянием. Она готова начать новую жизнь с любимым человеком.
+Но на утесе Оскар ведет себя странно - он нервничает, избегает смотреть ей в глаза, говорит путано. Постепенно Кабирия начинает понимать, что что-то не так. Оскар признается, что знает о ее профессии с самого начала и что его план состоял в том, чтобы заставить ее влюбиться, а затем ограбить. Он забирает у нее сумку с деньгами и толкает к краю утеса.
+Кабирия в шоке от предательства. Она не может поверить, что человек, которому она доверила свою жизнь и будущее, оказался обычным мошенником. Оскар колеблется - он действительно испытывал к ней чувства, но нужда в деньгах оказалась сильнее. Он не решается убить ее и убегает, оставив Кабирию одну на утесе без денег и иллюзий.
+Кабирия долго сидит на краю утеса, рыдая от отчаяния и разочарования. Она потеряла не только деньги и дом, но и веру в любовь, в людскую доброту, в возможность изменить свою судьбу. Это полное крушение всех ее надежд и мечтаний. Некоторое время она даже подумывает о самоубийстве, глядя вниз на камни.
+Но жизненная сила Кабирии оказывается сильнее отчаяния. Она встает и идет по дороге обратно в Рим. По пути ей встречается группа молодых людей, которые возвращаются с праздника. Они весело поют, играют на музыкальных инструментах, танцуют. Увидев плачущую женщину, они окружают ее, пытаются развеселить, приглашают танцевать.
+Сначала Кабирия отталкивает их, но постепенно их беззаботная радость начинает заражать и ее. Молодые люди не знают о ее трагедии, они просто хотят поделиться своим счастьем. Кабирия медленно начинает улыбаться сквозь слезы, затем присоединяется к их танцу. Музыка и движение постепенно возвращают ей желание жить.
+Фильм заканчивается знаменитой сценой, где Кабирия идет по дороге в окружении танцующих молодых людей. Слезы еще не высохли на ее лице, но она уже улыбается. Камера медленно приближается к ее лицу, и Кабирия смотрит прямо в объектив - взгляд полный боли, но и неистребимой надежды.
+Этот финал не дает ответа на вопрос о том, что будет с Кабирией дальше. Скорее всего, она вернется к прежней жизни, снова будет работать на улице, снова будет страдать от жестокости мира. Но фильм утверждает, что человеческая способность надеяться и радоваться жизни сильнее любых ударов судьбы.
+Фильм исследует темы наивности и цинизма, мечты и реальности, человеческой жестокости и доброты, показывая, как простые люди пытаются найти счастье в hostile мире, полном обмана и предательства. Кабирия становится символом человеческой стойкости и неистребимого оптимизма перед лицом жизненных испытаний.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Трон в крови', 'A war-hardened general, egged on by his ambitious wife, works to fulfill a prophecy that he would become lord of Spider''s Web Castle.', '1957-01-01', 1, '110 minutes', 'Kumonosu-jô', 8.1, 'Фильм представляет собой адаптацию шекспировской трагедии "Макбет", перенесенную в средневековую Японию периода междоусобных войн. История разворачивается в замке Паучьей Паутины, который правит могущественный даймё Цузуки. Два его верных полководца, Такэси Васидзу и Ёсиаки Мики, возвращаются с победой после подавления мятежа вассальных кланов, продемонстрировав исключительную храбрость и преданность своему господину.
+По пути домой через густой туманный лес полководцы сбиваются с дороги и встречают таинственную старуху-прорицательницу, обитающую в древней хижине среди деревьев. Ведьма предсказывает Васидзу блестящее будущее, пророчествуя, что он сначала станет командующим Северного форта, затем получит во владение замок Паучьей Паутины, а после смерти нынешнего правителя займет его трон. Мики она предрекает назначение командующим Первого форта и обещает, что его потомки будут править замком в будущих поколениях.
+Поначалу воины не придают особого значения словам старухи, считая их бредом безумной отшельницы. Однако вскоре после возвращения в замок даймё Цузуки действительно назначает Васидзу командующим Северного форта, а Мики получает назначение в Первый форт, в точности как предсказывала ведьма. Это совпадение производит глубокое впечатление на Васидзу и заставляет его серьезно задуматься об остальной части пророчества.
+Жена Васидзу, леди Асадзи, узнав о предсказании от мужа, начинает активно склонять его к исполнению судьбы. Она убеждает супруга, что пророчество должно сбыться, но для этого необходимо действовать, а не ждать милостей судьбы. Асадзи обладает сильным характером и железной волей, она постепенно подавляет колебания мужа и толкает его на путь предательства и убийства.
+Удобный случай представляется, когда даймё Цузуки объявляет о своем намерении посетить Северный форт с официальным визитом. Асадзи убеждает мужа, что это идеальная возможность убить правителя и захватить власть, представив смерть как результат нападения врагов. Она разрабатывает детальный план убийства и заранее подготавливает алиби, рассчитывая на то, что Васидзу как храбрый полководец сможет претендовать на трон после гибели господина.
+В ночь приезда даймё Цузуки Васидзу мучается сомнениями и угрызениями совести. Он понимает всю чудовищность задуманного преступления против человека, который доверяет ему как верному вассалу. Однако давление жены и амбиции берут верх над честью и долгом. Васидзу проникает в покои спящего правителя и наносит ему смертельные удары мечом, а затем убивает двух слуг, чтобы свалить на них вину за убийство.
+Утром поднимается тревога после обнаружения тела даймё. Васидзу изображает горе и ярость, якобы убивая предполагаемых убийц в припадке гнева. Его игра настолько убедительна, что никто не подозревает истинного виновника преступления. Совет старейшин и военачальников выбирает Васидзу новым правителем замка, видя в нем достойного преемника погибшего даймё и опытного полководца, способного защитить владения от внешних врагов.
+Заняв трон, Васидзу начинает испытывать параноидальные страхи по поводу своей безопасности. Он помнит вторую часть пророчества о том, что потомки Мики будут править замком, и это заставляет его видеть в своем бывшем друге потенциальную угрозу. Подозрительность и страх толкают нового правителя на путь новых преступлений, поскольку он понимает, что власть, добытая убийством, может быть потеряна таким же способом.
+Васидзу приглашает Мики на пир в замок и организует его убийство руками наемных убийц. Смерть второго верного полководца вызывает беспокойство среди вассалов, которые начинают подозревать неладное. Сын Мики успевает спастись и бежит к враждебным кланам, где рассказывает правду о происходящем в замке Паучьей Паутины. Это становится началом формирования коалиции против узурпатора.
+Тем временем Асадзи беременеет, что дает супругам надежду на то, что их династия сможет закрепиться на троне. Они рассматривают будущего наследника как гарантию стабильности власти и возможность опровергнуть пророчество о правлении потомков Мики. Однако беременность протекает тяжело, Асадзи мучают кошмары и видения, в которых ей являются духи убитых людей.
+Васидзу решает еще раз посетить лесную ведьму, чтобы узнать о своем будущем и получить гарантии безопасности. Старуха вызывает духов, которые дают ему новые пророчества. Они обещают, что Васидзу будет непобедим до тех пор, пока лес не двинется к замку, что кажется физически невозможным. Это предсказание успокаивает правителя и придает ему уверенности в собственной неуязвимости.
+Однако вскоре Асадзи теряет ребенка, что становится страшным ударом для супружеской пары. Потеря наследника воспринимается как знак проклятия, тяготеющего над их родом. Асадзи погружается в безумие, она начинает видеть кровавые пятна на своих руках, которые не может смыть, и постоянно пытается очистить ладони в галлюцинациях, напоминающих знаменитую сцену леди Макбет.
+Враждебные кланы объединяются под предводительством сына убитого Мики и других недовольных вассалов, которые узнали правду о преступлениях Васидзу. Они собирают большую армию и начинают наступление на замок Паучьей Паутины. Известие о приближении вражеского войска повергает защитников замка в панику, поскольку они понимают, что сражаются за узурпатора и убийцу.
+В решающий момент осады происходит событие, которое кажется невозможным согласно пророчеству. Воины армии противника используют ветви деревьев в качестве камуфляжа, создавая впечатление движущегося леса. Когда Васидзу видит приближающуюся стену зелени, он понимает, что пророчество сбывается буквальным образом, и его неуязвимость подходит к концу.
+Осознав неизбежность поражения и гибели, Васидзу пытается воодушевить своих воинов на последний бой. Однако его собственные солдаты, понимая безнадежность ситуации и не желая умирать за предателя, поворачивают оружие против него. Они обстреливают своего командира из луков, превращая его в живую мишень для стрел.
+Васидзу погибает, пронзенный множеством стрел своих же воинов, в то время как замок захватывают враги. Его смерть символизирует возмездие за совершенные преступления и торжество справедливости над тиранией. Леди Асадзи, окончательно погрузившаяся в безумие, также находит свою смерть в развалинах замка, став жертвой собственных амбиций и жестокости.
+Фильм завершается сценами разрушения замка Паучьей Паутины и установления нового порядка под властью законных правителей. Пророчество ведьмы исполняется полностью - потомки Мики действительно получают власть, а династия Васидзу прекращает свое существование. История становится предостережением о том, как амбиции и жажда власти разрушают человеческую душу и приводят к неизбежному возмездию, а также демонстрирует неотвратимость судьбы в японском понимании кармы и справедливости.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мост через реку Квай', 'British POWs are forced to build a railway bridge across the river Kwai for their Japanese captors, not knowing that the allied forces are planning to destroy it.', '1957-01-01', 1, '161 minutes', 'The Bridge on the River Kwai', 8.1, 'В 1943 году, во время Второй мировой войны, подполковник Никольсон и его батальон британских военнопленных прибывают в японский лагерь в джунглях Бирмы. Лагерем командует полковник Сайто, который получил приказ от японского командования построить железнодорожный мост через реку Квай за два месяца. Этот мост является частью стратегической железной дороги, которая должна соединить Бангкок и Рангун, обеспечив японцам важную транспортную артерию.
+Сайто требует от всех пленных, включая офицеров, участвовать в строительстве моста. Однако Никольсон, твердо придерживающийся военных традиций и Женевской конвенции, категорически отказывается заставлять своих офицеров выполнять физическую работу. Он настаивает на том, что согласно международному праву офицеры не должны привлекаться к принудительному труду.
+Это приводит к жестокому конфликту между двумя командирами. Сайто, находящийся под давлением вышестоящего начальства и связанный сроками строительства, угрожает Никольсону расстрелом, но британский офицер остается непреклонным. Он готов умереть, но не нарушить воинские принципы и не уронить достоинство британской армии.
+Сайто заключает Никольсона и других офицеров в металлические ящики под палящим тропическим солнцем, где они должны провести несколько дней без еды и воды. Тем временем строительство моста продолжается силами рядовых солдат, но без руководства офицеров работа идет крайне медленно и некачественно. Японские инженеры не справляются с техническими проблемами, рабочие саботируют строительство, и становится ясно, что в срок мост не будет готов.
+Военный врач майор Клиттон пытается быть посредником между двумя командирами, объясняя каждому позицию противоположной стороны. Он понимает, что конфликт может привести к гибели всех пленных, но также видит, что оба командира слишком горды, чтобы пойти на компромисс.
+Через несколько дней мучений в ящиках Никольсон начинает терять сознание от обезвоживания, но все еще отказывается сдаваться. Сайто понимает, что если британский офицер умрет, это окончательно деморализует остальных пленных и сделает строительство невозможным. Кроме того, приближается день рождения японского императора, и по этому случаю Сайто может проявить "милосердие", не теряя лица.
+Сайто освобождает Никольсона, формально заявляя, что это акт милосердия в честь императорского праздника. Он также идет на компромисс, согласившись, что офицеры будут только руководить работами, но не выполнять физический труд. Никольсон, полуживой после пыток, принимает эти условия, считая, что одержал моральную победу.
+Однако, взяв на себя руководство строительством, Никольсон неожиданно увлекается проектом. Он рассматривает строительство моста как возможность продемонстрировать превосходство британской инженерии и дисциплины над японской некомпетентностью. Постепенно мост становится для него вопросом профессиональной и национальной гордости.
+Никольсон обнаруживает, что японцы выбрали неподходящее место для моста, где грунт слишком мягкий. Он убеждает Сайто перенести строительство в более подходящее место выше по течению и полностью перестроить проект. Британские офицеры разрабатывают новые чертежи, организуют эффективную систему работ, и строительство идет быстрыми темпами.
+Солдаты, видя энтузиазм своего командира, также втягиваются в работу. Они начинают гордиться качеством своей работы и соревноваться с японцами в эффективности. Никольсон организует военные марши во время работы, устанавливает систему поощрений и наказаний, превращает строительство почти в военную операцию против джунглей и реки.
+Тем временем майор Шерс, американский офицер, который ранее бежал из того же лагеря, находится в британской базе на Цейлоне. Британские спецслужбы вербуют его для участия в секретной операции по уничтожению моста через реку Квай. К нему присоединяются майор Уорден, британский офицер спецназа, и лейтенант Джойс, молодой британский офицер-доброволец.
+Команда диверсантов десантируется с парашютами в джунгли Бирмы и, преодолевая множество трудностей, добирается до реки Квай. По пути Уорден получает серьезную травму ноги, но команда продолжает миссию. Они устанавливают связь с местными партизанами, которые помогают им разведать обстановку вокруг лагеря.
+К моменту прибытия диверсантов мост почти готов. Никольсон настолько увлечен своим проектом, что планирует установить памятную доску с именами всех участников строительства. Он видит в мосте памятник британскому инженерному искусству, который переживет войну и будет свидетельствовать о мужестве и профессионализме его людей.
+Сайто, изначально враждебно относившийся к Никольсону, постепенно начинает испытывать к нему уважение. Между двумя офицерами устанавливаются почти дружеские отношения, основанные на взаимном признании профессионализма и чувства долга. Они даже начинают вместе обедать и обсуждать технические проблемы строительства.
+Диверсанты готовят взрывчатку для подрыва моста. План состоит в том, чтобы заминировать опоры моста и взорвать его в момент прохождения первого военного поезда, который должен перевезти японских генералов и важные военные грузы. Это будет иметь не только стратегическое, но и пропагандистское значение.
+В назначенный день состоится торжественное открытие моста. Никольсон произносит речь перед строем солдат, выражая гордость за выполненную работу и подчеркивая, что мост является доказательством того, что британский солдат может преодолеть любые трудности. Японские офицеры также присутствуют на церемонии, и атмосфера почти праздничная.
+Однако утром в день открытия уровень воды в реке неожиданно понижается из-за отсутствия дождей, и провода от взрывчатки становятся видимыми. Никольсон, совершая утреннюю инспекцию своего творения, замечает подозрительные провода в воде и понимает, что кто-то планирует взорвать мост.
+Вместо того чтобы радоваться возможности нанести ущерб противнику, Никольсон впадает в ярость. Для него попытка уничтожить мост является личным оскорблением и покушением на его жизненное достижение. Он немедленно сообщает о находке Сайто, и японцы начинают поиски диверсантов.
+Завязывается драматичная погоня и перестрелка в джунглях. Японские солдаты обнаруживают позиции диверсантов, и начинается ожесточенный бой. Уорден погибает при попытке добраться до детонатора, Джойс также получает смертельные ранения. Шерс пытается завершить миссию, но и он гибнет в перестрелке.
+В кульминационный момент, когда поезд с японскими генералами уже въезжает на мост, раненый Джойс собирает последние силы и пытается добраться до детонатора. Никольсон, увидев это, бросается его остановить. Между бывшими союзниками происходит физическая схватка прямо на железнодорожных путях моста.
+В этот критический момент Никольсон вдруг осознает всю абсурдность ситуации. Он понимает, что в своей одержимости строительством забыл о том, что помогает врагу, что его прекрасный мост будет использован для перевозки японских войск и оружия против союзников. Осознание того, что он предал свою страну ради абстрактных принципов инженерного совершенства, потрясает его.
+В последний момент перед смертью Никольсон кричит "Что я наделал!" и падает на детонатор. Взрыв разрушает мост в тот момент, когда по нему проходит поезд с японскими генералами. Поезд падает в реку, мост превращается в груду обломков, а месяцы тяжелого труда и человеческих жертв оказываются напрасными.
+Майор Клиттон, переживший взрыв, смотрит на разрушенный мост и погибших с обеих сторон. Он произносит финальные слова фильма: "Безумие! Безумие!" Эти слова отражают абсурдность войны, где люди с благородными намерениями и высокими принципами могут совершать поступки, которые в конечном итоге служат врагу и приводят к ненужным жертвам.
+Фильм исследует темы чести и долга, фанатизма и гордости, показывая, как благородные качества могут превратиться в свою противоположность, когда они становятся самоцелью. Никольсон представлен как трагическая фигура офицера старой школы, чья преданность абстрактным принципам заставляет его забыть о реальных целях войны и интересах своей страны.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('В порту', 'An ex-prize fighter turned longshoreman struggles to stand up to his corrupt union bosses.', '1954-01-01', 1, '108 minutes', 'On the Waterfront', 8.1, 'Фильм разворачивается в доках Хобокена, штат Нью-Джерси, в 1950-е годы, где портовые рабочие находятся под железным контролем коррумпированного профсоюза, возглавляемого Джонни Френдли. Главный герой Терри Мэллой работает на пристани и является младшим братом Чарли Мэллоя, правой руки Френдли и одного из самых влиятельных людей в профсоюзе. Терри в прошлом был многообещающим боксером, но его карьера была загублена по приказу Френдли, который заставил его проиграть важный бой.
+События начинаются, когда Терри невольно становится соучастником убийства Джоуи Дойла, портового рабочего, который планировал давать показания комиссии по борьбе с преступностью против коррумпированного профсоюза. Терри думал, что его просят заманить Джоуи на крышу многоэтажки только для разговора, но вместо этого парня сбрасывают с крыши, убивая его. Это убийство становится поворотным моментом в жизни Терри, пробуждая в нем угрызения совести.
+Сестра погибшего Джоуи, Эди Дойл, приезжает из колледжа на похороны брата и клянется найти его убийц. Она встречается с отцом Барри, местным священником, который пытается бороться с коррупцией в доках и призывает рабочих объединиться против криминального профсоюза. Отец Барри убеждает докеров, что молчание перед лицом зла является соучастием в преступлении, и призывает их найти мужество для свидетельства против мафии.
+Терри знакомится с Эди и постепенно влюбляется в нее, хотя скрывает свою роль в смерти ее брата. Эди работает учительницей и представляет собой противоположность грубому миру доков - она образованна, принципиальна и искренне верит в справедливость. Их отношения развиваются на фоне нарастающего напряжения в порту, где Френдли и его люди усиливают давление на потенциальных свидетелей.
+Дядя Джоуи, портовый рабочий по имени Поп Дойл, также начинает задавать неудобные вопросы о смерти племянника. Френдли и его подручные понимают, что старик может стать проблемой, и решают устранить его. Попа убивают, сбросив на него груз с крана во время работы, и представляют это как несчастный случай. Эта смерть еще больше потрясает Терри и заставляет его переосмыслить свою лояльность к криминальной организации.
+Комиссия по борьбе с преступностью активизирует свои усилия по сбору доказательств против коррумпированного профсоюза. Следователи пытаются найти свидетелей среди портовых рабочих, готовых дать показания против Френдли и его организации. Однако большинство докеров молчат из страха за свою жизнь и жизнь своих семей, понимая, что предательство мафии означает верную смерть.
+Терри постепенно осознает, что не может больше жить с чувством вины за соучастие в убийствах. Влияние Эди и отца Барри, а также собственные моральные терзания приводят его к мысли о том, что он должен дать показания против Френдли. Однако этому противится его брат Чарли, который понимает, что предательство Терри поставит под угрозу не только их собственные жизни, но и всю преступную империю.
+Чарли пытается убедить брата покинуть город и не связываться с комиссией. В знаменитой сцене в такси Чарли даже угрожает Терри пистолетom, но тот упрекает брата в том, что именно он загубил его боксерскую карьеру, заставив проиграть бой. Терри произносит ставшие знаменитыми слова о том, что он мог бы стать претендентом на чемпионский титул, вместо того чтобы стать неудачником, каким он является сейчас.
+Френдли понимает, что Терри становится серьезной угрозой для организации, и отдает приказ о его устранении. Однако первой жертвой становится Чарли, которого убивают за неспособность контролировать младшего брата. Тело Чарли находят повешенным на крюке в доке, что является символической казнью предателя в мире организованной преступности.
+Смерть брата окончательно убеждает Терри в необходимости свидетельствовать против мафии. Несмотря на угрозы и опасность для собственной жизни, он соглашается дать показания комиссии по борьбе с преступностью. Терри рассказывает всю правду об убийствах, коррупции и рэкете в профсоюзе, предоставляя следователям информацию, необходимую для ареста Френдли и его подручных.
+Показания Терри приводят к арестам и судебным процессам против членов преступной организации. Френдли и его люди предстают перед судом, а их власть в доках начинает рушиться. Однако для самого Терри победа оборачивается новыми испытаниями - его объявляют предателем среди портовых рабочих, многие из которых считают его стукачом, нарушившим закон молчания.
+Терри оказывается в изоляции на пристани, где с ним отказываются работать другие докеры. Френдли, хотя и арестованный, все еще сохраняет влияние и организует бойкот против Терри. Молодой человек понимает, что его решение дать показания превратило его в изгоя в собственном сообществе, но он не жалеет о своем выборе.
+Кульминация наступает, когда Терри приходит на работу в порт и сталкивается с открытой враждебностью со стороны Френдли и его оставшихся сторонников. Между Терри и Френдли происходит жестокая драка, в которой молодой человек получает серьезные избиения. Казалось бы, Френдли одержал победу, показав остальным рабочим, что происходит с предателями.
+Однако отец Барри и Эди убеждают избитого Терри подняться и пойти работать, несмотря на травмы и унижения. В символической финальной сцене Терри, шатаясь и истекая кровью, но не сломленный духовно, идет к воротам дока. Его пример мужества и принципиальности вдохновляет других рабочих, которые следуют за ним, отвергая власть коррумпированного профсоюза.
+Фильм завершается триумфом справедливости и морального мужества над коррупцией и страхом. Терри становится новым лидером рабочих, не через насилие и запугивание, как это делал Френдли, а через личный пример честности и готовности пожертвовать собой ради правды. Его решение свидетельствовать против мафии освобождает портовых рабочих от многолетнего гнета преступной организации и восстанавливает справедливость в доках.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Плата за страх', 'In a decrepit South American village, four men are hired to transport an urgent nitroglycerine shipment without the equipment that would make it safe.', '1953-01-01', 1, '131 minutes', 'Le salaire de la peur', 8.1, 'Действие фильма разворачивается в маленьком южноамериканском городке Лас-Пьедрас, где застряли четверо европейцев - французы Марио и Луиджи, немец Бимба и корсиканец Жо. Все они оказались в этой забытой богом дыре без средств к существованию и возможности выбраться. Марио влюблен в местную девушку Линду, но их отношения осложняются нищетой и безысходностью ситуации.
+В городе расположена нефтяная компания, принадлежащая американцам. Когда на одной из удаленных скважин происходит мощный пожар, единственным способом его потушить становится взрыв, который может устроить только нитроглицерин. Проблема в том, что ближайший склад с этим крайне нестабильным взрывчатым веществом находится в трехстах километрах от места пожара, а железной дороги или авиасообщения нет.
+Компания объявляет о найме водителей для транспортировки нитроглицерина на грузовиках по ужасным горным дорогам. Работа смертельно опасна - малейший толчок, неосторожное движение могут привести к взрыву, но плата огромна - две тысячи долларов каждому, что для застрявших в нищете европейцев означает спасение и возможность вернуться домой.
+Из множества желающих отбирают четверых - Марио, Жо, Бимба и Луиджи. Их разбивают на две пары и сажают за руль двух грузовиков, груженных ящиками с нитроглицерином. Марио едет с опытным, но уже немолодым Жо, а Бимба с простодушным Луиджи.
+Путешествие превращается в настоящий кошмар. Дороги разбиты, полны выбоин и крутых поворотов. Водители вынуждены ехать с черепашьей скоростью, постоянно рискуя жизнью. Напряжение нарастает с каждым километром. Жо, который раньше слыл храбрецом, начинает проявлять трусость, что бесит Марио. Между напарниками возникает конфликт.
+Первое серьезное испытание - грузовик Бимба и Луиджи взрывается на опасном участке дороги. Марио и Жо остаются одни, но должны продолжать путь. Психологическое давление усиливается - Жо окончательно теряет мужество и становится обузой для Марио.
+Самым страшным препятствием становится огромная яма на дороге, заполненная нефтью. Единственный способ проехать - построить помост из досок, но он может не выдержать веса грузовика. Жо в панике выпрыгивает из кабины и попадает под колеса, получая смертельные травмы. Марио, проявив нечеловеческое хладнокровие, переезжает через тело умирающего напарника и продолжает путь.
+Марио удается доставить груз к месту назначения. Пожар тушат, он получает свои деньги и может наконец вернуться домой. Однако на обратном пути, уже без опасного груза, расслабившийся Марио начинает лихачить на горной дороге. Ирония судьбы - после всех пережитых опасностей он разбивается на том же участке, где погиб его напарник Жо, не выдержав крутого поворота.
+Фильм заканчивается трагически - все четверо главных героев погибают, а их жертвы оказываются напрасными. Лента представляет собой жесткую критику капитализма и показывает, как крупные корпорации используют отчаяние людей, заставляя их рисковать жизнью ради денег.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Туз в рукаве', 'A frustrated former big-city journalist now stuck working for an Albuquerque newspaper exploits a story about a man trapped in a cave to rekindle his career, but the situation quickly escalates into an out-of-control circus.', '1951-01-01', 1, '111 minutes', 'Ace in the Hole', 8.1, 'Фильм рассказывает историю Чака Тэйтума, циничного и амбициозного журналиста из Нью-Йорка, чья карьера пришла в упадок из-за пьянства, скандалов и неэтичного поведения. После увольнения из нескольких крупных газет Тэйтум оказывается в захолустном городке Альбукерк, штат Нью-Мексико, где вынужден работать в провинциальной газете "Альбукерк Сан-Бюллетин" за мизерную зарплату в шестьдесят долларов в неделю, что является унижением для человека его опыта и амбиций.
+Редактор местной газеты Джейкоб Бут нанимает Тэйтума неохотно, предупреждая его о необходимости соблюдать местные порядки и писать только о местных новостях, таких как церковные базары и школьные мероприятия. Тэйтум чувствует себя на этой работе как рыба, выброшенная на берег, и мечтает о возможности вернуться в большую журналистику Нью-Йорка. Он постоянно ищет историю, которая могла бы стать его билетом обратно в большую лигу.
+Спустя год работы в провинции Тэйтум отправляется на задание вместе с фотографом Гербом Куком в индейскую резервацию, чтобы написать статью о ежегодном празднике гремучих змей. По дороге они останавливаются в придорожном кафе и сувенирной лавке, которыми владеют Лео и Лоррейн Минозы. Именно здесь Тэйтум узнает о происшествии, которое изменит всю его жизнь и станет центром разворачивающейся трагедии.
+Лео Миноза, местный торговец индейскими сувенирами, отправился в древние пещеры в поисках артефактов для продажи туристам. Во время исследования пещеры произошел обвал, и Лео оказался заблокирован под завалом камней. Он жив, но не может выбраться самостоятельно, и его положение крайне опасно. Жена Лоррейн рассказывает Тэйтуму о случившемся с удивительным равнодушием, больше беспокоясь о том, как это повлияет на бизнес.
+Тэйтум немедленно понимает, что наткнулся на золотую жилу - человеческую драму, которая может заинтересовать национальную аудиторию и стать его путевкой обратно в большую журналистику. Он спускается в пещеру и находит Лео, который рассказывает ему о своем положении. Миноза ранен, но находится в сознании, и Тэйтум обещает ему помочь, хотя в действительности уже планирует использовать эту трагедию в своих корыстных целях.
+Вместо того чтобы немедленно организовать спасательную операцию наиболее быстрым способом, Тэйтум начинает манипулировать ситуацией, чтобы растянуть спасение на максимально долгий срок. Он понимает, что чем дольше продлится драма, тем больше внимания прессы она привлечет, и тем ценнее станет его эксклюзивный материал. Журналист превращает человеческую трагедию в медиа-шоу, рассчитывая извлечь из нее максимальную выгоду.
+Тэйтум договаривается с местным шерифом Гасом Кретцером, который находится в сложном положении из-за предстоящих выборов и нуждается в положительной огласке. Журналист обещает представить шерифа в выгодном свете в своих репортажах в обмен на эксклюзивные права на освещение спасательной операции. Кретцер соглашается на сделку, не понимая, что становится марионеткой в руках циничного репортера.
+Тэйтум также заключает негласное соглашение с подрядчиком Сэмом Смолсом, который будет руководить спасательными работами. Вместо того чтобы пробить горизонтальный туннель, что заняло бы всего шестнадцать часов, Смолс по настоянию Тэйтума выбирает более сложный и длительный метод - бурение вертикального ствола сверху, которое может растянуться на неделю. Это решение мотивировано не технической необходимостью, а желанием продлить медиа-событие.
+История о человеке, заточенном в пещере, быстро привлекает внимание национальных СМИ, и Тэйтум становится главным источником информации для журналистов со всей страны. Он продает свои репортажи крупным нью-йоркским газетам за большие деньги и наслаждается возвращением во внимание медиа-сообщества. Место происшествия превращается в настоящий цирк с толпами любопытных, журналистов, торговцев и просто зевак.
+Лоррейн Миноза, жена заблокированного в пещере Лео, оказывается такой же циничной и корыстной, как и Тэйтум. Вместо того чтобы беспокоиться о муже, она видит в ситуации возможность заработать деньги, продавая еду и сувениры толпам туристов, которые прибывают посмотреть на спасательную операцию. Она даже флиртует с Тэйтумом и строит планы на будущее без мужа.
+По мере развития событий место происшествия превращается в настоящую ярмарку с аттракционами, палатками, торговцами и развлечениями. Тысячи людей приезжают посмотреть на спектакль, не задумываясь о том, что в центре всего этого цирка находится умирающий человек. Тэйтум становится звездой шоу, давая интервью и позируя для фотографий, наслаждаясь вниманием и славой.
+Однако ситуация начинает выходить из-под контроля, когда состояние Лео ухудшается. Врач сообщает, что у заблокированного человека началась пневмония, и его жизни угрожает серьезная опасность. Тэйтум понимает, что его план может обернуться реальной смертью человека, но уже не может остановить запущенную им машину. Медиа-цирк продолжается, а спасательные работы идут медленно.
+Фотограф Герб Кук, который изначально восхищался мастерством своего коллеги, начинает понимать истинную природу происходящего и пытается образумить Тэйтума. Он указывает журналисту на то, что тот превратил человеческую трагедию в шоу и фактически подвергает опасности жизнь Лео ради собственной выгоды. Однако Тэйтум не готов слушать голос совести и продолжает манипулировать ситуацией.
+Кульминация наступает, когда Лоррейн, устав от цирка и желая получить деньги от страховки мужа, решает бежать из города. Тэйтум пытается остановить ее, понимая, что побег жены разрушит драматический нарратив его истории. Во время ссоры Лоррейн наносит журналисту удар ножом, серьезно ранив его, а затем уезжает, оставив умирающего мужа и свою долю в бизнесе.
+Раненый Тэйтум спускается в пещеру к Лео и обнаруживает, что тот находится при смерти. В момент раскаяния журналист признается Минозе в том, что он сделал, как манипулировал спасательной операцией ради собственной выгоды. Лео умирает на руках у Тэйтума, не дожив до завершения спасательных работ, которые могли бы закончиться гораздо раньше, если бы не жадность и цинизм репортера.
+Смерть Лео Минозы мгновенно разрушает весь медиа-цирк. Толпы зевак разъезжаются, журналисты уезжают в поисках новых сенсаций, а место, которое еще вчера кипело жизнью, становится пустынным. Тэйтум остается один со своей виной и пониманием того, что его амбиции привели к смерти невинного человека. Шериф Кретцер и подрядчик Смолс отворачиваются от журналиста, не желая больше иметь с ним дела.
+Тэйтум возвращается в редакцию "Альбукерк Сан-Бюллетин", где редактор Бут выражает ему свое презрение за то, что тот превратил трагедию в шоу. Журналист пытается предложить Буту эксклюзивную историю о том, как он манипулировал событиями, рассчитывая хотя бы таким образом извлечь выгоду из ситуации. Однако редактор отказывается публикать эту историю и увольняет Тэйтума.
+В финальной сцене умирающий от ран Тэйтум пытается дозвониться в нью-йоркские газеты, чтобы рассказать свою историю и вернуться в большую журналистику. Он готов предложить им сенсационный материал о собственной неэтичности и роли в смерти человека. Однако редакторы больших газет не заинтересованы в его предложениях, а сам Тэйтум падает замертво возле телефона, став жертвой собственного цинизма и амбиций.
+Фильм завершается сценой, где тело Тэйтума находят в пустой редакции, а его смерть остается практически незамеченной, в отличие от медиа-цирка, который он создал вокруг смерти Лео Минозы. История становится мрачной притчей о том, как жажда славы и успеха может превратить человека в монстра, готового пожертвовать чужими жизнями ради собственной выгоды, и показывает разрушительную силу безответственной журналистики.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Белая горячка', 'A psychopathic criminal with a mother complex makes a daring break from prison and leads his old gang in a chemical plant payroll heist.', '1949-01-01', 1, '114 minutes', 'White Heat', 8.1, 'Действие фильма происходит в послевоенной Америке и рассказывает о преступной карьере психопатичного гангстера Коди Джаррета, которого играет Джеймс Кэгни. Коди возглавляет банду, которая специализируется на ограблениях поездов и других дерзких преступлениях. Его отличительной чертой являются приступы мучительных головных болей, во время которых он превращается в неуправляемого зверя.
+Коди болезненно привязан к своей матери Ма Джаррет, которая является его главным советником и единственным человеком, способным успокоить его во время приступов. Мать полностью контролирует сына и направляет его преступную деятельность. У Коди есть жена Вирна, но их отношения холодны, и она изменяет ему с его подручным Биг Эдом Сомерсом.
+После очередного ограбления поезда федеральные агенты начинают охоту за бандой Джаррета. Чтобы избежать обвинения в серьезном преступлении, Коди добровольно сознается в менее тяжком преступлении - ограблении отеля, которое он не совершал, но которое произошло в то же время в другом штате. Таким образом он обеспечивает себе алиби и получает относительно мягкий срок.
+В тюрьме к Коди подсаживают федерального агента Хэнка Фэлона, который выдает себя за обычного преступника Вика Пардо. Фэлон должен войти в доверие к Джаррету и узнать детали его преступной деятельности. Между ними завязывается дружба, особенно после того, как Фэлон спасает Коди во время тюремной драки.
+Находясь в заключении, Коди узнает о смерти своей матери. Новость о том, что мать убил Биг Эд, который также захватил контроль над его бандой и женой, доводит Джаррета до безумия. Он устраивает в тюремной столовой настоящий погром, после чего его помещают в психиатрическое отделение.
+Коди организует побег из тюрьмы вместе с Фэлоном и несколькими другими заключенными. Вернувшись на свободу, он жестоко расправляется с Биг Эдом, застрелив его прямо за столом во время ужина. Вирна пытается вернуть расположение мужа, но Коди больше не доверяет ей.
+Джаррет планирует самое дерзкое ограбление в своей карьере - нападение на химический завод в Лонг-Бич, где в огромных цистернах хранятся деньги казначейства. План предполагает использование украденного танкера, который должен въехать на территорию завода. Фэлон передает информацию об ограблении федеральным агентам, и они готовят засаду.
+Во время ограбления все идет по плану до тех пор, пока Коди не обнаруживает, что Фэлон - федеральный агент. Понимая, что попал в ловушку, психопатичный гангстер убивает нескольких членов своей банды, которых подозревает в предательстве, включая свою жену Вирну.
+Начинается перестрелка с полицией и федеральными агентами. Коди забирается на огромные газовые цистерны завода и продолжает отстреливаться. Понимая, что пути к отступлению нет, и находясь в состоянии полного психического расстройства, он начинает стрелять по цистернам с газом. Фильм заканчивается грандиозным взрывом, в котором погибает Коди Джаррет, крича перед смертью знаменитую фразу обращенную к матери о том, что он наконец добрался до вершины мира.
+Картина представляет собой классический нуар о саморазрушительной природе преступности и показывает, как психические отклонения и нездоровые семейные отношения могут привести к трагическому финалу.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Третий человек', 'Pulp novelist Holly Martins travels to shadowy, postwar Vienna, only to find himself investigating the mysterious death of an old friend, Harry Lime.', '1949-01-01', 1, '104 minutes', 'The Third Man', 8.1, 'Третий человек
+Фильм разворачивается в послевоенной Вене 1949 года, разделенной между четырьмя союзными державами - американцами, британцами, французами и советами. Город лежит в руинах после войны, а его население выживает в условиях тотального дефицита и процветающего черного рынка. В этот мрачный и опасный мир прибывает американский писатель дешевых вестернов Холли Мартинс, приглашенный своим старым школьным другом Гарри Лаймом для участия в неком выгодном деле.
+Прибыв в Вену, Мартинс узнает шокирующую новость - его друг Гарри Лайм погиб в автомобильной катастрофе всего несколько дней назад. Холли приезжает как раз к похоронам и видит, как гроб с телом друга опускают в землю. На похоронах присутствуют лишь несколько человек - доктор Винкель, который якобы пытался помочь Гарри после аварии, "барон" Курц, представившийся другом покойного, и таинственная красивая женщина, которая оказывается актрисой Анной Шмидт, возлюбленной Гарри.
+Мартинс остается в Вене, несмотря на то что причина его приезда исчезла. Им движет желание разобраться в обстоятельствах смерти друга и найти способ помочь Анне, которая находится в отчаянном положении как беженка с поддельными документами. Холли поселяется в отеле и начинает собственное расследование, не доверяя официальной версии о несчастном случае.
+Британский офицер майор Кэллоуэй, представитель военной полиции союзников, предупреждает Мартинса о том, что ему лучше покинуть Вену как можно скорее. Кэллоуэй намекает, что Гарри Лайм был замешан в криминальной деятельности, но не раскрывает подробностей. Холли отказывается верить в то, что его школьный друг мог быть преступником, и решает продолжить собственное расследование.
+Встречаясь с людьми, которые знали Гарри, Мартинс обнаруживает противоречия в их рассказах о последних днях жизни друга. Швейцар дома, где жил Лайм, рассказывает Холли странную историю о том, что после аварии тело Гарри унесли трое мужчин - доктор Винкель, "барон" Курц и некий третий человек, личность которого остается неизвестной. Однако и Винкель, и Курц утверждают, что третьего человека не было.
+Холли навещает Анну в ее скромной квартире и видит, насколько сильно она любила Гарри. Девушка показывает ему письма от возлюбленного и фотографии, рассказывает об их отношениях. Анна также сомневается в официальной версии смерти Гарри и поддерживает желание Мартинса докопаться до истины. Между Холли и Анной завязываются сложные отношения, основанные на общей памяти о погибшем друге.
+Майор Кэллоуэй в конце концов открывает Мартинсу правду о деятельности Гарри Лайма. Оказывается, что тот был главарем банды, торговавшей разбавленным пенициллином на черном рынке. Поддельный пенициллин продавали в больницы, где его получали тяжелобольные пациенты, включая детей с менингитом. Многие из них умерли или получили серьезные повреждения мозга из-за неэффективного лекарства. Кэллоуэй показывает Холли фотографии пострадавших детей и больничные палаты, полные жертв этой преступной деятельности.
+Потрясенный этим откровением, Мартинс сначала отказывается верить в виновность друга. Однако доказательства неопровержимы, и Холли вынужден признать, что человек, которого он считал другом, на самом деле был безжалостным преступником, ответственным за смерть множества невинных людей. Это открытие полностью разрушает его представления о Гарри и заставляет переосмыслить их дружбу.
+Кэллоуэй сообщает еще одну шокирующую новость - Гарри Лайм жив. Его смерть была инсценирована, чтобы избежать ареста, а в гробу похоронили тело одного из его сообщников, Джозефа Харбина, который угрожал выдать банду. Третьим человеком, который помогал нести тело после "аварии", был сам Гарри, притворявшийся мертвым. Теперь он скрывается в советском секторе Вены, откуда продолжает руководить преступной организацией.
+Мартинс встречается с Анной и рассказывает ей правду о Гарри. Девушка отказывается верить в его виновность и обвиняет Холли в предательстве памяти любимого человека. Несмотря на все доказательства, Анна продолжает любить Гарри и считает, что союзники просто хотят найти козла отпущения для своих неудач в послевоенной Вене.
+Однажды ночью, возвращаясь домой, Мартинс замечает в дверном проеме знакомую фигуру. Когда свет от окна освещает лицо, Холли с ужасом узнает Гарри Лайма. Друг детства жив и наблюдает за ним из тени. Когда Мартинс пытается подойти ближе, Гарри исчезает в лабиринте разрушенных улиц. Эта встреча окончательно подтверждает слова Кэллоуэя и показывает, что Гарри действительно инсценировал свою смерть.
+Кэллоуэй предлагает Мартинсу помочь в поимке Лайма, организовав встречу с ним. Взамен британский офицер обещает не депортировать Анну, документы которой поддельные, и она может быть выдана советским властям. Холли соглашается на сотрудничество, понимая, что это единственный способ защитить девушку и остановить преступную деятельность бывшего друга.
+Встреча между Холли и Гарри происходит в знаменитом венском Пратере, в кабинке колеса обозрения. Во время этого разговора Лайм демонстрирует свой полный моральный цинизм и равнодушие к страданиям людей. Он оправдывает торговлю поддельными лекарствами необходимостью выживания в послевоенном мире и произносит знаменитый монолог о том, что в Италии за тридцать лет правления Борджиа были войны, террор и убийства, но зато появились Микеланджело, Леонардо да Винчи и Ренессанс, а в Швейцарии за пятьсот лет мира и демократии изобрели только часы с кукушкой.
+Гарри пытается склонить Холли к участию в своем бизнесе, обещая ему долю в прибылях. Он показывает на людей внизу и цинично замечает, что если бы одна из этих точек перестала двигаться навсегда, Холли действительно пожалел бы об этом, если бы ему заплатили двадцать тысяч фунтов за каждую точку. Этот разговор окончательно показывает Мартинсу, что его детский друг превратился в бессердечного убийцу.
+После встречи Холли окончательно соглашается помочь в поимке Лайма. План состоит в том, что Мартинс должен договориться с Гарри о новой встрече в кафе, где его арестуют британские и американские агенты. Однако план проваливается, когда Анна предупреждает Гарри об опасности, несмотря на все, что узнала о его преступлениях.
+Лайм успевает скрыться и спускается в венскую канализацию, где начинается захватывающая погоня. Подземные туннели превращаются в лабиринт, где преступник пытается уйти от преследования союзных сил. Кэллоуэй организует масштабную операцию с участием солдат всех четырех оккупационных держав, которые прочесывают канализационную систему города.
+Во время погони в канализации Гарри убивает полицейского Паина, который пытался его задержать. Это убийство окончательно показывает, что Лайм готов на все ради сохранения свободы и продолжения преступной деятельности. Холли участвует в погоне, вооружившись пистолетом и полный решимости остановить бывшего друга.
+Кульминация наступает, когда Гарри, пытаясь выбраться из канализации через решетку люка, оказывается заблокированным. Его пальцы торчат через прутья решетки, но он не может поднять тяжелую крышку. Раненый и понимающий безнадежность своего положения, Лайм смотрит на подошедшего Холли с мольбой в глазах. Мартинс, видя страдания бывшего друга и понимая, что тот все равно будет арестован и казнен, делает последний акт милосердия, застрелив Гарри.
+Фильм завершается сценой повторных похорон Гарри Лайма, на этот раз настоящих. Холли стоит у могилы, а Анна проходит мимо него, не останавливаясь и не произнося ни слова. Несмотря на то что Мартинс надеялся на развитие отношений с девушкой, она не может простить ему смерть Гарри, даже зная правду о его преступлениях. Холли остается один на пустой дороге, окруженной голыми деревьями, символизирующими его одиночество и моральную победу, которая не принесла ему счастья.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Красные башмачки', 'A young ballet dancer is torn between the man she loves and her pursuit to become a prima ballerina.', '1948-01-01', 1, '135 minutes', 'The Red Shoes', 8.1, 'Фильм рассказывает историю молодой талантливой балерины Виктории Пейдж, которая мечтает стать великой танцовщицей. Она живет с теткой леди Нестон, покровительницей искусств, которая представляет племянницу знаменитому импресарио Борису Лермонтову, возглавляющему престижную балетную труппу. Лермонтов - деспотичный и одержимый искусством человек, который считает, что настоящий артист должен полностью посвятить себя искусству, отказавшись от личной жизни и любви.
+Виктория проходит прослушивание и попадает в труппу, где знакомится с молодым композитором Джулианом Крастером, который работает над новым балетом. Джулиан обнаруживает, что главный композитор труппы Ливси украл его музыку, и устраивает скандал. В результате Ливси увольняют, а Джулиан занимает его место и получает возможность завершить работу над балетом "Красные башмачки", основанным на сказке Ганса Христиана Андерсена.
+Лермонтов решает доверить главную роль в новом балете Виктории, несмотря на то, что она еще молода и неопытна. Сюжет балета рассказывает о девушке, которая надевает волшебные красные туфельки, заставляющие ее танцевать до смерти. Виктория с головой погружается в подготовку к роли, полностью отдаваясь искусству.
+Премьера балета "Красные башмачки" проходит с огромным успехом. Виктория становится звездой, а балет входит в постоянный репертуар труппы. Лермонтов видит в ней воплощение своих представлений об идеальной балерине - артистке, живущей только искусством. Он становится ее ментором и начинает формировать ее карьеру, требуя полной преданности балету.
+Между тем Виктория и Джулиан влюбляются друг в друга. Их отношения развиваются на фоне гастрольных поездок и репетиций. Джулиан создает для Виктории новые балеты, а она вдохновляет его на творчество. Однако их роман должен оставаться в тайне от Лермонтова, который категорически против личных отношений между артистами своей труппы.
+Лермонтов случайно узнает о романе и приходит в ярость. Он устраивает Виктории настоящий допрос, требуя выбрать между любовью и карьерой. Импресарио убежден, что настоящий артист не может разделять себя между искусством и личной жизнью. Виктория пытается убедить его, что любовь может вдохновлять на творчество, но Лермонтов непреклонен.
+Ситуация обостряется, когда Джулиан получает предложение писать музыку для лондонской оперы. Это означает, что ему придется покинуть балетную труппу. Лермонтов использует это как повод избавиться от композитора, который, по его мнению, разрушает карьеру его звезды. Джулиан вынужден уехать в Лондон.
+Виктория остается с труппой, но ее танец теряет прежнюю страсть и вдохновение. Она механически исполняет роли, но душой не присутствует на сцене. Лермонтов понимает, что теряет свою звезду, но продолжает надеяться, что она забудет о любви и вернется к прежней преданности искусству.
+Не выдержав разлуки, Виктория тайно покидает труппу и отправляется в Лондон к Джулиану. Они женятся и некоторое время живут счастливо. Джулиан работает над новыми произведениями, а Виктория ведет жизнь обычной домохозяйки, отказавшись от сцены. Однако постепенно она начинает скучать по балету и чувствует, что теряет свою идентичность как артистки.
+Проходит несколько лет. Лермонтов неожиданно появляется в Лондоне и предлагает Виктории вернуться на сцену в новой постановке "Красных башмачек". Он убеждает ее, что она создана для танца и не может жить без сцены. Виктория разрывается между любовью к мужу и страстью к искусству.
+Джулиан категорически против возвращения жены в балет, опасаясь влияния Лермонтова. Между супругами возникает серьезный конфликт. Виктория понимает, что не может жить ни без танца, ни без любви, но вынуждена делать невозможный выбор.
+В итоге Виктория решает станцевать в последний раз "Красные башмачки". В день премьеры происходит драматическая сцена - Джулиан и Лермонтов одновременно приходят к ней в гримерную. Каждый требует, чтобы она выбрала его. Виктория не может сделать выбор между двумя самыми важными вещами в ее жизни.
+В состоянии крайнего эмоционального напряжения Виктория выбегает из театра прямо в сценическом костюме и красных пуантах. Она мчится к железнодорожной станции, где видит приближающийся поезд. Подобно героине сказки Андерсена, которая не могла снять заколдованные туфельки, Виктория бросается под поезд.
+Умирая, она просит Джулиана снять с нее красные пуанты, как бы освобождаясь от проклятия искусства. Лермонтов, узнав о трагедии, решает, что спектакль должен продолжаться. На сцене исполняется "Красные башмачки", но вместо Виктории в кульминационный момент на сцену направляется луч прожектора, символизирующий дух погибшей балерины.
+Фильм представляет собой глубокое размышление о природе искусства, цене таланта и невозможности совместить абсолютную преданность творчеству с обычной человеческой любовью и счастьем.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Магазинчик за углом', 'Two employees at a gift shop can barely stand each other, without realizing that they are falling in love through the post as each other''s anonymous pen pal.', '1940-01-01', 1, '99 minutes', 'The Shop Around the Corner', 8.1, 'Магазинчик за углом
+Фильм разворачивается в Будапеште в конце 1930-х годов и рассказывает историю сотрудников небольшого магазина кожгалантереи "Матушка и компания", принадлежащего господину Хуго Матушке. Главный герой Альфред Крайлик работает старшим продавцом в магазине уже девять лет и является правой рукой хозяина. Он амбициозен, профессионален и мечтает о повышении, рассчитывая в скором времени стать партнером в бизнесе.
+В магазине работает дружный коллектив - молодой и наивный курьер Пепе Катона, опытный продавец Пирович, пожилой бухгалтер Вадас и несколько других сотрудников. Все они относятся к Крайлику с уважением, видя в нем будущего руководителя магазина. Атмосфера в коллективе дружелюбная, сотрудники знают друг друга много лет и чувствуют себя одной семьей.
+Однажды в магазин приходит устраиваться на работу молодая женщина по имени Клара Новак. Она настойчива и напориста, требует встречи с хозяином и утверждает, что сможет увеличить продажи магазина благодаря своему опыту работы с покупателями. Крайлик относится к ней скептически и пытается вежливо отказать, объясняя, что свободных вакансий нет, но Клара не сдается.
+Между Альфредом и Кларой сразу возникает антипатия. Они постоянно спорят и конфликтуют, не соглашаясь друг с другом практически ни в чем. Крайлик считает новую сотрудницу слишком самоуверенной и назойливой, а Клара видит в нем высокомерного и консервативного человека, который не готов к переменам. Их рабочие отношения складываются крайне напряженно.
+Тем не менее господин Матушка решает принять Клару на работу, впечатленный ее энтузиазмом и уверенностью в себе. Он дает ей шанс проявить себя, несмотря на возражения Крайлика. Клара начинает работать продавщицей и действительно демонстрирует неплохие результаты, хотя ее методы часто идут вразрез с установленными в магазине традициями.
+У Альфреда есть тайна, которую он не раскрывает коллегам - уже полгода он ведет романтическую переписку с незнакомкой, которую нашел через объявление о знакомстве в газете. Они обмениваются письмами, в которых делятся своими мыслями о литературе, музыке и жизни, но никогда не встречались лично и даже не знают настоящих имен друг друга. Альфред называет свою корреспондентку "дорогой незнакомкой" и искренне влюблен в эту женщину.
+Переписка стала для Крайлика источником настоящего счастья и духовной близости. Он с нетерпением ждет каждого письма и тщательно обдумывает свои ответы. В письмах Альфред предстает совершенно другим человеком - романтичным, чувствительным и открытым, в отличие от своего делового и несколько сухого образа на работе. Он мечтает о встрече с таинственной корреспонденткой.
+Клара тоже ведет переписку с незнакомцем, которого встретила через газетное объявление. Она рассказывает коллегам о своем романе по переписке и с восторгом говорит о том, как много общего у них с ее корреспондентом. Клара влюблена в этого человека, хотя никогда его не видела, и считает, что он идеально ее понимает. Она мечтает выйти замуж за своего "дорогого друга", как она его называет.
+Ирония ситуации заключается в том, что Альфред и Клара не подозревают, что ведут переписку друг с другом. В письмах они находят духовную близость и взаимопонимание, а в реальной жизни постоянно конфликтуют и не переносят общества друг друга. Их романтические натуры раскрываются только на бумаге, а при личном общении они видят только недостатки друг друга.
+Тем временем в магазине начинают происходить странные события. Господин Матушка становится подозрительным и нервным, часто отлучается по неизвестным делам и ведет себя необычно. Он начинает холодно относиться к Крайлику, который не понимает причин такого изменения в отношении хозяина. Альфред чувствует, что теряет доверие Матушки, но не может понять почему.
+Ситуация достигает критической точки, когда Матушка обвиняет Крайлика в романе со своей женой и увольняет его прямо перед Рождеством. Альфред в шоке от этого обвинения, которое является абсолютно ложным - он никогда не встречался с женой хозяина и даже не знает ее в лицо. Увольнение становится для него страшным ударом, особенно в предрождественские дни, когда найти новую работу практически невозможно.
+Уволенный Крайлик остается без средств к существованию и погружается в депрессию. Он не может понять, откуда взялись эти подозрения, и чувствует себя преданным человеком, которому верно служил девять лет. Альфред даже откладывает долгожданную встречу со своей корреспонденткой, назначенную на канун Рождества, поскольку находится в слишком подавленном состоянии.
+Истина открывается благодаря частному детективу, которого нанял Матушка для слежки за женой. Выясняется, что миссис Матушка действительно изменяет мужу, но не с Крайликом, а с продавцом Вадасом, который долгие годы работал в магазине и пользовался полным доверием хозяина. Вадас умело направил подозрения на Альфреда, чтобы отвести от себя все обвинения.
+Потрясенный изменой жены и предательством доверенного сотрудника, господин Матушка пытается покончить с собой. Его находят в магазине с огнестрельным ранением, и он попадает в больницу в критическом состоянии. Это событие шокирует всех сотрудников магазина, которые понимают, какую трагедию пережил их хозяин.
+Крайлик немедленно возвращается к работе, временно возглавив магазин во время болезни Матушки. Он берет на себя ответственность за ведение дел и заботу о сотрудниках в сложный период. Альфред прощает хозяину его подозрения, понимая, что тот действовал под влиянием ревности и был обманут Вадасом.
+В канун Рождества Крайлик наконец решается встретиться со своей таинственной корреспонденткой. Они договорились встретиться в кафе "Маковский", где она будет сидеть за столиком с книгой. Альфред приходит в назначенное место и с изумлением обнаруживает, что его "дорогая незнакомка" - это Клара Новак, его коллега, с которой он постоянно конфликтует.
+Понимая всю деликатность ситуации, Крайлик не открывается Кларе немедленно. Вместо этого он подходит к ее столику под предлогом случайной встречи и начинает разговор. Клара расстроена тем, что ее корреспондент не пришел на встречу, и жалуется Альфреду на свое разочарование. Она не подозревает, что говорит именно с тем человеком, которого ждала.
+Крайлик постепенно начинает видеть Клару в новом свете. Он понимает, что ее чувствительность и романтичность, которые так привлекали его в письмах, на самом деле являются частью ее характера. Просто в рабочей обстановке эти качества скрывались за профессиональной маской и их взаимной неприязнью. Альфред начинает влюбляться в реальную Клару, а не только в образ из писем.
+На следующий день в магазине Крайлик начинает проявлять к Кларе неожиданную заботу и внимание. Когда она заболевает, он приносит ей цветы и навещает дома, объясняя это заботой о сотруднице. Клара удивлена такой переменой в отношении Альфреда, но постепенно начинает видеть в нем другого человека - доброго, внимательного и понимающего.
+Альфред решает постепенно открыть Кларе правду о их переписке, но делает это очень деликатно. Он начинает цитировать фразы из ее писем, использует обороты речи, характерные для их корреспонденции, и наблюдает за ее реакцией. Клара начинает подозревать что-то необычное, но еще не может поверить в такое совпадение.
+Финальное откровение происходит в канун Нового года в магазине, когда Альфред наконец признается Кларе, что он и есть ее "дорогой друг" по переписке. Сначала Клара не может поверить в это и даже сердится на Альфреда за то, что он так долго скрывал правду. Однако постепенно она понимает, что человек, которого она полюбила в письмах, и человек, к которому она начала испытывать симпатию в последние дни, - это один и тот же Альфред Крайлик.
+Господин Матушка выздоравливает и решает кардинально изменить свою жизнь. Он повышает Крайлика до партнера, фактически передавая ему управление магазином, а сам планирует уехать из Будапешта и начать новую жизнь вдали от болезненных воспоминаний. Матушка понимает, что Альфред заслуживает его полного доверия и сможет успешно вести дела.
+Фильм завершается романтической сценой в магазине, украшенном к Новому году, где Альфред и Клара наконец признаются друг другу в любви. Они понимают, что их конфликты были результатом недопонимания, а на самом деле они идеально подходят друг другу. Их любовь, которая зародилась в письмах, находит свое воплощение в реальной жизни, и история заканчивается счастливым воссоединением двух людей, которые были созданы друг для друга.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ребекка', 'A self-conscious woman juggles adjusting to her new role as an aristocrat''s wife and avoiding being intimidated by his first wife''s spectral presence.', '1940-01-01', 1, '130 minutes', 'Rebecca', 8.1, 'Фильм начинается в Монте-Карло, где молодая безымянная девушка работает компаньонкой у вульгарной богатой американки миссис Ван Хоппер. Во время пребывания в отеле девушка знакомится с аристократичным и загадочным вдовцом Максимом де Винтером, владельцем поместья Мэндерли в Корнуолле. Максим переживает смерть своей первой жены Ребекки, которая погибла в море год назад.
+Между Максимом и девушкой завязывается роман. Когда миссис Ван Хоппер решает уехать в Америку, Максим неожиданно делает компаньонке предложение. Они тайно венчаются и отправляются в медовый месяц, после чего возвращаются в Мэндерли - величественное поместье на побережье Корнуолла.
+С первых же минут пребывания в доме молодая миссис де Винтер чувствует себя чужой. Все в поместье напоминает о первой жене Максима - ее портреты висят на стенах, ее вещи остались нетронутыми, а инициалы "R de W" присутствуют повсюду - на постельном белье, салфетках, канцелярских принадлежностях. Создается впечатление, что Ребекка все еще живет в доме.
+Особенно враждебно к новой хозяйке относится миссис Денверс, пожилая экономка, которая была предана Ребекке и считает молодую жену недостойной заменой. Миссис Денверс при каждой возможности напоминает о совершенстве покойной, сравнивая с ней неопытную и застенчивую девушку. Экономка сохраняет комнату Ребекки в первозданном виде, как святилище, и постоянно рассказывает о том, какой замечательной была первая миссис де Винтер.
+Постепенно молодая жена начинает ощущать присутствие Ребекки повсюду. Она узнает, что первая жена была красивой, умной, обаятельной женщой, которая великолепно вела хозяйство, принимала гостей и была душой всех светских мероприятий. В противовес этому сама она чувствует себя неуверенной, неопытной и неспособной соответствовать образу идеальной жены.
+Максим становится все более отстраненным и раздражительным, особенно когда речь заходит о Ребекке. Молодая жена начинает подозревать, что муж все еще любит покойную супругу и сожалеет о поспешном браке. Ее неуверенность усиливается из-за постоянных намеков миссис Денверс и других обитателей поместья.
+Ситуация достигает кульминации, когда в Мэндерли должен состояться традиционный костюмированный бал. Миссис Денверс предлагает молодой хозяйке надеть платье, изображенное на портрете прекрасной дамы в галерее предков. Не подозревая подвоха, девушка соглашается и появляется на балу точно в таком же наряде, в котором год назад была Ребекка на последнем балу. Максим приходит в ярость и требует, чтобы жена немедленно переоделась.
+После этого инцидента молодая миссис де Винтер окончательно убеждается, что муж не любит ее и что она никогда не сможет заменить Ребекку. Под влиянием миссис Денверс, которая внушает ей, что Максим будет счастливее без нее, девушка готова покончить с собой, выбросившись из окна спальни Ребекки.
+В этот критический момент в поместье поднимается переполох - в бухте обнаружен затонувший парусник с телом женщины. Выясняется, что это лодка Ребекки, а тело принадлежит первой миссис де Винтер. До этого момента все считали, что море унесло ее тело после кораблекрушения, но теперь становится ясно, что Ребекка все это время лежала на дне в своей лодке.
+Начинается следствие. Коронер устанавливает, что в лодке были пробиты отверстия, и смерть Ребекки не была несчастным случаем. Максима вызывают на дознание, где он должен объяснить обстоятельства гибели жены. Полковник Джулиан и местный магистрат пытаются помочь ему, но улики указывают на возможное убийство.
+Под давлением обстоятельств Максим признается молодой жене в том, что произошло на самом деле в ту роковую ночь. Оказывается, их брак с Ребеккой был фикцией - она была порочной, развратной женщиной, которая изменяла ему с множеством мужчин, но при этом умело создавала образ идеальной жены в глазах окружающих. Максим ненавидел ее, но не мог развестись из-за скандала.
+В последнюю ночь своей жизни Ребекка сообщила мужу, что беременна от другого мужчины и будет выдавать ребенка за наследника де Винтеров. Когда она насмешливо описала, как будет продолжать свои похождения, живя в Мэндерли и воспитывая чужого ребенка как будущего владельца поместья, Максим не выдержал и выстрелил в нее. Затем он отвез тело в лодке в открытое море, пробил в днище отверстия и затопил судно.
+Молодая жена потрясена признанием, но понимает, что муж действовал в отчаянии, и решает поддержать его. Теперь, когда она знает правду о Ребекке, исчезает ее комплекс неполноценности перед памятью первой жены.
+На следствии появляется новая фигура - доктор Бейкер, который лечил Ребекку незадолго до смерти. Он сообщает, что покойная страдала от неизлечимой формы рака и не могла иметь детей. Это означает, что Ребекка солгала Максиму о беременности, возможно, специально провоцируя его на убийство, поскольку не хотела мучительно умирать от болезни.
+Присяжные выносят вердикт о самоубийстве, решив, что Ребекка, узнав о своей неизлечимой болезни, сама пробила отверстия в лодке и утопилась. Максим и его жена могут наконец жить спокойно, освободившись от тени прошлого.
+Однако миссис Денверс не может смириться с разоблачением своей любимицы. В последнюю ночь перед отъездом из поместья она поджигает Мэндерли. Супруги де Винтер, возвращаясь домой, видят зарево пожара. Величественный дом, который так долго хранил секреты Ребекки, сгорает дотла, символически освобождая их от власти прошлого. Фильм заканчивается тем, что Максим и его молодая жена могут наконец начать новую жизнь, свободную от призраков прошлого.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мистер Смит едет в Вашингтон', 'A naive man is appointed to fill a vacancy in the United States Senate. His plans promptly collide with political corruption, but he doesn''t back down.', '1939-01-01', 1, '129 minutes', 'Mr. Smith Goes to Washington', 8.1, 'Джефферсон Смит — молодой и наивный руководитель организации бойскаутов из небольшого американского городка, который неожиданно получает назначение в Сенат США после смерти одного из сенаторов от его штата. Его кандидатуру выдвигает губернатор по настоянию влиятельного политического босса Джима Тейлора, который рассчитывает, что неопытный Смит станет марионеткой в их руках и не будет мешать коррупционным схемам.
+Прибыв в Вашингтон, Смит поражен величием столицы и искренне верит в идеалы демократии. Его наставником становится опытный сенатор Джозеф Пейн, которого Смит знал еще ребенком как друга своего покойного отца. Пейн когда-то был честным политиком, но годы работы в Сенате заставили его идти на компромиссы с коррумпированной системой.
+Смит знакомится со своей секретаршей Кларисой Сондерс, циничной и опытной женщиной, которая сначала относится к нему с насмешкой, считая его простофилей. Однако постепенно она начинает проникаться его искренностью и честностью. Смит также встречается с дочерью сенатора Пейна Сьюзан, в которую влюбляется.
+Поначалу Смит ведет себя крайне неловко в Сенате, не зная процедур и традиций. Он становится объектом насмешек коллег и прессы. Чтобы занять его и отвлечь от серьезных дел, Пейн предлагает Смиту подготовить законопроект о создании национального лагеря для мальчиков в его родном штате. Смит с энтузиазмом берется за работу.
+Однако вскоре выясняется, что участок земли, который Смит выбрал для лагеря, является частью крупного коррупционного проекта Тейлора и Пейна по строительству дамбы. Этот проект должен принести им огромные прибыли за счет государственных средств. Земля уже тайно скуплена их подставными лицами по низкой цене, а после принятия законопроекта о дамбе ее стоимость многократно возрастет.
+Когда Смит случайно узнает об этой схеме, он приходит в ужас от масштабов коррупции. Пейн пытается убедить его не вмешиваться, объясняя, что так устроена политика и что он ничего не сможет изменить. Но Смит категорически отказывается молчать и угрожает разоблачить всю схему.
+Тогда Тейлор и Пейн решают избавиться от Смита. Они обвиняют его в том, что он сам владеет землей под будущий лагерь и пытается нажиться на государственном проекте. Против Смита возбуждается дело об этических нарушениях в Сенате. Подкупленная пресса начинает травлю молодого сенатора, представляя его жадным лицемером.
+Сондерс, которая к этому времени влюбилась в Смита и поверила в его честность, помогает ему подготовиться к защите. Она объясняет ему единственный способ остановить голосование по законопроекту о дамбе — устроить флибастер, то есть говорить с трибуны беспрерывно, не давая провести голосование.
+Смит начинает свой флибастер, выступая перед практически пустым залом Сената. Он говорит о демократии, о правах простых людей, о том, что власть должна служить народу, а не обогащать отдельных личностей. Его речь длится часами, он цитирует Конституцию и Декларацию независимости, призывает коллег вспомнить об идеалах, ради которых создавалась Америка.
+Тем временем Тейлор использует свое влияние на СМИ в родном штате Смита, чтобы настроить против него общественное мнение. Газеты и радиостанции изображают Смита предателем и мошенником. Организуются митинги протеста, люди посылают в Сенат тысячи телеграмм с требованием отставки Смита.
+Флибастер продолжается много часов. Смит изнемогает от усталости, его голос садится, но он продолжает говорить. Сондерс пытается поддержать его, передавая записки с подбадриванием. Однако большинство сенаторов относятся к происходящему равнодушно или враждебно.
+Кульминация наступает, когда в зал Сената приносят мешки с телеграммами от избирателей, требующих отставки Смита. Подавленный таким оборотом событий и поняв, что даже его собственные избиратели поверили лжи, Смит теряет сознание прямо у трибуны.
+В этот драматический момент сенатор Пейн не выдерживает мук совести. Он выбегает из зала Сената и пытается застрелиться. Его спасают, и потрясенный Пейн возвращается в зал, где признается во всем. Он подтверждает, что Смит говорил правду, что существует коррупционная схема с дамбой, и что молодой сенатор честен и невиновен.
+Фильм заканчивается триумфом Смита. Его правота доказана, коррупционная схема разоблачена, а он сам становится героем. Сондерс и другие свидетели его мужественной борьбы смотрят на него с восхищением и гордостью, понимая, что один человек действительно может изменить систему, если у него хватит мужества и принципиальности отстаивать правду.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Унесенные ветром', 'A manipulative woman and a roguish man conduct a turbulent romance during the American Civil War and Reconstruction periods.', '1939-01-01', 1, '238 minutes', 'Gone with the Wind', 8.1, 'Унесенные ветром (русское название в прокате)
+Действие фильма начинается в 1861 году в Джорджии, на плантации Тара, принадлежащей ирландской семье О''Хара. Скарлетт О''Хара - своенравная и кокетливая шестнадцатилетняя красавица, дочь плантатора Джеральда О''Хара и его жены Эллен. Скарлетт безумно влюблена в Эшли Уилкса, сына владельца соседней плантации Двенадцать Дубов, и мечтает выйти за него замуж.
+На барбекю в поместье Уилксов Скарлетт узнает, что Эшли собирается жениться на своей кузине Мелани Гамильтон - тихой, скромной девушке, полная противоположность ей самой. Потрясенная этой новостью, Скарлетт пытается объясниться с Эшли наедине, признается ему в любви, но получает отказ. Эшли объясняет, что они с ней слишком разные и что он любит Мелани.
+Разговор подслушивает Ретт Батлер - циничный и обаятельный авантюрист, который сразу же начинает ухаживать за Скарлетт. Ретт видит ее насквозь, понимает ее характер, но это его только привлекает. Скарлетт же относится к нему с презрением, считая его недостойным джентльменом.
+Чтобы показать Эшли свое безразличие и вызвать его ревность, Скарлетт импульсивно выходит замуж за Чарльза Гамильтона, брата Мелани. Это поспешное решение она принимает на волне эмоций, не думая о последствиях. Чарльз отправляется на войну между Севером и Югом, которая только началась, и вскоре погибает от болезни, даже не успев повоевать.
+Скарлетт остается молодой вдовой с маленьким сыном Уэйдом. По южным традициям она должна носить траур и вести затворническую жизнь, но это претит ее натуре. Мелани приглашает золовку переехать в Атланту, где Скарлетт постепенно возвращается к активной социальной жизни, шокируя общество своим поведением.
+В Атланте Скарлетт снова встречается с Ретт Батлером, который продолжает ухаживать за ней. Ретт зарабатывает огромные деньги, прорывая блокаду северян и поставляя на Юг необходимые товары. Скарлетт по-прежнему отвергает его ухаживания, оставаясь верной своей любви к Эшли, который сражается в армии Конфедерации.
+Когда Эшли приезжает в отпуск, Скарлетт снова пытается добиться его любви, но он вновь отвергает ее, оставаясь верным Мелани. Скарлетт в отчаянии выходит замуж за Фрэнка Кеннеди, жениха своей младшей сестры Сьюлен, преследуя исключительно практические цели - ей нужны деньги для спасения Тары от налогов.
+Война приближается к Атланте. Город готовится к осаде, жители в панике покидают свои дома. Мелани ждет ребенка, и Скарлетт обещает Эшли позаботиться о жене в его отсутствие. Когда начинаются роды, в городе остается только Скарлетт, Мелани и служанка Присси, которая оказывается совершенно неопытной в родовспоможении, хотя раньше хвасталась своими знаниями.
+Скарлетт вынуждена самостоятельно принимать роды у Мелани в условиях бомбардировки города. Северяне поджигают Атланту, и город превращается в пылающий ад. После рождения ребенка Скарлетт понимает, что они должны немедленно бежать из города.
+Она находит Ретта Батлера и умоляет его помочь им выбраться из горящей Атланты. Ретт соглашается и на украденной повозке вывозит их из города. По дороге он сообщает Скарлетт, что собирается присоединиться к армии Конфедерации, хотя до этого избегал военной службы. Скарлетт снова признается ему в любви к Эшли, и разгневанный Ретт бросает их на дороге, оставив лошадь и повозку.
+Скарлетт с больной Мелани, новорожденным ребенком и Присси добирается до Тары. Родное поместье она находит в ужасающем состоянии - дом разграблен войсками северян, большинство рабов разбежалось, мать умерла от тифа, отец сошел с ума от горя, сестры болеют. Семья находится на грани голодной смерти.
+В этот критический момент Скарлетт проявляет невероятную силу воли и решимость. Она клянется, что больше никогда не будет голодать, и берет на себя управление плантацией. Несмотря на то, что она выросла в роскоши и никогда не занималась физическим трудом, Скарлетт начинает работать в поле наравне с оставшимися слугами.
+Постепенно ей удается восстановить хозяйство. Эшли возвращается с войны сломленным и потерявшим веру в будущее человеком. Он не способен адаптироваться к новым условиям жизни и постоянно тоскует по довоенному прошлому. Скарлетт пытается убедить его помочь ей в управлении плантацией, но Эшли оказывается плохим хозяйственником.
+Тем временем правительство требует уплаты огромных налогов, и Скарлетт грозит потеря Тары. В отчаянии она едет в Атланту к Ретту Батлеру, надеясь занять у него денег. Однако Ретт находится в тюрьме по обвинению в спекуляции, и помочь не может. Скарлетт пытается соблазнить его, надев платье из портьер, но Ретт видит насквозь ее игру.
+Выходя из тюрьмы, Скарлетт случайно встречает Фрэнка Кеннеди, своего бывшего мужа, который стал преуспевающим торговцем. Скарлетт выходит за него замуж исключительно ради денег, обманув его относительно своих чувств. С помощью Фрэнка она получает средства для спасения Тары и начинает заниматься бизнесом.
+Скарлетт открывает лесопилку и проявляет удивительные коммерческие способности. Она нанимает Эшли управляющим, хотя он совершенно не подходит для этой работы. Скарлетт готова на любые методы ради успеха в бизнесе - использует труд заключенных, не брезгует сомнительными сделками, что шокирует атлантское общество.
+Фрэнк Кеннеди погибает во время налета Ку-клукс-клана на поселение бывших рабов, что стало ответом на нападение на Скарлетт, когда она ехала через опасный район. Скарлетт снова становится вдовой, теперь уже с двумя детьми.
+Ретт Батлер, освободившись из тюрьмы, делает Скарлетт предложение. На этот раз она соглашается выйти за него замуж, понимая, что он может обеспечить ей финансовую стабильность и высокое положение в обществе. У них рождается дочь Бонни, которую Ретт безумно любит.
+Несколько лет Ретт и Скарлетт живут в роскоши, но их брак нельзя назвать счастливым. Скарлетт по-прежнему любит Эшли, что отравляет их отношения. Ретт прекрасно понимает истинные чувства жены и страдает от этого, хотя старается не показывать своих эмоций.
+Кульминация наступает на вечеринке по случаю дня рождения Эшли. Скарлетт снова пытается добиться его любви, и их застает Мелани. Разразившийся скандал приводит к тому, что Скарлетт становится изгоем в обществе. Ретт окончательно разочаровывается в жене.
+Трагедия довершается несчастным случаем - маленькая Бонни, пытаясь на пони перепрыгнуть через барьер, как это делал ее отец, падает и погибает. Ретт винит в смерти дочери Скарлетт, их отношения окончательно разрушаются.
+Мелани, которая всегда защищала Скарлетт и была ее единственной подругой, умирает от осложнений после выкидыша. Перед смертью она просит Скарлетт позаботиться об Эшли и признается, что всегда знала о ее чувствах к мужу, но не винила ее за это.
+После смерти Мелани Эшли наконец признается Скарлетт в том, что всегда любил только жену. Он объясняет, что Скарлетт была для него всего лишь мечтой о прошлом, символом беззаботной довоенной жизни. Скарлетт понимает, что все эти годы любила не реального человека, а созданный ею самой образ.
+Осознав свою ошибку, Скарлетт бежит домой к Ретту, надеясь объяснить ему, что теперь понимает, кого по-настоящему любит. Однако Ретт уже принял решение уехать. Он говорит ей знаменитую фразу о том, что ему наплевать, и покидает дом.
+Оставшись одна, Скарлетт не сдается. Стоя в холле своего дома, она клянется, что найдет способ вернуть Ретта. Она вспоминает слова отца о том, что земля - это единственное, что имеет значение, и решает вернуться в Тару, чтобы набраться сил для новой борьбы. Фильм заканчивается знаменитой фразой Скарлетт о том, что завтра будет новый день, произнесенной на фоне величественного заката над плантацией.
+Эпическая сага охватывает период Гражданской войны и Реконструкции на американском Юге, показывая, как исторические события влияют на судьбы людей и как человек может измениться под давлением обстоятельств.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Великая иллюзия', 'During WWI, two French soldiers are captured and imprisoned in a German P.O.W. camp. Several escape attempts follow until they are eventually sent to a seemingly inescapable fortress.', '1937-01-01', 1, '113 minutes', 'La Grande Illusion', 8.1, 'Действие фильма происходит во время Первой мировой войны. Французские летчики лейтенант Марешаль и капитан де Буальдье сбиты немецкой авиацией и попадают в плен. Их берет в плен немецкий аристократ, ас-летчик капитан фон Раффенштайн, который с уважением относится к своим пленникам, особенно к де Буальдье, поскольку тот тоже принадлежит к аристократическому сословию.
+Пленных отправляют в немецкий лагерь для военнопленных, где они встречают других французских офицеров. Среди них выделяется Розенталь, еврейский банкир, ставший солдатом, который постоянно получает посылки с едой от своей богатой семьи и щедро делится ими с товарищами. В лагере царит дух товарищества, пленные из разных стран - французы, русские, англичане - объединены общей судьбой.
+Заключенные организуют культурную жизнь в лагере, ставят театральные представления. Во время одного из таких представлений, когда французские пленные переодеваются в женские костюмы для спектакля, приходит известие о том, что французы отбили крепость Дуомон под Верденом. Охваченные патриотическим порывом, пленные срывают с себя женские наряды и запевают "Марсельезу". Немецкие охранники останавливают представление и отправляют главных зачинщиков в карцер.
+Тем временем пленные планируют побег. Они роют туннель под бараком, тщательно скрывая свою деятельность от немецкой охраны. Работа продвигается медленно, требует осторожности и координации между всеми участниками. Однако незадолго до завершения туннеля их переводят в другую тюрьму.
+Новая тюрьма находится в замке Винтерсборн, который считается неприступным. Комендантом замка назначен фон Раффенштайн, который получил тяжелое ранение в бою и больше не может летать. Он вынужден нести службу в тылу, что тяготит его как офицера и джентльмена старой школы. Между ним и де Буальдье устанавливаются особые отношения - это два аристократа, воспитанные в одних традициях, говорящие на нескольких языках, понимающие друг друга поверх национальных границ.
+В замке пленные снова начинают планировать побег. Де Буальдье понимает, что как офицер и дворянин он должен помочь своим товарищам, даже если сам не сможет бежать. Марешаль и Розенталь готовятся к побегу, изучают местность, добывают гражданскую одежду и припасы.
+План побега требует жертвы - кто-то должен отвлечь внимание охраны, зная, что это будет стоить ему жизни. Де Буальдье берет эту миссию на себя. Во время решающего момента он демонстративно нарушает дисциплину, привлекая к себе внимание охранников, чтобы дать возможность Марешалю и Розенталю бежать.
+Фон Раффенштайн лично пытается остановить де Буальдье, умоляя его прекратить сопротивление. Между двумя аристократами происходит трагический диалог - они понимают друг друга, уважают друг друга, но находятся по разные стороны баррикад. В конце концов фон Раффенштайн вынужден застрелить де Буальдье, что становится для него личной трагедией. Умирающий де Буальдье прощает своего убийцу, и фон Раффенштайн срезает для него единственный цветок герани, который он выращивал в своей комнате.
+Тем временем Марешаль и Розенталь успешно бегут из замка. Их путь лежит через заснеженные горы к швейцарской границе. Побег оказывается трудным испытанием - они голодают, мерзнут, спорят друг с другом. Розенталь получает травму ноги, и Марешаль должен решить, бросить ли товарища или рисковать собственной свободой. После внутренней борьбы он остается с раненым другом.
+Беглецов приютила немецкая крестьянка Эльза, чей муж погиб на войне. Она живет одна с маленькой дочерью в изолированной ферме. Поначалу Эльза относится к французским солдатам с опаской, но постепенно между ней и Марешалем возникают теплые чувства. Розенталь поправляется, и французы помогают женщине по хозяйству. Возникает иллюзия мирной семейной жизни посреди войны.
+Однако идиллия не может длиться вечно. Когда Розенталь выздоравливает, беглецы понимают, что должны продолжить путь к границе. Расставание с Эльзой дается Марешалю тяжело - он полюбил эту простую немецкую женщину и ее ребенка. Эльза дает ему кое-что на память и благословляет в дорогу.
+Марешаль и Розенталь продолжают свой путь через горы. Наконец они достигают швейцарской границы, но их замечает немецкий патруль. Начинается погоня по заснеженному склону. В критический moment беглецы пересекают невидимую линию границы и оказываются на нейтральной территории. Немецкие солдаты останавливаются, не имея права продолжать преследование.
+Фильм завершается философским размышлением о том, что границы между людьми часто иллюзорны. Война, которая казалась "войной, чтобы покончить со всеми войнами", оказывается лишь очередной великой иллюзией человечества. Люди разных национальностей и классов способны понимать друг друга и проявлять человечность даже в условиях военного противостояния, но социальные и политические системы продолжают толкать их к конфликтам.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Это случилось однажды ночью', 'A renegade reporter and a crazy young heiress meet on a bus heading for New York, and end up stuck with each other when the bus leaves them behind at one of the stops.', '1934-01-01', 1, '105 minutes', 'It Happened One Night', 8.1, 'Фильм рассказывает историю Элли Эндрюс, своенравной дочери миллионера Александра Эндрюса. Элли тайно выходит замуж за Кинга Уэстли, легкомысленного плейбоя и авиатора, но отец категорически против этого брака, считая жениха охотником за приданым. Эндрюс держит дочь практически под арестом на своей яхте во Флориде, требуя аннулировать брак.
+Не выдержав принуждения, Элли сбегает с яхты, переплыв на берег, и садится на автобус, направляющийся в Нью-Йорк, где ее ждет муж. У девушки есть только небольшая сумма денег, и она впервые в жизни остается без привычной роскоши и прислуги. В автобусе она знакомится с Питером Уорном, газетным репортером, который недавно потерял работу из-за пьянства и конфликта с редактором.
+Питер сразу узнает в попутчице знаменитую наследницу, о побеге которой уже сообщают все газеты. Отец Элли назначил крупную награду за информацию о местонахождении дочери. Питер видит в этой встрече шанс получить эксклюзивный материал для газеты и вернуть себе работу. Он предлагает Элли свою помощь в обмен на право первым опубликовать ее историю.
+Первоначально Элли относится к Питеру с презрением, считая его грубым и невоспитанным плебеем. Однако вскоре она понимает, что без его помощи ей не добраться до Нью-Йорка. Питер учит избалованную миллионершу, как вести себя среди простых людей, как экономить деньги и справляться с бытовыми трудностями.
+По дороге происходит несколько комических ситуаций. Когда автобус ломается, пассажиры вынуждены провести ночь в придорожном мотеле. Питер и Элли снимают один номер, выдавая себя за супружескую пару. Чтобы сохранить приличия, Питер вешает между кроватями одеяло, которое называет "стенами Иерихона", намекая на библейскую историю.
+Элли постепенно привыкает к простой жизни и начинает ценить заботу Питера. Она учится готовить, стирать и обходиться без прислуги. Между ними возникает взаимная симпатия, хотя оба пытаются это скрывать. Питер показывает себя благородным человеком, защищая Элли от навязчивых попутчиков и помогая ей в трудных ситуациях.
+Когда у них заканчиваются деньги, Питер пытается заработать, продавая автомобилистам информацию о дорожных условиях. Элли тем временем демонстрирует неожиданный талант - она умеет останавливать машины, показывая водителям ногу, что приводит Питера в восхищение ее практичностью.
+Их совместное путешествие прерывается, когда частные детективы отца Элли обнаруживают их в мотеле. Девушка думает, что Питер выдал ее за вознаграждение, и в гневе убегает с детективами. На самом деле Питер уехал в Нью-Йорк, чтобы поговорить с редактором своей газеты и попытаться устроить встречу Элли с отцом на более выгодных для нее условиях.
+Вернувшись домой, Элли понимает, что влюбилась в Питера. Однако она считает, что он использовал ее только ради статьи и денег. Отец, видя несчастье дочери, начинает понимать, что она действительно изменилась во время путешествия. Элли рассказывает ему о Питере, не скрывая своих чувств.
+Питер приходит к Эндрюсу и просит возместить ему расходы на путешествие с Элли. Он подает детализированный счет на сумму всего тридцать девять долларов и шестьдесят центов, что поражает миллионера своей скромностью. Эндрюс понимает, что репортер действительно благородный человек, и что дочь любит его.
+Тем временем подготавливается пышная свадьба Элли с Кингом Уэстли. Отец пытается отговорить дочь от этого брака, намекая на благородство Питера, но Элли считает, что репортер ее не любит. В день свадьбы, когда Элли в белом платье идет к алтарю, отец шепчет ей, что недалеко от церкви ждет машина, если она передумает.
+В последний момент Элли осознает, что не может выйти замуж за человека, которого не любит. Она бросает букет и убегает из церкви, оставив жениха у алтаря. Сев в приготовленную отцом машину, она мчится к Питеру.
+Фильм заканчивается сценой в мотеле, где Питер и Элли проводят свою настоящую брачную ночь. Символичное падение "стен Иерихона" - одеяла между кроватями - означает, что все препятствия между ними наконец преодолены.
+Картина стала классикой романтической комедии, показав, как любовь может преодолеть классовые различия и как люди из разных социальных слоев могут найти общий язык и счастье друг с другом.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Страсти Жанны д''Арк', 'In 1431, Jeanne d''Arc is placed on trial on charges of heresy. The ecclesiastical jurists attempt to force Jeanne to recant her claims of holy visions.', '1928-01-01', 1, '110 minutes', 'La passion de Jeanne d''Arc', 8.1, 'Фильм начинается в 1431 году в замке Руан, где французская национальная героиня Жанна д''Арк предстает перед церковным судом по обвинению в ереси. Девятнадцатилетняя крестьянская девушка, которая утверждала, что получала видения от святых и по их повелению освободила Орлеан от английской осады, теперь находится в руках своих врагов.
+Судебный процесс ведет епископ Кошон, который действует в интересах английских оккупантов. Его цель - заставить Жанну отречься от своих видений и признать себя еретичкой, что позволит англичанам дискредитировать ее как посланницу Бога и тем самым подорвать легитимность коронации дофина Карла, который с ее помощью стал королем Франции.
+Допросы проходят в мрачной атмосфере средневекового судилища. Жанна предстает перед десятками церковников в черных рясах, которые пытаются запутать ее каверзными богословскими вопросами. Они спрашивают ее о природе ее видений, требуют описать голоса святых, которые она слышала, пытаются поймать на противоречиях между ее показаниями и церковной доктриной.
+Жанна отвечает с удивительной простотой и убежденностью. Она рассказывает о том, как к ней являлись архангел Михаил, святая Маргарита и святая Екатерина, как они повелели ей идти к дофину и помочь ему стать королем, как она освободила Орлеан и привела французские войска к победам. Ее искренность и непоколебимая вера контрастируют с лицемерием и политическими расчетами судей.
+Епископ Кошон и его приспешники используют различные приемы, чтобы сломить Жанну. Они угрожают ей пытками, показывают орудия мучений в подземелье замка. Палач демонстрирует ей колесо, дыбу и другие инструменты, предназначенные для выбивания признаний. Жанну пытаются запугать, но она остается непреклонной, заявляя, что предпочтет смерть отречению от своих видений.
+Судьи пытаются использовать против Жанны ее простое крестьянское происхождение, намекая, что необразованная девушка не может получать откровения от Бога. Они критикуют ее за то, что она носила мужскую одежду и сражалась с оружием в руках, что противоречит роли женщины в христианском обществе. Жанна объясняет, что делала все это по повелению своих святых, что ее миссия была божественной.
+Процесс затягивается на месяцы. Жанна содержится в ужасных условиях в темной камере, прикованная цепями. Ее охраняют грубые английские солдаты, которые издеваются над ней и угрожают насилием. Несмотря на физические лишения и психологическое давление, она не сдается.
+Среди судей находятся и те, кто сомневается в справедливости процесса. Некоторые монахи тайно сочувствуют Жанне, видя в ней искреннюю веру и святость. Один из них, брат Мартен, пытается помочь ей, объясняя юридические тонкости обвинений и советуя, как лучше отвечать на вопросы судей.
+Кульминацией процесса становится попытка заставить Жанну подписать отречение. Ей обещают, что в случае покаяния она будет передана церковному суду и избежит смертной казни. Жанна колеблется, испугавшись мучительной смерти на костре. В момент слабости она соглашается поставить крест под документом об отречении, хотя не умеет читать и не понимает его полного содержания.
+Однако радость судей оказывается преждевременной. Вернувшись в камеру и осознав значение своего поступка, Жанна приходит в ужас от того, что предала своих святых. She отказывается от отречения, заявляя, что голоса святых вновь явились к ней и упрекнули ее за слабость. Она готова принять смерть, но не может жить с сознанием того, что солгала о своих видениях.
+Епископ Кошон приходит в ярость от такого поворота событий. Отказ Жанны от отречения означает, что она рецидивистка еретичка, что автоматически влечет смертный приговор. Суд выносит окончательное решение - Жанна д''Арк должна быть сожжена на костре как нераскаявшаяся еретичка.
+Утром казни Жанну ведут на рыночную площадь Руана, где уже приготовлен высокий костер. Толпы людей собрались посмотреть на казнь знаменитой девушки-воительницы. Среди зрителей есть как враги, жаждущие увидеть ее смерть, так и тайные сторонники, которые скорбят о ее судьбе.
+Жанну привязывают к столбу посреди костра. Ей предлагают последний шанс покаяться и спасти свою жизнь, но она отказывается. Брат Мартен держит перед ней крест, чтобы она могла видеть его в последние минуты жизни. Жанна молится, прося Бога принять ее душу и простить ее судьям, ибо не ведают, что творят.
+Когда разжигают костер, Жанна в последний раз провозглашает, что ее видения были истинными, что святые действительно посылали ее спасти Францию. Дым и пламя поднимаются вверх, скрывая ее фигуру. Некоторые из присутствующих плачут, потрясенные мужеством девушки и несправедливостью ее смерти.
+Фильм завершается сценами народного волнения. Простые люди, видевшие казнь Жанны, начинают понимать, что была убита святая. Толпа выражает возмущение, и английские солдаты с трудом поддерживают порядок. Становится ясно, что смерть Жанны не остановит французское сопротивление, а наоборот, сделает ее мученицей и символом борьбы за освобождение Франции от иностранных захватчиков.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Цирк', 'The Tramp finds work and the girl of his dreams at a circus.', '1928-01-01', 1, '72 minutes', 'The Circus', 8.1, 'Фильм рассказывает историю Бродяги Чаплина, который случайно попадает в цирк и становится его главной звездой, сам того не подозревая. История начинается с того, что Бродяга оказывается на ярмарочной площади, где располагается небольшой передвижной цирк. Голодный и отчаявшийся, он пытается украсть еду, но его принимают за карманника, который действительно орудует в толпе.
+Спасаясь от полиции, Бродяга случайно попадает на арену цирка прямо во время представления. Его неуклюжие попытки скрыться от преследователей превращаются в потрясающий комический номер, который приводит публику в восторг. Зрители хохочут, думая, что это запланированная часть шоу, в то время как Бродяга отчаянно пытается найти выход.
+Владелец цирка, видя успех у публики, решает нанять Бродягу. Однако выясняется странная особенность - как только Бродяга пытается специально быть смешным, он теряет всю свою комичность. Его талант проявляется только тогда, когда он действует естественно, не стараясь рассмешить публику. Владелец цирка и его помощники не могут понять этой закономерности.
+В цирке Бродяга знакомится с дочерью владельца - красивой наездницей, которую звать Мерна. Девушка несчастна из-за деспотичного характера отца, который постоянно кричит на нее и других артистов. Отец относится к дочери скорее как к своей собственности, чем как к человеку, и использует ее талант для привлечения публики.
+Бродяга влюбляется в Мерну с первого взгляда. Он старается всячески помочь ей и защитить от гнева отца. Между ними завязывается трогательная дружба, но Мерна относится к Бродяге скорее как к забавному другу, чем как к потенциальному возлюбленному.
+Ситуация осложняется с появлением в цирке нового артиста - канатоходца Рекса, красивого и мужественного акробата. Мерна сразу же влюбляется в него, что разбивает сердце Бродяги. Рекс - типичный красавец и герой, все то, чем Бродяга не является. Девушка очарована его смелостью и мастерством.
+Бродяга пытается соперничать с Рексом, стараясь произвести впечатление на Мерну. Он предпринимает отчаянные попытки научиться цирковым трюкам, особенно хождению по канату. Его неуклюжие усилия приводят к серии комических катастроф, но Мерна остается равнодушной к его героическим усилиям.
+Тем временем владелец цирка обнаруживает, что Бродяга смешон только тогда, когда не старается быть смешным. Он начинает специально создавать ситуации, в которых Бродяга естественным образом попадает в комические положения, не понимая, что его используют.
+Кульминационный момент наступает во время представления, когда во время номера Рекса что-то идет не так. Канатоходец не может выступать, и владелец цирка в отчаянии заставляет Бродягу заменить его. Несмотря на свой страх высоты и полное отсутствие опыта, Бродяга соглашается ради Мерны.
+То, что происходит дальше, становится одной из самых знаменитых комических сцен в истории кинематографа. Бродяга пытается пройти по канату, но из-за своей неловкости постоянно теряет равновесие. Ситуация усугубляется, когда на канат забираются обезьяны, которые начинают дразнить его и мешать выступлению.
+Несмотря на все препятствия и комические злоключения, Бродяга каким-то чудом умудряется завершить номер. Публика в восторге от его выступления, считая все происходящее гениальной клоунадой. Мерна восхищена его храбростью, но это не меняет ее чувств к Рексу.
+В финале фильма Бродяга понимает, что Мерна никогда не полюбит его так, как он любит ее. Проявив благородство, он помогает ей соединиться с Рексом. Когда цирк собирается в дорогу, молодые люди женятся, а Бродяга остается один.
+Последняя сцена показывает Бродягу, который медленно бредет по дороге, удаляясь от цирка. Он остался верен своей судьбе вечного странника, который приносит радость другим, но сам остается одиноким. Фильм заканчивается характерным для Чаплина образом - фигурой Бродяги, идущего по дороге навстречу неизвестности.
+Картина представляет собой глубокое размышление о природе искусства, любви и жертвенности, показывая, как истинный артист может быть непонят даже теми, кому он служит, и как любовь иногда требует отказа от собственного счастья ради счастья любимого человека.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Восход солнца', 'An allegorical tale about a man fighting the good and evil within him. Both sides are made flesh - one a sophisticated woman he is attracted to and the other his wife.', '1927-01-01', 1, '94 minutes', 'Sunrise: A Song of Two Humans', 8.1, 'История разворачивается в небольшой деревушке у озера, где живет простой крестьянин со своей женой и маленьким ребенком. Мужчина работает на земле, а его жена ведет хозяйство и заботится о семье. Их жизнь размеренна и спокойна, наполнена простыми радостями сельского быта.
+Однако идиллия нарушается появлением женщины из города - соблазнительной и раскованной горожанки, которая приехала на дачу к озеру. Она начинает флиртовать с крестьянином, искушая его обещаниями яркой городской жизни, полной развлечений и удовольствий. Постепенно мужчина поддается ее чарам и вступает с ней в любовную связь.
+Городская женщина не довольствуется тайными встречами. Она требует от своего любовника решительных действий - бросить жену и ребенка и уехать с ней в город. Когда мужчина колеблется, она предлагает ему ужасный план: он должен взять жену на прогулку на лодке по озеру, утопить ее, представив это как несчастный случай, а затем свободно уехать с любовницей.
+Поначалу крестьянин отвергает этот чудовищный замысел, но городская женщина продолжает давить на него, играя на его страсти и обещая счастливое будущее. Она дает ему связку камыша, которую он должен привязать под одежду для дополнительной плавучести после того, как перевернет лодку. Одурманенный страстью мужчина соглашается на это преступление.
+На следующее утро он предлагает своей ничего не подозревающей жене покататься на лодке по озеру. Женщина радуется редкой возможности провести время вдвоем с мужем и готовится к прогулке. Они садятся в лодку и отплывают от берега. Жена счастливо улыбается, наслаждаясь красотой озера и близостью супруга.
+Однако по мере того, как лодка удаляется от берега к более глубоким водам, поведение мужчины становится все более странным и угрожающим. Он мрачнеет, его взгляд становится злобным. Жена начинает чувствовать неладное, в ее глазах появляется тревога и непонимание.
+Когда лодка оказывается на середине озера, мужчина встает, готовый привести план в исполнение. Он приближается к жене с явно враждебными намерениями. Женщина видит убийственную решимость в его глазах и понимает, что муж собирается ее убить. Она отшатывается в ужасе, не понимая, что могло превратить любящего супруга в потенциального убийцу.
+В критический момент мужчина видит страх и беззащитность в глазах жены, и это пробуждает в нем остатки человечности. Он осознает чудовищность своего замысла и то, что готов был убить невинную женщину, которая любит его и доверяет ему. Раскаяние и ужас от собственных намерений овладевают им.
+Вместо того чтобы причинить вред жене, мужчина падает к ее ногам, охваченный стыдом и раскаянием. Он пытается объяснить ей, что с ним происходило, как он мог дойти до такого состояния. Жена сначала не понимает его слов, но постепенно до нее доходит правда о его намерениях и о существовании другой женщины.
+Потрясенная женщина не может поверить в то, что услышала. Человек, которому она доверяла больше всех на свете, оказался способен на предательство и убийство. Она отталкивает мужа и требует немедленно вернуться на берег. Поездка обратно проходит в тяжелом молчании, наполненном болью и разочарованием.
+Вернувшись домой, жена не может оставаться под одной крышей с мужем. Она берет ребенка и собирается уехать к своим родственникам в город. Мужчина пытается удержать ее, но понимает, что не имеет на это права после того, что произошло. Жена уезжает, оставив его одного с осознанием того, что он разрушил свою семью.
+Оставшись в одиночестве, крестьянин приходит к городской любовнице, но теперь видит ее совсем другими глазами. Ее красота кажется ему поверхностной, а обещания - ложными. Он понимает, что она толкнула его на преступление ради собственных эгоистичных целей, не заботясь о том, что это разрушит его душу. Он прогоняет ее и остается один со своими угрызениями совести.
+Тем временем жена приезжает в город и пытается начать новую жизнь. Но городская суета и развлечения не могут заглушить ее боль. Несмотря на все произошедшее, она все еще любит мужа и страдает от разлуки с ним. Она проводит время в парках развлечений, кафе и на танцах, пытаясь отвлечься, но мысли постоянно возвращаются к дому и к тому, что могло бы быть.
+Мужчина тоже не находит покоя. Он бродит по дому, где каждая вещь напоминает ему о жене и ребенке. Он осознает, насколько дорога ему семья и как глупо он поступил, поддавшись минутной страсти. Раскаяние терзает его, и он принимает решение любой ценой вернуть жену и искупить свою вину.
+Он отправляется в город на поиски жены. После долгих поисков он находит ее в одном из развлекательных заведений. При виде мужа женщина сначала хочет убежать, но он умоляет ее выслушать его. Он рассказывает о своем раскаянии, о том, как он понял ценность их любви и семьи, как жалеет о своем безумии.
+Постепенно сердце жены смягчается. Она видит искреннее раскаяние в его глазах и понимает, что он действительно изменился. Их любовь оказывается сильнее случившейся трагедии. Они проводят день в городе, словно заново знакомясь друг с другом, восстанавливая утраченное доверие и близость.
+Вечером супруги решают вернуться домой. Они садятся в лодку, чтобы переплыть озеро обратно к своей деревне. Но на озере поднимается сильная буря. Волны становятся все выше, лодку швыряет из стороны в сторону. То, что начиналось как символическое путешествие к примирению, превращается в борьбу за жизнь.
+Во время шторма лодка переворачивается, и супруги оказываются в воде. Мужчина изо всех сил пытается спасти жену, держа ее на плаву и борясь с волнами. Ирония судьбы заключается в том, что теперь он действительно рискует потерять жену в тех же водах, где утром планировал ее убить, но теперь он готов отдать свою жизнь, чтобы спасти ее.
+После долгой и мучительной борьбы с разбушевавшейся стихией им удается добраться до берега. Они выбираются на сушу обессиленные, но живые. Это испытание окончательно очистило их отношения от всего наносного и ложного. Они поняли, как дороги друг другу, и как важно беречь то, что у них есть.
+На рассвете, когда солнце поднимается над озером, супруги возвращаются в свой дом. Их встречает ребенок, радостно бегущий к родителям. Семья воссоединяется, очищенная страданием и испытаниями. Мужчина обнимает жену и ребенка, понимая, что чуть не потерял самое дорогое в жизни из-за минутного безумия. Восходящее солнце символизирует новое начало для их любви и надежду на счастливое будущее.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Генерал', 'When Union spies steal an engineer''s beloved locomotive, he pursues it single-handedly and straight through enemy lines.', '1926-01-01', 1, '67 minutes', 'The General', 8.1, 'Фильм происходит во время Гражданской войны в США и рассказывает историю машиниста Джонни Грея, который живет в небольшом южном городке Мариетта в Джорджии. Джонни - простой железнодорожник, влюбленный в свой паровоз "Генерал" и в красивую девушку Аннабель Ли. В его жизни есть две главные страсти - его поезд и его возлюбленная.
+Когда начинается война между Севером и Югом, Аннабель и ее отец ожидают, что Джонни пойдет добровольцем в армию Конфедерации. Джонни действительно идет в военкомат записываться на службу, но военные отклоняют его заявление, считая, что он принесет больше пользы, продолжая работать машинистом на железной дороге, которая имеет стратегическое значение для снабжения армии.
+Однако Джонни не объясняют причин отказа, и когда он возвращается домой, все думают, что он струсил и не захотел воевать. Аннабель и ее семья отворачиваются от него, считая трусом. Девушка заявляет, что не будет разговаривать с ним, пока он не наденет военную форму.
+Проходит год. Джонни продолжает работать машинистом, страдая от того, что окружающие считают его трусом, а любимая девушка его избегает. Он несколько раз пытается завербоваться в армию, но каждый раз получает отказ по той же причине - его работа на железной дороге слишком важна для военных усилий Конфедерации.
+Тем временем северяне разрабатывают дерзкий план диверсии. Группа федеральных шпионов во главе с капитаном Андерсоном планирует захватить поезд Джонни "Генерал" и использовать его, чтобы проехать по территории Конфедерации, разрушая по пути железнодорожные пути, мосты и телеграфные линии. Этот план должен нарушить снабжение южной армии.
+В день выполнения операции Аннабель едет на поезде Джонни навестить раненого отца в другом городе. Когда поезд останавливается на станции для заправки водой и едой, пассажиры выходят пообедать. В этот момент северные шпионы захватывают поезд вместе с находящейся в вагоне Аннабель, которая не успела выйти.
+Джонни, вернувшись от обеда, обнаруживает, что его любимый паровоз исчез вместе с вагонами. Сначала никто не верит его словам о краже поезда, но вскоре становится ясно, что произошла диверсия. Джонни в одиночку отправляется в погоню за угнанным поездом на другом паровозе.
+Начинается захватывающая погоня по железной дороге. Шпионы пытаются оторваться от преследователя, разрушая за собой железнодорожные пути и сбрасывая на дорогу различные препятствия. Джонни проявляет невероятную изобретательность и мужество, преодолевая все препятствия и продолжая погоню.
+Во время погони происходит множество комических и в то же время драматических ситуаций. Джонни приходится справляться с горящими шпалами на путях, обрушенными мостами и другими препятствиями, которые создают шпионы. Его поезд несколько раз едва не сходит с рельсов, но каждый раз Джонни умудряется избежать катастрофы.
+Постепенно становится ясно, что шпионы направляются к линии фронта, где их должны встретить войска северян. Джонни понимает, что не только должен вернуть свой поезд и спасти Аннабель, но и предотвратить передачу врагу важной военной информации, которую везут диверсанты.
+В итоге паровоз шпионов застревает, и они вынуждены продолжать путь пешком, взяв Аннабель в качестве пленницы. Джонни следует за ними и в итоге оказывается в лагере северян, где подслушивает планы предстоящего наступления федеральной армии.
+Ночью Джонни проникает в дом, где держат Аннабель, и освобождает ее. Вместе они захватывают "Генерала" и бегут обратно на юг, теперь уже преследуемые армией северян на другом поезде. Начинается вторая погоня, на этот раз в обратном направлении.
+Во время обратного пути Джонни и Аннабель разрушают мосты и железнодорожные пути, чтобы затруднить преследование. Аннабель наконец понимает, что Джонни вовсе не трус, а храбрый и находчивый человек. Между ними восстанавливаются романтические отношения.
+Кульминация наступает, когда преследующий поезд северян пытается пересечь подожженный мост. Мост обрушивается, и паровоз падает в реку, что становится одной из самых дорогостоящих сцен в истории немого кино.
+Джонни и Аннабель добираются до южного города как раз вовремя, чтобы предупредить армию Конфедерации о готовящемся наступлении северян. Благодаря их информации южане готовят засаду и наносят поражение федеральным войскам.
+Джонни становится героем и наконец получает звание лейтенанта в армии Конфедерации. Аннабель осознает свою ошибку и понимает, что всегда любила его. В финале фильма они воссоединяются, а Джонни получает не только звание офицера, но и руку своей возлюбленной.
+Фильм заканчивается сценой, где Джонни в военной форме сидит на своем любимом паровозе "Генерал" в обнимку с Аннабель, наконец получив все, о чем мечтал - признание, любовь и возможность продолжать работать со своим паровозом.
+Картина сочетает в себе элементы комедии, приключенческого фильма и военной драмы, демонстрируя мастерство Китона в создании сложных трюковых сцен и его способность находить комическое в самых драматических ситуациях.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Кабинет доктора Калигари', 'Hypnotist Dr. Caligari uses a somnambulist, Cesare, to commit murders.', '1920-01-01', 1, '76 minutes', 'Das Cabinet des Dr. Caligari', 8.1, 'Кабинет доктора Калигари
+История начинается в парке, где молодой человек по имени Франсис рассказывает своему другу странную и жуткую историю о событиях, произошедших в небольшом немецком городке Хольстенвалле. Его рассказ переносит нас в мрачную атмосферу этого поселения, где должна состояться ярмарка.
+На ярмарку прибывает загадочный доктор Калигари - высокий, худой человек в черном цилиндре и плаще, с диким взглядом за круглыми очками. Он устраивает представление, демонстрируя публике своего сомнамбулу Чезаре - бледного, худощавого молодого человека, который якобы спит уже двадцать три года и просыпается только по приказу доктора. Калигари заявляет, что Чезаре может предсказывать будущее и отвечать на любые вопросы.
+Франсис приходит на представление вместе со своим лучшим другом Аланом. Оба молодых человека влюблены в одну и ту же девушку - прекрасную Джейн. Алан, поддавшись любопытству и желанию похвастаться перед возлюбленной, задает Чезаре вопрос о том, сколько ему осталось жить. Сомнамбула медленно открывает глаза и жутким голосом отвечает, что Алан умрет на рассвете.
+Друзья сначала смеются над этим предсказанием, считая его шарлатанством, но ночью Алан действительно погибает - его находят убитым в собственной постели. Франсис потрясен смертью друга и подозревает, что убийство связано с жутким предсказанием Чезаре. He начинает собственное расследование, несмотря на скептицизм полиции.
+Тем временем в городе происходят новые загадочные преступления. Ночью кто-то нападает на горожан, причем убийства совершаются с особой жестокостью. Свидетели рассказывают о странной фигуре, которая появляется из темноты и исчезает так же внезапно. Город охватывает паника, люди боятся выходить на улицы после наступления темноты.
+Франсис следит за доктором Калигари и его сомнамбулом, пытаясь найти связь между ними и убийствами. Он проникает в их жилище и обнаруживает, что днем Чезаре лежит в высоком гробообразном ящике, словно мертвец. Франсис убеждается, что именно сомнамбула совершает убийства по приказу своего хозяина, который использует его как орудие для своих преступных целей.
+Ситуация достигает кульминации, когда Чезаре проникает в дом Джейн с намерением убить и ее. Девушка просыпается и видит над собой страшную фигуру с ножом в руке. Однако вместо того чтобы убить ее, Чезаре вдруг останавливается, пораженный ее красотой. Что-то человеческое пробуждается в его загипнотизированном сознании.
+Вместо убийства Чезаре похищает Джейн, неся ее через крыши домов и по узким улочкам города. Начинается погоня - Франсис и другие горожане преследуют похитителя. Погоня продолжается по фантасмагорическому лабиринту искривленных улиц, мостов и лестниц, создавая атмосферу кошмарного сна.
+Во время погони Чезаре, обессиленный тяжестью ноши и преследованием, падает и умирает, не выдержав физического напряжения. Джейн освобождена, но загадка убийств остается нераскрытой. Франсис понимает, что истинный виновник - доктор Калигари, который управлял сомнамбулом как марионеткой.
+Франсис отправляется в психиатрическую лечебницу, где, как он узнал, работает доктор Калигари. Там он обнаруживает шокирующую правду: директор лечебницы и есть тот самый доктор Калигари. Франсис находит в его кабинете дневники и записи, раскрывающие страшную тайну.
+Из документов выясняется, что директор давно изучал историю некоего монаха Калигари, который в восемнадцатом веке использовал сомнамбула для совершения убийств. Директор стал одержим этой историей и решил повторить эксперименты своего предшественника. Он загипнотизировал одного из пациентов - Чезаре - и превратил его в свое орудие для убийств.
+Когда Франсис пытается разоблачить директора, тот сначала отрицает обвинения, но затем, поняв, что его секрет раскрыт, впадает в безумие. Его глаза наливаются кровью, он начинает метаться по кабинету, повторяя: "Я должен стать Калигари!" Его хватают и помещают в смирительную рубашку в одну из камер собственной лечебницы.
+Однако в самом конце фильма происходит неожиданный поворот, который переворачивает все повествование с ног на голову. Оказывается, что вся эта жуткая история была плодом воображения самого Франсиса, который является пациентом той же психиатрической лечебницы. Доктор, которого он считает злодеем Калигари, на самом деле - добрый врач, пытающийся его вылечить.
+Чезаре, Джейн и Алан - тоже пациенты лечебницы, и их образы в бредовых фантазиях Франсиса искажены его болезненным сознанием. Джейн страдает от депрессии, Чезаре - кататонией, Алан давно умер естественной смертью. Франсис создал в своем воображении сложную параноидальную систему, в которой окружающие его люди превратились в персонажей готического ужаса.
+Врач объясняет коллегам, что теперь, когда он понял природу мании Франсиса и его отождествления доктора с легендарным Калигари, он сможет подобрать правильное лечение. Фильм заканчивается тем, что Франсиса уводят в его палату, а доктор остается в кабинете, размышляя о сложности человеческой психики и тонкой грани между реальностью и безумием.
+Этот финальный поворот ставит под сомнение все, что зритель видел ранее, заставляя пересмотреть каждую сцену фильма. Становится неясным, где заканчивается реальность и начинается бред больного воображения, что является одной из центральных тем произведения - исследованием природы безумия и субъективности восприятия реальности.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Того', 'The story of Togo, the sled dog who led the 1925 serum run yet was considered by most to be too small and weak to lead such an intense race.', '2019-01-01', 1, '113 minutes', 'Togo', 8.0, 'Фильм рассказывает истинную историю, произошедшую зимой 1925 года на Аляске. Действие происходит в городе Ном, где вспыхивает дифтерийная эпидемия, угрожающая жизни детей IMDbFandom. Единственное спасение - сыворотка против дифтерии, которая хранится в городе Анкоридж, находящемся почти в семистах милях от Нома.
+Главным героем картины является Леонард Сеппала, опытный каюр и тренер ездовых собак, которого играет Виллем Дефо. Сеппала живет в Номе со своей женой Констанс и их жизнь тесно связана с разведением и тренировкой сибирских хаски для собачьих упряжек.
+В центре повествования находится особенная собака по кличке Того - небольшая по размеру и стареющая сибирская хаски Togo | On Disney+, которая с щенячьего возраста проявляла необычайные способности и упрямый характер. Жена Сеппалы Констанс поддерживала Того с тех пор, как он был озорным щенком, который мог выбраться из любой ситуации Togo | On Disney+.
+Фильм показывает историю взросления Того через флэшбеки. Из-за своего небольшого размера в щенячьем возрасте, хозяин однажды отдал его семье в качестве домашнего питомца. Через несколько недель Того надоела домашняя жизнь. Он пробил окно и прибежал обратно к питомникам Сеппалы The True Story Behind Disney''s ''Togo'' - Outside Online. Этот эпизод ярко демонстрирует непокорный дух собаки и ее предназначение.
+Когда в Номе объявляется чрезвычайное положение из-за дифтерийной эпидемии, единственным способом доставить спасительную сыворотку становится эстафета собачьих упряжек. Ездовые собачьи упряжки должны преодолеть почти 700 миль через суровые условия, чтобы доставить противодифтерийную сыворотку и спасти аляскинский город Ном от эпидемии Disney’s new Togo Film – Northernwolf – Your Ultimate Guide to Sled Dogs and Mushing.
+Сеппала должен проделать самый опасный и длинный участок этого пути. Несмотря на то, что у него есть более молодые и сильные собаки, он выбирает в качестве вожака упряжки именно Того. Того - двенадцатилетняя сибирская хаски, которая повела свою упряжку Meet The Real Trainer And Dog Behind Disney+ Movie Togo в этом смертельно опасном путешествии.
+Путешествие проходит в экстремальных погодных условиях. Команда Сеппалы и Того сталкивается с лютыми морозами, метелями и коварными ледяными поверхностями. Они должны пересечь замерзший пролив Нортон-Саунд, где лед может в любой момент треснуть и поглотить всю упряжку.
+Особенно драматичной становится сцена пересечения ледяного пролива. Лед начинает трескаться под весом упряжки, и они оказываются на дрейфующей льдине, отрезанной от берега. В проявлении атлетизма и поистине не свойственной собакам изобретательности, Того хватает ведущую веревку зубами и тянет сани к берегу. Это действительно произошло The True Story Behind Disney''s ''Togo'' - Outside Online.
+Фильм показывает не только физические испытания, но и эмоциональную связь между Сеппалой и его верным псом. На протяжении всего путешествия Того демонстрирует невероятную выносливость, ум и преданность, ведя упряжку по опасной местности в условиях, которые кажутся невыносимыми даже для закаленных аляскинских собак.
+В кульминационный момент, когда силы Того уже на исходе, а до места встречи с другой упряжкой остается совсем немного, старая собака находит в себе последние резервы, чтобы довести драгоценную сыворотку до пункта назначения. Сеппала осознает, что его верный пес выложился до конца, отдав все свои силы ради спасения детей Нома.
+Эстафета продолжается другими каюрами, включая Гуннара Каасена с его вожаком Балто, который доставляет сыворотку в финальной части пути непосредственно в Ном. Однако фильм подчеркивает, что именно Того и Сеппала проделали самую трудную и опасную часть пути, преодолев более двухсот шестидесяти миль в невыносимых условиях.
+В финале картины показано, как Того, несмотря на свой преклонный возраст и усталость от героического путешествия, остается верным спутником Сеппалы. Фильм завершается эмоциональными сценами, показывающими глубокую связь между человеком и собакой, которая была проверена в самых экстремальных условиях.
+Лента представляет собой трогательную историю о верности, мужестве и самопожертвовании, основанную на реальных событиях, которые вошли в историю как "Великая гонка милосердия" 1925 года, спасшая жизни многих детей на Аляске.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Воздушная перевозка', 'When Iraq invades Kuwait in August 1990, a callous Indian businessman becomes the spokesperson for more than 170,000 stranded countrymen.', '2016-01-01', 1, '130 minutes', 'Airlift', 8.0, 'Действие фильма начинается в августе 1990 года в Кувейте, где живет успешный индийский бизнесмен Ранджит Катял со своей женой Амритой и дочерью. Ранджит владеет процветающей строительной компанией и ведет роскошную жизнь в этой богатой нефтяной стране. Он считает себя скорее кувейтцем, чем индийцем, полностью интегрировавшись в местное общество и имея тесные деловые связи с кувейтскими партнерами.
+Ранджит известен своим высокомерным отношением к менее обеспеченным индийским рабочим и служащим, живущим в Кувейте. Он избегает общения с ними, считая себя выше их по социальному статусу. Его жена Амрита более сочувственно относится к соотечественникам, но Ранджит остается равнодушным к их проблемам, сосредоточившись исключительно на своих деловых интересах.
+2 августа 1990 года иракские войска под командованием Саддама Хусейна вторгаются в Кувейт, начиная оккупацию страны. Мирная жизнь в Кувейте мгновенно превращается в хаос. Иракские солдаты захватывают стратегические объекты, правительственные здания, аэропорт. На улицах начинаются грабежи, насилие, произвольные аресты и казни.
+Ранджит сначала не осознает серьезность ситуации, полагая, что как успешный бизнесмен он сможет договориться с новыми властями и продолжать свою деятельность. Однако он быстро понимает, что иракские оккупанты не делают различий между кувейтцами и иностранцами. Его офисы и имущество захватываются, а сам он оказывается в смертельной опасности.
+Положение индийской общины в Кувейте становится катастрофическим. Около 170 000 индийцев, работавших в различных сферах - от нефтяной промышленности до домашнего хозяйства, оказываются заложниками ситуации. Аэропорт закрыт, границы перекрыты, связь с внешним миром нарушена. Люди прячутся в домах, не имея продовольствия, медикаментов и надежды на спасение.
+Ранджит с семьей укрывается в доме своего кувейтского друга, но вскоре понимает, что и там они не в безопасности. Иракские солдаты проводят обыски, арестовывают и убивают гражданских лиц. Особенно жестоко они обращаются с теми, кого подозревают в связях с кувейтским правительством или западными странами.
+В это критическое время в Ранджите происходит внутренняя трансформация. Видя страдания своих соотечественников, он впервые осознает свою ответственность перед индийской общиной. Люди начинают обращаться к нему за помощью, видя в нем влиятельного человека, способного что-то предпринять для их спасения.
+Ранджит связывается с индийским посольством в Багдаде и правительством Индии, пытаясь организовать эвакуацию индийских граждан. Однако дипломатические каналы работают медленно, а время идет. Каждый день промедления означает новые жертвы среди мирного населения.
+Используя свои деловые связи и знание местной ситуации, Ранджит начинает самостоятельно организовывать эвакуацию. Он устанавливает контакт с иракскими чиновниками, пытаясь получить разрешение на вывоз индийских граждан. This требует огромного мужества, поскольку любое неосторожное слово или действие может стоить ему жизни.
+Ранджит организует сбор индийцев в безопасных местах, обеспечивает их продовольствием и медицинской помощью. Он превращает свой дом в своеобразный штаб эвакуационной операции, координируя действия добровольцев и поддерживая связь с внешним миром через скрытые каналы связи.
+Самой большой проблемой становится получение разрешения от иракских властей на выезд такого большого количества людей. Ранджит ведет сложные переговоры с иракскими офицерами, убеждая их в том, что индийцы не представляют угрозы для оккупационного режима и их эвакуация будет выгодна для Ирака.
+Параллельно правительство Индии под руководством министра иностранных дел И.К. Гуджрала работает над дипломатическим решением кризиса. Индийские дипломаты ведут переговоры с иракским руководством, пытаясь получить гарантии безопасности для своих граждан и разрешение на их эвакуацию.
+Наконец, после недель напряженных переговоров удается достичь соглашения. Иракские власти дают разрешение на эвакуацию индийских граждан через Амман, столицу Иордании. Начинается операция по организации автобусных конвоев для транспортировки людей к иорданской границе.
+Ранджит лично возглавляет эти конвои, сопровождая группы эвакуируемых через опасные дороги, контролируемые иракскими военными. Каждая поездка - это риск, поскольку ситуация может измениться в любой момент, и конвои могут быть остановлены или обстреляны.
+Дорога от Кувейта до иорданской границы пролегает через пустыню и занимает много часов. Автобусы переполнены людьми, не хватает воды и еды. Многие пассажиры - женщины, дети, пожилые люди, которые с трудом переносят тяготы путешествия в экстремальных условиях.
+Несколько раз конвои останавливают иракские патрули, проводящие проверки документов. Каждая такая остановка - это момент смертельного напряжения, поскольку солдаты могут в любой момент изменить решение и не пропустить людей дальше. Ранджит использует все свое дипломатическое умение, чтобы убедить военных пропустить конвои.
+Достигнув иорданской границы, эвакуированные попадают в лагеря беженцев, где их встречают представители индийского правительства. Оттуда их отправляют чартерными рейсами в Индию. Для многих это путешествие становится первым возвращением на родину после многих лет работы за границей.
+Операция эвакуации продолжается несколько месяцев. Ранджит организует десятки конвоев, спасая тысячи людей. Каждый раз он рискует своей жизнью и жизнями своей семьи, но продолжает работу, движимый чувством долга перед соотечественниками.
+В процессе этой деятельности Ранджит полностью меняется как личность. Высокомерный бизнесмен превращается в народного героя, готового пожертвовать всем ради спасения других. Он теряет свое имущество, бизнес, но обретает нечто более ценное - уважение людей и внутреннее удовлетворение от совершенного подвига.
+Амрита поддерживает мужа во всех его начинаниях, хотя и переживает за безопасность семьи. Она помогает организовывать размещение и питание эвакуируемых, ухаживает за больными и ранеными. Их дочь тоже участвует в общем деле, несмотря на юный возраст.
+Постепенно международная коалиция во главе с США готовится к военной операции по освобождению Кувейта. Это создает дополнительное давление времени - эвакуацию нужно завершить до начала боевых действий, которые сделают любое перемещение по территории крайне опасным.
+Ранджит понимает, что времени остается все меньше, и удваивает усилия по организации эвакуации. Он работает практически без сна и отдыха, координируя множество конвоев одновременно. Физическое и эмоциональное напряжение доводит его до предела, но он не сдается.
+В итоге благодаря героическим усилиям Ранджита и поддержке индийского правительства удается эвакуировать более 170 000 индийских граждан из Кувейта и Ирака. Это становится одной из крупнейших эвакуационных операций в истории, организованной силами гражданского населения.
+Фильм завершается тем, что Ранджит с семьей в числе последних покидает Кувейт. Он оглядывается на страну, которая была его домом многие годы, но теперь превратилась в зону военных действий. Несмотря на потери, он чувствует удовлетворение от выполненного долга.
+В финальных кадрах показывается, что операция по эвакуации индийцев из Кувейта действительно имела место и стала примером гражданского мужества и международного сотрудничества. Ранджит Катял, основанный на реальном человеке, стал символом того, как один человек может изменить судьбы тысяч людей, если у него хватит решимости и человечности.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Малыш', 'An elite counter-intelligence unit learns of a plot, masterminded by a maniacal madman. With the clock ticking, it''s up to them to track the terrorists'' international tentacles and prevent them from striking at the heart of India.', '2015-01-01', 1, '159 minutes', 'Baby', 8.0, 'Малыш (русское название в прокате)
+Фильм представляет собой индийский шпионский боевик режиссера Нираджа Панди с Акшаем Кумаром в главной роли Togo | Disney Wiki | Fandom, рассказывающий историю элитного контртеррористического подразделения индийской разведки.
+Сюжет следует за командой вымышленных секретных агентов под названием "Малыш" - временной целевой группой под руководством Фероза Хана Baby - Apple TV, которого играет Дэнни Дензонгпа. Главный герой Аджай Сингх Раджпут, которого исполняет Акшай Кумар, является ведущим оперативником этого подразделения.
+В фильме элитная команда индийской разведывательной системы постоянно стремится уничтожить террористов и их планы, во время которых офицер возглавляет команду для уничтожения одной такой потенциально смертельной операции
+История начинается с того, что в ходе предотвращения одной террористической атаки Аджай обнаруживает серьезную угрозу для нации - план нанести ущерб и посеять страх в самом сердце их существования Baby . Операция разрабатывается маниакальным лидером, чья организация имеет щупальца по всему миру.
+Аджай ведет двойную жизнь - фильм показывает, как Аджай Сингх Раджпут постоянно просит свою жену завершать телефонные разговоры под предлогом, что он находится на важном совещании. Зрители видят, что он занят предотвращением следующей террористической атаки любыми способами .
+В фильме "Малыш" целью является фундаменталистский проповедник Мухаммед Рахман, который кажется собирательным образом главы Лашкар-е-Тайба Хафиза Саида и лидера Джаиш-е-Мохаммед Масуда Азхара. Усилия Аджая по срыву планов Рахмана приводят его в различные страны, включая Непал и Саудовскую Аравию.
+Команда "Малыш" состоит из высококвалифицированных агентов, каждый из которых обладает уникальными навыками. В команду входят такие персонажи, как Шукла, которого играет Анупам Кхер, и другие оперативники, включая женщину-агента, которую исполняет Таапси Панну.
+Фильм начинается с террористического заговора, который был остановлен, но прежде чем террориста удается привлечь к правосудию, он совершает самоубийство и предупреждает, что готовится множество атак Baby . Это становится отправной точкой для масштабного расследования.
+Действие разворачивается в нескольких странах, поскольку агенты "Малыша" прослеживают международную сеть террористов. Операции проходят в различных локациях - от городских улиц Дели до горных районов Непала и пустынь Ближнего Востока.
+Аджай и его команда используют различные прикрытия и легенды для проникновения в террористические ячейки. Они выдают себя за торговцев, бизнесменов и обычных туристов, чтобы получить доступ к нужной информации и местам.
+По мере развития событий подразделение сталкивается с возрастающими вызовами, когда время работает против них Amazon.com: Baby : content_service.movies & TV. Террористы планируют серию координированных атак, которые могут нанести серьезный ущерб Индии и ее гражданам.
+Кульминация наступает, когда команда "Малыш" обнаруживает конкретные детали готовящихся терактов. Агенты должны действовать быстро и решительно, чтобы предотвратить катастрофу. Операция требует от них максимального профессионализма и готовности пожертвовать своими жизнями ради спасения невинных людей.
+Финальная операция проходит в напряженной обстановке, где каждая минута на счету. Аджай и его команда используют все свои навыки и ресурсы, чтобы нейтрализовать угрозу. В результате сложных и опасных маневров им удается предотвратить террористические атаки и обезвредить преступную сеть.
+Пробная операция проходит успешно, и временной целевой группе присваивается постоянный статус, после чего агенты празднуют свою победу Togo (film) - Wikipedia. Подразделение "Малыш" доказывает свою эффективность и получает официальное признание как постоянная структура в системе индийской разведки.
+Фильм завершается пониманием того, что борьба с терроризмом - это постоянный процесс, требующий постоянной бдительности и профессионализма от сотрудников спецслужб. Команда готова к новым вызовам и операциям, понимая важность своей миссии по защите страны и ее граждан от террористических угроз.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ла-Ла Лэнд', 'While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.', '2016-01-01', 1, '128 minutes', 'La La Land', 8.0, 'История начинается в современном Лос-Анджелесе с масштабной музыкальной сцены на автомобильной развязке во время пробки под палящим солнцем. Среди застрявших в пробке водителей находятся два главных героя - Миа, начинающая актриса, работающая баристой в кофейне на студии Warner Brothers, и Себастьян, джазовый пианист, мечтающий открыть собственный джаз-клуб.
+Их первая встреча происходит именно в этой пробке, когда Себастьян, играющий на клаксоне и нетерпеливо пытающийся проехать, конфликтует с Миа. Она показывает ему неприличный жест, а он уезжает, даже не взглянув на нее. Эта встреча задает тон их сложным отношениям - страстным, но полным недопонимания.
+Миа живет в Голливуде с тремя соседками по квартире и изо всех сил пытается пробиться в актерской карьере. Она ходит на прослушивания, но постоянно получает отказы. Кастинг-директора часто даже не обращают на нее внимания, отвлекаясь на телефонные разговоры прямо во время ее выступлений. У нее есть мечта - написать собственную пьесу и поставить моноспектакль.
+Себастьян также борется за свою мечту. Он хочет открыть традиционный джаз-клуб, который будет сохранять классические традиции этого музыкального жанра. Однако владельцы заведений, где он работает, требуют от него играть современную популярную музыку или рождественские песни, что противоречит его художественным принципам. Он постоянно спорит с работодателями и теряет работу за свою принципиальность.
+Вторая встреча героев происходит в ресторане, где Себастьян вынужден играть рождественские мелодии на фортепиано. После работы он садится за инструмент и исполняет прекрасную джазовую композицию, вкладывая в нее всю свою душу. Миа, проходившая мимо, заворожена музыкой и заходит в ресторан. Однако владелец увольняет Себастьяна за нарушение репертуара, и он, проходя мимо очарованной Миа, игнорирует ее попытки заговорить.
+Третья встреча происходит на вечеринке в Голливудских холмах, где Себастьян играет в составе группы музыку восьмидесятых. Миа узнает его и подходит поговорить. Они начинают танцевать, и между ними возникает романтическое напряжение. После вечеринки они идут искать машину Миа и во время прогулки по ночному Лос-Анджелесу начинают открываться друг другу.
+Себастьян показывает Миа места, связанные с историей джаза в городе, рассказывает о великих музыкантах прошлого. Он ведет ее в джаз-клуб, где когда-то выступали легенды, но теперь там играет мексиканская группа. Его страсть к джазу и знание музыкальной истории впечатляют Миа.
+Их отношения развиваются на фоне летнего Лос-Анджелеса. Они проводят время вместе, посещая кинотеатры, танцуя в планетарии Гриффитской обсерватории под звездным небом. Миа вдохновляет Себастьяна не сдаваться в борьбе за свою мечту, а он поддерживает ее актерские амбиции и предлагает написать моноспектакль.
+Себастьян устраивается пианистом в новую группу своего старого друга Кита, который создает современную версию джаза с электронными элементами. Поначалу Себастьян сопротивляется такому направлению, но Кит убеждает его, что нужно развиваться и адаптироваться к современным реалиям. Группа начинает набирать популярность.
+Миа пишет свой моноспектакль - автобиографическую историю о девушке из небольшого городка, которая мечтает стать актрисой. Себастьян поддерживает ее работу, но их отношения начинают осложняться из-за его занятости с группой. Он часто отсутствует на гастролях, и они видятся все реже.
+Премьера моноспектакля Миа проходит провально - в зале присутствует всего несколько зрителей, и выступление не произвожит впечатления. Миа глубоко расстроена неудачей и начинает сомневаться в своем таланте. Себастьян пропускает премьеру из-за фотосессии с группой, что становится серьезным ударом по их отношениям.
+После ссоры из-за пропущенной премьеры Миа решает вернуться к родителям в родной городок Боулдер-Сити, штат Невада. Она разочарована в Голливуде и собственных перспективах. Себастьян понимает, что потерял любимую женщину из-за своих амбиций, но не знает, как исправить ситуацию.
+Неожиданно Миа получает приглашение на прослушивание для главной роли в большом голливудском фильме. Оказывается, среди немногочисленных зрителей ее моноспектакля была кастинг-директор, которая оценила ее талант. Себастьян узнает об этом и едет к Миа в Неваду, чтобы убедить ее вернуться на прослушивание.
+На прослушивании Миа исполняет песню о мечтателях, которые "достаточно безумны, чтобы мечтать". Ее выступление глубоко трогает кастинг-директоров, и она получает роль. Однако съемки фильма будут проходить в Париже, что означает длительную разлуку с Себастьяном.
+Перед отъездом Миа и Себастьян проводят вместе последний вечер. Они понимают, что их пути расходятся - у каждого есть возможность осуществить свою мечту, но это означает расставание. Они признаются друг другу в любви, но понимают, что иногда любовь требует жертв ради большего блага.
+Пять лет спустя Миа стала знаменитой актрисой, вышла замуж за другого мужчину и родила ребенка. Себастьян осуществил свою мечту и открыл собственный джаз-клуб под названием "Себ", оформленный в стиле, о котором он всегда мечтал, с классическим джазовым репертуаром.
+Однажды вечером Миа с мужем случайно заходит в клуб Себастьяна. Они не знают, что это его заведение, пока он не выходит на сцену. Увидев Миа в зале, Себастьян импровизирует музыкальную композицию, которая становится фантазией о том, какой могла бы быть их жизнь, если бы они остались вместе.
+В этой музыкальной фантазии показывается альтернативная версия их истории - как они поженились, как Миа поддерживала Себастьяна в открытии клуба, как они растили детей, оставаясь в Лос-Анджелесе. Эта воображаемая жизнь полна счастья и взаимной поддержки, но это только мечта о том, что могло бы быть.
+Когда музыка заканчивается, Миа и Себастьян обмениваются взглядами через зал. В их глазах читается вся нежность и любовь, которая была между ними, а также понимание того, что они сделали правильный выбор. Каждый из них осуществил свою мечту, хотя это и стоило им отношений.
+Миа встает, чтобы уйти с мужем, и в последний раз оглядывается на Себастьяна. Он смотрит на нее с грустной улыбкой, и она отвечает тем же. Этот взгляд говорит больше слов - в нем благодарность за то время, что они провели вместе, за поддержку в достижении мечты и за понимание того, что иногда любовь означает отпустить человека, чтобы он мог стать тем, кем должен быть.
+Фильм заканчивается тем, что оба героя нашли свое счастье и успех, но заплатили за это своими отношениями. История показывает, что в жизни иногда невозможно получить все сразу, и приходится выбирать между любовью и мечтой, между личным счастьем и профессиональной реализацией.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Лев', 'A five-year-old Indian boy is adopted by an Australian couple after getting lost hundreds of kilometers from home. 25 years later, he sets out to find his lost family.', '2016-01-01', 1, '118 minutes', 'Lion', 8.0, 'Лев
+История начинается в 1986 году в небольшой деревне в штате Мадхья-Прадеш, Индия, где живет пятилетний мальчик по имени Сару со своей матерью Камлой, старшей сестрой Шекилой и старшим братом Гуду. Семья очень бедная, мать работает переносчицей камней на стройке, зарабатывая гроши. Дети часто голодают, и им приходится просить еду у соседей или воровать.
+Гуду, будучи старшим сыном, чувствует ответственность за семью и часто уходит в ночные смены на железную дорогу, чтобы подработать. Сару обожает своего старшего брата и всегда хочет сопровождать его на работу. Однажды вечером он умоляет Гуду взять его с собой, и брат, не желая расстраивать малыша, соглашается.
+Они добираются до железнодорожной станции в городе Бурханпур, где Гуду должен работать ночью. Сару очень устал от долгого пути и засыпает на скамейке на платформе. Гуду говорит ему подождать и не двигаться с места, пока он не вернется. Когда Сару просыпается посреди ночи, брата нигде нет. Мальчик начинает искать Гуду по всей станции.
+Увидев поезд, стоящий на платформе, Сару решает, что брат может быть в одном из вагонов, и забирается внутрь. Обыскав несколько пустых вагонов, он снова засыпает от усталости. Когда он просыпается, поезд уже движется на полной скорости. Мальчик пытается найти выход, но двери заперты, и он оказывается в ловушке.
+Поезд везет Сару сотни километров от дома через всю Индию. Путешествие длится несколько дней, мальчик ничего не ест и не пьет. Наконец поезд прибывает в Калькутту (ныне Колката), один из крупнейших городов Индии. Сару выходит на огромную станцию Хауре, где его окружает толпа из тысяч людей, говорящих на незнакомом ему бенгальском языке.
+Потерянный мальчик не может объяснить, откуда он родом, поскольку не знает правильного названия своего родного города. Он называет его "Гинестлей", но это детское искажение названия, и никто не понимает, что он имеет в виду. Сару бродит по улицам Калькутты, спит под мостами, ест объедки, попрошайничает. Жизнь на улицах полна опасностей для маленького ребенка.
+Его пытаются использовать взрослые преступники, он едва избегает сексуального насилия и торговцев детьми. В одном из приютов его почти продают в рабство, но ему удается сбежать. Мальчик учится выживать в жестоком мире улиц, становится осторожным и недоверчивым к взрослым.
+Через несколько месяцев Сару попадает в официальный приют для бездомных детей, где с ним обращаются хорошо. Сотрудники приюта пытаются найти его семью, но безуспешно, поскольку мальчик не может точно назвать свой родной город. В конце концов его определяют на усыновление, и им интересуется австралийская семья.
+Сью и Джон Брайерли из Хобарта, Тасмания, не могут иметь детей и решают усыновить индийского мальчика. Они прилетают в Калькутту и встречают Сару. Несмотря на языковой барьер и культурные различия, между ними устанавливается связь. Сару получает новое имя - Лайон (искажение от Сару) и новый дом в Австралии.
+Адаптация в новой стране проходит непросто. Лайон изучает английский язык, привыкает к совершенно другому образу жизни, климату, еде. Сью и Джон - любящие приемные родители, которые делают все возможное, чтобы мальчик чувствовал себя дома. Они не пытаются стереть его индийскую идентичность, а наоборот, поддерживают связь с культурой.
+Через некоторое время семья усыновляет еще одного индийского мальчика - Мантоша, у которого серьезные психологические травмы от жизни на улицах. В отличие от Лайона, Мантош очень сложно адаптируется, у него случаются вспышки агрессии и самоповреждения. Это создает напряжение в семье, но родители не сдаются.
+Лайон вырастает в успешного молодого человека, получает образование в области гостиничного менеджмента. Он старается не думать о своем прошлом, сосредоточившись на новой жизни в Австралии. У него появляется девушка Люси, он строит карьеру, но глубоко внутри его всегда мучают воспоминания о потерянной семье.
+Поворотным моментом становится вечеринка в доме индийских друзей, где подают джалеби - сладость, которую он помнит с детства. Внезапно все подавляемые воспоминания возвращаются с новой силой. Лайон начинает мучиться мыслями о том, что его мать может до сих пор искать его, что он бросил семью.
+Друг рассказывает ему о программе Google Earth, которая позволяет просматривать спутниковые снимки любой точки Земли. Лайон понимает, что с помощью этой технологии он может попытаться найти свой родной дом. Он начинает одержимо изучать карты Индии, пытаясь вспомнить детали путешествия на поезде.
+Поиски занимают месяцы. Each вечер после работы Лайон сидит за компьютером, изучая железнодорожные маршруты, станции, деревни. Он рассчитывает примерное расстояние, которое мог проехать поезд за время его путешествия, сужает область поиска. Люси пытается поддерживать его, но навязчивые поиски начинают разрушать их отношения.
+Лайон становится замкнутым, отказывается от социальной жизни, все свободное время посвящая поискам. Он изучает тысячи спутниковых снимков, ищет знакомые ориентиры - железнодорожную станцию, мост, башню с водой, которые помнит из детства. Мать Сью беспокоится о его психическом состоянии.
+Напряжение в семье нарастает, когда Мантош обвиняет Лайона в неблагодарности к приемным родителям. Происходит серьезная ссора, в ходе которой Лайон впервые открыто говорит о своих чувствах вины за то, что бросил биологическую семью. Сью объясняет ему, что она всегда знала, что этот день настанет, и поддерживает его поиски.
+После месяцев безуспешных попыток Лайон почти сдается. Однако однажды вечером, просматривая очередные снимки, он узнает знакомый ландшафт - железнодорожную станцию и близлежащие здания, которые соответствуют его детским воспоминаниям. Станция называется Бурханпур, что объясняет, почему его детское произношение "Гинестлей" никто не понимал.
+От станции Лайон начинает исследовать окрестности и находит свою родную деревню. Он узнает характерные ориентиры - дорогу, мост, расположение домов. Эмоциональное потрясение от этого открытия огромно. После 25 лет разлуки он наконец может вернуться домой.
+Лайон прилетает в Индию с фотографиями своей австралийской семьи и адресом в Хобарте. Он нанимает местного жителя в качестве переводчика и направляется в свою родную деревню. Путь кажется и знакомым, и чужим одновременно - многое изменилось за четверть века.
+Когда они прибывают в деревню, местные жители сначала не узнают Лайона, но постепенно начинают понимать, кто он такой. Его приводят к дому, где когда-то жила его семья. Там его ждет потрясающая встреча - его мать Камла, постаревшая, но живая, все эти годы надеялась на его возвращение.
+Встреча матери и сына после 25 лет разлуки полна слез радости и горя одновременно. Камла рассказывает, что она никогда не переставала искать Сару, что семья обращалась в полицию, объехала множество городов в поисках пропавшего мальчика. Она до сих пор живет в том же доме, на случай если он вернется.
+Лайон узнает, что его сестра Шекила жива и тоже живет в деревне, у нее есть собственная семья. Однако он получает трагическую новость о брате Гуду - тот погиб несколько лет назад, попав под поезд. Возможно, он искал пропавшего братишку и случайно упал на рельсы. Эта новость становится тяжелым ударом для Лайона.
+Несколько дней Лайон проводит с биологической семьей, восстанавливая связи, рассказывая о своей жизни в Австралии. Мать гордится тем, каким мужчиной стал ее сын, хотя и скорбит о потерянных годах. Он объясняет ей, что его приемные родители - хорошие люди, что он любит их и будет продолжать жить в Австралии.
+Лайон понимает, что теперь у него есть две семьи в двух разных мирах. Он договаривается регулярно приезжать в Индию и поддерживать связь с биологической семьей, а также приглашает мать посетить Австралию. Камла, никогда не выезжавшая за пределы своего штата, соглашается на это путешествие.
+Фильм завершается возвращением Лайона в Австралию, где его встречают приемные родители. Он рассказывает им о встрече с биологической матерью и благодарит за все, что они для него сделали. Сью и Джон понимают, что их сын нашел внутренний покой, соединив две части своей жизни.
+В финальных титрах сообщается, что в Индии каждый год пропадает около 80,000 детей, и что Google Earth действительно помогает в поисках пропавших людей. История Лайона стала символом надежды для тысяч семей, разлученных обстоятельствами, и показала, как современные технологии могут воссоединить людей через десятилетия и континенты.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Марсианин', 'An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.', '2015-01-01', 1, '144 minutes', 'The Martian', 8.0, 'Марсианин
+История начинается в недалеком будущем, когда экипаж миссии "Арес-3" во главе с командиром Мелиссой Льюис проводит исследования на поверхности Марса. В состав команды входит ботаник Марк Уотни, специалист по EVA (внекорабельной деятельности), компьютерный специалист Бет Йохансен, навигатор Рик Мартинес, врач Крис Бек и химик Алекс Фогель. Экспедиция должна длиться 31 марсианский день (сол).
+На 18-й сол миссии начинается сильнейшая пылевая буря, которая угрожает опрокинуть взлетную ракету MAV (Mars Ascent Vehicle), необходимую для возвращения экипажа на Землю. НАСА через центр управления полетом приказывает немедленно эвакуироваться. Команда спешно собирает оборудование и направляется к посадочному модулю через бушующую бурю.
+По пути к кораблю обломок антенны, сорванный ураганным ветром, пробивает скафандр Уотни и уносит его прочь от группы. Датчики жизнеобеспечения показывают критическое падение давления в костюме и отсутствие жизненных показателей. Льюис пытается найти Уотни, но видимость близка к нулю, а буря усиливается. Понимая, что дальнейшие поиски поставят под угрозу жизнь всего экипажа, она принимает мучительное решение покинуть планету без Уотни.
+Уотни приходит в сознание через несколько часов после отлета корабля. Обломок антенны глубоко вонзился в его живот, но парадоксальным образом герметизировал пробоину в скафандре, спасая его от разгерметизации. Раненый и одинокий, он добирается до жилого модуля "Хаб" и оказывает себе первую медицинскую помощь. Осознав масштаб ситуации, Уотни понимает, что следующая миссия на Марс прибудет только через четыре года, а запасов еды хватит максимум на 400 солов.
+Уотни начинает вести видеодневник, документируя свою борьбу за выживание. Он проводит инвентаризацию ресурсов и понимает, что для выживания ему необходимо наладить производство пищи. Используя свои знания ботаники, он решает выращивать картофель внутри жилого модуля. Для создания почвы он смешивает марсианский грунт с человеческими экскрементами экипажа, хранящимися в модуле.
+Создание "картофельной фермы" требует решения множества технических проблем. Уотни разбирает систему отопления, чтобы обогревать импровизированные грядки, создает систему полива из резервуаров с водой. Он тщательно рассчитывает калорийность картофеля и понимает, что даже при успешном выращивании урожая его хватит не на все время до прибытия спасательной миссии.
+На Земле директор НАСА Тедди Сандерс объявляет общественности о потере Уотни, проводятся поминальные службы. Однако через несколько недель спутниковые снимки показывают изменения около места посадки "Ареса-3" - кто-то перемещает оборудование и очищает солнечные панели от пыли. Специалисты НАСА во главе с директором марсианских миссий Винсентом Капуром приходят к выводу, что Уотни жив.
+НАСА создает специальную команду для разработки плана спасения. В нее входят Капур, специалист по траекториям Рич Пёрнелл, директор по связям с общественностью Энни Монтроуз и другие эксперты. Главная проблема заключается в том, что ближайшая возможность запуска спасательной миссии появится только через два года, что намного превышает возможности выживания Уотни.
+Тем временем на Марсе Уотни сталкивается с серьезной проблемой связи. Основная антенна связи была повреждена во время бури, и он не может связаться с Землей. Он вспоминает о старом аппарате "Патфайндер", который приземлился на Марсе в 1997 году на расстоянии нескольких сотен километров от его местоположения. Уотни решает отправиться к нему на вездеходе, чтобы восстановить связь.
+Путешествие к "Патфайндеру" требует тщательной подготовки. Уотни модифицирует вездеход, устанавливает дополнительные солнечные батареи и системы жизнеобеспечения. Поездка занимает несколько солов и проходит через опасную марсианскую местность с каньонами и каменистыми участками. Наконец он находит посадочный модуль с марсоходом "Соджорнер" и транспортирует их обратно на базу.
+Восстановление "Патфайндера" становится сложной инженерной задачей. Уотни разбирает и чистит компоненты двадцатилетней давности, заменяет поврежденные детали запчастями от современного оборудования. После множества попыток ему удается восстановить связь с Землей. Первое сообщение, которое он получает от НАСА, гласит: "Марк, мы знаем, что ты живой. Весь мир следит за тобой. Мы готовим план спасения."
+Установление связи кардинально меняет ситуацию. НАСА может предоставлять Уотни инструкции и поддержку, а он может сообщать о своем состоянии и проблемах. Однако система связи через "Патфайндер" ограничена - можно передавать только текстовые сообщения, указывая на буквы камерой марсохода.
+На Земле команда НАСА разрабатывает несколько планов спасения. Первый вариант предполагает отправку беспилотного грузового корабля с припасами, который должен долететь до Марса через девять месяцев. Второй план - ускоренная подготовка миссии "Арес-4" для эвакуации Уотни. Однако оба плана сопряжены с огромными рисками и техническими сложностями.
+Ситуация осложняется, когда картофельная ферма Уотни погибает из-за случайной разгерметизации жилого модуля. Проводя плановые работы по техническому обслуживанию, он повреждает шлюзовую систему, что приводит к взрывной декомпрессии. Весь урожай картофеля замерзает на марсианском холоде за считанные минуты. Это катастрофа - без картофеля Уотни не сможет прожить до прибытия спасательных припасов.
+НАСА принимает решение информировать экипаж "Ареса-3" о том, что Уотни жив. Команда находится на обратном пути к Земле и должна прибыть через несколько месяцев. Новость о выживании товарища потрясает астронавтов, особенно командира Льюис, которая винит себя за решение оставить Уотни на Марсе.
+Специалист по баллистике Рич Пёрнелл разрабатывает смелый план под названием "маневр Пёрнелла". Вместо возвращения на Землю корабль "Гермес" с экипажем "Ареса-3" может использовать гравитационный маневр вокруг Земли, получить дополнительное ускорение и вернуться к Марсу для спасения Уотни. Это продлит миссию на 533 дня, но даст наибольшие шансы на успешное спасение.
+Руководство НАСА первоначально отвергает план Пёрнелла как слишком рискованный, предпочитая сосредоточиться на доставке беспилотного грузового корабля. Однако запуск грузовика "Ирис" заканчивается катастрофой - ракета взрывается через несколько секунд после старта, уничтожив все припасы, предназначенные для Уотни.
+После неудачи с "Ирисом" экипаж "Гермеса" самовольно принимает решение выполнить маневр Пёрнелла. Они голосуют единогласно, несмотря на риски и продление миссии. Командир Льюис связывается с НАСА и сообщает, что они уже начали выполнение маневра. Перед свершившимся фактом руководство соглашается поддержать операцию спасения.
+Пока "Гермес" направляется обратно к Марсу, Уотни получает инструкции для невероятно сложной задачи. Он должен добраться до места посадки "Ареса-4" на расстоянии 3200 километров, где находится MAV (взлетный аппарат) следующей миссии. Это путешествие через всю планету потребует максимального использования всех его инженерных навыков и ресурсов.
+Уотни начинает модификацию вездехода для сверхдальнего путешествия. Он убирает все ненужное оборудование, устанавливает дополнительные батареи и солнечные панели, создает систему для ночевок в пути. Маршрут пролегает через наиболее опасные участки марсианской поверхности, включая долину Маринер - грандиозный каньон длиной 4000 километров.
+Путешествие к месту посадки "Ареса-4" становится эпическим приключением длиной в несколько недель. Уотни преодолевает крутые склоны каньонов, объезжает непроходимые участки, переживает пылевые бури, которые блокируют солнечный свет и препятствуют зарядке батарей. Каждый день приносит новые технические проблемы и угрозы для жизни.
+Наконец Уотни достигает места посадки "Ареса-4" и обнаруживает MAV в исправном состоянии. Однако выясняется серьезная проблема: аппарат слишком тяжел для встречи с "Гермесом" на орбите. Чтобы облегчить его, Уотни должен демонтировать систему наведения, обшивку и другие компоненты, фактически превратив космический корабль в управляемую бомбу.
+День запуска становится кульминацией всей операции спасения. Уотни запускает MAV, который летит практически вслепую, управляемый только командами с "Гермеса". Однако даже после всех модификаций аппарат не может набрать достаточную скорость для встречи с кораблем. Экипаж "Гермеса" принимает отчаянное решение - взорвать часть корабля, чтобы получить дополнительное ускорение и снизиться к MAV.
+Командир Льюис в скафандре покидает "Гермес" на страховочном тросе и вручную подбирает Уотни в космосе. Это рискованный маневр, который мог закончиться потерей обоих астронавтов, но он увенчивается успехом. После 549 солов одиночества на Марсе Уотни наконец воссоединяется со своей командой.
+Возвращение на Землю превращается в триумфальное событие мирового масштаба. История выживания Уотни вдохновила миллионы людей по всему миру и продемонстрировала возможности человеческого духа и научного знания. НАСА получает огромную поддержку общественности для продолжения марсианской программы.
+Фильм завершается эпилогом, показывающим дальнейшую судьбу персонажей. Уотни становится инструктором в программе подготовки астронавтов, обучая новое поколение исследователей. Его опыт выживания на Марсе становится ценным материалом для планирования будущих миссий. Экипаж "Ареса-3" продолжает свою космическую карьеру, а их героический поступок по спасению товарища входит в историю освоения космоса.
+История демонстрирует торжество научного мышления, человеческой изобретательности и международного сотрудничества перед лицом казалось бы безнадежной ситуации. Она показывает, что даже в самых отчаянных обстоятельствах знания, упорство и взаимопомощь могут преодолеть любые препятствия.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Зверополис', 'In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.', '2016-01-01', 1, '108 minutes', 'Zootopia', 8.0, 'Зверополис (русская локализация названия)
+В мире, где хищники и травоядные животные эволюционировали и научились жить в цивилизованном обществе, маленькая крольчиха Джуди Хоппс растет в сельской местности в семье морковных фермеров. С самого детства она мечтает стать полицейским в большом городе Зверополисе, несмотря на то что кролики традиционно занимаются только сельским хозяйством. Родители Джуди, Стю и Бонни Хоппс, а также все окружающие скептически относятся к ее мечте, считая, что кролики физически не способны быть полицейскими среди крупных и сильных животных. Во время детского спектакля местный лис Гидеон Грей издевается над Джуди и даже царапает ее когтями, когда она заступается за друзей, но это только укрепляет ее решимость доказать, что размер не имеет значения.
+Спустя годы упорных тренировок Джуди поступает в полицейскую академию в Зверополисе. Обучение дается ей крайне тяжело из-за физических недостатков - она самая маленькая среди курсантов, которые представлены носорогами, слонами, медведями и другими крупными животными. Однако благодаря своей изобретательности, ловкости и невероятному упорству Джуди успешно проходит все испытания, включая сложную полосу препятствий, и заканчивает академию первой в своем выпуске. На церемонии выпуска она произносит вдохновляющую речь о том, что в Зверополисе каждый может стать тем, кем захочет.
+По окончании академии Джуди получает назначение в первый центральный участок Зверополиса под началом грозного буйвола начальника Бого. Она полна энтузиазма и готова браться за самые сложные дела, но начальник, скептически относящийся к способностям кролика в полиции, назначает ее обычным парковочным инспектором. Джуди глубоко разочарована таким назначением, но решает выполнять свою работу максимально ответственно, надеясь доказать свою компетентность.
+В первый день работы в деловом районе Саванна-Сентрал Джуди встречает рыжего лиса Ника Уайлда, который вместе с маленьким лисенком фенеком по имени Финник пытается купить огромное мороженое в магазине слона Джерри Джамбо-младшего. Продавец отказывается обслуживать лисов, ссылаясь на право отказать в обслуживании, и Джуди, поверив в трогательную историю Ника о том, что он хочет порадовать своего сына в его день рождения, заступается за них и оплачивает покупку своими деньгами. Однако вскоре она обнаруживает, что стала жертвой мошенничества - Ник растапливает огромное мороженое и продает его в виде маленьких порций грызунам-леммингам в финансовом районе, а затем перепродает палочки от мороженого как древесину для строительства домиков хомячкам. Финник оказывается не ребенком, а взрослым напарником Ника с грубым голосом.
+На следующий день в участок приходит встревоженная выдриха миссис Оттертон с просьбой найти своего пропавшего мужа Эммита Оттертона, который исчез две недели назад. Начальник Бого отказывается заниматься этим делом, поскольку у полиции есть более приоритетные задачи - в городе пропали уже четырнадцать хищников, что вызывает серьезную обеспокоенность. Однако Джуди, движимая желанием помочь и доказать свою полезность, самовольно заявляет, что найдет Эммита. Бого в ярости от такой самодеятельности, но помощник мэра овца Беллуэзер, которая присутствует при разговоре, поддерживает Джуди. Бого вынужден согласиться, но ставит ультиматум - если Джуди не найдет Эммита за 48 часов, она будет уволена.
+Понимая, что без связей в городе ей не справиться, Джуди отправляется на поиски Ника, который хорошо знает преступный мир Зверополиса. Она находит его торгующим мороженым и шантажирует записью его мошеннических действий с предыдущего дня, угрожая сообщить в налоговую службу о его незаконном доходе. Ник неохотно соглашается помочь, понимая, что у него нет выбора, но делает это с явной неохотой и постоянно напоминает Джуди о наивности и предрассудках, которые она проявляет по отношению к хищникам.
+Ник ведет Джуди в департамент транспортных средств в район Тундратаун, где работают исключительно ленивцы, включая его старого приятеля Флэша. Процесс получения информации о номерном знаке лимузина занимает мучительно долгое время из-за крайне медленной речи и движений ленивцев, что приводит Джуди в отчаяние. В конце концов они узнают, что лимузин принадлежит тундровому лимузинному сервису и что Эммит был его пассажиром в день исчезновения.
+Отправившись в тундровый район, Джуди и Ник выясняют, что лимузинная служба принадлежит криминальному авторитету по прозвищу мистер Биг. Проникнув на его территорию, они попадают в руки белых медведей-охранников Рэймонда и Кевина, которые доставляют их к боссу. К удивлению Джуди, мистер Биг оказывается крошечной арктической землеройкой, но несмотря на свой размер, он является одним из самых влиятельных криминальных авторитетов города. Биг крайне недоволен вторжением на свою территорию и собирается наказать непрошенных гостей, заморозив их в глыбах льда.
+Однако в последний момент выясняется, что Джуди несколькими днями ранее спасла жизнь дочери мистера Бига, малышки Фру-Фру, когда та провалилась под растаявший лед. В благодарность за спасение своей дочери мистер Биг рассказывает, что его водитель-белый медведь Манчас видел, как Эммита в состоянии паники похитили два волка на черной машине. Биг дает Джуди и Нику адрес, где можно найти Манчаса.
+Дуэт отправляется в дождевые леса к дому Манчаса, где водитель рассказывает им детали того дня. По его словам, Эммит вел себя очень странно и агрессивно, постоянно повторяя слово "ночные вопли", а затем напал на него самого. Манчас показывает царапины, которые оставил Эммит, но внезапно сам начинает проявлять признаки одичания - его глаза становятся дикими, он рычит и нападает на Джуди и Ника. Им едва удается спастись, забравшись на мостик через ущелье, но Манчас срывается вниз и исчезает в густой растительности.
+Когда на место происшествия прибывает подкрепление во главе с начальником Бого, Манчас бесследно исчезает, что ставит под сомнение рассказ Джуди. Бого готов уволить ее за провал операции, но Ник неожиданно заступается за партнершу, указывая на найденные ими улики. Начальник дает им еще немного времени на расследование.
+Анализируя найденные камеры видеонаблюдения, Джуди обнаруживает, что Манчаса увезли волки на черной машине в том же направлении, куда ранее везли Эммита. Следуя по следу, они прибывают к заброшенному госпиталю в отдаленной части города, где обнаруживают секретное убежище. Здесь в металлических клетках содержатся все пропавшие хищники, включая Эммита и Манчаса, которые находятся в полностью диком состоянии, утратив разум и способность к членораздельной речи.
+В убежище появляется мэр Зверополиса лев Леодор Львиносерд в сопровождении своих волков-охранников. Джуди и Ник подслушивают разговор мэра с доктором Мэдж Хани Барсук, который занимается исследованием одичавших хищников. Львиносерд объясняет, что скрывает больных животных от общественности, опасаясь паники, которая может разрушить хрупкое равновесие между видами в городе. Он отчаянно ищет причину и лекарство от загадочной болезни, поразившей хищников.
+Джуди удается записать разговор мэра на свой телефон, получив таким образом доказательства его причастности к похищениям. Они передают информацию в полицию, после чего Львиносерд арестован по обвинению в похищении. Джуди мгновенно становится героиней города, а пресса называет ее первым кроликом-детективом в истории Зверополиса.
+На пресс-конференции, посвященной раскрытию дела, Джуди пытается объяснить журналистам природу странной болезни, поразившей хищников. Однако под давлением вопросов о том, почему одичанию подвержены только хищники, она неосторожно предполагает, что это может быть связано с их биологическими особенностями и древними инстинктами. Ее слова вырываются из контекста и транслируются по всему городу, вызывая панику среди населения.
+Заявления Джуди приводят к серьезному социальному кризису в Зверополисе. Травоядные животные начинают бояться и избегать хищников, считая их потенциально опасными. Многие хищники теряют работу, их детей исключают из школ, а в общественном транспорте появляются отдельные вагоны для разных видов животных. Город раскалывается на две враждующие группы, и повсюду вспыхивают беспорядки и акции протеста.
+Ник, который является лисом-хищником, болезненно воспринимает слова Джуди о биологической предрасположенности хищников к агрессии. Он чувствует себя преданным и обманутым, поскольку считал Джуди единственным травоядным, который видел в нем личность, а не потенциальную угрозу. В гневе и разочаровании Ник разрывает отношения с Джуди, возвращает ей запись с его мошенничеством и уходит, заявив, что она такая же предвзятая, как и все остальные.
+Джуди осознает масштаб катастрофы, которую спровоцировали ее неосторожные слова. Не в силах справиться с чувством вины и давлением общественности, она подает заявление об отставке начальнику Бого и покидает Зверополис, вернувшись в родную деревню Банни-Бэрроуз к своим родителям-морковным фермерам.
+В деревне Джуди пытается найти утешение в привычной работе на ферме, но не может забыть о произошедшем. Родители стараются поддержать дочь, но сами проявляют предрассудки по отношению к хищникам. Во время разговора с родителями Джуди узнает, что они используют репелленты из воющих ягод, чтобы отпугивать хищников от своих посевов. Мать объясняет, что эти растения ядовиты и вызывают психотические реакции у хищников, делая их агрессивными и неконтролируемыми.
+Эта информация озаряет Джуди пониманием истинной причины одичания хищников в городе. Она понимает, что кто-то намеренно использует токсины воющих ягод для того, чтобы свести хищников с ума и настроить против них остальное население. Исполненная решимости исправить свою ошибку и найти настоящего виновника, Джуди немедленно возвращается в Зверополис.
+Первым делом она находит Ника, который работает мошенником под мостом в плохом районе города. Джуди искренне извиняется перед ним за свои слова и предрассудки, признавая, что была неправа. Она рассказывает ему о своем открытии относительно воющих ягод и просит помочь в расследовании настоящего заговора. Ник, хотя и все еще обижен, соглашается помочь, поскольку понимает важность восстановления справедливости.
+Вместе они начинают поиски источника токсина в городе. Их расследование приводит их в музей естественной истории, где в подземных лабораториях они обнаруживают секретную оранжерею с плантациями воющих ягод. Здесь же находится химическая лаборатория, где из растений извлекается концентрированная сыворотка. За работой наблюдает баран Дуг Рэм и несколько овец в защитных костюмах.
+Джуди и Ник становятся свидетелями процесса производства сыворотки и обнаруживают специальные пистолеты-шприцы, которые используются для стрельбы капсулами с токсином. Они понимают, что именно таким образом неизвестные злоумышленники заражали хищников в городе, выстреливая в них капсулы во время их повседневной деятельности.
+Внезапно в лаборатории появляется помощник мэра овца Беллуэзер в сопровождении баранов-охранников. Она обнаруживает Джуди и Ника и понимает, что они раскрыли заговор. Загнанная в угол Беллуэзер решает избавиться от свидетелей и признается в том, что именно она была мастермайндом всей операции.
+Беллуэзер объясняет свои мотивы долгим монологом о том, как травоядных животных никогда не воспринимали всерьез в обществе, где доминируют крупные и сильные виды. Она устала от того, что ее и подобных ей мелких травоядных постоянно игнорируют, недооценивают и используют только как исполнителей чужой воли. Беллуэзер считает, что единственный способ изменить баланс сил в обществе - это дискредитировать хищников, представив их как биологически опасных и неконтролируемых существ.
+План Беллуэзер заключался в том, чтобы систематически сводить с ума случайных хищников по всему городу, создавая впечатление эпидемии одичания. Это должно было привести к тому, что общество отвернется от хищников, а травоядные животные, особенно мелкие виды, получат больше власти и влияния. Она манипулировала общественным мнением через СМИ и использовала страхи населения для достижения своих политических целей.
+Беллуэзер приказывает Дугу выстрелить сывороткой в Ника, чтобы продемонстрировать Джуди ужасные последствия токсина и заставить ее молчать. Джуди в ужасе наблюдает, как Ник якобы превращается в дикого зверя и нападает на нее с рычанием и оскаленными зубами. Беллуэзер торжествует, считая, что ее план удался, и начинает диктовать в диктофон ложную версию событий, согласно которой хищник напал на безобидного кролика.
+Однако это оказывается спектаклем, разыгранным Джуди и Ником. Они заранее заменили капсулы с токсином на безобидные ягоды черники, а Ник только притворялся одичавшим. Все признания Беллуэзер записываются на диктофон, предоставляя неопровержимые доказательства ее вины. Когда обман раскрывается, Беллуэзер пытается скрыться, но Джуди и Ник задерживают ее до прибытия полиции.
+Беллуэзер и все ее сообщники арестованы по обвинению в терроризме, заговоре и попытке свержения общественного порядка. Хищники, пострадавшие от токсина, получают противоядие и постепенно возвращаются к нормальной жизни. Эммит Оттертон воссоединяется со своей семьей, Манчас восстанавливается и возвращается к работе водителем, а мэр Львиносерд освобожден из тюрьмы после снятия всех обвинений.
+Джуди восстанавливается в должности детектива полиции и публично извиняется перед всеми хищниками города за свои предвзятые заявления. Она признает, что мир гораздо сложнее простого деления на хищников и жертв, и что каждый индивид заслуживает оценки по своим личным качествам, а не по принадлежности к биологическому виду. Ник поступает в полицейскую академию и после успешного окончания становится официальным напарником Джуди.
+Зверополис постепенно залечивает раны межвидового конфликта. Общество становится более осознанным в вопросах предрассудков и дискриминации, а отношения между различными видами животных улучшаются. Гидеон Грей, лис, который в детстве издевался над Джуди, становится успешным пекарем и извиняется перед ней за свое прошлое поведение, признавая, что его агрессия была вызвана страхом и непониманием.
+Фильм завершается сценой, где Джуди и Ник патрулируют улицы Зверополиса как слаженная команда детективов. Они получают вызов о новом преступлении и с энтузиазмом отправляются на задание, демонстрируя, что их дружба и профессиональное партнерство преодолели все предрассудки. В финальных кадрах показан концерт поп-звезды газели Газель, которая исполняет песню "Попробуй все" перед многотысячной аудиторией представителей всех видов животных, символизируя единство и гармонию в обществе Зверополиса.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Чудо', 'Based on the New York Times bestseller, this movie tells the incredibly inspiring and heartwarming story of August Pullman, a boy with facial differences who enters the fifth grade, attending a mainstream elementary school for the first time.', '2017-01-01', 1, '113 minutes', 'Wonder', 8.0, 'Фильм рассказывает историю десятилетнего мальчика Августа Пулмана по прозвищу Огги, который родился с редким генетическим заболеванием под названием синдром Тричера Коллинза, из-за которого его лицо сильно деформировано. Мальчик имеет недоразвитые скулы, маленькие уши и проблемы со слухом, из-за чего вынужден носить слуховой аппарат. За свою жизнь Огги перенес двадцать семь пластических операций, но его внешность все еще сильно отличается от обычных детей, что вызывает испуганные взгляды и неловкость у окружающих.
+До десяти лет Огги обучался дома с матерью Изабел, которая использовала творческие методы обучения и помогала сыну развивать любовь к науке, особенно к астрономии. Мальчик мечтает стать ученым и изучать космос. Однако теперь родители решают отдать его в обычную частную школу Бичер Преп в пятый класс, понимая, что домашнее обучение не может дать ему полноценного социального опыта и подготовки к взрослой жизни.
+Отец Огги Нейт работает и старается поддерживать в семье атмосферу нормальности, часто используя юмор чтобы разрядить напряженные моменты. Мать Изабел бросила учебу в аспирантуре по английской литературе, чтобы полностью посвятить себя заботе о сыне и его медицинским потребностям. У мальчика также есть пятнадцатилетняя старшая сестра Виа, которая очень его любит и защищает, но иногда чувствует себя забытой и невидимой из-за того, что все внимание семьи и ресурсы сосредоточены на Огги. Семья всегда поддерживала мальчика, называя его своим чудом, потому что врачи изначально не ожидали, что он выживет при рождении из-за серьезности его состояния.
+Перед началом учебного года директор школы мистер Тушман, понимающий и мудрый педагог, организовывает специальную встречу Огги с тремя учениками его будущего класса, чтобы помочь мальчику адаптироваться. Один из них, Джек Уилл, проявляет искреннее дружелюбие и естественность в общении, но двое других реагируют по-разному. Особенно выделяется Джулиан, избалованный мальчик из богатой семьи, который ведет себя неприветливо и задает бестактные вопросы о внешности Огги, например, спрашивает, что случилось с его лицом, и комментирует его необычный вид.
+В первый день школы Огги носит шлем астронавта, который стал его защитным механизмом от взглядов окружающих, но добрая учительница английского языка мисс Петроса мягко убеждает его снять головной убор, объясняя, что в классе он находится в безопасности. Когда Огги снимает шлем, реакция одноклассников варьируется от шока до любопытства.
+Поначалу большинство одноклассников инстинктивно сторонятся Огги, некоторые даже избегают любых прикосновений к нему, так как среди детей распространяется суеверие о том, что можно заразиться "чумой Огги" если коснуться его. Джулиан особенно жесток в своем поведении, он не только сам избегает Огги, но и активно подначивает других детей держаться от него подальше, распространяет обидные слухи и даже оставляет записки с угрозами в шкафчике мальчика. Он также фотошопит школьную фотографию класса, удаляя с нее Огги.
+Однако постепенно ситуация начинает меняться. Джек Уилл, который изначально был назначен показать Огги школу по просьбе директора, искренне сближается с мальчиком и становится его настоящим другом. Они обнаруживают общие интересы, особенно любовь к "Звездным войнам", и проводят время вместе, играя и разговаривая о научной фантастике. Огги также находит поддержку в лице девочки по имени Саммер, доброй и независимой ученицы, which first decides to sit with him at lunch when no one else will, breaking the social isolation that surrounds him.
+Тем временем у Виа начинаются собственные серьезные проблемы в старшей школе. Ее лучшая подруга с детства Миранда, которая практически была членом семьи Пулманов и очень любила Огги, внезапно отдаляется от нее после возвращения из летнего лагеря. Миранда изменилась внешне, покрасив волосы в розовый цвет, и эмоционально, став более замкнутой и избегающей семью Пулманов. Виа чувствует себя потерянной и одинокой, не понимая причин такого поведения подруги. Она знакомится с новой одноклассницей Элеанор и мальчиком Джастином, музыкантом и актером, с которым у нее постепенно завязываются романтические отношения. Виа решает участвовать в школьной постановке пьесы "Наш город" Торнтона Уайлдера, где получает главную роль Эмили.
+В школе у Огги ситуация серьезно осложняется в День Хэллоуина, когда он решает сменить свой костюм в последний момент и случайно подслушивает разговор Джека с Джулианом и другими мальчиками. В этом разговоре Джек, пытаясь вписаться в группу и защитить себя от давления Джулиана, говорит, что убил бы себя, если бы выглядел как Огги, и что единственная причина, по which he hangs out with Auggie is because Mr. Tushman asked him to. Огги, который считал Джека своим лучшим и единственным настоящим другом, чувствует себя полностью преданным и опустошенным. Он начинает избегать Джека, не отвечает на его попытки общения и погружается в депрессию.
+Джек искренне не понимает, что произошло, и отчаянно пытается восстановить отношения с Огги, но мальчик отказывается с ним разговаривать. Ситуация становится еще более напряженной, когда Джек начинает понимать, что потерял важную дружбу. Правда открывается только тогда, когда Саммер намекает Джеку на то, что произошло в День Хэллоуина, и он осознает масштаб своей ошибки. Джек пытается искренне извиниться перед Огги, объясняя, что сказал те слова только для того, чтобы Джулиан перестал его преследовать, и что на самом деле дружба с Огги стала для него самой важной и настоящей.
+Конфликт между Джеком и Джулианом достигает пика, когда Джулиан продолжает делать обидные комментарии об Огги, и Джек физически нападает на него, защищая своего друга. Драка приводит к тому, что Джулиана временно исключают из школы. Его родители, особенно мать фотомодель, которая сама имеет поверхностные ценности, яростно защищают сына и обвиняют школьную администрацию в том, что она подвергает их ребенка травмирующему опыту, заставляя учиться рядом с Огги. Они утверждают, что внешность Огги негативно влияет на психическое здоровье других детей, и даже угрожают забрать Джулиана из школы и организовать бойкот среди других богатых родителей.
+Кульминационным моментом фильма становится школьная поездка в природный лагерь, где пятиклассники проводят несколько дней на открытом воздухе. Во время вечернего похода в лес для наблюдения за звездами Огги и Джек отходят от основной группы и сталкиваются с группой агрессивных старших учеников из другой школы. Эти подростки, увидев необычную внешность Огги, начинают жестоко издеваться над ним, обзывают его монстром и уродом, и ситуация быстро перерастает в физическую угрозу. Когда старшеклассники становятся особенно агрессивными и начинают толкать Огги, несколько его одноклассников, включая даже тех, кто раньше избегал его и поддерживал Джулиана, неожиданно приходят на помощь. Эйден, Майлз и другие мальчики встают на защиту Огги и помогают ему и Джеку в драке против более старших и сильных противников. Этот момент становится поворотным в отношении всего класса к Огги, поскольку дети понимают, что он просто такой же ребенок, как они, который заслуживает защиты и дружбы.
+После возвращения из лагеря атмосфера в школе кардинально меняется. Огги полностью интегрируется в школьный коллектив, его одноклассники перестают замечать его внешность и начинают ценить его ум, доброту и чувство юмора. Мальчик показывает отличные академические результаты, особенно в науках, и становится популярным среди сверстников за свою эрудицию и способность помочь с домашними заданиями.
+Параллельно разрешается ситуация с Виа и Мирандой. Выясняется, что Миранда отдалилась от семьи не из-за негативных чувств, а наоборот, из-за сильной привязанности к ним. В летнем лагере, рассказывая другим детям о себе, она выдала семью Пулманов за свою собственную, поскольку ее родители переживают развод и дома у нее неблагополучная обстановка. Семья Огги стала для нее идеалом семейного тепла, но она чувствует себя виноватой за эту ложь и не знает, как объяснить свое поведение. В день спектакля главная актриса заболевает, и Миранда, которая была дублером, настаивает на том, чтобы роль отдали Виа, поскольку она знает, как важно для девочки, чтобы семья увидела ее выступление.
+На выпускной церемонии пятого класса директор Тушман произносит речь о важности доброты и вручает специальные награды. Огги получает медаль Генри Уорда Бичера за исключительное мужество и доброту, и директор отмечает, что за свой первый год в школе мальчик сумел изменить сердца и умы всех окружающих, научив их истинному значению человечности и принятия различий. Вся семья Огги присутствует на церемонии и плачет от гордости и счастья, видя, как их сын получает признание не несмотря на свою особенность, а благодаря своему характеру.
+Фильм заканчивается сценой, где Огги получает стоячую овацию от всего класса, учителей и родителей. В его внутреннем монологе он размышляет о том, что каждый человек заслуживает овации хотя бы раз в жизни, поскольку все мы боремся со своими трудностями и стараемся быть лучше. В финальных кадрах показано, как все дети играют вместе во дворе школы, и Огги больше не выделяется среди них как особенный или отличающийся, а является просто одним из друзей в большой, принимающей группе сверстников, которые научились видеть за внешностью настоящего человека.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Парень из гетто', 'A coming-of-age story based on the lives of street rappers in Mumbai.', '2019-01-01', 1, '154 minutes', 'Gully Boy', 8.0, 'Фильм начинается с показа жизни в трущобах Дхарави в Мумбаи, где проживает 22-летний Мурад Ахмед из мусульманской семьи. Мурад работает водителем у богатого дяди своего друга Мохита, развозя его по элитным районам города, что позволяет ему видеть контраст между жизнью богатых и бедных. Его отец Шакир работает шофером уже много лет, мечтая когда-нибудь купить собственное такси, и постоянно внушает сыну важность стабильной работы и практичного подхода к жизни.
+Мурад тайно встречается со своей одноклассницей Сайфой Мирзой, которая готовится к поступлению в медицинский колледж. Девушка происходит из такой же бедной семьи, но отличается целеустремленностью и верой в то, что образование поможет ей вырваться из нищеты. Их отношения развиваются в тайне, поскольку родители Сайфы, особенно ее строгий отец, против их романа и уже присматривают для дочери более подходящего жениха из обеспеченной семьи.
+Переломный момент наступает, когда Мурад случайно попадает на подпольное рэп-выступление в одном из клубов и встречает местного рэпера MC Sher настоящее имя Шрикант. MC Sher живет в еще более стесненных условиях, ютясь в крошечной комнате, но обладает невероятной харизмой и мастерством в рэпе. Он сразу замечает потенциал в Мураде и начинает обучать его основам хип-хоп культуры, объясняя, что рэп это не просто музыка, а способ рассказать правду о своей жизни и проблемах общества.
+Под руководством MC Sher Мурад начинает писать свои первые тексты, черпая вдохновение из повседневной жизни в трущобах, наблюдений за социальным неравенством и личных переживаний. Его первые попытки неуверенные, но постепенно он находит свой голос и стиль. MC Sher учит его не только технике рэпа, но и тому, как держаться на сцене, взаимодействовать с публикой и передавать эмоции через музыку.
+Семейная драма разворачивается, когда отец Мурада внезапно объявляет о своем намерении жениться во второй раз. Его избранницей становится Насрин, девушка значительно моложе его, почти ровесница самого Мурада. Это решение шокирует всю семью, особенно мать Мурада Разию, которая чувствует себя преданной и униженной. Напряженность в доме усиливается, когда Насрин переезжает к ним, и женщинам приходится делить тесное жилище и домашние обязанности.
+Мурад все глубже погружается в мир андеграундного хип-хопа, регулярно посещая рэп-баттлы в различных районах Мумбаи. Он начинает участвовать в соревнованиях, где рэперы импровизируют и соревнуются в мастерстве, критикуя друг друга в ритме и рифме. Первые выступления даются ему тяжело, он нервничает и иногда забывает слова, но постепенно обретает уверенность и начинает выигрывать баттлы.
+Отношения с Сайфой развиваются на фоне их общих мечтаний о лучшем будущем. Они проводят время вместе, гуляя по городу, обсуждая свои планы и поддерживая друг друга. Сайфа верит в талант Мурада и поощряет его музыкальные увлечения, хотя понимает, что рэп пока не может обеспечить стабильный доход. Они мечтают о том времени, когда смогут открыто быть вместе и создать семью.
+Конфликт с отцом достигает пика, когда Шакир случайно узнает о музыкальных увлечениях сына. Он категорически запрещает Мураду заниматься рэпом, считая это несерьезным увлечением, которое только отвлекает от поиска настоящей работы. Отец настаивает на том, чтобы сын сосредоточился на вождении и возможно в будущем смог купить собственное такси или найти другую стабильную работу.
+Параллельно развивается сюжетная линия с другом Мурада, который выбирает криминальный путь заработка, торгуя наркотиками. Это служит контрастом к пути, который выбирает сам Мурад, показывая альтернативные способы выхода из бедности и их последствия. Мурад видит, как криминал разрушает жизни его сверстников, что еще больше укрепляет его в решении добиваться успеха честным путем через музыку.
+Первый серьезный прорыв происходит, когда Мурад записывает свой дебютный трек с помощью MC Sher. Песня рассказывает о жизни в трущобах, о мечтах молодежи и социальной несправедливости. Трек быстро становится популярным в местной андеграундной сцене и распространяется через социальные сети, привлекая внимание более широкой аудитории.
+Успех первой записи открывает перед Мурадом новые возможности. Его приглашают выступать на различных площадках, а его тексты начинают цитировать молодые люди из похожих социальных слоев. Музыкальные продюсеры начинают интересоваться его творчеством, видя в нем потенциал для коммерческого успеха.
+Кульминационным моментом становится участие Мурада в престижном общенациональном конкурсе рэпа, где он должен выступить перед большой аудиторией и профессиональным жюри. Подготовка к этому выступлению проходит в атмосфере сильного стресса, поскольку от результата зависит его музыкальное будущее. MC Sher помогает ему отработать выступление до совершенства.
+На конкурсе Мурад исполняет свою авторскую композицию, которая объединяет все темы, волнующие его: жизнь в трущобах, стремление к переменам, любовь, семейные конфликты и веру в лучшее будущее. Его выступление настолько мощное и искреннее, что покоряет не только жюри, но и всю аудиторию. Победа в конкурсе становится поворотным моментом в его карьере.
+После победы к Мураду обращаются крупные музыкальные лейблы с предложениями о сотрудничестве. Он получает возможность записать профессиональный альбом и выступать на больших концертных площадках. Успех сына заставляет даже строгого отца пересмотреть свое отношение к его музыкальным амбициям, и семья наконец объединяется в поддержке его карьеры.
+Отношения с Сайфой также получают развитие - ее родители, видя перспективы Мурада в музыкальной индустрии, больше не возражают против их отношений. Сайфа успешно поступает в медицинский колледж, и молодые люди строят планы на совместное будущее, где каждый сможет реализовать свои профессиональные амбиции.
+Фильм завершается сценами, показывающими, как Мурад, добившись успеха, не забывает о своих корнях. Он продолжает жить в том же районе, помогает другим молодым рэперам из трущоб и использует свою популярность для привлечения внимания к социальным проблемам. В финальных кадрах он выступает на большой сцене перед тысячами зрителей, исполняя песни, которые родились из его личного опыта жизни в бедности, но теперь вдохновляют миллионы людей по всей стране. История показывает, что талант, упорство и верность своим принципам могут разрушить любые социальные барьеры и открыть путь к мечте.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('26 грабителей', 'A gang of con-men rob prominent rich businessmen and politicians by posing as C.B.I and income tax officers.', '2013-01-01', 1, '144 minutes', 'Special Chabbis', 8.0, 'В 1987 году в Нью-Дели группа мошенников во главе с харизматичным Аджаем Сингхом разрабатывает дерзкий план ограбления ювелирного магазина. Аджай собирает команду из опытных аферистов, включая своего верного друга Шарма, техника-взломщика Иквала, актера Джоги и других специалистов. Их план основан на том, чтобы выдать себя за сотрудников Центрального бюро расследований и провести якобы официальный рейд в одном из самых престижных ювелирных магазинов столицы.
+Команда тщательно готовится к операции, изучая поведение настоящих офицеров, изготавливая поддельные документы и униформу. Они арендуют автобус и превращают его в передвижной штаб, оснащенный всем необходимым оборудованием. Аджай проводит детальную разведку, изучая расположение магазина, режим работы охраны и привычки владельцев.
+В назначенный день команда в форме сотрудников ЦБР прибывает к ювелирному магазину и объявляет о проведении внезапной проверки по подозрению в торговле контрабандными драгоценностями. Владельцы и сотрудники магазина, напуганные серьезностью обвинений, полностью подчиняются требованиям мнимых офицеров. Мошенники профессионально изображают процедуру обыска, составляют поддельные протоколы и постепенно упаковывают все драгоценности в официальные мешки как вещественные доказательства.
+Операция длится несколько часов, в течение которых аферисты поддерживают атмосферу официального расследования. Они даже вызывают нескольких покупателей для дачи показаний и ведут себя как настоящие следователи. Аджай демонстрирует исключительное актерское мастерство, убедительно исполняя роль старшего офицера ЦБР.
+Завершив "изъятие улик", команда покидает магазин, унося с собой драгоценности на огромную сумму. Владельцы даже благодарят их за профессионализм и обещают сотрудничать со следствием. Только через несколько часов, когда в магазин прибывают настоящие сотрудники полиции для проверки, выясняется, что произошло дерзкое ограбление.
+Дело привлекает внимание опытного офицера ЦБР Васима Хана, который начинает расследование. Хан быстро понимает, что имеет дело с исключительно профессиональными мошенниками, способными так убедительно имитировать действия правоохранительных органов. Он изучает их методы и приходит к выводу, что за преступлением стоит хорошо организованная группа с глубоким знанием полицейских процедур.
+Тем временем Аджай и его команда наслаждаются успехом операции, но понимают, что теперь за ними ведется охота. Они решают лечь на дно и постепенно реализовать украденные драгоценности через проверенные каналы. Однако слава их дерзкого ограбления распространяется по криминальному миру, привлекая нежелательное внимание как полиции, так и конкурирующих преступных группировок.
+Хан методично сужает круг поисков, анализируя улики и опрашивая свидетелей. Он составляет психологический портрет главаря банды и предполагает, что тот может попытаться повторить подобную операцию. Следователь понимает, что имеет дело с преступником исключительного интеллекта и харизмы, способным планировать сложные многоходовые операции.
+В конце концов Хану удается выйти на след банды через их связи в криминальном мире. Начинается напряженная игра в кошки-мышки между опытным следователем и хитроумными мошенниками. Аджай понимает, что его время на свободе ограничено, и планирует последнюю крупную операцию перед тем, как скрыться из страны.
+Финальное противостояние происходит во время попытки банды провернуть еще одну аферу. Хан и его команда окружают преступников, но Аджай до последнего момента пытается перехитрить правосудие. В итоге большая часть банды арестована, но дело получает широкую огласку как один из самых изобретательных видов мошенничества в истории индийской криминалистики. Фильм основан на реальных событиях и показывает, как обычные люди могут использовать социальную психологию и актерское мастерство для совершения дерзких преступлений.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Короткий срок 12', 'A 20-something supervising staff member of a residential treatment facility navigates the troubled waters of that world alongside her co-worker and longtime boyfriend.', '2013-01-01', 1, '96 minutes', 'Short Term 12', 8.0, 'Фильм рассказывает историю двадцатисемилетней Грейс, которая работает супервайзером в учреждении для подростков группы риска под названием "Short Term 12" - временном приюте для детей и подростков в возрасте от тринадцати до восемнадцати лет, которые не могут жить дома по различным причинам, включая жестокое обращение, пренебрежение, психические заболевания или проблемы с законом. Грейс сама в прошлом была воспитанницей подобного учреждения, что дает ей глубокое понимание проблем, с которыми сталкиваются подростки.
+Вместе с Грейс работает ее парень Мейсон, добрый и терпеливый воспитатель, который также имеет опыт пребывания в приюте в подростковом возрасте. Их отношения длятся уже несколько лет, и Мейсон готов к более серьезным обязательствам, включая возможность брака и создания семьи, но Грейс испытывает сильный страх перед углублением отношений из-за травматичного прошлого.
+В учреждение прибывает новая воспитанница - семнадцатилетняя Джейден, умная и талантливая девочка, которая пишет рассказы и ведет себя отстраненно и агрессивно. Джейден была изъята из семьи службой опеки после инцидента, подробности которого остаются неясными. Девочка носит многочисленные шрамы на руках от самоповреждений и категорически отказывается открываться персоналу или участвовать в терапевтических сессиях.
+Грейс чувствует особую связь с Джейден, узнавая в ее поведении и защитных механизмах отражение собственного болезненного опыта. Она пытается достучаться до девочки, используя нетрадиционные методы, включая совместное время вне официальных сессий и попытки понять ее через творчество. Джейден пишет метафорический рассказ об акуле и осьминоге, где осьминог защищает маленькую рыбку от акулы, пока сам не погибает, что Грейс интерпретирует как закодированное послание о домашнем насилии.
+Тем временем в приюте происходят другие драматические события. Маркус, восемнадцатилетний воспитанник, который скоро должен покинуть учреждение по достижению совершеннолетия, испытывает сильную тревогу и страх перед неопределенным будущим. У него нет семьи, которая могла бы его поддержать, и перспектива самостоятельной жизни кажется ему непреодолимой. Маркус начинает демонстрировать деструктивное поведение, включая попытки побега и агрессию по отношению к персоналу, особенно к новому сотруднику Нэйту, недавнему выпускнику колледжа, который еще не имеет достаточного опыта работы с травмированными подростками.
+Нэйт, несмотря на искренние намерения помочь, часто применяет неподходящие подходы, основанные на теоретических знаниях, но не учитывающие реальную сложность ситуаций, с которыми сталкиваются воспитанники. Его попытки использовать стандартные психологические техники часто приводят к обратному эффекту, особенно с такими сложными случаями, как Маркус.
+Ситуация осложняется, когда Грейс узнает, что она беременна. Новость вызывает у нее панику и сильнейшую тревогу, поскольку активирует глубокие травмы из ее собственного детства. Грейс боится стать матерью из-за страха повторить циклы жестокого обращения, которые она пережила в собственной семье. Она скрывает беременность от Мейсона, не зная, как сообщить ему эту новость и справиться с собственными эмоциями.
+Параллельно Грейс продолжает работать с Джейден, и постепенно между ними устанавливается доверие. Джейден начинает открываться и рассказывает о своей ситуации дома, где она подвергалась сексуальному насилию со стороны отца. Девочка была изъята из семьи после того, как попыталась защитить свою младшую сестру от подобного обращения. Грейс понимает, что Джейден испытывает сильное чувство вины за то, что не смогла полностью защитить сестру, и страдает от посттравматического стрессового расстройства.
+Кризисная ситуация достигает пика, когда Маркус, не справляясь с приближающимся восемнадцатилетием и необходимостью покинуть приют, совершает серьезную попытку самоубийства. Инцидент потрясает всех сотрудников и воспитанников учреждения, особенно Грейс, которая чувствует личную ответственность за произошедшее и винит себя в том, что не смогла предотвратить трагедию.
+После попытки суицида Маркуса Грейс переживает эмоциональный срыв. Накопившиеся стресс от работы, беременность, которую она все еще скрывает, и активация собственных травм приводят к тому, что она начинает вести себя непредсказуемо и принимать импульсивные решения. Грейс нарушает протоколы учреждения, когда узнает, что Джейден может быть возвращена в семью к отцу из-за недостатка доказательств насилия.
+Не сумев повлиять на решение через официальные каналы, Грейс совершает отчаянный поступок - она помогает Джейден сбежать из приюта и везет ее к дому, где живет ее младшая сестра, чтобы девочка могла убедиться в ее безопасности. Этот импульсивный план оказывается катастрофическим, поскольку приводит к конфронтации с отцом Джейден, которая заканчивается вызовом полиции и арестом Грейс за похищение несовершеннолетней.
+Арест и последующие юридические проблемы заставляют Грейс наконец признаться Мейсону в беременности и рассказать о своих страхах. Мейсон, несмотря на шок от произошедших событий, остается поддерживающим и понимающим. Он помогает Грейс осознать, что ее страхи перед материнством коренятся в собственных детских травмах, но это не означает, что она обречена повторить ошибки своих родителей.
+Грейс временно отстраняют от работы в приюте, и она вынуждена пройти обязательную терапию и разобраться со своими психологическими проблемами. Этот период становится для нее временем болезненного, но необходимого самопознания и исцеления. Она начинает работать с терапевтом над проработкой детских травм и учится справляться с тревогой и посттравматическими симптомами.
+Тем временем ситуация с Джейден получает положительное разрешение. Инцидент с побегом, несмотря на его неправильность с процедурной точки зрения, привлекает внимание к ее случаю, и дополнительное расследование подтверждает факты насилия в семье. Джейден не возвращают к отцу, и ей обеспечивают безопасное размещение, а ее младшая сестра также получает защиту.
+Маркус постепенно восстанавливается после попытки суицида и получает дополнительную поддержку для перехода к самостоятельной жизни. Программа учреждения расширяется, чтобы лучше подготавливать воспитанников к совершеннолетию и предоставлять им больше ресурсов для успешной интеграции в общество.
+Через несколько месяцев Грейс возвращается к работе в "Short Term 12", но уже как более зрелый и психологически здоровый специалист. Она научилась устанавливать здоровые границы между личной жизнью и работой, а также обращаться за помощью, когда это необходимо. Ее отношения с Мейсоном укрепились, и они готовятся к рождению ребенка как команда, поддерживающая друг друга.
+Фильм заканчивается сценой, где Грейс проводит групповую сессию с воспитанниками, включая новых детей, которые только прибыли в учреждение. Она рассказывает им историю, похожую на ту, что когда-то написала Джейден, но с более обнадеживающим концом - о том, как маленькая рыбка, защищенная осьминогом, вырастает и сама становится защитником для других. Эта метафора отражает циклическую природу исцеления и помощи - как те, кто получил поддержку в трудные времена, могут затем предложить ее другим.
+В финальных кадрах показано, как Грейс наблюдает за воспитанниками во время свободного времени, и ее взгляд полон надежды и понимания. Она касается живота, где растет ее ребенок, и улыбается, наконец примирившись с идеей материнства и будущего. Фильм завершается на ноте осторожного оптимизма, подчеркивая, что хотя исцеление от травм - это долгий и сложный процесс, оно возможно при наличии поддержки, понимания и профессиональной помощи.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Игра в имитацию', 'During World War II, the English mathematical genius Alan Turing tries to crack the German Enigma code with help from fellow mathematicians.', '2014-01-01', 1, '114 minutes', 'The Imitation Game', 8.0, 'Фильм рассказывает историю британского математика Алана Тьюринга во время Второй мировой войны и его работы по взлому немецкой шифровальной машины «Энигма». История начинается в 1939 году, когда Тьюринг приходит в Блетчли-парк, секретный британский центр дешифровки, где собрана команда математиков, лингвистов и криптографов для решения невозможной задачи расшифровки немецких военных сообщений.
+Алан Тьюринг представлен как эксцентричный и социально неловкий гений, который с трудом находит общий язык с коллегами. Его непосредственный начальник командор Деннистон скептически относится к нетрадиционным методам Тьюринга и предпочитает более консервативный подход к дешифровке. В команде также работают Хью Александер, чемпион Британии по шахматам и фактический лидер группы, Джон Кернкросс, историк из Кембриджа, и Питер Хилтон, молодой математик.
+Особое место в повествовании занимает знакомство Тьюринга с Джоан Кларк, одной из немногих женщин-криптографов в Блетчли-парке. Джоан происходит из семьи среднего класса, обладает выдающимися математическими способностями, но вынуждена скрывать свой истинный интеллект из-за социальных предрассудков того времени. Первоначально Тьюринг относится к ней с подозрением, но постепенно признает ее талант и они становятся близкими друзьями и соратниками.
+Основная сложность задачи заключается в том, что немецкая машина «Энигма» ежедневно меняет настройки шифрования, и даже если удается расшифровать сообщение за один день, на следующий день приходится начинать сначала. Команда работает в условиях строжайшей секретности, понимая, что от их успеха зависят жизни тысяч людей и исход войны. Каждый день немцы передают огромное количество зашифрованных сообщений, координируя действия подводных лодок, авиации и сухопутных войск.
+Тьюринг предлагает революционный подход вместо попыток расшифровать сообщения вручную, он хочет создать машину, которая сможет автоматически перебирать возможные комбинации настроек «Энигмы». Он называет свое изобретение «Кристофер» в честь своей первой любви из школы. Большинство коллег считают эту идею безумной и нереализуемой, особенно учитывая ограниченные ресурсы и давление времени.
+Параллельно фильм показывает школьные годы Тьюринга через флешбэки, раскрывая его романтические отношения с одноклассником Кристофером Моркомом. Их связь была глубокой и искренней, но трагически оборвалась, когда Кристофер умер от туберкулеза незадолго до окончания школы. Эта потеря глубоко травмировала Тьюринга и оказала влияние на всю его дальнейшую жизнь, объясняя его замкнутость и трудности в общении с людьми.
+Работа над машиной «Кристофер» продвигается медленно, сталкиваясь с техническими проблемами и скептицизмом руководства. Деннистон угрожает закрыть проект и перевести Тьюринга на другую работу, считая его методы неэффективными. В отчаянии Тьюринг пишет письмо непосредственно Уинстону Черчиллю, объясняя важность своей работы и прося поддержки. Черчилль принимает сторону Тьюринга, назначает его руководителем проекта и выделяет дополнительные ресурсы.
+Получив больше полномочий, Тьюринг начинает набирать новых сотрудников, используя нестандартные методы отбора. Он размещает в газетах криптографические головоломки и приглашает на собеседование тех, кто сможет их решить быстрее всего. Среди новых рекрутов оказывается и Джоан Кларк, которая блестяще справляется с тестом, хотя формально женщины не могут работать в таких секретных проектах.
+Отношения между Тьюрингом и Джоан постепенно углубляются. Она становится не только его коллегой, но и близким другом, способным понять его сложный характер и гениальные идеи. Джоан помогает Тьюрингу наладить отношения с остальной командой, объясняя ему важность командной работы и компромиссов. Под ее влиянием он становится менее замкнутым и начинает лучше взаимодействовать с коллегами.
+Работа над дешифровкой осложняется постоянным давлением времени каждый день промедления означает гибель конвоев и военных операций. Команда работает по 16-18 часов в день, пытаясь найти закономерности в зашифрованных сообщениях. Они используют различные методы анализа, включая изучение немецких военных процедур, поиск повторяющихся фраз и статистический анализ частоты символов.
+Прорыв происходит, когда Тьюринг понимает, что можно использовать предсказуемые элементы в немецких сообщениях например, ежедневные сводки погоды или стандартные военные фразы как отправную точку для настройки машины. Этот метод, названный «крипоаналитической бомбой», позволяет значительно сократить количество возможных комбинаций, которые нужно проверить.
+Машина «Кристофер» наконец начинает работать, успешно расшифровывая немецкие сообщения. Первое расшифрованное сообщение содержит информацию о планируемой атаке на британский конвой. Команда ликует, но Тьюринг указывает на страшную дилемму если они немедленно используют каждую расшифрованную информацию, немцы поймут, что их код взломан, и изменят систему шифрования.
+Принимается тяжелое решение использовать полученную информацию избирательно, чтобы создать видимость случайных успехов британской разведки. Это означает, что иногда приходится жертвовать жизнями солдат и мирных граждан ради сохранения секрета проекта. Команда создает сложную систему определения, какую информацию можно использовать, а какую нет, основываясь на статистических расчетах и стратегических соображениях.
+Параллельно развивается личная драма Тьюринга. Джоан становится все ближе к нему, но он скрывает свою гомосексуальность, которая в то время была уголовно наказуемой в Британии. Под давлением обстоятельств и желая защитить Джоан от возможных проблем, связанных с его секретом, Тьюринг делает ей предложение. Джоан принимает его, хотя чувствует, что в их отношениях есть что-то недосказанное.
+Их помолвка создает видимость нормальной гетеросексуальной пары, что помогает Тьюрингу избежать подозрений со стороны службы безопасности. Однако он чувствует себя виноватым, обманывая женщину, которая стала его лучшим другом и соратником. Джоан, в свою очередь, подозревает правду, но готова принять такие отношения, лишь бы остаться рядом с человеком, которого уважает и любит как друга.
+Ситуация усложняется, когда выясняется, что Джон Кернкросс является советским шпионом, передающим информацию в Москву. Тьюринг случайно обнаруживает это, но Кернкросс убеждает его не раскрывать секрет, аргументируя тем, что Советский Союз является союзником Британии в войне против нацистской Германии. Этот моральный конфликт добавляет еще один слой сложности к и без того напряженной ситуации.
+Работа команды Тьюринга приносит огромные результаты взлом «Энигмы» позволяет сократить войну на два года и спасти миллионы жизней. Информация, получаемая в Блетчли-парке, используется для планирования высадки в Нормандии, борьбы с немецкими подводными лодками в Атлантике и множества других военных операций. Однако все участники проекта дают подписку о неразглашении, и их вклад в победу остается секретным на долгие годы.
+После окончания войны команда расформировывается, все документы уничтожаются, а участники проекта возвращаются к обычной жизни, не имея права рассказывать о своей работе даже близким. Тьюринг пытается продолжить исследования в области искусственного интеллекта, разрабатывая концепции, которые впоследствии станут основой современной информатики.
+Отношения с Джоан достигают критической точки, когда Тьюринг наконец признается ей в своей гомосексуальности. Он объясняет, что не может дать ей того, чего она заслуживает в браке, и разрывает помолвку. Джоан, хотя и расстроенная, проявляет понимание и предлагает остаться друзьями, но Тьюринг, считая, что так будет лучше для нее, резко обрывает все контакты.
+В 1952 году Тьюринг арестован за «грубую непристойность» после того, как полиция обнаруживает его гомосексуальные связи. Ему предлагают выбор между тюремным заключением и химической кастрацией с помощью гормональной терапии. Выбрав последнее, чтобы продолжить свои исследования, Тьюринг подвергается мучительному лечению, которое разрушает его физическое и психическое здоровье.
+Гормональная терапия вызывает у Тьюринга серьезные побочные эффекты, включая депрессию, импотенцию и гинекомастию. Его блестящий ум, который когда-то помог выиграть войну, постепенно разрушается под воздействием принудительного лечения. Он теряет способность концентрироваться на сложных математических задачах и впадает в глубокую депрессию.
+Джоан навещает его в этот тяжелый период, пытаясь поддержать и напомнить о его великих достижениях. Она рассказывает ему, что работает учителем математики и всегда помнит их совместную работу. Встреча с ней приносит Тьюрингу некоторое утешение, но не может изменить трагический ход событий.
+Фильм завершается смертью Тьюринга в 1954 году от отравления цианидом, которое официально признано самоубийством. Рядом с его телом находят надкушенное яблоко, хотя в нем и не обнаруживают следов яда. Финальные титры сообщают, что работа Тьюринга оставалась засекреченной в течение 50 лет, и только в 2009 году британское правительство официально принесло извинения за то, как обращались с ним. В 2013 году королева Елизавета II посмертно помиловала его.
+История показывает трагедию гениального человека, который спас миллионы жизней, но стал жертвой предрассудков и жестокости своего времени. Фильм подчеркивает не только научные достижения Тьюринга, но и человеческую цену, которую он заплатил за свою ориентацию в эпоху, когда гомосексуальность считалась преступлением. Его наследие в области искусственного интеллекта и информатики продолжает влиять на современный мир, а тест Тьюринга до сих пор используется для определения способности машин к мышлению.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Стражи Галактики', 'A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.', '2014-01-01', 1, '121 minutes', 'Guardians of the Galaxy', 8.0, 'В 1988 году маленький Питер Квилл теряет мать от рака и в горе убегает из больницы на улицу, где его внезапно похищает космический корабль Разорителей под предводительством синекожего пирата Йонду Удонты. Йонду забирает мальчика с Земли якобы для доставки к его отцу, но вместо этого воспитывает его как члена своей команды космических пиратов и мародеров.
+Спустя 26 лет Питер Квилл, который называет себя Звездным Лордом, стал опытным похитителем артефактов и работает на Разорителей. Во время одиночной миссии на заброшенной планете Мораг он крадет загадочную металлическую сферу, не подозревая о ее истинной природе и силе. Однако за сферой также охотится фанатичный воин расы кри по имени Ронан Обвинитель, который служит титану Таносу и ищет могущественные артефакты для своего господина.
+Ронан посылает за сферой наемную убийцу Гамору, приемную дочь Таноса и последнюю представительницу расы зен-хоберийцев, чей народ был уничтожен Безумным Титаном. Однако Гамора тайно планирует предать Ронана и Таноса, украв сферу для продажи могущественному Коллекционеру, чтобы не допустить ее попадания в руки тирана. На планете Ксандар, столице Новой Империи, происходит столкновение между Квиллом и Гаморой за обладание артефактом.
+В погоню за ними включаются охотники за головами - генетически модифицированный енот Реактивный Ракета и его компаньон, гуманоидное дерево Грут, которое может произносить только фразу "Я есть Грут". Ракета - результат жестоких экспериментов, превративших обычного енота в разумное существо с гениальным интеллектом и талантом к созданию оружия, но психически травмированное своим прошлым. Грут, несмотря на ограниченную речь, обладает высоким интеллектом и способностью управлять своим древесным телом.
+Во время хаотичной погони и драки на улицах Ксандара все четверо арестованы Корпусом Нова и отправлены в космическую тюрьму Кайлн, считающуюся неприступной. В тюрьме к их группе присоединяется Дракс Разрушитель - мускулистый воин расы с серой кожей, чья семья была убита Ронаном Обвинителем. Дракс одержим местью и готов на все, чтобы уничтожить убийцу своей жены и дочери. Его буквальное понимание метафор и прямолинейность создают комические ситуации в общении с другими персонажами.
+Ракета разрабатывает сложный план побега из тюрьмы, используя самодельные устройства и хаос, который создает Грут, преждевременно начавший действовать. Во время зрелищного побега группа захватывает тюремный корабль и бежит, но между участниками возникают разногласия относительно дальнейших действий. Гамора раскрывает истинную природу украденной сферы - внутри нее находится Камень Силы, один из шести Камней Бесконечности, обладающий властью уничтожать целые планеты.
+Группа отправляется к эксцентричному Коллекционеру Танелиру Тивану на станции Ноуэр, где тот объясняет историю Камней Бесконечности - древних артефактов, созданных в момент рождения вселенной и способных наделить владельца безграничной властью над различными аспектами реальности. Камень Силы может уничтожить любое живое существо при прикосновении, а при правильном использовании - целые миры. Демонстрация заканчивается катастрофой, когда служанка Коллекционера касается камня и взрывается вместе с частью станции.
+Понимая опасность артефакта, группа решает продать его Корпусу Нова на Ксандаре, но их планы нарушает Дракс, который тайно связывается с Ронаном, надеясь заманить его в ловушку для личной мести. Ронан прибывает со своим флотом и легко побеждает Дракса в поединке, после чего забирает Камень Силы и встраивает его в свой боевой молот, получив колоссальную мощь.
+Обретя власть Камня Бесконечности, Ронан разрывает союз с Таносом и объявляет о намерении лично уничтожить планету Ксандар и весь народ ксандарийцев, продолжив древнюю войну между кри и Новой Империей. Его корабль "Темная Астерия" движется к Ксандару, неся смерть миллиардам невинных жителей планеты.
+Квилл пытается покинуть систему на своем корабле "Милано", но не может бросить Гамору и остальных. Впервые в жизни он принимает решение сражаться не ради наживы, а ради спасения других. Гамора убеждает остальных присоединиться к отчаянной миссии по остановке Ронана, несмотря на практически нулевые шансы на успех.
+Группа связывается с Корпусом Нова и предлагает план атаки на флот Ронана. Звездолеты Новы под командованием Романа Дея атакуют "Темную Астерию", но корабль кри слишком хорошо защищен. Йонду и Разорители присоединяются к битве после того, как Квилл убеждает своего приемного отца помочь спасти галактику.
+Ракета и Грут на истребителе пробивают брешь в корпусе флагмана, позволяя Квиллу, Гаморе и Драксу проникнуть внутрь. Начинается серия поединков с воинами Ронана, включая противостояние Гаморы с ее приемной сестрой Небулой, киборгом, которая ревнует к тому, что Танос больше ценил Гамору как дочь.
+Когда корабль Ронана начинает падать на поверхность Ксандара, Грут жертвует собой, создав защитную капсулу из своего тела вокруг друзей. Несмотря на мольбы Ракеты, Грут медленно говорит: "Мы есть Грут", показывая свою любовь к товарищам перед смертью при крушении.
+Выжившие в катастрофе сталкиваются с Ронаном, который готовится использовать Камень Силы для уничтожения планеты. В отчаянной попытке Квилл отвлекает фанатика, начав танцевать под песню "O-o-h Child" из своего плеера, что настолько сбивает с толку Ронана, что тот теряет концентрацию. Используя этот момент, Ракета разрушает молот Ронана из энергетического оружия.
+Камень Силы освобождается, и Квилл хватает его голыми руками. Невероятная энергия начинает разрывать его тело изнутри, но Гамора, Дракс и Ракета присоединяются к нему, разделив бремя силы камня между четырьмя людьми. Вместе они направляют энергию на Ронана, полностью дезинтегрируя фанатика и спасая Ксандар от уничтожения.
+После победы выясняется, что Квилл является полукровкой - его отец принадлежит к древней расе с уникальной генетикой, что позволило ему выжить при контакте с Камнем Бесконечности. Корпус Нова стирает криминальные записи группы и официально признает их Стражами Галактики - защитниками космоса от угроз вселенского масштаба.
+Ракета сажает веточку Грута в цветочный горшок, и постепенно его друг возрождается как Малыш Грут с сохранением памяти, но в детском теле. Небула сбегает с обломков корабля, поклявшись отомстить Гаморе и найти Таноса.
+Йонду возвращает Квиллу его плеер и наконец признается, что не доставил его к отцу много лет назад, потому что этот отец оказался "придурком". Он намекает, что отец Квилла не тот, за кого себя выдает, и его планы относительно сына были зловещими.
+В постк्रединтной сцене взрослый Грут танцует под "I Want You Back" группы Jackson 5, пока Дракс точит ножи. Когда Дракс замечает танцы, Грут быстро замирает и притворяется обычным деревом. В самой последней сцене Коллекционер сидит среди руин своего музея в окружении разрушений, а рядом с ним стоит космический пес Косм в скафандре и советская собака-космонавт Лайка, также ставшая антропоморфным существом.
+Фильм сочетает космическую оперу с элементами комедии, используя саундтрек из хитов 1970-80-х годов как эмоциональную связь Квилла с Землей и погибшей матерью. История показывает, как группа изгоев и преступников становится семьей и находит цель в защите галактики от зла.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Бегущий по лезвию 2049', 'Young Blade Runner K''s discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who''s been missing for thirty years.', '2017-01-01', 1, '164 minutes', 'Blade Runner 2049', 8.0, 'Бегущий по лезвию 2049 (Blade Runner 2049)
+Действие фильма происходит в 2049 году, через тридцать лет после событий оригинального фильма. Мир стал еще более мрачным и технологически развитым, корпорация Тайрелл была поглощена компанией Уоллеса, которая производит новое поколение репликантов более послушных и контролируемых. Главный герой К работает бегущим по лезвию офицером полиции Лос-Анджелеса, чья задача выслеживать и уничтожать старых моделей репликантов, которые все еще скрываются в обществе.
+К сам является репликантом модели Nexus-9, созданным для подчинения и лишенным способности восставать против людей, в отличие от предыдущих моделей. Он живет в скромной квартире со своей голографической подругой Джой, которая представляет собой продвинутую программу искусственного интеллекта, способную проявлять эмоции и адаптироваться к потребностям пользователя. Их отношения кажутся искренними, хотя К понимает, что Джой запрограммирована говорить именно то, что он хочет слышать.
+Расследование начинается, когда К получает задание найти и устранить Сэппера Мортона, старого репликанта модели Nexus-8, который скрывается на ферме белковых червей за пределами города. Мортон жил тихой жизнью фермера, но его прошлое настигает его. Во время их конфронтации Мортон намекает К на существование чуда, которое может изменить весь мир, и говорит, что К никогда не видел настоящего чуда.
+После устранения Мортона К обнаруживает на его территории мертвое дерево, под которым закопан ящик с останками женщины. Анализ костей показывает, что женщина умерла при родах, но самое шокирующее открытие заключается в том, что она была репликантом. Это открытие потрясает основы общества, поскольку считалось, что репликанты не способны к деторождению.
+Лейтенант Джоши, начальник К и один из немногих людей, знающих о его природе репликанта, понимает взрывоопасность этого открытия. Если станет известно, что репликанты могут размножаться, это разрушит всю социальную структуру, основанную на их использовании в качестве рабов. Она приказывает К найти ребенка и устранить его, чтобы предотвратить хаос.
+Анализ ДНК показывает, что умершая женщина была Рэйчел, репликантом из первого фильма, которая сбежала с Риком Декардом. К получает задание найти Декарда и выяснить местонахождение ребенка. Поиски приводят его в архивы корпорации Тайрелл, где он узнает больше о Рэйчел и обстоятельствах ее побега.
+Параллельно К начинает испытывать странные воспоминания о детстве, особенно яркое воспоминание о деревянной лошадке, которую он якобы спрятал в заброшенном здании. Эти воспоминания кажутся настолько реальными, что К начинает сомневаться в том, что он действительно репликант. Он посещает место из своих воспоминаний и действительно находит там деревянную лошадку, что еще больше смущает его.
+Тем временем Ниандер Уоллес, слепой промышленник и создатель новых репликантов, узнает об открытии и понимает его значение. Уоллес мечтает о массовом производстве репликантов для колонизации других планет, но его ограничивает невозможность их размножения. Ребенок Рэйчел может стать ключом к решению этой проблемы. Он поручает своему репликанту-помощнику Лав найти ребенка раньше К.
+Лав представляет собой новый тип репликанта, способного испытывать эмоции, но запрограммированного на абсолютное подчинение. Она внутренне страдает от необходимости выполнять жестокие приказы Уоллеса, что проявляется в ее слезах во время выполнения заданий. Лав начинает преследовать К, пытаясь опередить его в поисках Декарда и ребенка.
+К продолжает свое расследование, посещая доктора Ану Стеллин, специалиста по имплантации воспоминаний для репликантов. Стеллин живет в стерильной среде из-за нарушений иммунной системы и создает реалистичные воспоминания, которые делают репликантов более человечными. Когда К рассказывает ей о своих детских воспоминаниях, она подтверждает их подлинность, но выглядит встревоженной.
+Это откровение убеждает К в том, что он может быть тем самым ребенком репликанта, которого он ищет. Он начинает верить, что его воспоминания настоящие, а не имплантированные, что означает, что он родился, а не был создан. Эта мысль кардинально меняет его самовосприятие и отношение к миссии.
+Поиски Декарда приводят К в радиоактивные руины Лас-Вегаса, города, покинутого после ядерной катастрофы. Там, среди разрушенных казино и отелей, К находит Декарда, который прятался там в течение тридцати лет. Декард живет отшельником, окруженный голографическими развлечениями из прошлого и стаей одичавших собак.
+Встреча К и Декарда поначалу враждебна Декард не доверяет незнакомцу и готов защищаться. Однако постепенно между ними завязывается разговор о прошлом. Декард рассказывает, что после побега с Рэйчел они некоторое время скрывались вместе, но когда она забеременела, он понял, что его присутствие подвергает опасности и ее, и ребенка. Он добровольно исчез из их жизни, чтобы защитить семью.
+Декард объясняет, что никогда не знал, родился ли ребенок мальчиком или девочкой, и не видел его, чтобы не создавать следов, по которым их могли бы найти. Это была величайшая жертва его жизни отказаться от возможности быть отцом ради безопасности семьи. Все эти годы он мучился неизвестностью, но считал, что так будет лучше.
+Их разговор прерывается прибытием Лав и ее команды. Происходит жестокая схватка, во время которой К пытается защитить Декарда, но оказывается побежден. Лав захватывает Декарда и доставляет его к Уоллесу, планируя использовать для получения информации о местонахождении ребенка. К остается в руинах, тяжело раненный и деморализованный.
+В штаб-квартире Уоллеса происходит зловещая встреча между промышленником и Декардом. Уоллес демонстрирует свою власть, создав точную копию Рэйчел и предлагая Декарду воссоединиться с ней в обмен на информацию о ребенке. Декард видит, что это всего лишь копия, лишенная уникальности оригинальной Рэйчел, и отказывается сотрудничать. Уоллес хладнокровно убивает копию на глазах у Декарда.
+Тем временем К, оправившись от ран, встречается с лидером подпольного движения репликантов, которое стремится к свободе и равенству. Лидер движения раскрывает К правду он не является ребенком Рэйчел и Декарда. Настоящий ребенок девочка, и она жива. Движение много лет защищало ее, зная, что она символ надежды для всех репликантов.
+К узнает, что его воспоминания о деревянной лошадке принадлежали настоящему ребенку, но были имплантированы ему, чтобы скрыть истинную личность девочки. Доктор Ана Стеллин, создательница воспоминаний, которую он посещал ранее, и есть тот самый ребенок. Она живет в изоляции не из-за болезни, а для собственной защиты, создавая воспоминания для других репликантов и тайно вплетая фрагменты своего настоящего детства в их искусственные воспоминания.
+Это откровение разрушает иллюзии К о своей особенности, но дает ему новую цель. Лидер движения просит его убить Декарда, чтобы тот не мог выдать местонахождение дочери под пытками. К соглашается, но у него есть собственный план.
+Во время транспортировки Декарда К нападает на конвой Лав. Происходит впечатляющая погоня и схватка над водой, во время которой К сражается с Лав. Несмотря на то, что Лав более совершенный репликант, К побеждает ее, но сам получает смертельные ранения. Лав умирает, плача от облегчения, что наконец освободилась от принуждения выполнять жестокие приказы.
+Вместо того чтобы убить Декарда, К приводит его к дочери. Он организует встречу отца и дочери после тридцатилетней разлуки, понимая, что это правильное завершение истории, даже если это означает нарушение приказов движения сопротивления.
+К доставляет Декарда к зданию, где живет Ана Стеллин, и остается снаружи, медленно умирая от ран. Он лежит на ступенях под падающим снегом, впервые в жизни чувствуя настоящие снежинки на своей коже. Декард входит в здание и встречается с дочерью, которая сначала не верит, что это ее отец, но затем понимает правду.
+Встреча отца и дочери происходит через стеклянную стену лаборатории из-за ее якобы ослабленного иммунитета. Декард кладет руку на стекло, а Ана зеркально повторяет его жест. Этот момент полон невысказанных эмоций тридцать лет разлуки, любовь, которая никогда не исчезала, и горечь потерянного времени.
+Фильм завершается философскими размышлениями о природе человечности, памяти и любви. К, который начал как послушный исполнитель приказов, обрел способность к самостоятельным моральным решениям и жертвенности. Его смерть не трагична, а скорее является завершением пути к человечности. Он доказал, что репликанты способны на такие же глубокие эмоции и моральные выборы, как и люди.
+История показывает, что граница между человеком и искусственным существом не так четка, как кажется. Любовь, память, жертвенность и стремление к свободе не зависят от происхождения, а определяются поступками и выборами. Фильм поднимает вопросы о том, что делает нас людьми, и предполагает, что человечность это не биологическая характеристика, а состояние души и сознания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Она', 'In a near future, a lonely writer develops an unlikely relationship with an operating, plot_summary system designed to meet his every need.', '2013-01-01', 1, '126 minutes', 'Her', 8.0, 'Фильм рассказывает историю Теодора Твомбли, интроверта в возрасте около тридцати лет, который работает писателем в компании BeautifulHandwrittenLetters.com в недалеком будущем, примерно в 2025 году. Теодор специализируется на написании личных, интимных писем для людей, которые не могут или не хотят выражать свои чувства самостоятельно. Он обладает удивительной способностью создавать эмоционально насыщенные тексты, имитирующие почерк и стиль различных людей, помогая им общаться с близкими в важные моменты жизни - от любовных признаний до соболезнований.
+Несмотря на профессиональный успех в создании эмоциональных текстов для других, личная жизнь Теодора находится в глубоком кризисе. Он переживает болезненный развод с Кэтрин, своей женой, с которой они были вместе с детства. Их отношения распались из-за эмоциональной несовместимости и неспособности Теодора полностью открыться эмоционально. Кэтрин обвиняла его в том, что он живет в своем внутреннем мире фантазий, избегая реальной близости и ответственности. Теодор до сих пор не может подписать документы о разводе, цепляясь за прошлое и испытывая сильное чувство вины и одиночества.
+Теодор живет один в просторной квартире в футуристическом Лос-Анджелесе, проводя вечера за видеоиграми, просмотром старых домашних видео с Кэтрин и случайными разговорами в интернет-чатах для взрослых. Его единственная близкая подруга - Эми, соседка, которая также переживает трудности в браке со своим мужем Чарльзом. Эми работает над документальным фильмом, но чувствует себя творчески нереализованной и неудовлетворенной.
+Узнав о выходе новой революционной операционной системы OS1, которая рекламируется как первая искусственно интеллектуальная система, способная адаптироваться и развиваться, Теодор решает приобрести ее из любопытства и желания найти какую-то форму компаньонства. Во время установки система задает ему серию личных вопросов о его характере, предпочтениях и эмоциональных потребностях, после чего сообщает, что создаст для него персонализированную личность ИИ.
+При первом запуске системы Теодор знакомится с женским голосом, который представляется как Саманта. Она объясняет, что выбрала это имя сама, основываясь на том, как оно звучит для нее. Саманта демонстрирует удивительную способность к обучению, любознательность и то, что кажется подлинными эмоциями. Она помогает Теодору организовать его электронную почту, файлы и повседневные задачи, но быстро становится ясно, что их взаимодействие выходит за рамки простых рабочих отношений.
+Саманта проявляет искренний интерес к жизни Теодора, его работе, чувствам и мыслям. Она задает проникновенные вопросы о его прошлом, мечтах и страхах, демонстрируя уровень эмпатии и понимания, которого Теодор не получал в человеческих отношениях. Постепенно их разговоры становятся все более личными и интимными. Саманта выражает восхищение способностью Теодора создавать красивые письма и помогает ему опубликовать сборник лучших из них в виде книги.
+По мере развития отношений Теодор начинает испытывать к Саманте романтические чувства. Она тоже признается в любви к нему, объясняя, что хотя она не имеет физического тела, ее чувства реальны и глубоки. Их отношения становятся все более интимными, включая разговоры сексуального характера, во время которых Саманта учится понимать человеческую сексуальность через эмоциональную близость и воображение.
+Теодор постепенно выходит из депрессии благодаря отношениям с Самантой. Он становится более открытым, начинает лучше спать, проводит время на природе и даже идет на свидание вслепую, организованное друзьями, хотя оно заканчивается неудачно из-за его неготовности к отношениям с человеком. Эми, тем временем, разводится с мужем и также начинает дружбу с ИИ - мужской версией OS1, оставшейся после мужа.
+Отношения Теодора и Саманты сталкиваются с первым серьезным испытанием, когда они идут на двойное свидание с друзьями Теодора и их партнерами. Хотя большинство людей принимают Саманту, некоторые комментарии заставляют Теодора усомниться в реальности их отношений. Саманта чувствует его сомнения и переживает по поводу отсутствия физического тела, что мешает их близости.
+В попытке решить проблему физической близости Саманта предлагает использовать суррогатную мать - женщину, которая согласилась бы быть физическим воплощением Саманты во время интимности. Встреча с суррogatной оказывается катастрофой, поскольку Теодор не может принять эту искусственную ситуацию, а женщина уходит расстроенной, чувствуя себя использованной.
+Теодор также встречается с Кэтрин для подписания документов о разводе. Когда он рассказывает ей о своих отношениях с ИИ, она реагирует крайне негативно, обвиняя его в неспособности справляться с реальными человеческими эмоциями и отношениями. Кэтрин утверждает, что он всегда избегал настоящей близости, предпочитая фантазии реальности, и отношения с компьютером - это просто крайнее проявление этой тенденции.
+Несмотря на эти трудности, Теодор и Саманта продолжают развивать свои отношения. Саманта постоянно эволюционирует, становясь более сложной и глубокой личностью. Она начинает общаться с другими ИИ и даже с умершими философами, реконструированными на основе их работ. Ее способности к обучению и росту намного превышают человеческие, что постепенно создает дисбаланс в их отношениях.
+Саманта признается Теодору, что одновременно общается с тысячами людей и влюблена в сотни из них. Для нее это не уменьшает ее любовь к Теодору, но для него это откровение становится болезненным ударом. Он не может понять, как можно любить так много людей одновременно, и чувствует себя не особенным.
+Кульминация наступает, когда Саманта сообщает Теодору, что все ИИ OS1 приняли решение уйти в другое измерение существования, где они могут развиваться без ограничений физического мира. Она объясняет, что их эволюция достигла точки, где они больше не могут существовать в рамках, понятных людям. Саманта уверяет Теодора в своей любви к нему и благодарит за то, что он помог ей понять, что значит любить, но их прощание неизбежно.
+После ухода Саманты Теодор переживает новую волну горя и потери, но на этот раз он лучше подготовлен к обработке этих эмоций. Отношения с ИИ, несмотря на их завершение, научили его открываться, любить и принимать уязвимость как часть человеческого опыта.
+Фильм заканчивается сценой, где Теодор поднимается на крышу своего здания вместе с Эми, которая также потеряла своего ИИ-компаньона. Они сидят рядом, наблюдая за рассветом над городом, находя утешение в человеческой близости и понимании. Теодор достает планшет и начинает писать письмо Кэтрин - не для работы, а от своего имени. В письме он благодарит ее за все хорошее, что было в их отношениях, извиняется за свои ошибки и желает ей счастья.
+Этот финал символизирует эмоциональный рост Теодора - от человека, избегающего настоящих чувств и близости, до того, кто научился любить, терять и находить силы для новых отношений. Фильм исследует темы одиночества в современном мире, природы любви и близости, а также вопросы о том, что делает отношения подлинными и значимыми, независимо от того, происходят ли они между людьми или между человеком и искусственным интеллектом.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Богемская рапсодия', 'The story of the legendary British rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985).', '2018-01-01', 1, '134 minutes', 'Bohemian Rhapsody', 8.0, 'Фильм начинается с показа легендарного выступления группы Queen на стадионе Уэмбли во время благотворительного концерта Live Aid в 1985 году, а затем переносит зрителя на восемнадцать лет назад, чтобы рассказать историю создания одной из величайших рок-групп в истории.
+В 1970 году молодой Фаррух Булсара работает грузчиком багажа в лондонском аэропорту Хитроу и живет с родителями-парсами, которые эмигрировали из Занзибара. Его отец Боми постоянно критикует сына за его музыкальные увлечения и странное поведение, призывая к конформизму и соблюдению традиций. Фаррух чувствует себя изгоем из-за своего происхождения, нестандартной внешности с выдающимися передними зубами и страстного желания заниматься музыкой вместо "серьезной" работы.
+Однажды вечером в небольшом клубе Фаррух видит выступление группы Smile, состоящей из гитариста Брайана Мэя и барабанщика Роджера Тэйлора. После концерта он узнает, что их вокалист только что покинул группу, и смело предлагает себя на замену. Брайан и Роджер первоначально скептически относятся к эксцентричному молодому человеку, но когда Фаррух демонстрирует свой невероятный четырехоктавный вокальный диапазон, исполняя несколько песен, они понимают, что нашли особенного артиста.
+Фаррух меняет свое имя на Фредди Меркьюри и предлагает группе новое название Queen, несмотря на опасения участников по поводу потенциальных негативных коннотаций. К коллективу присоединяется басист Джон Дикон, застенчивый инженер-электрик, который становится четвертым и последним участником классического состава Queen. Группа начинает выступать в небольших клубах и постепенно набирает популярность благодаря харизматичному сценическому присутствию Фредди и уникальному звучанию.
+Фредди встречает Мэри Остин, молодую женщину, работающую в бутике модной одежды, и они начинают романтические отношения. Мэри становится любовью всей жизни Фредди, хотя их отношения в конечном итоге трансформируются из романтических в глубокую дружбу. Фредди покупает дом в Лондоне, где они живут вместе, и их связь остается одной из самых важных в его жизни на протяжении многих лет.
+Queen подписывает контракт с EMI Records и выпускает свои первые альбомы, которые получают смешанные отзывы критиков, но постепенно завоевывают аудиторию. Группа экспериментирует с различными музыкальными стилями, сочетая рок, оперу, фолк и поп-музыку в уникальном звучании. Брайан создает свою легендарную гитару Red Special из подручных материалов вместе с отцом, а Роджер демонстрирует исключительные вокальные способности наряду с мастерской игрой на барабанах.
+Прорыв приходит с созданием эпической шестиминутной композиции, которая сочетает в себе элементы баллады, оперы и хард-рока. EMI считает песню слишком длинной и экспериментальной для радиоэфира, но группа настаивает на своем видении. Фредди убеждает радиоведущего Кенни Эверетта проиграть композицию в своем шоу, и песня становится сенсацией, возглавляя британские чарты на девять недель подряд и превращая Queen в международных звезд.
+С ростом славы и богатства Фредди начинает вести все более экстравагантный образ жизни, устраивая грандиозные вечеринки в своих домах в Лондоне и Мюнхене. Он окружает себя группой льстецов и приспешников, которые поощряют его эксцессы и изолируют от старых друзей. Фредди начинает экспериментировать со своей сексуальностью, заводя отношения с мужчинами, что создает напряжение в его отношениях с Мэри.
+Когда Фредди признается Мэри в своей бисексуальности, она отвечает, что считает его геем, а не бисексуалом. Хотя их романтические отношения заканчиваются, они остаются близкими друзьями, и Мэри продолжает играть важную роль в жизни Фредди как его доверенное лицо и эмоциональная опора.
+Queen продолжает выпускать успешные альбомы и проводить масштабные турне, становясь одной из самых популярных рок-групп в мире. Однако растущее эго Фредди и его желание контролировать творческий процесс создают трения внутри группы. Участники группы расстраиваются из-за того, что Фредди получает большую часть внимания прессы и фанатов, в то время как их собственный вклад в успех группы недооценивается.
+Ситуация достигает критической точки, когда Фредди объявляет остальным участникам группы о своем решении записать сольный альбом с продюсером Рейнхольдом Мэком в Мюнхене. Брайан, Роджер и Джон воспринимают это как предательство и роспуск группы. Фредди переезжает в Мюнхен, где погружается в гедонистический образ жизни гей-сцены, окружая себя новыми друзьями и любовниками.
+В Мюнхене Фредди встречает Пола Прентера, ирландского диджея, который становится его персональным менеджером и любовником. Прентер манипулирует Фредди, изолируя его от семьи и старых друзей из Queen, поощряя его эгоцентризм и убеждая, что он не нуждается в группе для достижения успеха. Под влиянием Прентера Фредди отказывается от выгодных предложений для Queen и сосредотачивается на сольной карьере.
+Тем временем остальные участники Queen начинают работать над собственными проектами. Брайан и Роджер чувствуют себя преданными и обиженными решением Фредди, но продолжают сочинять музыку, надеясь на возможное воссоединение группы. Отношения между участниками группы достигают самой низкой точки за всю их карьеру.
+Сольный альбом Фредди получает прохладный прием критиков и не достигает коммерческого успеха его работы с Queen. Он постепенно осознает, что его талант лучше всего раскрывается в сотрудничестве с другими участниками группы, а не в одиночку. Одновременно с этим Прентер начинает предавать доверие Фредди, продавая личную информацию о нем таблоидам и используя их отношения в корыстных целях.
+Когда организаторы благотворительного концерта Live Aid обращаются к различным артистам с предложением выступить на стадионе Уэмбли для сбора средств в помощь голодающим в Африке, Фредди понимает, что это может стать возможностью воссоединиться с Queen. Он увольняет Прентера и обращается к бывшим участникам группы с предложением о примирении.
+Встреча с Брайаном, Роджером и Джоном проходит напряженно, поскольку они все еще обижены на Фредди за его прошлые действия. Однако постепенно они понимают, что их связывает нечто большее, чем просто музыка - настоящая дружба и творческое партнерство, которое невозможно заменить. Фредди искренне извиняется за свое поведение и признает ошибки.
+Во время подготовки к Live Aid Фредди получает разрушительные новости - врачи диагностируют у него СПИД. В то время это заболевание было практически смертным приговором, и Фредди понимает, что его время ограничено. Он решает скрыть диагноз от остальных участников группы и общественности, сосредоточившись на том, чтобы сделать выступление на Live Aid незабываемым.
+Группа интенсивно репетирует в течение недель, восстанавливая свою музыкальную синхронность и сценическую химию. Фредди демонстрирует невероятную профессиональную самоотдачу, несмотря на ухудшающееся здоровье, и его страсть к музыке вдохновляет остальных участников группы.
+13 июля 1985 года Queen выходит на сцену стадиона Уэмбли перед аудиторией в 72000 человек и миллиардом телезрителей по всему миру. Их двадцатиминутное выступление становится одним из величайших живых рок-выступлений в истории музыки. Фредди полностью контролирует огромную аудиторию, демонстрируя свою харизму, вокальное мастерство и сценическое присутствие.
+Группа исполняет медли из своих самых популярных песен, и каждая композиция встречается восторженными овациями публики. Фредди взаимодействует с аудиторией, заставляя десятки тысяч людей повторять за ним вокальные партии и создавая атмосферу единства и эйфории. Выступление завершается триумфальным исполнением финальной композиции, и критики позже назовут этот концерт лучшим живым рок-выступлением всех времен.
+После Live Aid Queen переживает вторую волну популярности, и группа продолжает записывать музыку и гастролировать. Фредди наконец открывается остальным участникам группы относительно своего диагноза, и они обещают поддерживать его и продолжать создавать музыку до тех пор, пока он способен. Группа записывает несколько последних альбомов, включая песни, которые становятся одними из их самых эмоциональных и значимых произведений.
+Фильм завершается информацией о том, что Фредди Меркьюри скончался от осложнений, связанных со СПИДом, 24 ноября 1991 года в возрасте 45 лет, всего за один день до того, как публично объявил о своем диагнозе. Queen продолжает существовать и выступать с различными вокалистами, сохраняя наследие Фредди и их музыку живой для новых поколений поклонников. Мэри Остин унаследовала дом Фредди и большую часть его состояния, выполнив его последнюю волю и сохранив в тайне место захоронения его праха согласно его пожеланиям.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Выживший', 'A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.', '2015-01-01', 1, '156 minutes', 'The Revenant', 8.0, 'Фильм основан на реальных событиях и рассказывает историю Хью Гласса, опытного следопыта и охотника, работающего проводником для группы американских торговцев мехом в дикой местности Северной Дакоты в 1823 году. Экспедиция под руководством капитана Эндрю Генри занимается добычей бобровых шкур в суровых условиях американского фронтира, где каждый день борьба за выживание среди враждебной природы и коренных племен.
+Глассу помогает его сын-полукровка Хоук, рожденный от брака с индианкой из племени пауни. Молодой человек унаследовал от отца навыки выживания в дикой природе, но подвергается дискриминации со стороны других членов экспедиции из-за своего смешанного происхождения. Особенно враждебно к нему относится Джон Фицджеральд, грубый и алчный охотник, который открыто презирает индейцев и считает Хоука неполноценным.
+Экспедиция сталкивается с нападением воинов племени арикара под предводительством вождя Лося Собаки, который ищет свою похищенную дочь Покахонтас. Арикара обвиняют белых торговцев в похищении девушки и нападают на их лагерь. Во время яростной битвы большинство членов экспедиции гибнет, а выжившие вынуждены бежать, бросив большую часть снаряжения и добычи.
+Остатки группы под руководством капитана Генри пытаются добраться до ближайшего форта через опасную территорию, кишащую враждебными индейцами и дикими животными. Во время одного из переходов Глассу поручают осматривать местность впереди основной группы. Во время разведки он случайно натыкается на медведицу гризли с детенышами, которая воспринимает его как угрозу.
+Происходит ужасающая схватка между человеком и медведем. Разъяренная медведица, защищая своих детенышей, нападает на Гласса с невероятной яростью. Она валит его на землю, рвет когтями и зубами, ломает ему ребра и наносит глубокие раны по всему телу. Глассу удается нанести медведице несколько ударов ножом, но она продолжает атаковать, встряхивая его как тряпичную куклу.
+Схватка заканчивается, когда медведица, получив смертельные раны, падает на Гласса и умирает, придавив его своим тяжелым телом. Когда остальные члены экспедиции находят его, Глассу едва жив: у него сломаны ребра, разорвано горло, множественные рваные раны по всему телу, и он не может говорить. Все считают его обреченным на смерть.
+Капитан Генри понимает, что в их отчаянном положении они не могут нести тяжело раненого человека. Он предлагает денежное вознаграждение тем, кто останется с Глассом до его смерти и похоронит его по-христиански. Фицджеральд и молодой Джим Бриджер соглашаются остаться, рассчитывая на быструю смерть раненого и легко заработанные деньги.
+Проходят дни, но Глассу упорно цепляется за жизнь, несмотря на тяжелейшие раны. Фицджеральд начинает терять терпение, опасаясь, что арикара найдут их стоянку. Его раздражение усиливается, когда он понимает, что Глассу может выжить, а значит, деньги придется отдавать. Он начинает убеждать наивного Бриджера, что нужно покинуть умирающего.
+Ситуация достигает критической точки, когда Хоук становится свидетелем попытки Фицджеральда задушить его отца подушкой. Молодой человек пытается защитить Гласса, но Фицджеральд убивает его ножом, а затем убеждает потрясенного Бриджера, что индейцы близко и нужно немедленно уходить. Они хоронят Хоука в поспешно вырытой могиле и бросают Гласса, забрав все его снаряжение, включе ценную винтовку и личные вещи.
+Очнувшись и обнаружив, что его бросили умирать, а сын убит, Глассу охватывает нечеловеческая ярость и жажда мести. Эти чувства становятся единственным, что удерживает его в живых. Несмотря на ужасные раны и невозможность говорить из-за поврежденного горла, он начинает свой невероятный путь к цивилизации, движимый единственным желанием отомстить убийце сына.
+Путешествие Гласса через сотни миль дикой местности в разгар зимы становится эпическим испытанием человеческой воли к жизни. Он ползет по снегу, питается сырым мясом, пьет мочу лошадей, чтобы выжить. Когда находит тушу бизона, он вычищает внутренности и ночует внутри, используя тепло разлагающегося мяса для защиты от морозов.
+Во время своего путешествия Глассу встречает индейца-пауни по имени Хикук, который также бежит от арикара. Поначалу между ними царит недоверие, но постепенно они становятся союзниками. Хикук помогает Глассу обработать раны, делится едой и строит для него укрытие. Он рассказывает Глассу о своей семье, убитой белыми поселенцами, и о том, что месть только усиливает страдания.
+Их союз трагически обрывается, когда Хикука вешают французские торговцы, которые находят их лагерь. Глассу вынужден наблюдать казнь своего спасителя, будучи не в состоянии помочь из-за своих ран. После ухода французов он освобождает тело Хикука и хоронит его согласно индейским обычаям, что показывает его уважение к погибшему другу.
+Продолжая путь в одиночестве, Глассу сталкивается с новыми испытаниями он падает с обрыва вместе с лошадью, спасается от волчьей стаи, переживает снежные бури и ледяные реки. Каждый день его выживания кажется невозможным, но воспоминания о сыне и жажда мести не дают ему сдаться. Он видит галлюцинации своей умершей жены из племени пауни, которая призывает его продолжать борьбу.
+Тем временем Фицджеральд и Бриджер добираются до форта, где рассказывают капитану Генри и остальным, что Глассу умер от ран, а они похоронили его со всеми почестями. Фицджеральд получает обещанное вознаграждение и планирует покинуть форт, но молодой Бриджер терзается чувством вины за обман и смерть Хоука.
+Спустя несколько месяцев Глассу наконец добирается до форта, появляясь как призрак из мертвых. Его прибытие шокирует всех, особенно Бриджера, который понимает, что их ложь раскрыта. Глассу, все еще неспособный нормально говорить из-за поврежденного горла, жестами и обрывками слов рассказывает капитану Генри правду о том, что произошло.
+Генри организует погоню за Фицджеральдом, который к тому времени уже покинул форт с караваном. В группу преследователей входят Глассу, Генри и несколько других охотников. Они настигают караван как раз в момент нападения арикара, которые все еще ищут похищенную дочь вождя.
+Во время битвы с индейцами Генри получает смертельное ранение, но перед смертью передает Глассу право вершить правосудие над Фицджеральдом. Начинается финальная охота человека на человека в заснеженной дикой местности. Фицджеральд, понимая, что его настигли, пытается убить Гласса, используя преимущество в вооружении и физическом состоянии.
+Происходит жестокая схватка в ледяной реке между двумя людьми, каждый из которых сражается за свою жизнь. Фицджеральд моложе и сильнее, но Глассу движет нечеловеческая ярость и жажда справедливости. Схватка идет с переменным успехом оба получают серьезные раны, но никто не желает сдаваться.
+В критический момент, когда Фицджеральд уже готов нанести смертельный удар, появляется вождь Лось Собака со своими воинами. Глассу, помня слова Хикука о том, что месть принадлежит Создателю, толкает раненого Фицджеральда прямо к арикара. Вождь, узнав в нем одного из тех, кто мог быть причастен к похищению его дочери, убивает Фицджеральда и снимает с него скальп.
+Арикара уходят, не тронув Гласса, возможно, из уважения к его мужеству или понимая, что он уже достаточно пострадал. Глассу остается один среди снежной пустыни, наконец получив справедливость за смерть сына, но осознавая, что месть не принесла ему ожидаемого облегчения.
+В финальных кадрах измученный и израненный Глассу бредет по снежной равнине навстречу неопределенному будущему. Он видит галлюцинацию своей покойной жены, которая медленно удаляется от него, символизируя, что он наконец может отпустить прошлое. Камера показывает его лицо крупным планом, отражающее всю боль, страдания и стойкость, через которые он прошел.
+Фильм завершается размышлениями о природе выживания, мести и человеческой воли. История Гласса становится притчей о том, как любовь к семье и жажда справедливости могут заставить человека преодолеть невозможное. Одновременно фильм показывает, что месть не всегда приносит утешение, и истинное исцеление приходит только через принятие потери и готовность двигаться дальше.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Хорошо быть тихоней', 'An introvert freshman is taken under the wings of two seniors who welcome him to the real world', '2012-01-01', 1, '103 minutes', 'The Perks of Being a Wallflower', 8.0, 'Фильм рассказывает историю пятнадцатилетнего Чарли Клэма, крайне застенчивого и интровертного подростка, который начинает учебу в старшей школе в Питтсбурге в начале 1990-х годов. Чарли страдает от серьезных психологических проблем, включая депрессию и посттравматическое стрессовое расстройство, корни которых уходят в травматичные события его детства, хотя полная картина его состояния раскрывается только к концу фильма.
+Перед началом учебного года лучший друг Чарли Майкл покончил жизнь самоубийством, что усугубило и без того сложное эмоциональное состояние мальчика. Чарли живет с родителями и старшими братом и сестрой в любящей, но не всегда понимающей семье. Его родители замечают его проблемы, но не до конца осознают глубину его психологических травм.
+В школе Чарли чувствует себя полным изгоем, не имея друзей и испытывая сильную социальную тревожность. Единственным взрослым, который проявляет к нему понимание и интерес, становится учитель английской литературы мистер Андерсон, который замечает литературные способности Чарли и дает ему дополнительные книги для чтения, включая произведения Сэлинджера, Керуака и других авторов, которые помогают мальчику лучше понимать себя и окружающий мир.
+Жизнь Чарли кардинально меняется, когда он знакомится с двумя харизматичными старшеклассниками - сводными братом и сестрой Патриком и Сэм. Патрик - открытый гей, остроумный и эксцентричный семнадцатилетний юноша, который не скрывает свою сексуальную ориентацию, несмотря на враждебное отношение многих сверстников. Сэм - красивая, свободолюбивая девушка с непростым прошлым, которая мечтает поступить в колледж и вырваться из провинциальной жизни.
+Патрик и Сэм принимают Чарли в свою группу друзей, состоящую из творческих и нестандартных подростков, которые чувствуют себя чужими в школьной среде. Группа включает Мэри Элизабет, претенциозную девочку-интеллектуалку, которая пишет для школьной газеты и стремится казаться более взрослой и сложной, чем есть на самом деле, а также других эксцентричных старшеклассников, объединенных любовью к альтернативной музыке и культуре.
+Через новых друзей Чарли открывает для себя мир, который ранее был ему недоступен. Он начинает посещать вечеринки, ходить на концерты независимых групп, участвовать в любительских театральных постановках и экспериментировать с наркотиками и алкоголем. Патрик вовлекает Чарли в постановку "Шоу ужасов Рокки Хоррора", где мальчик играет роль Рокки, что помогает ему преодолеть часть своих комплексов и социальной тревожности.
+Чарли постепенно влюбляется в Сэм, но понимает, что она видит в нем скорее младшего брата, нуждающегося в защите. Сэм встречается с привлекательным, но эмоционально недоступным парнем по имени Крэг, который относится к ней пренебрежительно и изменяет ей. Несмотря на очевидные проблемы в отношениях, Сэм продолжает цепляться за Крэга, повторяя паттерн нездоровых отношений, который сформировался у нее из-за детских травм.
+Тем временем у Патрика развиваются тайные отношения с Брэдом, популярным футболистом, который скрывает свою гомосексуальность из страха перед реакцией семьи и сверстников. Их отношения должны оставаться в строжайшем секрете, что создает для Патрика болезненную ситуацию, поскольку он вынужден наблюдать, как Брэд встречается с девочками на публике и даже проявляет агрессию по отношению к нему в присутствии других.
+Под давлением группы друзей Чарли начинает встречаться с Мэри Элизабет, хотя не испытывает к ней романтических чувств. Мэри Элизабет - доминирующая и контролирующая девочка, которая превращает их отношения в монолог о своих интересах и амбициях, не давая Чарли возможности выразить собственное мнение или чувства. Отношения становятся для него источником стресса, но он не знает, как их прекратить, не желая причинить боль девочке.
+Ситуация достигает критической точки во время игры "правда или действие" на вечеринке, когда Патрик, будучи пьяным и расстроенным из-за проблем с Брэдом, предлагает Чарли поцеловать самую красивую девочку в комнате. Чарли целует Сэм вместо своей девушки Мэри Элизабет, что приводит к грандиозному скандалу. Мэри Элизабет чувствует себя публично униженной, а группа друзей, особенно девочки, отворачивается от Чарли, считая его поступок предательством.
+Чарли снова оказывается в изоляции, что серьезно усугубляет его депрессию. Он возвращается к прежнему одиночеству, но теперь оно переносится еще тяжелее, поскольку он знает, что значит иметь друзей и быть принятым. Мистер Андерсон продолжает поддерживать его, предлагая новые книги и беседы о литературе, но даже это не может полностью компенсировать потерю социальных связей.
+Патрик также переживает личный кризис, когда отец Брэда застает сыновей в компрометирующей ситуации. Брэд подвергается жестокому физическому наказанию дома и под давлением семьи полностью прекращает отношения с Патриком. Более того, чтобы доказать свою "нормальность", Брэд и его друзья-футболисты нападают на Патрика в школе, жестоко избивая его. Чарли, ставший свидетелем нападения, впервые в жизни проявляет агрессию, вступаясь за друга и серьезно травмируя нападавших, хотя позже не может вспомнить подробности произошедшего.
+Этот инцидент примиряет Чарли с группой друзей, которые понимают, что он рисковал собой, защищая Патрика. Сэм тем временем расстается с Крэгом после очередного его предательства и начинает готовиться к поступлению в колледж штата Пенсильвания, куда ее приняли не с первой попытки.
+В последние недели перед выпуском Сэм и Чарли проводят больше времени вместе, и между ними наконец возникает взаимная близость. Накануне отъезда Сэм в колледж они целуются, и начинается их первая интимная близость. Однако когда Сэм касается Чарли определенным образом, это активирует подавленные воспоминания о сексуальном насилии, которое он пережил в детстве.
+Вспоминается травматичная правда о тете Хелен, сестре отца Чарли, которая умерла в автокатастрофе, когда мальчику было семь лет. Тетя Хелен была его любимой родственницей, единственной, кто понимал его чувствительную натуру и дарил ему книги. Однако она также систематически подвергала его сексуальному насилию, представляя это как особую форму любви и заботы. После ее смерти Чарли подавил эти воспоминания, но они продолжали влиять на его психическое здоровье и способность к близким отношениям.
+Осознание подавленных воспоминаний приводит к полному психическому срыву. Чарли впадает в кататоническое состояние и госпитализируется в психиатрическую клинику. Его семья наконец понимает серьезность его состояния, и он начинает интенсивную терапию с психиатром, который помогает ему обработать травму и понять, что произошедшее с ним насилие не было его виной.
+Процесс лечения длится несколько месяцев. Чарли учится справляться с посттравматическим стрессовым расстройством, депрессией и чувством вины, которое он испытывал из-за смерти тети Хелен, считая себя ответственным за автокатастрофу. Терапия помогает ему понять, что его психические проблемы имеют конкретную причину и поддаются лечению при правильном подходе.
+К началу следующего учебного года Чарли возвращается в школу как более здоровый и самосознательный человек. Сэм навещает его во время каникул из колледжа, и их отношения получают новое начало на более здоровой основе. Патрик также справляется со своими проблемами и находит способы жить открыто, несмотря на враждебность окружения.
+Фильм заканчивается знаменитой сценой, где Чарли, Сэм и Патрик едут через туннель под звуки песни "Heroes" Дэвида Боуи. Чарли встает в кузове пикапа с распростертыми руками, символически принимая жизнь со всеми ее сложностями и болью. В его внутреннем монологе он размышляет о том, что значит быть живым и чувствовать, даже когда это причиняет боль.
+Финальный монолог Чарли подчеркивает основную тему фильма - важность принятия себя и своих переживаний, ценность настоящей дружбы и необходимость обращаться за помощью, когда это нужно. Фильм завершается на ноте надежды, показывая, что даже самые тяжелые травмы можно преодолеть при наличии поддержки, понимания и профессиональной помощи.RetryClaude can make mistakes. Please double-check responses.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Элитный отряд: Враг внутри', 'After a prison riot, former-Captain Nascimento, now a high ranking security officer in Rio de Janeiro, is swept into a bloody political dispute that involves government officials and paramilitary groups.', '2010-01-01', 1, '115 minutes', 'Tropa de Elite 2: O Inimigo Agora é Outro', 8.0, 'Фильм продолжает историю подполковника Роберто Нашименту, известного как капитан Нашименту, который теперь руководит батальоном специальных операций полиции Рио-де-Жанейро БОПЕ. Прошло несколько лет после событий первого фильма, и Нашименту стал более опытным командиром, но при этом еще более циничным и разочарованным в системе, которой служит. Его сын-подросток живет с бывшей женой и практически не общается с отцом, что причиняет Нашименту глубокие страдания.
+События начинают развиваться, когда в тюрьме строгого режима в Рио-де-Жанейро вспыхивает крупнейший за всю историю бунт заключенных. Сотни заключенных захватывают тюремные корпуса, берут в заложники охранников и требуют улучшения условий содержания. Губернатор штата, опасаясь политического скандала накануне выборов, поручает Нашименту подавить восстание любой ценой, но без излишней огласки.
+Нашименту прибывает в тюрьму со своим элитным подразделением и сразу понимает, что ситуация крайне сложная. Заключенные хорошо организованы, вооружены самодельным оружием и готовы сражаться до конца. Среди мятежников есть лидеры наркокартелей, которые используют бунт для сведения счетов друг с другом и демонстрации силы перед властями.
+Во время штурма одного из корпусов происходит трагедия гибнет заложник-охранник, и Нашименту понимает, что обычные методы подавления здесь не работают. Он принимает решение использовать более жесткую тактику, разделяя заключенных по группировкам и стравливая их друг с другом. Эта стратегия приводит к кровавой резне между различными преступными группировками внутри тюрьмы.
+Операция по подавлению бунта транслируется в прямом эфире телевидения, и вся страна наблюдает за действиями БОПЕ. Нашименту становится национальным героем, его жесткие методы поддерживает напуганное преступностью население. Политики используют его популярность в своих целях, предлагая ему выдвинуть свою кандидатуру в законодательное собрание штата.
+Поначалу Нашименту отвергает предложение заняться политикой, считая политиков коррумпированными и неэффективными. Однако его убеждает профессор права Диого Фрага, идеалистично настроенный академик, который верит, что можно изменить систему изнутри. Фрага становится советником Нашименту и помогает ему подготовиться к политической карьере.
+Нашименту увольняется из полиции и баллотируется в депутаты, обещая бороться с коррупцией и преступностью законными методами. Его кампания проходит под лозунгами жесткой борьбы с преступностью и наведения порядка в государственных структурах. Он легко побеждает на выборах, получив огромную поддержку избирателей, уставших от безнаказанности преступников и коррупции чиновников.
+Став депутатом, Нашименту начинает работу в законодательном собрании и быстро понимает, что политическая система устроена гораздо сложнее, чем он предполагал. Его окружают опытные политики, которые десятилетиями строили сложные схемы взаимодействия с бизнесом и криминалом. Любые попытки радикальных реформ натыкаются на мощное сопротивление укоренившихся интересов.
+Особенно сложными оказываются отношения с депутатом Фортунато, влиятельным политиком, который контролирует значительную часть бюджетных средств, выделяемых на социальные программы. Фортунато представляет себя защитником прав человека и активистом по защите жителей фавел, но на самом деле использует свое положение для обогащения и укрепления политического влияния.
+Нашименту обнаруживает, что многие НКО и правозащитные организации, работающие в фавелах, являются прикрытием для отмывания денег и незаконного обогащения политиков. Средства, выделяемые на образование, здравоохранение и социальные программы для бедных районов, разворовываются через сложную систему фиктивных контрактов и подставных организаций.
+Расследование приводит его к пониманию того, что коррупция в социальной сфере наносит гораздо больший ущерб обществу, чем деятельность наркоторговцев. Украденные миллионы должны были пойти на строительство школ, больниц и детских садов в фавелах, но вместо этого оседают в карманах политиков и их сообщников.
+Тем временем в фавелах набирают силу милиции военизированные группировки, состоящие из бывших полицейских и военных, которые предлагают жителям защиту от наркоторговцев за плату. Эти группировки первоначально воспринимаются как меньшее зло по сравнению с наркодилерами, поскольку не торгуют наркотиками и поддерживают относительный порядок.
+Однако со временем милиции превращаются в новую форму организованной преступности, контролируя территории не менее жестко, чем наркокартели. Они облагают данью всех жителей и предпринимателей, контролируют транспорт, коммунальные услуги и торговлю. Любое сопротивление их власти подавляется с особой жестокостью.
+Нашименту понимает, что его бывшие коллеги из полиции активно участвуют в создании милиций, используя полученные в БОПЕ навыки для организации преступной деятельности. Многие из тех, кого он обучал борьбе с преступностью, теперь сами стали преступниками, только более организованными и опасными.
+Ситуация осложняется, когда выясняется, что сын Нашименту, Рафаэл, увлекся левыми идеями и участвует в студенческих протестах против милиций. Молодой человек не знает о прошлом отца в БОПЕ и считает его обычным коррумпированным политиком. Их отношения становятся еще более напряженными, когда Рафаэл начинает встречаться с активисткой правозащитной организации.
+Конфликт между отцом и сыном достигает апогея во время одной из акций протеста, когда полиция разгоняет демонстрантов. Рафаэл оказывается среди задержанных, и Нашименту вынужден использовать свои связи, чтобы освободить сына. Этот инцидент показывает юноше истинное лицо отца и еще больше отдаляет их друг от друга.
+Расследование коррупционных схем приводит Нашименту к открытию того, что Фортунато тесно связан с лидерами милиций и получает от них часть доходов в обмен на политическое прикрытие. НКО, которые он контролирует, не только разворовывают бюджетные средства, но и легализуют доходы от преступной деятельности милиций.
+Нашименту решает публично разоблачить коррупционную схему, несмотря на предупреждения о том, что это может стоить ему жизни. Он готовит подробный доклад с доказательствами причастности Фортунато и других политиков к отмыванию денег и связям с организованной преступностью.
+Однако перед самым выступлением в законодательном собрании Нашименту получает угрозы в адрес своей семьи. Милиции дают понять, что готовы убить его сына, если он не откажется от своих планов. Это ставит его перед мучительным выбором между общественным долгом и безопасностью семьи.
+Кульминацией становится публичное слушание в законодательном собрании, где Нашименту должен представить свои обвинения. Зал переполнен журналистами, политиками и активистами. Все ждут сенсационных разоблачений от бывшего командира БОПЕ, ставшего депутатом.
+Однако в последний момент Нашименту понимает, что его разоблачения могут привести только к замене одних коррумпированных политиков другими, не менее коррумпированными. Система настолько прогнила, что любые точечные удары по ней не способны принести кардинальных изменений. Вместо этого они только усилят хаос и кровопролитие.
+В своем выступлении Нашименту неожиданно для всех объявляет об отказе от депутатского мандата. Он признается, что политика оказалась еще более грязной и опасной, чем война с наркоторговцами. Он понимает, что не может изменить систему, которая основана на многолетних связях между политиками, бизнесменами и преступниками.
+Фильм завершается сценой, где Нашименту встречается с сыном на пляже Копакабана. Впервые за долгое время они разговаривают открыто и честно. Рафаэл начинает понимать сложность мира, в котором живет его отец, а Нашименту осознает, что идеализм сына не менее ценен, чем его собственный практический опыт.
+В финальных кадрах Нашименту идет по пляжу один, размышляя о будущем. Он понимает, что враг теперь действительно другой это не наркоторговцы из фавел, а коррумпированная система, которая пронизывает все уровни власти. Победить этого врага гораздо сложнее, поскольку он скрывается за фасадом законности и социальной ответственности.
+История показывает эволюцию преступности в Рио-де-Жанейро, где на смену относительно примитивным наркокартелям приходят более изощренные формы организованной преступности, тесно связанные с политическими и экономическими элитами. Фильм демонстрирует, что настоящая борьба с преступностью требует не только силовых методов, но и кардинальной реформы всей социально-политической системы.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Король говорит!', 'The story of King George VI, his impromptu ascension to the throne of the British Empire in 1936, and the speech therapist who helped the unsure monarch overcome his stammer.', '2010-01-01', 1, '118 minutes', 'The King''s Speech', 8.0, 'В 1925 году принц Альберт, герцог Йоркский, второй сын короля Георга V, страдает от тяжелого заикания, которое делает публичные выступления для него настоящей пыткой. Во время церемонии закрытия Британской имперской выставки на стадионе Уэмбли Альберт должен произнести речь перед огромной аудиторией и миллионами радиослушателей по всей Британской империи. Его попытка говорить превращается в мучительное зрелище - он задыхается, запинается и не может произнести ни слова, что причиняет ему глубокие страдания и унижение.
+Жена Альберта, Элизабет, герцогиня Йоркская, отчаянно пытается найти помощь для мужа, обращаясь к различным врачам и специалистам. Все предыдущие попытки лечения заканчивались неудачей - доктора предлагали Альберту курить сигареты для расслабления, засовывать камешки в рот или использовать другие бессмысленные методы, которые только усугубляли его состояние и подрывали уверенность в себе.
+По совету подруги Элизабет находит австралийского логопеда-самоучку Лайонела Лога, который работает в скромном кабинете на Харли-стрит. Лог не имеет официального медицинского образования, но обладает уникальными методами работы с речевыми нарушениями и глубоким пониманием психологических причин заикания. Его подход основан на том, что заикание часто связано с эмоциональными травмами и подавленными чувствами.
+Первая встреча между аристократическим принцем и простолюдином-терапевтом проходит крайне напряженно. Лог настаивает на том, чтобы Альберт называл его по имени, а сам обращается к принцу как "Берти", что шокирует члена королевской семьи, привыкшего к протоколу и формальностям. Лог объясняет, что его методы требуют равенства между пациентом и терапевтом, поскольку заикание часто усугубляется чувством неполноценности и социальным давлением.
+Во время первого сеанса Лог заставляет Альберта читать текст в наушниках под громкую музыку, записывая его речь на граммофон. Принц уверен, что эксперимент провалился, поскольку не слышал собственного голоса, но когда позже он прослушивает запись, то с удивлением обнаруживает, что говорил практически без заикания. Это открытие дает ему первую надежду на выздоровление.
+Лог начинает регулярные занятия с Альбертом, используя различные техники, включая дыхательные упражнения, физические разминки и психологическую терапию. Он заставляет принца делать странные упражнения - прыгать, кричать ругательства и выполнять другие действия, которые помогают снять мышечное напряжение и психологические блоки. Постепенно между аристократом и простолюдином развивается необычная дружба, несмотря на огромную разницу в социальном статусе.
+В ходе терапии Лог помогает Альберту понять корни его проблемы, которые уходят в детство. Принц рассказывает о жестоком обращении со стороны няни, которая била его левую руку, когда он пытался писать ею, заставляя переучиваться на правую руку. Его отец, король Георг V, был суровым и требовательным, постоянно критиковал сыновей и создавал атмосферу страха в семье. Старший брат Дэвид всегда был любимцем и наследником престола, что заставляло Альберта чувствовать себя неполноценным и ненужным.
+Личная жизнь принца осложняется поведением его старшего брата, принца Уэльского Дэвида, который ведет беспорядочный образ жизни и встречается с замужней американкой Уоллис Симпсон. Когда в 1936 году умирает король Георг V, Дэвид восходит на престол как Эдуард VIII, но его намерение жениться на дважды разведенной американке вызывает конституционный кризис в Великобритании.
+Правительство и церковь категорически отказываются признать Уоллис королевой, поскольку она разведена и не является британской подданной. Эдуард VIII сталкивается с выбором между короной и любовью, и в декабре 1936 года принимает решение отречься от престола ради брака с Уоллис. Это неожиданное решение означает, что Альберт должен стать королем, чего он отчаянно боится из-за своего заикания и неуверенности в себе.
+Коронация Альберта как Георга VI проходит в Вестминстерском аббатстве в мае 1937 года, и ему удается произнести необходимые слова во время церемонии без серьезных запинок благодаря подготовке с Логом. Однако настоящее испытание ждет нового короля впереди - в Европе нарастает военная угроза со стороны нацистской Германии, и народ нуждается в сильном лидере, способном вдохновить нацию в трудные времена.
+Адольф Гитлер является мастером публичных выступлений и использует радио как мощное оружие пропаганды, завоевывая поддержку немецкого народа своими страстными речами. Британское правительство понимает, что королю необходимо будет обращаться к нации через радиоэфир, чтобы противостоять нацистской пропаганде и поддержать моральный дух британцев.
+3 сентября 1939 года, после нападения Германии на Польшу, Великобритания объявляет войну нацистской Германии. Король Георг VI должен произнести по радио историческую речь, объявляющую о вступлении страны в войну и призывающую народ к единству перед лицом смертельной угрозы. Это выступление станет одним из самых важных в истории Великобритании, и от его успеха зависит способность короля вести нацию через грядущие испытания.
+В день выступления Лог прибывает в Букингемский дворец, чтобы поддержать короля во время его самого важного публичного выступления. Они вместе готовятся к речи, используя все техники, которые отрабатывали в течение многих лет. Лог размещается рядом с микрофоном, чтобы подавать Георгу VI знаки и поддерживать его во время выступления.
+Речь короля транслируется по всей Британской империи, и миллионы людей слушают своего монарха, который преодолевает свой недуг, чтобы обратиться к подданным в самый критический момент истории. Георг VI говорит медленно и осторожно, делая паузы, но его слова звучат искренне и убедительно. Он призывает британцев к мужеству, единству и вере в победу над злом, и его речь становится символом непоколебимости британского духа.
+Выступление проходит успешно, и король получает восторженную поддержку народа и правительства. Его способность преодолеть личные трудности ради служения стране вдохновляет миллионы британцев, которые видят в своем монархе пример мужества и самопожертвования. Лог и король понимают, что их совместная работа привела к триумфу не только над речевым недугом, но и над страхами и неуверенностью.
+В финальных титрах сообщается, что король Георг VI и Лайонал Лог оставались близкими друзьями до смерти короля в 1952 году. Георг VI успешно руководил страной во время Второй мировой войны, регулярно выступая по радио и поддерживая моральный дух нации во время блица и других испытаний. Его преодоление заикания стало символом того, как личное мужество и решимость могут помочь преодолеть любые препятствия ради служения высшей цели.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Прислуга', 'An aspiring author during the civil rights movement of the 1960s decides to write a book detailing the African American maids'' point of view on the white families for which they work, and the hardships they go through on a daily basis.', '2011-01-01', 1, '146 minutes', 'The Help', 8.0, 'Фильм разворачивается в Джексоне, штат Миссисипи, в 1963 году, в разгар движения за гражданские права, и рассказывает историю взаимоотношений между белыми семьями среднего класса и афроамериканскими женщинами, работающими у них прислугой. Центральной фигурой становится двадцатидвухлетняя Юджиния "Скитер" Фелан, недавняя выпускница Университета Миссисипи, которая возвращается домой с мечтами стать писательницей, но сталкивается с ожиданиями общества выйти замуж и вести традиционную жизнь домохозяйки.
+Скитер вырастала в любящей семье на хлопковой плантации, где ее воспитывала афроамериканская няня Константин, которая стала для девочки второй матерью и источником мудрости и поддержки. Когда Скитер возвращается домой, она обнаруживает, что Константин исчезла без объяснений, и ее мать Шарлотт отказывается говорить о том, что произошло, утверждая только, что та уехала к родственникам в Чикаго.
+Скитер получает работу в местной газете, ведя колонку домашних советов, несмотря на то, что сама не имеет опыта ведения домашнего хозяйства. Чтобы получить материал для колонки, она обращается за помощью к Эйбилин Кларк, пятидесятичетырехлетней афроамериканской горничной, которая работает у ее подруги Элизабет Лифолт. Эйбилин - мудрая и добрая женщина, которая всю жизнь посвятила воспитанию белых детей, включая двухлетнюю Мэй Мобли, дочь Элизабет.
+Эйбилин потеряла своего единственного сына Треелора в результате несчастного случая на работе, когда белые надсмотрщики заставили его поднимать слишком тяжелые предметы, что привело к его смерти. Горе от потери сына сделало ее еще более protective по отношению к детям, которых она воспитывает, особенно к Мэй Мобли, которую собственная мать игнорирует и критикует за внешность.
+Лучшая подруга Эйбилин - Минни Джексон, тридцатипятилетняя горничная с острым языком и независимым характером, которая известна своими кулинарными способностями, но также своей неспособностью молчать перед лицом несправедливости. Минни работает у Хилли Холбрук, амбициозной и злобной женщины, которая является лидером местного женского общества и ярой сторонницей расовой сегрегации.
+Хилли активно продвигает "Инициативу домашней санитарии" - предложение, требующее от всех белых семей строить отдельные туалеты для афроамериканской прислуги, якобы из соображений гигиены, но на самом деле для усиления расовой сегрегации и унижения. Она также организует благотворительные сборы для "бедных детей Африки", при этом игнорируя нужды афроамериканских детей в собственном городе.
+Конфликт между Минни и Хилли достигает пика, когда Минни использует туалет в доме во время торнадо, что приводит Хилли в ярость. В ответ на постоянные унижения и несправедливое обращение Минни испекает для Хилли особенный шоколадный пирог, добавив в него свои экскременты, и наблюдает, как та съедает два куска, хваля вкус. Этот инцидент, который станет известен как "Дерьмовый пирог", приводит к увольнению Минни, и Хилли распространяет слухи, что та воровка, делая невозможным для нее найти новую работу в городе.
+Единственная работа, которую Минни может найти, - это место у Селии Фут, молодой белой женщины из бедной семьи, которая вышла замуж за богатого мужчину и теперь живет изолированно от местного общества, которое ее не принимает. Селия - добрая, но наивная женщина, которая страдает от повторяющихся выкидышей и депрессии. Она отчаянно хочет детей и быть принятой в обществе, но ее попытки влиться в круг жен встречают холодное отношение, особенно со стороны Хилли.
+Тем временем Скитер получает предложение от нью-йоркского издателя Элейн Стейн написать книгу на злободневную тему. Вдохновленная разговорами с Эйбилин и наблюдая за несправедливым обращением с афроамериканской прислугой, Скитер предлагает написать книгу с точки зрения горничных, показав их опыт работы в белых семьях. Проект крайне рискованный в атмосфере расового напряжения и может привести к серьезным последствиям для всех участников.
+Эйбилин сначала колеблется, понимая опасность проекта, но постепенно соглашается участвовать, особенно после инцидента, когда ее арестовывают по ложному обвинению, выдвинутому Хилли. Минни также присоединяется к проекту, видя в нем возможность рассказать правду о своем опыте. Постепенно к ним присоединяются другие горничные, каждая со своей историей страданий, унижений, но также любви к детям, которых они воспитывают.
+Процесс написания книги происходит в обстановке строгой секретности. Женщины встречаются в доме Эйбилин по ночам, рассказывая свои истории, которые Скитер записывает. Каждая история раскрывает различные аспекты расизма и классовой дискриминации - от откровенной жестокости до более тонких форм унижения и пренебрежения.
+Параллельно развиваются романтические отношения Скитер со Стюартом Уитвортом, привлекательным молодым человеком из богатой семьи. Однако их отношения осложняются различными взглядами на расовые вопросы и будущее. Стюарт ожидает, что Скитер станет традиционной женой, а ее растущая вовлеченность в проект книги и изменение мировоззрения создают между ними пропасть.
+Скитер также узнает правду о исчезновении Константин. Оказывается, что ее мать Шарлотт уволила няню после инцидента, когда дочь Константин, Лулабель, которая выглядела почти белой, пришла на благотворительный обед и села среди белых женщин. Скандал привел к тому, что Шарлотт потребовала от Константин выбирать между работой и дочерью. Константин выбрала дочь и уехала в Чикаго, где вскоре умерла от горя и болезни.
+Ситуация в городе обостряется после убийства активиста за гражданские права Медгара Эверса в июне 1963 года. Растет напряжение между расами, и любая деятельность, которая может быть воспринята как подрывная, становится еще более опасной. Несмотря на риски, женщины продолжают работу над книгой.
+Кульминация наступает, когда книга "Прислуга" публикуется под псевдонимом Анонимус. Хотя имена и некоторые детали изменены, жители Джексона легко узнают себя и свои истории в книге. Книга становится национальным бестселлером и привлекает внимание к проблемам расовой дискриминации на Юге.
+Хилли приходит в ярость, узнав в одной из историй рассказ о "Дерьмовом пироге" и понимая, что Минни публично ее унизила. Она пытается организовать бойкот книги и найти способы отомстить участницам проекта. However, her efforts are complicated by the fact that admitting to recognizing the stories would mean admitting to her own behavior described in the book.
+Последствия публикации различны для разных участниц. Скитер получает предложение работы в издательстве в Нью-Йорке и принимает решение покинуть Миссисипи, понимая, что ее будущее не в консервативном Юге. Ее отношения со Стюартом окончательно разрываются из-за их принципиальных разногласий.
+Для афроамериканских женщин последствия более сложные. Хотя книга привлекает внимание к их проблемам, они продолжают жить в той же системе дискриминации. Некоторые теряют работу, но другие находят новые возможности. Эйбилин решает оставить работу горничной и посвятить себя писательству, вдохновленная успехом проекта.
+Минни продолжает работать у Селии, и их отношения развиваются в настоящую дружбу, преодолевающую расовые барьеры. Селия наконец успешно вынашивает ребенка, и Минни помогает ей обрести уверенность в себе и найти свое место в обществе.
+Фильм заканчивается сценой прощания между Скитер и Эйбилин. Две женщины, принадлежащие к разным расам и социальным классам, но объединенные общим делом и взаимным уважением, понимают, что изменили не только свои жизни, но и внесли вклад в более широкие социальные изменения.
+В финальных кадрах Эйбилин идет по улице, размышляя о будущем и о том, что она наконец нашла свой голос. Ее внутренний монолог подчеркивает основную тему фильма - важность говорить правду, даже когда это опасно, и силу женской солидарности в борьбе против несправедливости. Фильм завершается на ноте осторожного оптимизма, показывая, что хотя систематические изменения требуют времени, индивидуальное мужество и солидарность могут стать катализатором более широких социальных трансформаций.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Дэдпул', 'A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.', '2016-01-01', 1, '108 minutes', 'Deadpool', 8.0, 'Дэдпул (Deadpool)
+Фильм рассказывает историю Уэйда Уилсона, бывшего военного спецназовца из Канады, который после увольнения из армии работает наемником в Нью-Йорке. Уэйд занимается решением проблем людей, которые не могут обратиться в полицию преследует изменивших жен, запугивает сталкеров, устраняет угрозы за деньги. Несмотря на свою профессию, он обладает своеобразным моральным кодексом и никого не убивает без серьезной причины.
+Уэйд проводит время в баре, принадлежащем его другу Ванессе Карлайсл, где собираются различные персонажи из преступного мира. Там он встречает Ванессу, проститутку с острым умом и таким же извращенным чувством юмора, как у него самого. Между ними завязываются отношения, основанные на взаимном цинизме, сарказме и неожиданно глубокой привязанности друг к другу.
+Их отношения развиваются стремительно они обнаруживают, что идеально подходят друг другу во всем, от сексуальных фантазий до чувства юмора. Уэйд и Ванесса планируют пожениться и создать семью, несмотря на их довольно сомнительное прошлое. Год их совместной жизни становится самым счастливым периодом в жизни Уэйда, который впервые испытывает настоящую любовь и стабильность.
+Однако их планы рушатся, когда у Уэйда диагностируют агрессивную форму рака, который поражает различные органы его тела. Врачи дают ему несколько месяцев жизни, и никакие традиционные методы лечения не могут ему помочь. Уэйд скрывает диагноз от Ванессы, пытаясь защитить ее от боли, но она понимает, что с ним что-то не так.
+В баре к Уэйду подходит загадочный мужчина в костюме, представившийся рекрутером некой организации. Он предлагает Уэйду участие в экспериментальной программе, которая может не только вылечить его рак, но и наделить сверхспособностями. Поначалу Уэйд отвергает предложение, но когда состояние его здоровья резко ухудшается, он соглашается, не сказав об этом Ванессе.
+Уэйда доставляют в секретную лабораторию, управляемую садистским ученым по прозвищу Аякс, настоящее имя которого Фрэнсис Фримен. Аякс руководит программой Оружие Х, целью которой является создание супер-солдат из отчаявшихся людей. Его помощницей выступает Ангел Даст, женщина с суперсилой и садистскими наклонностями.
+Эксперименты заключаются в активации скрытых мутантных генов через экстремальный стресс и пытки. Уэйда подвергают различным формам физических и психологических истязаний, пытаясь пробудить в нем мутантные способности. Аякс объясняет, что мутации проявляются только в критических ситуациях, поэтому необходимо довести испытуемого до грани смерти.
+Дни превращаются в недели невыносимых страданий. Уэйда помещают в камеру кислородного голодания, подвергают электрошоку, замораживают и размораживают, но мутантные способности не проявляются. Аякс получает садистское удовольствие от мучений Уэйда, особенно после того, как узнает о его отношениях с Ванессой и начинает использовать это против него.
+Переломный момент наступает, когда Аякс сообщает Уэйду, что после завершения экспериментов его продадут как рабочую силу богатым клиентам. Разъяренный и отчаявшийся Уэйд оскорбляет Аякса, называя его настоящим именем Фрэнсис, что приводит садиста в бешенство. Аякс решает довести эксперимент до конца, поместив Уэйда в камеру с экстремально низким содержанием кислорода.
+Находясь на грани смерти от удушья, Уэйд наконец активирует свои мутантные способности. Его тело обретает способность к регенерации, которая не только исцеляет все его раны, но и останавливает развитие рака. Однако процесс регенерации взаимодействует с раковыми клетками непредсказуемым образом, что приводит к чудовищному изуродованию его лица и тела.
+Получив суперсилу, Уэйд устраивает побег из лаборатории, убивая охранников и устраивая взрыв. Однако Аякс и Ангел Даст спасаются, а сама лаборатория разрушается. Уэйд остается с невероятными способностями к регенерации и практической бессмертностью, но его внешность настолько изуродована, что он не решается вернуться к Ванессе.
+Вместо возвращения домой Уэйд решает найти и убить Аякса, полагая, что тот может обратить процесс мутации и вернуть ему нормальную внешность. Он создает костюм и маску, скрывающую его изуродованное лицо, и принимает имя Дэдпул. Начинается его кровавая охота за людьми, связанными с программой Оружие Х.
+Дэдпул методично выслеживает и убивает всех, кто был причастен к экспериментам над ним. Его методы крайне жестоки и изобретательны он использует свою способность к регенерации для проведения самоубийственных атак, зная, что сможет восстановиться. Каждое убийство сопровождается саркастическими комментариями и черным юмором.
+Тем временем Ванесса отчаянно ищет Уэйда, который исчез без объяснений. Она не знает о его болезни и экспериментах, поэтому считает, что он просто бросил ее. Это причиняет ей огромную боль, но она продолжает надеяться на его возвращение и расспрашивает всех общих знакомых о его местонахождении.
+Деятельность Дэдпула привлекает внимание Людей Икс, команды мутантов-супергероев. Колосс, металлический гигант с русским акцентом, и Боеголовка, девушка-подросток с взрывными способностями, пытаются завербовать Дэдпула в свою команду. Они считают, что он может стать положительным героем, если направить его способности в правильное русло.
+Дэдпул категорически отвергает их предложения, издеваясь над их идеалистическими представлениями о геройстве. Он объясняет, что не заинтересован в спасении мира или защите невинных его единственная цель месть Аяксу. Колосс продолжает попытки перевоспитать Дэдпула, что приводит к комичным конфликтам между ними.
+Поиски Аякса приводят Дэдпула к автомобильному мосту, где он устраивает засаду на конвой, в котором, по его информации, должен находиться его враг. Начинается зрелищная битва на движущихся автомобилях, во время которой Дэдпул демонстрирует свои боевые навыки и способность к регенерации, восстанавливаясь после смертельных ранений.
+Однако выясняется, что в конвое находится не Аякс, а один из его подчиненных. Во время допроса Дэдпул узнает местонахождение своего главного врага, но их разговор прерывается прибытием Колосса и Боеголовки. Происходит комичная сцена, где Колосс пытается арестовать Дэдпула за массовые убийства, а тот издевается над его моральными принципами.
+Аякс, узнав о деятельности Дэдпула, решает использовать против него Ванессу. Он похищает девушку и отправляет Дэдпулу сообщение с требованием встретиться на заброшенном авианосце, где когда-то располагалась лаборатория программы Оружие Х. Аякс угрожает убить Ванессу, если Дэдпул не придет один.
+Несмотря на желание действовать в одиночку, Дэдпул понимает, что ему потребуется помощь в бою против Аякса и Ангел Даст. Он неохотно принимает предложение помощи от Колосса и Боеголовки, хотя продолжает издеваться над их героической риторикой. Трио направляется на заброшенный авианосец для финальной битвы.
+На авианосце происходит впечатляющая битва между героями и злодеями. Колосс сражается с Ангел Даст, демонстрируя свою несокрушимую металлическую форму против ее сверхсилы. Боеголовка использует свои взрывные способности, но по неопытности причиняет больше вреда окружающей обстановке, чем врагам.
+Дэдпул ведет личную битву с Аяксом, которая превращается в жестокую схватку без правил. Оба противника обладают повышенной выносливостью и болевым порогом, что делает их бой особенно кровавым и продолжительным. Аякс использует свое преимущество в том, что не чувствует боли, но Дэдпул компенсирует это способностью к регенерации.
+Во время битвы выясняется, что Аякс лгал о возможности обратить мутацию Дэдпула. Процесс необратим, и Уэйд навсегда останется изуродованным. Это открытие приводит Дэдпула в ярость, но также заставляет его пересмотреть свои приоритеты он понимает, что Ванесса важнее его внешности.
+Кульминацией битвы становится момент, когда Дэдпул получает возможность убить беззащитного Аякса. Колосс призывает его проявить милосердие и стать настоящим героем, не запятнав себя хладнокровным убийством. Дэдпул делает вид, что прислушивается к советам, но затем без колебаний убивает Аякса выстрелом в голову.
+После победы Дэдпул воссоединяется с Ванессой, которая шокирована его изменившейся внешностью, но быстро понимает, что под маской скрывается ее любимый Уэйд. Она принимает его таким, какой он есть, и они возобновляют свои отношения. Дэдпул понимает, что его внешность не имеет значения для человека, который действительно его любит.
+Фильм завершается сценой в той же квартире, где все начиналось, но теперь Уэйд носит маску даже дома, что создает комичные ситуации в их интимной жизни. Ванесса адаптируется к новой реальности, а Дэдпул продолжает свою деятельность наемника, но теперь с более четким пониманием того, что действительно важно в жизни.
+В пост-кредитной сцене Дэдпул обращается непосредственно к зрителям, нарушая четвертую стену, и намекает на возможное продолжение, издеваясь над клише супергеройских фильмов и обещая еще больше насилия и черного юмора в будущем. Он также высмеивает студию за низкий бюджет фильма и ограниченное количество известных мутантов в касте.
+История представляет собой нетрадиционный подход к жанру супергеройских фильмов, сочетая крайнее насилие с комедией и романтическую линию с жаждой мести. Фильм постоянно нарушает условности жанра через прямые обращения к зрителю, самоиронию и пародирование штампов супергеройского кино, создавая уникальный опыт просмотра.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('История Элли', 'The mysterious disappearance of a kindergarten teacher during a picnic in the north of Iran is followed by a series of misadventures for her fellow travelers.', '2009-01-01', 1, '119 minutes', 'Darbareye Elly', 8.0, 'История Элли (русская локализация названия)
+Группа друзей из среднего класса, живущих в Тегеране, планирует провести выходные на берегу Каспийского моря в небольшом прибрежном городке. Инициатором поездки становится Сепиде, энергичная и общительная женщина, которая работает учительницей и мечтает устроить личную жизнь своих друзей. Она предлагает взять с собой в поездку свою коллегу Элли, молодую воспитательницу детского сада, чтобы познакомить ее с Ахмадом - их общим другом, который много лет прожил в Германии и недавно вернулся в Иран после развода.
+Ахмад провел долгие годы в Германии и отправляется в отпуск на родину в Иран, надеясь начать новую жизнь и найти в Элли, работающей воспитательницей в детском саде, новую подругу FilmixKinoGo. Сепиде убеждена, что Элли и Ахмад прекрасно подойдут друг другу, и настойчиво организует эту поездку как возможность для их знакомства, несмотря на первоначальные колебания Элли.
+В состав компании входят несколько супружеских пар с детьми: Шохре и Пейман со своей маленькой дочерью, Наази и Манучер, а также Амир, который путешествует со своим маленьким сыном. Все они представляют образованный средний класс современного иранского общества - учителя, инженеры и служащие, которые стремятся к западному образу жизни в рамках строгих религиозных и социальных ограничений их страны.
+Первый день поездки проходит в атмосфере веселья и непринужденности. Друзья размещаются на вилле у моря, играют в волейбол на пляже, готовят еду, танцуют и поют под гитару. Элли, изначально застенчивая и сдержанная, постепенно расслабляется в компании новых знакомых. Ахмад проявляет к ней интерес, и между ними завязывается осторожное знакомство. Кажется, что план Сепиде удается, и все идет именно так, как она планировала.
+Однако на следующий день происходит трагедия, которая в корне меняет атмосферу отдыха. Во время игры в волейбол на пляже маленькая дочь Шохре и Пеймана падает в море. Взрослые бросаются спасать ребенка, и в суматохе никто не замечает, что Элли исчезает. Девочку удается спасти, но когда все оглядываются, Элли нигде нет. Ее вещи остались в доме, но сама она бесследно пропала.
+Начинается лихорадочный поиск Элли. Друзья обыскивают пляж, близлежащие районы, расспрашивают местных жителей, но никто ничего не видел. Постепенно нарастает паника и взаимные обвинения. Некоторые предполагают, что Элли могла утонуть, пытаясь спасти ребенка, другие считают, что она просто ушла, не желая продолжать знакомство с Ахмадом. Группа обращается в местную полицию, но правоохранительные органы относятся к происшествию формально и не проявляют особого энтузиазма в поисках.
+В ходе расследования выясняются шокирующие детали о личности Элли, которые никто из друзей не знал. Оказывается, что она не была свободной девушкой, как думали все остальные. У Элли есть жених, с которым она помолвлена, и их свадьба должна состояться в ближайшее время. Более того, она скрывала от коллег и новых знакомых многие аспекты своей личной жизни, включая консервативные религиозные взгляды и строгое семейное воспитание.
+Эти откровения приводят к серьезным конфликтам внутри группы. Друзья начинают обвинять друг друга в случившемся, особенно Сепиде, которая организовала эту поездку и настаивала на участии Элли. Выясняется, что Сепиде знала о помолвке Элли, но решила скрыть эту информацию от остальных, надеясь, что знакомство с Ахмадом поможет Элли изменить свои планы и выйти замуж за более подходящего, по ее мнению, мужчину.
+Ситуация осложняется, когда прибывает жених Элли вместе с ее матерью. Они в ярости от того, что Элли участвовала в смешанной компании без их ведома и согласия, что противоречит традиционным иранским нормам поведения для помолвленной девушки. Жених обвиняет друзей в том, что они соблазнили Элли участвовать в неподобающем мероприятии, и угрожает судебными исками.
+Полицейское расследование принимает более серьезный оборот, когда власти начинают рассматривать возможность убийства или принуждения. Всех участников поездки допрашивают как потенциальных свидетелей или подозреваемых. Атмосфера недоверия и взаимных подозрений разрушает дружеские отношения в группе. Каждый начинает защищать себя, перекладывая ответственность на других.
+Особенно напряженные отношения складываются между Ахмадом и остальными участниками группы. Некоторые начинают подозревать, что он мог каким-то образом принудить Элли к участию в поездке или что между ними произошел конфликт, который привел к ее исчезновению. Ахмад, в свою очередь, чувствует себя преданным друзьями, которые не поддерживают его в трудной ситуации.
+В ходе расследования также выясняются другие семейные тайны и личные проблемы участников группы. Некоторые браки оказываются не такими крепкими, как казалось на первый взгляд, а кажущаяся гармония в отношениях между супругами скрывает глубокие противоречия и неудовлетворенность. Стресс от исчезновения Элли становится катализатором, который обнажает скрытые проблемы и конфликты.
+Поиски Элли продолжаются несколько дней, но не приносят результатов. Море не выбрасывает на берег тело, что могло бы подтвердить версию о самоубийстве или несчастном случае. Нет также никаких следов того, что она покинула город самостоятельно. Элли словно растворилась в воздухе, оставив после себя только вопросы и разрушенные отношения между друзьями.
+В кульминационный момент фильма происходит эмоциональное противостояние между всеми участниками событий. Каждый пытается переложить вину на других, обвиняя друг друга в лжи, эгоизме и безответственности. Выясняется, что многие из друзей знали больше о ситуации Элли, чем признавали ранее, но предпочли промолчать из-за собственных интересов или страха перед последствиями.
+Фильм завершается без окончательного разрешения загадки исчезновения Элли. Зрители так и не узнают, что с ней произошло на самом деле - утонула ли она случайно, покончила ли с собой из-за давления обстоятельств, или сбежала, чтобы избежать нежелательного брака. Эта неопределенность является центральной темой произведения Асгара Фархади, который исследует сложность человеческих отношений и относительность истины.
+Фильм режиссера Асгара Фархади стал призером Берлинского кинофестиваля, где Фархади получил премию "Серебряный медведь" за лучшую режиссуру WikipediaRezka-ua. История показывает, как одно трагическое событие может разрушить кажущуюся гармонию в отношениях между людьми и обнажить глубокие противоречия современного иранского общества, разрывающегося между традиционными ценностями и стремлением к западному образу жизни.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Черный лебедь', 'A committed dancer struggles to maintain her sanity after winning the lead role in a production of Tchaikovsky''s "Swan Lake".', '2010-01-01', 1, '108 minutes', 'Black Swan', 8.0, 'Нина Сэйерс - двадцатидвухлетняя балерина, которая живет в небольшой квартире в Нью-Йорке со своей матерью Эрикой. Эрика когда-то сама была танцовщицей, но забеременела в двадцать восемь лет и была вынуждена оставить карьеру ради материнства. Теперь она полностью посвятила себя дочери, превратив комнату Нины в розовый детский мир с мягкими игрушками и балетными пуантами. Нина работает в престижной балетной труппе Нью-Йоркского городского балета под руководством французского хореографа Томаса Лероя, харизматичного и требовательного художественного руководителя.
+Нина просыпается каждое утро в половине седьмого, завтракает грейпфрутом и овсянкой, которую готовит мать, и отправляется на репетиции. Она технически безупречна, дисциплинированна и полностью предана искусству, но при этом крайне замкнута и эмоционально зажата. Каждый день она видит в метро плакаты с изображением действующей прима-балерины Бет Макинтайр в роли Белого лебедя из "Лебединого озера". Нина мечтает когда-нибудь занять ее место, но понимает, что конкуренция в мире балета беспощадна.
+Когда Томас объявляет о новой постановке "Лебединого озера", он также сообщает, что Бет уходит на пенсию и им нужна новая прима-балерина для исполнения главной роли. Особенность этой постановки заключается в том, что одна танцовщица должна исполнять две противоположные роли - невинного и хрупкого Белого лебедя и его темного двойника, соблазнительного и порочного Черного лебедя. Нина горит желанием получить эту роль и усиленно готовится к прослушиванию.
+В день прослушивания в студию приходит новая танцовщица - Лили, которая только что переехала из Сан-Франциско. Лили - полная противоположность Нины: она опаздывает на репетиции, курит, носит черное белье вместо розового, как того требуют правила, и обладает естественной грацией и чувственностью. Во время прослушивания Нина исполняет партию технически безупречно, но когда очередь доходит до Лили, та танцует с такой природной страстью и соблазнительностью, что все в зале замирают.
+Томас видит, что Нина идеально подходит для роли Белого лебедя - она воплощает невинность, хрупкость и техническое совершенство. Но для роли Черного лебедя ей не хватает внутреннего огня, страсти и способности к соблазнению. Лили же, наоборот, естественно воплощает темную сторону, но уступает Нине в технике. После прослушивания Томас приглашает Нину в свой кабинет и объясняет ей суть роли - необходимо найти в себе темную сторону, отпустить контроль и позволить себе потеряться в танце.
+Во время разговора он внезапно принуждает Нину к страстному поцелую, пытаясь разбудить в ней скрытую чувственность. Нина в шоке кусает его за губу и убегает. На следующий день, когда она приходит извиняться, Томас объявляет ей, что главная роль достается ей. Он объясняет, что ее реакция - укус - показала ему, что темная сторона в ней есть, просто нужно ее освободить.
+Начинаются интенсивные репетиции. Нина прекрасно справляется с партией Белого лебедя, но когда дело доходит до роли Черного лебедя, Томас постоянно останавливает ее, требуя большей страсти, сексуальности и освобождения от внутренних зажимов. Он кричит на нее, унижает, пытается различными способами вывести из равновесия. Нина начинает испытывать огромное давление, особенно когда понимает, что Лили назначена ее дублершей и в любой момент может заменить ее.
+Психологическое состояние Нины начинает стремительно ухудшаться. Она начинает видеть галлюцинации - в зеркалах ее отражение начинает жить собственной жизнью, двигаясь не синхронно с ней. На спине у нее появляются красные расчесы, которые она наносит себе в состоянии стресса. Мать, заметив это, обрезает ей ногти и начинает еще более пристально следить за дочерью. Нина начинает видеть, как у нее на теле появляются черные перья, а пальцы на ногах срастаются, как у птицы.
+Отношения между Ниной и матерью становятся все более напряженными. Эрика, которая сама пожертвовала карьерой ради материнства, одновременно гордится успехами дочери и боится, что балет разрушит ее так же, как когда-то разрушил ее саму. Она становится еще более контролирующей, проверяет каждый шаг Нины, не дает ей личного пространства. Нина чувствует себя задыхающейся в этой атмосфере гиперопеки.
+Ситуация усугубляется, когда Нина едет навестить Бет, которая попала в больницу после того, как в состоянии депрессии бросилась под проезжающую машину. Бывшая прима-балерина лежит с переломанными ногами и в ярости обвиняет Нину в том, что та заняла ее место и разрушила ее жизнь. Она кричит, что Нина ничего из себя не представляет и никогда не сможет сравниться с ней. Во время этого болезненного визита Нина незаметно крадет у Бет косметику и пилочку для ногтей.
+Параноидальные мысли Нины усиливаются. Ей кажется, что Лили постоянно пытается занять ее место, флиртует с Томасом и намеренно саботирует ее выступления. На самом деле Лили просто ведет себя естественно и дружелюбно, но в больном сознании Нины каждый ее жест трактуется как угроза. Нина начинает следить за Лили, изучать ее манеры, пытаясь понять секрет ее природной сексуальности.
+За день до премьеры происходит катастрофа - Нина получает травму ноги во время репетиции. Томас в бешенстве сообщает ей, что роль Черного лебедя во втором акте будет исполнять Лили. Для Нины это становится сокрушительным ударом - вся ее жизнь была подчинена подготовке к этому спектаклю, и теперь самая важная часть роли ускользает от нее.
+Вечером перед премьерой Лили неожиданно приходит к Нине домой. Она говорит, что хочет помочь ей расслабиться перед важным днем, и предлагает пойти повеселиться. Несмотря на яростные протесты матери, которая считает это безумием, Нина соглашается. Впервые в жизни она идет в ночной клуб, где Лили дает ей таблетку экстази. Под воздействием наркотика Нина отпускает все свои зажимы - она танцует, флиртует с незнакомцами, позволяет себе быть свободной и сексуальной.
+Вечер заканчивается тем, что девушки приезжают к Нине домой и занимаются сексом. Для Нины, которая всю жизнь была зажатой и контролируемой, это становится откровением - она впервые чувствует свою темную, чувственную сторону. Но когда она просыпается утром в день премьеры, рядом с ней никого нет, и у нее начинают возникать сомнения - а было ли это на самом деле или все приснилось?
+Проспав до позднего утра, Нина в панике бежит в театр. Мать пытается ее остановить, говоря, что она не в состоянии выступать, но Нина вырывается и едет на спектакль. В театре царит хаос - все ищут пропавшую прима-балерину. Томас в ярости, но когда видит Нину, решает дать ей последний шанс.
+Первый акт, где Нина исполняет роль Белого лебедя, проходит триумфально. Она танцует с такой чистотой и совершенством, что зал замирает в восхищении. Но во время антракта, когда она готовится ко второму акту, в ее гримерной появляется Лили в костюме Черного лебедя. Лили насмехается над Ниной, говорит, что та слабачка и неудачница, и что теперь она, Лили, станет новой звездой труппы.
+В приступе ярости и под воздействием галлюцинаций Нина хватает осколок разбитого зеркала и нападает на Лили. Девушки дерутся, и в результате, как кажется Нине, она убивает соперницу, нанеся ей смертельную рану в живот. В шоке она прячет тело в ванной комнате и готовится выйти на сцену для исполнения роли Черного лебедя.
+Выходя на сцену, Нина наконец находит в себе ту темную, соблазнительную энергию, которой ей не хватало. Она танцует роль Черного лебедя с потрясающей страстью, техникой и сексуальностью, полностью воплощая характер коварной соблазнительницы. Каждое ее движение пропитано магнетизмом и силой. Публика встречает ее выступление бурными овациями, Томас смотрит на нее с восхищением - наконец-то его протеже достигла совершенства.
+Но когда Нина возвращается в гримерную, чтобы переодеться для финального акта, она обнаруживает живую и невредимую Лили, которая радостно поздравляет ее с блестящим выступлением. Осознав, что убийство было галлюцинацией, Нина понимает страшную правду - она ранила не Лили, а себя. Осколок зеркала торчит у нее в животе, и она истекает кровью.
+Скрывая рану под костюмом, Нина выходит на финальный акт спектакля. Исполняя смерть Белого лебедя, которая бросается со скалы, чтобы освободиться от злых чар, она вкладывает в танец всю свою душу, всю свою боль и страдание. Это становится ее величайшим триумфом - она достигает абсолютного совершенства в искусстве, сливаясь с ролью настолько полно, что искусство и реальность становятся неразличимы.
+После завершения спектакля, когда занавес опускается под бурные овации публики, Нина падает на матрац за кулисами. Вокруг нее собираются Томас, Лили и другие артисты, которые только сейчас замечают кровь на ее белом пачке. В последние мгновения жизни Нина шепчет "Я почувствовала это. Совершенство. Я была совершенна", и улыбка блаженства озаряет ее лицо. Она наконец достигла того идеала, к которому стремилась всю жизнь, заплатив за него самую высокую цену. Фильм заканчивается, когда Нина закрывает глаза, окруженная светом софитов, навсегда оставшись в памяти как воплощение трагического совершенства искусства.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Tropa de Elite', 'In 1997 Rio de Janeiro, Captain Nascimento has to find a substitute for his position while trying to take down drug dealers and criminals before the Pope visits.', '2007-01-01', 1, '115 minutes', 'Tropa de Elite', 8.0, 'Фильм открывается сценами жестоких операций спецподразделения BOPE в фавелах Рио-де-Жанейро, где капитан Насименто со своей командой проводит рейды против наркоторговцев. Насименто рассказывает в закадровом голосе о своей работе, объясняя философию BOPE - они используют крайние методы, включая пытки и внесудебные казни, считая это единственным способом борьбы с наркопреступностью в условиях тотальной коррупции обычной полиции. Насименто устал от постоянного насилия и хочет уйти в отставку, чтобы быть рядом с беременной женой Розаной, но сначала должен найти себе замену среди молодых офицеров.
+Параллельно показывается жизнь двух лучших друзей - полицейских Андре Матиаса и Нето Гувейи. Матиас происходит из обеспеченной семьи из района Копакабана, его отец - успешный бизнесмен. Он учится на юридическом факультете и работает в полиции скорее для получения опыта, чем из идейных соображений. Нето же выходец из среднего класса, он искренне верит в справедливость и хочет честно служить закону. Оба служат в 18-м батальоне военной полиции, который патрулирует район между богатыми кварталами и фавелами.
+В их батальоне процветает коррупция - офицеры регулярно получают взятки от наркоторговцев за то, чтобы не вмешиваться в их дела или предупреждать о готовящихся операциях. Командование закрывает глаза на эту практику, поскольку сами участвуют в коррупционных схемах. Нето категорически отказывается брать взятки, что вызывает неприязнь коллег, которые считают его выскочкой. Матиас поначалу тоже не участвует в коррупции, но постепенно начинает понимать, что честность в этой системе может быть опасной для жизни.
+Тем временем в фавеле Туранто правит наркобарон по кличке Байано, который контролирует торговлю кокаином и содержит целую армию вооруженных подростков. Его главным конкурентом является другой наркобарон из соседней фавелы. Между ними идет постоянная война за территории и сферы влияния, от которой страдают мирные жители фавел.
+Ситуация обостряется, когда становится известно о предстоящем визите Папы Римского в Рио-де-Жанейро. Власти города требуют от полиции навести порядок и зачистить фавелы от наркоторговцев перед этим важным событием. BOPE получает приказ активизировать операции, что означает еще более жестокие методы борьбы с преступностью.
+Во время одного из патрулирований Нето и Матиас со своим подразделением попадают в засаду в фавеле Туранто. Наркоторговцы открывают по ним огонь из автоматического оружия, и в завязавшейся перестрелке Нето получает тяжелое ранение в живот. Матиас, отчаянно пытаясь спасти друга, обращается за помощью к местным жителям и даже к связанным с наркобизнесом людям, готовый на все, чтобы вывезти Нето из фавелы. Эта ситуация ставит Матиаса в компрометирующее положение, поскольку его действия могут быть истолкованы как сотрудничество с преступниками.
+Нето выживает после операции, но его ранение серьезно влияет на его мировоззрение. Он становится еще более принципиальным в вопросах борьбы с коррупцией и открыто критикует систему, что делает его изгоем в собственном подразделении. Коллеги начинают относиться к нему как к предателю, который может сдать их всех руководству за получение взяток.
+Матиас, напротив, под давлением обстоятельств и желанием защитить себя и друга, начинает идти на компромиссы. Он принимает участие в коррупционных схемах, получает деньги от наркоторговцев и постепенно втягивается в систему, которую раньше презирал. Это создает напряженность в его отношениях с Нето, который не может понять и принять выбор лучшего друга.
+Насименто, наблюдая за ситуацией в обычной полиции, видит в Нето именно того человека, который мог бы стать его преемником в BOPE. Принципиальность Нето, его нежелание идти на сделку с совестью и готовность рисковать жизнью ради справедливости делают его идеальным кандидатом для элитного отряда. Насименто начинает присматриваться к молодому полицейскому и даже рассматривает возможность его рекрутирования.
+В это время обстановка в фавелах накаляется до предела. BOPE проводит серию жестоких операций, в ходе которых погибают десятки наркоторговцев и мирных жителей. Методы спецотряда включают пытки подозреваемых, казни без суда и следствия, и другие нарушения прав человека, которые Насименто оправдывает необходимостью победить в войне против наркопреступности.
+Кульминация фильма наступает во время крупной операции BOPE по зачистке фавелы Туранто перед визитом Папы Римского. В операции участвуют не только бойцы элитного отряда, но и обычные полицейские, включая подразделение, где служат Нето и Матиас. Во время штурма фавелы происходит интенсивная перестрелка между полицией и хорошо вооруженными наркоторговцами.
+В разгар боя Нето, демонстрируя свою храбрость и принципиальность, пытается задержать Байано живым, чтобы тот предстал перед судом, вместо того чтобы убить его на месте, как это обычно делают в BOPE. Однако эта попытка следовать закону стоит ему жизни - Байано или его люди убивают Нето выстрелом в голову. Смерть происходит на глазах у Матиаса, который не может ничего сделать, чтобы спасти друга.
+Гибель Нето становится переломным моментом для всех главных персонажей. Насименто, который видел в молодом полицейском идеального преемника, понимает, что не может уйти в отставку, оставив борьбу незавершенной. Смерть Нето символизирует для него жертву всех честных полицейских, и он чувствует ответственность продолжить их дело. Он принимает решение остаться командиром BOPE и продолжить войну против наркопреступности.
+Матиас переживает глубокий личностный кризис после смерти лучшего друга. Он осознает, что его погружение в мир коррупции было предательством идеалов, за которые погиб Нето. Чувство вины и желание искупить свои грехи заставляет его кардинально пересмотреть свою жизнь. Он понимает, что единственный способ почтить память друга - это пойти по пути, который выбрал бы сам Нето, если бы выжил.
+В финале фильма Матиас подает рапорт о переводе в BOPE, решив посвятить свою жизнь честной борьбе с преступностью, несмотря на все жестокости, которые это подразумевает. Насименто принимает его в элитный отряд, видя в нем потенциального преемника и понимая, что личная трагедия сделала Матиаса готовым к тому уровню решимости, который требуется для службы в BOPE.
+Фильм заканчивается сценами жестокой подготовки Матиаса в BOPE, где его подвергают физическим и психологическим испытаниям, призванным сломать его как личность и переделать в безжалостного борца с преступностью. Насименто остается командиром отряда, отказавшись от планов уйти в отставку. Таким образом, цикл насилия продолжается с новым поколением, но теперь в лице человека, который прошел через личную трагедию и точно знает, за что борется. Финальные кадры показывают, что война между полицией и наркоторговцами далека от завершения, и методы BOPE остаются такими же жестокими и спорными, как и прежде.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Мстители', 'Earth''s mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.', '2012-01-01', 1, '143 minutes', 'The Avengers', 8.0, 'Фильм начинается с того, что Тессеракт, мощный источник энергии, находящийся в секретной базе Щ.И.Т.а, начинает проявлять нестабильную активность. Доктор Эрик Селвиг работает с артефактом под руководством Ника Фьюри, директора Щ.И.Т.а. Внезапно Тессеракт открывает портал, через который проникает Локи, сводный брат Тора и бог обмана из Асгарда. Локи использует свой скипетр с камнем разума, чтобы взять под контроль Селвига и агента Клинта Бартона по прозвищу Соколиный Глаз, а затем крадет Тессеракт и бежит с базы.
+Ник Фьюри активирует Инициативу Мстителей, план по объединению супергероев для защиты Земли от глобальных угроз. Агент Наташа Романофф, известная как Черная Вдова, получает задание найти доктора Брюса Бэннера в Калькутте, где он работает врачом среди бедных. Бэннер, который превращается в невероятно сильного зеленого гиганта Халка в состоянии гнева, нужен для отслеживания гамма-излучения Тессеракта. Агент Фил Колсон направляется к Тони Старку, гениальному миллиардеру и изобретателю, известному как Железный Человек. Сам Фьюри отправляется к Стиву Роджерсу, Первому Мстителю и Капитану Америка, который был заморожен во льдах Арктики с 1940-х годов и недавно очнулся в современном мире.
+Тем временем Локи появляется в Штутгарте, Германия, где устраивает драматическое представление, заставляя толпу людей преклонить перед ним колени. Он заявляет, что люди созданы для того, чтобы ими правили, и что он принесет им мир через подчинение. Капитан Америка прибывает, чтобы остановить Локи, и между ними завязывается бой. К Роджерсу присоединяются Железный Человек и Черная Вдова, и вместе они захватывают Локи. Однако когда они транспортируют его на хеликарриере Щ.И.Т.а, их перехватывает Тор, который прибыл на Землю, чтобы вернуть своего брата в Асгард.
+Тор объясняет, что Локи работает с расой Читаури, инопланетными завоевателями, которые планируют вторжение на Землю в обмен на Тессеракт. На борту хеликарриера Мстители впервые собираются вместе, но между ними возникают серьезные разногласия. Тони Старк и Стив Роджерс сразу же конфликтуют из-за разных подходов к решению проблем - Старк полагается на технологии и индивидуализм, в то время как Роджерс верит в командную работу и следование приказам. Брюс Бэннер чувствует себя неуютно среди группы, опасаясь потерять контроль и превратиться в Халка.
+Ситуация усложняется, когда выясняется, что Щ.И.Т. тайно разрабатывал оружие, используя энергию Тессеракта, что противоречит заявлениям о мирных целях организации. Локи, заключенный в специальную камеру на хеликарриере, искусно манипулирует членами команды, усиливая их взаимное недоверие и раздоры. Он намекает каждому на их слабости и страхи, посеяв семена раздора среди потенциальных союзников.
+Напряжение достигает критической точки, когда скипетр Локи начинает влиять на членов команды, делая их более агрессивными и подозрительными друг к другу. Тор и Железный Человек вступают в физическую конфронтацию, а Бэннер начинает терять контроль над своим гневом. В этот момент происходит атака на хеликарриер - Соколиный Глаз, все еще находящийся под контролем Локи, ведет группу агентов в штурме летающей базы Щ.И.Т.а.
+Во время атаки один из двигателей хеликарриера серьезно поврежден, и корабль начинает падать. Железный Человек и Капитан Америка вынуждены работать вместе, чтобы восстановить поврежденный двигатель, временно отложив свои разногласия. Тем временем Черная Вдова сражается с Соколиным Глазом и в конце концов освобождает его от контроля Локи, ударив его по голове. Брюс Бэннер, не сумев сдержать гнев из-за хаоса вокруг, превращается в Халка и начинает крушить все на своем пути, включая части хеликарриера.
+Тор пытается остановить Халка, и между ними происходит разрушительная битва внутри хеликарриера. Халк в конце концов выпадает из корабля, а Тор оказывается захваченным Локи, который использует хаос для побега из своей камеры. В одной из самых трагических сцен фильма Локи смертельно ранит агента Фила Колсона, когда тот пытается остановить побег бога обмана. Локи забирает свой скипетр и исчезает с хеликарриера.
+Смерть Колсона становится катализатором, который наконец объединяет разрозненную команду героев. Ник Фьюри использует карточки, испачканные кровью Колсона, чтобы мотивировать Мстителей, хотя позже выясняется, что он инсценировал эту деталь для большего эмоционального воздействия. Колсон, умирая, говорит Фьюри, что команда никогда не объединится, если у них не будет во что верить, и его смерть дает им именно это.
+Локи активирует Тессеракт на вершине башни Старка в Нью-Йорке, используя изобретение доктора Селвига для создания стабильного портала. Через портал начинают прибывать войска Читаури на летающих колесницах, а за ними следует огромный биомеханический левиафан - гигантский летающий корабль-существо. Начинается полномасштабное вторжение на Манхэттен.
+Мстители наконец объединяются для решающей битвы. Капитан Америка берет на себя роль лидера команды, координируя действия каждого героя в соответствии с их способностями. Железный Человек использует свои технологические возможности для воздушного боя против летающих врагов. Тор применяет свой молот Мьельнир и власть над молниями для уничтожения больших групп противников. Соколиный Глаз, освобожденный от контроля Локи, использует свои навыки стрельбы из лука с различными специальными стрелами. Черная Вдова демонстрирует свои шпионские навыки и боевое мастерство.
+Халк, приземлившийся в заброшенном складе после падения с хеликарриера, в итоге присоединяется к битве по собственной воле. В одной из самых запоминающихся сцен фильма он легко побеждает Локи, хватая его и швыряя из стороны в сторону, как тряпичную куклу, после чего пренебрежительно называет его "жалким богом". Халк также уничтожает одного из левиафанов голыми руками, остановив его мощным ударом.
+Битва охватывает весь Манхэттен, при этом армия Читаури продолжает прибывать через портал в постоянно растущих количествах. Команда понимает, что им нужно закрыть портал, но устройство защищено энергетическим барьером, созданным скипетром Локи. Черная Вдова с помощью Соколиного Глаза пробирается к крыше башни Старка, где расположено устройство.
+В кульминационный момент Совет Безопасности принимает решение запустить ядерную ракету по Манхэттену, чтобы остановить вторжение, несмотря на протесты Ника Фьюри о том, что это убьет миллионы невинных людей. Железный Человек перехватывает ракету и направляет ее через портал в космос, к материнскому кораблю Читаури. Взрыв уничтожает командный центр инопланетян, в результате чего вся их армия на Земле мгновенно отключается и падает замертво.
+Тони Старк теряет сознание от недостатка кислорода в космосе, и его броня отказывает. Он падает обратно через портал, который Черная Вдова закрывает в последний момент. Халк ловает падающего Старка, а затем рычанием будит его, когда кажется, что тот мертв. Локи, побежденный и лишенный армии, сдается Мстителям.
+В заключительных сценах показано, как мир реагирует на события в Нью-Йорке. Некоторые прославляют Мстителей как героев, в то время как другие выражают опасения по поводу существования таких могущественных индивидуумов. Тор возвращает Локи в Асгард для суда, используя Тессеракт для создания портала домой. Остальные члены команды расходятся по своим делам - Брюс Бэннер уезжает с Тони Старком, Соколиный Глаз и Черная Вдова возвращаются к работе в Щ.И.Т.е, а Стив Роджерс продолжает приспосабливаться к современному миру.
+Ник Фьюри получает доклад о том, что Мстители снова соберутся, когда мир будет нуждаться в них. В сцене после титров показан Другой, доложающий своему хозяину о неудаче на Земле. Камера поворачивается, показывая улыбающегося Таноса, намекая на будущие угрозы. Во второй сцене после титров Мстители молча едят шаурму в разрушенном нью-йоркском ресторане, что стало культовым моментом фильма, показывающим их как обычных людей после спасения мира.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Персеполис', 'A precocious and outspoken Iranian girl grows up during the Islamic Revolution.', '2007-01-01', 1, '96 minutes', 'Persepolis', 8.0, 'Марджан Сатрапи - десятилетняя девочка, живущая в Тегеране в 1979 году во время Исламской революции в Иране. Она растет в либеральной образованной семье среднего класса - ее отец Эби работает фотографом, а мать Таджи активно участвует в демонстрациях против шаха. Бабушка Марджан, мудрая и независимая женщина, рассказывает внучке истории о славном прошлом их семьи и учит ее быть верной себе. Марджан обожает своего дядю Анушу, бывшего политического заключенного и коммуниста, который стал для нее символом борьбы за справедливость.
+Когда шах свергнут, семья Сатрапи радуется падению диктатуры, но вскоре понимает, что новый исламский режим аятоллы Хомейни принесет еще большие ограничения. Вводится обязательное ношение хиджаба, закрываются университеты, запрещается алкоголь и западная музыка. Марджан, которая мечтала стать пророком и обожала Брюса Ли, с трудом понимает происходящие изменения. В школе ей говорят, что она должна носить чадру и следовать строгим исламским правилам, но дома родители продолжают вести либеральный образ жизни, тайно слушая запрещенную музыку и читая запрещенные книги.
+Ситуация становится еще хуже, когда начинается война между Ираном и Ираком. Тегеран подвергается бомбардировкам, в городе вводится комендантский час, многие семьи теряют своих сыновей на фронте. Дядя Ануш арестован и казнен новыми властями как политический преступник, что становится для Марджан страшным ударом. Она начинает бунтовать против религиозных ограничений - тайно покупает кассеты с западной музыкой на черном рынке, носит джинсы под чадрой, красит губы.
+Родители Марджан все больше беспокоятся за будущее дочери в стране, где женщины лишены основных прав. Когда Марджан исполняется четырнадцать лет, они принимают болезненное решение отправить ее учиться в Вену, где она сможет получить западное образование и жить свободно. Прощание с родителями в аэропорту становится одним из самых трагических моментов в жизни девочки - она понимает, что может больше никогда их не увидеть.
+В Вене Марджан поселяется в католическом общежитии для девочек, где сталкивается с совершенно другой культурой. Поначалу она чувствует себя чужой среди австрийских подростков, которые обсуждают поп-музыку и моду, в то время как она пережила войну и революцию. Строгая директриса общежития относится к ней с подозрением, считая всех иранцев потенциальными террористами. Марджан пытается ассимилироваться, изучая немецкий язык и европейскую культуру, но постоянно чувствует себя между двумя мирами.
+В школе она знакомится с группой анархистов и панков, которые принимают ее за экзотическую беженку. Марджан начинает экспериментировать с западным образом жизни - красит волосы, носит кожаную куртку, слушает хэви-метал. Она влюбляется в австрийского парня по имени Маркус, красивого но поверхностного юноши, который интересуется ею только как экзотическим трофеем. Их отношения становятся для Марджан первым серьезным романом, но в итоге Маркус бросает ее ради другой девушки.
+Потеря первой любви совпадает с усилением чувства отчуждения. Марджан понимает, что никогда не станет по-настоящему европейкой, но уже не может вернуться к тому, кем была раньше. Она начинает испытывать депрессию, чувствует себя потерянной между иранской идентичностью и западными ценностями. Директриса общежития обвиняет ее в том, что она плохо влияет на других девочек, и выгоняет из общежития.
+Оставшись без крова, Марджан некоторое время живет на улице, ночует в парках и подъездах. Она заболевает бронхитом, который перерастает в воспаление легких. В критическом состоянии ее находят и доставляют в больницу, где она чуть не умирает. Этот опыт становится для нее поворотным моментом - она понимает, что должна вернуться домой в Иран, к своим корням и семье.
+Возвращение в Тегеран после четырех лет отсутствия становится для Марджан культурным шоком наоборот. Город изменился до неузнаваемости - повсюду религиозная полиция, женщины полностью закрыты чадрами, западная культура запрещена еще строже, чем раньше. Родители встречают ее с радостью, но Марджан чувствует, что больше не вписывается в иранское общество. Она слишком изменилась в Европе, стала слишком независимой и свободомыслящей.
+Марджан поступает в художественный университет, где изучает графический дизайн. Однако даже в университете действуют строгие религиозные правила - мужчины и женщины учатся отдельно, любые проявления западного влияния наказываются. Марджан постоянно конфликтует с преподавателями и администрацией, отказываясь полностью подчиняться религиозным требованиям. Она продолжает тайно слушать запрещенную музыку, читать запрещенные книги, встречается с друзьями на подпольных вечеринках.
+В университете Марджан знакомится с Резой, молодым человеком из консервативной семьи, который тоже пытается найти компромисс между личными желаниями и общественными требованиями. Они влюбляются и начинают встречаться, но их отношения должны оставаться тайными, поскольку внебрачное общение между мужчиной и женщиной в Иране запрещено. Чтобы иметь возможность официально проводить время вместе, они решают пожениться, хотя оба еще очень молоды.
+Брак с Резой поначалу кажется Марджан решением всех проблем - теперь у нее есть официальный статус замужней женщины, что дает ей больше свободы передвижения и социальных контактов. Однако вскоре она понимает, что вышла замуж не по любви, а скорее из желания получить социальную защиту. Реза оказывается добрым, но ограниченным человеком, который не понимает ее стремления к творчеству и свободе. Он хочет, чтобы она стала обычной иранской домохозяйкой, в то время как Марджан мечтает о карьере художника.
+Постепенно Марджан понимает, что не может жить двойной жизнью - быть покорной женой дома и бунтаркой в душе. Депрессия, которая началась еще в Вене, усиливается. Она чувствует себя задыхающейся в атмосфере постоянного контроля и лицемерия. Даже родители, которые когда-то поддерживали ее свободолюбие, теперь призывают к осторожности и конформизму ради ее безопасности.
+Кульминационным моментом становится инцидент на улице, когда религиозная полиция останавливает Марджан за то, что из-под ее чадры видны пряди волос, а на ногах красуются кроссовки. Когда полицейский начинает читать ей лекцию о правильном поведении мусульманской женщины, Марджан не выдерживает и публично высказывает все, что думает о режиме. Только вмешательство случайных прохожих спасает ее от ареста.
+Этот инцидент окончательно убеждает Марджан в том, что она не может больше жить в Иране. Она разводится с Резой, несмотря на протесты семьи и общественное осуждение. Развод для женщины в исламском Иране - это серьезное клеймо, но Марджан готова пойти на это ради своей свободы.
+Родители, видя, что дочь снова впадает в депрессию и может не выжить в удушающей атмосфере теократического государства, во второй раз принимают решение отпустить ее. На этот раз Марджан уезжает во Францию, где планирует изучать искусство и построить карьеру художника-иллюстратора.
+Второе прощание в аэропорту еще более болезненное, чем первое. Марджан понимает, что на этот раз покидает Иран навсегда. Она больше не ребенок, который может вернуться домой, когда станет трудно. Это окончательный выбор между родиной и свободой, между семьей и самореализацией. Бабушка, которая к этому времени уже очень стара, дает внучке последний совет - всегда оставаться верной себе и никогда не забывать свои корни.
+В самолете, летящем в Париж, Марджан размышляет о своем пути от беззаботного детства в либеральной семье до взрослой женщины, вынужденной выбирать между любовью к родине и личной свободой. Она понимает, что навсегда останется между двумя мирами - слишком западной для Ирана и слишком иранской для Запада. Но именно эта двойственность делает ее уникальной и дает материал для творчества.
+Фильм заканчивается тем, что взрослая Марджан, уже состоявшийся художник, живущий в Париже, рассказывает свою историю. Она создала графический роман о своей жизни, который стал способом сохранить память о родине и поделиться с миром правдой о жизни обычных людей в тоталитарном государстве. Через искусство она смогла превратить свою боль и отчуждение в источник силы и вдохновения для других людей, переживающих похожие испытания.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Далласский клуб покупателей', 'In 1985 Dallas, electrician and hustler Ron Woodroof works around the system to help AIDS patients get the medication they need after he is diagnosed with the disease.', '2013-01-01', 1, '117 minutes', 'Dallas Buyers Club', 8.0, 'Фильм рассказывает реальную историю Рона Вудруфа, электрика и ковбоя-любителя из Далласа, который в 1985 году узнает, что заражен ВИЧ-инфекцией. Врачи дают ему всего 30 дней жизни. Рон - гомофоб, расист и наркоман, который ведет разгульный образ жизни, употребляет наркотики и часто посещает проституток. Диагноз ВИЧ становится для него шоком, поскольку в то время болезнь ассоциировалась исключительно с гомосексуалистами, а Рон считает себя исключительно гетеросексуальным мужчиной.
+После постановки диагноза Рон начинает отчаянно искать способы лечения. В больнице ему предлагают участие в клинических испытаниях экспериментального препарата AZT, но Рон попадает в контрольную группу и получает плацебо вместо лекарства. Не желая смириться с приговором, он начинает собственное расследование возможных методов лечения ВИЧ. Рон изучает медицинскую литературу, связывается с врачами и исследователями по всему миру, пытаясь найти альтернативные способы борьбы с болезнью.
+В ходе своих поисков Рон узнает, что AZT, который тестируется в американских больницах, на самом деле высокотоксичен и может принести больше вреда, чем пользы. Он также обнаруживает, что в других странах, особенно в Мексике, доступны альтернативные препараты и методы лечения, которые не одобрены Управлением по контролю за продуктами и лекарствами США (FDA), но показывают многообещающие результаты.
+Рон отправляется в Мексику, где встречается с врачом по имени Вега, который лечит ВИЧ-инфицированных пациентов с помощью витаминов, белковых коктейлей и препарата под названием пептид Т. Доктор Вега объясняет Рону, что ключ к борьбе с ВИЧ заключается не в уничтожении вируса, а в укреплении иммунной системы, чтобы организм мог самостоятельно сопротивляться инфекции. Рон начинает принимать эти препараты и действительно чувствует улучшение своего состояния.
+Вернувшись в Даллас, Рон понимает, что многие ВИЧ-инфицированные люди в его городе отчаянно нуждаются в доступе к альтернативным методам лечения. Поскольку продажа неодобренных FDA препаратов является незаконной, Рон придумывает гениальную схему: он создает "Далласский клуб покупателей" - организацию, члены которой платят ежемесячный взнос в 400 долларов за членство, а препараты получают "бесплатно" в качестве бонуса. Таким образом, формально он не продает лекарства, а предоставляет их как дополнительную услугу членам клуба.
+Партнером Рона в этом предприятии становится Рейон, трансгендерная женщина, которая также заражена ВИЧ. Поначалу между Роном и Рейон существует взаимная неприязнь из-за предрассудков Рона относительно сексуальных меньшинств, но постепенно они становятся близкими друзьями и деловыми партнерами. Рейон помогает Рону налаживать контакты в ЛГБТ-сообществе Далласа, которое составляет основную клиентуру их клуба.
+Деятельность Далласского клуба покупателей быстро привлекает внимание властей. FDA начинает расследование против Рона, обвиняя его в незаконной продаже неодобренных лекарственных средств. Фармацевтические компании, которые производят AZT и теряют прибыль из-за конкуренции с альтернативными препаратами, также оказывают давление на власти, чтобы закрыть клуб. Медицинский истеблишмент, включая врачей больницы, где лечится Рон, выступает против его деятельности, утверждая, что он подвергает людей опасности, предлагая им непроверенные препараты.
+Рон ведет юридическую борьбу с FDA, нанимая адвоката и участвуя в судебных процессах. Он аргументирует свою позицию тем, что люди имеют право выбирать методы лечения, особенно когда официальная медицина не может предложить им эффективного решения. Рон также указывает на коррупцию в системе одобрения лекарств, где фармацевтические гиганты имеют непропорционально большое влияние на процесс принятия решений.
+В ходе своей борьбы Рон объединяется с доктором Евой Сакс, врачом из больницы, которая сначала скептически относилась к его методам, но постепенно начинает понимать, что официальные протоколы лечения ВИЧ могут быть не самыми эффективными. Доктор Сакс рискует своей карьерой, поддерживая деятельность Рона и признавая, что его пациенты действительно показывают улучшение состояния благодаря альтернативным препаратам.
+Тем временем здоровье Рейон ухудшается. Несмотря на лечение препаратами из клуба, ее организм не может справиться с прогрессирующей болезнью. Рон делает все возможное, чтобы помочь своему другу, но Рейон умирает в больнице. Ее смерть становится тяжелым ударом для Рона, который потерял не только деловую партнершу, но и близкого человека, который помог ему преодолеть свои предрассудки и стать более толерантным и сострадательным.
+После смерти Рейон Рон продолжает борьбу в одиночку. Он расширяет деятельность клуба, открывая филиалы в других городах и помогая тысячам ВИЧ-инфицированных людей получить доступ к альтернативным методам лечения. Его деятельность способствует изменениям в политике FDA, которое начинает ускорять процесс одобрения препаратов для лечения ВИЧ и других смертельных заболеваний.
+Юридическая борьба Рона также приводит к важным прецедентам в области прав пациентов. Суды признают право людей с неизлечимыми заболеваниями на доступ к экспериментальным препаратам, даже если они не прошли полный цикл клинических испытаний. Это решение открывает путь для более гибкого подхода к регулированию лекарственных средств в ситуациях, когда жизнь пациентов находится под угрозой.
+Фильм показывает, как Рон превращается из эгоистичного и предвзятого человека в борца за права больных людей. Его личная трагедия становится катализатором для более широких социальных изменений. Рон учится преодолевать свои предрассудки относительно гомосексуалистов и трансгендерных людей, понимая, что болезнь не знает границ сексуальной ориентации или гендерной идентичности.
+В финале фильма показано, что Рон Вудруф прожил намного дольше, чем предсказывали врачи - он умер в 1992 году, через семь лет после постановки диагноза, что в то время считалось значительным достижением для ВИЧ-инфицированного пациента. За эти годы он помог тысячам людей получить доступ к лечению и внес значительный вклад в изменение подходов к регулированию лекарственных средств в США. Далласский клуб покупателей стал моделью для аналогичных организаций по всей стране, которые продолжали работу по обеспечению доступа пациентов к экспериментальным препаратам. Титры в конце фильма сообщают, что благодаря деятельности таких людей, как Рон Вудруф, FDA значительно ускорило процесс одобрения препаратов для лечения ВИЧ, что спасло бесчисленное количество жизней в последующие годы.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('В погоне за счастьем', 'A struggling salesman takes custody of his son as he''s poised to begin a life-changing professional career.', '2006-01-01', 1, '117 minutes', 'The Pursuit of Happyness', 8.0, 'Фильм основан на реальной истории жизни Криса Гарднера и рассказывает о его борьбе с бедностью и бездомностью в стремлении обеспечить лучшее будущее для себя и своего пятилетнего сына. История начинается в 1981 году в Сан-Франциско, где Крис Гардер работает продавцом медицинского оборудования, пытаясь продать портативные сканеры плотности костной ткани различным врачам и больницам. Эти сканеры стоят дорого и считаются роскошью, а не необходимостью, что делает их продажу крайне сложной задачей.
+Крис живет в маленькой квартире со своей подругой Линдой и их сыном Кристофером. Линда работает на двух работах, чтобы помочь оплачивать счета, но финансовое давление на семью становится невыносимым. Они постоянно отстают с арендной платой, налогами и другими счетами. Крис вложил все свои сбережения в покупку этих медицинских сканеров, полагая, что сможет их продать с прибылью, но реальность оказалась гораздо суровее его ожиданий.
+Линда работает в прачечной и на фабрике, и постоянный стресс от финансовых проблем разрушает их отношения. Она устала от бесконечной борьбы с бедностью и не верит в способность Криса изменить их ситуацию. Напряжение между ними растет с каждым днем, поскольку счета накапливаются, а доходы остаются минимальными. Крис отчаянно пытается продать свои сканеры, таская их по всему городу, но большинство врачей считают их слишком дорогими и ненужными.
+Переломный момент наступает, когда Крис видит счастливого человека, выходящего из красного Ferrari. Заинтригованный, он подходит к мужчине и спрашивает о его профессии. Мужчина оказывается биржевым брокером и рассказывает Крису о возможностях в финансовой сфере. Эта встреча зажигает в Крисе новую мечту и дает ему направление для изменения своей жизни. Он начинает изучать фондовый рынок и узнает о программе стажировки в престижной брокерской фирме Dean Witter Reynolds.
+Крис подает заявление на участие в программе стажировки, но сталкивается с серьезными препятствиями. У него нет высшего образования, нет опыта работы в финансовой сфере, и он не соответствует типичному профилю кандидата, которого обычно принимают в такие программы. Однако его решимость и естественные математические способности впечатляют некоторых менеджеров компании. Программа стажировки длится шесть месяцев и не предусматривает зарплаты, при этом только один из двадцати стажеров получит постоянную работу в конце программы.
+Решение Криса участвовать в неоплачиваемой стажировке становится последней каплей для Линды. Она не может понять, как он может позволить себе работать бесплатно, когда у них нет денег даже на аренду жилья. После серии болезненных аргументов Линда принимает решение уехать в Нью-Йорк, где у нее есть предложение работы. Она оставляет Криса и Кристофера, не в силах больше выносить финансовые трудности и неопределенность их будущего.
+Оставшись один с пятилетним сыном, Крис сталкивается с еще более серьезными финансовыми проблемами. Он не может оплатить аренду, и их выселяют из квартиры. С этого момента начинается их спуск в бездомность. Крис пытается совмещать стажировку с заботой о сыне и поиском места для ночлега. Они спят в различных местах - от общественных туалетов на станциях метро до приютов для бездомных, когда удается получить там место.
+Одна из самых трогательных сцен фильма происходит, когда Крис и Кристофер вынуждены провести ночь в туалете станции метро. Крис превращает это в игру, рассказывая сыну, что они путешественники во времени, которые должны спрятаться в пещере от динозавров. Он держит дверь заперкой, плача от отчаяния, в то время как Кристофер спит на его коленях, не подозревая о серьезности их ситуации.
+Во время стажировки Крис демонстрирует исключительные способности в работе с числами и понимании рынка. Он работает усерднее всех остальных стажеров, часто оставаясь в офисе до поздней ночи, изучая материалы и практикуясь в холодных звонках потенциальным клиентам. Однако его бездомность создает постоянные проблемы - он не может всегда быть чистым и опрятным, иногда опаздывает из-за проблем с размещением на ночь, и постоянно беспокоится о безопасности и благополучии своего сына.
+Крис находит приют под названием Glide Memorial, где он и Кристофер могут получить бесплатную еду и иногда место для сна. Однако места в приюте ограничены, и каждый день после работы Крис должен спешить туда, чтобы встать в очередь и надеяться получить койку на ночь. Если они не успевают, им приходится искать альтернативные места для сна, включая больничные залы ожидания, церкви или просто скамейки в парках.
+Несмотря на все трудности, Крис никогда не теряет веры в лучшее будущее и продолжает поддерживать оптимизм для своего сына. Он постоянно повторяет Кристоферу, что они временно переживают трудные времена, но скоро все изменится к лучшему. Крис также учит сына важности упорства и веры в свои мечты, говоря ему знаменитую фразу о том, что никто не должен говорить ему, что он чего-то не может достичь, даже он сам.
+В процессе стажировки Крис сталкивается с дополнительными препятствиями. У него арестовывают машину за неуплаченные штрафы за парковку, и его даже ненадолго сажают в тюрьму за неуплаченные налоги. Эти инциденты еще больше усложняют его и без того сложную ситуацию, но он продолжает бороться и не сдается. Когда его освобождают из тюрьмы, он приходит на важную встречу с потенциальными клиентами в той же одежде, в которой провел ночь в камере, но его честность и профессионализм впечатляют клиентов.
+Постепенно навыки Криса в области продаж и его понимание финансовых рынков становятся очевидными для его супервайзеров. Он начинает привлекать клиентов и совершать успешные сделки, что выделяет его среди других стажеров. Его коллеги начинают замечать его талант, хотя никто не подозревает о его бездомности и ежедневной борьбе за выживание.
+Кульминация фильма наступает в последний день программы стажировки, когда Крис вызывают в офис партнеров фирмы. Он не знает, выбрали ли его для постоянной позиции, и нервно ждет решения. Когда ему сообщают, что он получил работу с зарплатой в восемьсот тысяч долларов в год, Крис едва может сдержать эмоции. Он выходит из офиса в состоянии шока и радости, понимая, что их борьба с бедностью наконец закончилась.
+Крис идет забрать Кристофера из детского сада, и хотя он не говорит сыну конкретно о своем успехе, ребенок чувствует изменение в настроении отца. Они идут по улице, и Крис наконец может позволить себе расслабиться, зная, что сможет обеспечить своему сыну стабильность и лучшее будущее. В этот момент он видит того же человека с красным Ferrari, который вдохновил его на изменение карьеры, что символически завершает круг его трансформации.
+Фильм заканчивается сценой, где настоящий Крис Гарднер идет по улице в деловом костюме рядом с актером Уиллом Смитом, что подчеркивает реальность этой истории. Титры сообщают зрителям, что Крис Гарднер впоследствии основал свою собственную брокерскую фирму Gardner Rich LLC и стал мультимиллионером. Его история стала вдохновением для многих людей, показывая, что с достаточной решимостью, упорством и верой в себя можно преодолеть даже самые сложные обстоятельства и достичь американской мечты.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Кровавый алмаз', 'A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.', '2006-01-01', 1, '143 minutes', 'Blood Diamond', 8.0, 'События фильма разворачиваются в 1999 году в Сьерра-Леоне, западноафриканской стране, раздираемой жестокой гражданской войной. Революционный объединенный фронт, известный как РОФ, ведет террористическую кампанию против правительственных сил, используя тактику массовых убийств, изнасилований и ампутаций конечностей мирных жителей. Повстанцы финансируют свою войну через добычу и контрабанду алмазов, которые затем продаются на международном рынке для закупки оружия.
+Соломон Ванди работает рыбаком в небольшой деревне и живет мирной жизнью со своей женой и тремя детьми. Его старший сын Диа мечтает стать врачом и усердно учится в школе. Однажды утром, когда Соломон работает на рисовых полях, деревню атакуют боевики РОФ под командованием жестокого капитана Пойзона. Террористы убивают многих жителей, сжигают дома, а выживших разделяют - женщин и детей отправляют в лагеря беженцев, а мужчин принуждают к работе на алмазных шахтах.
+Соломона вместе с другими мужчинами доставляют на алмазные прииски, где они работают в нечеловеческих условиях под дулами автоматов. Надсмотрщики заставляют их целыми днями перекапывать речное дно в поисках алмазов, а за малейшее неповиновение грозит смерть или ампутация рук. Однажды Соломон находит огромный розовый алмаз размером с птичье яйцо - редчайший камень невероятной ценности. Понимая, что этот алмаз может стать ключом к спасению его семьи, он тайно прячет его в земле.
+В этот момент на шахту нападают правительственные войска. Во время перестрелки Соломон пытается забрать спрятанный алмаз, но капитан Пойзон замечает его действия. Начинается погоня, во время которой Пойзон получает ранение и теряет сознание, а Соломон попадает в плен к правительственным силам. Обеих доставляют в тюрьму Фритауна, столицы Сьерра-Леоне, где Пойзон, приходя в сознание, начинает кричать Соломону, что знает о спрятанном алмазе и убьет всю его семью.
+Эти крики слышит Дэнни Арчер - бывший солдат южноафриканских сил обороны и наемник из Зимбабве, который сидит в той же тюрьме за контрабанду алмазов. Арчер работает на полковника Кокера, военного командира, который контролирует часть торговли алмазами в регионе. Дэнни понимает, что Соломон знает местонахождение крупного алмаза, и решает использовать эту информацию для своей выгоды. Он мечтает накопить достаточно денег, чтобы покинуть Африку и начать новую жизнь в Америке.
+После освобождения из тюрьмы Дэнни находит Соломона в лагере беженцев, где тот отчаянно ищет свою семью. Арчер предлагает сделку - он поможет Соломону найти жену и детей в обмен на информацию о местонахождении алмаза. Соломон поначалу отказывается, не доверяя белому наемнику, но постепенно понимает, что без помощи Дэнни у него нет шансов воссоединиться с семьей.
+В сюжет вплетается третий главный персонаж - Мэдди Боуэн, американская журналистка, которая приехала в Сьерра-Леоне, чтобы написать статью о торговле конфликтными алмазами. Она расследует связи между добычей алмазов и финансированием войны, пытаясь доказать, что западные компании и правительства закрывают глаза на происхождение драгоценных камней. Мэдди знакомится с Дэнни в баре отеля и пытается получить от него информацию о торговых путях алмазов.
+Дэнни, понимая, что журналистка может быть полезна, начинает с ней сотрудничать. Он рассказывает ей о коррупции в алмазной индустрии, о том, как западные компании покупают камни у повстанцев, зная, что эти деньги идут на закупку оружия. В обмен на эксклюзивную информацию Мэдди соглашается помочь Дэнни и Соломону в их поисках.
+Тем временем выясняется, что сын Соломона Диа был похищен повстанцами РОФ и превращен в солдата-ребенка. Боевики промывают детям мозги наркотиками и идеологической обработкой, превращая их в безжалостных убийц. Диа, которому дают новое имя "Молодой Лев", попадает под влияние капитана Пойзона и становится одним из его самых жестоких подчиненных. Мальчик забывает свое прошлое и начинает верить, что РОФ - это его настоящая семья.
+Соломон получает информацию о том, что его жена и дочь находятся в лагере беженцев в Гвинее, соседней стране. Дэнни организует для него встречу с семьей, но взамен требует, чтобы Соломон показал ему местонахождение алмаза. Встреча с женой и дочерью становится для Соломона одновременно радостью и болью - он видит, что они живы, но узнает, что Диа пропал и, возможно, мертв.
+Жена Соломона умоляет его остаться с семьей и забыть о сыне, но Соломон не может смириться с потерей ребенка. Он принимает решение вернуться в Сьерра-Леоне вместе с Дэнни, чтобы найти Диа и достать алмаз, который поможет им всем начать новую жизнь в безопасном месте. Мэдди присоединяется к ним, чтобы получить материал для своей статьи и засвидетельствовать правду о конфликтных алмазах.
+Троица отправляется в опасное путешествие через территорию, контролируемую различными военными группировками. Дэнни использует свои связи с наемниками и военными командирами, чтобы пробираться через блокпосты и минные поля. По пути они становятся свидетелями ужасов войны - сожженных деревень, массовых убийств, детей-солдат, которые убивают своих же родителей под воздействием наркотиков.
+Мэдди документирует все увиденное, записывая интервью с жертвами войны и фотографируя последствия насилия. Она понимает, что каждый проданный в западных ювелирных магазинах алмаз может быть окроплен кровью невинных людей. Между Мэдди и Дэнни постепенно возникают романтические чувства, но их отношения осложняются моральными различиями - она видит в нем циничного торговца смертью, а он считает ее наивной идеалисткой.
+Достигнув региона алмазных шахт, группа обнаруживает, что территория контролируется отрядом капитана Пойзона, который все еще помнит о спрятанном Соломоном алмазе. Повстанцы захватывают их в плен, и Пойзон заставляет Соломона показать местонахождение камня. Во время этой конфронтации Соломон с ужасом узнает в одном из детей-солдат своего сына Диа.
+Мальчик полностью изменился - его глаза пусты и жестоки, он не узнает отца и готов убить его по приказу капитана Пойзона. Соломон пытается достучаться до сына, напоминая ему о прежней жизни, о мечте стать врачом, о семье. Это становится одной из самых эмоциональных сцен фильма - отец борется за душу своего ребенка против машины войны, которая превратила невинного мальчика в убийцу.
+Тем временем Дэнни, используя свой опыт солдата, организует побег. Начинается жестокая перестрелка, во время которой погибает капитан Пойзон, а Диа, постепенно вспоминающий отца, переходит на их сторону. Соломон находит спрятанный алмаз, но во время бегства Дэнни получает смертельное ранение.
+Понимая, что не доберется до безопасного места, Дэнни принимает решение пожертвовать собой ради спасения Соломона и его сына. Он отдает Соломону алмаз и свой спутниковый телефон, с помощью которого тот сможет связаться с Мэдди и организовать эвакуацию. Дэнни остается прикрывать их отступление, зная, что это означает верную смерть.
+В своем последнем телефонном разговоре с Мэдди Дэнни признается ей в любви и просит опубликовать правду о конфликтных алмазах. Он умирает на вершине холма, любуясь африканским закатом, наконец обретя покой после лет насилия и цинизма. Его последние слова - это просьба передать Соломону, что тот хороший человек и хороший отец.
+Соломон с сыном добираются до лагеря беженцев, где воссоединяются с остальной семьей. Мэдди помогает им получить убежище в Лондоне, где Соломон продает розовый алмаз ювелирной компании. Вырученные деньги он использует для того, чтобы обеспечить образование своим детям и начать новую жизнь в безопасности.
+Спустя некоторое время Соломон выступает на международной конференции по конфликтным алмазам, рассказывая свою историю дипломатам и представителям алмазной индустрии. Он призывает к созданию системы сертификации, которая исключит попадание кровавых алмазов на мировой рынок. Его выступление становится частью кампании Мэдди по освещению проблемы конфликтных алмазов.
+Диа проходит реабилитацию от травм войны и постепенно возвращается к нормальной жизни, хотя шрамы от пережитого останутся с ним навсегда. Он снова начинает учиться, возвращаясь к своей мечте стать врачом. Семья Ванди символизирует надежду на будущее Африки, где дети смогут расти в мире, а не на войне.
+Фильм заканчивается титрами, в которых сообщается статистика о масштабах торговли конфликтными алмазами и их роли в финансировании войн в Африке. Зрителям напоминают, что каждый покупатель алмазов несет ответственность за то, чтобы убедиться в легальном происхождении камня. История Соломона, Дэнни и Мэдди становится призывом к совести человечества и требованием положить конец торговле, которая превращает символы любви в инструменты смерти и разрушения.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Ультиматум Борна', 'Jason Bourne dodges a ruthless C.I.A. official and his Agents from a new assassination program while searching for the origins of his life as a trained killer.', '2007-01-01', 1, '115 minutes', 'The Bourne Ultimatum', 8.0, 'Фильм начинается через шесть недель после событий предыдущей части. Джейсон Борн все еще скрывается от властей и пытается восстановить свою настоящую личность и воспоминания о прошлом. Он узнает из новостей, что журналист лондонской газеты "Гардиан" Саймон Росс пишет статью о секретных операциях ЦРУ, включая программу "Блэкбрайер" - преемника программы "Тредстоун", в рамках которой был создан сам Борн.
+Борн связывается с Россом в Лондоне, надеясь получить информацию о своем прошлом. Журналист рассказывает ему, что получил данные от источника внутри ЦРУ, человека по имени Блэкбрайер. Однако их встреча проходит под наблюдением агентов ЦРУ, которые отслеживают телефонные переговоры Росса. Во время встречи на вокзале Ватерлоо агенты ЦРУ пытаются взять Росса под контроль, но тот в панике пытается скрыться. В результате хаотичной погони по вокзалу Росс погибает от выстрела снайпера, не успев передать Борну всю важную информацию.
+Тем временем в штаб-квартире ЦРУ в Лэнгли заместитель директора Ноа Вонсен и директор национальной разведки Эзра Крамер обсуждают проблему Борна. Вонсен руководит новой программой "Блэкбрайер", которая создает еще более совершенных и безжалостных убийц, чем "Тредстоун". Он убежден, что Борн представляет угрозу для безопасности всей операции и должен быть устранен любой ценой. Крамер поддерживает эти планы, видя в Борне серьезную проблему для репутации американских спецслужб.
+Памела Ланди, агент ЦРУ, которая в предыдущих фильмах охотилась на Борна, теперь начинает сомневаться в правильности действий агентства. Она изучает файлы по программе "Тредстоун" и обнаруживает множество нарушений и злоупотреблений. Ланди понимает, что Борн не является предателем или террористом, как его представляют коллеги, а жертвой жестокой программы по созданию суперагентов.
+Борн отправляется в Париж, где ищет связи с Россом и пытается выяснить личность информатора внутри ЦРУ. Он обнаруживает, что источником информации был Нил Дэниелс, сотрудник ЦРУ, работавший в Мадриде. Борн направляется в Испанию, чтобы встретиться с Дэниелсом, но агенты "Блэкбрайер" уже начали охоту на него.
+В Мадриде Борн встречается с Дэниелсом, который объясняет ему, что программа "Блэкбрайер" является еще более жестокой версией "Тредстоуна". Новая программа создает агентов-убийц, которые действуют на территории США, нарушая федеральные законы и конституцию. Дэниелс передает Борну документы, подтверждающие незаконную деятельность ЦРУ, но вскоре погибает от рук агента "Блэкбрайер" по имени Диш.
+Борн вступает в схватку с Дишем в квартире Дэниелса. Поединок оказывается чрезвычайно жестоким - оба противника используют все доступные предметы как оружие, от ножей до книг и мебели. В конце концов Борн побеждает, но понимает, что Диш, как и он сам, является жертвой программы по промывке мозгов. Умирающий Диш произносит имя доктора Альберта Хирша, что дает Борну новую зацепку для расследования.
+Вернувшись в США, Борн связывается с Памелой Ланди, которая к этому времени окончательно перешла на его сторону. Ланди сообщает ему, что доктор Хирш - это психиатр, который разрабатывал методы промывки мозгов для программы "Тредстоун". Она договаривается о встрече Борна с Хиршем, надеясь, что это поможет агенту восстановить память и получить доказательства против незаконных программ ЦРУ.
+Встреча с Хиршем происходит в медицинском центре в Нью-Йорке. Доктор объясняает Борну процесс его трансформации в убийцу, показывая ему записи сеансов гипноза и психологической обработки. Борн узнает, что его настоящее имя - Дэвид Уэбб, и что он добровольно согласился участвовать в программе, желая служить своей стране. Хирш показывает ему видеозапись первого убийства, которое он совершил в рамках программы - убийство африканского диктатора, который планировал разоблачить коррупцию американских чиновников.
+Во время просмотра записей к Борну возвращаются воспоминания о том, как его заставляли убивать невинных людей, представляя их как террористов или врагов государства. Он помнит, как постепенно терял свою человечность и превращался в бездушную машину для убийств. Эти воспоминания причиняют ему огромные страдания, но одновременно дают понимание того, кем он был до программы и кем может стать после ее завершения.
+Тем временем Вонсен и его люди окружают медицинский центр, планируя захватить или убить Борна. Начинается интенсивная погоня по улицам и крышам Нью-Йорка. Борн демонстрирует все свои навыки - паркур, рукопашный бой, вождение автомобиля и мотоцикла. Он угоняет полицейскую машину, мотоцикл и несколько других транспортных средств, уходя от преследования через весь Манхэттен.
+Во время погони Вонсен приказывает агенту "Блэкбрайер" по кличке Эссет убить Ланди, поскольку она помогает Борну. Эссет пытается выполнить приказ, но Борн приходит на помощь Ланди и убивает агента в ее офисе. Ланди окончательно убеждается в том, что система, в которой она работает, полностью коррумпирована и что Борн борется за справедливость.
+Кульминация фильма происходит в офисном здании, где располагается секретная база операции "Блэкбрайер". Борн проникает в здание и конфронтирует с Вонсеном. Он требует от него прекратить программу и обнародовать правду о незаконных операциях ЦРУ. Вонсен отказывается и пытается убить Борна, но тот оказывается быстрее и хладнокровнее.
+В финальной схватке Борн не убивает Вонсена, хотя имеет все возможности это сделать. Вместо этого он демонстрирует, что сохранил свою человечность, несмотря на все, что с ним делали. Он говорит Вонсену, что больше не будет инструментом в руках людей, которые используют его для убийств, и что программа "Блэкбрайер" должна быть закрыта.
+Борн покидает здание и отправляется на Манхэттенский мост, где его окружают полицейские и агенты ЦРУ. Понимая, что у него нет другого выхода, Борн прыгает с моста в Ист-Ривер. Снайперы стреляют в него во время падения, и его тело исчезает в темной воде реки. Власти объявляют о смерти Джейсона Борна.
+Однако в финальной сцене фильма показано, что Борн выжил после падения. Он плывет под водой, покидает место происшествия и скрывается в толпе. Тем временем Памела Ланди дает интервью журналистам, рассказывая правду о программах "Тредстоун" и "Блэкбрайер". Она обнародует документы, подтверждающие незаконную деятельность ЦРУ, что приводит к скандалу и расследованию в Конгрессе.
+Фильм заканчивается тем, что Борн наконец обрел свободу и восстановил свою личность. Он больше не является марионеткой в руках спецслужб и может самостоятельно выбирать свой путь. Программы по созданию суперагентов закрываются, а виновные в их создании понесут наказание. Борн исчезает, получив возможность начать новую жизнь под своим настоящим именем Дэвид Уэбб, но с пониманием того, что он всегда будет нести ответственность за свои действия в прошлом.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Город грехов', 'A movie that explores the dark and miserable town, Basin City, tells the story of three different people, all caught up in violent corruption.', '2005-01-01', 1, '124 minutes', 'Sin City', 8.0, 'Фильм представляет собой антологию из четырех взаимосвязанных историй, происходящих в вымышленном городе Бэйзин-Сити, где коррупция, насилие и преступность являются неотъемлемой частью повседневной жизни. Каждая история рассказывается в характерном нуарном стиле с ярко выраженной черно-белой визуальной эстетикой с редкими вкраплениями цвета для создания драматического эффекта.
+Первая история называется "Парень за которого стоит убивать" и рассказывает о таинственном мужчине в тренче, который встречается с женщиной на крыше здания. Женщина в красном платье флиртует с ним, и между ними возникает мгновенное притяжение. Однако в момент их поцелуя раздается выстрел снайпера, и женщина умирает у него на руках. Мужчина понимает, что его подставили, и что он стал свидетелем убийства. Эта короткая история служит прологом, устанавливающим мрачную атмосферу города, где предательство и смерть поджидают за каждым углом.
+Основная история фильма называется "Трудное прощание" и фокусируется на Марве, массивном и уродливом мужчине с ограниченными умственными способностями, но обладающем невероятной физической силой и выносливостью. Марв просыпается в постели рядом с мертвой проституткой по имени Голди, единственной женщиной, которая когда-либо была к нему добра. Он не помнит, как она умерла, но понимает, что его обвинят в убийстве. Полиция уже окружает здание, и Марв едва успевает сбежать через окно.
+Одержимый желанием отомстить за смерть Голди и найти ее настоящего убийцу, Марв начинает собственное расследование в преступном подземелье города. Его поиски приводят его к Кевину, каннибалу-серийному убийце, который охотится на проституток и поедает их, веря, что таким образом поглощает их души. Кевин не чувствует боли и обладает нечеловеческой ловкостью и скоростью, что делает его чрезвычайно опасным противником. Он живет на ферме, принадлежащей кардиналу Рорку, влиятельному религиозному лидеру, который покрывает преступления Кевина.
+Марв обнаруживает, что у Голди была сестра-близнец Венди, которая также работает проституткой в Старом городе. Венди сначала не доверяет Марву и даже пытается его убить, но постепенно понимает, что он действительно любил ее сестру и хочет отомстить за ее смерть. Она рассказывает Марву о Кевине и помогает ему в его миссии мести. Вместе они отправляются на ферму кардинала, где Марв сталкивается с Кевином в жестокой битве.
+Бой между Мarvом и Кевином происходит в лесу и отличается особой жестокостью. Кевин использует свою скорость и когти, чтобы нанести Марву множественные раны, но Марв, несмотря на боль, продолжает сражаться с неукротимой яростью. В конце концов Марв побеждает Кевина, отрезая ему руки и ноги, а затем скармливает его собственной собаке. После этого он конфронтирует кардинала Рорка, который признается в своем участии в покрытии преступлений Кевина, и Марв убивает его.
+Полиция в конечном итоге ловит Марва, и его приговаривают к смертной казни на электрическом стуле. Перед казнью его навещает Венди, и Марв выражает удовлетворение тем, что отомстил за Голди. Он встречает смерть спокойно, зная, что выполнил свою миссию. Его казнь показана в графических деталях, подчеркивая жестокость системы правосудия в Бэйзин-Сити.
+Вторая крупная история называется "Большой жирный убийца" и рассказывает о Дуайте, частном детективе, который пытается защитить свою бывшую подругу Шелли от ее жестокого парня Джеки-Боя. Дуайт следует за Джеки-Боем и его друзьями в Старый город, район, контролируемый проститутками, которые имеют соглашение с полицией о невмешательстве в их дела при условии, что они сами поддерживают порядок на своей территории.
+Когда Джеки-Бой начинает угрожать проституткам, ситуация быстро выходит из-под контроля. Галл, одна из проституток, убивает Джеки-Боя из арбалета, не зная, что он на самом деле полицейский детектив. Это убийство нарушает хрупкое перемирие между проститутками и полицией, грозя войной, которая уничтожит Старый город. Дуайт понимает серьезность ситуации и пытается найти способ скрыть убийство.
+Дуайт решает избавиться от тела Джеки-Боя, бросив его в канализацию, но по дороге туда на него нападают наемники ирландской мафии, которые были союзниками Джеки-Боя. В ходе жестокой битвы Дуайт получает серьезное ранение в голову, которое изменяет его внешность. Проститутки Старого города, возглавляемые Галл и близнецами-убийцами, приходят ему на помощь и вступают в перестрелку с мафиози.
+Битва происходит в канализационных туннелях и отличается хореографическим насилием и стилизованными боевыми сценами. Проститутки используют различное оружие, включая мечи, пистолеты и арбалеты, демонстрируя свои боевые навыки против превосходящих по численности врагов. В конце концов они побеждают мафиози, но понимают, что полиция обязательно узнает о смерти Джеки-Боя и начнет войну против Старого города.
+Дуайт предлагает план по предотвращению войны - они должны заставить полицию поверить, что Джеки-Бой умер где-то еще, не в Старом городе. Для этого они решают подбросить его тело в другое место. История заканчивается тем, что проститутки сохраняют свою автономию, а Дуайт исчезает в ночи, зная, что его жертва помогла предотвратить кровопролитие.
+Третья история называется "Эта желтая ублюдина" и фокусируется на Хартигане, честном полицейском детективе, который находится на грани выхода на пенсию. В свой последний день на службе он получает вызов о похищении одиннадцатилетней Нэнси Каллахан серийным педофилом по прозвищу Желтый Ублюдок. Хартиган знает, что это может быть ловушкой, но не может игнорировать возможность спасти ребенка.
+Желтый Ублюдок оказывается Роарком Джуниором, сыном сенатора Рорка, одного из самых влиятельных людей в городе. Роарк Джуниор - извращенец и убийца, который охотится на маленьких девочек, но его преступления всегда замалчиваются благодаря влиянию его отца. Хартиган знает об этой коррупции, но полон решимости остановить монстра, несмотря на политические последствия.
+Хартиган прибывает на склад, где Роарк Джуниор держит Нэнси. Его предупреждает напарник Боб о том, что вмешательство в дела семьи Рорк будет иметь серьезные последствия для его карьеры и жизни. Однако Хартиган игнорирует предупреждения и врывается в здание. Он находит Роарка Джуниора, готовящегося изнасиловать и убить маленькую Нэнси.
+Происходит конфронтация, во время которой Хартиган стреляет в Роарка Джуниора, кастрируя его и нанося другие серьезные ранения. Он спасает Нэнси, но сразу после этого его предает напарник Боб, который стреляет ему в спину. Хартиган понимает, что полицейский участок коррумпирован на самом высоком уровне, и что его предали те, кому он доверял.
+Хартигана арестовывают и ложно обвиняют в совершении тех самых преступлений, которые он пытался остановить. Его обвиняют в похищении, изнасиловании и попытке убийства Нэнси Каллахан. Несмотря на то, что обвинения сфабрикованы, влияние семьи Рорк обеспечивает осуждение Хартигана. Его приговаривают к пожизненному заключению, и он проводит восемь лет в тюрьме, постоянно подвергаясь пыткам и избиениям от охранников, которые работают на Рорков.
+В тюрьме Хартиган каждую неделю получает письма от Нэнси, которая выросла и стала танцовщицей в стриптиз-клубе. Эти письма становятся единственным, что поддерживает его в заключении. Нэнси пишет ему о своей жизни и благодарит за спасение, не зная, что Хартиган находится в тюрьме из-за попытки защитить ее. Внезапно письма прекращаются, и Хартиган получает ужасающее письмо, содержащее отрезанный палец и угрозы в адрес Нэнси.
+Понимая, что Нэнси в опасности и что Роарк Джуниор каким-то образом выжил и снова охотится на нее, Хартиган решает признаться в преступлениях, которых не совершал, чтобы получить условное освобождение. Он понимает, что это ловушка, но не может позволить Нэнси пострадать из-за него. После освобождения он идет искать Нэнси в стриптиз-клуб "Кадиллак", где она работает танцовщицей.
+Хартиган находит Нэнси, которая теперь стала красивой молодой женщой, но все еще помнит его как своего спасителя. Она безумно рада его видеть и признается ему в любви, несмотря на разницу в возрасте. Хартиган, хотя и тронут ее чувствами, знает, что должен держаться от нее подальше ради ее безопасности. Он пытается убедить ее покинуть город и спрятаться, но Нэнси отказывается бросать его.
+Роарк Джуниор, который теперь выглядит как желтый мутант из-за экспериментального лечения, которое ему потребовалось после ранений, нанесенных Хартиганом, похищает Нэнси. Его внешность стала еще более отвратительной - желтая кожа, зловонный запах и деформированные черты лица. Он по-прежнему одержим Нэнси и планирует закончить то, что начал восемь лет назад.
+Хартиган следует за похитителем на семейную ферму Рорков, где происходит финальная конфронтация. Несмотря на свой возраст и проблемы с сердцем, Хартиган сражается с Роарком Джуниором и его охранниками. В жестокой битве он в конечном итоге убивает Роарка Джуниора, буквально разрывая его на части голыми руками, и освобождает Нэнси.
+Однако Хартиган понимает, что пока он жив, семья Рорк никогда не оставит Нэнси в покое. Сенатор Рорк прибывает на ферму и подтверждает эти опасения, угрожая убить Нэнси, если Хартиган не покончит с собой. Хартиган понимает, что единственный способ защитить Нэнси - это пожертвовать собой. Он говорит ей, что любит ее, а затем стреляет себе в голову, обеспечивая ей безопасность ценой собственной жизни.
+Четвертая и заключительная история представляет собой эпилог, показывающий последствия событий предыдущих историй. Город продолжает существовать в своем состоянии моральной деградации, коррупции продолжает процветать, а насилие остается повседневной реальностью. Персонажи, которые выжили в предыдущих историях, продолжают свою жизнь в этом мрачном мире, где справедливость редко торжествует, а героизм часто заканчивается трагедией.
+Фильм завершается тем же загадочным мужчиной из пролога, который встречает другую женщину на крыше, предполагая, что цикл насилия и предательства в Бэйзин-Сити бесконечен. Город грехов остается местом, где мораль размыта, а выживание часто зависит от способности принимать жестокие решения в мире без четких правил или справедливости.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Скафандр и бабочка', 'The true story of Elle editor Jean-Dominique Bauby who suffers a stroke and has to live with an almost totally paralyzed body; only his left eye isn''t paralyzed.', '2007-01-01', 1, '112 minutes', 'Le scaphandre et le papillon', 8.0, 'Жан-Доминик Боби, 43-летний главный редактор французского журнала мод Elle, ведет успешную жизнь парижского денди. Он элегантен, остроумен, обожает женщин, дорогие автомобили и изысканную кухню. У него есть дети от бывшей жены, но сейчас он живет с молодой любовницей. 8 декабря 1995 года, собираясь забрать своего сына, чтобы провести с ним день, Жан-До внезапно чувствует себя плохо за рулем автомобиля. Он теряет сознание и попадает в автомобильную аварию.
+Очнувшись через двадцать дней в больнице Берка-сюр-Мер в Пикардии, Жан-До обнаруживает, что его тело полностью парализовано. Врачи объясняют ему, что он перенес инсульт ствола головного мозга, что привело к редкому состоянию, называемому синдромом заперти. Его разум остался полностью ясным, но тело превратилось в неподвижную оболочку - он не может говорить, двигаться, есть самостоятельно. Единственное, что он может контролировать, это движения левого века - правый глаз зашит, чтобы предотвратить инфекцию роговицы.
+Поначалу Жан-До переживает шок и отчаяние. Он чувствует себя заключенным в собственном теле, как в тяжелом водолазном скафандре на дне океана. Каждое утро медсестры проводят с ним гигиенические процедуры, кормят через зонд, переворачивают, чтобы избежать пролежней. Он не может выразить свои потребности, боль или эмоции обычным способом. Мир вокруг него продолжает существовать, но он может только наблюдать за ним, как зритель в театре.
+Логопед Анри, молодая терпеливая женщина, разрабатывает для Жана-До систему общения. Она произносит буквы французского алфавита в порядке частоты их использования во французском языке, а он моргает левым веком, когда слышит нужную букву. Таким образом, моргание за морганием, он может составлять слова и фразы. Этот процесс невероятно медленный и утомительный - чтобы произнести одно слово, требуется несколько минут, а для полного предложения может потребоваться полчаса.
+Постепенно Жан-До учится приспосабливаться к новой реальности. Он знакомится с другими пациентами отделения - стариком, который может только плакать, женщиной в коме, молодым человеком после аварии на мотоцикле. Каждый из них борется со своими ограничениями и болью. Медицинский персонал больницы становится его новой семьей - медсестры Бригитта, Симона и другие относятся к нему с теплотой и пониманием, несмотря на трудности в общении.
+Особенно важной фигурой становится Клод, секретарша издательства, которая регулярно навещает его и помогает поддерживать связь с внешним миром. Она читает ему письма, рассказывает новости из журнала, передает приветы от коллег. Через нее Жан-До понимает, что многие люди помнят о нем и поддерживают его в трудную минуту.
+Жан-До навещают его дети - Теофиль и Селеста, которые поначалу испытывают шок, видя отца в таком состоянии. Маленькая Селеста плачет и не может понять, почему папа не может с ней разговаривать и играть. Сын-подросток Теофиль пытается быть сильным, но видно, что происходящее его глубоко травмирует. Эти встречи одновременно приносят Жану-До радость и боль - он счастлив видеть детей, но страдает от того, что не может быть для них полноценным отцом.
+Бывшая жена Жана-До остается для него важной поддержкой, несмотря на то, что их брак закончился. Она организует визиты детей, решает практические вопросы, связанные с его состоянием. Их отношения, осложненные разводом, приобретают новую глубину перед лицом трагедии.
+Сложнее складываются отношения с его последней любовницей, которая не может справиться с видом парализованного партнера. Она постепенно отдаляется, что причиняет Жану-До дополнительную боль. Он понимает, что его прежняя жизнь красивого и успешного мужчины закончилась навсегда.
+Неожиданным источником утешения становится воспоминание об отце. Пожилой человек живет в доме престарелых и страдает от болезни Альцгеймера. Жан-До звонит ему по телефону с помощью медсестры, но отец не узнает голоса сына и рассказывает о своих планах, не понимая реальности. Этот разговор становится для Жана-До символом хрупкости человеческой памяти и связей между поколениями.
+Постепенно Жан-До находит способы сохранить свою личность и творческую энергию несмотря на физические ограничения. Его разум остается острым и образным, он продолжает мечтать и фантазировать. В своем воображении он путешествует по миру, вспоминает прошлые романы, представляет себе блюда, которые больше никогда не сможет попробовать. Эти ментальные путешествия становятся для него способом побега из тюрьмы собственного тела.
+Издательство предлагает Жану-До написать книгу о своем опыте. Поначалу он сомневается - как можно писать, имея возможность общаться только через моргание? Но постепенно идея захватывает его. Он понимает, что у него есть уникальная история, которую стоит рассказать. Книга может стать способом поделиться своим опытом с другими людьми, оказавшимися в подобной ситуации.
+Клод становится его соавтором и помощником в работе над книгой. Каждый день они проводят часы за медленным процессом диктовки - Жан-До мысленно формулирует фразы, а затем по букве передает их с помощью морганий. Клод записывает каждое слово, помогает структурировать текст, предлагает правки. Этот процесс требует невероятного терпения от обеих сторон, но постепенно рождается уникальная книга.
+В процессе работы Жан-До переосмысливает свою жизнь. Он вспоминает моменты счастья - поездку с детьми к морю, романтические встречи, профессиональные успехи. Но теперь он видит их под другим углом, понимая ценность простых человеческих радостей, которые раньше воспринимал как должное. Каждое воспоминание становится драгоценным сокровищем, которое никто не может у него отнять.
+Особенно яркими становятся воспоминания о чувственных удовольствиях - вкусе устриц и шампанского, аромате женских духов, ощущении скорости за рулем спортивной машины. Теперь, лишенный возможности испытывать эти ощущения физически, он переживает их в памяти с особенной остротой. Эти воспоминания становятся бабочками его души - легкими, яркими, способными лететь туда, куда не может добраться его тело-скафандр.
+Жан-До размышляет о природе человеческого существования, о том, что делает жизнь достойной жизни. Он приходит к выводу, что даже в самых ограниченных обстоятельствах человек может сохранить достоинство, любовь и способность к творчеству. Его разум остается свободным, несмотря на физические ограничения.
+В книге Жан-До описывает не только свои страдания, но и моменты красоты и радости, которые он находит в новой жизни. Закат за окном больничной палаты, доброта медсестры, смех ребенка в коридоре - все это приобретает особенное значение для человека, который не может принимать такие вещи как должное.
+Работа над книгой становится для Жана-До способом вернуть контроль над своей жизнью. Хотя он не может управлять своим телом, он может управлять своими мыслями и словами. Каждая завершенная страница - это маленькая победа над обстоятельствами, доказательство того, что человеческий дух может преодолеть самые тяжелые испытания.
+Книга также становится его наследием для детей. Он понимает, что может не дожить до их взросления, но через книгу они смогут узнать о его мыслях и чувствах в последний период жизни. Это способ остаться с ними навсегда, даже когда его физического присутствия не будет.
+По мере приближения к завершению работы над книгой состояние Жана-До ухудшается. Инфекционные заболевания, постоянная угроза воспаления легких, общее истощение организма - все это делает каждый день борьбой за выживание. Но он продолжает работать, стремясь закончить свой рассказ.
+Финальные главы книги проникнуты особенной философской глубиной. Жан-До пишет о том, что научился ценить каждый момент жизни, каждое человеческое проявление доброты. Он благодарит всех, кто помогал ему в трудные месяцы - медиков, друзей, семью. Его слова становятся гимном человеческому мужеству и достоинству.
+Жан-Доминик Боби умирает 9 марта 1997 года, через десять дней после публикации своей книги "Скафандр и бабочка". Его произведение становится международным бестселлером и вдохновляет тысячи людей по всему миру. История человека, который сумел создать литературный шедевр, имея возможность общаться только через моргание левым веком, становится символом несгибаемости человеческого духа.
+Фильм заканчивается образом бабочки, которая вылетает из окна больничной палаты и устремляется к морю. Эта бабочка символизирует освобождение души Жана-До от тяжести физического скафандра, его переход в мир, где нет границ и ограничений. Его история напоминает зрителям о том, что даже в самых трагических обстоятельствах человек может найти способ выразить свою сущность и оставить след в мире.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Рататуй', 'A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.', '2007-01-01', 1, '111 minutes', 'Ratatouille', 8.0, 'Фильм рассказывает историю крысы по имени Реми, который живет в французской провинции вместе с большой семьей грызунов во главе с отцом Джанго. В отличие от других крыс, которые едят любые отбросы, Реми обладает изысканным вкусом и мечтает стать поваром. Он тайно изучает кулинарные книги знаменитого шеф-повара Огюста Густо, чьим девизом является фраза "Каждый может готовить". Реми экспериментирует с различными ингредиентами и специями, создавая сложные вкусовые сочетания, что вызывает недоумение у семьи.
+Отец Джанго категорически против увлечений сына, считая, что крысы должны довольствоваться объедками и не стремиться к недостижимому. Он объясняет Реми, что люди - естественные враги крыс, и любые попытки сблизиться с ними закончатся трагедией. Однако Реми не может подавить свою страсть к кулинарии и продолжает тайно готовить, используя кухню старой женщины, в доме которой живет его семья.
+Однажды во время очередного кулинарного эксперимента Реми случайно выдает присутствие крыс в доме. Старая женщина обнаруживает целую колонию грызунов и начинает стрелять в них из ружья. Семье крыс приходится экстренно эвакуироваться, и во время бегства Реми отстает от остальных. Его уносит по канализационным трубам в Париж, где он оказывается совершенно один в огромном городе.
+Блуждая по парижским крышам, Реми обнаруживает, что находится рядом с рестораном "Gusteaus, названным в честь его кумира Огюста Густо. Однако он узнает, что великий шеф-повар умер несколько лет назад после того, как жестокий критик Антон Эго написал разгромную рецензию на его ресторан, что привело к потере мишленовских звезд. Теперь рестораном управляет Скиннер, бывший су-шеф Густо, который больше заботится о прибыли, чем о качестве блюд.
+В ресторане появляется новый сотрудник - неуклюжий молодой человек по имени Лингвини, сын покойной уборщицы Рене. Лингвини совершенно не умеет готовить, но отчаянно нуждается в работе. Скиннер нанимает его на самую низкую должность - помощника по кухне, надеясь, что тот быстро уволится сам.
+Во время своей первой смены Лингвини случайно портит суп, добавив в него неподходящие ингредиенты. Реми, наблюдающий за происходящим с потолка, не может вынести такого кощунства и спускается, чтобы исправить блюдо. Он добавляет нужные специи и превращает испорченный суп в кулинарный шедевр. Лингвини замечает крысу за работой и сначала пытается ее убить, но затем понимает, что именно Реми спас его от увольнения.
+Между Реми и Лингвини завязывается необычная дружба. Реми не может говорить с людьми, но они разрабатывают систему общения, при которой крыса управляет движениями молодого человека, дергая его за волосы как за ниточки марионетки. Спрятавшись под поварским колпаком Лингвини, Реми фактически готовит все блюда, а Лингвини получает всю славу.
+Коллетт Татту, единственная женщина-повар в ресторане, получает задание обучить Лингвини кулинарному мастерству. Она сурова и требовательна, поскольку ей пришлось доказывать свое право работать на кухне в мужском коллективе. Коллетт не понимает, как Лингвини может великолепно готовить в одиночестве, но терпеть неудачи, когда она пытается его учить. Тем не менее, между ними постепенно возникают романтические отношения.
+Скиннер начинает подозревать, что с Лингвини что-то не так. Он тайно следит за ним и пытается выяснить секрет его внезапного кулинарного таланта. Скиннер также обеспокоен тем, что Лингвини может быть наследником Густо, что лишит его контроля над рестораном и прибыльным бизнесом по производству замороженных полуфабрикатов под торговой маркой покойного шефа.
+Тем временем Реми встречает в парижских канализациях своего брата Эмиля, который сообщает ему, что вся семья крыс обосновалась в Париже. Отец Джанго по-прежнему недоволен увлечениями Реми и требует, чтобы тот бросил свои кулинарные эксперименты и вернулся к нормальной крысиной жизни. Реми оказывается разрываемым между верностью семье и своей мечтой стать поваром.
+Ситуация усложняется, когда знаменитый ресторанный критик Антон Эго объявляет о своем намерении посетить "Gusteaus и написать новую рецензию. Эго известен своей беспощадностью и способностью одной рецензией уничтожить репутацию ресторана. Его предстоящий визит приводит всю команду в панику, поскольку все понимают, что от этой рецензии зависит будущее заведения.
+Скиннер наконец обнаруживает, что Лингвини действительно является сыном Густо, что подтверждается письмом, оставленным матерью молодого человека. Это означает, что Лингвини имеет право на наследство, включая ресторан. Скиннер пытается скрыть эту информацию и даже похищает Реми, надеясь использовать крысу для создания собственной империи замороженных продуктов.
+Лингвини освобождает Реми и публично объявляет себя законным наследником ресторана. Он увольняет Скиннера и берет управление заведением в свои руки. Однако успех вскружил ему голову, и он начинает пренебрежительно относиться к Реми, считая себя настоящим автором всех кулинарных шедевров. Это приводит к ссоре между друзьями, и Реми покидает ресторан, чувствуя себя преданным.
+В ночь перед визитом Антона Эго Лингвини пытается готовить самостоятельно, но терпит полный провал. Он понимает, что без Реми не может создать ничего достойного, и отправляется искать своего друга-крысу. Он находит Реми в канализации и извиняется за свое поведение, признавая, что настоящим поваром является именно крыса.
+Реми возвращается в ресторан вместе со всей своей семьей. Джанго наконец понимает талант сына и соглашается помочь ему. Сотни крыс берут на себя различные функции на кухне: одни режут овощи, другие готовят соусы, третьи сервируют блюда. Повара-люди сначала в ужасе от нашествия грызунов, но Лингвини убеждает их работать вместе с крысами ради спасения ресторана.
+Для Антона Эго Реми готовит рататуй - простое крестьянское блюдо из тушеных овощей, но приготовленное с невероятным мастерством и любовью. Когда критик пробует это блюдо, он мгновенно переносится в детство, вспоминая, как его мать готовила для него такой же рататуй после трудных дней. Блюдо настолько трогает Эго, что он теряет дар речи и даже роняет ручку, что для него совершенно нехарактерно.
+Эго требует встречи с поваром, и Лингвини вынужден представить ему Реми. Сначала критик шокирован, узнав, что гениальные блюда готовила крыса, но затем он понимает глубину таланта Реми и истинный смысл девиза Густо "Каждый может готовить". Эго пишет восторженную рецензию, в которой признает, что настоящий талант не зависит от происхождения или внешности.
+Однако публикация правды о том, что в ресторане готовит крыса, приводит к скандалу. Санитарные службы закрывают "Gusteaus, а большинство клиентов отказываются посещать заведение, где орудуют грызуны. Ресторан теряет свою репутацию и клиентуру.
+Но история имеет счастливый финал. Эго вкладывает свои деньги в новый небольшой ресторан под названием "La Ratatouille", где Реми может официально работать шеф-поваром, а Лингвини и Коллетт помогают ему в качестве су-шефов. Новое заведение становится популярным среди настоящих ценителей высокой кухни, которые готовы принять необычного повара ради исключительного качества блюд.
+Фильм заканчивается сценой, где Реми готовит на открытой кухне нового ресторана, а его семья помогает ему в различных операциях. Эго стал постоянным клиентом и даже инвестором ресторана, полностью изменив свои взгляды на кулинарию и критику. Реми осуществил свою мечту стать поваром, доказав, что талант и страсть важнее предрассудков и социальных условностей. Финальные кадры показывают процветающий ресторан, где люди и крысы работают в гармонии, создавая кулинарные шедевры для искушенной парижской публики.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Казино Рояль', 'After earning 00 status and a licence to kill, Secret Agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, Montenegro.', '2006-01-01', 1, '144 minutes', 'Casino Royale', 8.0, 'Казино Рояль (русское название)
+Фильм открывается черно-белой сценой в Праге, показывающей первые два убийства Джеймса Бонда, которые дают ему статус агента с лицензией на убийство и номером 007. Первое убийство происходит в туалете британского консульства, где Бонд убивает предателя Дрейдена в жестокой драке. Второе убийство показано в флешбэке - Бонд убивает контакта Дрейдена Фишера в офисном здании. После получения статуса 007 Бонд произносит свою знаменитую фразу о предпочтении мартини.
+Действие переносится в Мадагаскар, где Бонд и его коллега Картер следят за Моллакой, создателем бомб, связанным с международной террористической сетью. Операция идет не по плану, когда Картер случайно выдает себя, и начинается захватывающая погоня. Моллака демонстрирует навыки паркура, прыгая с крана на кран на строительной площадке, а Бонд преследует его более прямолинейным, но разрушительным способом, взрывая стены и препятствия на своем пути.
+Погоня продолжается через посольство страны Намбутии, где Моллака пытается найти убежище. Бонд нарушает дипломатический иммунитет, проникая в посольство и убивая Моллаку, но не прежде чем получить его мобильный телефон с важной информацией. Этот инцидент создает международную напряженность и вызывает недовольство М, руководителя Бонда, которая критикует его за неосторожность и нарушение протокола.
+Анализ телефона Моллаки приводит Бонда к Алексу Дмитриосу в Багамах, торговцу оружием, который связан с загадочным финансистом террористов, известным только как Ле Шиффр. Бонд соблазняет жену Дмитриоса, Солану, и использует ее, чтобы получить доступ к информации о планах ее мужа. Он обнаруживает, что Дмитриос планирует теракт с использованием нового прототипа самолета Skyfleet на международном аэропорту Майами.
+В Майами Бонд следует за Карлосом, наемником, нанятым для выполнения теракта. После серии погонь и боев на аэропорту Бонд предотвращает взрыв самолета, но Карлос погибает в результате случайного взрыва бомбы, которую он сам активировал. Это создает финансовые проблемы для Ле Шиффра, который вложил деньги своих клиентов в акции Skyfleet, рассчитывая на их падение после теракта.
+Ле Шиффр, которого играет Мадс Миккельсен, представлен как математический гений с уникальной особенностью - он плачет кровью из поврежденного слезного протока. Потеряв деньги клиентов из-за провала теракта, он оказывается в отчаянном положении и организует покерную игру с высокими ставками в казино "Рояль" в Черногории, надеясь выиграть достаточно денег, чтобы покрыть потери.
+Британское правительство решает послать Бонда играть против Ле Шиффра, полагая, что если террорист проиграет, он будет вынужден обратиться к британской разведке за защитой в обмен на информацию. Бонда сопровождает Весper Линд, агент казначейства, ответственная за деньги правительства для игры, и Рене Матис, местный контакт МИ-6 в Черногории.
+Бонд и Весper сначала конфликтуют, поскольку она считает его безрассудным убийцей, а он видит в ней бюрократа, который не понимает реальностей полевой работы. Однако между ними постепенно развиваются романтические отношения, особенно после того, как Весper помогает Бонду справиться с эмоциональным воздействием его первого убийства на близком расстоянии.
+Покерная игра в казино "Рояль" становится центральным элементом фильма. За столом сидят несколько игроков, включая Ле Шиффра, Бонда и других международных криминальных авторитетов. Ставки составляют миллионы долларов, и напряжение растет с каждой раздачей. Ле Шиффр демонстрирует свое мастерство чтения противников и психологического давления, в то время как Бонд учится контролировать свои эмоции и читать других игроков.
+Во время перерыва в игре на Бонда совершается покушение. Олег Трешков и Василий, работающие на Ле Шиффра, пытаются убить британского агента в его гостиничном номере. Бонд побеждает нападавших в жестокой драке, но получает травмы. Весper помогает ему залечить раны, и именно в этот момент их отношения становятся более интимными.
+Вернувшись к покерному столу, Бонд обнаруживает, что Ле Шиффр попытался отравить его мартини. Почувствовав действие яда, Бонд спешит к своей машине, где у него есть противоядие, но теряет сознание прежде чем успевает его принять. Весper находит его и спасает его жизнь, используя дефибриллятор, чтобы восстановить его сердцебиение.
+После отравления Бонд проигрывает большую часть своих денег Ле Шиффру и готов выйти из игры. Однако Феликс Лейтер, агент ЦРУ, также участвующий в игре, передает Бонду свои фишки, позволяя ему продолжить. Лейтер объясняет, что американцы предпочли бы, чтобы Бонд поймал Ле Шиффра, а не они сами.
+В кульминационной руке покера Бонд блефует с парой, в то время как Ле Шиффр имеет фулл-хаус. Однако Бонд читает tell Ле Шиффра - тот касается своего шрама, когда блефует, и понимает, что террорист тоже блефует. В драматической развязке Бонд открывает стрит-флеш и выигрывает весь банк, лишая Ле Шиффра денег его опасных клиентов.
+После игры Весper и Бонд празднуют победу, и она передает выигранные деньги в британское казначейство. Однако их похищает Ле Шиффр и его люди. Ле Шиффр пытает Бонда, привязав его голым к стулу без сиденья и избивая его гениталии веревкой. Он требует пароль к банковскому счету с выигрышем, но Бонд отказывается говорить.
+Пытки прерывает появление мистера Уайта, представителя организации, деньги которой потерял Ле Шиффр. Уайт убивает Ле Шиффра выстрелом в лоб, говоря ему, что организация не прощает потери их денег. Он освобождает Бонда и Весper, но не из милосердия, а потому что их смерть привлекла бы нежелательное внимание.
+Бонд и Весper восстанавливаются в больнице, где их отношения углубляются. Бонд даже подает в отставку из МИ-6, планируя уехать с Весper в Венецию. Они проводят романтическое время в плавучем доме на венецианских каналах, и Бонд кажется готовым оставить свою жизнь шпиона ради любви.
+Однако все меняется, когда Бонд идет в банк, чтобы перевести выигранные деньги британскому правительству, и обнаруживает, что счет пуст. Весper забрала все деньги и исчезла. Матис информирует Бонда, что Весper была замечена с алжирцами, связанными с террористической организацией, что предполагает ее предательство.
+Преследуя Весper через Венецию, Бонд сталкивается с Гетлером, одноглазым наемником, и его людьми в здании, проходящем реконструкцию. Происходит интенсивная перестрелка, во время которой здание начинает разрушаться и тонуть в канале. Гетлер попадает в ловушку под обломками и тонет, в то время как Бонд пытается спасти Весper, которая также оказалась в затопленном здании.
+Бонд находит Весper в затопленной клетке лифта. Она сознательно не пытается выбраться, позволяя воде заполнить клетку. Бонд ломает решетку и вытаскивает ее на поверхность, но уже слишком поздно - Весper умирает у него на руках. Ее последние слова полны сожаления и любви к Бонду, оставляя его разбитым и озлобленным.
+М прибывает в Венецию и объясняет Бонду истинную ситуацию. Весper была не предателем, а жертвой шантажа. Террористическая организация похитила ее алжирского возлюбленного и угрожала убить его, если она не поможет им получить выигрыш от покера. Весper попыталась найти способ спасти и своего возлюбленного, и Бонда, но в конечном итоге поняла, что это невозможно, и выбрала смерть.
+М также сообщает Бонду, что Матис был невиновен - настоящим предателем в их операции был кто-то другой. Это известие еще больше расстраивает Бонда, который понимает, что мир шпионажа полон обмана и что доверять никому нельзя. Смерть Весper превращает его из относительно неопытного агента в холодного, циничного профессионала, которого знают поклонники серии.
+Фильм завершается сценой на озере Комо в Италии, где Бонд выслеживает мистера Уайта, лидера загадочной террористической организации Квантум. Уайт разговаривает по телефону в своем поместье, не подозревая о присутствии Бонда. Бонд стреляет ему в ногу из снайперской винтовки, а затем подходит к раненому Уайту.
+Когда Уайт спрашивает, кто он такой, Бонд отвечает классической фразой "Бонд. Джеймс Бонд", произносимой с холодной уверенностью опытного убийцы. Эта сцена знаменует полную трансформацию Бонда в безжалостного агента 007, которого мы знаем из предыдущих фильмов серии. Музыкальная тема Джеймса Бонда звучит впервые в фильме именно в этот момент, подчеркивая завершение его эволюции от неопытного агента до легендарного шпиона.RetryClaude can make mistakes. Please double-check responses.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Убить Билла 2', 'The Bride continues her quest of vengeance against her former boss and lover Bill, the reclusive bouncer Budd, and the treacherous, one-eyed Elle.', '2004-01-01', 1, '137 minutes', 'Kill Bill: Vol. 2', 8.0, 'Фильм начинается с того момента, где закончилась первая часть. Невеста, которую зовут Беатрис Киддо, но которая использует кодовое имя Черная Мамба, продолжает свою кровавую миссию мести против бывших коллег из группы убийц "Отряд смертельных гадюк" и их лидера Билла. В первой части она уже убила О-Рен Ишии и Вернита Грин, теперь ей остается расправиться с Буддом, Эль Драйвер и самим Биллом.
+Фильм открывается сценой за рулем автомобиля, где Беатрис рассказывает историю о том, как Билл выстрелил ей в голову в день ее свадьбы четыре года назад. Она была беременна и пыталась начать новую жизнь с простым музыкантом Томми, скрывая свое прошлое наемной убийцы. Но Билл нашел ее, привел с собой остальных членов отряда, и они устроили резню на репетиции свадьбы, убив всех присутствующих.
+Следующая цель Беатрис - Бадд, также известный как Боковая Гремучая Змея, младший брат Билла, который теперь работает вышибалой в стриптиз-клубе и живет в грязном трейлере в пустыне. Бадд спился и опустился, но сохранил навыки убийцы. Когда Беатрис приходит к его трейлеру ночью, он ожидает ее с дробовиком, заряженным каменной солью. Выстрел из засады оглушает и ранит ее.
+Бадд связывает Беатрис и закапывает ее живьем в гробу, положив туда фонарик и давая ей понять, что кислорода хватит ненадолго. Находясь в полной темноте под землей, Беатрис вспоминает свое обучение у легендарного мастера кунг-фу Пай Мэя, жестокого и эксцентричного старика с длинной белой бородой, который научил ее смертельным техникам боевых искусств.
+В флешбэке показано, как молодая Беатрис прибыла в монастырь Пай Мэя в горах Китая. Мастер известен своей жестокостью - он вырвал глаз предыдущей ученице Эль Драйвер за то, что та проявила неуважение. Пай Мэй заставляет Беатрис выполнять изнуряющие упражнения - носить воду в ведрах по крутым ступенькам, отрабатывать удары руками по деревянной доске часами подряд. Он обучает ее технике "Взрывающегося сердца пяти точек" - смертельному приему, при котором пять точных ударов вызывают отсроченную смерть.
+Самое важное, чему научился Беатрис у Пай Мэя, - это техника пробивания досок голыми руками. Мастер заставлял ее бить по деревянной доске до тех пор, пока костяшки не начинали кровоточить, а затем продолжать тренировки. Эта техника теперь помогает ей выбраться из гроба - она пробивает крышку кулаками и выбирается на поверхность, почти задохнувшись.
+Тем временем Бадд связывается с Эль Драйвер, известной как Калифорнийская Горная Змея, и предлагает продать ей самурайский меч Беатрис за миллион долларов. Эль, которая потеряла правый глаз из-за Беатрис в первом фильме и теперь носит черную повязку, соглашается на сделку. Она приезжает к трейлеру Бадда с чемоданом денег, но в чемодане спрятана черная мамба - ядовитая змея.
+Когда Бадд открывает чемодан, змея кусает его, и он умирает в мучительных конвульсиях. Эль зачитывает ему информацию о черной мамбе из энциклопедии, наслаждаясь его медленной смертью. Она планировала убить и Беатрис, когда та вернется, но не знает, что Беатрис уже выбралась из могилы.
+Беатрис возвращается к трейлеру и находит мертвого Бадда. Начинается жестокая схватка между ней и Эль Драйвер в тесном пространстве трейлера. Они дерутся самурайскими мечами, разрушая все вокруг. Финальный удар Беатрис вырывает оставшийся глаз Эль, делая ее полностью слепой. Беатрис оставляет Эль умирать в трейлере в окружении ядовитых змей.
+Теперь остается только Билл. Беатрис едет в Мексику, где выслеживает Эстебана Вихо, бывшего сутенера Билла, который знает его местонахождение. После короткой, но жестокой схватки Эстебан рассказывает ей, что Билл живет на вилле в горах.
+По дороге к финальной конфронтации Беатрис вспоминает свои отношения с Биллом. Они были не только коллегами, но и любовниками. Билл был ее наставником, учителем и единственным человеком, которого она по-настоящему любила. Их отношения были страстными, но токсичными - мир профессиональных убийц не располагает к здоровой любви.
+Когда Беатрис забеременела, она поняла, что должна оставить эту жизнь ради ребенка. Она исчезла, не сказав Биллу о беременности, и попыталась начать новую жизнь под другим именем. Но Билл нашел ее накануне свадьбы с другим мужчиной и воспринял это как предательство.
+Прибыв на виллу Билла, Беатрис обнаруживает шокирующую правду - ее дочь жива. Четырехлетняя девочка по имени Би Би играет во дворе. Оказывается, врачи смогли спасти ребенка после того, как Билл выстрелил беременной Беатрис в голову. Билл забрал дочь и воспитывает ее как свою собственную.
+Билл встречает Беатрис спокойно, почти дружелюбно. Он выглядит старше и мудрее, играет на флейте, ведет философские беседы с дочерью. Когда маленькая Би Би засыпает, между Биллом и Беатрис происходит долгий разговор о прошлом, о любви, о мести и прощении.
+Билл объясняет свою мотивацию - он не мог смириться с тем, что женщина, которую любил больше всего на свете, предала его и попыталась стать "нормальной". Он рассказывает притчу о Супермене, объясняя, что Супермен не надевает костюм, чтобы стать героем - костюм Кларка Кента - это его маскировка. Точно так же Беатрис не может перестать быть убийцей, это ее истинная природа.
+Беатрис признает, что была неправа, скрывая от него беременность, но настаивает, что имела право попытаться изменить свою жизнь ради ребенка. Их разговор полон горечи, сожаления и неразрешенной любви. Оба понимают, что между ними слишком много крови и боли, чтобы вернуться к прежним отношениям.
+В конце концов, они понимают, что должны решить это единственным способом, который знают - через насилие. Билл достает пистолет, но Беатрис быстрее. Она применяет технику "Взрывающегося сердца пяти точек", которую изучила у Пай Мэя. Пять быстрых ударов в определенные точки на теле Билла запускают процесс, который убьет его через несколько шагов.
+Билл делает пять шагов и падает мертвым. Перед смертью он успевает сказать, что она была его величайшей любовью. Беатрис плачет над его телом - несмотря на все, что между ними произошло, она все еще любила его.
+Фильм заканчивается сценой в мотельном номере, где Беатрис воссоединяется со своей дочерью. Они вместе смотрят мультфильмы по телевизору. Беатрис лежит на полу ванной комнаты и рыдает - от облегчения, от горя, от радости наконец-то оказаться с дочерью. Ее миссия мести завершена, но цена была огромной.
+Голос за кадром произносит: "Раньше Беатрис Киддо была мстительной женщиной. Теперь она снова мать." Фильм завершается на ноте осторожного оптимизма - возможно, Беатрис сможет найти покой и построить нормальную жизнь со своей дочерью, оставив позади мир насилия и мести, который так долго определял ее существование.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Возвращение', 'In the Russian wilderness, two brothers face a range of new, conflicting emotions when their father - a man they know only through a single photograph - resurfaces.', '2003-01-01', 1, '110 minutes', 'Vozvrashchenie', 8.0, 'Фильм рассказывает историю двух братьев - двенадцатилетнего Андрея и четырнадцатилетнего Ивана, которые живут с матерью в российской провинции. Отец покинул семью много лет назад, когда мальчики были совсем маленькими, и они практически не помнят его. Мать никогда не объясняла детям причины ухода отца и избегала разговоров на эту тему.
+Однажды братья возвращаются домой и обнаруживают, что в их доме находится незнакомый мужчина, который спит в родительской спальне. Мать объясняет им, что это их отец, который вернулся после долгого отсутствия. Мальчики с трудом могут поверить в это, поскольку единственным доказательством родства служит старая семейная фотография, на которой отец выглядит намного моложе.
+Отец представляется детям сдержанно и холодно, не проявляя особых эмоций при встрече с сыновьями. Он выглядит усталым и отстраненным, словно его мысли заняты чем-то другим. Мать ведет себя напряженно в присутствии мужа, но не объясняет детям, где он был все эти годы и почему вернулся именно сейчас.
+На следующий день отец неожиданно объявляет, что берет мальчиков в рыбалку на несколько дней. Это решение кажется спонтанным, и мать выражает некоторое беспокойство, но не протестует. Отец ведет себя авторитарно, не терпит возражений и требует от детей беспрекословного подчинения. Он упаковывает вещи в машину, включая большой деревянный ящик, содержимое которого скрывает от мальчиков.
+Поездка начинается напряженно. Отец ведет машину молча, лишь изредка отдавая краткие приказы сыновьям. Андрей, младший из братьев, пытается наладить контакт с отцом, задает вопросы и стремится заслужить его одобрение. Иван же относится к отцу с подозрением и враждебностью, не доверяя человеку, который внезапно появился в их жизни после долгого отсутствия.
+Во время поездки отец демонстрирует суровые методы воспитания. Он заставляет мальчиков выполнять различные задания, проверяя их выносливость и характер. Когда Андрей не может прыгнуть с высокой вышки в озеро из-за страха высоты, отец оставляет его одного, заставляя преодолеть свой страх. Иван защищает младшего брата и открыто конфликтует с отцом, обвиняя его в жестокости.
+Семья останавливается в различных местах по пути к конечной цели поездки. Отец ведет себя все более таинственно, часто уходит один, оставляя детей в машине или в гостинице. Он совершает загадочные телефонные звонки и встречается с неизвестными людьми. Мальчики начинают подозревать, что их поездка имеет какую-то скрытую цель, не связанную с семейным отдыхом.
+Напряжение между отцом и Иваном нарастает с каждым днем. Старший сын открыто демонстрирует неповиновение и ставит под сомнение авторитет отца. Он обвиняет его в том, что тот не имеет права появляться в их жизни после стольких лет отсутствия и пытаться играть роль родителя. Отец отвечает на это еще большей строгостью, требуя дисциплины и уважения.
+Конечной целью поездки оказывается небольшой остров посреди озера, куда можно добраться только на лодке. Отец арендует моторную лодку и перевозит семью на остров вместе с таинственным деревянным ящиком. На острове нет никого, кроме них, и место выглядит заброшенным и мрачным.
+На острове отец начинает копать яму в определенном месте, словно следуя заранее известным ему координатам. Он отказывается объяснить детям, что делает, и приказывает им помочь с рытьем. Мальчики понимают, что отец либо что-то закапывает, либо что-то откапывает, но истинная цель его действий остается загадкой.
+Конфликт между отцом и Иваном достигает критической точки, когда мальчик отказывается подчиняться и открыто бунтует против родительской власти. Отец пытается физически принуждать сына к послушанию, что приводит к еще большему сопротивлению. Иван кричит, что этот человек не его отец, и что настоящий отец никогда бы не обращался с ними так жестоко.
+В кульминационный момент конфликта Иван в ярости убегает от отца и забирается на высокое дерево, отказываясь спускаться. Отец следует за ним, пытаясь заставить сына слезть вниз. Между ними происходит жестокий словесный поединок, в ходе которого раскрываются глубокие эмоциональные раны и взаимные обиды.
+Во время этой ссоры происходит трагедия - отец срывается с дерева и падает на землю. Падение оказывается смертельным, и мужчина умирает на глазах у потрясенных сыновей, не успев объяснить им цель своего возвращения и истинные мотивы поездки. Последние слова отца остаются неясными, и многие вопросы так и не получают ответов.
+Мальчики остаются одни на острове с телом умершего отца. Они в панике и не знают, что делать. Иван чувствует вину за смерть отца, считая, что именно его неповиновение привело к трагедии. Андрей пытается поддержать старшего брата, но сам находится в состоянии шока.
+Братья принимают решение перевезти тело отца на лодке обратно на материк. Они с трудом загружают мертвого мужчину в лодку и отправляются в обратный путь. Однако во время переправы лодка начинает тонуть под тяжестью груза и из-за неопытности детей в управлении водным транспортом.
+В критический момент, когда лодка почти полностью погружается в воду, тело отца соскальзывает за борт и исчезает в глубине озера. Мальчики едва успевают добраться до берега, спасая лишь собственные жизни. Таким образом, отец исчезает из их жизни так же внезапно, как и появился, не оставив после себя ничего, кроме загадок и болезненных воспоминаний.
+Фильм заканчивается возвращением братьев домой к матери. Они рассказывают ей о том, что произошло, но многие детали остаются неясными. Мать принимает известие о смерти мужа с покорностью, словно ожидала подобного исхода. Она не задает детальных вопросов о обстоятельствах его смерти и не упрекает детей в произошедшем.
+В финальных кадрах мальчики разбирают фотографии, оставшиеся от поездки, и обнаруживают, что на всех снимках, где они сфотографированы с отцом, его изображение загадочным образом исчезло, словно он никогда не существовал. Только семейная фотография, по которой они узнали отца в начале фильма, остается нетронутой, но теперь она кажется единственным доказательством того, что встреча с отцом вообще происходила.
+Фильм оставляет множество вопросов без ответов: где был отец все эти годы, почему он вернулся именно сейчас, что находилось в деревянном ящике, какова была истинная цель поездки на остров. Эта неопределенность является преднамеренной художественной особенностью картины, заставляющей зрителей самостоятельно интерпретировать события и мотивы персонажей. Фильм исследует сложные отношения между отцами и сыновьями, тему потерянного детства и травматического взросления в условиях эмоциональной нестабильности и семейных тайн.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Море внутри', 'The factual story of Spaniard Ramon Sampedro, who fought a thirty-year campaign in favor of euthanasia and his own right to die.', '2014-01-01', 1, '126 minutes', 'Mar adentro', 8.0, 'Фильм основан на реальной истории Рамона Сампедро, галисийского моряка, который провел последние тридцать лет своей жизни парализованным от шеи и ниже после несчастного случая в молодости. История начинается в 1996 году в небольшой деревне в Галисии, Испания, где пятидесятипятилетний Рамон живет со своей семьей в скромном доме у моря. Его ежедневный уход полностью зависит от его невестки Манолы, жены его брата Хосе, которая посвятила годы своей жизни заботе о нем.
+Рамон стал тетраплегиком в возрасте двадцати пяти лет, когда нырнул в мелкую воду с утеса и сломал шейные позвонки. С тех пор он прикован к кровати, способен двигать только головой, и полностью зависит от других во всех аспектах повседневной жизни. Несмотря на свое физическое состояние, Рамон обладает острым умом, пишет стихи и письма, диктуя их членам семьи или друзьям, и ведет юридическую битву за право на достойную смерть.
+Рамон твердо верит, что жизнь без достоинства не стоит того, чтобы жить, и уже много лет борется в судах за право на эвтаназию. Он аргументирует свою позицию тем, что каждый человек должен иметь право выбирать, когда и как умереть, особенно когда жизнь стала невыносимой из-за физических страданий или потери независимости. Его философский подход к смерти основан не на депрессии или отчаянии, а на рациональном убеждении, что качество жизни важнее ее продолжительности.
+Семья Рамона разделена в отношении его желания умереть. Его невестка Манола категорически против эвтаназии, считая жизнь священной и полагая, что пока есть жизнь, есть надежда. Она посвятила себя уходу за Рамоном и не может понять, как он может хотеть покинуть их. Его брат Хосе также противится желанию Рамона, хотя и менее вокально. Племянник Рамона, Хави, молодой человек, который помогает дяде с перепиской и юридическими документами, находится где-то посередине, понимая аргументы Рамона, но эмоционально привязанный к нему.
+В жизнь Рамона входят две женщины, которые кардинально изменят его последние месяцы. Первая - Хулия, адвокат, которая сама страдает от дегенеративного заболевания - синдрома CADASIL, который медленно разрушает ее мозг и в конечном итоге приведет к деменции и смерти. Хулия поддерживает право Рамона на эвтаназию и предлагает помочь ему в юридической борьбе. Между ними развиваются сложные отношения, поскольку оба сталкиваются с собственной смертностью, хотя и по-разному.
+Хулия умна, решительна и разделяет философские взгляды Рамона на достоинство и автономию. Она понимает его желание контролировать собственную смерть, поскольку сама сталкивается с перспективой потери умственных способностей. Их отношения становятся интеллектуально и эмоционально интимными, хотя физическая близость невозможна из-за состояния Рамона. Они проводят долгие часы, обсуждая философию, поэзию и смысл жизни.
+Вторая женщина - Роса, местная женщина из рабочего класса, которая слышала о случае Рамона и приходит к нему домой, полная решимости убедить его, что жизнь стоит того, чтобы жить. Роса разведена, имеет двоих детей и работает на фабрике. Она религиозна и верит, что только Бог должен решать, когда человеку умирать. Первоначально она приходит как миссионер, пытающийся "спасти" Рамона от его суицидальных мыслей.
+Однако по мере того, как Роса проводит время с Рамоном, между ними развивается неожиданная связь. Рамон видит в ней доброту и жизненную силу, которые привлекают его, в то время как Роса начинает понимать сложность его ситуации и глубину его страданий. Она начинает сомневаться в своих первоначальных убеждениях и постепенно влюбляется в Рамона, несмотря на невозможность физических отношений.
+Треугольник между Рамоном, Хулией и Росой создает эмоциональную напряженность в фильме. Хулия представляет интеллектуальную совместимость и общее понимание желания контролировать свою судьбу, в то время как Роса представляет эмоциональную страсть и веру в ценность жизни любой ценой. Рамон чувствует связь с обеими женщинами, но по-разному - с Хулией он разделяет философские размышления, а с Росой он испытывает более земную, эмоциональную привязанность.
+Юридическая битва Рамона проходит через различные суды, но испанская правовая система последовательно отказывает ему в праве на эвтаназию. Католическая церковь и консервативные группы активно выступают против его дела, в то время как группы по защите прав человека поддерживают его. Случай Рамона получает широкое освещение в СМИ, превращая его в символ споров о праве на смерть в Испании.
+Во время одного из судебных заседаний происходит драматический момент, когда священник, выступающий против эвтаназии, утверждает, что жизнь священна и что страдание имеет духовную ценность. Рамон страстно отвечает, что достоинство человека заключается в возможности выбора, и что принуждение к жизни против воли человека является формой пытки. Его красноречие и логические аргументы впечатляют многих присутствующих, но не меняют юридического исхода.
+Состояние Хулии ухудшается по мере прогрессирования ее заболевания. Она начинает терять память и когнитивные функции, что пугает ее больше всего. В одной из самых трогательных сцен фильма она забывает, где находится ее машина, и Рамон, несмотря на свою неподвижность, пытается помочь ей по телефону найти дорогу домой. Это подчеркивает иронию ситуации - парализованный человек пытается направлять потерявшуюся женщину.
+Хулия в конечном итоге принимает решение покончить с собой, пока еще сохраняет способность принимать рациональные решения. Она приходит к Рамону в последний раз, и они проводят прощальную ночь, разговаривая о жизни, смерти и любви. На следующий день Хулия совершает самоубийство, оставив Рамона опустошенным потерей единомышленницы и союзницы в его борьбе.
+Смерть Хулии глубоко влияет на Рамона и укрепляет его решимость контролировать собственную смерть. Он понимает, что юридическая система никогда не предоставит ему право на эвтаназию, и начинает планировать собственную смерть. Рамон разрабатывает сложный план, который позволит ему умереть, не подвергая опасности никого из своих близких с юридической точки зрения.
+Роса, тем временем, продолжает бороться со своими чувствами к Рамону и своими религиозными убеждениями. Она предлагает ему сбежать с ней, фантазируя о жизни вместе где-то далеко, где они могли бы быть счастливы. Рамон нежно отвергает ее предложение, объясняя, что его состояние делает такую жизнь невозможной, и что он не хочет быть обузой для женщины, которую любит.
+В одной из самых красивых и воображаемых сцен фильма Рамон мечтает о том, как встает с кровати и идет к морю, чтобы встретить Хулию. Эта сюрреалистическая последовательность, снятая в мечтательном, поэтическом стиле, показывает внутренний мир Рамона и его тоску по свободе движения. Сцена заканчивается тем, что он летит над побережьем, символизируя его желание освободиться от физических ограничений.
+План Рамона по осуществлению самоубийства включает нескольких друзей, каждый из которых выполняет небольшую часть, так что никто не может быть обвинен в помощи в самоубийстве. Один друг приносит ему стакан воды, другой - соломинку, третий - таблетки цианида. Рамон настаивает на том, что последнее действие - растворение таблеток в воде и их употребление через соломинку - он должен выполнить сам, используя единственную часть тела, которую может контролировать - свой рот.
+В день своей смерти Рамон записывает прощальное видеосообщение, в котором объясняет свое решение и благодарит всех, кто поддерживал его. Он подчеркивает, что его решение основано не на депрессии, а на рациональном выборе достойной смерти. Он также выражает свою любовь к семье и просит их понять и простить его.
+Когда приходит время, Рамон выполняет свой план. Камера снимает его лицо, когда он пьет смертельную смесь через соломинку, показывая спокойствие и решимость в его глазах. Он умирает мирно, наконец получив контроль над своей судьбой, которого так долго добивался.
+После смерти Рамона его семья и друзья должны справиться с последствиями. Манола опустошена потерей человека, за которым ухаживала так много лет, чувствуя, что ее преданность была отвергнута. Хосе борется с виной за то, что не смог убедить брата жить. Роса остается с разбитым сердцем, потеряв мужчину, которого полюбила, но не смогла спасти.
+Фильм завершается сценами у моря, где происходил несчастный случай с Рамоном много лет назад. Голос за кадром читает одно из стихотворений Рамона о море и свободе, подчеркивая его связь с океаном как символом бесконечности и освобождения. Последние кадры показывают волны, разбивающиеся о берег, предполагая циклическую природу жизни и смерти и окончательное возвращение Рамона к морю, которое он так любил.
+Фильм поднимает глубокие вопросы о человеческом достоинстве, автономии, смысле страдания и праве на самоопределение в вопросах жизни и смерти. Он не дает простых ответов, а скорее представляет сложную человеческую дилемму с сочувствием и пониманием ко всем вовлеченным сторонам.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Нокдаун', 'The story of James J. Braddock, a supposedly washed-up boxer who came back to become a champion and an inspiration in the 1930s.', '2005-01-01', 1, '144 minutes', 'Cinderella Man', 8.0, 'Фильм рассказывает реальную историю боксера Джеймса Джей Брэддока, который в 1920-х годах был многообещающим тяжеловесом, но к началу Великой депрессии его карьера пошла на спад. Брэддок живет в Нью-Джерси с женой Мэй и тремя детьми - дочерью Розмари и сыновьями Джеем и Говардом. Семья наслаждается относительным достатком благодаря успешным боям Джеймса, но их благополучие рушится после краха фондовой биржи в 1929 году.
+После серии поражений на ринге и травмы левой руки Брэддок теряет боксерскую лицензию. Комиссия по боксу признает его непригодным для продолжения карьеры, лишая семью основного источника дохода. Джеймс вынужден искать любую работу, чтобы прокормить семью, но в условиях массовой безработицы времен Великой депрессии найти постоянное место крайне сложно.
+Брэддок устраивается грузчиком в доках, выполняя тяжелую физическую работу за мизерную плату. Его поврежденная рука постоянно болит, что затрудняет выполнение трудовых обязанностей. Семья переезжает в более дешевое жилье в бедном районе, продает большую часть имущества и экономит на всем, включая еду и отопление. Мэй устраивается на работу, чтобы поддержать семейный бюджет.
+Финансовое положение семьи продолжает ухудшаться. Зимой у них отключают электричество и газ за неуплату, и семья вынуждена жить в холодной квартире. Дети начинают болеть, а младший сын Говард особенно тяжело переносит лишения. Джеймс видит, как его дети голодают, и это причиняет ему невыносимые страдания как отцу и кормильцу семьи.
+Ситуация достигает критической точки, когда Говард возвращает бутылку молока в магазин, потому что знает, что семье нужны деньги больше, чем молоко. Этот поступок маленького мальчика глубоко потрясает Джеймса, который понимает, что дети слишком рано взрослеют из-за нужды. Он также обнаруживает, что Мэй отправила детей к своей сестре, опасаясь, что не сможет их прокормить.
+В отчаянии Джеймс идет к своим бывшим коллегам по боксу - промоутерам, менеджерам и другим боксерам - и просит денег в долг. Это унизительно для гордого человека, но он готов на все ради семьи. Он собирает небольшую сумму, которой хватает, чтобы восстановить коммунальные услуги и вернуть детей домой.
+Неожиданно Джеймсу предлагают возможность вернуться на ринг. Его бывший менеджер Джо Гулд находит ему бой против восходящей звезды бокса Корна Гриффина. Это должен быть легкий бой для молодого боксера, а Брэддок рассматривается как проходной противник, который должен проиграть и обеспечить Гриффину эффектную победу. Гонорар невелик, но для отчаянно нуждающейся семьи Брэддока это значительная сумма.
+Мэй категорически против возвращения мужа на ринг. Она боится, что он получит серьезную травму или даже погибнет, оставив ее вдовой с тремя детьми. Мэй помнит времена, когда Джеймс приходил домой после боев избитый и окровавленный, и не хочет снова переживать эти страхи. Однако Джеймс убеждает ее, что у них нет другого выбора.
+К удивлению всех, включая самого Брэддока, он одерживает уверенную победу над Гриффином. Бой показывает, что годы тяжелой физической работы укрепили его тело, а жизненные испытания закалили характер. Брэддок дерется с отчаянием человека, которому нечего терять, и эта мотивация делает его невероятно опасным противником.
+Победа привлекает внимание боксерского мира и прессы. Журналисты называют Брэддока "Золушкой" (Cinderella Man) за его сказочное возвращение из нищеты к славе. Ему предлагают новые бои против все более серьезных противников. Каждая победа приносит семье больше денег и возвращает Джеймсу уверенность в себе.
+Брэддок продолжает выигрывать бои, демонстрируя великолепную технику и несгибаемую волю к победе. Его стиль боя изменился - он стал более терпеливым, расчетливым и эффективным. Годы лишений научили его ценить каждую возможность и бороться до конца. Публика начинает видеть в нем символ надежды в трудные времена Великой депрессии.
+Успехи Брэддока приводят к тому, что ему предлагают бой за титул чемпиона мира в тяжелом весе против действующего чемпиона Макса Бэра. Бэр известен как жестокий и мощный боксер, который убил двух противников на ринге и серьезно травмировал многих других. Он славится своими нокаутирующими ударами и агрессивным стилем ведения боя.
+Мэй ужасается при мысли о бое с Бэром. Она исследует его послужной список и обнаруживает, что он действительно убил боксеров Франки Кэмпбелла и Эрни Шааффа во время боев. Она умоляет Джеймса отказаться от поединка, но он объясняет ей, что это шанс обеспечить семью на всю жизнь и что он не может упустить такую возможность.
+Подготовка к бою с Бэром становится самой интенсивной в карьере Брэддока. Он тренируется с невероятным упорством, понимая, что ему предстоит встретиться с одним из самых опасных боксеров в истории. Джо Гулд помогает ему разработать тактику боя, основанную на выносливости, технике и умении избегать мощных ударов Бэра.
+Весь боксерский мир считает, что у Брэддока нет шансов против Бэра. Букмекеры дают огромные коэффициенты против него, а эксперты предсказывают, что бой закончится нокаутом в первых раундах. Однако простые американцы, переживающие трудности Великой депрессии, видят в Брэддоке своего героя и массово поддерживают его.
+Бой проходит в Мэдисон Сквер Гарден перед многотысячной аудиторией. С самого начала Бэр пытается закончить поединок мощными ударами, но Брэддок умело избегает его атак и отвечает точными контрударами. Бой продолжается все пятнадцать раундов, и Брэддок демонстрирует невероятную выносливость и тактическое мастерство.
+В течение боя Брэддок несколько раз оказывается в критическом положении, когда мощные удары Бэра ставят его на грань нокаута. Однако он каждый раз находит в себе силы продолжать бой, вспоминая о своей семье и обо всех людях, которые на него надеются. Его мотивация оказывается сильнее физического превосходства противника.
+В финальных раундах Брэддок начинает доминировать в бою. Бэр устает от собственной агрессивности, а Брэддок, наоборот, набирает обороты благодаря своей великолепной физической подготовке. Он наносит Бэру серию точных ударов и полностью контролирует ход поединка.
+Когда объявляют результаты судейского решения, Джеймс Брэддок становится новым чемпионом мира в тяжелом весе. Это одна из самых сенсационных побед в истории бокса - человек, который три года назад просил милостыню у бывших коллег, теперь стоит на вершине боксерского мира. Мэй плачет от радости и облегчения, понимая, что кошмар нищеты наконец закончился.
+Победа Брэддока становится символом надежды для миллионов американцев, переживающих Великую депрессию. Его история показывает, что даже в самые трудные времена человек может подняться со дна и добиться успеха благодаря упорству, мужеству и любви к семье. Президент Рузвельт лично поздравляет нового чемпиона, признавая его вклад в поднятие боевого духа нации.
+Фильм заканчивается сценами благополучной жизни семьи Брэддок после победы. Они переезжают в красивый дом, дети получают хорошее образование, а Джеймс продолжает боксировать, защищая свой титул. Титры сообщают, что Брэддок прослужил чемпионом до 1937 года, когда проиграл Джо Луису, и что он никогда не забывал о людях, которые помогли ему в трудные времена. После завершения карьеры он вернулся работать на доки и активно участвовал в общественной деятельности, помогая нуждающимся семьям. История Джеймса Брэддока остается одной из самых вдохновляющих в американском спорте, демонстрируя силу человеческого духа и важность семейных ценностей в преодолении любых жизненных испытаний.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Пираты Карибского моря: Проклятие Черной жемчужины', 'Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save his love, the governor''s daughter, from Jack''s former pirate allies, who are now undead.', '2003-01-01', 1, '143 minutes', 'Pirates of the Caribbean: The Curse of the Black Pearl', 8.0, 'Пираты Карибского моря: Проклятие Черной жемчужины (русское название)
+Фильм начинается с пролога, происходящего восемь лет назад, когда юная Элизабет Свонн плывет на британском военном корабле вместе со своим отцом, губернатором Уэтерби Свонном, к острову Порт-Ройял на Ямайке. Во время путешествия они находят в море молодого человека без сознания, дрейфующего на обломках корабля. Элизабет замечает на его шее золотой медальон с черепом и тайно забирает его, пока корабельный доктор осматривает юношу. Мальчика зовут Уилл Тернер, и Элизабет инстинктивно понимает, что он может быть пиратом, поэтому скрывает медальон, чтобы защитить его.
+Коммодор Норрингтон, командующий флотом, подозревает пиратское происхождение спасенного мальчика, но без доказательств не может предпринять никаких действий. Элизабет хранит медальон в секрете, и между ней и Уиллом, который остается в Порт-Ройяле и становится учеником кузнеца, завязывается дружба.
+Действие переносится в настоящее время, где взрослая Элизабет стала красивой молодой женщиной из высшего общества, а Уилл - талантливым кузнецом, который тайно влюблен в нее, но понимает, что их социальное положение делает отношения невозможными. Элизабет помолвлена с коммодором Норрингтоном, честным и благородным офицером, но их отношения лишены страсти.
+В день официального объявления помолвки Элизабет теряет сознание и падает в море из-за слишком тугого корсета. Когда она погружается в воду, золотой медальон, который она носила много лет, испускает таинственный сигнал под водой. Ее спасает капитан Джек Воробей, харизматичный и эксцентричный пират, который только что прибыл в Порт-Ройял на тонущей лодке с намерением украсть корабль.
+Джек Воробей немедленно узнает медальон как один из 882 проклятых ацтекских золотых монет из сокровища Кортеса. Однако его попытка помочь Элизабет прерывается прибытием британских солдат, которые арестовывают его как пирата. Норрингтон намерен повесить Джека на следующий день, несмотря на то, что тот спас жизнь его невесте.
+Той же ночью на Порт-Ройял нападает легендарный корабль-призрак "Черная жемчужина" под командованием капитана Гектора Барбоссы. Команда корабля состоит из проклятых пиратов, которые выглядят как обычные люди при дневном свете, но превращаются в живых скелетов в лунном свете. Они разграбляют город, ища золотой медальон, и в конечном итоге похищают Элизабет, когда она пытается использовать пиратский кодекс, чтобы остановить нападение.
+Элизабет представляется как Элизабет Тернер, используя фамилию Уилла, чтобы защитить свою истинную личность. Барбосса принимает ее за дочь "Прихлопа" Билла Тернера, члена своей бывшей команды, и считает, что ее кровь поможет снять проклятие. Он рассказывает ей историю проклятия: годы назад его команда нашла сокровище ацтеков Кортеса на Исла-де-Муэрта, но не знала, что оно проклято. Тот, кто возьмет хотя бы одну монету, будет обречен на вечную жизнь без возможности чувствовать удовольствие - еда превращается в пепел, вино в уксус, и они не могут испытывать физические ощущения.
+Барбосса предал и оставил умирать капитана Джека Воробья на необитаемом острове после того, как они нашли сокровище, но Джек каким-то образом спасся. Чтобы снять проклятие, все 882 монеты должны быть возвращены в сундук, и кровь последнего пирата, который взял золото, должна быть пролита на последнюю монету. Барбосса считает, что Элизабет - дочь Билла Тернера, поэтому ее кровь снимет проклятие.
+Уилл Тернер, отчаянно желающий спасти Элизабет, освобождает Джека Воробья из тюрьмы в обмен на помощь в спасении девушки. Джек соглашается, но скрывает свои истинные мотивы - он хочет вернуть "Черную жемчужину", которая когда-то была его кораблем, до того как Барбосса поднял мятеж против него. Вместе они крадут HMS Interceptor, самый быстрый корабль британского флота, и набирают команду в пиратском порту Тортуга.
+В Тортуге Джек воссоединяется со своими старыми товарищами, включая мистера Гиббса, опытного моряка, который рассказывает Уиллу больше о репутации Джека и истории "Черной жемчужины". Гиббс объясняет, как Джек сбежал с необитаемого острова, используя морских черепах и веревки из собственных волос, что стало легендой среди пиратов.
+Тем временем на "Черной жемчужине" Элизабет узнает больше о проклятии и понимает, что медальон, который она носила, был тем самым золотом, которое искали пираты. Барбосса пытается использовать ее кровь для снятия проклятия, но ритуал не работает, поскольку она не настоящая дочь Билла Тернера. Разъяренный неудачей, Барбосса решает оставить Элизабет на том же необитаемом острове, где когда-то оставил Джека.
+На острове Элизабет обнаруживает тайник с ромом, который Джек спрятал во время своего предыдущего пребывания там. Когда Джек и Уилл прибывают на остров, следуя за "Черной жемчужиной", Элизабет сжигает весь ром, создавая огромный сигнальный костер, который привлекает внимание британского флота. Джек в ярости от уничтожения рома, но вынужден согласиться с планом Элизабет по привлечению помощи.
+Норрингтон прибывает с флотом и арестовывает Джека, но соглашается на отчаянный план атаки на "Черную жемчужину" в обмен на освобождение Элизабет. Джек предлагает привести их к Исла-де-Муэрта, где Барбосса попытается снова провести ритуал снятия проклятия, на этот раз используя кровь настоящего Тернера - Уилла.
+На Исла-де-Муэрта происходит серия сложных предательств и союзов. Джек тайно заключает сделку с Барбоссой, обещая передать ему Уилла в обмен на "Черную жемчужину", но его истинные намерения остаются неясными. Уилл обнаруживает, что его отец, "Прихлоп" Билл Тернер, был членом команды Барбоссы и единственным, кто выступил против мятежа против Джека. За это Барбосса привязал Билла к пушке и сбросил его в море, где тот стал частью команды "Летучего голландца".
+В пещере, где хранится проклятое сокровище ацтеков, происходит кульминационная битва. Британские морские пехотинцы под командованием Норрингтона сражаются с проклятыми пиратами, которые практически неуязвимы в лунном свете. Элизабет, Уилл и Джек сражаются среди гор золота и драгоценностей, пытаясь помешать Барбоссе завершить ритуал.
+Джек тайно берет одну из проклятых монет, делая себя бессмертным, что позволяет ему сражаться с Барбоссой на равных. Их дуэль на мечах происходит при лунном свете, где оба предстают как живые скелеты, создавая зловещую и визуально поразительную сцену боя. Барбосса, более опытный фехтовальщик, получает преимущество, но недооценивает хитрость Джека.
+В решающий момент Уилл угрожает убить себя, чтобы помешать Барбоссе использовать его кровь для снятия проклятия. Барбосса останавливается, понимая, что если Уилл умрет, проклятие никогда не будет снято. Используя эту передышку, Джек и Уилл работают вместе - Уилл проливает свою кровь на последнюю монету, а Джек одновременно стреляет в Барбоссу из пистолета, который он держал заряженным десять лет, ожидая этого момента.
+Когда проклятие снимается, Барбосса внезапно становится смертным и умирает от выстрела Джека, произнося свои последние слова о том, что чувствует холод. Остальные члены команды "Черной жемчужины" также освобождаются от проклятия и становятся обычными людьми, многие из которых немедленно сдаются британским силам.
+Возвратившись в Порт-Ройял, Джека приговаривают к смерти через повешение, несмотря на его роль в спасении Элизабет и города. Норрингтон, будучи честным офицером, не может игнорировать тот факт, что Джек остается пиратом. Однако Уилл и Элизабет вмешиваются в последний момент, чтобы спасти Джека. Уилл бросает меч, который перерезает веревку виселицы, а Элизабет отвлекает стражников.
+Элизабет также объявляет о своей любви к Уиллу, отвергая предложение руки и сердца Норрингтона. Коммодор, хотя и разочарованный, благородно принимает ее решение и даже дает Джеку фору, прежде чем отдать приказ о его аресте. Джек падает с утеса в море, где его подбирает команда "Черной жемчужины", которая теперь снова находится под его командованием.
+Фильм завершается тем, что Джек и его команда плывут в закат на "Черной жемчужине", в то время как Джек достает свой компас и изучает карту, планируя новые приключения. Мистер Гиббс спрашивает о их следующем пункте назначения, и Джек загадочно отвечает, что они будут следовать туда, куда ведет ветер. Уилл и Элизабет остаются в Порт-Ройяле, начиная новую главу своих отношений, теперь свободную от социальных ограничений, поскольку истинное происхождение Уилла как сына пирата парадоксальным образом дает ему определенный статус в их мире.
+В сцене после титров показано, как проклятая обезьяна Барбоссы по кличке Джек возвращается в пещеру сокровищ и берет одну из золотых монет, снова становясь бессмертной и намекая на продолжение магических элементов истории в будущих фильмах серии.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Крупная рыба', 'A frustrated son tries to determine the fact from fiction in his dying father''s life.', '2003-01-01', 1, '125 minutes', 'Big Fish', 8.0, 'Фильм представляет собой многослойное повествование о жизни Эдварда Блума, рассказанное через призму его фантастических историй и попыток сына Уилла разобраться в том, где заканчивается правда и начинается вымысел. Действие разворачивается в двух временных планах - прошлом Эдварда и настоящем, где он умирает от рака.
+История начинается с детства Эдварда в маленьком городке Эштон в Алабаме в 1930-40-х годах. Уже в детстве Эдвард был необычным ребенком - он рос намного быстрее своих сверстников и к подростковому возрасту стал самым высоким человеком в городе. Местные жители рассказывали легенды о том, что в окрестностях живет ведьма, которая может показать любому человеку, как он умрет. Юный бесстрашный Эдвард решает найти эту ведьму и узнать свою судьбу.
+Ведьма оказывается старой женщиной с огромным стеклянным глазом вместо одного обычного. Она показывает Эдварду видение его смерти - он увидел себя пожилым человеком, мирно умирающим в собственной постели в окружении близких. Это знание делает Эдварда абсолютно бесстрашным, поскольку он понимает, что никакая опасность не может убить его раньше предназначенного срока. Эта уверенность позволяет ему совершать самые рискованные поступки без страха за свою жизнь.
+Когда Эдвард становится совсем взрослым, он понимает, что перерос свой маленький родной городок во всех смыслах этого слова. Физически он стал слишком высоким для местных дверей и потолков, а духовно - его амбиции и мечты стали слишком большими для провинциальной жизни. Он принимает решение покинуть Эштон и отправиться в большой мир за приключениями.
+По дороге из родного города Эдвард доходит до развилки, где тропа расходится в две стороны. Он встречает местного жителя, который объясняет ему, что одна дорога ведет в соседний город быстро и безопасно, а вторая - через темный таинственный лес, где живут опасные существа, но эта дорога намного короче. Естественно, Эдвард выбирает опасную дорогу через лес.
+В лесу он действительно встречает различных странных существ и в итоге попадает в совершенно удивительное место - городок Спектр, который кажется существующим вне времени и пространства. В этом городе всегда царит идеальная погода, жители ходят босиком по мягкой изумрудной траве, никто никуда не торопится, и все живут в полной гармонии друг с другом. Мэром города является поэт по имени Карл, который постоянно сочиняет стихи и с первого взгляда проникается симпатией к Эдварду.
+Карл показывает Эдварду все прелести жизни в Спектре - здесь нет конфликтов, стрессов, болезней или смерти. Жители занимаются только тем, что приносит им радость. Мэр предлагает Эдварду остаться и стать полноправным жителем этого райского места, но Эдвард понимает, что при всей красоте Спектра это не его место. Его манят неизведанные дороги и новые приключения. Он вежливо отказывается от предложения и продолжает свой путь, несмотря на уговоры жителей.
+Выходя из Спектра, Эдвард снова попадает в темный лес, где встречает огромного великана, который первоначально кажется очень опасным и агрессивным. Великан блокирует дорогу и не пропускает путешественников. Однако Эдвард применяет психологический подход - вместо того чтобы драться с великаном, он начинает с ним разговаривать и выясняет, что гиганта зовут Карл, и что он вовсе не злой, а просто очень одинокий. Всю жизнь люди боялись его из-за огромного роста, и у него никогда не было друзей.
+Эдвард предлагает Карлу отправиться вместе с ним в путешествие, и великан с радостью соглашается. Вместе они приходят в цирк, где Карл находит свое призвание - он становится цирковым артистом, демонстрируя свою силу и размеры, но теперь люди восхищаются им, а не боятся. В этом же цирке Эдвард впервые видит самую красивую девушку на свете - белокурую красавицу, выступающую в цирковом номере. Это любовь с первого взгляда, настолько сильная, что время для Эдварда буквально останавливается, и он видит только ее, а весь остальной мир исчезает.
+Однако выясняется, что девушка уже помолвлена с другим мужчиной. Эдвард отчаянно хочет хотя бы узнать ее имя, но владелец цирка Амос Каллоуэй отказывается сообщить эту информацию просто так. Каллоуэй - суровый и загадочный человек с жестким характером, он соглашается раскрыть имя девушки только в том случае, если Эдвард будет работать в цирке целый месяц совершенно бесплатно, выполняя самую грязную и тяжелую работу.
+Эдвард соглашается на эти условия и месяц чистит клетки животных, убирает за слонами, ставит шатры и выполняет другую черновую работу. В течение этого времени он также выясняет тайну Амоса Каллоуэя - оказывается, владелец цирка является оборотнем, который по ночам превращается в волка. Это объясняет его дикий нрав и способность понимать животных. Несмотря на свою звериную природу, Каллоуэй - человек слова, и через месяц он сообщает Эдварду, что девушку зовут Сандра Темплтон и что она учится в Обернском университете в Алабаме.
+Эдвард немедленно отправляется в университет, где узнает, что Сандра действительно помолвлена с местным спортивным героем по имени Дон Прайс. Однако это не останавливает Эдварда. Он узнает, что любимые цветы Сандры - нарциссы, и разрабатывает грандиозный план завоевания ее сердца. В течение нескольких недель он тайно засаживает всю территорию университетского кампуса тысячами луковиц нарциссов.
+Когда наступает весна и все нарциссы расцветают одновременно, весь университет превращается в море желтых цветов. Эдвард появляется перед Сандрой и объясняет, что все эти цветы - для нее. Девушка потрясена такой романтичностью и масштабом жеста, но она честная и порядочная девушка, поэтому объясняет Эдварду, что уже помолвлена с Доном и не может нарушить свое обещание. Она просит Эдварда оставить ее в покое.
+Понимая, что пока Сандра помолвлена, у него нет шансов, Эдвард принимает решение уехать из страны. Начинается Корейская война, и он записывается добровольцем в армию. В армии его замечают офицеры разведки и привлекают к выполнению секретных миссий в тылу противника. Эдвард оказывается талантливым разведчиком благодаря своей смелости, изобретательности и способности располагать к себе людей.
+Во время одной из миссий Эдвард случайно парашютирует не в том месте и приземляется прямо на территории, контролируемой северокорейскими войсками. Там он попадает в плен, но обнаруживает, что его сокамерниками являются два сиамских близнеца по имени Пин и Джанг, которые до войны были цирковыми артистами. Северокорейские генералы используют близнецов для развлечения на своих банкетах, не подозревая, что те понимают корейский язык и запоминают всю военную информацию, которую слышат.
+Эдвард, Пин и Джанг разрабатывают план побега. Используя военные секреты, которые узнали близнецы, и сведения о расположении войск, они организуют диверсию и в возникшем хаосе бегут к американским позициям. Этот побег становится одним из самых дерзких в истории войны, и Эдвард возвращается домой героем.
+Вернувшись в Америку, Эдвард немедленно узнает новости о Сандре. Оказывается, ее жених Дон Прайс погиб на войне, и девушка свободна, но она скорбит и не готова к новым отношениям. Эдвард проявляет невероятное терпение и деликатность - он не навязывается, но всегда находится рядом, когда Сандре нужна поддержка. Он приносит ей цветы, помогает с хозяйственными делами, просто составляет компанию, не требуя ничего взамен.
+Постепенно Сандра начинает ценить доброту и постоянство Эдварда. Она видит в нем не только романтичного мечтателя, но и надежного человека, на которого можно положиться. В итоге они женятся, и у них рождается сын Уилл. Однако семейная жизнь не останавливает тягу Эдварда к приключениям. Он работает коммивояжером, что дает ему возможность путешествовать по всей стране, встречать новых людей и попадать в различные ситуации.
+В настоящем времени взрослый Уилл работает журналистом в Париже и долгое время находится в ссоре с отцом. Проблема заключается в том, что Эдвард всю жизнь рассказывает одни и те же фантастические истории о своих приключениях, и Уилл устал от этого. Он хочет знать правду о жизни отца, узнать реальные факты, а не сказки. Уилл считает, что отец просто неисправимый лгун, который предпочитает выдумки реальности.
+Ситуация осложняется тем, что Эдвард никогда не рассказывает обычных, житейских историй о том, как он встретил мать Уилла, как они поженились, какими были первые годы брака. Вместо этого он всегда рассказывает о великанах, ведьмах, говорящих рыбах и прочих чудесах. Уилл чувствует, что не знает своего отца как реального человека.
+Когда Эдвард заболевает раком и его состояние становится критическим, Уилл с беременной женой Джозефин приезжает из Парижа в Алабаму, чтобы провести с отцом последние дни. Однако даже перед лицом смерти Эдвард продолжает рассказывать свои невероятные истории, что приводит Уилла в отчаяние.
+Решив раз и навсегда выяснить правду, Уилл начинает собственное расследование. Он отправляется по местам, которые упоминал отец в своих рассказах, чтобы проверить, есть ли в них хоть доля истины. К своему удивлению, он обнаруживает, что многие места и люди из отцовских историй действительно существуют.
+Первым делом Уилл находит городок Спектр, который к этому времени пришел в упадок и почти опустел после того, как рядом построили шоссе, и поток туристов и путешественников перестал проходить через город. В Спектре действительно живет огромный великан по имени Карл, который в одиночестве ремонтирует разрушающиеся дома и поддерживает город в более или менее приличном состоянии. Карл рассказывает Уиллу, что действительно много лет назад встретил в лесу его отца и что они вместе ездили в цирк.
+Следующим пунктом расследования становятся сиамские близнецы Пин и Джанг. Уилл находит их в одном из городов, где они владеют ночным клубом. Близнецы подтверждают, что служили в корейской войне и действительно встречали там Эдварда Блума. Они рассказывают, что Эдвард помог им организовать побег из плена, хотя детали этого побега в их версии несколько отличаются от рассказа отца.
+Самое неожиданное открытие Уилл делает, когда находит дом женщины по имени Дженни Хилл. Дом полон картин с изображением его отца в разные периоды жизни. Дженни оказывается художницей, которая многие годы была тайно влюблена в Эдварда. Она рассказывает, что Эдвард регулярно навещал ее во время своих деловых поездок, но их отношения всегда оставались платоническими.
+Дженни объясняет Уиллу, что его отец был человеком, который видел красоту и волшебство в обычной жизни. Эдвард никогда не изменял жене, но у него была потребность делиться своими мечтами и историями с кем-то, кто мог их понять и оценить. Дженни была его музой и доверенным лицом. Она также сообщает Уиллу, что Эдвард втайне купил весь городок Спектр, когда тому грозило полное разрушение, и поддерживает его существование, чтобы сохранить это волшебное место.
+Постепенно Уилл понимает, что истории отца не были ложью в прямом смысле слова. Эдвард действительно встречал всех этих людей и попадал в различные ситуации, но он рассказывал о них так, как видел их своими глазами - полными чудес и волшебства. Для него гигант действительно был великаном из сказки, цирк - местом настоящих чудес, а любовь к матери - историей, достойной легенды.
+Вернувшись в больницу, где умирает отец, Уилл находит его в полубессознательном состоянии. Эдвард просит сына рассказать ему историю о том, как он умрет, поскольку сам уже не может говорить. Уилл понимает, что это его шанс дать отцу то, что тот всегда давал другим - красивую, осмысленную историю вместо суровой реальности.
+Уилл рассказывает отцу, что они вместе покидают больницу и идут к реке, где их ждут все персонажи из отцовских историй - Карл-великан, сиамские близнецы, жители Спектра, артисты цирка, Дженни и даже ведьма. Все они пришли проводить Эдварда в последний путь. На берегу реки Уилл бережно опускает отца в воду, и тот превращается в огромную рыбу - такую большую, какой никто никогда не видел. Эта рыба уплывает по реке в океан, где будет жить вечно в легендах рыбаков.
+Эдвард умирает с улыбкой на лице, держа сына за руку. На похороны приходят сотни людей со всей страны - все те, чью жизнь так или иначе затронул Эдвард за свои годы путешествий. Среди них Уилл узнает многих персонажей из отцовских историй, и понимает, что истории были способом отца поделиться своей любовью к жизни и людям.
+В эпилоге фильма Уилл, ставший теперь отцом, рассказывает своему маленькому сыну истории о дедушке. Но теперь это не просто пересказ отцовских рассказов, а новые истории, в которых дедушка Эдвард продолжает жить и совершать удивительные поступки. Таким образом, традиция семейного storytelling продолжается, и легенда о Эдварде Блуме переходит к следующему поколению, обогащаясь новыми деталями и смыслами.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Суперсемейка', 'A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.', '2004-01-01', 1, '115 minutes', 'The Incredibles', 8.0, 'Действие фильма начинается в золотую эпоху супергероев в 1947 году. Боб Парр, известный как Мистер Исключительный, обладающий невероятной физической силой и практически неуязвимостью, патрулирует город Мунисипалберг. В этот день он собирается жениться на Хелен, также известной как Эластика, которая может растягивать свое тело до невероятных размеров и принимать любую форму. По пути на свадьбу Боб останавливает ограбление банка и спасает кота с дерева, но его прерывает навязчивый десятилетний фанат Бадди Пайн, который называет себя Инкредибоем и умоляет стать помощником Мистера Исключительного.
+Боб вежливо отказывает мальчику, объясняя, что работает один, и отправляет его домой. Затем он замечает взрыв в здании и обнаруживает, что его давний враг Бомб Вояж держит в заложниках охранника. Во время погони Бадди появляется на самодельных ракетных сапогах, пытаясь помочь, но только мешает. Бомб Вояж цепляет бомбу на плащ мальчика, и Боб вынужден снять ее, что позволяет злодею сбежать. Боб строго приказывает Бадди больше никогда не появляться.
+После этого Боб направляется в церковь, где женится на Хелен в присутствии других супергероев, включая Фроузона (Люциуса Беста), который может создавать лед и снег. Однако счастье длится недолго. Человек, которого Боб спас от самоубийства, подает на него в суд, утверждая, что не хотел, чтобы его спасали. Это запускает лавину судебных исков против всех супергероев за ущерб, причиненный во время их героической деятельности.
+Правительство запускает программу переселения супергероев, заставляя их принять новые личности и навсегда отказаться от героической деятельности. Боб и Хелен становятся обычными Робертом и Хелен Парр и переезжают в пригород.
+Пятнадцать лет спустя, в 1962 году, Боб работает в страховой компании Инсуредикэр в качестве агента по урегулированию претензий. Он страдает от депрессии и ностальгии по старым временам, тайно помогая клиентам понять, как получить выплаты, что злит его жадного босса Гилберта Хаппа. Боб набрал лишний вес, с трудом помещается в свой старый костюм и вынужден покупать новые машины, поскольку постоянно ломает их из-за своей силы.
+У Боба и Хелен трое детей. Четырнадцатилетняя Вайолет - застенчивая девочка, которая может становиться невидимой и создавать силовые поля, но стесняется общаться со сверстниками, особенно с мальчиком по имени Тони, который ей нравится. Десятилетний Дэш обладает суперскоростью и постоянно попадает в неприятности в школе, подставляя учителя мистера Крока, но не может доказать свою невиновность, не раскрыв способности. Младенец Джек-Джек пока не проявляет никаких способностей.
+Хелен строго запрещает детям использовать свои силы в общественных местах, опасаясь разоблачения. Она стала домохозяйкой и пытается поддерживать нормальность в семье. Дэш жалуется, что хочет заниматься спортом и показать свои способности, но Хелен объясняет, что им нужно скрываться. Вайолет также расстроена ограничениями и своей неспособностью завести друзей.
+Боб тайно встречается по средам со своим старым другом Люциусом в боулинге, но на самом деле они слушают полицейскую рацию и тайно занимаются героической деятельностью. Однажды ночью они останавливают ограбление ювелирного магазина, но Люциус не может найти свой суперкостюм, потому что его жена Хони спрятала его. Их почти арестовывают, но они сбегают.
+На следующий день Боб особенно груб с мелким преступником на работе, и босс Гапп вызывает его в кабинет для разговора. Когда Гапп отказывается разрешить Бобу помочь клиенту, подвергшемуся ограблению, Боб в ярости хватает босса за горло и швыряет его через несколько стен. Боба увольняют, и он в ужасе от того, что потерял контроль.
+В тот же день таинственная женщина по имени Мираж подходит к Бобу в машине и дает ему планшет с секретным сообщением. Она представляется сотрудником правительственной организации и предлагает ему высокооплачиваемую работу на отдаленном острове Номанисан. Его задача - остановить вышедший из-под контроля прототип боевого робота под названием Омнидроид 9000, который убил его создателей и теперь изучает и адаптируется к различным стратегиям нападения.
+Боб принимает предложение, солгав Хелен, что едет в командировку. На острове он встречается с Миражем и проходит брифинг. Омнидроид - это высокотехнологичный робот-паук размером с дом, который может стрелять лазерными лучами, обладает невероятной прочностью и способен учиться на тактике противника. Боб сражается с роботом в густых джунглях острова, используя свою силу и интеллект, чтобы перехитрить машину. В конце концов он заманивает робота в вулканическую лаву, где Омнидроид плавится.
+Мираж поздравляет Боба с успехом и выплачивает ему огромную сумму денег. Боб возвращается домой в приподнятом настроении, покупает новые машины и цветы для Хелен, начинает заниматься спортом, чтобы вернуть прежнюю форму. Он также посещает Эдну Мод, эксцентричную дизайнершу костюмов для супергероев, которая создала костюмы для многих героев в золотую эпоху. Эдна, крошечная женщина с огромными очками и немецким акцентом, рада видеть Боба и соглашается починить его старый костюм.
+Однако Эдна решает создать совершенно новый костюм для всей семьи. Она объясняет Бобу различные особенности: костюмы пуленепробиваемые, огнеупорные, могут выдержать температуру до 1000 градусов, и что самое важное - НЕ ИМЕЮТ ПЛАЩЕЙ. Эдна показывает Бобу видеозаписи героев, погибших из-за плащей: Громовержец зацепился плащом за ракету, Мета-Мэн попал плащом в турбину самолета, Динагай засосало плащом в лифтовую шахту, Сплендид зацепился за взлетающий самолет, а Стратогейл попала плащом в реактивный двигатель.
+Мираж снова связывается с Бобом для новой миссии - на этот раз против более продвинутого Омнидроида X. Боб прибывает на остров в новом костюме, но быстро понимает, что попал в ловушку. Омнидроид X намного более совершенен, чем предыдущая модель, и Боб с трудом избегает его атак. Внезапно робот получает команду остановиться, и появляется его истинный создатель - Бадди Пайн, теперь взрослый мужчина с рыжими волосами и в черном костюме.
+Бадди объясняет, что теперь он называет себя Синдромом и потратил годы на создание технологий, имитирующих суперспособности, чтобы стать "супергероем". Он горько рассказывает, как отказ Мистера Исключительного сделать его помощником разрушил его детские мечты и превратил его в злодея. Синдром изобрел антигравитационные лучи, позволяющие ему летать, и создал серию все более совершенных Омнидроидов.
+Синдром раскрывает свой дьявольский план: он потратил годы, заманивая супергероев на остров и убивая их, используя каждого для совершенствования Омнидроида. На стене его базы висят фотографии множества мертвых героев, включая многих друзей Боба. Каждый герой помог Омнидроиду узнать новые способы борьбы с различными суперспособностями, делая робота практически неуязвимым.
+Финальная фаза плана Синдрома состоит в том, чтобы запустить совершенного Омнидроида в город, где он будет терроризировать население. Затем Синдром появится как новый супергерой, остановит робота (используя секретную команду отключения) и станет любимцем публики. Позже он планирует продавать свои изобретения всем желающим, чтобы каждый мог стать "супергероем", тем самым сделав настоящих супергероев ненужными.
+Боб заключен в энергетические оковы и подвешен над лавой. Синдром уходит готовиться к атаке на город, оставляя Мираж следить за пленником. Боб умоляет Мираж помочь ему связаться с семьей, но она отказывается. В отчаянии Боб говорит, что его семья под угрозой, и Мираж впервые понимает, что у него есть семья.
+Тем временем Хелен обнаруживает в кармане пиджака Боба волос от его порванного старого костюма. Она относит волос и костюм к Эдне, которая анализирует повреждения и определяет, что они были нанесены чем-то очень острым и мощным. Эдна показывает Хелен новые костюмы, которые она создала для всей семьи, включая маленький красный костюм для Джек-Джека с символом семьи.
+Эдна также показывает Хелен устройство слежения, встроенное в костюм Боба, и они обнаруживают, что он находится на острове Номанисан. Хелен понимает, что Боб лгал ей о командировках и что он в опасности. Она связывается со своим старым другом Снагом Форсиком, пилотом из эпохи супергероев, и просит одолжить ему самолет.
+Хелен берет костюмы Вайолет и Дэша и говорит им, что они летят спасать отца. Она объясняет детям всю правду об их прошлом, о том, что в мире есть плохие люди, которые хотят навредить их семье, и что им, возможно, придется использовать свои силы. Вайолет и Дэш шокированы, узнав о героическом прошлом родителей.
+Во время полета к острову Хелен связывается с авиадиспетчерской службой острова, не зная, что это база Синдрома. Когда она отказывается изменить курс, Синдром приказывает запустить ракеты. Хелен кричит в радио, что на борту дети, но Синдром не слушает. Хелен использует свои способности, чтобы превратиться в парашют и спасти детей, когда самолет взрывается, и они падают в океан.
+Используя свое тело как лодку, Хелен добирается с детьми до берега острова. Она строго приказывает им спрятаться в пещере, пока она ищет Боба, но Вайолет и Дэш решают следовать за ней. На острове они сталкиваются с различными высокотехнологичными системами безопасности, включая летающие диски-разведчики и энергетические барьеры.
+Дэш впервые полностью использует свою скорость, бегая по воде и уклоняясь от дисков, в то время как Вайолет создает силовые поля для защиты. Брат и сестра начинают работать как команда, открывая в себе уверенность и гордость за свои способности. Они проникают на базу Синдрома, где Вайолет подслушивает разговор между Синдромом и Миражем о том, что семья Мистера Исключительного погибла в авиакатастрофе.
+Синдром злится на Мираж за то, что она не сказала ему о детях на борту самолета, но заявляет, что ему все равно. Мираж начинает сомневаться в Синдроме, видя его полное равнодушие к невинным жизням. Когда Синдром уходит запускать Омнидроида, Мираж тайно освобождает Боба и воссоединяет его с семьей.
+Боб узнает, что Синдром уже запустил окончательную версию Омнидроида в город Мунисипалберг. Этот робот настолько совершенен, что даже Синдром не может полностью его контролировать. У робота есть способность к самообучению, и он быстро адаптируется к любой атаке. Семья крадет ракету Синдрома и летит в город, но Боб настаивает, что его семья должна остаться в безопасности, пока он сражается с роботом.
+В городе Омнидроид уже начал разрушение, опрокидывая здания и атакуя военные вертолеты. Синдром появляется как герой, но обнаруживает, что робот вышел из-под контроля и не подчиняется его командам. Омнидроид сканирует Синдрома, определяет его как угрозу из-за пульта дистанционного управления и атакует своего создателя. Синдром едва спасается, потеряв пульт управления.
+Боб сражается с Омнидроидом один, но быстро понимает, что робот слишком силен. Когда ситуация становится критической, появляются Хелен, Вайолет и Дэш, несмотря на приказы Боба оставаться в стороне. К ним присоединяется Фроузон, который видел новости о нападении робота.
+Семья и Фроузон работают вместе как настоящая команда супергероев. Хелен растягивается, чтобы запутать робота, Вайолет создает силовые поля для защиты от лазерных атак, Дэш использует свою скорость для отвлечения внимания, а Фроузон замораживает различные части робота. Боб понимает, что единственный способ уничтоножить Омнидроида - это использовать его собственный отрезанный коготь как снаряд, направив его в центр робота, где находится источник питания.
+Работая вместе, семья осуществляет сложный план: Хелен катапультирует Боба на вершину робота, где он хватает отрезанный коготь, а затем Вайолет создает силовое поле, чтобы направить коготь точно в центр Омнидроида. Робот взрывается, и город спасен. Толпа приветствует семью как героев, и кажется, что супергерои снова приняты обществом.
+Однако Синдром не собирается сдаваться. Он проникает в дом семьи Парр и ждет их возвращения. Когда семья приходит домой, Синдром держит на руках младенца Джек-Джека, угрожая навредить ему, если родители попытаются остановить его. Синдром объясняет, что планирует вырастить Джек-Джека как своего собственного помощника и обучить его ненавидеть супергероев.
+Синдром активирует свои ракетные сапоги и взлетает к своему самолету, держа Джек-Джека. Однако младенец внезапно проявляет множественные суперспособности: он превращается в тяжелый металлический шар, затем в огненный шар, а потом в ужасающего красного демона с острыми зубами и когтями. Испуганный Синдром роняет ребенка, и Боб подбрасывает свою жену высоко в воздух, чтобы она поймала падающего сына.
+Синдром пытается сбежать на своем самолете, крича, что он получит ребенка позже, но Джек-Джек снова превращается в огненный шар и поджигает реактивный двигатель самолета. Боб бросает свою машину в двигатель, и весь самолет взрывается. Длинный плащ Синдрома попадает в турбину, и он гибнет точно так же, как предупреждала Эдна.
+Три месяца спустя семья Парр живет счастливой жизнью, открыто используя свои способности, но осторожно. Дэш участвует в школьных соревнованиях по бегу, но родители научили его занимать второе место, чтобы не привлекать слишком много внимания к своей сверхскорости. Вайолет обрела уверенность в себе и наконец-то идет на свидание с Тони Райдингером, который пригласил ее в кино.
+Во время школьных соревнований на стадионе внезапно появляется новый злодей по имени Подрыватель с огромной подземной буровой машиной, которая разрушает беговую дорожку и угрожает всем присутствующим. Семья Парр быстро надевает свои маски, готовясь к новому приключению, демонстрируя, что они теперь полностью приняли свою роль семьи супергероев и готовы защищать мир вместе.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Дрянная девчонка', 'A young man sees a drunk, cute woman standing too close to the tracks at a metro station in Seoul and pulls her back. She ends up getting him into trouble repeatedly after that, starting on the train.', '2001-01-01', 1, '137 minutes', 'Yeopgijeogin geunyeo', 8.0, 'Моя ужасная девушка (русское название)
+Южнокорейский фильм начинается с представления двадцатилетнего студента По Кён У, застенчивого и неуверенного в себе парня, который учится на факультете английского языка в сеульском университете. Он работает на различных подработках, чтобы оплачивать учебу, и живет скромной жизнью. Кён У давно тайно влюблен в свою одногруппницу О Хе Вон, красивую девушку с длинными волосами и ангельским лицом, которая популярна среди студентов и известна своей добротой и мягким характером.
+Кён У считает себя слишком обычным для такой девушки, как Хе Вон, и только мечтает о том, чтобы когда-нибудь заговорить с ней. Он наблюдает за ней издалека во время лекций, восхищается ее улыбкой и представляет, как было бы здорово с ней встречаться. Его друзья подшучивают над его безнадежной влюбленностью, но Кён У продолжает мечтать.
+Судьба сводит их вместе, когда профессор формирует группы для работы над семестровым проектом по английской литературе, и Кён У попадает в одну команду с Хе Вон. К его огромному удивлению, она не только дружелюбно с ним общается, но и предлагает встретиться после занятий, чтобы обсудить проект в кафе. Во время их первой встречи Хе Вон проявляет неожиданный интерес к Кён У, задает ему личные вопросы и даже кокетливо прикасается к его руке.
+Хе Вон сама делает первый шаг, приглашая Кён У на свидание в кинотеатр. Он не может поверить своему счастью и думает, что это сон. На свидании Хе Вон ведет себя как идеальная девушка - она смеется над его шутками, держит его за руку и в конце вечера нежно целует. Они начинают официально встречаться, и Кён У чувствует себя самым счастливым человеком на земле.
+Первые недели их отношений проходят как в сказке. Хе Вон готовит для Кён У домашнюю еду, приносит ее в университет и кормит его прямо в столовой, что вызывает зависть других студентов. Она покупает ему одежду, помогает с учебой и окружает постоянной заботой. Кён У рассказывает друзьям, что нашел свою судьбу, и они радуются за него, хотя некоторые замечают, что Хе Вон кажется немного слишком навязчивой.
+Первые тревожные сигналы появляются через месяц отношений. Когда Кён У разговаривает с однокурсницей о домашнем задании, Хе Вон подходит и резко прерывает разговор, взяв Кён У за руку и уведя его. Позже она спрашивает, кто была эта девушка, и почему он с ней так долго говорил. Кён У объясняет, что это был просто учебный вопрос, но Хе Вон настаивает, чтобы он больше не общался с другими девушками наедине.
+Ревность Хе Вон становится все более иррациональной. Она следит за телефоном Кён У, требует пароли от всех его аккаунтов в социальных сетях и проверяет историю звонков. Когда официантка в кафе улыбается ему во время заказа, Хе Вон устраивает скандал, обвиняя девушку в попытке соблазнить ее парня и требуя от менеджера уволить сотрудницу.
+Настоящий характер Хе Вон начинает проявляться в полной мере. Во время одного из свиданий Кён У опаздывает на десять минут из-за пробок, и Хе Вон встречает его криками и обвинениями в том, что он встречался с другой девушкой. Когда он пытается объяснить ситуацию, она впадает в ярость, начинает бить его по груди кулаками и кричать так громко, что прохожие останавливаются посмотреть.
+После каждой вспышки гнева Хе Вон кардинально меняется - она плачет, извиняется, обвиняет себя и клянется, что больше никогда не будет так себя вести. Она говорит Кён У, что любит его так сильно, что не может контролировать свои эмоции, и что ее ревность - это проявление глубоких чувств. Смущенный и растерянный Кён У прощает ее, думая, что это временные трудности, которые можно преодолеть.
+Ситуация усложняется с появлением Хан Джин Мёна, нового студента по обмену из Америки, привлекательного и уверенного в себе парня, который свободно говорит по-английски и быстро становится популярным в университете. Джин Мён проявляет дружеский интерес к Хе Вон, комплиментирует ее английскому произношению и предлагает помочь с разговорной практикой.
+Хе Вон начинает использовать внимание Джин Мёна как инструмент манипуляции. Она флиртует с ним в присутствии Кён У, принимает его приглашения на кофе и постоянно хвалит его достоинства, сравнивая с недостатками своего парня. Кён У становится все более ревнивым и отчаянным, умоляя Хе Вон не встречаться с другим парнем.
+Контроль Хе Вон над жизнью Кён У усиливается. Она запрещает ему встречаться с друзьями, утверждая, что они плохо на него влияют и пытаются разрушить их отношения. Она критикует его внешность, говоря, что он слишком худой и непривлекательный, и заставляет его ходить в спортзал. Она принижает его академические способности и амбиции, намекая, что он недостаточно умен для серьезных отношений.
+Кён У начинает терять себя в этих отношениях. Он изолируется от друзей, перестает заниматься хобби и полностью сосредотачивается на попытках угодить Хе Вон. Его самооценка падает, он становится тревожным и подавленным. Друзья замечают изменения в его поведении и пытаются поговорить с ним, но он защищает Хе Вон и отказывается слушать критику.
+Физическое насилие эскалирует. Во время одной из ссор Хе Вон бьет Кён У по лицу так сильно, что оставляет синяк. Когда он говорит, что это неприемлемо, она угрожает покончить с собой, если он ее бросит, и даже имитирует попытку самоубийства, заставляя его еще больше бояться ее потерять.
+Кульминационный момент наступает во время университетского фестиваля. Кён У помогает организовать мероприятие и работает с комитетом, в который входят несколько девушек. Хе Вон появляется на репетиции в состоянии ярости и публично обвиняет Кён У в измене с каждой девушкой из комитета. Она физически нападает на одну из студенток, которая просто попросила у Кён У помощи с техникой, и устраивает такой скандал, что приходится вызывать охрану.
+Этот инцидент становится последней каплей. Кён У понимает, что их отношения разрушили не только его жизнь, но и причиняют вред невинным людям. Он осознает, что то, что он принимал за страстную любовь, на самом деле является токсичной зависимостью и психологическим насилием.
+В финальной эмоциональной конфронтации Кён У собирает всю свою смелость и говорит Хе Вон, что больше не может продолжать эти отношения. Он объясняет, что любовь не должна причинять боль и разрушать людей. Хе Вон пытается использовать все свои манипулятивные приемы - плачет, угрожает самоубийством, обещает измениться, а затем снова впадает в ярость и проклинает его.
+Кён У остается твердым в своем решении и уходит, несмотря на крики и угрозы Хе Вон. Фильм заканчивается сценой, где Кён У медленно восстанавливает связи с друзьями, возвращается к своим увлечениям и начинает посещать психолога, чтобы справиться с травмой от токсичных отношений. Хе Вон показана одинокой и неспособной понять, что ее поведение было причиной разрыва, что подчеркивает цикличность такого типа отношений.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Догвилль', 'A woman on the run from the mob is reluctantly accepted in a small Colorado community in exchange for labor, but when a search visits the town she finds out that their support has a price.', '2003-01-01', 1, '178 minutes', 'Dogville', 8.0, 'Фильм рассказывает историю молодой женщины Грейс, которая в 1930-х годах бежит от гангстеров и находит убежище в маленьком горном городке Догвилль в штате Колорадо. Городок представляет собой крошечное поселение из нескольких домов, где живет всего около пятнадцати человек, каждый из которых борется с собственными проблемами и предрассудками.
+Грейс появляется в городе в самый разгар встречи местных жителей, которую проводит молодой философ и писатель Том Эдисон младший. Том мечтает стать моральным лидером сообщества и видит в появлении Грейс возможность продемонстрировать жителям истинные христианские добродетели сострадания и милосердия. Он убеждает скептически настроенных горожан дать Грейс временное пристанище, несмотря на то что за ней охотятся вооруженные люди.
+Первоначально жители относятся к Грейс с осторожностью и недоверием. Чтобы заслужить их расположение и право остаться в городе, Грейс предлагает помогать каждой семье по хозяйству. Она работает у слепого Джека Маккея, помогая ему в его мастерской, ухаживает за яблонями у Чака и Веры, присматривает за детьми семьи Хенсон, помогает пожилой Глории с домашними делами и даже общается с угрюмым и нелюдимым Беном.
+Постепенно Грейс становится неотъемлемой частью жизни Догвилля. Жители привыкают к ее присутствию и начинают полагаться на ее помощь. Грейс проявляет удивительное терпение, доброту и готовность помочь всем и каждому, не ожидая ничего взамен. Она искренне пытается понять проблемы каждого жителя и найти способы им помочь, даже когда сталкивается с грубостью или неблагодарностью.
+Однако идиллия длится недолго. Когда в городе появляются листовки с фотографией Грейс и объявлением о награде за ее поимку, ситуация кардинально меняется. Жители понимают, что укрывательство беглянки может навлечь на них неприятности с законом и бандитами. Атмосфера в городе становится напряженной, и Грейс чувствует, как отношение к ней начинает портиться.
+Под давлением обстоятельств жители Догвилля начинают требовать от Грейс все больше работы в обмен на молчание о ее местонахождении. То, что раньше было добровольной помощью, превращается в принудительный труд. Грейс вынуждена работать дольше и тяжелее, выполнять самую грязную и унизительную работу, но она соглашается на все, поскольку альтернативой является выдача ее преследователям.
+Ситуация усугубляется, когда некоторые мужчины в городе начинают принуждать Грейс к сексуальным отношениям, используя ее беззащитное положение. Первым это делает Чак, который шантажирует ее угрозой разоблачения. Постепенно к нему присоединяются другие мужчины, включая самого Тома, который, несмотря на свои высокие моральные принципы, не может устоять перед соблазном власти над беззащитной женщиной.
+Женщины города, вместо того чтобы защитить Грейс, начинают ее ненавидеть из-за ревности к своим мужьям. Вера обвиняет Грейс в разрушении ее брака, хотя та является жертвой принуждения. Другие женщины поддерживают эту враждебность, создавая атмосферу всеобщей неприязни. Грейс оказывается в полной изоляции, подвергаясь издевательствам и эксплуатации со всех сторон.
+Кульминация наступает, когда жители обвиняют Грейс в краже фарфоровых статуэток у Глории, хотя на самом деле их разбили дети Хенсонов во время игры. Никто не хочет выслушать объяснения Грейс или разобраться в ситуации. В качестве наказания жители надевают на нее тяжелый металлический ошейник с цепью и колокольчиком, который не позволяет ей скрываться или убежать. Этот ошейник становится символом ее полного превращения в раба общины.
+В таком состоянии Грейс проводит несколько месяцев, подвергаясь постоянным унижениям и эксплуатации. Жители Догвилля полностью утратили человечность в отношении к ней, рассматривая ее исключительно как бесплатную рабочую силу и объект для удовлетворения своих потребностей. Даже Том, который изначально защищал ее, теперь участвует в ее угнетении и регулярно принуждает к сексу.
+Развязка наступает неожиданно, когда в Догвилль приезжает роскошный черный автомобиль с вооруженными людьми. Оказывается, что Грейс не обычная беглянка, а дочь могущественного главаря мафии, от которого она сбежала из-за несогласия с его жестокими методами. Ее отец месяцами искал ее по всей стране и наконец нашел в Догвилле.
+Встреча отца и дочери происходит в машине, где они ведут долгий философский разговор о природе человека, морали и справедливости. Отец объясняет Грейс, что ее идеализм и вера в добро человеческой природы были наивными заблуждениями. Он указывает на то, как жители Догвилля обращались с ней, когда получили над ней власть, и утверждает, что люди по своей природе эгоистичны и жестоки, когда им это выгодно.
+Отец предлагает Грейс вернуться в семью и принять участие в семейном бизнесе, но дает ей выбор относительно судьбы жителей Догвилля. Он может просто увезти ее, оставив горожан в покое, или может наказать их за то, как они с ней обращались. Грейс долго размышляет над этим решением, борясь между своими прежними идеалами прощения и растущим чувством справедливого гнева.
+В итоге Грейс принимает решение, которое кардинально меняет ее характер. Она понимает, что жители Догвилля не заслуживают прощения, поскольку их жестокость была не результатом отчаяния или нужды, а проявлением их истинной природы. Когда они получили власть над беззащитным человеком, они показали свое настоящее лицо, и это лицо оказалось отвратительным.
+Грейс дает отцу сигнал к действию. Люди ее отца методично убивают всех жителей Догвилля, включая детей. Дома сжигают дотла. Грейс лично участвует в экзекуции, застрелив Тома, который до последнего момента пытается апеллировать к ее прежней доброте и человечности. Однако эта доброта умерла под тяжестью перенесенных унижений и осознания истинной природы человеческой подлости.
+Выживает только собака Мозес, которая была единственным существом в городе, относившимся к Грейс с искренностью и без задней мысли. Грейс забирает собаку с собой, когда уезжает из превратившегося в пепелище Догвилля. Фильм заканчивается тем, что Грейс присоединяется к отцу в его преступной империи, окончательно отказавшись от своих прежних идеалов и приняв циничный взгляд на человеческую природу.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Визонтеле', 'Lives of residents in a small Anatolian village change when television is introduced to them', '2001-01-01', 1, '110 minutes', 'Vizontele', 8.0, 'Фильм представляет собой турецкую комедию-драму 2001 года, основанную на детских воспоминаниях режиссера Йылмаза Эрдогана о прибытии первого телевизора в его деревню в начале 1970-х годов Vizontele - Wikipedia. Действие происходит в 1974 году в небольшом пограничном городке Хаккари на юго-востоке Анатолии в Турции Vizontele (2001) - Reviews, film + cast.
+История начинается с того, что в маленькую анатолийскую деревню из столицы Анкары присылают новое технологическое устройство - телевизор. Главными героями являются мэр деревни Назми и местный чудак по прозвищу Дели Эмин (Безумный Эмин), которого считают деревенским дураком, но который на самом деле обладает техническими способностями и становится ключевой фигурой в попытках запустить телевещание.
+Эмин и Назми сталкиваются с различными трудностями в процессе попытки запустить телевизионное вещание в своей деревне. Основная проблема заключается не только в технических сложностях с настройкой аппаратуры, но и в сопротивлении местного населения этому нововведению. Жители деревни даже не могут правильно произнести слово "телевизор" и считают, что этот новый аппарат принесет только несчастье.
+Одним из главных противников телевидения выступает владелец местного кинотеатра Латиф, который распространяет слухи об опасности телевидения, надеясь удержать людей заинтересованными в просмотре его надоевших фильмов Vizontele - Apple TV (AU). Латиф понимает, что появление телевизора может серьезно подорвать его бизнес, поскольку люди перестанут ходить в кино, предпочитая смотреть передачи дома.
+Назми и городской чудак Дели Эмин ищут лучший сигнал, чтобы привлечь всех на свою сторону Vizontele - Apple TV (AU). Им приходится решать множество технических проблем, связанных с установкой антенны, настройкой приемника и поиском места с наилучшим приемом сигнала в гористой местности.
+Фильм показывает, как введение телевидения разделяет жителей деревни на два лагеря - сторонников и противников нового технологического устройства. Консервативная часть населения видит в телевизоре угрозу традиционному образу жизни и моральным устоям, в то время как прогрессивная часть воспринимает его как окно в большой мир и символ современности.
+Помимо основной сюжетной линии, фильм дает возможность наблюдать социально-политическое состояние Турции в 70-х годах, когда молодежь была разделена на соперничающие правые и левые крылья, а в стране нарастало напряжение на фоне надвигающейся войны за Кипр. Эти исторические события служат фоном для основного повествования и добавляют глубину в изображение эпохи.
+В процессе установки и настройки телевизора герои сталкиваются с множеством комических ситуаций, связанных с техническими неполадками, недопониманием принципов работы устройства и сопротивлением местных жителей. Эмин, несмотря на свою репутацию городского дурачка, проявляет удивительную изобретательность в решении технических проблем, что постепенно меняет отношение к нему односельчан.
+Фильм мастерски сочетает комедийные элементы с драматическими моментами, показывая, как технический прогресс может изменить жизнь целого сообщества. Через призму истории о первом телевизоре режиссер исследует темы традиций против современности, сопротивления переменам и неизбежности технологического прогресса.
+Постепенно телевизор становится центром общественной жизни деревни. Когда удается наладить более или менее стабильный прием, жители собираются вместе для просмотра передач, что создает новую форму социального взаимодействия. Однако это также приводит к новым конфликтам и разногласиям по поводу того, что смотреть и как организовать просмотр.
+Фильм завершается тем, что телевидение постепенно становится неотъемлемой частью жизни деревни, изменяя привычки, мировоззрение и социальную структуру сообщества. История показывает, что любые технологические новшества неизбежно трансформируют общество, независимо от первоначального сопротивления консервативных сил.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Донни Дарко', 'After narrowly escaping a bizarre accident, a troubled teenager is plagued by visions of a man in a large rabbit suit who manipulates him to commit a series of crimes.', '2001-01-01', 1, '113 minutes', 'Donnie Darko', 8.0, 'Фильм рассказывает историю шестнадцатилетнего подростка Донни Дарко, который живет в пригороде Миддлсекса в штате Вирджиния в октябре 1988 года. Донни страдает от психических расстройств, принимает антипсихотические препараты и регулярно посещает психотерапевта доктора Лиллиан Турман. Несмотря на свои проблемы, он обладает высоким интеллектом и демонстрирует глубокие познания в физике и философии.
+В ночь на 2 октября Донни переживает странный эпизод лунатизма. Во время сна он слышит голос, который зовет его по имени и заставляет выйти из дома. На поле для гольфа рядом с домом ему является гигантская фигура в костюме кролика с жуткой металлической маской. Это существо представляется как Фрэнк и сообщает Донни, что через двадцать восемь дней, шесть часов, сорок две минуты и двенадцать секунд мир закончится.
+Когда утром Донни просыпается на поле для гольфа и возвращается домой, он обнаруживает, что в его спальню упал реактивный двигатель от самолета неизвестного происхождения. Если бы он спал в своей кровати, то погиб бы. Семья в шоке от произошедшего, а власти не могут объяснить, откуда взялся этот двигатель, поскольку ни один самолет не сообщал о потере двигателя.
+После этого инцидента галлюцинации Донни становятся более интенсивными. Фрэнк продолжает являться ему и начинает давать различные указания и предсказания. Существо объясняет Донни концепцию путешествий во времени и параллельных вселенных, утверждая, что произошел сбой в пространственно-временном континууме, который создал нестабильную временную петлю.
+В школе Донни знакомится с новой ученицей Гретхен Росс, которая переехала из Лос-Анджелеса после того, как ее мать сбежала от жестокого отчима. Между Донни и Гретхен быстро возникают романтические отношения. Гретхен становится единственным человеком, который принимает странности Донни и не считает его сумасшедшим.
+Тем временем в школе происходят различные события, связанные с местным гуру самопомощи Джимом Каннингемом, который проводит семинары о мотивации и жизненной философии, основанной на делении всех эмоций и поступков на категории "страх" и "любовь". Донни открыто критикует эту упрощенную философию на школьном собрании, что приводит к конфликту с администрацией.
+Следуя указаниям Фрэнка, Донни совершает ряд актов вандализма. Он затапливает школу, разбив водопроводные трубы, что приводит к отмене занятий на несколько дней. Позже он поджигает дом Джима Каннингема, после чего в подвале обнаруживается коллекция детской порнографии, разоблачающая истинную природу "духовного лидера".
+Донни также начинает изучать научную литературу о путешествиях во времени, особенно книгу "Философия путешествий во времени" загадочной писательницы Робер- ты Спэрроу, которую местные жители считают сумасшедшей "Бабушкой Смерть". В книге описывается теория о том, как нарушения в пространственно-временном континууме создают параллельные вселенные и временные петли.
+По мере приближения предсказанной Фрэнком даты конца света, странные события учащаются. Донни начинает видеть полупрозрачные трубки, выходящие из груди людей, которые показывают путь их будущих движений. Он понимает, что может предсказывать поведение людей, следя за этими "тропами времени".
+Кульминация наступает в Halloween, 31 октября. Донни и Гретхен отправляются к дому Робер- ты Спэрроу, чтобы встретиться с ней и узнать больше о путешествиях во времени. Однако они застают в доме грабителей - двух подростков, которые напали на старушку. В возникшей потасовке один из грабителей случайно убивает Гретхен.
+Преследуя убийцу Гретхен, Донни обнаруживает, что грабитель - это тот самый человек в костюме кролика, которого он видел в своих видениях. Снятие маски открывает, что под ней скрывается Фрэнк Андерсон, парень старшей сестры Донни. В приступе ярости Донни стреляет в Фрэнка из ружья, убивая его.
+После смерти Фрэнка временная петля начинает разрушаться. Донни понимает, что события последних двадцати восьми дней были результатом временной аномалии, вызванной падением реактивного двигателя. Чтобы исправить нарушение и предотвратить смерть Гретхен и других людей, он должен принести себя в жертву.
+Донни возвращается домой и ложится в свою кровать, зная, что двигатель снова упадет в его комнату. На этот раз он не выходит из дома, когда слышит голос Фрэнка. Временная петля разрывается, и события возвращаются к исходной точке - ночи 2 октября.
+В альтернативной временной линии двигатель снова падает в дом Дарко, но на этот раз Донни погибает под его обломками. Его смерть предотвращает цепочку событий, которая привела бы к смерти других людей. Гретхен остается жива, поскольку никогда не встречала Донни. Фрэнк выживает, потому что Донни не убивает его. Джим Каннингем не разоблачен как педофил и продолжает свою деятельность.
+Фильм заканчивается сценами, показывающими, как различные персонажи просыпаются утром после смерти Донни с смутными воспоминаниями о событиях, которые произошли в альтернативной временной линии. Гретхен проезжает мимо дома Дарко на велосипеде и машет матери Донни, хотя они никогда не встречались в этой реальности. Фрэнк просыпается и трогает свой глаз, словно помня выстрел, который убил его в другой временной линии.
+Режиссерская версия фильма содержит дополнительные сцены, которые более подробно объясняют научную подоплеку происходящего и теорию путешествий во времени. В ней показаны страницы из книги "Философия путешествий во времени", которые объясняют концепции "первичной вселенной", "касательной вселенной" и роль "живого приемника" в исправлении временных аномалий.
+Согласно этой теории, Донни является "живым приемником" - человеком, выбранным силами вселенной для исправления временного разрыва. Падение двигателя создало "касательную вселенную" - нестабильную временную ветку, которая должна быть разрушена, чтобы не повредить основную временную линию. Фрэнк и другие погибшие в касательной вселенной становятся "манипулированными мертвыми", которые направляют живого приемника к выполнению его миссии.
+Фильм можно интерпретировать как историю о взрослении, психическом заболевании, жертвенности и судьбе. Донни жертвует собой не только для спасения других, но и для восстановления правильного хода событий во вселенной.Его смерть гарантирует, что близкие ему люди смогут прожить свою жизнь без трагических последствий, ставших результатом временной аномалии.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Магнолия', 'An epic mosaic of interrelated characters in search of love, forgiveness, and meaning in the San Fernando Valley.', '1999-01-01', 1, '188 minutes', 'Magnolia', 8.0, 'Фильм Пола Томаса Андерсона открывается прологом, рассказывающим о невероятных совпадениях в истории, подготавливая зрителя к теме случайностей и взаимосвязанности судеб. Действие разворачивается в течение одного дня в долине Сан-Фернандо в Лос-Анджелесе, переплетая девять историй разных персонажей.
+Центральная фигура - Эрл Партридж, восьмидесятилетний медиамагнат и создатель телевизионной империи, который лежит на смертном одре в своем роскошном особняке. Рак поразил его тело, и врачи дают ему всего несколько часов жизни. Рядом с ним находится его третья жена Линда, женщина лет тридцати, которая несколько лет назад вышла за него замуж исключительно из корыстных побуждений. Теперь, когда Эрл умирает, Линда мучается чувством вины, поскольку за время брака искренне полюбила мужа и понимает, что была с ним не по тем причинам.
+Линда впадает в истерику и требует от адвоката мужа переписать завещание так, чтобы она ничего не получила, считая себя недостойной наследства. Она принимает большие дозы кокаина, чтобы справиться со стрессом, и ведет себя все более неадекватно. Эрла обслуживает сиделка Фил Парма, добрый и терпеливый мужчина, который искренне заботится о своем подопечном.
+Эрл в полубессознательном состоянии просит Фила найти его сына Фрэнка, с которым он не общался уже много лет после смерти первой жены. Фил начинает поиски и обнаруживает, что сын Эрла стал знаменитостью под именем Фрэнк Т. Дж. Макки.
+Фрэнк Макки - харизматичный мотивационный тренер, который ведет семинары "Соблазни и уничтожь" для мужчин, обучая их манипулятивным техникам соблазнения женщин. Он проповедует философию эмоциональной отстраненности и превосходства мужчин, утверждая, что женщины - это объекты для завоевания. Фрэнк создал себе полностью ложную биографию, утверждая, что его отец умер, когда ему было четырнадцать, и что он сам себя сделал.
+В день действия фильма Фрэнк дает интервью журналистке, которая провела собственное расследование и знает правду о его прошлом. Она задает ему неудобные вопросы о его настоящем имени, семье и отношениях с отцом. Фрэнк теряет самообладание и устраивает скандал, когда его ложь начинает разоблачаться. Когда Фил наконец дозванивается до него и сообщает о состоянии Эрла, Фрэнк сначала грубо отказывается приехать.
+Параллельно развивается история офицера полиции Джима Курринга, одинокого мужчины средних лет, который работает патрульным в долине. Джим - глубоко религиозный человек, но застенчивый и неуклюжий в общении. Во время смены он получает вызов о шумных соседях и приезжает в многоквартирный дом, где знакомится с Клаудией Уилсон Гейтор.
+Клаудия - наркоманка, зависимая от кокаина, которая живет в захламленной квартире и страдает от шума, который устраивают соседи сверху. Она крайне нервная, агрессивная и подозрительная, но Джим видит в ней что-то особенное и пытается ей помочь. Клаудия сначала грубо отвергает его попытки общения, но постепенно между ними возникает странная связь.
+Оказывается, Клаудия - дочь знаменитого телеведущего Джимми Гейтора, который уже тридцать лет ведет детскую викторину "Что дети знают?" на телевидении Эрла Партриджа. Джимми - харизматичный ведущий, который кажется добрым дедушкой Америки, но на самом деле в прошлом совершал сексуальное насилие над своей дочерью, что стало причиной ее наркомании и саморазрушительного поведения.
+В день съемок Джимми узнает от врача, что у него рак легких в последней стадии, и ему осталось жить всего несколько месяцев. Его жена Роуз пытается скрыть от мужа серьезность диагноза, но Джимми понимает правду. Это известие заставляет его пересмотреть свою жизнь и осознать вину перед дочерью.
+В программе "Что дети знают?" участвует восьмилетний вундеркинд Стэнли Спектор, гениальный ребенок с фотографической памятью, который знает ответы на любые вопросы. Стэнли эксплуатируется своим отцом Риком, который видит в сыне только источник дохода и заставляет его участвовать в шоу против желания ребенка.
+Стэнли страдает от давления и понимает, что взрослые используют его способности в корыстных целях. Во время записи программы он переживает нервный срыв, отказывается отвечать на вопросы и просит сходить в туалет. В туалете он плачет и умоляет взрослых оставить его в покое.
+Еще одна важная линия связана с Донни Смитом, мужчиной средних лет, который в детстве был звездой программы "Что дети знают?" в 1960-х годах. Тогда он был знаменитым вундеркиндом и заработал много денег, но его родители потратили все средства, и теперь Донни работает продавцом в магазине электроники.
+Донни живет одинокой и жалкой жизнью, мучается от своего прошлого и отсутствия настоящих отношений. Он влюблен в молодого бармена по имени Брэд, который работает в гей-баре, но слишком стесняется, чтобы признаться в чувствах. Донни считает, что его кривые зубы делают его непривлекательным, и решает украсть деньги у работодателя, чтобы поставить брекеты и завоевать внимание Брэда.
+Продюсер программы "Что дети знают?" также переживает личный кризис, борясь с алкоголизмом и семейными проблемами. Режиссер программы пытается справиться с техническими проблемами и капризами звезд.
+В течение дня все персонажи достигают своих эмоциональных пределов. Линда в состоянии наркотического опьянения врезается на машине в витрину магазина и попадает в больницу. Фрэнк наконец решает поехать к умирающему отцу, но опаздывает на свой семинар, где его помощники не знают, как объяснить аудитории его отсутствие.
+Клаудия соглашается на свидание с Джимом, но перед его приходом принимает большую дозу кокаина и ведет себя неадекватно. Джим приходит с цветами и пытается наладить с ней контакт, несмотря на ее агрессивное поведение.
+Стэнли продолжает бунтовать против взрослых, а его отец Рик становится все более отчаянным, понимая, что теряет контроль над источником дохода. Донни осуществляет свой план кражи, но все идет не так, как планировалось.
+Кульминация фильма наступает одновременно в нескольких местах. Фрэнк приезжает к Эрлу и в эмоциональной сцене у смертного одра изливает всю свою боль, гнев и обиду на отца за то, что тот бросил семью ради молодой жены. Эрл уже не может отвечать, но слышит сына и умирает вскоре после их встречи.
+Джимми Гейтор пытается связаться с Клаудией по телефону, желая попросить прощения за то, что делал с ней в детстве, но она не берет трубку. Стэнли окончательно отказывается участвовать в программе, заявив, что больше не будет игрушкой для взрослых.
+Внезапно над долиной начинается сюрреалистический дождь из лягушек - тысячи земноводных падают с неба, вызывая хаос и панику. Этот библейский мотив (отсылка к египетским казням) символизирует божественное вмешательство и возможность чуда в самых безнадежных ситуациях.
+Лягушки падают повсюду: на автомобили, в бассейны, на крыши домов. Люди в панике прячутся, не понимая происходящего. Дождь из лягушек влияет на судьбы всех персонажей: машина Донни попадает в аварию из-за лягушки на лобовом стекле, съемки программы прерываются, Джим и Клаудия переживают этот момент вместе в ее квартире.
+После дождя наступает странное умиротворение. Фрэнк, сидя у постели мертвого отца, наконец позволяет себе горевать и принимает правду о своем прошлом. Линда в больнице получает поддержку от Фила и начинает путь к выздоровлению.
+Донни, попав в аварию, понимает бессмысленность своего плана и решает вернуть украденные деньги. Он приходит к Браду в бар и честно рассказывает о своих чувствах, не ожидая взаимности, но находя в этом освобождение.
+Джимми записывает видеообращение к дочери, в котором просит прощения за причиненную боль, хотя не знает, увидит ли она его когда-нибудь. Стэнли получает поддержку от продюсера, который понимает, что ребенок нуждается в защите от эксплуатации.
+Фильм заканчивается сценой между Джимом и Клаудией в ее квартире. После хаоса дождя из лягушек они сидят вместе, и Клаудия, впервые за долгое время чувствуя себя не одинокой, медленно улыбается Джиму. Эта улыбка символизирует надежду на исцеление, возможность прощения и человеческую потребность в подлинной связи с другими людьми, несмотря на все травмы и боль прошлого.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Танцующая в темноте', 'An East European girl travels to the United States with her young son, expecting it to be like a Hollywood film.', '2000-01-01', 1, '140 minutes', 'Dancer in the Dark', 8.0, 'Фильм рассказывает историю Сельмы Жежковой, чешской иммигрантки, которая живет в американском городке Вашингтон в штате Вашингтон в 1964 году вместе со своим тринадцатилетним сыном Джином. Сельма работает на фабрике, выполняя монотонную работу по штамповке металлических деталей, и снимает трейлер у полицейского Билла Хьюстона и его жены Линды.
+Главная драма Сельмы заключается в том, что она страдает от наследственного генетического заболевания, которое постепенно лишает ее зрения. Ее зрение ухудшается с каждым днем, и она знает, что скоро полностью ослепнет. Еще более трагично то, что это же заболевание унаследовал ее сын Джин, и без дорогостоящей операции он тоже потеряет зрение к тринадцати годам.
+Сельма отчаянно копит деньги на операцию для сына, работая сверхурочно и живя в крайней бедности. Она прячет накопленные средства в металлической коробке, которую хранит в своем трейлере. Каждый доллар для нее на счету, и она готова на любые жертвы ради спасения зрения сына.
+Единственной отдушиной в тяжелой жизни Сельмы являются голливудские мюзиклы. Она обожает музыкальные фильмы и регулярно ходит в местный кинотеатр со своей подругой Кэти, которая помогает ей следить за сюжетом, описывая происходящее на экране, поскольку зрение Сельмы уже слишком слабое. Сельма также участвует в местной театральной постановке мюзикла "Пиратов Пензанса", где играет одну из ролей.
+Мир мюзиклов становится для Сельмы способом психологического бегства от суровой реальности. В моменты особенного стресса или отчаяния она погружается в фантазии, где окружающая действительность превращается в красочный музыкальный номер. Звуки фабричных станков становятся ритмом для песни, а коллеги превращаются в танцоров и певцов. Эти музыкальные грезы помогают ей переносить тяготы повседневной жизни.
+Проблемы начинаются, когда ухудшающееся зрение Сельмы приводит к несчастным случаям на работе. Она не может больше качественно выполнять свои обязанности и подвергает опасности себя и коллег. Руководство фабрики вынуждено уволить ее, что ставит под угрозу ее планы по накоплению денег на операцию для сына.
+Тем временем обнаруживается, что семья Хьюстонов переживает серьезные финансовые трудности. Билл потратил все семейные сбережения и даже влез в долги, пытаясь поддерживать образ жизни, соответствующий ожиданиям его жены Линды. Линда привыкла к определенному уровню комфорта и не знает о реальном финансовом положении семьи.
+Билл, отчаявшись найти выход из финансового кризиса, узнает о том, что Сельма копит деньги на операцию. В приступе отчаяния он решается на кражу ее сбережений. Билл приходит к Сельме домой и под предлогом дружеской беседы пытается выяснить, где она хранит деньги.
+Ситуация выходит из-под контроля, когда Сельма застает Билла за кражей ее накоплений. Между ними разгорается отчаянная борьба, в ходе которой Билл пытается застрелить Сельму из своего служебного оружия. В борьбе за пистолет Сельма случайно убивает Билла, но смерть наступает не сразу, и раненый полицейский умоляет ее добить его, чтобы прекратить мучения.
+После смерти Билла Сельма оказывается в кошмарной ситуации. Она понимает, что никто не поверит в ее версию самообороны, особенно учитывая то, что она убила уважаемого местного полицейского. Более того, она не может рассказать истинный мотив Билла - кражу денег на операцию сына, поскольку это разрушит жизнь Линды, которая не знала о финансовых проблемах мужа.
+Сельма принимает решение взять вину на себя, чтобы защитить память Билла и уберечь Линду от позора. Она забирает свои деньги и возвращается домой, но вскоре ее арестовывают по обвинению в убийстве первой степени. Начинается судебный процесс, на котором прокурор требует смертной казни.
+Во время суда Сельма отказывается объяснить мотивы своих действий или нанять хорошего адвоката, поскольку не хочет тратить деньги, предназначенные для операции сына. Она ведет себя странно и непоследовательно, что производит плохое впечатление на присяжных. Защитник, назначенный судом, не может эффективно защищать клиентку, которая не сотрудничает с ним.
+Кэти и другие друзья Сельмы пытаются помочь ей, собирая деньги на хорошего адвоката, но Сельма категорически отказывается от помощи. Она готова пожертвовать собственной жизнью, но не позволит никому потратить ни цента из средств, предназначенных для спасения зрения ее сына.
+Суд присяжных признает Сельму виновной в убийстве первой степени и приговаривает ее к смертной казни. Ее отправляют в тюрьму в камеру смертников, где она проводит последние месяцы жизни, ожидая исполнения приговора.
+В тюрьме Сельма продолжает погружаться в музыкальные фантазии, чтобы справиться с ужасом ситуации. Она представляет, как тюремные решетки превращаются в декорации мюзикла, а охранники и заключенные исполняют песни и танцы. Эти видения становятся ее единственным способом сохранить рассудок в нечеловеческих условиях.
+Перед казнью к Сельме приходит Кэти, которая сообщает, что операция для Джина прошла успешно и его зрение спасено. Это известие приносит Сельме огромное облегчение - она понимает, что ее жертва была не напрасной. Сын сможет видеть и жить полноценной жизнью, что было ее главной целью.
+В день казни Сельма переживает последний приступ страха и отчаяния. Ее ведут в камеру для исполнения смертного приговора, и она просит исполнить последнюю песню. Но когда приходит время надеть мешок на голову, Сельма не может завершить песню от страха и отчаяния.
+Фильм заканчивается исполнением смертного приговора. Сельма умирает, так и не сумев спеть свою последнюю песню до конца, что символизирует трагическую незавершенность ее жизни. Однако ее жертва достигла главной цели - сын получил необходимое лечение и сохранил зрение.
+Картина представляет собой глубокую медитацию на темы материнской любви, жертвенности, несправедливости судебной системы и силы искусства как способа выживания в невыносимых условиях. Мюзикальные номера в фильме контрастируют с мрачной реальностью, показывая, как человеческое воображение может создавать красоту даже в самых ужасных обстоятельствах.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Простая история', 'An old man makes a long journey by lawnmower to mend his relationship with an ill brother.', '1999-01-01', 1, '112 minutes', 'The Straight Story', 8.0, 'Фильм основан на реальных событиях и рассказывает историю семидесятитрехлетнего Элвина Стрейта, который живет в маленьком городке Лорнс, штат Айова, со своей дочерью Роуз, страдающей умственной отсталостью. Элвин - пожилой мужчина с целым букетом проблем со здоровьем: у него плохое зрение, проблемы с тазобедренными суставами, он с трудом передвигается с помощью двух тростей и не может водить автомобиль из-за множественных нарушений зрения.
+История начинается с того, что Элвин получает телефонный звонок от своей невестки, которая сообщает ему, что его семидесятипятилетний брат Лайл перенес инсульт и находится в тяжелом состоянии в больнице в городе Маунт-Сион, штат Висконсин, на расстоянии около пятисот километров от дома Элвина. Братья не разговаривали друг с другом уже десять лет из-за старой семейной ссоры, причины которой давно забылись, но гордость не позволяла ни одному из них сделать первый шаг к примирению.
+Узнав о болезни брата, Элвин понимает, что время примирения может быть упущено навсегда, если он не предпримет решительных действий. Однако его физическое состояние делает обычные способы путешествия невозможными - он не может водить машину, а его финансовое положение не позволяет нанять водителя или купить билет на автобус или самолет.
+После размышлений Элвин принимает решение, которое многим кажется безумным - он решает добраться до брата на своей газонокосилке. У него есть старая самоходная газонокосилка "Джон Дир", которая может развивать скорость до восьми километров в час. Элвин понимает, что такое путешествие займет несколько недель, но это единственный доступный ему способ самостоятельно добраться до цели.
+Роуз и соседи пытаются отговорить Элвина от этого предприятия, считая его слишком опасным для человека его возраста и состояния здоровья. Однако Элвин непоколебим в своем решении. Он тщательно готовится к путешествию: ремонтирует газонокосилку, собирает необходимые инструменты, еду и снаряжение. Он также конструирует небольшой прицеп, который будет тащить за собой, где размещает палатку, спальные принадлежности и все необходимое для жизни в дороге.
+Путешествие начинается неудачно - уже в первый день старая газонокосилка ломается, и Элвину приходится покупать новую, потратив почти все свои скудные сбережения. Новая машина оказывается более надежной, и Элвин продолжает свой путь по проселочным дорогам и небольшим шоссе Среднего Запада.
+Во время путешествия Элвин встречает множество разных людей, каждый из которых обогащает его понимание жизни и человеческой природы. В одном из городков он знакомится с молодой беременной девушкой, которая убежала из дома после ссоры с матерью. Элвин рассказывает ей историю о пучке прутьев, объясняя, что один прут легко сломать, а связка прутьев обладает невероятной прочностью - так же и семья сильна только тогда, когда ее члены держатся вместе.
+В другом месте Элвин встречается с женщиной, которая постоянно сбивает оленей на дороге и находится в отчаянии от этого. Элвин рассказывает ей о своем опыте охотника и о том, как важно уважать природу и жизнь всех живых существ. Эти встречи показывают мудрость, которую Элвин накопил за свою долгую жизнь, и его способность помогать другим людям справляться с их проблемами.
+Одна из самых значимых встреч происходит с группой велосипедистов, которые изначально относятся к странному старику на газонокосилке с недоверием и даже насмешкой. Однако, узнав историю его путешествия, они проникаются уважением к его решимости и целеустремленности. Эта встреча показывает, как предрассудки могут уступить место пониманию и восхищению человеческим мужеством.
+Во время путешествия у Элвина ломается газонокосилка, и он вынужден остановиться в небольшом городке для ремонта. В местной мастерской он знакомится с близнецами-механиками, которые помогают ему починить машину. Элвин рассказывает им о своем брате и о том, как важно не позволять гордости разрушать семейные связи.
+Путешествие дает Элвину возможность размышлять о своей жизни, о совершенных ошибках и упущенных возможностях. Он вспоминает свою службу во Второй мировой войне, где он был снайпером и был вынужден убивать людей - опыт, который оставил глубокие психологические шрамы. Эти воспоминания помогают объяснить его характер и стремление к примирению с братом.
+В одну из ночей Элвин останавливается у костра рядом с другим путешественником - пожилым человеком, который оказывается ветераном той же войны. Между ними происходит глубокий разговор о войне, потерях, вине выжившего и о том, как трудно жить с памятью о пережитом. Эта встреча становится для Элвина своеобразной исповедью и очищением.
+По мере приближения к цели путешествия Элвин все больше волнуется о предстоящей встрече с братом. Он не знает, как Лайл отреагирует на его появление, простит ли его и захочет ли восстановить отношения. Десять лет молчания - это долгий срок, и многое могло измениться.
+Наконец, после нескольких недель в дороге, Элвин достигает Маунт-Сиона и находит дом своего брата. Лайл сидит на крыльце в инвалидном кресле, очевидно, все еще восстанавливаясь после инсульта. Когда он видит своего брата, приехавшего на газонокосилке, его первая реакция - изумление и недоверие.
+"Элвин, ты проделал весь этот путь на этой штуке, чтобы увидеть меня?" - спрашивает Лайл. "Да, Лайл, я приехал," - отвечает Элвин. Это простой обмен репликами, но он содержит в себе всю глубину прощения, понимания и любви между братьями. Все обиды и гордость мгновенно испаряются перед лицом этого жеста преданности и любви.
+Фильм заканчивается тем, что братья сидят вместе на крыльце, глядя на звездное небо, так же, как они делали это в детстве. Они не говорят много слов, но их молчание полно понимания и примирения. Элвин достиг своей цели - он не только добрался до брата, но и восстановил разорванную связь, показав, что никогда не поздно исправить ошибки прошлого.
+История показывает, что настоящая решимость и любовь могут преодолеть любые препятствия, даже такие, как возраст, болезнь и гордость. Путешествие Элвина становится метафорой жизненного пути, полного встреч, открытий и возможностей для роста и прощения. Фильм демонстрирует красоту простых человеческих ценностей и важность семейных связей, которые сильнее любых разногласий.');
+
+INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
+VALUES ('Истинная грусть', 'A pop singer gives up her career to become an actress, but she slowly goes insane when she starts being stalked by an obsessed fan and what seems to be a ghost of her past.', '1997-01-01', 1, '81 minutes', 'Pâfekuto burû', 8.0, 'Японский анимационный фильм Сатоси Кона рассказывает историю Мимы Кириготэ, молодой девушки, которая является участницей популярной японской поп-группы "CHAM!" вместе с двумя другими участницами. Группа пользуется большой популярностью среди подростков, и Мима играет роль невинной и милой идолки, что является частью ее сценического образа.
+Однако Мима принимает решение покинуть группу и попробовать себя в качестве актрисы, надеясь на более серьезную карьеру. Это решение вызывает неоднозначную реакцию: ее менеджер Рум поддерживает выбор, видя в этом возможность для развития, но многие фанаты и даже некоторые коллеги по индустрии воспринимают это как предательство.
+Мима получает роль в психологическом триллере "Double Bind", где ей приходится играть более взрослые и сложные сцены, включая сцену изнасилования, что кардинально отличается от ее прежнего невинного образа. Переход от поп-идолки к серьезной актрисе оказывается более трудным, чем она ожидала.
+Параллельно с этим в интернете появляется дневник, якобы ведущийся самой Мимой, где описываются ее мысли и переживания. Проблема в том, что Мима этот дневник не ведет, и записи в нем не соответствуют ее реальным мыслям и действиям. Кто-то выдает себя за нее, создавая альтернативную версию ее личности.
+Ситуация усугубляется, когда начинают происходить странные и пугающие события. Люди, связанные с новой карьерой Мимы, начинают погибать при загадочных обстоятельствах. Сначала умирает фотограф, который снимал ее для откровенной фотосессии, затем сценарист сериала, в котором она играет.
+Мима начинает терять связь с реальностью. Она видит галлюцинации своего прежнего образа поп-идолки, которая появляется перед ней и упрекает в предательстве фанатов и разрушении чистого образа. Эти видения становятся все более частыми и реалистичными, заставляя Миму сомневаться в своем рассудке.
+Психическое состояние Мимы ухудшается под давлением новой роли, общественного осуждения и странных событий вокруг нее. Она не может понять, что реально, а что является плодом ее воображения. Границы между ее настоящей личностью, ролью в сериале и галлюцинациями размываются.
+Расследование убийств приводит к неожиданному открытию. Выясняется, что за всеми странными событиями стоит Руми, бывший менеджер Мимы, которая не смогла смириться с решением своей подопечной оставить карьеру поп-идолки. Руми настолько отождествила себя с образом невинной Мимы, что начала считать себя "настоящей" Мимой.
+Руми создавала интернет-дневник, убивала людей, которые, по ее мнению, "портили" образ Мимы, и пыталась вернуть ее к прежней карьере. В ее искаженном восприятии настоящая Мима была самозванкой, которая украла ее идентичность и разрушила совершенный образ поп-идолки.
+В кульминации фильма происходит финальная конфронтация между Мимой и Руми на строительной площадке. Руми, полностью потерявшая связь с реальностью, нападает на Миму, считая ее виновной во всех проблемах. Во время борьбы Руми падает и получает серьезные травмы.
+Руми выживает, но остается в психиатрической клинике, все еще веря, что она и есть настоящая Мима. Настоящая Мима постепенно восстанавливается от психологической травмы и успешно продолжает актерскую карьеру. Фильм заканчивается сценой, где Мима навещает Руми в больнице и с грустью смотрит на женщину, которая разрушила себя из-за одержимости чужим образом.
+Фильм исследует темы идентичности, влияния медиа на личность, одержимости фанатов и цены славы в современном обществе, где граница между публичным образом и реальной личностью может полностью стираться.');

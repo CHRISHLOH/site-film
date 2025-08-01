@@ -11,6 +11,7 @@ import org.sitefilm.contentservice.entity.MovieAudioLanguage;
 import org.sitefilm.contentservice.entity.VideoQuality;
 
 
+import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -43,6 +44,12 @@ public class Movie {
     @Column(name = "duration")
     @Convert(converter = DurationConverter.class)
     private Duration duration;
+
+    @Column(name = "plot_summary")
+    private String text;
+
+    @Column(name = "rating")
+    private BigDecimal rating;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country_id", nullable = false, referencedColumnName = "id")

@@ -78,8 +78,8 @@ public class MovieContentService {
         List<PersonProjection> people = personContentService.findPeopleByMovies(movieIds);
 
         // Группируем персон по фильмам и ролям
-        Map<Long, List<NamePeopleDto>> actorsMap = groupPeopleByRole(people, 2); // 2 - Актеры
-        Map<Long, List<NamePeopleDto>> directorsMap = groupPeopleByRole(people, 3); // 3 - Режиссеры
+        Map<Long, List<NamePeopleDto>> actorsMap = groupPeopleByRole(people, 2);
+        Map<Long, List<NamePeopleDto>> directorsMap = groupPeopleByRole(people, 3);
 
         // Добавляем актеров и режиссеров в фильмы
         minimalMovieForListDtoList.forEach(movie -> {

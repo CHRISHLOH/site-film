@@ -47,4 +47,16 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
     FROM Movie m
     """)
     Slice<MinimalMovieProjection> findListMinimalMovies(Pageable pageable);
+
+    @Query("""
+    SELECT m
+    FROM Movie m
+    LEFT JOIN FETCH m.genres
+    LEFT JOIN FETCH m.country
+    LEFT JOIN FETCH m.audioMovieFormats
+    LEFT JOIN FETCH m.videoQuality
+    WHERE (m.id BETWEEN 11 AND 357)
+       OR (m.id BETWEEN 970 AND 1097)
+""")
+    List<Movie> findMoviesInTwoRanges();
 }
