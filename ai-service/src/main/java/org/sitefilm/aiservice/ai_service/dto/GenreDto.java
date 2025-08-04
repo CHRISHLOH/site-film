@@ -1,4 +1,8 @@
 package org.sitefilm.aiservice.ai_service.dto;
 
-public class GenreDto {
+public record GenreDto(
+        Long id,
+        String genre
+) {
 }
+

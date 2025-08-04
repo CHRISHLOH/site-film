@@ -1,4 +1,7 @@
 package org.sitefilm.aiservice.ai_service.dto;
 
-public class CountryDto {
+public record CountryDto(
+        Long id,
+        String country
+) {
 }

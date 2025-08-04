@@ -31,5 +31,14 @@ spring:
         dimensions: 1536
         schema-name: ai_service
         table-name: vector_store
+
 server:
-  port: 8443
+  port: 8445
+#  ssl:
+#    enabled: true
+#    key-store: classpath:keystore.p12
+#    key-store-password: mypass
+#    key-store-type: PKCS12
+#    key-alias: localhost-cert
+#    enabled-protocols: TLSv1.2,TLSv1.3
+#    protocol: TLS
