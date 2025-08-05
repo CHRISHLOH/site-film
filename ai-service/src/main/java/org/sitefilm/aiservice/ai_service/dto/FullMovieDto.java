@@ -27,6 +27,6 @@ public class FullMovieDto {
     private LocalDate updatedAt;
     private List<NamePeopleDto> actors;
     private List<NamePeopleDto> directors;
-    private String plot;
+    private String plotSummary;
     private BigDecimal rating;
 }

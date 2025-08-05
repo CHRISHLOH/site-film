@@ -5,9 +5,9 @@ v_quality_ids  INT[] := ARRAY[1, 2, 3, 4];  -- доступные качеств
 v_selected     INT[];                      -- случайные качества на фильм
 v_limit        INT;                        -- сколько качеств присвоить
 BEGIN
-    FOR v_movie_id IN 1..1000 LOOP
+    FOR v_movie_id IN 1..1100 LOOP
     -- Для первых 500 фильмов — до 3 качеств, остальных — до 4
-    IF v_movie_id <= 500 THEN
+    IF v_movie_id <= 550 THEN
       v_limit := floor(random() * 3 + 1)::INT; -- 1..3
 ELSE
       v_limit := floor(random() * 4 + 1)::INT; -- 1..4

@@ -56,7 +56,7 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
     LEFT JOIN FETCH m.audioMovieFormats
     LEFT JOIN FETCH m.videoQuality
     WHERE (m.id BETWEEN 11 AND 357)
-       OR (m.id BETWEEN 970 AND 1097)
+       OR (m.id BETWEEN 358 AND 484)
 """)
     List<Movie> findMoviesInTwoRanges();
 }

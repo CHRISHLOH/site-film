@@ -13,7 +13,10 @@ spring:
       chat:
         options:
           model: phi3:mini                    # Имя модели (можно изменить)                     # отключить потоковый вывод
-          temperature: 0.7                    # тон генерации (0.0–1.0)
+          temperature: 0.7
+      embedding:
+        options:
+          model: mxbai-embed-large
     chat:
       memory:
         repository:
@@ -28,7 +31,7 @@ spring:
         index-type: HNSW
         distance-type: COSINE_DISTANCE
         schema-validation: true
-        dimensions: 1536
+        dimensions: 1024
         schema-name: ai_service
         table-name: vector_store
 

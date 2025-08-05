@@ -16,14 +16,14 @@ INTO v_all_audio_ids
 FROM content_service.audio_language;
 
 -- 2) Определяем, сколько фильмов (90%) получат audio_id=1
-v_count_with1 := ceil(1000 * 0.9)::INT;
+v_count_with1 := ceil(1100 * 0.9)::INT;
 
   -- 3) Случайно выбираем v_count_with1 уникальных movie_id
 SELECT array_agg(movie_id)
 INTO v_with1_ids
 FROM (
          SELECT movie_id
-         FROM generate_series(1,1000) AS movie_id
+         FROM generate_series(1,1100) AS movie_id
          ORDER BY random()
          LIMIT v_count_with1
      ) AS sub;
@@ -35,7 +35,7 @@ FROM unnest(v_all_audio_ids) AS x
 WHERE x <> 1;
 
 -- 5) Генерируем строки
-FOR v_movie_id IN 1..1000 LOOP
+FOR v_movie_id IN 1..1100 LOOP
     v_selected := ARRAY[]::INT[];
 
     -- a) Если этот фильм попал в «счастливую девятку» — вставляем audio_id=1

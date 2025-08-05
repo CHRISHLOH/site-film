@@ -34,6 +34,6 @@ public class FullMovieDto {
     private Set<MinimalPersonDto> people;
     private List<NamePeopleDto> actors;
     private List<NamePeopleDto> directors;
-    private String text;
+    private String plotSummary;
     private BigDecimal rating;
 }

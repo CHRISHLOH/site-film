@@ -10,7 +10,7 @@ INTO v_all_careers
 FROM content_service.careers;  -- предполагаем, что в этой таблице 14 записей
 
 -- 2) Проходим по каждому person_id от 1 до 1000
-FOR v_person_id IN 1..1000 LOOP
+FOR v_person_id IN 1..1100 LOOP
 
     -- 2.1) Выбираем 3 разных career_id
 SELECT array_agg(c)

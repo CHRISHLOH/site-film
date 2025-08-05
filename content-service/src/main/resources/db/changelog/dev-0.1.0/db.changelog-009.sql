@@ -1,6 +1,15 @@
 -- SQL скрипт для загрузки фильмов из IMDB CSV
 -- Сгенерирован автоматически
 
+-- 1. Добавляем столбцы
+ALTER TABLE content_service.movies
+    ADD COLUMN plot_summary TEXT,
+    ADD COLUMN rating NUMERIC(3,1);
+
+-- 2. При необходимости: добавляем ограничение на рейтинг (0.0–10.0)
+ALTER TABLE content_service.movies
+    ADD CONSTRAINT chk_rating_range
+        CHECK (rating >= 0.0 AND rating <= 10.0);
 
 INSERT INTO content_service.movies (title, description, release_date, country_id, duration, original_title, rating, plot_summary)
 VALUES ('Побег из Шоушенка', 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.', '1994-01-01', 1, '142 minutes', 'The Shawshank Redemption', 9.3, 'В 1947 году успешный банкир Энди Дюфрейн обвиняется в убийстве своей жены и её любовника. Несмотря на утверждения о своей невиновности, он приговаривается к двум пожизненным срокам и отправляется в тюрьму строгого режима Шоушенк в штате Мэн. В первую ночь один из новичков не выдерживает психологического давления и его забивают насмерть охранники, что становится для Энди жестоким введением в тюремную реальность.

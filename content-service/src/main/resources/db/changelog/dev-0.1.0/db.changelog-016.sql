@@ -12,7 +12,7 @@ INTO v_all_genres
 FROM content_service.genres;  -- должно вернуть 10 записей
 
 -- 2) Проходим по каждому person_id от 1 до 1000
-FOR v_person_id IN 1..1000 LOOP
+FOR v_person_id IN 1..1100 LOOP
 
     -- 2.1) Выбираем 3 разных genre_id
 SELECT array_agg(g)

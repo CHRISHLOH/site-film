@@ -46,7 +46,7 @@ public class Movie {
     private Duration duration;
 
     @Column(name = "plot_summary")
-    private String text;
+    private String plotSummary;
 
     @Column(name = "rating")
     private BigDecimal rating;

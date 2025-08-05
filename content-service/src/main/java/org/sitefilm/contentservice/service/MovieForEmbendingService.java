@@ -33,6 +33,7 @@ public class MovieForEmbendingService {
             movie.setActors(actorsMap.getOrDefault(movie.getId(), new ArrayList<>()));
             movie.setDirectors(directorsMap.getOrDefault(movie.getId(), new ArrayList<>()));
         });
+
         return movies;
     }
 
