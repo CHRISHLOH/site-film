@@ -8,12 +8,6 @@ spring:
   ai:
     ollama:
       base-url: http://localhost:11434       # Укажи URL сервера Ollama
-      init:
-        pull-model-strategy: when-missing     # Загружать модель при старте, если нет
-      chat:
-        options:
-          model: phi3:mini                    # Имя модели (можно изменить)                     # отключить потоковый вывод
-          temperature: 0.7
       embedding:
         options:
           model: mxbai-embed-large
@@ -37,11 +31,11 @@ spring:
 
 server:
   port: 8445
-#  ssl:
-#    enabled: true
-#    key-store: classpath:keystore.p12
-#    key-store-password: mypass
-#    key-store-type: PKCS12
-#    key-alias: localhost-cert
-#    enabled-protocols: TLSv1.2,TLSv1.3
-#    protocol: TLS
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: mypass
+    key-store-type: PKCS12
+    key-alias: localhost-cert
+    enabled-protocols: TLSv1.2,TLSv1.3
+    protocol: TLS
