@@ -1,15 +1,13 @@
 package org.sitefilm.aiservice.ai_service.controller;
 
-import org.sitefilm.aiservice.ai_service.dto.ChatRequest;
-import org.sitefilm.aiservice.ai_service.dto.ChatResponse;
+import org.sitefilm.aiservice.ai_service.dto.chat.ChatRequest;
+import org.sitefilm.aiservice.ai_service.dto.chat.ChatResponse;
 import org.sitefilm.aiservice.ai_service.service.NluQueryAnalysisService;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
-import reactor.core.publisher.Flux;
 
 @RestController
 @RequestMapping()
@@ -25,15 +23,8 @@ public class ChatController {
 
     @PostMapping(value = "/chat")
     public ChatResponse chat(@RequestBody ChatRequest req) {
-        String content = chatClient
-                .prompt()
-                .advisors(a -> a.param(ChatMemory.CONVERSATION_ID, req.conversationId()))
-                .user(req.message())
-                .call()
-                .content();
-
-
-        return new ChatResponse(content);
+        service.test(req);
+        return new ChatResponse("content");
     }
 
     @GetMapping(value = "/api/ai/user/chat")

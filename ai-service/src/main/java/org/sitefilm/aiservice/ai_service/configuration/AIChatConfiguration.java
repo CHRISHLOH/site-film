@@ -1,9 +1,6 @@
 package org.sitefilm.aiservice.ai_service.configuration;
 
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
@@ -22,11 +19,11 @@ public class AIChatConfiguration {
     public ChatClient nluChatClient(ChatClient.Builder builder) {
         return builder
                 .defaultOptions(OllamaOptions.builder()
-                        .temperature(0.1)
+                        .temperature(0.0)
                         .topK(1)
                         .topP(0.0)
-                        .numPredict(200)
-                        .numCtx(2048)
+                        .numPredict(300)
+                        .numCtx(4096)
                         .repeatPenalty(1.0)
                         .presencePenalty(0.0)
                         .frequencyPenalty(0.0)
@@ -52,7 +49,7 @@ public class AIChatConfiguration {
                         .temperature(0.7)
                         .topK(50)
                         .topP(0.92)
-                        .numPredict(200)
+                        .numPredict(800)
                         .numCtx(8192)
                         .repeatPenalty(1.15)
                         .presencePenalty(0.2)
@@ -65,12 +62,5 @@ public class AIChatConfiguration {
                 .defaultAdvisors(MessageChatMemoryAdvisor.builder(memory).build())
                 .build();
     }
-
-    @Bean
-    public ObjectMapper objectMapper() {
-        ObjectMapper m = new ObjectMapper();
-        m.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        m.setPropertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE);
-        return m;
-    }
+    
 }

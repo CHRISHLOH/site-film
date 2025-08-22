@@ -7,7 +7,11 @@ spring:
     password: user
   ai:
     ollama:
-      base-url: http://localhost:11434       # Укажи URL сервера Ollama
+      base-url: http://localhost:11434
+      chat:
+        model: phi3:mini
+      init:
+        pull-model-strategy: when_missing
       embedding:
         options:
           model: mxbai-embed-large
@@ -31,11 +35,11 @@ spring:
 
 server:
   port: 8445
-  ssl:
-    enabled: true
-    key-store: classpath:keystore.p12
-    key-store-password: mypass
-    key-store-type: PKCS12
-    key-alias: localhost-cert
-    enabled-protocols: TLSv1.2,TLSv1.3
-    protocol: TLS
+#  ssl:
+#    enabled: true
+#    key-store: classpath:keystore.p12
+#    key-store-password: mypass
+#    key-store-type: PKCS12
+#    key-alias: localhost-cert
+#    enabled-protocols: TLSv1.2,TLSv1.3
+#    protocol: TLS

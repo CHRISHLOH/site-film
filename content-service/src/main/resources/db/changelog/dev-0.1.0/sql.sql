@@ -1,4 +1,3 @@
-INSERT INTO content_service.persons (id, first_name, last_name, birth_date, gender, country_id, city_id) VALUES (1014, 'TEST', 'Miller', '1985-05-19', 'MALE', 13, 2);
 INSERT INTO content_service.persons (id, first_name, last_name, birth_date, gender, country_id, city_id) VALUES (1015, 'TEST', 'Brown', '1971-02-07', 'MALE', 7, 4);
 INSERT INTO content_service.persons (id, first_name, last_name, birth_date, gender, country_id, city_id) VALUES (1016, 'TEST', 'Wong', '1980-02-02', 'FEMALE', 3, 5);
 INSERT INTO content_service.persons (id, first_name, last_name, birth_date, gender, country_id, city_id) VALUES (1017, 'TEST', 'Miller', '1962-09-30', 'MALE', 10, 3);
