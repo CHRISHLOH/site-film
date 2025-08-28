@@ -1,5 +1,6 @@
 package org.sitefilm.aiservice.ai_service.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.sitefilm.aiservice.ai_service.dto.chat.ChatRequest;
 import org.sitefilm.aiservice.ai_service.dto.chat.ChatResponse;
 import org.sitefilm.aiservice.ai_service.service.NluQueryAnalysisService;
@@ -22,13 +23,13 @@ public class ChatController {
     }
 
     @PostMapping(value = "/chat")
-    public ChatResponse chat(@RequestBody ChatRequest req) {
+    public ChatResponse chat(@RequestBody ChatRequest req) throws JsonProcessingException {
         service.test(req);
         return new ChatResponse("content");
     }
 
     @GetMapping(value = "/api/ai/user/chat")
-    public SseEmitter chatStreamFlux(@RequestBody ChatRequest req) {
+    public SseEmitter chatStreamFlux(@RequestBody ChatRequest req) throws JsonProcessingException {
         service.test(req);
         return new SseEmitter();
     }

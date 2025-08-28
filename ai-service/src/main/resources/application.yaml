@@ -9,7 +9,7 @@ spring:
     ollama:
       base-url: http://localhost:11434
       chat:
-        model: phi3:mini
+        model: qwen2:7b
       init:
         pull-model-strategy: when_missing
       embedding:

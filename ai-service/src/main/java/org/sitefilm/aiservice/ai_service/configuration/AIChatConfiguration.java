@@ -1,6 +1,9 @@
 package org.sitefilm.aiservice.ai_service.configuration;
 
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
@@ -23,7 +26,7 @@ public class AIChatConfiguration {
                         .topK(1)
                         .topP(0.0)
                         .numPredict(300)
-                        .numCtx(4096)
+                        .numCtx(8192)
                         .repeatPenalty(1.0)
                         .presencePenalty(0.0)
                         .frequencyPenalty(0.0)
@@ -61,6 +64,19 @@ public class AIChatConfiguration {
                         .build())
                 .defaultAdvisors(MessageChatMemoryAdvisor.builder(memory).build())
                 .build();
+    }
+
+    @Bean
+    @Qualifier("nluObjectMapper")
+    public ObjectMapper nluObjectMapper() {
+        ObjectMapper mapper = new ObjectMapper();
+
+        mapper.registerModule(new JavaTimeModule());
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+        mapper.configure(DeserializationFeature.UNWRAP_SINGLE_VALUE_ARRAYS, true);
+
+        return mapper;
     }
     
 }

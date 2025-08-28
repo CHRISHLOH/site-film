@@ -1,9 +1,6 @@
 package org.sitefilm.aiservice.ai_service.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.Duration;
@@ -14,6 +11,7 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class QueryAnalysisDto{
     private SearchType searchType;
     private String description;
