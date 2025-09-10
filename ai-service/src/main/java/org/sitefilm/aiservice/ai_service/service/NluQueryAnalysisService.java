@@ -1,7 +1,5 @@
 package org.sitefilm.aiservice.ai_service.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.sitefilm.aiservice.ai_service.dto.QueryAnalysisDto;
 import org.sitefilm.aiservice.ai_service.dto.chat.ChatRequest;
@@ -111,7 +109,7 @@ public class NluQueryAnalysisService {
         this.nluChatClient = nluChatClient;
     }
 
-    public void test(ChatRequest chatRequest) {
+    public QueryAnalysisDto analyseQuery(ChatRequest chatRequest) {
         QueryAnalysisDto content = nluChatClient
                 .prompt(NLU_PROMPT.replace("{userQuery}", chatRequest.message()))
                 .advisors(a -> a.param(ChatMemory.CONVERSATION_ID, chatRequest.conversationId()))
@@ -120,5 +118,6 @@ public class NluQueryAnalysisService {
                 .entity(QueryAnalysisDto.class);
 
         System.out.println(content);
+        return content;
     }
 }
