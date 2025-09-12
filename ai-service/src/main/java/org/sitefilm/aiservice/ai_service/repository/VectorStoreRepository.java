@@ -9,20 +9,20 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.UUID;
 
-@Repository
-public interface VectorStoreRepository extends JpaRepository<VectorSearchProjection, UUID> {
-
-    @Query(value = """
-        SELECT vs.id as id, 
-               vs.content as content, 
-               vs.metadata as metadata,
-               1 - (vs.embedding <=> CAST(:embedding AS vector)) as similarity
-        FROM vector_store vs
-        ORDER BY similarity DESC
-        LIMIT :limit
-        """, nativeQuery = true)
-    List<VectorSearchProjection> findMostSimilar(
-            @Param("embedding") String embedding,
-            @Param("limit") int limit
-    );
-}
+//@Repository
+//public interface VectorStoreRepository extends JpaRepository<VectorSearchProjection, UUID> {
+//
+//    @Query(value = """
+//        SELECT vs.id as id,
+//               vs.content as content,
+//               vs.metadata as metadata,
+//               1 - (vs.embedding <=> CAST(:embedding AS vector)) as similarity
+//        FROM vector_store vs
+//        ORDER BY similarity DESC
+//        LIMIT :limit
+//        """, nativeQuery = true)
+//    List<VectorSearchProjection> findMostSimilar(
+//            @Param("embedding") String embedding,
+//            @Param("limit") int limit
+//    );
+//}

@@ -9,6 +9,7 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
+import reactor.core.publisher.Flux;
 
 @RestController
 @RequestMapping()
@@ -28,9 +29,8 @@ public class ChatController {
         return new ChatResponse("content");
     }
 
-    @GetMapping(value = "/api/ai/user/chat")
-    public SseEmitter chatStreamFlux(@RequestBody ChatRequest req) throws JsonProcessingException {
-        service.generateResponse(req);
-        return new SseEmitter();
+    @PostMapping(value = "/api/ai/user/chat")
+    public Flux<String> chatStreamFlux(@RequestBody ChatRequest req) throws JsonProcessingException {
+        return service.generateResponse(req);
     }
 }

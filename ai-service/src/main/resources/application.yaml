@@ -22,7 +22,6 @@ spring:
             initialize-schema: never
             schema: ai_service
 
-
     vectorstore:
       pgvector:
         initialize-schema: false
