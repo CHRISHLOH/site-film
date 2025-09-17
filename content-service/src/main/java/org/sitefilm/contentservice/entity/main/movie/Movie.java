@@ -1,4 +1,4 @@
-package org.sitefilm.contentservice.entity.main;
+package org.sitefilm.contentservice.entity.main.movie;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -15,6 +15,7 @@ import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -29,15 +30,6 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
-    private String title;
-
-    @Column(name = "original_title")
-    private String originalTitle;
-
-    @Column(columnDefinition = "TEXT")
-    private String description;
-
     @Column(name = "release_date", nullable = false)
     private LocalDate releaseDate;
 
@@ -45,15 +37,15 @@ public class Movie {
     @Convert(converter = DurationConverter.class)
     private Duration duration;
 
-    @Column(name = "plot_summary")
-    private String plotSummary;
-
     @Column(name = "rating")
     private BigDecimal rating;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country_id", nullable = false, referencedColumnName = "id")
     private Country country;
+
+    @OneToMany(mappedBy = "movie")
+    private List<MovieLocalization> movieTranslation;
 
     @ManyToMany
     @JoinTable(

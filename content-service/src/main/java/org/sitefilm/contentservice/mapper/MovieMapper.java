@@ -5,7 +5,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 import org.sitefilm.contentservice.dto.main.movie.FullMovieDto;
 import org.sitefilm.contentservice.dto.main.movie.MinimalMovieForListDto;
-import org.sitefilm.contentservice.entity.main.Movie;
+import org.sitefilm.contentservice.entity.main.movie.Movie;
 
 import java.time.Duration;
 import java.util.List;

@@ -20,10 +20,9 @@ import java.util.Set;
 @NoArgsConstructor
 public class FullMovieDto {
     private Long id;
-    private String title;
-    private String originalTitle;
-    private String description;
     private LocalDate releaseDate;
+    private String locale;
+    private MovieTranslation translation;
     private String duration;
     private CountryDto country;
     private Set<GenreDto> genres;
@@ -34,6 +33,5 @@ public class FullMovieDto {
     private Set<MinimalPersonDto> people;
     private List<NamePeopleDto> actors;
     private List<NamePeopleDto> directors;
-    private String plotSummary;
     private BigDecimal rating;
 }

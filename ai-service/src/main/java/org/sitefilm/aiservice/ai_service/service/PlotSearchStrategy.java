@@ -8,6 +8,7 @@ import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class PlotSearchStrategy implements SearchStrategy{
@@ -28,16 +29,15 @@ public class PlotSearchStrategy implements SearchStrategy{
                         .build());
 
         List<ShortMovieInformation> list = moviesFromDB.stream()
-                .map(doc ->
-                    new ShortMovieInformation(doc.getId(), doc.getMetadata().toString())
-                )
+                .map(doc -> {
+                    Map<String, Object> metadata = doc.getMetadata();
+                    String title = metadata.getOrDefault("title", "").toString();
+                    return new ShortMovieInformation(doc.getId(), title);
+                })
                 .toList();
 
-        for(ShortMovieInformation shortMovieInformation : list){
+        for (ShortMovieInformation shortMovieInformation : list) {
             System.out.println(shortMovieInformation);
-        }
-        if (!list.isEmpty()) {
-            throw new RuntimeException();
         }
         return list;
     }

@@ -1,6 +1,6 @@
 package org.sitefilm.contentservice.repository;
 
-import org.sitefilm.contentservice.entity.main.Movie;
+import org.sitefilm.contentservice.entity.main.movie.Movie;
 import org.sitefilm.contentservice.entity.projection.MinimalMovieProjection;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
@@ -11,7 +11,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Long> {

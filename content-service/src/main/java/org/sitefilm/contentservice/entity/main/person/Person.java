@@ -1,4 +1,4 @@
-package org.sitefilm.contentservice.entity.main;
+package org.sitefilm.contentservice.entity.main.person;
 
 import jakarta.persistence.*;
 import lombok.*;

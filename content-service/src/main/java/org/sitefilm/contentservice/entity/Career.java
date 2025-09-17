@@ -3,6 +3,9 @@ package org.sitefilm.contentservice.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "careers", schema = "content_service")
 @Setter
@@ -16,6 +19,9 @@ public class Career {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "career")
+    @Column(name = "code", nullable = false, unique = true)
     private String career;
+
+    @OneToMany(mappedBy = "career", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<CareerTranslation> translations = new ArrayList<>();
 }

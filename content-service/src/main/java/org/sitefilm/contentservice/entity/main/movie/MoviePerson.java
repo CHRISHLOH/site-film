@@ -1,8 +1,9 @@
-package org.sitefilm.contentservice.entity.main;
+package org.sitefilm.contentservice.entity.main.movie;
 
 import jakarta.persistence.*;
 import lombok.*;
 import org.sitefilm.contentservice.entity.Career;
+import org.sitefilm.contentservice.entity.main.person.Person;
 import org.sitefilm.contentservice.enums.PriorityLevel;
 
 @Entity

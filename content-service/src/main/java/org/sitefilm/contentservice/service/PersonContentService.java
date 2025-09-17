@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.sitefilm.contentservice.dto.main.movie.MinimalMovieForListDto;
 import org.sitefilm.contentservice.dto.main.person.FullPersonDto;
 import org.sitefilm.contentservice.dto.main.person.MinimalPersonDto;
-import org.sitefilm.contentservice.entity.main.Person;
+import org.sitefilm.contentservice.entity.main.person.Person;
 import org.sitefilm.contentservice.entity.projection.PersonProjection;
 import org.sitefilm.contentservice.mapper.CareerMapper;
 import org.sitefilm.contentservice.mapper.CountryMapper;
@@ -16,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Service
 @Transactional
