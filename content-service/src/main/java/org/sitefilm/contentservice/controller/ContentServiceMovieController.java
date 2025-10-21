@@ -24,22 +24,22 @@ import java.util.List;
 public class ContentServiceMovieController {
     private final MovieContentService service;
 
-    @GetMapping("/{id}")
-    public ResponseEntity<FullMovieDto> getMovieById(@PathVariable Long id, @AuthenticationPrincipal Jwt jwt) {
-        FullMovieDto fullMovieDto = service.getMovieById(id);
-        if (fullMovieDto != null) {
-            return ResponseEntity.ok(fullMovieDto);
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
+//    @GetMapping("/{id}")
+//    public ResponseEntity<FullMovieDto> getMovieById(@PathVariable Long id, @AuthenticationPrincipal Jwt jwt) {
+//        FullMovieDto fullMovieDto = service.getMovieById(id);
+//        if (fullMovieDto != null) {
+//            return ResponseEntity.ok(fullMovieDto);
+//        } else {
+//            return ResponseEntity.notFound().build();
+//        }
+//    }
 
 
-    @GetMapping
-    public ResponseEntity<List<MinimalMovieForListDto>> getMinimalMovies(
-            @RequestParam(value = "page", defaultValue = "0") int page,
-            @RequestParam(value = "size", defaultValue = "10") int size) {
-        Pageable pageable = PageRequest.of(page, size);
-        return ResponseEntity.ok(service.getListOfMinimalMovie(pageable));
-    }
+//    @GetMapping
+//    public ResponseEntity<List<MinimalMovieForListDto>> getMinimalMovies(
+//            @RequestParam(value = "page", defaultValue = "0") int page,
+//            @RequestParam(value = "size", defaultValue = "10") int size) {
+//        Pageable pageable = PageRequest.of(page, size);
+//        return ResponseEntity.ok(service.getListOfMinimalMovie(pageable));
+//    }
 }

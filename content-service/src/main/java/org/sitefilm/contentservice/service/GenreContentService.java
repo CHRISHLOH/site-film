@@ -47,7 +47,7 @@ public class GenreContentService {
         genreRepository.findById(updatedGenreDto.id())
                 .ifPresentOrElse(
                         genre ->
-                                genre.setGenre(updatedGenreDto.genre()),
+                                genre.setCode(updatedGenreDto.genre()),
                         () -> {
                             throw new RuntimeException();
                         });

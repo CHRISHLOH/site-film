@@ -28,37 +28,37 @@ public class PersonContentService {
     private final CountryMapper countryMapper;
     private final GenreMapper genreMapper;
 
-    @Transactional(readOnly = true)
-    public Set<MinimalPersonDto> getAllMinimalPersons(Long movieId) {
-        return personRepository.findMinimalPeopleInfoMovieById(movieId).stream().map(
-                projection -> new MinimalPersonDto(
-                        projection.getId(),
-                        projection.getName(),
-                        projection.getLastName(),
-                        careerMapper.careerListToCareerDtoSet(projection.getCareers())
-                )
-        ).collect(Collectors.toSet());
-    }
+//    @Transactional(readOnly = true)
+//    public Set<MinimalPersonDto> getAllMinimalPersons(Long movieId) {
+//        return personRepository.findMinimalPeopleInfoMovieById(movieId).stream().map(
+//                projection -> new MinimalPersonDto(
+//                        projection.getId(),
+//                        projection.getName(),
+//                        projection.getLastName(),
+//                        careerMapper.careerListToCareerDtoSet(projection.getCareers())
+//                )
+//        ).collect(Collectors.toSet());
+//    }
+//
+//    public List<PersonProjection> findPeopleByMovies(List<Long> moviesIds) {
+//        return personRepository.findPeopleByMovies(moviesIds);
+//    }
 
-    public List<PersonProjection> findPeopleByMovies(List<Long> moviesIds) {
-        return personRepository.findPeopleByMovies(moviesIds);
-    }
-
-    public FullPersonDto findPersonById(Long personId) {
-        List<MinimalMovieForListDto> minimalMovieDto = movieContentService.getListOfMinimalMovieForPerson(personId);
-        Person person = personRepository.findPersonById(personId);
-        return FullPersonDto.builder()
-                .id(person.getId())
-                .firstName(person.getFirstName())
-                .lastName(person.getLastName())
-                .birth_date(person.getBirth_date())
-                .gender(person.getGender())
-                .country(countryMapper.countryToCountryDto(person.getCountry()))
-                .city(null)
-                .genres(person.getGenres().stream().map(genreMapper::genreToGenreDto).collect(Collectors.toSet()))
-                .movies(minimalMovieDto)
-                .careers(person.getCareers().stream().map(careerMapper::careerToCareerDto).collect(Collectors.toSet()))
-                .build();
-    }
+//    public FullPersonDto findPersonById(Long personId) {
+//        List<MinimalMovieForListDto> minimalMovieDto = movieContentService.getListOfMinimalMovieForPerson(personId);
+//        Person person = personRepository.findPersonById(personId);
+//        return FullPersonDto.builder()
+//                .id(person.getId())
+//                .firstName(person.getName())
+//                .lastName(person.getLastName())
+//                .birth_date(person.getBirth_date())
+//                .gender(person.getGender())
+//                .country(countryMapper.countryToCountryDto(person.getCountry()))
+//                .city(null)
+//                .genres(person.getGenres().stream().map(genreMapper::genreToGenreDto).collect(Collectors.toSet()))
+//                .movies(minimalMovieDto)
+//                .careers(person.getCareers().stream().map(careerMapper::careerToCareerDto).collect(Collectors.toSet()))
+//                .build();
+//    }
 
 }

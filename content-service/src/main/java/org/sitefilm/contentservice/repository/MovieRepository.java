@@ -23,29 +23,29 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
             "WHERE m.id = :id")
     Optional<Movie> findMovieWithDetailsById(@Param("id") Long id);
 
-    @Query("""
-    SELECT m.id AS id,
-           m.title AS title,
-           m.description AS description,
-           m.originalTitle AS originalTitle,
-           m.releaseDate AS releaseDate
-    FROM Movie m
-    JOIN MoviePerson mp ON m.id = mp.movie.id
-    WHERE mp.person.id = :personId
-    ORDER BY mp.moviePriorityLevel
-    LIMIT 10
-    """)
-    List<MinimalMovieProjection> findMoviesByPersonId(@Param("personId") Long personId);
-
-    @Query("""
-    SELECT m.id AS id,
-           m.title AS title,
-           m.description AS description,
-           m.originalTitle AS originalTitle,
-           m.releaseDate AS releaseDate
-    FROM Movie m
-    """)
-    Slice<MinimalMovieProjection> findListMinimalMovies(Pageable pageable);
+//    @Query("""
+//    SELECT m.id AS id,
+//           m.title AS title,
+//           m.description AS description,
+//           m.originalTitle AS originalTitle,
+//           m.releaseDate AS releaseDate
+//    FROM Movie m
+//    JOIN MoviePerson mp ON m.id = mp.movie.id
+//    WHERE mp.person.id = :personId
+//    ORDER BY mp.moviePriorityLevel
+//    LIMIT 10
+//    """)
+//    List<MinimalMovieProjection> findMoviesByPersonId(@Param("personId") Long personId);
+//
+//    @Query("""
+//    SELECT m.id AS id,
+//           m.title AS title,
+//           m.description AS description,
+//           m.originalTitle AS originalTitle,
+//           m.releaseDate AS releaseDate
+//    FROM Movie m
+//    """)
+//    Slice<MinimalMovieProjection> findListMinimalMovies(Pageable pageable);
 
     @Query("""
     SELECT m

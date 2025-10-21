@@ -9,58 +9,40 @@ import org.sitefilm.contentservice.entity.Genre;
 import org.sitefilm.contentservice.enums.GenderEnum;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Table(name = "persons", schema = "content_service")
-@Setter
 @Getter
-@Builder
-@AllArgsConstructor
+@Setter
 @NoArgsConstructor
-@ToString
+@AllArgsConstructor
+@Builder
 public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "first_name", nullable = false)
-    private String firstName;
-
-    @Column(name = "last_name", nullable = false)
-    private String lastName;
+    // единое имя, можно хранить full name; локализованное представление -> person_translations.locale_name
+    @Column(name = "name", nullable = false, length = 100)
+    private String name;
 
     @Column(name = "birth_date", nullable = false)
-    private LocalDate birth_date;
+    private LocalDate birthDate;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "gender", nullable = false)
-    private GenderEnum gender;
+    @Column(name = "gender", nullable = false, length = 50)
+    private String gender;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country_id", nullable = false, referencedColumnName = "id")
+    @JoinColumn(name = "country_id", nullable = false)
     private Country country;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "city_id", nullable = false, referencedColumnName = "id")
+    @JoinColumn(name = "city_id", nullable = false)
     private City city;
 
-    @ManyToMany
-    @JoinTable(
-            schema = "content_service",
-            name = "person_genres",
-            joinColumns = @JoinColumn(name = "person_id"),
-            inverseJoinColumns = @JoinColumn(name = "genre_id")
-    )
-    private Set<Genre> genres;
-
-    @ManyToMany
-    @JoinTable(
-            schema = "content_service",
-            name = "person_careers",
-            joinColumns = @JoinColumn(name = "person_id"),
-            inverseJoinColumns = @JoinColumn(name = "career_id")
-    )
-    private Set<Career> careers;
+    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private Set<PersonTranslation> translations = new HashSet<>();
 }

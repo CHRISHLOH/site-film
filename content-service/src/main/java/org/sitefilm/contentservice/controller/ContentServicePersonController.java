@@ -13,8 +13,8 @@ import java.util.List;
 public class ContentServicePersonController {
     private final PersonContentService service;
 
-    @GetMapping("/{id}")
-    public FullPersonDto findPersonById(@PathVariable Long id) {
-        return service.findPersonById(id);
-    }
+//    @GetMapping("/{id}")
+//    public FullPersonDto findPersonById(@PathVariable Long id) {
+//        return service.findPersonById(id);
+//    }
 }

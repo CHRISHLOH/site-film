@@ -16,8 +16,8 @@ public class UserForEmbendingController {
 
     private final MovieForEmbendingService service;
 
-    @GetMapping("/test")
-    public List<FullMovieDto> getMovieForEmbeding() {
-        return service.getMovies();
-    }
+//    @GetMapping("/test")
+//    public List<FullMovieDto> getMovieForEmbeding() {
+//        return service.getMovies();
+//    }
 }
