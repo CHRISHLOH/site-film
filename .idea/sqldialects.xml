@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/content-service/src/main/resources/db/changelog/dev-0.1.0/db.changelog-0017.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/content-service/src/main/resources/db/changelog/dev-0.1.0/db.changelog-0018.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/content-service/src/main/resources/db/changelog/dev-0.1.0/db.changelog-004.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/content-service/src/main/resources/db/changelog/dev-0.1.0/db.changelog-006.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/content-service/src/main/resources/db/changelog/dev-0.1.0/db.changelog-014.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/content-service/src/main/resources/db/changelog/dev-0.1.0/db.changelog-015.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/content-service/src/main/resources/db/changelog/dev-0.1.0/db.changelog-016.sql" dialect="PostgreSQL" />

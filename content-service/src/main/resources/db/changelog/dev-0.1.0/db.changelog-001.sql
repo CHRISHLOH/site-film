@@ -16,17 +16,17 @@ CREATE TABLE IF NOT EXISTS content_service.countries (
 CREATE TABLE IF NOT EXISTS content_service.country_translations (
                                                                     id BIGSERIAL PRIMARY KEY,
                                                                     country_id BIGINT NOT NULL,
-                                                                    language_code VARCHAR(5) NOT NULL,
-                                                                    name VARCHAR(255) NOT NULL,
+                                                                    locale VARCHAR(5) NOT NULL,
+                                                                    name VARCHAR(100) NOT NULL,
                                                                     CONSTRAINT fk_country_translation_country FOREIGN KEY (country_id) REFERENCES content_service.countries(id),
-                                                                    CONSTRAINT uk_country_translation UNIQUE (country_id, language_code)
+                                                                    CONSTRAINT uk_country_translation UNIQUE (country_id, locale)
 );
 
 --changeset author:4 runOnChange:false
 --comment: Create cities table
 CREATE TABLE IF NOT EXISTS content_service.cities (
                                                       id BIGSERIAL PRIMARY KEY,
-                                                      code VARCHAR(255) NOT NULL UNIQUE,
+                                                      code VARCHAR(100) NOT NULL UNIQUE,
                                                       country_id BIGINT,
                                                       CONSTRAINT fk_city_country FOREIGN KEY (country_id) REFERENCES content_service.countries(id)
 );
@@ -36,17 +36,17 @@ CREATE TABLE IF NOT EXISTS content_service.cities (
 CREATE TABLE IF NOT EXISTS content_service.city_translations (
                                                                  id BIGSERIAL PRIMARY KEY,
                                                                  city_id BIGINT NOT NULL,
-                                                                 language_code VARCHAR(5) NOT NULL,
-                                                                 name VARCHAR(255) NOT NULL,
+                                                                 locale VARCHAR(5) NOT NULL,
+                                                                 name VARCHAR(100) NOT NULL,
                                                                  CONSTRAINT fk_city_translation_city FOREIGN KEY (city_id) REFERENCES content_service.cities(id),
-                                                                 CONSTRAINT uk_city_translation UNIQUE (city_id, language_code)
+                                                                 CONSTRAINT uk_city_translation UNIQUE (city_id, locale)
 );
 
 --changeset author:6 runOnChange:false
 --comment: Create genres table
 CREATE TABLE IF NOT EXISTS content_service.genres (
                                                       id BIGSERIAL PRIMARY KEY,
-                                                      code VARCHAR(255) NOT NULL UNIQUE
+                                                      genre VARCHAR(100) NOT NULL UNIQUE
 );
 
 --changeset author:7 runOnChange:false
@@ -54,17 +54,17 @@ CREATE TABLE IF NOT EXISTS content_service.genres (
 CREATE TABLE IF NOT EXISTS content_service.genre_translations (
                                                                   id BIGSERIAL PRIMARY KEY,
                                                                   genre_id BIGINT NOT NULL,
-                                                                  language_code VARCHAR(5) NOT NULL,
-                                                                  name VARCHAR(255) NOT NULL,
+                                                                  locale VARCHAR(5) NOT NULL,
+                                                                  name VARCHAR(100) NOT NULL,
                                                                   CONSTRAINT fk_genre_translation_genre FOREIGN KEY (genre_id) REFERENCES content_service.genres(id),
-                                                                  CONSTRAINT uk_genre_translation UNIQUE (genre_id, language_code)
+                                                                  CONSTRAINT uk_genre_translation UNIQUE (genre_id, locale)
 );
 
 --changeset author:8 runOnChange:false
 --comment: Create careers table
 CREATE TABLE IF NOT EXISTS content_service.careers (
                                                        id BIGSERIAL PRIMARY KEY,
-                                                       code VARCHAR(255) NOT NULL UNIQUE
+                                                       career VARCHAR(255) NOT NULL UNIQUE
 );
 
 --changeset author:9 runOnChange:false
@@ -72,17 +72,19 @@ CREATE TABLE IF NOT EXISTS content_service.careers (
 CREATE TABLE IF NOT EXISTS content_service.career_translations (
                                                                    id BIGSERIAL PRIMARY KEY,
                                                                    career_id BIGINT NOT NULL,
-                                                                   language_code VARCHAR(5) NOT NULL,
+                                                                   locale VARCHAR(5) NOT NULL,
                                                                    name VARCHAR(255) NOT NULL,
                                                                    CONSTRAINT fk_career_translation_career FOREIGN KEY (career_id) REFERENCES content_service.careers(id),
-                                                                   CONSTRAINT uk_career_translation UNIQUE (career_id, language_code)
+                                                                   CONSTRAINT uk_career_translation UNIQUE (career_id, locale)
 );
 
 --changeset author:10 runOnChange:false
 --comment: Create audio_language table
 CREATE TABLE IF NOT EXISTS content_service.audio_language (
                                                               id BIGSERIAL PRIMARY KEY,
-                                                              iso_code VARCHAR(5) NOT NULL UNIQUE
+                                                              code VARCHAR(10) NOT NULL UNIQUE,
+                                                              native_name VARCHAR(50)
+
 );
 
 --changeset author:11 runOnChange:false
@@ -90,10 +92,10 @@ CREATE TABLE IF NOT EXISTS content_service.audio_language (
 CREATE TABLE IF NOT EXISTS content_service.language_translations (
                                                                      id BIGSERIAL PRIMARY KEY,
                                                                      language_id BIGINT NOT NULL,
-                                                                     language_code VARCHAR(5) NOT NULL,
+                                                                     locale VARCHAR(5) NOT NULL,
                                                                      name VARCHAR(255) NOT NULL,
                                                                      CONSTRAINT fk_language_translation_language FOREIGN KEY (language_id) REFERENCES content_service.audio_language(id),
-                                                                     CONSTRAINT uk_language_translation UNIQUE (language_id, language_code)
+                                                                     CONSTRAINT uk_language_translation UNIQUE (language_id, locale)
 );
 
 --changeset author:12 runOnChange:false
