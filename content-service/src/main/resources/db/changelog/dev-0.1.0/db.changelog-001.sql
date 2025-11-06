@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS content_service.country_translations (
                                                                     locale VARCHAR(5) NOT NULL,
                                                                     name VARCHAR(100) NOT NULL,
                                                                     CONSTRAINT fk_country_translation_country FOREIGN KEY (country_id)
-                                                                        REFERENCES content_service.countries(id) ON DELETE CASCADE,
+                                                                        REFERENCES content_service.countries(id) ,
                                                                     CONSTRAINT uk_country_translation UNIQUE (country_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_country_translations_locale ON content_service.country_translations(locale);
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS content_service.city_translations (
                                                                  locale VARCHAR(5) NOT NULL,
                                                                  name VARCHAR(100) NOT NULL,
                                                                  CONSTRAINT fk_city_translation_city FOREIGN KEY (city_id)
-                                                                     REFERENCES content_service.cities(id) ON DELETE CASCADE,
+                                                                     REFERENCES content_service.cities(id) ,
                                                                  CONSTRAINT uk_city_translation UNIQUE (city_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_city_translations_locale ON content_service.city_translations(locale);
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS content_service.genre_translations (
                                                                   locale VARCHAR(5) NOT NULL,
                                                                   name VARCHAR(50) NOT NULL,
                                                                   CONSTRAINT fk_genre_translation_genre FOREIGN KEY (genre_id)
-                                                                      REFERENCES content_service.genres(id) ON DELETE CASCADE,
+                                                                      REFERENCES content_service.genres(id) ,
                                                                   CONSTRAINT uk_genre_translation UNIQUE (genre_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_genre_translations_locale ON content_service.genre_translations(locale);
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS content_service.career_translations (
                                                                    locale VARCHAR(5) NOT NULL,
                                                                    name VARCHAR(255) NOT NULL,
                                                                    CONSTRAINT fk_career_translation_career FOREIGN KEY (career_id)
-                                                                       REFERENCES content_service.careers(id) ON DELETE CASCADE,
+                                                                       REFERENCES content_service.careers(id) ,
                                                                    CONSTRAINT uk_career_translation UNIQUE (career_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_career_translations_locale ON content_service.career_translations(locale);
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS content_service.language_translations (
                                                                      locale VARCHAR(5) NOT NULL,
                                                                      name VARCHAR(100) NOT NULL,
                                                                      CONSTRAINT fk_language_translation_language FOREIGN KEY (language_id)
-                                                                         REFERENCES content_service.languages(id) ON DELETE CASCADE,
+                                                                         REFERENCES content_service.languages(id) ,
                                                                      CONSTRAINT uk_language_translation UNIQUE (language_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_language_translations_locale ON content_service.language_translations(locale);
@@ -207,7 +207,7 @@ CREATE TABLE IF NOT EXISTS content_service.content_localizations (
                                                                      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                                      updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                                      CONSTRAINT fk_movie_localization_movie FOREIGN KEY (content_id)
-                                                                         REFERENCES content_service.content(id) ON DELETE CASCADE,
+                                                                         REFERENCES content_service.content(id) ,
                                                                      CONSTRAINT uk_movie_localization UNIQUE (content_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_movie_localizations_locale ON content_service.content_localizations(locale);
@@ -225,7 +225,7 @@ CREATE TABLE IF NOT EXISTS content_service.movie_details (
                                                              duration_minutes INTEGER NOT NULL, -- длительность фильма
                                                              digital_release_date DATE, -- дата цифрового релиза
                                                              CONSTRAINT fk_movie_details_content FOREIGN KEY (content_id)
-                                                                 REFERENCES content_service.content(id) ON DELETE CASCADE
+                                                                 REFERENCES content_service.content(id) 
 );
 
 -- ============================================
@@ -241,7 +241,7 @@ CREATE TABLE IF NOT EXISTS content_service.series_details (
                                                               average_episode_duration INTEGER, -- средняя длительность эпизода в минутах
                                                               end_date DATE,
                                                               CONSTRAINT fk_series_details_content FOREIGN KEY (content_id)
-                                                                  REFERENCES content_service.content(id) ON DELETE CASCADE);
+                                                                  REFERENCES content_service.content(id) );
 
 
 --changeset author:new6 runOnChange:false
@@ -256,7 +256,7 @@ CREATE TABLE IF NOT EXISTS content_service.seasons (
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                        CONSTRAINT fk_season_content FOREIGN KEY (content_id)
-                                                           REFERENCES content_service.content(id) ON DELETE CASCADE,
+                                                           REFERENCES content_service.content(id) ,
                                                        CONSTRAINT uk_season UNIQUE (content_id, season_number)
 );
 CREATE INDEX IF NOT EXISTS idx_seasons_content ON content_service.seasons(content_id);
@@ -271,7 +271,7 @@ CREATE TABLE IF NOT EXISTS content_service.season_localizations (
                                                                     title VARCHAR(255),
                                                                     description TEXT,
                                                                     CONSTRAINT fk_season_localization_season FOREIGN KEY (season_id)
-                                                                        REFERENCES content_service.seasons(id) ON DELETE CASCADE,
+                                                                        REFERENCES content_service.seasons(id) ,
                                                                     CONSTRAINT uk_season_localization UNIQUE (season_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_season_localizations_season ON content_service.season_localizations(season_id);
@@ -291,7 +291,7 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                         updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                         CONSTRAINT fk_episode_season FOREIGN KEY (season_id)
-                                                            REFERENCES content_service.seasons(id) ON DELETE CASCADE,
+                                                            REFERENCES content_service.seasons(id) ,
                                                         CONSTRAINT uk_episode UNIQUE (season_id, episode_number)
 );
 CREATE INDEX IF NOT EXISTS idx_episodes_season ON content_service.episodes(season_id);
@@ -308,7 +308,7 @@ CREATE TABLE IF NOT EXISTS content_service.episode_localizations (
                                                                      description TEXT,
                                                                      plot_summary TEXT,
                                                                      CONSTRAINT fk_episode_localization_episode FOREIGN KEY (episode_id)
-                                                                         REFERENCES content_service.episodes(id) ON DELETE CASCADE,
+                                                                         REFERENCES content_service.episodes(id) ,
                                                                      CONSTRAINT uk_episode_localization UNIQUE (episode_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_episode_localizations_episode ON content_service.episode_localizations(episode_id);
@@ -351,7 +351,7 @@ CREATE TABLE IF NOT EXISTS content_service.person_translations (
                                                                    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                                    updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                                    CONSTRAINT fk_person_translation FOREIGN KEY (person_id)
-                                                                       REFERENCES content_service.persons(id) ON DELETE CASCADE,
+                                                                       REFERENCES content_service.persons(id) ,
                                                                    UNIQUE (person_id, locale)
 );
 CREATE INDEX IF NOT EXISTS idx_person_translations_locale ON content_service.person_translations(locale);
@@ -384,43 +384,43 @@ CREATE INDEX IF NOT EXISTS idx_audio_tracks_language_id ON content_service.audio
 
 --changeset author:17 runOnChange:false
 --comment: Create movie_persons table
-CREATE TABLE IF NOT EXISTS content_service.movie_persons (
+CREATE TABLE IF NOT EXISTS content_service.content_persons (
                                                              id BIGSERIAL PRIMARY KEY,
-                                                             movie_id BIGINT NOT NULL,
+                                                             content_id BIGINT NOT NULL,
                                                              person_id BIGINT NOT NULL,
                                                              career_id BIGINT NOT NULL,
                                                              character_name VARCHAR(255), -- имя персонажа (для актеров)
-                                                             display_order_in_movie INTEGER DEFAULT 0, -- порядок на странице фильма
+                                                             display_order_in_content INTEGER DEFAULT 0, -- порядок на странице фильма
                                                              display_order_in_career INTEGER DEFAULT 0, -- порядок на странице актера
                                                              created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                              updated_at TIMESTAMPTZ DEFAULT NOW(),
-                                                             CONSTRAINT fk_movie_person_movie FOREIGN KEY (movie_id)
-                                                                 REFERENCES content_service.content(id) ON DELETE CASCADE,
-                                                             CONSTRAINT fk_movie_person_person FOREIGN KEY (person_id)
-                                                                 REFERENCES content_service.persons(id) ON DELETE CASCADE,
-                                                             CONSTRAINT fk_movie_person_career FOREIGN KEY (career_id)
+                                                             CONSTRAINT fk_content_person_content FOREIGN KEY (content_id)
+                                                                 REFERENCES content_service.content(id) ,
+                                                             CONSTRAINT fk_content_person_person FOREIGN KEY (person_id)
+                                                                 REFERENCES content_service.persons(id) ,
+                                                             CONSTRAINT fk_content_person_career FOREIGN KEY (career_id)
                                                                  REFERENCES content_service.careers(id),
-                                                             CONSTRAINT uk_movie_person UNIQUE (movie_id, person_id, career_id)
+                                                             CONSTRAINT uk_content_person UNIQUE (content_id, person_id, career_id)
 );
-CREATE INDEX IF NOT EXISTS idx_movie_persons_movie_id ON content_service.movie_persons(movie_id);
-CREATE INDEX IF NOT EXISTS idx_movie_persons_person_id ON content_service.movie_persons(person_id);
-CREATE INDEX IF NOT EXISTS idx_movie_persons_career_id ON content_service.movie_persons(career_id);
-CREATE INDEX IF NOT EXISTS idx_movie_persons_movie_order ON content_service.movie_persons(movie_id, display_order_in_movie);
-CREATE INDEX IF NOT EXISTS idx_movie_persons_career_order ON content_service.movie_persons(person_id, display_order_in_career);
+CREATE INDEX IF NOT EXISTS idx_content_persons_content_id ON content_service.content_persons(content_id);
+CREATE INDEX IF NOT EXISTS idx_content_persons_person_id ON content_service.content_persons(person_id);
+CREATE INDEX IF NOT EXISTS idx_content_persons_career_id ON content_service.content_persons(career_id);
+CREATE INDEX IF NOT EXISTS idx_content_persons_content_order ON content_service.content_persons(content_id, display_order_in_content);
+CREATE INDEX IF NOT EXISTS idx_content_persons_career_order ON content_service.content_persons(person_id, display_order_in_career);
 
 --changeset author:18 runOnChange:false
 --comment: Create movie_genres table
-CREATE TABLE IF NOT EXISTS content_service.movie_genres (
-                                                            movie_id BIGINT NOT NULL,
+CREATE TABLE IF NOT EXISTS content_service.content_genres (
+                                                            content_id BIGINT NOT NULL,
                                                             genre_id BIGINT NOT NULL,
                                                             display_order INTEGER DEFAULT 0,
-                                                            PRIMARY KEY (movie_id, genre_id),
-                                                            CONSTRAINT fk_movie_genre_movie FOREIGN KEY (movie_id)
-                                                                REFERENCES content_service.content(id) ON DELETE CASCADE,
-                                                            CONSTRAINT fk_movie_genre_genre FOREIGN KEY (genre_id)
-                                                                REFERENCES content_service.genres(id) ON DELETE CASCADE
+                                                            PRIMARY KEY (content_id, genre_id),
+                                                            CONSTRAINT fk_content_genre_content FOREIGN KEY (content_id)
+                                                                REFERENCES content_service.content(id) ,
+                                                            CONSTRAINT fk_content_genre_genre FOREIGN KEY (genre_id)
+                                                                REFERENCES content_service.genres(id) 
 );
-CREATE INDEX IF NOT EXISTS idx_movie_genres_genre_id ON content_service.movie_genres(genre_id);
+CREATE INDEX IF NOT EXISTS idx_movie_genres_genre_id ON content_service.content_genres(genre_id);
 
 --changeset author:19 runOnChange:false
 --comment: Create person_genres table
@@ -430,9 +430,9 @@ CREATE TABLE IF NOT EXISTS content_service.person_genres (
                                                              display_order INTEGER DEFAULT 0,
                                                              PRIMARY KEY (person_id, genre_id),
                                                              CONSTRAINT fk_person_genre_person FOREIGN KEY (person_id)
-                                                                 REFERENCES content_service.persons(id) ON DELETE CASCADE,
+                                                                 REFERENCES content_service.persons(id) ,
                                                              CONSTRAINT fk_person_genre_genre FOREIGN KEY (genre_id)
-                                                                 REFERENCES content_service.genres(id) ON DELETE CASCADE
+                                                                 REFERENCES content_service.genres(id) 
 );
 CREATE INDEX IF NOT EXISTS idx_person_genres_genre_id ON content_service.person_genres(genre_id);
 
@@ -444,26 +444,26 @@ CREATE TABLE IF NOT EXISTS content_service.person_careers (
                                                               display_order INTEGER DEFAULT 0,
                                                               PRIMARY KEY (person_id, career_id),
                                                               CONSTRAINT fk_person_career_person FOREIGN KEY (person_id)
-                                                                  REFERENCES content_service.persons(id) ON DELETE CASCADE,
+                                                                  REFERENCES content_service.persons(id) ,
                                                               CONSTRAINT fk_person_career_career FOREIGN KEY (career_id)
-                                                                  REFERENCES content_service.careers(id) ON DELETE CASCADE
+                                                                  REFERENCES content_service.careers(id) 
 );
 CREATE INDEX IF NOT EXISTS idx_person_careers_career_id ON content_service.person_careers(career_id);
 
 
 --changeset author:23b runOnChange:false
 --comment: Create movie_audio_tracks join table
-CREATE TABLE IF NOT EXISTS content_service.movie_audio_tracks (
-                                                                  movie_id BIGINT NOT NULL,
+CREATE TABLE IF NOT EXISTS content_service.content_audio_tracks (
+                                                                  content_id BIGINT NOT NULL,
                                                                   audio_track_id BIGINT NOT NULL,
-                                                                  PRIMARY KEY (movie_id, audio_track_id),
-                                                                  CONSTRAINT fk_movie_audio_track_movie FOREIGN KEY (movie_id)
-                                                                      REFERENCES content_service.content(id) ON DELETE CASCADE,
-                                                                  CONSTRAINT fk_movie_audio_track_audio FOREIGN KEY (audio_track_id)
-                                                                      REFERENCES content_service.audio_tracks(id) ON DELETE CASCADE
+                                                                  PRIMARY KEY (content_id, audio_track_id),
+                                                                  CONSTRAINT fk_content_audio_track_content FOREIGN KEY (content_id)
+                                                                      REFERENCES content_service.content(id) ,
+                                                                  CONSTRAINT fk_content_audio_track_audio FOREIGN KEY (audio_track_id)
+                                                                      REFERENCES content_service.audio_tracks(id) 
 );
-CREATE INDEX IF NOT EXISTS idx_movie_audio_track_movie_id ON content_service.movie_audio_tracks(movie_id);
-CREATE INDEX IF NOT EXISTS idx_movie_audio_track_audio_id ON content_service.movie_audio_tracks(audio_track_id);
+CREATE INDEX IF NOT EXISTS idx_content_audio_track_content_id ON content_service.content_audio_tracks(content_id);
+CREATE INDEX IF NOT EXISTS idx_content_audio_track_audio_id ON content_service.content_audio_tracks(audio_track_id);
 
 
 -- ============================================
@@ -471,31 +471,31 @@ CREATE INDEX IF NOT EXISTS idx_movie_audio_track_audio_id ON content_service.mov
 -- ============================================
 
 --changeset author:21 runOnChange:false
---comment: Create movie_video_files table
-CREATE TABLE IF NOT EXISTS content_service.movie_video_files (
+--comment: Create content_video_files table
+CREATE TABLE IF NOT EXISTS content_service.content_video_files (
                                                                  id BIGSERIAL PRIMARY KEY,
-                                                                 movie_id BIGINT NOT NULL,
+                                                                 content_id BIGINT NOT NULL,
                                                                  manifest_url TEXT NOT NULL, -- URL манифеста (HLS/DASH)
                                                                  duration_seconds INTEGER,
                                                                  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                                  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-                                                                 CONSTRAINT fk_movie_video_files_movie FOREIGN KEY (movie_id)
-                                                                     REFERENCES content_service.content(id) ON DELETE CASCADE
+                                                                 CONSTRAINT fk_content_video_files_content FOREIGN KEY (content_id)
+                                                                     REFERENCES content_service.content(id) 
 );
-CREATE INDEX IF NOT EXISTS idx_movie_video_files_movie_id ON content_service.movie_video_files(movie_id);
+CREATE INDEX IF NOT EXISTS idx_content_video_files_content_id ON content_service.content_video_files(content_id);
 
 --changeset author:22 runOnChange:false
---comment: Create movie_video_qualities table (связь видео-файлов с качеством)
-CREATE TABLE IF NOT EXISTS content_service.movie_video_qualities (
+--comment: Create content_video_qualities table (связь видео-файлов с качеством)
+CREATE TABLE IF NOT EXISTS content_service.content_video_qualities (
                                                                      video_id BIGINT NOT NULL,
                                                                      quality_id BIGINT NOT NULL,
                                                                      PRIMARY KEY (video_id, quality_id),
                                                                      CONSTRAINT fk_video_quality_video FOREIGN KEY (video_id)
-                                                                         REFERENCES content_service.movie_video_files(id) ON DELETE CASCADE,
+                                                                         REFERENCES content_service.content_video_files(id) ,
                                                                      CONSTRAINT fk_video_quality_quality FOREIGN KEY (quality_id)
-                                                                         REFERENCES content_service.video_qualities(id) ON DELETE CASCADE
+                                                                         REFERENCES content_service.video_qualities(id) 
 );
-CREATE INDEX IF NOT EXISTS idx_movie_video_qualities_quality_id ON content_service.movie_video_qualities(quality_id);
+CREATE INDEX IF NOT EXISTS idx_content_video_qualities_quality_id ON content_service.content_video_qualities(quality_id);
 
 
 -- ============================================
@@ -503,10 +503,10 @@ CREATE INDEX IF NOT EXISTS idx_movie_video_qualities_quality_id ON content_servi
 -- ============================================
 
 --changeset author:24 runOnChange:false
---comment: Create movie_subtitles table
-CREATE TABLE IF NOT EXISTS content_service.movie_subtitles (
+--comment: Create content_subtitles table
+CREATE TABLE IF NOT EXISTS content_service.video_file_subtitles (
                                                                id            BIGSERIAL PRIMARY KEY,
-                                                               movie_id      BIGINT       NOT NULL,
+                                                               video_file_id      BIGINT       NOT NULL,
                                                                language_id   BIGINT       NOT NULL, -- язык субтитров
                                                                author_name   VARCHAR(255) NOT NULL, -- "Netflix", "OpenSubtitles"
                                                                subtitle_type VARCHAR(50), -- 'regular', 'sdh', 'forced'
@@ -516,12 +516,12 @@ CREATE TABLE IF NOT EXISTS content_service.movie_subtitles (
                                                                is_default    BOOLEAN DEFAULT FALSE,
                                                                created_at    TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
                                                                updated_at    TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
-                                                               CONSTRAINT fk_subtitle_movie FOREIGN KEY (movie_id)
-                                                                   REFERENCES content_service.content(id) ON DELETE CASCADE,
+                                                               CONSTRAINT fk_subtitle_video_file FOREIGN KEY (video_file_id)
+                                                                   REFERENCES content_service.content_video_files(id),
                                                                CONSTRAINT fk_subtitle_language FOREIGN KEY (language_id)
                                                                    REFERENCES content_service.languages(id)
 );
-CREATE INDEX IF NOT EXISTS idx_subtitles_movie_id ON content_service.movie_subtitles(movie_id);
-CREATE INDEX IF NOT EXISTS idx_subtitles_language_id ON content_service.movie_subtitles(language_id);
-CREATE INDEX IF NOT EXISTS idx_subtitles_movie_lang ON content_service.movie_subtitles(movie_id, language_id);
-CREATE UNIQUE INDEX IF NOT EXISTS uk_subtitle ON content_service.movie_subtitles(movie_id, language_id, author_name);
+CREATE INDEX IF NOT EXISTS idx_subtitles_video_file_id ON content_service.video_file_subtitles(video_file_id);
+CREATE INDEX IF NOT EXISTS idx_subtitles_language_id ON content_service.video_file_subtitles(language_id);
+CREATE INDEX IF NOT EXISTS idx_subtitles_video_file_lang ON content_service.video_file_subtitles(video_file_id, language_id);
+CREATE UNIQUE INDEX IF NOT EXISTS uk_subtitle ON content_service.video_file_subtitles(video_file_id, language_id, author_name);
