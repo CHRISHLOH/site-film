@@ -170,6 +170,7 @@ CREATE TABLE IF NOT EXISTS content_service.content_status_localization(
 CREATE TABLE IF NOT EXISTS content_service.content (
                                                       id BIGSERIAL PRIMARY KEY,
                                                       original_title VARCHAR(255) NOT NULL,
+                                                      content_type VARCHAR(50),
                                                       poster_url VARCHAR(255),
                                                       release_date DATE,
                                                       status_id SMALLINT,
@@ -222,10 +223,13 @@ CREATE INDEX IF NOT EXISTS idx_movie_localizations_title ON content_service.cont
 --comment: Create movie_details table
 CREATE TABLE IF NOT EXISTS content_service.movie_details (
                                                              content_id BIGINT PRIMARY KEY,
+                                                             video_file_id BIGINT,
                                                              duration_minutes INTEGER NOT NULL, -- длительность фильма
                                                              digital_release_date DATE, -- дата цифрового релиза
                                                              CONSTRAINT fk_movie_details_content FOREIGN KEY (content_id)
-                                                                 REFERENCES content_service.content(id) 
+                                                                 REFERENCES content_service.content(id),
+                                                             CONSTRAINT fk_movie_details_video_file FOREIGN KEY (video_file_id)
+                                                                 REFERENCES  content_service.video_files
 );
 
 -- ============================================
@@ -283,6 +287,7 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         id BIGSERIAL PRIMARY KEY,
                                                         season_id BIGINT NOT NULL,
                                                         episode_number INTEGER NOT NULL,
+                                                        video_file_id BIGINT,
                                                         poster_url TEXT,
                                                         duration_minutes INTEGER,
                                                         air_date DATE,
@@ -292,6 +297,8 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                         CONSTRAINT fk_episode_season FOREIGN KEY (season_id)
                                                             REFERENCES content_service.seasons(id) ,
+                                                        CONSTRAINT fk_episode_video_file FOREIGN KEY (video_file_id)
+                                                            REFERENCES content_service.video_files(id),
                                                         CONSTRAINT uk_episode UNIQUE (season_id, episode_number)
 );
 CREATE INDEX IF NOT EXISTS idx_episodes_season ON content_service.episodes(season_id);
@@ -323,7 +330,7 @@ CREATE TABLE IF NOT EXISTS content_service.persons (
                                                        original_lastname VARCHAR(100),
                                                        birth_date DATE,
                                                        death_date DATE,
-                                                       gender VARCHAR(10), -- 'male', 'female', 'other'
+                                                       gender VARCHAR(10), -- 'male', 'female'
                                                        country_id BIGINT,
                                                        city_id BIGINT,
                                                        photo_url TEXT,
@@ -471,18 +478,25 @@ CREATE INDEX IF NOT EXISTS idx_content_audio_track_audio_id ON content_service.c
 -- ============================================
 
 --changeset author:21 runOnChange:false
---comment: Create content_video_files table
-CREATE TABLE IF NOT EXISTS content_service.content_video_files (
+--comment: Create video_files table
+CREATE TABLE IF NOT EXISTS content_service.video_files (
                                                                  id BIGSERIAL PRIMARY KEY,
-                                                                 content_id BIGINT NOT NULL,
                                                                  manifest_url TEXT NOT NULL, -- URL манифеста (HLS/DASH)
                                                                  duration_seconds INTEGER,
                                                                  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-                                                                 updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-                                                                 CONSTRAINT fk_content_video_files_content FOREIGN KEY (content_id)
-                                                                     REFERENCES content_service.content(id) 
+                                                                 updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
-CREATE INDEX IF NOT EXISTS idx_content_video_files_content_id ON content_service.content_video_files(content_id);
+
+CREATE TABLE content_service.video_file_audio_tracks (
+                                                         video_file_id BIGINT NOT NULL,
+                                                         audio_track_id BIGINT NOT NULL,
+                                                         PRIMARY KEY (video_file_id, audio_track_id),
+                                                         CONSTRAINT fk_vfat_video FOREIGN KEY (video_file_id)
+                                                             REFERENCES content_service.video_files(id) ON DELETE CASCADE,
+                                                         CONSTRAINT fk_vfat_audio FOREIGN KEY (audio_track_id)
+                                                             REFERENCES content_service.audio_tracks(id) ON DELETE CASCADE
+);
+
 
 --changeset author:22 runOnChange:false
 --comment: Create content_video_qualities table (связь видео-файлов с качеством)
@@ -491,7 +505,7 @@ CREATE TABLE IF NOT EXISTS content_service.content_video_qualities (
                                                                      quality_id BIGINT NOT NULL,
                                                                      PRIMARY KEY (video_id, quality_id),
                                                                      CONSTRAINT fk_video_quality_video FOREIGN KEY (video_id)
-                                                                         REFERENCES content_service.content_video_files(id) ,
+                                                                         REFERENCES content_service.video_files(id) ,
                                                                      CONSTRAINT fk_video_quality_quality FOREIGN KEY (quality_id)
                                                                          REFERENCES content_service.video_qualities(id) 
 );
@@ -517,7 +531,7 @@ CREATE TABLE IF NOT EXISTS content_service.video_file_subtitles (
                                                                created_at    TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
                                                                updated_at    TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
                                                                CONSTRAINT fk_subtitle_video_file FOREIGN KEY (video_file_id)
-                                                                   REFERENCES content_service.content_video_files(id),
+                                                                   REFERENCES content_service.video_files(id),
                                                                CONSTRAINT fk_subtitle_language FOREIGN KEY (language_id)
                                                                    REFERENCES content_service.languages(id)
 );
