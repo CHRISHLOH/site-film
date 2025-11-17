@@ -215,6 +215,16 @@ CREATE INDEX IF NOT EXISTS idx_movie_localizations_locale ON content_service.con
 CREATE INDEX IF NOT EXISTS idx_movie_localizations_movie_id ON content_service.content_localizations(content_id);
 CREATE INDEX IF NOT EXISTS idx_movie_localizations_title ON content_service.content_localizations(title);
 
+
+--changeset author:21 runOnChange:false
+--comment: Create video_files table
+CREATE TABLE IF NOT EXISTS content_service.video_files (
+                                                           id BIGSERIAL PRIMARY KEY,
+                                                           manifest_url TEXT NOT NULL, -- URL манифеста (HLS/DASH)
+                                                           duration_seconds INTEGER,
+                                                           created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                                                           updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
 -- ============================================
 -- СПЕЦИФИЧНЫЕ ДАННЫЕ ДЛЯ ФИЛЬМОВ
 -- ============================================
@@ -380,8 +390,7 @@ CREATE TABLE IF NOT EXISTS content_service.audio_tracks (
                                                                   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                                   updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                                   CONSTRAINT fk_audio_track_language FOREIGN KEY (language_id)
-                                                                      REFERENCES content_service.languages(id),
-                                                                  CONSTRAINT uk_audio_tracks_display_orders UNIQUE (display_order)
+                                                                      REFERENCES content_service.languages(id)
 );
 CREATE INDEX IF NOT EXISTS idx_audio_tracks_language_id ON content_service.audio_tracks(language_id);
 
@@ -458,21 +467,6 @@ CREATE TABLE IF NOT EXISTS content_service.person_careers (
 CREATE INDEX IF NOT EXISTS idx_person_careers_career_id ON content_service.person_careers(career_id);
 
 
---changeset author:23b runOnChange:false
---comment: Create movie_audio_tracks join table
-CREATE TABLE IF NOT EXISTS content_service.content_audio_tracks (
-                                                                  content_id BIGINT NOT NULL,
-                                                                  audio_track_id BIGINT NOT NULL,
-                                                                  PRIMARY KEY (content_id, audio_track_id),
-                                                                  CONSTRAINT fk_content_audio_track_content FOREIGN KEY (content_id)
-                                                                      REFERENCES content_service.content(id) ,
-                                                                  CONSTRAINT fk_content_audio_track_audio FOREIGN KEY (audio_track_id)
-                                                                      REFERENCES content_service.audio_tracks(id) 
-);
-CREATE INDEX IF NOT EXISTS idx_content_audio_track_content_id ON content_service.content_audio_tracks(content_id);
-CREATE INDEX IF NOT EXISTS idx_content_audio_track_audio_id ON content_service.content_audio_tracks(audio_track_id);
-
-
 -- ============================================
 -- ВИДЕО-ФАЙЛЫ И КАЧЕСТВО
 -- ============================================
@@ -539,3 +533,162 @@ CREATE INDEX IF NOT EXISTS idx_subtitles_video_file_id ON content_service.video_
 CREATE INDEX IF NOT EXISTS idx_subtitles_language_id ON content_service.video_file_subtitles(language_id);
 CREATE INDEX IF NOT EXISTS idx_subtitles_video_file_lang ON content_service.video_file_subtitles(video_file_id, language_id);
 CREATE UNIQUE INDEX IF NOT EXISTS uk_subtitle ON content_service.video_file_subtitles(video_file_id, language_id, author_name);
+
+
+-- Основная таблица коллекций
+CREATE TABLE content_service.collections (
+                                             id BIGSERIAL PRIMARY KEY,
+                                             code VARCHAR(100) NOT NULL UNIQUE, -- 'top-cult-movies', 'top-100-anime'
+                                             poster_url TEXT, -- обложка коллекции
+                                             is_active BOOLEAN DEFAULT true,
+                                             is_manual BOOLEAN DEFAULT true, -- вручную или автоматически (например "новинки")
+                                             display_order INTEGER DEFAULT 0,
+                                             created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                                             updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Переводы для коллекций
+CREATE TABLE content_service.collection_translations (
+                                                         id BIGSERIAL PRIMARY KEY,
+                                                         collection_id BIGINT NOT NULL,
+                                                         locale VARCHAR(5) NOT NULL,
+                                                         name VARCHAR(255) NOT NULL, -- "Топ культовых фильмов"
+                                                         description TEXT, -- "Фильмы, которые изменили кинематограф и стали культовыми..."
+                                                         CONSTRAINT fk_collection_translation FOREIGN KEY (collection_id)
+                                                             REFERENCES content_service.collections(id) ON DELETE CASCADE,
+                                                         UNIQUE (collection_id, locale)
+);
+CREATE INDEX idx_collection_translations_locale ON content_service.collection_translations(locale);
+
+-- Контент в коллекции
+CREATE TABLE content_service.collection_items (
+                                                  collection_id BIGINT NOT NULL,
+                                                  content_id BIGINT NOT NULL,
+                                                  display_order INTEGER DEFAULT 0, -- порядок в коллекции (1, 2, 3...)
+                                                  added_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                                                  added_by VARCHAR(100), -- кто добавил (admin, system)
+                                                  PRIMARY KEY (collection_id, content_id),
+                                                  CONSTRAINT fk_collection_item_collection FOREIGN KEY (collection_id)
+                                                      REFERENCES content_service.collections(id) ON DELETE CASCADE,
+                                                  CONSTRAINT fk_collection_item_content FOREIGN KEY (content_id)
+                                                      REFERENCES content_service.content(id) ON DELETE CASCADE
+);
+CREATE INDEX idx_collection_items_order ON content_service.collection_items(collection_id, display_order);
+
+
+-- Таблица для кинематографических вселенных/франшиз
+CREATE TABLE content_service.franchises (
+                                            id BIGSERIAL PRIMARY KEY,
+                                            franchise_name VARCHAR(100) NOT NULL UNIQUE, -- 'mcu', 'dceu', 'star-wars'
+                                            poster_url TEXT,
+                                            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                                            updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Переводы для франшиз
+CREATE TABLE content_service.franchise_translations (
+                                                        id BIGSERIAL PRIMARY KEY,
+                                                        franchise_id BIGINT NOT NULL,
+                                                        locale VARCHAR(5) NOT NULL,
+                                                        franchise_name_translation VARCHAR(255) NOT NULL, -- "Кинематографическая вселенная Marvel"
+                                                        description TEXT, -- История вселенной, общая информация
+                                                        CONSTRAINT fk_franchise_translation FOREIGN KEY (franchise_id)
+                                                            REFERENCES content_service.franchises(id) ON DELETE CASCADE,
+                                                        UNIQUE (franchise_id, locale)
+);
+CREATE INDEX idx_franchise_translations_locale ON content_service.franchise_translations(locale);
+
+-- Контент во франшизе (хронологический порядок)
+CREATE TABLE content_service.franchise_content (
+                                                   franchise_id BIGINT NOT NULL,
+                                                   content_id BIGINT NOT NULL,
+                                                   chronological_order INTEGER NOT NULL, -- хронологический порядок
+                                                   PRIMARY KEY (franchise_id, content_id),
+                                                   CONSTRAINT fk_franchise_content_franchise FOREIGN KEY (franchise_id)
+                                                       REFERENCES content_service.franchises(id),
+                                                   CONSTRAINT fk_franchise_content_content FOREIGN KEY (content_id)
+                                                       REFERENCES content_service.content(id)
+);
+CREATE INDEX idx_franchise_content_order ON content_service.franchise_content(franchise_id, chronological_order);
+
+
+-- Основная таблица наград
+CREATE TABLE content_service.awards (
+                                        id BIGSERIAL PRIMARY KEY,
+                                        award_name VARCHAR(100) NOT NULL UNIQUE, -- 'oscar', 'golden_globe', 'cannes_palme_dor'
+                                        logo_url TEXT,
+                                        country_id BIGINT, -- страна проведения
+                                        founded_year INTEGER, -- год основания
+                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                                        CONSTRAINT fk_award_country FOREIGN KEY (country_id)
+                                            REFERENCES content_service.countries(id) ON DELETE SET NULL
+);
+
+-- Переводы для наград
+CREATE TABLE content_service.award_translations (
+                                                    id BIGSERIAL PRIMARY KEY,
+                                                    award_id BIGINT NOT NULL,
+                                                    locale VARCHAR(5) NOT NULL,
+                                                    name VARCHAR(255) NOT NULL, -- "Оскар", "Золотой глобус"
+                                                    description TEXT, -- История награды, значимость
+                                                    CONSTRAINT fk_award_translation FOREIGN KEY (award_id)
+                                                        REFERENCES content_service.awards(id) ON DELETE CASCADE,
+                                                    UNIQUE (award_id, locale)
+);
+
+-- Категории наград
+CREATE TABLE content_service.award_categories (
+                                                  id BIGSERIAL PRIMARY KEY,
+                                                  award_id BIGINT NOT NULL,
+                                                  category_name VARCHAR(100) NOT NULL, -- 'best_picture', 'best_director'
+                                                  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                                                  CONSTRAINT fk_award_category_award FOREIGN KEY (award_id)
+                                                      REFERENCES content_service.awards(id) ON DELETE CASCADE,
+                                                  UNIQUE (award_id, category_name)
+);
+
+-- Переводы категорий
+CREATE TABLE content_service.award_category_translations (
+                                                             id BIGSERIAL PRIMARY KEY,
+                                                             category_id BIGINT NOT NULL,
+                                                             locale VARCHAR(5) NOT NULL,
+                                                             name VARCHAR(255) NOT NULL, -- "Лучший фильм", "Лучший режиссёр"
+                                                             description TEXT,
+                                                             CONSTRAINT fk_award_category_translation FOREIGN KEY (category_id)
+                                                                 REFERENCES content_service.award_categories(id) ON DELETE CASCADE,
+                                                             UNIQUE (category_id, locale)
+);
+
+-- Номинации (общая информация)
+CREATE TABLE content_service.award_nominations (
+                                                   id BIGSERIAL PRIMARY KEY,
+                                                   content_id BIGINT NOT NULL, -- фильм ВСЕГДА есть
+                                                   category_id BIGINT NOT NULL,
+                                                   year INTEGER NOT NULL,
+                                                   edition_number INTEGER,
+                                                   is_winner BOOLEAN DEFAULT false,
+                                                   ceremony_date DATE,
+                                                   notes TEXT,
+                                                   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                                                   CONSTRAINT fk_award_nomination_content FOREIGN KEY (content_id)
+                                                       REFERENCES content_service.content(id) ON DELETE CASCADE,
+                                                   CONSTRAINT fk_award_nomination_category FOREIGN KEY (category_id)
+                                                       REFERENCES content_service.award_categories(id) ON DELETE CASCADE
+);
+CREATE INDEX idx_award_nominations_content ON content_service.award_nominations(content_id);
+CREATE INDEX idx_award_nominations_category ON content_service.award_nominations(category_id);
+CREATE INDEX idx_award_nominations_year ON content_service.award_nominations(year DESC);
+CREATE INDEX idx_award_nominations_winner ON content_service.award_nominations(is_winner) WHERE is_winner = true;
+
+-- Персоны, связанные с номинацией (если есть)
+CREATE TABLE content_service.award_nomination_persons (
+                                                          nomination_id BIGINT NOT NULL,
+                                                          person_id BIGINT NOT NULL,
+                                                          display_order INTEGER DEFAULT 0, -- порядок отображения
+                                                          PRIMARY KEY (nomination_id, person_id),
+                                                          CONSTRAINT fk_award_nomination_person_nomination FOREIGN KEY (nomination_id)
+                                                              REFERENCES content_service.award_nominations(id) ON DELETE CASCADE,
+                                                          CONSTRAINT fk_award_nomination_person_person FOREIGN KEY (person_id)
+                                                              REFERENCES content_service.persons(id) ON DELETE CASCADE
+);
+CREATE INDEX idx_award_nomination_persons_person ON content_service.award_nomination_persons(person_id);
