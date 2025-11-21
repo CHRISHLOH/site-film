@@ -161,6 +161,7 @@ CREATE TABLE IF NOT EXISTS content_service.content_status_localization(
                                                         CONSTRAINT uk_content_status_localization UNIQUE (status_id, locale)
 );
 
+
 -- ============================================
 -- ОСНОВНЫЕ СУЩНОСТИ (CORE ENTITIES)
 -- ============================================
@@ -298,7 +299,6 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         season_id BIGINT NOT NULL,
                                                         episode_number INTEGER NOT NULL,
                                                         video_file_id BIGINT,
-                                                        poster_url TEXT,
                                                         duration_minutes INTEGER,
                                                         air_date DATE,
                                                         rating DECIMAL(3,2) CHECK (rating >= 0 AND rating <= 10),
@@ -418,7 +418,6 @@ CREATE TABLE IF NOT EXISTS content_service.content_persons (
                                                                  REFERENCES content_service.careers(id),
                                                              CONSTRAINT uk_content_person UNIQUE (content_id, person_id, career_id)
 );
-CREATE INDEX IF NOT EXISTS idx_content_persons_content_id ON content_service.content_persons(content_id);
 CREATE INDEX IF NOT EXISTS idx_content_persons_person_id ON content_service.content_persons(person_id);
 CREATE INDEX IF NOT EXISTS idx_content_persons_career_id ON content_service.content_persons(career_id);
 CREATE INDEX IF NOT EXISTS idx_content_persons_content_order ON content_service.content_persons(content_id, display_order_in_content);
@@ -470,16 +469,6 @@ CREATE INDEX IF NOT EXISTS idx_person_careers_career_id ON content_service.perso
 -- ============================================
 -- ВИДЕО-ФАЙЛЫ И КАЧЕСТВО
 -- ============================================
-
---changeset author:21 runOnChange:false
---comment: Create video_files table
-CREATE TABLE IF NOT EXISTS content_service.video_files (
-                                                                 id BIGSERIAL PRIMARY KEY,
-                                                                 manifest_url TEXT NOT NULL, -- URL манифеста (HLS/DASH)
-                                                                 duration_seconds INTEGER,
-                                                                 created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-                                                                 updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
 
 CREATE TABLE content_service.video_file_audio_tracks (
                                                          video_file_id BIGINT NOT NULL,
