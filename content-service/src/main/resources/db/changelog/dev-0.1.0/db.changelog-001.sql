@@ -46,13 +46,6 @@ CREATE TABLE IF NOT EXISTS content_service.languages (
                                                          native_name VARCHAR(100) NOT NULL
 );
 
-
-CREATE TABLE IF NOT EXISTS content_service.content_status (
-                                                        id SMALLSERIAL PRIMARY KEY,
-                                                        code VARCHAR(30) NOT NULL UNIQUE
-
-);
-
 CREATE TABLE content_service.localized_fields (
                                                   id BIGSERIAL PRIMARY KEY,
                                                   entity_type VARCHAR(50) NOT NULL,
@@ -88,7 +81,7 @@ CREATE TABLE IF NOT EXISTS content_service.content (
                                                       content_type VARCHAR(50),
                                                       poster_url VARCHAR(255),
                                                       release_date DATE,
-                                                      status_id SMALLINT,
+                                                      status VARCHAR(50),
                                                       average_rating DECIMAL(3,2) CHECK (average_rating >= 0 AND average_rating <= 10), -- средний рейтинг
                                                       average_imdb_rating DECIMAL(3,2) CHECK (average_imdb_rating >= 0 AND average_imdb_rating <= 10),
                                                       average_kinopoisk_rating DECIMAL(3,2) CHECK (average_kinopoisk_rating >= 0 AND average_kinopoisk_rating <= 10),
@@ -101,9 +94,7 @@ CREATE TABLE IF NOT EXISTS content_service.content (
                                                       updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                       deleted_at TIMESTAMPTZ,
                                                       CONSTRAINT fk_content_country FOREIGN KEY (country_id)
-                                                          REFERENCES content_service.countries(id),
-                                                      CONSTRAINT fk_content_status_id FOREIGN KEY (status_id)
-                                                           REFERENCES content_service.content_status(id)
+                                                          REFERENCES content_service.countries(id)
 );
 CREATE INDEX IF NOT EXISTS idx_movies_original_title ON content_service.content (original_title) WHERE deleted_at IS NULL;
 CREATE INDEX IF NOT EXISTS idx_movies_release_date ON content_service.content (release_date) WHERE deleted_at IS NULL;
