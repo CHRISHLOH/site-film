@@ -90,8 +90,8 @@ CREATE INDEX IF NOT EXISTS idx_movies_release_date ON content_service.content (r
 
 
 --changeset author:14 runOnChange:false
---comment: Create content_localizations table
-CREATE TABLE IF NOT EXISTS content_service.content_localizations (
+--comment: Create content_translations table
+CREATE TABLE IF NOT EXISTS content_service.content_translations (
                                                                      id BIGSERIAL PRIMARY KEY,
                                                                      content_id BIGINT NOT NULL,
                                                                      locale VARCHAR(5) NOT NULL,
@@ -104,9 +104,9 @@ CREATE TABLE IF NOT EXISTS content_service.content_localizations (
                                                                          REFERENCES content_service.content(id) ,
                                                                      CONSTRAINT uk_movie_localization UNIQUE (content_id, locale)
 );
-CREATE INDEX IF NOT EXISTS idx_movie_localizations_locale ON content_service.content_localizations(locale);
-CREATE INDEX IF NOT EXISTS idx_movie_localizations_movie_id ON content_service.content_localizations(content_id);
-CREATE INDEX IF NOT EXISTS idx_movie_localizations_title ON content_service.content_localizations(title);
+CREATE INDEX IF NOT EXISTS idx_movie_translations_locale ON content_service.content_translations(locale);
+CREATE INDEX IF NOT EXISTS idx_movie_translations_movie_id ON content_service.content_translations(content_id);
+CREATE INDEX IF NOT EXISTS idx_movie_translations_title ON content_service.content_translations(title);
 
 
 -- ============================================
@@ -117,16 +117,14 @@ CREATE INDEX IF NOT EXISTS idx_movie_localizations_title ON content_service.cont
 --comment: Create movie_details table
 CREATE TABLE IF NOT EXISTS content_service.movie_details (
                                                              content_id BIGINT PRIMARY KEY,
-                                                             video_file_id BIGINT,
+
                                                              duration_minutes INTEGER NOT NULL, -- длительность фильма
                                                              cinema_release_date DATE, -- дата цифрового релиза
                                                              digital_release_date DATE, -- дата цифрового релиза
                                                              created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                              updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                              CONSTRAINT fk_movie_details_content FOREIGN KEY (content_id)
-                                                                 REFERENCES content_service.content(id),
-                                                             CONSTRAINT fk_movie_details_video_file FOREIGN KEY (video_file_id)
-                                                                 REFERENCES  content_service.video_files
+                                                                 REFERENCES content_service.content(id)
 );
 
 -- ============================================
@@ -167,8 +165,8 @@ CREATE INDEX IF NOT EXISTS idx_seasons_content ON content_service.seasons(conten
 CREATE INDEX IF NOT EXISTS idx_seasons_number ON content_service.seasons(content_id, season_number);
 
 --changeset author:new7 runOnChange:false
---comment: Create season_localizations table
-CREATE TABLE IF NOT EXISTS content_service.season_localizations (
+--comment: Create season_translations table
+CREATE TABLE IF NOT EXISTS content_service.season_translations (
                                                                     id BIGSERIAL PRIMARY KEY,
                                                                     season_id BIGINT NOT NULL,
                                                                     locale VARCHAR(5) NOT NULL,
@@ -180,8 +178,8 @@ CREATE TABLE IF NOT EXISTS content_service.season_localizations (
                                                                         REFERENCES content_service.seasons(id) ,
                                                                     CONSTRAINT uk_season_localization UNIQUE (season_id, locale)
 );
-CREATE INDEX IF NOT EXISTS idx_season_localizations_season ON content_service.season_localizations(season_id);
-CREATE INDEX IF NOT EXISTS idx_season_localizations_locale ON content_service.season_localizations(locale);
+CREATE INDEX IF NOT EXISTS idx_season_translations_season ON content_service.season_translations(season_id);
+CREATE INDEX IF NOT EXISTS idx_season_translations_locale ON content_service.season_translations(locale);
 
 --changeset author:new8 runOnChange:false
 --comment: Create episodes table
@@ -189,15 +187,12 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         id BIGSERIAL PRIMARY KEY,
                                                         season_id BIGINT NOT NULL,
                                                         episode_number INTEGER NOT NULL,
-                                                        video_file_id BIGINT,
                                                         duration_minutes INTEGER,
                                                         air_date DATE,
                                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                         updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                         CONSTRAINT fk_episode_season FOREIGN KEY (season_id)
                                                             REFERENCES content_service.seasons(id) ,
-                                                        CONSTRAINT fk_episode_video_file FOREIGN KEY (video_file_id)
-                                                            REFERENCES content_service.video_files(id),
                                                         CONSTRAINT uk_episode UNIQUE (season_id, episode_number)
 );
 CREATE INDEX IF NOT EXISTS idx_episodes_season ON content_service.episodes(season_id);
@@ -205,8 +200,8 @@ CREATE INDEX IF NOT EXISTS idx_episodes_number ON content_service.episodes(seaso
 CREATE INDEX IF NOT EXISTS idx_episodes_air_date ON content_service.episodes(air_date);
 
 --changeset author:new9 runOnChange:false
---comment: Create episode_localizations table
-CREATE TABLE IF NOT EXISTS content_service.episode_localizations (
+--comment: Create episode_translations table
+CREATE TABLE IF NOT EXISTS content_service.episode_translations (
                                                                      id BIGSERIAL PRIMARY KEY,
                                                                      episode_id BIGINT NOT NULL,
                                                                      locale VARCHAR(5) NOT NULL,
@@ -219,8 +214,8 @@ CREATE TABLE IF NOT EXISTS content_service.episode_localizations (
                                                                          REFERENCES content_service.episodes(id) ,
                                                                      CONSTRAINT uk_episode_localization UNIQUE (episode_id, locale)
 );
-CREATE INDEX IF NOT EXISTS idx_episode_localizations_episode ON content_service.episode_localizations(episode_id);
-CREATE INDEX IF NOT EXISTS idx_episode_localizations_locale ON content_service.episode_localizations(locale);
+CREATE INDEX IF NOT EXISTS idx_episode_translations_episode ON content_service.episode_translations(episode_id);
+CREATE INDEX IF NOT EXISTS idx_episode_translations_locale ON content_service.episode_translations(locale);
 
 
 --changeset author:15 runOnChange:false
@@ -238,9 +233,9 @@ CREATE TABLE IF NOT EXISTS content_service.persons (
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                        CONSTRAINT fk_person_country FOREIGN KEY (country_id)
-                                                           REFERENCES content_service.countries(id) ON DELETE SET NULL,
+                                                           REFERENCES content_service.countries(id),
                                                        CONSTRAINT fk_person_city FOREIGN KEY (city_id)
-                                                           REFERENCES content_service.cities(id) ON DELETE SET NULL
+                                                           REFERENCES content_service.cities(id)
 );
 CREATE INDEX IF NOT EXISTS idx_persons_country_id ON content_service.persons(country_id);
 CREATE INDEX IF NOT EXISTS idx_persons_city_id ON content_service.persons(city_id);
@@ -248,7 +243,7 @@ CREATE INDEX IF NOT EXISTS idx_persons_name ON content_service.persons(original_
 
 --changeset author:16 runOnChange:false
 --comment: Create person_translations table
-CREATE TABLE IF NOT EXISTS content_service.person_localizations (
+CREATE TABLE IF NOT EXISTS content_service.person_translations (
                                                                    id BIGSERIAL PRIMARY KEY,
                                                                    person_id BIGINT NOT NULL,
                                                                    locale VARCHAR(10) NOT NULL,
@@ -261,8 +256,8 @@ CREATE TABLE IF NOT EXISTS content_service.person_localizations (
                                                                        REFERENCES content_service.persons(id) ,
                                                                    UNIQUE (person_id, locale)
 );
-CREATE INDEX IF NOT EXISTS idx_person_translations_locale ON content_service.person_localizations(locale);
-CREATE INDEX IF NOT EXISTS idx_person_translations_person_id ON content_service.person_localizations(person_id);
+CREATE INDEX IF NOT EXISTS idx_person_translations_locale ON content_service.person_translations(locale);
+CREATE INDEX IF NOT EXISTS idx_person_translations_person_id ON content_service.person_translations(person_id);
 
 
 -- ============================================
@@ -344,7 +339,7 @@ CREATE INDEX IF NOT EXISTS idx_person_careers_career_id ON content_service.perso
 
 
 CREATE TABLE content_service.content_countries (
-                                   content_id BIGINT REFERENCES content_service.content(id) ON DELETE CASCADE,
+                                   content_id BIGINT REFERENCES content_service.content(id),
                                    country_id BIGINT REFERENCES content_service.countries(id),
                                    PRIMARY KEY (content_id, country_id),
                                    CONSTRAINT uk_content_countries UNIQUE (content_id, country_id)
@@ -368,9 +363,9 @@ CREATE TABLE content_service.video_file_audio_tracks (
                                                          audio_track_id BIGINT NOT NULL,
                                                          PRIMARY KEY (video_file_id, audio_track_id),
                                                          CONSTRAINT fk_vfat_video FOREIGN KEY (video_file_id)
-                                                             REFERENCES content_service.video_files(id) ON DELETE CASCADE,
+                                                             REFERENCES content_service.video_files(id),
                                                          CONSTRAINT fk_vfat_audio FOREIGN KEY (audio_track_id)
-                                                             REFERENCES content_service.audio_tracks(id) ON DELETE CASCADE
+                                                             REFERENCES content_service.audio_tracks(id)
 );
 
 
@@ -423,7 +418,7 @@ CREATE TABLE content_service.collection_translations (
                                                          created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                          updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                          CONSTRAINT fk_collection_translation FOREIGN KEY (collection_id)
-                                                             REFERENCES content_service.collections(id) ON DELETE CASCADE,
+                                                             REFERENCES content_service.collections(id),
                                                          UNIQUE (collection_id, locale)
 );
 
@@ -438,9 +433,9 @@ CREATE TABLE content_service.collection_items (
                                                   added_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                   PRIMARY KEY (collection_id, content_id),
                                                   CONSTRAINT fk_collection_item_collection FOREIGN KEY (collection_id)
-                                                      REFERENCES content_service.collections(id) ON DELETE CASCADE,
+                                                      REFERENCES content_service.collections(id),
                                                   CONSTRAINT fk_collection_item_content FOREIGN KEY (content_id)
-                                                      REFERENCES content_service.content(id) ON DELETE CASCADE
+                                                      REFERENCES content_service.content(id)
 );
 
 CREATE INDEX idx_collection_items_order ON content_service.collection_items(collection_id, display_order);
@@ -457,10 +452,12 @@ CREATE TABLE content_service.franchises (
                                             parent_franchise_id BIGINT,-- Поддержка вложенности: Infinity Saga внутри MCU
                                             sort_order INTEGER, -- порядок внутри родительской франшизы
                                             poster_url TEXT,
+                                            depth INTEGER NOT NULL DEFAULT 0,
                                             created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                             updated_at TIMESTAMPTZ DEFAULT NOW(),
                                             CONSTRAINT fk_parent_franchise FOREIGN KEY (parent_franchise_id)
-                                                REFERENCES content_service.franchises(id) ON DELETE SET NULL
+                                                REFERENCES content_service.franchises(id),
+                                            CONSTRAINT max_franchise_depth CHECK (depth <= 5)
 );
 
 CREATE INDEX idx_franchises_parent ON content_service.franchises(parent_franchise_id);
@@ -476,7 +473,7 @@ CREATE TABLE content_service.franchise_translations (
                                                         description TEXT,
                                                         tagline VARCHAR(255), -- ДОБАВЛЕНО: для крутых слоганов
                                                         CONSTRAINT fk_franchise_translation FOREIGN KEY (franchise_id)
-                                                            REFERENCES content_service.franchises(id) ON DELETE CASCADE,
+                                                            REFERENCES content_service.franchises(id),
                                                         UNIQUE (franchise_id, locale)
 );
 
@@ -492,7 +489,7 @@ CREATE TABLE content_service.franchise_watch_orders (
                                                         description TEXT,
                                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                         CONSTRAINT fk_watch_order_franchise FOREIGN KEY (franchise_id)
-                                                            REFERENCES content_service.franchises(id) ON DELETE CASCADE,
+                                                            REFERENCES content_service.franchises(id),
                                                         UNIQUE (franchise_id, code)
 );
 CREATE INDEX idx_franchise_watch_orders_franchise
@@ -506,9 +503,9 @@ CREATE TABLE content_service.franchise_watch_order_items (
                                                              is_optional BOOLEAN DEFAULT false,
                                                              notes TEXT,
                                                              CONSTRAINT fk_watch_order FOREIGN KEY (watch_order_id)
-                                                                 REFERENCES content_service.franchise_watch_orders(id) ON DELETE CASCADE,
+                                                                 REFERENCES content_service.franchise_watch_orders(id),
                                                              CONSTRAINT fk_watch_order_content FOREIGN KEY (content_id)
-                                                                 REFERENCES content_service.content(id) ON DELETE CASCADE
+                                                                 REFERENCES content_service.content(id)
 );
 
 CREATE INDEX idx_watch_order_items_order
@@ -524,7 +521,7 @@ CREATE TABLE content_service.awards (
                                         id BIGSERIAL PRIMARY KEY,
                                         machine_name VARCHAR(100) NOT NULL UNIQUE,  -- oscar, golden_globe, bafta
                                         logo_url TEXT,
-                                        country_id BIGINT REFERENCES content_service.countries(id) ON DELETE SET NULL,
+                                        country_id BIGINT REFERENCES content_service.countries(id),
                                         founded_year INTEGER,
                                         translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
@@ -533,7 +530,7 @@ CREATE INDEX idx_awards_translations ON content_service.awards USING gin(transla
 
 CREATE TABLE content_service.award_categories (
                                                   id BIGSERIAL PRIMARY KEY,
-                                                  award_id BIGINT NOT NULL REFERENCES content_service.awards(id) ON DELETE CASCADE,
+                                                  award_id BIGINT NOT NULL REFERENCES content_service.awards(id),
                                                   machine_name VARCHAR(100) NOT NULL,  -- best_picture, best_actor, best_director
                                                   translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
                                                   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -554,9 +551,9 @@ CREATE TABLE content_service.award_nominations (
                                                    notes TEXT,
                                                    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                    CONSTRAINT fk_award_nomination_content FOREIGN KEY (content_id)
-                                                       REFERENCES content_service.content(id) ON DELETE CASCADE,
+                                                       REFERENCES content_service.content(id),
                                                    CONSTRAINT fk_award_nomination_category FOREIGN KEY (category_id)
-                                                       REFERENCES content_service.award_categories(id) ON DELETE CASCADE
+                                                       REFERENCES content_service.award_categories(id)
 );
 CREATE INDEX idx_award_nominations_content ON content_service.award_nominations(content_id);
 CREATE INDEX idx_award_nominations_category ON content_service.award_nominations(category_id);
@@ -571,7 +568,7 @@ CREATE TABLE content_service.award_nomination_translations (
                                                                notes TEXT,
                                                                PRIMARY KEY (nomination_id, locale),
                                                                CONSTRAINT fk_nomination_translation FOREIGN KEY (nomination_id)
-                                                                   REFERENCES content_service.award_nominations(id) ON DELETE CASCADE
+                                                                   REFERENCES content_service.award_nominations(id)
 );
 
 
@@ -583,9 +580,9 @@ CREATE TABLE content_service.award_nomination_persons (
                                                           display_order INTEGER DEFAULT 0, -- порядок отображения
                                                           PRIMARY KEY (nomination_id, person_id),
                                                           CONSTRAINT fk_award_nomination_person_nomination FOREIGN KEY (nomination_id)
-                                                              REFERENCES content_service.award_nominations(id) ON DELETE CASCADE,
+                                                              REFERENCES content_service.award_nominations(id),
                                                           CONSTRAINT fk_award_nomination_person_person FOREIGN KEY (person_id)
-                                                              REFERENCES content_service.persons(id) ON DELETE CASCADE
+                                                              REFERENCES content_service.persons(id)
 );
 CREATE INDEX idx_award_nomination_persons_person ON content_service.award_nomination_persons(person_id);
 
@@ -600,6 +597,28 @@ CREATE TABLE content_service.content_statistics (
                                                     last_updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
                                                     last_processed_kafka_offset BIGINT DEFAULT NULL, -- idempotency / watermark
                                                     calculation_version BIGINT DEFAULT 1,
-                                                    CONSTRAINT fk_stats_content FOREIGN KEY (content_id) REFERENCES content_service.content (id) ON DELETE CASCADE
+                                                    CONSTRAINT fk_stats_content FOREIGN KEY (content_id) REFERENCES content_service.content (id)
 );
 CREATE INDEX ON content_service.content_statistics (average_rating DESC);
+
+CREATE OR REPLACE FUNCTION content_service.set_franchise_depth()
+    RETURNS TRIGGER AS $$
+BEGIN
+    IF NEW.parent_franchise_id IS NULL THEN
+        NEW.depth = 0;
+    ELSE
+        SELECT depth + 1 INTO NEW.depth
+        FROM content_service.franchises
+        WHERE id = NEW.parent_franchise_id;
+
+        IF NEW.depth > 5 THEN
+            RAISE EXCEPTION 'Max franchise depth exceeded';
+        END IF;
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trigger_set_franchise_depth
+    BEFORE INSERT OR UPDATE ON content_service.franchises
+    FOR EACH ROW EXECUTE FUNCTION content_service.set_franchise_depth();
