@@ -16,15 +16,13 @@ CREATE INDEX IF NOT EXISTS idx_countries_iso_code ON content_service.countries(i
 
 
 CREATE TABLE IF NOT EXISTS content_service.cities (
-                                                      id BIGSERIAL PRIMARY KEY,
-                                                      code VARCHAR(100) NOT NULL UNIQUE,
-                                                      country_id BIGINT,
-                                                      translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
-                                                      CONSTRAINT fk_city_country FOREIGN KEY (country_id)
-                                                          REFERENCES content_service.countries(id)
+                        id BIGSERIAL PRIMARY KEY,
+                        code VARCHAR(100) NOT NULL UNIQUE,
+                        country_id BIGINT REFERENCES content_service.countries(id),
+                        translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
 );
-CREATE INDEX IF NOT EXISTS idx_cities_country_id ON content_service.cities(country_id);
-CREATE INDEX IF NOT EXISTS idx_cities_code ON content_service.cities(code);
+
+CREATE INDEX IF NOT EXISTS idx_cities_translations_gin ON content_service.cities USING GIN (translations);
 
 
 
@@ -76,23 +74,19 @@ CREATE TABLE IF NOT EXISTS content_service.video_files (
 CREATE TABLE IF NOT EXISTS content_service.content (
                                                       id BIGSERIAL PRIMARY KEY,
                                                       original_title VARCHAR(255) NOT NULL,
-                                                      content_type VARCHAR(50),
+                                                      content_type VARCHAR(50) CHECK (content_type IN ('movie','series')),
                                                       poster_url VARCHAR(255),
                                                       release_date DATE,
-                                                      status VARCHAR(50),
-                                                      votes_count INTEGER DEFAULT 0,
-                                                      country_id BIGINT,
+                                                      status VARCHAR(30) CHECK (status IN ('draft','published','archived')),
                                                       age_rating VARCHAR(3),
                                                       budget BIGINT,
                                                       box_office BIGINT,
                                                       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                       updated_at TIMESTAMPTZ DEFAULT NOW(),
-                                                      CONSTRAINT fk_content_country FOREIGN KEY (country_id)
-                                                          REFERENCES content_service.countries(id)
+                                                      CONSTRAINT check_content_content_type CHECK (content_type IN ('movie','series'))
 );
 CREATE INDEX IF NOT EXISTS idx_movies_original_title ON content_service.content (original_title);
 CREATE INDEX IF NOT EXISTS idx_movies_release_date ON content_service.content (release_date);
-CREATE INDEX IF NOT EXISTS idx_movies_country_id ON content_service.content (country_id);
 
 
 --changeset author:14 runOnChange:false
@@ -147,6 +141,7 @@ CREATE TABLE IF NOT EXISTS content_service.series_details (
                                                               total_episodes INTEGER DEFAULT 0,
                                                               average_episode_duration INTEGER, -- средняя длительность эпизода в минутах
                                                               end_date DATE,
+                                                              series_status VARCHAR(20) CHECK (series_status IN ('ongoing','finished','cancelled')),
                                                               created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                               updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                               CONSTRAINT fk_series_details_content FOREIGN KEY (content_id)
@@ -197,8 +192,6 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         video_file_id BIGINT,
                                                         duration_minutes INTEGER,
                                                         air_date DATE,
-                                                        average_rating DECIMAL(3,2) CHECK (average_rating >= 0 AND average_rating <= 10),
-                                                        votes_count INTEGER DEFAULT 0,
                                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                         updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                         CONSTRAINT fk_episode_season FOREIGN KEY (season_id)
@@ -255,7 +248,7 @@ CREATE INDEX IF NOT EXISTS idx_persons_name ON content_service.persons(original_
 
 --changeset author:16 runOnChange:false
 --comment: Create person_translations table
-CREATE TABLE IF NOT EXISTS content_service.person_translations (
+CREATE TABLE IF NOT EXISTS content_service.person_localizations (
                                                                    id BIGSERIAL PRIMARY KEY,
                                                                    person_id BIGINT NOT NULL,
                                                                    locale VARCHAR(10) NOT NULL,
@@ -268,8 +261,8 @@ CREATE TABLE IF NOT EXISTS content_service.person_translations (
                                                                        REFERENCES content_service.persons(id) ,
                                                                    UNIQUE (person_id, locale)
 );
-CREATE INDEX IF NOT EXISTS idx_person_translations_locale ON content_service.person_translations(locale);
-CREATE INDEX IF NOT EXISTS idx_person_translations_person_id ON content_service.person_translations(person_id);
+CREATE INDEX IF NOT EXISTS idx_person_translations_locale ON content_service.person_localizations(locale);
+CREATE INDEX IF NOT EXISTS idx_person_translations_person_id ON content_service.person_localizations(person_id);
 
 
 -- ============================================
@@ -333,7 +326,7 @@ CREATE TABLE IF NOT EXISTS content_service.content_genres (
                                                                 REFERENCES content_service.genres(id) 
 );
 CREATE INDEX IF NOT EXISTS idx_movie_genres_genre_id ON content_service.content_genres(genre_id);
-
+CREATE INDEX idx_content_genre_rating ON content_service.content_genres(genre_id, content_id);
 
 --changeset author:20 runOnChange:false
 --comment: Create person_careers table
@@ -350,6 +343,22 @@ CREATE TABLE IF NOT EXISTS content_service.person_careers (
 CREATE INDEX IF NOT EXISTS idx_person_careers_career_id ON content_service.person_careers(career_id);
 
 
+CREATE TABLE content_service.content_countries (
+                                   content_id BIGINT REFERENCES content_service.content(id) ON DELETE CASCADE,
+                                   country_id BIGINT REFERENCES content_service.countries(id),
+                                   PRIMARY KEY (content_id, country_id),
+                                   CONSTRAINT uk_content_countries UNIQUE (content_id, country_id)
+);
+CREATE INDEX IF NOT EXISTS idx_content_countries ON content_service.content_countries(country_id);
+
+
+CREATE TABLE IF NOT EXISTS content_service.person_countries (
+                                    person_id BIGINT REFERENCES content_service.persons(id),
+                                    country_id BIGINT REFERENCES content_service.countries(id),
+                                    PRIMARY KEY (person_id, country_id),
+                                    CONSTRAINT uk_person_countries UNIQUE (person_id, country_id)
+);
+CREATE INDEX IF NOT EXISTS idx_person_countries ON content_service.person_countries(country_id);
 -- ============================================
 -- ВИДЕО-ФАЙЛЫ И КАЧЕСТВО
 -- ============================================
@@ -585,6 +594,8 @@ CREATE TABLE content_service.content_statistics (
                                                     content_id BIGINT PRIMARY KEY,
                                                     votes_count BIGINT NOT NULL DEFAULT 0,
                                                     rating_sum BIGINT NOT NULL DEFAULT 0,   -- store integer sum to avoid float drift
+                                                    imdb_rating NUMERIC(3,1),
+                                                    kinopoisk_rating NUMERIC(3,1),
                                                     average_rating NUMERIC(4,2) NOT NULL DEFAULT 0, -- computed
                                                     last_updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
                                                     last_processed_kafka_offset BIGINT DEFAULT NULL, -- idempotency / watermark
