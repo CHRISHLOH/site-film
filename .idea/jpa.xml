@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="reLastEntityCreationPackage" value="etl-service/src/main/java/com/sitefilm/etl/entity" />
+    <option name="reverseEngineeringLastDbConnectionId" value="37d6874c-357f-4e32-b546-90063ff0c27e__site_film_content_service" />
+  </component>
   <component name="PersistenceUnitSettings">
     <persistence-units>
       <persistence-unit name="Default">
