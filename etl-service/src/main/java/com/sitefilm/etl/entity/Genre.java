@@ -1,37 +1,42 @@
 package com.sitefilm.etl.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import io.hypersistence.utils.hibernate.type.json.JsonType;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
+import lombok.*;
+import org.hibernate.annotations.Type;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "genres", schema = "content_service")
+@Table(
+        name = "genres",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_genres_genre", columnList = "genre")
+        }
+)
 public class Genre {
+
     @Id
-    @ColumnDefault("nextval('content_service.genres_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(max = 50)
     @NotNull
-    @Column(name = "genre", nullable = false, length = 50)
+    @Size(max = 50)
+    @Column(name = "genre", nullable = false, unique = true, length = 50)
     private String genre;
 
-    @jakarta.validation.constraints.NotNull
-    @Column(name = "translations", nullable = false)
-    @JdbcTypeCode(SqlTypes.JSON)
-    private Map<String, Object> translations;
-
+    @NotNull
+    @Type(JsonType.class)
+    @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
+    @Builder.Default
+    private Map<String, String> translations = new HashMap<>();
 }

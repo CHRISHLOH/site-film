@@ -18,7 +18,7 @@ public class ContentGenreId implements java.io.Serializable {
     @Column(name = "content_id", nullable = false)
     private Long contentId;
 
-    @jakarta.validation.constraints.NotNull
+    @NotNull
     @Column(name = "genre_id", nullable = false)
     private Long genreId;
 

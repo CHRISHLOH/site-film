@@ -3,20 +3,33 @@ package com.sitefilm.etl.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-
-import java.time.OffsetDateTime;
+import lombok.*;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "content_translations", schema = "content_service")
-public class ContentTranslation {
+@Table(
+        name = "content_translations",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_content_translations_content", columnList = "content_id"),
+                @Index(name = "idx_content_translations_locale", columnList = "locale"),
+                @Index(name = "idx_content_translations_title", columnList = "title")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_content_translation",
+                        columnNames = {"content_id", "locale"}
+                )
+        }
+)
+public class ContentTranslation extends AuditableEntity {
+
     @Id
-    @ColumnDefault("nextval('content_service.content_translations_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -24,29 +37,32 @@ public class ContentTranslation {
     @JoinColumn(name = "content_id", nullable = false)
     private Content content;
 
-    @Size(max = 5)
     @NotNull
+    @Size(max = 5)
     @Column(name = "locale", nullable = false, length = 5)
     private String locale;
 
-    @Size(max = 255)
     @NotNull
+    @Size(max = 255)
     @Column(name = "title", nullable = false)
     private String title;
 
-    @Column(name = "description", length = Integer.MAX_VALUE)
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    @Column(name = "plot_summary", length = Integer.MAX_VALUE)
+    @Column(name = "plot_summary", columnDefinition = "TEXT")
     private String plotSummary;
 
-    @NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
-    private OffsetDateTime createdAt;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ContentTranslation)) return false;
+        ContentTranslation that = (ContentTranslation) o;
+        return id != null && id.equals(that.id);
+    }
 
-    @ColumnDefault("now()")
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
-
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

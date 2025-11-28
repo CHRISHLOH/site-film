@@ -2,20 +2,21 @@ package com.sitefilm.etl.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
+import lombok.*;
 
 import java.time.LocalDate;
-import java.time.OffsetDateTime;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "movie_details", schema = "content_service")
-public class MovieDetail {
+public class MovieDetail extends AuditableEntity {
+
     @Id
-    @Column(name = "content_id", nullable = false)
+    @Column(name = "content_id")
     private Long id;
 
     @MapsId
@@ -33,13 +34,15 @@ public class MovieDetail {
     @Column(name = "digital_release_date")
     private LocalDate digitalReleaseDate;
 
-    @NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
-    private OffsetDateTime createdAt;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof MovieDetail that)) return false;
+        return id != null && id.equals(that.id);
+    }
 
-    @ColumnDefault("now()")
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
-
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

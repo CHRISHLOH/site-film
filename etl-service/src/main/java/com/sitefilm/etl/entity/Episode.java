@@ -2,21 +2,37 @@ package com.sitefilm.etl.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
+import lombok.*;
 
 import java.time.LocalDate;
-import java.time.OffsetDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "episodes", schema = "content_service")
-public class Episode {
+@Table(
+        name = "episodes",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_episodes_season", columnList = "season_id"),
+                @Index(name = "idx_episodes_number", columnList = "season_id, episode_number"),
+                @Index(name = "idx_episodes_air_date", columnList = "air_date")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_episode",
+                        columnNames = {"season_id", "episode_number"}
+                )
+        }
+)
+public class Episode extends AuditableEntity {
+
     @Id
-    @ColumnDefault("nextval('content_service.episodes_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -34,13 +50,33 @@ public class Episode {
     @Column(name = "air_date")
     private LocalDate airDate;
 
-    @NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
-    private OffsetDateTime createdAt;
+    // Relationships
 
-    @ColumnDefault("now()")
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
+    @OneToMany(mappedBy = "episode", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private Set<EpisodeTranslation> translations = new HashSet<>();
 
+    // Helper methods
+
+    public void addTranslation(EpisodeTranslation translation) {
+        translations.add(translation);
+        translation.setEpisode(this);
+    }
+
+    public void removeTranslation(EpisodeTranslation translation) {
+        translations.remove(translation);
+        translation.setEpisode(null);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Episode episode)) return false;
+        return id != null && id.equals(episode.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

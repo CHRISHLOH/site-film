@@ -1,39 +1,63 @@
 package com.sitefilm.etl.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.OffsetDateTime;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "content_languages", schema = "content_service")
+@EntityListeners(AuditingEntityListener.class)
+@Table(
+        name = "content_languages",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_content_languages_content", columnList = "content_id"),
+                @Index(name = "idx_content_languages_language", columnList = "language_id")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_content_language",
+                        columnNames = {"content_id", "language_id"}
+                )
+        }
+)
 public class ContentLanguage {
+
     @Id
-    @ColumnDefault("nextval('content_service.content_languages_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @jakarta.validation.constraints.NotNull
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "content_id", nullable = false)
     private Content content;
 
-    @jakarta.validation.constraints.NotNull
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "language_id", nullable = false)
     private Language language;
 
-    @jakarta.validation.constraints.NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ContentLanguage that)) return false;
+        return id != null && id.equals(that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

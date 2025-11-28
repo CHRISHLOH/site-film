@@ -2,20 +2,28 @@ package com.sitefilm.etl.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "content_statistics", schema = "content_service")
+@Table(
+        name = "content_statistics",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_content_statistics_rating", columnList = "average_rating")
+        }
+)
 public class ContentStatistic {
+
     @Id
-    @Column(name = "content_id", nullable = false)
+    @Column(name = "content_id")
     private Long id;
 
     @MapsId
@@ -24,14 +32,14 @@ public class ContentStatistic {
     private Content content;
 
     @NotNull
-    @ColumnDefault("0")
     @Column(name = "votes_count", nullable = false)
-    private Long votesCount;
+    @Builder.Default
+    private Long votesCount = 0L;
 
     @NotNull
-    @ColumnDefault("0")
     @Column(name = "rating_sum", nullable = false)
-    private Long ratingSum;
+    @Builder.Default
+    private Long ratingSum = 0L;
 
     @Column(name = "imdb_rating", precision = 3, scale = 1)
     private BigDecimal imdbRating;
@@ -40,20 +48,33 @@ public class ContentStatistic {
     private BigDecimal kinopoiskRating;
 
     @NotNull
-    @ColumnDefault("0")
     @Column(name = "average_rating", nullable = false, precision = 4, scale = 2)
-    private BigDecimal averageRating;
+    @Builder.Default
+    private BigDecimal averageRating = BigDecimal.ZERO;
 
     @NotNull
-    @ColumnDefault("now()")
     @Column(name = "last_updated_at", nullable = false)
-    private OffsetDateTime lastUpdatedAt;
+    @Builder.Default
+    private OffsetDateTime lastUpdatedAt = OffsetDateTime.now();
 
     @Column(name = "last_processed_kafka_offset")
     private Long lastProcessedKafkaOffset;
 
-    @ColumnDefault("1")
+    @Version
     @Column(name = "calculation_version")
-    private Long calculationVersion;
+    @Builder.Default
+    private Long calculationVersion = 1L;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ContentStatistic)) return false;
+        ContentStatistic that = (ContentStatistic) o;
+        return id != null && id.equals(that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

@@ -3,20 +3,32 @@ package com.sitefilm.etl.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-
-import java.time.OffsetDateTime;
+import lombok.*;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "person_translations", schema = "content_service")
-public class PersonTranslation {
+@Table(
+        name = "person_translations",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_person_translations_person", columnList = "person_id"),
+                @Index(name = "idx_person_translations_locale", columnList = "locale")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_person_translation",
+                        columnNames = {"person_id", "locale"}
+                )
+        }
+)
+public class PersonTranslation extends AuditableEntity {
+
     @Id
-    @ColumnDefault("nextval('content_service.person_translations_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -24,8 +36,8 @@ public class PersonTranslation {
     @JoinColumn(name = "person_id", nullable = false)
     private Person person;
 
-    @Size(max = 10)
     @NotNull
+    @Size(max = 10)
     @Column(name = "locale", nullable = false, length = 10)
     private String locale;
 
@@ -37,16 +49,18 @@ public class PersonTranslation {
     @Column(name = "locale_lastname", length = 100)
     private String localeLastname;
 
-    @Column(name = "biography", length = Integer.MAX_VALUE)
+    @Column(name = "biography", columnDefinition = "TEXT")
     private String biography;
 
-    @NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
-    private OffsetDateTime createdAt;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof PersonTranslation that)) return false;
+        return id != null && id.equals(that.id);
+    }
 
-    @ColumnDefault("now()")
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
-
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }
