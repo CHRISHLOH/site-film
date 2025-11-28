@@ -205,7 +205,7 @@ CREATE TABLE IF NOT EXISTS content_service.episode_translations (
                                                                      id BIGSERIAL PRIMARY KEY,
                                                                      episode_id BIGINT NOT NULL,
                                                                      locale VARCHAR(5) NOT NULL,
-                                                                     title VARCHAR(255) NOT NULL,
+                                                                     title VARCHAR(500) NOT NULL,
                                                                      description TEXT,
                                                                      plot_summary TEXT,
                                                                      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -622,3 +622,29 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER trigger_set_franchise_depth
     BEFORE INSERT OR UPDATE ON content_service.franchises
     FOR EACH ROW EXECUTE FUNCTION content_service.set_franchise_depth();
+
+ALTER TABLE content_service.languages
+    ADD CONSTRAINT uk_languages_iso_code UNIQUE (iso_code);
+
+-- Создание таблицы связи content_languages
+CREATE TABLE IF NOT EXISTS content_service.content_languages (
+                                                                 id BIGSERIAL PRIMARY KEY,
+                                                                 content_id BIGINT NOT NULL
+                                                                     CONSTRAINT fk_content_languages_content
+                                                                         REFERENCES content_service.content(id)
+                                                                         ON DELETE CASCADE,
+                                                                 language_id BIGINT NOT NULL
+                                                                     CONSTRAINT fk_content_languages_language
+                                                                         REFERENCES content_service.languages(id)
+                                                                         ON DELETE CASCADE,
+                                                                 created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+
+                                                                 CONSTRAINT uk_content_language UNIQUE (content_id, language_id)
+);
+
+-- Индексы для быстрого поиска
+CREATE INDEX idx_content_languages_content
+    ON content_service.content_languages(content_id);
+
+CREATE INDEX idx_content_languages_language
+    ON content_service.content_languages(language_id);
