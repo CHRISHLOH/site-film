@@ -3,20 +3,32 @@ package com.sitefilm.etl.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-
-import java.time.OffsetDateTime;
+import lombok.*;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "season_translations", schema = "content_service")
-public class SeasonTranslation {
+@Table(
+        name = "season_translations",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_season_translations_season", columnList = "season_id"),
+                @Index(name = "idx_season_translations_locale", columnList = "locale")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_season_translation",
+                        columnNames = {"season_id", "locale"}
+                )
+        }
+)
+public class SeasonTranslation extends AuditableEntity {
+
     @Id
-    @ColumnDefault("nextval('content_service.season_translations_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -24,8 +36,8 @@ public class SeasonTranslation {
     @JoinColumn(name = "season_id", nullable = false)
     private Season season;
 
-    @Size(max = 5)
     @NotNull
+    @Size(max = 5)
     @Column(name = "locale", nullable = false, length = 5)
     private String locale;
 
@@ -33,16 +45,18 @@ public class SeasonTranslation {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "description", length = Integer.MAX_VALUE)
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    @NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
-    private OffsetDateTime createdAt;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SeasonTranslation that)) return false;
+        return id != null && id.equals(that.id);
+    }
 
-    @ColumnDefault("now()")
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
-
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

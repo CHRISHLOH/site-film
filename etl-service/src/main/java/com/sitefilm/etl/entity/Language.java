@@ -1,42 +1,50 @@
 package com.sitefilm.etl.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import io.hypersistence.utils.hibernate.type.json.JsonType;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
+import lombok.*;
+import org.hibernate.annotations.Type;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "languages", schema = "content_service")
+@Table(
+        name = "languages",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_languages_iso_code", columnList = "iso_code")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(name = "uk_languages_iso_code", columnNames = "iso_code")
+        }
+)
 public class Language {
+
     @Id
-    @ColumnDefault("nextval('content_service.languages_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(max = 3)
     @NotNull
-    @Column(name = "iso_code", nullable = false, length = 3)
+    @Size(min = 2, max = 3)
+    @Column(name = "iso_code", nullable = false, unique = true, length = 3)
     private String isoCode;
 
-    @Size(max = 100)
     @NotNull
+    @Size(max = 100)
     @Column(name = "native_name", nullable = false, length = 100)
     private String nativeName;
 
     @NotNull
-    @Column(name = "translations", nullable = false)
-    @JdbcTypeCode(SqlTypes.JSON)
-    private Map<String, Object> translations;
-
+    @Type(JsonType.class)
+    @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
+    @Builder.Default
+    private Map<String, String> translations = new HashMap<>();
 }

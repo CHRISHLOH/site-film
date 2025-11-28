@@ -1,51 +1,58 @@
 package com.sitefilm.etl.entity;
 
+import com.sitefilm.etl.entity.enums.AudioTrackType;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.NonNull;
-
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-import org.jetbrains.annotations.NotNull;
-
-import java.time.OffsetDateTime;
+import lombok.*;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "audio_tracks", schema = "content_service")
-public class AudioTrack {
+@Table(
+        name = "audio_tracks",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_audio_tracks_language", columnList = "language_id")
+        }
+)
+public class AudioTrack extends AuditableEntity {
+
     @Id
-    @ColumnDefault("nextval('content_service.audio_tracks_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NonNull
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "language_id", nullable = false)
     private Language language;
 
+    @NotNull
     @Size(max = 255)
-    @NonNull
     @Column(name = "studio_name", nullable = false)
     private String studioName;
 
-    @jakarta.validation.constraints.Size(max = 50)
+    @Enumerated(EnumType.STRING)
     @Column(name = "track_type", length = 50)
-    private String trackType;
+    private AudioTrackType trackType;
 
-    @ColumnDefault("0")
     @Column(name = "display_order")
-    private Integer displayOrder;
+    @Builder.Default
+    private Integer displayOrder = 0;
 
-    @jakarta.validation.constraints.NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
-    private OffsetDateTime createdAt;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof AudioTrack)) return false;
+        AudioTrack that = (AudioTrack) o;
+        return id != null && id.equals(that.id);
+    }
 
-    @ColumnDefault("now()")
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
-
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

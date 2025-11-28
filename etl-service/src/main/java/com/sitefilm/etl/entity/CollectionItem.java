@@ -1,37 +1,65 @@
 package com.sitefilm.etl.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.OffsetDateTime;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "collection_items", schema = "content_service")
+@EntityListeners(AuditingEntityListener.class)
+@Table(
+        name = "collection_items",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_collection_items_order", columnList = "collection_id, display_order"),
+                @Index(name = "idx_collection_items_content", columnList = "content_id")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_collection_item",
+                        columnNames = {"collection_id", "content_id"}
+                )
+        }
+)
 public class CollectionItem {
-    @EmbeddedId
-    private CollectionItemId id;
 
-    @MapsId("collectionId")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "collection_id", nullable = false)
     private Collection collection;
 
-    @MapsId("contentId")
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "content_id", nullable = false)
     private Content content;
-
-    @jakarta.validation.constraints.NotNull
+    @NotNull
     @Column(name = "display_order", nullable = false)
     private Integer displayOrder;
 
-    @jakarta.validation.constraints.NotNull
-    @ColumnDefault("now()")
-    @Column(name = "added_at", nullable = false)
+    @CreatedDate
+    @Column(name = "added_at", nullable = false, updatable = false)
     private OffsetDateTime addedAt;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CollectionItem that)) return false;
+        return id != null && id.equals(that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

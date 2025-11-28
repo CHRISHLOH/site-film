@@ -1,56 +1,74 @@
 package com.sitefilm.etl.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
-
-import java.time.OffsetDateTime;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import lombok.*;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "content_persons", schema = "content_service")
-public class ContentPerson {
+@Table(
+        name = "content_persons",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_content_persons_person", columnList = "person_id"),
+                @Index(name = "idx_content_persons_career", columnList = "career_id"),
+                @Index(name = "idx_content_persons_content_order", columnList = "content_id, display_order_in_content"),
+                @Index(name = "idx_content_persons_person_order", columnList = "person_id, display_order_in_career")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_content_person",
+                        columnNames = {"content_id", "person_id", "career_id"}
+                )
+        }
+)
+public class ContentPerson extends AuditableEntity {
+
     @Id
-    @ColumnDefault("nextval('content_service.content_persons_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @jakarta.validation.constraints.NotNull
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "content_id", nullable = false)
     private Content content;
 
-    @jakarta.validation.constraints.NotNull
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "person_id", nullable = false)
     private Person person;
 
-    @jakarta.validation.constraints.NotNull
+    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "career_id", nullable = false)
     private Career career;
 
-    @jakarta.validation.constraints.Size(max = 255)
+    @Size(max = 255)
     @Column(name = "character_name")
     private String characterName;
 
-    @ColumnDefault("0")
     @Column(name = "display_order_in_content")
-    private Integer displayOrderInContent;
+    @Builder.Default
+    private Integer displayOrderInContent = 0;
 
-    @ColumnDefault("0")
     @Column(name = "display_order_in_career")
-    private Integer displayOrderInCareer;
+    @Builder.Default
+    private Integer displayOrderInCareer = 0;
 
-    @jakarta.validation.constraints.NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
-    private OffsetDateTime createdAt;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ContentPerson that)) return false;
+        return id != null && id.equals(that.id);
+    }
 
-    @ColumnDefault("now()")
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
-
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

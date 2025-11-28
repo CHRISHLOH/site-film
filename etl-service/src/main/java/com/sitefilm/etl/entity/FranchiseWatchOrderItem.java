@@ -2,18 +2,32 @@ package com.sitefilm.etl.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
+import lombok.*;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "franchise_watch_order_items", schema = "content_service")
+@Table(
+        name = "franchise_watch_order_items",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_watch_order_items_order", columnList = "watch_order_id, position"),
+                @Index(name = "idx_watch_order_items_content", columnList = "content_id")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_watch_order_item",
+                        columnNames = {"watch_order_id", "content_id"}
+                )
+        }
+)
 public class FranchiseWatchOrderItem {
+
     @Id
-    @ColumnDefault("nextval('content_service.franchise_watch_order_items_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -27,14 +41,25 @@ public class FranchiseWatchOrderItem {
     private Content content;
 
     @NotNull
-    @Column(name = "\"position\"", nullable = false)
+    @Column(name = "position", nullable = false)
     private Integer position;
 
-    @ColumnDefault("false")
     @Column(name = "is_optional")
-    private Boolean isOptional;
+    @Builder.Default
+    private Boolean isOptional = false;
 
-    @Column(name = "notes", length = Integer.MAX_VALUE)
+    @Column(name = "notes", columnDefinition = "TEXT")
     private String notes;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof FranchiseWatchOrderItem that)) return false;
+        return id != null && id.equals(that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

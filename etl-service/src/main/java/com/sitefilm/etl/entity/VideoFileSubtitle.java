@@ -1,22 +1,40 @@
 package com.sitefilm.etl.entity;
 
+import com.sitefilm.etl.entity.enums.SubtitleType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.OffsetDateTime;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name = "video_file_subtitles", schema = "content_service")
+@EntityListeners(AuditingEntityListener.class)
+@Table(
+        name = "video_file_subtitles",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_subtitles_video_file", columnList = "video_file_id"),
+                @Index(name = "idx_subtitles_language", columnList = "language_id"),
+                @Index(name = "idx_subtitles_video_file_lang", columnList = "video_file_id, language_id")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "uk_subtitle",
+                        columnNames = {"video_file_id", "language_id", "author_name"}
+                )
+        }
+)
 public class VideoFileSubtitle {
+
     @Id
-    @ColumnDefault("nextval('content_service.video_file_subtitles_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -29,26 +47,35 @@ public class VideoFileSubtitle {
     @JoinColumn(name = "language_id", nullable = false)
     private Language language;
 
-    @Size(max = 255)
     @NotNull
+    @Size(max = 255)
     @Column(name = "author_name", nullable = false)
     private String authorName;
 
-    @Size(max = 50)
+    @Enumerated(EnumType.STRING)
     @Column(name = "subtitle_type", length = 50)
-    private String subtitleType;
+    private SubtitleType subtitleType;
 
     @NotNull
-    @Column(name = "url", nullable = false, length = Integer.MAX_VALUE)
+    @Column(name = "url", nullable = false, columnDefinition = "TEXT")
     private String url;
 
-    @ColumnDefault("false")
     @Column(name = "is_default")
     private Boolean isDefault;
 
-    @NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof VideoFileSubtitle that)) return false;
+        return id != null && id.equals(that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

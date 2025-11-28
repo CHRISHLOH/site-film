@@ -1,36 +1,47 @@
 package com.sitefilm.etl.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.sitefilm.etl.entity.enums.ContentStatus;
+import com.sitefilm.etl.entity.enums.ContentType;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
+import lombok.*;
 
 import java.time.LocalDate;
-import java.time.OffsetDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
-@Table(name = "content", schema = "content_service")
-public class Content {
+@Table(
+        name = "content",
+        schema = "content_service",
+        indexes = {
+                @Index(name = "idx_content_original_title", columnList = "original_title"),
+                @Index(name = "idx_content_release_date", columnList = "release_date"),
+                @Index(name = "idx_content_type", columnList = "content_type"),
+                @Index(name = "idx_content_status", columnList = "status")
+        }
+)
+public class Content extends AuditableEntity {
+
     @Id
-    @ColumnDefault("nextval('content_service.content_id_seq'::regclass)")
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(max = 255)
     @NotNull
+    @Size(max = 255)
     @Column(name = "original_title", nullable = false)
     private String originalTitle;
 
-    @Size(max = 50)
-    @Column(name = "content_type", length = 50)
-    private String contentType;
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    @Column(name = "content_type", nullable = false, length = 50)
+    private ContentType contentType;
 
     @Size(max = 255)
     @Column(name = "poster_url")
@@ -39,9 +50,10 @@ public class Content {
     @Column(name = "release_date")
     private LocalDate releaseDate;
 
-    @Size(max = 30)
+    @Enumerated(EnumType.STRING)
     @Column(name = "status", length = 30)
-    private String status;
+    @Builder.Default
+    private ContentStatus status = ContentStatus.DRAFT;
 
     @Size(max = 3)
     @Column(name = "age_rating", length = 3)
@@ -53,13 +65,36 @@ public class Content {
     @Column(name = "box_office")
     private Long boxOffice;
 
-    @NotNull
-    @ColumnDefault("now()")
-    @Column(name = "created_at", nullable = false)
-    private OffsetDateTime createdAt;
+    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = true)
+    private MovieDetail movieDetail;
 
-    @ColumnDefault("now()")
-    @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
+    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = true)
+    private SeriesDetail seriesDetail;
 
+    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = true)
+    private ContentStatistic statistic;
+
+    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private Set<ContentTranslation> translations = new HashSet<>();
+
+    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private Set<ContentGenre> genres = new HashSet<>();
+
+    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private Set<ContentCountry> countries = new HashSet<>();
+
+    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private Set<ContentLanguage> languages = new HashSet<>();
+
+    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private Set<ContentPerson> persons = new HashSet<>();
+
+    @OneToMany(mappedBy = "content")
+    @Builder.Default
+    private Set<Season> seasons = new HashSet<>();
 }
