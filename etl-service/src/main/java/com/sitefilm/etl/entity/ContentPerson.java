@@ -1,9 +1,14 @@
 package com.sitefilm.etl.entity;
 
+import com.sitefilm.etl.entity.directories.Career;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+
+import java.time.OffsetDateTime;
 
 @Getter
 @Setter
@@ -27,7 +32,7 @@ import lombok.*;
                 )
         }
 )
-public class ContentPerson extends AuditableEntity {
+public class ContentPerson{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -59,6 +64,14 @@ public class ContentPerson extends AuditableEntity {
     @Column(name = "display_order_in_career")
     @Builder.Default
     private Integer displayOrderInCareer = 0;
+
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
+
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
 
     @Override
     public boolean equals(Object o) {

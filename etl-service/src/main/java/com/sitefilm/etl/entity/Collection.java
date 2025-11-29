@@ -4,7 +4,10 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
+import java.time.OffsetDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,7 +25,7 @@ import java.util.Set;
                 @Index(name = "idx_collections_display_order", columnList = "display_order")
         }
 )
-public class Collection extends AuditableEntity {
+public class Collection{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -40,7 +43,6 @@ public class Collection extends AuditableEntity {
     @Builder.Default
     private Short displayOrder = 0;
 
-    // Relationships
 
     @OneToMany(mappedBy = "collection", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
@@ -51,27 +53,13 @@ public class Collection extends AuditableEntity {
     @Builder.Default
     private Set<CollectionItem> items = new HashSet<>();
 
-    // Helper methods
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
 
-    public void addTranslation(CollectionTranslation translation) {
-        translations.add(translation);
-        translation.setCollection(this);
-    }
-
-    public void removeTranslation(CollectionTranslation translation) {
-        translations.remove(translation);
-        translation.setCollection(null);
-    }
-
-    public void addItem(CollectionItem item) {
-        items.add(item);
-        item.setCollection(this);
-    }
-
-    public void removeItem(CollectionItem item) {
-        items.remove(item);
-        item.setCollection(null);
-    }
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
 
     @Override
     public boolean equals(Object o) {

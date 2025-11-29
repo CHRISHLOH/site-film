@@ -3,8 +3,11 @@ package com.sitefilm.etl.entity;
 import com.sitefilm.etl.entity.enums.SeriesStatus;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDate;
+import java.time.OffsetDateTime;
 
 @Getter
 @Setter
@@ -13,7 +16,7 @@ import java.time.LocalDate;
 @Builder
 @Entity
 @Table(name = "series_details", schema = "content_service")
-public class SeriesDetail extends AuditableEntity {
+public class SeriesDetail{
 
     @Id
     @Column(name = "content_id")
@@ -41,6 +44,14 @@ public class SeriesDetail extends AuditableEntity {
     @Enumerated(EnumType.STRING)
     @Column(name = "series_status", length = 20)
     private SeriesStatus seriesStatus;
+
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
+
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
 
     @Override
     public boolean equals(Object o) {

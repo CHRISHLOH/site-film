@@ -3,8 +3,11 @@ package com.sitefilm.etl.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,7 +31,7 @@ import java.util.Set;
                 )
         }
 )
-public class Season extends AuditableEntity {
+public class Season{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -53,38 +56,20 @@ public class Season extends AuditableEntity {
     @Builder.Default
     private Integer episodesCount = 0;
 
-    // Relationships
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
+
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
 
     @OneToMany(mappedBy = "season", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<SeasonTranslation> translations = new HashSet<>();
 
     @OneToMany(mappedBy = "season", cascade = CascadeType.ALL, orphanRemoval = true)
-    @OrderBy("episodeNumber ASC")
-    @Builder.Default
     private Set<Episode> episodes = new HashSet<>();
 
-    // Helper methods
-
-    public void addTranslation(SeasonTranslation translation) {
-        translations.add(translation);
-        translation.setSeason(this);
-    }
-
-    public void removeTranslation(SeasonTranslation translation) {
-        translations.remove(translation);
-        translation.setSeason(null);
-    }
-
-    public void addEpisode(Episode episode) {
-        episodes.add(episode);
-        episode.setSeason(this);
-    }
-
-    public void removeEpisode(Episode episode) {
-        episodes.remove(episode);
-        episode.setSeason(null);
-    }
 
     @Override
     public boolean equals(Object o) {

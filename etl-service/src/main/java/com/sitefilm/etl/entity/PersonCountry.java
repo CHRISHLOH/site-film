@@ -1,5 +1,6 @@
 package com.sitefilm.etl.entity;
 
+import com.sitefilm.etl.entity.directories.Country;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -42,8 +43,7 @@ public class PersonCountry {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof PersonCountry)) return false;
-        PersonCountry that = (PersonCountry) o;
+        if (!(o instanceof PersonCountry that)) return false;
         return id != null && id.equals(that.id);
     }
 

@@ -1,4 +1,4 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.directories;
 
 import io.hypersistence.utils.hibernate.type.json.JsonType;
 import jakarta.persistence.*;
@@ -14,29 +14,32 @@ import java.util.Map;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(
-        name = "genres",
+        name = "cities",
         schema = "content_service",
         indexes = {
-                @Index(name = "idx_genres_genre", columnList = "genre")
+                @Index(name = "idx_cities_code", columnList = "code"),
+                @Index(name = "idx_cities_country", columnList = "country_id")
         }
 )
-public class Genre {
+public class City {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
-    @Size(max = 50)
-    @Column(name = "genre", nullable = false, unique = true, length = 50)
-    private String genre;
+    @Size(max = 100)
+    @Column(name = "code", nullable = false, unique = true, length = 100)
+    private String code;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "country_id")
+    private Country country;
 
     @NotNull
     @Type(JsonType.class)
     @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
-    @Builder.Default
     private Map<String, String> translations = new HashMap<>();
 }

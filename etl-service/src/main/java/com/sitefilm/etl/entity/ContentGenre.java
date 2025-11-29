@@ -1,5 +1,6 @@
 package com.sitefilm.etl.entity;
 
+import com.sitefilm.etl.entity.directories.Genre;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;

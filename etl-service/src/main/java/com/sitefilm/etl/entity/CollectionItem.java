@@ -12,9 +12,7 @@ import java.time.OffsetDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
-@EntityListeners(AuditingEntityListener.class)
 @Table(
         name = "collection_items",
         schema = "content_service",

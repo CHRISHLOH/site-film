@@ -1,10 +1,15 @@
 package com.sitefilm.etl.entity;
 
+import com.sitefilm.etl.entity.directories.Language;
 import com.sitefilm.etl.entity.enums.AudioTrackType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+
+import java.time.OffsetDateTime;
 
 @Getter
 @Setter
@@ -19,7 +24,7 @@ import lombok.*;
                 @Index(name = "idx_audio_tracks_language", columnList = "language_id")
         }
 )
-public class AudioTrack extends AuditableEntity {
+public class AudioTrack{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,11 +48,18 @@ public class AudioTrack extends AuditableEntity {
     @Builder.Default
     private Integer displayOrder = 0;
 
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
+
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof AudioTrack)) return false;
-        AudioTrack that = (AudioTrack) o;
+        if (!(o instanceof AudioTrack that)) return false;
         return id != null && id.equals(that.id);
     }
 

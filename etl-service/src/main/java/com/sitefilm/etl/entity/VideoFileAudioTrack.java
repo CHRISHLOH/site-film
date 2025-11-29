@@ -42,8 +42,7 @@ public class VideoFileAudioTrack {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof VideoFileAudioTrack)) return false;
-        VideoFileAudioTrack that = (VideoFileAudioTrack) o;
+        if (!(o instanceof VideoFileAudioTrack that)) return false;
         return id != null && id.equals(that.id);
     }
 

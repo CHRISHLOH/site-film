@@ -1,5 +1,6 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.award;
 
+import com.sitefilm.etl.entity.Content;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -70,8 +71,6 @@ public class AwardNomination {
     @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;
 
-    // Relationships
-
     @OneToMany(mappedBy = "nomination", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
     private Set<AwardNominationPerson> persons = new HashSet<>();
@@ -80,27 +79,6 @@ public class AwardNomination {
     @Builder.Default
     private Set<AwardNominationTranslation> translations = new HashSet<>();
 
-    // Helper methods
-
-    public void addPerson(AwardNominationPerson person) {
-        persons.add(person);
-        person.setNomination(this);
-    }
-
-    public void removePerson(AwardNominationPerson person) {
-        persons.remove(person);
-        person.setNomination(null);
-    }
-
-    public void addTranslation(AwardNominationTranslation translation) {
-        translations.add(translation);
-        translation.setNomination(this);
-    }
-
-    public void removeTranslation(AwardNominationTranslation translation) {
-        translations.remove(translation);
-        translation.setNomination(null);
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -113,4 +91,5 @@ public class AwardNomination {
     public int hashCode() {
         return getClass().hashCode();
     }
+
 }
