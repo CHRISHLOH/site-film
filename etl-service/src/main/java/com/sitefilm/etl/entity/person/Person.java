@@ -1,8 +1,12 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.person;
 
 import com.sitefilm.etl.entity.directories.City;
 import com.sitefilm.etl.entity.directories.Country;
 import com.sitefilm.etl.entity.enums.Gender;
+import com.sitefilm.etl.entity.content.relationship.ContentPerson;
+import com.sitefilm.etl.entity.person.relationship.PersonCareer;
+import com.sitefilm.etl.entity.person.relationship.PersonCountry;
+import com.sitefilm.etl.entity.person.relationship.PersonTranslation;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

@@ -1,5 +1,7 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.content.relationship;
 
+import com.sitefilm.etl.entity.person.Person;
+import com.sitefilm.etl.entity.content.Content;
 import com.sitefilm.etl.entity.directories.Career;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

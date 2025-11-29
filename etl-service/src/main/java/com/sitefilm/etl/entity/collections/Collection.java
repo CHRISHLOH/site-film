@@ -1,4 +1,4 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.collections;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

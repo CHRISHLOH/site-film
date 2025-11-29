@@ -1,6 +1,6 @@
 package com.sitefilm.etl.entity.award;
 
-import com.sitefilm.etl.entity.Person;
+import com.sitefilm.etl.entity.person.Person;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;

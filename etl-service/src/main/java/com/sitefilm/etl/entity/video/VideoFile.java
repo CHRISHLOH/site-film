@@ -1,5 +1,7 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.video;
 
+import com.sitefilm.etl.entity.video.relationship.VideoFileAudioTrack;
+import com.sitefilm.etl.entity.video.relationship.VideoFileSubtitle;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -37,11 +39,9 @@ public class VideoFile {
 
 
     @OneToMany(mappedBy = "videoFile", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<VideoFileAudioTrack> audioTracks = new HashSet<>();
 
     @OneToMany(mappedBy = "videoFile", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<VideoFileSubtitle> subtitles = new HashSet<>();
 
     @Override

@@ -1,5 +1,6 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.content.series;
 
+import com.sitefilm.etl.entity.content.Content;
 import com.sitefilm.etl.entity.enums.SeriesStatus;
 import jakarta.persistence.*;
 import lombok.*;
