@@ -1,5 +1,7 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.content.relationship;
 
+import com.sitefilm.etl.entity.content.Content;
+import com.sitefilm.etl.entity.directories.Country;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -11,19 +13,19 @@ import lombok.*;
 @Builder
 @Entity
 @Table(
-        name = "video_file_audio_tracks",
+        name = "content_countries",
         schema = "content_service",
         indexes = {
-                @Index(name = "idx_vfat_audio", columnList = "audio_track_id")
+                @Index(name = "idx_content_countries_country", columnList = "country_id")
         },
         uniqueConstraints = {
                 @UniqueConstraint(
-                        name = "uk_video_file_audio_track",
-                        columnNames = {"video_file_id", "audio_track_id"}
+                        name = "uk_content_countries",
+                        columnNames = {"content_id", "country_id"}
                 )
         }
 )
-public class VideoFileAudioTrack {
+public class ContentCountry {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,18 +33,18 @@ public class VideoFileAudioTrack {
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "video_file_id", nullable = false)
-    private VideoFile videoFile;
+    @JoinColumn(name = "content_id", nullable = false)
+    private Content content;
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "audio_track_id", nullable = false)
-    private AudioTrack audioTrack;
+    @JoinColumn(name = "country_id", nullable = false)
+    private Country country;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof VideoFileAudioTrack that)) return false;
+        if (!(o instanceof ContentCountry that)) return false;
         return id != null && id.equals(that.id);
     }
 

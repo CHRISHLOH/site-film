@@ -1,5 +1,10 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.content;
 
+import com.sitefilm.etl.entity.ContentStatistic;
+import com.sitefilm.etl.entity.content.movie.MovieDetail;
+import com.sitefilm.etl.entity.content.relationship.*;
+import com.sitefilm.etl.entity.content.series.Season;
+import com.sitefilm.etl.entity.content.series.SeriesDetail;
 import com.sitefilm.etl.entity.enums.ContentStatus;
 import com.sitefilm.etl.entity.enums.ContentType;
 import jakarta.persistence.*;

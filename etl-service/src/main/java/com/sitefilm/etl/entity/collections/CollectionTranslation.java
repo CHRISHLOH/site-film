@@ -1,4 +1,4 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.collections;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -13,23 +13,22 @@ import java.time.OffsetDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(
-        name = "season_translations",
+        name = "collection_translations",
         schema = "content_service",
         indexes = {
-                @Index(name = "idx_season_translations_season", columnList = "season_id"),
-                @Index(name = "idx_season_translations_locale", columnList = "locale")
+                @Index(name = "idx_collection_translations_collection", columnList = "collection_id"),
+                @Index(name = "idx_collection_translations_locale", columnList = "locale")
         },
         uniqueConstraints = {
                 @UniqueConstraint(
-                        name = "uk_season_translation",
-                        columnNames = {"season_id", "locale"}
+                        name = "uk_collection_translation",
+                        columnNames = {"collection_id", "locale"}
                 )
         }
 )
-public class SeasonTranslation{
+public class CollectionTranslation{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,17 +36,18 @@ public class SeasonTranslation{
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "season_id", nullable = false)
-    private Season season;
+    @JoinColumn(name = "collection_id", nullable = false)
+    private Collection collection;
 
     @NotNull
     @Size(max = 5)
     @Column(name = "locale", nullable = false, length = 5)
     private String locale;
 
+    @NotNull
     @Size(max = 255)
-    @Column(name = "title")
-    private String title;
+    @Column(name = "name", nullable = false)
+    private String name;
 
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
@@ -60,10 +60,11 @@ public class SeasonTranslation{
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof SeasonTranslation that)) return false;
+        if (!(o instanceof CollectionTranslation that)) return false;
         return id != null && id.equals(that.id);
     }
 

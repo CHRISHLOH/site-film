@@ -1,5 +1,6 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.content.relationship;
 
+import com.sitefilm.etl.entity.content.Content;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

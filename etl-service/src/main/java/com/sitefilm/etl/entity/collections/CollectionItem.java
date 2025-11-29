@@ -1,10 +1,10 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.collections;
 
+import com.sitefilm.etl.entity.content.Content;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.OffsetDateTime;
 

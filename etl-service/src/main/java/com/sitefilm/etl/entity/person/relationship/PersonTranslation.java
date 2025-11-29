@@ -1,5 +1,6 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.person.relationship;
 
+import com.sitefilm.etl.entity.person.Person;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -13,22 +14,23 @@ import java.time.OffsetDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Entity
 @Table(
-        name = "collection_translations",
+        name = "person_translations",
         schema = "content_service",
         indexes = {
-                @Index(name = "idx_collection_translations_collection", columnList = "collection_id"),
-                @Index(name = "idx_collection_translations_locale", columnList = "locale")
+                @Index(name = "idx_person_translations_person", columnList = "person_id"),
+                @Index(name = "idx_person_translations_locale", columnList = "locale")
         },
         uniqueConstraints = {
                 @UniqueConstraint(
-                        name = "uk_collection_translation",
-                        columnNames = {"collection_id", "locale"}
+                        name = "uk_person_translation",
+                        columnNames = {"person_id", "locale"}
                 )
         }
 )
-public class CollectionTranslation{
+public class PersonTranslation{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,21 +38,24 @@ public class CollectionTranslation{
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "collection_id", nullable = false)
-    private Collection collection;
+    @JoinColumn(name = "person_id", nullable = false)
+    private Person person;
 
     @NotNull
-    @Size(max = 5)
-    @Column(name = "locale", nullable = false, length = 5)
+    @Size(max = 10)
+    @Column(name = "locale", nullable = false, length = 10)
     private String locale;
 
-    @NotNull
-    @Size(max = 255)
-    @Column(name = "name", nullable = false)
-    private String name;
+    @Size(max = 100)
+    @Column(name = "locale_name", length = 100)
+    private String localeName;
 
-    @Column(name = "description", columnDefinition = "TEXT")
-    private String description;
+    @Size(max = 100)
+    @Column(name = "locale_lastname", length = 100)
+    private String localeLastname;
+
+    @Column(name = "biography", columnDefinition = "TEXT")
+    private String biography;
 
     @CreatedDate
     @Column(name = "created_at", nullable = false, updatable = false)
@@ -60,11 +65,10 @@ public class CollectionTranslation{
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof CollectionTranslation that)) return false;
+        if (!(o instanceof PersonTranslation that)) return false;
         return id != null && id.equals(that.id);
     }
 

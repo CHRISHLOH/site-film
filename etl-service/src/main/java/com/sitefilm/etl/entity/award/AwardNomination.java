@@ -1,6 +1,6 @@
 package com.sitefilm.etl.entity.award;
 
-import com.sitefilm.etl.entity.Content;
+import com.sitefilm.etl.entity.content.Content;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -27,7 +27,7 @@ import java.util.Set;
                 @Index(name = "idx_award_nominations_content", columnList = "content_id"),
                 @Index(name = "idx_award_nominations_category", columnList = "category_id"),
                 @Index(name = "idx_award_nominations_year", columnList = "year DESC"),
-                @Index(name = "idx_award_nominations_winner", columnList = "is_winner", unique = false)
+                @Index(name = "idx_award_nominations_winner", columnList = "is_winner")
         }
 )
 public class AwardNomination {
