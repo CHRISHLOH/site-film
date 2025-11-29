@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+
+import java.time.OffsetDateTime;
 
 @Getter
 @Setter
@@ -25,7 +29,7 @@ import lombok.*;
                 )
         }
 )
-public class EpisodeTranslation extends AuditableEntity {
+public class EpisodeTranslation{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -52,11 +56,18 @@ public class EpisodeTranslation extends AuditableEntity {
     @Column(name = "plot_summary", columnDefinition = "TEXT")
     private String plotSummary;
 
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
+
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof EpisodeTranslation)) return false;
-        EpisodeTranslation that = (EpisodeTranslation) o;
+        if (!(o instanceof EpisodeTranslation that)) return false;
         return id != null && id.equals(that.id);
     }
 

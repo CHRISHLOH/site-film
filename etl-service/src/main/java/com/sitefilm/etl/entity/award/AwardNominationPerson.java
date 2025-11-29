@@ -1,5 +1,6 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.award;
 
+import com.sitefilm.etl.entity.Person;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -50,8 +51,7 @@ public class AwardNominationPerson {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof AwardNominationPerson)) return false;
-        AwardNominationPerson that = (AwardNominationPerson) o;
+        if (!(o instanceof AwardNominationPerson that)) return false;
         return id != null && id.equals(that.id);
     }
 

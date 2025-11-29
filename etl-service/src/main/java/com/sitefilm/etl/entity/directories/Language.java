@@ -1,4 +1,4 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.directories;
 
 import io.hypersistence.utils.hibernate.type.json.JsonType;
 import jakarta.persistence.*;
@@ -14,7 +14,6 @@ import java.util.Map;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(
         name = "languages",
@@ -45,6 +44,5 @@ public class Language {
     @NotNull
     @Type(JsonType.class)
     @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
-    @Builder.Default
     private Map<String, String> translations = new HashMap<>();
 }

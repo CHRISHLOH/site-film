@@ -58,30 +58,16 @@ public class FranchiseWatchOrder {
     @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;
 
-    // Relationships
 
     @OneToMany(mappedBy = "watchOrder", cascade = CascadeType.ALL, orphanRemoval = true)
     @OrderBy("position ASC")
-    @Builder.Default
     private Set<FranchiseWatchOrderItem> items = new HashSet<>();
 
-    // Helper methods
-
-    public void addItem(FranchiseWatchOrderItem item) {
-        items.add(item);
-        item.setWatchOrder(this);
-    }
-
-    public void removeItem(FranchiseWatchOrderItem item) {
-        items.remove(item);
-        item.setWatchOrder(null);
-    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof FranchiseWatchOrder)) return false;
-        FranchiseWatchOrder that = (FranchiseWatchOrder) o;
+        if (!(o instanceof FranchiseWatchOrder that)) return false;
         return id != null && id.equals(that.id);
     }
 

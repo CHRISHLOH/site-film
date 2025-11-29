@@ -1,14 +1,11 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.directories;
 
 import io.hypersistence.utils.hibernate.type.json.JsonType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.annotations.Type;
-import org.hibernate.type.SqlTypes;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +14,6 @@ import java.util.Map;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(
         name = "countries",
@@ -40,7 +36,6 @@ public class Country {
     @NotNull
     @Type(JsonType.class)
     @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
-    @Builder.Default
     private Map<String, String> translations = new HashMap<>();
 
 }

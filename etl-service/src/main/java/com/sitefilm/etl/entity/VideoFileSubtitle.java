@@ -1,5 +1,6 @@
 package com.sitefilm.etl.entity;
 
+import com.sitefilm.etl.entity.directories.Language;
 import com.sitefilm.etl.entity.enums.SubtitleType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

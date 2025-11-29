@@ -3,8 +3,11 @@ package com.sitefilm.etl.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,7 +32,7 @@ import java.util.Set;
                 )
         }
 )
-public class Episode extends AuditableEntity {
+public class Episode{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -56,17 +59,13 @@ public class Episode extends AuditableEntity {
     @Builder.Default
     private Set<EpisodeTranslation> translations = new HashSet<>();
 
-    // Helper methods
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
 
-    public void addTranslation(EpisodeTranslation translation) {
-        translations.add(translation);
-        translation.setEpisode(this);
-    }
-
-    public void removeTranslation(EpisodeTranslation translation) {
-        translations.remove(translation);
-        translation.setEpisode(null);
-    }
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
 
     @Override
     public boolean equals(Object o) {

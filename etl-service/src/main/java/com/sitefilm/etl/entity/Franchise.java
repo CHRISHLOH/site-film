@@ -4,7 +4,10 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
+import java.time.OffsetDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,7 +26,7 @@ import java.util.Set;
                 @Index(name = "idx_franchises_sort_order", columnList = "parent_franchise_id, sort_order")
         }
 )
-public class Franchise extends AuditableEntity {
+public class Franchise{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -46,55 +49,26 @@ public class Franchise extends AuditableEntity {
 
     @NotNull
     @Column(name = "depth", nullable = false)
-    @Builder.Default
     private Integer depth = 0;
 
-    // Relationships
 
     @OneToMany(mappedBy = "parentFranchise")
     @OrderBy("sortOrder ASC")
-    @Builder.Default
     private Set<Franchise> childFranchises = new HashSet<>();
 
     @OneToMany(mappedBy = "franchise", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<FranchiseTranslation> translations = new HashSet<>();
 
     @OneToMany(mappedBy = "franchise", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<FranchiseWatchOrder> watchOrders = new HashSet<>();
 
-    // Helper methods
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
 
-    public void addChildFranchise(Franchise child) {
-        childFranchises.add(child);
-        child.setParentFranchise(this);
-    }
-
-    public void removeChildFranchise(Franchise child) {
-        childFranchises.remove(child);
-        child.setParentFranchise(null);
-    }
-
-    public void addTranslation(FranchiseTranslation translation) {
-        translations.add(translation);
-        translation.setFranchise(this);
-    }
-
-    public void removeTranslation(FranchiseTranslation translation) {
-        translations.remove(translation);
-        translation.setFranchise(null);
-    }
-
-    public void addWatchOrder(FranchiseWatchOrder watchOrder) {
-        watchOrders.add(watchOrder);
-        watchOrder.setFranchise(this);
-    }
-
-    public void removeWatchOrder(FranchiseWatchOrder watchOrder) {
-        watchOrders.remove(watchOrder);
-        watchOrder.setFranchise(null);
-    }
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
 
     @Override
     public boolean equals(Object o) {

@@ -1,12 +1,17 @@
 package com.sitefilm.etl.entity;
 
+import com.sitefilm.etl.entity.directories.City;
+import com.sitefilm.etl.entity.directories.Country;
 import com.sitefilm.etl.entity.enums.Gender;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -26,7 +31,7 @@ import java.util.Set;
                 @Index(name = "idx_persons_birth_date", columnList = "birth_date")
         }
 )
-public class Person extends AuditableEntity {
+public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -62,61 +67,31 @@ public class Person extends AuditableEntity {
     @Column(name = "photo_url", columnDefinition = "TEXT")
     private String photoUrl;
 
-    // Relationships
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<PersonTranslation> translations = new HashSet<>();
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<PersonCareer> careers = new HashSet<>();
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<PersonCountry> countries = new HashSet<>();
 
     @OneToMany(mappedBy = "person")
-    @Builder.Default
     private Set<ContentPerson> contentPersons = new HashSet<>();
 
-    // Helper methods
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
 
-    public void addTranslation(PersonTranslation translation) {
-        translations.add(translation);
-        translation.setPerson(this);
-    }
-
-    public void removeTranslation(PersonTranslation translation) {
-        translations.remove(translation);
-        translation.setPerson(null);
-    }
-
-    public void addCareer(PersonCareer career) {
-        careers.add(career);
-        career.setPerson(this);
-    }
-
-    public void removeCareer(PersonCareer career) {
-        careers.remove(career);
-        career.setPerson(null);
-    }
-
-    public void addCountry(PersonCountry country) {
-        countries.add(country);
-        country.setPerson(this);
-    }
-
-    public void removeCountry(PersonCountry country) {
-        countries.remove(country);
-        country.setPerson(null);
-    }
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Person)) return false;
-        Person person = (Person) o;
+        if (!(o instanceof Person person)) return false;
         return id != null && id.equals(person.id);
     }
 

@@ -45,8 +45,7 @@ public class FranchiseWatchOrderItem {
     private Integer position;
 
     @Column(name = "is_optional")
-    @Builder.Default
-    private Boolean isOptional = false;
+    private Boolean isOptional;
 
     @Column(name = "notes", columnDefinition = "TEXT")
     private String notes;

@@ -68,8 +68,7 @@ public class ContentStatistic {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ContentStatistic)) return false;
-        ContentStatistic that = (ContentStatistic) o;
+        if (!(o instanceof ContentStatistic that)) return false;
         return id != null && id.equals(that.id);
     }
 

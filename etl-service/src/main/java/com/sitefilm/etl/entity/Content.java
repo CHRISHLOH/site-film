@@ -6,8 +6,11 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,7 +18,6 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(
         name = "content",
@@ -27,7 +29,7 @@ import java.util.Set;
                 @Index(name = "idx_content_status", columnList = "status")
         }
 )
-public class Content extends AuditableEntity {
+public class Content{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -52,8 +54,7 @@ public class Content extends AuditableEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status", length = 30)
-    @Builder.Default
-    private ContentStatus status = ContentStatus.DRAFT;
+    private ContentStatus status;
 
     @Size(max = 3)
     @Column(name = "age_rating", length = 3)
@@ -65,36 +66,38 @@ public class Content extends AuditableEntity {
     @Column(name = "box_office")
     private Long boxOffice;
 
-    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = true)
+    @CreatedDate
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private OffsetDateTime createdAt;
+
+    @LastModifiedDate
+    @Column(name = "updated_at")
+    private OffsetDateTime updatedAt;
+
+    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private MovieDetail movieDetail;
 
-    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = true)
+    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private SeriesDetail seriesDetail;
 
-    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = true)
+    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private ContentStatistic statistic;
 
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<ContentTranslation> translations = new HashSet<>();
 
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<ContentGenre> genres = new HashSet<>();
 
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<ContentCountry> countries = new HashSet<>();
 
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<ContentLanguage> languages = new HashSet<>();
 
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
     private Set<ContentPerson> persons = new HashSet<>();
 
     @OneToMany(mappedBy = "content")
-    @Builder.Default
     private Set<Season> seasons = new HashSet<>();
 }

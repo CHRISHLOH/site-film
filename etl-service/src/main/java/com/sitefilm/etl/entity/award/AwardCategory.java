@@ -1,4 +1,4 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.award;
 
 import io.hypersistence.utils.hibernate.type.json.JsonType;
 import jakarta.persistence.*;
@@ -61,23 +61,9 @@ public class AwardCategory {
     @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;
 
-    // Relationships
-
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
     private Set<AwardNomination> nominations = new HashSet<>();
-
-    // Helper methods
-
-    public void addNomination(AwardNomination nomination) {
-        nominations.add(nomination);
-        nomination.setCategory(this);
-    }
-
-    public void removeNomination(AwardNomination nomination) {
-        nominations.remove(nomination);
-        nomination.setCategory(null);
-    }
 
     @Override
     public boolean equals(Object o) {

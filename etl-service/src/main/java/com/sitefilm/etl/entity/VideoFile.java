@@ -35,7 +35,6 @@ public class VideoFile {
     @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;
 
-    // Relationships
 
     @OneToMany(mappedBy = "videoFile", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
@@ -44,28 +43,6 @@ public class VideoFile {
     @OneToMany(mappedBy = "videoFile", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
     private Set<VideoFileSubtitle> subtitles = new HashSet<>();
-
-    // Helper methods
-
-    public void addAudioTrack(VideoFileAudioTrack audioTrack) {
-        audioTracks.add(audioTrack);
-        audioTrack.setVideoFile(this);
-    }
-
-    public void removeAudioTrack(VideoFileAudioTrack audioTrack) {
-        audioTracks.remove(audioTrack);
-        audioTrack.setVideoFile(null);
-    }
-
-    public void addSubtitle(VideoFileSubtitle subtitle) {
-        subtitles.add(subtitle);
-        subtitle.setVideoFile(this);
-    }
-
-    public void removeSubtitle(VideoFileSubtitle subtitle) {
-        subtitles.remove(subtitle);
-        subtitle.setVideoFile(null);
-    }
 
     @Override
     public boolean equals(Object o) {
