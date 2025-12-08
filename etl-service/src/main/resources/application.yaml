@@ -6,3 +6,15 @@ spring:
     password: user
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/site_film
+
+tmdb:
+  keys:
+    bearer: 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ODQxZDgwNDBlMjY2MjMwZmFkYjBkN2RiODQ5YmMzYiIsIm5iZiI6MTc2NDE2NTc0Ny45NTgwMDAyLCJzdWIiOiI2OTI3MDg3M2E3NzdjNDQ1YzMzMGNlMmIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.yObe5dNsiWCHWLpbexeCg74l2qml3L0gtD1KeGtZLkY'
+    api-key: '8841d8040e266230fadb0d7db849bc3b'
+  url:
+    countries: '/configuration/countries'
+    genre-movies: '/genre/movie/list'
+    genre-series: '/genre/tv/list'
+    languages:  '/configuration/languages'
+    base-url: 'https://api.themoviedb.org/3'
+
