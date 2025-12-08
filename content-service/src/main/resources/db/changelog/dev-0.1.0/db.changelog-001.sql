@@ -32,16 +32,17 @@ CREATE TABLE IF NOT EXISTS content_service.genres (
                                                       translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
 );
 CREATE INDEX IF NOT EXISTS idx_genres_genre ON content_service.genres(genre);
-CREATE INDEX idx_genres_translations ON content_service.genres USING gin(translations);
+CREATE INDEX IF NOT EXISTS idx_genres_translations ON content_service.genres USING gin(translations);
 
 
 CREATE TABLE IF NOT EXISTS content_service.careers (
                                                        id BIGSERIAL PRIMARY KEY,
                                                        career VARCHAR(255) NOT NULL UNIQUE,
+                                                       type VARCHAR(100) NOT NULL UNIQUE,
                                                        translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
 );
 CREATE INDEX IF NOT EXISTS idx_careers_career ON content_service.careers(career);
-CREATE INDEX idx_careers_translations ON content_service.careers USING gin(translations);
+CREATE INDEX IF NOT EXISTS idx_careers_translations ON content_service.careers USING gin(translations);
 
 
 
@@ -51,7 +52,7 @@ CREATE TABLE IF NOT EXISTS content_service.languages (
                                                          native_name VARCHAR(100) NOT NULL,
                                                          translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
 );
-CREATE INDEX idx_languages_translations ON content_service.languages USING gin(translations);
+CREATE INDEX IF NOT EXISTS idx_languages_translations ON content_service.languages USING gin(translations);
 
 
 
@@ -321,7 +322,7 @@ CREATE TABLE IF NOT EXISTS content_service.content_genres (
                                                                 REFERENCES content_service.genres(id) 
 );
 CREATE INDEX IF NOT EXISTS idx_movie_genres_genre_id ON content_service.content_genres(genre_id);
-CREATE INDEX idx_content_genre_rating ON content_service.content_genres(genre_id, content_id);
+CREATE INDEX IF NOT EXISTS idx_content_genre_rating ON content_service.content_genres(genre_id, content_id);
 
 --changeset author:20 runOnChange:false
 --comment: Create person_careers table
@@ -338,7 +339,7 @@ CREATE TABLE IF NOT EXISTS content_service.person_careers (
 CREATE INDEX IF NOT EXISTS idx_person_careers_career_id ON content_service.person_careers(career_id);
 
 
-CREATE TABLE content_service.content_countries (
+CREATE TABLE IF NOT EXISTS content_service.content_countries (
                                    content_id BIGINT REFERENCES content_service.content(id),
                                    country_id BIGINT REFERENCES content_service.countries(id),
                                    PRIMARY KEY (content_id, country_id),
@@ -358,7 +359,7 @@ CREATE INDEX IF NOT EXISTS idx_person_countries ON content_service.person_countr
 -- ВИДЕО-ФАЙЛЫ И КАЧЕСТВО
 -- ============================================
 
-CREATE TABLE content_service.video_file_audio_tracks (
+CREATE TABLE IF NOT EXISTS content_service.video_file_audio_tracks (
                                                          video_file_id BIGINT NOT NULL,
                                                          audio_track_id BIGINT NOT NULL,
                                                          PRIMARY KEY (video_file_id, audio_track_id),
@@ -399,7 +400,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS uk_subtitle ON content_service.video_file_subt
 -- COLLECTIONS (БЕЗ ИЗМЕНЕНИЙ В СТРУКТУРЕ)
 -- ============================================
 
-CREATE TABLE content_service.collections (
+CREATE TABLE IF NOT EXISTS content_service.collections (
                                              id BIGSERIAL PRIMARY KEY,
                                              code VARCHAR(100) NOT NULL UNIQUE,
                                              poster_url TEXT,
@@ -409,7 +410,7 @@ CREATE TABLE content_service.collections (
 );
 
 
-CREATE TABLE content_service.collection_translations (
+CREATE TABLE IF NOT EXISTS content_service.collection_translations (
                                                          id BIGSERIAL PRIMARY KEY,
                                                          collection_id BIGINT NOT NULL,
                                                          locale VARCHAR(5) NOT NULL,
@@ -422,11 +423,11 @@ CREATE TABLE content_service.collection_translations (
                                                          UNIQUE (collection_id, locale)
 );
 
-CREATE INDEX idx_collection_translations_locale ON content_service.collection_translations(locale);
-CREATE INDEX idx_collection_translations_collection ON content_service.collection_translations(collection_id);
+CREATE INDEX IF NOT EXISTS idx_collection_translations_locale ON content_service.collection_translations(locale);
+CREATE INDEX IF NOT EXISTS idx_collection_translations_collection ON content_service.collection_translations(collection_id);
 
 
-CREATE TABLE content_service.collection_items (
+CREATE TABLE IF NOT EXISTS content_service.collection_items (
                                                   collection_id BIGINT NOT NULL,
                                                   content_id BIGINT NOT NULL,
                                                   display_order INTEGER NOT NULL,
@@ -438,15 +439,15 @@ CREATE TABLE content_service.collection_items (
                                                       REFERENCES content_service.content(id)
 );
 
-CREATE INDEX idx_collection_items_order ON content_service.collection_items(collection_id, display_order);
-CREATE INDEX idx_collection_items_content ON content_service.collection_items(content_id); -- для обратного поиска
+CREATE INDEX IF NOT EXISTS idx_collection_items_order ON content_service.collection_items(collection_id, display_order);
+CREATE INDEX IF NOT EXISTS idx_collection_items_content ON content_service.collection_items(content_id); -- для обратного поиска
 
 
 -- ============================================
 -- FRANCHISES (УЛУЧШЕННАЯ ВЕРСИЯ)
 -- ============================================
 
-CREATE TABLE content_service.franchises (
+CREATE TABLE IF NOT EXISTS content_service.franchises (
                                             id BIGSERIAL PRIMARY KEY,
                                             code VARCHAR(100) NOT NULL UNIQUE,-- Простой стабильный код: "mcu", "star_wars", "middle_earth"
                                             parent_franchise_id BIGINT,-- Поддержка вложенности: Infinity Saga внутри MCU
@@ -460,12 +461,12 @@ CREATE TABLE content_service.franchises (
                                             CONSTRAINT max_franchise_depth CHECK (depth <= 5)
 );
 
-CREATE INDEX idx_franchises_parent ON content_service.franchises(parent_franchise_id);
-CREATE INDEX idx_franchises_sort_order ON content_service.franchises(parent_franchise_id, sort_order);
+CREATE INDEX IF NOT EXISTS idx_franchises_parent ON content_service.franchises(parent_franchise_id);
+CREATE INDEX IF NOT EXISTS idx_franchises_sort_order ON content_service.franchises(parent_franchise_id, sort_order);
 
 
 
-CREATE TABLE content_service.franchise_translations (
+CREATE TABLE IF NOT EXISTS content_service.franchise_translations (
                                                         id BIGSERIAL PRIMARY KEY,
                                                         franchise_id BIGINT NOT NULL,
                                                         locale VARCHAR(5) NOT NULL,
@@ -477,11 +478,11 @@ CREATE TABLE content_service.franchise_translations (
                                                         UNIQUE (franchise_id, locale)
 );
 
-CREATE INDEX idx_franchise_translations_locale ON content_service.franchise_translations(locale);
-CREATE INDEX idx_franchise_translations_franchise ON content_service.franchise_translations(franchise_id);
+CREATE INDEX IF NOT EXISTS idx_franchise_translations_locale ON content_service.franchise_translations(locale);
+CREATE INDEX IF NOT EXISTS idx_franchise_translations_franchise ON content_service.franchise_translations(franchise_id);
 
 
-CREATE TABLE content_service.franchise_watch_orders (
+CREATE TABLE IF NOT EXISTS content_service.franchise_watch_orders (
                                                         id BIGSERIAL PRIMARY KEY,
                                                         franchise_id BIGINT NOT NULL,
                                                         code VARCHAR(100) NOT NULL,    -- стабильный код:
@@ -492,10 +493,10 @@ CREATE TABLE content_service.franchise_watch_orders (
                                                             REFERENCES content_service.franchises(id),
                                                         UNIQUE (franchise_id, code)
 );
-CREATE INDEX idx_franchise_watch_orders_franchise
+CREATE INDEX IF NOT EXISTS idx_franchise_watch_orders_franchise
     ON content_service.franchise_watch_orders(franchise_id);
 
-CREATE TABLE content_service.franchise_watch_order_items (
+CREATE TABLE IF NOT EXISTS content_service.franchise_watch_order_items (
                                                              id BIGSERIAL PRIMARY KEY,
                                                              watch_order_id BIGINT NOT NULL,
                                                              content_id BIGINT NOT NULL,
@@ -508,16 +509,16 @@ CREATE TABLE content_service.franchise_watch_order_items (
                                                                  REFERENCES content_service.content(id)
 );
 
-CREATE INDEX idx_watch_order_items_order
+CREATE INDEX IF NOT EXISTS idx_watch_order_items_order
     ON content_service.franchise_watch_order_items (watch_order_id, position);
 
-CREATE INDEX idx_watch_order_items_content
+CREATE INDEX IF NOT EXISTS idx_watch_order_items_content
     ON content_service.franchise_watch_order_items (content_id);
 
 
 
 
-CREATE TABLE content_service.awards (
+CREATE TABLE IF NOT EXISTS content_service.awards (
                                         id BIGSERIAL PRIMARY KEY,
                                         machine_name VARCHAR(100) NOT NULL UNIQUE,  -- oscar, golden_globe, bafta
                                         logo_url TEXT,
@@ -526,9 +527,9 @@ CREATE TABLE content_service.awards (
                                         translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
-CREATE INDEX idx_awards_translations ON content_service.awards USING gin(translations);
+CREATE INDEX IF NOT EXISTS idx_awards_translations ON content_service.awards USING gin(translations);
 
-CREATE TABLE content_service.award_categories (
+CREATE TABLE IF NOT EXISTS content_service.award_categories (
                                                   id BIGSERIAL PRIMARY KEY,
                                                   award_id BIGINT NOT NULL REFERENCES content_service.awards(id),
                                                   machine_name VARCHAR(100) NOT NULL,  -- best_picture, best_actor, best_director
@@ -536,10 +537,10 @@ CREATE TABLE content_service.award_categories (
                                                   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                   UNIQUE (award_id, machine_name)
 );
-CREATE INDEX idx_award_categories_translations ON content_service.award_categories USING gin(translations);
+CREATE INDEX IF NOT EXISTS idx_award_categories_translations ON content_service.award_categories USING gin(translations);
 
 -- Номинации (общая информация)
-CREATE TABLE content_service.award_nominations (
+CREATE TABLE IF NOT EXISTS content_service.award_nominations (
                                                    id BIGSERIAL PRIMARY KEY,
                                                    content_id BIGINT NOT NULL, -- фильм ВСЕГДА есть
                                                    category_id BIGINT NOT NULL,
@@ -555,13 +556,13 @@ CREATE TABLE content_service.award_nominations (
                                                    CONSTRAINT fk_award_nomination_category FOREIGN KEY (category_id)
                                                        REFERENCES content_service.award_categories(id)
 );
-CREATE INDEX idx_award_nominations_content ON content_service.award_nominations(content_id);
-CREATE INDEX idx_award_nominations_category ON content_service.award_nominations(category_id);
-CREATE INDEX idx_award_nominations_year ON content_service.award_nominations(year DESC);
-CREATE INDEX idx_award_nominations_winner ON content_service.award_nominations(is_winner) WHERE is_winner = true;
+CREATE INDEX IF NOT EXISTS idx_award_nominations_content ON content_service.award_nominations(content_id);
+CREATE INDEX IF NOT EXISTS idx_award_nominations_category ON content_service.award_nominations(category_id);
+CREATE INDEX IF NOT EXISTS idx_award_nominations_year ON content_service.award_nominations(year DESC);
+CREATE INDEX IF NOT EXISTS idx_award_nominations_winner ON content_service.award_nominations(is_winner) WHERE is_winner = true;
 
 -- Для переводов
-CREATE TABLE content_service.award_nomination_translations (
+CREATE TABLE IF NOT EXISTS content_service.award_nomination_translations (
                                                                nomination_id BIGINT NOT NULL,
                                                                locale VARCHAR(5) NOT NULL,
                                                                work_title VARCHAR(255),
@@ -573,7 +574,7 @@ CREATE TABLE content_service.award_nomination_translations (
 
 
 -- Персоны, связанные с номинацией (если есть)
-CREATE TABLE content_service.award_nomination_persons (
+CREATE TABLE IF NOT EXISTS content_service.award_nomination_persons (
                                                           nomination_id BIGINT NOT NULL,
                                                           person_id BIGINT NOT NULL,
                                                           career_id SMALLINT,
@@ -584,10 +585,10 @@ CREATE TABLE content_service.award_nomination_persons (
                                                           CONSTRAINT fk_award_nomination_person_person FOREIGN KEY (person_id)
                                                               REFERENCES content_service.persons(id)
 );
-CREATE INDEX idx_award_nomination_persons_person ON content_service.award_nomination_persons(person_id);
+CREATE INDEX IF NOT EXISTS idx_award_nomination_persons_person ON content_service.award_nomination_persons(person_id);
 
 
-CREATE TABLE content_service.content_statistics (
+CREATE TABLE IF NOT EXISTS content_service.content_statistics (
                                                     content_id BIGINT PRIMARY KEY,
                                                     votes_count BIGINT NOT NULL DEFAULT 0,
                                                     rating_sum BIGINT NOT NULL DEFAULT 0,   -- store integer sum to avoid float drift
@@ -599,7 +600,7 @@ CREATE TABLE content_service.content_statistics (
                                                     calculation_version BIGINT DEFAULT 1,
                                                     CONSTRAINT fk_stats_content FOREIGN KEY (content_id) REFERENCES content_service.content (id)
 );
-CREATE INDEX ON content_service.content_statistics (average_rating DESC);
+CREATE INDEX IF NOT EXISTS isc_content_average_rating ON content_service.content_statistics (average_rating DESC);
 
 CREATE OR REPLACE FUNCTION content_service.set_franchise_depth()
     RETURNS TRIGGER AS $$
@@ -643,8 +644,8 @@ CREATE TABLE IF NOT EXISTS content_service.content_languages (
 );
 
 -- Индексы для быстрого поиска
-CREATE INDEX idx_content_languages_content
+CREATE INDEX IF NOT EXISTS idx_content_languages_content
     ON content_service.content_languages(content_id);
 
-CREATE INDEX idx_content_languages_language
+CREATE INDEX IF NOT EXISTS idx_content_languages_language
     ON content_service.content_languages(language_id);

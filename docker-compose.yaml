@@ -15,7 +15,7 @@ services:
       - "2181:2181"
 
   kafka:
-    image: obsidiandynamics/kafka
+    image: confluentinc/cp-kafka:7.6.0
     container_name: kafka
     restart: always
     networks:
@@ -34,7 +34,7 @@ services:
       - zookeeper
 
   kafdrop:
-    image: obsidiandynamics/kafdrop
+    image: obsidiandynamics/kafdrop:latest
     container_name: kafdrop
     restart: always
     networks:
