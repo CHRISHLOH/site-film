@@ -25,11 +25,7 @@ import java.util.Map;
                 @UniqueConstraint(name = "uk_languages_iso_code", columnNames = "iso_code")
         }
 )
-public class Language {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Language extends  DictionariesEntity{
 
     @NotNull
     @Size(min = 2, max = 3)
@@ -40,9 +36,4 @@ public class Language {
     @Size(max = 100)
     @Column(name = "native_name", nullable = false, length = 100)
     private String nativeName;
-
-    @NotNull
-    @Type(JsonType.class)
-    @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
-    private Map<String, String> translations = new HashMap<>();
 }
