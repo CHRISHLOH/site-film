@@ -5,11 +5,13 @@ import com.sitefilm.etl.dto.CountryDto;
 import com.sitefilm.etl.dto.GenreDto;
 import com.sitefilm.etl.dto.LanguageDto;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
 
+@Slf4j
 @RequiredArgsConstructor
 public class TmdbClient {
 
@@ -20,11 +22,11 @@ public class TmdbClient {
     private final RestClient restClient;
     private final TmdbUrlProperties urlProperties;
 
-    public List<CountryDto> getCountries(String locale){
+    public List<CountryDto> getCountries(String language){
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getCountries())
-                        .queryParam("locale", locale)
+                        .queryParam("language", language)
                         .build())
                 .retrieve()
                 .body(COUNTRY_DTO_TYPE_REFERENCE);

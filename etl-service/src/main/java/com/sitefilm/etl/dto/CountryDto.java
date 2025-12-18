@@ -1,11 +1,20 @@
 package com.sitefilm.etl.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
 public class CountryDto {
-     private Long id;
-     private String iso_639_1;
-     private String english_name;
-     private String name;
+    @JsonProperty("iso_3166_1")
+    private String isoCode;
+
+    @JsonProperty("english_name")
+    private String englishName;
+
+    @JsonProperty("native_name")
+    private String nativeName;
+
+    @JsonIgnore
+    private String locale;
 }

@@ -17,4 +17,5 @@ tmdb:
     genre-series: '/genre/tv/list'
     languages:  '/configuration/languages'
     base-url: 'https://api.themoviedb.org/3'
-
+server:
+  port: 9090

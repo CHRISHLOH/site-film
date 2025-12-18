@@ -23,11 +23,7 @@ import java.util.Map;
                 @Index(name = "idx_cities_country", columnList = "country_id")
         }
 )
-public class City {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class City extends DictionariesEntity{
 
     @NotNull
     @Size(max = 100)
@@ -37,9 +33,4 @@ public class City {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country_id")
     private Country country;
-
-    @NotNull
-    @Type(JsonType.class)
-    @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
-    private Map<String, String> translations = new HashMap<>();
 }

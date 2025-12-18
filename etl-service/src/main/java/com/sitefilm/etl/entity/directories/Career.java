@@ -22,19 +22,10 @@ import java.util.Map;
                 @Index(name = "idx_careers_career", columnList = "career")
         }
 )
-public class Career {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Career extends DictionariesEntity{
 
     @NotNull
     @Size(max = 255)
     @Column(name = "career", nullable = false, unique = true)
     private String career;
-
-    @NotNull
-    @Type(JsonType.class)
-    @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
-    private Map<String, String> translations = new HashMap<>();
 }

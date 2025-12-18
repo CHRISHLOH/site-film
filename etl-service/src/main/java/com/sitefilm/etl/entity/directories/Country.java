@@ -10,10 +10,11 @@ import org.hibernate.annotations.Type;
 import java.util.HashMap;
 import java.util.Map;
 
+@ToString
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(
         name = "countries",
@@ -22,20 +23,11 @@ import java.util.Map;
                 @Index(name = "idx_countries_iso_code", columnList = "iso_code")
         }
 )
-public class Country {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Country extends DictionariesEntity{
 
     @NotNull
     @Size(min = 2, max = 2)
     @Column(name = "iso_code", nullable = false, unique = true, length = 2)
     private String isoCode;
-
-    @NotNull
-    @Type(JsonType.class)
-    @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
-    private Map<String, String> translations = new HashMap<>();
 
 }
