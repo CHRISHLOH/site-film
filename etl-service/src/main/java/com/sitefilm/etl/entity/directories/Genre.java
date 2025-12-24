@@ -10,6 +10,7 @@ import org.hibernate.annotations.Type;
 import java.util.HashMap;
 import java.util.Map;
 
+@ToString
 @Getter
 @Setter
 @NoArgsConstructor
@@ -25,8 +26,7 @@ import java.util.Map;
 public class Genre extends DictionariesEntity{
 
     @NotNull
-    @Size(max = 50)
-    @Column(name = "genre", nullable = false, unique = true, length = 50)
-    private String genre;
+    @Column(name = "external_id")
+    private Integer externalId;
 
 }

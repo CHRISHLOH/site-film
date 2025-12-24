@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class TmdbUrlProperties {
 
     private String baseUrl;
+    private String jobs;
     private String countries;
     private String genreMovies;
     private String genreSeries;

@@ -34,9 +34,12 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Count
             for(CountryDto countryDto : countryDtoList) {
                 finalMap.computeIfAbsent(countryDto.getIsoCode(),
                         code -> {
-                                Country c = new Country();
-                    c.setIsoCode(code);
-                    return c;}).getTranslations().put(countryDto.getLocale(), countryDto.getNativeName());
+                                Country country = new Country();
+                                country.setIsoCode(code);
+                        return country;
+                    }
+                )
+                .getTranslations().put(countryDto.getLocale(), countryDto.getNativeName());
             }
         }
 

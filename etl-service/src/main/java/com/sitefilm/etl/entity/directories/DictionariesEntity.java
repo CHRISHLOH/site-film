@@ -5,11 +5,13 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.Type;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@ToString
 @Getter
 @Setter
 @MappedSuperclass

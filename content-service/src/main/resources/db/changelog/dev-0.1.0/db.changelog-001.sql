@@ -29,7 +29,10 @@ CREATE INDEX IF NOT EXISTS idx_cities_translations_gin ON content_service.cities
 CREATE TABLE IF NOT EXISTS content_service.genres (
                                                       id BIGSERIAL PRIMARY KEY,
                                                       genre VARCHAR(50) NOT NULL UNIQUE,
-                                                      translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
+                                                      external_id    VARCHAR(50),
+                                                      source VARCHAR(15),
+                                                      translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
+                                                      CONSTRAINT uk_content_external UNIQUE (external_id, source)
 );
 CREATE INDEX IF NOT EXISTS idx_genres_genre ON content_service.genres(genre);
 CREATE INDEX IF NOT EXISTS idx_genres_translations ON content_service.genres USING gin(translations);
@@ -39,7 +42,8 @@ CREATE TABLE IF NOT EXISTS content_service.careers (
                                                        id BIGSERIAL PRIMARY KEY,
                                                        career VARCHAR(255) NOT NULL UNIQUE,
                                                        type VARCHAR(100) NOT NULL UNIQUE,
-                                                       translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
+                                                       translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
+                                                       CONSTRAINT uk_external_id_source UNIQUE (career)
 );
 CREATE INDEX IF NOT EXISTS idx_careers_career ON content_service.careers(career);
 CREATE INDEX IF NOT EXISTS idx_careers_translations ON content_service.careers USING gin(translations);
@@ -49,8 +53,10 @@ CREATE INDEX IF NOT EXISTS idx_careers_translations ON content_service.careers U
 CREATE TABLE IF NOT EXISTS content_service.languages (
                                                          id BIGSERIAL PRIMARY KEY,
                                                          iso_code VARCHAR(3) NOT NULL,
-                                                         native_name VARCHAR(100) NOT NULL,
-                                                         translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
+                                                         external_id    VARCHAR(50),
+                                                         source VARCHAR(15),
+                                                         translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
+                                                         CONSTRAINT uk_external_id_source UNIQUE (external_id, source)
 );
 CREATE INDEX IF NOT EXISTS idx_languages_translations ON content_service.languages USING gin(translations);
 
@@ -82,9 +88,12 @@ CREATE TABLE IF NOT EXISTS content_service.content (
                                                       age_rating VARCHAR(3),
                                                       budget BIGINT,
                                                       box_office BIGINT,
+                                                      external_id    VARCHAR(50),
+                                                      source VARCHAR(15),
                                                       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                       updated_at TIMESTAMPTZ DEFAULT NOW(),
-                                                      CONSTRAINT check_content_content_type CHECK (content_type IN ('movie','series'))
+                                                      CONSTRAINT check_content_content_type CHECK (content_type IN ('movie','series')),
+                                                      CONSTRAINT uk_external_id_source UNIQUE (external_id, source)
 );
 CREATE INDEX IF NOT EXISTS idx_movies_original_title ON content_service.content (original_title);
 CREATE INDEX IF NOT EXISTS idx_movies_release_date ON content_service.content (release_date);
@@ -156,11 +165,14 @@ CREATE TABLE IF NOT EXISTS content_service.seasons (
                                                        poster_url TEXT,
                                                        release_date DATE,
                                                        episodes_count INTEGER DEFAULT 0,
+                                                       external_id    VARCHAR(50),
+                                                       source VARCHAR(15),
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                        CONSTRAINT fk_season_content FOREIGN KEY (content_id)
                                                            REFERENCES content_service.content(id) ,
-                                                       CONSTRAINT uk_season UNIQUE (content_id, season_number)
+                                                       CONSTRAINT uk_season UNIQUE (content_id, season_number),
+                                                       CONSTRAINT uk_external_id_source UNIQUE (external_id, source)
 );
 CREATE INDEX IF NOT EXISTS idx_seasons_content ON content_service.seasons(content_id);
 CREATE INDEX IF NOT EXISTS idx_seasons_number ON content_service.seasons(content_id, season_number);
@@ -190,11 +202,14 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         episode_number INTEGER NOT NULL,
                                                         duration_minutes INTEGER,
                                                         air_date DATE,
+                                                        external_id    VARCHAR(50),
+                                                        source VARCHAR(15),
                                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                         updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                         CONSTRAINT fk_episode_season FOREIGN KEY (season_id)
                                                             REFERENCES content_service.seasons(id) ,
-                                                        CONSTRAINT uk_episode UNIQUE (season_id, episode_number)
+                                                        CONSTRAINT uk_episode UNIQUE (season_id, episode_number),
+                                                        CONSTRAINT uk_external_id_source UNIQUE (external_id, source)
 );
 CREATE INDEX IF NOT EXISTS idx_episodes_season ON content_service.episodes(season_id);
 CREATE INDEX IF NOT EXISTS idx_episodes_number ON content_service.episodes(season_id, episode_number);
@@ -231,12 +246,15 @@ CREATE TABLE IF NOT EXISTS content_service.persons (
                                                        country_id BIGINT,
                                                        city_id BIGINT,
                                                        photo_url TEXT,
+                                                       external_id    VARCHAR(50),
+                                                       source VARCHAR(15),
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                        CONSTRAINT fk_person_country FOREIGN KEY (country_id)
                                                            REFERENCES content_service.countries(id),
                                                        CONSTRAINT fk_person_city FOREIGN KEY (city_id)
-                                                           REFERENCES content_service.cities(id)
+                                                           REFERENCES content_service.cities(id),
+                                                       CONSTRAINT uk_external_id_source UNIQUE (external_id, source)
 );
 CREATE INDEX IF NOT EXISTS idx_persons_country_id ON content_service.persons(country_id);
 CREATE INDEX IF NOT EXISTS idx_persons_city_id ON content_service.persons(city_id);
@@ -405,8 +423,11 @@ CREATE TABLE IF NOT EXISTS content_service.collections (
                                              code VARCHAR(100) NOT NULL UNIQUE,
                                              poster_url TEXT,
                                              display_order SMALLINT DEFAULT 0,
+                                             external_id    VARCHAR(50),
+                                             source VARCHAR(15),
                                              created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-                                             updated_at TIMESTAMPTZ DEFAULT NOW()
+                                             updated_at TIMESTAMPTZ DEFAULT NOW(),
+                                             CONSTRAINT uk_external_id_source UNIQUE (external_id, source)
 );
 
 
@@ -454,11 +475,14 @@ CREATE TABLE IF NOT EXISTS content_service.franchises (
                                             sort_order INTEGER, -- порядок внутри родительской франшизы
                                             poster_url TEXT,
                                             depth INTEGER NOT NULL DEFAULT 0,
+                                            external_id    VARCHAR(50),
+                                            source VARCHAR(15),
                                             created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                             updated_at TIMESTAMPTZ DEFAULT NOW(),
                                             CONSTRAINT fk_parent_franchise FOREIGN KEY (parent_franchise_id)
                                                 REFERENCES content_service.franchises(id),
-                                            CONSTRAINT max_franchise_depth CHECK (depth <= 5)
+                                            CONSTRAINT max_franchise_depth CHECK (depth <= 5),
+                                            CONSTRAINT uk_external_id_source UNIQUE (external_id, source)
 );
 
 CREATE INDEX IF NOT EXISTS idx_franchises_parent ON content_service.franchises(parent_franchise_id);
