@@ -85,9 +85,6 @@ public class Content{
     @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private SeriesDetail seriesDetail;
 
-    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private ContentStatistic statistic;
-
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<ContentTranslation> translations = new HashSet<>();
 

@@ -1,5 +1,6 @@
 package com.sitefilm.etl.entity.directories;
 
+import com.sitefilm.etl.entity.CareerType;
 import io.hypersistence.utils.hibernate.type.json.JsonType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -22,10 +23,18 @@ import java.util.Map;
                 @Index(name = "idx_careers_career", columnList = "career")
         }
 )
-public class Career extends DictionariesEntity{
+public class Career extends DictionariesEntity {
 
     @NotNull
     @Size(max = 255)
     @Column(name = "career", nullable = false, unique = true)
     private String career;
+
+    @NotNull
+    @Size(max = 100)
+    @Column(name = "type")
+    @Enumerated(EnumType.STRING)
+    private CareerType type;
+
+
 }
