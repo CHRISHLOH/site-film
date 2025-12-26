@@ -1,22 +1,31 @@
-package com.sitefilm.etl.configuration;
+package com.sitefilm.etl.configuration.client;
 
-import com.sitefilm.etl.dto.*;
+import com.sitefilm.etl.configuration.TmdbUrlProperties;
+import com.sitefilm.etl.dto.dictionaries.CareerDto;
+import com.sitefilm.etl.dto.dictionaries.CountryDto;
+import com.sitefilm.etl.dto.dictionaries.GenreResponseDto;
+import com.sitefilm.etl.dto.dictionaries.LanguageDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
 
-@Slf4j
-@RequiredArgsConstructor
-public class TmdbClient {
+
+public class DictionariesTmdbClient {
 
     private static final ParameterizedTypeReference<List<CountryDto>> COUNTRY_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
     private static final ParameterizedTypeReference<List<LanguageDto>> LANGUAGE_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
     private static final ParameterizedTypeReference<List<CareerDto>> CAREER_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
     private final RestClient restClient;
     private final TmdbUrlProperties urlProperties;
+
+    public DictionariesTmdbClient(RestClient restClient, TmdbUrlProperties urlProperties) {
+        this.restClient = restClient;
+        this.urlProperties = urlProperties;
+    }
 
     public List<CountryDto> getCountries(String language){
         return restClient.get()

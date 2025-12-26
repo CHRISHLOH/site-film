@@ -15,4 +15,10 @@ public class TmdbUrlProperties {
     private String genreMovies;
     private String genreSeries;
     private String languages;
+    private String moviePage;
+    private String moviesDetails;
+    private String movieTranslation;
+    private String personsCast;
+    private String personDetails;
+    private String personTranslations;
 }

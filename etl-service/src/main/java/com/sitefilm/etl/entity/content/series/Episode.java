@@ -53,8 +53,6 @@ public class Episode{
     @Column(name = "air_date")
     private LocalDate airDate;
 
-    // Relationships
-
     @OneToMany(mappedBy = "episode", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
     private Set<EpisodeTranslation> translations = new HashSet<>();

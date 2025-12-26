@@ -1,7 +1,7 @@
-package com.sitefilm.etl.service;
+package com.sitefilm.etl.service.dictionaries;
 
-import com.sitefilm.etl.configuration.TmdbClient;
-import com.sitefilm.etl.dto.CareerDto;
+import com.sitefilm.etl.configuration.client.DictionariesTmdbClient;
+import com.sitefilm.etl.dto.dictionaries.CareerDto;
 import com.sitefilm.etl.entity.CareerType;
 import com.sitefilm.etl.entity.directories.Career;
 import org.springframework.stereotype.Service;
@@ -12,16 +12,16 @@ import java.util.List;
 @Service
 public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy<Career> {
 
-    private final TmdbClient tmdbClient;
+    private final DictionariesTmdbClient dictionariesTmdbClient;
 
-    public CareersLoadStrategy(TmdbClient tmdbClient) {
-        this.tmdbClient = tmdbClient;
+    public CareersLoadStrategy(DictionariesTmdbClient dictionariesTmdbClient) {
+        this.dictionariesTmdbClient = dictionariesTmdbClient;
     }
 
 
     @Override
     public List<Career> loadTmdb() {
-        List<CareerDto> careerDtoList = tmdbClient.getCareers();
+        List<CareerDto> careerDtoList = dictionariesTmdbClient.getCareers();
 
         List<Career> finalCareerList = new ArrayList<>();
         for (CareerDto careerDto : careerDtoList) {

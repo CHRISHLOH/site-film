@@ -47,12 +47,8 @@ public class PersonTranslation{
     private String locale;
 
     @Size(max = 100)
-    @Column(name = "locale_name", length = 100)
+    @Column(name = "locale_name", length = 200)
     private String localeName;
-
-    @Size(max = 100)
-    @Column(name = "locale_lastname", length = 100)
-    private String localeLastname;
 
     @Column(name = "biography", columnDefinition = "TEXT")
     private String biography;

@@ -79,10 +79,10 @@ public class Content{
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
 
-    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL)
     private MovieDetail movieDetail;
 
-    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL)
     private SeriesDetail seriesDetail;
 
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
