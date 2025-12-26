@@ -1,4 +1,4 @@
-package com.sitefilm.etl.service;
+package com.sitefilm.etl.service.dictionaries;
 
 import com.sitefilm.etl.entity.directories.DictionariesEntity;
 

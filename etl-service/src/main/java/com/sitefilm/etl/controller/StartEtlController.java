@@ -1,7 +1,7 @@
 package com.sitefilm.etl.controller;
 
-import com.sitefilm.etl.service.CountriesLoadStrategy;
-import com.sitefilm.etl.service.GenresLoadStrategy;
+import com.sitefilm.etl.service.dictionaries.CountriesLoadStrategy;
+import com.sitefilm.etl.service.dictionaries.GenresLoadStrategy;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

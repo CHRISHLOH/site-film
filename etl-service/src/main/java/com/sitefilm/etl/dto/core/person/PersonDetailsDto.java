@@ -1,0 +1,25 @@
+package com.sitefilm.etl.dto.core.person;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Column;
+import lombok.Data;
+
+import java.time.LocalDate;
+
+@Data
+public class PersonDetailsDto {
+    @JsonProperty("biography")
+    private String biography;
+    @JsonProperty("birthDate")
+    private LocalDate birthDate;
+    @JsonProperty("deathDate")
+    private LocalDate deathDate;
+    @JsonProperty("externalId")
+    private Long externalId;
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("place_of_birth")
+    private String placeOfBirth;
+    @JsonProperty("gender")
+    private Byte gender;
+}

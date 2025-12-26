@@ -1,4 +1,4 @@
-package com.sitefilm.etl.dto;
+package com.sitefilm.etl.dto.dictionaries;
 
 import lombok.Data;
 

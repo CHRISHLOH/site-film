@@ -29,9 +29,7 @@ import java.util.Set;
         name = "persons",
         schema = "content_service",
         indexes = {
-                @Index(name = "idx_persons_country", columnList = "country_id"),
-                @Index(name = "idx_persons_city", columnList = "city_id"),
-                @Index(name = "idx_persons_name", columnList = "original_name, original_lastname"),
+                @Index(name = "idx_persons_name", columnList = "name"),
                 @Index(name = "idx_persons_birth_date", columnList = "birth_date")
         }
 )
@@ -44,11 +42,7 @@ public class Person {
     @NotNull
     @Size(max = 100)
     @Column(name = "original_name", nullable = false, length = 100)
-    private String originalName;
-
-    @Size(max = 100)
-    @Column(name = "original_lastname", length = 100)
-    private String originalLastname;
+    private String name;
 
     @Column(name = "birth_date")
     private LocalDate birthDate;
@@ -60,26 +54,21 @@ public class Person {
     @Column(name = "gender", length = 10)
     private Gender gender;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country_id")
-    private Country country;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "city_id")
-    private City city;
+    @Column(name = "birth_place", columnDefinition = "TEXT")
+    private String birthPlace;
 
     @Column(name = "photo_url", columnDefinition = "TEXT")
     private String photoUrl;
 
+    @NotNull
+    @Column(name = "external_id")
+    private Long externalId;
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<PersonTranslation> translations = new HashSet<>();
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<PersonCareer> careers = new HashSet<>();
-
-    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<PersonCountry> countries = new HashSet<>();
 
     @OneToMany(mappedBy = "person")
     private Set<ContentPerson> contentPersons = new HashSet<>();

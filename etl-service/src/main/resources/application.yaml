@@ -18,5 +18,11 @@ tmdb:
     languages:  '/configuration/languages'
     base-url: 'https://api.themoviedb.org/3'
     jobs: '/configuration/jobs'
+    movie-page: '/movie/popular'
+    movies-details: '/movie'
+    persons-cast:  '/movie/{movie_id}/credits'
+    movie-translation: '/movie/{movie_id}/translations'
+    person-translations: '/person/{person_id}/translations'
+    person-details: '/person/{person_id}'
 server:
   port: 9090

@@ -238,27 +238,19 @@ CREATE INDEX IF NOT EXISTS idx_episode_translations_locale ON content_service.ep
 --comment: Create persons table
 CREATE TABLE IF NOT EXISTS content_service.persons (
                                                        id BIGSERIAL PRIMARY KEY,
-                                                       original_name VARCHAR(100) NOT NULL,
-                                                       original_lastname VARCHAR(100),
+                                                       name VARCHAR(200) NOT NULL,
                                                        birth_date DATE,
                                                        death_date DATE,
                                                        gender VARCHAR(10), -- 'male', 'female'
-                                                       country_id BIGINT,
-                                                       city_id BIGINT,
+                                                       birth_place TEXT,
                                                        photo_url TEXT,
                                                        external_id    VARCHAR(50),
                                                        source VARCHAR(15),
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
-                                                       CONSTRAINT fk_person_country FOREIGN KEY (country_id)
-                                                           REFERENCES content_service.countries(id),
-                                                       CONSTRAINT fk_person_city FOREIGN KEY (city_id)
-                                                           REFERENCES content_service.cities(id),
                                                        CONSTRAINT uk_external_id_source UNIQUE (external_id, source)
 );
-CREATE INDEX IF NOT EXISTS idx_persons_country_id ON content_service.persons(country_id);
-CREATE INDEX IF NOT EXISTS idx_persons_city_id ON content_service.persons(city_id);
-CREATE INDEX IF NOT EXISTS idx_persons_name ON content_service.persons(original_name, original_lastname);
+
 
 --changeset author:16 runOnChange:false
 --comment: Create person_translations table
@@ -266,8 +258,7 @@ CREATE TABLE IF NOT EXISTS content_service.person_translations (
                                                                    id BIGSERIAL PRIMARY KEY,
                                                                    person_id BIGINT NOT NULL,
                                                                    locale VARCHAR(10) NOT NULL,
-                                                                   locale_name VARCHAR(100),
-                                                                   locale_lastname VARCHAR(100),
+                                                                   locale_name VARCHAR(200),
                                                                    biography TEXT,
                                                                    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                                    updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -365,14 +356,6 @@ CREATE TABLE IF NOT EXISTS content_service.content_countries (
 );
 CREATE INDEX IF NOT EXISTS idx_content_countries ON content_service.content_countries(country_id);
 
-
-CREATE TABLE IF NOT EXISTS content_service.person_countries (
-                                    person_id BIGINT REFERENCES content_service.persons(id),
-                                    country_id BIGINT REFERENCES content_service.countries(id),
-                                    PRIMARY KEY (person_id, country_id),
-                                    CONSTRAINT uk_person_countries UNIQUE (person_id, country_id)
-);
-CREATE INDEX IF NOT EXISTS idx_person_countries ON content_service.person_countries(country_id);
 -- ============================================
 -- ВИДЕО-ФАЙЛЫ И КАЧЕСТВО
 -- ============================================

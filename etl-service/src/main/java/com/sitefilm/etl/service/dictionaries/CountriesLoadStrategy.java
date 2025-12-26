@@ -1,7 +1,7 @@
-package com.sitefilm.etl.service;
+package com.sitefilm.etl.service.dictionaries;
 
-import com.sitefilm.etl.configuration.TmdbClient;
-import com.sitefilm.etl.dto.CountryDto;
+import com.sitefilm.etl.configuration.client.DictionariesTmdbClient;
+import com.sitefilm.etl.dto.dictionaries.CountryDto;
 import com.sitefilm.etl.entity.directories.Country;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,14 +16,14 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Count
 
     List<String> locales = List.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
 
-    private final TmdbClient tmdbClient;
+    private final DictionariesTmdbClient dictionariesTmdbClient;
 
 
     @Override
     public List<Country> loadTmdb() {
 
         List<List<CountryDto>> tmdbList = locales.stream().map(locales -> {
-            List<CountryDto> countryDtoList = tmdbClient.getCountries(locales);
+            List<CountryDto> countryDtoList = dictionariesTmdbClient.getCountries(locales);
             countryDtoList.forEach(countryDto -> countryDto.setLocale(locales));
             return countryDtoList;
         }).toList();

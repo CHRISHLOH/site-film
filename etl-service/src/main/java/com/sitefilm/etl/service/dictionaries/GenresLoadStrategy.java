@@ -1,8 +1,8 @@
-package com.sitefilm.etl.service;
+package com.sitefilm.etl.service.dictionaries;
 
-import com.sitefilm.etl.configuration.TmdbClient;
-import com.sitefilm.etl.dto.GenreDto;
-import com.sitefilm.etl.dto.GenreResponseDto;
+import com.sitefilm.etl.configuration.client.DictionariesTmdbClient;
+import com.sitefilm.etl.dto.dictionaries.GenreDto;
+import com.sitefilm.etl.dto.dictionaries.GenreResponseDto;
 import com.sitefilm.etl.entity.directories.Genre;
 import org.springframework.stereotype.Service;
 
@@ -14,11 +14,11 @@ import java.util.stream.Stream;
 @Service
 public class GenresLoadStrategy{
 
-    private final TmdbClient tmdbClient;
+    private final DictionariesTmdbClient dictionariesTmdbClient;
     private static final List<String> languages = List.of("en", "ru", "fr", "de", "es");
 
-    public GenresLoadStrategy(TmdbClient tmdbClient) {
-        this.tmdbClient = tmdbClient;
+    public GenresLoadStrategy(DictionariesTmdbClient dictionariesTmdbClient) {
+        this.dictionariesTmdbClient = dictionariesTmdbClient;
     }
 
 
@@ -27,7 +27,7 @@ public class GenresLoadStrategy{
                 Stream.of(
                                 languages.stream().map(
                                         locale -> {
-                                            GenreResponseDto response = tmdbClient.getGenreMovies(locale);
+                                            GenreResponseDto response = dictionariesTmdbClient.getGenreMovies(locale);
                                             response.getGenres().forEach(genre -> {
                                                 genre.setLanguage(locale);
                                             });
@@ -36,7 +36,7 @@ public class GenresLoadStrategy{
                                 ),
                                 languages.stream().map(
                                         locale -> {
-                                            GenreResponseDto response = tmdbClient.getGenreSeries(locale);
+                                            GenreResponseDto response = dictionariesTmdbClient.getGenreSeries(locale);
                                             response.getGenres().forEach(genre -> {
                                                 genre.setLanguage(locale);
                                             });
