@@ -30,13 +30,10 @@ public class MovieDetail{
 
     @NotNull
     @Column(name = "duration_minutes", nullable = false)
-    private Integer durationMinutes;
+    private Long durationMinutes;
 
     @Column(name = "cinema_release_date")
     private LocalDate cinemaReleaseDate;
-
-    @Column(name = "digital_release_date")
-    private LocalDate digitalReleaseDate;
 
     @CreatedDate
     @Column(name = "created_at", nullable = false, updatable = false)

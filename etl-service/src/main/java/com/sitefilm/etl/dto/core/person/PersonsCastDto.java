@@ -8,7 +8,9 @@ import java.util.List;
 @Data
 public class PersonsCastDto {
     @JsonProperty("id")
-    Long id;
+    private Long id;
     @JsonProperty("cast")
     List<PersonIdDto> cast;
+    @JsonProperty("crew")
+    List<PersonIdDto> crew;
 }

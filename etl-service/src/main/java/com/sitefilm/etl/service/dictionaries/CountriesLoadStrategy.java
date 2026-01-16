@@ -9,12 +9,13 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
 public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Country> {
 
-    List<String> locales = List.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
+    Set<String> locales = Set.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
 
     private final DictionariesTmdbClient dictionariesTmdbClient;
 

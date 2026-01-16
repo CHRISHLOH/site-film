@@ -1,6 +1,7 @@
 package com.sitefilm.etl.configuration.client;
 
 import com.sitefilm.etl.configuration.TmdbUrlProperties;
+import com.sitefilm.etl.dto.core.movie.CountPage;
 import com.sitefilm.etl.dto.core.person.PersonDetailsDto;
 import com.sitefilm.etl.dto.core.person.PersonsCastDto;
 import com.sitefilm.etl.dto.core.movie.ResponseMovieTranslationDto;
@@ -79,5 +80,14 @@ public class CoreTmdbClient {
                                 .build(personId))
                 .retrieve()
                 .body(PersonDetailsDto.class);
+    }
+
+    public CountPage loadCountPage() {
+        return restClient.get()
+                .uri(uriBuilder ->
+                        uriBuilder.path(urlProperties.getMoviePage())
+                                .build())
+                .retrieve()
+                .body(CountPage.class);
     }
 }

@@ -57,9 +57,8 @@ public class Content{
     @Column(name = "release_date")
     private LocalDate releaseDate;
 
-    @Enumerated(EnumType.STRING)
     @Column(name = "status", length = 30)
-    private ContentStatus status;
+    private String status;
 
     @Size(max = 3)
     @Column(name = "age_rating", length = 3)
@@ -78,28 +77,4 @@ public class Content{
     @LastModifiedDate
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
-
-    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL)
-    private MovieDetail movieDetail;
-
-    @OneToOne(mappedBy = "content", cascade = CascadeType.ALL)
-    private SeriesDetail seriesDetail;
-
-    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<ContentTranslation> translations = new HashSet<>();
-
-    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<ContentGenre> genres = new HashSet<>();
-
-    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<ContentCountry> countries = new HashSet<>();
-
-    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<ContentLanguage> languages = new HashSet<>();
-
-    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<ContentPerson> persons = new HashSet<>();
-
-    @OneToMany(mappedBy = "content")
-    private Set<Season> seasons = new HashSet<>();
 }
