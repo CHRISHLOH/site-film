@@ -241,7 +241,7 @@ CREATE TABLE IF NOT EXISTS content_service.persons (
                                                        name VARCHAR(200) NOT NULL,
                                                        birth_date DATE,
                                                        death_date DATE,
-                                                       gender VARCHAR(10), -- 'male', 'female'
+                                                       gender SMALLINT, -- 'male', 'female'
                                                        birth_place TEXT,
                                                        photo_url TEXT,
                                                        external_id    VARCHAR(50),

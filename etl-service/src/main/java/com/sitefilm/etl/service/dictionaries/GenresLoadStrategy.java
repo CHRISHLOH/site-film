@@ -9,13 +9,14 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Stream;
 
 @Service
 public class GenresLoadStrategy{
 
     private final DictionariesTmdbClient dictionariesTmdbClient;
-    private static final List<String> languages = List.of("en", "ru", "fr", "de", "es");
+    private static final Set<String> languages = Set.of("en", "ru", "fr", "de", "es");
 
     public GenresLoadStrategy(DictionariesTmdbClient dictionariesTmdbClient) {
         this.dictionariesTmdbClient = dictionariesTmdbClient;

@@ -4,9 +4,20 @@ import lombok.Getter;
 
 @Getter
 public enum Gender {
-    MALE("male"),
-    FEMALE("female");
+    FEMALE((byte) 1, "female"),
+    MALE((byte) 2, "male");
 
-    private String value;
-    Gender(String value) {}
+
+    private String gender;
+    private Byte genderId;
+    Gender(byte genderId, String gender) {}
+
+    public static Gender fromId(byte id) {
+        for (Gender g : values()) {
+            if (g.genderId == id) {
+                return g;
+            }
+        }
+        throw new IllegalArgumentException("Unknown gender id: " + id);
+    }
 }

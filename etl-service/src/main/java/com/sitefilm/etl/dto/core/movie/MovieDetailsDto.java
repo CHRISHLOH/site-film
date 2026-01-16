@@ -9,11 +9,11 @@ import java.util.List;
 @Data
 public class MovieDetailsDto {
     @JsonProperty("budget")
-    private Integer budget;
+    private Long budget;
     @JsonProperty("genres")
     private List<Integer> genreIdList;
     @JsonProperty("id")
-    private Integer externalId;
+    private Long externalId;
     @JsonProperty("original_title")
     private String originalTitle;
     @JsonProperty("overview")
@@ -21,9 +21,9 @@ public class MovieDetailsDto {
     @JsonProperty("release_date")
     private LocalDate releaseDate;
     @JsonProperty("revenue")
-    private Integer revenue;
+    private Long revenue;
     @JsonProperty("runtime")
-    private Integer duration;
+    private Long duration;
     @JsonProperty("status")
     private String status;
     @JsonProperty("title")

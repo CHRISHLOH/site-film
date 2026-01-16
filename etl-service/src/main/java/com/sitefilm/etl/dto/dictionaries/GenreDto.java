@@ -11,6 +11,5 @@ public class GenreDto {
     Integer external_id;
     @JsonProperty("name")
     String name;
-
     String language;
 }
