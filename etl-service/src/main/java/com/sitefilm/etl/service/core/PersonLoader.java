@@ -4,16 +4,16 @@ import com.sitefilm.etl.configuration.client.CoreTmdbClient;
 import com.sitefilm.etl.dto.PersonCastAggregateDto;
 import com.sitefilm.etl.dto.PersonTranslationDataDto;
 import com.sitefilm.etl.dto.core.person.PersonDetailsDto;
-import com.sitefilm.etl.dto.core.person.PersonTranslationDto;
 import com.sitefilm.etl.dto.core.person.ResponsePersonTranslationDto;
 import org.springframework.stereotype.Component;
 
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 
 @Component
 public class PersonLoader {
-
+    private static final Set<String> languages = Set.of("en", "ru", "fr", "de", "es");
     private final CoreTmdbClient tmdbClient;
     private final ExecutorService executor;
 
@@ -42,14 +42,17 @@ public class PersonLoader {
                 (details, translations) ->
                         new PersonCastAggregateDto(
                                 details,
-                                translations.getTranslations().stream().map(
+                                translations.getTranslations().stream()
+                                        .filter(dataTranslations ->
+                                                languages.contains(dataTranslations.getIsoCode()))
+                                        .map(
                                         personTranslationDto -> new PersonTranslationDataDto(
                                                 personTranslationDto.getIsoCode(),
                                                 personTranslationDto.getPersonData().getName(),
                                                 personTranslationDto.getPersonData().getBiography()
                                         )
-
-                                ).toList()
+                                )
+                                        .toList()
                         )
         );
     }
