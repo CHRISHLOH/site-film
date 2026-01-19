@@ -39,11 +39,10 @@ public class ContentAggregateFactory {
 
         movieAggregateDto.movieDetail().setContent(content);
         movieAggregateDto.movieTranslations().forEach(
-                contentTranslation -> {
-                    contentTranslation.setContent(content);
-                }
+                contentTranslation -> contentTranslation.setContent(content)
         );
         return new ContentAggregateDto(
+                content,
                 movieAggregateDto,
                 personAggregateDtoList
         );

@@ -43,7 +43,6 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Count
                 .getTranslations().put(countryDto.getLocale(), countryDto.getNativeName());
             }
         }
-
         return finalMap.values().stream().toList();
     }
 }
