@@ -63,10 +63,6 @@ public class ContentPerson{
     @Builder.Default
     private Integer displayOrderInContent = 0;
 
-    @Column(name = "display_order_in_career")
-    @Builder.Default
-    private Integer displayOrderInCareer = 0;
-
     @CreatedDate
     @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;

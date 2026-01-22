@@ -49,6 +49,9 @@ public class Person {
     @Column(name = "birth_place", columnDefinition = "TEXT")
     private String birthPlace;
 
+    @Column(name = "knownAs")
+    private String knownAs;
+
     @Column(name = "photo_url", columnDefinition = "TEXT")
     private String photoUrl;
 

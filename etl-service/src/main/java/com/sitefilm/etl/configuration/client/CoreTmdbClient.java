@@ -37,6 +37,7 @@ public class CoreTmdbClient {
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getMoviesDetails())
                         .queryParam("movie_id", movieId)
+                        .queryParam("append_to_response", "translations")
                         .build())
                 .retrieve()
                 .body(MovieDetailsDto.class);
@@ -56,6 +57,7 @@ public class CoreTmdbClient {
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getPersonsCast())
+                        .queryParam("append_to_response", "translations")
                         .build(movieId)
                 )
                 .retrieve()

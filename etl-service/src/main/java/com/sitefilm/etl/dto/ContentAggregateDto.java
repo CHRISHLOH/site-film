@@ -1,12 +1,18 @@
 package com.sitefilm.etl.dto;
 
 import com.sitefilm.etl.entity.content.Content;
+import com.sitefilm.etl.entity.directories.Country;
+import com.sitefilm.etl.entity.directories.Genre;
+import com.sitefilm.etl.entity.directories.Language;
 
 import java.util.List;
 
 public record ContentAggregateDto(
         Content content,
         MovieAggregateDto movieAggregateDto,
-        List<PersonAggregateDto> persons
+        List<PersonAggregateDto> persons,
+        List<Genre> genres,
+        List<Country> countries,
+        List<Language> languages
 ) {
 }

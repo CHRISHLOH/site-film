@@ -1,7 +1,7 @@
 package com.sitefilm.etl.service.core;
 
 import com.sitefilm.etl.dto.PersonAggregateDto;
-import com.sitefilm.etl.dto.PersonCastAggregateDto;
+import com.sitefilm.etl.dto.core.person.PersonDetailsDto;
 import com.sitefilm.etl.dto.core.person.PersonIdDto;
 import com.sitefilm.etl.dto.core.person.PersonsCastDto;
 import com.sitefilm.etl.entity.enums.Gender;
@@ -11,18 +11,14 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
 import java.util.stream.Stream;
 
 @Component
 public class PersonAggregator {
     private final PersonLoader personLoader;
-    private final ExecutorService executorService;
 
-
-    public PersonAggregator(PersonLoader personLoader, ExecutorService executorService) {
+    public PersonAggregator(PersonLoader personLoader) {
         this.personLoader = personLoader;
-        this.executorService = executorService;
     }
 
     public List<PersonAggregateDto> aggregate(PersonsCastDto personsCastDto) {
@@ -35,7 +31,7 @@ public class PersonAggregator {
                         .distinct()
                         .toList();
 
-        List<CompletableFuture<PersonCastAggregateDto>> futures =
+        List<CompletableFuture<PersonDetailsDto>> futures =
                 personIds.stream()
                         .map(personLoader::loadPerson)
                         .toList();
@@ -44,29 +40,29 @@ public class PersonAggregator {
                 .allOf(futures.toArray(new CompletableFuture[0]))
                 .join();
 
-        List<PersonCastAggregateDto> personCastDto = futures.stream()
+        List<PersonDetailsDto> personCastDto = futures.stream()
                 .map(CompletableFuture::join)
                 .toList();
 
         return personCastDto.stream().map(personDto -> {
             Person person = Person.builder()
-                    .name(personDto.personDetails().getName())
-                    .birthDate(personDto.personDetails().getBirthDate())
-                    .birthDate(personDto.personDetails().getBirthDate())
-                    .deathDate(personDto.personDetails().getDeathDate())
-                    .gender(Gender.fromId(personDto.personDetails().getGender()))
-                    .birthPlace(personDto.personDetails().getPlaceOfBirth())
+                    .name(personDto.getName())
+                    .birthDate(personDto.getBirthDate())
+                    .birthDate(personDto.getBirthDate())
+                    .deathDate(personDto.getDeathDate())
+                    .gender(Gender.fromId(personDto.getGender()))
+                    .birthPlace(personDto.getPlaceOfBirth())
                     .photoUrl(null)
-                    .externalId(personDto.personDetails().getExternalId())
+                    .externalId(personDto.getExternalId())
                     .build();
 
             List<PersonTranslation> personTranslations =
-                    personDto.personTranslationData().stream()
+                    personDto.getPersonTranslations().getTranslations().stream()
                             .map(personTranslationDataDto -> PersonTranslation.builder()
                                     .person(person)
-                                    .locale(personTranslationDataDto.locale())
-                                    .localeName(personTranslationDataDto.name())
-                                    .biography(personTranslationDataDto.biography())
+                                    .locale(personTranslationDataDto.getIsoCode())
+                                    .localeName(personTranslationDataDto.getPersonData().getName())
+                                    .biography(personTranslationDataDto.getPersonData().getBiography())
                                     .build()).toList();
             return new PersonAggregateDto(person, personTranslations);
         }).toList();

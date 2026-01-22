@@ -1,6 +1,9 @@
 package com.sitefilm.etl.dto.core.movie;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.sitefilm.etl.dto.core.RelationshipsCountryDto;
+import com.sitefilm.etl.dto.dictionaries.GenreDto;
+import com.sitefilm.etl.dto.dictionaries.LanguageDto;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -28,4 +31,12 @@ public class MovieDetailsDto {
     private String status;
     @JsonProperty("title")
     private String title;
+    @JsonProperty("translations")
+    private MovieTranslations movieTranslations;
+    @JsonProperty("genres")
+    List<GenreDto> genres;
+    @JsonProperty("production_countries")
+    List<RelationshipsCountryDto> countries;
+    @JsonProperty("spoken_languages")
+    List<LanguageDto> spokenLanguages;
 }

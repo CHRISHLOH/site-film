@@ -7,6 +7,7 @@ import java.util.List;
 
 public record PersonAggregateDto(
         Person person,
-        List<PersonTranslation> personTranslation
+        List<PersonTranslation> personTranslation,
+        PersonMovieData personMovieData
 ) {
 }

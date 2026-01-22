@@ -10,7 +10,7 @@ import org.hibernate.annotations.Type;
 import java.util.HashMap;
 import java.util.Map;
 
-@ToString
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
