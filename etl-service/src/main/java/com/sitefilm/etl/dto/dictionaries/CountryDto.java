@@ -7,7 +7,6 @@ import lombok.Data;
 @Data
 public class CountryDto {
 
-
     @JsonProperty("iso_3166_1")
     private String isoCode;
 

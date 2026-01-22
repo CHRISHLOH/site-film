@@ -10,7 +10,7 @@ public class PersonsCastDto {
     @JsonProperty("id")
     private Long id;
     @JsonProperty("cast")
-    List<PersonIdDto> cast;
+    private List<PersonIdDto> cast;
     @JsonProperty("crew")
-    List<PersonIdDto> crew;
+    private List<PersonIdDto> crew;
 }

@@ -1,6 +1,7 @@
 package com.sitefilm.etl.service.core;
 
 import com.sitefilm.etl.dto.ContentAggregateDto;
+import com.sitefilm.etl.dto.DictionariesDto;
 import com.sitefilm.etl.dto.MovieAggregateDto;
 import com.sitefilm.etl.dto.PersonAggregateDto;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsDto;
@@ -16,17 +17,18 @@ import java.util.List;
 public class ContentAggregateFactory {
     private final MovieAggregator movieAggregator;
     private final PersonAggregator  personAggregator;
+    private final RelationshipsAggregator relationshipsAggregator;
 
-    public ContentAggregateFactory(MovieAggregator movieAggregator, PersonAggregator personAggregator)
+    public ContentAggregateFactory(MovieAggregator movieAggregator, PersonAggregator personAggregator, RelationshipsAggregator relationshipsAggregator)
     {
         this.movieAggregator = movieAggregator;
         this.personAggregator = personAggregator;
+        this.relationshipsAggregator = relationshipsAggregator;
     }
 
-    public ContentAggregateDto aggregateContent(MovieDetailsDto movieDetails, ResponseMovieTranslationDto  movieTranslation, PersonsCastDto personsCast) {
-        MovieAggregateDto movieAggregateDto = movieAggregator.aggregate(movieDetails, movieTranslation);
+    public ContentAggregateDto aggregateContent(MovieDetailsDto movieDetails, PersonsCastDto personsCast, DictionariesDto dictionaries) {
+        MovieAggregateDto movieAggregateDto = movieAggregator.aggregate(movieDetails);
         List<PersonAggregateDto> personAggregateDtoList = personAggregator.aggregate(personsCast);
-
         Content content = new Content();
             content.setOriginalTitle(movieDetails.getOriginalTitle());
             content.setContentType(ContentType.MOVIE);
@@ -41,6 +43,8 @@ public class ContentAggregateFactory {
         movieAggregateDto.movieTranslations().forEach(
                 contentTranslation -> contentTranslation.setContent(content)
         );
+        relationshipsAggregator.aggregate(content, movieDetails, dictionaries);
+
         return new ContentAggregateDto(
                 content,
                 movieAggregateDto,
