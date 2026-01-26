@@ -7,6 +7,7 @@ import com.sitefilm.etl.entity.directories.Genre;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 
@@ -25,15 +26,15 @@ public class DictionariesLoadStrategy {
     }
 
     public DictionariesDto downloadDictionaries() {
-        CompletableFuture<List<Career>> careers = CompletableFuture.supplyAsync(careersLoadStrategy::loadTmdb);
-        CompletableFuture<List<Country>> countries = CompletableFuture.supplyAsync(countriesLoadStrategy::loadTmdb);
-        CompletableFuture<List<Genre>> genres = CompletableFuture.supplyAsync(genresLoadStrategy::loadTmdb);
+        CompletableFuture<Set<Career>> careers = CompletableFuture.supplyAsync(careersLoadStrategy::loadTmdb);
+        CompletableFuture<Set<Country>> countries = CompletableFuture.supplyAsync(countriesLoadStrategy::loadTmdb);
+        CompletableFuture<Set<Genre>> genres = CompletableFuture.supplyAsync(genresLoadStrategy::loadTmdb);
 
         CompletableFuture.allOf(careers, countries, genres).join();
 
-        List<Career> careerList = careers.join();
-        List<Country> countryList = countries.join();
-        List<Genre> genreList = genres.join();
+        Set<Career> careerList = careers.join();
+        Set<Country> countryList = countries.join();
+        Set<Genre> genreList = genres.join();
 
         return new DictionariesDto(countryList, careerList, genreList);
     }

@@ -6,10 +6,8 @@ import com.sitefilm.etl.entity.directories.Country;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -21,17 +19,16 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Count
 
 
     @Override
-    public List<Country> loadTmdb() {
-
-        List<List<CountryDto>> tmdbList = locales.stream().map(locales -> {
-            List<CountryDto> countryDtoList = dictionariesTmdbClient.getCountries(locales);
+    public Set<Country> loadTmdb() {
+        Set<Set<CountryDto>> tmdbList = locales.stream().map(locales -> {
+            Set<CountryDto> countryDtoList = dictionariesTmdbClient.getCountries(locales);
             countryDtoList.forEach(countryDto -> countryDto.setLocale(locales));
             return countryDtoList;
-        }).toList();
+        }).collect(Collectors.toSet());
 
         Map<String, Country> finalMap= new HashMap<>();
 
-        for(List<CountryDto> countryDtoList : tmdbList) {
+        for(Set<CountryDto> countryDtoList : tmdbList) {
             for(CountryDto countryDto : countryDtoList) {
                 finalMap.computeIfAbsent(countryDto.getIsoCode(),
                         code -> {
@@ -43,6 +40,6 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Count
                 .getTranslations().put(countryDto.getLocale(), countryDto.getNativeName());
             }
         }
-        return finalMap.values().stream().toList();
+        return new HashSet<>(finalMap.values());
     }
 }

@@ -5,7 +5,7 @@ import com.sitefilm.etl.dto.ContentAggregateDto;
 import com.sitefilm.etl.dto.DictionariesDto;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsDto;
 import com.sitefilm.etl.dto.core.movie.MovieIdDto;
-import com.sitefilm.etl.dto.core.person.PersonsCastDto;
+import com.sitefilm.etl.dto.core.person.PersonsInMovieDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,21 +17,19 @@ public class PageProcessor {
     private final CoreTmdbClient tmdbClient;
     private final ExecutorService executorService;
     private final ContentAggregateFactory contentAggregateFactory;
-    private final RelationshipsAggregator relationshipsAggregator;
 
 
-    public PageProcessor(CoreTmdbClient tmdbClient, ExecutorService executorService, ContentAggregateFactory contentAggregateFactory, RelationshipsAggregator relationshipsAggregator) {
+    public PageProcessor(CoreTmdbClient tmdbClient, ExecutorService executorService, ContentAggregateFactory contentAggregateFactory) {
         this.tmdbClient = tmdbClient;
         this.executorService = executorService;
         this.contentAggregateFactory = contentAggregateFactory;
-        this.relationshipsAggregator = relationshipsAggregator;
     }
 
     public List<?> loadTmdb(Integer pageNumber, DictionariesDto dictionaries) {
         List<Long> movieIds = tmdbClient.loadMovieIds(pageNumber).getMovieIds().stream().map(MovieIdDto::id).toList();
         movieIds.forEach(id -> {
             loadOneMovieAsync(id, dictionaries).thenAccept(result -> {
-
+                //сохранение батчами в бд
             });
         });
         return List.of();
@@ -42,7 +40,7 @@ public class PageProcessor {
                 CompletableFuture.supplyAsync(() ->
                         tmdbClient.loadMovieDetails(movieId)
                 );
-        CompletableFuture<PersonsCastDto> castFuture =
+        CompletableFuture<PersonsInMovieDto> castFuture =
                 CompletableFuture.supplyAsync(() ->
                         tmdbClient.loadMovieCast(movieId)
                 );

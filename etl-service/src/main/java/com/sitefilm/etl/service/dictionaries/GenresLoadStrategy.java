@@ -6,10 +6,8 @@ import com.sitefilm.etl.dto.dictionaries.GenreResponseDto;
 import com.sitefilm.etl.entity.directories.Genre;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Service
@@ -23,8 +21,8 @@ public class GenresLoadStrategy{
     }
 
 
-    public List<Genre> loadTmdb() {
-        List<GenreDto> mergedDto =
+    public Set<Genre> loadTmdb() {
+        Set<GenreDto> mergedDto =
                 Stream.of(
                                 languages.stream().map(
                                         locale -> {
@@ -47,7 +45,7 @@ public class GenresLoadStrategy{
                         )
                         .flatMap(s -> s)
                         .flatMap(r -> r.getGenres().stream())
-                        .toList();
+                        .collect(Collectors.toSet());
 
         Map<Integer, Genre> finalMap = new HashMap<>();
 
@@ -63,6 +61,6 @@ public class GenresLoadStrategy{
                     .put(dto.getLanguage(), dto.getName());
         }
 
-        return finalMap.values().stream().toList();
+        return new HashSet<>(finalMap.values());
     }
 }

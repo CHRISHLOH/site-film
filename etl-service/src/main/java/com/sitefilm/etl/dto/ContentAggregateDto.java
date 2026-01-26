@@ -4,6 +4,7 @@ import com.sitefilm.etl.entity.content.Content;
 import com.sitefilm.etl.entity.directories.Country;
 import com.sitefilm.etl.entity.directories.Genre;
 import com.sitefilm.etl.entity.directories.Language;
+import com.sitefilm.etl.service.core.RelationshipsForDataSaveDto;
 
 import java.util.List;
 
@@ -11,8 +12,7 @@ public record ContentAggregateDto(
         Content content,
         MovieAggregateDto movieAggregateDto,
         List<PersonAggregateDto> persons,
-        List<Genre> genres,
-        List<Country> countries,
-        List<Language> languages
+        DictionariesDto dictionariesDto,
+        RelationshipsForDataSaveDto relationships
 ) {
 }

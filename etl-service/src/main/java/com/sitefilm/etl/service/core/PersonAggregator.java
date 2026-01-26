@@ -1,15 +1,16 @@
 package com.sitefilm.etl.service.core;
 
 import com.sitefilm.etl.dto.PersonAggregateDto;
-import com.sitefilm.etl.dto.core.person.PersonDetailsDto;
-import com.sitefilm.etl.dto.core.person.PersonIdDto;
-import com.sitefilm.etl.dto.core.person.PersonsCastDto;
+import com.sitefilm.etl.dto.PersonMovieRole;
+import com.sitefilm.etl.dto.core.person.*;
+import com.sitefilm.etl.entity.MovieRoleType;
 import com.sitefilm.etl.entity.enums.Gender;
 import com.sitefilm.etl.entity.person.Person;
 import com.sitefilm.etl.entity.person.relationship.PersonTranslation;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
+import java.io.IOException;
+import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 
@@ -21,15 +22,13 @@ public class PersonAggregator {
         this.personLoader = personLoader;
     }
 
-    public List<PersonAggregateDto> aggregate(PersonsCastDto personsCastDto) {
-        List<Long> personIds =
-                Stream.concat(
-                                personsCastDto.getCast().stream(),
-                                personsCastDto.getCrew().stream()
-                        )
-                        .map(PersonIdDto::id)
-                        .distinct()
-                        .toList();
+    public List<PersonAggregateDto> aggregate(PersonsInMovieDto personsInMovieDto) {
+        List<Long> personIds = Stream.concat(
+                        personsInMovieDto.getCast().stream().map(PersonCastDto::getExternalId),
+                        personsInMovieDto.getCrew().stream().map(PersonCrewDto::getExternalId)
+                )
+                .distinct()
+                .toList();
 
         List<CompletableFuture<PersonDetailsDto>> futures =
                 personIds.stream()
@@ -43,11 +42,11 @@ public class PersonAggregator {
         List<PersonDetailsDto> personCastDto = futures.stream()
                 .map(CompletableFuture::join)
                 .toList();
+        Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(personsInMovieDto);
 
         return personCastDto.stream().map(personDto -> {
             Person person = Person.builder()
                     .name(personDto.getName())
-                    .birthDate(personDto.getBirthDate())
                     .birthDate(personDto.getBirthDate())
                     .deathDate(personDto.getDeathDate())
                     .gender(Gender.fromId(personDto.getGender()))
@@ -64,7 +63,33 @@ public class PersonAggregator {
                                     .localeName(personTranslationDataDto.getPersonData().getName())
                                     .biography(personTranslationDataDto.getPersonData().getBiography())
                                     .build()).toList();
-            return new PersonAggregateDto(person, personTranslations);
+
+            List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(person.getId());
+
+            return new PersonAggregateDto(person, personTranslations, personMovieRoleList);
         }).toList();
+    }
+
+    private Map<Long, List<PersonMovieRole>> collectRoles(PersonsInMovieDto dto) {
+        Map<Long, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
+        for (PersonCastDto cast : dto.getCast()) {
+            rolesByPersonId
+                    .computeIfAbsent(cast.getExternalId(), k -> new ArrayList<>())
+                    .add(PersonMovieRole.builder()
+                            .type(MovieRoleType.CAST)
+                            .order(cast.getOrder())
+                            .character(cast.getCharacter())
+                            .build());
+        }
+        for (PersonCrewDto crew : dto.getCrew()) {
+            rolesByPersonId
+                    .computeIfAbsent(crew.getExternalId(), k -> new ArrayList<>())
+                    .add(PersonMovieRole.builder()
+                            .type(MovieRoleType.CREW)
+                            .department(crew.getDepartment())
+                            .job(crew.getJob())
+                            .build());
+        }
+        return rolesByPersonId;
     }
 }

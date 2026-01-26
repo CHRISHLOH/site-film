@@ -3,13 +3,11 @@ package com.sitefilm.etl.configuration.client;
 import com.sitefilm.etl.configuration.TmdbUrlProperties;
 import com.sitefilm.etl.dto.core.movie.CountPage;
 import com.sitefilm.etl.dto.core.person.PersonDetailsDto;
-import com.sitefilm.etl.dto.core.person.PersonsCastDto;
+import com.sitefilm.etl.dto.core.person.PersonsInMovieDto;
 import com.sitefilm.etl.dto.core.movie.ResponseMovieTranslationDto;
 import com.sitefilm.etl.dto.core.movie.TmdbMoviePage;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsDto;
 import com.sitefilm.etl.dto.core.person.ResponsePersonTranslationDto;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
 public class CoreTmdbClient {
@@ -53,7 +51,7 @@ public class CoreTmdbClient {
 
     }
 
-    public PersonsCastDto loadMovieCast(Long movieId) {
+    public PersonsInMovieDto loadMovieCast(Long movieId) {
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getPersonsCast())
@@ -61,7 +59,7 @@ public class CoreTmdbClient {
                         .build(movieId)
                 )
                 .retrieve()
-                .body(PersonsCastDto.class);
+                .body(PersonsInMovieDto.class);
     }
 
     public ResponsePersonTranslationDto loadPersonTranslation(Long personId) {
