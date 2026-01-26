@@ -4,10 +4,10 @@ import com.sitefilm.etl.entity.directories.Career;
 import com.sitefilm.etl.entity.directories.Country;
 import com.sitefilm.etl.entity.directories.Genre;
 
-import java.util.List;
+import java.util.Set;
 
-public record DictionariesDto(List<Country> countries,
-        List<Career> careers,
-        List<Genre> genres) {
+public record DictionariesDto(Set<Country> countries,
+        Set<Career> careers,
+        Set<Genre> genres) {
 
 }

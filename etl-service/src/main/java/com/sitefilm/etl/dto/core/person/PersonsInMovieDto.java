@@ -6,11 +6,11 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class PersonsCastDto {
+public class PersonsInMovieDto {
     @JsonProperty("id")
     private Long id;
     @JsonProperty("cast")
-    private List<PersonIdDto> cast;
+    private List<PersonCastDto> cast;
     @JsonProperty("crew")
-    private List<PersonIdDto> crew;
+    private List<PersonCrewDto> crew;
 }

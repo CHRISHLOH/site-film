@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public class PersonDetailsDto {
+public abstract class PersonDetailsDto {
     @JsonProperty("biography")
     private String biography;
     @JsonProperty("birthDate")
