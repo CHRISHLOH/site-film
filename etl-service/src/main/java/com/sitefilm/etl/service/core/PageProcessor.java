@@ -29,7 +29,7 @@ public class PageProcessor {
         List<Long> movieIds = tmdbClient.loadMovieIds(pageNumber).getMovieIds().stream().map(MovieIdDto::id).toList();
         movieIds.forEach(id -> {
             loadOneMovieAsync(id, dictionaries).thenAccept(result -> {
-                //сохранение батчами в бд
+                System.out.println(result);
             });
         });
         return List.of();
@@ -38,11 +38,11 @@ public class PageProcessor {
     private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesDto dictionaries) {
         CompletableFuture<MovieDetailsDto> detailsFuture =
                 CompletableFuture.supplyAsync(() ->
-                        tmdbClient.loadMovieDetails(movieId)
+                        tmdbClient.loadMovieDetails(movieId), executorService
                 );
         CompletableFuture<PersonsInMovieDto> castFuture =
                 CompletableFuture.supplyAsync(() ->
-                        tmdbClient.loadMovieCast(movieId)
+                        tmdbClient.loadMovieCast(movieId), executorService
                 );
         return detailsFuture.thenCombine(castFuture,(movieDetails, castDto) ->
                 contentAggregateFactory.aggregateContent(movieDetails, castDto, dictionaries)

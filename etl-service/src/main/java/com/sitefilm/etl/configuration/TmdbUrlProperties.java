@@ -4,11 +4,11 @@ import lombok.*;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-@Data
+@Getter
+@Setter
 @Configuration
 @ConfigurationProperties(prefix = "tmdb.url")
 public class TmdbUrlProperties {
-
     private String baseUrl;
     private String jobs;
     private String countries;

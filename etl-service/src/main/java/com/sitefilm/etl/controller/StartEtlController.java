@@ -1,5 +1,6 @@
 package com.sitefilm.etl.controller;
 
+import com.sitefilm.etl.service.core.PopularMoviesLoadUseCase;
 import com.sitefilm.etl.service.dictionaries.CountriesLoadStrategy;
 import com.sitefilm.etl.service.dictionaries.GenresLoadStrategy;
 import lombok.RequiredArgsConstructor;
@@ -16,9 +17,10 @@ public class StartEtlController {
 
     private final CountriesLoadStrategy loadStrategy;
     private final GenresLoadStrategy loadStrategyGenres;
+    private final PopularMoviesLoadUseCase popularMoviesLoadUseCase;
 
     @GetMapping("/countries")
     public void countries() {
-        loadStrategyGenres.loadTmdb().forEach(System.out::println);
+        popularMoviesLoadUseCase.load();
     }
 }
