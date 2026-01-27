@@ -23,9 +23,9 @@ public class PopularMoviesLoadUseCase {
     public void load (){
         DictionariesDto dictionaries = dictionariesLoadStrategy.downloadDictionaries();
         int countPage = tmdbClient.loadCountPage().total_pages();
-        IntStream.range(0, countPage)
+        IntStream.range(0, 1)
                 .forEach(page ->
-                        CompletableFuture.runAsync(() -> pageProcessor.loadTmdb(page, dictionaries))
+                        CompletableFuture.runAsync(() -> pageProcessor.loadTmdb(1, dictionaries))
                 );
 
     }

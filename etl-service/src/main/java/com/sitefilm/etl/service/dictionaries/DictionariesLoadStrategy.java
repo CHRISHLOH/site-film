@@ -26,9 +26,9 @@ public class DictionariesLoadStrategy {
     }
 
     public DictionariesDto downloadDictionaries() {
-        CompletableFuture<Set<Career>> careers = CompletableFuture.supplyAsync(careersLoadStrategy::loadTmdb);
-        CompletableFuture<Set<Country>> countries = CompletableFuture.supplyAsync(countriesLoadStrategy::loadTmdb);
-        CompletableFuture<Set<Genre>> genres = CompletableFuture.supplyAsync(genresLoadStrategy::loadTmdb);
+        CompletableFuture<Set<Career>> careers = CompletableFuture.supplyAsync(careersLoadStrategy::loadTmdb, executorService);
+        CompletableFuture<Set<Country>> countries = CompletableFuture.supplyAsync(countriesLoadStrategy::loadTmdb, executorService);
+        CompletableFuture<Set<Genre>> genres = CompletableFuture.supplyAsync(genresLoadStrategy::loadTmdb, executorService);
 
         CompletableFuture.allOf(careers, countries, genres).join();
 
