@@ -20,7 +20,8 @@ public class StartEtlController {
     private final PopularMoviesLoadUseCase popularMoviesLoadUseCase;
 
     @GetMapping("/countries")
-    public void countries() {
+    public String countries() {
         popularMoviesLoadUseCase.load();
+        return "Отработало";
     }
 }

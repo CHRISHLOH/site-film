@@ -6,9 +6,7 @@ import com.sitefilm.etl.entity.CareerType;
 import com.sitefilm.etl.entity.directories.Career;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Service
@@ -24,16 +22,19 @@ public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy<Career>
     @Override
     public Set<Career> loadTmdb() {
         Set<CareerDto> careerDtoList = dictionariesTmdbClient.getCareers();
-
-        Set<Career> finalCareerList = new HashSet<>();
-        for (CareerDto careerDto : careerDtoList) {
-            careerDto.getJobs().forEach(job -> {
-                Career career = new Career();
-                career.setCareer(job);
-                career.setType(CareerType.valueOf(careerDto.getDepartment()));
-                finalCareerList.add(career);
-            });
+        Set<String> seen = new HashSet<>();
+        Set<Career> result = new HashSet<>();
+        for (CareerDto dto : careerDtoList) {
+            CareerType type = CareerType.fromTmdb(dto.getDepartment());
+            for (String job : dto.getJobs()) {
+                String key = type.getId() + "|" + job;
+                if (seen.add(key)) {
+                    Career career = new Career();
+                    career.setType(type);
+                    result.add(career);
+                }
+            }
         }
-        return finalCareerList;
+        return result;
     }
 }

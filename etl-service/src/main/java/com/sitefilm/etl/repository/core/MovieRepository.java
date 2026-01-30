@@ -1,4 +1,4 @@
-package com.sitefilm.etl.repository;
+package com.sitefilm.etl.repository.core;
 
 import com.sitefilm.etl.entity.content.movie.MovieDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
