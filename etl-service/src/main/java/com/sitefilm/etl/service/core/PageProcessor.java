@@ -3,6 +3,7 @@ package com.sitefilm.etl.service.core;
 import com.sitefilm.etl.configuration.client.CoreTmdbClient;
 import com.sitefilm.etl.dto.ContentAggregateDto;
 import com.sitefilm.etl.dto.DictionariesDto;
+import com.sitefilm.etl.dto.DictionariesIdDto;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsDto;
 import com.sitefilm.etl.dto.core.movie.MovieIdDto;
 import com.sitefilm.etl.dto.core.person.PersonsInMovieDto;
@@ -25,17 +26,17 @@ public class PageProcessor {
         this.contentAggregateFactory = contentAggregateFactory;
     }
 
-    public List<?> loadTmdb(Integer pageNumber, DictionariesDto dictionaries) {
+    public List<?> loadTmdb(Integer pageNumber, DictionariesIdDto dictionaries) {
         List<Long> movieIds = tmdbClient.loadMovieIds(pageNumber).getMovieIds().stream().map(MovieIdDto::id).toList();
         movieIds.forEach(id -> {
             loadOneMovieAsync(id, dictionaries).thenAccept(result -> {
-                System.out.println(result);
+
             });
         });
         return List.of();
     }
 
-    private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesDto dictionaries) {
+    private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesIdDto dictionaries) {
         CompletableFuture<MovieDetailsDto> detailsFuture =
                 CompletableFuture.supplyAsync(() ->
                         tmdbClient.loadMovieDetails(movieId), executorService

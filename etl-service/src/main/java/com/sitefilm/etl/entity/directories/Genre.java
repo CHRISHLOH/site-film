@@ -24,9 +24,7 @@ import java.util.Map;
         }
 )
 public class Genre extends DictionariesEntity{
-
     @NotNull
     @Column(name = "external_id")
     private Integer externalId;
-
 }

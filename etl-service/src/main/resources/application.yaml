@@ -6,6 +6,8 @@ spring:
     password: user
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/site_film
+  jpa:
+    show-sql: true
 
 tmdb:
   keys:

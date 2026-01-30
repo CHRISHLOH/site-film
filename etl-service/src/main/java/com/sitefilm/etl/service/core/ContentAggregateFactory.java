@@ -1,9 +1,6 @@
 package com.sitefilm.etl.service.core;
 
-import com.sitefilm.etl.dto.ContentAggregateDto;
-import com.sitefilm.etl.dto.DictionariesDto;
-import com.sitefilm.etl.dto.MovieAggregateDto;
-import com.sitefilm.etl.dto.PersonAggregateDto;
+import com.sitefilm.etl.dto.*;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsDto;
 import com.sitefilm.etl.dto.core.person.PersonsInMovieDto;
 import com.sitefilm.etl.entity.content.Content;
@@ -25,7 +22,7 @@ public class ContentAggregateFactory {
         this.relationshipsAggregator = relationshipsAggregator;
     }
 
-    public ContentAggregateDto aggregateContent(MovieDetailsDto movieDetails, PersonsInMovieDto personsCast, DictionariesDto dictionaries) {
+    public ContentAggregateDto aggregateContent(MovieDetailsDto movieDetails, PersonsInMovieDto personsCast, DictionariesIdDto dictionaries) {
         MovieAggregateDto movieAggregateDto = movieAggregator.aggregate(movieDetails);
         List<PersonAggregateDto> personAggregateDtoList = personAggregator.aggregate(personsCast);
         Content content = new Content();
