@@ -27,7 +27,12 @@ import java.time.OffsetDateTime;
 public class AudioTrack{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "audio_track_seq")
+    @SequenceGenerator(
+            name = "audio_track_seq",
+            sequenceName = "content_service.audio_track_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

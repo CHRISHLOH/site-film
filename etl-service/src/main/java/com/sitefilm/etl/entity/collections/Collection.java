@@ -28,7 +28,12 @@ import java.util.Set;
 public class Collection{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "collections_seq")
+    @SequenceGenerator(
+            name = "collections_seq",
+            sequenceName = "content_service.collections_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

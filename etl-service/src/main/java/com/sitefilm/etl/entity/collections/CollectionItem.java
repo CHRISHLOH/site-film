@@ -30,7 +30,12 @@ import java.time.OffsetDateTime;
 public class CollectionItem {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "collection_items_seq")
+    @SequenceGenerator(
+            name = "collection_items_seq",
+            sequenceName = "content_service.collection_items_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

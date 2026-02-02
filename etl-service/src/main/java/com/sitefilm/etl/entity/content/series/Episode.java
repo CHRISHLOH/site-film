@@ -35,7 +35,12 @@ import java.util.Set;
 public class Episode{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "episodes_seq")
+    @SequenceGenerator(
+            name = "episodes_seq",
+            sequenceName = "content_service.episodes_id_seq",
+            allocationSize = 100
+    )
     private Long id;
 
     @NotNull

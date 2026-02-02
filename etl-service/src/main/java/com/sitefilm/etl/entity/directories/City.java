@@ -25,6 +25,15 @@ import java.util.Map;
 )
 public class City extends DictionariesEntity{
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cities_seq")
+    @SequenceGenerator(
+            name = "cities_seq",
+            sequenceName = "content_service.cities_id_seq",
+            allocationSize = 50
+    )
+    private Long id;
+
     @NotNull
     @Size(max = 100)
     @Column(name = "code", nullable = false, unique = true, length = 100)

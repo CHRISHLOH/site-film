@@ -27,6 +27,15 @@ import java.util.Map;
 )
 public class Language extends  DictionariesEntity{
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "languages_seq")
+    @SequenceGenerator(
+            name = "languages_seq",
+            sequenceName = "content_service.languages_id_seq",
+            allocationSize = 50
+    )
+    private Long id;
+
     @NotNull
     @Size(min = 2, max = 3)
     @Column(name = "iso_code", nullable = false, unique = true, length = 3)

@@ -29,7 +29,12 @@ import lombok.*;
 public class ContentGenre {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "content_genres_seq")
+    @SequenceGenerator(
+            name = "content_genres_seq",
+            sequenceName = "content_service.content_genres_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

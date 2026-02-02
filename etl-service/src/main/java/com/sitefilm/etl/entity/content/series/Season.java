@@ -35,7 +35,12 @@ import java.util.Set;
 public class Season{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seasons_seq")
+    @SequenceGenerator(
+            name = "seasons_seq",
+            sequenceName = "content_service.seasons_id_seq",
+            allocationSize = 100
+    )
     private Long id;
 
     @NotNull

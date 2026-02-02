@@ -28,7 +28,12 @@ import lombok.*;
 public class FranchiseTranslation {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "franchise_translations_seq")
+    @SequenceGenerator(
+            name = "franchise_translations_seq",
+            sequenceName = "content_service.franchise_translations_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

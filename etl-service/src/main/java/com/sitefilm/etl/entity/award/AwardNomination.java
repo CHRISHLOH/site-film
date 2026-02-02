@@ -33,7 +33,12 @@ import java.util.Set;
 public class AwardNomination {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "award_nominations_seq")
+    @SequenceGenerator(
+            name = "award_nominations_seq",
+            sequenceName = "content_service.award_nominations_id_seq",
+            allocationSize = 100
+    )
     private Long id;
 
     @NotNull

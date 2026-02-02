@@ -29,7 +29,12 @@ import java.util.Set;
 public class Franchise{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "franchises_seq")
+    @SequenceGenerator(
+            name = "franchises_seq",
+            sequenceName = "content_service.franchises_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

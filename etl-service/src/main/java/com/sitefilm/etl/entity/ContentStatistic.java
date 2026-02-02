@@ -24,7 +24,12 @@ import java.time.OffsetDateTime;
 public class ContentStatistic {
 
     @Id
-    @Column(name = "content_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "content_statistic_seq")
+    @SequenceGenerator(
+            name = "content_statistic_seq",
+            sequenceName = "content_service.content_statistic_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @MapsId

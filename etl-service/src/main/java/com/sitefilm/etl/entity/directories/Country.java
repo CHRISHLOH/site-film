@@ -24,6 +24,14 @@ import java.util.Map;
         }
 )
 public class Country extends DictionariesEntity{
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "countries_seq")
+    @SequenceGenerator(
+            name = "countries_seq",
+            sequenceName = "content_service.countries_id_seq",
+            allocationSize = 50
+    )
+    private Long id;
 
     @NotNull
     @Size(min = 2, max = 2)

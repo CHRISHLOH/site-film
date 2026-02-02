@@ -34,7 +34,12 @@ import java.time.OffsetDateTime;
 public class ContentLanguage {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "content_languages_seq")
+    @SequenceGenerator(
+            name = "content_languages_seq",
+            sequenceName = "content_service.content_languages_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

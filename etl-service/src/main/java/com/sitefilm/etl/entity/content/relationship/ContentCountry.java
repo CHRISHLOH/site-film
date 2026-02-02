@@ -28,7 +28,12 @@ import lombok.*;
 public class ContentCountry {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "content_countries_seq")
+    @SequenceGenerator(
+            name = "content_countries_seq",
+            sequenceName = "content_service.content_countries_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

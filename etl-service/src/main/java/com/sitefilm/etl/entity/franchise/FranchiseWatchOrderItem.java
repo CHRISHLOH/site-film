@@ -28,7 +28,12 @@ import lombok.*;
 public class FranchiseWatchOrderItem {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "franchise_watch_order_items_seq")
+    @SequenceGenerator(
+            name = "franchise_watch_order_items_seq",
+            sequenceName = "content_service.franchise_watch_order_items_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

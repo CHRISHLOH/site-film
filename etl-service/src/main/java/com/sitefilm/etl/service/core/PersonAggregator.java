@@ -3,13 +3,12 @@ package com.sitefilm.etl.service.core;
 import com.sitefilm.etl.dto.PersonAggregateDto;
 import com.sitefilm.etl.dto.PersonMovieRole;
 import com.sitefilm.etl.dto.core.person.*;
-import com.sitefilm.etl.entity.MovieRoleType;
+import com.sitefilm.etl.entity.enums.MovieRoleType;
 import com.sitefilm.etl.entity.enums.Gender;
 import com.sitefilm.etl.entity.person.Person;
 import com.sitefilm.etl.entity.person.relationship.PersonTranslation;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;

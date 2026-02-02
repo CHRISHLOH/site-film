@@ -23,7 +23,12 @@ import java.util.Set;
 public class VideoFile {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "video_files_seq")
+    @SequenceGenerator(
+            name = "video_files_seq",
+            sequenceName = "content_service.video_files_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

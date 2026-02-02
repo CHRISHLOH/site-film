@@ -20,7 +20,12 @@ import java.time.OffsetDateTime;
 public class SeriesDetail{
 
     @Id
-    @Column(name = "content_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "series_details_seq")
+    @SequenceGenerator(
+            name = "series_details_seq",
+            sequenceName = "content_service.series_details_id_seq",
+            allocationSize = 100
+    )
     private Long id;
 
     @MapsId
