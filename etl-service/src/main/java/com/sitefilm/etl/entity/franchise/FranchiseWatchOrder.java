@@ -34,7 +34,12 @@ import java.util.Set;
 public class FranchiseWatchOrder {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "franchise_watch_orders_seq")
+    @SequenceGenerator(
+            name = "franchise_watch_orders_seq",
+            sequenceName = "content_service.franchise_watch_orders_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

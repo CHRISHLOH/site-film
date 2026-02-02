@@ -2,7 +2,7 @@ package com.sitefilm.etl.service.dictionaries;
 
 import com.sitefilm.etl.configuration.client.DictionariesTmdbClient;
 import com.sitefilm.etl.dto.dictionaries.CareerDto;
-import com.sitefilm.etl.entity.CareerType;
+import com.sitefilm.etl.entity.enums.CareerType;
 import com.sitefilm.etl.entity.directories.Career;
 import org.springframework.stereotype.Service;
 

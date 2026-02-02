@@ -16,10 +16,6 @@ import java.util.Map;
 @Setter
 @MappedSuperclass
 public abstract class DictionariesEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     @NotNull
     @Type(JsonType.class)
     @Column(name = "translations", nullable = false, columnDefinition = "jsonb")

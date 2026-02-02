@@ -24,7 +24,18 @@ import java.util.Map;
         }
 )
 public class Genre extends DictionariesEntity{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "genres_seq")
+    @SequenceGenerator(
+            name = "genres_seq",
+            sequenceName = "content_service.genres_id_seq",
+            allocationSize = 50
+    )
+    private Long id;
+
     @NotNull
     @Column(name = "external_id")
     private Integer externalId;
+
 }

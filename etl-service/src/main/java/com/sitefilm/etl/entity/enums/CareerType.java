@@ -1,4 +1,4 @@
-package com.sitefilm.etl.entity;
+package com.sitefilm.etl.entity.enums;
 
 
 import lombok.Getter;

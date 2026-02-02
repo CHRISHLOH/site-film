@@ -20,7 +20,12 @@ import java.time.OffsetDateTime;
 public class MovieDetail{
 
     @Id
-    @Column(name = "content_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "movie_details_seq")
+    @SequenceGenerator(
+            name = "movie_details_seq",
+            sequenceName = "content_service.movie_details_id_seq",
+            allocationSize = 100
+    )
     private Long id;
 
     @MapsId

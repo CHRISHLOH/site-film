@@ -1,6 +1,6 @@
 package com.sitefilm.etl.dto;
 
-import com.sitefilm.etl.entity.MovieRoleType;
+import com.sitefilm.etl.entity.enums.MovieRoleType;
 import lombok.Builder;
 import lombok.Data;
 

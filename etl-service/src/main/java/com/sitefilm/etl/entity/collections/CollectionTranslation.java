@@ -31,7 +31,12 @@ import java.time.OffsetDateTime;
 public class CollectionTranslation{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "collection_translations_seq")
+    @SequenceGenerator(
+            name = "collection_translations_seq",
+            sequenceName = "content_service.collection_translations_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

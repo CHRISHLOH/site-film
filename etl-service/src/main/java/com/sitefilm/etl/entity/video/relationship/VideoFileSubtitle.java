@@ -36,7 +36,12 @@ import java.time.OffsetDateTime;
 public class VideoFileSubtitle {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "video_file_subtitles_seq")
+    @SequenceGenerator(
+            name = "video_file_subtitles_seq",
+            sequenceName = "content_service.video_file_subtitles_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull

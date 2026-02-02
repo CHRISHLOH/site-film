@@ -27,7 +27,12 @@ import lombok.*;
 public class AwardNominationTranslation {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "award_nomination_translations_seq")
+    @SequenceGenerator(
+            name = "award_nomination_translations_seq",
+            sequenceName = "content_service.award_nomination_translations_id_seq",
+            allocationSize = 50
+    )
     private Long id;
 
     @NotNull
