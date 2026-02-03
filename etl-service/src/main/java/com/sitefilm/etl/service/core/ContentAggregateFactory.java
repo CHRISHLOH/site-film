@@ -22,7 +22,7 @@ public class ContentAggregateFactory {
         this.relationshipsAggregator = relationshipsAggregator;
     }
 
-    public ContentAggregateDto aggregateContent(MovieDetailsDto movieDetails, PersonsInMovieDto personsCast, DictionariesIdDto dictionaries) {
+    public ContentAggregateDto aggregateContent(MovieDetailsDto movieDetails, PersonsInMovieDto personsCast, DictionariesDto dictionaries) {
         MovieAggregateDto movieAggregateDto = movieAggregator.aggregate(movieDetails);
         List<PersonAggregateDto> personAggregateDtoList = personAggregator.aggregate(personsCast);
         Content content = new Content();

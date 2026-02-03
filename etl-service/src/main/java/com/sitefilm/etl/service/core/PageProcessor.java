@@ -26,7 +26,7 @@ public class PageProcessor {
         this.contentAggregateFactory = contentAggregateFactory;
     }
 
-    public List<?> loadTmdb(Integer pageNumber, DictionariesIdDto dictionaries) {
+    public List<?> loadTmdb(Integer pageNumber, DictionariesDto dictionaries) {
         List<Long> movieIds = tmdbClient.loadMovieIds(pageNumber).getMovieIds().stream().map(MovieIdDto::id).toList();
         movieIds.forEach(id -> {
             loadOneMovieAsync(id, dictionaries).thenAccept(result -> {
@@ -36,7 +36,7 @@ public class PageProcessor {
         return List.of();
     }
 
-    private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesIdDto dictionaries) {
+    private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesDto dictionaries) {
         CompletableFuture<MovieDetailsDto> detailsFuture =
                 CompletableFuture.supplyAsync(() ->
                         tmdbClient.loadMovieDetails(movieId), executorService

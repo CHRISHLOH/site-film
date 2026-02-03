@@ -30,11 +30,6 @@ public class Career extends DictionariesEntity {
     private Long id;
 
     @NotNull
-    @Size(max = 255)
-    @Column(name = "career", nullable = false, unique = true)
-    private String career;
-
-    @NotNull
     @Size(max = 100)
     @Column(name = "type")
     @Enumerated(EnumType.STRING)

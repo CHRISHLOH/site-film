@@ -6,5 +6,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface TmdbDictionariesLoadStrategy<T extends DictionariesEntity> {
-    Set<T> loadTmdb();
+    List<T> loadTmdb();
 }

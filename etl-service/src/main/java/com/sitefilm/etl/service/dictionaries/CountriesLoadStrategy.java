@@ -19,16 +19,16 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Count
 
 
     @Override
-    public Set<Country> loadTmdb() {
-        Set<Set<CountryDto>> tmdbList = locales.stream().map(locales -> {
-            Set<CountryDto> countryDtoList = dictionariesTmdbClient.getCountries(locales);
+    public List<Country> loadTmdb() {
+        List<List<CountryDto>> tmdbList = locales.stream().map(locales -> {
+            List<CountryDto> countryDtoList = dictionariesTmdbClient.getCountries(locales);
             countryDtoList.forEach(countryDto -> countryDto.setLocale(locales));
             return countryDtoList;
-        }).collect(Collectors.toSet());
+        }).toList();
 
         Map<String, Country> finalMap= new HashMap<>();
 
-        for(Set<CountryDto> countryDtoList : tmdbList) {
+        for(List<CountryDto> countryDtoList : tmdbList) {
             for(CountryDto countryDto : countryDtoList) {
                 finalMap.computeIfAbsent(countryDto.getIsoCode(),
                         code -> {
@@ -40,6 +40,6 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Count
                 .getTranslations().put(countryDto.getLocale(), countryDto.getNativeName());
             }
         }
-        return new HashSet<>(finalMap.values());
+        return new ArrayList<>(finalMap.values());
     }
 }

@@ -1,6 +1,6 @@
 package com.sitefilm.etl.configuration;
 
-import com.sitefilm.etl.entity.CareerType;
+import com.sitefilm.etl.entity.enums.CareerType;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 

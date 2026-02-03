@@ -29,17 +29,15 @@ public class DictionariesDataBaseService {
     }
 
     @Transactional
-    public DictionariesIdDto saveDictionaries(DictionariesDto dictionariesDto) {
-        List<Career> careers =careerRepository.saveAll(dictionariesDto.careers());
+    public DictionariesDto saveDictionaries(DictionariesDto dictionariesDto) {
+        System.out.println("Отработало");
+        List<Career> careers = careerRepository.saveAll(dictionariesDto.careers());
         List<Country> countries = countryRepository.saveAll(dictionariesDto.countries());
         List<Genre> genres = genreRepository.saveAll(dictionariesDto.genres());
-        Career career = new Career();
+        System.out.println("Отработало");
+       ;
 
-        Map<String, Long> countriesId = countries.stream().collect(toMap(Country::getIsoCode, Country::getId));
-        Map<Integer, Long> genresId = genres.stream().collect(toMap(Genre::getExternalId, Genre::getId));
-        Map<Map<String, String>, Long> jobsId = careers.stream().collect(toMap(Career::getTranslations, Career::getId));
-
-        return new DictionariesIdDto(countriesId, genresId, jobsId);
+        return new DictionariesDto(countries, careers, genres);
 
     }
 }

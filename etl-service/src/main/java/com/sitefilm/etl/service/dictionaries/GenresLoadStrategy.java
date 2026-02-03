@@ -21,8 +21,8 @@ public class GenresLoadStrategy{
     }
 
 
-    public Set<Genre> loadTmdb() {
-        Set<GenreDto> mergedDto =
+    public List<Genre> loadTmdb() {
+        List<GenreDto> mergedDto =
                 Stream.of(
                                 languages.stream().map(
                                         locale -> {
@@ -45,7 +45,7 @@ public class GenresLoadStrategy{
                         )
                         .flatMap(s -> s)
                         .flatMap(r -> r.getGenres().stream())
-                        .collect(Collectors.toSet());
+                        .toList();
 
         Map<Integer, Genre> finalMap = new HashMap<>();
 
@@ -61,6 +61,6 @@ public class GenresLoadStrategy{
                     .put(dto.getLanguage(), dto.getName());
         }
 
-        return new HashSet<>(finalMap.values());
+        return new ArrayList<>(finalMap.values());
     }
 }
