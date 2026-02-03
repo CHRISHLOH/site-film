@@ -26,7 +26,7 @@ public class PopularMoviesLoadUseCase {
 
     public void load (){
         DictionariesDto dictionaries = dictionariesLoadStrategy.downloadDictionaries();
-        DictionariesIdDto dictionariesId = dictionariesSaveService.saveDictionaries(dictionaries);
+        DictionariesDto dictionariesId = dictionariesSaveService.saveDictionaries(dictionaries);
 
 
         int countPage = tmdbClient.loadCountPage().total_pages();

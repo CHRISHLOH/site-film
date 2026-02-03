@@ -40,9 +40,4 @@ public class Language extends  DictionariesEntity{
     @Size(min = 2, max = 3)
     @Column(name = "iso_code", nullable = false, unique = true, length = 3)
     private String isoCode;
-
-    @NotNull
-    @Size(max = 100)
-    @Column(name = "native_name", nullable = false, length = 100)
-    private String nativeName;
 }

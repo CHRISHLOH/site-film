@@ -17,9 +17,9 @@ import java.util.Set;
 
 public class DictionariesTmdbClient {
 
-    private static final ParameterizedTypeReference<Set<CountryDto>> COUNTRY_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
-    private static final ParameterizedTypeReference<Set<LanguageDto>> LANGUAGE_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
-    private static final ParameterizedTypeReference<Set<CareerDto>> CAREER_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
+    private static final ParameterizedTypeReference<List<CountryDto>> COUNTRY_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
+    private static final ParameterizedTypeReference<List<LanguageDto>> LANGUAGE_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
+    private static final ParameterizedTypeReference<List<CareerDto>> CAREER_DTO_TYPE_REFERENCE = new ParameterizedTypeReference<>() {};
     private final RestClient restClient;
     private final TmdbUrlProperties urlProperties;
 
@@ -28,7 +28,7 @@ public class DictionariesTmdbClient {
         this.urlProperties = urlProperties;
     }
 
-    public Set<CountryDto> getCountries(String language){
+    public List<CountryDto> getCountries(String language){
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getCountries())
@@ -58,14 +58,14 @@ public class DictionariesTmdbClient {
                 .body(GenreResponseDto.class);
     }
 
-    public Set<LanguageDto> getLanguages(){
+    public List<LanguageDto> getLanguages(){
         return restClient.get()
                 .uri(urlProperties.getLanguages())
                 .retrieve()
                 .body(LANGUAGE_DTO_TYPE_REFERENCE);
     }
 
-    public Set<CareerDto> getCareers(){
+    public List<CareerDto> getCareers(){
         return restClient.get()
                 .uri(urlProperties.getJobs())
                 .retrieve()

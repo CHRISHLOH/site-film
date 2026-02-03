@@ -26,15 +26,15 @@ public class DictionariesLoadStrategy {
     }
 
     public DictionariesDto downloadDictionaries() {
-        CompletableFuture<Set<Career>> careers = CompletableFuture.supplyAsync(careersLoadStrategy::loadTmdb, executorService);
-        CompletableFuture<Set<Country>> countries = CompletableFuture.supplyAsync(countriesLoadStrategy::loadTmdb, executorService);
-        CompletableFuture<Set<Genre>> genres = CompletableFuture.supplyAsync(genresLoadStrategy::loadTmdb, executorService);
+        CompletableFuture<List<Career>> careers = CompletableFuture.supplyAsync(careersLoadStrategy::loadTmdb, executorService);
+        CompletableFuture<List<Country>> countries = CompletableFuture.supplyAsync(countriesLoadStrategy::loadTmdb, executorService);
+        CompletableFuture<List<Genre>> genres = CompletableFuture.supplyAsync(genresLoadStrategy::loadTmdb, executorService);
 
         CompletableFuture.allOf(careers, countries, genres).join();
 
-        Set<Career> careerList = careers.join();
-        Set<Country> countryList = countries.join();
-        Set<Genre> genreList = genres.join();
+        List<Career> careerList = careers.join();
+        List<Country> countryList = countries.join();
+        List<Genre> genreList = genres.join();
 
         return new DictionariesDto(countryList, careerList, genreList);
     }

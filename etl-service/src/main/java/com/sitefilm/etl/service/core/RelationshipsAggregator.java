@@ -23,14 +23,14 @@ import java.util.stream.Collectors;
 public class RelationshipsAggregator {
 
 
-    public RelationshipsForDataSaveDto aggregate(Content content, MovieDetailsDto movieDetailsDto, DictionariesIdDto dictionaries, List<PersonAggregateDto> persons) {
+    public RelationshipsForDataSaveDto aggregate(Content content, MovieDetailsDto movieDetailsDto, DictionariesDto dictionaries, List<PersonAggregateDto> persons) {
         List<ContentCountry> contentCountries = mappingContentCountry(dictionaries, content,  movieDetailsDto);
         List<ContentGenre> contentGenres = mappingContentGenre(dictionaries, content, movieDetailsDto);
         List<ContentPerson> contentPerson = mappingContentPerson(content, persons, dictionaries);
         return new RelationshipsForDataSaveDto(contentCountries, contentGenres, contentPerson);
     }
 
-    private List<ContentCountry> mappingContentCountry(DictionariesIdDto dictionaries, Content content, MovieDetailsDto movieDetailsDto) {
+    private List<ContentCountry> mappingContentCountry(DictionariesDto dictionaries, Content content, MovieDetailsDto movieDetailsDto) {
         Map<String, Country> countriesByIso = dictionaries.countries().stream()
                 .collect(Collectors.toMap(
                         Country::getIsoCode,
@@ -48,7 +48,7 @@ public class RelationshipsAggregator {
         return result;
     }
 
-    private List<ContentGenre> mappingContentGenre(DictionariesIdDto dictionaries, Content content, MovieDetailsDto movieDetailsDto) {
+    private List<ContentGenre> mappingContentGenre(DictionariesDto dictionaries, Content content, MovieDetailsDto movieDetailsDto) {
         Map<Integer, Genre> genresById = dictionaries.genres().stream()
                 .collect(Collectors.toMap(
                         Genre::getExternalId,
@@ -68,7 +68,7 @@ public class RelationshipsAggregator {
         return result;
     }
 
-    private List<ContentPerson> mappingContentPerson(Content content, List<PersonAggregateDto> persons, DictionariesIdDto dictionaries) {
+    private List<ContentPerson> mappingContentPerson(Content content, List<PersonAggregateDto> persons, DictionariesDto dictionaries) {
         List<ContentPerson> result = new ArrayList<>();
         persons.forEach(person -> person.personMovieData().forEach(roleInMovie -> {
                     ContentPerson contentPerson = new ContentPerson();

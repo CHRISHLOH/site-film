@@ -7,6 +7,7 @@ import com.sitefilm.etl.entity.directories.Career;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -20,8 +21,8 @@ public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy<Career>
 
 
     @Override
-    public Set<Career> loadTmdb() {
-        Set<CareerDto> careerDtoList = dictionariesTmdbClient.getCareers();
+    public List<Career> loadTmdb() {
+        List<CareerDto> careerDtoList = dictionariesTmdbClient.getCareers();
         Set<String> seen = new HashSet<>();
         Set<Career> result = new HashSet<>();
         for (CareerDto dto : careerDtoList) {
@@ -35,6 +36,6 @@ public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy<Career>
                 }
             }
         }
-        return result;
+        return result.stream().toList();
     }
 }
