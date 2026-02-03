@@ -34,6 +34,4 @@ public class Career extends DictionariesEntity {
     @Column(name = "type")
     @Enumerated(EnumType.STRING)
     private CareerType type;
-
-
 }

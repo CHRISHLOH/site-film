@@ -11,8 +11,10 @@ import com.sitefilm.etl.repository.dictioanries.GenreRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import static java.util.stream.Collectors.toMap;
 
@@ -30,12 +32,27 @@ public class DictionariesDataBaseService {
 
     @Transactional
     public DictionariesDto saveDictionaries(DictionariesDto dictionariesDto) {
-        System.out.println("Отработало");
-        List<Career> careers = careerRepository.saveAll(dictionariesDto.careers());
+//        List<Career> careers =              careerRepository.saveAll(dictionariesDto.careers());
+        System.out.println("=== BEFORE SAVE ===");
+        System.out.println("Total countries: " + dictionariesDto.countries().size());
+
+        Set<String> isoCodes = new HashSet<>();
+        Set<Integer> identities = new HashSet<>();
+
+        for (Country c : dictionariesDto.countries()) {
+            System.out.println("Country: iso=" + c.getIsoCode() +
+                    ", identity=" + System.identityHashCode(c));
+            isoCodes.add(c.getIsoCode());
+            identities.add(System.identityHashCode(c));
+        }
+
+        System.out.println("Unique ISO codes: " + isoCodes.size());
+        System.out.println("Unique objects: " + identities.size());
+        List<Career> careers = null;
         List<Country> countries = countryRepository.saveAll(dictionariesDto.countries());
+        System.out.println("Отработало в первый раз");
         List<Genre> genres = genreRepository.saveAll(dictionariesDto.genres());
-        System.out.println("Отработало");
-       ;
+        System.out.println("Отработало во второй");
 
         return new DictionariesDto(countries, careers, genres);
 

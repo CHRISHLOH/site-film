@@ -10,6 +10,7 @@ import org.hibernate.annotations.Type;
 import java.util.HashMap;
 import java.util.Map;
 
+@ToString
 @Builder
 @Getter
 @Setter
@@ -29,7 +30,7 @@ public class Country extends DictionariesEntity{
     @SequenceGenerator(
             name = "countries_seq",
             sequenceName = "content_service.countries_id_seq",
-            allocationSize = 50
+            allocationSize = 1
     )
     private Long id;
 
