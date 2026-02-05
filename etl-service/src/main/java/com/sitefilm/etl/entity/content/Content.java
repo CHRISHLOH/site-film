@@ -1,12 +1,17 @@
 package com.sitefilm.etl.entity.content;
 
+import com.sitefilm.etl.entity.enums.AgeRating;
+import com.sitefilm.etl.entity.enums.ContentStatus;
 import com.sitefilm.etl.entity.enums.ContentType;
-import jakarta.persistence.*;
+import com.sitefilm.etl.entity.enums.Source;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -15,63 +20,57 @@ import java.time.OffsetDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Table(
         name = "content",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_content_original_title", columnList = "original_title"),
-                @Index(name = "idx_content_release_date", columnList = "release_date"),
-                @Index(name = "idx_content_type", columnList = "content_type"),
-                @Index(name = "idx_content_status", columnList = "status")
-        }
+        schema = "content_service"
 )
 public class Content{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "content_seq")
-    @SequenceGenerator(
-            name = "content_seq",
-            sequenceName = "content_service.content_id_seq",
-            allocationSize = 100
-    )
     private Long id;
 
     @NotNull
     @Size(max = 255)
-    @Column(name = "original_title", nullable = false)
+    @Column("original_title")
     private String originalTitle;
 
     @NotNull
-    @Enumerated(EnumType.STRING)
-    @Column(name = "content_type", nullable = false, length = 50)
+    @Column("content_type")
     private ContentType contentType;
 
     @Size(max = 255)
-    @Column(name = "poster_url")
+    @Column("poster_url")
     private String posterUrl;
 
-    @Column(name = "release_date")
+    @Column("release_date")
     private LocalDate releaseDate;
 
-    @Column(name = "status", length = 30)
-    private String status;
+    @Column("status")
+    private ContentStatus status;
 
-    @Size(max = 3)
-    @Column(name = "age_rating", length = 3)
-    private String ageRating;
+    @Column("age_rating")
+    private AgeRating ageRating;
 
-    @Column(name = "budget")
+    @Column("budget")
     private Long budget;
 
-    @Column(name = "box_office")
+    @Column("box_office")
     private Long boxOffice;
 
+    @Column("external_id")
+    private String externalId;
+
+    @Column("source")
+    private Source source;
+
+    @Column("duration")
+    private Integer duration;
+
     @CreatedDate
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column("created_at")
     private OffsetDateTime createdAt;
 
     @LastModifiedDate
-    @Column(name = "updated_at")
+    @Column("updated_at")
     private OffsetDateTime updatedAt;
 }

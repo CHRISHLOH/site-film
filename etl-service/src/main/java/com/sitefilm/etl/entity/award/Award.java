@@ -1,14 +1,15 @@
 package com.sitefilm.etl.entity.award;
 
 import com.sitefilm.etl.entity.directories.Country;
-import io.hypersistence.utils.hibernate.type.json.JsonType;
-import jakarta.persistence.*;
+import com.sitefilm.etl.entity.directories.Translation;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.hibernate.annotations.Type;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Embedded;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.OffsetDateTime;
 import java.util.HashMap;
@@ -21,65 +22,32 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
-@EntityListeners(AuditingEntityListener.class)
 @Table(
         name = "awards",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_awards_machine_name", columnList = "machine_name"),
-                @Index(name = "idx_awards_country", columnList = "country_id")
-        }
+        schema = "content_service"
 )
 public class Award {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "award_nominations_seq")
-    @SequenceGenerator(
-            name = "award_nominations_seq",
-            sequenceName = "content_service.award_nominations_id_seq",
-            allocationSize = 100
-    )
     private Long id;
 
     @NotNull
     @Size(max = 100)
-    @Column(name = "machine_name", nullable = false, unique = true, length = 100)
+    @Column("machine_name")
     private String machineName;
 
-    @Column(name = "logo_url", columnDefinition = "TEXT")
+    @Column("logo_url")
     private String logoUrl;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country_id")
-    private Country country;
+    @Column("country_id")
+    private Long countryId;
 
-    @Column(name = "founded_year")
+    @Column("founded_year")
     private Integer foundedYear;
 
-    @NotNull
-    @Type(JsonType.class)
-    @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
-    @Builder.Default
-    private Map<String, String> translations = new HashMap<>();
+    @Embedded(onEmpty = Embedded.OnEmpty.USE_NULL)
+    private Translation translation;
 
     @CreatedDate
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column("created_at")
     private OffsetDateTime createdAt;
-
-    @OneToMany(mappedBy = "award", cascade = CascadeType.ALL, orphanRemoval = true)
-    @Builder.Default
-    private Set<AwardCategory> categories = new HashSet<>();
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Award award)) return false;
-        return id != null && id.equals(award.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }

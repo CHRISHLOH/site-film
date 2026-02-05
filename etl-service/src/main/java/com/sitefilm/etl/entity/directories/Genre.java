@@ -1,41 +1,30 @@
 package com.sitefilm.etl.entity.directories;
 
-import io.hypersistence.utils.hibernate.type.json.JsonType;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.hibernate.annotations.Type;
-
-import java.util.HashMap;
-import java.util.Map;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Embedded;
+import org.springframework.data.relational.core.mapping.Table;
 
 @ToString
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+
 @Table(
         name = "genres",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_genres_genre", columnList = "genre")
-        }
+        schema = "content_service"
 )
-public class Genre extends DictionariesEntity{
-
+public class Genre{
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "genres_seq")
-    @SequenceGenerator(
-            name = "genres_seq",
-            sequenceName = "content_service.genres_id_seq",
-            allocationSize = 50
-    )
     private Long id;
 
     @NotNull
-    @Column(name = "external_id")
+    @Column("external_id")
     private Integer externalId;
 
+    @Embedded(onEmpty = Embedded.OnEmpty.USE_NULL)
+    private Translation translation;
 }

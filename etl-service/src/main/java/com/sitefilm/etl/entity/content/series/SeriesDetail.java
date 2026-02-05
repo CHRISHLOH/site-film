@@ -1,11 +1,13 @@
 package com.sitefilm.etl.entity.content.series;
 
-import com.sitefilm.etl.entity.content.Content;
 import com.sitefilm.etl.entity.enums.SeriesStatus;
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -15,59 +17,34 @@ import java.time.OffsetDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
 @Table(name = "series_details", schema = "content_service")
 public class SeriesDetail{
-
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "series_details_seq")
-    @SequenceGenerator(
-            name = "series_details_seq",
-            sequenceName = "content_service.series_details_id_seq",
-            allocationSize = 100
-    )
     private Long id;
 
-    @MapsId
-    @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "content_id", nullable = false)
-    private Content content;
+    @Column("content_id")
+    private Integer contentId;
 
-    @Column(name = "total_seasons")
-    @Builder.Default
-    private Integer totalSeasons = 0;
+    @Column("total_seasons")
+    private Integer totalSeasons;
 
-    @Column(name = "total_episodes")
-    @Builder.Default
-    private Integer totalEpisodes = 0;
+    @Column("total_episodes")
+    private Integer totalEpisodes;
 
-    @Column(name = "average_episode_duration")
+    @Column("average_episode_duration")
     private Integer averageEpisodeDuration;
 
-    @Column(name = "end_date")
+    @Column("end_date")
     private LocalDate endDate;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "series_status", length = 20)
+    @Column("series_status")
     private SeriesStatus seriesStatus;
 
     @CreatedDate
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column("created_at")
     private OffsetDateTime createdAt;
 
     @LastModifiedDate
-    @Column(name = "updated_at")
+    @Column("updated_at")
     private OffsetDateTime updatedAt;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof SeriesDetail that)) return false;
-        return id != null && id.equals(that.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }

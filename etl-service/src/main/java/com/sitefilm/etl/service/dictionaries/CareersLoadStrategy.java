@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy<Career> {
+public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy {
 
     private final DictionariesTmdbClient dictionariesTmdbClient;
 

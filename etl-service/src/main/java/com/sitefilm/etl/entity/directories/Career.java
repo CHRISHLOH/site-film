@@ -1,37 +1,32 @@
 package com.sitefilm.etl.entity.directories;
 
 import com.sitefilm.etl.entity.enums.CareerType;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Embedded;
+import org.springframework.data.relational.core.mapping.Table;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Table(
         name = "careers",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_careers_career", columnList = "career")
-        }
+        schema = "content_service"
 )
-public class Career extends DictionariesEntity {
+public class Career{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "careers_seq")
-    @SequenceGenerator(
-            name = "careers_seq",
-            sequenceName = "content_service.careers_id_seq",
-            allocationSize = 50
-    )
     private Long id;
 
     @NotNull
     @Size(max = 100)
-    @Column(name = "type")
-    @Enumerated(EnumType.STRING)
+    @Column("type")
     private CareerType type;
+
+    @Embedded(onEmpty = Embedded.OnEmpty.USE_NULL)
+    private Translation translation;
 }
