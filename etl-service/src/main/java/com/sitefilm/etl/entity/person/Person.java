@@ -1,12 +1,14 @@
 package com.sitefilm.etl.entity.person;
 
 import com.sitefilm.etl.entity.enums.Gender;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -16,71 +18,48 @@ import java.time.OffsetDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
+
 @Table(
         name = "persons",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_persons_name", columnList = "name"),
-                @Index(name = "idx_persons_birth_date", columnList = "birth_date")
-        }
+        schema = "content_service"
 )
 public class Person {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "persons_seq")
-    @SequenceGenerator(
-            name = "persons_seq",
-            sequenceName = "content_service.persons_id_seq",
-            allocationSize = 100
-    )
     private Long id;
 
     @NotNull
     @Size(max = 100)
-    @Column(name = "original_name", nullable = false, length = 100)
+    @Column("original_name")
     private String name;
 
-    @Column(name = "birth_date")
+    @Column("birth_date")
     private LocalDate birthDate;
 
-    @Column(name = "death_date")
+    @Column("death_date")
     private LocalDate deathDate;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "gender", length = 10)
+    @Column("gender")
     private Gender gender;
 
-    @Column(name = "birth_place", columnDefinition = "TEXT")
+    @Column("birth_place")
     private String birthPlace;
 
-    @Column(name = "knownAs")
-    private String knownAs;
+    @Column("career_id")
+    private Long careerId;
 
-    @Column(name = "photo_url", columnDefinition = "TEXT")
+    @Column("photo_url")
     private String photoUrl;
 
     @NotNull
-    @Column(name = "external_id")
+    @Column("external_id")
     private Long externalId;
 
     @CreatedDate
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column("created_at")
     private OffsetDateTime createdAt;
 
     @LastModifiedDate
-    @Column(name = "updated_at")
+    @Column("updated_at")
     private OffsetDateTime updatedAt;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Person person)) return false;
-        return id != null && id.equals(person.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }

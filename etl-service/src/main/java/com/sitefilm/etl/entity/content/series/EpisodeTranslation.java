@@ -1,11 +1,13 @@
 package com.sitefilm.etl.entity.content.series;
 
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.OffsetDateTime;
 
@@ -14,70 +16,38 @@ import java.time.OffsetDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
 @Table(
         name = "episode_translations",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_episode_translations_episode", columnList = "episode_id"),
-                @Index(name = "idx_episode_translations_locale", columnList = "locale")
-        },
-        uniqueConstraints = {
-                @UniqueConstraint(
-                        name = "uk_episode_translation",
-                        columnNames = {"episode_id", "locale"}
-                )
-        }
+        schema = "content_service"
 )
 public class EpisodeTranslation{
-
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "episode_translations_seq")
-    @SequenceGenerator(
-            name = "episode_translations_seq",
-            sequenceName = "content_service.episode_translations_id_seq",
-            allocationSize = 100
-    )
     private Long id;
 
-    @NotNull
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "episode_id", nullable = false)
-    private Episode episode;
+    @Column("episode_id")
+    private Long episode;
 
     @NotNull
     @Size(max = 5)
-    @Column(name = "locale", nullable = false, length = 5)
+    @Column("locale")
     private String locale;
 
     @NotNull
     @Size(max = 500)
-    @Column(name = "title", nullable = false, length = 500)
+    @Column("title")
     private String title;
 
-    @Column(name = "description", columnDefinition = "TEXT")
+    @Column("description")
     private String description;
 
-    @Column(name = "plot_summary", columnDefinition = "TEXT")
+    @Column("plot_summary")
     private String plotSummary;
 
     @CreatedDate
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column("created_at")
     private OffsetDateTime createdAt;
 
     @LastModifiedDate
-    @Column(name = "updated_at")
+    @Column("updated_at")
     private OffsetDateTime updatedAt;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof EpisodeTranslation that)) return false;
-        return id != null && id.equals(that.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }

@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy<Country> {
+public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy{
 
     Set<String> locales = Set.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
 
