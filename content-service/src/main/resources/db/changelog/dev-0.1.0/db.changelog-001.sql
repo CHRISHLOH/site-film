@@ -16,7 +16,7 @@ CREATE INDEX IF NOT EXISTS idx_countries_iso_code ON content_service.countries(i
 
 CREATE TABLE IF NOT EXISTS content_service.genres (
                                                       id BIGSERIAL PRIMARY KEY,
-                                                      external_id VARCHAR(50),
+                                                      external_id INTEGER,
                                                       translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
                                                       CONSTRAINT uk_content_external UNIQUE (external_id)
 );
@@ -35,9 +35,7 @@ CREATE INDEX IF NOT EXISTS idx_careers_translations ON content_service.careers U
 CREATE TABLE IF NOT EXISTS content_service.languages (
                                                          id BIGSERIAL PRIMARY KEY,
                                                          iso_code VARCHAR(3) NOT NULL,
-                                                         external_id    VARCHAR(50),
-                                                         translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
-                                                         CONSTRAINT uk_external_id_language_source UNIQUE (external_id)
+                                                         translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
 );
 CREATE INDEX IF NOT EXISTS idx_languages_translations ON content_service.languages USING gin(translations);
 
@@ -69,7 +67,7 @@ CREATE TABLE IF NOT EXISTS content_service.content (
                                                       age_rating SMALLINT,
                                                       budget BIGINT,
                                                       box_office BIGINT,
-                                                      external_id    VARCHAR(50),
+                                                      external_id INTEGER,
                                                       duration INTEGER NOT NULL,
                                                       source VARCHAR(15),
                                                       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -128,13 +126,11 @@ CREATE TABLE IF NOT EXISTS content_service.seasons (
                                                        poster_url TEXT,
                                                        release_date DATE,
                                                        episodes_count INTEGER DEFAULT 0,
-                                                       external_id    VARCHAR(50),
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                        CONSTRAINT fk_season_content FOREIGN KEY (content_id)
                                                            REFERENCES content_service.content(id) ,
-                                                       CONSTRAINT uk_season UNIQUE (content_id, season_number),
-                                                       CONSTRAINT uk_external_id_seasons_source UNIQUE (external_id, source)
+                                                       CONSTRAINT uk_season UNIQUE (content_id, season_number)
 );
 CREATE INDEX IF NOT EXISTS idx_seasons_content ON content_service.seasons(content_id);
 CREATE INDEX IF NOT EXISTS idx_seasons_number ON content_service.seasons(content_id, season_number);
@@ -164,7 +160,6 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         episode_number INTEGER NOT NULL,
                                                         duration_minutes INTEGER,
                                                         air_date DATE,
-                                                        external_id    VARCHAR(50),
                                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                         updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                         CONSTRAINT fk_episode_season FOREIGN KEY (season_id)
@@ -205,7 +200,7 @@ CREATE TABLE IF NOT EXISTS content_service.persons (
                                                        birth_place TEXT,
                                                        career_id BIGINT,
                                                        photo_url TEXT,
-                                                       external_id    VARCHAR(50),
+                                                       external_id INTEGER,
                                                        source VARCHAR(15),
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -275,7 +270,6 @@ CREATE TABLE IF NOT EXISTS content_service.content_persons (
 CREATE INDEX IF NOT EXISTS idx_content_persons_person_id ON content_service.content_persons(person_id);
 CREATE INDEX IF NOT EXISTS idx_content_persons_career_id ON content_service.content_persons(career_id);
 CREATE INDEX IF NOT EXISTS idx_content_persons_content_order ON content_service.content_persons(content_id, display_order_in_content);
-CREATE INDEX IF NOT EXISTS idx_content_persons_career_order ON content_service.content_persons(person_id, display_order_in_career);
 
 --changeset author:18 runOnChange:false
 --comment: Create movie_genres table
@@ -351,7 +345,7 @@ CREATE TABLE IF NOT EXISTS content_service.collections (
                                              code VARCHAR(100) NOT NULL UNIQUE,
                                              poster_url TEXT,
                                              display_order SMALLINT DEFAULT 0,
-                                             external_id    VARCHAR(50),
+                                             external_id INTEGER,
                                              source VARCHAR(15),
                                              created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                              updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -402,7 +396,7 @@ CREATE TABLE IF NOT EXISTS content_service.franchises (
                                             sort_order INTEGER, -- порядок внутри родительской франшизы
                                             poster_url TEXT,
                                             depth INTEGER NOT NULL DEFAULT 0,
-                                            external_id    VARCHAR(50),
+                                            external_id INTEGER,
                                             source VARCHAR(15),
                                             created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                             updated_at TIMESTAMPTZ DEFAULT NOW(),

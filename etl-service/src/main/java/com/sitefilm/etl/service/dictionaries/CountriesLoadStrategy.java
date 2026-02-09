@@ -1,13 +1,12 @@
 package com.sitefilm.etl.service.dictionaries;
 
 import com.sitefilm.etl.configuration.client.DictionariesTmdbClient;
-import com.sitefilm.etl.dto.dictionaries.CountryDto;
+import com.sitefilm.etl.dto.dictionaries.CountryResponseDto;
 import com.sitefilm.etl.entity.directories.Country;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -20,24 +19,25 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy{
 
     @Override
     public List<Country> loadTmdb() {
-        List<List<CountryDto>> tmdbList = locales.stream().map(locales -> {
-            List<CountryDto> countryDtoList = dictionariesTmdbClient.getCountries(locales);
-            countryDtoList.forEach(countryDto -> countryDto.setLocale(locales));
-            return countryDtoList;
+        List<List<CountryResponseDto>> tmdbList = locales.stream().map(locales -> {
+            List<CountryResponseDto> countryResponseDtoList = dictionariesTmdbClient.getCountries(locales);
+            countryResponseDtoList.forEach(countryResponseDto -> countryResponseDto.setLocale(locales));
+            return countryResponseDtoList;
         }).toList();
 
         Map<String, Country> finalMap= new HashMap<>();
 
-        for(List<CountryDto> countryDtoList : tmdbList) {
-            for(CountryDto countryDto : countryDtoList) {
-                finalMap.computeIfAbsent(countryDto.getIsoCode(),
+        for(List<CountryResponseDto> countryResponseDtoList : tmdbList) {
+            for(CountryResponseDto countryResponseDto : countryResponseDtoList) {
+                finalMap.computeIfAbsent(countryResponseDto.getIsoCode(),
                         code -> {
                                 Country country = new Country();
                                 country.setIsoCode(code);
+                                country.setTranslations(new HashMap<>());
                         return country;
                     }
                 )
-                .getTranslations().put(countryDto.getLocale(), countryDto.getNativeName());
+                .getTranslations().put(countryResponseDto.getLocale(), countryResponseDto.getNativeName());
             }
         }
         return new ArrayList<>(finalMap.values());

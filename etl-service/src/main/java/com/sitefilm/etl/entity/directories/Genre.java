@@ -4,8 +4,9 @@ import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
-import org.springframework.data.relational.core.mapping.Embedded;
 import org.springframework.data.relational.core.mapping.Table;
+
+import java.util.Map;
 
 @ToString
 @Getter
@@ -25,6 +26,6 @@ public class Genre{
     @Column("external_id")
     private Integer externalId;
 
-    @Embedded(onEmpty = Embedded.OnEmpty.USE_NULL)
-    private Translation translation;
+    @Column("translations")
+    Map<String, String> translations;
 }

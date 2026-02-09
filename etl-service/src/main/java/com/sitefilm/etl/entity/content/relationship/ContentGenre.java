@@ -23,7 +23,7 @@ public class ContentGenre {
 
     @NotNull
     @Column("genre_id")
-    private Genre genre;
+    private Long genreId;
 
     @Column("display_order")
     private Short displayOrder;

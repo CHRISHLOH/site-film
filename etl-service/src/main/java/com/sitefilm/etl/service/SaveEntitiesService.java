@@ -3,7 +3,6 @@ package com.sitefilm.etl.service;
 import com.sitefilm.etl.repository.dictioanries.CareerRepository;
 import com.sitefilm.etl.repository.dictioanries.CountryRepository;
 import com.sitefilm.etl.repository.dictioanries.GenreRepository;
-import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 @Service

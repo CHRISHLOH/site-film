@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class PersonsInMovieDto {
+public class PersonsInMovieResponseDto {
     @JsonProperty("id")
     private Long id;
     @JsonProperty("cast")

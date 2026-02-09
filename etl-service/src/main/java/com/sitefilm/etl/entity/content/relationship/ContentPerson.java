@@ -32,7 +32,7 @@ public class ContentPerson{
 
     @NotNull
     @Column("career_id")
-    private Career career_id;
+    private Long careerId;
 
     @Size(max = 255)
     @Column("character_name")

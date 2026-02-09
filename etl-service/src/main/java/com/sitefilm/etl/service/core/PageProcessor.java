@@ -3,10 +3,9 @@ package com.sitefilm.etl.service.core;
 import com.sitefilm.etl.configuration.client.CoreTmdbClient;
 import com.sitefilm.etl.dto.ContentAggregateDto;
 import com.sitefilm.etl.dto.DictionariesDto;
-import com.sitefilm.etl.dto.DictionariesIdDto;
-import com.sitefilm.etl.dto.core.movie.MovieDetailsDto;
+import com.sitefilm.etl.dto.core.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.dto.core.movie.MovieIdDto;
-import com.sitefilm.etl.dto.core.person.PersonsInMovieDto;
+import com.sitefilm.etl.dto.core.person.PersonsInMovieResponseDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -30,18 +29,18 @@ public class PageProcessor {
         List<Long> movieIds = tmdbClient.loadMovieIds(pageNumber).getMovieIds().stream().map(MovieIdDto::id).toList();
         movieIds.forEach(id -> {
             loadOneMovieAsync(id, dictionaries).thenAccept(result -> {
-
+                System.out.println(result.toString());
             });
         });
         return List.of();
     }
 
     private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesDto dictionaries) {
-        CompletableFuture<MovieDetailsDto> detailsFuture =
+        CompletableFuture<MovieDetailsResponseDto> detailsFuture =
                 CompletableFuture.supplyAsync(() ->
                         tmdbClient.loadMovieDetails(movieId), executorService
                 );
-        CompletableFuture<PersonsInMovieDto> castFuture =
+        CompletableFuture<PersonsInMovieResponseDto> castFuture =
                 CompletableFuture.supplyAsync(() ->
                         tmdbClient.loadMovieCast(movieId), executorService
                 );

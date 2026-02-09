@@ -58,7 +58,7 @@ public class Content{
     private Long boxOffice;
 
     @Column("external_id")
-    private String externalId;
+    private Integer externalId;
 
     @Column("source")
     private Source source;
