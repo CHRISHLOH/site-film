@@ -10,8 +10,6 @@ import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.OffsetDateTime;
-import java.util.HashSet;
-import java.util.Set;
 
 @Getter
 @Setter
@@ -36,7 +34,6 @@ public class Collection{
     private String posterUrl;
 
     @Column("display_order")
-    @Builder.Default
     private Short displayOrder;
 
     @Column("external_Id")

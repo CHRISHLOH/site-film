@@ -49,12 +49,12 @@ public class GenresLoadStrategy{
 
         Map<Integer, Genre> finalMap = new HashMap<>();
 
-
         for (GenreDto dto : mergedDto) {
             finalMap
                     .computeIfAbsent(dto.getExternal_id(), extId -> {
                         Genre g = new Genre();
                         g.setExternalId(extId);
+                        g.setTranslations(new HashMap<>());
                         return g;
                     })
                     .getTranslations()

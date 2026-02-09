@@ -9,6 +9,8 @@ import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Embedded;
 import org.springframework.data.relational.core.mapping.Table;
 
+import java.util.Map;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,7 +20,6 @@ import org.springframework.data.relational.core.mapping.Table;
         schema = "content_service"
 )
 public class Career{
-
     @Id
     private Long id;
 
@@ -27,6 +28,6 @@ public class Career{
     @Column("type")
     private CareerType type;
 
-    @Embedded(onEmpty = Embedded.OnEmpty.USE_NULL)
-    private Translation translation;
+    @Column("translations")
+    Map<String, String> translations;
 }
