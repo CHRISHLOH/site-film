@@ -11,6 +11,7 @@
           <package value="org.sitefilm.userservice" />
         </packages>
       </persistence-unit>
+      <persistence-unit moduleName="etl-service" name="etl-service" framework="Spring Data JDBC" ormUnit="etl-service" defaultDataSourceId="37d6874c-357f-4e32-b546-90063ff0c27e__site_film_content_service" />
     </persistence-units>
   </component>
 </project>

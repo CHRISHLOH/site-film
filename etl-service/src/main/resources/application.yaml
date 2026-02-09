@@ -6,8 +6,8 @@ spring:
     password: user
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/site_film
-  jpa:
-    show-sql: true
+  jdbc:
+    core: DEBUG
 
 tmdb:
   keys:
@@ -28,3 +28,13 @@ tmdb:
     person-details: '/person/{person_id}'
 server:
   port: 9090
+
+logging:
+  level:
+    org:
+     springframework:
+       jdbc:
+         core:
+           JdbcTemplate: DEBUG
+
+

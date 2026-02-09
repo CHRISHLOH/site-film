@@ -14,21 +14,9 @@ CREATE TABLE IF NOT EXISTS content_service.countries (
 CREATE INDEX IF NOT EXISTS idx_countries_iso_code ON content_service.countries(iso_code);
 
 
-
-CREATE TABLE IF NOT EXISTS content_service.cities (
-                        id BIGSERIAL PRIMARY KEY,
-                        code VARCHAR(100) NOT NULL UNIQUE,
-                        country_id BIGINT REFERENCES content_service.countries(id),
-                        translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
-);
-
-CREATE INDEX IF NOT EXISTS idx_cities_translations_gin ON content_service.cities USING GIN (translations);
-
-
-
 CREATE TABLE IF NOT EXISTS content_service.genres (
                                                       id BIGSERIAL PRIMARY KEY,
-                                                      external_id VARCHAR(50),
+                                                      external_id INTEGER,
                                                       translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
                                                       CONSTRAINT uk_content_external UNIQUE (external_id)
 );
@@ -47,9 +35,7 @@ CREATE INDEX IF NOT EXISTS idx_careers_translations ON content_service.careers U
 CREATE TABLE IF NOT EXISTS content_service.languages (
                                                          id BIGSERIAL PRIMARY KEY,
                                                          iso_code VARCHAR(3) NOT NULL,
-                                                         external_id    VARCHAR(50),
-                                                         translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object'),
-                                                         CONSTRAINT uk_external_id_language_source UNIQUE (external_id)
+                                                         translations JSONB NOT NULL CHECK (jsonb_typeof(translations) = 'object')
 );
 CREATE INDEX IF NOT EXISTS idx_languages_translations ON content_service.languages USING gin(translations);
 
@@ -74,18 +60,18 @@ CREATE TABLE IF NOT EXISTS content_service.video_files (
 CREATE TABLE IF NOT EXISTS content_service.content (
                                                       id BIGSERIAL PRIMARY KEY,
                                                       original_title VARCHAR(255) NOT NULL,
-                                                      content_type VARCHAR(50) CHECK (content_type IN ('movie','series')),
+                                                      content_type SMALLINT,
                                                       poster_url VARCHAR(255),
                                                       release_date DATE,
-                                                      status VARCHAR(30) CHECK (status IN ('draft','published','archived')),
-                                                      age_rating VARCHAR(3),
+                                                      status SMALLINT,
+                                                      age_rating SMALLINT,
                                                       budget BIGINT,
                                                       box_office BIGINT,
-                                                      external_id    VARCHAR(50),
+                                                      external_id INTEGER,
+                                                      duration INTEGER NOT NULL,
                                                       source VARCHAR(15),
                                                       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                       updated_at TIMESTAMPTZ DEFAULT NOW(),
-                                                      CONSTRAINT check_content_content_type CHECK (content_type IN ('movie','series')),
                                                       CONSTRAINT uk_external_id_content_source UNIQUE (external_id, source)
 );
 CREATE INDEX IF NOT EXISTS idx_movies_original_title ON content_service.content (original_title);
@@ -113,24 +99,6 @@ CREATE INDEX IF NOT EXISTS idx_movie_translations_title ON content_service.conte
 
 
 -- ============================================
--- СПЕЦИФИЧНЫЕ ДАННЫЕ ДЛЯ ФИЛЬМОВ
--- ============================================
-
---changeset author:new4 runOnChange:false
---comment: Create movie_details table
-CREATE TABLE IF NOT EXISTS content_service.movie_details (
-                                                             content_id BIGINT PRIMARY KEY,
-
-                                                             duration_minutes INTEGER NOT NULL, -- длительность фильма
-                                                             cinema_release_date DATE, -- дата цифрового релиза
-                                                             digital_release_date DATE, -- дата цифрового релиза
-                                                             created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-                                                             updated_at TIMESTAMPTZ DEFAULT NOW(),
-                                                             CONSTRAINT fk_movie_details_content FOREIGN KEY (content_id)
-                                                                 REFERENCES content_service.content(id)
-);
-
--- ============================================
 -- СПЕЦИФИЧНЫЕ ДАННЫЕ ДЛЯ СЕРИАЛОВ
 -- ============================================
 
@@ -142,7 +110,7 @@ CREATE TABLE IF NOT EXISTS content_service.series_details (
                                                               total_episodes INTEGER DEFAULT 0,
                                                               average_episode_duration INTEGER, -- средняя длительность эпизода в минутах
                                                               end_date DATE,
-                                                              series_status VARCHAR(20) CHECK (series_status IN ('ongoing','finished','cancelled')),
+                                                              series_status SMALLINT,
                                                               created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                               updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                               CONSTRAINT fk_series_details_content FOREIGN KEY (content_id)
@@ -158,14 +126,11 @@ CREATE TABLE IF NOT EXISTS content_service.seasons (
                                                        poster_url TEXT,
                                                        release_date DATE,
                                                        episodes_count INTEGER DEFAULT 0,
-                                                       external_id    VARCHAR(50),
-                                                       source VARCHAR(15),
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                        CONSTRAINT fk_season_content FOREIGN KEY (content_id)
                                                            REFERENCES content_service.content(id) ,
-                                                       CONSTRAINT uk_season UNIQUE (content_id, season_number),
-                                                       CONSTRAINT uk_external_id_seasons_source UNIQUE (external_id, source)
+                                                       CONSTRAINT uk_season UNIQUE (content_id, season_number)
 );
 CREATE INDEX IF NOT EXISTS idx_seasons_content ON content_service.seasons(content_id);
 CREATE INDEX IF NOT EXISTS idx_seasons_number ON content_service.seasons(content_id, season_number);
@@ -195,14 +160,11 @@ CREATE TABLE IF NOT EXISTS content_service.episodes (
                                                         episode_number INTEGER NOT NULL,
                                                         duration_minutes INTEGER,
                                                         air_date DATE,
-                                                        external_id    VARCHAR(50),
-                                                        source VARCHAR(15),
                                                         created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                         updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                         CONSTRAINT fk_episode_season FOREIGN KEY (season_id)
                                                             REFERENCES content_service.seasons(id) ,
-                                                        CONSTRAINT uk_episode UNIQUE (season_id, episode_number),
-                                                        CONSTRAINT uk_external_id_episodes_source UNIQUE (external_id, source)
+                                                        CONSTRAINT uk_episode UNIQUE (season_id, episode_number)
 );
 CREATE INDEX IF NOT EXISTS idx_episodes_season ON content_service.episodes(season_id);
 CREATE INDEX IF NOT EXISTS idx_episodes_number ON content_service.episodes(season_id, episode_number);
@@ -231,13 +193,14 @@ CREATE INDEX IF NOT EXISTS idx_episode_translations_locale ON content_service.ep
 --comment: Create persons table
 CREATE TABLE IF NOT EXISTS content_service.persons (
                                                        id BIGSERIAL PRIMARY KEY,
-                                                       name VARCHAR(200) NOT NULL,
+                                                       original_name VARCHAR(200) NOT NULL,
                                                        birth_date DATE,
                                                        death_date DATE,
-                                                       gender SMALLINT, -- 'male', 'female'
+                                                       gender SMALLINT,
                                                        birth_place TEXT,
+                                                       career_id BIGINT,
                                                        photo_url TEXT,
-                                                       external_id    VARCHAR(50),
+                                                       external_id INTEGER,
                                                        source VARCHAR(15),
                                                        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                        updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -273,7 +236,7 @@ CREATE TABLE IF NOT EXISTS content_service.audio_tracks (
                                                                   id BIGSERIAL PRIMARY KEY,
                                                                   language_id BIGINT NOT NULL, -- язык озвучки
                                                                   studio_name VARCHAR(255) NOT NULL, -- "Кинопоиск", "LostFilm", "Original"
-                                                                  track_type VARCHAR(50), -- 'original', 'dubbing', 'multi_voice', 'single_voice'
+                                                                  track_type SMALLINT,
                                                                   display_order INTEGER DEFAULT 0,
                                                                   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                                   updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -289,13 +252,11 @@ CREATE INDEX IF NOT EXISTS idx_audio_tracks_language_id ON content_service.audio
 --changeset author:17 runOnChange:false
 --comment: Create movie_persons table
 CREATE TABLE IF NOT EXISTS content_service.content_persons (
-                                                             id BIGSERIAL PRIMARY KEY,
                                                              content_id BIGINT NOT NULL,
                                                              person_id BIGINT NOT NULL,
                                                              career_id BIGINT NOT NULL,
-                                                             character_name VARCHAR(255), -- имя персонажа (для актеров)
-                                                             display_order_in_content INTEGER DEFAULT 0, -- порядок на странице фильма
-                                                             display_order_in_career INTEGER DEFAULT 0, -- порядок на странице актера
+                                                             character_name VARCHAR(255),
+                                                             display_order_in_content INTEGER DEFAULT 0,
                                                              created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                              updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                              CONSTRAINT fk_content_person_content FOREIGN KEY (content_id)
@@ -309,7 +270,6 @@ CREATE TABLE IF NOT EXISTS content_service.content_persons (
 CREATE INDEX IF NOT EXISTS idx_content_persons_person_id ON content_service.content_persons(person_id);
 CREATE INDEX IF NOT EXISTS idx_content_persons_career_id ON content_service.content_persons(career_id);
 CREATE INDEX IF NOT EXISTS idx_content_persons_content_order ON content_service.content_persons(content_id, display_order_in_content);
-CREATE INDEX IF NOT EXISTS idx_content_persons_career_order ON content_service.content_persons(person_id, display_order_in_career);
 
 --changeset author:18 runOnChange:false
 --comment: Create movie_genres table
@@ -325,20 +285,6 @@ CREATE TABLE IF NOT EXISTS content_service.content_genres (
 );
 CREATE INDEX IF NOT EXISTS idx_movie_genres_genre_id ON content_service.content_genres(genre_id);
 CREATE INDEX IF NOT EXISTS idx_content_genre_rating ON content_service.content_genres(genre_id, content_id);
-
---changeset author:20 runOnChange:false
---comment: Create person_careers table
-CREATE TABLE IF NOT EXISTS content_service.person_careers (
-                                                              person_id BIGINT NOT NULL,
-                                                              career_id BIGINT NOT NULL,
-                                                              display_order SMALLINT DEFAULT 0,
-                                                              PRIMARY KEY (person_id, career_id),
-                                                              CONSTRAINT fk_person_career_person FOREIGN KEY (person_id)
-                                                                  REFERENCES content_service.persons(id) ,
-                                                              CONSTRAINT fk_person_career_career FOREIGN KEY (career_id)
-                                                                  REFERENCES content_service.careers(id) 
-);
-CREATE INDEX IF NOT EXISTS idx_person_careers_career_id ON content_service.person_careers(career_id);
 
 
 CREATE TABLE IF NOT EXISTS content_service.content_countries (
@@ -375,7 +321,7 @@ CREATE TABLE IF NOT EXISTS content_service.video_file_subtitles (
                                                                video_file_id      BIGINT       NOT NULL,
                                                                language_id   BIGINT       NOT NULL, -- язык субтитров
                                                                author_name   VARCHAR(255) NOT NULL, -- "Netflix", "OpenSubtitles"
-                                                               subtitle_type VARCHAR(50), -- 'regular', 'sdh', 'forced'
+                                                               subtitle_type SMALLINT,
                                                                url           TEXT         NOT NULL, -- URL файла субтитров
                                                                is_default    BOOLEAN DEFAULT FALSE,
                                                                created_at    TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
@@ -399,7 +345,7 @@ CREATE TABLE IF NOT EXISTS content_service.collections (
                                              code VARCHAR(100) NOT NULL UNIQUE,
                                              poster_url TEXT,
                                              display_order SMALLINT DEFAULT 0,
-                                             external_id    VARCHAR(50),
+                                             external_id INTEGER,
                                              source VARCHAR(15),
                                              created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                              updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -408,7 +354,6 @@ CREATE TABLE IF NOT EXISTS content_service.collections (
 
 
 CREATE TABLE IF NOT EXISTS content_service.collection_translations (
-                                                         id BIGSERIAL PRIMARY KEY,
                                                          collection_id BIGINT NOT NULL,
                                                          locale VARCHAR(5) NOT NULL,
                                                          name VARCHAR(255) NOT NULL,
@@ -451,7 +396,7 @@ CREATE TABLE IF NOT EXISTS content_service.franchises (
                                             sort_order INTEGER, -- порядок внутри родительской франшизы
                                             poster_url TEXT,
                                             depth INTEGER NOT NULL DEFAULT 0,
-                                            external_id    VARCHAR(50),
+                                            external_id INTEGER,
                                             source VARCHAR(15),
                                             created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                             updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -500,7 +445,7 @@ CREATE TABLE IF NOT EXISTS content_service.franchise_watch_order_items (
                                                              id BIGSERIAL PRIMARY KEY,
                                                              watch_order_id BIGINT NOT NULL,
                                                              content_id BIGINT NOT NULL,
-                                                             position INTEGER NOT NULL,   -- порядок показа (1 → 2 → 3)
+                                                             position INTEGER NOT NULL,
                                                              is_optional BOOLEAN DEFAULT false,
                                                              notes TEXT,
                                                              CONSTRAINT fk_watch_order FOREIGN KEY (watch_order_id)

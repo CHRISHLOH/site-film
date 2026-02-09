@@ -1,66 +1,34 @@
 package com.sitefilm.etl.entity.award;
 
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
 @Table(
         name = "award_nomination_translations",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_award_nom_trans_nomination", columnList = "nomination_id")
-        },
-        uniqueConstraints = {
-                @UniqueConstraint(
-                        name = "uk_award_nomination_translation",
-                        columnNames = {"nomination_id", "locale"}
-                )
-        }
+        schema = "content_service"
 )
 public class AwardNominationTranslation {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "award_nomination_translations_seq")
-    @SequenceGenerator(
-            name = "award_nomination_translations_seq",
-            sequenceName = "content_service.award_nomination_translations_id_seq",
-            allocationSize = 50
-    )
-    private Long id;
-
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "nomination_id", nullable = false)
-    private AwardNomination nomination;
+    @Column("nomination_id")
+    private Long nomination;
 
     @NotNull
     @Size(max = 5)
-    @Column(name = "locale", nullable = false, length = 5)
+    @Column("locale")
     private String locale;
 
     @Size(max = 255)
-    @Column(name = "work_title")
+    @Column("work_title")
     private String workTitle;
 
-    @Column(name = "notes", columnDefinition = "TEXT")
+    @Column("notes")
     private String notes;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof AwardNominationTranslation that)) return false;
-        return id != null && id.equals(that.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }

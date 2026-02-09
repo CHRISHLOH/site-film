@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class TmdbMoviePage {
+public class TmdbMoviePageResponse {
     @JsonProperty("page")
     private Integer page;
     @JsonProperty("result")

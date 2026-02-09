@@ -1,12 +1,10 @@
 package com.sitefilm.etl.entity.directories;
 
-import io.hypersistence.utils.hibernate.type.json.JsonType;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.hibernate.annotations.Type;
+import org.springframework.data.relational.core.mapping.Column;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,10 +12,8 @@ import java.util.Map;
 @ToString
 @Getter
 @Setter
-@MappedSuperclass
-public abstract class DictionariesEntity {
+public class Translation {
     @NotNull
-    @Type(JsonType.class)
-    @Column(name = "translations", nullable = false, columnDefinition = "jsonb")
+    @Column("translations")
     private Map<String, String> translations = new HashMap<>();
 }

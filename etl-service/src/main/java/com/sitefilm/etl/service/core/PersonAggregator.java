@@ -21,15 +21,15 @@ public class PersonAggregator {
         this.personLoader = personLoader;
     }
 
-    public List<PersonAggregateDto> aggregate(PersonsInMovieDto personsInMovieDto) {
+    public List<PersonAggregateDto> aggregate(PersonsInMovieResponseDto personsInMovieResponseDto) {
         List<Long> personIds = Stream.concat(
-                        personsInMovieDto.getCast().stream().map(PersonCastDto::getExternalId),
-                        personsInMovieDto.getCrew().stream().map(PersonCrewDto::getExternalId)
+                        personsInMovieResponseDto.getCast().stream().map(PersonCastDto::getExternalId),
+                        personsInMovieResponseDto.getCrew().stream().map(PersonCrewDto::getExternalId)
                 )
                 .distinct()
                 .toList();
 
-        List<CompletableFuture<PersonDetailsDto>> futures =
+        List<CompletableFuture<PersonDetailsResponseDto>> futures =
                 personIds.stream()
                         .map(personLoader::loadPerson)
                         .toList();
@@ -38,10 +38,10 @@ public class PersonAggregator {
                 .allOf(futures.toArray(new CompletableFuture[0]))
                 .join();
 
-        List<PersonDetailsDto> personCastDto = futures.stream()
+        List<PersonDetailsResponseDto> personCastDto = futures.stream()
                 .map(CompletableFuture::join)
                 .toList();
-        Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(personsInMovieDto);
+        Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(personsInMovieResponseDto);
 
         return personCastDto.stream().map(personDto -> {
             Person person = Person.builder()
@@ -57,7 +57,7 @@ public class PersonAggregator {
             List<PersonTranslation> personTranslations =
                     personDto.getPersonTranslations().getTranslations().stream()
                             .map(personTranslationDataDto -> PersonTranslation.builder()
-                                    .person(person)
+                                    .personId(person.getId())
                                     .locale(personTranslationDataDto.getIsoCode())
                                     .localeName(personTranslationDataDto.getPersonData().getName())
                                     .biography(personTranslationDataDto.getPersonData().getBiography())
@@ -69,7 +69,7 @@ public class PersonAggregator {
         }).toList();
     }
 
-    private Map<Long, List<PersonMovieRole>> collectRoles(PersonsInMovieDto dto) {
+    private Map<Long, List<PersonMovieRole>> collectRoles(PersonsInMovieResponseDto dto) {
         Map<Long, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
         for (PersonCastDto cast : dto.getCast()) {
             rolesByPersonId

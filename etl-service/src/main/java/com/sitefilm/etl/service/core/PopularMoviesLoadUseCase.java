@@ -2,7 +2,6 @@ package com.sitefilm.etl.service.core;
 
 import com.sitefilm.etl.configuration.client.CoreTmdbClient;
 import com.sitefilm.etl.dto.DictionariesDto;
-import com.sitefilm.etl.dto.DictionariesIdDto;
 import com.sitefilm.etl.service.dictionaries.DictionariesDataBaseService;
 import com.sitefilm.etl.service.dictionaries.DictionariesLoadStrategy;
 import org.springframework.stereotype.Service;

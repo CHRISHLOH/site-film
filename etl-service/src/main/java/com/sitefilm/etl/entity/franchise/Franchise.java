@@ -1,89 +1,57 @@
 package com.sitefilm.etl.entity.franchise;
 
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.OffsetDateTime;
-import java.util.HashSet;
-import java.util.Set;
+
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
 @Table(
         name = "franchises",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_franchises_code", columnList = "code"),
-                @Index(name = "idx_franchises_parent", columnList = "parent_franchise_id"),
-                @Index(name = "idx_franchises_sort_order", columnList = "parent_franchise_id, sort_order")
-        }
+        schema = "content_service"
 )
 public class Franchise{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "franchises_seq")
-    @SequenceGenerator(
-            name = "franchises_seq",
-            sequenceName = "content_service.franchises_id_seq",
-            allocationSize = 50
-    )
     private Long id;
 
     @NotNull
     @Size(max = 100)
-    @Column(name = "code", nullable = false, unique = true, length = 100)
+    @Column("code")
     private String code;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "parent_franchise_id")
-    private Franchise parentFranchise;
+    @Column("parent_franchise_id")
+    private Long parentFranchiseId;
 
-    @Column(name = "sort_order")
+    @Column("sort_order")
     private Integer sortOrder;
 
-    @Column(name = "poster_url", columnDefinition = "TEXT")
+    @Column("poster_url")
     private String posterUrl;
 
     @NotNull
-    @Column(name = "depth", nullable = false)
-    private Integer depth = 0;
+    @Column("depth")
+    private Integer depth;
 
-
-    @OneToMany(mappedBy = "parentFranchise")
-    @OrderBy("sortOrder ASC")
-    private Set<Franchise> childFranchises = new HashSet<>();
-
-    @OneToMany(mappedBy = "franchise", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<FranchiseTranslation> translations = new HashSet<>();
-
-    @OneToMany(mappedBy = "franchise", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<FranchiseWatchOrder> watchOrders = new HashSet<>();
+    @Column
+    private String source;
 
     @CreatedDate
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column("created_at")
     private OffsetDateTime createdAt;
 
     @LastModifiedDate
-    @Column(name = "updated_at")
+    @Column("updated_at")
     private OffsetDateTime updatedAt;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Franchise franchise)) return false;
-        return id != null && id.equals(franchise.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }
