@@ -10,7 +10,6 @@ import java.util.List;
 
 public record ContentAggregateDto(
         Content content,
-        MovieAggregateDto movieAggregateDto,
         List<PersonAggregateDto> persons,
         DictionariesDto dictionariesDto,
         RelationshipsForDataSaveDto relationships

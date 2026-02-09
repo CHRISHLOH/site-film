@@ -1,17 +1,18 @@
 package com.sitefilm.etl.service.dictionaries;
 
 import com.sitefilm.etl.configuration.client.DictionariesTmdbClient;
-import com.sitefilm.etl.dto.dictionaries.CareerDto;
+import com.sitefilm.etl.dto.dictionaries.CareerResponseDto;
 import com.sitefilm.etl.entity.enums.CareerType;
 import com.sitefilm.etl.entity.directories.Career;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 @Service
-public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy<Career> {
+public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy {
 
     private final DictionariesTmdbClient dictionariesTmdbClient;
 
@@ -19,19 +20,19 @@ public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy<Career>
         this.dictionariesTmdbClient = dictionariesTmdbClient;
     }
 
-
     @Override
     public List<Career> loadTmdb() {
-        List<CareerDto> careerDtoList = dictionariesTmdbClient.getCareers();
+        List<CareerResponseDto> careerResponseDtoList = dictionariesTmdbClient.getCareers();
         Set<String> seen = new HashSet<>();
         Set<Career> result = new HashSet<>();
-        for (CareerDto dto : careerDtoList) {
+        for (CareerResponseDto dto : careerResponseDtoList) {
             CareerType type = CareerType.fromTmdb(dto.getDepartment());
             for (String job : dto.getJobs()) {
                 String key = type.getId() + "|" + job;
                 if (seen.add(key)) {
                     Career career = new Career();
                     career.setType(type);
+                    career.setTranslations(new HashMap<>());
                     result.add(career);
                 }
             }

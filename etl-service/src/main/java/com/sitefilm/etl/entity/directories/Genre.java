@@ -1,13 +1,11 @@
 package com.sitefilm.etl.entity.directories;
 
-import io.hypersistence.utils.hibernate.type.json.JsonType;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.hibernate.annotations.Type;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @ToString
@@ -15,27 +13,19 @@ import java.util.Map;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+
 @Table(
         name = "genres",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_genres_genre", columnList = "genre")
-        }
+        schema = "content_service"
 )
-public class Genre extends DictionariesEntity{
-
+public class Genre{
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "genres_seq")
-    @SequenceGenerator(
-            name = "genres_seq",
-            sequenceName = "content_service.genres_id_seq",
-            allocationSize = 50
-    )
     private Long id;
 
     @NotNull
-    @Column(name = "external_id")
+    @Column("external_id")
     private Integer externalId;
 
+    @Column("translations")
+    Map<String, String> translations;
 }

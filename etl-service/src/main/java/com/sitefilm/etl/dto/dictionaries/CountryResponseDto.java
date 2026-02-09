@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class CountryDto {
+public class CountryResponseDto {
 
     @JsonProperty("iso_3166_1")
     private String isoCode;

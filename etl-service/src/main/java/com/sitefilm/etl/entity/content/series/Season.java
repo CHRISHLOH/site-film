@@ -1,91 +1,57 @@
 package com.sitefilm.etl.entity.content.series;
 
 import com.sitefilm.etl.entity.content.Content;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
-import java.util.HashSet;
-import java.util.Set;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
 @Table(
         name = "seasons",
-        schema = "content_service",
-        indexes = {
-                @Index(name = "idx_seasons_content", columnList = "content_id"),
-                @Index(name = "idx_seasons_number", columnList = "content_id, season_number")
-        },
-        uniqueConstraints = {
-                @UniqueConstraint(
-                        name = "uk_season",
-                        columnNames = {"content_id", "season_number"}
-                )
-        }
+        schema = "content_service"
 )
 public class Season{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seasons_seq")
-    @SequenceGenerator(
-            name = "seasons_seq",
-            sequenceName = "content_service.seasons_id_seq",
-            allocationSize = 100
-    )
     private Long id;
 
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "content_id", nullable = false)
-    private Content content;
+    @Column("content_id")
+    private Long contentId;
 
     @NotNull
-    @Column(name = "season_number", nullable = false)
+    @Column("season_number")
     private Integer seasonNumber;
 
-    @Column(name = "poster_url", columnDefinition = "TEXT")
+    @Column("poster_url")
     private String posterUrl;
 
-    @Column(name = "release_date")
+    @Column("release_date")
     private LocalDate releaseDate;
 
-    @Column(name = "episodes_count")
-    @Builder.Default
-    private Integer episodesCount = 0;
+    @Column("episodes_count")
+    private Integer episodesCount;
+
+    @Column("external_id")
+    private Integer external_id;
 
     @CreatedDate
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column("created_at")
     private OffsetDateTime createdAt;
 
     @LastModifiedDate
-    @Column(name = "updated_at")
+    @Column("updated_at")
     private OffsetDateTime updatedAt;
 
-    @OneToMany(mappedBy = "season", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<SeasonTranslation> translations = new HashSet<>();
-
-    @OneToMany(mappedBy = "season", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Episode> episodes = new HashSet<>();
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Season season)) return false;
-        return id != null && id.equals(season.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }

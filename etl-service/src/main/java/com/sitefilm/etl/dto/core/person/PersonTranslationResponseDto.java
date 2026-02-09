@@ -8,7 +8,7 @@ import java.util.List;
 
 @Data
 @Getter
-public class ResponsePersonTranslationDto {
+public class PersonTranslationResponseDto {
     @JsonProperty("id")
     private Long id;
     @JsonProperty("translations")

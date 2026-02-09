@@ -3,20 +3,20 @@ package com.sitefilm.etl.dto.core.movie;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sitefilm.etl.dto.core.RelationshipsCountryDto;
 import com.sitefilm.etl.dto.dictionaries.GenreDto;
-import com.sitefilm.etl.dto.dictionaries.LanguageDto;
+import com.sitefilm.etl.dto.dictionaries.LanguageResponseDto;
 import lombok.Data;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Data
-public class MovieDetailsDto {
+public class MovieDetailsResponseDto {
     @JsonProperty("budget")
     private Long budget;
     @JsonProperty("genres")
     private List<Integer> genreIdList;
     @JsonProperty("id")
-    private Long externalId;
+    private Integer externalId;
     @JsonProperty("original_title")
     private String originalTitle;
     @JsonProperty("overview")
@@ -26,7 +26,7 @@ public class MovieDetailsDto {
     @JsonProperty("revenue")
     private Long revenue;
     @JsonProperty("runtime")
-    private Long duration;
+    private Integer duration;
     @JsonProperty("status")
     private String status;
     @JsonProperty("title")
@@ -38,5 +38,5 @@ public class MovieDetailsDto {
     @JsonProperty("production_countries")
     List<RelationshipsCountryDto> countries;
     @JsonProperty("spoken_languages")
-    List<LanguageDto> spokenLanguages;
+    List<LanguageResponseDto> spokenLanguages;
 }

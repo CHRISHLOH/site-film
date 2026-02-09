@@ -1,7 +1,7 @@
 package com.sitefilm.etl.repository.dictioanries;
 
 import com.sitefilm.etl.entity.directories.Country;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.ListCrudRepository;
 
-public interface CountryRepository extends JpaRepository<Country, Long> {
+public interface CountryRepository extends ListCrudRepository<Country, Long> {
 }

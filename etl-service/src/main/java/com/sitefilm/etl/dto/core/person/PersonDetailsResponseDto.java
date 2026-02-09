@@ -1,13 +1,12 @@
 package com.sitefilm.etl.dto.core.person;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.Column;
 import lombok.Data;
 
 import java.time.LocalDate;
 
 @Data
-public abstract class PersonDetailsDto {
+public abstract class PersonDetailsResponseDto {
     @JsonProperty("biography")
     private String biography;
     @JsonProperty("birthDate")
