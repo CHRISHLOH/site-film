@@ -21,7 +21,7 @@ tmdb:
     base-url: 'https://api.themoviedb.org/3'
     jobs: '/configuration/jobs'
     movie-page: '/movie/popular'
-    movies-details: '/movie'
+    movies-details: '/movie/{movie_id}'
     persons-cast:  '/movie/{movie_id}/credits'
     movie-translation: '/movie/{movie_id}/translations'
     person-translations: '/person/{person_id}/translations'
@@ -36,5 +36,6 @@ logging:
        jdbc:
          core:
            JdbcTemplate: DEBUG
-
-
+       web:
+         client:
+           RestClient: DEBUG

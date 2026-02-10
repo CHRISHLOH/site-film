@@ -12,6 +12,6 @@ import java.util.concurrent.Executors;
 public class TmdbConcurrencyConfiguration {
     @Bean
     public ExecutorService mainLoaderExecutorService() {
-        return Executors.newFixedThreadPool(10);
+        return Executors.newFixedThreadPool(15);
     }
 }

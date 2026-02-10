@@ -6,12 +6,12 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public abstract class PersonDetailsResponseDto {
+public class PersonDetailsResponseDto {
     @JsonProperty("biography")
     private String biography;
-    @JsonProperty("birthDate")
+    @JsonProperty("birthday")
     private LocalDate birthDate;
-    @JsonProperty("deathDate")
+    @JsonProperty("deathday")
     private LocalDate deathDate;
     @JsonProperty("externalId")
     private Integer externalId;
@@ -24,5 +24,5 @@ public abstract class PersonDetailsResponseDto {
     @JsonProperty("gender")
     private Byte gender;
     @JsonProperty("translations")
-    private PersonTranslations personTranslations;
+    private PersonTranslations personTranslations = new  PersonTranslations();
 }

@@ -1,5 +1,6 @@
 package com.sitefilm.etl.dto.dictionaries;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.ToString;
@@ -11,5 +12,6 @@ public class GenreDto {
     Integer external_id;
     @JsonProperty("name")
     String name;
+    @JsonIgnore
     String language;
 }

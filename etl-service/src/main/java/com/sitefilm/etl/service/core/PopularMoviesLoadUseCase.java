@@ -7,6 +7,7 @@ import com.sitefilm.etl.service.dictionaries.DictionariesLoadStrategy;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
 import java.util.stream.IntStream;
 
 @Service
@@ -15,12 +16,14 @@ public class PopularMoviesLoadUseCase {
     private final DictionariesLoadStrategy  dictionariesLoadStrategy;
     private final PageProcessor pageProcessor;
     private final DictionariesDataBaseService dictionariesSaveService;
+    private final ExecutorService executorService;
 
-    public PopularMoviesLoadUseCase(CoreTmdbClient tmdbClient, DictionariesLoadStrategy dictionariesLoadStrategy, PageProcessor pageProcessor, DictionariesDataBaseService dictionariesSaveService) {
+    public PopularMoviesLoadUseCase(CoreTmdbClient tmdbClient, DictionariesLoadStrategy dictionariesLoadStrategy, PageProcessor pageProcessor, DictionariesDataBaseService dictionariesSaveService, ExecutorService executorService) {
         this.tmdbClient = tmdbClient;
         this.dictionariesLoadStrategy = dictionariesLoadStrategy;
         this.pageProcessor = pageProcessor;
         this.dictionariesSaveService = dictionariesSaveService;
+        this.executorService = executorService;
     }
 
     public void load (){
@@ -29,9 +32,9 @@ public class PopularMoviesLoadUseCase {
 
 
         int countPage = tmdbClient.loadCountPage().total_pages();
-        IntStream.range(0, 1)
+        IntStream.range(0, 2)
                 .forEach(page ->
-                        CompletableFuture.runAsync(() -> pageProcessor.loadTmdb(1, dictionariesId))
+                        CompletableFuture.runAsync(() -> pageProcessor.loadTmdb(1, dictionariesId), executorService).join()
                 );
     }
 }

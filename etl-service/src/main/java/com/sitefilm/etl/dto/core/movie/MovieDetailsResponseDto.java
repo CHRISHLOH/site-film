@@ -13,8 +13,6 @@ import java.util.List;
 public class MovieDetailsResponseDto {
     @JsonProperty("budget")
     private Long budget;
-    @JsonProperty("genres")
-    private List<Integer> genreIdList;
     @JsonProperty("id")
     private Integer externalId;
     @JsonProperty("original_title")
