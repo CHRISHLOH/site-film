@@ -1,5 +1,6 @@
 package com.sitefilm.etl.service.core;
 
+import com.sitefilm.etl.dto.DataContentTranslation;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.dto.core.movie.MovieTranslationDto;
 import com.sitefilm.etl.entity.content.relationship.ContentTranslation;
@@ -12,9 +13,9 @@ import java.util.Set;
 public class ContentTranslationMovieAggregator {
     private static final Set<String> languages = Set.of("en", "ru", "fr", "de", "es");
 
-    public List<ContentTranslation> aggregate(MovieDetailsResponseDto movieDetails){
+    public List<DataContentTranslation> aggregate(MovieDetailsResponseDto movieDetails, Integer externalId){
         return contentTranslationMapping(
-                filterMoviesTranslation(movieDetails.getMovieTranslations().getMovieTranslations()));
+                filterMoviesTranslation(movieDetails.getMovieTranslations().getMovieTranslations()), externalId);
     }
 
     private List<MovieTranslationDto> filterMoviesTranslation(List<MovieTranslationDto> movieTranslation){
@@ -24,13 +25,13 @@ public class ContentTranslationMovieAggregator {
                 .toList();
     }
 
-    private List<ContentTranslation> contentTranslationMapping(List<MovieTranslationDto> movieTranslations){
-        return movieTranslations.stream().map(translation -> ContentTranslation.builder()
-                .contentId(null)
-                .locale(translation.getIsoCode())
-                .title(translation.getDataMovieTranslationList().getTitle())
-                .description(translation.getDataMovieTranslationList().getDescription())
-                .plotSummary(null)
-                .build()).toList();
+    private List<DataContentTranslation> contentTranslationMapping(List<MovieTranslationDto> movieTranslations, Integer externalId){
+        return movieTranslations.stream().map(translation -> new DataContentTranslation(
+                externalId,
+                translation.getIsoCode(),
+                translation.getDataMovieTranslationList().getTitle(),
+                translation.getDataMovieTranslationList().getDescription(),
+                null
+        )).toList();
     }
 }

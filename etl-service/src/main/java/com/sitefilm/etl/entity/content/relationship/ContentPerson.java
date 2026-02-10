@@ -24,7 +24,7 @@ import java.time.OffsetDateTime;
 public class ContentPerson{
     @NotNull
     @Column("content_id")
-    private Content content;
+    private Long contentId;
 
     @NotNull
     @Column("person_id")

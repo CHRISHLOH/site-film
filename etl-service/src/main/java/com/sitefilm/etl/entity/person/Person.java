@@ -1,6 +1,7 @@
 package com.sitefilm.etl.entity.person;
 
 import com.sitefilm.etl.entity.enums.Gender;
+import com.sitefilm.etl.entity.enums.Source;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
@@ -53,7 +54,10 @@ public class Person {
 
     @NotNull
     @Column("external_id")
-    private Long externalId;
+    private Integer externalId;
+
+    @Column("source")
+    private Source source;
 
     @CreatedDate
     @Column("created_at")
