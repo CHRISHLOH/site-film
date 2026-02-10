@@ -9,6 +9,6 @@ import java.util.List;
 public class TmdbMoviePageResponse {
     @JsonProperty("page")
     private Integer page;
-    @JsonProperty("result")
+    @JsonProperty("results")
     private List<MovieIdDto> movieIds;
 }

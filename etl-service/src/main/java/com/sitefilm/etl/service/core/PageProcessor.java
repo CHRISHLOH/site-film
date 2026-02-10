@@ -52,6 +52,7 @@ public class PageProcessor {
 
         PersistentBatchDto dto = aggregator.aggregate(result);
         persistContentFactory.saveData(dto);
+        System.out.println("готово сохранилось");
         return "GOTOVO";
     }
 

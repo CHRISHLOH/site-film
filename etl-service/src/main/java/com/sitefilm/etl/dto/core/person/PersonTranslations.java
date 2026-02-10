@@ -6,5 +6,5 @@ import java.util.List;
 
 @Data
 public class PersonTranslations {
-    private List<PersonTranslationDto> translations;
+    private List<PersonTranslationDto> translations = List.of();
 }

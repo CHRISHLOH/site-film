@@ -11,7 +11,6 @@ import com.sitefilm.etl.dto.core.person.PersonTranslationResponseDto;
 import org.springframework.web.client.RestClient;
 
 public class CoreTmdbClient {
-
     private final RestClient restClient;
     private final TmdbUrlProperties urlProperties;
 
@@ -21,6 +20,7 @@ public class CoreTmdbClient {
     }
 
     public TmdbMoviePageResponse loadMovieIds(Integer page) {
+        System.out.println("Запрос на id фильмов");
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getMoviePage())
@@ -31,27 +31,18 @@ public class CoreTmdbClient {
     }
 
     public MovieDetailsResponseDto loadMovieDetails(Long movieId) {
+        System.out.println("Запрос на подгрузку данных одного фильма");
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getMoviesDetails())
-                        .queryParam("movie_id", movieId)
                         .queryParam("append_to_response", "translations")
-                        .build())
+                        .build(movieId))
                 .retrieve()
                 .body(MovieDetailsResponseDto.class);
     }
 
-    public ResponseMovieTranslationDto loadMovieTranslation(Long movieId) {
-        return restClient.get()
-                .uri(uriBuilder ->
-                        uriBuilder.path(urlProperties.getMovieTranslation())
-                                .build(movieId))
-                .retrieve()
-                .body(ResponseMovieTranslationDto.class);
-
-    }
-
     public PersonsInMovieResponseDto loadMovieCast(Long movieId) {
+        System.out.println("Запрос на подгруз каста");
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getPersonsCast())
@@ -62,27 +53,19 @@ public class CoreTmdbClient {
                 .body(PersonsInMovieResponseDto.class);
     }
 
-    public PersonTranslationResponseDto loadPersonTranslation(Long personId) {
-        return restClient.get()
-                .uri(uriBuilder ->
-                        uriBuilder.path(urlProperties
-                                .getPersonTranslations())
-                                .build(personId))
-                .retrieve()
-                .body(PersonTranslationResponseDto.class);
-    }
-
     public PersonDetailsResponseDto loadPersonDetails(Long personId) {
+        System.out.println("Запрос на персон детали");
         return restClient.get()
                 .uri(uriBuilder ->
                         uriBuilder.path(urlProperties
-                                        .getPersonTranslations())
+                                        .getPersonDetails())
                                 .build(personId))
                 .retrieve()
                 .body(PersonDetailsResponseDto.class);
     }
 
     public CountPage loadCountPage() {
+        System.out.println("Запрос на колво страниц");
         return restClient.get()
                 .uri(uriBuilder ->
                         uriBuilder.path(urlProperties.getMoviePage())

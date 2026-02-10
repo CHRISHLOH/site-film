@@ -56,7 +56,9 @@ public class RelationshipsAggregator {
                 ));
         List<ContentGenrePersistDto> result = new ArrayList<>();
         Short displayOrder = 1;
-        for (Integer id : movieDetailsResponseDto.getGenreIdList()){
+        List<Integer> genresId = new ArrayList<>();
+        movieDetailsResponseDto.getGenres().forEach(genreDto -> genresId.add(genreDto.getExternal_id()));
+        for (Integer id : genresId) {
             Genre genre = genresById.get(id);
             ContentGenrePersistDto contentGenrePersistDto = new ContentGenrePersistDto(
                     content.getExternalId(),

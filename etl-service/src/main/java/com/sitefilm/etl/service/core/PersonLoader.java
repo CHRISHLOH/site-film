@@ -6,14 +6,17 @@ import org.springframework.stereotype.Component;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
 
 @Component
 public class PersonLoader {
+    private final ExecutorService executorService;
     private static final Set<String> languages = Set.of("en", "ru", "fr", "de", "es");
     private final CoreTmdbClient tmdbClient;
 
 
-    public PersonLoader(CoreTmdbClient tmdbClient) {
+    public PersonLoader(ExecutorService executorService, CoreTmdbClient tmdbClient) {
+        this.executorService = executorService;
         this.tmdbClient = tmdbClient;
     }
 
@@ -27,7 +30,7 @@ public class PersonLoader {
                     .toList();
                 personDetails.getPersonTranslations().setTranslations(filtered);
                 return personDetails;
-            }
+            }, executorService
         );
     }
 }
