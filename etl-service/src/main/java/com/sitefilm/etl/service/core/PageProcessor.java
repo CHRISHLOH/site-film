@@ -8,6 +8,7 @@ import com.sitefilm.etl.dto.core.movie.MovieIdDto;
 import com.sitefilm.etl.dto.core.person.PersonsInMovieResponseDto;
 import com.sitefilm.etl.service.core.db.PersistContentFactory;
 import com.sitefilm.etl.service.core.dto.PersistentBatchDto;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,15 +18,22 @@ import java.util.concurrent.ExecutorService;
 @Service
 public class PageProcessor {
     private final CoreTmdbClient tmdbClient;
-    private final ExecutorService executorService;
+    private final ExecutorService movieExecutorService;
+    private final ExecutorService personExecutorService;
     private final ContentAggregateFactory contentAggregateFactory;
     private final DataBatchAggregator aggregator;
     private final PersistContentFactory persistContentFactory;
 
 
-    public PageProcessor(CoreTmdbClient tmdbClient, ExecutorService executorService, ContentAggregateFactory contentAggregateFactory, DataBatchAggregator aggregator, PersistContentFactory persistContentFactory) {
+    public PageProcessor(CoreTmdbClient tmdbClient,
+                         @Qualifier("movieExecutor") ExecutorService movieExecutorService,
+                         @Qualifier("personExecutor") ExecutorService personExecutorService,
+                         ContentAggregateFactory contentAggregateFactory,
+                         DataBatchAggregator aggregator, PersistContentFactory
+                                 persistContentFactory) {
         this.tmdbClient = tmdbClient;
-        this.executorService = executorService;
+        this.movieExecutorService = movieExecutorService;
+        this.personExecutorService = personExecutorService;
         this.contentAggregateFactory = contentAggregateFactory;
         this.aggregator = aggregator;
         this.persistContentFactory = persistContentFactory;
@@ -59,11 +67,11 @@ public class PageProcessor {
     private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesDto dictionaries) {
         CompletableFuture<MovieDetailsResponseDto> detailsFuture =
                 CompletableFuture.supplyAsync(() ->
-                        tmdbClient.loadMovieDetails(movieId), executorService
+                        tmdbClient.loadMovieDetails(movieId), movieExecutorService
                 );
         CompletableFuture<PersonsInMovieResponseDto> castFuture =
                 CompletableFuture.supplyAsync(() ->
-                        tmdbClient.loadMovieCast(movieId), executorService
+                        tmdbClient.loadMovieCast(movieId), personExecutorService
                 );
         return detailsFuture.thenCombine(castFuture,(movieDetails, castDto) ->
                 contentAggregateFactory.aggregateContent(movieDetails, castDto, dictionaries)

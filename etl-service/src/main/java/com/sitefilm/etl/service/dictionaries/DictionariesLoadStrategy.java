@@ -4,6 +4,7 @@ import com.sitefilm.etl.dto.DictionariesDto;
 import com.sitefilm.etl.entity.directories.Career;
 import com.sitefilm.etl.entity.directories.Country;
 import com.sitefilm.etl.entity.directories.Genre;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -18,7 +19,10 @@ public class DictionariesLoadStrategy {
     private final GenresLoadStrategy genresLoadStrategy;
     private final ExecutorService executorService;
 
-    public DictionariesLoadStrategy(CareersLoadStrategy careersLoadStrategy, CountriesLoadStrategy countriesLoadStrategy, GenresLoadStrategy genresLoadStrategy, ExecutorService executorService) {
+    public DictionariesLoadStrategy(CareersLoadStrategy careersLoadStrategy,
+                                    CountriesLoadStrategy countriesLoadStrategy,
+                                    GenresLoadStrategy genresLoadStrategy,
+                                    @Qualifier("dictionariesExecutor") ExecutorService executorService) {
         this.careersLoadStrategy = careersLoadStrategy;
         this.countriesLoadStrategy = countriesLoadStrategy;
         this.genresLoadStrategy = genresLoadStrategy;

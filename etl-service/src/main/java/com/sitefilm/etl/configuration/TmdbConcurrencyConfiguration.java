@@ -10,8 +10,23 @@ import java.util.concurrent.Executors;
 
 @Configuration
 public class TmdbConcurrencyConfiguration {
-    @Bean
-    public ExecutorService mainLoaderExecutorService() {
-        return Executors.newFixedThreadPool(15);
+    @Bean(name = "pageExecutor")
+    public ExecutorService pageExecutorService() {
+        return Executors.newFixedThreadPool(4);
+    }
+
+    @Bean(name = "movieExecutor")
+    public ExecutorService movieExecutorService() {
+        return Executors.newFixedThreadPool(10);
+    }
+
+    @Bean(name = "personExecutor")
+    public ExecutorService personExecutorService() {
+        return Executors.newFixedThreadPool(10);
+    }
+
+    @Bean(name = "dictionariesExecutor")
+    public ExecutorService dictionariesExecutorService() {
+        return Executors.newFixedThreadPool(3);
     }
 }
