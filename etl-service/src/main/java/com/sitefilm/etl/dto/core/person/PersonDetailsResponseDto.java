@@ -14,7 +14,7 @@ public abstract class PersonDetailsResponseDto {
     @JsonProperty("deathDate")
     private LocalDate deathDate;
     @JsonProperty("externalId")
-    private Long externalId;
+    private Integer externalId;
     @JsonProperty("name")
     private String name;
     @JsonProperty("place_of_birth")

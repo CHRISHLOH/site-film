@@ -6,6 +6,8 @@ import com.sitefilm.etl.dto.DictionariesDto;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.dto.core.movie.MovieIdDto;
 import com.sitefilm.etl.dto.core.person.PersonsInMovieResponseDto;
+import com.sitefilm.etl.service.core.db.PersistContentFactory;
+import com.sitefilm.etl.service.core.dto.PersistentBatchDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,22 +19,40 @@ public class PageProcessor {
     private final CoreTmdbClient tmdbClient;
     private final ExecutorService executorService;
     private final ContentAggregateFactory contentAggregateFactory;
+    private final DataBatchAggregator aggregator;
+    private final PersistContentFactory persistContentFactory;
 
 
-    public PageProcessor(CoreTmdbClient tmdbClient, ExecutorService executorService, ContentAggregateFactory contentAggregateFactory) {
+    public PageProcessor(CoreTmdbClient tmdbClient, ExecutorService executorService, ContentAggregateFactory contentAggregateFactory, DataBatchAggregator aggregator, PersistContentFactory persistContentFactory) {
         this.tmdbClient = tmdbClient;
         this.executorService = executorService;
         this.contentAggregateFactory = contentAggregateFactory;
+        this.aggregator = aggregator;
+        this.persistContentFactory = persistContentFactory;
     }
 
-    public List<?> loadTmdb(Integer pageNumber, DictionariesDto dictionaries) {
-        List<Long> movieIds = tmdbClient.loadMovieIds(pageNumber).getMovieIds().stream().map(MovieIdDto::id).toList();
-        movieIds.forEach(id -> {
-            loadOneMovieAsync(id, dictionaries).thenAccept(result -> {
-                System.out.println(result.toString());
-            });
-        });
-        return List.of();
+    public String loadTmdb(Integer pageNumber, DictionariesDto dictionaries) {
+        List<Long> movieIds = tmdbClient.loadMovieIds(pageNumber)
+                .getMovieIds()
+                .stream()
+                .map(MovieIdDto::id)
+                .toList();
+        List<CompletableFuture<ContentAggregateDto>> futures =
+                movieIds.stream()
+                        .map(id -> loadOneMovieAsync(id, dictionaries))
+                        .toList();
+        CompletableFuture
+                .allOf(futures.toArray(new CompletableFuture[0]))
+                .join();
+
+        List<ContentAggregateDto> result =
+                futures.stream()
+                        .map(CompletableFuture::join)
+                        .toList();
+
+        PersistentBatchDto dto = aggregator.aggregate(result);
+        persistContentFactory.saveData(dto);
+        return "GOTOVO";
     }
 
     private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesDto dictionaries) {
@@ -47,6 +67,5 @@ public class PageProcessor {
         return detailsFuture.thenCombine(castFuture,(movieDetails, castDto) ->
                 contentAggregateFactory.aggregateContent(movieDetails, castDto, dictionaries)
         );
-
     }
 }

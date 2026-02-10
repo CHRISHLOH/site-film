@@ -37,4 +37,11 @@ public enum CareerType {
                         new IllegalArgumentException("Unknown TMDB department: " + department)
                 );
     }
+
+    public static CareerType fromId(int id) {
+        return Arrays.stream(values())
+                .filter(t -> t.getId() == id)
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException("Unknown CareerType id: " + id));
+    }
 }

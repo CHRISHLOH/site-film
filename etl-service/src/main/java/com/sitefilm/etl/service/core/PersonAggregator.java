@@ -1,12 +1,13 @@
 package com.sitefilm.etl.service.core;
 
+import com.sitefilm.etl.dto.DataPersonTranslation;
 import com.sitefilm.etl.dto.PersonAggregateDto;
 import com.sitefilm.etl.dto.PersonMovieRole;
 import com.sitefilm.etl.dto.core.person.*;
 import com.sitefilm.etl.entity.enums.MovieRoleType;
 import com.sitefilm.etl.entity.enums.Gender;
+import com.sitefilm.etl.entity.enums.Source;
 import com.sitefilm.etl.entity.person.Person;
-import com.sitefilm.etl.entity.person.relationship.PersonTranslation;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
@@ -44,6 +45,7 @@ public class PersonAggregator {
         Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(personsInMovieResponseDto);
 
         return personCastDto.stream().map(personDto -> {
+            Integer externalId = personDto.getExternalId();
             Person person = Person.builder()
                     .name(personDto.getName())
                     .birthDate(personDto.getBirthDate())
@@ -51,17 +53,20 @@ public class PersonAggregator {
                     .gender(Gender.fromId(personDto.getGender()))
                     .birthPlace(personDto.getPlaceOfBirth())
                     .photoUrl(null)
-                    .externalId(personDto.getExternalId())
+                    .externalId(externalId)
+                    .source(Source.TMDB)
                     .build();
 
-            List<PersonTranslation> personTranslations =
+            List<DataPersonTranslation> personTranslations =
                     personDto.getPersonTranslations().getTranslations().stream()
-                            .map(personTranslationDataDto -> PersonTranslation.builder()
-                                    .personId(person.getId())
-                                    .locale(personTranslationDataDto.getIsoCode())
-                                    .localeName(personTranslationDataDto.getPersonData().getName())
-                                    .biography(personTranslationDataDto.getPersonData().getBiography())
-                                    .build()).toList();
+                            .map(p ->
+                                    new DataPersonTranslation(
+                                            externalId,
+                                            p.getIsoCode(),
+                                            p.getPersonData().getName(),
+                                            p.getPersonData().getBiography()
+                                    )
+                            ).toList();
 
             List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(person.getId());
 

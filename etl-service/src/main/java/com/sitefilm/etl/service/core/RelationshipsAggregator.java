@@ -5,12 +5,12 @@ import com.sitefilm.etl.dto.PersonAggregateDto;
 import com.sitefilm.etl.dto.core.RelationshipsCountryDto;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.entity.content.Content;
-import com.sitefilm.etl.entity.content.relationship.ContentCountry;
-import com.sitefilm.etl.entity.content.relationship.ContentGenre;
-import com.sitefilm.etl.entity.content.relationship.ContentPerson;
 import com.sitefilm.etl.entity.directories.Career;
 import com.sitefilm.etl.entity.directories.Country;
 import com.sitefilm.etl.entity.directories.Genre;
+import com.sitefilm.etl.service.core.dto.ContentCountryPersistDto;
+import com.sitefilm.etl.service.core.dto.ContentGenrePersistDto;
+import com.sitefilm.etl.service.core.dto.ContentPersonPersistDto;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -22,65 +22,68 @@ import java.util.stream.Collectors;
 @Component
 public class RelationshipsAggregator {
 
-
     public RelationshipsForDataSaveDto aggregate(Content content, MovieDetailsResponseDto movieDetailsResponseDto, DictionariesDto dictionaries, List<PersonAggregateDto> persons) {
-        List<ContentCountry> contentCountries = mappingContentCountry(dictionaries, content, movieDetailsResponseDto);
-        List<ContentGenre> contentGenres = mappingContentGenre(dictionaries, content, movieDetailsResponseDto);
-        List<ContentPerson> contentPerson = mappingContentPerson(content, persons, dictionaries);
-        return new RelationshipsForDataSaveDto(contentCountries, contentGenres, contentPerson);
+        List<ContentCountryPersistDto> contentCountries = mappingContentCountryPersistDto(dictionaries, content, movieDetailsResponseDto);
+        List<ContentGenrePersistDto> contentGenre = mappingContentGenrePersistDto(dictionaries, content, movieDetailsResponseDto);
+        List<ContentPersonPersistDto> contentPerson = mappingContentPersonPersistDto(content, persons, dictionaries);
+        return new RelationshipsForDataSaveDto(contentCountries, contentGenre, contentPerson);
     }
 
-    private List<ContentCountry> mappingContentCountry(DictionariesDto dictionaries, Content content, MovieDetailsResponseDto movieDetailsResponseDto) {
+    private List<ContentCountryPersistDto> mappingContentCountryPersistDto(DictionariesDto dictionaries, Content content, MovieDetailsResponseDto movieDetailsResponseDto) {
         Map<String, Country> countriesByIso = dictionaries.countries().stream()
                 .collect(Collectors.toMap(
                         Country::getIsoCode,
                         Function.identity()
                 ));
-        List<ContentCountry> result = new ArrayList<>();
+        List<ContentCountryPersistDto> result = new ArrayList<>();
 
         for (RelationshipsCountryDto dto : movieDetailsResponseDto.getCountries()) {
             Country country = countriesByIso.get(dto.iso3166_1());
-            ContentCountry contentCountry = new ContentCountry();
-            contentCountry.setContentId(content.getId());
-            contentCountry.setCountryId(country.getId());
-            result.add(contentCountry);
+            ContentCountryPersistDto contentCountryPersistDto = new ContentCountryPersistDto(
+                    content.getExternalId(),
+                    country.getId()
+            );
+            result.add(contentCountryPersistDto);
         }
         return result;
     }
 
-    private List<ContentGenre> mappingContentGenre(DictionariesDto dictionaries, Content content, MovieDetailsResponseDto movieDetailsResponseDto) {
+    private List<ContentGenrePersistDto> mappingContentGenrePersistDto(DictionariesDto dictionaries, Content content, MovieDetailsResponseDto movieDetailsResponseDto) {
         Map<Integer, Genre> genresById = dictionaries.genres().stream()
                 .collect(Collectors.toMap(
                         Genre::getExternalId,
                         Function.identity()
                 ));
-        List<ContentGenre> result = new ArrayList<>();
+        List<ContentGenrePersistDto> result = new ArrayList<>();
         Short displayOrder = 1;
         for (Integer id : movieDetailsResponseDto.getGenreIdList()){
             Genre genre = genresById.get(id);
-            ContentGenre contentGenre = new ContentGenre();
-            contentGenre.setContentId(content.getId());
-            contentGenre.setGenreId(genre.getId());
-            contentGenre.setDisplayOrder(displayOrder);
-            result.add(contentGenre);
+            ContentGenrePersistDto contentGenrePersistDto = new ContentGenrePersistDto(
+                    content.getExternalId(),
+                    genre.getId(),
+                    displayOrder  
+            );
+            result.add(contentGenrePersistDto);
             displayOrder++;
         }
         return result;
     }
 
-    private List<ContentPerson> mappingContentPerson(Content content, List<PersonAggregateDto> persons, DictionariesDto dictionaries) {
-        List<ContentPerson> result = new ArrayList<>();
+    private List<ContentPersonPersistDto> mappingContentPersonPersistDto(Content content, List<PersonAggregateDto> persons, DictionariesDto dictionaries) {
+        List<ContentPersonPersistDto> result = new ArrayList<>();
         persons.forEach(person -> person.personMovieData().forEach(roleInMovie -> {
-                    ContentPerson contentPerson = new ContentPerson();
-                    contentPerson.setContent(content);
-                    contentPerson.setPersonId(person.person().getId());
-                    contentPerson.setCareerId(dictionaries.careers().stream()
-                            .filter(career -> career.getTranslations().containsValue(roleInMovie.getJob()))
-                            .map(Career::getId)
-                            .findFirst()
-                            .orElseThrow());
-                    contentPerson.setCharacterName(roleInMovie.getCharacter());
-                    contentPerson.setDisplayOrderInContent(roleInMovie.getOrder());
+                    Long careerPersist = dictionaries.careers().stream()
+                        .filter(career -> career.getTranslations().containsValue(roleInMovie.getJob()))
+                        .map(Career::getId)
+                        .findFirst()
+                        .orElseThrow();
+                    ContentPersonPersistDto contentPerson = new ContentPersonPersistDto(
+                            content.getExternalId(),
+                            person.person().getExternalId(),
+                            careerPersist,
+                            roleInMovie.getCharacter(),
+                            roleInMovie.getOrder()
+                    );
                     result.add(contentPerson);
                 }));
         return result;

@@ -27,6 +27,9 @@ public class JsonbMapper {
 
     public <T> T fromJsonb(String json, TypeReference<T> type) {
         try {
+            if (json == null) {
+                return null;
+            }
             return mapper.readValue(json, type);
         } catch (Exception e) {
             throw new IllegalStateException("Failed to read from jsonb", e);

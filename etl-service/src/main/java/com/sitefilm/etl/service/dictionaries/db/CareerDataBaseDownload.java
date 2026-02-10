@@ -1,11 +1,14 @@
 package com.sitefilm.etl.service.dictionaries.db;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.sitefilm.etl.entity.directories.Career;
+import com.sitefilm.etl.entity.enums.CareerType;
 import com.sitefilm.etl.repository.dictioanries.CareerRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class CareerDataBaseDownload {
@@ -30,6 +33,24 @@ public class CareerDataBaseDownload {
     }
 
     public List<Career> loadCareers() {
-        return careerRepository.findAll();
+        return jdbcTemplate.query(
+                """
+                SELECT id, type, translations
+                FROM content_service.careers
+                """,
+                (rs, rowNum) -> {
+                    Career career = new Career();
+                    career.setId(rs.getLong("id"));
+                    career.setType(CareerType.fromId(rs.getInt("type")));
+                    career.setTranslations(
+                            jsonbMapper.fromJsonb(
+                                    rs.getString("translations"),
+                                    new TypeReference<>() {
+                                    }
+                            )
+                    );
+                    return career;
+                }
+        );
     }
 }
