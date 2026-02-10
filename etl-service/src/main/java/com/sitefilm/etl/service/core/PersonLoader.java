@@ -2,6 +2,7 @@ package com.sitefilm.etl.service.core;
 
 import com.sitefilm.etl.configuration.client.CoreTmdbClient;
 import com.sitefilm.etl.dto.core.person.PersonDetailsResponseDto;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.Set;
@@ -15,7 +16,7 @@ public class PersonLoader {
     private final CoreTmdbClient tmdbClient;
 
 
-    public PersonLoader(ExecutorService executorService, CoreTmdbClient tmdbClient) {
+    public PersonLoader(@Qualifier("personExecutor") ExecutorService executorService, CoreTmdbClient tmdbClient) {
         this.executorService = executorService;
         this.tmdbClient = tmdbClient;
     }

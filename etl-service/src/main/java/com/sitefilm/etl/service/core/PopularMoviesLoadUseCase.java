@@ -4,6 +4,7 @@ import com.sitefilm.etl.configuration.client.CoreTmdbClient;
 import com.sitefilm.etl.dto.DictionariesDto;
 import com.sitefilm.etl.service.dictionaries.DictionariesDataBaseService;
 import com.sitefilm.etl.service.dictionaries.DictionariesLoadStrategy;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.CompletableFuture;
@@ -16,9 +17,10 @@ public class PopularMoviesLoadUseCase {
     private final DictionariesLoadStrategy  dictionariesLoadStrategy;
     private final PageProcessor pageProcessor;
     private final DictionariesDataBaseService dictionariesSaveService;
+    @Qualifier("pageExecutor")
     private final ExecutorService executorService;
 
-    public PopularMoviesLoadUseCase(CoreTmdbClient tmdbClient, DictionariesLoadStrategy dictionariesLoadStrategy, PageProcessor pageProcessor, DictionariesDataBaseService dictionariesSaveService, ExecutorService executorService) {
+    public PopularMoviesLoadUseCase(CoreTmdbClient tmdbClient, DictionariesLoadStrategy dictionariesLoadStrategy, PageProcessor pageProcessor, DictionariesDataBaseService dictionariesSaveService, @Qualifier("pageExecutor") ExecutorService executorService) {
         this.tmdbClient = tmdbClient;
         this.dictionariesLoadStrategy = dictionariesLoadStrategy;
         this.pageProcessor = pageProcessor;
