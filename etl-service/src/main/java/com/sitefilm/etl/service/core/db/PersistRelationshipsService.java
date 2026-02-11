@@ -31,6 +31,7 @@ public class PersistRelationshipsService {
                         FROM content_service.content c
                         WHERE c.external_id = ?
                         AND c.source = 'TMDB'
+                        ON CONFLICT DO NOTHING
                         """,
                 contentCountries,
                 contentCountries.size(),
@@ -49,6 +50,7 @@ public class PersistRelationshipsService {
                         FROM content_service.content c
                         WHERE c.external_id = ?
                         AND c.source = 'TMDB'
+                        ON CONFLICT DO NOTHING
                         """,
                 contentGenres,
                 contentGenres.size(),
@@ -81,13 +83,14 @@ public class PersistRelationshipsService {
                    AND p.source = 'TMDB'
                 WHERE c.external_id = ?
                   AND c.source = 'TMDB'
+                ON CONFLICT DO NOTHING
                 """,
                 list,
                 list.size(),
                 (ps, cp) -> {
                     ps.setLong(1, cp.careerId());
                     ps.setString(2, cp.characterName());
-                    ps.setInt(3, cp.displayOrder());
+                    ps.setInt(3, cp.displayOrder() !=null ? cp.displayOrder() : 0);
                     ps.setLong(4, cp.externalPersonId());
                     ps.setLong(5, cp.externalContentId());
                 }
