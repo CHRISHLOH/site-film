@@ -29,7 +29,7 @@ public class PersistContentService {
                     ps.setString(3, c.getPosterUrl());
                     ps.setDate(4, Date.valueOf(c.getReleaseDate()));
                     ps.setInt(5, c.getStatus().getId());
-                    ps.setString(6, null);
+                    ps.setInt(6, 1);
                     ps.setLong(7, c.getBudget());
                     ps.setLong(8, c.getBoxOffice());
                     ps.setInt(9, c.getExternalId());

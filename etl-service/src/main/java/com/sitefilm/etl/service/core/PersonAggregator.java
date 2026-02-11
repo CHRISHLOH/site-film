@@ -46,11 +46,15 @@ public class PersonAggregator {
 
         return personCastDto.stream().map(personDto -> {
             Integer externalId = personDto.getExternalId();
+            int gender = personDto.getGender();
+            if (gender < 0 || gender > 2) {
+                gender = 0;
+            }
             Person person = Person.builder()
                     .name(personDto.getName())
                     .birthDate(personDto.getBirthDate())
                     .deathDate(personDto.getDeathDate())
-                    .gender(Gender.fromId(personDto.getGender()))
+                    .gender(Gender.fromId((byte) gender))
                     .birthPlace(personDto.getPlaceOfBirth())
                     .photoUrl(null)
                     .externalId(externalId)
@@ -83,6 +87,7 @@ public class PersonAggregator {
                             .type(MovieRoleType.CAST)
                             .order(cast.getOrder())
                             .character(cast.getCharacter())
+                            .job("Actor")
                             .build());
         }
         for (PersonCrewDto crew : dto.getCrew()) {

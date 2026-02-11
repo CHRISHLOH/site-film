@@ -3,23 +3,19 @@ package com.sitefilm.etl.service.dictionaries.db;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.sitefilm.etl.entity.directories.Career;
 import com.sitefilm.etl.entity.enums.CareerType;
-import com.sitefilm.etl.repository.dictioanries.CareerRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class CareerDataBaseDownload {
 
     private final JdbcTemplate jdbcTemplate;
-    private final CareerRepository careerRepository;
     private final JsonbMapper jsonbMapper;
 
-    public CareerDataBaseDownload(JdbcTemplate jdbcTemplate, CareerRepository careerRepository, JsonbMapper jsonbMapper) {
+    public CareerDataBaseDownload(JdbcTemplate jdbcTemplate, JsonbMapper jsonbMapper) {
         this.jdbcTemplate = jdbcTemplate;
-        this.careerRepository = careerRepository;
         this.jsonbMapper = jsonbMapper;
     }
     public void saveCareers(List<Career> careers) {

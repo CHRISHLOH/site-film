@@ -36,8 +36,7 @@ public class CountriesLoadStrategy implements TmdbDictionariesLoadStrategy{
                                 country.setTranslations(new HashMap<>());
                         return country;
                     }
-                )
-                .getTranslations().put(countryResponseDto.getLocale(), countryResponseDto.getNativeName());
+                ).getTranslations().put(countryResponseDto.getLocale(), countryResponseDto.getNativeName());
             }
         }
         return new ArrayList<>(finalMap.values());

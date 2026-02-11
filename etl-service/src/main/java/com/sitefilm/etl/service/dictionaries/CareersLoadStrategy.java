@@ -22,19 +22,20 @@ public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy {
         List<CareerResponseDto> careerResponseDtoList = dictionariesTmdbClient.getCareers();
         Set<String> seen = new HashSet<>();
         Set<Career> result = new HashSet<>();
-        Map<String, String> translations = new HashMap<>();
         for (CareerResponseDto dto : careerResponseDtoList) {
             CareerType type = CareerType.fromTmdb(dto.getDepartment());
             for (String job : dto.getJobs()) {
                 String key = type.getId() + "|" + job;
                 if (seen.add(key)) {
+                    Map<String, String> translations = new HashMap<>();
                     Career career = new Career();
                     career.setType(type);
-                    translations.put("en", job);
+                    translations.put("en-EN", job );
+                    career.setTranslations(translations);
                     result.add(career);
                 }
             }
         }
-        return result.stream().peek(career -> career.setTranslations(translations)).toList();
+        return result.stream().toList();
     }
 }

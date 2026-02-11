@@ -73,8 +73,8 @@ public class PageProcessor {
                 CompletableFuture.supplyAsync(() ->
                         tmdbClient.loadMovieCast(movieId), personExecutorService
                 );
-        return detailsFuture.thenCombine(castFuture,(movieDetails, castDto) ->
-                contentAggregateFactory.aggregateContent(movieDetails, castDto, dictionaries)
+        return detailsFuture.thenCombineAsync(castFuture,(movieDetails, castDto) ->
+                contentAggregateFactory.aggregateContent(movieDetails, castDto, dictionaries), movieExecutorService
         );
     }
 }
