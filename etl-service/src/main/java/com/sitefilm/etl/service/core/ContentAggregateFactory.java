@@ -7,6 +7,7 @@ import com.sitefilm.etl.entity.content.Content;
 import com.sitefilm.etl.entity.enums.ContentStatus;
 import com.sitefilm.etl.entity.enums.ContentType;
 import com.sitefilm.etl.entity.enums.Source;
+import com.sitefilm.etl.service.core.dto.RelationshipsForDataSaveDto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

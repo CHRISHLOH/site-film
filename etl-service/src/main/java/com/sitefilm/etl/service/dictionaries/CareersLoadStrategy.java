@@ -6,10 +6,7 @@ import com.sitefilm.etl.entity.enums.CareerType;
 import com.sitefilm.etl.entity.directories.Career;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy {
@@ -25,6 +22,7 @@ public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy {
         List<CareerResponseDto> careerResponseDtoList = dictionariesTmdbClient.getCareers();
         Set<String> seen = new HashSet<>();
         Set<Career> result = new HashSet<>();
+        Map<String, String> translations = new HashMap<>();
         for (CareerResponseDto dto : careerResponseDtoList) {
             CareerType type = CareerType.fromTmdb(dto.getDepartment());
             for (String job : dto.getJobs()) {
@@ -32,11 +30,11 @@ public class CareersLoadStrategy implements TmdbDictionariesLoadStrategy {
                 if (seen.add(key)) {
                     Career career = new Career();
                     career.setType(type);
-                    career.setTranslations(new HashMap<>());
+                    translations.put("en", job);
                     result.add(career);
                 }
             }
         }
-        return result.stream().toList();
+        return result.stream().peek(career -> career.setTranslations(translations)).toList();
     }
 }

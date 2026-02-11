@@ -11,6 +11,7 @@ import com.sitefilm.etl.entity.directories.Genre;
 import com.sitefilm.etl.service.core.dto.ContentCountryPersistDto;
 import com.sitefilm.etl.service.core.dto.ContentGenrePersistDto;
 import com.sitefilm.etl.service.core.dto.ContentPersonPersistDto;
+import com.sitefilm.etl.service.core.dto.RelationshipsForDataSaveDto;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
