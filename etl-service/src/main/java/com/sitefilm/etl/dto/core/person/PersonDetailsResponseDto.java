@@ -13,7 +13,7 @@ public class PersonDetailsResponseDto {
     private LocalDate birthDate;
     @JsonProperty("deathday")
     private LocalDate deathDate;
-    @JsonProperty("externalId")
+    @JsonProperty("id")
     private Integer externalId;
     @JsonProperty("name")
     private String name;

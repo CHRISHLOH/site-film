@@ -53,7 +53,7 @@ public class CoreTmdbClient {
                 .body(PersonsInMovieResponseDto.class);
     }
 
-    public PersonDetailsResponseDto loadPersonDetails(Long personId) {
+    public PersonDetailsResponseDto loadPersonDetails(Integer personId) {
         System.out.println("Запрос на персон детали");
         return restClient.get()
                 .uri(uriBuilder ->

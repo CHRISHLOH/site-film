@@ -7,10 +7,13 @@ public enum Gender {
     FEMALE((byte) 1, "female"),
     MALE((byte) 2, "male");
 
+    private final String gender;
+    private final Byte genderId;
 
-    private String gender;
-    private Byte genderId;
-    Gender(byte genderId, String gender) {}
+    Gender(byte genderId, String gender) {
+        this.genderId = genderId;
+        this.gender = gender;
+    }
 
     public static Gender fromId(byte id) {
         for (Gender g : values()) {

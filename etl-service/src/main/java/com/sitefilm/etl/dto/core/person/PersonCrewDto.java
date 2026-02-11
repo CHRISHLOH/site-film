@@ -9,7 +9,7 @@ import lombok.Data;
 @Builder
 public class PersonCrewDto {
         @JsonProperty("id")
-        private Long externalId;
+        private Integer externalId;
         @JsonProperty("department")
         String department;
         @JsonProperty("job")
