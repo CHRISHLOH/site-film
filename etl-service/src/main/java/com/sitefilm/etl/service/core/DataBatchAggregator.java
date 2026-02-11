@@ -28,6 +28,7 @@ public class DataBatchAggregator {
 
         contentAggregateDto.forEach(content -> {
                     contentList.add(content.content());
+                    contentTranslations.addAll(content.contentTranslations());
                     content.persons().forEach(person -> personList.add(person.person()));
                     content.persons().forEach(person-> personTranslations.addAll(person.personTranslation()));
                     contentCountries.addAll(content.relationships().contentCountries());

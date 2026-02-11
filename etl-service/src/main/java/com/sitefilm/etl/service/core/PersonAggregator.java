@@ -23,7 +23,7 @@ public class PersonAggregator {
     }
 
     public List<PersonAggregateDto> aggregate(PersonsInMovieResponseDto personsInMovieResponseDto) {
-        List<Long> personIds = Stream.concat(
+        List<Integer> personIds = Stream.concat(
                         personsInMovieResponseDto.getCast().stream().map(PersonCastDto::getExternalId),
                         personsInMovieResponseDto.getCrew().stream().map(PersonCrewDto::getExternalId)
                 )
@@ -42,7 +42,7 @@ public class PersonAggregator {
         List<PersonDetailsResponseDto> personCastDto = futures.stream()
                 .map(CompletableFuture::join)
                 .toList();
-        Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(personsInMovieResponseDto);
+        Map<Integer, List<PersonMovieRole>> personMovieRoles = collectRoles(personsInMovieResponseDto);
 
         return personCastDto.stream().map(personDto -> {
             Integer externalId = personDto.getExternalId();
@@ -68,14 +68,14 @@ public class PersonAggregator {
                                     )
                             ).toList();
 
-            List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(person.getId());
+            List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(person.getExternalId());
 
             return new PersonAggregateDto(person, personTranslations, personMovieRoleList);
         }).toList();
     }
 
-    private Map<Long, List<PersonMovieRole>> collectRoles(PersonsInMovieResponseDto dto) {
-        Map<Long, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
+    private Map<Integer, List<PersonMovieRole>> collectRoles(PersonsInMovieResponseDto dto) {
+        Map<Integer, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
         for (PersonCastDto cast : dto.getCast()) {
             rolesByPersonId
                     .computeIfAbsent(cast.getExternalId(), k -> new ArrayList<>())

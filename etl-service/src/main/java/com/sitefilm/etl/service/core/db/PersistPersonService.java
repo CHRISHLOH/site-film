@@ -37,8 +37,7 @@ public class PersistPersonService {
     public void saveTranslation(List<DataPersonTranslation> translations) {
         jdbcTemplate.batchUpdate("""
                             INSERT INTO content_service.person_translations(person_id, locale, locale_name, biography)
-                            SELECT p.id
-                            ?, ?, ?
+                            SELECT p.id, ?, ?, ?
                             FROM content_service.persons AS p
                             WHERE p.external_id = ?
                             AND p.source = 'TMDB'
