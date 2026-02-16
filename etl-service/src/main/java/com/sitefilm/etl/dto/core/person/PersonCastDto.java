@@ -8,9 +8,9 @@ import lombok.Data;
 @Builder
 public class PersonCastDto {
         @JsonProperty("id")
-        private Integer externalId;
+        private Long externalId;
         @JsonProperty("character")
         private String character;
         @JsonProperty("order")
-        private Integer order;
+        private Short order;
 }

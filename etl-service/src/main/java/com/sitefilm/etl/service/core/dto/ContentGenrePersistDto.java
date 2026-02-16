@@ -1,8 +1,8 @@
 package com.sitefilm.etl.service.core.dto;
 
 public record ContentGenrePersistDto(
-        Integer externalContentId,
-        Long genreId,
+        Long externalContentId,
+        Short genreId,
         Short displayOrder
 ) {
 }

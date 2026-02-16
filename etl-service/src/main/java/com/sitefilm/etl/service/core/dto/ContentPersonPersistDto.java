@@ -1,11 +1,10 @@
 package com.sitefilm.etl.service.core.dto;
 
 public record ContentPersonPersistDto(
-        Integer externalContentId,
-        Integer externalPersonId,
-        Long careerId,
+        Long externalContentId,
+        Long externalPersonId,
+        Short careerId,
         String characterName,
-        Integer displayOrder
-
+        Short displayOrder
 ) {
 }

@@ -14,7 +14,7 @@ public class PersonDetailsResponseDto {
     @JsonProperty("deathday")
     private LocalDate deathDate;
     @JsonProperty("id")
-    private Integer externalId;
+    private Long externalId;
     @JsonProperty("name")
     private String name;
     @JsonProperty("place_of_birth")
@@ -22,7 +22,7 @@ public class PersonDetailsResponseDto {
     @JsonProperty("known_for_department")
     private String knownAs;
     @JsonProperty("gender")
-    private Byte gender;
+    private Short gender;
     @JsonProperty("translations")
     private PersonTranslations personTranslations = new  PersonTranslations();
 }

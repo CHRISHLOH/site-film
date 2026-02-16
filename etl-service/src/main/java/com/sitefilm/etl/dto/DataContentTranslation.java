@@ -4,7 +4,7 @@ import java.time.OffsetDateTime;
 
 
 public record DataContentTranslation(
-     Integer externalContentId,
+     Long externalContentId,
      String locale,
      String title,
      String description,

@@ -25,45 +25,16 @@ import java.time.OffsetDateTime;
         schema = "content_service"
 )
 public class Person {
-
-    @Id
     private Long id;
-
-    @NotNull
-    @Size(max = 100)
-    @Column("original_name")
     private String name;
-
-    @Column("birth_date")
     private LocalDate birthDate;
-
-    @Column("death_date")
     private LocalDate deathDate;
-
-    @Column("gender")
     private Gender gender;
-
-    @Column("birth_place")
     private String birthPlace;
-
-    @Column("career_id")
-    private Long careerId;
-
-    @Column("photo_url")
+    private Short careerId;
     private String photoUrl;
-
-    @NotNull
-    @Column("external_id")
-    private Integer externalId;
-
-    @Column("source")
+    private Long externalId;
     private Source source;
-
-    @CreatedDate
-    @Column("created_at")
     private OffsetDateTime createdAt;
-
-    @LastModifiedDate
-    @Column("updated_at")
     private OffsetDateTime updatedAt;
 }

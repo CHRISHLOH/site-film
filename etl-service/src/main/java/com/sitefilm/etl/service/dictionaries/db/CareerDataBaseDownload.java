@@ -31,13 +31,13 @@ public class CareerDataBaseDownload {
     public List<Career> loadCareers() {
         return jdbcTemplate.query(
                 """
-                SELECT id, type, translations
-                FROM content_service.careers
-                """,
+                        SELECT id, type, translations
+                        FROM content_service.careers
+                        """,
                 (rs, rowNum) -> {
                     Career career = new Career();
-                    career.setId(rs.getLong("id"));
-                    career.setType(CareerType.fromId(rs.getInt("type")));
+                    career.setId(rs.getShort("id"));
+                    career.setType(CareerType.fromId(rs.getShort("type")));
                     career.setTranslations(
                             jsonbMapper.fromJsonb(
                                     rs.getString("translations"),

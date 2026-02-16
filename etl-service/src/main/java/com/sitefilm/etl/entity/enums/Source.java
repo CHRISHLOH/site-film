@@ -6,12 +6,12 @@ import java.util.stream.Stream;
 
 @Getter
 public enum Source {
-    TMDB(1, "TMDB");
+    TMDB((short) 1, "TMDB");
 
-    private final int id;
+    private final Short id;
     private final String source;
 
-    Source(int id, String source) {
+    Source(Short id, String source) {
         this.id = id;
         this.source = source;
     }

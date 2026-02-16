@@ -6,10 +6,10 @@ import org.springframework.data.convert.WritingConverter;
 
 @WritingConverter
 public class CareerTypeToSmallIntConverter
-        implements Converter<CareerType, Integer> {
+        implements Converter<CareerType, Short> {
 
     @Override
-    public Integer convert(CareerType source) {
+    public Short convert(CareerType source) {
         return source.getId();
     }
 }

@@ -18,20 +18,20 @@ public class PersistPersonService {
 
     public void savePerson(List<Person> persons) {
         jdbcTemplate.batchUpdate("INSERT INTO content_service.persons(original_name, birth_date, death_date, gender, birth_place, career_id, photo_url, external_id, source) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 persons,
                 persons.size(),
                 (ps, person) -> {
-                ps.setString(1, person.getName());
-                ps.setDate(2, person.getBirthDate() != null ? Date.valueOf(person.getBirthDate()) : null);
-                ps.setDate(3, person.getDeathDate() != null ? Date.valueOf(person.getDeathDate()) : null);
-                ps.setInt(4, person.getGender().getGenderId());
-                ps.setString(5, person.getBirthPlace());
-                ps.setLong(6, person.getCareerId() != null ?  person.getCareerId() : 1);
-                ps.setString(7, person.getPhotoUrl());
-                ps.setLong(8, person.getExternalId());
-                ps.setInt(9, person.getSource().getId());
-        });
+                    ps.setString(1, person.getName());
+                    ps.setDate(2, person.getBirthDate() != null ? Date.valueOf(person.getBirthDate()) : null);
+                    ps.setDate(3, person.getDeathDate() != null ? Date.valueOf(person.getDeathDate()) : null);
+                    ps.setInt(4, person.getGender().getGenderId());
+                    ps.setString(5, person.getBirthPlace());
+                    ps.setLong(6, person.getCareerId() != null ? person.getCareerId() : 1);
+                    ps.setString(7, person.getPhotoUrl());
+                    ps.setLong(8, person.getExternalId());
+                    ps.setInt(9, person.getSource().getId());
+                });
     }
 
     public void saveTranslation(List<DataPersonTranslation> translations) {
@@ -41,7 +41,6 @@ public class PersistPersonService {
                             FROM content_service.persons AS p
                             WHERE p.external_id = ?
                             AND p.source = 'TMDB'
-                            ON CONFLICT DO NOTHING
                 """,
                 translations,
                 translations.size(),
@@ -49,7 +48,7 @@ public class PersistPersonService {
                     ps.setString(1, t.locale());
                     ps.setString(2, t.localeName());
                     ps.setString(3, t.biography());
-                    ps.setInt(4, t.externalPersonId());
+                    ps.setLong(4, t.externalPersonId());
                 }
         );
     }

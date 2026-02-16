@@ -8,7 +8,7 @@ import lombok.Data;
 @Builder
 public class PersonMovieRole {
     MovieRoleType type;
-    Integer order;
+    Short order;
     String character;
     String department;
     String job;

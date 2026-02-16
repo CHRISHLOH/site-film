@@ -8,6 +8,7 @@ import com.sitefilm.etl.entity.enums.MovieRoleType;
 import com.sitefilm.etl.entity.enums.Gender;
 import com.sitefilm.etl.entity.enums.Source;
 import com.sitefilm.etl.entity.person.Person;
+import com.sitefilm.etl.service.core.db.DBExistService;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
@@ -17,18 +18,25 @@ import java.util.stream.Stream;
 @Component
 public class PersonAggregator {
     private final PersonLoader personLoader;
+    private final DBExistService existService;
 
-    public PersonAggregator(PersonLoader personLoader) {
+    public PersonAggregator(PersonLoader personLoader, DBExistService existService) {
         this.personLoader = personLoader;
+        this.existService = existService;
     }
 
     public List<PersonAggregateDto> aggregate(PersonsInMovieResponseDto personsInMovieResponseDto) {
-        List<Integer> personIds = Stream.concat(
+        List<Long> personIds = Stream.concat(
                         personsInMovieResponseDto.getCast().stream().map(PersonCastDto::getExternalId),
                         personsInMovieResponseDto.getCrew().stream().map(PersonCrewDto::getExternalId)
                 )
                 .distinct()
                 .toList();
+        Set<Long> existPersonIds = existService.personExist(personIds);
+
+        personIds = personIds.stream().filter(personId ->
+                !existPersonIds.contains(personId)
+        ).toList();
 
         List<CompletableFuture<PersonDetailsResponseDto>> futures =
                 personIds.stream()
@@ -42,10 +50,10 @@ public class PersonAggregator {
         List<PersonDetailsResponseDto> personCastDto = futures.stream()
                 .map(CompletableFuture::join)
                 .toList();
-        Map<Integer, List<PersonMovieRole>> personMovieRoles = collectRoles(personsInMovieResponseDto);
+        Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(personsInMovieResponseDto);
 
         return personCastDto.stream().map(personDto -> {
-            Integer externalId = personDto.getExternalId();
+            Long externalId = personDto.getExternalId();
             int gender = personDto.getGender();
             if (gender < 0 || gender > 2) {
                 gender = 0;
@@ -78,8 +86,8 @@ public class PersonAggregator {
         }).toList();
     }
 
-    private Map<Integer, List<PersonMovieRole>> collectRoles(PersonsInMovieResponseDto dto) {
-        Map<Integer, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
+    private Map<Long, List<PersonMovieRole>> collectRoles(PersonsInMovieResponseDto dto) {
+        Map<Long, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
         for (PersonCastDto cast : dto.getCast()) {
             rolesByPersonId
                     .computeIfAbsent(cast.getExternalId(), k -> new ArrayList<>())

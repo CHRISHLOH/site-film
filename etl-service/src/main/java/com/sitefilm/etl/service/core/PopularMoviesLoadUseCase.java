@@ -36,7 +36,7 @@ public class PopularMoviesLoadUseCase {
         int countPage = tmdbClient.loadCountPage().total_pages();
         IntStream.range(0, 1)
                 .forEach(page ->
-                        CompletableFuture.runAsync(() -> pageProcessor.loadTmdb(1, dictionariesId), executorService).join()
+                        CompletableFuture.runAsync(() -> pageProcessor.loadTmdb(1, dictionariesId), executorService)
                 );
     }
 }

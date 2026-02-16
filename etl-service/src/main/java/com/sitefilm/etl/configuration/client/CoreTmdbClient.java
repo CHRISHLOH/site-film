@@ -4,10 +4,8 @@ import com.sitefilm.etl.configuration.TmdbUrlProperties;
 import com.sitefilm.etl.dto.core.movie.CountPage;
 import com.sitefilm.etl.dto.core.person.PersonDetailsResponseDto;
 import com.sitefilm.etl.dto.core.person.PersonsInMovieResponseDto;
-import com.sitefilm.etl.dto.core.movie.ResponseMovieTranslationDto;
 import com.sitefilm.etl.dto.core.movie.TmdbMoviePageResponse;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsResponseDto;
-import com.sitefilm.etl.dto.core.person.PersonTranslationResponseDto;
 import org.springframework.web.client.RestClient;
 
 public class CoreTmdbClient {
@@ -53,7 +51,7 @@ public class CoreTmdbClient {
                 .body(PersonsInMovieResponseDto.class);
     }
 
-    public PersonDetailsResponseDto loadPersonDetails(Integer personId) {
+    public PersonDetailsResponseDto loadPersonDetails(Long personId) {
         System.out.println("Запрос на персон детали");
         return restClient.get()
                 .uri(uriBuilder ->

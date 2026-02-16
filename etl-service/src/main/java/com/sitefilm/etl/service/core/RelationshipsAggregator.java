@@ -50,16 +50,16 @@ public class RelationshipsAggregator {
     }
 
     private List<ContentGenrePersistDto> mappingContentGenrePersistDto(DictionariesDto dictionaries, Content content, MovieDetailsResponseDto movieDetailsResponseDto) {
-        Map<Integer, Genre> genresById = dictionaries.genres().stream()
+        Map<Long, Genre> genresById = dictionaries.genres().stream()
                 .collect(Collectors.toMap(
                         Genre::getExternalId,
                         Function.identity()
                 ));
         List<ContentGenrePersistDto> result = new ArrayList<>();
         Short displayOrder = 1;
-        List<Integer> genresId = new ArrayList<>();
+        List<Long> genresId = new ArrayList<>();
         movieDetailsResponseDto.getGenres().forEach(genreDto -> genresId.add(genreDto.getExternal_id()));
-        for (Integer id : genresId) {
+        for (Long id : genresId) {
             Genre genre = genresById.get(id);
             ContentGenrePersistDto contentGenrePersistDto = new ContentGenrePersistDto(
                     content.getExternalId(),
@@ -75,7 +75,7 @@ public class RelationshipsAggregator {
     private List<ContentPersonPersistDto> mappingContentPersonPersistDto(Content content, List<PersonAggregateDto> persons, DictionariesDto dictionaries) {
         List<ContentPersonPersistDto> result = new ArrayList<>();
         persons.forEach(person -> person.personMovieData().forEach(roleInMovie -> {
-                    Long careerPersist = dictionaries.careers().stream()
+                    Short careerPersist = dictionaries.careers().stream()
                         .filter(career -> career.getTranslations().containsValue(roleInMovie.getJob()))
                         .map(Career::getId)
                         .findFirst()

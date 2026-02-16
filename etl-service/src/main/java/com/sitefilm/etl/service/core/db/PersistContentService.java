@@ -2,7 +2,6 @@ package com.sitefilm.etl.service.core.db;
 
 import com.sitefilm.etl.dto.DataContentTranslation;
 import com.sitefilm.etl.entity.content.Content;
-import com.sitefilm.etl.entity.content.relationship.ContentTranslation;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +31,7 @@ public class PersistContentService {
                     ps.setInt(6, 1);
                     ps.setLong(7, c.getBudget());
                     ps.setLong(8, c.getBoxOffice());
-                    ps.setInt(9, c.getExternalId());
+                    ps.setLong(9, c.getExternalId());
                     ps.setInt(10, c.getDuration());
                     ps.setInt(11, c.getSource().getId());
                 }
@@ -62,7 +61,7 @@ public class PersistContentService {
                     ps.setString(2, t.title());
                     ps.setString(3, t.description());
                     ps.setString(4, t.plotSummary());
-                    ps.setInt(5, t.externalContentId());
+                    ps.setLong(5, t.externalContentId());
                 }
         );
 
