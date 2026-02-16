@@ -4,14 +4,14 @@ import lombok.Getter;
 
 @Getter
 public enum Gender {
-    UNKNOWN((byte) 0, "unknown"),
-    FEMALE((byte) 1, "female"),
-    MALE((byte) 2, "male");;
+    UNKNOWN((short) 0, "unknown"),
+    FEMALE((short) 1, "female"),
+    MALE((short) 2, "male");;
 
     private final String gender;
-    private final Byte genderId;
+    private final Short genderId;
 
-    Gender(byte genderId, String gender) {
+    Gender(Short genderId, String gender) {
         this.genderId = genderId;
         this.gender = gender;
     }

@@ -9,7 +9,7 @@ import lombok.ToString;
 @Data
 public class GenreDto {
     @JsonProperty("id")
-    Integer external_id;
+    Long external_id;
     @JsonProperty("name")
     String name;
     @JsonIgnore

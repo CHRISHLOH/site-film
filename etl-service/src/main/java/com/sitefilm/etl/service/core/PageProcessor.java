@@ -19,7 +19,7 @@ import java.util.concurrent.ExecutorService;
 public class PageProcessor {
     private final CoreTmdbClient tmdbClient;
     private final ExecutorService movieExecutorService;
-    private final ExecutorService personExecutorService;
+    private final ExecutorService castExecutor;
     private final ContentAggregateFactory contentAggregateFactory;
     private final DataBatchAggregator aggregator;
     private final PersistContentFactory persistContentFactory;
@@ -27,19 +27,19 @@ public class PageProcessor {
 
     public PageProcessor(CoreTmdbClient tmdbClient,
                          @Qualifier("movieExecutor") ExecutorService movieExecutorService,
-                         @Qualifier("personExecutor") ExecutorService personExecutorService,
+                         @Qualifier("castExecutor") ExecutorService castExecutor,
                          ContentAggregateFactory contentAggregateFactory,
                          DataBatchAggregator aggregator, PersistContentFactory
                                  persistContentFactory) {
         this.tmdbClient = tmdbClient;
         this.movieExecutorService = movieExecutorService;
-        this.personExecutorService = personExecutorService;
+        this.castExecutor = castExecutor;
         this.contentAggregateFactory = contentAggregateFactory;
         this.aggregator = aggregator;
         this.persistContentFactory = persistContentFactory;
     }
 
-    public String loadTmdb(Integer pageNumber, DictionariesDto dictionaries) {
+    public void loadTmdb(Integer pageNumber, DictionariesDto dictionaries) {
         List<Long> movieIds = tmdbClient.loadMovieIds(pageNumber)
                 .getMovieIds()
                 .stream()
@@ -61,7 +61,6 @@ public class PageProcessor {
         PersistentBatchDto dto = aggregator.aggregate(result);
         persistContentFactory.saveData(dto);
         System.out.println("готово сохранилось");
-        return "GOTOVO";
     }
 
     private CompletableFuture<ContentAggregateDto> loadOneMovieAsync(Long movieId, DictionariesDto dictionaries) {
@@ -71,7 +70,7 @@ public class PageProcessor {
                 );
         CompletableFuture<PersonsInMovieResponseDto> castFuture =
                 CompletableFuture.supplyAsync(() ->
-                        tmdbClient.loadMovieCast(movieId), personExecutorService
+                        tmdbClient.loadMovieCast(movieId), castExecutor
                 );
         return detailsFuture.thenCombineAsync(castFuture,(movieDetails, castDto) ->
                 contentAggregateFactory.aggregateContent(movieDetails, castDto, dictionaries), movieExecutorService

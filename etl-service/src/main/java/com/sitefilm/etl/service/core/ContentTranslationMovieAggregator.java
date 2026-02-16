@@ -3,7 +3,6 @@ package com.sitefilm.etl.service.core;
 import com.sitefilm.etl.dto.DataContentTranslation;
 import com.sitefilm.etl.dto.core.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.dto.core.movie.MovieTranslationDto;
-import com.sitefilm.etl.entity.content.relationship.ContentTranslation;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.Set;
 public class ContentTranslationMovieAggregator {
     private static final Set<String> languages = Set.of("en", "ru", "fr", "de", "es");
 
-    public List<DataContentTranslation> aggregate(MovieDetailsResponseDto movieDetails, Integer externalId){
+    public List<DataContentTranslation> aggregate(MovieDetailsResponseDto movieDetails, Long externalId){
         return contentTranslationMapping(
                 filterMoviesTranslation(movieDetails.getMovieTranslations().getMovieTranslations()), externalId);
     }
@@ -25,7 +24,7 @@ public class ContentTranslationMovieAggregator {
                 .toList();
     }
 
-    private List<DataContentTranslation> contentTranslationMapping(List<MovieTranslationDto> movieTranslations, Integer externalId){
+    private List<DataContentTranslation> contentTranslationMapping(List<MovieTranslationDto> movieTranslations, Long externalId){
         return movieTranslations.stream().map(translation -> new DataContentTranslation(
                 externalId,
                 translation.getIsoCode(),

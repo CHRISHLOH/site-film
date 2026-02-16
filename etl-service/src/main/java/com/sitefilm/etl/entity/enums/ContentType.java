@@ -4,18 +4,18 @@ import lombok.Getter;
 
 @Getter
 public enum ContentType {
-    MOVIE((byte) 1, "Movie"),
-    SERIES((byte) 2, "Series");
+    MOVIE((short) 1, "Movie"),
+    SERIES((short) 2, "Series");
 
-    private Byte contentTypeId;
-    private String contentTypeName;
+    private final Short contentTypeId;
+    private final String contentTypeName;
 
-    ContentType(Byte contentTypeId, String contentTypeName) {
+    ContentType(Short contentTypeId, String contentTypeName) {
         this.contentTypeId = contentTypeId;
         this.contentTypeName = contentTypeName;
     }
 
-    public static ContentType typeOf(Byte contentTypeId) {
+    public static ContentType typeOf(Short contentTypeId) {
         for (ContentType type : values()) {
             if (type.contentTypeId.equals(contentTypeId)) {
                 return type;

@@ -11,23 +11,10 @@ import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.Map;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Table(
-        name = "careers",
-        schema = "content_service"
-)
+@Data
+@ToString
 public class Career{
-    @Id
-    private Long id;
-
-    @NotNull
-    @Size(max = 100)
-    @Column("type")
+    private Short id;
     private CareerType type;
-
-    @Column("translations")
     Map<String, String> translations;
 }

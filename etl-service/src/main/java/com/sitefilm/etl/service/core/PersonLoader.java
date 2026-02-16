@@ -21,7 +21,7 @@ public class PersonLoader {
         this.tmdbClient = tmdbClient;
     }
 
-    public CompletableFuture<PersonDetailsResponseDto> loadPerson(Integer personId) {
+    public CompletableFuture<PersonDetailsResponseDto> loadPerson(Long personId) {
         return CompletableFuture.supplyAsync(() -> {
                 PersonDetailsResponseDto personDetails = tmdbClient.loadPersonDetails(personId);
                 var filtered = personDetails.getPersonTranslations()

@@ -1,7 +1,7 @@
 package com.sitefilm.etl.service.dictionaries.db;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.sitefilm.etl.entity.directories.Country;
-import com.sitefilm.etl.repository.dictioanries.CountryRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
@@ -11,12 +11,10 @@ import java.util.List;
 public class CountryDataBaseDownload {
 
     private final JdbcTemplate jdbcTemplate;
-    private final CountryRepository countryRepository;
     private final JsonbMapper jsonbMapper;
 
-    public CountryDataBaseDownload(JdbcTemplate jdbcTemplate, CountryRepository countryRepository, JsonbMapper jsonbMapper) {
+    public CountryDataBaseDownload(JdbcTemplate jdbcTemplate, JsonbMapper jsonbMapper) {
         this.jdbcTemplate = jdbcTemplate;
-        this.countryRepository = countryRepository;
         this.jsonbMapper = jsonbMapper;
     }
 
@@ -31,6 +29,18 @@ public class CountryDataBaseDownload {
     }
 
     public List<Country> loadCountry() {
-        return countryRepository.findAll();
+        return jdbcTemplate.query("""
+                        SELECT id, iso_code, translations
+                        FROM content_service.countries
+                        """,
+                (rs, numRow) -> {
+                    Country country = new Country();
+                    country.setId(rs.getShort("id"));
+                    country.setIsoCode(rs.getString("iso_code"));
+                    country.setTranslations(jsonbMapper.fromJsonb(rs.getString("translations"), new TypeReference<>() {
+                    }));
+                    return country;
+                }
+        );
     }
 }

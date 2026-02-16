@@ -1,21 +1,20 @@
 package com.sitefilm.etl.service.dictionaries.db;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.sitefilm.etl.entity.directories.Genre;
-import com.sitefilm.etl.repository.dictioanries.GenreRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 @Service
 public class GenreDataBaseDownload {
     private final JdbcTemplate jdbcTemplate;
-    private final GenreRepository genreRepository;
     private final JsonbMapper jsonbMapper;
 
-    public GenreDataBaseDownload(JdbcTemplate jdbcTemplate, GenreRepository genreRepository, JsonbMapper jsonbMapper) {
+    public GenreDataBaseDownload(JdbcTemplate jdbcTemplate, JsonbMapper jsonbMapper) {
         this.jdbcTemplate = jdbcTemplate;
-        this.genreRepository = genreRepository;
         this.jsonbMapper = jsonbMapper;
     }
 
@@ -24,12 +23,26 @@ public class GenreDataBaseDownload {
                 genres,
                 genres.size(),
                 (ps, genre) -> {
-                    ps.setInt(1, genre.getExternalId());
+                    ps.setLong(1, genre.getExternalId());
                     ps.setObject(2, jsonbMapper.toJsonb(genre.getTranslations()));
                 }
         );
     }
+
     public List<Genre> loadGenres() {
-        return genreRepository.findAll();
+        return jdbcTemplate.query(
+                """
+                        SELECT id, external_id, translations
+                        FROM content_service.genres
+                        """,
+                (rs, numRow) -> {
+                    Genre genre = new Genre();
+                    genre.setId(rs.getShort("id"));
+                    genre.setExternalId(rs.getLong("external_id"));
+                    genre.setTranslations(Collections.unmodifiableMap(jsonbMapper.fromJsonb(rs.getString("translations"), new TypeReference<>() {
+                    })));
+                    return genre;
+                }
+        );
     }
 }

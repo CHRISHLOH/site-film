@@ -14,7 +14,7 @@ public class MovieDetailsResponseDto {
     @JsonProperty("budget")
     private Long budget;
     @JsonProperty("id")
-    private Integer externalId;
+    private Long externalId;
     @JsonProperty("original_title")
     private String originalTitle;
     @JsonProperty("overview")
@@ -24,7 +24,7 @@ public class MovieDetailsResponseDto {
     @JsonProperty("revenue")
     private Long revenue;
     @JsonProperty("runtime")
-    private Integer duration;
+    private Short duration;
     @JsonProperty("status")
     private String status;
     @JsonProperty("title")
