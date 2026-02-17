@@ -25,4 +25,12 @@ public class Content{
     private Short duration;
     private OffsetDateTime createdAt;
     private OffsetDateTime updatedAt;
+
+    @Override
+    public String toString() {
+        return "Content{" +
+                "originalTitle='" + originalTitle + '\'' +
+                ", externalId=" + externalId +
+                '}';
+    }
 }

@@ -52,7 +52,7 @@ public class PersistContentService {
             ?, ?, ?, ?
         FROM content_service.content c
         WHERE c.external_id = ?
-        AND c.source = 'TMDB'
+        AND c.source = 1
         """,
                 translations,
                 translations.size(),
@@ -64,6 +64,5 @@ public class PersistContentService {
                     ps.setLong(5, t.externalContentId());
                 }
         );
-
     }
 }

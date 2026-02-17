@@ -2,6 +2,7 @@ package com.sitefilm.etl.dto.core.person;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.ToString;
 
 import java.time.LocalDate;
 
@@ -24,5 +25,5 @@ public class PersonDetailsResponseDto {
     @JsonProperty("gender")
     private Short gender;
     @JsonProperty("translations")
-    private PersonTranslations personTranslations = new  PersonTranslations();
+    private PersonTranslations personTranslations = new PersonTranslations();
 }

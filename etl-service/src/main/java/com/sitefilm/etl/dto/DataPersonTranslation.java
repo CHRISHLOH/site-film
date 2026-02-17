@@ -8,4 +8,10 @@ public record DataPersonTranslation(
         String localeName,
         String biography
 ) {
+    @Override
+    public String toString() {
+        return "DataPersonTranslation{" +
+                "externalPersonId=" + externalPersonId +
+                '}';
+    }
 }

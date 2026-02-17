@@ -1,5 +1,6 @@
 package com.sitefilm.etl.entity.person;
 
+import com.sitefilm.etl.entity.enums.CareerType;
 import com.sitefilm.etl.entity.enums.Gender;
 import com.sitefilm.etl.entity.enums.Source;
 import jakarta.validation.constraints.NotNull;
@@ -31,10 +32,18 @@ public class Person {
     private LocalDate deathDate;
     private Gender gender;
     private String birthPlace;
-    private Short careerId;
+    private CareerType knownAs;
     private String photoUrl;
     private Long externalId;
     private Source source;
     private OffsetDateTime createdAt;
     private OffsetDateTime updatedAt;
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", externalId=" + externalId +
+                '}';
+    }
 }

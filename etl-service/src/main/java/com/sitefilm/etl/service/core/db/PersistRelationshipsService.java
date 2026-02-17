@@ -30,7 +30,7 @@ public class PersistRelationshipsService {
                         SELECT c.id, ?
                         FROM content_service.content c
                         WHERE c.external_id = ?
-                        AND c.source = 'TMDB'
+                        AND c.source = 1
                         """,
                 contentCountries,
                 contentCountries.size(),
@@ -48,7 +48,7 @@ public class PersistRelationshipsService {
                         SELECT c.id, ?, ?
                         FROM content_service.content c
                         WHERE c.external_id = ?
-                        AND c.source = 'TMDB'
+                        AND c.source = 1
                         """,
                 contentGenres,
                 contentGenres.size(),
@@ -61,7 +61,6 @@ public class PersistRelationshipsService {
     }
 
     public void saveContentPerson(List<ContentPersonPersistDto> list) {
-
         jdbcTemplate.batchUpdate(
                 """
                 INSERT INTO content_service.content_persons (
@@ -78,9 +77,9 @@ public class PersistRelationshipsService {
                 FROM content_service.content c
                 JOIN content_service.persons p
                     ON p.external_id = ?
-                   AND p.source = 'TMDB'
+                   AND p.source = 1
                 WHERE c.external_id = ?
-                  AND c.source = 'TMDB'
+                  AND c.source = 1
                 """,
                 list,
                 list.size(),
@@ -93,6 +92,4 @@ public class PersistRelationshipsService {
                 }
         );
     }
-
-
 }

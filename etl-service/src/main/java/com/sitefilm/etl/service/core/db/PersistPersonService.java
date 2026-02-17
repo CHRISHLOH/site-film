@@ -17,8 +17,8 @@ public class PersistPersonService {
     }
 
     public void savePerson(List<Person> persons) {
-        jdbcTemplate.batchUpdate("INSERT INTO content_service.persons(original_name, birth_date, death_date, gender, birth_place, career_id, photo_url, external_id, source) " +
-                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        jdbcTemplate.batchUpdate("INSERT INTO content_service.persons(original_name, birth_date, death_date, gender, birth_place, known_as, photo_url, external_id, source) " +
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT (external_id, source) DO NOTHING",
                 persons,
                 persons.size(),
                 (ps, person) -> {
@@ -27,7 +27,7 @@ public class PersistPersonService {
                     ps.setDate(3, person.getDeathDate() != null ? Date.valueOf(person.getDeathDate()) : null);
                     ps.setInt(4, person.getGender().getGenderId());
                     ps.setString(5, person.getBirthPlace());
-                    ps.setLong(6, person.getCareerId() != null ? person.getCareerId() : 1);
+                    ps.setLong(6, person.getKnownAs() != null ? person.getKnownAs().getId() : 1);
                     ps.setString(7, person.getPhotoUrl());
                     ps.setLong(8, person.getExternalId());
                     ps.setInt(9, person.getSource().getId());
@@ -40,7 +40,8 @@ public class PersistPersonService {
                             SELECT p.id, ?, ?, ?
                             FROM content_service.persons AS p
                             WHERE p.external_id = ?
-                            AND p.source = 'TMDB'
+                            AND p.source = 1
+                            ON CONFLICT (person_id, locale) DO NOTHING
                 """,
                 translations,
                 translations.size(),

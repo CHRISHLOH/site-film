@@ -52,11 +52,12 @@ public class CoreTmdbClient {
     }
 
     public PersonDetailsResponseDto loadPersonDetails(Long personId) {
-        System.out.println("Запрос на персон детали");
+//        System.out.println("Запрос на персон детали");
         return restClient.get()
                 .uri(uriBuilder ->
-                        uriBuilder.path(urlProperties
-                                        .getPersonDetails())
+                        uriBuilder
+                                .path(urlProperties.getPersonDetails())
+                                .queryParam("append_to_response", "translations")
                                 .build(personId))
                 .retrieve()
                 .body(PersonDetailsResponseDto.class);
