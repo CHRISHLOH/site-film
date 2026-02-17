@@ -4,6 +4,7 @@ import com.sitefilm.etl.dto.DataPersonTranslation;
 import com.sitefilm.etl.dto.PersonAggregateDto;
 import com.sitefilm.etl.dto.PersonMovieRole;
 import com.sitefilm.etl.dto.core.person.*;
+import com.sitefilm.etl.entity.enums.CareerType;
 import com.sitefilm.etl.entity.enums.MovieRoleType;
 import com.sitefilm.etl.entity.enums.Gender;
 import com.sitefilm.etl.entity.enums.Source;
@@ -62,23 +63,25 @@ public class PersonAggregator {
                     .name(personDto.getName())
                     .birthDate(personDto.getBirthDate())
                     .deathDate(personDto.getDeathDate())
-                    .gender(Gender.fromId((byte) gender))
+                    .gender(Gender.fromId((short) gender))
                     .birthPlace(personDto.getPlaceOfBirth())
                     .photoUrl(null)
                     .externalId(externalId)
+                    .knownAs(knownAsMapping(personDto.getKnownAs()))
                     .source(Source.TMDB)
                     .build();
 
             List<DataPersonTranslation> personTranslations =
                     personDto.getPersonTranslations().getTranslations().stream()
-                            .map(p ->
-                                    new DataPersonTranslation(
-                                            externalId,
-                                            p.getIsoCode(),
-                                            p.getPersonData().getName(),
-                                            p.getPersonData().getBiography()
-                                    )
-                            ).toList();
+                            .map(p ->{
+                                String locale = getDBLocale(p);
+                                return new DataPersonTranslation(
+                                        externalId,
+                                        locale,
+                                        p.getPersonData().getName(),
+                                        p.getPersonData().getBiography()
+                                );
+                            }).toList();
 
             List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(person.getExternalId());
 
@@ -108,5 +111,26 @@ public class PersonAggregator {
                             .build());
         }
         return rolesByPersonId;
+    }
+
+    private String getDBLocale(PersonTranslationDto personTranslationDto) {
+        return switch (personTranslationDto.getEnglishName()) {
+            case "English" -> "en-EN";
+            case "Russian" -> "ru-RU";
+            case "French" -> "fr-FR";
+            case "German" -> "de-DE";
+            case "Spanish" -> "es-ES";
+            default -> "en-US";
+        };
+    }
+
+    private CareerType knownAsMapping(String type) {
+        if ("Acting".equals(type)) {
+            return CareerType.ACTORS;
+        }
+        return Arrays.stream(CareerType.values())
+                .filter(c -> c.getValue().equals(type))
+                .findFirst()
+                .orElse(CareerType.UNKNOWN);
     }
 }

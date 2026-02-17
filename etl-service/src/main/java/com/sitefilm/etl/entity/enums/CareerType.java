@@ -20,7 +20,8 @@ public enum CareerType {
     SOUND((short) 9, "Sound"),
     VISUAL_EFFECTS((short) 10, "Visual Effects"),
     CAMERA((short) 11, "Camera"),
-    ART((short) 12, "Art");
+    ART((short) 12, "Art"),
+    UNKNOWN((short) 13, "Unknown");
 
     private final Short id;
     private final String value;

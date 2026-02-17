@@ -2,6 +2,8 @@ package com.sitefilm.etl.entity.enums;
 
 import lombok.Getter;
 
+import java.util.Objects;
+
 @Getter
 public enum Gender {
     UNKNOWN((short) 0, "unknown"),
@@ -16,9 +18,9 @@ public enum Gender {
         this.gender = gender;
     }
 
-    public static Gender fromId(byte id) {
+    public static Gender fromId(Short id) {
         for (Gender g : values()) {
-            if (g.genderId == id) {
+            if (Objects.equals(g.genderId, id)) {
                 return g;
             }
         }

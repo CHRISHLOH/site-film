@@ -196,7 +196,7 @@ CREATE TABLE IF NOT EXISTS content_service.persons (
                                                        death_date DATE,
                                                        gender SMALLINT,
                                                        birth_place TEXT,
-                                                       career_id SMALLINT,
+                                                       known_as SMALLINT,
                                                        photo_url TEXT,
                                                        external_id BIGINT,
                                                        source SMALLINT,

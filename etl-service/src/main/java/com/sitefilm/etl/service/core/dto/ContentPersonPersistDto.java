@@ -7,4 +7,11 @@ public record ContentPersonPersistDto(
         String characterName,
         Short displayOrder
 ) {
+    @Override
+    public String toString() {
+        return "ContentPersonPersistDto{" +
+                "externalPersonId=" + externalPersonId +
+                ", externalContentId=" + externalContentId +
+                '}';
+    }
 }

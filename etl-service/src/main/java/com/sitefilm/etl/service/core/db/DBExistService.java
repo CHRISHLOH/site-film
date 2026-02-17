@@ -1,6 +1,5 @@
 package com.sitefilm.etl.service.core.db;
 
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
@@ -29,7 +28,7 @@ public class DBExistService {
                 """
                         SELECT external_id
                         FROM content_service.persons
-                        WHERE external_id IN (:ids)
+                        WHERE external_id IN (:externalIds)
                         """,
                 parameters,
                 (rs, rowNum) -> rs.getLong("external_id")

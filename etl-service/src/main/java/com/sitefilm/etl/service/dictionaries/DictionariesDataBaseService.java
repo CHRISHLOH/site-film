@@ -26,9 +26,9 @@ public class DictionariesDataBaseService {
 
     @Transactional
     public DictionariesDto saveDictionaries(DictionariesDto dictionariesDto) {
-        careerDataBaseDownload.saveCareers(dictionariesDto.careers());
-        countryDataBaseDownload.saveCountry(dictionariesDto.countries());
-        genreDataBaseDownload.saveGenre(dictionariesDto.genres());
+//        careerDataBaseDownload.saveCareers(dictionariesDto.careers());
+//        countryDataBaseDownload.saveCountry(dictionariesDto.countries());
+//        genreDataBaseDownload.saveGenre(dictionariesDto.genres());
         List<Career> careers = careerDataBaseDownload.loadCareers();
         List<Country> countries = countryDataBaseDownload.loadCountry();
         List<Genre> genres = genreDataBaseDownload.loadGenres();
