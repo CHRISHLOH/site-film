@@ -62,13 +62,9 @@ CREATE TABLE IF NOT EXISTS content_service.content (
                                                       original_title VARCHAR(255) NOT NULL,
                                                       content_type SMALLINT,
                                                       poster_url VARCHAR(255),
-                                                      release_date DATE,
                                                       status SMALLINT,
                                                       age_rating VARCHAR(5),
-                                                      budget BIGINT,
-                                                      box_office BIGINT,
                                                       external_id BIGINT,
-                                                      duration SMALLINT,
                                                       source SMALLINT,
                                                       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                       updated_at TIMESTAMPTZ DEFAULT NOW(),
@@ -77,7 +73,6 @@ CREATE TABLE IF NOT EXISTS content_service.content (
 CREATE INDEX IF NOT EXISTS idx_movies_original_title ON content_service.content (original_title);
 CREATE INDEX IF NOT EXISTS idx_movies_release_date ON content_service.content (release_date);
 CREATE INDEX IF NOT EXISTS idx_content_external_id ON content_service.content (external_id);
-
 
 --changeset author:14 runOnChange:false
 --comment: Create content_translations table
@@ -97,7 +92,16 @@ CREATE INDEX IF NOT EXISTS idx_movie_translations_locale ON content_service.cont
 CREATE INDEX IF NOT EXISTS idx_movie_translations_movie_id ON content_service.content_translations(content_id);
 CREATE INDEX IF NOT EXISTS idx_movie_translations_title ON content_service.content_translations(title);
 
-
+CREATE TABLE IF NOT EXISTS content_service.movie_details (
+                                                             content_id BIGINT NOT NULL REFERENCES content_service.content(id),
+                                                             budget BIGINT,
+                                                             box_office BIGINT,
+                                                             duration SMALLINT,
+                                                             release_date DATE,
+                                                             created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                                                             updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+CREATE INDEX IF NOT EXISTS idx_movie_details_content_id ON content_service.movie_details(content_id);
 -- ============================================
 -- СПЕЦИФИЧНЫЕ ДАННЫЕ ДЛЯ СЕРИАЛОВ
 -- ============================================

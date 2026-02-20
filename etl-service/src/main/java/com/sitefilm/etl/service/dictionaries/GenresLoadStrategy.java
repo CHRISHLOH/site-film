@@ -53,9 +53,19 @@ public class GenresLoadStrategy{
                         return g;
                     })
                     .getTranslations()
-                    .put(dto.getLanguage(), dto.getName());
+                    .put(localeMapping(dto.getLanguage()), dto.getName());
         }
-
         return new ArrayList<>(finalMap.values());
+    }
+
+    private String localeMapping(String language) {
+        return switch (language) {
+            case "en" -> "en-EN";
+            case "es" -> "es-ES";
+            case "fr" -> "fr-FR";
+            case "de" -> "de-DE";
+            case "ru" -> "ru-RU";
+            default -> null;
+        };
     }
 }
