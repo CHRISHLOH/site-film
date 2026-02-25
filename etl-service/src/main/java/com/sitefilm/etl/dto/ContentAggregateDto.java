@@ -5,11 +5,10 @@ import com.sitefilm.etl.service.core.dto.RelationshipsForDataSaveDto;
 
 import java.util.List;
 
-public record ContentAggregateDto(
-        Content content,
-        List<DataContentTranslation> contentTranslations,
-        List<PersonAggregateDto> persons,
-        DictionariesDto dictionariesDto,
-        RelationshipsForDataSaveDto relationships
-) {
+public sealed interface ContentAggregateDto permits MovieAggregateResult, SeriesAggregateResult {
+    Content content();
+    List<DataContentTranslation> contentTranslations();
+    List<PersonAggregateDto> persons();
+    DictionariesDto dictionariesDto();
+    RelationshipsForDataSaveDto relationships();
 }

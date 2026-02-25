@@ -10,5 +10,5 @@ public class ResponseMovieTranslationDto {
     @JsonProperty("id")
     Long id;
     @JsonProperty("translations")
-    List<MovieTranslationDto> moviesTranslation;
+    List<ContentTranslationDto> moviesTranslation;
 }

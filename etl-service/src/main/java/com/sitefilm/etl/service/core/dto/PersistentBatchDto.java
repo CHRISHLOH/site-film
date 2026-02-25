@@ -14,6 +14,8 @@ public record PersistentBatchDto(
     List<DataPersonTranslation> personTranslationList,
     List<ContentCountryPersistDto> contentCountries,
     List<ContentGenrePersistDto> contentGenres,
-    List<ContentPersonPersistDto> contentPerson
+    List<ContentPersonPersistDto> contentPerson,
+    List<MovieDetailsPersistDto> movieDetails,    // добавил
+    List<SeriesDetailsPersistDto> seriesDetails
 ) {
 }

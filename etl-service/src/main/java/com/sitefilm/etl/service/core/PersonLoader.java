@@ -1,7 +1,6 @@
 package com.sitefilm.etl.service.core;
 
 import com.sitefilm.etl.configuration.client.CoreTmdbClient;
-import com.sitefilm.etl.dto.core.movie.MovieTranslationDto;
 import com.sitefilm.etl.dto.core.person.PersonDetailsResponseDto;
 
 import com.sitefilm.etl.dto.core.person.PersonTranslationDto;

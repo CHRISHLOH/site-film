@@ -1,7 +1,8 @@
 package com.sitefilm.etl.service.core.dto;
 
-import lombok.Data;
-
-@Data
-public class MovieDetailsPersistDto {
-}
+public record MovieDetailsPersistDto(
+        Long content_id,
+        Long budget,
+        Long boxOffice,
+        Short duration
+) {}

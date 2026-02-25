@@ -8,7 +8,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class DataMovieTranslation {
+public class DataContentTranslation {
     @JsonProperty("overview")
     private String description;
     @JsonProperty("title")

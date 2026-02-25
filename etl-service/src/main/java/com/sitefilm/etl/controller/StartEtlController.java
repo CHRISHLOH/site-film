@@ -1,5 +1,6 @@
 package com.sitefilm.etl.controller;
 
+import com.sitefilm.etl.entity.enums.ContentType;
 import com.sitefilm.etl.service.core.PopularMoviesLoadUseCase;
 import com.sitefilm.etl.service.dictionaries.CountriesLoadStrategy;
 import com.sitefilm.etl.service.dictionaries.GenresLoadStrategy;
@@ -14,14 +15,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RequestMapping("/etl")
 public class StartEtlController {
-
-    private final CountriesLoadStrategy loadStrategy;
-    private final GenresLoadStrategy loadStrategyGenres;
     private final PopularMoviesLoadUseCase popularMoviesLoadUseCase;
 
-    @GetMapping("/countries")
-    public String countries() {
-        popularMoviesLoadUseCase.load();
+    @GetMapping("/movies")
+    public String loadMovies() {
+        popularMoviesLoadUseCase.load(ContentType.MOVIE);
+        return "Отработало";
+    }
+
+    @GetMapping("/series")
+    public String LoadSeries() {
+        popularMoviesLoadUseCase.load(ContentType.SERIES);
         return "Отработало";
     }
 }
