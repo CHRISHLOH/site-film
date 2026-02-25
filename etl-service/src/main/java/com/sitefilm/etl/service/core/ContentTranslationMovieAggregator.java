@@ -1,8 +1,8 @@
 package com.sitefilm.etl.service.core;
 
 import com.sitefilm.etl.dto.DataContentTranslation;
-import com.sitefilm.etl.dto.core.movie.MovieDetailsResponseDto;
-import com.sitefilm.etl.dto.core.movie.MovieTranslationDto;
+import com.sitefilm.etl.dto.core.ContentResponse;
+import com.sitefilm.etl.dto.core.movie.ContentTranslationDto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -13,33 +13,33 @@ public class ContentTranslationMovieAggregator {
     private static final Set<String> languages = Set.of("English", "Russian", "French", "German", "Spanish");
     private static final Set<String> isoCodes = Set.of("US", "RU", "FR", "DE", "ES");
 
-    public List<DataContentTranslation> aggregate(MovieDetailsResponseDto movieDetails, Long externalId){
+    public List<DataContentTranslation> aggregate(ContentResponse movieDetails, Long externalId){
         return contentTranslationMapping(
-                filterMoviesTranslation(movieDetails.getMovieTranslations().getMovieTranslations()), externalId);
+                filterMoviesTranslation(movieDetails.getContentTranslations().getContentTranslations()), externalId);
     }
 
-    private List<MovieTranslationDto> filterMoviesTranslation(List<MovieTranslationDto> movieTranslation){
+    private List<ContentTranslationDto> filterMoviesTranslation(List<ContentTranslationDto> movieTranslation){
         return movieTranslation.stream()
                 .filter(translation ->
                         languages.contains(translation.getEnglishName()) && isoCodes.contains(translation.getIsoCode()))
                 .toList();
     }
 
-    private List<DataContentTranslation> contentTranslationMapping(List<MovieTranslationDto> movieTranslations, Long externalId){
+    private List<DataContentTranslation> contentTranslationMapping(List<ContentTranslationDto> movieTranslations, Long externalId){
         return movieTranslations.stream().map(translation -> {
             String locale = getDBLocale(translation);
             return new DataContentTranslation(
                 externalId,
                     locale,
-                translation.getDataMovieTranslationList().getTitle(),
-                translation.getDataMovieTranslationList().getDescription(),
+                translation.getDataContentTranslationList().getTitle(),
+                translation.getDataContentTranslationList().getDescription(),
                 null
         );}
         ).toList();
     }
 
-    private String getDBLocale(MovieTranslationDto movieTranslationDto) {
-        return switch (movieTranslationDto.getEnglishName()) {
+    private String getDBLocale(ContentTranslationDto contentTranslationDto) {
+        return switch (contentTranslationDto.getEnglishName()) {
             case "English" -> "en-EN";
             case "Russian" -> "ru-RU";
             case "French" -> "fr-FR";

@@ -110,11 +110,13 @@ CREATE INDEX IF NOT EXISTS idx_movie_details_content_id ON content_service.movie
 --comment: Create series_details table
 CREATE TABLE IF NOT EXISTS content_service.series_details (
                                                               content_id BIGINT PRIMARY KEY,
+                                                              first_air_date DATE,
                                                               total_seasons SMALLINT DEFAULT 1,
                                                               total_episodes SMALLINT DEFAULT 1,
                                                               average_episode_duration SMALLINT, -- средняя длительность эпизода в минутах
                                                               end_date DATE,
                                                               series_status SMALLINT,
+                                                              series_type SMALLINT,
                                                               created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
                                                               updated_at TIMESTAMPTZ DEFAULT NOW(),
                                                               CONSTRAINT fk_series_details_content FOREIGN KEY (content_id)

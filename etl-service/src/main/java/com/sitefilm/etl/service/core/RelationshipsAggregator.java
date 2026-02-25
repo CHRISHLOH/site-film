@@ -2,8 +2,8 @@ package com.sitefilm.etl.service.core;
 
 import com.sitefilm.etl.dto.DictionariesDto;
 import com.sitefilm.etl.dto.PersonAggregateDto;
+import com.sitefilm.etl.dto.core.ContentResponse;
 import com.sitefilm.etl.dto.core.RelationshipsCountryDto;
-import com.sitefilm.etl.dto.core.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.entity.content.Content;
 import com.sitefilm.etl.entity.directories.Career;
 import com.sitefilm.etl.entity.directories.Country;
@@ -22,15 +22,14 @@ import java.util.stream.Collectors;
 
 @Component
 public class RelationshipsAggregator {
-
-    public RelationshipsForDataSaveDto aggregate(Content content, MovieDetailsResponseDto movieDetailsResponseDto, DictionariesDto dictionaries, List<PersonAggregateDto> persons) {
-        List<ContentCountryPersistDto> contentCountries = mappingContentCountryPersistDto(dictionaries, content, movieDetailsResponseDto);
-        List<ContentGenrePersistDto> contentGenre = mappingContentGenrePersistDto(dictionaries, content, movieDetailsResponseDto);
+    public RelationshipsForDataSaveDto aggregate(Content content, ContentResponse contentResponseDto, DictionariesDto dictionaries, List<PersonAggregateDto> persons) {
+        List<ContentCountryPersistDto> contentCountries = mappingContentCountryPersistDto(dictionaries, content, contentResponseDto);
+        List<ContentGenrePersistDto> contentGenre = mappingContentGenrePersistDto(dictionaries, content, contentResponseDto);
         List<ContentPersonPersistDto> contentPerson = mappingContentPersonPersistDto(content, persons, dictionaries);
         return new RelationshipsForDataSaveDto(contentCountries, contentGenre, contentPerson);
     }
 
-    private List<ContentCountryPersistDto> mappingContentCountryPersistDto(DictionariesDto dictionaries, Content content, MovieDetailsResponseDto movieDetailsResponseDto) {
+    private List<ContentCountryPersistDto> mappingContentCountryPersistDto(DictionariesDto dictionaries, Content content, ContentResponse contentResponseDto) {
         Map<String, Country> countriesByIso = dictionaries.countries().stream()
                 .collect(Collectors.toMap(
                         Country::getIsoCode,
@@ -38,7 +37,7 @@ public class RelationshipsAggregator {
                 ));
         List<ContentCountryPersistDto> result = new ArrayList<>();
 
-        for (RelationshipsCountryDto dto : movieDetailsResponseDto.getCountries()) {
+        for (RelationshipsCountryDto dto : contentResponseDto.getCountries()) {
             Country country = countriesByIso.get(dto.iso3166_1());
             ContentCountryPersistDto contentCountryPersistDto = new ContentCountryPersistDto(
                     content.getExternalId(),
@@ -49,7 +48,7 @@ public class RelationshipsAggregator {
         return result;
     }
 
-    private List<ContentGenrePersistDto> mappingContentGenrePersistDto(DictionariesDto dictionaries, Content content, MovieDetailsResponseDto movieDetailsResponseDto) {
+    private List<ContentGenrePersistDto> mappingContentGenrePersistDto(DictionariesDto dictionaries, Content content, ContentResponse contentResponseDto) {
         Map<Long, Genre> genresById = dictionaries.genres().stream()
                 .collect(Collectors.toMap(
                         Genre::getExternalId,
@@ -58,7 +57,7 @@ public class RelationshipsAggregator {
         List<ContentGenrePersistDto> result = new ArrayList<>();
         Short displayOrder = 1;
         List<Long> genresId = new ArrayList<>();
-        movieDetailsResponseDto.getGenres().forEach(genreDto -> genresId.add(genreDto.getExternal_id()));
+        contentResponseDto.getGenres().forEach(genreDto -> genresId.add(genreDto.getExternal_id()));
         for (Long id : genresId) {
             Genre genre = genresById.get(id);
             ContentGenrePersistDto contentGenrePersistDto = new ContentGenrePersistDto(
