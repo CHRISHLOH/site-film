@@ -1,0 +1,72 @@
+package com.sitefilm.etl.infrastructure.provider.tmdb.response.movie;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.sitefilm.etl.domain.model.ContentResponse;
+import com.sitefilm.etl.domain.model.ContentTranslations;
+import com.sitefilm.etl.domain.model.GenreDto;
+import com.sitefilm.etl.domain.model.RelationshipsCountryDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.dictionaries.LanguageResponseDto;
+import lombok.Data;
+
+import java.time.OffsetDateTime;
+import java.util.List;
+
+@Data
+public class MovieDetailsResponseDto implements ContentResponse {
+    @JsonProperty("id")
+    private Long externalId;
+    @JsonProperty("original_title")
+    private String originalTitle;
+    @JsonProperty("overview")
+    private String overview;
+    @JsonProperty("status")
+    private String status;
+    @JsonProperty("genres")
+    private List<GenreDto> genres;
+    @JsonProperty("budget")
+    private Long budget;
+    @JsonProperty("release_date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    private OffsetDateTime releaseDate;
+    @JsonProperty("revenue")
+    private Long revenue;
+    @JsonProperty("runtime")
+    private Short duration;
+    @JsonProperty("production_countries")
+    private List<RelationshipsCountryDto> countries;
+    @JsonProperty("spoken_languages")
+    private List<LanguageResponseDto> spokenLanguages;
+    @JsonProperty("translations")
+    private ContentTranslations contentTranslations;
+
+    @Override
+    public Long getExternalId() {
+        return externalId;
+    }
+
+    @Override
+    public String getOriginalTitle() {
+        return originalTitle;
+    }
+
+    @Override
+    public String getStatus() {
+        return status;
+    }
+
+    @Override
+    public List<GenreDto> getGenres() {
+        return genres;
+    }
+
+    @Override
+    public List<RelationshipsCountryDto> getCountries() {
+        return countries;
+    }
+
+    @Override
+    public ContentTranslations getContentTranslations() {
+        return contentTranslations;
+    }
+}

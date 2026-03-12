@@ -1,6 +1,5 @@
 package com.sitefilm.etl.configuration;
 
-import jakarta.annotation.PreDestroy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

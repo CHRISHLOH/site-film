@@ -1,19 +1,16 @@
 package com.sitefilm.etl.configuration;
 
-import com.sitefilm.etl.configuration.client.CoreTmdbClient;
-import com.sitefilm.etl.configuration.client.DictionariesTmdbClient;
+import com.sitefilm.etl.infrastructure.provider.tmdb.client.CoreTmdbClient;
+import com.sitefilm.etl.infrastructure.provider.tmdb.client.DictionariesTmdbClient;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.client.RestClient;
-import org.springframework.web.client.RestTemplate;
 
 @Configuration
 @RequiredArgsConstructor
 public class TmdbRestClientConfiguration {
-
     private final TmdbAuthProperties tmdbAuthProperties;
     private final TmdbUrlProperties tmdbUrlProperties;
 
