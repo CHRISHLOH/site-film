@@ -1,0 +1,29 @@
+package com.sitefilm.etl.infrastructure.provider.tmdb.response.person;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.sitefilm.etl.domain.model.PersonTranslations;
+import lombok.Data;
+
+import java.time.LocalDate;
+
+@Data
+public class PersonDetailsResponseDto {
+    @JsonProperty("biography")
+    private String biography;
+    @JsonProperty("birthday")
+    private LocalDate birthDate;
+    @JsonProperty("deathday")
+    private LocalDate deathDate;
+    @JsonProperty("id")
+    private Long externalId;
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("place_of_birth")
+    private String placeOfBirth;
+    @JsonProperty("known_for_department")
+    private String knownAs;
+    @JsonProperty("gender")
+    private Short gender;
+    @JsonProperty("translations")
+    private PersonTranslations personTranslations = new PersonTranslations();
+}

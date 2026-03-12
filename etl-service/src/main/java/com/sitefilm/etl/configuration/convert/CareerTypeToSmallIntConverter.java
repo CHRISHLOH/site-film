@@ -1,6 +1,6 @@
 package com.sitefilm.etl.configuration.convert;
 
-import com.sitefilm.etl.entity.enums.CareerType;
+import com.sitefilm.etl.domain.model.enums.CareerType;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.data.convert.WritingConverter;
 
