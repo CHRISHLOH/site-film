@@ -22,7 +22,7 @@ public class RateLimitedTmdbClient {
         this.delegate = delegate;
 
         RateLimiterConfig config = RateLimiterConfig.custom()
-                .limitForPeriod(50)
+                .limitForPeriod(20)
                 .limitRefreshPeriod(Duration.ofSeconds(1))
                 .timeoutDuration(Duration.ofSeconds(2))
                 .build();

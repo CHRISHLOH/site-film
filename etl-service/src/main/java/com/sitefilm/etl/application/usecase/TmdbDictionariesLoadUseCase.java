@@ -6,6 +6,7 @@ import com.sitefilm.etl.domain.model.*;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.DictionariesRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbDictionariesAdapter;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -23,6 +24,7 @@ public class TmdbDictionariesLoadUseCase {
         this.cache = cache;
     }
 
+    @Transactional
     public void loadDictionaries() {
         List<Genre> genres = dictionariesRepositoryAdapter.saveGenres(dictionaryMapper.genreMapping(tmdbDictionariesAdapter.fetchGenres()));
         List<Career> careers = dictionariesRepositoryAdapter.saveCareers(dictionaryMapper.careerMapping(tmdbDictionariesAdapter.fetchCareers()));
