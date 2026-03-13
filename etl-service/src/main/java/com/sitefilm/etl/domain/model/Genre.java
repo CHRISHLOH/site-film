@@ -6,6 +6,9 @@ import java.util.Map;
 
 @Data
 @ToString
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Genre {
     private Short id;
     private Integer externalId;

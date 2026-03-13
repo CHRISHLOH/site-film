@@ -1,9 +1,7 @@
 package com.sitefilm.etl.application.cache;
 
-import com.sitefilm.etl.domain.model.Career;
-import com.sitefilm.etl.domain.model.Country;
-import com.sitefilm.etl.domain.model.Genre;
-import com.sitefilm.etl.domain.model.Language;
+import com.sitefilm.etl.domain.model.*;
+import com.sitefilm.etl.domain.model.enums.CareerType;
 import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.List;
@@ -14,7 +12,7 @@ import java.util.stream.Collectors;
 public class DictionaryRegistry {
     private Map<Integer, Genre> genreMap = new HashMap<>();
     private Map<String, Country> countryMap = new HashMap<>();
-    private Map<String, Career> careerMap = new HashMap<>();
+    private Map<CareerKey, Career> careerMap = new HashMap<>();
     private Map<String, Language> languageMap = new HashMap<>();
 
     public void register(List<Genre> genres,
@@ -33,8 +31,10 @@ public class DictionaryRegistry {
                 ));
         this.careerMap = careers.stream()
                 .collect(Collectors.toMap(
-                        career ->
-                            career.getTranslations().get("en-EN"),
+                        c -> new CareerKey(
+                                c.getType(),
+                                c.getTranslations().get("en-EN")
+                        ),
                         c -> c
                 ));
         this.languageMap = languages.stream()
@@ -52,8 +52,8 @@ public class DictionaryRegistry {
         return countryMap.get(isoCode);
     }
 
-    public Career getCareer(String careerName) {
-        return careerMap.get(careerName);
+    public Career getCareer(CareerType type, String job) {
+        return careerMap.get(new CareerKey(type, job));
     }
 
     public Language getLanguage(String isoCode) {

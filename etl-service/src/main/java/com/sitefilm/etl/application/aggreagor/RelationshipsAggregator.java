@@ -3,6 +3,8 @@ package com.sitefilm.etl.application.aggreagor;
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
 import com.sitefilm.etl.domain.model.Person;
 import com.sitefilm.etl.domain.model.PersonMovieRole;
+import com.sitefilm.etl.domain.model.enums.CareerType;
+import com.sitefilm.etl.domain.model.enums.MovieRoleType;
 import com.sitefilm.etl.domain.model.ref.*;
 import org.springframework.stereotype.Component;
 
@@ -35,14 +37,21 @@ public class RelationshipsAggregator {
         });
         List<ContentPerson> contentPersonList = persons.stream().map(person -> {
             PersonMovieRole personMovieRole = personMovieRoles.get(person.getExternalId());
+            CareerType careerType = mapCareerType(personMovieRole.getType(), personMovieRole.getDepartment());
             return new ContentPerson(
                     id,
                     person.getId(),
-                    dictionaryRegistry.getCareer(personMovieRole.getJob()).getId(),
+                    dictionaryRegistry.getCareer(careerType, personMovieRole.getJob()).getId(),
                     personMovieRole.getCharacter(),
                     personMovieRole.getOrder()
             );
         }).toList();
         return new RelationshipsAggregatedData(contentCountries, contentGenres, contentLanguages, contentPersonList);
+    }
+    private CareerType mapCareerType(MovieRoleType movieRoleType, String department) {
+        if (movieRoleType.getValue().equals("Cast")) {
+            return CareerType.ACTORS;
+        }
+        return CareerType.fromTmdb(department);
     }
 }
