@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.Types;
 import java.util.List;
 
 @Repository
@@ -88,7 +89,7 @@ public class RelationshipsRepositoryAdapter implements TmdbRelationshipsReposito
                     ps.setLong(2, cp.personId());
                     ps.setShort(3, cp.jobId());
                     ps.setString(4, cp.characterName());
-                    ps.setShort(5, cp.displayOrder());
+                    ps.setObject(5, cp.displayOrder(), Types.SMALLINT);
                 }
         );
     }

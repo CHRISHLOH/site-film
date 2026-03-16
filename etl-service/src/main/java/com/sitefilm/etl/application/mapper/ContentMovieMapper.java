@@ -59,6 +59,7 @@ public class ContentMovieMapper implements ContentMapper<ImportedMovie> {
     private List<ContentLanguage> spokenLanguagesRefMapping(List<String> languages) {
         return languages.stream().map(language -> {
             ContentLanguage contentLanguage = new ContentLanguage();
+            System.out.println(language);
             contentLanguage.setLanguageId(cache.getLanguage(language).getId());
             return contentLanguage;
         }).toList();
