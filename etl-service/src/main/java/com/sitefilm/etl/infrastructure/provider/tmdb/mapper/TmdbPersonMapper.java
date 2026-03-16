@@ -14,8 +14,8 @@ import java.util.*;
 
 @Component
 public class TmdbPersonMapper {
-    private static final Set<String> LANGUAGES = Set.of("English", "Russian", "French", "German", "Spanish");
-    private static final Set<String> ISO_CODES = Set.of("US", "RU", "FR", "DE", "ES");
+    private static final Set<String> iso_3166_1 = Set.of("US", "RU", "ES", "FR", "DE");
+    private static final Set<String> iso_639_1 = Set.of("en", "ru", "es", "fr", "de");
     private static final Source SOURCE = Source.TMDB;
 
     public List<PersonImportDto> castMapping(List<PersonDetailsResponseDto> persons, Map<Long, List<PersonMovieRole>> personMovieRoles) {
@@ -24,7 +24,7 @@ public class TmdbPersonMapper {
                     List<PersonTranslationDto> list = person.getPersonTranslations()
                             .getTranslations()
                             .stream()
-                            .filter(t -> LANGUAGES.contains(t.getEnglishName()) && ISO_CODES.contains(t.getIsoCode()))
+                            .filter(t -> iso_3166_1.contains(t.getIso_3166_1()) && iso_639_1.contains(t.getIso_639_1()))
                             .toList();
                     person.getPersonTranslations().setTranslations(list);
                 }
@@ -32,8 +32,8 @@ public class TmdbPersonMapper {
 
         return persons.stream().map(personDto -> {
             Long externalId = personDto.getExternalId();
-            int gender = personDto.getGender();
-            if (gender < 0 || gender > 2) {
+            Short gender = personDto.getGender();
+            if (gender == null || gender < 0 || gender > 2) {
                 gender = 0;
             }
             List<DataPersonTranslation> personTranslations =
@@ -52,7 +52,7 @@ public class TmdbPersonMapper {
             personImportDto.setName(personDto.getName());
             personImportDto.setBirthDate(personDto.getBirthDate());
             personImportDto.setDeathDate(personDto.getDeathDate());
-            personImportDto.setGender(Gender.fromId(personDto.getGender()));
+            personImportDto.setGender(Gender.fromId(gender));
             personImportDto.setBirthPlace(personDto.getPlaceOfBirth());
             personImportDto.setKnownAs(knownAsMapping(personDto.getKnownAs()));
             personImportDto.setSource(SOURCE);
@@ -66,12 +66,12 @@ public class TmdbPersonMapper {
 
     private String getDBLocale(PersonTranslationDto personTranslationDto) {
         return switch (personTranslationDto.getEnglishName()) {
-            case "English" -> "en-EN";
+            case "English" -> "en-US";
             case "Russian" -> "ru-RU";
             case "French" -> "fr-FR";
             case "German" -> "de-DE";
             case "Spanish" -> "es-ES";
-            default -> "en-US";
+            default -> throw new RuntimeException();
         };
     }
 

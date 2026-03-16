@@ -1,6 +1,5 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.response.movie;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sitefilm.etl.domain.model.ContentResponse;
 import com.sitefilm.etl.domain.model.ContentTranslations;
@@ -9,7 +8,7 @@ import com.sitefilm.etl.domain.model.RelationshipsCountryDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.dictionaries.LanguageResponseDto;
 import lombok.Data;
 
-import java.time.OffsetDateTime;
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -27,8 +26,7 @@ public class MovieDetailsResponseDto implements ContentResponse {
     @JsonProperty("budget")
     private Long budget;
     @JsonProperty("release_date")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    private OffsetDateTime releaseDate;
+    private LocalDate releaseDate;
     @JsonProperty("revenue")
     private Long revenue;
     @JsonProperty("runtime")

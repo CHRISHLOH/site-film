@@ -62,8 +62,7 @@ public class MovieRepositoryAdapter implements ContentRepositoryPort {
                 movieDetails.getBudget(),
                 movieDetails.getBoxOffice(),
                 movieDetails.getDuration(),
-                movieDetails.getReleaseDate() == null ? null :
-                        movieDetails.getReleaseDate().toLocalDate()
+                movieDetails.getReleaseDate()
         );
     }
 

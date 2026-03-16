@@ -56,7 +56,7 @@ public class DictionaryRegistry {
         return careerMap.get(new CareerKey(type, job));
     }
 
-    public Language getLanguage(String isoCode) {
-        return languageMap.get(isoCode);
+    public Language getLanguage(String iso) {
+        return languageMap.get(iso);
     }
 }

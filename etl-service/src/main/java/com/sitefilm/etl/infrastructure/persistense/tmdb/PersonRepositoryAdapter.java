@@ -6,7 +6,6 @@ import com.sitefilm.etl.domain.port.repository.PersonRepositoryPort;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
 import java.sql.Date;
@@ -16,10 +15,16 @@ import java.util.*;
 public class PersonRepositoryAdapter implements PersonRepositoryPort {
     private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
     private final JdbcTemplate jdbcTemplate;
+    private final BatchInsertHelper batchInsertHelper;
 
-    public PersonRepositoryAdapter(NamedParameterJdbcTemplate namedParameterJdbcTemplate, JdbcTemplate jdbcTemplate) {
+    public PersonRepositoryAdapter(
+            NamedParameterJdbcTemplate namedParameterJdbcTemplate,
+            JdbcTemplate jdbcTemplate,
+            BatchInsertHelper batchInsertHelper
+    ) {
         this.namedParameterJdbcTemplate = namedParameterJdbcTemplate;
         this.jdbcTemplate = jdbcTemplate;
+        this.batchInsertHelper = batchInsertHelper;
     }
 
     @Override
@@ -27,15 +32,13 @@ public class PersonRepositoryAdapter implements PersonRepositoryPort {
         if (ids == null || ids.isEmpty()) {
             return Collections.emptySet();
         }
-        SqlParameterSource parameters = new MapSqlParameterSource("externalIds", ids);
-
         List<Long> result = namedParameterJdbcTemplate.query(
                 """
-                        SELECT external_id
-                        FROM content_service.persons
-                        WHERE external_id IN (:externalIds)
-                        """,
-                parameters,
+                SELECT external_id
+                FROM content_service.persons
+                WHERE external_id IN (:externalIds)
+                """,
+                new MapSqlParameterSource("externalIds", ids),
                 (rs, rowNum) -> rs.getLong("external_id")
         );
         return new HashSet<>(result);
@@ -44,50 +47,70 @@ public class PersonRepositoryAdapter implements PersonRepositoryPort {
     @Override
     public Set<Person> save(List<Person> persons) {
         List<Person> personsWithId = savePerson(persons);
+
         List<DataPersonTranslation> allTranslations = personsWithId.stream()
                 .flatMap(person -> person.getPersonTranslation().stream()
                         .peek(t -> t.setPersonId(person.getId())))
                 .toList();
-        saveTranslation(allTranslations);
+
+        if (!allTranslations.isEmpty()) {
+            saveTranslation(allTranslations);
+        }
+
         return new HashSet<>(personsWithId);
     }
 
-    public List<Person> savePerson(List<Person> persons) {
+    private List<Person> savePerson(List<Person> persons) {
         String sql = """
                 INSERT INTO content_service.persons(
-                    original_name, birth_date, death_date, gender, birth_place, known_as, photo_url, external_id, source
+                    original_name, birth_date, death_date, gender,
+                    birth_place, known_as, photo_url, external_id, source
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ON CONFLICT (external_id, source) DO NOTHING
-                RETURNING id
+                ON CONFLICT (external_id, source) DO UPDATE
+                    SET external_id = EXCLUDED.external_id
+                RETURNING id, external_id
                 """;
-        List<Person> personIds = new ArrayList<>(persons.size());
-        for (Person person : persons) {
-            Person result = jdbcTemplate.queryForObject(
-                    sql,
-                    (rs, rowNum) ->
-                            Person.builder()
-                                    .id( rs.getLong("id"))
-                                    .externalId(rs.getLong("external_id"))
-                                    .personTranslation(person.getPersonTranslation()).build(),
-                    person.getName(),
-                    person.getBirthDate() != null ? Date.valueOf(person.getBirthDate()) : null,
-                    person.getDeathDate() != null ? Date.valueOf(person.getDeathDate()) : null,
-                    person.getGender().getGenderId(),
-                    person.getBirthPlace(),
-                    person.getKnownAs() != null ? person.getKnownAs().getId() : 1,
-                    person.getPhotoUrl(),
-                    person.getExternalId(),
-                    person.getSource().getId()
-            );
-            personIds.add(result);
-        }
-        return personIds;
+
+        return batchInsertHelper.batchInsertWithReturning(
+                jdbcTemplate,
+                sql,
+                persons,
+                (ps, person) -> {
+                    ps.setString(1, person.getName());
+                    ps.setObject(2, person.getBirthDate() != null
+                            ? Date.valueOf(person.getBirthDate()) : null);
+                    ps.setObject(3, person.getDeathDate() != null
+                            ? Date.valueOf(person.getDeathDate()) : null);
+                    ps.setInt(4, person.getGender().getGenderId());
+                    ps.setString(5, person.getBirthPlace());
+                    ps.setInt(6, person.getKnownAs() != null
+                            ? person.getKnownAs().getId() : 1);
+                    ps.setString(7, person.getPhotoUrl());
+                    ps.setLong(8, person.getExternalId());
+                    ps.setInt(9, person.getSource().getId());
+                },
+                (rs, rowNum) -> {
+                    Long externalId = rs.getLong("external_id");
+                    Person original = persons.stream()
+                            .filter(p -> Objects.equals(p.getExternalId(), externalId))
+                            .findFirst()
+                            .orElseThrow(() -> new IllegalStateException(
+                                    "No person found for externalId: " + externalId));
+                    return Person.builder()
+                            .id(rs.getLong("id"))
+                            .externalId(externalId)
+                            .personTranslation(original.getPersonTranslation())
+                            .build();
+                }
+        );
     }
 
-    public void saveTranslation(List<DataPersonTranslation> translations) {
-        jdbcTemplate.batchUpdate("""
-                            INSERT INTO content_service.person_translations(person_id, locale, locale_name, biography)
-                            VALUES (?, ?, ?, ?)
+    private void saveTranslation(List<DataPersonTranslation> translations) {
+        jdbcTemplate.batchUpdate(
+                """
+                INSERT INTO content_service.person_translations(person_id, locale, locale_name, biography)
+                VALUES (?, ?, ?, ?)
+                ON CONFLICT DO NOTHING
                 """,
                 translations,
                 translations.size(),

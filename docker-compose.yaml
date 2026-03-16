@@ -7,7 +7,6 @@ services:
   zookeeper:
     image: zookeeper:3.7.0
     container_name: zookeeper
-    restart: always
     networks:
       - kafka-net
     ports:
@@ -16,7 +15,6 @@ services:
   kafka:
     image: confluentinc/cp-kafka:7.6.0
     container_name: kafka
-    restart: always
     networks:
       - kafka-net
     ports:
@@ -35,7 +33,6 @@ services:
   kafdrop:
     image: obsidiandynamics/kafdrop:latest
     container_name: kafdrop
-    restart: always
     networks:
       - kafka-net
     ports:
@@ -69,22 +66,8 @@ services:
       - pgadmin_data:/var/lib/pgadmin
     ports:
       - "8089:80"
-    restart: always
-
-  ollama:
-    image: ollama/ollama:latest
-    container_name: ollama
-    environment:
-      - OLLAMA_HOST=0.0.0.0:11434
-      - OLLAMA_ORIGINS=*
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama_data:/root/.ollama
-    entrypoint: [ "ollama", "serve" ]
 
 volumes:
   postgres_data:
   pgadmin_data:
-  ollama_data:
   pgvector_data:

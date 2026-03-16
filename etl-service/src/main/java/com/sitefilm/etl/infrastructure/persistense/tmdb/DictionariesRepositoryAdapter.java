@@ -7,27 +7,22 @@ import com.sitefilm.etl.domain.model.Genre;
 import com.sitefilm.etl.domain.model.Language;
 import com.sitefilm.etl.domain.port.repository.DictionariesRepositoryPort;
 import com.sitefilm.etl.domain.model.enums.CareerType;
-import org.springframework.jdbc.core.ConnectionCallback;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Types;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @Repository
 public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort {
     private final JdbcTemplate jdbcTemplate;
     private final JsonbMapper jsonbMapper;
+    private final BatchInsertHelper  batchInsertHelper;
 
-    public DictionariesRepositoryAdapter(JdbcTemplate jdbcTemplate, JsonbMapper jsonbMapper) {
+    public DictionariesRepositoryAdapter(JdbcTemplate jdbcTemplate, JsonbMapper jsonbMapper, BatchInsertHelper batchInsertHelper) {
         this.jdbcTemplate = jdbcTemplate;
         this.jsonbMapper = jsonbMapper;
+        this.batchInsertHelper = batchInsertHelper;
     }
 
     @Override
@@ -37,7 +32,8 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
             VALUES (?, ?)
             RETURNING id, external_id, translations
         """;
-        return batchInsertWithReturning(
+        return batchInsertHelper.batchInsertWithReturning(
+                jdbcTemplate,
                 sql,
                 genres,
                 (ps, genre) -> {
@@ -63,7 +59,8 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
             VALUES (?, ?)
             RETURNING id, iso_639_1, translations
         """;
-        return batchInsertWithReturning(
+        return batchInsertHelper.batchInsertWithReturning(
+                jdbcTemplate,
                 sql,
                 languages,
                 (ps, l) -> {
@@ -87,7 +84,8 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
             VALUES (?, ?)
             RETURNING id, type, translations
         """;
-        return batchInsertWithReturning(
+        return batchInsertHelper.batchInsertWithReturning(
+                jdbcTemplate,
                 sql,
                 careers,
                 (ps, c) -> {
@@ -111,7 +109,8 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
             VALUES (?, ?)
             RETURNING id, iso_3166_1, translations
         """;
-        return batchInsertWithReturning(
+        return batchInsertHelper.batchInsertWithReturning(
+                jdbcTemplate,
                 sql,
                 countries,
                 (ps, c) -> {
@@ -124,37 +123,6 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
                         .translations(jsonbMapper.readTranslations(rs.getString("translations")))
                         .build()
         );
-    }
-
-    private <T> List<T> batchInsertWithReturning(
-            String sql,
-            List<T> items,
-            PreparedStatementBinder<T> binder,
-            RowMapper<T> mapper
-    ) {
-        if (items == null || items.isEmpty()) {
-            return Collections.emptyList();
-        }
-
-        return jdbcTemplate.execute((ConnectionCallback<List<T>>) conn -> {
-            List<T> results = new ArrayList<>(items.size());
-            try (PreparedStatement ps = conn.prepareStatement(sql)) {
-                for (T item : items) {
-                    binder.bind(ps, item);
-                    try (ResultSet rs = ps.executeQuery()) {
-                        while (rs.next()) {
-                            results.add(mapper.mapRow(rs, results.size()));
-                        }
-                    }
-                }
-            }
-            return results;
-        });
-    }
-
-    @FunctionalInterface
-    private interface PreparedStatementBinder<T> {
-        void bind(PreparedStatement ps, T item) throws SQLException;
     }
 }
 

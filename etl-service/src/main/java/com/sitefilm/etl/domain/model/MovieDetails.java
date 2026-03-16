@@ -2,7 +2,7 @@ package com.sitefilm.etl.domain.model;
 
 import lombok.Data;
 
-import java.time.OffsetDateTime;
+import java.time.LocalDate;
 
 @Data
 public class MovieDetails implements Details{
@@ -10,5 +10,5 @@ public class MovieDetails implements Details{
     private Long budget;
     private Long boxOffice;
     private Short duration;
-    private OffsetDateTime releaseDate;
+    private LocalDate releaseDate;
 }

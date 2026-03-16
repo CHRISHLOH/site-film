@@ -32,7 +32,6 @@ public class RateLimitedTmdbClient {
 
     private <T> T callRateLimited(Supplier<T> supplier) {
         Supplier<T> decorated = RateLimiter.decorateSupplier(rateLimiter, supplier);
-
         try {
             return decorated.get();
         } catch (RequestNotPermitted e) {

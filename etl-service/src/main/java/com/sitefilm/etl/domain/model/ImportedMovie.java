@@ -7,7 +7,7 @@ import com.sitefilm.etl.domain.model.enums.Source;
 import lombok.Builder;
 import lombok.Data;
 
-import java.time.OffsetDateTime;
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -23,7 +23,7 @@ public class ImportedMovie implements Imported {
     private Long budget;
     private Long boxOffice;
     private Short duration;
-    private OffsetDateTime releaseDate;
+    private LocalDate releaseDate;
     private List<Integer> genres;
     private List<String> countries;
     private List<String> spokenLanguages;

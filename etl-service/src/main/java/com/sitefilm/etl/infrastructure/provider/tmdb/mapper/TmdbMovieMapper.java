@@ -52,6 +52,6 @@ public class TmdbMovieMapper {
     }
 
     private List<String> languagesReferenceMapping(List<LanguageResponseDto> languages) {
-        return languages.stream().map(LanguageResponseDto::getEnglishName).toList();
+        return languages.stream().map(LanguageResponseDto::getIso_639_1).toList();
     }
 }
