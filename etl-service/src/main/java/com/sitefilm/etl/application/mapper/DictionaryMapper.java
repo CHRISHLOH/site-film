@@ -1,6 +1,13 @@
 package com.sitefilm.etl.application.mapper;
 
-import com.sitefilm.etl.domain.model.*;
+import com.sitefilm.etl.domain.model.dictionaries.Career;
+import com.sitefilm.etl.domain.model.dictionaries.Country;
+import com.sitefilm.etl.domain.model.dictionaries.Genre;
+import com.sitefilm.etl.domain.model.dictionaries.Language;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CareerImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CountryImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.GenreImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.LanguageImported;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

@@ -3,7 +3,7 @@ package com.sitefilm.etl.infrastructure.provider.tmdb.client;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.TmdbMoviePageResponse;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonsInMovieResponseDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.PersonsInMovieResponseDto;
 import io.github.resilience4j.ratelimiter.RateLimiter;
 import io.github.resilience4j.ratelimiter.RateLimiterConfig;
 import io.github.resilience4j.ratelimiter.RequestNotPermitted;

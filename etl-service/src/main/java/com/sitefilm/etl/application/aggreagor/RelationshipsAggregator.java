@@ -1,9 +1,9 @@
 package com.sitefilm.etl.application.aggreagor;
 
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
-import com.sitefilm.etl.domain.model.Person;
-import com.sitefilm.etl.domain.model.PersonMovieRole;
-import com.sitefilm.etl.domain.model.enums.CareerType;
+import com.sitefilm.etl.domain.model.person.Person;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonMovieRole;
+import com.sitefilm.etl.domain.model.person.CareerType;
 import com.sitefilm.etl.domain.model.enums.MovieRoleType;
 import com.sitefilm.etl.domain.model.ref.*;
 import org.springframework.stereotype.Component;

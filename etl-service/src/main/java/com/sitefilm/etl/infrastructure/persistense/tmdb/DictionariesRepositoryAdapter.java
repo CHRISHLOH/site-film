@@ -1,12 +1,12 @@
 package com.sitefilm.etl.infrastructure.persistense.tmdb;
 
 import com.sitefilm.etl.configuration.convert.JsonbMapper;
-import com.sitefilm.etl.domain.model.Career;
-import com.sitefilm.etl.domain.model.Country;
-import com.sitefilm.etl.domain.model.Genre;
-import com.sitefilm.etl.domain.model.Language;
+import com.sitefilm.etl.domain.model.dictionaries.Career;
+import com.sitefilm.etl.domain.model.dictionaries.Country;
+import com.sitefilm.etl.domain.model.dictionaries.Genre;
+import com.sitefilm.etl.domain.model.dictionaries.Language;
 import com.sitefilm.etl.domain.port.repository.DictionariesRepositoryPort;
-import com.sitefilm.etl.domain.model.enums.CareerType;
+import com.sitefilm.etl.domain.model.person.CareerType;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 

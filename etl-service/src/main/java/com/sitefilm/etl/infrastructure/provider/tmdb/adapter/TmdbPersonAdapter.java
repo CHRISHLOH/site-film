@@ -1,16 +1,14 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.adapter;
 
-import com.sitefilm.etl.domain.model.PersonCastDto;
-import com.sitefilm.etl.domain.model.PersonCrewDto;
-import com.sitefilm.etl.domain.model.PersonImportDto;
-import com.sitefilm.etl.domain.model.PersonMovieRole;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.*;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonCastDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonCrewDto;
 import com.sitefilm.etl.domain.port.api.PersonProviderPort;
 import com.sitefilm.etl.domain.model.enums.MovieRoleType;
-import com.sitefilm.etl.infrastructure.provider.tmdb.client.CoreTmdbClient;
 import com.sitefilm.etl.infrastructure.provider.tmdb.client.RateLimitedTmdbClient;
 import com.sitefilm.etl.infrastructure.provider.tmdb.mapper.TmdbPersonMapper;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonsInMovieResponseDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.PersonsInMovieResponseDto;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -33,12 +31,11 @@ public class TmdbPersonAdapter implements PersonProviderPort {
 
 
     @Override
-    public List<PersonImportDto> fetchCast(Long movieId, Set<Long> existPersonIds) {
-        PersonsInMovieResponseDto cast = tmdbClient.loadMovieCast(movieId);
-        Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(cast);
+    public List<PersonImportDto> fetchCast(CreditsImported credits, Set<Long> existPersonIds) {
+        Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(credits);
         List<Long> personIds = Stream.concat(
-                        cast.getCast().stream().map(PersonCastDto::getExternalId),
-                        cast.getCrew().stream().map(PersonCrewDto::getExternalId)
+                        credits.cast().stream().map(Cast::externalId),
+                        credits.crew().stream().map(Crew::externalId)
                 )
                 .distinct()
                 .filter(personId ->
@@ -58,43 +55,32 @@ public class TmdbPersonAdapter implements PersonProviderPort {
         return mapper.castMapping(personCastDto, personMovieRoles);
     }
 
-    @Override
-    public List<Long> existPersons(Long movieId) {
-        PersonsInMovieResponseDto cast =  tmdbClient.loadMovieCast(movieId);
-        return Stream.concat(
-                        cast.getCast().stream().map(PersonCastDto::getExternalId),
-                        cast.getCrew().stream().map(PersonCrewDto::getExternalId)
-                )
-                .distinct()
-                .toList();
-    }
-
     private CompletableFuture<PersonDetailsResponseDto> loadPerson(Long personId) {
         return CompletableFuture.supplyAsync(() -> tmdbClient.loadPersonDetails(personId), executorService
         );
     }
 
-    private Map<Long, List<PersonMovieRole>> collectRoles(PersonsInMovieResponseDto dto) {
+    private Map<Long, List<PersonMovieRole>> collectRoles(CreditsImported credits) {
         Map<Long, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
-        for (PersonCastDto cast : dto.getCast()) {
+        for (Cast cast : credits.cast()) {
             rolesByPersonId
-                    .computeIfAbsent(cast.getExternalId(), k -> new ArrayList<>())
+                    .computeIfAbsent(cast.externalId(), k -> new ArrayList<>())
                     .add(PersonMovieRole.builder()
-                            .externalId(cast.getExternalId())
+                            .externalId(cast.externalId())
                             .type(MovieRoleType.CAST)
-                            .order(cast.getOrder())
-                            .character(cast.getCharacter())
+                            .order(cast.order())
+                            .character(cast.character())
                             .job("Actor")
                             .build());
         }
-        for (PersonCrewDto crew : dto.getCrew()) {
+        for (Crew crew : credits.crew()) {
             rolesByPersonId
-                    .computeIfAbsent(crew.getExternalId(), k -> new ArrayList<>())
+                    .computeIfAbsent(crew.externalId(), k -> new ArrayList<>())
                     .add(PersonMovieRole.builder()
-                            .externalId(crew.getExternalId())
+                            .externalId(crew.externalId())
                             .type(MovieRoleType.CREW)
-                            .department(crew.getDepartment())
-                            .job(crew.getJob())
+                            .department(crew.department())
+                            .job(crew.job())
                             .build());
         }
         return rolesByPersonId;

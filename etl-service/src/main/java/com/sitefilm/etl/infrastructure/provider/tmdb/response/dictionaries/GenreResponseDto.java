@@ -1,6 +1,6 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.response.dictionaries;
 
-import com.sitefilm.etl.domain.model.GenreDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.GenreDto;
 import lombok.Data;
 
 import java.util.List;

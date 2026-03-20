@@ -1,9 +1,9 @@
 package com.sitefilm.etl.infrastructure.persistense.tmdb;
 
-import com.sitefilm.etl.domain.model.Content;
-import com.sitefilm.etl.domain.model.DataContentTranslation;
-import com.sitefilm.etl.domain.model.Details;
-import com.sitefilm.etl.domain.model.MovieDetails;
+import com.sitefilm.etl.domain.model.content.Content;
+import com.sitefilm.etl.domain.model.content.DataContentTranslation;
+import com.sitefilm.etl.domain.model.content.Details;
+import com.sitefilm.etl.domain.model.content.MovieDetails;
 import com.sitefilm.etl.domain.port.repository.ContentRepositoryPort;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

@@ -1,21 +1,22 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.mapper;
 
-import com.sitefilm.etl.domain.model.DataPersonTranslation;
-import com.sitefilm.etl.domain.model.PersonImportDto;
-import com.sitefilm.etl.domain.model.PersonMovieRole;
-import com.sitefilm.etl.domain.model.PersonTranslationDto;
-import com.sitefilm.etl.domain.model.enums.CareerType;
-import com.sitefilm.etl.domain.model.enums.Gender;
-import com.sitefilm.etl.domain.model.enums.Source;
+import com.sitefilm.etl.domain.model.person.DataPersonTranslation;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonImportDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonMovieRole;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonTranslationDto;
+import com.sitefilm.etl.domain.model.person.CareerType;
+import com.sitefilm.etl.domain.model.person.Gender;
+import com.sitefilm.etl.domain.model.Source;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Component
 public class TmdbPersonMapper {
-    private static final Set<String> iso_3166_1 = Set.of("US", "RU", "ES", "FR", "DE");
-    private static final Set<String> iso_639_1 = Set.of("en", "ru", "es", "fr", "de");
+    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE");
+    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de");
     private static final Source SOURCE = Source.TMDB;
 
     public List<PersonImportDto> castMapping(List<PersonDetailsResponseDto> persons, Map<Long, List<PersonMovieRole>> personMovieRoles) {
@@ -45,7 +46,11 @@ public class TmdbPersonMapper {
                                 personTranslation.setLocaleName(p.getPersonData().getName());
                                 personTranslation.setBiography(p.getPersonData().getBiography());
                                 return personTranslation;
-                            }).toList();
+                            }).collect(Collectors.toCollection(ArrayList::new));
+            personTranslations.add(new DataPersonTranslation(null,
+                    "en-US",
+                    personDto.getName(),
+                    personDto.getName()));
             List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(externalId);
             PersonImportDto personImportDto = new PersonImportDto();
             personImportDto.setExternalId(personDto.getExternalId());
@@ -66,7 +71,6 @@ public class TmdbPersonMapper {
 
     private String getDBLocale(PersonTranslationDto personTranslationDto) {
         return switch (personTranslationDto.getEnglishName()) {
-            case "English" -> "en-US";
             case "Russian" -> "ru-RU";
             case "French" -> "fr-FR";
             case "German" -> "de-DE";

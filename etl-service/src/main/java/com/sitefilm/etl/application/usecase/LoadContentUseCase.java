@@ -1,7 +1,7 @@
 package com.sitefilm.etl.application.usecase;
 
 import com.sitefilm.etl.application.strategies.MovieLoadStrategy;
-import com.sitefilm.etl.domain.model.enums.ContentType;
+import com.sitefilm.etl.domain.model.content.enums.ContentType;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -18,5 +18,4 @@ public class LoadContentUseCase {
         tmdbDictionariesLoadUseCase.loadDictionaries();
         movieLoadStrategy.loadContent(1);
     }
-
 }

@@ -1,14 +1,14 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.adapter;
 
-import com.sitefilm.etl.domain.model.CareerImported;
-import com.sitefilm.etl.domain.model.CountryImported;
-import com.sitefilm.etl.domain.model.GenreImported;
-import com.sitefilm.etl.domain.model.LanguageImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CareerImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CountryImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.GenreImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.LanguageImported;
 import com.sitefilm.etl.domain.port.api.DictionariesProviderPort;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.dictionaries.CareerResponseDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.dictionaries.CountryResponseDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.dictionaries.GenreResponseDto;
-import com.sitefilm.etl.domain.model.enums.CareerType;
+import com.sitefilm.etl.domain.model.person.CareerType;
 import com.sitefilm.etl.infrastructure.provider.tmdb.client.DictionariesTmdbClient;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.dictionaries.LanguageResponseDto;
 import org.springframework.stereotype.Component;
@@ -19,7 +19,7 @@ import java.util.stream.Stream;
 @Component
 public class TmdbDictionariesAdapter implements DictionariesProviderPort {
     private final DictionariesTmdbClient dictionariesTmdbClient;
-    private static final Set<String> LOCALES = Set.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
+    private static final Set<String> LOCALES = Set.of("ru-RU", "en-EN", "fr-FR", "es-ES", "de-DE");
     private static final Set<String> LANGUAGES = Set.of("en", "ru", "fr", "de", "es");
 
     public TmdbDictionariesAdapter(DictionariesTmdbClient dictionariesTmdbClient) {

@@ -3,9 +3,10 @@ package com.sitefilm.etl.infrastructure.provider.tmdb.client;
 import com.sitefilm.etl.configuration.TmdbUrlProperties;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.CountPageResponse;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonsInMovieResponseDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.PersonsInMovieResponseDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.TmdbMoviePageResponse;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.MovieDetailsResponseDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.series.SeriesResponseDto;
 import org.springframework.web.client.RestClient;
 
 public class CoreTmdbClient {
@@ -33,7 +34,7 @@ public class CoreTmdbClient {
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getMoviesDetails())
-                        .queryParam("append_to_response", "translations")
+                        .queryParam("append_to_response", "translations,credits")
                         .build(movieId))
                 .retrieve()
                 .body(MovieDetailsResponseDto.class);
@@ -71,4 +72,10 @@ public class CoreTmdbClient {
                 .retrieve()
                 .body(CountPageResponse.class);
     }
+
+//    public SeriesResponseDto loadSeriesDetails(Long seriesId) {
+//        return restClient.get()
+//                .uri(uriBuilder ->
+//                        uriBuilder.path())
+//    }
 }

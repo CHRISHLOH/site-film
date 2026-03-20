@@ -1,7 +1,7 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.response.movie;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sitefilm.etl.domain.model.MovieIdDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.MovieIdDto;
 import lombok.Data;
 
 import java.util.List;

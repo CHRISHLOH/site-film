@@ -1,6 +1,6 @@
 package com.sitefilm.etl.domain.port.repository;
 
-import com.sitefilm.etl.domain.model.Person;
+import com.sitefilm.etl.domain.model.person.Person;
 
 import java.util.List;
 import java.util.Set;

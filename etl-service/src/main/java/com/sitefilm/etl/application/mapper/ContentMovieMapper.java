@@ -1,9 +1,9 @@
 package com.sitefilm.etl.application.mapper;
 
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
-import com.sitefilm.etl.domain.model.Content;
-import com.sitefilm.etl.domain.model.ImportedMovie;
-import com.sitefilm.etl.domain.model.MovieDetails;
+import com.sitefilm.etl.domain.model.content.Content;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedMovie;
+import com.sitefilm.etl.domain.model.content.MovieDetails;
 import com.sitefilm.etl.domain.model.ref.ContentCountry;
 import com.sitefilm.etl.domain.model.ref.ContentGenre;
 import com.sitefilm.etl.domain.model.ref.ContentLanguage;
