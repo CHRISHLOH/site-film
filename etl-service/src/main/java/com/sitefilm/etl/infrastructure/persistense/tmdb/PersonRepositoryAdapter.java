@@ -1,7 +1,7 @@
 package com.sitefilm.etl.infrastructure.persistense.tmdb;
 
-import com.sitefilm.etl.domain.model.DataPersonTranslation;
-import com.sitefilm.etl.domain.model.Person;
+import com.sitefilm.etl.domain.model.person.DataPersonTranslation;
+import com.sitefilm.etl.domain.model.person.Person;
 import com.sitefilm.etl.domain.port.repository.PersonRepositoryPort;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;

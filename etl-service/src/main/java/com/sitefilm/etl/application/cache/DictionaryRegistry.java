@@ -1,7 +1,7 @@
 package com.sitefilm.etl.application.cache;
 
-import com.sitefilm.etl.domain.model.*;
-import com.sitefilm.etl.domain.model.enums.CareerType;
+import com.sitefilm.etl.domain.model.dictionaries.*;
+import com.sitefilm.etl.domain.model.person.CareerType;
 import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.List;

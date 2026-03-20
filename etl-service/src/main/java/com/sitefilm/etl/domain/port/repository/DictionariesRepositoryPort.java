@@ -1,9 +1,9 @@
 package com.sitefilm.etl.domain.port.repository;
 
-import com.sitefilm.etl.domain.model.Career;
-import com.sitefilm.etl.domain.model.Country;
-import com.sitefilm.etl.domain.model.Genre;
-import com.sitefilm.etl.domain.model.Language;
+import com.sitefilm.etl.domain.model.dictionaries.Career;
+import com.sitefilm.etl.domain.model.dictionaries.Country;
+import com.sitefilm.etl.domain.model.dictionaries.Genre;
+import com.sitefilm.etl.domain.model.dictionaries.Language;
 
 import java.util.List;
 

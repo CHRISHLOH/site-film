@@ -1,7 +1,7 @@
 package com.sitefilm.etl.controller;
 
 import com.sitefilm.etl.application.usecase.LoadContentUseCase;
-import com.sitefilm.etl.domain.model.enums.ContentType;
+import com.sitefilm.etl.domain.model.content.enums.ContentType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

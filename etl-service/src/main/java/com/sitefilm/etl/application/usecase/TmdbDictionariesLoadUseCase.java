@@ -2,7 +2,10 @@ package com.sitefilm.etl.application.usecase;
 
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
 import com.sitefilm.etl.application.mapper.DictionaryMapper;
-import com.sitefilm.etl.domain.model.*;
+import com.sitefilm.etl.domain.model.dictionaries.Career;
+import com.sitefilm.etl.domain.model.dictionaries.Country;
+import com.sitefilm.etl.domain.model.dictionaries.Genre;
+import com.sitefilm.etl.domain.model.dictionaries.Language;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.DictionariesRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbDictionariesAdapter;
 import org.springframework.stereotype.Component;

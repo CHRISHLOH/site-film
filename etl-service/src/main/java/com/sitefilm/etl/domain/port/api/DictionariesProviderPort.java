@@ -1,9 +1,9 @@
 package com.sitefilm.etl.domain.port.api;
 
-import com.sitefilm.etl.domain.model.CareerImported;
-import com.sitefilm.etl.domain.model.CountryImported;
-import com.sitefilm.etl.domain.model.GenreImported;
-import com.sitefilm.etl.domain.model.LanguageImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CareerImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CountryImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.GenreImported;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.LanguageImported;
 
 import java.util.List;
 

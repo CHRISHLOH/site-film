@@ -3,13 +3,18 @@ package com.sitefilm.etl.application.strategies;
 import com.sitefilm.etl.application.aggreagor.RelationshipsAggregator;
 import com.sitefilm.etl.application.mapper.ContentMovieMapper;
 import com.sitefilm.etl.application.mapper.PersonMapper;
-import com.sitefilm.etl.domain.model.*;
+import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.ref.RelationshipsAggregatedData;
+import com.sitefilm.etl.domain.model.person.Person;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.MovieRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.PersonRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.RelationshipsRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbMovieAdapter;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbPersonAdapter;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedBundle;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedMovie;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonImportDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonMovieRole;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -46,11 +51,11 @@ public class MovieLoadStrategy implements ContentLoadStrategy{
     public void loadContent(int page) {
         List<Long> ids = tmdbMovieAdapter.fetchPopularIds(page);
         ids.forEach(id -> {
-            List<Long> castId = tmdbPersonAdapter.existPersons(id);
+            ImportedBundle importedBundle = tmdbMovieAdapter.fetchDetails(id);
+            List<Long> castId = personMapper.existPersons(importedBundle.credits());
             Set<Long> existCast = personRepositoryAdapter.existPersons(castId);
-            ImportedMovie importedMovie = tmdbMovieAdapter.fetchDetails(id);
-            List<PersonImportDto> cast = tmdbPersonAdapter.fetchCast(id, existCast);
-            Content content = movieMapper.aggregateToDomain(importedMovie);
+            List<PersonImportDto> cast = tmdbPersonAdapter.fetchCast(importedBundle.credits(), existCast);
+            Content content = movieMapper.aggregateToDomain((ImportedMovie) importedBundle.importedContent());
             List<Person> personList = personMapper.aggregateToDomain(cast);
             Long contentId = movieRepository.save(content);
             Set<Person> persons = personRepository.save(personList);

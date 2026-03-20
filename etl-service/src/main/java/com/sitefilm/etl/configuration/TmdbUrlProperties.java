@@ -21,4 +21,6 @@ public class TmdbUrlProperties {
     private String personsCast;
     private String personDetails;
     private String personTranslations;
+    private String seriesDetails;
+    private String seasonDetails;
 }

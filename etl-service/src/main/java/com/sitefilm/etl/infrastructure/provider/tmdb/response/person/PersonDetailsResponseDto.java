@@ -1,7 +1,6 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.response.person;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sitefilm.etl.domain.model.PersonTranslations;
 import lombok.Data;
 
 import java.time.LocalDate;
