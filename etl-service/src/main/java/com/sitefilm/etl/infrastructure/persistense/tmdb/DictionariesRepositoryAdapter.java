@@ -50,8 +50,6 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         );
     }
 
-    // --------------------------------------------------------------- languages
-
     @Override
     public List<Language> saveLanguages(List<Language> languages) {
         String sql = """
@@ -75,7 +73,6 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         );
     }
 
-    // ----------------------------------------------------------------- careers
 
     @Override
     public List<Career> saveCareers(List<Career> careers) {
@@ -100,7 +97,6 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         );
     }
 
-    // --------------------------------------------------------------- countries
 
     @Override
     public List<Country> saveCountries(List<Country> countries) {
@@ -117,6 +113,62 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
                     ps.setString(1, c.getIso_3166_1());
                     ps.setObject(2, jsonbMapper.toJson(c.getTranslations()), Types.OTHER);
                 },
+                (rs, rowNum) -> Country.builder()
+                        .id(rs.getShort("id"))
+                        .iso_3166_1(rs.getString("iso_3166_1"))
+                        .translations(jsonbMapper.readTranslations(rs.getString("translations")))
+                        .build()
+        );
+    }
+
+    public List<Genre> getGenres() {
+        String sql = """
+            SELECT * FROM content_service.genres
+        """;
+        return jdbcTemplate.query(
+                sql,
+                (rs, rowNum) -> Genre.builder()
+                        .id(rs.getShort("id"))
+                        .externalId(rs.getInt("external_id"))
+                        .translations(jsonbMapper.readTranslations(rs.getString("translations")))
+                        .build()
+        );
+    }
+
+    public List<Language> getLanguages() {
+        String sql = """
+            SELECT * FROM content_service.languages
+        """;
+        return jdbcTemplate.query(
+                sql,
+                (rs, rowNum) -> Language.builder()
+                        .id(rs.getShort("id"))
+                        .iso_639_1(rs.getString("iso_639_1"))
+                        .translations(jsonbMapper.readTranslations(rs.getString("translations")))
+                        .build()
+        );
+    }
+
+    public List<Career> getCareers() {
+        String sql = """
+            SELECT * FROM content_service.careers
+        """;
+        return jdbcTemplate.query(
+                sql,
+                (rs,rowNum) -> Career.builder()
+                        .id(rs.getShort("id"))
+                        .type(CareerType.fromId(rs.getShort("type")))
+                        .translations(jsonbMapper.readTranslations(rs.getString("translations")))
+                        .build()
+        );
+    }
+
+    public List<Country> getCountries() {
+        String sql = """
+            SELECT * FROM content_service.countries
+        """;
+        return jdbcTemplate.query(
+                sql,
                 (rs, rowNum) -> Country.builder()
                         .id(rs.getShort("id"))
                         .iso_3166_1(rs.getString("iso_3166_1"))
