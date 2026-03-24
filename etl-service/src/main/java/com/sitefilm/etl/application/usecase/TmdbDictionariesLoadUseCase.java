@@ -29,10 +29,19 @@ public class TmdbDictionariesLoadUseCase {
 
     @Transactional
     public void loadDictionaries() {
-        List<Genre> genres = dictionariesRepositoryAdapter.saveGenres(dictionaryMapper.genreMapping(tmdbDictionariesAdapter.fetchGenres()));
-        List<Career> careers = dictionariesRepositoryAdapter.saveCareers(dictionaryMapper.careerMapping(tmdbDictionariesAdapter.fetchCareers()));
-        List<Country> countries = dictionariesRepositoryAdapter.saveCountries(dictionaryMapper.countryMapping(tmdbDictionariesAdapter.fetchCountries()));
-        List<Language> languages = dictionariesRepositoryAdapter.saveLanguages(dictionaryMapper.languageMapping(tmdbDictionariesAdapter.fetchLanguages()));
-        cache.register(genres, countries, careers, languages);
+        int i = 1;
+        if (i == 1) {
+            List<Genre> genres = dictionariesRepositoryAdapter.getGenres();
+            List<Career> careers = dictionariesRepositoryAdapter.getCareers();
+            List<Country> countries = dictionariesRepositoryAdapter.getCountries();
+            List<Language> languages = dictionariesRepositoryAdapter.getLanguages();
+            cache.register(genres, countries, careers, languages);
+        } else {
+            List<Genre> genres = dictionariesRepositoryAdapter.saveGenres(dictionaryMapper.genreMapping(tmdbDictionariesAdapter.fetchGenres()));
+            List<Career> careers = dictionariesRepositoryAdapter.saveCareers(dictionaryMapper.careerMapping(tmdbDictionariesAdapter.fetchCareers()));
+            List<Country> countries = dictionariesRepositoryAdapter.saveCountries(dictionaryMapper.countryMapping(tmdbDictionariesAdapter.fetchCountries()));
+            List<Language> languages = dictionariesRepositoryAdapter.saveLanguages(dictionaryMapper.languageMapping(tmdbDictionariesAdapter.fetchLanguages()));
+            cache.register(genres, countries, careers, languages);
+        }
     }
 }
