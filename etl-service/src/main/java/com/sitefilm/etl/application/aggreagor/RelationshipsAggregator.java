@@ -37,7 +37,12 @@ public class RelationshipsAggregator {
         });
         List<ContentPerson> contentPersonList = persons.stream().map(person -> {
             PersonMovieRole personMovieRole = personMovieRoles.get(person.getExternalId());
+            System.out.println(personMovieRole.getType().toString());
+            System.out.println("ssssssssssssssssssssssssssssssssssssssssssssssss");
             CareerType careerType = mapCareerType(personMovieRole.getType(), personMovieRole.getDepartment());
+            System.out.println(personMovieRole.getJob());
+            System.out.println("ssssssssssssssssssssssssssssssssssssssssssssssssss");
+            System.out.println(careerType.getValue());
             return new ContentPerson(
                     id,
                     person.getId(),

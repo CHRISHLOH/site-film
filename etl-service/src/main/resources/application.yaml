@@ -20,7 +20,7 @@ tmdb:
     languages:  '/configuration/languages'
     base-url: 'https://api.themoviedb.org/3'
     jobs: '/configuration/jobs'
-    movie-page: '/movie/popular'
+    movie-page: '/movie/top_rated'
     movies-details: '/movie/{movie_id}'
     persons-cast:  '/movie/{movie_id}/credits'
     movie-translation: '/movie/{movie_id}/translations'

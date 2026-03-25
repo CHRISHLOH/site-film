@@ -29,7 +29,7 @@ public class TmdbDictionariesLoadUseCase {
 
     @Transactional
     public void loadDictionaries() {
-        int i = 1;
+        int i = 0;
         if (i == 1) {
             List<Genre> genres = dictionariesRepositoryAdapter.getGenres();
             List<Career> careers = dictionariesRepositoryAdapter.getCareers();
