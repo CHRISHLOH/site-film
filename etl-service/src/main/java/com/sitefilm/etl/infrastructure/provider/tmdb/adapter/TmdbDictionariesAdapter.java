@@ -19,7 +19,7 @@ import java.util.stream.Stream;
 @Component
 public class TmdbDictionariesAdapter implements DictionariesProviderPort {
     private final DictionariesTmdbClient dictionariesTmdbClient;
-    private static final Set<String> LOCALES = Set.of("ru-RU", "en-EN", "fr-FR", "es-ES", "de-DE");
+    private static final Set<String> LOCALES = Set.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
     private static final Set<String> LANGUAGES = Set.of("en", "ru", "fr", "de", "es");
 
     public TmdbDictionariesAdapter(DictionariesTmdbClient dictionariesTmdbClient) {
@@ -65,7 +65,7 @@ public class TmdbDictionariesAdapter implements DictionariesProviderPort {
                 String key = type.getId() + "|" + job;
                 if (seen.add(key)) {
                     Map<String, String> translations = new HashMap<>();
-                    translations.put("en-EN", job );
+                    translations.put("en-US", job );
                     CareerImported career = new CareerImported(
                             type,
                             translations
