@@ -14,7 +14,8 @@ public enum ContentStatus {
     CANCELED((short) 6, "Canceled"),
     RETURNING_SERIES((short) 7, "Returning Series"),
     ENDED((short) 8, "Ended"),
-    PILOT((short) 9, "Pilot");
+    PILOT((short) 9, "Pilot"),
+    UNKNOWN((short)10, "Unknown");
 
     private final Short id;
     private final String status;
@@ -28,8 +29,6 @@ public enum ContentStatus {
         return Stream.of(ContentStatus.values())
                 .filter(contentStatus -> contentStatus.getStatus().equals(status))
                 .findFirst()
-                .orElseThrow(() ->
-                        new IllegalArgumentException("Unknown TMDB department: " + status)
-                );
+                .orElse(ContentStatus.UNKNOWN);
     }
 }
