@@ -176,5 +176,41 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
                         .build()
         );
     }
+
+    public Genre saveGenre(Genre genre) {
+        String sql = """
+        INSERT INTO content_service.genres(external_id, translations)
+        VALUES (?, ?)
+        RETURNING id, external_id, translations
+    """;
+        return jdbcTemplate.queryForObject(
+                sql,
+                (rs, rowNum) -> Genre.builder()
+                        .id(rs.getShort("id"))
+                        .externalId(rs.getInt("external_id"))
+                        .translations(jsonbMapper.readTranslations(rs.getString("translations")))
+                        .build(),
+                genre.getExternalId(),
+                genre.getTranslations()
+        );
+    }
+
+    public Career saveCareer(Career career) {
+        String sql = """
+                    INSERT INTO content_service.careers(type, translations)
+                    VALUES (?, ?::jsonb)
+                    RETURNING id, type, translations
+                """;
+        return jdbcTemplate.queryForObject(
+                sql,
+                (rs, rowNum) -> Career.builder()
+                        .id(rs.getShort("id"))
+                        .type(CareerType.fromId(rs.getShort("type")))
+                        .translations(jsonbMapper.readTranslations(rs.getString("translations")))
+                        .build(),
+                career.getType().getId(),
+                jsonbMapper.toJson(career.getTranslations())
+        );
+    }
 }
 

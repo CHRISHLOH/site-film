@@ -2,6 +2,7 @@ package com.sitefilm.etl.application.cache;
 
 import com.sitefilm.etl.domain.model.dictionaries.*;
 import com.sitefilm.etl.domain.model.person.CareerType;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.DictionariesRepositoryAdapter;
 import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.List;
@@ -10,10 +11,16 @@ import java.util.stream.Collectors;
 
 @Component
 public class DictionaryRegistry {
+    private final DictionariesRepositoryAdapter repositoryAdapter;
+
     private Map<Integer, Genre> genreMap = new HashMap<>();
     private Map<String, Country> countryMap = new HashMap<>();
     private Map<CareerKey, Career> careerMap = new HashMap<>();
     private Map<String, Language> languageMap = new HashMap<>();
+
+    public DictionaryRegistry(DictionariesRepositoryAdapter repositoryAdapter) {
+        this.repositoryAdapter = repositoryAdapter;
+    }
 
     public void register(List<Genre> genres,
                          List<Country> countries,
@@ -33,7 +40,7 @@ public class DictionaryRegistry {
                 .collect(Collectors.toMap(
                         c -> new CareerKey(
                                 c.getType(),
-                                c.getTranslations().get("en-EN")
+                                c.getTranslations().get("en-US")
                         ),
                         c -> c
                 ));
@@ -53,9 +60,20 @@ public class DictionaryRegistry {
     }
 
     public Career getCareer(CareerType type, String job) {
-        return careerMap.get(new CareerKey(type, job));
+        Career findedCareer = careerMap.get(new CareerKey(type, job));
+        if (findedCareer != null) {
+            return findedCareer;
+        }
+        Map<String, String> translations = new HashMap<>();
+        translations.put("en-US", job);
+        Career career = Career.builder()
+                .type(type)
+                .translations(translations)
+                .build();
+        Career result = repositoryAdapter.saveCareer(career);
+        careerMap.put(new CareerKey(type, job), result);
+        return result;
     }
-
     public Language getLanguage(String iso) {
         return languageMap.get(iso);
     }
