@@ -1,7 +1,7 @@
 package com.sitefilm.etl.application.usecase;
 
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
-import com.sitefilm.etl.application.mapper.DictionaryMapper;
+import com.sitefilm.etl.application.mapper.tmdb.DictionaryMapper;
 import com.sitefilm.etl.domain.model.dictionaries.Career;
 import com.sitefilm.etl.domain.model.dictionaries.Country;
 import com.sitefilm.etl.domain.model.dictionaries.Genre;
@@ -29,7 +29,7 @@ public class TmdbDictionariesLoadUseCase {
 
     @Transactional
     public void loadDictionaries() {
-        int i = 2;
+        int i = 1;
         if (i == 1) {
             List<Genre> genres = dictionariesRepositoryAdapter.getGenres();
             List<Career> careers = dictionariesRepositoryAdapter.getCareers();

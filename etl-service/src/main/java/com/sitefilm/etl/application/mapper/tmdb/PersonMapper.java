@@ -1,13 +1,10 @@
-package com.sitefilm.etl.application.mapper;
+package com.sitefilm.etl.application.mapper.tmdb;
 
 import com.sitefilm.etl.domain.model.person.Person;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.Cast;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CreditsImported;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.Crew;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonImportDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.PersonsInMovieResponseDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonCastDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonCrewDto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.sitefilm.etl.application.mapper;
+package com.sitefilm.etl.application.mapper.tmdb;
 
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.Imported;

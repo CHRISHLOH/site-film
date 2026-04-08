@@ -3,6 +3,7 @@ package com.sitefilm.etl.configuration;
 import com.sitefilm.etl.infrastructure.provider.tmdb.client.CoreTmdbClient;
 import com.sitefilm.etl.infrastructure.provider.tmdb.client.DictionariesTmdbClient;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
@@ -15,6 +16,7 @@ public class TmdbRestClientConfiguration {
     private final TmdbUrlProperties tmdbUrlProperties;
 
     @Bean
+    @Qualifier("tmdb")
     public RestClient tmdbRestClient() {
         return RestClient.builder()
                 .baseUrl(tmdbUrlProperties.getBaseUrl())
@@ -30,13 +32,12 @@ public class TmdbRestClientConfiguration {
     }
 
     @Bean
-    public DictionariesTmdbClient dictionariesTmdbClient(RestClient tmdbRestClient) {
+    public DictionariesTmdbClient dictionariesTmdbClient(@Qualifier("tmdb") RestClient tmdbRestClient) {
         return new DictionariesTmdbClient(tmdbRestClient, tmdbUrlProperties);
     }
 
     @Bean
-    public CoreTmdbClient coreTmdbClient(RestClient tmdbRestClient) {
+    public CoreTmdbClient coreTmdbClient(@Qualifier("tmdb") RestClient tmdbRestClient) {
         return new CoreTmdbClient(tmdbRestClient, tmdbUrlProperties);
     }
-
 }

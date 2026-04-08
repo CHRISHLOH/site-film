@@ -1,15 +1,11 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.adapter;
 
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.*;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonCastDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonCrewDto;
 import com.sitefilm.etl.domain.port.api.PersonProviderPort;
 import com.sitefilm.etl.domain.model.enums.MovieRoleType;
 import com.sitefilm.etl.infrastructure.provider.tmdb.client.RateLimitedTmdbClient;
 import com.sitefilm.etl.infrastructure.provider.tmdb.mapper.TmdbPersonMapper;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.PersonsInMovieResponseDto;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
@@ -23,7 +19,7 @@ public class TmdbPersonAdapter implements PersonProviderPort {
     private final ExecutorService executorService;
     private final TmdbPersonMapper mapper;
 
-    public TmdbPersonAdapter(RateLimitedTmdbClient tmdbClient, @Qualifier("personExecutor") ExecutorService executorService, TmdbPersonMapper mapper) {
+    public TmdbPersonAdapter(RateLimitedTmdbClient tmdbClient, ExecutorService executorService, TmdbPersonMapper mapper) {
         this.tmdbClient = tmdbClient;
         this.executorService = executorService;
         this.mapper = mapper;

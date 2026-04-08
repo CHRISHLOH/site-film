@@ -46,7 +46,6 @@ public class RelationshipsAggregator {
                     personMovieRole.getOrder()
             );
         }).toList();
-        contentPersonList.forEach(System.out::println);
         return new RelationshipsAggregatedData(contentCountries, contentGenres, contentLanguages, contentPersonList);
     }
     private CareerType mapCareerType(MovieRoleType movieRoleType, String department) {

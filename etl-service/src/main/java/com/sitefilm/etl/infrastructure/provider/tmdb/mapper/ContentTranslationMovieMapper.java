@@ -15,10 +15,8 @@ public class ContentTranslationMovieMapper {
 
     private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE");
     private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de");
-    private static final Set<String> locales = Set.of("ru-RU", "es-ES", "fr-FR", "de-DE", "en-US");
 
     public List<DataContentTranslation> aggregate(List<ContentTranslationDto> movieTranslations, String title, String description) {
-
         List<DataContentTranslation> translations = movieTranslations.stream().filter(contentTranslationDto ->
             iso_639_1.contains(contentTranslationDto.getIso_639_1()) && iso_3166_1.contains(contentTranslationDto.getIso_3166_1())
                 ).map(translation -> {
@@ -31,8 +29,6 @@ public class ContentTranslationMovieMapper {
             );}
         ).collect(Collectors.toCollection(ArrayList::new));
         translations.add(new DataContentTranslation("en-US", title, description, null));
-
-
         return translations;
     }
 

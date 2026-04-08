@@ -212,5 +212,41 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
                 jsonbMapper.toJson(career.getTranslations())
         );
     }
+
+    public Country saveCountry(Country country) {
+        String sql = """
+                INSERT INTO content_service.countries(iso_3166_1, translations)
+                Values (?, ?::jsonb)
+                RETURNING id, iso_3166_1, translations
+                """;
+        return jdbcTemplate.queryForObject(
+                sql,
+                (rs, rowNum) -> Country.builder()
+                        .id(rs.getShort("id"))
+                        .iso_3166_1(rs.getString("iso_3166_1"))
+                        .translations(jsonbMapper.readTranslations(rs.getString("translations")))
+                        .build(),
+                country.getIso_3166_1(),
+                country.getTranslations()
+        );
+    }
+
+    public Language saveLanguage(Language language) {
+        String sql = """
+                INSERT INTO content_service.languages(iso_639_1, translations)
+                VALUES (?, ?::jsonb)
+                RETURNING id, iso_639_1, translations
+                """;
+        return jdbcTemplate.queryForObject(
+                sql,
+                (rs, rowNum) -> Language.builder()
+                        .id(rs.getShort("id"))
+                        .iso_639_1(rs.getString("iso_639_1"))
+                        .translations(jsonbMapper.readTranslations(rs.getString("translations")))
+                        .build(),
+                language.getIso_639_1(),
+                language.getTranslations()
+        );
+    }
 }
 

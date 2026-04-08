@@ -1,4 +1,4 @@
-package com.sitefilm.etl.application.mapper;
+package com.sitefilm.etl.application.mapper.tmdb;
 
 import com.sitefilm.etl.domain.model.dictionaries.Career;
 import com.sitefilm.etl.domain.model.dictionaries.Country;

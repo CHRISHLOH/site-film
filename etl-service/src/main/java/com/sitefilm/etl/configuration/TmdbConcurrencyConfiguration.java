@@ -5,10 +5,11 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Semaphore;
 
 @Configuration
 public class TmdbConcurrencyConfiguration {
-    @Bean(name = "personExecutor", destroyMethod = "shutdown")
+    @Bean(destroyMethod = "shutdown")
     public ExecutorService personExecutorService() {
         return Executors.newVirtualThreadPerTaskExecutor();
     }

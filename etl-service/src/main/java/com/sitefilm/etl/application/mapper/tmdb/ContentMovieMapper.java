@@ -1,4 +1,4 @@
-package com.sitefilm.etl.application.mapper;
+package com.sitefilm.etl.application.mapper.tmdb;
 
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
 import com.sitefilm.etl.domain.model.content.Content;
