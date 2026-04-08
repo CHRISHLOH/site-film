@@ -27,6 +27,11 @@ tmdb:
     person-translations: '/person/{person_id}/translations'
     person-details: '/person/{person_id}'
 
+translation:
+  libre:
+    url: 'http://localhost:5000'
+    translation: '/translate'
+
 server:
   port: 9090
 
@@ -37,6 +42,7 @@ logging:
        jdbc:
          core:
            JdbcTemplate: DEBUG
+           StatementCreatorUtils: DEBUG
        web:
          client:
            RestClient: DEBUG

@@ -52,11 +52,36 @@ public class DictionaryRegistry {
     }
 
     public Genre getGenre(Integer externalId) {
-        return genreMap.get(externalId);
+        Genre findedGenre = this.genreMap.get(externalId);
+        if(findedGenre != null) {
+            return findedGenre;
+        }
+        Map<String, String> translations = new HashMap<>();
+        translations.put("en_US", externalId.toString());
+        Genre genre = Genre.builder()
+                .externalId(externalId)
+                .translations(translations)
+                .build();
+        Genre result = repositoryAdapter.saveGenre(genre);
+        genreMap.put(externalId, result);
+        return result;
     }
 
     public Country getCountry(String isoCode) {
-        return countryMap.get(isoCode);
+        Country findedCountry = countryMap.get(isoCode);
+        if (findedCountry != null) {
+            return findedCountry;
+        }
+        Map<String, String> translations = new HashMap<>();
+        translations.put("en-US", isoCode);
+        Country country = Country.builder()
+                .iso_3166_1(isoCode)
+                .translations(translations)
+                .build();
+        Country result = repositoryAdapter.saveCountry(country);
+        countryMap.put(isoCode, result);
+        return result;
+
     }
 
     public Career getCareer(CareerType type, String job) {
@@ -74,7 +99,20 @@ public class DictionaryRegistry {
         careerMap.put(new CareerKey(type, job), result);
         return result;
     }
+
     public Language getLanguage(String iso) {
-        return languageMap.get(iso);
+        Language findedLanguage = languageMap.get(iso);
+        if (findedLanguage != null) {
+            return findedLanguage;
+        }
+        Map<String, String> translations = new HashMap<>();
+        translations.put("en-US", iso);
+        Language language = Language.builder()
+                .iso_639_1(iso)
+                .translations(translations)
+                .build();
+        Language result = repositoryAdapter.saveLanguage(language);
+        languageMap.put(iso, result);
+        return result;
     }
 }

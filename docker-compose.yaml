@@ -67,7 +67,35 @@ services:
     ports:
       - "8089:80"
 
+  libretranslate:
+    image: libretranslate/libretranslate:latest
+    container_name: libretranslate
+    ports:
+      - "5000:5000"
+    environment:
+      - LT_LOAD_ONLY=en,ru,de,es,fr
+      - LT_THREADS=4
+      - LT_UPDATE_MODELS=true
+    volumes:
+      - lt_data:/home/libretranslate/.local
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+    environment:
+      - OLLAMA_VULKAN=1          # включает iGPU (Vega 7)
+      - OLLAMA_FLASH_ATTENTION=1 # ускорение
+      - OLLAMA_HOST=0.0.0.0
+    restart: unless-stopped
+
 volumes:
   postgres_data:
   pgadmin_data:
   pgvector_data:
+  lt_data:
+  ollama:

@@ -19,7 +19,6 @@
         <module>user-service</module>
         <module>content-service</module>
         <module>admin-service</module>
-        <module>eureka-server</module>
         <module>notification-service</module>
         <module>ai-service</module>
         <module>etl-service</module>

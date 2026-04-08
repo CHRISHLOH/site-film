@@ -1,8 +1,9 @@
 package com.sitefilm.etl.application.strategies;
 
 import com.sitefilm.etl.application.aggreagor.RelationshipsAggregator;
-import com.sitefilm.etl.application.mapper.ContentMovieMapper;
-import com.sitefilm.etl.application.mapper.PersonMapper;
+import com.sitefilm.etl.application.collector.MissingTranslationProcessor;
+import com.sitefilm.etl.application.mapper.tmdb.ContentMovieMapper;
+import com.sitefilm.etl.application.mapper.tmdb.PersonMapper;
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.ref.RelationshipsAggregatedData;
 import com.sitefilm.etl.domain.model.person.Person;
@@ -34,8 +35,9 @@ public class MovieLoadStrategy implements ContentLoadStrategy{
     private final PersonRepositoryAdapter personRepository;
     private final RelationshipsAggregator relationshipsAggregator;
     private final RelationshipsRepositoryAdapter relationshipsRepositoryAdapter;
+    private final MissingTranslationProcessor missingTranslationProcessor;
 
-    public MovieLoadStrategy(TmdbMovieAdapter tmdbMovieAdapter, TmdbPersonAdapter tmdbPersonAdapter, PersonRepositoryAdapter personRepositoryAdapter, ContentMovieMapper movieMapper, PersonMapper personMapper, MovieRepositoryAdapter movieRepository, PersonRepositoryAdapter personRepository, RelationshipsAggregator relationshipsAggregator, RelationshipsRepositoryAdapter relationshipsRepositoryAdapter) {
+    public MovieLoadStrategy(TmdbMovieAdapter tmdbMovieAdapter, TmdbPersonAdapter tmdbPersonAdapter, PersonRepositoryAdapter personRepositoryAdapter, ContentMovieMapper movieMapper, PersonMapper personMapper, MovieRepositoryAdapter movieRepository, PersonRepositoryAdapter personRepository, RelationshipsAggregator relationshipsAggregator, RelationshipsRepositoryAdapter relationshipsRepositoryAdapter, MissingTranslationProcessor missingTranslationProcessor) {
         this.tmdbMovieAdapter = tmdbMovieAdapter;
         this.tmdbPersonAdapter = tmdbPersonAdapter;
         this.personRepositoryAdapter = personRepositoryAdapter;
@@ -45,6 +47,7 @@ public class MovieLoadStrategy implements ContentLoadStrategy{
         this.personRepository = personRepository;
         this.relationshipsAggregator = relationshipsAggregator;
         this.relationshipsRepositoryAdapter = relationshipsRepositoryAdapter;
+        this.missingTranslationProcessor = missingTranslationProcessor;
     }
 
     @Override
@@ -58,7 +61,9 @@ public class MovieLoadStrategy implements ContentLoadStrategy{
             Content content = movieMapper.aggregateToDomain((ImportedMovie) importedBundle.importedContent());
             List<Person> personList = personMapper.aggregateToDomain(cast);
             Long contentId = movieRepository.save(content);
+            missingTranslationProcessor.saveMissingContentTranslations(content.getTranslations(), contentId);
             Set<Person> persons = personRepository.save(personList);
+            persons.forEach(person -> missingTranslationProcessor.saveMissingPersonTranslations(person.getPersonTranslation(), person.getId()));
             Map<Long, PersonMovieRole> personMovieRoles = aggregatePersonMovieRoles(cast);
             RelationshipsAggregatedData relationshipsAggregatedData = relationshipsAggregator.aggregatedData(
                     content.getGenres(),
