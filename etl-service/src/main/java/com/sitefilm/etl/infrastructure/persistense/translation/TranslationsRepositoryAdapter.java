@@ -60,6 +60,7 @@ public class TranslationsRepositoryAdapter implements TranslationRepositoryPort 
                 });
     }
 
+    @Transactional
     public void updateProcess(List<TranslationProcess> list) {
         String sql = """
         UPDATE content_service.translation_process
@@ -78,6 +79,7 @@ public class TranslationsRepositoryAdapter implements TranslationRepositoryPort 
         );
     }
 
+    @Transactional
     public void saveProcess(List<TranslationProcess> list) {
         String sql = """
                 INSERT INTO content_service.translation_process (content_id, content_type, field_name, original_text, translated_text, source_code, target_code, translation_status)

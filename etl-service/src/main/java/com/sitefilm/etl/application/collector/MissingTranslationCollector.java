@@ -30,8 +30,8 @@ public class MissingTranslationCollector {
                                 field,
                                 originalInfo.get(field).value(),
                                 null,
-                                originalInfo.get(field).locale(),
-                                locale,
+                                mapLocale(originalInfo.get(field).locale()),
+                                mapLocale(locale),
                                 STATUS));
                     }
                 });
@@ -42,8 +42,9 @@ public class MissingTranslationCollector {
                         contentType,
                         field,
                         originalInfo.get(field).value(),
-                        null, originalInfo.get(field).locale(),
-                        locale,
+                        null,
+                        mapLocale(originalInfo.get(field).locale()),
+                        mapLocale(locale),
                         STATUS)));
             }
         });
@@ -80,5 +81,16 @@ public class MissingTranslationCollector {
     private List<String> getFieldNames(List<? extends TranslatableFieldProvider> list) {
         if (list.isEmpty()) return List.of();
         return new ArrayList<>(list.getFirst().fields().keySet());
+    }
+
+    private String mapLocale(String locale) {
+        return switch (locale) {
+            case "ru-RU" -> "ru";
+            case "fr-FR" -> "fr";
+            case "es-ES" -> "es";
+            case "de-DE" -> "de";
+            case "en-US" -> "en";
+            default -> throw new IllegalArgumentException("locale " + locale);
+        };
     }
 }

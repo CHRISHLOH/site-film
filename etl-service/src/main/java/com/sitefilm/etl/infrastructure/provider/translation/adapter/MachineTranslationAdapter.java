@@ -26,6 +26,7 @@ public class MachineTranslationAdapter implements MachineTranslationProviderPort
     public List<TranslationProcess> translate(TranslationTask task) {
         TranslationRequest translationRequest = mapToTranslationRequest(task);
         TranslationResponse response = machineTranslationClient.getTranslation(translationRequest);
+        System.out.println("LIBRETRANSLATION" + response.translation());
         return mapper.mapToProcess(response);
     }
 

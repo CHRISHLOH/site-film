@@ -50,7 +50,7 @@ public class TmdbPersonMapper {
             personTranslations.add(new DataPersonTranslation(null,
                     "en-US",
                     personDto.getName(),
-                    personDto.getName()));
+                    personDto.getBiography()));
             List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(externalId);
             PersonImportDto personImportDto = new PersonImportDto();
             personImportDto.setExternalId(personDto.getExternalId());
