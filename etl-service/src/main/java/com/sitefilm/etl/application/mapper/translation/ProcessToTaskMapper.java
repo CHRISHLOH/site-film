@@ -68,7 +68,7 @@ public class ProcessToTaskMapper {
             TranslationProcess tp = new TranslationProcess();
             tp.setId(ids.get(i));
             tp.setTranslatedText(translated);
-            tp.setTranslationStatus(TranslationStatus.LLM_TRANSLATE_SUCCESS);
+            tp.setTranslationStatus(TranslationStatus.LIBRE_TRANSLATE_SUCCESS);
             result.add(tp);
         }
         return result;

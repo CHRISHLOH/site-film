@@ -6,6 +6,7 @@ import com.sitefilm.etl.domain.model.translations.TranslationStatus;
 import com.sitefilm.etl.domain.model.translations.TranslationTask;
 import com.sitefilm.etl.infrastructure.persistense.translation.TranslationsRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.provider.translation.adapter.MachineTranslationAdapter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Semaphore;
 
+@Slf4j
 @Component
 public class TranslationUseCase {
     private final Semaphore semaphore = new Semaphore(5);
@@ -46,8 +48,7 @@ public class TranslationUseCase {
                         .toList();
                 translationsRepositoryAdapter.updateProcess(result);
             } catch (RuntimeException e) {
-                semaphore.release();
-                System.out.println(e.getMessage());
+                log.error("Translation batch failed", e);
             } finally {
                 semaphore.release();
             }
