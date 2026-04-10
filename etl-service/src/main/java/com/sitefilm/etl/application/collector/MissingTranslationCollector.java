@@ -11,18 +11,19 @@ import java.util.stream.Collectors;
 @Component
 public class MissingTranslationCollector {
     private static final List<String> LOCALES = List.of("ru-RU", "fr-FR", "es-ES", "de-DE", "en-US");
-    private static final TranslationStatus STATUS = TranslationStatus.RAW;
+    private static final TranslationStatus RAW_STATUS = TranslationStatus.RAW;
+    private static final TranslationStatus NULL_STATUS = TranslationStatus.NULL;
 
     public List<TranslationProcess> collectMissingTranslations(List<? extends TranslatableFieldProvider> contentTranslations, Long entityId, TranslationContentType contentType) {
         List<TranslationProcess> result = new ArrayList<>();
         Map<String, TranslatableFieldProvider> translationsByLocale = contentTranslations.stream().collect(Collectors.toMap(TranslatableFieldProvider::locale, t -> t));
         Map<String, OriginalTranslationInfo> originalInfo = findOriginal(translationsByLocale);
-        List<String> fields = getFieldNames(contentTranslations);
         LOCALES.forEach(locale -> {
             TranslatableFieldProvider translatableFieldProvider = translationsByLocale.get(locale);
             if (translatableFieldProvider != null) {
                 translatableFieldProvider.fields().forEach((field, value) -> {
-                    if (value == null) {
+                    String origValue = originalInfo.get(field).value();
+                    if (value == null && origValue != null) {
                         result.add(new TranslationProcess(
                                 null,
                                 entityId,
@@ -32,20 +33,21 @@ public class MissingTranslationCollector {
                                 null,
                                 mapLocale(originalInfo.get(field).locale()),
                                 mapLocale(locale),
-                                STATUS));
+                                RAW_STATUS));
+                    } if (value == null && origValue == null) {
+                        result.add(new TranslationProcess(
+                                null,
+                                entityId,
+                                contentType,
+                                field,
+                                null,
+                                null,
+                                mapLocale(originalInfo.get(field).locale()),
+                                mapLocale(locale),
+                                NULL_STATUS
+                        ));
                     }
                 });
-            } else {
-                fields.forEach(field -> result.add(new TranslationProcess(
-                        null,
-                        entityId,
-                        contentType,
-                        field,
-                        originalInfo.get(field).value(),
-                        null,
-                        mapLocale(originalInfo.get(field).locale()),
-                        mapLocale(locale),
-                        STATUS)));
             }
         });
         return result;
@@ -76,11 +78,6 @@ public class MissingTranslationCollector {
             }
         });
         return result;
-    }
-
-    private List<String> getFieldNames(List<? extends TranslatableFieldProvider> list) {
-        if (list.isEmpty()) return List.of();
-        return new ArrayList<>(list.getFirst().fields().keySet());
     }
 
     private String mapLocale(String locale) {

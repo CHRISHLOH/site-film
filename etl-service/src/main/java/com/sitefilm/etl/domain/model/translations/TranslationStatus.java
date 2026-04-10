@@ -10,7 +10,8 @@ public enum TranslationStatus {
     LIBRE_TRANSLATE_PROCESS((short) 2),
     LIBRE_TRANSLATE_SUCCESS((short) 3),
     LLM_TRANSLATE_PROCESS((short) 4),
-    LLM_TRANSLATE_SUCCESS((short) 5);
+    LLM_TRANSLATE_SUCCESS((short) 5),
+    NULL((short)6);
 
     private final Short value;
 
