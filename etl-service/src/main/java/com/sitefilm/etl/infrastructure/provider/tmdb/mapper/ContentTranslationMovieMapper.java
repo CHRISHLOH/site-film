@@ -6,13 +6,13 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Component
 public class ContentTranslationMovieMapper {
-
+    private static final Set<String> LOCALES = Set.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
     private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE");
     private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de");
 
@@ -29,7 +29,7 @@ public class ContentTranslationMovieMapper {
             );}
         ).collect(Collectors.toCollection(ArrayList::new));
         translations.add(new DataContentTranslation("en-US", title, description, null));
-        return translations;
+        return addMissingTranslations(translations);
     }
 
     private String getDBLocale(ContentTranslationDto contentTranslationDto) {
@@ -40,5 +40,17 @@ public class ContentTranslationMovieMapper {
             case "es" -> "es-ES";
             default -> throw new RuntimeException();
         };
+    }
+
+    private List<DataContentTranslation> addMissingTranslations(List<DataContentTranslation> translations) {
+        Set<String> existingLocales = translations.stream()
+                .map(DataContentTranslation::locale)
+                .collect(Collectors.toSet());
+        List<DataContentTranslation> missing = LOCALES.stream()
+                .filter(locale -> !existingLocales.contains(locale))
+                .map(locale -> new DataContentTranslation(locale, null, null, null))
+                .toList();
+        return Stream.concat(translations.stream(), missing.stream())
+                .toList();
     }
 }

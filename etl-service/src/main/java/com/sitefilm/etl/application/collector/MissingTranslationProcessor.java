@@ -26,7 +26,6 @@ public class MissingTranslationProcessor {
         if(!tp.isEmpty()){
             translationsRepositoryAdapter.saveProcess(tp);
         }
-
     }
 
     public void saveMissingPersonTranslations(List<DataPersonTranslation> personTranslationsTranslations, Long personId) {
