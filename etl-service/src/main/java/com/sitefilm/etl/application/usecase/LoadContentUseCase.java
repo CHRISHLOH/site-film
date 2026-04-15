@@ -15,8 +15,7 @@ public class LoadContentUseCase {
     }
 
     public void load(ContentType contentType) {
-
         tmdbDictionariesLoadUseCase.loadDictionaries();
-        movieLoadStrategy.loadContent(38);
+        movieLoadStrategy.loadContent(42);
     }
 }

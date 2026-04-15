@@ -598,7 +598,7 @@ CREATE TABLE IF NOT EXISTS content_service.translation_process(
     content_id BIGINT NOT NULL,
     content_type SMALLINT NOT NULL,
     field_name VARCHAR(50) NOT NULL,
-    original_text TEXT NOT NULL,
+    original_text TEXT,
     translated_text TEXT,
     source_code VARCHAR(5) NOT NULL,
     target_code VARCHAR(5) NOT NULL,

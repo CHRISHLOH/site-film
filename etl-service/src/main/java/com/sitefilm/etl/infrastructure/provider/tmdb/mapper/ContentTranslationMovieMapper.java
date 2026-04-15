@@ -13,8 +13,8 @@ import java.util.stream.Stream;
 @Component
 public class ContentTranslationMovieMapper {
     private static final Set<String> LOCALES = Set.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
-    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE");
-    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de");
+    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE", "US");
+    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de", "en");
 
     public List<DataContentTranslation> aggregate(List<ContentTranslationDto> movieTranslations, String title, String description) {
         List<DataContentTranslation> translations = movieTranslations.stream().filter(contentTranslationDto ->
@@ -28,7 +28,6 @@ public class ContentTranslationMovieMapper {
                     null
             );}
         ).collect(Collectors.toCollection(ArrayList::new));
-        translations.add(new DataContentTranslation("en-US", title, description, null));
         return addMissingTranslations(translations);
     }
 
@@ -38,6 +37,7 @@ public class ContentTranslationMovieMapper {
             case "fr" -> "fr-FR";
             case "de" -> "de-DE";
             case "es" -> "es-ES";
+            case "en" -> "en-US";
             default -> throw new RuntimeException();
         };
     }

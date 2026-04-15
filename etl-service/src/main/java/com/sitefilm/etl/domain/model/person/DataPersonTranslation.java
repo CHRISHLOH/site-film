@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DataPersonTranslation{
-    private Long personId;
     private String locale;
     private String localeName;
     private String biography;
