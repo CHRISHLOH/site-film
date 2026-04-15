@@ -48,15 +48,11 @@ public class PersonRepositoryAdapter implements PersonRepositoryPort {
     public Set<Person> save(List<Person> persons) {
         List<Person> personsWithId = savePerson(persons);
 
-        List<DataPersonTranslation> allTranslations = personsWithId.stream()
-                .flatMap(person -> person.getPersonTranslation().stream()
-                        .peek(t -> t.setPersonId(person.getId())))
-                .toList();
-
-        if (!allTranslations.isEmpty()) {
-            saveTranslation(allTranslations);
-        }
-
+        personsWithId.forEach(p -> {
+            if (p.getPersonTranslation() != null) {
+                saveTranslation(p.getPersonTranslation(), p.getId());
+            }
+        });
         return new HashSet<>(personsWithId);
     }
 
@@ -105,7 +101,7 @@ public class PersonRepositoryAdapter implements PersonRepositoryPort {
         );
     }
 
-    private void saveTranslation(List<DataPersonTranslation> translations) {
+    private void saveTranslation(List<DataPersonTranslation> translations, Long personId) {
         jdbcTemplate.batchUpdate(
                 """
                 INSERT INTO content_service.person_translations(person_id, locale, locale_name, biography)
@@ -115,7 +111,7 @@ public class PersonRepositoryAdapter implements PersonRepositoryPort {
                 translations,
                 translations.size(),
                 (ps, t) -> {
-                    ps.setLong(1, t.getPersonId());
+                    ps.setLong(1, personId);
                     ps.setString(2, t.getLocale());
                     ps.setString(3, t.getLocaleName());
                     ps.setString(4, t.getBiography());

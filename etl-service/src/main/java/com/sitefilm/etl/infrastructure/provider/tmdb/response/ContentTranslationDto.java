@@ -1,7 +1,7 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sitefilm.etl.domain.model.content.DataContentTranslation;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.DataContentTranslationResponse;
 import lombok.Data;
 import lombok.ToString;
 
@@ -15,5 +15,5 @@ public class ContentTranslationDto {
     @JsonProperty("iso_639_1")
     private String iso_639_1;
     @JsonProperty("data")
-    private DataContentTranslation dataContentTranslationList;
+    private DataContentTranslationResponse dataContentTranslationList;
 }
