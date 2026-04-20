@@ -101,4 +101,21 @@ public class TranslationsRepositoryAdapter implements TranslationRepositoryPort 
                 }
         );
     }
+
+    public void updateStatus(List<TranslationProcess> list) {
+        String sql = """
+                UPDATE content_service.translation_process AS tp
+                SET translation_status = ?
+                WHERE tp.id = ?
+                """;
+        jdbcTemplate.batchUpdate(
+                sql,
+                list,
+                list.size(),
+                (ps, tp) -> {
+                    ps.setShort(1, tp.getTranslationStatus().getValue());
+                    ps.setLong(2, tp.getId());
+                }
+        );
+    }
 }

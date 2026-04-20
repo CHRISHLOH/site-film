@@ -78,7 +78,7 @@ CREATE INDEX IF NOT EXISTS idx_content_external_id ON content_service.content (e
 CREATE TABLE IF NOT EXISTS content_service.content_translations (
                                                                      content_id BIGINT NOT NULL,
                                                                      locale VARCHAR(5) NOT NULL,
-                                                                     title VARCHAR(255) NOT NULL,
+                                                                     title VARCHAR(255),
                                                                      description TEXT,
                                                                      plot_summary TEXT,
                                                                      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),

@@ -11,22 +11,29 @@ import java.util.stream.Stream;
 
 @Component
 public class PersonTranslationMapper {
-    private static final Set<String> LOCALES = Set.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
-    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE", "US");
-    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de", "en");
+    private static final Set<String> LOCALES = Set.of("ru-RU","fr-FR", "es-ES", "de-DE");
+    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE");
+    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de");
 
-    public List<DataPersonTranslation> mapTranslation(List<PersonTranslationDto> personTranslations) {
+    public List<DataPersonTranslation> mapTranslation(List<PersonTranslationDto> personTranslations, String requestName, String requestBiography) {
         List<DataPersonTranslation> list = personTranslations.stream()
                 .filter(t -> iso_3166_1.contains(t.getIso_3166_1()) && iso_639_1.contains(t.getIso_639_1()))
                 .map(t -> {
                     String locale = getDBLocale(t.getIso_639_1());
+                    String biography = t.getPersonData().getBiography() != null &&
+                                    !t.getPersonData().getBiography().isBlank()
+                                    ? t.getPersonData().getBiography() : null;
+                    String localeName = t.getPersonData().getName() != null && !
+                            t.getPersonData().getName().isBlank()
+                            ? t.getPersonData().getName() :null;
                     DataPersonTranslation dataPersonTranslation = new DataPersonTranslation();
-                    dataPersonTranslation.setBiography(t.getPersonData().getBiography());
-                    dataPersonTranslation.setLocaleName(t.getPersonData().getName());
+                    dataPersonTranslation.setBiography(biography);
+                    dataPersonTranslation.setLocaleName(localeName);
                     dataPersonTranslation.setLocale(locale);
                     return dataPersonTranslation;
                 })
-                .toList();
+                .collect(Collectors.toList());
+        list.add(addRequestTranslation(requestName, requestBiography));
         return addMissingTranslations(list);
     }
 
@@ -51,5 +58,15 @@ public class PersonTranslationMapper {
                 .toList();
         return Stream.concat(translations.stream(), missing.stream())
                 .toList();
+    }
+
+    private DataPersonTranslation addRequestTranslation(String requestName, String requestBiography) {
+        DataPersonTranslation dataPersonTranslation = new DataPersonTranslation();
+        String name = requestName != null &&  !requestName.isBlank() ? requestName : null;
+        String biography = requestBiography != null && !requestBiography.isBlank() ? requestBiography : null;
+        dataPersonTranslation.setLocale("en-US");
+        dataPersonTranslation.setLocaleName(name);
+        dataPersonTranslation.setBiography(biography);
+        return dataPersonTranslation;
     }
 }

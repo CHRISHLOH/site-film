@@ -26,9 +26,7 @@ public class TmdbMovieMapper {
     }
     public ImportedBundle fetchDetails(MovieDetailsResponseDto movie) {
         List<DataContentTranslation> translations = translationMovieMapper.aggregate(
-                movie.getContentTranslations().getContentTranslations(),
-                movie.getTitle(),
-                movie.getOverview());
+                movie.getContentTranslations().getContentTranslations(), movie.getTitle(), movie.getOverview());
         List<Integer> genres = genresReferenceMapping(movie.getGenres());
         List<String> countries = countriesReferenceMapping(movie.getCountries());
         List<String> spokenLanguages = languagesReferenceMapping(movie.getSpokenLanguages());

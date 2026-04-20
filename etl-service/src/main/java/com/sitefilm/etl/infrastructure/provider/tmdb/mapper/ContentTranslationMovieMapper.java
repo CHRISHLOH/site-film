@@ -4,7 +4,6 @@ import com.sitefilm.etl.infrastructure.provider.tmdb.response.ContentTranslation
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -12,22 +11,28 @@ import java.util.stream.Stream;
 
 @Component
 public class ContentTranslationMovieMapper {
-    private static final Set<String> LOCALES = Set.of("ru-RU", "en-US", "fr-FR", "es-ES", "de-DE");
-    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE", "US");
-    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de", "en");
+    private static final Set<String> LOCALES = Set.of("ru-RU", "fr-FR", "es-ES", "de-DE");
+    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE");
+    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de");
 
-    public List<DataContentTranslation> aggregate(List<ContentTranslationDto> movieTranslations, String title, String description) {
+    public List<DataContentTranslation> aggregate(List<ContentTranslationDto> movieTranslations, String requestTitle, String requestBiography) {
         List<DataContentTranslation> translations = movieTranslations.stream().filter(contentTranslationDto ->
-            iso_639_1.contains(contentTranslationDto.getIso_639_1()) && iso_3166_1.contains(contentTranslationDto.getIso_3166_1())
-                ).map(translation -> {
-            String locale = getDBLocale(translation);
-            return new DataContentTranslation(
-                    locale,
-                    translation.getDataContentTranslationList().title(),
-                    translation.getDataContentTranslationList().description(),
-                    null
-            );}
-        ).collect(Collectors.toCollection(ArrayList::new));
+                iso_639_1.contains(contentTranslationDto.getIso_639_1()) && iso_3166_1.contains(contentTranslationDto.getIso_3166_1())
+        ).map(translation -> {
+                    String locale = getDBLocale(translation);
+                    String resultTitle = translation.getDataContentTranslationList().title() != null && !translation.getDataContentTranslationList().title().isBlank()
+                            ? translation.getDataContentTranslationList().title() : null;
+                    String resultDescription = translation.getDataContentTranslationList().description() != null && translation.getDataContentTranslationList().description().isBlank()
+                            ? translation.getDataContentTranslationList().description() : null;
+                    return new DataContentTranslation(
+                            locale,
+                            resultTitle,
+                            resultDescription,
+                            null
+                    );
+                }
+        ).collect(Collectors.toList());
+        translations.add(addRequestTranslation(requestTitle, requestBiography));
         return addMissingTranslations(translations);
     }
 
@@ -37,7 +42,6 @@ public class ContentTranslationMovieMapper {
             case "fr" -> "fr-FR";
             case "de" -> "de-DE";
             case "es" -> "es-ES";
-            case "en" -> "en-US";
             default -> throw new RuntimeException();
         };
     }
@@ -52,5 +56,11 @@ public class ContentTranslationMovieMapper {
                 .toList();
         return Stream.concat(translations.stream(), missing.stream())
                 .toList();
+    }
+
+    private DataContentTranslation addRequestTranslation(String requestTitle, String requestDescription) {
+        String title = requestTitle != null && !requestTitle.isBlank() ? requestTitle : null;
+        String description = requestDescription != null && !requestDescription.isBlank() ? requestDescription : null;
+        return new DataContentTranslation("en-US", title, description, null);
     }
 }

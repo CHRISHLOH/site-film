@@ -42,7 +42,7 @@ public class MissingTranslationCollector {
                                 field,
                                 null,
                                 null,
-                                mapLocale(originalInfo.get(field).locale()),
+                                mapLocale("en-US"),
                                 mapLocale(locale),
                                 NULL_STATUS
                         ));

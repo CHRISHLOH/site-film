@@ -30,19 +30,18 @@ public class TranslationUseCase {
         this.machineTranslationAdapter = machineTranslationAdapter;
     }
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 15000)
     public void scheduleTranslationBatch() {
         if (!batchSemaphore.tryAcquire()) return;
+        List<TranslationProcess> list = translationsRepositoryAdapter.findByTranslationStatus(raw);
+        if (list.isEmpty()) return;
         try {
-            List<TranslationProcess> list = translationsRepositoryAdapter.findByTranslationStatus(raw);
-            if (list.isEmpty()) return;
             List<CompletableFuture<TranslationProcess>> futures = new ArrayList<>();
             for (TranslationProcess tp : list) {
                 processSemaphore.acquire();
                 futures.add(
                         CompletableFuture.supplyAsync(() -> {
                             try {
-                                log.info("Object with id: {}, dannie {}, {}, {}", tp.getId(), tp.getTranslatedText(), tp.getSourceCode(), tp.getTranslatedText());
                                 String translatedText = machineTranslationAdapter.translate(
                                         tp.getOriginalText(),
                                         tp.getSourceCode(),
@@ -61,6 +60,9 @@ public class TranslationUseCase {
                     .toList();
             translationsRepositoryAdapter.updateProcess(result);
         } catch (InterruptedException e) {
+            if (!list.isEmpty()) {
+                translationsRepositoryAdapter.updateStatus(list);
+            }
             throw new RuntimeException(e);
         } finally {
             batchSemaphore.release();

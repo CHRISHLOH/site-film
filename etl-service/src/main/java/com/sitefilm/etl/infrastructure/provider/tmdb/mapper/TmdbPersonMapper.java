@@ -27,7 +27,10 @@ public class TmdbPersonMapper {
             if (gender == null || gender < 0 || gender > 2) {
                 gender = 0;
             }
-            List<DataPersonTranslation> personTranslations = personTranslationMapper.mapTranslation(personDto.getPersonTranslations().getTranslations());
+            List<DataPersonTranslation> personTranslations = personTranslationMapper.mapTranslation(
+                    personDto.getPersonTranslations().getTranslations(),
+                    personDto.getName(),
+                    personDto.getBiography());
             List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(externalId);
             PersonImportDto personImportDto = new PersonImportDto();
             personImportDto.setExternalId(personDto.getExternalId());
