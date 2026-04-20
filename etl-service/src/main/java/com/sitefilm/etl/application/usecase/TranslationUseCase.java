@@ -34,8 +34,8 @@ public class TranslationUseCase {
     public void scheduleTranslationBatch() {
         if (!batchSemaphore.tryAcquire()) return;
         List<TranslationProcess> list = translationsRepositoryAdapter.findByTranslationStatus(raw);
-        if (list.isEmpty()) return;
         try {
+            if (list.isEmpty()) return;
             List<CompletableFuture<TranslationProcess>> futures = new ArrayList<>();
             for (TranslationProcess tp : list) {
                 processSemaphore.acquire();

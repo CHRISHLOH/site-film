@@ -29,19 +29,18 @@ public class TmdbDictionariesLoadUseCase {
 
     @Transactional
     public void loadDictionaries() {
-        int i = 1;
-        if (i == 1) {
-            List<Genre> genres = dictionariesRepositoryAdapter.getGenres();
-            List<Career> careers = dictionariesRepositoryAdapter.getCareers();
-            List<Country> countries = dictionariesRepositoryAdapter.getCountries();
-            List<Language> languages = dictionariesRepositoryAdapter.getLanguages();
+        List<Genre> genres = dictionariesRepositoryAdapter.getGenres();
+        List<Career> careers = dictionariesRepositoryAdapter.getCareers();
+        List<Country> countries = dictionariesRepositoryAdapter.getCountries();
+        List<Language> languages = dictionariesRepositoryAdapter.getLanguages();
+        if (!genres.isEmpty() && !careers.isEmpty() && !countries.isEmpty() && !languages.isEmpty()) {
             cache.register(genres, countries, careers, languages);
         } else {
-            List<Genre> genres = dictionariesRepositoryAdapter.saveGenres(dictionaryMapper.genreMapping(tmdbDictionariesAdapter.fetchGenres()));
-            List<Career> careers = dictionariesRepositoryAdapter.saveCareers(dictionaryMapper.careerMapping(tmdbDictionariesAdapter.fetchCareers()));
-            List<Country> countries = dictionariesRepositoryAdapter.saveCountries(dictionaryMapper.countryMapping(tmdbDictionariesAdapter.fetchCountries()));
-            List<Language> languages = dictionariesRepositoryAdapter.saveLanguages(dictionaryMapper.languageMapping(tmdbDictionariesAdapter.fetchLanguages()));
-            cache.register(genres, countries, careers, languages);
+            List<Genre> loadedGenres = dictionariesRepositoryAdapter.saveGenres(dictionaryMapper.genreMapping(tmdbDictionariesAdapter.fetchGenres()));
+            List<Career> loadedCareers = dictionariesRepositoryAdapter.saveCareers(dictionaryMapper.careerMapping(tmdbDictionariesAdapter.fetchCareers()));
+            List<Country> loadedCountries = dictionariesRepositoryAdapter.saveCountries(dictionaryMapper.countryMapping(tmdbDictionariesAdapter.fetchCountries()));
+            List<Language> loadedLanguages = dictionariesRepositoryAdapter.saveLanguages(dictionaryMapper.languageMapping(tmdbDictionariesAdapter.fetchLanguages()));
+            cache.register(loadedGenres, loadedCountries, loadedCareers, loadedLanguages);
         }
     }
 }
