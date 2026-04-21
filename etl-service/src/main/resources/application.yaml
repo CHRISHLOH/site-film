@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: etl-service
+  datasource:
+    username: user
+    password: user
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/site_film
+  jdbc:
+    core: DEBUG
+
+tmdb:
+  keys:
+    bearer: ${TMDB_BEARER}
+    api-key: ${TMDB_API_KEY}
+  url:
+    countries: '/configuration/countries'
+    genre-movies: '/genre/movie/list'
+    genre-series: '/genre/tv/list'
+    languages: '/configuration/languages'
+    base-url: 'https://api.themoviedb.org/3'
+    jobs: '/configuration/jobs'
+    movie-page: '/movie/top_rated'
+    movies-details: '/movie/{movie_id}'
+    persons-cast: '/movie/{movie_id}/credits'
+    movie-translation: '/movie/{movie_id}/translations'
+    person-translations: '/person/{person_id}/translations'
+    person-details: '/person/{person_id}'
+
+translation:
+  libre:
+    url: 'http://localhost:5000'
+    translation: '/translate'
+
+server:
+  port: 9090
+
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate: DEBUG
+            StatementCreatorUtils: DEBUG
+        web:
+          client:
+            RestClient: DEBUG
