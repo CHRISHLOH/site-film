@@ -14,6 +14,7 @@ import java.util.Set;
 
 @Component
 public class RelationshipsAggregator {
+
     private final DictionaryRegistry dictionaryRegistry;
 
     public RelationshipsAggregator(DictionaryRegistry dictionaryRegistry) {

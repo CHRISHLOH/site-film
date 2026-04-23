@@ -20,7 +20,7 @@ public class TranslationUseCase {
     private final Semaphore batchSemaphore = new Semaphore(1);
     private final Semaphore processSemaphore = new Semaphore(4);
     private final TranslationsRepositoryAdapter translationsRepositoryAdapter;
-    private final TranslationStatus  raw = TranslationStatus.RAW;
+    private final TranslationStatus raw = TranslationStatus.RAW;
     private final ExecutorService executorService;
     private final MachineTranslationAdapter  machineTranslationAdapter;
 
@@ -30,7 +30,7 @@ public class TranslationUseCase {
         this.machineTranslationAdapter = machineTranslationAdapter;
     }
 
-    @Scheduled(fixedRate = 15000)
+    @Scheduled(fixedRate = 1500000)
     public void scheduleTranslationBatch() {
         if (!batchSemaphore.tryAcquire()) return;
         List<TranslationProcess> list = translationsRepositoryAdapter.findByTranslationStatus(raw);

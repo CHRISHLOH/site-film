@@ -8,8 +8,8 @@ import com.sitefilm.etl.domain.model.dictionaries.Language;
 import java.util.List;
 
 public interface DictionariesRepositoryPort {
-    List<Genre> saveGenres(List<Genre> genres);
-    List<Language> saveLanguages(List<Language> languages);
-    List<Career> saveCareers(List<Career> careers);
-    List<Country> saveCountries(List<Country> countries);
+    void saveGenres(List<Genre> genres);
+    void saveLanguages(List<Language> languages);
+    void saveCareers(List<Career> careers);
+    void saveCountries(List<Country> countries);
 }
