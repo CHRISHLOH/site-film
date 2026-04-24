@@ -22,23 +22,17 @@ public class RateLimitedTmdbClient {
 
     public RateLimitedTmdbClient(CoreTmdbClient delegate) {
         this.delegate = delegate;
-
         RateLimiterConfig config = RateLimiterConfig.custom()
                 .limitForPeriod(20)
-                .limitRefreshPeriod(Duration.ofSeconds(2))
+                .limitRefreshPeriod(Duration.ofSeconds(1))
                 .timeoutDuration(Duration.ofSeconds(30))
                 .build();
-
         this.rateLimiter = RateLimiter.of("tmdb", config);
     }
 
     private <T> T callRateLimited(Supplier<T> supplier) {
         Supplier<T> decorated = RateLimiter.decorateSupplier(rateLimiter, supplier);
-        try {
-            return decorated.get();
-        } catch (RequestNotPermitted e) {
-            throw new RuntimeException("Rate limit exceeded for TMDB requests", e);
-        }
+        return decorated.get();
     }
 
     public TmdbMoviePageResponse loadMovieIds(Integer page) {
