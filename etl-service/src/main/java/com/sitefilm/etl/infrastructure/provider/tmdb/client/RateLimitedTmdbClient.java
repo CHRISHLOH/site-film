@@ -1,6 +1,7 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.client;
 
 import com.sitefilm.etl.application.ex.PersonNotFoundException;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.CountPageResponse;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.TmdbMoviePageResponse;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
@@ -24,7 +25,7 @@ public class RateLimitedTmdbClient {
 
         RateLimiterConfig config = RateLimiterConfig.custom()
                 .limitForPeriod(20)
-                .limitRefreshPeriod(Duration.ofSeconds(1))
+                .limitRefreshPeriod(Duration.ofSeconds(2))
                 .timeoutDuration(Duration.ofSeconds(30))
                 .build();
 
@@ -60,5 +61,9 @@ public class RateLimitedTmdbClient {
                 throw new PersonNotFoundException("Person not found in TMDB, personId=" + personId, e);
             }
         });
+    }
+
+    public CountPageResponse loadCountPage(){
+        return callRateLimited(delegate::loadCountPage);
     }
 }

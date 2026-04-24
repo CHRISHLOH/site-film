@@ -42,4 +42,8 @@ public class TmdbMovieAdapter implements ContentProviderPort {
     public ContentType supports() {
         return CONTENT_TYPE;
     }
+
+    public Short countPage() {
+        return coreTmdbClient.loadCountPage().total_pages();
+    }
 }
