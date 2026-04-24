@@ -2,6 +2,7 @@ package com.sitefilm.etl.application.strategies;
 
 import com.sitefilm.etl.application.mapper.tmdb.PersonMapper;
 import com.sitefilm.etl.application.strategies.context.ContentLoadContext;
+import com.sitefilm.etl.domain.model.person.Person;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.PersonRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbPersonAdapter;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonImportDto;
@@ -31,8 +32,9 @@ public class FetchPersons implements LoadStep {
         Set<Long> existCast = personRepositoryAdapter.existPersons(castId);
         List<PersonImportDto> cast = tmdbPersonAdapter.fetchCast(context.getImportedBundle().credits(), existCast);
         Map<Long, PersonMovieRole> pmr = aggregatePersonMovieRoles(cast);
-        context.setFetchedPersons(cast);
+        List<Person> personList = personMapper.aggregateToDomain(cast);
         context.setPersonRoles(pmr);
+        context.setFetchedPersons(personList);
     }
 
     private Map<Long, PersonMovieRole> aggregatePersonMovieRoles(List<PersonImportDto> persons) {

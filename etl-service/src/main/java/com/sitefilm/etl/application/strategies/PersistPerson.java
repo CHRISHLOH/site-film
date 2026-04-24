@@ -1,6 +1,7 @@
 package com.sitefilm.etl.application.strategies;
 
 import com.sitefilm.etl.application.collector.MissingTranslationProcessor;
+import com.sitefilm.etl.application.collector.dto.PersonTransferTranslation;
 import com.sitefilm.etl.application.mapper.tmdb.PersonMapper;
 import com.sitefilm.etl.application.strategies.context.ContentLoadContext;
 import com.sitefilm.etl.domain.model.person.Person;
@@ -14,19 +15,19 @@ import java.util.Set;
 public class PersistPerson implements LoadStep{
     private final PersonRepositoryAdapter personRepository;
     private final MissingTranslationProcessor  missingTranslationProcessor;
-    private final PersonMapper  personMapper;
 
-    public PersistPerson(PersonRepositoryAdapter personRepository, MissingTranslationProcessor missingTranslationProcessor, PersonMapper personMapper) {
+    public PersistPerson(PersonRepositoryAdapter personRepository, MissingTranslationProcessor missingTranslationProcessor) {
         this.personRepository = personRepository;
         this.missingTranslationProcessor = missingTranslationProcessor;
-        this.personMapper = personMapper;
     }
 
     @Override
     public void execute(ContentLoadContext context) {
-        List<Person> personList = personMapper.aggregateToDomain(context.getFetchedPersons());
-        Set<Person> persons = personRepository.save(personList);
+        Set<Person> persons = personRepository.save(context.getFetchedPersons());
         context.setSavedPersons(persons);
-        persons.forEach(person -> missingTranslationProcessor.saveMissingPersonTranslations(person.getPersonTranslation(), person.getId()));
+        List<PersonTransferTranslation> ptt = persons.stream()
+                .map(person -> new PersonTransferTranslation(person.getId(), person.getPersonTranslation()))
+                .toList();
+        missingTranslationProcessor.saveMissingPersonTranslations(ptt);
     }
 }

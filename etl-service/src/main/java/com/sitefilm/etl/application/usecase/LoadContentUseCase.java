@@ -23,7 +23,7 @@ public class LoadContentUseCase {
         tmdbDictionariesLoadUseCase.loadDictionaries();
         Short countPage = tmdbMovieAdapter.countPage();
         for (int i =  1; i < 2; i++) {
-            List<Long> ids = tmdbMovieAdapter.fetchPopularIds(6);
+            List<Long> ids = tmdbMovieAdapter.fetchPopularIds(8);
             ids.forEach(movieLoadStrategy::loadContent);
         }
     }

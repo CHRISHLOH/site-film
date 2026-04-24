@@ -1,5 +1,6 @@
 package com.sitefilm.etl.application.collector;
 
+import com.sitefilm.etl.application.collector.dto.PersonTransferTranslation;
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
 import com.sitefilm.etl.domain.model.person.DataPersonTranslation;
 import com.sitefilm.etl.domain.model.translations.TranslationContentType;
@@ -28,12 +29,23 @@ public class MissingTranslationProcessor {
         }
     }
 
-    public void saveMissingPersonTranslations(List<DataPersonTranslation> personTranslationsTranslations, Long personId) {
-        List<DataPersonTranslatableField> translatableFields = personTranslationsTranslations.stream().map(DataPersonTranslatableField::new).toList();
-        List<TranslationProcess> tp = missingTranslationCollector.collectMissingTranslations(translatableFields, personId, TranslationContentType.PERSON);
+    public void saveMissingPersonTranslations(List<PersonTransferTranslation> persons) {
+        List<TranslationProcess> tp = persons.stream()
+                .flatMap(p -> {
+                    List<DataPersonTranslatableField> fields =
+                            p.personTranslations().stream()
+                                    .map(DataPersonTranslatableField::new)
+                                    .toList();
+                    return missingTranslationCollector
+                            .collectMissingTranslations(
+                                    fields,
+                                    p.personId(),
+                                    TranslationContentType.PERSON
+                            ).stream();
+                })
+                .toList();
         if(!tp.isEmpty()){
             translationsRepositoryAdapter.saveProcess(tp);
         }
-
     }
 }
