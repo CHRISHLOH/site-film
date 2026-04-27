@@ -5,6 +5,7 @@ import com.sitefilm.etl.domain.model.content.DataContentTranslation;
 import com.sitefilm.etl.domain.model.content.Details;
 import com.sitefilm.etl.domain.model.content.MovieDetails;
 import com.sitefilm.etl.domain.port.repository.ContentRepositoryPort;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,17 +21,7 @@ public class MovieRepositoryAdapter implements ContentRepositoryPort {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    @Override
-    @Transactional
-    public Long save(Content content) {
-        Long contentId = saveContent(content);
-        saveDetails(content.getDetails(), contentId);
-        saveTranslations(content.getTranslations(), contentId);
-        return contentId;
-    }
-
-
-    private Long saveContent(Content content) {
+    public Long saveContent(Content content) {
         String sql = """
                 INSERT INTO content_service.content(original_title, content_type, status, external_id, source)
                 VALUES (?, ?, ?, ?, ?)
@@ -50,8 +41,7 @@ public class MovieRepositoryAdapter implements ContentRepositoryPort {
     }
 
 
-    private void saveDetails(Details details, Long contentId) {
-        MovieDetails movieDetails = (MovieDetails) details;
+    public void saveDetails(MovieDetails details, Long contentId) {
         String sql = """
                 INSERT INTO content_service.movie_details(content_id, budget, box_office, duration, release_date)
                 VALUES (?, ?, ?, ?, ?)
@@ -59,14 +49,14 @@ public class MovieRepositoryAdapter implements ContentRepositoryPort {
         jdbcTemplate.update(
                 sql,
                 contentId,
-                movieDetails.getBudget(),
-                movieDetails.getBoxOffice(),
-                movieDetails.getDuration(),
-                movieDetails.getReleaseDate()
+                details.getBudget(),
+                details.getBoxOffice(),
+                details.getDuration(),
+                details.getReleaseDate()
         );
     }
 
-    private void saveTranslations( List<DataContentTranslation> translations, Long contentId) {
+    public void saveTranslations(List<DataContentTranslation> translations, Long contentId) {
         String sql = """
         INSERT INTO content_service.content_translations
         (content_id, locale, title, description, plot_summary)
@@ -77,6 +67,24 @@ public class MovieRepositoryAdapter implements ContentRepositoryPort {
                 translations,
                 translations.size(),
                 (ps, translation) -> {
+                    ps.setLong(1, contentId);
+                    ps.setString(2, translation.locale());
+                    ps.setString(3, translation.title());
+                    ps.setString(4, translation.description());
+                    ps.setString(5, translation.plotSummary());
+                }
+        );
+    }
+
+    public void saveOneTranslation(DataContentTranslation translation, Long contentId) {
+        String sql = """
+        INSERT INTO content_service.content_translations
+        (content_id, locale, title, description, plot_summary)
+        VALUES (?, ?, ?, ?, ?)
+        """;
+        jdbcTemplate.update(
+                sql,
+                ps -> {
                     ps.setLong(1, contentId);
                     ps.setString(2, translation.locale());
                     ps.setString(3, translation.title());

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Semaphore;
 import java.util.stream.Stream;
 
 @Component
@@ -18,6 +19,7 @@ public class TmdbPersonAdapter implements PersonProviderPort {
     private final RateLimitedTmdbClient tmdbClient;
     private final ExecutorService executorService;
     private final TmdbPersonMapper mapper;
+    private final Semaphore semaphore = new Semaphore(20);
 
     public TmdbPersonAdapter(RateLimitedTmdbClient tmdbClient, ExecutorService executorService, TmdbPersonMapper mapper) {
         this.tmdbClient = tmdbClient;
@@ -52,8 +54,16 @@ public class TmdbPersonAdapter implements PersonProviderPort {
     }
 
     private CompletableFuture<PersonDetailsResponseDto> loadPerson(Long personId) {
-        return CompletableFuture.supplyAsync(() -> tmdbClient.loadPersonDetails(personId), executorService
-        );
+        return CompletableFuture.supplyAsync(() -> {
+            try {
+                semaphore.acquire();
+                return tmdbClient.loadPersonDetails(personId);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            } finally {
+                semaphore.release();
+            }
+        }, executorService);
     }
 
     private Map<Long, List<PersonMovieRole>> collectRoles(CreditsImported credits) {
