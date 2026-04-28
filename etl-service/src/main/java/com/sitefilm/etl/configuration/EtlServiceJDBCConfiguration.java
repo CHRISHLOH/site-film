@@ -4,6 +4,7 @@ import com.sitefilm.etl.configuration.convert.CareerTypeToSmallIntConverter;
 import com.sitefilm.etl.configuration.convert.JsonbToMapConverter;
 import com.sitefilm.etl.configuration.convert.MapToJsonbConverter;
 import com.sitefilm.etl.configuration.convert.SmallIntToCareerTypeConverter;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration;
 
@@ -11,6 +12,7 @@ import java.util.List;
 
 @Configuration
 public class EtlServiceJDBCConfiguration extends AbstractJdbcConfiguration {
+    @NotNull
     @Override
     protected List<?> userConverters() {
         return List.of(

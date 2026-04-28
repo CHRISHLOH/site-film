@@ -1,5 +1,8 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.mapper;
 
+import com.sitefilm.etl.domain.model.locale.DBIso;
+import com.sitefilm.etl.domain.model.locale.Iso3166;
+import com.sitefilm.etl.domain.model.locale.Iso639;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.ContentTranslationDto;
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
 import org.springframework.stereotype.Component;
@@ -11,9 +14,9 @@ import java.util.stream.Stream;
 
 @Component
 public class ContentTranslationMovieMapper {
-    private static final Set<String> LOCALES = Set.of("ru-RU", "fr-FR", "es-ES", "de-DE");
-    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE");
-    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de");
+    private static final Set<String> LOCALES = DBIso.localesWithoutUS;
+    private static final Set<String> iso_3166_1 = Iso3166.localesWithoutUS;
+    private static final Set<String> iso_639_1 = Iso639.localesWithoutUS;
 
     public List<DataContentTranslation> aggregate(List<ContentTranslationDto> movieTranslations, String requestTitle, String requestBiography) {
         List<DataContentTranslation> translations = movieTranslations.stream().filter(contentTranslationDto ->
@@ -22,7 +25,7 @@ public class ContentTranslationMovieMapper {
                     String locale = getDBLocale(translation);
                     String resultTitle = translation.getDataContentTranslationList().title() != null && !translation.getDataContentTranslationList().title().isBlank()
                             ? translation.getDataContentTranslationList().title() : null;
-                    String resultDescription = translation.getDataContentTranslationList().description() != null && translation.getDataContentTranslationList().description().isBlank()
+                    String resultDescription = translation.getDataContentTranslationList().description() != null && !translation.getDataContentTranslationList().description().isBlank()
                             ? translation.getDataContentTranslationList().description() : null;
                     return new DataContentTranslation(
                             locale,
@@ -38,10 +41,10 @@ public class ContentTranslationMovieMapper {
 
     private String getDBLocale(ContentTranslationDto contentTranslationDto) {
         return switch (contentTranslationDto.getIso_639_1()) {
-            case "ru" -> "ru-RU";
-            case "fr" -> "fr-FR";
-            case "de" -> "de-DE";
-            case "es" -> "es-ES";
+            case "ru" -> DBIso.ISO_RU.getCode();
+            case "fr" -> DBIso.ISO_FR.getCode();
+            case "de" -> DBIso.ISO_DE.getCode();
+            case "es" -> DBIso.ISO_ES.getCode();
             default -> throw new RuntimeException();
         };
     }
@@ -61,6 +64,6 @@ public class ContentTranslationMovieMapper {
     private DataContentTranslation addRequestTranslation(String requestTitle, String requestDescription) {
         String title = requestTitle != null && !requestTitle.isBlank() ? requestTitle : null;
         String description = requestDescription != null && !requestDescription.isBlank() ? requestDescription : null;
-        return new DataContentTranslation("en-US", title, description, null);
+        return new DataContentTranslation(DBIso.ISO_EN.getCode(), title, description, null);
     }
 }

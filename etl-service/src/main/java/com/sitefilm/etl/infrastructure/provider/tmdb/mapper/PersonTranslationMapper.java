@@ -1,5 +1,8 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.mapper;
 
+import com.sitefilm.etl.domain.model.locale.DBIso;
+import com.sitefilm.etl.domain.model.locale.Iso3166;
+import com.sitefilm.etl.domain.model.locale.Iso639;
 import com.sitefilm.etl.domain.model.person.DataPersonTranslation;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonTranslationDto;
 import org.springframework.stereotype.Component;
@@ -11,9 +14,9 @@ import java.util.stream.Stream;
 
 @Component
 public class PersonTranslationMapper {
-    private static final Set<String> LOCALES = Set.of("ru-RU","fr-FR", "es-ES", "de-DE");
-    private static final Set<String> iso_3166_1 = Set.of("RU", "ES", "FR", "DE");
-    private static final Set<String> iso_639_1 = Set.of("ru", "es", "fr", "de");
+    private static final Set<String> LOCALES = DBIso.localesWithoutUS;
+    private static final Set<String> iso_3166_1 = Iso3166.localesWithoutUS;
+    private static final Set<String> iso_639_1 = Iso639.localesWithoutUS;
 
     public List<DataPersonTranslation> mapTranslation(List<PersonTranslationDto> personTranslations, String requestName, String requestBiography) {
         List<DataPersonTranslation> list = personTranslations.stream()
@@ -39,11 +42,11 @@ public class PersonTranslationMapper {
 
     private String getDBLocale(String iso_639_1) {
         return switch (iso_639_1) {
-            case "ru" -> "ru-RU";
-            case "fr" -> "fr-FR";
-            case "de" -> "de-DE";
-            case "es" -> "es-ES";
-            case "en" -> "en-US";
+            case "ru" -> DBIso.ISO_RU.getCode();
+            case "fr" -> DBIso.ISO_FR.getCode();
+            case "de" -> DBIso.ISO_DE.getCode();
+            case "es" -> DBIso.ISO_ES.getCode();
+            case "en" -> DBIso.ISO_EN.getCode();
             default -> throw new RuntimeException();
         };
     }
@@ -64,7 +67,7 @@ public class PersonTranslationMapper {
         DataPersonTranslation dataPersonTranslation = new DataPersonTranslation();
         String name = requestName != null &&  !requestName.isBlank() ? requestName : null;
         String biography = requestBiography != null && !requestBiography.isBlank() ? requestBiography : null;
-        dataPersonTranslation.setLocale("en-US");
+        dataPersonTranslation.setLocale(DBIso.ISO_EN.getCode());
         dataPersonTranslation.setLocaleName(name);
         dataPersonTranslation.setBiography(biography);
         return dataPersonTranslation;
