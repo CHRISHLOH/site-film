@@ -2,13 +2,10 @@ package com.sitefilm.etl.infrastructure.persistense.tmdb;
 
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
-import com.sitefilm.etl.domain.model.content.Details;
 import com.sitefilm.etl.domain.model.content.MovieDetails;
 import com.sitefilm.etl.domain.port.repository.ContentRepositoryPort;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -25,6 +22,7 @@ public class MovieRepositoryAdapter implements ContentRepositoryPort {
         String sql = """
                 INSERT INTO content_service.content(original_title, content_type, status, external_id, source)
                 VALUES (?, ?, ?, ?, ?)
+                ON CONFLICT (external_id, source) DO NOTHING
                 RETURNING id,  original_title, content_type, poster_url, status, age_rating, external_id, source
                 """;
 

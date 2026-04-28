@@ -7,8 +7,10 @@ import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.PersonsInMov
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.TmdbMoviePageResponse;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.MovieDetailsResponseDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.series.SeriesResponseDto;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.client.RestClient;
 
+@Slf4j
 public class CoreTmdbClient {
     private final RestClient restClient;
     private final TmdbUrlProperties urlProperties;
@@ -19,7 +21,7 @@ public class CoreTmdbClient {
     }
 
     public TmdbMoviePageResponse loadMovieIds(Integer page) {
-        System.out.println("Запрос на id фильмов");
+        log.info("Запрос id фильмов, page={}", page);
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getMoviePage())
@@ -30,7 +32,7 @@ public class CoreTmdbClient {
     }
 
     public MovieDetailsResponseDto loadMovieDetails(Long movieId) {
-        System.out.println("Запрос на подгрузку данных одного фильма");
+        log.info("Запрос на данные из фильма с id={}", movieId);
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getMoviesDetails())
@@ -41,7 +43,7 @@ public class CoreTmdbClient {
     }
 
     public PersonsInMovieResponseDto loadMovieCast(Long movieId) {
-        System.out.println("Запрос на подгруз каста");
+        log.info("Запрос на погдруз каста фильма с id={}", movieId);
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(urlProperties.getPersonsCast())
@@ -64,7 +66,7 @@ public class CoreTmdbClient {
     }
 
     public CountPageResponse loadCountPage() {
-        System.out.println("Запрос на колво страниц");
+        log.info("Запрос на кол-во страниц");
         return restClient.get()
                 .uri(uriBuilder ->
                         uriBuilder.path(urlProperties.getMoviePage())

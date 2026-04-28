@@ -9,6 +9,7 @@ import com.sitefilm.etl.domain.model.enums.MovieRoleType;
 import com.sitefilm.etl.infrastructure.provider.tmdb.client.RateLimitedTmdbClient;
 import com.sitefilm.etl.infrastructure.provider.tmdb.mapper.TmdbPersonMapper;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
@@ -17,6 +18,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Semaphore;
 import java.util.stream.Stream;
 
+@Slf4j
 @Component
 public class TmdbPersonAdapter implements PersonProviderPort {
     private final RateLimitedTmdbClient tmdbClient;
@@ -47,6 +49,7 @@ public class TmdbPersonAdapter implements PersonProviderPort {
                         !existPersonIds.contains(personId)
                 )
                 .toList();
+        log.info("Загруз инфо о персонах");
         List<CompletableFuture<Optional<PersonDetailsResponseDto>>> futures = personIds.stream()
                 .map(this::loadPerson)
                 .toList();
@@ -68,6 +71,7 @@ public class TmdbPersonAdapter implements PersonProviderPort {
             try {
                 return Optional.of(tmdbClient.loadPersonDetails(personId));
             } catch (PersonNotFoundException e) {
+                log.error("Человек не найден с id:{}", personId);
                 failedRecordsRepository.saveFailedRecord(
                         failedRecordFactory.getSaveNotFoundPersonFailedRecord(personId, e)
                 );

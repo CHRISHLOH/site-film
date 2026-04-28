@@ -24,10 +24,6 @@ public class TmdbRestClientConfiguration {
                         HttpHeaders.AUTHORIZATION,
                         "Bearer " + tmdbAuthProperties.getBearer()
                 )
-                .requestInterceptor((request, body, execution) -> {
-                    System.out.println("➡️ " + request.getMethod() + " " + request.getURI());
-                    return execution.execute(request, body);
-                })
                 .build();
     }
 
