@@ -1,5 +1,8 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.adapter;
 
+import com.sitefilm.etl.application.ex.PersonNotFoundException;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordFactory;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordsRepository;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.*;
 import com.sitefilm.etl.domain.port.api.PersonProviderPort;
 import com.sitefilm.etl.domain.model.enums.MovieRoleType;
@@ -20,11 +23,15 @@ public class TmdbPersonAdapter implements PersonProviderPort {
     private final ExecutorService executorService;
     private final TmdbPersonMapper mapper;
     private final Semaphore semaphore = new Semaphore(20);
+    private final FailedRecordFactory failedRecordFactory;
+    private final FailedRecordsRepository failedRecordsRepository;
 
-    public TmdbPersonAdapter(RateLimitedTmdbClient tmdbClient, ExecutorService executorService, TmdbPersonMapper mapper) {
+    public TmdbPersonAdapter(RateLimitedTmdbClient tmdbClient, ExecutorService executorService, TmdbPersonMapper mapper, FailedRecordFactory failedRecordFactory, FailedRecordsRepository failedRecordsRepository) {
         this.tmdbClient = tmdbClient;
         this.executorService = executorService;
         this.mapper = mapper;
+        this.failedRecordFactory = failedRecordFactory;
+        this.failedRecordsRepository = failedRecordsRepository;
     }
 
 
@@ -40,26 +47,31 @@ public class TmdbPersonAdapter implements PersonProviderPort {
                         !existPersonIds.contains(personId)
                 )
                 .toList();
-        List<CompletableFuture<PersonDetailsResponseDto>> futures =
-                personIds.stream()
-                        .map(this::loadPerson)
-                        .toList();
-        CompletableFuture
-                .allOf(futures.toArray(new CompletableFuture[0]))
-                .join();
+        List<CompletableFuture<Optional<PersonDetailsResponseDto>>> futures = personIds.stream()
+                .map(this::loadPerson)
+                .toList();
         List<PersonDetailsResponseDto> personCastDto = futures.stream()
                 .map(CompletableFuture::join)
+                .flatMap(Optional::stream)
                 .toList();
         return mapper.castMapping(personCastDto, personMovieRoles);
     }
 
-    private CompletableFuture<PersonDetailsResponseDto> loadPerson(Long personId) {
+    private CompletableFuture<Optional<PersonDetailsResponseDto>> loadPerson(Long personId) {
         return CompletableFuture.supplyAsync(() -> {
             try {
                 semaphore.acquire();
-                return tmdbClient.loadPersonDetails(personId);
             } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
                 throw new RuntimeException(e);
+            }
+            try {
+                return Optional.of(tmdbClient.loadPersonDetails(personId));
+            } catch (PersonNotFoundException e) {
+                failedRecordsRepository.saveFailedRecord(
+                        failedRecordFactory.getSaveNotFoundPersonFailedRecord(personId, e)
+                );
+                return Optional.empty();
             } finally {
                 semaphore.release();
             }

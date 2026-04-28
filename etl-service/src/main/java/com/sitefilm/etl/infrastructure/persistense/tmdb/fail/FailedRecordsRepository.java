@@ -1,4 +1,4 @@
-package com.sitefilm.etl.infrastructure.persistense.tmdb;
+package com.sitefilm.etl.infrastructure.persistense.tmdb.fail;
 
 import com.sitefilm.etl.domain.model.failed.FailedRecord;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -28,7 +28,11 @@ public class FailedRecordsRepository {
                     ps.setShort(3, failedRecord.stage().getValue());
                     ps.setString(4, failedRecord.error_type());
                     ps.setString(5, failedRecord.error_message());
-                    ps.setString(6, failedRecord.payload());
+                    ps.setObject(
+                            6,
+                            failedRecord.payload(),
+                            Types.OTHER
+                    );
                 }
         );
     }

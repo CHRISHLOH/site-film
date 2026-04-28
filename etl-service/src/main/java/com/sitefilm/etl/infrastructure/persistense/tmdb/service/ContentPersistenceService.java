@@ -4,12 +4,11 @@ import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
 import com.sitefilm.etl.domain.model.content.Details;
 import com.sitefilm.etl.domain.model.content.MovieDetails;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.FailedRecordFactory;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.FailedRecordsRepository;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordFactory;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordsRepository;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.MovieRepositoryAdapter;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -25,7 +24,6 @@ public class ContentPersistenceService {
         this.failedRecordFactory = failedRecordFactory;
     }
 
-    @Transactional
     public Long save(Content content) {
         Long contentId = saveContentSafely(content);
         saveDetailsSafely(content.getDetails(), contentId, content.getExternalId());

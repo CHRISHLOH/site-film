@@ -6,7 +6,8 @@ import java.util.Arrays;
 
 @Getter
 public enum Stage {
-    DB_SAVE((short) 1);
+    DB_SAVE((short) 1),
+    REQUEST((short) 2);
 
     private final Short value;
 

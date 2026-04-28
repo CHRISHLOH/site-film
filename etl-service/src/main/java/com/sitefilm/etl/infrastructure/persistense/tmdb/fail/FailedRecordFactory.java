@@ -1,4 +1,4 @@
-package com.sitefilm.etl.infrastructure.persistense.tmdb;
+package com.sitefilm.etl.infrastructure.persistense.tmdb.fail;
 
 import com.sitefilm.etl.configuration.convert.JsonbMapper;
 import com.sitefilm.etl.domain.model.content.Content;
@@ -84,6 +84,19 @@ public class FailedRecordFactory {
                 e.getClass().getName(),
                 e.getMessage(),
                 jsonbMapper.toJson(t),
+                null
+        );
+    }
+
+    public FailedRecord getSaveNotFoundPersonFailedRecord(Long externalId, RuntimeException e) {
+        return new FailedRecord(
+                null,
+                EntityType.PERSON,
+                externalId,
+                Stage.REQUEST,
+                e.getClass().getName(),
+                e.getMessage(),
+                jsonbMapper.toJson(new NullFailedRecord("Not found")),
                 null
         );
     }

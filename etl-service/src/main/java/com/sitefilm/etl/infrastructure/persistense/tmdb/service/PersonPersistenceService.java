@@ -1,8 +1,8 @@
 package com.sitefilm.etl.infrastructure.persistense.tmdb.service;
 
 import com.sitefilm.etl.domain.model.person.Person;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.FailedRecordFactory;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.FailedRecordsRepository;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordFactory;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordsRepository;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.PersonRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.row.PersonIds;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.row.PersonTranslationRow;
