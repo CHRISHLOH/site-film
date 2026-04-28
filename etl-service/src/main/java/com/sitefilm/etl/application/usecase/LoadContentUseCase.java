@@ -25,7 +25,7 @@ public class LoadContentUseCase {
         tmdbDictionariesLoadUseCase.loadDictionaries();
         Short countPage = tmdbMovieAdapter.countPage();
         for (int i =  1; i < 2; i++) {
-            List<Long> ids = tmdbMovieAdapter.fetchPopularIds(13);
+            List<Long> ids = tmdbMovieAdapter.fetchPopularIds(14);
             for (Long id : ids) {
                 try {
                     movieLoadStrategy.loadContent(id);

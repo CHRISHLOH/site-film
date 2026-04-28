@@ -14,9 +14,9 @@ import java.util.stream.Stream;
 
 @Component
 public class ContentTranslationMovieMapper {
-    private static final Set<String> LOCALES = DBIso.localesWithoutUS;
-    private static final Set<String> iso_3166_1 = Iso3166.localesWithoutUS;
-    private static final Set<String> iso_639_1 = Iso639.localesWithoutUS;
+    private static final Set<String> LOCALES = DBIso.LOCALES_WITHOUT_US;
+    private static final Set<String> iso_3166_1 = Iso3166.LOCALES_WITHOUT_US;
+    private static final Set<String> iso_639_1 = Iso639.LOCALES_WITHOUT_US;
 
     public List<DataContentTranslation> aggregate(List<ContentTranslationDto> movieTranslations, String requestTitle, String requestBiography) {
         List<DataContentTranslation> translations = movieTranslations.stream().filter(contentTranslationDto ->
