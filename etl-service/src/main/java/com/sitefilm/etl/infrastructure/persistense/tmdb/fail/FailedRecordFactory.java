@@ -13,6 +13,7 @@ import com.sitefilm.etl.infrastructure.persistense.tmdb.row.PersonTranslationRow
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class FailedRecordFactory {

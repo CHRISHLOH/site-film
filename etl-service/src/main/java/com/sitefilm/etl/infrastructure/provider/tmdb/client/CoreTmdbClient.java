@@ -6,7 +6,6 @@ import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetai
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.PersonsInMovieResponseDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.TmdbMoviePageResponse;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.movie.MovieDetailsResponseDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.series.SeriesResponseDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.client.RestClient;
 

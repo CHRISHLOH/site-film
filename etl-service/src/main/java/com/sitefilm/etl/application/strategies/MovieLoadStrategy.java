@@ -23,8 +23,6 @@ public class MovieLoadStrategy implements ContentLoadStrategy{
     @Override
     public void loadContent(Long externalId) {
         ContentLoadContext context = new ContentLoadContext(externalId);
-        loadSteps.forEach(step -> {
-            step.execute(context);
-        });
+        loadSteps.forEach(step -> step.execute(context));
     }
 }
