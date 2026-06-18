@@ -19,15 +19,16 @@ public class PersistRelationships implements LoadStep{
     }
 
     @Override
-    public void execute(ContentLoadContext context) {
-        Content content = context.getContent();
+    public ContentLoadContext execute(ContentLoadContext context) {
+        Content content = context.content();
         RelationshipsAggregatedData relationshipsAggregatedData = relationshipsAggregator.aggregatedData(
                 content.getGenres(),
                 content.getCountries(),
                 content.getSpokenLanguages(),
-                context.getSavedPersons(),
+                context.savedPersons(),
                 content.getId(),
-                context.getPersonRoles());
+                context.personRoles());
         repository.save(relationshipsAggregatedData);
+        return context;
     }
 }

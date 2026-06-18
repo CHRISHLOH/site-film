@@ -26,7 +26,7 @@ public class TmdbMovieMapper {
         this.translationMovieMapper = translationMovieMapper;
     }
 
-    public ImportedBundle fetchDetails(ValidatedMovie movie) {
+    public ImportedBundle<ImportedMovie> fetchDetails(ValidatedMovie movie) {
         List<DataContentTranslation> translations = translationMovieMapper.aggregate(
                 movie.contentTranslations().getContentTranslations(), movie.title(), movie.overview());
         List<Integer> genres = genresReferenceMapping(movie.genres());
@@ -51,7 +51,7 @@ public class TmdbMovieMapper {
                 mapCast(movie.persons().getCast()),
                 mapCrew(movie.persons().getCrew())
         );
-        return new ImportedBundle(
+        return new ImportedBundle<>(
                 importedMovie,
                 credits
         );

@@ -1,6 +1,7 @@
 package com.sitefilm.etl.application.strategies;
 
 import com.sitefilm.etl.application.strategies.context.ContentLoadContext;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedMovie;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -22,7 +23,9 @@ public class MovieLoadStrategy implements ContentLoadStrategy{
 
     @Override
     public void loadContent(Long externalId) {
-        ContentLoadContext context = new ContentLoadContext(externalId);
-        loadSteps.forEach(step -> step.execute(context));
+        ContentLoadContext context = ContentLoadContext.start(externalId);
+        for (LoadStep step : loadSteps) {
+            context = step.execute(context);
+        }
     }
 }

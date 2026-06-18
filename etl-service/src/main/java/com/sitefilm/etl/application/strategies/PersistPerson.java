@@ -21,12 +21,12 @@ public class PersistPerson implements LoadStep{
     }
 
     @Override
-    public void execute(ContentLoadContext context) {
-        Set<Person> persons = personPersistenceService.save(context.getFetchedPersons());
-        context.setSavedPersons(persons);
+    public ContentLoadContext execute(ContentLoadContext context) {
+        Set<Person> persons = personPersistenceService.save(context.fetchedPersons());
         List<PersonTransferTranslation> ptt = persons.stream()
                 .map(person -> new PersonTransferTranslation(person.getId(), person.getPersonTranslation()))
                 .toList();
         missingTranslationProcessor.saveMissingPersonTranslations(ptt);
+        return context.withSavedPersons(persons);
     }
 }

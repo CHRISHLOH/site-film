@@ -27,14 +27,13 @@ public class FetchPersons implements LoadStep {
     }
 
     @Override
-    public void execute(ContentLoadContext context) {
-        List<Long> castId = personMapper.existPersons(context.getImportedBundle().credits());
+    public ContentLoadContext execute(ContentLoadContext context) {
+        List<Long> castId = personMapper.existPersons(context.importedBundle().credits());
         Set<Long> existCast = personRepositoryAdapter.existPersons(castId);
-        List<PersonImportDto> cast = tmdbPersonAdapter.fetchCast(context.getImportedBundle().credits(), existCast);
+        List<PersonImportDto> cast = tmdbPersonAdapter.fetchCast(context.importedBundle().credits(), existCast);
         Map<Long, PersonMovieRole> pmr = aggregatePersonMovieRoles(cast);
         List<Person> personList = personMapper.aggregateToDomain(cast);
-        context.setPersonRoles(pmr);
-        context.setFetchedPersons(personList);
+        return context.withFetchedPersons(pmr, personList);
     }
 
     private Map<Long, PersonMovieRole> aggregatePersonMovieRoles(List<PersonImportDto> persons) {

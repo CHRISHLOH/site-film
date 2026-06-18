@@ -18,10 +18,9 @@ public class FetchContent implements LoadStep {
         this.tmdbMovieAdapter = tmdbMovieAdapter;
     }
     @Override
-    public void execute(ContentLoadContext context) {
-        ImportedBundle importedBundle = tmdbMovieAdapter.fetchDetails(context.getExternalId());
-        Content content = movieMapper.aggregateToDomain((ImportedMovie) importedBundle.importedContent());
-        context.setContent(content);
-        context.setImportedBundle(importedBundle);
+    public ContentLoadContext execute(ContentLoadContext context) {
+        ImportedBundle<ImportedMovie> importedBundle = tmdbMovieAdapter.fetchDetails(context.externalId());
+        Content content = movieMapper.aggregateToDomain(importedBundle.importedContent());
+        return  context.withFetchedContent(importedBundle, content);
     }
 }

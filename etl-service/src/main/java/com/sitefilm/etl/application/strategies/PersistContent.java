@@ -17,9 +17,9 @@ public class PersistContent implements LoadStep {
     }
 
     @Override
-    public void execute(ContentLoadContext context) {
-        Long contentId = contentPersistenceService.save(context.getContent());
-        missingTranslationProcessor.saveMissingContentTranslations(context.getContent().getTranslations(), contentId);
-        context.getContent().setId(contentId);
+    public ContentLoadContext execute(ContentLoadContext context) {
+        Long contentId = contentPersistenceService.save(context.content());
+        missingTranslationProcessor.saveMissingContentTranslations(context.content().getTranslations(), contentId);
+        return context.withSavedContentId(contentId);
     }
 }

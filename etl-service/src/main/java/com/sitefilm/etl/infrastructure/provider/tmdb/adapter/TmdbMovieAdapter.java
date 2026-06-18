@@ -1,6 +1,7 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.adapter;
 
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedBundle;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedMovie;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.MovieIdDto;
 import com.sitefilm.etl.domain.port.api.ContentProviderPort;
 
@@ -28,7 +29,7 @@ public class TmdbMovieAdapter implements ContentProviderPort {
     }
 
     @Override
-    public ImportedBundle fetchDetails(Long externalId) {
+    public ImportedBundle<ImportedMovie> fetchDetails(Long externalId) {
         MovieDetailsResponseDto movie = coreTmdbClient.loadMovieDetails(externalId);
         ValidatedMovie validatedMovie = validator.validateResponseAndGet(movie);
         return movieMapper.fetchDetails(validatedMovie);
