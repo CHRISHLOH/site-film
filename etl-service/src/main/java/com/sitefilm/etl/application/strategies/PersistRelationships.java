@@ -26,7 +26,7 @@ public class PersistRelationships implements LoadStep{
                 content.getCountries(),
                 content.getSpokenLanguages(),
                 context.savedPersons(),
-                content.getId(),
+                context.savedContentId(),
                 context.personRoles());
         repository.save(relationshipsAggregatedData);
         return context;
