@@ -17,7 +17,7 @@ public record ContentLoadContext(
         Long savedContentId,
         List<Person> fetchedPersons,
         Set<Person> savedPersons,
-        Map<Long, PersonMovieRole> personRoles
+        Map<Long, List<PersonMovieRole>> personRoles
 ){
     public static ContentLoadContext start(Long externalId) {
         return new ContentLoadContext(externalId, null, null, null, null, null, null);
@@ -33,7 +33,7 @@ public record ContentLoadContext(
                 fetchedPersons, savedPersons, personRoles);
     }
 
-    public ContentLoadContext withFetchedPersons(Map<Long, PersonMovieRole> personRoles, List<Person> fetchedPersons) {
+    public ContentLoadContext withFetchedPersons(Map<Long, List<PersonMovieRole>> personRoles, List<Person> fetchedPersons) {
         return new ContentLoadContext (externalId, importedBundle, content, savedContentId,
                 fetchedPersons, savedPersons, personRoles);
     }

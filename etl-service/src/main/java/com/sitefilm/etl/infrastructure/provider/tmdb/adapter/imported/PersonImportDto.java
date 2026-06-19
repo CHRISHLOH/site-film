@@ -19,6 +19,5 @@ public class PersonImportDto {
     private CareerType knownAs;
     private Long externalId;
     private Source source;
-    private List<PersonMovieRole> personMovieData;
     private List<DataPersonTranslation> personTranslations;
 }

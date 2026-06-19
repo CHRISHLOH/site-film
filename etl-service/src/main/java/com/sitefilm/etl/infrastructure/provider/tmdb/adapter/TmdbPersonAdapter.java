@@ -39,7 +39,6 @@ public class TmdbPersonAdapter implements PersonProviderPort {
 
     @Override
     public List<PersonImportDto> fetchCast(CreditsImported credits, Set<Long> existPersonIds) {
-        Map<Long, List<PersonMovieRole>> personMovieRoles = collectRoles(credits);
         List<Long> personIds = Stream.concat(
                         credits.cast().stream().map(Cast::externalId),
                         credits.crew().stream().map(Crew::externalId)
@@ -57,7 +56,7 @@ public class TmdbPersonAdapter implements PersonProviderPort {
                 .map(CompletableFuture::join)
                 .flatMap(Optional::stream)
                 .toList();
-        return mapper.castMapping(personCastDto, personMovieRoles);
+        return mapper.castMapping(personCastDto);
     }
 
     private CompletableFuture<Optional<PersonDetailsResponseDto>> loadPerson(Long personId) {
@@ -80,31 +79,5 @@ public class TmdbPersonAdapter implements PersonProviderPort {
                 semaphore.release();
             }
         }, executorService);
-    }
-
-    private Map<Long, List<PersonMovieRole>> collectRoles(CreditsImported credits) {
-        Map<Long, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
-        for (Cast cast : credits.cast()) {
-            rolesByPersonId
-                    .computeIfAbsent(cast.externalId(), k -> new ArrayList<>())
-                    .add(PersonMovieRole.builder()
-                            .externalId(cast.externalId())
-                            .type(MovieRoleType.CAST)
-                            .order(cast.order())
-                            .character(cast.character())
-                            .job("Actor")
-                            .build());
-        }
-        for (Crew crew : credits.crew()) {
-            rolesByPersonId
-                    .computeIfAbsent(crew.externalId(), k -> new ArrayList<>())
-                    .add(PersonMovieRole.builder()
-                            .externalId(crew.externalId())
-                            .type(MovieRoleType.CREW)
-                            .department(crew.department())
-                            .job(crew.job())
-                            .build());
-        }
-        return rolesByPersonId;
     }
 }

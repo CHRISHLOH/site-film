@@ -2,17 +2,14 @@ package com.sitefilm.etl.application.strategies;
 
 import com.sitefilm.etl.application.mapper.tmdb.PersonMapper;
 import com.sitefilm.etl.application.strategies.context.ContentLoadContext;
+import com.sitefilm.etl.domain.model.enums.MovieRoleType;
 import com.sitefilm.etl.domain.model.person.Person;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.PersonRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbPersonAdapter;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonImportDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonMovieRole;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.*;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
+import java.util.*;
 
 @Component
 public class FetchPersons implements LoadStep {
@@ -28,19 +25,38 @@ public class FetchPersons implements LoadStep {
 
     @Override
     public ContentLoadContext execute(ContentLoadContext context) {
-        List<Long> castId = personMapper.existPersons(context.importedBundle().credits());
+        CreditsImported credits = context.importedBundle().credits();
+        List<Long> castId = personMapper.concatPersons(credits);
         Set<Long> existCast = personRepositoryAdapter.existPersons(castId);
         List<PersonImportDto> cast = tmdbPersonAdapter.fetchCast(context.importedBundle().credits(), existCast);
-        Map<Long, PersonMovieRole> pmr = aggregatePersonMovieRoles(cast);
+        Map<Long, List<PersonMovieRole>> pmr = collectRoles(credits);
         List<Person> personList = personMapper.aggregateToDomain(cast);
         return context.withFetchedPersons(pmr, personList);
     }
 
-    private Map<Long, PersonMovieRole> aggregatePersonMovieRoles(List<PersonImportDto> persons) {
-        return persons.stream().flatMap(personImportDto -> personImportDto.getPersonMovieData().stream()).collect(Collectors.toMap(
-                PersonMovieRole::getExternalId,
-                personMovieRole -> personMovieRole,
-                (f, s) -> s
-        ));
+    private Map<Long, List<PersonMovieRole>> collectRoles(CreditsImported credits) {
+        Map<Long, List<PersonMovieRole>> rolesByPersonId = new HashMap<>();
+        for (Cast cast : credits.cast()) {
+            rolesByPersonId
+                    .computeIfAbsent(cast.externalId(), k -> new ArrayList<>())
+                    .add(PersonMovieRole.builder()
+                            .externalId(cast.externalId())
+                            .type(MovieRoleType.CAST)
+                            .order(cast.order())
+                            .character(cast.character())
+                            .job("Actor")
+                            .build());
+        }
+        for (Crew crew : credits.crew()) {
+            rolesByPersonId
+                    .computeIfAbsent(crew.externalId(), k -> new ArrayList<>())
+                    .add(PersonMovieRole.builder()
+                            .externalId(crew.externalId())
+                            .type(MovieRoleType.CREW)
+                            .department(crew.department())
+                            .job(crew.job())
+                            .build());
+        }
+        return rolesByPersonId;
     }
 }

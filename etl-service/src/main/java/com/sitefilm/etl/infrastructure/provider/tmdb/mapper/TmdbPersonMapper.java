@@ -20,9 +20,8 @@ public class TmdbPersonMapper {
         this.personTranslationMapper = personTranslationMapper;
     }
 
-    public List<PersonImportDto> castMapping(List<PersonDetailsResponseDto> persons, Map<Long, List<PersonMovieRole>> personMovieRoles) {
+    public List<PersonImportDto> castMapping(List<PersonDetailsResponseDto> persons) {
         return persons.stream().map(personDto -> {
-            Long externalId = personDto.getExternalId();
             Short gender = personDto.getGender();
             if (gender == null || gender < 0 || gender > 2) {
                 gender = 0;
@@ -31,7 +30,6 @@ public class TmdbPersonMapper {
                     personDto.getPersonTranslations().getTranslations(),
                     personDto.getName(),
                     personDto.getBiography());
-            List<PersonMovieRole> personMovieRoleList = personMovieRoles.get(externalId);
             PersonImportDto personImportDto = new PersonImportDto();
             personImportDto.setExternalId(personDto.getExternalId());
             personImportDto.setName(personDto.getName());
@@ -42,7 +40,6 @@ public class TmdbPersonMapper {
             personImportDto.setKnownAs(knownAsMapping(personDto.getKnownAs()));
             personImportDto.setSource(SOURCE);
             personImportDto.setPersonTranslations(personTranslations);
-            personImportDto.setPersonMovieData(personMovieRoleList);
             return personImportDto;
         }).toList();
     }

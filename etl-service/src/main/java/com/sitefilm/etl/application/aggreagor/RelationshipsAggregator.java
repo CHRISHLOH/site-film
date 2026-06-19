@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Stream;
 
 @Component
 public class RelationshipsAggregator {
@@ -26,7 +27,7 @@ public class RelationshipsAggregator {
                                                       List<ContentLanguage> contentLanguages,
                                                       Set<Person> persons,
                                                       Long id,
-                                                      Map<Long, PersonMovieRole> personMovieRoles) {
+                                                      Map<Long, List<PersonMovieRole>> personMovieRoles) {
         contentGenres.forEach(contentGenre -> {
             contentGenre.setContentId(id);
         });
@@ -36,17 +37,22 @@ public class RelationshipsAggregator {
         contentLanguages.forEach(contentLanguage -> {
             contentLanguage.setContentId(id);
         });
-        List<ContentPerson> contentPersonList = persons.stream().map(person -> {
-            PersonMovieRole personMovieRole = personMovieRoles.get(person.getExternalId());
-            CareerType careerType = mapCareerType(personMovieRole.getType(), personMovieRole.getDepartment());
-            return new ContentPerson(
-                    id,
-                    person.getId(),
-                    dictionaryRegistry.getCareer(careerType, personMovieRole.getJob()).getId(),
-                    personMovieRole.getCharacter(),
-                    personMovieRole.getOrder()
-            );
-        }).toList();
+        List<ContentPerson> contentPersonList = persons.stream()
+                .flatMap(person -> {
+                    List<PersonMovieRole> roles = personMovieRoles.get(person.getExternalId());
+                    if (roles == null || roles.isEmpty()) return Stream.empty();
+                    return roles.stream().map(role -> {
+                        CareerType careerType = mapCareerType(role.getType(), role.getDepartment());
+                        return new ContentPerson(
+                                id,
+                                person.getId(),
+                                dictionaryRegistry.getCareer(careerType, role.getJob()).getId(),
+                                role.getCharacter(),
+                                role.getOrder()
+                        );
+                    });
+                })
+                .toList();
         return new RelationshipsAggregatedData(contentCountries, contentGenres, contentLanguages, contentPersonList);
     }
     private CareerType mapCareerType(MovieRoleType movieRoleType, String department) {

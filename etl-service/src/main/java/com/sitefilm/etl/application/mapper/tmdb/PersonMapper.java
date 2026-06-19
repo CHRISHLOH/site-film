@@ -5,6 +5,7 @@ import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.Cast;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CreditsImported;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.Crew;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonImportDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -28,7 +29,7 @@ public class PersonMapper {
                         .build()).toList();
     }
 
-    public List<Long> existPersons(CreditsImported credits) {
+    public List<Long> concatPersons(CreditsImported credits) {
         return Stream.concat(
                         credits.cast().stream().map(Cast::externalId),
                         credits.crew().stream().map(Crew::externalId)
