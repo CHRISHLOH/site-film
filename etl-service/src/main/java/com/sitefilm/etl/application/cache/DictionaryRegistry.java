@@ -8,16 +8,17 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 @Component
 public class DictionaryRegistry {
     private final DictionariesRepositoryAdapter repositoryAdapter;
 
-    private Map<Integer, Genre> genreMap = new HashMap<>();
-    private Map<String, Country> countryMap = new HashMap<>();
-    private Map<CareerKey, Career> careerMap = new HashMap<>();
-    private Map<String, Language> languageMap = new HashMap<>();
+    private Map<Integer, Genre> genreMap = new ConcurrentHashMap<>();
+    private Map<String, Country> countryMap = new ConcurrentHashMap<>();
+    private Map<CareerKey, Career> careerMap = new ConcurrentHashMap<>();
+    private Map<String, Language> languageMap = new ConcurrentHashMap<>();
 
     public DictionaryRegistry(DictionariesRepositoryAdapter repositoryAdapter) {
         this.repositoryAdapter = repositoryAdapter;

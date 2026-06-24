@@ -13,7 +13,7 @@ import java.util.List;
 
 @Data
 @Builder
-public class ImportedMovie implements Imported {
+public class ImportedMovie implements ImportedContent {
     private String originalTitle;
     private ContentType contentType;
     private ContentStatus status;
@@ -28,5 +28,4 @@ public class ImportedMovie implements Imported {
     private List<Integer> genres;
     private List<String> countries;
     private List<String> spokenLanguages;
-
 }
