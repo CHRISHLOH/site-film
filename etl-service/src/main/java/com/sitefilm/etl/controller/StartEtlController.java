@@ -4,9 +4,7 @@ import com.sitefilm.etl.application.usecase.LoadContentUseCase;
 import com.sitefilm.etl.domain.model.content.enums.ContentType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
@@ -15,15 +13,21 @@ import org.springframework.web.bind.annotation.RestController;
 public class StartEtlController {
     private final LoadContentUseCase loadContentUseCase;
 
-    @GetMapping("/movies")
+    @PostMapping("/movies")
     public String loadMovies() {
-        loadContentUseCase.load(ContentType.MOVIE);
+        loadContentUseCase.loadAll(ContentType.MOVIE);
         return "Отработало";
     }
 
+    @PostMapping("/movie/{page}")
+    public String loadMovie(@PathVariable("page") int page) {
+        loadContentUseCase.loadOne(ContentType.MOVIE,  page);
+        return "Отработало";
+    }
+// TODO:
 //    @GetMapping("/series")
 //    public String LoadSeries() {
-//        popularMoviesLoadUseCase.load(ContentType.SERIES);
+//        popularMoviesLoadUseCase.loadAll(ContentType.SERIES);
 //        return "Отработало";
 //    }
 }

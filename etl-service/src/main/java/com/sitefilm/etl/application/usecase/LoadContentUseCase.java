@@ -21,17 +21,29 @@ public class LoadContentUseCase {
         this.tmdbMovieAdapter = tmdbMovieAdapter;
     }
 
-    public void load(ContentType contentType) {
+    public void loadAll(ContentType contentType) {
         tmdbDictionariesLoadUseCase.loadDictionaries();
         Short countPage = tmdbMovieAdapter.countPage();
-        for (int i =  1; i < 2; i++) {
-            List<Long> ids = tmdbMovieAdapter.fetchPopularIds(23);
+        for (int i =  1; i < countPage; i++) {
+            List<Long> ids = tmdbMovieAdapter.fetchPopularIds(i);
             for (Long id : ids) {
                 try {
                     movieLoadStrategy.loadContent(id);
                 } catch (RuntimeException e) {
                     log.error(e.getMessage());
                 }
+            }
+        }
+    }
+
+    public void loadOne(ContentType contentType, int page) {
+        tmdbDictionariesLoadUseCase.loadDictionaries();
+        List<Long> ids = tmdbMovieAdapter.fetchPopularIds(page);
+        for (Long id : ids) {
+            try {
+                movieLoadStrategy.loadContent(id);
+            } catch (RuntimeException e) {
+                log.error(e.getMessage());
             }
         }
     }
