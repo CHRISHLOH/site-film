@@ -53,7 +53,7 @@ public class PersonRepositoryAdapter implements PersonRepositoryPort {
         jdbcTemplate.batchUpdate(
                 sql,
                 persons,
-                500,
+                200,
                 (ps, person) -> {
                     ps.setString(1, person.getName());
                     ps.setObject(2, person.getBirthDate() != null

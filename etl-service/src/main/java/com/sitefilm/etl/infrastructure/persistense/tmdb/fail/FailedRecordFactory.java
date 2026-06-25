@@ -8,12 +8,15 @@ import com.sitefilm.etl.domain.model.failed.EntityType;
 import com.sitefilm.etl.domain.model.failed.FailedRecord;
 import com.sitefilm.etl.domain.model.failed.Stage;
 import com.sitefilm.etl.domain.model.person.Person;
+import com.sitefilm.etl.domain.model.ref.ContentCountry;
+import com.sitefilm.etl.domain.model.ref.ContentGenre;
+import com.sitefilm.etl.domain.model.ref.ContentLanguage;
+import com.sitefilm.etl.domain.model.ref.ContentPerson;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.row.PersonIds;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.row.PersonTranslationRow;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class FailedRecordFactory {
@@ -98,6 +101,56 @@ public class FailedRecordFactory {
                 e.getClass().getName(),
                 e.getMessage(),
                 jsonbMapper.toJson(new NullFailedRecord("Not found")),
+                null
+        );
+    }
+
+    public FailedRecord getContentGenreFailedRecord(ContentGenre contentGenre, RuntimeException e) {
+        return new FailedRecord(
+                null,
+                EntityType.RELATIONSHIP,
+                contentGenre.contentId(),
+                Stage.DB_SAVE,
+                e.getClass().getName(),
+                e.getMessage(),
+                jsonbMapper.toJson(contentGenre),
+                null
+        );
+    }
+    public FailedRecord getContentCountryFailedRecord(ContentCountry contentCountry, RuntimeException e) {
+        return new FailedRecord(
+                null,
+                EntityType.RELATIONSHIP,
+                contentCountry.contentId(),
+                Stage.DB_SAVE,
+                e.getClass().getName(),
+                e.getMessage(),
+                jsonbMapper.toJson(contentCountry),
+                null
+        );
+    }
+
+    public FailedRecord getContentLanguageFailedRecord(ContentLanguage contentLanguage, RuntimeException e) {
+        return new FailedRecord(
+                null,
+                EntityType.RELATIONSHIP,
+                contentLanguage.contentId(),
+                Stage.DB_SAVE,
+                e.getClass().getName(),
+                e.getMessage(),
+                jsonbMapper.toJson(contentLanguage),
+                null
+        );
+    }
+    public FailedRecord getContentPersonFailedRecord(ContentPerson contentPerson, RuntimeException e) {
+        return new FailedRecord(
+                null,
+                EntityType.RELATIONSHIP,
+                contentPerson.contentId(),
+                Stage.DB_SAVE,
+                e.getClass().getName(),
+                e.getMessage(),
+                jsonbMapper.toJson(contentPerson),
                 null
         );
     }

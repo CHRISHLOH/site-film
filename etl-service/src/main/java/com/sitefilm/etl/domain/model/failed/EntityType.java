@@ -11,7 +11,8 @@ public enum EntityType {
     PERSON((short)3),
     PERSON_TRANSLATION((short)4),
     TRANSLATION_PROCESS((short)5),
-    CONTENT_DETAILS((short)6);
+    CONTENT_DETAILS((short)6),
+    RELATIONSHIP((short)7);
 
     private final Short value;
 

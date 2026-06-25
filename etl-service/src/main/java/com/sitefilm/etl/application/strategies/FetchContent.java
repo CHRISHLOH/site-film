@@ -25,6 +25,6 @@ public class FetchContent implements LoadStep {
         ImportedBundle<ImportedMovie> importedBundle = tmdbMovieAdapter.fetchDetails(context.externalId());
         Content content = movieMapper.aggregateToDomain(importedBundle.importedContent());
         content = resolver.resolveReferences(content, importedBundle.importedContent());
-        return  context.withFetchedContent(importedBundle, content);
+        return context.withFetchedContent(importedBundle, content);
     }
 }

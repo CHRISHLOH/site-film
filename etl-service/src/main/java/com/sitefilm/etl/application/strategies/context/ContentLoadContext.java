@@ -42,6 +42,4 @@ public record ContentLoadContext(
         return new ContentLoadContext (externalId, importedBundle, content, savedContentId,
                 fetchedPersons, savedPersons, personRoles);
     }
-
-
 }

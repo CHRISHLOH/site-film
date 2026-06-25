@@ -4,18 +4,18 @@ import com.sitefilm.etl.application.aggreagor.RelationshipsAggregator;
 import com.sitefilm.etl.application.strategies.context.ContentLoadContext;
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.ref.RelationshipsAggregatedData;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.RelationshipsRepositoryAdapter;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.service.RelationshipsRepositoryService;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PersistRelationships implements LoadStep{
+public class PersistRelationships implements LoadStep {
     private final RelationshipsAggregator relationshipsAggregator;
-    private final RelationshipsRepositoryAdapter repository;
+    private final RelationshipsRepositoryService service;
 
 
-    public PersistRelationships(RelationshipsAggregator relationshipsAggregator, RelationshipsRepositoryAdapter repository) {
+    public PersistRelationships(RelationshipsAggregator relationshipsAggregator, RelationshipsRepositoryService service) {
         this.relationshipsAggregator = relationshipsAggregator;
-        this.repository = repository;
+        this.service = service;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class PersistRelationships implements LoadStep{
                 context.savedPersons(),
                 context.savedContentId(),
                 context.personRoles());
-        repository.save(relationshipsAggregatedData);
+        service.save(relationshipsAggregatedData);
         return context;
     }
 }

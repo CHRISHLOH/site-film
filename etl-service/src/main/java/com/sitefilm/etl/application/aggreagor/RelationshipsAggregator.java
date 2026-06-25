@@ -28,15 +28,16 @@ public class RelationshipsAggregator {
                                                       Set<Person> persons,
                                                       Long id,
                                                       Map<Long, List<PersonMovieRole>> personMovieRoles) {
-        contentGenres.forEach(contentGenre -> {
-            contentGenre.setContentId(id);
-        });
-        contentCountries.forEach(contentCountry -> {
-            contentCountry.setContentId(id);
-        });
-        contentLanguages.forEach(contentLanguage -> {
-            contentLanguage.setContentId(id);
-        });
+        List<ContentGenre> contentGenresRes = contentGenres.stream().map(
+                cg -> new ContentGenre(id, cg.genreId(), cg.displayOrder())
+        ).toList();
+        List<ContentCountry> contentCountriesRes = contentCountries.stream().map(
+                cc -> new ContentCountry(id, cc.countryId())
+        ).toList();
+        List<ContentLanguage> contentLanguagesRes = contentLanguages.stream().map(
+                cl -> new ContentLanguage(id, cl.languageId())
+        ).toList();
+
         List<ContentPerson> contentPersonList = persons.stream()
                 .flatMap(person -> {
                     List<PersonMovieRole> roles = personMovieRoles.get(person.getExternalId());
@@ -53,7 +54,7 @@ public class RelationshipsAggregator {
                     });
                 })
                 .toList();
-        return new RelationshipsAggregatedData(contentCountries, contentGenres, contentLanguages, contentPersonList);
+        return new RelationshipsAggregatedData(contentCountriesRes, contentGenresRes, contentLanguagesRes, contentPersonList);
     }
     private CareerType mapCareerType(MovieRoleType movieRoleType, String department) {
         if (movieRoleType.getValue().equals("Cast")) {

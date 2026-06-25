@@ -33,27 +33,25 @@ public class ContentReferencesResolver {
         List<ContentGenre> result = new ArrayList<>(genreIds.size());
         short order = 1;
         for (Integer id : genreIds) {
-            ContentGenre contentGenre = new ContentGenre();
-            contentGenre.setGenreId(cache.getGenre(id).getId());
-            contentGenre.setDisplayOrder(order++);
+            ContentGenre contentGenre = new ContentGenre(
+                    null,
+                    cache.getGenre(id).getId(),
+                    order++
+            );
             result.add(contentGenre);
         }
         return result;
     }
 
     private List<ContentCountry> countriesRefMapping(List<String> countryIds) {
-        return countryIds.stream().map(country -> {
-            ContentCountry contentCountry = new ContentCountry();
-            contentCountry.setCountryId(cache.getCountry(country).getId());
-            return contentCountry;
-        }).toList();
+        return countryIds.stream().map(country ->
+                new ContentCountry(null, cache.getCountry(country).getId())
+            ).toList();
     }
 
     private List<ContentLanguage> spokenLanguagesRefMapping(List<String> languages) {
-        return languages.stream().map(language -> {
-            ContentLanguage contentLanguage = new ContentLanguage();
-            contentLanguage.setLanguageId(cache.getLanguage(language).getId());
-            return contentLanguage;
-        }).toList();
+        return languages.stream().map(language ->
+            new ContentLanguage(null, cache.getLanguage(language).getId())
+        ).toList();
     }
 }

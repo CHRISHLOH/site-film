@@ -2,7 +2,6 @@ package com.sitefilm.etl.infrastructure.persistense.tmdb;
 
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
-import com.sitefilm.etl.domain.model.content.MovieDetails;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -21,7 +20,7 @@ public class ContentRepositoryAdapter {
         String sql = """
                 INSERT INTO content_service.content(original_title, content_type, status, external_id, source)
                 VALUES (?, ?, ?, ?, ?)
-                ON CONFLICT (external_id, source) DO NOTHING
+                ON CONFLICT (external_id, source) DO UPDATE SET external_id = EXCLUDED.external_id
                 RETURNING id,  original_title, content_type, poster_url, status, age_rating, external_id, source
                 """;
 
@@ -34,22 +33,6 @@ public class ContentRepositoryAdapter {
                 content.getStatus().getId(),
                 content.getExternalId(),
                 content.getSource().getId()
-        );
-    }
-
-
-    public void saveDetails(MovieDetails details, Long contentId) {
-        String sql = """
-                INSERT INTO content_service.movie_details(content_id, budget, box_office, duration, release_date)
-                VALUES (?, ?, ?, ?, ?)
-                """;
-        jdbcTemplate.update(
-                sql,
-                contentId,
-                details.getBudget(),
-                details.getBoxOffice(),
-                details.getDuration(),
-                details.getReleaseDate()
         );
     }
 
