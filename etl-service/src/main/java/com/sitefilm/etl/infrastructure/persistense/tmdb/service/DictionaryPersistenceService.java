@@ -4,6 +4,7 @@ import com.sitefilm.etl.domain.model.dictionaries.*;
 import com.sitefilm.etl.domain.model.locale.DBIso;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.DictionariesRepositoryAdapter;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -55,5 +56,14 @@ public class DictionaryPersistenceService {
                 .translations(translations)
                 .build();
         return repository.saveLanguage(language);
+    }
+
+
+    @Transactional
+    public void saveToDb(DictionariesData data) {
+        repository.saveGenres(data.genres());
+        repository.saveCareers(data.careers());
+        repository.saveCountries(data.countries());
+        repository.saveLanguages(data.languages());
     }
 }

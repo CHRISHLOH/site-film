@@ -3,21 +3,23 @@ package com.sitefilm.etl.application.usecase;
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
 import com.sitefilm.etl.application.mapper.tmdb.DictionaryMapper;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.DictionariesRepositoryAdapter;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.service.DictionariesData;
+import com.sitefilm.etl.domain.model.dictionaries.DictionariesData;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.service.DictionaryPersistenceService;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbDictionariesAdapter;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
 @Component
 public class TmdbDictionariesLoadUseCase {
     private final TmdbDictionariesAdapter adapter;
     private final DictionariesRepositoryAdapter repository;
+    private final DictionaryPersistenceService service;
     private final DictionaryMapper mapper;
     private final DictionaryRegistry cache;
 
-    public TmdbDictionariesLoadUseCase(TmdbDictionariesAdapter adapter, DictionariesRepositoryAdapter repository, DictionaryMapper mapper, DictionaryRegistry cache) {
+    public TmdbDictionariesLoadUseCase(TmdbDictionariesAdapter adapter, DictionariesRepositoryAdapter repository, DictionaryPersistenceService service, DictionaryMapper mapper, DictionaryRegistry cache) {
         this.adapter = adapter;
         this.repository = repository;
+        this.service = service;
         this.mapper = mapper;
         this.cache = cache;
     }
@@ -29,7 +31,7 @@ public class TmdbDictionariesLoadUseCase {
             return;
         }
         DictionariesData fetched = fetchFromTmdb();
-        saveToDb(fetched);
+        service.saveToDb(fetched);
         cache.register(loadFromDb());
     }
 
@@ -40,14 +42,6 @@ public class TmdbDictionariesLoadUseCase {
                 repository.getCountries(),
                 repository.getLanguages()
         );
-    }
-
-    @Transactional
-    protected void saveToDb(DictionariesData data) {
-        repository.saveGenres(data.genres());
-        repository.saveCareers(data.careers());
-        repository.saveCountries(data.countries());
-        repository.saveLanguages(data.languages());
     }
 
     private DictionariesData fetchFromTmdb() {

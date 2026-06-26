@@ -1,6 +1,6 @@
 package com.sitefilm.etl.application.cache;
 
-import com.sitefilm.etl.infrastructure.persistense.tmdb.service.DictionariesData;
+import com.sitefilm.etl.domain.model.dictionaries.DictionariesData;
 import com.sitefilm.etl.domain.model.dictionaries.*;
 import com.sitefilm.etl.domain.model.locale.DBIso;
 import com.sitefilm.etl.domain.model.person.CareerType;

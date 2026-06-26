@@ -1,9 +1,4 @@
-package com.sitefilm.etl.infrastructure.persistense.tmdb.service;
-
-import com.sitefilm.etl.domain.model.dictionaries.Career;
-import com.sitefilm.etl.domain.model.dictionaries.Country;
-import com.sitefilm.etl.domain.model.dictionaries.Genre;
-import com.sitefilm.etl.domain.model.dictionaries.Language;
+package com.sitefilm.etl.domain.model.dictionaries;
 
 import java.util.List;
 

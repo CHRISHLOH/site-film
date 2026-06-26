@@ -28,6 +28,7 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         String sql = """
             INSERT INTO content_service.genres(external_id, translations)
             VALUES (?, ?)
+            ON CONFLICT DO NOTHING
             RETURNING id, external_id, translations
         """;
         jdbcTemplate.batchUpdate(
@@ -46,6 +47,7 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         String sql = """
             INSERT INTO content_service.languages(iso_639_1, translations)
             VALUES (?, ?)
+            ON CONFLICT DO NOTHING
             RETURNING id, iso_639_1, translations
         """;
         jdbcTemplate.batchUpdate(
@@ -65,6 +67,7 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         String sql = """
             INSERT INTO content_service.careers(type, translations)
             VALUES (?, ?)
+            ON CONFLICT DO NOTHING
             RETURNING id, type, translations
         """;
         jdbcTemplate.batchUpdate(
@@ -84,6 +87,7 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         String sql = """
             INSERT INTO content_service.countries(iso_3166_1, translations)
             VALUES (?, ?)
+            ON CONFLICT DO NOTHING
         """;
         jdbcTemplate.batchUpdate(
                 sql,
@@ -156,6 +160,7 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         String sql = """
         INSERT INTO content_service.genres(external_id, translations)
         VALUES (?, ?)
+        ON CONFLICT DO NOTHING
         RETURNING id, external_id, translations
     """;
         return jdbcTemplate.queryForObject(
@@ -174,6 +179,7 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         String sql = """
                     INSERT INTO content_service.careers(type, translations)
                     VALUES (?, ?::jsonb)
+                    ON CONFLICT DO NOTHING
                     RETURNING id, type, translations
                 """;
         return jdbcTemplate.queryForObject(
@@ -192,6 +198,7 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         String sql = """
                 INSERT INTO content_service.countries(iso_3166_1, translations)
                 Values (?, ?::jsonb)
+                ON CONFLICT DO NOTHING
                 RETURNING id, iso_3166_1, translations
                 """;
         return jdbcTemplate.queryForObject(
@@ -210,6 +217,7 @@ public class DictionariesRepositoryAdapter implements DictionariesRepositoryPort
         String sql = """
                 INSERT INTO content_service.languages(iso_639_1, translations)
                 VALUES (?, ?::jsonb)
+                ON CONFLICT DO NOTHING
                 RETURNING id, iso_639_1, translations
                 """;
         return jdbcTemplate.queryForObject(
