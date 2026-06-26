@@ -1,7 +1,7 @@
 package com.sitefilm.etl.controller;
 
 import com.sitefilm.etl.application.usecase.LoadContentUseCase;
-import com.sitefilm.etl.domain.model.content.enums.ContentType;
+import com.sitefilm.etl.domain.model.content.enums.LoadContentType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -15,13 +15,13 @@ public class StartEtlController {
 
     @PostMapping("/movies")
     public String loadMovies() {
-        loadContentUseCase.loadAll(ContentType.MOVIE);
+        loadContentUseCase.loadAll(LoadContentType.TMDB_MOVIE);
         return "Отработало";
     }
 
     @PostMapping("/movie/{page}")
     public String loadMovie(@PathVariable("page") int page) {
-        loadContentUseCase.loadOne(ContentType.MOVIE,  page);
+        loadContentUseCase.loadOne(LoadContentType.TMDB_MOVIE,  page);
         return "Отработало";
     }
 // TODO:
