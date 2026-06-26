@@ -29,7 +29,7 @@ public class LoadContentUseCase {
             List<Long> ids = tmdbMovieAdapter.fetchPopularIds(i);
             for (Long id : ids) {
                 try {
-                    loadStrategy.loadContent(id);
+                    loadStrategy.loadContent(id, loadContentType);
                 } catch (RuntimeException e) {
                     log.error(e.getMessage());
                 }
@@ -43,7 +43,7 @@ public class LoadContentUseCase {
         ContentLoadStrategy loadStrategy = loadContentFactory.getStrategy(loadContentType);
         for (Long id : ids) {
             try {
-                loadStrategy.loadContent(id);
+                loadStrategy.loadContent(id,  loadContentType);
             } catch (RuntimeException e) {
                 log.error(e.getMessage());
             }

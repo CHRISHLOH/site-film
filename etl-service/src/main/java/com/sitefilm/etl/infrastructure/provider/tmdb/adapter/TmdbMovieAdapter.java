@@ -1,5 +1,6 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.adapter;
 
+import com.sitefilm.etl.domain.model.content.enums.LoadContentType;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedBundle;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedMovie;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.MovieIdDto;
@@ -17,7 +18,7 @@ import java.util.List;
 
 @Component
 public class TmdbMovieAdapter implements ContentProviderPort {
-    private static final ContentType CONTENT_TYPE = ContentType.MOVIE;
+    private static final LoadContentType LOAD_CONTENT_TYPE = LoadContentType.TMDB_MOVIE;
     private final RateLimitedTmdbClient coreTmdbClient;
     private final TmdbMovieMapper movieMapper;
     private final TmdbMovieValidator validator;
@@ -36,17 +37,16 @@ public class TmdbMovieAdapter implements ContentProviderPort {
     }
 
     @Override
+    public LoadContentType loadContentType() {
+        return LOAD_CONTENT_TYPE;
+    }
+
     public List<Long> fetchPopularIds(int page) {
         return coreTmdbClient.loadMovieIds(page)
                 .getMovieIds()
                 .stream()
                 .map(MovieIdDto::id)
                 .toList();
-    }
-
-    @Override
-    public ContentType supports() {
-        return CONTENT_TYPE;
     }
 
     public Short countPage() {

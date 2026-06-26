@@ -1,6 +1,9 @@
 package com.sitefilm.etl.application.mapper.tmdb;
 
 import com.sitefilm.etl.domain.model.content.Content;
+import com.sitefilm.etl.domain.model.content.Details;
+import com.sitefilm.etl.domain.model.content.enums.LoadContentType;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedContent;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedMovie;
 import com.sitefilm.etl.domain.model.content.MovieDetails;
 import org.springframework.stereotype.Component;
@@ -8,30 +11,27 @@ import org.springframework.stereotype.Component;
 import java.util.Collections;
 
 @Component
-public class ContentMovieMapper implements ContentMapper<ImportedMovie> {
+public class ContentMovieMapper{
+    private final ContentDetailsMapperFactory cdMapperFactory;
 
-    public Content aggregateToDomain(ImportedMovie importedMovie) {
+    public ContentMovieMapper(ContentDetailsMapperFactory cdMapperFactory) {
+        this.cdMapperFactory = cdMapperFactory;
+    }
+
+    public Content aggregateToDomain(ImportedContent importedContent, LoadContentType loadContentType) {
+        Details details = cdMapperFactory.getDetailsMapper(loadContentType).details(importedContent);
         return Content.builder()
-                .originalTitle(importedMovie.getOriginalTitle())
-                .contentType(importedMovie.getContentType())
-                .status(importedMovie.getStatus())
-                .ageRating(importedMovie.getAgeRating())
-                .externalId(importedMovie.getExternalId())
-                .source(importedMovie.getSource())
-                .translations(importedMovie.getTranslation())
+                .originalTitle(importedContent.getOriginalTitle())
+                .contentType(importedContent.getContentType())
+                .status(importedContent.getStatus())
+                .ageRating(importedContent.getAgeRating())
+                .externalId(importedContent.getExternalId())
+                .source(importedContent.getSource())
+                .translations(importedContent.getTranslation())
                 .genres(Collections.emptyList())
                 .countries(Collections.emptyList())
                 .spokenLanguages(Collections.emptyList())
-                .details(movieDetailsMapping(importedMovie))
+                .details(details)
                 .build();
-    }
-
-    private MovieDetails movieDetailsMapping(ImportedMovie importedMovie) {
-        MovieDetails movieDetails = new MovieDetails();
-        movieDetails.setContentId(null);
-        movieDetails.setBudget(importedMovie.getBudget());
-        movieDetails.setBoxOffice(importedMovie.getBoxOffice());
-        movieDetails.setDuration(importedMovie.getDuration());
-        return movieDetails;
     }
 }
