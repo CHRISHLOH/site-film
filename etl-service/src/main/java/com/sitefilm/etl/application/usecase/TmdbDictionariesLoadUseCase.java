@@ -2,49 +2,61 @@ package com.sitefilm.etl.application.usecase;
 
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
 import com.sitefilm.etl.application.mapper.tmdb.DictionaryMapper;
-import com.sitefilm.etl.domain.model.dictionaries.Career;
-import com.sitefilm.etl.domain.model.dictionaries.Country;
-import com.sitefilm.etl.domain.model.dictionaries.Genre;
-import com.sitefilm.etl.domain.model.dictionaries.Language;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.DictionariesRepositoryAdapter;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.service.DictionariesData;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbDictionariesAdapter;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-
 @Component
 public class TmdbDictionariesLoadUseCase {
-    private final TmdbDictionariesAdapter tmdbDictionariesAdapter;
-    private final DictionariesRepositoryAdapter dictionariesRepositoryAdapter;
-    private final DictionaryMapper dictionaryMapper;
+    private final TmdbDictionariesAdapter adapter;
+    private final DictionariesRepositoryAdapter repository;
+    private final DictionaryMapper mapper;
     private final DictionaryRegistry cache;
 
-    public TmdbDictionariesLoadUseCase(TmdbDictionariesAdapter tmdbDictionariesAdapter, DictionariesRepositoryAdapter dictionariesRepositoryAdapter, DictionaryMapper dictionaryMapper, DictionaryRegistry cache) {
-        this.tmdbDictionariesAdapter = tmdbDictionariesAdapter;
-        this.dictionariesRepositoryAdapter = dictionariesRepositoryAdapter;
-        this.dictionaryMapper = dictionaryMapper;
+    public TmdbDictionariesLoadUseCase(TmdbDictionariesAdapter adapter, DictionariesRepositoryAdapter repository, DictionaryMapper mapper, DictionaryRegistry cache) {
+        this.adapter = adapter;
+        this.repository = repository;
+        this.mapper = mapper;
         this.cache = cache;
     }
 
-    @Transactional
     public void loadDictionaries() {
-        List<Genre> genres = dictionariesRepositoryAdapter.getGenres();
-        List<Career> careers = dictionariesRepositoryAdapter.getCareers();
-        List<Country> countries = dictionariesRepositoryAdapter.getCountries();
-        List<Language> languages = dictionariesRepositoryAdapter.getLanguages();
-        if (!genres.isEmpty() && !careers.isEmpty() && !countries.isEmpty() && !languages.isEmpty()) {
-            cache.register(genres, countries, careers, languages);
-        } else {
-            dictionariesRepositoryAdapter.saveGenres(dictionaryMapper.genreMapping(tmdbDictionariesAdapter.fetchGenres()));
-            dictionariesRepositoryAdapter.saveCareers(dictionaryMapper.careerMapping(tmdbDictionariesAdapter.fetchCareers()));
-            dictionariesRepositoryAdapter.saveCountries(dictionaryMapper.countryMapping(tmdbDictionariesAdapter.fetchCountries()));
-            dictionariesRepositoryAdapter.saveLanguages(dictionaryMapper.languageMapping(tmdbDictionariesAdapter.fetchLanguages()));
-            List<Genre> loadedGenres = dictionariesRepositoryAdapter.getGenres();
-            List<Career> loadedCareers = dictionariesRepositoryAdapter.getCareers();
-            List<Country> loadedCountries = dictionariesRepositoryAdapter.getCountries();
-            List<Language> loadedLanguages = dictionariesRepositoryAdapter.getLanguages();
-            cache.register(loadedGenres, loadedCountries, loadedCareers, loadedLanguages);
+        DictionariesData existing = loadFromDb();
+        if (existing.isComplete()) {
+            cache.register(existing);
+            return;
         }
+        DictionariesData fetched = fetchFromTmdb();
+        saveToDb(fetched);
+        cache.register(loadFromDb());
     }
+
+    private DictionariesData loadFromDb() {
+        return new DictionariesData(
+                repository.getGenres(),
+                repository.getCareers(),
+                repository.getCountries(),
+                repository.getLanguages()
+        );
+    }
+
+    @Transactional
+    protected void saveToDb(DictionariesData data) {
+        repository.saveGenres(data.genres());
+        repository.saveCareers(data.careers());
+        repository.saveCountries(data.countries());
+        repository.saveLanguages(data.languages());
+    }
+
+    private DictionariesData fetchFromTmdb() {
+        return new DictionariesData(
+                mapper.genreMapping(adapter.fetchGenres()),
+                mapper.careerMapping(adapter.fetchCareers()),
+                mapper.countryMapping(adapter.fetchCountries()),
+                mapper.languageMapping(adapter.fetchLanguages())
+        );
+    }
+
 }

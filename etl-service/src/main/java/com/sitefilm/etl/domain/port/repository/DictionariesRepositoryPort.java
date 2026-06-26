@@ -12,4 +12,8 @@ public interface DictionariesRepositoryPort {
     void saveLanguages(List<Language> languages);
     void saveCareers(List<Career> careers);
     void saveCountries(List<Country> countries);
+    List<Genre> getGenres();
+    List<Career> getCareers();
+    List<Country> getCountries();
+    List<Language> getLanguages();
 }
