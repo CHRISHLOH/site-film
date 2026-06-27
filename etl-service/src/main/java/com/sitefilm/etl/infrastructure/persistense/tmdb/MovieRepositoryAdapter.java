@@ -1,7 +1,6 @@
 package com.sitefilm.etl.infrastructure.persistense.tmdb;
 
 import com.sitefilm.etl.domain.model.content.MovieDetails;
-import com.sitefilm.etl.domain.port.repository.ContentRepositoryPort;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
