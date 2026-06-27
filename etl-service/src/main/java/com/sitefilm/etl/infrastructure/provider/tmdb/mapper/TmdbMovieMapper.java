@@ -14,7 +14,6 @@ import com.sitefilm.etl.infrastructure.provider.tmdb.validator.ValidatedMovie;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Component
 public class TmdbMovieMapper {
@@ -26,7 +25,7 @@ public class TmdbMovieMapper {
         this.translationMovieMapper = translationMovieMapper;
     }
 
-    public ImportedBundle<ImportedMovie> fetchDetails(ValidatedMovie movie) {
+    public ImportedBundle fetchDetails(ValidatedMovie movie) {
         List<DataContentTranslation> translations = translationMovieMapper.aggregate(
                 movie.contentTranslations().getContentTranslations(), movie.title(), movie.overview());
         List<Integer> genres = genresReferenceMapping(movie.genres());
@@ -51,7 +50,7 @@ public class TmdbMovieMapper {
                 mapCast(movie.persons().getCast()),
                 mapCrew(movie.persons().getCrew())
         );
-        return new ImportedBundle<>(
+        return new ImportedBundle(
                 importedMovie,
                 credits
         );

@@ -30,7 +30,7 @@ public class TmdbMovieAdapter implements ContentProviderPort {
     }
 
     @Override
-    public ImportedBundle<ImportedMovie> fetchDetails(Long externalId) {
+    public ImportedBundle fetchDetails(Long externalId) {
         MovieDetailsResponseDto movie = coreTmdbClient.loadMovieDetails(externalId);
         ValidatedMovie validatedMovie = validator.validateResponseAndGet(movie);
         return movieMapper.fetchDetails(validatedMovie);

@@ -6,7 +6,6 @@ import com.sitefilm.etl.application.strategies.context.ContentLoadContext;
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbContentAdapterFactory;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedBundle;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedContent;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -23,7 +22,7 @@ public class FetchContent implements LoadStep {
 
     @Override
     public ContentLoadContext execute(ContentLoadContext context) {
-        ImportedBundle<? extends ImportedContent> importedBundle = adapterFactory.provider(context.loadContentType()).fetchDetails(context.externalId());
+        ImportedBundle importedBundle = adapterFactory.provider(context.loadContentType()).fetchDetails(context.externalId());
         Content content = movieMapper.aggregateToDomain(importedBundle.importedContent(), context.loadContentType());
         content = resolver.resolveReferences(content, importedBundle.importedContent());
         return context.withFetchedContent(importedBundle, content);

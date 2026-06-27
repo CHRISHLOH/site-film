@@ -14,7 +14,7 @@ import java.util.Set;
 public record ContentLoadContext(
         LoadContentType loadContentType,
         Long externalId,
-        ImportedBundle<? extends Imported> importedBundle,
+        ImportedBundle importedBundle,
         Content content,
         Long savedContentId,
         List<Person> fetchedPersons,
@@ -25,7 +25,7 @@ public record ContentLoadContext(
         return new ContentLoadContext(loadContentType, externalId, null, null, null, null, null, null);
     }
 
-    public ContentLoadContext withFetchedContent(ImportedBundle<? extends Imported> importedBundle, Content content) {
+    public ContentLoadContext withFetchedContent(ImportedBundle importedBundle, Content content) {
         return new ContentLoadContext (loadContentType, externalId, importedBundle, content, savedContentId,
                 fetchedPersons, savedPersons, personRoles);
     }
