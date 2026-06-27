@@ -5,7 +5,6 @@ import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordFactory
 import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordsRepository;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.*;
 import com.sitefilm.etl.domain.port.api.PersonProviderPort;
-import com.sitefilm.etl.domain.model.enums.MovieRoleType;
 import com.sitefilm.etl.infrastructure.provider.tmdb.client.RateLimitedTmdbClient;
 import com.sitefilm.etl.infrastructure.provider.tmdb.mapper.TmdbPersonMapper;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
@@ -38,7 +37,7 @@ public class TmdbPersonAdapter implements PersonProviderPort {
 
 
     @Override
-    public List<PersonImportDto> fetchCast(CreditsImported credits, Set<Long> existPersonIds) {
+    public List<RawPersonData> fetchCast(CreditsImported credits, Set<Long> existPersonIds) {
         List<Long> personIds = Stream.concat(
                         credits.cast().stream().map(Cast::externalId),
                         credits.crew().stream().map(Crew::externalId)

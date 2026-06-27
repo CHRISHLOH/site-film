@@ -1,4 +1,4 @@
-package com.sitefilm.etl.application.aggreagor;
+package com.sitefilm.etl.application.aggregator;
 
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
 import com.sitefilm.etl.domain.model.person.Person;

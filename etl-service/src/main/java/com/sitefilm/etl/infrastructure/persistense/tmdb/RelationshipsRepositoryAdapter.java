@@ -1,7 +1,7 @@
 package com.sitefilm.etl.infrastructure.persistense.tmdb;
 
 import com.sitefilm.etl.domain.model.ref.*;
-import com.sitefilm.etl.domain.port.repository.TmdbRelationshipsRepositoryPort;
+import com.sitefilm.etl.domain.port.repository.RelationshipsRepositoryPort;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -9,7 +9,7 @@ import java.sql.Types;
 import java.util.List;
 
 @Repository
-public class RelationshipsRepositoryAdapter implements TmdbRelationshipsRepositoryPort {
+public class RelationshipsRepositoryAdapter implements RelationshipsRepositoryPort {
 
     private final JdbcTemplate jdbcTemplate;
 

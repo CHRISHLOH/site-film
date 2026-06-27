@@ -2,7 +2,8 @@ package com.sitefilm.etl.application.usecase;
 
 import com.sitefilm.etl.application.cache.DictionaryRegistry;
 import com.sitefilm.etl.application.mapper.tmdb.DictionaryMapper;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.DictionariesRepositoryAdapter;
+import com.sitefilm.etl.domain.port.api.DictionariesProviderPort;
+import com.sitefilm.etl.domain.port.repository.DictionariesRepositoryPort;
 import com.sitefilm.etl.domain.model.dictionaries.DictionariesData;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.service.DictionaryPersistenceService;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbDictionariesAdapter;
@@ -10,13 +11,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TmdbDictionariesLoadUseCase {
-    private final TmdbDictionariesAdapter adapter;
-    private final DictionariesRepositoryAdapter repository;
+    private final DictionariesProviderPort adapter;
+    private final DictionariesRepositoryPort repository;
     private final DictionaryPersistenceService service;
     private final DictionaryMapper mapper;
     private final DictionaryRegistry cache;
 
-    public TmdbDictionariesLoadUseCase(TmdbDictionariesAdapter adapter, DictionariesRepositoryAdapter repository, DictionaryPersistenceService service, DictionaryMapper mapper, DictionaryRegistry cache) {
+    public TmdbDictionariesLoadUseCase(TmdbDictionariesAdapter adapter, DictionariesRepositoryPort repository, DictionaryPersistenceService service, DictionaryMapper mapper, DictionaryRegistry cache) {
         this.adapter = adapter;
         this.repository = repository;
         this.service = service;

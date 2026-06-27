@@ -2,8 +2,8 @@ package com.sitefilm.etl.infrastructure.persistense.tmdb.service;
 
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
+import com.sitefilm.etl.domain.port.repository.ContentRepositoryPort;
 import com.sitefilm.etl.infrastructure.persistense.ContentDetailsPersistenceFactory;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.ContentRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordFactory;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordsRepository;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -14,11 +14,11 @@ import java.util.List;
 @Service
 public class ContentPersistenceService {
     private final ContentDetailsPersistenceFactory contentFactory;
-    private final ContentRepositoryAdapter contentRepository;
+    private final ContentRepositoryPort contentRepository;
     private final FailedRecordsRepository failureRecordsRepository;
     private final FailedRecordFactory failedRecordFactory;
 
-    public ContentPersistenceService(ContentDetailsPersistenceFactory contentFactory, ContentRepositoryAdapter contentRepository, FailedRecordsRepository failureRecordsRepository, FailedRecordFactory failedRecordFactory) {
+    public ContentPersistenceService(ContentDetailsPersistenceFactory contentFactory, ContentRepositoryPort contentRepository, FailedRecordsRepository failureRecordsRepository, FailedRecordFactory failedRecordFactory) {
         this.contentFactory = contentFactory;
         this.contentRepository = contentRepository;
         this.failureRecordsRepository = failureRecordsRepository;

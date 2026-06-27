@@ -1,5 +1,6 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.mapper;
 
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.RawContentData;
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
 import com.sitefilm.etl.domain.model.content.MovieDetails;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.*;

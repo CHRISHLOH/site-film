@@ -1,8 +1,9 @@
 package com.sitefilm.etl.application.usecase;
 
 import com.sitefilm.etl.application.strategies.ContentLoadStrategy;
-import com.sitefilm.etl.domain.model.content.enums.LoadContentType;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbMovieAdapter;
+import com.sitefilm.etl.application.model.enums.LoadContentType;
+import com.sitefilm.etl.domain.port.api.ContentProviderPort;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.TmdbContentAdapterFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -10,23 +11,24 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class LoadContentUseCase {
+public class TmdbLoadContentUseCase {
     private final LoadStrategyFactory loadContentFactory;
     private final TmdbDictionariesLoadUseCase tmdbDictionariesLoadUseCase;
-    private final TmdbMovieAdapter tmdbMovieAdapter;
+    private final TmdbContentAdapterFactory tmdbContentAdapterFactory;
 
-    public LoadContentUseCase(LoadStrategyFactory loadContentFactory, TmdbDictionariesLoadUseCase tmdbDictionariesLoadUseCase, TmdbMovieAdapter tmdbMovieAdapter) {
+    public TmdbLoadContentUseCase(LoadStrategyFactory loadContentFactory, TmdbDictionariesLoadUseCase tmdbDictionariesLoadUseCase, TmdbContentAdapterFactory tmdbContentAdapterFactory) {
         this.loadContentFactory = loadContentFactory;
         this.tmdbDictionariesLoadUseCase = tmdbDictionariesLoadUseCase;
-        this.tmdbMovieAdapter = tmdbMovieAdapter;
+        this.tmdbContentAdapterFactory = tmdbContentAdapterFactory;
     }
 
     public void loadAll(LoadContentType loadContentType) {
         tmdbDictionariesLoadUseCase.loadDictionaries();
-        Short countPage = tmdbMovieAdapter.countPage();
+        ContentProviderPort provider = tmdbContentAdapterFactory.provider(loadContentType);
+        Short countPage = provider.countPage();
         ContentLoadStrategy loadStrategy = loadContentFactory.getStrategy(loadContentType);
         for (int i =  1; i < countPage; i++) {
-            List<Long> ids = tmdbMovieAdapter.fetchPopularIds(i);
+            List<Long> ids = provider.fetchPopularIds(i);
             for (Long id : ids) {
                 try {
                     loadStrategy.loadContent(id, loadContentType);
@@ -39,7 +41,8 @@ public class LoadContentUseCase {
 
     public void loadOne(LoadContentType loadContentType, int page) {
         tmdbDictionariesLoadUseCase.loadDictionaries();
-        List<Long> ids = tmdbMovieAdapter.fetchPopularIds(page);
+        ContentProviderPort provider = tmdbContentAdapterFactory.provider(loadContentType);
+        List<Long> ids = provider.fetchPopularIds(page);
         ContentLoadStrategy loadStrategy = loadContentFactory.getStrategy(loadContentType);
         for (Long id : ids) {
             try {

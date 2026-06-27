@@ -3,6 +3,7 @@ package com.sitefilm.etl.infrastructure.persistense.tmdb.service;
 import com.sitefilm.etl.domain.model.content.Details;
 import com.sitefilm.etl.domain.model.content.MovieDetails;
 import com.sitefilm.etl.domain.model.content.enums.ContentType;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.DetailsRepositoryPort;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.MovieRepositoryAdapter;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordFactory;
 import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordsRepository;
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MovieDetailsPersistenceService implements ContentDetailsPersistenceService {
-    private final MovieRepositoryAdapter movieRepository;
+    private final DetailsRepositoryPort<MovieDetails> movieRepository;
     private final FailedRecordsRepository failureRecordsRepository;
     private final FailedRecordFactory failedRecordFactory;
 

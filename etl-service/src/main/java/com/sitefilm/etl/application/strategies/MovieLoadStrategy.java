@@ -1,7 +1,7 @@
 package com.sitefilm.etl.application.strategies;
 
 import com.sitefilm.etl.application.strategies.context.ContentLoadContext;
-import com.sitefilm.etl.domain.model.content.enums.LoadContentType;
+import com.sitefilm.etl.application.model.enums.LoadContentType;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

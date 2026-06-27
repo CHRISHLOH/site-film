@@ -1,7 +1,7 @@
 package com.sitefilm.etl.application.strategies.context;
 
 import com.sitefilm.etl.domain.model.content.Content;
-import com.sitefilm.etl.domain.model.content.enums.LoadContentType;
+import com.sitefilm.etl.application.model.enums.LoadContentType;
 import com.sitefilm.etl.domain.model.person.Person;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CreditsImported;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonMovieRole;

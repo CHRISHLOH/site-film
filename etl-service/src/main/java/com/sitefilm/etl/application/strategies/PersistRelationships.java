@@ -1,6 +1,6 @@
 package com.sitefilm.etl.application.strategies;
 
-import com.sitefilm.etl.application.aggreagor.RelationshipsAggregator;
+import com.sitefilm.etl.application.aggregator.RelationshipsAggregator;
 import com.sitefilm.etl.application.strategies.context.ContentLoadContext;
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.ref.RelationshipsAggregatedData;

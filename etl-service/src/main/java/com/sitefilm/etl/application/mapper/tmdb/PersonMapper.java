@@ -4,8 +4,7 @@ import com.sitefilm.etl.domain.model.person.Person;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.Cast;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CreditsImported;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.Crew;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonImportDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.response.person.PersonDetailsResponseDto;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.RawPersonData;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.stream.Stream;
 
 @Component
 public class PersonMapper {
-    public List<Person> aggregateToDomain(List<PersonImportDto> importedPerson) {
+    public List<Person> aggregateToDomain(List<RawPersonData> importedPerson) {
         return importedPerson.stream().map(personImportDto ->
                 Person.builder()
                         .name(personImportDto.getName())

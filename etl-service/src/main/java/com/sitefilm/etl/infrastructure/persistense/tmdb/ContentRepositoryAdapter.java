@@ -2,13 +2,14 @@ package com.sitefilm.etl.infrastructure.persistense.tmdb;
 
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
+import com.sitefilm.etl.domain.port.repository.ContentRepositoryPort;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public class ContentRepositoryAdapter {
+public class ContentRepositoryAdapter implements ContentRepositoryPort {
 
     private final JdbcTemplate jdbcTemplate;
 

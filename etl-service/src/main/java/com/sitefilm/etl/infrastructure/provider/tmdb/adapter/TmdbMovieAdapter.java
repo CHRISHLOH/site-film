@@ -1,6 +1,6 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.adapter;
 
-import com.sitefilm.etl.domain.model.content.enums.LoadContentType;
+import com.sitefilm.etl.application.model.enums.LoadContentType;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.RawContentData;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.MovieIdDto;
 import com.sitefilm.etl.domain.port.api.ContentProviderPort;
@@ -39,6 +39,7 @@ public class TmdbMovieAdapter implements ContentProviderPort {
         return LOAD_CONTENT_TYPE;
     }
 
+    @Override
     public List<Long> fetchPopularIds(int page) {
         return coreTmdbClient.loadMovieIds(page)
                 .getMovieIds()
@@ -47,6 +48,7 @@ public class TmdbMovieAdapter implements ContentProviderPort {
                 .toList();
     }
 
+    @Override
     public Short countPage() {
         return coreTmdbClient.loadCountPage().total_pages();
     }

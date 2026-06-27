@@ -1,4 +1,4 @@
-package com.sitefilm.etl.domain.model.content.enums;
+package com.sitefilm.etl.application.model.enums;
 
 public enum LoadContentType {
     TMDB_MOVIE,

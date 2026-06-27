@@ -50,34 +50,18 @@ public class DictionaryRegistry {
     }
 
     public Genre getGenre(Integer externalId) {
-        return genreMap.computeIfAbsent(externalId, key -> {
-            Genre result = service.saveGenre(key);
-            genreMap.put(key, result);
-            return result;
-        });
+        return genreMap.computeIfAbsent(externalId, service::saveGenre);
     }
 
     public Country getCountry(String isoCode) {
-        return countryMap.computeIfAbsent(isoCode, key -> {
-            Country result = service.saveCountry(key);
-            countryMap.put(key, result);
-            return result;
-        });
+        return countryMap.computeIfAbsent(isoCode, service::saveCountry);
     }
 
     public Career getCareer(CareerType type, String job) {
-        return careerMap.computeIfAbsent(new CareerKey(type, job), key -> {
-            Career result = service.saveCareer(key);
-            careerMap.put(new CareerKey(type, job), result);
-            return result;
-        });
+        return careerMap.computeIfAbsent(new CareerKey(type, job), service::saveCareer);
     }
 
     public Language getLanguage(String iso) {
-        return languageMap.computeIfAbsent(iso, key -> {
-            Language result = service.saveLanguage(key);
-            languageMap.put(key, result);
-            return result;
-        });
+        return languageMap.computeIfAbsent(iso, service::saveLanguage);
     }
 }

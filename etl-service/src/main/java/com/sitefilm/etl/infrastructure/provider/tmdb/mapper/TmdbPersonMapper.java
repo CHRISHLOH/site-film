@@ -1,8 +1,7 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.mapper;
 
 import com.sitefilm.etl.domain.model.person.DataPersonTranslation;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonImportDto;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonMovieRole;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.RawPersonData;
 import com.sitefilm.etl.domain.model.person.CareerType;
 import com.sitefilm.etl.domain.model.person.Gender;
 import com.sitefilm.etl.domain.model.Source;
@@ -20,7 +19,7 @@ public class TmdbPersonMapper {
         this.personTranslationMapper = personTranslationMapper;
     }
 
-    public List<PersonImportDto> castMapping(List<PersonDetailsResponseDto> persons) {
+    public List<RawPersonData> castMapping(List<PersonDetailsResponseDto> persons) {
         return persons.stream().map(personDto -> {
             Short gender = personDto.getGender();
             if (gender == null || gender < 0 || gender > 2) {
@@ -30,17 +29,17 @@ public class TmdbPersonMapper {
                     personDto.getPersonTranslations().getTranslations(),
                     personDto.getName(),
                     personDto.getBiography());
-            PersonImportDto personImportDto = new PersonImportDto();
-            personImportDto.setExternalId(personDto.getExternalId());
-            personImportDto.setName(personDto.getName());
-            personImportDto.setBirthDate(personDto.getBirthDate());
-            personImportDto.setDeathDate(personDto.getDeathDate());
-            personImportDto.setGender(Gender.fromId(gender));
-            personImportDto.setBirthPlace(personDto.getPlaceOfBirth());
-            personImportDto.setKnownAs(knownAsMapping(personDto.getKnownAs()));
-            personImportDto.setSource(SOURCE);
-            personImportDto.setPersonTranslations(personTranslations);
-            return personImportDto;
+            RawPersonData rawPersonData = new RawPersonData();
+            rawPersonData.setExternalId(personDto.getExternalId());
+            rawPersonData.setName(personDto.getName());
+            rawPersonData.setBirthDate(personDto.getBirthDate());
+            rawPersonData.setDeathDate(personDto.getDeathDate());
+            rawPersonData.setGender(Gender.fromId(gender));
+            rawPersonData.setBirthPlace(personDto.getPlaceOfBirth());
+            rawPersonData.setKnownAs(knownAsMapping(personDto.getKnownAs()));
+            rawPersonData.setSource(SOURCE);
+            rawPersonData.setPersonTranslations(personTranslations);
+            return rawPersonData;
         }).toList();
     }
 

@@ -6,7 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class MovieRepositoryAdapter implements ContentRepositoryPort {
+public class MovieRepositoryAdapter implements DetailsRepositoryPort<MovieDetails> {
 
     private final JdbcTemplate jdbcTemplate;
 
