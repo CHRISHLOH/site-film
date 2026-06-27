@@ -3,8 +3,7 @@ package com.sitefilm.etl.application.strategies.context;
 import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.content.enums.LoadContentType;
 import com.sitefilm.etl.domain.model.person.Person;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.Imported;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedBundle;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CreditsImported;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonMovieRole;
 
 import java.util.List;
@@ -14,7 +13,7 @@ import java.util.Set;
 public record ContentLoadContext(
         LoadContentType loadContentType,
         Long externalId,
-        ImportedBundle importedBundle,
+        CreditsImported credits,
         Content content,
         Long savedContentId,
         List<Person> fetchedPersons,
@@ -25,23 +24,23 @@ public record ContentLoadContext(
         return new ContentLoadContext(loadContentType, externalId, null, null, null, null, null, null);
     }
 
-    public ContentLoadContext withFetchedContent(ImportedBundle importedBundle, Content content) {
-        return new ContentLoadContext (loadContentType, externalId, importedBundle, content, savedContentId,
+    public ContentLoadContext withFetchedContent(CreditsImported credits, Content content) {
+        return new ContentLoadContext (loadContentType, externalId, credits, content, savedContentId,
                 fetchedPersons, savedPersons, personRoles);
     }
 
     public ContentLoadContext withSavedContentId(Long savedContentId) {
-        return new ContentLoadContext (loadContentType, externalId, importedBundle, content, savedContentId,
+        return new ContentLoadContext (loadContentType, externalId, credits, content, savedContentId,
                 fetchedPersons, savedPersons, personRoles);
     }
 
     public ContentLoadContext withFetchedPersons(Map<Long, List<PersonMovieRole>> personRoles, List<Person> fetchedPersons) {
-        return new ContentLoadContext (loadContentType, externalId, importedBundle, content, savedContentId,
+        return new ContentLoadContext (loadContentType, externalId, credits, content, savedContentId,
                 fetchedPersons, savedPersons, personRoles);
     }
 
     public ContentLoadContext withSavedPersons(Set<Person> savedPersons) {
-        return new ContentLoadContext (loadContentType, externalId, importedBundle, content, savedContentId,
+        return new ContentLoadContext (loadContentType, externalId, credits, content, savedContentId,
                 fetchedPersons, savedPersons, personRoles);
     }
 }

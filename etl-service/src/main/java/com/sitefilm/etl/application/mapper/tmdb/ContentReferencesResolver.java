@@ -5,7 +5,6 @@ import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.domain.model.ref.ContentCountry;
 import com.sitefilm.etl.domain.model.ref.ContentGenre;
 import com.sitefilm.etl.domain.model.ref.ContentLanguage;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.ImportedContent;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -19,10 +18,13 @@ public class ContentReferencesResolver {
         this.cache = cache;
     }
 
-    public Content resolveReferences(Content content, ImportedContent importedContent) {
-        List<ContentGenre> contentGenres = genresRefMapping(importedContent.getGenres());
-        List<ContentCountry> contentCountries = countriesRefMapping(importedContent.getCountries());
-        List<ContentLanguage> contentLanguages = spokenLanguagesRefMapping(importedContent.getSpokenLanguages());
+    public Content resolveReferences(Content content,
+                                     List<Integer> genreExternalIds,
+                                     List<String> countryIsoCodes,
+                                     List<String> languageIsoCodes) {
+        List<ContentGenre> contentGenres = genresRefMapping(genreExternalIds);
+        List<ContentCountry> contentCountries = countriesRefMapping(countryIsoCodes);
+        List<ContentLanguage> contentLanguages = spokenLanguagesRefMapping(languageIsoCodes);
         content.setGenres(contentGenres);
         content.setCountries(contentCountries);
         content.setSpokenLanguages(contentLanguages);

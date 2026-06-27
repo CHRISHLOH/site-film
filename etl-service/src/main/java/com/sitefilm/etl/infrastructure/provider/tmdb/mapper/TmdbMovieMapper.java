@@ -1,6 +1,7 @@
 package com.sitefilm.etl.infrastructure.provider.tmdb.mapper;
 
 import com.sitefilm.etl.domain.model.content.DataContentTranslation;
+import com.sitefilm.etl.domain.model.content.MovieDetails;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.*;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.GenreDto;
 import com.sitefilm.etl.infrastructure.provider.tmdb.response.RelationshipsCountryDto;
@@ -25,33 +26,28 @@ public class TmdbMovieMapper {
         this.translationMovieMapper = translationMovieMapper;
     }
 
-    public ImportedBundle fetchDetails(ValidatedMovie movie) {
+    public RawContentData fetchDetails(ValidatedMovie movie) {
         List<DataContentTranslation> translations = translationMovieMapper.aggregate(
                 movie.contentTranslations().getContentTranslations(), movie.title(), movie.overview());
+        MovieDetails movieDetails = mapMovieDetails(movie);
         List<Integer> genres = genresReferenceMapping(movie.genres());
         List<String> countries = countriesReferenceMapping(movie.countries());
         List<String> spokenLanguages = languagesReferenceMapping(movie.spokenLanguages());
-        ImportedMovie importedMovie = ImportedMovie.builder()
-                .originalTitle(movie.originalTitle())
-                .contentType(CONTENT_TYPE)
-                .status(ContentStatus.getByStatusName(movie.status()))
-                .ageRating(null)
-                .externalId(movie.externalId())
-                .source(SOURCE)
-                .translation(translations)
-                .budget(movie.budget())
-                .boxOffice(movie.revenue())
-                .duration(movie.duration())
-                .genres(genres)
-                .countries(countries)
-                .spokenLanguages(spokenLanguages)
-                .build();
-        CreditsImported credits = new CreditsImported(
-                mapCast(movie.persons().getCast()),
-                mapCrew(movie.persons().getCrew())
-        );
-        return new ImportedBundle(
-                importedMovie,
+        List<Cast> cast = mapCast(movie.persons().getCast());
+        List<Crew> crew = mapCrew(movie.persons().getCrew());
+        CreditsImported credits = new CreditsImported(cast, crew);
+        return new RawContentData(
+                movie.originalTitle(),
+                CONTENT_TYPE,
+                ContentStatus.getByStatusName(movie.status()),
+                movie.externalId(),
+                SOURCE,
+                null,
+                translations,
+                movieDetails,
+                genres,
+                countries,
+                spokenLanguages,
                 credits
         );
     }
@@ -66,6 +62,14 @@ public class TmdbMovieMapper {
 
     private List<String> languagesReferenceMapping(List<LanguageResponseDto> languages) {
         return languages.stream().map(LanguageResponseDto::getIso_639_1).toList();
+    }
+
+    private MovieDetails mapMovieDetails(ValidatedMovie movie) {
+        return new MovieDetails(null,
+                movie.budget(),
+                movie.revenue(),
+                movie.duration(),
+                movie.releaseDate());
     }
 
     private List<Cast> mapCast(List<PersonCastDto> cast) {
