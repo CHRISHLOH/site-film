@@ -4,7 +4,7 @@ import com.sitefilm.etl.domain.model.content.Content;
 import com.sitefilm.etl.application.model.enums.LoadContentType;
 import com.sitefilm.etl.domain.model.person.Person;
 import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.CreditsImported;
-import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonMovieRole;
+import com.sitefilm.etl.infrastructure.provider.tmdb.adapter.imported.PersonRole;
 
 import java.util.List;
 import java.util.Map;
@@ -18,7 +18,7 @@ public record ContentLoadContext(
         Long savedContentId,
         List<Person> fetchedPersons,
         Set<Person> savedPersons,
-        Map<Long, List<PersonMovieRole>> personRoles
+        Map<Long, List<PersonRole>> personRoles
 ){
     public static ContentLoadContext start(Long externalId, LoadContentType loadContentType) {
         return new ContentLoadContext(loadContentType, externalId, null, null, null, null, null, null);
@@ -34,7 +34,7 @@ public record ContentLoadContext(
                 fetchedPersons, savedPersons, personRoles);
     }
 
-    public ContentLoadContext withFetchedPersons(Map<Long, List<PersonMovieRole>> personRoles, List<Person> fetchedPersons) {
+    public ContentLoadContext withFetchedPersons(Map<Long, List<PersonRole>> personRoles, List<Person> fetchedPersons) {
         return new ContentLoadContext (loadContentType, externalId, credits, content, savedContentId,
                 fetchedPersons, savedPersons, personRoles);
     }
