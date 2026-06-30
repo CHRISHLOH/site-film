@@ -19,7 +19,7 @@ public class City {
     private Long id;
 
     @Column(name = "code", nullable = false, unique = true)
-    private String code; // например: "new_york", "moscow", "paris"
+    private String code;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country_id")

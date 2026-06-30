@@ -4,9 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.sitefilm.contentservice.entity.City;
 import org.sitefilm.contentservice.entity.Country;
-import org.sitefilm.contentservice.entity.Career;
-import org.sitefilm.contentservice.entity.Genre;
-import org.sitefilm.contentservice.enums.GenderEnum;
 
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -25,7 +22,6 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // единое имя, можно хранить full name; локализованное представление -> person_translations.locale_name
     @Column(name = "name", nullable = false, length = 100)
     private String name;
 

@@ -1,10 +1,8 @@
 package com.sitefilm.etl.infrastructure.persistense.tmdb.service;
 
-import com.sitefilm.etl.domain.model.failed.FailedRecord;
 import com.sitefilm.etl.domain.model.ref.*;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.RelationshipsRepositoryAdapter;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordFactory;
-import com.sitefilm.etl.infrastructure.persistense.tmdb.fail.FailedRecordsRepository;
+import com.sitefilm.etl.domain.port.repository.RelationshipsRepositoryPort;
+import com.sitefilm.etl.infrastructure.persistense.tmdb.service.fallback.RelationshipFallbackService;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,14 +11,12 @@ import java.util.List;
 
 @Service
 public class RelationshipsRepositoryService {
-    private final RelationshipsRepositoryAdapter repository;
-    private final FailedRecordFactory failedRecordFactory;
-    private final FailedRecordsRepository failedRecordsRepository;
+    private final RelationshipsRepositoryPort repository;
+    private final RelationshipFallbackService fallbackService;
 
-    public RelationshipsRepositoryService(RelationshipsRepositoryAdapter repository, FailedRecordFactory failedRecordFactory, FailedRecordsRepository failedRecordsRepository) {
+    public RelationshipsRepositoryService(RelationshipsRepositoryPort repository, RelationshipFallbackService fallbackService) {
         this.repository = repository;
-        this.failedRecordFactory = failedRecordFactory;
-        this.failedRecordsRepository = failedRecordsRepository;
+        this.fallbackService = fallbackService;
     }
 
     @Transactional
@@ -36,12 +32,7 @@ public class RelationshipsRepositoryService {
             repository.saveGenres(contentGenres);
         } catch (DataIntegrityViolationException e) {
             for(ContentGenre contentGenre : contentGenres){
-                try{
-                    repository.saveOneGenre(contentGenre);
-                } catch (DataIntegrityViolationException ex){
-                    FailedRecord fr = failedRecordFactory.getContentGenreFailedRecord(contentGenre, ex);
-                    failedRecordsRepository.saveFailedRecord(fr);
-                }
+                fallbackService.saveOneGenreSafely(contentGenre);
             }
         }
     }
@@ -51,12 +42,7 @@ public class RelationshipsRepositoryService {
             repository.saveCountries(contentCountries);
         } catch (DataIntegrityViolationException e) {
             for(ContentCountry contentCountry : contentCountries){
-                try{
-                    repository.saveOneCountry(contentCountry);
-                } catch (DataIntegrityViolationException ex){
-                    FailedRecord fr = failedRecordFactory.getContentCountryFailedRecord(contentCountry, ex);
-                    failedRecordsRepository.saveFailedRecord(fr);
-                }
+                fallbackService.saveOneCountrySafely(contentCountry);
             }
         }
     }
@@ -66,12 +52,7 @@ public class RelationshipsRepositoryService {
             repository.saveLanguages(contentLanguages);
         } catch (DataIntegrityViolationException e) {
             for(ContentLanguage contentLanguage : contentLanguages){
-                try{
-                    repository.saveOneLanguage(contentLanguage);
-                } catch (DataIntegrityViolationException ex){
-                    FailedRecord fr = failedRecordFactory.getContentLanguageFailedRecord(contentLanguage, ex);
-                    failedRecordsRepository.saveFailedRecord(fr);
-                }
+                fallbackService.saveOneLanguageSafely(contentLanguage);
             }
         }
     }
@@ -81,12 +62,7 @@ public class RelationshipsRepositoryService {
             repository.saveContentPerson(contentPersons);
         } catch (DataIntegrityViolationException e) {
             for(ContentPerson contentPerson : contentPersons){
-                try {
-                    repository.saveOneContentPerson(contentPerson);
-                } catch (DataIntegrityViolationException ex){
-                    FailedRecord fr = failedRecordFactory.getContentPersonFailedRecord(contentPerson, ex);
-                    failedRecordsRepository.saveFailedRecord(fr);
-                }
+                fallbackService.saveOneContentPersonSafely(contentPerson);
             }
         }
     }
